@@ -1,0 +1,208 @@
+{
+    "pools": [
+      {
+        "rolls": {
+          "min": 8,
+          "max": 15
+        },
+        "bonus_rolls": 3,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:apple",
+            "weight": 20,
+            "quality": 20,
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "target": "custom_name",
+                "name": {
+                  "text": "幸運蘋果Lucky Apple",
+                  "color": "dark_green",
+                  "bold": true,
+                  "italic": false,
+                  "underlined": true
+                }
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:potion_contents": {
+                    "custom_name": "Lucky",
+                    "custom_effects": [
+                      {
+                        "id": "minecraft:luck",
+                        "amplifier": 0,
+                        "duration": 1200,
+                        "ambient": true,
+                        "show_particles": true,
+                        "show_icon": true
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  {
+                    "text": "吃下去可以獲得",
+                    "color": "white",
+                    "bold": false,
+                    "italic": false,
+                    "underlined": false,
+                    "extra": [
+                      {
+                        "text": "幸運I",
+                        "color": "dark_green",
+                        "bold": true,
+                        "italic": false,
+                        "underlined": true
+                      },
+                      {
+                        "text": "，持續 1 分鐘",
+                        "bold": false,
+                        "italic": false,
+                        "underlined": false
+                      }
+                    ]
+                  }
+                ],
+                "mode": "replace_all"
+              },
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 1,
+                  "max": 3
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:alternatives",
+            "children": [
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:dried_kelp",
+                "weight": 80
+              },
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:cookie",
+                "weight": 80
+              },
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:cod",
+                "weight": 80
+              },
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:salmon",
+                "weight": 80
+              },
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:rotten_flesh",
+                "weight": 80
+              },
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:glow_berries",
+                "weight": 80
+              }
+            ]
+          },
+          {
+            "type": "minecraft:alternatives",
+            "children": [
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:apple",
+                "weight": 60
+              },
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:melon_slice",
+                "weight": 60
+              },
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:potato",
+                "weight": 60
+              },
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:sweet_berries",
+                "weight": 60
+              }
+            ]
+          },
+          {
+            "type": "minecraft:alternatives",
+            "children": [
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:cooked_rabbit",
+                "weight": 40
+              },
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:cooked_chicken",
+                "weight": 40
+              },
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:carrot",
+                "weight": 40
+              },
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:bread",
+                "weight": 40
+              },
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:beetroot",
+                "weight": 40
+              },
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:baked_potato",
+                "weight": 40
+              }
+            ]
+          },
+          {
+            "type": "minecraft:alternatives",
+            "children": [
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:cooked_salmon",
+                "weight": 20
+              },
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:cooked_porkchop",
+                "weight": 20
+              },
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:cooked_beef",
+                "weight": 10
+              },
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:cooked_mutton",
+                "weight": 20
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

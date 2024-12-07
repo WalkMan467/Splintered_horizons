@@ -1,0 +1,11 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+  },
+  "rewards": {
+    "function": "world_area:main/mode_change/survival"
+  }
+}

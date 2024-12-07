@@ -1,0 +1,33 @@
+{
+    "anvil_cost": 0,
+    "description": "bow.detect",
+    "max_cost": {
+      "base": 0,
+      "per_level_above_first": 0
+    },
+    "max_level": 255,
+    "min_cost": {
+      "base": 0,
+      "per_level_above_first": 0
+    },
+    "slots": [
+      "any"
+    ],
+    "supported_items": [
+      "minecraft:bow",
+      "minecraft:crossbow"
+    ],
+    "weight": 1,
+    "effects": {
+      "minecraft:post_attack": [
+        {
+          "effect": {
+            "type": "minecraft:run_function",
+            "function": "weapons:type/arrows/detect"
+          },
+          "enchanted": "attacker",
+          "affected": "victim"
+        }
+      ]
+    }
+  }

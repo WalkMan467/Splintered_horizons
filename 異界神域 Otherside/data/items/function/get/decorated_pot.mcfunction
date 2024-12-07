@@ -1,0 +1,1 @@
+give @s bat_spawn_egg[entity_data={id:"minecraft:marker",Tags:["decorated_pot.marker","decorated_pot.marker.spawn"],data:{Type:"food",Rarity:"common"}},custom_name='{"bold":true,"color":"white","italic":false,"text":"碎罐生怪蛋","underlined":true}',lore=['{"bold":false,"color":"blue","italic":false,"text":"碎罐生怪蛋，每5分鐘(300秒)會重製所有碎罐狀態","underlined":false}']] 1

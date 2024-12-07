@@ -1,0 +1,104 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 50
+        },
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:prismarine_shard",
+              "weight": 50,
+              "quality": 20,
+              "functions": [
+                {
+                  "function": "minecraft:set_name",
+                  "entity": "this",
+                  "name": {
+                    "translate": "weapons.broken_glass",
+                    "fallback": "Broken Glass",
+                    "color": "white",
+                    "bold": true,
+                    "italic": false
+                  }
+                },
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 2,
+                    "max": 5
+                  }
+                },
+                {
+                  "function": "minecraft:set_lore",
+                  "entity": "this",
+                  "lore": [
+                    [
+                      {
+                        "translate": "weapons.drop_weapons",
+                        "fallback": "Throwable Item",
+                        "color": "#686868",
+                        "bold": false,
+                        "italic": false
+                      }
+                    ]
+                  ],
+                  "mode": "replace_all"
+                },
+                {
+                  "function": "minecraft:set_lore",
+                  "entity": "this",
+                  "lore": [
+                    {
+                      "text": " "
+                    }
+                  ],
+                  "mode": "append"
+                },
+                {
+                  "function": "minecraft:set_lore",
+                  "entity": "this",
+                  "lore": [
+                    {
+                      "translate": "weapons.broken_glass.lore.1",
+                      "fallback": "Toss a glass pane,",
+                      "color": "blue",
+                      "bold": false,
+                      "italic": false
+                    }
+                  ],
+                  "mode": "append"
+                },
+                {
+                  "function": "minecraft:set_lore",
+                  "entity": "this",
+                  "lore": [
+                    {
+                      "translate": "weapons.broken_glass.lore.2",
+                      "fallback": "has 25% chance to inflict wither II to the target for 5 sec.",
+                      "color": "blue",
+                      "bold": false,
+                      "italic": false
+                    }
+                  ],
+                  "mode": "append"
+                },
+                {
+                  "function": "minecraft:set_components",
+                  "components": {
+                    "minecraft:custom_data": "{type:\"drop_weapon\",id:\"broken_glass\"}"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

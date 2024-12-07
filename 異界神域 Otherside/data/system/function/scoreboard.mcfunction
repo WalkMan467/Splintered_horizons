@@ -1,0 +1,1 @@
+scoreboard objectives add system.decorated_pot.reset dummy "[系統]: 碎罐重製時間"

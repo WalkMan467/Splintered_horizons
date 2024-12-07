@@ -1,0 +1,1 @@
+function task:loop/smash_the_decorated_pot

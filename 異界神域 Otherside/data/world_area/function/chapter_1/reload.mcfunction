@@ -1,0 +1,1 @@
+advancement revoke @a only world_area:chapter_1/broken_city/in

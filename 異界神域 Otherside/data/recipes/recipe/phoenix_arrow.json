@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    "#minecraft:arrows",
+    "minecraft:blaze_powder"
+  ],
+  "result": {
+    "components": {
+      "minecraft:custom_model_data": {
+        "strings": [
+          "phoenix_arrow"
+        ]
+      },
+      "minecraft:custom_name": "[\"\",{\"text\":\"P\",\"bold\":true,\"italic\":true,\"underlined\":true,\"color\":\"gold\"},{\"text\":\"h\",\"bold\":true,\"italic\":true,\"underlined\":true,\"color\":\"#FA8500\"},{\"text\":\"o\",\"bold\":true,\"italic\":true,\"underlined\":true,\"color\":\"#FA7900\"},{\"text\":\"e\",\"bold\":true,\"italic\":true,\"underlined\":true,\"color\":\"#C25E00\"},{\"text\":\"n\",\"bold\":true,\"italic\":true,\"underlined\":true,\"color\":\"#C24400\"},{\"text\":\"i\",\"bold\":true,\"italic\":true,\"underlined\":true,\"color\":\"#E62200\"},{\"text\":\"x\",\"bold\":true,\"italic\":true,\"underlined\":true,\"color\":\"#E60000\"},\" \",{\"text\":\"A\",\"bold\":true,\"italic\":true,\"underlined\":true,\"color\":\"#E60000\"},{\"text\":\"r\",\"bold\":true,\"italic\":true,\"underlined\":true,\"color\":\"#E60000\"},{\"text\":\"r\",\"bold\":true,\"italic\":true,\"underlined\":true,\"color\":\"#E65000\"},{\"text\":\"o\",\"bold\":true,\"italic\":true,\"underlined\":true,\"color\":\"#FA7900\"},{\"text\":\"w\",\"bold\":true,\"italic\":true,\"underlined\":true,\"color\":\"gold\"}]"
+    },
+    "count": 1,
+    "id": "minecraft:arrow"
+  }
+}

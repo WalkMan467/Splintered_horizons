@@ -1,0 +1,1 @@
+execute if items entity @s weapon.mainhand *[custom_data~{id:"old_wooden_sword"}] run scoreboard players add @s[scores={weapons.old_wooden_sword.animation=..11}] weapons.old_wooden_sword.animation 1

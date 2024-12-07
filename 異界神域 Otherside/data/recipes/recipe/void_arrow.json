@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    "#minecraft:arrows",
+    "minecraft:crying_obsidian"
+  ],
+  "result": {
+    "components": {
+      "minecraft:custom_model_data": {
+        "strings": [
+          "void_arrow"
+        ]
+      },
+      "minecraft:custom_name": "{\"bold\":true,\"color\":\"gold\",\"italic\":false,\"fallback\":\"Void Arrow\",\"translate\":\"weapon.void_arrow\"}",
+      "minecraft:lore": [
+        "{\"bold\":false,\"color\":\"dark_gray\",\"fallback\":\"arrow\",\"italic\":false,\"translate\":\"weapon.type.1\"}",
+        "{\"text\":\"\"}",
+        "{\"bold\":false,\"color\":\"blue\",\"fallback\":\"Arrows infused with the Void Fire,\",\"italic\":false,\"translate\":\"weapon.void_arrow.desc.1\"}",
+        "{\"bold\":false,\"color\":\"blue\",\"fallback\":\"can unleash powerful skills upon hitting enemies, \",\"italic\":false,\"translate\":\"weapon.void_arrow.desc.2\"}",
+        "{\"bold\":false,\"color\":\"blue\",\"fallback\":\"if the player holding them has the %s\",\"italic\":false,\"translate\":\"weapon.void_arrow.desc.3\",\"with\":[{\"translate\":\"effect.wither\",\"bold\":true,\"fallback\":\"Wither Effect\",\"color\":\"dark_red\",\"underlined\":true}]}"
+      ],
+      "minecraft:custom_data": {
+        "id": "void_arrow"
+      }
+    },
+    "count": 1,
+    "id": "minecraft:arrow"
+  }
+}

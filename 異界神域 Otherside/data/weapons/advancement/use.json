@@ -1,0 +1,23 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "components": {
+            "minecraft:consumable": {
+              "consume_seconds": 10000,
+              "animation": "block"
+            }
+          },
+          "predicates": {
+            "minecraft:custom_data": "{type:\"weapon\"}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "weapons:use"
+  }
+}

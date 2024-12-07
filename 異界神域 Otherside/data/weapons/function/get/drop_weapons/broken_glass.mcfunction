@@ -1,0 +1,1 @@
+give @s prismarine_shard[custom_data={type:"drop_weapon",id:"broken_glass"}]

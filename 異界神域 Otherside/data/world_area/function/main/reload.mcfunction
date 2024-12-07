@@ -1,0 +1,2 @@
+function world_area:chapter_1/reload
+function world_area:main/mode_change/reload

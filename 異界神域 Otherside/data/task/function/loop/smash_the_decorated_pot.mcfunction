@@ -1,0 +1,1 @@
+execute if score @s task.reset matches 1 if score @s task.cracked.decorated_pot matches 30.. run function task:finish/smash_the_decorated_pot
