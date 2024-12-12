@@ -1,0 +1,1 @@
+execute if biome ~ ~ ~ world_area:chapter_1/broken_city run scoreboard players set @s music.chapter1.broken_city 1

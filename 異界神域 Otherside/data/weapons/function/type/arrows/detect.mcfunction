@@ -1,1 +1,2 @@
 execute on attacker if entity @s[advancements={weapons:arrows/void_arrow=true},nbt={active_effects:[{id:"minecraft:wither"}]}] run function weapons:type/arrows/void_arrow/use
+execute on attacker if entity @s[advancements={weapons:arrows/explosion_arrow=true}] run function weapons:type/arrows/explosion_arrow/use

@@ -18,10 +18,16 @@
         "{\"text\":\"\"}",
         "{\"bold\":false,\"color\":\"blue\",\"fallback\":\"Arrows infused with the Void Fire,\",\"italic\":false,\"translate\":\"weapon.void_arrow.desc.1\"}",
         "{\"bold\":false,\"color\":\"blue\",\"fallback\":\"can unleash powerful skills upon hitting enemies, \",\"italic\":false,\"translate\":\"weapon.void_arrow.desc.2\"}",
-        "{\"bold\":false,\"color\":\"blue\",\"fallback\":\"if the player holding them has the %s\",\"italic\":false,\"translate\":\"weapon.void_arrow.desc.3\",\"with\":[{\"translate\":\"effect.wither\",\"bold\":true,\"fallback\":\"Wither Effect\",\"color\":\"dark_red\",\"underlined\":true}]}"
+        "{\"bold\":false,\"color\":\"blue\",\"fallback\":\"if the player holding them has the %s\",\"italic\":false,\"translate\":\"weapon.void_arrow.desc.3\",\"with\":[{\"translate\":\"effect.wither\",\"bold\":true,\"fallback\":\"Wither Effect\",\"color\":\"dark_red\",\"underlined\":true}]}",
+        "{\"text\":\"\"}",
+        "{\"bold\":true,\"color\":\"dark_red\",\"fallback\":\"[Void Cage]\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":[{\"text\":\"\",\"bold\":true,\"italic\":false}]},\"italic\":false,\"translate\":\"weapon.void_arrow.desc.4\"}",
+        "{\"bold\":false,\"color\":\"red\",\"fallback\":\"When an arrow hits a target or strikes a block,\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":[{\"text\":\"\",\"bold\":true,\"italic\":false}]},\"italic\":false,\"translate\":\"weapon.void_arrow.desc.5\"}",
+        "{\"bold\":false,\"color\":\"red\",\"fallback\":\"it will activate a void cage that applies the void status to players and enemies within a 4-block radius for 5 seconds.\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":[{\"text\":\"\",\"bold\":true,\"italic\":false}]},\"italic\":false,\"translate\":\"weapon.void_arrow.desc.6\"}",
+        "{\"bold\":false,\"color\":\"red\",\"fallback\":\"All affected by the void status cannot attack or cast skills, nor can they be attacked.\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":[{\"text\":\"\",\"bold\":true,\"italic\":false}]},\"italic\":false,\"translate\":\"weapon.void_arrow.desc.7\"}"
       ],
       "minecraft:custom_data": {
-        "id": "void_arrow"
+        "id": "void_arrow",
+        "ground_detect": true
       }
     },
     "count": 1,

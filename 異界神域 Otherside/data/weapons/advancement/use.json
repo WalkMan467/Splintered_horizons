@@ -7,7 +7,8 @@
           "components": {
             "minecraft:consumable": {
               "consume_seconds": 10000,
-              "animation": "block"
+              "animation": "block",
+              "has_consume_particles": false
             }
           },
           "predicates": {
@@ -17,6 +18,11 @@
       }
     }
   },
+  "requirements": [
+    [
+      "requirement"
+    ]
+  ],
   "rewards": {
     "function": "weapons:use"
   }

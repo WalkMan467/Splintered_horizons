@@ -1,0 +1,2 @@
+attribute @s[scores={player.disable_movement=1}] movement_speed modifier remove player.disable_movement
+attribute @s[scores={player.disable_movement=1}] jump_strength modifier remove player.disable_movement

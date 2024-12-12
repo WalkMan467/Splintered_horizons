@@ -1,26 +1,25 @@
 # Guide / 導向
 
-    execute as @s[scores={drop=1..}] at @s run function weapons:type with entity @n[type=item,limit=1] Item.components."minecraft:custom_data"
-    scoreboard players reset @s[scores={drop=1..}] drop
+    attribute @s[type=player,scores={player.defense=3..10}] minecraft:knockback_resistance modifier add defense 9999 add_value
+    effect give @s[type=player,scores={player.defense=3..10}] resistance 1 255 true
 
-# Defens / 防禦
+    effect clear @s[type=player,scores={player.defense=0}] resistance
+    attribute @s[type=player,scores={player.defense=0}] minecraft:knockback_resistance modifier remove defense
 
-    execute if score @s player.defense matches 1..5 run function weapons:perfect_defens
+    effect clear @s[type=player,scores={player.defense=10..}] resistance
+    attribute @s[type=player,scores={player.defense=10..}] minecraft:knockback_resistance modifier remove defense
 
-    execute if score @s player.defense matches 0 run function weapons:perfect_defens_cancel
+    scoreboard players set @s[type=player,scores={player.defense.timer=0,player.defense=1..}] player.defense 0
 
-    execute if score @s player.defense matches 5.. run function weapons:perfect_defens_cancel
-    execute if score @s player.defense matches 5..11 run function weapons:defense
+    execute if data entity @s {HurtTime:9s} if score @s player.defense matches 3..10 run function weapons:defense
 
-    execute if score @s player.defense matches 11.. run function weapons:defense_cancel
+    execute as @s[type=player,scores={drop=1..}] at @s run function weapons:type with entity @n[type=item,limit=1,nbt={Item:{components:{"minecraft:custom_data":{type:"drop_weapon"}}}}] Item.components."minecraft:custom_data"
+    scoreboard players reset @s[type=player,scores={drop=1..}] drop
 
-# Timer / 計時器
+    # wind sword
+    execute as @s[type=player,tag=wind_sword.user] at @s run function weapons:type/sword/wind_sword/main
+    execute as @s[type=item_display,tag=wind_sword.wind] at @s run function weapons:type/sword/wind_sword/wind/main
 
-    execute if score @s player.defense.timer matches 0 if score @s player.defense matches 1.. run function weapons:defense_cancel
-    
-    advancement revoke @s[scores={player.defense.timer=0,player.defense=1..}] only weapons:defense
-    scoreboard players set @s[scores={player.defense.timer=0,player.defense=1..}] player.defense.cd 3
-    execute as @s[scores={player.defense.timer=0,player.defense=1..}] run advancement grant @s only players:state/idle
-    scoreboard players set @s[scores={player.defense.timer=0,player.defense=1..}] player.defense 0
 
-    scoreboard players remove @s[scores={player.defense.cd=1..}] player.defense.cd 1
+    function weapons:type/arrows/ground_detect/main
+    function weapons:timer_t

@@ -1,4 +1,9 @@
 function task:scoreboard
+function system:scoreboard
+function music:scoreboard
+function weapons:scoreboard
+function effects:scoreboard
+function players:scoreboard
 
 scoreboard objectives add duration dummy
 
@@ -10,5 +15,4 @@ scoreboard objectives add entity.dummy_mob dummy "假實體"
 
 scoreboard objectives add death_count deathCount [{"text":" ☠ 死亡次數 ☠","color":"red"}]
 
-scoreboard objectives add hide.player.animation dummy "隱藏玩家動畫"
-scoreboard players add @a hide.player.animation 0
+scoreboard objectives add player.leave_game minecraft.custom:minecraft.leave_game "玩家離開"
