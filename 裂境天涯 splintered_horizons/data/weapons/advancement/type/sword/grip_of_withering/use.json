@@ -1,0 +1,30 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "effects": {
+            "minecraft:wither": {
+              "amplifier": {
+                "min": 0,
+                "max": 255
+              },
+              "duration": {
+                "min": 1
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "requirement"
+    ]
+  ],
+  "rewards": {
+    "function": "weapons:type/sword/grip_of_withering/use"
+  }
+}

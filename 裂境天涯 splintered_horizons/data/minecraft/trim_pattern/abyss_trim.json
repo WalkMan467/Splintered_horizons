@@ -1,0 +1,7 @@
+{
+  "asset_id": "abyss_trim",
+  "description": {
+    "translate": "trim_pattern.abyss_trim"
+  },
+  "template_item": "minecraft:sculk"
+}

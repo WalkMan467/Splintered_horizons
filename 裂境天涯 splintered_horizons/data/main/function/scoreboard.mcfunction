@@ -4,6 +4,8 @@ function music:scoreboard
 function weapons:scoreboard
 function effects:scoreboard
 function players:scoreboard
+function cutscene:scoreboard
+function monsters:scoreboard
 
 scoreboard objectives add duration dummy
 
@@ -12,6 +14,10 @@ scoreboard objectives add hotbar_temp dummy
 scoreboard objectives add drop minecraft.custom:minecraft.drop "丟物品"
 scoreboard objectives add global.main dummy
 scoreboard objectives add entity.dummy_mob dummy "假實體"
+scoreboard objectives add main.raycast dummy "射線追蹤"
+scoreboard objectives add main.gamerule dummy
+scoreboard objectives add main.particle dummy
+scoreboard objectives add main.difficulty dummy
 
 scoreboard objectives add death_count deathCount [{"text":" ☠ 死亡次數 ☠","color":"red"}]
 

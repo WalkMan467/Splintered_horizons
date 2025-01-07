@@ -1,0 +1,2 @@
+execute if data entity @s attack.timestamp run function monsters:chapter_1.walkman/4/clock/act/run
+execute if data entity @s interaction.timestamp run function monsters:chapter_1.walkman/4/clock/act/run

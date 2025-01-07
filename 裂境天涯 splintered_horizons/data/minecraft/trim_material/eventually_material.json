@@ -1,0 +1,8 @@
+{
+  "asset_name": "eventually_material",
+  "description": {
+    "translate": "trim_material.eventually_material",
+    "color": "#5f013f"
+  },
+  "ingredient": "minecraft:crying_obsidian"
+}

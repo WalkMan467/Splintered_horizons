@@ -1,0 +1,1 @@
+execute as @e[tag=chapter_1.walkman.3.skill] at @s facing entity @p[tag=chapter_1.walkman.3.trigger] feet run tp @s ~ ~ ~ ~ ~

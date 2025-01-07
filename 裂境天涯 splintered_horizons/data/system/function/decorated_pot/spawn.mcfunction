@@ -1,1 +1,0 @@
-summon minecraft:marker ~ ~ ~ {Tags:["decorated_pot.marker"],data:{Type:"food",Rarity:"common"}}

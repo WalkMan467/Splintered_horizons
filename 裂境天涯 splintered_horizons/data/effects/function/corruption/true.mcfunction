@@ -1,0 +1,1 @@
+execute if score @s player.health matches 4.. run damage @s 2 effects:poison by @s

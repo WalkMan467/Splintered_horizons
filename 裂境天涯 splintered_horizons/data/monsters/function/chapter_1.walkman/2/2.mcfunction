@@ -1,0 +1,1 @@
+execute as @e[tag=boss.chapter_1.walkman.2.fx] at @s run function monsters:chapter_1.walkman/2/2_1

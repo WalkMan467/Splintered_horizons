@@ -1,0 +1,1 @@
+damage @s 3 effects:decay by @s

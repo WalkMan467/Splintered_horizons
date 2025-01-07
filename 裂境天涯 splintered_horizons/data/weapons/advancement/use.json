@@ -7,12 +7,9 @@
           "components": {
             "minecraft:consumable": {
               "consume_seconds": 10000,
-              "animation": "block",
+              "animation": "none",
               "has_consume_particles": false
             }
-          },
-          "predicates": {
-            "minecraft:custom_data": "{type:\"weapon\"}"
           }
         }
       }

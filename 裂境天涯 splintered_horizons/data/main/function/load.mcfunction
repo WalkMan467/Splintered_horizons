@@ -6,7 +6,8 @@ function players:id/detect
 
 function music:main
 
-
 schedule function music:timer 1s
 
-schedule function task:reset/main 900s append
+schedule function main:timer 1s
+
+schedule function players:timer_s 1s

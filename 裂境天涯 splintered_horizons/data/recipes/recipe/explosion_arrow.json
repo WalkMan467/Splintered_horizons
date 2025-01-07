@@ -12,16 +12,16 @@
           "explosion_arrow"
         ]
       },
-      "minecraft:custom_name": "{\"bold\":true,\"color\":\"dark_purple\",\"italic\":false,\"fallback\":\"Explosion Arrow\",\"translate\":\"weapon.explosion_arrow\"}",
+      "minecraft:custom_name": "{\"bold\":true,\"color\":\"dark_green\",\"italic\":false,\"fallback\":\"Explosion Arrow\",\"translate\":\"weapon.explosion_arrow\"}",
       "minecraft:lore": [
         "{\"bold\":false,\"color\":\"dark_gray\",\"fallback\":\"arrow\",\"italic\":false,\"translate\":\"weapon.type.1\"}",
         "{\"text\":\"\"}",
         "{\"bold\":false,\"color\":\"blue\",\"fallback\":\"This guy is not to be messed with;\",\"italic\":false,\"translate\":\"weapon.explosion_arrow.desc.1\"}",
         "{\"bold\":false,\"color\":\"blue\",\"fallback\":\"it will explode immediately upon touching a block or an enemy.\",\"italic\":false,\"translate\":\"weapon.explosion_arrow.desc.2\"}",
         "{\"text\":\"\"}",
-        "{\"bold\":true,\"color\":\"dark_purple\",\"fallback\":\"[Explosion]\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":[{\"text\":\"\",\"bold\":true,\"italic\":false}]},\"italic\":false,\"translate\":\"weapon.explosion_arrow.desc.3\"}",
-        "{\"bold\":false,\"color\":\"light_purple\",\"fallback\":\"Hitting an enemy or block will cause an explosion,\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":[{\"text\":\"\",\"bold\":true,\"italic\":false}]},\"italic\":false,\"translate\":\"weapon.explosion_arrow.desc.4\"}",
-        "{\"bold\":false,\"color\":\"light_purple\",\"fallback\":\"dealing 8 points of explosive damage to enemies within a 4-block radius.\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":[{\"text\":\"\",\"bold\":true,\"italic\":false}]},\"italic\":false,\"translate\":\"weapon.explosion_arrow.desc.5\"}"
+        "{\"bold\":true,\"color\":\"dark_green\",\"fallback\":\"[Explosion]\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":[{\"text\":\"\",\"bold\":true,\"italic\":false}]},\"italic\":false,\"translate\":\"weapon.explosion_arrow.desc.3\"}",
+        "{\"bold\":false,\"color\":\"green\",\"fallback\":\"Hitting an enemy or block will cause an explosion,\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":[{\"text\":\"\",\"bold\":true,\"italic\":false}]},\"italic\":false,\"translate\":\"weapon.explosion_arrow.desc.4\"}",
+        "{\"bold\":false,\"color\":\"green\",\"fallback\":\"dealing 8 points of explosive damage to enemies within a 4-block radius.\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":[{\"text\":\"\",\"bold\":true,\"italic\":false}]},\"italic\":false,\"translate\":\"weapon.explosion_arrow.desc.5\"}"
       ],
       "minecraft:custom_data": {
         "id": "explosion_arrow",

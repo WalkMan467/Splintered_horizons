@@ -1,0 +1,1 @@
+execute as @s[tag=entity.soul_lock.spawnpoint] at @s if data entity @s {OnGround:1b} if score @s player.id = @p player.id run function items:type/soul_lock/run

@@ -8,5 +8,10 @@
 
     # 破碎之都
 
-    execute if biome ~ ~ ~ world_area:chapter_1/broken_city run advancement grant @s only world_area:chapter_1/broken_city/in
+    execute if entity @s[tag=!cutscene.opening] if biome ~ ~ ~ world_area:chapter_1/broken_city run advancement grant @s only world_area:chapter_1/broken_city/in
     execute unless biome ~ ~ ~ world_area:chapter_1/broken_city run advancement grant @s only world_area:chapter_1/broken_city/out
+
+    # 深淵之墟
+
+    execute if biome ~ ~ ~ world_area:chapter_1/abyssal_ruins run advancement grant @s only world_area:chapter_1/abyssal_ruins/in
+    execute unless biome ~ ~ ~ world_area:chapter_1/abyssal_ruins run advancement grant @s only world_area:chapter_1/abyssal_ruins/out

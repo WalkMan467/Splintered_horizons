@@ -1,0 +1,26 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:wither_skeleton_skull"
+      },
+      "title": {
+        "translate": "effect.minecraft.luck"
+      },
+      "description": "effect.decat.story.1",
+      "frame": "task"
+    },
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible"
+      }
+    },
+    "requirements": [
+      [
+        "requirement"
+      ]
+    ],
+    "rewards": {
+      "function": "effects:tips/decay",
+      "experience": 0
+    }
+  }

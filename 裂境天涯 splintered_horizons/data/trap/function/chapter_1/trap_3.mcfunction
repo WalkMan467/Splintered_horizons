@@ -1,0 +1,1 @@
+advancement revoke @s only trap:chapter_1/trap_3

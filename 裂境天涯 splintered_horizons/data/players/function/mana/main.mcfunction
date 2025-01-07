@@ -1,0 +1,1 @@
+execute as @s[gamemode=!spectator] run function players:mana/bar

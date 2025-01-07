@@ -1,0 +1,1 @@
+execute as @n[tag=cutscene.opening.1,limit=1,type=block_display] at @s run tp @s 10008.5 117.0 10180.0 0 10

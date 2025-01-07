@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:smithing_trim",
+  "addition": "#minecraft:trimmable_armor",
+  "base": "#minecraft:trim_materials",
+  "template": [
+    "minecraft:crying_obsidian"
+  ]
+}

@@ -1,0 +1,4 @@
+
+# scoreboard
+
+function particle:scoreboard

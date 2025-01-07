@@ -1,0 +1,1 @@
+function particle:space_rupture/ground_ash/end

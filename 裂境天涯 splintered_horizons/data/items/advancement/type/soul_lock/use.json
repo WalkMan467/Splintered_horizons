@@ -1,0 +1,28 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:player_killed_entity",
+        "conditions": {
+          "player": {
+            "slots": {
+              "weapon.offhand": {
+                "predicates": {
+                  "minecraft:custom_data": {
+                    "item": "soul_lock"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "requirements": [
+      [
+        "requirement"
+      ]
+    ],
+    "rewards": {
+      "function": "items:type/soul_lock/use"
+    }
+  }

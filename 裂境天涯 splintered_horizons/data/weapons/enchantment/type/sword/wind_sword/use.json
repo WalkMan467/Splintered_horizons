@@ -14,8 +14,8 @@
             "condition": "minecraft:entity_scores",
             "entity": "attacker",
             "scores": {
-              "player.defense_point": {
-                "min": 3
+              "player.mana": {
+                "min": 20
               }
             }
           },

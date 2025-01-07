@@ -1,10 +1,10 @@
 
 # player
-scoreboard players remove @s[scores={player.defense_point=3..}] player.defense_point 3
+scoreboard players remove @s[scores={player.mana=20..}] player.mana 20
 
 tag @s add wind_sword.user
-scoreboard players set @s wind_sword.cd 8
-scoreboard players set @s wind_sword.timer 0
+scoreboard players set @s weapon.wind_sword.cd 8
+scoreboard players set @s weapon.wind_sword.timer 0
 
 # particle
 tellraw @s [{"text":"[","color":"green","bold":true},{"text":"風速斬","color":"dark_green","bold":true},{"text":"] ","color":"green","bold":true},{"text":"發動！","color":"green","bold":true}]
