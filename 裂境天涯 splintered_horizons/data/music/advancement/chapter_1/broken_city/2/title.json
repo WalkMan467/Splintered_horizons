@@ -1,0 +1,12 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible",
+        "conditions": {}
+      }
+    },
+    "rewards": {
+      "function": "music:chapter_1/broken_city/2/title"
+    }
+  }
+  

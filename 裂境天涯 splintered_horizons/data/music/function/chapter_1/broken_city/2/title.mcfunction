@@ -1,0 +1,1 @@
+tellraw @s [{"text":"\n=================================\n\n"},{"translate": "music.name","fallback": "Music Name"},": ",{"translate": "music.etude_op.8_no.12","fallback": "Etude Op.8 No.12"},"\n\n",{"translate": "music.composer","fallback": "Composer"},": ",{"translate": "music.scriabin","fallback": "Scriabin"},{"text":"\n\n=================================\n"}]

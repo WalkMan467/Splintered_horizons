@@ -1,0 +1,1 @@
+tellraw @s [{"text":"\n=================================\n\n"},{"translate": "music.name","fallback": "Music Name"},": ",{"translate": "music.moonlight.sonata","fallback": "Moonlight Sonata (Chapter 1)"},"\n\n",{"translate": "music.composer","fallback": "Composer"},": ",{"translate": "music.beethoven","fallback": "Beethoven"},{"text":"\n\n=================================\n"}]
