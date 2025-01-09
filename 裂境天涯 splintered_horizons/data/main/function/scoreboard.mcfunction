@@ -1,4 +1,3 @@
-function task:scoreboard
 function system:scoreboard
 function music:scoreboard
 function weapons:scoreboard

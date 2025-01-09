@@ -1,0 +1,1 @@
+advancement revoke @a only world_area:main/campfire/in

@@ -14,11 +14,11 @@ attribute = []
 # ----- 設定參數 ----- #
 
 
-name = ['狂風之劍', '#28778A', '木劍']
-story = {'info': ['攻速極快，','非常耐用的武器，','每個使用的人他們都說好用。'], 'color': 'blue'}
-item_data     = {'real_item': 'stone_sword', 'id': 'storm_sword', 'item_model': '""', 'custom_data': '{ultimate:1b,type:"sword",weapon:"storm_sword"}', 'max_damage': 150}
-skill    = {'is_skill': True, 'name': ['狂風', 'dark_aqua', '#23768f'], 'info': ['攻擊怪物有50%機率','在自身位置釋放強力風場','或者給敵人附加蘊風狀態。']}
-ultimate    = {'is_ultimate': True, 'name': ['狂風暴雨', 'dark_aqua', '#fceb00'], 'info': ['右鍵點擊消耗一個終焉之眼，','接下來的8秒內如果在空中手持此武器擊中敵人', '在目標位置降下降下閃電造成5點傷害。']}
+name = ['☀晨曦之光☀', '#ffd000', '石劍']
+story = {'info': ['一把由聖光作為材料鍛造出來的劍，', '在世界被深淵壟罩之後','依舊還保留了殘餘聖光的能量，', '即使黑暗時代降臨','依舊無時無刻抵抗著深淵力量。'], 'color': 'blue'}
+item_data     = {'real_item': 'stone_sword', 'id': 'divine_illumination', 'item_model': '"minecraft:sword/divine_illumination/1"', 'custom_data': '{ultimate:1b,type:"sword",weapon:"divine_illumination"}', 'max_damage': 150}
+skill    = {'is_skill': True, 'name': ['黃昏之殤', 'gold', '#fffb00'], 'info': ['當你攻擊怪物時，', '消耗20點魔力轉移你身上的','緩速、挖掘疲勞、凋零、凋零易傷', '並且給你相應的增益狀態']}
+ultimate    = {'is_ultimate': False, 'name': ['狂風暴雨', 'dark_aqua', '#ffd000'], 'info': ['消耗一個終焉之眼，接下來的8秒內如果在空中手持此武器擊中敵人', '在目標位置降下降下閃電造成5點傷害。']}
 attribute.append({'attribute': 'attack_damage', 'value': 3.5, 'slot': 'mainhand', 'operation': 'add_value'})
 attribute.append({'attribute': 'attack_speed', 'value': -2.35, 'slot': 'mainhand', 'operation': 'add_value'})
 

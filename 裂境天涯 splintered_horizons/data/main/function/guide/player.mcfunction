@@ -12,12 +12,12 @@ function players:mana/main
 
 function world_area:main/loop
 
-function task:loop/main
-
 function players:timer
 
 function trap:loop
-function weapons:type/sword/storm_sword/main
-function system:chest/user
+
+function armor:tick
 
 function weapons:scoreboard
+
+function story:chapter_1/opening/1/main

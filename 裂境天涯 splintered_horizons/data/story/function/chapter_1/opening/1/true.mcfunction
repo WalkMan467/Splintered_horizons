@@ -1,0 +1,12 @@
+execute if score #story.chapter_1.opening.1 global.main matches 1 run return fail
+scoreboard players set #story.chapter_1.opening.1 global.main 1
+
+tag @s add compfire
+
+kill @e[tag=story.chapter_1.opening.1]
+execute as @n[tag=aj.aaron.root,limit=1] run function animated_java:aaron/remove/this
+
+
+execute positioned 38 64.15 6.85 rotated 0 0 run function animated_java:aaron/summon {args:{}}
+summon minecraft:item_display 37.75 64.625 6.9375 {Tags:["story.chapter_1.opening.1"],brightness: {block: 15, sky: 15}, item: {count: 1, id: "minecraft:iron_sword"}, transformation: {left_rotation: [-0.13016956f, 0.19191396f, 0.82340604f, 0.5179068f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0000002f, 1.0000005f, 1.0000014f], translation: [0.0f, 0.0f, 0.0f]}}
+execute as @n[tag=aj.aaron.root,limit=1] run function animated_java:aaron/animations/sit_down/play
