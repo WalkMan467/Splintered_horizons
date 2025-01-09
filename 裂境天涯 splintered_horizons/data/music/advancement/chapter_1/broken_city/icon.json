@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "id": "deepslate",
+      "count": 1
+    },
+    "title": {
+      "text": "Broken City",
+      "color": "white",
+      "bold": true,
+      "italic": false
+    },
+    "description": "",
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "music:chapter_1/icon",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+  }
+}

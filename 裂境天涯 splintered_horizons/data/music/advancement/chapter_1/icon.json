@@ -1,0 +1,38 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:iron_sword",
+      "components": {
+        "minecraft:custom_model_data": {
+          "floats": [],
+          "flags": [
+            false
+          ],
+          "strings": [
+            "light_of_water_mirror"
+          ]
+        }
+      },
+      "count": 1
+    },
+    "title": {
+      "text": "Chapter 1",
+      "color": "white",
+      "bold": true,
+      "italic": false
+    },
+    "description": "",
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "music:icon",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+  }
+}

@@ -5,7 +5,7 @@
       }
     },
     "rewards": {
-      "function": "players:id/detect"
+      "function": "players:setup"
     }
   }
   

@@ -10,4 +10,6 @@ function music:main/campfire/start
 
 execute at @n[tag=system.campfire.chapter_1.1] run spawnpoint @s ~ ~ ~1.5
 
+advancement grant @s only music:main/campfire/icon
+
 advancement revoke @s only world_area:main/campfire/out

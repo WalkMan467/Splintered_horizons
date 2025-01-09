@@ -8,4 +8,6 @@ scoreboard players set @s music.chapter1.broken_city 1
 
 playsound minecraft:voice.in_world_area voice @s ~ ~1 ~ 1 1
 
+advancement grant @s only music:chapter_1/broken_city/icon
+
 advancement revoke @s only world_area:chapter_1/broken_city/out

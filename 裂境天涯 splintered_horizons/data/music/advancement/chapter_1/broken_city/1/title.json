@@ -1,12 +1,62 @@
 {
-    "criteria": {
-      "requirement": {
-        "trigger": "minecraft:impossible",
-        "conditions": {}
-      }
+  "display": {
+    "icon": {
+      "id": "minecraft:sculk_sensor",
+      "count": 1
     },
-    "rewards": {
-      "function": "music:chapter_1/broken_city/1/title"
+    "title": [
+      {
+        "translate": "music.name",
+        "color": "white",
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": ": ",
+        "color": "white",
+        "bold": false,
+        "italic": false
+      },
+      {
+        "translate": "music.moonlight.sonata",
+        "color": "white",
+        "bold": true,
+        "italic": false,
+        "underlined": false
+      }
+    ],
+    "description": [
+      {
+        "translate": "music.composer",
+        "color": "white",
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": ": ",
+        "color": "white",
+        "bold": false,
+        "italic": false
+      },
+      {
+        "translate": "music.beethoven",
+        "color": "white"
+      }
+    ],
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "music:chapter_1/broken_city/icon",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
     }
+  },
+  "rewards": {
+    "function": "music:chapter_1/broken_city/1/title"
   }
-  
+}

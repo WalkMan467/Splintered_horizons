@@ -1,12 +1,62 @@
 {
-    "criteria": {
-      "requirement": {
-        "trigger": "minecraft:impossible",
-        "conditions": {}
-      }
+  "display": {
+    "icon": {
+      "id": "minecraft:campfire",
+      "count": 1
     },
-    "rewards": {
-      "function": "music:main/campfire/title"
+    "title": [
+      {
+        "translate": "music.name",
+        "color": "white",
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": ": ",
+        "color": "white",
+        "bold": false,
+        "italic": false
+      },
+      {
+        "translate": "music.melting",
+        "color": "white",
+        "bold": true,
+        "italic": false,
+        "underlined": false
+      }
+    ],
+    "description": [
+      {
+        "translate": "music.composer",
+        "color": "white",
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": ": ",
+        "color": "white",
+        "bold": false,
+        "italic": false
+      },
+      {
+        "translate": "music.nico_cartosio",
+        "color": "white"
+      }
+    ],
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "music:main/campfire/icon",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
     }
+  },
+  "rewards": {
+    "function": "music:chapter_1/broken_city/2/title"
   }
-  
+}
