@@ -1,7 +1,14 @@
 {
   "pack": {
-     "pack_format": 57,
-     "supported_formats": {"min_inclusive": 57, "max_inclusive": 57},
-     "description": ""
+    "description": "裂境天涯 Splintered Horizons Datapack",
+    "pack_format": 61
+  },
+  "filter": {
+    "block": [
+      {
+        "namespace": "minecraft",
+        "path": "advancement/"
+      }
+    ]
   }
 }

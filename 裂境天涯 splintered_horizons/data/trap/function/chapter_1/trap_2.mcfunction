@@ -1,1 +1,0 @@
-summon minecraft:breeze_wind_charge 50 65 46 {Motion:[10.0,0.0,0.0],acceleration_power:1000}

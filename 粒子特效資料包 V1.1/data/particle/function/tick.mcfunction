@@ -6,3 +6,6 @@ function particle:sound_wave/main
 
 # 虛空場域
 function particle:void_wave/main
+
+# 相位裂縫
+execute as @e[tag=particle.space_crack.main] at @s run function particle:space_crack/main
