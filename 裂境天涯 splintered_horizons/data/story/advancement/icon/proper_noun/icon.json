@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:writable_book",
+      "components": {
+        "minecraft:enchantments": {
+          "levels": {
+            "minecraft:aqua_affinity": 1
+          },
+          "show_in_tooltip": false
+        }
+      },
+      "count": 1
+    },
+    "title": {
+      "translate": "story.icon.proper_noun",
+      "bold": true,
+      "italic": false
+    },
+    "description": "",
+    "background": "minecraft:textures/gui/advancements/backgrounds/crying_obsidian.png",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

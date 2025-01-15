@@ -14,13 +14,13 @@ attribute = []
 # ----- 設定參數 ----- #
 
 
-name = ['☀晨曦之光☀', '#ffd000', '石劍']
-story = {'info': ['一把由聖光作為材料鍛造出來的劍，', '在世界被深淵壟罩之後','依舊還保留了殘餘聖光的能量，', '即使黑暗時代降臨','依舊無時無刻抵抗著深淵力量。'], 'color': 'blue'}
-item_data     = {'real_item': 'stone_sword', 'id': 'divine_illumination', 'item_model': '"minecraft:sword/divine_illumination/1"', 'custom_data': '{ultimate:1b,type:"sword",weapon:"divine_illumination"}', 'max_damage': 150}
-skill    = {'is_skill': True, 'name': ['黃昏之殤', 'gold', '#fffb00'], 'info': ['當你攻擊怪物時，', '消耗20點魔力轉移你身上的','緩速、挖掘疲勞、凋零、凋零易傷', '並且給你相應的增益狀態']}
-ultimate    = {'is_ultimate': False, 'name': ['狂風暴雨', 'dark_aqua', '#ffd000'], 'info': ['消耗一個終焉之眼，接下來的8秒內如果在空中手持此武器擊中敵人', '在目標位置降下降下閃電造成5點傷害。']}
-attribute.append({'attribute': 'attack_damage', 'value': 3.5, 'slot': 'mainhand', 'operation': 'add_value'})
-attribute.append({'attribute': 'attack_speed', 'value': -2.35, 'slot': 'mainhand', 'operation': 'add_value'})
+name = ['夜幕', '#b30000', '石斧']
+story = {'info': ['誕生於森林月光之下的武器，', '守護著森林的夜晚，', '因為力量來原本是深淵，','在最終決戰之後力量徹底的進化。'], 'color': 'blue'}
+item_data     = {'real_item': 'stone_sword', 'id': 'night_owl', 'item_model': '"sword/night_owl/1"', 'custom_data': '{ultimate:1b,type:"sword",weapon:"night_owl"}', 'max_damage': 150}
+skill    = {'is_skill': True, 'name': ['血月之刃', 'dark_red', 'red'], 'info': ['消耗20點魔力，',"當你擊殺怪物時，",'切換【血月之刃】型態，持續 15 秒，', '【血月之刃】形態下武器獲得強化，', '並且攻擊怪物有25%機率恢復2點血量，',"如果在此狀態下擊殺怪物可以延長 5 秒持續時間。"]}
+ultimate    = {'is_ultimate': True, 'name': ['終焉之月', '#b30000', '#5a0000'], 'info': ['右鍵點擊消耗一個終焉之眼，', '開啟【終焉之月】型態持續 15 秒','大幅強化武器，', '此形態下如果攻擊會有25%機率造成大量傷害']}
+attribute.append({'attribute': 'attack_damage', 'value': 4, 'slot': 'mainhand', 'operation': 'add_value'})
+attribute.append({'attribute': 'attack_speed', 'value': -2.5, 'slot': 'mainhand', 'operation': 'add_value'})
 
 # ----- init ----- #
 
@@ -45,7 +45,7 @@ else:
 
 with open(__file__.replace("item_builder.py","#temp.mcfunction"),mode="w+",encoding="utf-8") as f:
     # id
-    f.write(f'give @p {item_data["real_item"]}[')
+    f.write(f'give @s {item_data["real_item"]}[')
     
     # item name
     f.write(f'item_name=\'[{{"translate":"weapon.{item_data["id"]}","color":"{name[1]}","italic":false,"bold":true}}]\'')

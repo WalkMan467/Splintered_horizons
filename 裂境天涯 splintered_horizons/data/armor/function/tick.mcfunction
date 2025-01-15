@@ -1,1 +1,0 @@
-function armor:type/nihilism/2/main

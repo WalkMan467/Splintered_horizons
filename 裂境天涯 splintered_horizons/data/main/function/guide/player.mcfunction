@@ -10,9 +10,9 @@ function players:disable_movement/main
 
 function players:mana/main
 
-function world_area:main/loop
-
 function players:timer
+
+function world_area:main/loop
 
 function armor:tick
 

@@ -1,4 +1,5 @@
 stopsound @s record
+stopsound @s voice minecraft:voice.in_world_area
 
 scoreboard players set @s music.chapter1.broken_city 0
 

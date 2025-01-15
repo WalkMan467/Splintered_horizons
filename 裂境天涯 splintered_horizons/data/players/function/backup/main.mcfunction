@@ -1,0 +1,2 @@
+execute if score @s player.backup.timer matches 590 run tellraw @s [{"text":"⚠: ","color":"gold"},{"text":"備份將在10秒後完成！","color":"white"}]
+execute if score @s player.backup.timer matches 600 run function players:backup/use

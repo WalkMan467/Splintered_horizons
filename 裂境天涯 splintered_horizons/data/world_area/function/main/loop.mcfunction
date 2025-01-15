@@ -18,5 +18,5 @@
     execute unless biome ~ ~ ~ #world_area:change_adventure run advancement revoke @s only world_area:main/mode_change/adventure
 
     # 營火
-    execute if entity @n[tag=system.campfire.chapter_1.1,limit=1,distance=..4] run advancement grant @s only world_area:main/campfire/in
-    execute unless entity @n[tag=system.campfire.chapter_1.1,limit=1,distance=..4] run advancement grant @s only world_area:main/campfire/out
+    execute if entity @n[tag=system.campfire,limit=1,distance=..6] run advancement grant @s only world_area:main/campfire/in
+    execute unless entity @n[tag=system.campfire,limit=1,distance=..6] run advancement grant @s only world_area:main/campfire/out

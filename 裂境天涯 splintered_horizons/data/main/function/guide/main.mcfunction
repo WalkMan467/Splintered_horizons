@@ -10,3 +10,4 @@ function weapons:main
 function system:portal/loop
 function monsters:main
 function items:type/soul_lock/main
+function system:campfire/interaction/main

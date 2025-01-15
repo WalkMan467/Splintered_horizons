@@ -1,2 +1,0 @@
-execute unless items entity @s armor.chest *[custom_data~{effects:"converter"}] run function armor:type/nihilism/2/run
-execute if items entity @s armor.chest *[custom_data~{effects:"converter"}] run function armor:type/nihilism/2/reverse_run

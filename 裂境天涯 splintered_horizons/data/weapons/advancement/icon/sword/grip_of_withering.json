@@ -1,0 +1,54 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:wooden_sword",
+      "components": {
+        "minecraft:custom_model_data": {
+          "floats": [
+            0
+          ],
+          "strings": []
+        },
+        "minecraft:item_model": "minecraft:sword/grip_of_withering/1"
+      },
+      "count": 1
+    },
+    "title": {
+      "translate": "weapon.grip_of_withering"
+    },
+    "description": [
+      {
+        "translate": "weapon.grip_of_withering.desc.1",
+        "color": "blue",
+        "bold": false,
+        "italic": false
+      },
+      {
+        "translate": "weapon.grip_of_withering.desc.2",
+        "color": "blue",
+        "bold": false,
+        "italic": false
+      }
+    ],
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "weapons:icon/orantes",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "predicates": {
+              "minecraft:custom_data": {
+                "weapon": "grip_of_withering"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

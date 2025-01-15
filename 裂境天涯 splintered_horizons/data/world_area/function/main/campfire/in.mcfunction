@@ -8,8 +8,6 @@ playsound minecraft:voice.join_game voice @s ~ ~1 ~ 0.5 1
 tag @s add campfire
 function music:main/campfire/start
 
-execute at @n[tag=system.campfire.chapter_1.1] run spawnpoint @s ~ ~ ~1.5
-
 advancement grant @s only music:main/campfire/icon
 
 advancement revoke @s only world_area:main/campfire/out
