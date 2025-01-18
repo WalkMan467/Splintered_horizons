@@ -20,3 +20,9 @@ scoreboard objectives add weapon.storm_sword.ultimate dummy "狂風之劍 大招
 
 scoreboard players add @a weapon.storm_sword.ultimate 0
 #===================================================================
+#終焉之墟
+
+scoreboard objectives add weapon.ruins_of_the_end.effect dummy "終焉之墟"
+
+scoreboard players add @a weapon.ruins_of_the_end.effect 0
+#===================================================================

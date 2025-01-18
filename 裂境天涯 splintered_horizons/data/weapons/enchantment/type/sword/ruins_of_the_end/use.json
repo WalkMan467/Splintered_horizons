@@ -1,0 +1,45 @@
+{
+    "anvil_cost": 4,
+    "description": {
+      "translate": "weapon.sword.ruins_of_the_end.use",
+      "with": [],
+      "fallback": {
+        "text": "ruins_of_the_end"
+      }
+    },
+    "effects": {
+      "minecraft:post_attack": [
+        {
+          "requirements": {
+            "condition": "minecraft:entity_scores",
+            "entity": "attacker",
+            "scores": {
+              "player.mana": {
+                "min": 20
+              }
+            }
+          },
+          "effect": {
+            "type": "minecraft:run_function",
+            "function": "weapons:type/sickle/ruins_of_the_end/use"
+          },
+          "enchanted": "attacker",
+          "affected": "victim"
+        }
+      ]
+    },
+    "max_cost": {
+      "base": 50,
+      "per_level_above_first": 0
+    },
+    "max_level": 1,
+    "min_cost": {
+      "base": 20,
+      "per_level_above_first": 0
+    },
+    "slots": [
+      "mainhand"
+    ],
+    "supported_items": "#minecraft:enchantable/crossbow",
+    "weight": 2
+  }

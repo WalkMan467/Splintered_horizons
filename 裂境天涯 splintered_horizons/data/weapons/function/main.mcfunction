@@ -13,5 +13,4 @@
 
     function weapons:type/arrows/ground_detect/main
     function weapons:type/sword/grip_of_withering/main
-    execute as @s[type=player,tag=weapon.storm_sword.ultimate] at @s run function weapons:type/sword/storm_sword/main
     function weapons:timer_t

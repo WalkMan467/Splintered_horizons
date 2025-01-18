@@ -6,9 +6,6 @@ execute if entity @s[scores={particle=20}] run playsound minecraft:entity.illusi
 execute if entity @s[scores={particle=20}] run scoreboard players reset #particle.space_crack particle
 execute if entity @s[scores={particle=20}] rotated ~3 0 run function particle:space_crack/range
 
-execute if entity @s[scores={particle=40}] run playsound minecraft:entity.generic.explode voice @a ~ ~ ~ 3 0.5
-execute if entity @s[scores={particle=40}] run playsound minecraft:block.respawn_anchor.deplete voice @a ~ ~ ~ 3 0.75
-execute if entity @s[scores={particle=40}] run playsound minecraft:block.beacon.deactivate voice @a ~ ~1 ~ 3 1
-execute if entity @s[scores={particle=40}] run particle minecraft:explosion_emitter ~ ~ ~ 0 0 0 1 1 force @a
+execute if entity @s[scores={particle=40}] run function particle:space_crack/end
 
 kill @s[scores={particle=40..}]

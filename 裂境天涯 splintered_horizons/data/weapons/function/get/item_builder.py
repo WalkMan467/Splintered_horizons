@@ -14,11 +14,11 @@ attribute = []
 # ----- 設定參數 ----- #
 
 
-name = ['夜幕', '#b30000', '石斧']
-story = {'info': ['誕生於森林月光之下的武器，', '守護著森林的夜晚，', '因為力量來原本是深淵，','在最終決戰之後力量徹底的進化。'], 'color': 'blue'}
-item_data     = {'real_item': 'stone_sword', 'id': 'night_owl', 'item_model': '"sword/night_owl/1"', 'custom_data': '{ultimate:1b,type:"sword",weapon:"night_owl"}', 'max_damage': 150}
-skill    = {'is_skill': True, 'name': ['血月之刃', 'dark_red', 'red'], 'info': ['消耗20點魔力，',"當你擊殺怪物時，",'切換【血月之刃】型態，持續 15 秒，', '【血月之刃】形態下武器獲得強化，', '並且攻擊怪物有25%機率恢復2點血量，',"如果在此狀態下擊殺怪物可以延長 5 秒持續時間。"]}
-ultimate    = {'is_ultimate': True, 'name': ['終焉之月', '#b30000', '#5a0000'], 'info': ['右鍵點擊消耗一個終焉之眼，', '開啟【終焉之月】型態持續 15 秒','大幅強化武器，', '此形態下如果攻擊會有25%機率造成大量傷害']}
+name = ['終焉之墟', '#810092', '鐮刀']
+story = {'info': ['最終決戰過後，舊宇宙迎來了終點的結局', '同時，宇宙出現了由深淵延伸的新力量「終焉」', '這把武器的誕生目前無法得知','同時也埋藏了很多秘密。'], 'color': 'blue'}
+item_data     = {'real_item': 'stone_sword', 'id': 'ruins_of_the_end', 'item_model': '"sickle/ruins_of_the_end/1"', 'custom_data': '{ultimate:1b,type:"sword",weapon:"night_owl"}', 'max_damage': 150}
+skill    = {'is_skill': True, 'name': ['終焉之鎖', '#aa00c0', '#7100b3'], 'info': ['消耗20點魔力，',"當你攻擊怪物時，",'輪流觸發以下效果:','','1.召喚終焉之鎖對敵人造成 8 點傷害', '同時給予自身','凋零易傷、挖掘加速、力量 持續 8 秒。', '2.向前方撕開裂縫，',"將怪物聚集在一起並且造成 8 點傷害，",'同時恢復 4 點血量','並給予自身 吸收II 持續 8 秒']}
+ultimate    = {'is_ultimate': False, 'name': ['終焉之月', '#aa00c0', '#7100b3'], 'info': ['右鍵點擊消耗一個終焉之眼，', '開啟【終焉之月】型態持續 15 秒','大幅強化武器，', '此形態下如果攻擊會有25%機率造成大量傷害']}
 attribute.append({'attribute': 'attack_damage', 'value': 4, 'slot': 'mainhand', 'operation': 'add_value'})
 attribute.append({'attribute': 'attack_speed', 'value': -2.5, 'slot': 'mainhand', 'operation': 'add_value'})
 

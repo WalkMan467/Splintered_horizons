@@ -41,7 +41,7 @@ execute if score .opening cutscene.story matches 1720..1840 run title @a actionb
 
 execute if score .opening cutscene.story matches 1840..1960 run title @a actionbar {"text":"這個世界似乎因為深淵導致多個時空連結在一起"}
 
-execute if score .opening cutscene.story matches 1960..2080 run title @a actionbar {"text":"我踏上了旅途，前往這充滿位置的新宇宙"}
+execute if score .opening cutscene.story matches 1960..2080 run title @a actionbar {"text":"我踏上了旅途，前往這充滿未知的新宇宙"}
 
 # score +1
 execute if score .opening cutscene.story matches 0..2080 run scoreboard players add .opening cutscene.story 1

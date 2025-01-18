@@ -6,12 +6,11 @@
         "minecraft:custom_model_data": {
           "floats": [],
           "flags": [
-            false
+            true
           ],
-          "strings": [
-            "light_of_water_mirror"
-          ]
-        }
+          "strings": []
+        },
+        "minecraft:item_model": "minecraft:sword/light_of_water_mirror/1"
       },
       "count": 1
     },
