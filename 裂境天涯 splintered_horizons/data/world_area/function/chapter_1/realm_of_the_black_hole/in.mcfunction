@@ -3,6 +3,6 @@ title @s subtitle [{"text":"֍","color":"#6d006d"},{"text":"Realm of the Black H
 title @s times 20 20 20
 
 stopsound @s voice minecraft:entity.illusioner.cast_spell
-playsound minecraft:entity.illusioner.cast_spell voice @a ~ ~1 ~ 1 0.5
+playsound minecraft:entity.illusioner.cast_spell voice @s ~ ~1 ~ 1 0.5
 
 advancement revoke @s only world_area:chapter_1/realm_of_the_black_hole/out

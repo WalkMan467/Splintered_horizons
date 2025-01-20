@@ -1,4 +1,4 @@
-function system:scoreboard
+function story:load
 function music:scoreboard
 function weapons:scoreboard
 function effects:scoreboard

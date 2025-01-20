@@ -17,5 +17,3 @@ function world_area:main/loop
 function armor:tick
 
 function weapons:scoreboard
-
-function story:chapter_1/opening/1/main

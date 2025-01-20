@@ -1,0 +1,1 @@
+scoreboard players add #story.chapter_1.opening.1_temp global.main 0
