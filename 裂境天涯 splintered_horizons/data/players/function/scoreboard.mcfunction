@@ -10,6 +10,13 @@ scoreboard objectives add player.die_detect dummy "死亡偵測"
 scoreboard objectives add player.backup dummy "玩家備份"
 scoreboard objectives add player.backup.timer dummy "玩家備份計時器"
 
+# 觸發器
+
+scoreboard objectives add backup trigger
+scoreboard objectives add backtracking trigger
+scoreboard players enable @a backup
+scoreboard players enable @a backtracking
+
 scoreboard players add #global player.ultimate 0
 
 

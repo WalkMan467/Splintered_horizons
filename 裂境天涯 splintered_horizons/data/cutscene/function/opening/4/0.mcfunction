@@ -4,4 +4,4 @@ execute in minecraft:overworld run summon minecraft:block_display 10048.50 114.3
 
 execute as @n[tag=cutscene.opening.4,limit=1,type=block_display] at @s run tp @s ~ ~5 ~-5 0 10
 
-schedule function cutscene:opening/5/use 5s
+schedule function cutscene:opening/5/use 10s

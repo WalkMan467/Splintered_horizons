@@ -1,4 +1,5 @@
 kill @e[tag=cutscene.opening.0]
+kill @e[tag=cutscene.opening.0.1]
 kill @e[tag=cutscene.opening.1]
 kill @e[tag=cutscene.opening.2]
 kill @e[tag=cutscene.opening.3]

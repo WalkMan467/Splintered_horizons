@@ -14,13 +14,13 @@ attribute = []
 # ----- 設定參數 ----- #
 
 
-name = ['終焉之墟', '#810092', '鐮刀']
-story = {'info': ['最終決戰過後，舊宇宙迎來了終點的結局', '同時，宇宙出現了由深淵延伸的新力量「終焉」', '這把武器的誕生目前無法得知','同時也埋藏了很多秘密。'], 'color': 'blue'}
-item_data     = {'real_item': 'stone_sword', 'id': 'ruins_of_the_end', 'item_model': '"sickle/ruins_of_the_end/1"', 'custom_data': '{ultimate:1b,type:"sword",weapon:"night_owl"}', 'max_damage': 150}
-skill    = {'is_skill': True, 'name': ['終焉之鎖', '#aa00c0', '#7100b3'], 'info': ['消耗20點魔力，',"當你攻擊怪物時，",'輪流觸發以下效果:','','1.召喚終焉之鎖對敵人造成 8 點傷害', '同時給予自身','凋零易傷、挖掘加速、力量 持續 8 秒。', '2.向前方撕開裂縫，',"將怪物聚集在一起並且造成 8 點傷害，",'同時恢復 4 點血量','並給予自身 吸收II 持續 8 秒']}
+name = ['水鏡之光', '#0066ff', '里程碑物品 / 劍']
+story = {'info': ['', '', '',''], 'color': 'blue'}
+item_data     = {'real_item': 'stone_sword', 'id': 'light_of_water_mirror', 'item_model': '"sword/light_of_water_mirror/1"', 'custom_data': '{ultimate:1b,type:"sword",weapon:"light_of_water_mirror"}', 'max_damage': -1}
+skill    = {'is_skill': False, 'name': ['終焉之鎖', '#aa00c0', '#7100b3'], 'info': ['消耗20點魔力，',"當你攻擊怪物時，",'輪流觸發以下效果:','','1.召喚終焉之鎖對敵人造成 8 點傷害', '同時給予自身','凋零易傷、挖掘加速、力量 持續 8 秒。', '2.向前方撕開裂縫，',"將怪物聚集在一起並且造成 8 點傷害，",'同時恢復 4 點血量','並給予自身 吸收II 持續 8 秒']}
 ultimate    = {'is_ultimate': False, 'name': ['終焉之月', '#aa00c0', '#7100b3'], 'info': ['右鍵點擊消耗一個終焉之眼，', '開啟【終焉之月】型態持續 15 秒','大幅強化武器，', '此形態下如果攻擊會有25%機率造成大量傷害']}
-attribute.append({'attribute': 'attack_damage', 'value': 4, 'slot': 'mainhand', 'operation': 'add_value'})
-attribute.append({'attribute': 'attack_speed', 'value': -2.5, 'slot': 'mainhand', 'operation': 'add_value'})
+attribute.append({'attribute': 'attack_damage', 'value': 6, 'slot': 'mainhand', 'operation': 'add_value'})
+attribute.append({'attribute': 'attack_speed', 'value': -2.3, 'slot': 'mainhand', 'operation': 'add_value'})
 
 # ----- init ----- #
 

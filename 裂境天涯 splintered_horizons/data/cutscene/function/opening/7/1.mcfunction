@@ -6,4 +6,4 @@ gamemode adventure @a
 execute if score #sendCommandFeedback main.gamerule matches 0 run gamerule sendCommandFeedback false
 execute if score #sendCommandFeedback main.gamerule matches 1 run gamerule sendCommandFeedback true
 
-schedule function cutscene:opening/end/use 17s
+schedule function cutscene:opening/end/use 29s

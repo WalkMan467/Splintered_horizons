@@ -1,0 +1,1 @@
+execute as @s[tag=spawner.abyssal_dragon] at @s run function spawner:type/abyssal_dragon/loop

@@ -14,6 +14,6 @@ function players:timer
 
 function world_area:main/loop
 
-function armor:tick
+function armors:tick
 
 function weapons:scoreboard

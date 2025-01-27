@@ -10,4 +10,7 @@ time set midnight
 weather clear
 difficulty normal
 
+scoreboard players set #monument.area_1 global.main 0
+advancement revoke @a only weapons:monument/area_1
+
 reload

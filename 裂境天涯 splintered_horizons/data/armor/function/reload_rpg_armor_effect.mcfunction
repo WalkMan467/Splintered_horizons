@@ -1,1 +1,0 @@
-advancement revoke @s only armor:type/water/eqipment

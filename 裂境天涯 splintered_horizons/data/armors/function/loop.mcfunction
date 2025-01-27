@@ -1,0 +1,2 @@
+execute as @a[predicate=armors:type/health/4] run advancement grant @s only armors:type/health/eqipment
+execute as @a[predicate=!armors:type/health/4] run advancement grant @s only armors:type/health/take_off

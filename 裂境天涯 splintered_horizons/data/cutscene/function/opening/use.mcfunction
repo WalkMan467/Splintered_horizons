@@ -3,6 +3,11 @@ weather clear
 
 execute in minecraft:overworld run forceload add 42 11 42 11
 
+schedule clear cutscene:opening/0/0
+schedule clear cutscene:opening/0/1
+schedule clear cutscene:opening/0/use
+schedule clear cutscene:opening/1/use
+schedule clear cutscene:opening/1/guide
 schedule clear cutscene:opening/1/0
 schedule clear cutscene:opening/1/1
 schedule clear cutscene:opening/1/2
@@ -27,6 +32,6 @@ schedule clear cutscene:opening/main
 function cutscene:opening/0/use
 title @a actionbar ""
 
-tag @a remove cutscene.opening
+item replace entity @a armor.head with leather_helmet[equippable={slot:"head",asset_id:"minecraft:air",camera_overlay:"minecraft:screen/cutscene"},enchantments={levels:{"minecraft:binding_curse":1},show_in_tooltip:false},enchantment_glint_override=false] 1
 
-execute as @a at @s run schedule function cutscene:opening/1/use 24s
+tag @a remove cutscene.opening

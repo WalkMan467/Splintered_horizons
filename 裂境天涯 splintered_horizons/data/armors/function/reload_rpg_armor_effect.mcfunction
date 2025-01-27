@@ -1,0 +1,1 @@
+advancement revoke @s only armors:type/health/eqipment

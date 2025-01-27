@@ -4,4 +4,4 @@ summon minecraft:block_display 10008.5 109.0 10159.0 {teleport_duration:40,Rotat
 
 function cutscene:opening/1/0
 
-schedule function cutscene:opening/1/1 2s
+schedule function cutscene:opening/1/1 6s

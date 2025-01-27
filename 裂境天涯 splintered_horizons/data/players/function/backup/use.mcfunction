@@ -1,4 +1,6 @@
 scoreboard players set @s player.backup.timer 0
+scoreboard players set @s backup 0
+scoreboard players enable @s backup
 
 tellraw @s [{"text":"⚠: ","color":"green"},{"text":"備份成功！","color":"white"}]
 playsound minecraft:entity.player.levelup voice @s ~ ~1 ~ 1 1.5

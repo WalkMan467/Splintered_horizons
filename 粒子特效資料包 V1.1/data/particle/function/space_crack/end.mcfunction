@@ -7,6 +7,8 @@ execute store result storage player x float 1 run data get entity @p[tag=weapon.
 execute store result storage player y float 1 run data get entity @p[tag=weapon.ruins_of_the_end.used] Pos[1]
 execute store result storage player z float 1 run data get entity @p[tag=weapon.ruins_of_the_end.used] Pos[2]
 
+scoreboard players set @a[tag=weapon.ruins_of_the_end.used] weapon.ruins_of_the_end.effect 1
+
 function weapons:type/sickle/ruins_of_the_end/particle with storage player
 
 data remove storage player x

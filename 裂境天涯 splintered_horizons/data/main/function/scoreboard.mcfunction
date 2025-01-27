@@ -20,4 +20,6 @@ scoreboard objectives add main.difficulty dummy
 
 scoreboard objectives add death_count deathCount [{"text":" ☠ 死亡次數 ☠","color":"red"}]
 
+scoreboard players add #monument.area_1 global.main 0
+
 scoreboard objectives add player.leave_game minecraft.custom:minecraft.leave_game "玩家離開"
