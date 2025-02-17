@@ -1,1 +1,0 @@
-$function weapons:type/$(type)/$(weapon)/ultimate/use

@@ -4,5 +4,3 @@ scoreboard players add @a[scores={player.backup.timer=0..}] player.backup.timer 
 execute if score #global player.ultimate matches 1.. run scoreboard players remove #global player.ultimate 1
 
 execute as @a[gamemode=!creative,gamemode=!spectator] at @s run function players:backup/main
-
-schedule function players:timer_s 1s

@@ -2,12 +2,9 @@
 
 execute if score #aj.performance_limit global.main matches 6.. as @e[tag=performance_limit,limit=1,sort=random] run function monsters:void
 
-# Boss
-execute as @s[tag=chapter_1.walkman] run function monsters:chapter_1.walkman/main
-execute as @s[tag=chapter_1.walkman.4.clock.act] at @s run function monsters:chapter_1.walkman/4/clock/act/main
-
-
 # Monsters
+function monsters:chapter_2/soul_sharpshooter/main
+
 execute as @s[tag=abyss_berserker] unless data entity @s {HurtTime:0s} run function monsters:abyss_berserker/run
 
 execute as @s[tag=aj.abyssal_dragon.main] run function monsters:abyssal_dragon/loop

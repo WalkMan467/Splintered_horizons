@@ -8,6 +8,6 @@ summon minecraft:block_display 42.17 67.80 11.39 {teleport_duration:59,Rotation:
 
 
 
-execute in minecraft:overworld run forceload remove 41 10 43 12
+execute in minecraft:overworld run normalload remove 41 10 43 12
 
 schedule function cutscene:opening/7/1 5t

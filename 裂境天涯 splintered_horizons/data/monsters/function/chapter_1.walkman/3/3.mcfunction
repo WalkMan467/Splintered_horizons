@@ -1,1 +1,0 @@
-execute as @e[tag=chapter_1.walkman.3.skill] run data merge entity @s {start_interpolation: 1, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [0.5f, 0.5f, 1.5f], translation: [-0.25f, -0.25f, -0.75f]}}

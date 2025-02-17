@@ -5,6 +5,8 @@ function effects:scoreboard
 function players:scoreboard
 function cutscene:scoreboard
 function monsters:scoreboard
+function items:scoreboard
+function armors:scoreboard
 
 scoreboard objectives add duration dummy
 
@@ -17,6 +19,9 @@ scoreboard objectives add main.raycast dummy "射線追蹤"
 scoreboard objectives add main.gamerule dummy
 scoreboard objectives add main.particle dummy
 scoreboard objectives add main.difficulty dummy
+scoreboard objectives add main.gamemode dummy
+scoreboard objectives add main.3d_dizziness dummy "3D暈眩"
+scoreboard objectives add main.light_sensitivity dummy "光敏感"
 
 scoreboard objectives add death_count deathCount [{"text":" ☠ 死亡次數 ☠","color":"red"}]
 

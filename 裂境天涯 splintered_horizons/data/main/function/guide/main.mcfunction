@@ -6,6 +6,8 @@
 
 execute as @s[type=!player] run function main:duration
 execute as @s[type=!#minecraft:dummy_mob] run function effects:main
+
+function armors:type/black_hole/boots/effect/main
 function weapons:main
 function system:portal/loop
 function monsters:main

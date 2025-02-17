@@ -5,10 +5,8 @@
       "count": 1
     },
     "title": {
-      "text": "Broken City",
-      "color": "white",
-      "bold": true,
-      "italic": false
+      "translate": "world_area.icon.chapter_1.broken_city",
+      "bold": true
     },
     "description": "",
     "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",

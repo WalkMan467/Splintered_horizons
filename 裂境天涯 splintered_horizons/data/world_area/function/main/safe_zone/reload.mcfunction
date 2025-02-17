@@ -1,0 +1,1 @@
+advancement revoke @a only world_area:main/safe_zone/in

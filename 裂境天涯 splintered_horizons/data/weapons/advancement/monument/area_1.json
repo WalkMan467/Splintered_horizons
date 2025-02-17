@@ -1,25 +1,47 @@
 {
-    "criteria": {
-      "requirements": {
-        "trigger": "minecraft:inventory_changed",
-        "conditions": {
-          "items": [
-            {
-              "items": "minecraft:stone_sword",
-              "count": {
-                "min": 1
-              },
-              "predicates": {
-                "minecraft:custom_data": {
-                  "weapon": "light_of_water_mirror"
-                }
-              }
-            }
+  "display": {
+    "icon": {
+      "id": "minecraft:stone_sword",
+      "components": {
+        "minecraft:custom_data": {
+          "weapon": "light_of_water_mirror"
+        },
+        "minecraft:item_model": "sword/light_of_water_mirror/1",
+        "minecraft:custom_model_data": {
+          "flags": [
+            true
           ]
         }
-      }
+      },
+      "count": 1
     },
-    "rewards": {
-      "function": "weapons:monument/area_1"
+    "title": {
+      "translate": "weapon.water_magic_sword"
+    },
+    "description": ""
+  },
+  "parent": "weapons:monument/icon",
+  "criteria": {
+    "requirements": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:stone_sword",
+            "count": {
+              "min": 1
+            },
+            "predicates": {
+              "minecraft:custom_data": {
+                "weapon": "light_of_water_mirror"
+              }
+            }
+          }
+        ]
+      }
     }
+  },
+  "rewards": {
+    "function": "weapons:monument/area_1"
   }
+}

@@ -1,3 +1,10 @@
+# 其他
+
+scoreboard objectives add weapon.eye_of_the_end.interval dummy "終焉之眼使用間隔"
+scoreboard objectives add weapon.throwing.interval dummy "投擲間隔"
+
+scoreboard players add @a weapon.eye_of_the_end.interval 0
+scoreboard players add @a weapon.throwing.interval 0
 #===================================================================
 #風力劍
 
@@ -25,4 +32,10 @@ scoreboard players add @a weapon.storm_sword.ultimate 0
 scoreboard objectives add weapon.ruins_of_the_end.effect dummy "終焉之墟"
 
 scoreboard players add @a weapon.ruins_of_the_end.effect 0
+#===================================================================
+#鉤子
+
+scoreboard objectives add weapon.hook.effect.id dummy "鉤子流水ID"
+scoreboard objectives add weapon.hook.user.id dummy "鉤子投擲者流水ID"
+
 #===================================================================

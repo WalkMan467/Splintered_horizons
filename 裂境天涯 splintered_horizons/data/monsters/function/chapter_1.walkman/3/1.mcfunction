@@ -1,2 +1,0 @@
-tag @r add chapter_1.walkman.3.trigger
-summon minecraft:block_display ~ ~5 ~ {interpolation_duration:5,teleport_duration:1,Glowing:1b,Tags:["chapter_1.walkman.3.skill"],block_state: {Name: "minecraft:crying_obsidian"}, brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 1.0f], translation: [-0.5f, -0.5f, -0.5f]}}

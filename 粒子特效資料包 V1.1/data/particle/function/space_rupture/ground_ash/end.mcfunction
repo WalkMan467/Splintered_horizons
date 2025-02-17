@@ -1,6 +1,6 @@
 
 # particle
-particle minecraft:item{item: {id: "minecraft:white_wool"}} ~ ~ ~ 0 1 0 1.5 0 force
+particle minecraft:item{item: {id: "minecraft:white_wool"}} ~ ~ ~ 0 1 0 1.5 0 normal
 
 
 kill @s

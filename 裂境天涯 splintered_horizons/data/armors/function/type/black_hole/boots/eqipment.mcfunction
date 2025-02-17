@@ -1,0 +1,1 @@
+advancement revoke @s only armors:type/black_hole/boots/take_off

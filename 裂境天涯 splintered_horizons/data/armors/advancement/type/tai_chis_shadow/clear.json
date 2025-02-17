@@ -1,0 +1,28 @@
+{
+    "criteria": {
+      "requirements": {
+        "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+          "player": {
+            "slots": {
+              "armor.chest": {
+                "predicates": {
+                  "minecraft:custom_data": {
+                    "tai_chis_shadow": true
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "requirements": [
+      [
+        "requirements"
+      ]
+    ],
+    "rewards": {
+      "function": "armors:type/tai_chis_shadow/clear"
+    }
+  }

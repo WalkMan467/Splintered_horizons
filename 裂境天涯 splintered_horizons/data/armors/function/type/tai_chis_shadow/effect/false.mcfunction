@@ -1,0 +1,1 @@
+attribute @s knockback_resistance modifier remove armor.tai_chis_shadow.effect

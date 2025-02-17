@@ -1,4 +1,4 @@
-particle flash ~ ~ ~ 0 0 0 0 1 force @a
+particle flash ~ ~ ~ 0 0 0 0 1 normal @a
 
 playsound minecraft:entity.illusioner.prepare_blindness voice @a ~ ~ ~ 3 1
 playsound minecraft:block.beacon.activate voice @a ~ ~ ~ 3 1

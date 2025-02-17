@@ -1,0 +1,9 @@
+scoreboard objectives add item.tp_book.casting dummy "傳送書詠唱"
+scoreboard objectives add item.tp_book.player_id dummy "傳送書ID紀錄"
+scoreboard objectives add item.tp_book.point.x dummy "傳送書記錄點 x"
+scoreboard objectives add item.tp_book.point.y dummy "傳送書記錄點 y"
+scoreboard objectives add item.tp_book.point.z dummy "傳送書記錄點 z"
+scoreboard objectives add item.tp_book.point.facing.x dummy "傳送書記錄點朝向 x"
+scoreboard objectives add item.tp_book.point.facing.y dummy "傳送書記錄點朝向 y"
+
+scoreboard players add @a item.tp_book.casting 0

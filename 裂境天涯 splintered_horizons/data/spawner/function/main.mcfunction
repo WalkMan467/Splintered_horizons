@@ -1,1 +1,1 @@
-execute as @s[tag=spawner.abyssal_dragon] at @s run function spawner:type/abyssal_dragon/loop
+execute as @s[tag=monsters.soul_sharpshooter.summon] at @s run function spawner:type/chapter_2/soul_sharpshooter/sunmmon

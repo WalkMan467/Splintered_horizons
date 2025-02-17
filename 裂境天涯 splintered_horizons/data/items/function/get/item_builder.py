@@ -14,9 +14,9 @@ attribute = []
 # ----- 設定參數 ----- #
 
 
-name = ['虛空蘋果', '#810092', '食物']
-story = {'info': ['擁有虛空力量的蘋果', '食用後可以獲得虛空 4 秒'], 'color': 'blue'}
-item_data     = {'real_item': 'apple', 'id': 'void_apple', 'item_model': '""', 'custom_data': '{void_apple:1b,type:"food"}'}
+name = ['傳送書', '#810092', '重要道具']
+story = {'info': ['右鍵可以使用傳送書', '等待 7 秒後即可 進入 / 離開 安全區，','施法期間如果移動會中斷'], 'color': 'blue'}
+item_data     = {'real_item': 'book', 'id': 'tp_book', 'item_model': '"tp_book/1"', 'custom_data': '{rc:1b,tp_book:1b,type:"item",id:"tp_book"}'}
 
 # ----- init ----- #
 

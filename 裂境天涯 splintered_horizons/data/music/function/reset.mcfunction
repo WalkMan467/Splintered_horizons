@@ -2,3 +2,6 @@ execute if entity @n[tag=system.campfire.chapter_1.1,limit=1,distance=..4] run s
 execute if entity @n[tag=system.campfire.chapter_1.1,limit=1,distance=..4] run return fail
 
 execute if biome ~ ~ ~ world_area:chapter_1/broken_city run scoreboard players set @s music.chapter1.broken_city 1
+execute if biome ~ ~ ~ world_area:chapter_2/land_of_finality run scoreboard players set @s music.chapter2.land_of_finality 1
+execute unless biome ~ ~ ~ world_area:chapter_2/land_of_finality run scoreboard players set @s music.chapter2.land_of_finality 0
+execute unless biome ~ ~ ~ world_area:chapter_1/broken_city run scoreboard players set @s music.chapter1.broken_city 0

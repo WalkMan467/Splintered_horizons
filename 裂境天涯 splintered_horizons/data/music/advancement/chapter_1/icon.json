@@ -15,7 +15,7 @@
       "count": 1
     },
     "title": {
-      "text": "Chapter 1",
+      "translate": "monument.icon.chapter_1",
       "color": "white",
       "bold": true,
       "italic": false

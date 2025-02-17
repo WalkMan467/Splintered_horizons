@@ -131,7 +131,7 @@
         },
         "effect": {
           "type": "minecraft:run_function",
-          "function": "weapons:type/sword/storm_sword/ultimate/lightning_bolt/use"
+          "function": "weapons:type/sword/storm_sword/rc/lightning_bolt/use"
         },
         "enchanted": "attacker",
         "affected": "victim"

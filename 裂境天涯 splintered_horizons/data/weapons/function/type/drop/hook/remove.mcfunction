@@ -1,0 +1,2 @@
+execute if score @s weapon.hook.effect.id = @n[tag=hook.effect.point] weapon.hook.effect.id run function weapons:type/drop/hook/remove
+scoreboard players add #weapons.hook.effect.point.id weapon.hook.effect.id 1

@@ -1,5 +1,0 @@
-summon item_display ~ ~1 ~ {Glowing:1b,billboard:"center",Tags:["chapter_1.walkman.4","chapter_1.walkman.4.clock"],Passengers:[{id:"minecraft:interaction",Tags:["chapter_1.walkman.4.clock.act","chapter_1.walkman.4"]},{id:"minecraft:text_display",billboard:"vertical",Tags:["chapter_1.walkman.4","chapter_1.walkman.4.clock","chapter_1.walkman.4.clock.text","chapter_1.walkman.4.clock.text.spawn"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,1f,0f],scale:[1f,1f,1f]},text:'{"bold":true,"color":"white","italic":false,"text":" "}'}],brightness:{sky:15,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0f],scale:[1f,1f,1f]},item:{id:"minecraft:clock",count:1}}
-
-execute as @e[tag=chapter_1.walkman.4.clock.text.spawn] store result score @s chapter_1.walkman.4.clock run random value 15..20
-
-tag @e[tag=chapter_1.walkman.4.clock.text.spawn] remove chapter_1.walkman.4.clock.text.spawn

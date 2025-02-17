@@ -3,6 +3,9 @@
     # 第一章
     execute if entity @s[tag=!campfire] run function world_area:chapter_1/loop
 
+    # 第二章
+    execute if entity @s[tag=!campfire] run function world_area:chapter_2/loop
+
 #==================================================
 
 # 全局

@@ -6,7 +6,7 @@
       "count": 1
     },
     "title": {
-      "text": "Other",
+      "translate": "world_area.icon.other",
       "color": "white",
       "bold": true,
       "italic": false

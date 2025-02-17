@@ -8,12 +8,10 @@ function players:hide/false
 
 function players:disable_movement/main
 
-function players:mana/main
+function players:actionbar/main
 
 function players:timer
 
 function world_area:main/loop
-
-function armors:tick
 
 function weapons:scoreboard

@@ -50,8 +50,12 @@ execute if score .opening cutscene.story matches 2120..2240 run title @a actionb
 execute if score .opening cutscene.story matches 2240..2360 run title @a actionbar {"translate":"cutscene.opening.story.19"}
 
 execute if score .opening cutscene.story matches 2360..2480 run title @a actionbar {"translate":"cutscene.opening.story.20"}
+
+execute if score .opening cutscene.story matches 2600 run title @a times 40 20 0
+execute if score .opening cutscene.story matches 2600 run title @a title {"translate":"\uE000","font":"minecraft:screen"}
+
 # score +1
-execute if score .opening cutscene.story matches 0..2480 run scoreboard players add .opening cutscene.story 1
+execute if score .opening cutscene.story matches 0..4000 run scoreboard players add .opening cutscene.story 1
 
 # loop
-execute if score .opening cutscene.story matches 0..2480 run schedule function cutscene:opening/story/0 1t
+execute if score .opening cutscene.story matches 0..4000 run schedule function cutscene:opening/story/0 1t

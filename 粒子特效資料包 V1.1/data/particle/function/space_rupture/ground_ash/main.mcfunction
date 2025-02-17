@@ -19,10 +19,10 @@ execute if score #temp global.main matches 6 run data merge entity @s {text:'{"t
 execute if score #temp global.main matches 7 run data merge entity @s {text:'{"text":"■■■■■■■■■■■","bold":true}'}
 
 # particle
-execute if score @s particle.space_rupture matches 0..6 run particle minecraft:dust{color:[0.984, 0.549, 1.0], scale:3.0} ~ ~ ~ 0 0 0 0 1 force
-execute if score @s particle.space_rupture matches 6..12 run particle minecraft:dust{color:[0.529, 0.267, 0.745], scale:3.0} ~ ~ ~ 0 0 0 0 1 force
-execute if score @s particle.space_rupture matches 13.. run particle minecraft:dust{color:[0.22, 0.302, 0.624], scale:3.0} ~ ~ ~ 0 0 0 0 1 force
-execute if score @s particle.space_rupture matches 13.. run particle minecraft:dust{color:[0.529, 0.267, 0.745], scale:3.0} ^ ^ ^-1 0.5 0 0.5 0 1 force
+execute if score @s particle.space_rupture matches 0..6 run particle minecraft:dust{color:[0.984, 0.549, 1.0], scale:3.0} ~ ~ ~ 0 0 0 0 1 normal
+execute if score @s particle.space_rupture matches 6..12 run particle minecraft:dust{color:[0.529, 0.267, 0.745], scale:3.0} ~ ~ ~ 0 0 0 0 1 normal
+execute if score @s particle.space_rupture matches 13.. run particle minecraft:dust{color:[0.22, 0.302, 0.624], scale:3.0} ~ ~ ~ 0 0 0 0 1 normal
+execute if score @s particle.space_rupture matches 13.. run particle minecraft:dust{color:[0.529, 0.267, 0.745], scale:3.0} ^ ^ ^-1 0.5 0 0.5 0 1 normal
 
 # purple ash
 scoreboard players operation #temp global.main = @s particle.space_rupture

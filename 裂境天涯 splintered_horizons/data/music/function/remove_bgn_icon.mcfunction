@@ -12,3 +12,7 @@ advancement revoke @s only music:chapter_1/icon
         advancement revoke @s only music:chapter_1/broken_city/2/title
 
     advancement revoke @s only music:chapter_1/abyssal_ruins/title
+
+advancement revoke @s only music:chapter_2/icon
+
+        advancement revoke @s only music:chapter_2/land_of_finality/icon

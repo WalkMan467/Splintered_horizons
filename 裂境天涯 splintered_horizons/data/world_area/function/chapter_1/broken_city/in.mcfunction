@@ -1,5 +1,5 @@
-title @s title ["",{"text":"🌧","color":"gold"},{"text":"破碎之都","underlined":true,"color":"gold"},{"text":"🌧","color":"gold"}]
-title @s subtitle [{"text":"🌧","color":"gold"},{"text":"Broken City","italic":true,"underlined":true,"color":"gold"},{"text":"🌧","color":"gold"}]
+title @s title ["",{"text":"🌧","color":"gold"},{"translate":"world_area.icon.chapter_1.broken_city","underlined":true,"color":"gold"},{"text":"🌧","color":"gold"}]
+title @s subtitle [{"text":""},{"text":"《","bold":true,"color":"gold"},{"translate":"monument.icon.chapter_1","bold":true,"color":"gold"},{"text":"》","bold":true,"color":"gold"}]
 title @s times 20 20 20
 
 stopsound @s record

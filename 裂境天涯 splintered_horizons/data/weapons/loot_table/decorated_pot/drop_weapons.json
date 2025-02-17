@@ -91,7 +91,13 @@
                 {
                   "function": "minecraft:set_components",
                   "components": {
-                    "minecraft:custom_data": "{type:\"drop_weapon\",id:\"broken_glass\"}"
+                    "minecraft:custom_data": "{type:\"drop\",weapon:\"broken_glass\",rc:1b}",
+                    "minecraft:item_model": "drop/broken_glass/1",
+                    "minecraft:consumable": {
+                      "consume_seconds": 10000,
+                      "animation": "none",
+                      "has_consume_particles": false
+                    }
                   }
                 }
               ]

@@ -6,6 +6,9 @@
 
 # 第一章
 
+    # Main
+    execute if biome ~ ~ ~ #world_area:chapter_1 run advancement grant @s only music:chapter_1/icon
+
     # 破碎之都
 
     execute if entity @s[gamemode=!spectator] if biome ~ ~ ~ world_area:chapter_1/broken_city run advancement grant @s only world_area:chapter_1/broken_city/in

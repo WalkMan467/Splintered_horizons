@@ -9,6 +9,8 @@ scoreboard objectives add player.ultimate dummy "玩家爆發"
 scoreboard objectives add player.die_detect dummy "死亡偵測"
 scoreboard objectives add player.backup dummy "玩家備份"
 scoreboard objectives add player.backup.timer dummy "玩家備份計時器"
+scoreboard objectives add player.actionbar.state_machine dummy "玩家 actionbar 狀態機"
+scoreboard objectives add player.actionbar.state_machine.timer dummy "玩家 actionbar 狀態機持續時間"
 
 # 觸發器
 
@@ -22,3 +24,4 @@ scoreboard players add #global player.ultimate 0
 
 scoreboard players add @a player.backup 0
 scoreboard players add @a player.backup.timer 0
+scoreboard players add @a player.actionbar.state_machine 0
