@@ -1,7 +1,7 @@
 time set midnight
 weather clear
 
-execute in minecraft:overworld run normalload add 42 11 42 11
+execute in minecraft:overworld run forceload add 42 11 42 11
 
 function animated_java:aska/remove/all
 function animated_java:oceanid/remove/all
