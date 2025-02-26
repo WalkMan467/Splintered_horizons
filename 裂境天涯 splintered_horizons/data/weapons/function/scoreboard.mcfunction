@@ -39,3 +39,7 @@ scoreboard objectives add weapon.hook.effect.id dummy "鉤子流水ID"
 scoreboard objectives add weapon.hook.user.id dummy "鉤子投擲者流水ID"
 
 #===================================================================
+# 晨光
+
+scoreboard objectives add weapon.morning_light.motion dummy "晨光 Motion"
+scoreboard objectives add weapon.morning_light.cd dummy "晨光 cd"

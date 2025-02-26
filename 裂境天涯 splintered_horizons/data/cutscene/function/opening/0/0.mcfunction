@@ -8,6 +8,8 @@ playsound minecraft:bgm.opening_bgm record @s ~ ~ ~
 
 function cutscene:opening/remove_camera
 
+forceload add 9999 10070 9999 10070
+
 summon minecraft:block_display 9999 95 10070 {Rotation:[180.0f,-5.0f],Tags:["cutscene.opening.0"],block_state: {Name: "minecraft:air"}, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 1.0f], translation: [-0.5f, -0.5f, -0.5f]}}
 
 

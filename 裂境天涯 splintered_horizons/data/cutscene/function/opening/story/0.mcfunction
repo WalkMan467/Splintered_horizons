@@ -51,7 +51,8 @@ execute if score .opening cutscene.story matches 2240..2360 run title @a actionb
 
 execute if score .opening cutscene.story matches 2360..2480 run title @a actionbar {"translate":"cutscene.opening.story.20"}
 
-execute if score .opening cutscene.story matches 2600 run title @a times 40 20 0
+execute if score .opening cutscene.story matches 2600 run title @a[scores={main.light_sensitivity=0}] times 40 20 0
+execute if score .opening cutscene.story matches 2600 run title @a[scores={main.light_sensitivity=1..}] times 40 20 20
 execute if score .opening cutscene.story matches 2600 run title @a title {"translate":"\uE000","font":"minecraft:screen"}
 
 # score +1

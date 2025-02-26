@@ -13,4 +13,6 @@ function system:portal/loop
 function monsters:main
 function items:type/soul_lock/main
 function system:campfire/interaction/main
+function system:sit_down/interaction/main
+
 function spawner:main

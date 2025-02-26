@@ -1,5 +1,7 @@
 tag @a add cutscene.opening
 
+function animated_java:kyle/remove/all
+
 tp @a 42.0 67.80 11.0 -90 5
 
 function cutscene:opening/remove_camera

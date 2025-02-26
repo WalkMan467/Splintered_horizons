@@ -1,9 +1,13 @@
-scoreboard players add #weapons.hook.effect.point.id weapon.hook.effect.id 1
+# 執行者 hook.effect
 
-summon area_effect_cloud ~ ~ ~ {Tags:["hook.effect.point","hook.effect.point.spawn"],Duration:100}
+summon marker ~ ~ ~ {Tags:["hook.effect.point","hook.effect.point.spawn"]}
+scoreboard players operation @n[type=marker,tag=hook.effect.point.spawn] weapon.hook.user.id = @s weapon.hook.user.id
 
-tag @n[tag=hook.effect.point.spawn,limit=1] remove hook.effect.point.spawn
+tag @n[type=marker,tag=hook.effect.point.spawn,limit=1] remove hook.effect.point.spawn
 
 particle totem_of_undying ~ ~ ~ 0 0 0 0.5 80 force @a
+playsound item.crossbow.loading_middle master @a ~ ~ ~ 10 2
 
-kill @n[tag=hook.effect,limit=1]
+kill @s
+
+function weapons:type/drop/hook/point/loop

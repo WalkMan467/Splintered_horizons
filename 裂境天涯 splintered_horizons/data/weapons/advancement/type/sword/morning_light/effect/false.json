@@ -1,0 +1,16 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible",
+        "conditions": {}
+      }
+    },
+    "requirements": [
+      [
+        "requirement"
+      ]
+    ],
+    "rewards": {
+      "function": "weapons:type/sword/morning_light/effect/false"
+    }
+  }

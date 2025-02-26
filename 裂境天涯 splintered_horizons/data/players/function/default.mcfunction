@@ -14,6 +14,10 @@ scoreboard players set @s item.tp_book.point.z 0
 scoreboard players set @s item.tp_book.point.facing.x 0
 scoreboard players set @s item.tp_book.point.facing.y 0
 
+spawnpoint @s 39 64 10
+tp @s 39 64 10 90 0
+
+scoreboard players add @a death_count 0
 
 advancement revoke @a only weapons:monument/area_1
 

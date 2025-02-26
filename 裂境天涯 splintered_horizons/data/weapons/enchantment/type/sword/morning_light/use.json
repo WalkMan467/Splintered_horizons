@@ -1,0 +1,51 @@
+{
+  "anvil_cost": 4,
+  "description": {
+    "translate": "weapon.sword.morning_light.use",
+    "with": []
+  },
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "requirements": {
+          "condition": "minecraft:entity_scores",
+          "entity": "attacker",
+          "scores": {
+            "player.mana": {
+              "min": 10
+            },
+            "weapon.morning_light.cd": -1
+          }
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "weapons:type/sword/morning_light/use"
+        },
+        "enchanted": "attacker",
+        "affected": "attacker"
+      }
+    ],
+    "minecraft:knockback": [
+      {
+        "effect": {
+          "type": "minecraft:add",
+          "value": -3
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 50,
+    "per_level_above_first": 0
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 20,
+    "per_level_above_first": 0
+  },
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "#minecraft:enchantable/crossbow",
+  "weight": 2
+}
