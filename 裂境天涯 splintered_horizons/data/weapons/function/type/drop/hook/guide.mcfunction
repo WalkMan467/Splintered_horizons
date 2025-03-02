@@ -1,5 +1,5 @@
 
-tp @s ^ ^ ^1
+tp @s ^ ^ ^1 ~ ~
 effect give @s slow_falling 2 255 true
 
 particle minecraft:crit ~ ~ ~ 0 0 0 0 1 normal @a
