@@ -6,6 +6,11 @@ playsound minecraft:voice.join_game voice @s ~ ~1 ~ 0.5 1
 
 
 tag @s add campfire
+
+stopsound @s record minecraft:bgm.moonlight_sonata
+stopsound @s record minecraft:bgm.etude_op_8_no_12
+execute as @s[tag=campfire] run function music:chapter_1/reset
+
 function music:main/campfire/start
 
 advancement grant @s only music:main/campfire/icon

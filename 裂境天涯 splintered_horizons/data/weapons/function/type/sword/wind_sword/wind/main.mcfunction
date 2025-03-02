@@ -5,7 +5,7 @@ tp @s ^ ^ ^0.6
 
     # dmg
 scoreboard players operation #this player.id = @s player.id
-execute positioned ~ ~-1.5 ~ as @n[limit=1,type=!#minecraft:dummy_mob,type=!player,distance=..2] at @s run function weapons:type/sword/wind_sword/wind/damage
+execute positioned ~ ~-1.5 ~ as @n[type=!#minecraft:dummy_mob,type=!player,distance=..2] at @s run function weapons:type/sword/wind_sword/wind/damage
 
     # reset
 execute if score @s duration matches ..0 run function weapons:type/sword/wind_sword/wind/clear

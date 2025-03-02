@@ -1,18 +1,17 @@
 # @s = all entities
 
-# Player Guide. / 玩家導向
+# 椅子
+execute as @s[tag=system.sit_down,type=interaction] run function system:sit_down/interaction/main
 
-    execute as @s[type=player] at @s run function main:guide/player
+execute as @s[type=!#dummy_mob,type=!player] at @s run function armors:type/black_hole/boots/effect/main
 
-execute as @s[type=!player] run function main:duration
-execute as @s[type=!#minecraft:dummy_mob] run function effects:main
+# 武器
+function weapons:type/core/main
 
-function armors:type/black_hole/boots/effect/main
-function weapons:main
+function main:duration
+
 function system:portal/loop
+execute as @s[type=interaction] run function system:campfire/interaction/main
 function monsters:main
-function items:type/soul_lock/main
-function system:campfire/interaction/main
-function system:sit_down/interaction/main
 
-function spawner:main
+execute as @s[type=marker] run function spawner:main

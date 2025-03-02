@@ -1,1 +1,0 @@
-scoreboard players set @s effect.corruption_delay 10

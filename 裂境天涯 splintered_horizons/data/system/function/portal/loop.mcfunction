@@ -1,1 +1,1 @@
-execute as @s[tag=portal] if entity @p[distance=..19] run function system:portal/guide
+execute as @s[tag=portal,type=marker] if entity @p[distance=..19] run function system:portal/guide

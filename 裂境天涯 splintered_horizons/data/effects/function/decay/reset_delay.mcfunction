@@ -1,2 +1,0 @@
-scoreboard players set @s[nbt={active_effects:[{id:"minecraft:wither",amplifier:1b}]}] effect.decay_delay 20
-scoreboard players set @s[nbt={active_effects:[{id:"minecraft:wither",amplifier:2b}]}] effect.decay_delay 10

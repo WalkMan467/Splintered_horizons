@@ -2,4 +2,4 @@
     $function monsters:$(name)/kill
 
     # Remove.
-    data remove storage boss_temp name
+    data remove storage death_temp name

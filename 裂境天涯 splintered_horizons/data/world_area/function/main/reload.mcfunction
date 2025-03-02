@@ -1,5 +1,3 @@
-function world_area:main/mode_change/reload
-
 function world_area:main/campfire/reload
 
 function world_area:main/safe_zone/reload

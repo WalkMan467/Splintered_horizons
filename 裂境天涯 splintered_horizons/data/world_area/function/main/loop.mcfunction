@@ -10,16 +10,15 @@
 
 # 全局
 
-    # 生存模式區域
+    # 冒險模式區域二級鎖
 
-    execute if entity @s[gamemode=!spectator] if biome ~ ~ ~ #world_area:change_survival run advancement grant @s only world_area:main/mode_change/survival
-    execute unless biome ~ ~ ~ #world_area:change_survival run advancement revoke @s only world_area:main/mode_change/survival
-
-    # 冒險模式區域
-
-    execute if entity @s[gamemode=!spectator] if biome ~ ~ ~ #world_area:change_adventure run advancement grant @s only world_area:main/mode_change/adventure
+    execute if biome ~ ~ ~ #world_area:change_adventure run advancement grant @s[gamemode=survival] only world_area:main/mode_change/adventure
     execute unless biome ~ ~ ~ #world_area:change_adventure run advancement revoke @s only world_area:main/mode_change/adventure
 
     # 營火
     execute if entity @s[gamemode=!spectator] if entity @n[tag=system.campfire,limit=1,distance=..6] run advancement grant @s only world_area:main/campfire/in
     execute unless entity @n[tag=system.campfire,limit=1,distance=..6] run advancement grant @s only world_area:main/campfire/out
+
+    # 冒險 / 生存模式區域偵測
+    execute if function #world_area:mode_change/adventure run return run advancement grant @s[gamemode=survival] only world_area:main/mode_change/adventure
+    execute as @s[gamemode=adventure] run function world_area:main/mode_change/survival

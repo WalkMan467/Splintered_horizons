@@ -29,9 +29,8 @@ scoreboard players add @a weapon.storm_sword.ultimate 0
 #===================================================================
 #終焉之墟
 
-scoreboard objectives add weapon.ruins_of_the_end.effect dummy "終焉之墟"
+scoreboard objectives add weapon.ruins_of_the_end.effect.range dummy "終焉之墟 技能距離"
 
-scoreboard players add @a weapon.ruins_of_the_end.effect 0
 #===================================================================
 #鉤子
 

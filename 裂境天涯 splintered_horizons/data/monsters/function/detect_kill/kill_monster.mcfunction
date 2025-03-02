@@ -2,8 +2,8 @@
 
     # 用 macro 省窮舉法問題
 
-    execute on passengers run data modify storage boss_temp name set from entity @s data.Boss[0]
-    execute on passengers if data entity @s data.Boss[0] on vehicle if entity @p[distance=..60] run function monsters:detect_kill/run with storage boss_temp
+    execute on passengers run data modify storage death_temp name set from entity @s data.Death
+    execute on passengers if data entity @s data.Death on vehicle if entity @p[distance=..60] run function monsters:detect_kill/run with storage death_temp
     execute on passengers as @s[type=marker,tag=monster.marker] run kill @s
 
 

@@ -1,7 +1,6 @@
 function story:load
 function music:scoreboard
 function weapons:scoreboard
-function effects:scoreboard
 function players:scoreboard
 function cutscene:scoreboard
 function monsters:scoreboard
