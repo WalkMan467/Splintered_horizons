@@ -1,0 +1,42 @@
+[
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "attribute": "minecraft:attack_damage",
+        "id": "base_attack_damage",
+        "amount": 4,
+        "operation": "add_value",
+        "slot": "mainhand"
+      },
+      {
+        "attribute": "minecraft:attack_speed",
+        "id": "base_attack_speed",
+        "amount": -2.2,
+        "operation": "add_value",
+        "slot": "mainhand"
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_custom_model_data",
+    "floats": {
+      "values": [
+        1
+      ],
+      "mode": "replace_all"
+    },
+    "conditions": []
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:enchantments": {
+        "levels": {
+          "weapons:type/sword/grip_of_withering/use": 1
+        },
+        "show_in_tooltip": false
+      }
+    }
+  }
+]

@@ -3,3 +3,4 @@ scoreboard objectives add music.chapter1.broken_city.rdm dummy "[音樂]: 破碎
 scoreboard objectives add music.chapter1.abyssal_ruins dummy "[音樂]: 深淵之墟BGM"
 scoreboard objectives add music.main.campfire dummy "[音樂]: 營火BGM"
 scoreboard objectives add music.chapter2.land_of_finality dummy "[音樂]: 終焉之地BGM"
+scoreboard objectives add music.main.safe_zone dummy "[音樂]: 安全區BGM"

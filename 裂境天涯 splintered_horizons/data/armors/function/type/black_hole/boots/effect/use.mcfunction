@@ -1,3 +1,6 @@
 execute positioned ~ ~-0.75 ~ run function particle:space_rupture/use
-
+scoreboard players reset @s armor.black_hole.boots.effect
 summon minecraft:area_effect_cloud ~ ~ ~ {Duration:20,Tags:["armor.black_hole.effect"]}
+
+attribute @s movement_speed modifier remove armor.black_hole.animation.boots
+attribute @s jump_strength modifier remove armor.black_hole.animation.boots

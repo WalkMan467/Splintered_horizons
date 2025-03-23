@@ -3,19 +3,18 @@
     "requirement": {
       "trigger": "minecraft:player_killed_entity",
       "conditions": {
-        "entity": {
-          "effects": {
-            "minecraft:wither": {
-              "amplifier": {
-                "min": 0,
-                "max": 255
-              },
-              "duration": {
-                "min": 1
+        "player": {
+          "slots": {
+            "weapon.mainhand": {
+              "predicates": {
+                "minecraft:custom_data": {
+                  "weapon": "grip_of_withering"
+                }
               }
             }
           }
-        }
+        },
+        "entity": {}
       }
     }
   },

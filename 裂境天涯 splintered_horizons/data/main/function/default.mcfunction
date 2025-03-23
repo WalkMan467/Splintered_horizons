@@ -9,6 +9,7 @@ advancement revoke @a only players:setup
 time set midnight
 weather clear
 difficulty normal
+kill @e[tag=system.monument_point.sword]
 
 scoreboard players set #monument.area_1 global.main 0
 advancement revoke @a only weapons:monument/area_1

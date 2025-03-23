@@ -1,4 +1,5 @@
 tag @a remove cutscene.opening
+
 function cutscene:opening/remove_camera
 
 execute in minecraft:overworld run function cutscene:opening/remove_forceload

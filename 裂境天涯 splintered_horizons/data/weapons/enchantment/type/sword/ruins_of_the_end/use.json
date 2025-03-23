@@ -1,10 +1,10 @@
 {
     "anvil_cost": 4,
     "description": {
-      "translate": "weapon.sword.ruins_of_the_end.use",
+      "translate": "weapon.sword.ruins_of_the_finality.use",
       "with": [],
       "fallback": {
-        "text": "ruins_of_the_end"
+        "text": "ruins_of_the_finality"
       }
     },
     "effects": {
@@ -21,7 +21,7 @@
           },
           "effect": {
             "type": "minecraft:run_function",
-            "function": "weapons:type/sickle/ruins_of_the_end/use"
+            "function": "weapons:type/scythe/ruins_of_the_finality/use"
           },
           "enchanted": "attacker",
           "affected": "victim"

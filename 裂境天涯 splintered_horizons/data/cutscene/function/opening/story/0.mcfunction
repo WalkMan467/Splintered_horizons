@@ -51,10 +51,14 @@ execute if score .opening cutscene.story matches 2240..2360 run title @a actionb
 
 execute if score .opening cutscene.story matches 2360..2480 run title @a actionbar {"translate":"cutscene.opening.story.20"}
 
-execute if score .opening cutscene.story matches 2600 run title @a[scores={main.light_sensitivity=0}] times 40 20 0
-execute if score .opening cutscene.story matches 2600 run title @a[scores={main.light_sensitivity=1..}] times 40 20 20
+execute if score .opening cutscene.story matches 2600 run title @a times 40 20 0
 execute if score .opening cutscene.story matches 2600 run title @a title {"translate":"\uE000","font":"minecraft:screen"}
+execute if score .opening cutscene.story matches 2650 run function cutscene:opening/6/1
 
+
+execute if score .opening cutscene.story matches 2628 run function animated_java:kyle/remove/all
+execute if score .opening cutscene.story matches 2628 positioned 9998 93 10066 rotated 180 0 run function animated_java:kyle/summon {args:{}}
+execute if score .opening cutscene.story matches 2628 as @n[tag=aj.kyle.root] run function animated_java:kyle/animations/cutscene_attack_1/play
 # score +1
 execute if score .opening cutscene.story matches 0..4000 run scoreboard players add .opening cutscene.story 1
 

@@ -1,0 +1,1 @@
+scoreboard players remove @s[scores={armor.black_hole.boots.effect=1..}] armor.black_hole.boots.effect 1

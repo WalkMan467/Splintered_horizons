@@ -3,8 +3,7 @@ title @s title {"text":"\uE000","font":"minecraft:screen"}
 
 scoreboard players set .opening cutscene.story 0
 
-stopsound @s record
-playsound minecraft:bgm.opening_bgm record @s ~ ~ ~
+schedule function cutscene:opening/0/music 3.45s
 
 function cutscene:opening/remove_camera
 

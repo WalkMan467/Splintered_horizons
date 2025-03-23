@@ -8,7 +8,7 @@
           "weight": 50
         },
         {
-          "type": "minecraft:alternatives",
+          "type": "minecraft:group",
           "children": [
             {
               "type": "minecraft:item",
@@ -101,25 +101,114 @@
                   }
                 }
               ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:poisonous_potato",
+              "weight": 40,
+              "quality": 20,
+              "functions": [
+                {
+                  "function": "minecraft:set_name",
+                  "entity": "this",
+                  "name": {
+                    "translate": "weapons.hook",
+                    "fallback": "Hook",
+                    "color": "white",
+                    "bold": true,
+                    "italic": false
+                  }
+                },
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 1,
+                    "max": 2
+                  }
+                },
+                {
+                  "function": "minecraft:set_lore",
+                  "entity": "this",
+                  "lore": [
+                    [
+                      {
+                        "translate": "weapons.drop_weapons",
+                        "fallback": "Throwable Item",
+                        "color": "#686868",
+                        "bold": false,
+                        "italic": false
+                      }
+                    ]
+                  ],
+                  "mode": "replace_all"
+                },
+                {
+                  "function": "minecraft:set_lore",
+                  "entity": "this",
+                  "lore": [
+                    {
+                      "text": " "
+                    }
+                  ],
+                  "mode": "append"
+                },
+                {
+                  "function": "minecraft:set_lore",
+                  "entity": "this",
+                  "lore": [
+                    {
+                      "translate": "weapons.hook.lore.1",
+                      "fallback": "Toss a glass pane,",
+                      "color": "blue",
+                      "bold": false,
+                      "italic": false
+                    }
+                  ],
+                  "mode": "append"
+                },
+                {
+                  "function": "minecraft:set_lore",
+                  "entity": "this",
+                  "lore": [
+                    {
+                      "translate": "weapons.hook.lore.2",
+                      "color": "blue",
+                      "bold": false,
+                      "italic": false
+                    }
+                  ],
+                  "mode": "append"
+                },
+                {
+                  "function": "minecraft:set_components",
+                  "components": {
+                    "minecraft:custom_data": "{type:\"drop\",weapon:\"hook\",rc:1b}",
+                    "minecraft:consumable": {
+                      "consume_seconds": 10000,
+                      "animation": "none",
+                      "has_consume_particles": false
+                    },
+                    "minecraft:item_model": "minecraft:iron_hoe"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:arrow",
+              "weight": 40,
+              "quality": 20,
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 5,
+                    "max": 8
+                  }
+                }
+              ]
             }
           ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:arrow",
-          "weight": 40,
-          "quality": 20,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 5,
-                "max": 8
-              },
-              "conditions": []
-            }
-          ],
-          "conditions": []
         }
       ]
     }

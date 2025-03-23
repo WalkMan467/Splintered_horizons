@@ -1,0 +1,37 @@
+[
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "attribute": "minecraft:attack_damage",
+        "id": "base_attack_damage",
+        "amount": 3,
+        "operation": "add_value",
+        "slot": "mainhand"
+      },
+      {
+        "attribute": "minecraft:attack_speed",
+        "id": "base_attack_speed",
+        "amount": -2.4,
+        "operation": "add_value",
+        "slot": "mainhand"
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_custom_model_data",
+    "floats": {
+      "values": [
+        0
+      ],
+      "mode": "replace_all"
+    },
+    "conditions": []
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "!minecraft:enchantments": {}
+    }
+  }
+]

@@ -4,15 +4,15 @@
     "has_precipitation": true,
     "creature_spawn_probability": 0,
     "effects": {
-      "sky_color": 9276813,
-      "fog_color": 4212557,
-      "water_color": 9276813,
-      "water_fog_color": 4212557,
-      "grass_color": 4212557,
-      "foliage_color": 13619151,
+      "sky_color": 3431796,
+      "fog_color": 12638463,
+      "water_color": 799552,
+      "water_fog_color": 26987,
+      "grass_color": 372130,
+      "foliage_color": 2663664,
       "particle": {
         "options": {
-          "type": "white_ash"
+          "type": "ominous_spawning"
         },
         "probability": 0.05
       }

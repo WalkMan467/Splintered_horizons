@@ -1,0 +1,7 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "nbt": "{inGround:1b,item:{components:{\"minecraft:custom_data\":{ground_detect:1b}}}}"
+    }
+  }

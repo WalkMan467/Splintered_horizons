@@ -29,6 +29,8 @@ schedule clear cutscene:opening/6/use
 schedule clear cutscene:opening/7/use
 schedule clear cutscene:opening/end/use
 
+function story:chapter_1/opening/stop
+
 schedule clear cutscene:opening/main
 
 scoreboard players set .opening cutscene.story -1

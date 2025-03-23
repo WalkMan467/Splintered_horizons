@@ -2,8 +2,8 @@
 
 # Void Arrow
 
-execute if entity @s[nbt={item:{components:{"minecraft:custom_data":{id:"void_arrow"}}}}] run tag @s add ability.failure
-execute if entity @s[nbt={item:{components:{"minecraft:custom_data":{id:"void_arrow"}}}}] on origin unless entity @s[nbt={active_effects:[{id:"minecraft:wither"}]}] run return fail
+execute if predicate weapons:type/arrows/ground_detect/void_arrow run tag @s add ability.failure
+execute if predicate weapons:type/arrows/ground_detect/void_arrow on origin unless predicate weapons:type/arrows/void_arrow/wither run return fail
 
 # ==============================================
 # 無條件 Unconditionally

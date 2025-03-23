@@ -1,0 +1,1 @@
+scoreboard objectives add system.arcane_magic.cd dummy

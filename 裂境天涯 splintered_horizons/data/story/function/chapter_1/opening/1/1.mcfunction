@@ -2,53 +2,54 @@
 
 #透過scoreboard story(dummy) + schedule 指令運行整個劇情
 
+execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 1 run weather clear
+execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 1 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.1","fallback": "[？？？] 恩? 你醒了"}
+execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 2 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.2","fallback": "[你] 是你拯救了我嗎?"}
+execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 3 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.3","fallback": "[？？？] 是的"}
+execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 4 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.4","fallback": "[雨夜奈] 初次見面，我叫雨夜奈"}
+execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 5 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.5","fallback": "[雨夜奈] 在黑暗壟罩這個世界之後"}
+execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 6 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.6","fallback": "[雨夜奈] 除了你以外，我已經很久很久沒看到其他人了"}
+execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 7 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.7","fallback": "[雨夜奈] 你沉睡的時候，我恰好看到了你"}
+execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 8 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.8","fallback": "[雨夜奈] 因為四周的怪物很危險，所以我就把你送往最近的島嶼"}
+execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 9 run tellraw @a[distance=..16] [{"translate": "story.chapter_1.ml.9","fallback": "[你] 謝謝妳救了我，我叫"},{"selector": "@p","color": "gold","bold": true}]
+execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 10 run tellraw @a[distance=..16] [{"translate": "story.chapter_1.ml.10","fallback": "[雨夜奈] 真是個好聽的名子，很高興認識你，"},{"selector": "@p","color": "gold","bold": true}]
+execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 11 run tellraw @a[distance=..16] [{"translate": "story.chapter_1.ml.11","fallback": "[雨夜奈] 不過，世界已被黑暗壟罩"}]
+execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 12 run tellraw @a[distance=..16] [{"translate": "story.chapter_1.ml.12","fallback": "[雨夜奈] 你怎麼出現在這麼危險的地方"}]
+execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 13 run tellraw @a[distance=..16] [{"translate": "story.chapter_1.ml.13","fallback": "[你] 整件事或許要從很久很久以前說起"}]
+execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 14 run tellraw @a[distance=..16] [{"translate": "story.chapter_1.ml.14","fallback": "[你] 這個世界曾發生過一場慘烈的戰爭 "},{"bold":true,"color":"gold","hoverEvent":{"action":"show_text","value":[{"translate":"proper_noun.desc.1","fallback":"[專有名詞]:\n","color":"white"},{"translate": "proper_noun.desc.2","fallback":"詳情請按","color":"white","bold":false,"italic":false},{"keybind": "key.advancements","color": "dark_green"},{"translate": "proper_noun.desc.3","fallback":"尋找對應內容","color":"white","bold":false,"italic":false}]},"italic":false,"text":"光暗大戰","underlined":true}]
+execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 15 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.15","fallback": "[你] 那時深淵在那戰場中勝利了"}
+execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 16 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.16","fallback": "[你] 在世界樹即將毀滅之前，世界樹的守護者們透過力量創造了我"}
+execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 17 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.17","fallback": "[你] 並托福我收集魔劍重新決戰深淵"}
+execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 18 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.18","fallback": "[你] 我收集了很多魔劍，也找到了很多同伴"}
+execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 19 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.19","fallback": "[你] 但是最終..."}
+execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 20 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.20","fallback": "[你] 我們失敗了"}
+execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 21 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.21","fallback": "[你] 深淵把時空交錯再一起並且重起了整個宇宙"}
+execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 22 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.22","fallback": "[你] 世界也徹底陷入黑暗"}
+execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 23 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.23","fallback": "[你] 或許是因為我還有殘餘世界樹力量的庇護"}
+execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 24 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.24","fallback": "[你] 才導致我奇蹟般的逃離深淵的視線"}
+execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 25 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.25","fallback": "[你] 除了我以外的人都死於那場最終之戰"}
+execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 26 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.26","fallback": "[你] 為什麼總是我，為何一切尚未消失"}
+execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 27 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.27","fallback": "(你難過以及憤怒地說到，眼角也冒出一滴眼淚)"}
+execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 28 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.28","fallback": "[你] 命運從未公平，留下我的，只有虛無與悲傷"}
+execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 29 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.29","fallback": "[你] 所以...我得重新收集魔劍"}
+execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 30 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.30","fallback": "[你] 不過這是一個非常漫長的旅途"}
+execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 31 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.31","fallback": "[雨夜奈] 或許是命運捉弄了你..."}
+execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 32 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.32","fallback": "[雨夜奈] 你的經歷讓我想起一名昔日的故人..."}
+execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 33 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.33","fallback": "[雨夜奈] 但他已經不在了"}
+execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 34 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.34","fallback": "[雨夜奈] 我們曾經也為了擊敗深淵貢獻出最終力量"}
+execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 35 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.35","fallback": "[雨夜奈] 但最終與你一樣"}
+execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 36 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.36","fallback": "[雨夜奈] 只剩下我，同時，我也背負著一股神秘的力量"}
+execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 37 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.37","fallback": "[雨夜奈] 宇宙萬物總有盡頭，這是深淵與死亡力量的結合體"}
+execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 38 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.38","fallback": "[雨夜奈] 名為 終焉之眼 的終極力量"}
+execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 39 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.39","fallback": "[雨夜奈] 足以斬斷一切，但是力量太強會讓自身會受到反噬"}
+execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 40 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.40","fallback": "[雨夜奈] 如果可以，我想與你同行"}
+execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 41 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.41","fallback": "[雨夜奈] 或許你會需要一點裝備與食物"}
+execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 42 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.42","fallback": "[雨夜奈] 如果你準備好了，我們就離開這裡吧"}
 
-execute if score story.chapter_1.ml story.chapter_1 matches 1 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.1","fallback": "[？？？] 恩? 你醒了"}
-execute if score story.chapter_1.ml story.chapter_1 matches 2 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.2","fallback": "[你] 是你拯救了我嗎?"}
-execute if score story.chapter_1.ml story.chapter_1 matches 3 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.3","fallback": "[？？？] 是的"}
-execute if score story.chapter_1.ml story.chapter_1 matches 4 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.4","fallback": "[雨夜奈] 初次見面，我叫雨夜奈"}
-execute if score story.chapter_1.ml story.chapter_1 matches 5 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.5","fallback": "[雨夜奈] 在黑暗壟罩這個世界之後"}
-execute if score story.chapter_1.ml story.chapter_1 matches 6 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.6","fallback": "[雨夜奈] 除了你以外，我已經很久很久沒看到其他人了"}
-execute if score story.chapter_1.ml story.chapter_1 matches 7 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.7","fallback": "[雨夜奈] 你沉睡的時候，我恰好看到了你"}
-execute if score story.chapter_1.ml story.chapter_1 matches 8 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.8","fallback": "[雨夜奈] 因為四周的怪物很危險，所以我就把你送往最近的島嶼"}
-execute if score story.chapter_1.ml story.chapter_1 matches 9 run tellraw @a[distance=..16] [{"translate": "story.chapter_1.ml.9","fallback": "[你] 謝謝妳救了我，我叫"},{"selector": "@p","color": "gold","bold": true}]
-execute if score story.chapter_1.ml story.chapter_1 matches 10 run tellraw @a[distance=..16] [{"translate": "story.chapter_1.ml.10","fallback": "[雨夜奈] 真是個好聽的名子，很高興認識你，"},{"selector": "@p","color": "gold","bold": true}]
-execute if score story.chapter_1.ml story.chapter_1 matches 11 run tellraw @a[distance=..16] [{"translate": "story.chapter_1.ml.11","fallback": "[雨夜奈] 不過，世界已被黑暗壟罩"}]
-execute if score story.chapter_1.ml story.chapter_1 matches 12 run tellraw @a[distance=..16] [{"translate": "story.chapter_1.ml.12","fallback": "[雨夜奈] 你怎麼出現在這麼危險的地方"}]
-execute if score story.chapter_1.ml story.chapter_1 matches 13 run tellraw @a[distance=..16] [{"translate": "story.chapter_1.ml.13","fallback": "[你] 整件事或許要從很久很久以前說起"}]
-execute if score story.chapter_1.ml story.chapter_1 matches 14 run tellraw @a[distance=..16] [{"translate": "story.chapter_1.ml.14","fallback": "[你] 這個世界曾發生過一場慘烈的戰爭 "},{"bold":true,"color":"gold","hoverEvent":{"action":"show_text","value":[{"translate":"proper_noun.desc.1","fallback":"[專有名詞]:\n","color":"white"},{"translate": "proper_noun.desc.2","fallback":"詳情請按","color":"white","bold":false,"italic":false},{"keybind": "key.advancements","color": "dark_green"},{"translate": "proper_noun.desc.3","fallback":"尋找對應內容","color":"white","bold":false,"italic":false}]},"italic":false,"text":"光暗大戰","underlined":true}]
-execute if score story.chapter_1.ml story.chapter_1 matches 15 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.15","fallback": "[你] 那時深淵在那戰場中勝利了"}
-execute if score story.chapter_1.ml story.chapter_1 matches 16 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.16","fallback": "[你] 在世界樹即將毀滅之前，世界樹的守護者們透過力量創造了我"}
-execute if score story.chapter_1.ml story.chapter_1 matches 17 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.17","fallback": "[你] 並托福我收集魔劍重新決戰深淵"}
-execute if score story.chapter_1.ml story.chapter_1 matches 18 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.18","fallback": "[你] 我收集了很多魔劍，也找到了很多同伴"}
-execute if score story.chapter_1.ml story.chapter_1 matches 19 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.19","fallback": "[你] 但是最終..."}
-execute if score story.chapter_1.ml story.chapter_1 matches 20 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.20","fallback": "[你] 我們失敗了"}
-execute if score story.chapter_1.ml story.chapter_1 matches 21 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.21","fallback": "[你] 深淵把時空交錯再一起並且重起了整個宇宙"}
-execute if score story.chapter_1.ml story.chapter_1 matches 22 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.22","fallback": "[你] 世界也徹底陷入黑暗"}
-execute if score story.chapter_1.ml story.chapter_1 matches 23 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.23","fallback": "[你] 或許是因為我還有殘餘世界樹力量的庇護"}
-execute if score story.chapter_1.ml story.chapter_1 matches 24 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.24","fallback": "[你] 才導致我奇蹟般的逃離深淵的視線"}
-execute if score story.chapter_1.ml story.chapter_1 matches 25 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.25","fallback": "[你] 除了我以外的人都死於那場最終之戰"}
-execute if score story.chapter_1.ml story.chapter_1 matches 26 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.26","fallback": "[你] 為什麼總是我，為何一切尚未消失"}
-execute if score story.chapter_1.ml story.chapter_1 matches 27 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.27","fallback": "(你難過以及憤怒地說到，眼角也冒出一滴眼淚)"}
-execute if score story.chapter_1.ml story.chapter_1 matches 28 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.28","fallback": "[你] 命運從未公平，留下我的，只有虛無與悲傷"}
-execute if score story.chapter_1.ml story.chapter_1 matches 29 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.29","fallback": "[你] 所以...我得重新收集魔劍"}
-execute if score story.chapter_1.ml story.chapter_1 matches 30 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.30","fallback": "[你] 不過這是一個非常漫長的旅途"}
-execute if score story.chapter_1.ml story.chapter_1 matches 31 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.31","fallback": "[雨夜奈] 或許是命運捉弄了你..."}
-execute if score story.chapter_1.ml story.chapter_1 matches 32 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.32","fallback": "[雨夜奈] 你的經歷讓我想起一名昔日的故人..."}
-execute if score story.chapter_1.ml story.chapter_1 matches 33 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.33","fallback": "[雨夜奈] 但他已經不在了"}
-execute if score story.chapter_1.ml story.chapter_1 matches 34 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.34","fallback": "[雨夜奈] 我們曾經也為了擊敗深淵貢獻出最終力量"}
-execute if score story.chapter_1.ml story.chapter_1 matches 35 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.35","fallback": "[雨夜奈] 但最終與你一樣"}
-execute if score story.chapter_1.ml story.chapter_1 matches 36 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.36","fallback": "[雨夜奈] 只剩下我，同時，我也背負著一股神秘的力量"}
-execute if score story.chapter_1.ml story.chapter_1 matches 37 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.37","fallback": "[雨夜奈] 宇宙萬物總有盡頭，這是深淵與死亡力量的結合體"}
-execute if score story.chapter_1.ml story.chapter_1 matches 38 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.38","fallback": "[雨夜奈] 名為 終焉之眼 的終極力量"}
-execute if score story.chapter_1.ml story.chapter_1 matches 39 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.39","fallback": "[雨夜奈] 足以斬斷一切，但是力量太強會讓自身會受到反噬"}
-execute if score story.chapter_1.ml story.chapter_1 matches 40 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.40","fallback": "[雨夜奈] 如果可以，我想與你同行"}
-execute if score story.chapter_1.ml story.chapter_1 matches 41 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.41","fallback": "[雨夜奈] 或許你會需要一點裝備與食物"}
-execute if score story.chapter_1.ml story.chapter_1 matches 42 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.42","fallback": "[雨夜奈] 如果你準備好了，我們就離開這裡吧"}
+execute if score story.chapter_1.ml story.chapter_1 matches 43 run weather rain 120s
+execute if score story.chapter_1.ml story.chapter_1 matches 44 run function story:chapter_1/opening/2/0
 
-execute if score story.chapter_1.ml story.chapter_1 matches 44 run function story:chapter_1/opening/tips/main
 
-scoreboard players add #story.chapter_1.ml story.chapter_1 1
-playsound entity.experience_orb.pickup voice @a ~ ~1 ~ 2 1
+scoreboard players add story.chapter_1.ml story.chapter_1 1
 
-execute if score story.chapter_1.ml story.chapter_1 matches 1..44 run schedule function story:chapter_1/opening/1/1 5s
+execute if score story.chapter_1.ml story.chapter_1 matches 1..44 run schedule function story:chapter_1/opening/1/1 8s

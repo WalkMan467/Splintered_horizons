@@ -10,6 +10,8 @@ advancement revoke @s only music:chapter_1/icon
     advancement revoke @s only music:chapter_1/broken_city/icon
         advancement revoke @s only music:chapter_1/broken_city/1/title
         advancement revoke @s only music:chapter_1/broken_city/2/title
+        advancement revoke @s only music:main/safe_zone/title
+
 
     advancement revoke @s only music:chapter_1/abyssal_ruins/title
 

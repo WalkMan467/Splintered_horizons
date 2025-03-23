@@ -1,10 +1,12 @@
-give @s book[item_name='[{"translate":"item.tp_book","color":"#810092","italic":false,"bold":true}]',lore=['[{"translate":"item.tp_book.type","italic":false,"color":"dark_gray"}]','{"text":""}','[{"translate":"item.tp_book.story.1","italic":false,"color":"blue"}]','[{"translate":"item.tp_book.story.2","italic":false,"color":"blue"}]','[{"translate":"item.tp_book.story.3","italic":false,"color":"blue"}]'],item_model="tp_book/1",custom_data={rc:1b,tp_book:1b,type:"item",id:"tp_book"},consumable={consume_seconds:10000,animation:"none",has_consume_particles:false},max_stack_size=1]
+give @s quartz[item_name='[{"translate":"armor.ancient_stone","color":"#ffffff","italic":false,"bold":true}]',lore=['[{"translate":"armor.ancient_stone.type","italic":false,"color":"dark_gray"}]','{"text":""}','[{"translate":"armor.ancient_stone.story.1","italic":false,"color":"blue"}]'],attribute_modifiers=[{id:"offhand.1",type:"attack_speed",amount:0.25,operation:"add_value",slot:"offhand"}],max_stack_size=1,unbreakable={},custom_data={type:"item",id:"ancient_stone"}]
 
-# "item.tp_book" : "傳送書"
-# "item.tp_book.type" : "重要道具"
-# "item.tp_book.story.1" : "右鍵可以使用傳送書"
-# "item.tp_book.story.2" : "等待 7 秒後即可 進入 / 離開 安全區，"
-# "item.tp_book.story.3" : "施法期間如果移動會中斷"
+# "armor.ancient_stone" : "古老的石頭"
+# "armor.ancient_stone.type" : "副手物品"
+# "armor.ancient_stone.story.1" : ""
 
-#name = ['傳送書', '#810092', '重要道具']
-#story = {'info': ['右鍵可以使用傳送書', '等待 7 秒後即可 進入 / 離開 安全區，', '施法期間如果移動會中斷'], 'color': 'blue'}
+#name = ['古老的石頭', '#ffffff', '副手物品']
+#story = {'info': [''], 'color': 'blue'}
+#item_data     = {'real_item': 'quartz', 'id': 'ancient_stone', 'item_model': '""', 'custom_data': '{type:"item",id:"ancient_stone"}', 'max_damage': -1}
+#skill    = {'is_skill': False, 'name': ['Phase Black Hole', 'dark_aqua', '#00ccff'], 'info': ['Kills grant a charge.', 'Rapidly pressing [%s]', 'consumes 10 charges and creates a black hole.']}
+#ultimate    = {'is_ultimate': False, 'name': ['終焉之月', 'dark_aqua', '#00ccff'], 'info': ['右鍵點擊消耗一個終焉之眼，', '開啟【終焉之月】型態持續 15 秒', '大幅強化武器，', '此形態下如果攻擊會有25%機率造成大量傷害']}
+#attribute.append({'attribute': 'attack_speed', 'value': 0.25, 'slot': 'offhand', 'operation': 'add_value'})

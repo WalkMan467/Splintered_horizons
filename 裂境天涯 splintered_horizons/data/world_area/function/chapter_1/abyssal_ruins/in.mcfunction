@@ -4,7 +4,6 @@ title @s times 20 20 20
 
 attribute @s safe_fall_distance modifier add world_area.chapter_1.abyssal_ruins 1024 add_value
 
-stopsound @s record
 playsound minecraft:block.respawn_anchor.charge voice @s ~ ~ ~ 1 1
 
 advancement revoke @s only world_area:chapter_1/abyssal_ruins/out

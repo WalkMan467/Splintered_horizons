@@ -14,9 +14,9 @@ attribute = []
 # ----- 設定參數 ----- #
 
 
-name = ['Boots of the Black Hole', 'dark_purple', 'Boots']
-story = {'info': ['The old world has fallen,','and a new world shrouded in darkness has arrived.','The long boots born from the massive black hole','in the broken city absorb the energy of the black hole.'], 'color': 'blue'}
-item_data     = {'real_item': 'leather_boots', 'id': 'black_hole_boots', 'item_model': '""', 'custom_data': '{black_hole:1b,type:"armor"}', 'max_damage': -1}
+name = ['古老的石頭', '#ffffff', '副手物品']
+story = {'info': [''], 'color': 'blue'}
+item_data     = {'real_item': 'quartz', 'id': 'ancient_stone', 'item_model': '""', 'custom_data': '{type:"armor"}', 'max_damage': -1}
 skill    = {'is_skill': True, 'name': ['Phase Black Hole', 'dark_aqua', '#00ccff'], 'info': ['Kills grant a charge.', 'Rapidly pressing [%s]','consumes 10 charges and creates a black hole.']}
 ultimate    = {'is_ultimate': False, 'name': ['終焉之月', 'dark_aqua', '#00ccff'], 'info': ['右鍵點擊消耗一個終焉之眼，', '開啟【終焉之月】型態持續 15 秒', '大幅強化武器，', '此形態下如果攻擊會有25%機率造成大量傷害']}
 attribute.append({'attribute': 'armor', 'value': 2, 'slot': 'chest', 'operation': 'add_value'})

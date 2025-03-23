@@ -1,0 +1,181 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:group",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:music_disc_11",
+              "functions": [
+                {
+                  "function": "minecraft:set_components",
+                  "components": {
+                    "minecraft:item_model": "minecraft:quartz",
+                    "minecraft:jukebox_playable": {
+                      "song": "minecraft:blocks",
+                      "show_in_tooltip": false
+                    }
+                  }
+                },
+                {
+                  "function": "minecraft:set_name",
+                  "entity": "this",
+                  "name": {
+                    "translate": "item.ancient_stone",
+                    "fallback": "古老的石頭",
+                    "color": "white",
+                    "bold": true,
+                    "italic": false
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:music_disc_11",
+              "functions": [
+                {
+                  "function": "minecraft:set_components",
+                  "components": {
+                    "minecraft:item_model": "minecraft:iron_nugget",
+                    "minecraft:jukebox_playable": {
+                      "song": "minecraft:blocks",
+                      "show_in_tooltip": false
+                    }
+                  }
+                },
+                {
+                  "function": "minecraft:set_name",
+                  "entity": "this",
+                  "name": {
+                    "translate": "item.military_badge",
+                    "fallback": "軍用胸徽",
+                    "color": "white",
+                    "bold": true,
+                    "italic": false
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:music_disc_11",
+              "functions": [
+                {
+                  "function": "minecraft:set_components",
+                  "components": {
+                    "minecraft:item_model": "minecraft:string",
+                    "minecraft:jukebox_playable": {
+                      "song": "minecraft:blocks",
+                      "show_in_tooltip": false
+                    }
+                  }
+                },
+                {
+                  "function": "minecraft:set_name",
+                  "entity": "this",
+                  "name": {
+                    "translate": "item.necklace",
+                    "fallback": "神秘的項鍊",
+                    "color": "white",
+                    "bold": true,
+                    "italic": false
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:music_disc_11",
+              "functions": [
+                {
+                  "function": "minecraft:set_components",
+                  "components": {
+                    "minecraft:item_model": "minecraft:feather",
+                    "minecraft:jukebox_playable": {
+                      "song": "minecraft:blocks",
+                      "show_in_tooltip": false
+                    }
+                  }
+                },
+                {
+                  "function": "minecraft:set_name",
+                  "entity": "this",
+                  "name": {
+                    "translate": "item.feather",
+                    "fallback": "能量羽毛",
+                    "color": "white",
+                    "bold": true,
+                    "italic": false
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:music_disc_11",
+              "functions": [
+                {
+                  "function": "minecraft:set_components",
+                  "components": {
+                    "minecraft:item_model": "minecraft:honeycomb",
+                    "minecraft:jukebox_playable": {
+                      "song": "minecraft:blocks",
+                      "show_in_tooltip": false
+                    }
+                  }
+                },
+                {
+                  "function": "minecraft:set_name",
+                  "entity": "this",
+                  "name": {
+                    "translate": "item.yellow_gemstone",
+                    "fallback": "黃色寶石",
+                    "color": "white",
+                    "bold": true,
+                    "italic": false
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:music_disc_11",
+              "functions": [
+                {
+                  "function": "minecraft:set_components",
+                  "components": {
+                    "minecraft:item_model": "minecraft:nautilus_shell",
+                    "minecraft:jukebox_playable": {
+                      "song": "minecraft:blocks",
+                      "show_in_tooltip": false
+                    }
+                  }
+                },
+                {
+                  "function": "minecraft:set_name",
+                  "entity": "this",
+                  "name": {
+                    "translate": "item.conch_shell",
+                    "fallback": "海神螺殼",
+                    "color": "white",
+                    "bold": true,
+                    "italic": false
+                  }
+                }
+              ]
+            }
+          ],
+          "functions": []
+        }
+      ],
+      "rolls": 1,
+      "functions": [],
+      "conditions": []
+    }
+  ],
+  "functions": []
+}

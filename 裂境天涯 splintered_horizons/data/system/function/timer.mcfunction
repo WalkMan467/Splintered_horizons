@@ -1,0 +1,1 @@
+scoreboard players remove @s[scores={system.arcane_magic.cd=1..}] system.arcane_magic.cd 1

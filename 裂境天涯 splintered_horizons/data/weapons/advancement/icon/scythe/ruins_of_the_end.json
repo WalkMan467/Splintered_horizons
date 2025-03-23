@@ -9,34 +9,34 @@
           ],
           "strings": []
         },
-        "minecraft:item_model": "minecraft:sickle/ruins_of_the_end/1"
+        "minecraft:item_model": "minecraft:scythe/ruins_of_the_finality/1"
       },
       "count": 1
     },
     "title": {
-      "translate": "weapon.ruins_of_the_end"
+      "translate": "weapon.ruins_of_the_finality"
     },
     "description": [
       {
-        "translate": "weapon.ruins_of_the_end.story.1",
+        "translate": "weapon.ruins_of_the_finality.story.1",
         "color": "blue",
         "bold": false,
         "italic": false
       },
       {
-        "translate": "weapon.ruins_of_the_end.story.2",
+        "translate": "weapon.ruins_of_the_finality.story.2",
         "color": "blue",
         "bold": false,
         "italic": false
       },
       {
-        "translate": "weapon.ruins_of_the_end.story.3",
+        "translate": "weapon.ruins_of_the_finality.story.3",
         "color": "blue",
         "bold": false,
         "italic": false
       },
       {
-        "translate": "weapon.ruins_of_the_end.story.4",
+        "translate": "weapon.ruins_of_the_finality.story.4",
         "color": "blue",
         "bold": false,
         "italic": false
@@ -55,7 +55,7 @@
           {
             "predicates": {
               "minecraft:custom_data": {
-                "weapon": "ruins_of_the_end"
+                "weapon": "ruins_of_the_finality"
               }
             }
           }

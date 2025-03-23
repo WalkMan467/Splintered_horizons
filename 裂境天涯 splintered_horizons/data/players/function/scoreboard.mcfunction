@@ -11,6 +11,9 @@ scoreboard objectives add player.backup dummy "玩家備份"
 scoreboard objectives add player.backup.timer dummy "玩家備份計時器"
 scoreboard objectives add player.actionbar.state_machine dummy "玩家 actionbar 狀態機"
 scoreboard objectives add player.actionbar.state_machine.timer dummy "玩家 actionbar 狀態機持續時間"
+scoreboard objectives add player.animation.lock dummy "強制鎖玩家動畫"
+scoreboard objectives add player.infinite.mana dummy "玩家 無限魔力"
+scoreboard objectives add player.click.interval dummy "使用間隔"
 
 # 觸發器
 
@@ -19,9 +22,11 @@ scoreboard objectives add backtracking trigger
 scoreboard players enable @a backup
 scoreboard players enable @a backtracking
 
-scoreboard players add #global player.ultimate 0
+scoreboard players add @a player.ultimate 0
+scoreboard players add @a player.infinite.mana 0
 
-
+scoreboard players add @a player.animation.lock 0
 scoreboard players add @a player.backup 0
 scoreboard players add @a player.backup.timer 0
 scoreboard players add @a player.actionbar.state_machine 0
+scoreboard players add @a player.click.interval 0

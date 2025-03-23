@@ -2,5 +2,6 @@
 execute unless entity @s[tag=aj.aska.root] run return 0
 function #animated_java:aska/as_root/pre_tick
 execute if entity @s[tag=aj.aska.animation.idle.playing] run function animated_java:aska/animations/idle/zzz/on_tick
+execute if entity @s[tag=aj.aska.animation.death.playing] run function animated_java:aska/animations/death/zzz/on_tick
 execute at @s on passengers run rotate @s ~ ~
 function #animated_java:aska/as_root/post_tick

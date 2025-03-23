@@ -1,3 +1,5 @@
+function animated_java:screen_sneak/remove/all
+
 kill @e[tag=cutscene.opening.0]
 kill @e[tag=cutscene.opening.0.1]
 kill @e[tag=cutscene.opening.1]
@@ -6,4 +8,6 @@ kill @e[tag=cutscene.opening.3]
 kill @e[tag=cutscene.opening.4]
 kill @e[tag=cutscene.opening.5]
 kill @e[tag=cutscene.opening.6]
+kill @e[tag=cutscene.opening.6.1]
+kill @e[tag=cutscene.opening.6.2]
 kill @e[tag=cutscene.opening.7]

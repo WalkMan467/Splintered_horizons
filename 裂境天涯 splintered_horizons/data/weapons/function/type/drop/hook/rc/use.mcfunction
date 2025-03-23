@@ -1,5 +1,5 @@
 execute unless score @s weapon.throwing.interval matches ..1 run return fail
-scoreboard players set @s weapon.throwing.interval 10
+scoreboard players set @s player.click.interval 10
 
 scoreboard players add #weapons.hook.user.id weapon.hook.user.id 1
 scoreboard players operation @s weapon.hook.user.id = #weapons.hook.user.id weapon.hook.user.id

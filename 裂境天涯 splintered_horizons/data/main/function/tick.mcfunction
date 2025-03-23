@@ -5,7 +5,7 @@ execute store result score #difficulty global.main run difficulty
 # 細部調用倒是是省效能的好方法
 # 主要以檔 AJ 調用資源為優先，因為會增加無用效能
 
-execute as @e[tag=!aj.global.root,type=!player] at @s run function main:guide/main
+execute as @e[type=!player,tag=!aj.global.root] at @s run function main:guide/main
 
 # Player Guide. / 玩家導向
 

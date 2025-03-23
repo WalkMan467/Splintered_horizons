@@ -7,7 +7,8 @@
 # 第一章
 
     # Main
-    execute if biome ~ ~ ~ #world_area:chapter_1 run advancement grant @s only music:chapter_1/icon
+    execute if biome ~ ~ ~ #world_area:chapter_1 run advancement grant @s only world_area:chapter_1/main/in
+    execute unless biome ~ ~ ~ #world_area:chapter_1 run advancement grant @s only world_area:chapter_1/main/out
 
     # 破碎之都
 

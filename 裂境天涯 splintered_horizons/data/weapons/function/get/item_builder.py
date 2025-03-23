@@ -14,13 +14,13 @@ attribute = []
 # ----- 設定參數 ----- #
 
 
-name = ['水鏡之光', '#0066ff', '里程碑物品 / 劍']
-story = {'info': ['', '', '',''], 'color': 'blue'}
-item_data     = {'real_item': 'stone_sword', 'id': 'light_of_water_mirror', 'item_model': '"sword/light_of_water_mirror/1"', 'custom_data': '{ultimate:1b,type:"sword",weapon:"light_of_water_mirror"}', 'max_damage': -1}
-skill    = {'is_skill': False, 'name': ['終焉之鎖', '#aa00c0', '#7100b3'], 'info': ['消耗20點魔力，',"當你攻擊怪物時，",'輪流觸發以下效果:','','1.召喚終焉之鎖對敵人造成 8 點傷害', '同時給予自身','凋零易傷、挖掘加速、力量 持續 8 秒。', '2.向前方撕開裂縫，',"將怪物聚集在一起並且造成 8 點傷害，",'同時恢復 4 點血量','並給予自身 吸收II 持續 8 秒']}
-ultimate    = {'is_ultimate': False, 'name': ['終焉之月', '#aa00c0', '#7100b3'], 'info': ['右鍵點擊消耗一個終焉之眼，', '開啟【終焉之月】型態持續 15 秒','大幅強化武器，', '此形態下如果攻擊會有25%機率造成大量傷害']}
-attribute.append({'attribute': 'attack_damage', 'value': 6, 'slot': 'mainhand', 'operation': 'add_value'})
-attribute.append({'attribute': 'attack_speed', 'value': -2.3, 'slot': 'mainhand', 'operation': 'add_value'})
+name = ['終焉之墟', '#810092', '鐮刀']
+story = {'info': ['最終決戰過後，舊宇宙迎來了終點的結局', '同時，宇宙出現了由深淵延伸的新力量「終焉」', '這把武器的誕生目前無法得知', '同時也埋藏了很多秘密。'], 'color': 'blue'}
+item_data     = {'real_item': 'stone_sword', 'id': 'ruins_of_the_finality', 'item_model': '"scythe/ruins_of_the_finality/1"', 'custom_data': '{rc:1b,type:"sword",weapon:"ruins_of_the_finality"}', 'max_damage': 150}
+skill    = {'is_skill': False, 'cd':10, 'name': ['終焉之鎖', '#aa00c0', '#7100b3'], 'info': ['消耗20點魔力，', '當你攻擊怪物時，', '輪流觸發以下效果:', '', '1.召喚終焉之鎖對敵人造成 8 點傷害', '同時給予自身', '凋零易傷、挖掘加速、力量 持續 8 秒。', '2.向前方撕開裂縫，', '將怪物聚集在一起並且造成 8 點傷害，', '同時恢復 4 點血量', '並給予自身 吸收II 持續 8 秒']}
+ultimate    = {'is_ultimate': True, 'cd':10, 'name': ['終焉之月', '#aa00c0', '#7100b3'], 'info': ['右鍵點擊消耗一個終焉之眼，', '開啟【終焉之月】型態持續 15 秒', '大幅強化武器，', '此形態下如果攻擊會有25%機率造成大量傷害']}
+attribute.append({'attribute': 'attack_damage', 'value': 4, 'slot': 'mainhand', 'operation': 'add_value'})
+attribute.append({'attribute': 'attack_speed', 'value': -2.5, 'slot': 'mainhand', 'operation': 'add_value'})
 
 # ----- init ----- #
 
@@ -59,7 +59,11 @@ with open(__file__.replace("item_builder.py","#temp.mcfunction"),mode="w+",encod
         translate["story"].append(f'# "weapon.{item_data["id"]}.story.{str(i)}" : "{story["info"][i-1]}"')
         # skill
     if skill['is_skill'] == True:
-        f.write(f',\'{{"text":""}}\',\'[{{"text":"","italic":false}},{{"translate":"weapon.{item_data["id"]}.skill","color":"{skill["name"][1]}","bold":true}}]\'')
+    
+        if int(skill["cd"]) >= 1: skill["cd"] = ',{\"translate\":\"weapon.skill_cd",\"color\":\"#6E6E6E\"},'+str(skill["cd"])+'s'
+        else: skill["cd"] = ""
+
+        f.write(f',\'{{"text":""}}\',\'[{{"text":"","italic":false}},{{"translate":"weapon.{item_data["id"]}.skill","color":"{skill["name"][1]}","bold":true}},{{"text":"  "}}{skill["cd"]}]\'')
         translate["skill"].append(f'# "weapon.{item_data["id"]}.skill" : "[{skill["name"][0]}] "')
 #        translate["skill"].append(f'# "weapon.{item_data["id"]}.skill.1" : "{skill["info"][0]}"')
 
@@ -69,7 +73,11 @@ with open(__file__.replace("item_builder.py","#temp.mcfunction"),mode="w+",encod
                 translate["skill"].append(f'# "weapon.{item_data["id"]}.skill.{str(i)}" : "{skill["info"][i-1]}"')
         # ultimate
     if ultimate['is_ultimate'] == True:
-        f.write(f',\'{{"text":""}}\',\'[{{"text":"","italic":false}},{{"text":"\uE000","font":"minecraft:icon"}},{{"translate":"weapon.{item_data["id"]}.ultimate","color":"{ultimate["name"][1]}","bold":true}},{{"text":"\uE000","font":"minecraft:icon"}}]\'')
+
+        if int(ultimate["cd"]) >= 1: ultimate["cd"] = ',{\"translate\":\"weapon.skill_cd",\"color\":\"#6E6E6E\"},'+str(ultimate["cd"])+'s'
+        else: ultimate["cd"] = ""
+    
+        f.write(f',\'{{"text":""}}\',\'[{{"text":"","italic":false}},{{"text":"\uE000","font":"minecraft:icon"}},{{"translate":"weapon.{item_data["id"]}.ultimate","color":"{ultimate["name"][1]}","bold":true}},{{"text":"\uE000","font":"minecraft:icon"}},{{"text":"  "}}{ultimate["cd"]}]\'')
         translate["ultimate"].append(f'# "weapon.{item_data["id"]}.ultimate" : "[{ultimate["name"][0]}] "')
 #        translate["ultimate"].append(f'# "weapon.{item_data["id"]}.ultimate.1" : "{ultimate["info"][0]}"')
 
