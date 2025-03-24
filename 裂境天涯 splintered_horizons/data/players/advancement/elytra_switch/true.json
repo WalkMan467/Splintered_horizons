@@ -1,0 +1,12 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible",
+        "conditions": {}
+      }
+    },
+    "rewards": {
+      "function": "players:elytra_switch/true"
+    }
+  }
+  

@@ -14,6 +14,10 @@ scoreboard objectives add player.actionbar.state_machine.timer dummy "玩家 act
 scoreboard objectives add player.animation.lock dummy "強制鎖玩家動畫"
 scoreboard objectives add player.infinite.mana dummy "玩家 無限魔力"
 scoreboard objectives add player.click.interval dummy "使用間隔"
+scoreboard objectives add player.disable.elytra_switch dummy "[玩家] 禁用滑翔翼切換"
+
+scoreboard objectives add player.detect.drop minecraft.custom:minecraft.drop "偵測玩家丟棄"
+scoreboard objectives add player.detect.air dummy "[玩家] 空中時間"
 
 # 觸發器
 

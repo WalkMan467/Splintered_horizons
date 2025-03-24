@@ -25,7 +25,7 @@ team join team.player @a
 
 scoreboard players add @a death_count 0
 
-attribute @s minecraft:step_height base set 1
+attribute @s minecraft:step_height base set 0.5
 
 advancement revoke @a only weapons:monument/area_1
 

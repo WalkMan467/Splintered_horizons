@@ -18,13 +18,13 @@
     },
     "description": [
       {
-        "translate": "weapon.grip_of_withering.desc.1",
+        "translate": "weapon.grip_of_withering.skill.1",
         "color": "blue",
         "bold": false,
         "italic": false
       },
       {
-        "translate": "weapon.grip_of_withering.desc.2",
+        "translate": "weapon.grip_of_withering.skill.2",
         "color": "blue",
         "bold": false,
         "italic": false

@@ -18,7 +18,7 @@
     },
     "description": [
       {
-        "translate": "weapon.wind_sword.desc.1",
+        "translate": "weapon.wind_sword.skill.1",
         "color": "blue",
         "bold": false,
         "italic": false
