@@ -8,7 +8,6 @@ execute if score @s backtracking matches 4 run function players:backup/backtrack
 execute if score @s backtracking matches 5.. run function players:backup/backtracking {backup:5}
 
 function players:elytra_switch/main
-function players:inventory_lock/main
 function players:detect/main
 
 scoreboard players add @s[scores={player.mana=..19,player.infinite.mana=1..}] player.mana 1

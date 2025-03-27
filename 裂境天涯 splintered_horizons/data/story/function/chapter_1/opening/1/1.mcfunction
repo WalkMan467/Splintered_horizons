@@ -28,8 +28,8 @@ execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 2
 execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 23 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.23","fallback": "[你] 或許是因為我還有殘餘世界樹力量的庇護"}
 execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 24 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.24","fallback": "[你] 才導致我奇蹟般的逃離深淵的視線"}
 execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 25 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.25","fallback": "[你] 除了我以外的人都死於那場最終之戰"}
-execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 26 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.26","fallback": "[你] 為什麼總是我，為何一切尚未消失"}
-execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 27 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.27","fallback": "(你難過以及憤怒地說到，眼角也冒出一滴眼淚)"}
+execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 26 run scoreboard players add story.chapter_1.ml story.chapter_1 1
+execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 27 run scoreboard players add story.chapter_1.ml story.chapter_1 1
 execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 28 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.28","fallback": "[你] 命運從未公平，留下我的，只有虛無與悲傷"}
 execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 29 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.29","fallback": "[你] 所以...我得重新收集魔劍"}
 execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 30 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.30","fallback": "[你] 不過這是一個非常漫長的旅途"}

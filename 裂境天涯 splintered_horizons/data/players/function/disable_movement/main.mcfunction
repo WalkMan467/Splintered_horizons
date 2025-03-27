@@ -1,2 +1,0 @@
-function players:disable_movement/true
-function players:disable_movement/false

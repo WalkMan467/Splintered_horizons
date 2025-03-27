@@ -20,7 +20,7 @@ function weapons:monument/synchronize_data
 # 玩家
 function players:main
 function players:hide/false
-function players:disable_movement/main
+function players:disable/movement/main
 function players:actionbar/main
 function players:timer
 

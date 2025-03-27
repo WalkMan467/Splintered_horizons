@@ -2,7 +2,7 @@
     "replace": false,
     "values": [
       "sculk_vein",
-      "minecraft:air",
+      "#minecraft:air",
       "minecraft:cave_air",
       "minecraft:void_air",
       "minecraft:water",

@@ -1518,11 +1518,8 @@
 		"files": [
 			"animated_java/data/animated_java/function/screen_sneak/on_load.mcfunction",
 			"animated_java/data/animated_java/function/screen_sneak/invalid_version_warning.mcfunction",
-			"animated_java/data/animated_java/function/screen_sneak/root/outdated_tellraw.mcfunction",
-			"animated_java/data/animated_java/function/screen_sneak/root/zzz/0.mcfunction",
-			"animated_java/data/animated_java/function/screen_sneak/root/on_load.mcfunction",
-			"animated_java/data/animated_java/function/screen_sneak/root/zzz/2.mcfunction",
 			"animated_java/data/animated_java/function/screen_sneak/root/zzz/1.mcfunction",
+			"animated_java/data/animated_java/function/screen_sneak/root/zzz/0.mcfunction",
 			"animated_java/data/animated_java/function/screen_sneak/root/on_tick.mcfunction",
 			"animated_java/data/animated_java/function/screen_sneak/animations/screen_sneak/play.mcfunction",
 			"animated_java/data/animated_java/function/screen_sneak/animations/screen_sneak/stop.mcfunction",
@@ -1546,10 +1543,6 @@
 			"animated_java/data/animated_java/function/screen_sneak/animations/screen_sneak/zzz/frames/8.mcfunction",
 			"animated_java/data/animated_java/function/screen_sneak/animations/screen_sneak/zzz/frames/9.mcfunction",
 			"animated_java/data/animated_java/function/screen_sneak/animations/screen_sneak/zzz/frames/10.mcfunction",
-			"animated_java/data/animated_java/function/screen_sneak/animations/screen_sneak/zzz/frames/11.mcfunction",
-			"animated_java/data/animated_java/function/screen_sneak/animations/screen_sneak/zzz/frames/12.mcfunction",
-			"animated_java/data/animated_java/function/screen_sneak/animations/screen_sneak/zzz/frames/13.mcfunction",
-			"animated_java/data/animated_java/function/screen_sneak/animations/screen_sneak/zzz/frames/14.mcfunction",
 			"animated_java/data/animated_java/function/screen_sneak/animations/pause_all.mcfunction",
 			"animated_java/data/animated_java/function/screen_sneak/zzz/2.mcfunction",
 			"animated_java/data/animated_java/function/screen_sneak/zzz/1.mcfunction",
@@ -1585,8 +1578,7 @@
 			"data/minecraft/tags/function/load.json",
 			"data/minecraft/tags/function/tick.json",
 			"data/animated_java/tags/function/global/on_load.json",
-			"data/animated_java/tags/function/global/root/on_tick.json",
-			"data/animated_java/tags/function/global/root/on_load.json"
+			"data/animated_java/tags/function/global/root/on_tick.json"
 		]
 	},
 	"stellar_animation": {

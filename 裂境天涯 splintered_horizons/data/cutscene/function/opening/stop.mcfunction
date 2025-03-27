@@ -28,6 +28,7 @@ schedule clear cutscene:opening/5/use
 schedule clear cutscene:opening/6/use
 schedule clear cutscene:opening/7/use
 schedule clear cutscene:opening/end/use
+schedule clear cutscene:opening/6/2
 
 function story:chapter_1/opening/stop
 
