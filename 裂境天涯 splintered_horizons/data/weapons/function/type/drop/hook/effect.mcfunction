@@ -5,7 +5,7 @@
 # effect
 summon marker ~ ~ ~ {Tags:["hook.effect.point","summon"]}
 
-scoreboard players set @n[type=marker,tag=summon] duration 20
+scoreboard players set @n[type=marker,tag=summon] duration 25
 
 scoreboard players operation @n[type=marker,tag=summon] weapon.hook.user.id = @s weapon.hook.user.id
 tag @n[type=marker,tag=summon,limit=1] remove summon

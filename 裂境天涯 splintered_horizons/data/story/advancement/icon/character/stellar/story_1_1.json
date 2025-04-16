@@ -1,0 +1,35 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:book",
+      "components": {},
+      "count": 1
+    },
+    "title": {
+      "translate": "story.icon.character.stellar.story.1_1",
+      "fallback": "人物故事1: 過往(中段)",
+      "bold": true,
+      "italic": false
+    },
+    "description": [
+      {
+        "translate": "story.icon.character.stellar.story.1_1.desc.1",
+        "fallback": "在你旅途中你經歷了無數場戰鬥，也經歷了逝者的離去，無論是逝者離去的悲痛還是面對敵人，你一次又一次的跨越了重重障礙"
+      },
+      {
+        "translate": "story.icon.character.stellar.story.1_1.desc.2",
+        "fallback": "再當你收集到了始源六魔劍決戰深淵中時，夥伴們紛紛離去，過往的悲痛使你無法戰鬥，最後，你也死於這場戰鬥之中"
+      }
+    ],
+    "background": "minecraft:textures/gui/advancements/backgrounds/quartz_bricks.png",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "story:icon/character/stellar/story_1",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

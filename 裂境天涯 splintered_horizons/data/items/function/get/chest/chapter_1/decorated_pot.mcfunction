@@ -1,1 +1,0 @@
-give @s decorated_pot[pot_decorations=["minecraft:brick","minecraft:brick","minecraft:brick","minecraft:brick"],block_state={cracked:"true"},block_entity_data={id:"decorated_pot",LootTable:"weapons:decorated_pot/drop_weapons"}] 1

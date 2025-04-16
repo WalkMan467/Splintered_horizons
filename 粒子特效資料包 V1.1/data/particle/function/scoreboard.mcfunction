@@ -9,6 +9,10 @@ scoreboard objectives add particle.space_rupture dummy
 scoreboard players set 2 particle.space_rupture 2
 scoreboard players set 4 particle.space_rupture 4
 
+scoreboard objectives add particle.ruins_of_the_finality_rupture dummy
+scoreboard players set 2 particle.ruins_of_the_finality_rupture 2
+scoreboard players set 4 particle.ruins_of_the_finality_rupture 4
+
 scoreboard objectives add particle.g-zone dummy
 scoreboard players set 2 particle.g-zone 2
 scoreboard players set 4 particle.g-zone 4

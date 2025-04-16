@@ -7,3 +7,5 @@ attribute @s movement_speed modifier remove armor.black_hole.animation.boots
 attribute @s jump_strength modifier remove armor.black_hole.animation.boots
 
 tag @s remove armor.black_hole.animation.boots.player
+
+tag @s remove animation

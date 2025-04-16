@@ -2,6 +2,7 @@
 execute unless entity @s[tag=aj.ruins_of_the_finality_skill.root] run return 0
 function #animated_java:ruins_of_the_finality_skill/as_root/pre_tick
 execute if entity @s[tag=aj.ruins_of_the_finality_skill.animation.skills.playing] run function animated_java:ruins_of_the_finality_skill/animations/skills/zzz/on_tick
+execute if entity @s[tag=aj.ruins_of_the_finality_skill.animation.skills_2.playing] run function animated_java:ruins_of_the_finality_skill/animations/skills_2/zzz/on_tick
 execute on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.data] run function animated_java:ruins_of_the_finality_skill/root/zzz/0
 execute at @s on passengers run rotate @s ~ ~
 function #animated_java:ruins_of_the_finality_skill/as_root/post_tick

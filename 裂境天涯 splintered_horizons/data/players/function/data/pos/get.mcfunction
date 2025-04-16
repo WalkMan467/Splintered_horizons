@@ -8,6 +8,8 @@ summon marker ~ ~ ~ {Tags:["player_data","player_data.pos"]}
 execute as @n[tag=player_data.pos,type=marker] run data modify entity @s data.pos.x set from entity @s Pos[0]
 execute as @n[tag=player_data.pos,type=marker] run data modify entity @s data.pos.y set from entity @s Pos[1]
 
+
+
 # execute positioned ~ ~1.5 ~ run function <function> with entity @n[tag=player_data.pos,type=marker] data.pos
 
 kill @n[tag=player_data.pos,type=marker]

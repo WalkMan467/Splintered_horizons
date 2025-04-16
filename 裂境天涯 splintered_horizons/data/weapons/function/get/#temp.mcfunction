@@ -1,21 +1,19 @@
-give @s stone_sword[item_name='[{"translate":"weapon.ruins_of_the_finality","color":"#810092","italic":false,"bold":true}]',lore=['[{"translate":"weapon.ruins_of_the_finality.type","italic":false,"color":"dark_gray"}]','{"text":""}','[{"translate":"weapon.ruins_of_the_finality.story.1","italic":false,"color":"blue"}]','[{"translate":"weapon.ruins_of_the_finality.story.2","italic":false,"color":"blue"}]','[{"translate":"weapon.ruins_of_the_finality.story.3","italic":false,"color":"blue"}]','[{"translate":"weapon.ruins_of_the_finality.story.4","italic":false,"color":"blue"}]','{"text":""}','[{"text":"","italic":false},{"text":"","font":"minecraft:icon"},{"translate":"weapon.ruins_of_the_finality.ultimate","color":"#aa00c0","bold":true},{"text":"","font":"minecraft:icon"},{"text":"  "},{"translate":"weapon.skill_cd","color":"#6E6E6E"},10s]','[{"text":"","italic":false},{"translate":"weapon.ruins_of_the_finality.ultimate.1","color":"#7100b3"}]','[{"text":"","italic":false},{"translate":"weapon.ruins_of_the_finality.ultimate.2","color":"#7100b3"}]','[{"text":"","italic":false},{"translate":"weapon.ruins_of_the_finality.ultimate.3","color":"#7100b3"}]','[{"text":"","italic":false},{"translate":"weapon.ruins_of_the_finality.ultimate.4","color":"#7100b3"}]'],attribute_modifiers=[{id:"base_attack_damage",type:"attack_damage",amount:4,operation:"add_value",slot:"mainhand"},{id:"base_attack_speed",type:"attack_speed",amount:-2.5,operation:"add_value",slot:"mainhand"}],max_stack_size=1,max_damage=150,damage=0,item_model="scythe/ruins_of_the_finality/1",custom_data={rc:1b,type:"sword",weapon:"ruins_of_the_finality"}]
+give @s poisonous_potato[item_name='[{"translate":"weapon.miniature_sun","color":"#b30000","italic":false,"bold":true}]',lore=['[{"translate":"weapon.miniature_sun.type","italic":false,"color":"dark_gray"}]','{"text":""}','[{"translate":"weapon.miniature_sun.story.1","italic":false,"color":"blue"}]','[{"translate":"weapon.miniature_sun.story.2","italic":false,"color":"blue"}]','{"text":""}','[{"text":"","italic":false},{"translate":"weapon.miniature_sun.skill","color":"dark_red","bold":true},{"text":"  "}]','[{"text":"","italic":false},{"translate":"weapon.miniature_sun.skill.1","color":"red"}]','[{"text":"","italic":false},{"translate":"weapon.miniature_sun.skill.2","color":"red"}]','[{"text":"","italic":false},{"translate":"weapon.miniature_sun.skill.3","color":"red"}]','[{"text":"","italic":false},{"translate":"weapon.miniature_sun.skill.4","color":"red"}]'],attribute_modifiers=[{id:"base_attack_damage",type:"attack_damage",amount:4,operation:"add_value",slot:"mainhand"},{id:"base_attack_speed",type:"attack_speed",amount:-2.5,operation:"add_value",slot:"mainhand"}],max_stack_size=1,unbreakable={},item_model="drop/miniature_sun/1",custom_data={rc:1b,type:"drop",weapon:"miniature_sun"},consumable={consume_seconds:10000,animation:"none",has_consume_particles:false}]
 
-# "weapon.ruins_of_the_finality" : "終焉之墟"
-# "weapon.ruins_of_the_finality.type" : "鐮刀"
-# "weapon.ruins_of_the_finality.story.1" : "最終決戰過後，舊宇宙迎來了終點的結局"
-# "weapon.ruins_of_the_finality.story.2" : "同時，宇宙出現了由深淵延伸的新力量「終焉」"
-# "weapon.ruins_of_the_finality.story.3" : "這把武器的誕生目前無法得知"
-# "weapon.ruins_of_the_finality.story.4" : "同時也埋藏了很多秘密。"
-# "weapon.ruins_of_the_finality.ultimate" : "[終焉之月] "
-# "weapon.ruins_of_the_finality.ultimate.1" : "右鍵點擊消耗一個終焉之眼，"
-# "weapon.ruins_of_the_finality.ultimate.2" : "開啟【終焉之月】型態持續 15 秒"
-# "weapon.ruins_of_the_finality.ultimate.3" : "大幅強化武器，"
-# "weapon.ruins_of_the_finality.ultimate.4" : "此形態下如果攻擊會有25%機率造成大量傷害"
+# "weapon.miniature_sun" : "微型太陽"
+# "weapon.miniature_sun.type" : "投擲物"
+# "weapon.miniature_sun.story.1" : "具有太陽一半的溫度，"
+# "weapon.miniature_sun.story.2" : "可以使周圍的敵人燃燒"
+# "weapon.miniature_sun.skill" : "[燃燒] "
+# "weapon.miniature_sun.skill.1" : "無法投擲較遠距離，"
+# "weapon.miniature_sun.skill.2" : "[%s]可以投擲微型太陽"
+# "weapon.miniature_sun.skill.3" : "位於太陽 4 格範圍內的敵人"
+# "weapon.miniature_sun.skill.4" : "每秒造成 3 點燃燒傷害"
 
-#name = ['終焉之墟', '#810092', '鐮刀']
-#story = {'info': ['最終決戰過後，舊宇宙迎來了終點的結局', '同時，宇宙出現了由深淵延伸的新力量「終焉」', '這把武器的誕生目前無法得知', '同時也埋藏了很多秘密。'], 'color': 'blue'}
-#item_data     = {'real_item': 'stone_sword', 'id': 'ruins_of_the_finality', 'item_model': '"scythe/ruins_of_the_finality/1"', 'custom_data': '{rc:1b,type:"sword",weapon:"ruins_of_the_finality"}', 'max_damage': 150}
-#skill    = {'is_skill': False, 'cd': 10, 'name': ['終焉之鎖', '#aa00c0', '#7100b3'], 'info': ['消耗20點魔力，', '當你攻擊怪物時，', '輪流觸發以下效果:', '', '1.召喚終焉之鎖對敵人造成 8 點傷害', '同時給予自身', '凋零易傷、挖掘加速、力量 持續 8 秒。', '2.向前方撕開裂縫，', '將怪物聚集在一起並且造成 8 點傷害，', '同時恢復 4 點血量', '並給予自身 吸收II 持續 8 秒']}
-#ultimate    = {'is_ultimate': True, 'cd': 10, 'name': ['終焉之月', '#aa00c0', '#7100b3'], 'info': ['右鍵點擊消耗一個終焉之眼，', '開啟【終焉之月】型態持續 15 秒', '大幅強化武器，', '此形態下如果攻擊會有25%機率造成大量傷害']}
+#name = ['微型太陽', '#b30000', '投擲物']
+#story = {'info': ['具有太陽一半的溫度，', '可以使周圍的敵人燃燒'], 'color': 'blue'}
+#item_data     = {'real_item': 'poisonous_potato', 'id': 'miniature_sun', 'item_model': '"drop/miniature_sun/1"', 'custom_data': '{rc:1b,type:"drop",weapon:"miniature_sun"}', 'max_damage': -1}
+#skill    = {'is_skill': True, 'cd': 0, 'name': ['燃燒', 'dark_red', 'red'], 'info': ['無法投擲較遠距離，', '[%s]可以投擲微型太陽', '位於太陽 4 格範圍內的敵人', '每秒造成 3 點燃燒傷害']}
+#ultimate    = {'is_ultimate': False, 'cd': 5, 'name': ['終焉之月', '#b30000', '#5a0000'], 'info': ['[%s]消耗一個終焉之眼，', '開啟【終焉之月】型態持續 15 秒', '大幅強化武器，', '此形態下如果攻擊會有25%機率造成大量傷害']}
 #attribute.append({'attribute': 'attack_damage', 'value': 4, 'slot': 'mainhand', 'operation': 'add_value'})
 #attribute.append({'attribute': 'attack_speed', 'value': -2.5, 'slot': 'mainhand', 'operation': 'add_value'})

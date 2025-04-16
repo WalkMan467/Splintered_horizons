@@ -1,0 +1,29 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:book",
+        "components": {},
+        "count": 1
+      },
+      "title": {
+        "translate": "story.icon.character.sophia.story.1",
+        "fallback": "人物故事1: 過往(上半)",
+        "bold": true,
+        "italic": false
+      },
+      "description": {
+        "translate": "story.icon.character.sophia.story.1.desc.1",
+        "fallback": "另一個平行宇宙的主角，與他的故事相似，但不同宇宙，在舊世界最終決戰中死於深淵之下，在身體即將消失之際，她覺醒了新的力量「終焉」死亡與深淵結合的終極力量"
+      },
+      "background": "minecraft:textures/gui/advancements/backgrounds/quartz_bricks.png",
+      "show_toast": false,
+      "announce_to_chat": false,
+      "hidden": true
+    },
+    "parent": "story:icon/character/sophia/icon",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

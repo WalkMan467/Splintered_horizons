@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:book",
+      "components": {},
+      "count": 1
+    },
+    "title": {
+      "translate": "story.icon.character.stellar.story.1_2",
+      "fallback": "人物故事1: 過往(中後段)",
+      "bold": true,
+      "italic": false
+    },
+    "description": {
+      "translate": "story.icon.character.stellar.story.1_2.desc.1",
+      "fallback": "在身體消失之前你殘餘的世界樹力量拯救了你"
+    },
+    "background": "minecraft:textures/gui/advancements/backgrounds/quartz_bricks.png",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "story:icon/character/stellar/story_1_1",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

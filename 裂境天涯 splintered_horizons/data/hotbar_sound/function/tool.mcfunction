@@ -1,6 +1,6 @@
-playsound minecraft:hotbar.switch_tool voice @a ~ ~1 ~ 1 1
+playsound minecraft:block.note_block.hat voice @a ~ ~1 ~ 1 1
 
-function #weapons:toggle_detection
+function #players:detect/hotbar_switch
 
 advancement revoke @s only hotbar_sound:reset
 advancement revoke @s only hotbar_sound:sword

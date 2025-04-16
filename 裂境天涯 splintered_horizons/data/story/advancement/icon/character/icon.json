@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:book",
+      "components": {},
+      "count": 1
+    },
+    "title": {
+      "translate": "story.icon.character.icon",
+      "fallback": "人物故事",
+      "bold": true,
+      "italic": false
+    },
+    "description": [
+      {
+        "translate": "story.icon.character.icon.1",
+        "fallback": "述說著每個人物的過往、描述與性格上轉變"
+      }
+    ],
+    "background": "minecraft:textures/gui/advancements/backgrounds/quartz_bricks.png",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

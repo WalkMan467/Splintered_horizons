@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "requirements": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {}
+    }
+  },
+  "requirements": [
+    [
+      "requirements"
+    ]
+  ],
+  "rewards": {
+    "function": "players:detect/placed_block"
+  }
+}

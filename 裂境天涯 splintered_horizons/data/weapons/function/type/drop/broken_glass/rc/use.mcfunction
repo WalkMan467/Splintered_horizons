@@ -1,4 +1,4 @@
-execute unless score @s weapon.throwing.interval matches ..1 run return fail
+execute unless score @s player.click.interval matches ..1 run return fail
 scoreboard players set @s player.click.interval 5
 clear @s *[custom_data~{type:"drop",weapon:"broken_glass",rc:1b}] 1
 

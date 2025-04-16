@@ -32,17 +32,30 @@ scoreboard players add @a weapon.storm_sword.ultimate 0
 scoreboard objectives add weapon.ruins_of_the_finality.effect.range dummy "終焉之墟 技能距離"
 scoreboard objectives add weapon.ruins_of_the_finality.effect.time dummy "終焉之墟 技能動畫播放時間"
 scoreboard objectives add weapon.ruins_of_the_finality.cd dummy "終焉之墟 CD"
+scoreboard objectives add weapon.ruins_of_the_finality.effect.count dummy "終焉之墟 技能數量"
+scoreboard objectives add weapon.ruins_of_the_finality.effect.count.delay dummy "終焉之墟 技能延遲"
+scoreboard objectives add weapon.ruins_of_the_finality.id dummy "終焉之墟 流水ID"
 
 scoreboard players add @a weapon.ruins_of_the_finality.cd 0
+scoreboard players add @a weapon.ruins_of_the_finality.effect.count 0
 
 #===================================================================
 #鉤子
 
 scoreboard objectives add weapon.hook.effect.id dummy "鉤子流水ID"
 scoreboard objectives add weapon.hook.user.id dummy "鉤子投擲者流水ID"
-
+scoreboard objectives add weapon.hook.user.id dummy "鉤子投擲者流水ID"
+scoreboard objectives add weapon.hook.target.id dummy "鉤爪點流水ID"
 #===================================================================
 # 晨光
 
 scoreboard objectives add weapon.morning_light.motion dummy "晨光 Motion"
 scoreboard objectives add weapon.morning_light.cd dummy "晨光 cd"
+
+#===================================================================
+# 夜幕
+
+scoreboard objectives add weapon.nightfall.state dummy "夜幕狀態"
+scoreboard objectives add weapon.nightfall.cd dummy "夜幕 CD"
+
+#===================================================================

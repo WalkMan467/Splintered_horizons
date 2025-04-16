@@ -180,3 +180,5 @@ execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill
 data modify entity @s data.bones.bone_8 set from storage aj:uuid main.out
 execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.7] run function animated_java:global/internal/gu/convert_uuid_array_to_string with entity @s
 data modify entity @s data.bones.bone_7 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.block_display] run function animated_java:global/internal/gu/convert_uuid_array_to_string with entity @s
+data modify entity @s data.bones.block_display_block_display set from storage aj:uuid main.out

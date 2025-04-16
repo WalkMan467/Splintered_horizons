@@ -1,0 +1,16 @@
+{
+    "criteria": {
+      "requirements": {
+        "trigger": "minecraft:changed_dimension",
+        "conditions": {}
+      }
+    },
+    "requirements": [
+      [
+        "requirements"
+      ]
+    ],
+    "rewards": {
+      "function": "players:detect/changed_dimension"
+    }
+  }

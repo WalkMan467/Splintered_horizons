@@ -104,8 +104,8 @@
             },
             {
               "type": "minecraft:item",
-              "name": "minecraft:poisonous_potato",
-              "weight": 40,
+              "name": "minecraft:book",
+              "weight": 70,
               "quality": 20,
               "functions": [
                 {
@@ -204,6 +204,21 @@
                   "count": {
                     "min": 5,
                     "max": 8
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:loot_table",
+              "value": "weapons:get/arrow/explosion_arrow",
+              "weight": 40,
+              "quality": 20,
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 2,
+                    "max": 4
                   }
                 }
               ]

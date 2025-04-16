@@ -1,10 +1,12 @@
 kill @e[tag=weapon.ruins_of_the_finality.effect.chain]
 
-title @s times 0 0 10
+title @s times 15 11 0
 title @s title {"translate":"\uE000","font":"minecraft:screen"}
 title @s subtitle ""
 
+tag @s add animation
 
+tag @s add weapon.ruins_of_the_finality.input.disable
 effect give @s speed 7 1 false
 
 scoreboard players set @s player.animation.lock 110
@@ -24,4 +26,5 @@ function animated_java:stellar_animation/summon {args: {animation: 'ruins_of_the
 
 # Set GameMode
 gamemode spectator @s
-spectate @n[tag=aj.stellar_animation.camera]
+execute unless score @s main.3d_dizziness matches 1.. run spectate @n[tag=aj.stellar_animation.camera]
+execute if score @s main.3d_dizziness matches 1.. run spectate @n[tag=3d_dizziness]

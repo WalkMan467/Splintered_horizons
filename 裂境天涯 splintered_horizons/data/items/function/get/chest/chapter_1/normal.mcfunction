@@ -1,1 +1,0 @@
-give @s chest[container_loot={loot_table:"system:chapter_1/normal"}] 1

@@ -1,14 +1,19 @@
 tp @e[tag=weapon.ruins_of_the_finality.effect.chain] ~ -255 ~
 kill @e[tag=weapon.ruins_of_the_finality.effect.chain]
 
+execute as @e[tag=ruins_of_the_end.skills_2.play] run function animated_java:ruins_of_the_end_skill/remove/this
+
+tag @s remove weapon.ruins_of_the_finality.screen
+
+scoreboard players set @s weapon.ruins_of_the_finality.effect.count 0
+scoreboard players set @s weapon.ruins_of_the_finality.effect.count.delay 0
+
 title @s times 0 0 10
 title @s title {"translate":"\uE000","font":"minecraft:screen"}
 title @s subtitle ""
 
+tag @s remove weapon.ruins_of_the_finality.animation.player
 kill @e[type=creeper,tag=aj.stellar_animation.camera_2]
-
-
-effect give @s speed 7 1 false
 
 scoreboard players set @s player.animation.lock 40
 

@@ -14,11 +14,11 @@ attribute = []
 # ----- 設定參數 ----- #
 
 
-name = ['終焉之墟', '#810092', '鐮刀']
-story = {'info': ['最終決戰過後，舊宇宙迎來了終點的結局', '同時，宇宙出現了由深淵延伸的新力量「終焉」', '這把武器的誕生目前無法得知', '同時也埋藏了很多秘密。'], 'color': 'blue'}
-item_data     = {'real_item': 'stone_sword', 'id': 'ruins_of_the_finality', 'item_model': '"scythe/ruins_of_the_finality/1"', 'custom_data': '{rc:1b,type:"sword",weapon:"ruins_of_the_finality"}', 'max_damage': 150}
-skill    = {'is_skill': False, 'cd':10, 'name': ['終焉之鎖', '#aa00c0', '#7100b3'], 'info': ['消耗20點魔力，', '當你攻擊怪物時，', '輪流觸發以下效果:', '', '1.召喚終焉之鎖對敵人造成 8 點傷害', '同時給予自身', '凋零易傷、挖掘加速、力量 持續 8 秒。', '2.向前方撕開裂縫，', '將怪物聚集在一起並且造成 8 點傷害，', '同時恢復 4 點血量', '並給予自身 吸收II 持續 8 秒']}
-ultimate    = {'is_ultimate': True, 'cd':10, 'name': ['終焉之月', '#aa00c0', '#7100b3'], 'info': ['右鍵點擊消耗一個終焉之眼，', '開啟【終焉之月】型態持續 15 秒', '大幅強化武器，', '此形態下如果攻擊會有25%機率造成大量傷害']}
+name = ['微型太陽', '#b30000', '投擲物']
+story = {'info': ['具有太陽一半的溫度，', '可以使周圍的敵人燃燒'], 'color': 'blue'}
+item_data     = {'real_item': 'stone_sword', 'id': 'miniature_sun', 'item_model': '"drop/miniature_sun/1"', 'custom_data': '{rc:1b,type:"sword",weapon:"miniature_sun"}', 'max_damage': -1}
+skill    = {'is_skill': True,'cd': 0, 'name': ['燃燒', 'dark_red', 'red'], 'info': ['無法投擲較遠距離，', '[%s]可以投擲微型太陽', '位於太陽 4 格範圍內的敵人', '每秒造成 3 點燃燒傷害']}
+ultimate    = {'is_ultimate': False, 'cd': 5, 'name': ['終焉之月', '#b30000', '#5a0000'], 'info': ['[%s]消耗一個終焉之眼，', '開啟【終焉之月】型態持續 15 秒', '大幅強化武器，', '此形態下如果攻擊會有25%機率造成大量傷害']}
 attribute.append({'attribute': 'attack_damage', 'value': 4, 'slot': 'mainhand', 'operation': 'add_value'})
 attribute.append({'attribute': 'attack_speed', 'value': -2.5, 'slot': 'mainhand', 'operation': 'add_value'})
 

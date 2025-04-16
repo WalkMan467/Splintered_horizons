@@ -20,7 +20,12 @@
     execute if entity @s[gamemode=!spectator] if biome ~ ~ ~ world_area:chapter_1/abyssal_ruins run advancement grant @s only world_area:chapter_1/abyssal_ruins/in
     execute unless biome ~ ~ ~ world_area:chapter_1/abyssal_ruins run advancement grant @s only world_area:chapter_1/abyssal_ruins/out
 
-    # 深紅虛空之地
+    # 黑洞之境
 
     execute if entity @s[gamemode=!spectator] if biome ~ ~ ~ world_area:chapter_1/realm_of_the_black_hole run advancement grant @s only world_area:chapter_1/realm_of_the_black_hole/in
     execute unless biome ~ ~ ~ world_area:chapter_1/realm_of_the_black_hole run advancement grant @s only world_area:chapter_1/realm_of_the_black_hole/out
+
+    # 黑洞中心
+
+    execute if entity @s[gamemode=!spectator] if biome ~ ~ ~ world_area:chapter_1/the_black_hole run advancement grant @s only world_area:chapter_1/the_black_hole/in
+    execute unless biome ~ ~ ~ world_area:chapter_1/the_black_hole run advancement grant @s only world_area:chapter_1/the_black_hole/out

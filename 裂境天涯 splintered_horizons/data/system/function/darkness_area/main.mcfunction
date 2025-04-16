@@ -1,0 +1,1 @@
+execute as @s[tag=system.darkness_area,type=marker] at @s run effect give @a[distance=..5] darkness 2 255 true

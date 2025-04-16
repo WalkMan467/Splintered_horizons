@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "requirements": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {}
+    }
+  },
+  "requirements": [
+    [
+      "requirements"
+    ]
+  ],
+  "rewards": {
+    "function": "players:detect/consume_item"
+  }
+}

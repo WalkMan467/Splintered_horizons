@@ -11,7 +11,7 @@
       "underlined": true
     },
     "description": "",
-    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+    "background": "minecraft:textures/gui/advancements/backgrounds/note_block.png",
     "frame": "task",
     "show_toast": false,
     "announce_to_chat": false,

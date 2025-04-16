@@ -1,0 +1,35 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:book",
+      "components": {},
+      "count": 1
+    },
+    "title": {
+      "translate": "story.icon.character.stellar.story.1_3",
+      "fallback": "人物故事1: 過往(下半)",
+      "bold": true,
+      "italic": false
+    },
+    "description": [
+      {
+        "translate": "story.icon.character.stellar.story.1_3.desc.1",
+        "fallback": "使你奇蹟般的活下來並且逃離深淵的視線，但你也沉睡了許久"
+      },
+      {
+        "translate": "story.icon.character.stellar.story.1_3.desc.2",
+        "fallback": "或許是命運與機緣，一位女孩發現了你並且把你帶往安全的地方，與你相似的經歷與過往，你與她準備共同重新對抗深淵"
+      }
+    ],
+    "background": "minecraft:textures/gui/advancements/backgrounds/quartz_bricks.png",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "story:icon/character/stellar/story_1_2",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

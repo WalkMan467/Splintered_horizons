@@ -1,4 +1,4 @@
-execute if score #difficulty global.main matches 0 run return fail
+execute unless score #difficulty global.main matches 1.. run return 0
 
 summon phantom ~ ~2 ~ {Silent:1b,PersistenceRequired:1b,Tags:["abyssal_dragon.spawn","abyssal_dragon","abyssal_dragon.main"],active_effects:[{id:"minecraft:invisibility",amplifier:255,duration:-1,show_particles:0b,show_icon:0b,ambient:0b}],attributes:[{id:"minecraft:scale",base:0.01}]}
 

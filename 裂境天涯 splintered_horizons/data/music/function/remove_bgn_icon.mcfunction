@@ -18,3 +18,4 @@ advancement revoke @s only music:chapter_1/icon
 advancement revoke @s only music:chapter_2/icon
 
         advancement revoke @s only music:chapter_2/land_of_finality/icon
+        advancement revoke @s only music:chapter_2/land_of_finality/title

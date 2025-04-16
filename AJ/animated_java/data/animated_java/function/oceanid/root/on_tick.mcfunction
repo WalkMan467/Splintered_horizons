@@ -2,5 +2,6 @@
 execute unless entity @s[tag=aj.oceanid.root] run return 0
 function #animated_java:oceanid/as_root/pre_tick
 execute if entity @s[tag=aj.oceanid.animation.idle.playing] run function animated_java:oceanid/animations/idle/zzz/on_tick
+execute if entity @s[tag=aj.oceanid.animation.1.playing] run function animated_java:oceanid/animations/1/zzz/on_tick
 execute at @s on passengers run rotate @s ~ ~
 function #animated_java:oceanid/as_root/post_tick

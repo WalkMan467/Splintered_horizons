@@ -1,0 +1,1 @@
+schedule clear story:chapter_2/in_safe_zone/1/1

@@ -8,6 +8,3 @@
 
     # Else
     execute positioned 38 64 9 if score #story.chapter_1.opening.1 global.main matches 0 if score #story.chapter_1.opening.1_temp global.main matches 1 run function story:chapter_1/opening/1/false
-
-
-effect give @a[tag=campfire] darkness 2 255 true

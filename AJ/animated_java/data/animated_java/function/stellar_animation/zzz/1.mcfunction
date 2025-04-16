@@ -28,3 +28,7 @@ execute on vehicle on passengers if entity @s[tag=aj.stellar_animation.node.8] r
 data modify entity @s data.bones.bone_8 set from storage aj:uuid main.out
 execute on vehicle on passengers if entity @s[tag=aj.stellar_animation.node.7] run function animated_java:global/internal/gu/convert_uuid_array_to_string with entity @s
 data modify entity @s data.bones.bone_7 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.stellar_animation.node.item_display] run function animated_java:global/internal/gu/convert_uuid_array_to_string with entity @s
+data modify entity @s data.bones.item_display_item_display set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.stellar_animation.node.block_display] run function animated_java:global/internal/gu/convert_uuid_array_to_string with entity @s
+data modify entity @s data.bones.block_display_block_display set from storage aj:uuid main.out

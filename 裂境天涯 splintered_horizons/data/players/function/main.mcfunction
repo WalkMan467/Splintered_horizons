@@ -9,8 +9,12 @@ execute if score @s backtracking matches 5.. run function players:backup/backtra
 
 function players:elytra_switch/main
 function players:detect/main
+function players:auto_crafting/main
 
-scoreboard players add @s[scores={player.mana=..19,player.infinite.mana=1..}] player.mana 1
+# 平滑走方塊
+execute unless predicate players:detect/input/sneak run attribute @s step_height base set 1
+execute if predicate players:detect/input/sneak run attribute @s step_height base reset
+
 scoreboard players set @s[scores={player.ultimate=2..,player.infinite.mana=1..}] player.ultimate 1
 
 function armors:loop

@@ -1,5 +1,8 @@
 {
   "values": [
-    "weapons:bypasses_cooldown"
+    "weapons:bypasses_cooldown",
+    "weapons:type/sword/nightfall",
+    "armors:type/black_hole/damage",
+    "weapons:type/scythe/ruins_of_the_finality/damage"
   ]
 }

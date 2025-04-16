@@ -1,1 +1,0 @@
-tag @s add chapter_2.soul_sharpshooter.1
