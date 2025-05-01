@@ -7,7 +7,7 @@ scoreboard players operation @n[tag=summon,tag=player.backup.pos] player.id = @p
 scoreboard players display name @n[tag=summon,tag=player.backup.pos] player.id ["[玩家] ",{"selector": "@p"},"位置備份"]
 
 
-execute if dimension minecraft:overworld run spawnpoint @s 38 64 11
-execute if dimension world_area:main/safe_zone run spawnpoint @s 0 60 -2
+execute if score @s item.tp_book.point.area matches 1 run spawnpoint @s 38 64 11
+execute if score @s item.tp_book.point.area matches 2 run spawnpoint @s 805 201 141
 
 data remove storage item.tp_book.point temp

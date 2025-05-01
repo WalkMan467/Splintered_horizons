@@ -7,3 +7,6 @@ tag @s remove chapter_2.broken_moon.1
 
 scoreboard players operation @s monster.broken_moon.skill.1.cd = max monster.broken_moon.skill.1.cd
 scoreboard players reset @s monster.broken_moon.skill.1.casting
+
+
+say start.1.end

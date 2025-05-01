@@ -6,3 +6,4 @@ scoreboard players remove @s[type=player,scores={weapon.storm_sword.ultimate=0..
 scoreboard players remove @s[type=player,scores={weapon.morning_light.cd=0..}] weapon.morning_light.cd 1
 scoreboard players remove @s[type=player,scores={weapon.ruins_of_the_finality.effect.count.delay=1..}] weapon.ruins_of_the_finality.effect.count.delay 1
 scoreboard players remove @s[type=player,scores={player.bow=1..}] player.bow 1
+execute if score #is_water_sword_demon.passive? global.main matches 0.. run scoreboard players remove #is_water_sword_demon.passive? global.main 1

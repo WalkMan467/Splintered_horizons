@@ -19,3 +19,10 @@
     
     execute if entity @s[gamemode=!spectator] if biome ~ ~ ~ world_area:chapter_2/forest_of_souls run advancement grant @s only world_area:chapter_2/forest_of_souls/in
     execute unless biome ~ ~ ~ world_area:chapter_2/forest_of_souls run advancement grant @s only world_area:chapter_2/forest_of_souls/out
+
+    # 黃昏裂界入口
+    
+    execute if entity @s[gamemode=!spectator] if biome ~ ~ ~ world_area:chapter_2/dusks_fractured_maw run advancement grant @s only world_area:chapter_2/dusks_fractured_maw/in
+    execute unless biome ~ ~ ~ world_area:chapter_2/dusks_fractured_maw run advancement grant @s only world_area:chapter_2/dusks_fractured_maw/out
+
+    function world_area:chapter_2/dusks_fractured_maw/main

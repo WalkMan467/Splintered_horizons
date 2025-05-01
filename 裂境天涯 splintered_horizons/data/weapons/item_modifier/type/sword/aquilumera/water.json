@@ -1,0 +1,18 @@
+[
+  {
+    "function": "minecraft:set_custom_model_data",
+    "flags": {
+      "values": [
+        true
+      ],
+      "mode": "replace_all"
+    }
+  },
+  {
+    "function": "minecraft:set_custom_data",
+    "tag": {
+      "wl_water": true,
+      "wl_light": false
+    }
+  }
+]

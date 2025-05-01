@@ -1,5 +1,6 @@
 # 施法主程式
 # @s = BOSS
+execute if entity @s[tag=monster.broken_moon.passive.cding] run function monsters:chapter_2/broken_moon/1/end
 
 execute if score @s monster.broken_moon.skill.1.casting matches 1.. if score @s monster.skill.silence matches 1.. run function monsters:chapter_2/broken_moon/1/end
 execute if score @s monster.broken_moon.skill.1.casting matches 1.. if score @s monster.skill.silence matches 1.. run return 0

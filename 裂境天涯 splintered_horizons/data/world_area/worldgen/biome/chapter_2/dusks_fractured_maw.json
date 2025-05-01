@@ -1,0 +1,24 @@
+{
+    "temperature": -0.3,
+    "downfall": 0,
+    "has_precipitation": true,
+    "creature_spawn_probability": 0,
+    "effects": {
+      "sky_color": 7485,
+      "fog_color": 7485,
+      "water_color": 16746496,
+      "water_fog_color": 16721408,
+      "grass_color": 16746496,
+      "foliage_color": 16746496,
+      "particle": {
+        "options": {
+          "type": "ominous_spawning"
+        },
+        "probability": 0.05
+      }
+    },
+    "spawners": {},
+    "spawn_costs": {},
+    "carvers": "minecraft:canyon",
+    "features": []
+  }

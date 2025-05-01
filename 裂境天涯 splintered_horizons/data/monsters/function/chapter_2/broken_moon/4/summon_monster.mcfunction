@@ -1,0 +1,8 @@
+execute unless score #difficulty global.main matches 1.. run return 0
+
+summon skeleton ~ ~ ~ {Glowing:1b,DeathLootTable:"",Passengers:[{data:{aj_kill:{name:""}},id:"minecraft:marker",Tags:["main.duration.timer","summon"]}],Tags:["monster","soul_tree_remnant","monsters.spawn","team.light","monster.broken_moon.4.monster"],CustomName:'{"bold":false,"color":"gold","fallback":"靈魂樹殘像","italic":false,"translate":"monsters.soul_tree_remnant"}',HandItems:[{id:"minecraft:wooden_sword",count:1},{id:"minecraft:air",count:1}],HandDropChances:[0.000F,0.000F],ArmorItems:[{id:"minecraft:air",count:1},{id:"minecraft:leather_leggings",count:1,components:{"minecraft:equippable":{slot:"legs",equip_sound:"entity.creaking.activate",asset_id:"soul_tree_remnant"},"minecraft:trim":{material:"minecraft:gold",pattern:"minecraft:tide",show_in_tooltip:false}}},{id:"minecraft:leather_chestplate",count:1,components:{"minecraft:equippable":{slot:"chest",equip_sound:"entity.creaking.activate",asset_id:"soul_tree_remnant"},"minecraft:trim":{material:"minecraft:resin",pattern:"minecraft:tide",show_in_tooltip:false}}},{id:"minecraft:poisonous_potato",count:1,components:{"minecraft:item_model":"head/soul_tree_remnant"}}],ArmorDropChances:[0.000F,0.000F,0.000F,0.000F]}
+
+scoreboard players set @n[tag=main.duration.timer,tag=summon,type=marker] duration 400
+tag @n[tag=main.duration.timer,tag=summon,type=marker] remove summon
+
+tag @e[tag=monsters.spawn] remove monsters.spawn

@@ -8,7 +8,7 @@ execute as @p[tag=link] at @n[tag=link,type=area_effect_cloud,tag=player.backup.
 
 
 execute unless entity @n[tag=link,type=area_effect_cloud,tag=player.backup.pos] if dimension minecraft:overworld in minecraft:overworld run tp @s 38 64 11
-execute unless entity @n[tag=link,type=area_effect_cloud,tag=player.backup.pos] if dimension world_area:main/safe_zone in world_area:main/safe_zone run tp @s 0 60 -2
+execute unless entity @n[tag=link,type=area_effect_cloud,tag=player.backup.pos] if dimension world_area:main/safe_zone run tp @s 0 60 -2
 
 playsound minecraft:entity.cat.death master @s ~ ~ ~ 1 1 1
 playsound minecraft:block.note_block.pling master @s ~ ~ ~ 1 .5 1

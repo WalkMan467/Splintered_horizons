@@ -1,15 +1,16 @@
 {
-  "temperature": 0.8,
+  "carvers": [
+    "minecraft:canyon"
+  ],
   "downfall": 0,
-  "has_precipitation": true,
-  "creature_spawn_probability": 0,
   "effects": {
-    "sky_color": 6109542,
-    "fog_color": 8400022,
-    "water_color": 6109542,
-    "water_fog_color": 8400022,
-    "grass_color": 8400022,
-    "foliage_color": 8400022,
+    "fog_color": 6458326,
+    "grass_color": 2636404,
+    "foliage_color": 17342,
+    "music": [],
+    "sky_color": 1520267,
+    "water_color": 4159204,
+    "water_fog_color": 329011,
     "particle": {
       "options": {
         "type": "minecraft:trail",
@@ -24,8 +25,9 @@
       "probability": 0.01
     }
   },
-  "spawners": {},
+  "features": [],
+  "has_precipitation": true,
   "spawn_costs": {},
-  "carvers": "minecraft:canyon",
-  "features": []
+  "spawners": {},
+  "temperature": -0.3
 }

@@ -8,3 +8,5 @@ scoreboard players reset @s monster.broken_moon.skill.1.casting
 
 bossbar set minecraft:monster.boss.broken_moon.passive name {"translate": "monsters.broken_moon.mana"}
 bossbar set minecraft:monster.boss.broken_moon.passive color blue
+
+tag @s remove monster.broken_moon.passive.cding

@@ -24,3 +24,6 @@ scoreboard players set 4 particle.sound_wave 4
 scoreboard objectives add particle.void_wave dummy
 scoreboard players set 2 particle.void_wave 2
 scoreboard players set 4 particle.void_wave 4
+
+scoreboard objectives add bolt dummy
+scoreboard objectives add particle.lightning.continuous dummy

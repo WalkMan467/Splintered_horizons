@@ -2,8 +2,8 @@ scoreboard players set @s player.backup.timer 0
 scoreboard players set @s backup 0
 scoreboard players enable @s backup
 
-tellraw @s [{"text":"⚠: ","color":"green"},{"translate":"tips.player.backup.2","color":"white"}]
-playsound minecraft:entity.player.levelup voice @s ~ ~1 ~ 1 1.5
+tellraw @s[gamemode=creative] [{"text":"⚠: ","color":"green"},{"translate":"tips.player.backup.2","color":"white"}]
+playsound minecraft:entity.player.levelup voice @s[gamemode=creative] ~ ~1 ~ 1 1.5
 
 execute if score @s player.backup matches 1 run function players:inventory/-store {bag:"player_backup.1"}
 execute if score @s player.backup matches 2 run function players:inventory/-store {bag:"player_backup.2"}

@@ -1,14 +1,3 @@
-function story:load
-function music:scoreboard
-function weapons:scoreboard
-function players:scoreboard
-function cutscene:scoreboard
-function monsters:scoreboard
-function system:scoreboard
-function armors:scoreboard
-function items:scoreboard
-function dmg_formula:scoreboard
-
 scoreboard objectives add duration dummy
 
 scoreboard objectives add hotbar dummy

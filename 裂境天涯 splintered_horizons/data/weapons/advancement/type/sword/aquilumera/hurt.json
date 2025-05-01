@@ -1,0 +1,23 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+          "slots": {
+            "weapon.mainhand": {
+              "predicates": {
+                "minecraft:custom_data": {
+                  "weapon": "aquilumera"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "weapons:type/sword/aquilumera/passive/reset_passive_hurt_adv"
+  }
+}

@@ -1,0 +1,16 @@
+{
+    "values": [
+      "main:scoreboard",
+      "story:load",
+      "music:scoreboard",
+      "weapons:scoreboard",
+      "players:scoreboard",
+      "cutscene:scoreboard",
+      "monsters:scoreboard",
+      "system:scoreboard",
+      "armors:scoreboard",
+      "items:scoreboard",
+      "dmg_formula:scoreboard",
+      "world_area:scoreboard"
+    ]
+  }

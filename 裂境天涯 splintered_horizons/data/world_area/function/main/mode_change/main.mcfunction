@@ -4,4 +4,6 @@
 execute if biome ~ ~ ~ #world_area:change_adventure run return 1
 
 # 特殊區域
-execute if entity @s[advancements={world_area:main/campfire/in=true}] if biome ~ ~ ~ #world_area:change_survival run return 1
+
+    # 營火
+execute if entity @s[tag=campfire] run return 1

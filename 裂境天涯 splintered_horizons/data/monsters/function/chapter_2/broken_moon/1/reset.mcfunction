@@ -15,6 +15,10 @@ attribute @s jump_strength modifier remove monsters.broken_moon.1
 attribute @s gravity modifier remove monsters.broken_moon.1
 
 tag @s remove chapter_2.broken_moon.1
+tag @s remove chapter_2.broken_moon.3
+tag @a[distance=..60] remove monsters.broken_moon.1.target
+
+tag @s add monster.broken_moon.passive.cding
 
 scoreboard players reset @s monster.broken_moon.skill.1.cd
 scoreboard players reset @s monster.broken_moon.skill.1.casting

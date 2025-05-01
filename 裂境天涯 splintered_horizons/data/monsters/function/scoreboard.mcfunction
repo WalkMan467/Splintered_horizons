@@ -23,3 +23,8 @@ scoreboard objectives add monster.broken_moon.skill.3.casting dummy "[破碎之�
 
 scoreboard objectives add monster.broken_moon.skill.3.player_timer dummy "[破碎之月] 3技能玩家計時器"
 scoreboard objectives add monster.broken_moon.skill.3.count dummy "[破碎之月] 3技能次數"
+scoreboard objectives add monster.broken_moon.skill.3.player_sun dummy "[破碎之月] 3技能玩家是否有太陽"
+
+scoreboard objectives add monster.broken_moon.skill.4.player_timer dummy "[破碎之月] 4技能玩家計時器"
+scoreboard objectives add monster.broken_moon.skill.4.cd dummy "[破碎之月] 4技能CD"
+scoreboard objectives add monster.broken_moon.skill.4.casting dummy "[破碎之月] 4技能施法中"

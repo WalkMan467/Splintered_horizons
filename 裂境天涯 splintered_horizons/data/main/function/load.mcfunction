@@ -1,15 +1,21 @@
 function world_area:main/reload
 
-function main:scoreboard
+execute as @a at @s run function #main:scoreboard
 
 function music:main
+
+# 鉤爪輔助瞄準
 function weapons:type/drop/hook/aim_assist/main
 function weapons:type/drop/hook/aim_assist/fx
+
+# 玩家快速替換物品功能
 function players:replace/block/main
 function players:replace/torch/main
 function players:replace/food/main
+
+# 微型太陽
 function weapons:type/drop/miniature_sun/rc/main
 
+# 計時器(1s)
 schedule function monsters:timer_s 1s
-
 schedule function main:timer/1s 1s
