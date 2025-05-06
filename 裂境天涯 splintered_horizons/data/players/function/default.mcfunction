@@ -14,7 +14,7 @@ scoreboard players enable @a environment_particles
 scoreboard players add @a environment_particles 0
 
 
-execute in minecraft:overworld run spawnpoint @s 39 64 10
+execute in minecraft:overworld run spawnpoint @s 38 64 11
 execute in minecraft:overworld run tp @s 39 64 10 90 0
 
 team join team.player @a

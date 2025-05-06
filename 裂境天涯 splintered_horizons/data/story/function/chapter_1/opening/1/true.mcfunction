@@ -7,5 +7,8 @@ execute as @n[tag=aj.rainy_night.root,limit=1] run function animated_java:rainy_
 
 
 execute positioned 38 64.15 6.85 rotated 0 0 run function animated_java:rainy_night/summon {args:{}}
+
+summon interaction 38 64.15 6.85 {Tags:["story.chapter_1.opening.1.act","interaction.sound.default"],height:2,UUID:[I; 1, 21, 51, 5]}
+
 summon minecraft:item_display 37.75 64.625 6.9375 {Tags:["story.chapter_1.opening.1"],brightness: {block: 15, sky: 15}, item: {count: 1, id: "minecraft:iron_sword"}, transformation: {left_rotation: [-0.13016956f, 0.19191396f, 0.82340604f, 0.5179068f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0000002f, 1.0000005f, 1.0000014f], translation: [0.0f, 0.0f, 0.0f]}}
 execute as @n[tag=aj.rainy_night.root,limit=1] run function animated_java:rainy_night/animations/sit_down/play

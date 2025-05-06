@@ -19,3 +19,4 @@ execute unless score #story global.main matches 1.. run function story:chapter_1
 scoreboard players set #story global.main 1
 
 spawnpoint @s 38 64 11
+setworldspawn 38 64 11

@@ -11,4 +11,6 @@ playsound minecraft:block.respawn_anchor.deplete voice @s ~ ~1 ~ 1 0.5
 playsound minecraft:block.vault.open_shutter voice @s ~ ~1 ~ 1 0.5
 playsound minecraft:entity.generic.explode voice @s ~ ~1 ~ 0.5 0.5
 
+attribute @s safe_fall_distance modifier add boss_fight 1024 add_value
+
 scoreboard players set @s world_area.daytime_weather.player 1

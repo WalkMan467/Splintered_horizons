@@ -46,10 +46,11 @@ execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 4
 execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 41 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.41","fallback": "[雨夜奈] 或許你會需要一點裝備與食物"}
 execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 42 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.42","fallback": "[雨夜奈] 如果你準備好了，我們就離開這裡吧"}
 
-execute if score story.chapter_1.ml story.chapter_1 matches 43 run weather rain 120s
-execute if score story.chapter_1.ml story.chapter_1 matches 44 run function story:chapter_1/opening/2/0
+execute if score story.chapter_1.ml story.chapter_1 matches 42 run weather rain 120s
+execute if score story.chapter_1.ml story.chapter_1 matches 42 run function story:chapter_1/opening/2/0
 
+
+execute unless score story.chapter_1.ml story.chapter_1 matches 1..42 run return 0
 
 scoreboard players add story.chapter_1.ml story.chapter_1 1
-
-execute if score story.chapter_1.ml story.chapter_1 matches 1..44 run schedule function story:chapter_1/opening/1/1 8s
+playsound minecraft:ui.button.click voice @a ~ ~1 ~ 0.5 1

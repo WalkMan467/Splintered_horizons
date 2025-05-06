@@ -8,7 +8,7 @@
           "children": [
             {
               "type": "minecraft:item",
-              "name": "minecraft:music_disc_11",
+              "name": "minecraft:disc_fragment_5",
               "functions": [
                 {
                   "function": "minecraft:set_components",
@@ -35,7 +35,7 @@
             },
             {
               "type": "minecraft:item",
-              "name": "minecraft:music_disc_11",
+              "name": "minecraft:disc_fragment_5",
               "functions": [
                 {
                   "function": "minecraft:set_components",
@@ -62,7 +62,7 @@
             },
             {
               "type": "minecraft:item",
-              "name": "minecraft:music_disc_11",
+              "name": "minecraft:disc_fragment_5",
               "functions": [
                 {
                   "function": "minecraft:set_components",
@@ -89,7 +89,7 @@
             },
             {
               "type": "minecraft:item",
-              "name": "minecraft:music_disc_11",
+              "name": "minecraft:disc_fragment_5",
               "functions": [
                 {
                   "function": "minecraft:set_components",
@@ -116,7 +116,7 @@
             },
             {
               "type": "minecraft:item",
-              "name": "minecraft:music_disc_11",
+              "name": "minecraft:disc_fragment_5",
               "functions": [
                 {
                   "function": "minecraft:set_components",
@@ -143,7 +143,7 @@
             },
             {
               "type": "minecraft:item",
-              "name": "minecraft:music_disc_11",
+              "name": "minecraft:disc_fragment_5",
               "functions": [
                 {
                   "function": "minecraft:set_components",

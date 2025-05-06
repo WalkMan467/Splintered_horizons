@@ -4,7 +4,7 @@
 
 execute as @s[type=item_display,tag=wind_sword.wind] at @s run function weapons:type/sword/wind_sword/wind/main
 
-    function weapons:type/arrows/ground_detect/main
-    function weapons:type/sword/grip_of_withering/main
-    function weapons:type/sword/morning_light/main
-    function weapons:type/drop/miniature_sun/rc/main
+function weapons:type/arrows/ground_detect/main
+function weapons:type/sword/grip_of_withering/main
+function weapons:type/sword/morning_light/main
+function weapons:type/drop/miniature_sun/rc/main

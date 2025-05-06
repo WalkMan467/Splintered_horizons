@@ -5,11 +5,16 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:book",
+          "name": "minecraft:disc_fragment_5",
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
+                "minecraft:jukebox_playable": {
+                  "song": "5",
+                  "show_in_tooltip": false
+                },
+                "minecraft:tooltip_style": "epic",
                 "minecraft:item_model": "drop/hook/1",
                 "minecraft:custom_data": "{type:\"drop\",weapon:\"hook\",rc:1b}",
                 "minecraft:lore": [

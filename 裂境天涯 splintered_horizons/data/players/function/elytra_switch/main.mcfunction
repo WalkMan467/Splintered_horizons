@@ -2,5 +2,9 @@ execute if items entity @s player.cursor *[custom_data~{disable_drop:1b}] run fu
 execute if items entity @s player.cursor *[custom_data~{disable_drop:1b}] run item replace entity @s player.cursor with air
 execute unless items entity @s[advancements={players:elytra_switch/true=true}] weapon.offhand *[custom_data~{elytra_switch:1b}] run item replace entity @s weapon.offhand with firework_rocket[custom_data={elytra_switch:1b,disable_drop:1b},fireworks={flight_duration:1}] 1
 
-execute unless score @s player.disable.elytra_switch matches 1.. if score @s player.detect.air matches 10.. if biome ~ ~ ~ world_area:main/safe_zone run advancement grant @s only players:elytra_switch/true
+execute unless score @s player.disable.elytra_switch matches 1.. if score @s player.detect.air matches 10.. if function players:elytra_switch/area_detect unless predicate players:elytra_switch/disable run advancement grant @s only players:elytra_switch/true
 execute unless score @s player.detect.air matches 10.. run advancement grant @s only players:elytra_switch/false
+execute unless function players:elytra_switch/area_detect run advancement grant @s only players:elytra_switch/false
+execute if predicate players:elytra_switch/disable run advancement grant @s only players:elytra_switch/false
+
+execute if entity @s[tag=player.elytra_switch.safe_fall] unless predicate players:detect/air run function players:elytra_switch/safe_fall/false

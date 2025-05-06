@@ -264,6 +264,33 @@
 			"data/animated_java/tags/function/global/root/on_tick.json"
 		]
 	},
+	"boss_1": {
+		"files": [
+			"animated_java/data/animated_java/function/boss_1/invalid_version_warning.mcfunction",
+			"animated_java/data/animated_java/function/boss_1/root/on_tick.mcfunction",
+			"animated_java/data/animated_java/function/boss_1/zzz/1.mcfunction",
+			"animated_java/data/animated_java/function/boss_1/zzz/2.mcfunction",
+			"animated_java/data/animated_java/function/boss_1/zzz/0.mcfunction",
+			"animated_java/data/animated_java/function/boss_1/summon.mcfunction",
+			"animated_java/data/animated_java/function/boss_1/remove/all.mcfunction",
+			"animated_java/data/animated_java/function/boss_1/remove/this.mcfunction",
+			"animated_java/data/animated_java/function/boss_1/set_default_pose.mcfunction",
+			"animated_java/data/animated_java/tags/function/boss_1/as_root/pre_tick.json",
+			"animated_java/data/animated_java/tags/function/boss_1/as_root/post_tick.json",
+			"animated_java/data/animated_java/tags/function/boss_1/as_root/on_summon.json",
+			"animated_java/data/animated_java/tags/function/boss_1/as_root/on_remove.json",
+			"data/animated_java/function/global/on_load.mcfunction",
+			"data/animated_java/function/global/remove/everything.mcfunction",
+			"data/animated_java/function/global/internal/gu/load.mcfunction",
+			"data/animated_java/function/global/internal/gu/zzz/0.mcfunction",
+			"data/animated_java/function/global/internal/gu/zzz/1.mcfunction",
+			"data/animated_java/function/global/internal/gu/convert_uuid_array_to_string.mcfunction",
+			"data/animated_java/function/boss_1/on_load.mcfunction",
+			"data/animated_java/function/boss_1/invalid_version_warning.mcfunction",
+			"data/minecraft/tags/function/load.json",
+			"data/animated_java/tags/function/global/on_load.json"
+		]
+	},
 	"chain_lock": {
 		"files": [
 			"animated_java/data/animated_java/function/chain_lock/on_load.mcfunction",

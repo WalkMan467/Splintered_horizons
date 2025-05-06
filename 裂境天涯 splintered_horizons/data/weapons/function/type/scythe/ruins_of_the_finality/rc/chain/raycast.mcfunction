@@ -1,4 +1,3 @@
-# 
 scoreboard players set #temp weapon.ruins_of_the_finality.effect.range 25
 
 summon area_effect_cloud ~ ~ ~ {Tags:["weapon.ruins_of_the_finality.effect.chain.main"]}

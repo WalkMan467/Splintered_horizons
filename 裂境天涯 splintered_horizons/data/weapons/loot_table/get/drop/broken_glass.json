@@ -5,11 +5,16 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:prismarine_shard",
+          "name": "minecraft:disc_fragment_5",
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
+                "minecraft:jukebox_playable": {
+                  "song": "5",
+                  "show_in_tooltip": false
+                },
+                "minecraft:tooltip_style": "rare",
                 "minecraft:item_model": "drop/broken_glass/1",
                 "minecraft:custom_data": "{type:\"drop\",weapon:\"broken_glass\",rc:1b}",
                 "minecraft:lore": [

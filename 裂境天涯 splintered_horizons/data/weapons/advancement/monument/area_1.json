@@ -33,7 +33,7 @@
             },
             "predicates": {
               "minecraft:custom_data": {
-                "weapon": "light_of_water_mirror"
+                "monument": 1
               }
             }
           }

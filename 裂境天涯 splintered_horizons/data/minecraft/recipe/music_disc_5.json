@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "ingredients": [
+      "minecraft:structure_void"
+    ],
+    "result": {
+      "components": {},
+      "count": 1,
+      "id": "minecraft:structure_void"
+    }
+  }

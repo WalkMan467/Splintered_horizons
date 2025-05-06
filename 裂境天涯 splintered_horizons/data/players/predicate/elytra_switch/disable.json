@@ -1,0 +1,31 @@
+{
+    "condition": "minecraft:any_of",
+    "terms": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "effects": {
+            "minecraft:levitation": {
+              "amplifier": {
+                "min": 0,
+                "max": 255
+              },
+              "duration": {
+                "min": 1
+              }
+            }
+          }
+        }
+      },
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "player.disable.elytra_switch": {
+            "min": 1
+          }
+        }
+      }
+    ]
+  }

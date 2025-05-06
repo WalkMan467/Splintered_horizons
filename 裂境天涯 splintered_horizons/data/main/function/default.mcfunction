@@ -14,6 +14,9 @@ difficulty normal
 kill @e[tag=system.monument_point.sword]
 
 scoreboard players set #monument.area_1 global.main 0
+scoreboard players set #monument.area_2 global.main 0
+scoreboard players set #story global.main 1
 advancement revoke @a only weapons:monument/area_1
+advancement revoke @a only weapons:monument/area_2
 
 reload
