@@ -1,5 +1,5 @@
-give @p wooden_sword[enchantments={levels:{"minecraft:sharpness":2,"minecraft:unbreaking":2}}] 1
-give @p wooden_pickaxe[enchantments={levels:{"minecraft:efficiency":2,"minecraft:unbreaking":1}}] 1
+give @p wooden_sword[enchantments={"minecraft:sharpness":2,"minecraft:unbreaking":2}}] 1
+give @p wooden_pickaxe[enchantments={"minecraft:efficiency":2,"minecraft:unbreaking":1}}] 1
 give @s apple 12
 give @s crafting_table 1
 

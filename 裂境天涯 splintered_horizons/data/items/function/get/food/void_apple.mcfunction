@@ -1,4 +1,4 @@
-give @s apple[item_name='[{"translate":"item.void_apple","color":"#810092","italic":false,"bold":true}]',lore=['[{"translate":"item.void_apple.type","italic":false,"color":"dark_gray"}]','{"text":""}','[{"translate":"item.void_apple.story.1","italic":false,"color":"blue"}]','[{"translate":"item.void_apple.story.2","italic":false,"color":"blue"}]'],custom_data={void_apple:1b,type:"food"},item_model="food/void_apple",food={nutrition:4,saturation:4,can_always_eat:true}] 64
+give @s apple[item_name=[{"translate":"item.void_apple","color":"#810092","italic":false,"bold":true}],lore=[[{"translate":"item.void_apple.type","italic":false,"color":"dark_gray"}],{"text":""},[{"translate":"item.void_apple.story.1","italic":false,"color":"blue"}],[{"translate":"item.void_apple.story.2","italic":false,"color":"blue"}]],custom_data={void_apple:1b,type:"food"},item_model="food/void_apple",food={nutrition:4,saturation:4,can_always_eat:true}] 64
 
 # "item.void_apple" : "虛空蘋果"
 # "item.void_apple.type" : "食物"

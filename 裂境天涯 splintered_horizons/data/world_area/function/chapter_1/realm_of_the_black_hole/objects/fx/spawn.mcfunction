@@ -1,6 +1,6 @@
 scoreboard players set @s[type=marker] world_area.realm_of_the_black_hole.fx.marker_temp 1
 
-summon area_effect_cloud ~ ~0.5 ~ {Tags:["world_area.realm_of_the_black_hole.fx","summon"],Duration:400}
+summon area_effect_cloud ~ ~0.5 ~ {Tags:["world_area.realm_of_the_black_hole.fx","summon"],Particle:{type:"block",block_state:"air"},Radius:0,Duration:400}
 
 execute store result score #world_area.realm_of_the_black_hole.fx global.main run random value 1..2
 

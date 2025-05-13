@@ -2,6 +2,7 @@ title @s title ["",{"text":"☀","color":"gold"},{"text":"營火","underlined":t
 title @s subtitle [{"text":"☀","color":"gold"},{"text":"Campfire","italic":true,"underlined":true,"color":"gold"},{"text":"☀","color":"gold"}]
 title @s times 20 20 20
 
+stopsound @s voice minecraft:voice.join_game
 playsound minecraft:voice.join_game voice @s ~ ~1 ~ 0.5 1
 
 

@@ -32,10 +32,12 @@
     "function": "minecraft:set_components",
     "components": {
       "minecraft:enchantments": {
-        "levels": {
-          "weapons:type/sword/grip_of_withering/use": 1
-        },
-        "show_in_tooltip": false
+        "weapons:type/sword/grip_of_withering/use": 1
+      },
+      "minecraft:tooltip_display": {
+        "hidden_components": [
+          "minecraft:enchantments"
+        ]
       }
     }
   }

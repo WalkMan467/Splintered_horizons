@@ -1,1 +1,0 @@
-execute if biome ~ ~ ~ world_area:chapter_2/dusks_fractured_maw if block ~ ~-1 ~ end_stone run return 1

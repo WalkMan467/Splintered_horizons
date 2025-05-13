@@ -13,12 +13,14 @@
 attribute = []
 # ----- 設定參數 ----- #
 
-
-name = ['鉤爪', '#b30000', '投擲物']
-story = {'info': ['攀爬用的鉤爪', '可以讓玩家移動到目標處'], 'color': 'blue'}
-item_data     = {'real_item': 'hook', 'id': 'hook', 'item_model': '"drop/hook/1"', 'custom_data': '{rc:1b,type:"drop",weapon:"hook"}', 'max_damage': -1}
-skill    = {'is_skill': True, 'cd': 0, 'name': ['投擲', 'dark_red', 'gold'], 'info': ['[s]可以投擲鉤爪', '去往鉤爪碰到的方塊處', '如果按下 [s]', '可以啟動輔助瞄準']}
-ultimate    = {'is_ultimate': False, 'cd': 5, 'name': ['終焉之月', '#b30000', '#5a0000'], 'info': ['[s]消耗一個終焉之眼，', '開啟【終焉之月】型態持續 15 秒', '大幅強化武器，', '此形態下如果攻擊會有25%機率造成大量傷害']}
+name = ['水鏡之光', '#0066ff', '紀念碑物品 / 劍']
+story = {'info': ['始源 6 魔劍之一', '掌控水元素之力', '同時也是地圖的目標物品'], 'color': 'dark_aqua'}
+item_data     = {'real_item': 'stone_sword', 'id': 'aquilumera', 'item_model': '"sword/light_of_water_mirror/0"', 'custom_data': '{rc:1b,type:"sword",weapon:"aquilumera",monument:1b,wl_light:0b,wl_water:1b}', 'max_damage': -1, 'rc': True, 'other': ['custom_model_data={flags:[1]}']}
+skill    = {'is_skill': True, 'cd': 25, 'name': ['水光切換', '#0066ff', '#00afe4'], 'info': ['[%s] 可以切換 水/光 型態', '當你攻擊敵人可以獲得 1 層能量，最高可以有 25 層', '切換型態會引爆層數，造成 50% 攻擊力傷害', '兩種型態的增益不同']}
+ultimate    = {'is_ultimate': False, 'cd': 0, 'name': ['終焉之月', '#aa00c0', '#7100b3'], 'info': ['右鍵點擊消耗一個終焉之眼，', '開啟【終焉之月】型態持續 15 秒', '大幅強化武器，', '此形態下如果攻擊會有25%機率造成大量傷害']}
+attribute.append({'attribute': 'attack_damage', 'value': 3.5, 'slot': 'mainhand', 'operation': 'add_value'})
+attribute.append({'attribute': 'attack_speed', 'value': -2.3, 'slot': 'mainhand', 'operation': 'add_value'})
+attribute.append({'attribute': 'armor', 'value': -0.6, 'slot': 'mainhand', 'operation': 'add_multiplied_base'})
 
 # ----- init ----- #
 
@@ -46,42 +48,42 @@ with open(__file__.replace("item_builder.py","#temp.mcfunction"),mode="w+",encod
     f.write(f'give @s {item_data["real_item"]}[')
     
     # item name
-    f.write(f'item_name=\'[{{"translate":"weapon.{item_data["id"]}","color":"{name[1]}","italic":false,"bold":true}}]\'')
+    f.write(f'item_name=[{{"translate":"weapon.{item_data["id"]}","color":"{name[1]}","italic":false,"bold":true}}]')
     
     # lore
         # type
-    f.write(f',lore=[\'[{{"translate":"weapon.{item_data["id"]}.type","italic":false,"color":"dark_gray"}}]\',\'{{"text":""}}\'')
+    f.write(f',lore=[[{{"translate":"weapon.{item_data["id"]}.type","italic":false,"color":"dark_gray"}}],{{"text":""}}')
         # story
     for i in range(1,len(story["info"])+1):
-        f.write(f',\'[{{"translate":"weapon.{item_data["id"]}.story.{str(i)}","italic":false,"color":"{story["color"]}"}}]\'')
+        f.write(f',[{{"translate":"weapon.{item_data["id"]}.story.{str(i)}","italic":false,"color":"{story["color"]}"}}]')
         translate["story"].append(f'# "weapon.{item_data["id"]}.story.{str(i)}" : "{story["info"][i-1]}"')
         # skill
     if skill['is_skill'] == True:
-    
-        if int(skill["cd"]) >= 1: skill["cd"] = ',{\"translate\":\"weapon.skill_cd",\"color\":\"#6E6E6E\"},'+str(skill["cd"])+'s'
-        else: skill["cd"] = ""
 
-        f.write(f',\'{{"text":""}}\',\'[{{"text":"","italic":false}},{{"translate":"weapon.{item_data["id"]}.skill","color":"{skill["name"][1]}","bold":true}},{{"text":"  "}}{skill["cd"]}]\'')
+        if int(skill["cd"]) >= 1: skill["cd"] = ',{\"translate\":\"weapon.skill_cd\",\"color\":\"#6E6E6E\"},{\"text\":\"'+str(skill["cd"])+'s\"}'
+        else: skill["cd"] = ""
+    
+        f.write(f',{{"text":""}},[{{"text":"","italic":false}},{{"translate":"weapon.{item_data["id"]}.skill","color":"{skill["name"][1]}","bold":true}},{{"text":"  "}}{skill["cd"]}]')
         translate["skill"].append(f'# "weapon.{item_data["id"]}.skill" : "[{skill["name"][0]}] "')
 #        translate["skill"].append(f'# "weapon.{item_data["id"]}.skill.1" : "{skill["info"][0]}"')
 
         if len(skill["info"]) >= 1:
             for i in range(1,len(skill["info"])+1):
-                f.write(f',\'[{{"text":"","italic":false}},{{"translate":"weapon.{item_data["id"]}.skill.{str(i)}","color":"{skill["name"][2]}"}}]\'')
+                f.write(f',[{{"text":"","italic":false}},{{"translate":"weapon.{item_data["id"]}.skill.{str(i)}","color":"{skill["name"][2]}"}}]')
                 translate["skill"].append(f'# "weapon.{item_data["id"]}.skill.{str(i)}" : "{skill["info"][i-1]}"')
         # ultimate
     if ultimate['is_ultimate'] == True:
 
-        if int(ultimate["cd"]) >= 1: ultimate["cd"] = ',{\"translate\":\"weapon.skill_cd",\"color\":\"#6E6E6E\"},'+str(ultimate["cd"])+'s'
+        if int(ultimate["cd"]) >= 1: ultimate["cd"] = ',{\"translate\":\"weapon.skill_cd\",\"color\":\"#6E6E6E\"},{\"text\":\"'+str(ultimate["cd"])+'s\"}'
         else: ultimate["cd"] = ""
     
-        f.write(f',\'{{"text":""}}\',\'[{{"text":"","italic":false}},{{"text":"\uE000","font":"minecraft:icon"}},{{"translate":"weapon.{item_data["id"]}.ultimate","color":"{ultimate["name"][1]}","bold":true}},{{"text":"\uE000","font":"minecraft:icon"}},{{"text":"  "}}{ultimate["cd"]}]\'')
+        f.write(f',{{"text":""}},[{{"text":"","italic":false}},{{"text":"\uE000","font":"minecraft:icon"}},{{"translate":"weapon.{item_data["id"]}.ultimate","color":"{ultimate["name"][1]}","bold":true}},{{"text":"\uE000","font":"minecraft:icon"}},{{"text":"  "}}{ultimate["cd"]}]')
         translate["ultimate"].append(f'# "weapon.{item_data["id"]}.ultimate" : "[{ultimate["name"][0]}] "')
 #        translate["ultimate"].append(f'# "weapon.{item_data["id"]}.ultimate.1" : "{ultimate["info"][0]}"')
 
         if len(ultimate["info"]) >= 1:
             for i in range(1,len(ultimate["info"])+1):
-                f.write(f',\'[{{"text":"","italic":false}},{{"translate":"weapon.{item_data["id"]}.ultimate.{str(i)}","color":"{skill["name"][2]}"}}]\'')
+                f.write(f',[{{"text":"","italic":false}},{{"translate":"weapon.{item_data["id"]}.ultimate.{str(i)}","color":"{skill["name"][2]}"}}]')
                 translate["ultimate"].append(f'# "weapon.{item_data["id"]}.ultimate.{str(i)}" : "{ultimate["info"][i-1]}"')
                 
     f.write(']')
@@ -99,9 +101,21 @@ with open(__file__.replace("item_builder.py","#temp.mcfunction"),mode="w+",encod
     
     # others
     if str(item_data["item_model"]) != '""': 
-        f.write(f',max_stack_size=1{item_data["max_damage"]},item_model={item_data["item_model"]},custom_data={item_data["custom_data"]}]')
+        f.write(f',max_stack_size=1{item_data["max_damage"]},item_model={item_data["item_model"]},custom_data={item_data["custom_data"]}')
     else:
-        f.write(f',max_stack_size=1{item_data["max_damage"]},custom_data={item_data["custom_data"]}]')
+        f.write(f',max_stack_size=1{item_data["max_damage"]},custom_data={item_data["custom_data"]}')
+
+    #  rc
+    if item_data.get('rc', True):
+
+        f.write(',consumable={consume_seconds:10000,animation:"none",has_consume_particles:false}')
+
+    # others
+    for component in item_data["other"]:
+        if component.strip():
+            f.write(f',{component}')
+
+    f.write(']')
     
     # translate
     f.write(f'\n\n# "weapon.{item_data["id"]}" : "{name[0]}"')

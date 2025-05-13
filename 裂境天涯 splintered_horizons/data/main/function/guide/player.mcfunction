@@ -1,6 +1,3 @@
-# 快捷欄切換
-
-function hotbar_sound:main
 
 function story:tick
 function items:timer_t

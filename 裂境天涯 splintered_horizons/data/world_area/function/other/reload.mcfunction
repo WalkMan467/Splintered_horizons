@@ -1,0 +1,1 @@
+advancement revoke @a only world_area:other/the_forgotten_lost_city/in

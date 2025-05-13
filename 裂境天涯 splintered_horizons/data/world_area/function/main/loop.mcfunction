@@ -6,6 +6,9 @@
     # 第二章
     execute if entity @s[tag=!campfire] run function world_area:chapter_2/loop
 
+    # 其他
+    execute if entity @s[tag=!campfire] run function world_area:other/loop
+
 #==================================================
 
 function world_area:main/environment_particles/main

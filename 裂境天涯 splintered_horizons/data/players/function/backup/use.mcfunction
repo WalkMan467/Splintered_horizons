@@ -11,7 +11,7 @@ execute if score @s player.backup matches 3 run function players:inventory/-stor
 execute if score @s player.backup matches 4 run function players:inventory/-store {bag:"player_backup.4"}
 execute if score @s player.backup matches 5 run function players:inventory/-store {bag:"player_backup.5"}
 
-summon area_effect_cloud ~ ~ ~ {Duration:6000,Tags:["player.backup.pos","summon"]}
+summon area_effect_cloud ~ ~ ~ {Duration:6000,Tags:["player.backup.pos","summon"],Particle:{type:"block",block_state:"air"},Radius:0}
 scoreboard players operation @n[tag=summon,tag=player.backup.pos] player.id = @p player.id
 scoreboard players display name @n[tag=summon,tag=player.backup.pos] player.id ["[玩家] ",{"selector": "@p"},"位置備份"]
 

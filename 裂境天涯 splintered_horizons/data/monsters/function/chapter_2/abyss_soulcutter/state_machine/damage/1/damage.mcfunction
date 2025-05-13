@@ -1,0 +1,1 @@
+execute at 00000014-0000-0014-0000-000100000019 positioned ^ ^ ^1.5 as @a[distance=..1.5] run damage @s 12 mob_attack by 00000014-0000-0014-0000-000100000019

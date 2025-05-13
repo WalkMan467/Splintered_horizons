@@ -1,9 +1,7 @@
 
 # player
-scoreboard players set @s weapon.aquilumera.cd 25
-effect give @s speed 15 2 true
-effect give @s strength 5 0 true
-effect give @s haste 15 1 true
+scoreboard players set @s weapon.aquilumera.cd 15
+effect give @s speed 1 2 true
 
 # particle
 title @s times 10 5 10

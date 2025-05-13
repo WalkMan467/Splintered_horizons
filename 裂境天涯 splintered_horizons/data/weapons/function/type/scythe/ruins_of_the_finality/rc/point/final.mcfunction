@@ -1,4 +1,4 @@
-summon area_effect_cloud ^ ^ ^ {Duration:1,Tags:["weapon.ruins_of_the_finality.effect.chain.final.point"]}
+summon area_effect_cloud ^ ^ ^ {Particle:{type:"block",block_state:"air"},Radius:0,Duration:1,Tags:["weapon.ruins_of_the_finality.effect.chain.final.point"]}
 
 function particle:space_crack/use
 

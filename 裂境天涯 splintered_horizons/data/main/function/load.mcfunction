@@ -19,3 +19,9 @@ function weapons:type/drop/miniature_sun/rc/main
 # 計時器(1s)
 schedule function monsters:timer_s 1s
 schedule function main:timer/1s 1s
+
+schedule function monsters:chapter_2/abyss_soulcutter/main 10t
+
+# 快捷欄切換
+
+schedule function hotbar_sound:guide 2t

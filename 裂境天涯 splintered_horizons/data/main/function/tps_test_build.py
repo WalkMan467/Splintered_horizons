@@ -10,7 +10,7 @@ while(True):
     r = 0
     while r < r_max:
             r += 1
-            print("summon area_effect_cloud ~ ~ ~ {Duration:20}")
+            print("summon area_effect_cloud ~ ~ ~ {Particle:{type:"block",block_state:"air"},Radius:0,Duration:20}")
     
     print("")
     print(f"已循環 {r_max} 次！")

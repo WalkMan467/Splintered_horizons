@@ -9,14 +9,14 @@ execute at @s if block ~ ~-1 ~ air run tp @s ~ ~-1 ~
 # text
 execute store result score #temp global.main run random value 0..7
 
-execute if score #temp global.main matches 0 run data merge entity @s {text:'{"text":"■■■■","bold":true}'}
-execute if score #temp global.main matches 1 run data merge entity @s {text:'{"text":"■■■■■","bold":true}'}
-execute if score #temp global.main matches 2 run data merge entity @s {text:'{"text":"■■■■■■","bold":true}'}
-execute if score #temp global.main matches 3 run data merge entity @s {text:'{"text":"■■■■■■■","bold":true}'}
-execute if score #temp global.main matches 4 run data merge entity @s {text:'{"text":"■■■■■■■■","bold":true}'}
-execute if score #temp global.main matches 5 run data merge entity @s {text:'{"text":"■■■■■■■■■","bold":true}'}
-execute if score #temp global.main matches 6 run data merge entity @s {text:'{"text":"■■■■■■■■■■","bold":true}'}
-execute if score #temp global.main matches 7 run data merge entity @s {text:'{"text":"■■■■■■■■■■■","bold":true}'}
+execute if score #temp global.main matches 0 run data merge entity @s {text:{"text":"■■■■","bold":true}}
+execute if score #temp global.main matches 1 run data merge entity @s {text:{"text":"■■■■■","bold":true}}
+execute if score #temp global.main matches 2 run data merge entity @s {text:{"text":"■■■■■■","bold":true}}
+execute if score #temp global.main matches 3 run data merge entity @s {text:{"text":"■■■■■■■","bold":true}}
+execute if score #temp global.main matches 4 run data merge entity @s {text:{"text":"■■■■■■■■","bold":true}}
+execute if score #temp global.main matches 5 run data merge entity @s {text:{"text":"■■■■■■■■■","bold":true}}
+execute if score #temp global.main matches 6 run data merge entity @s {text:{"text":"■■■■■■■■■■","bold":true}}
+execute if score #temp global.main matches 7 run data merge entity @s {text:{"text":"■■■■■■■■■■■","bold":true}}
 
 # particle
 execute if score @s particle.space_rupture matches 0..6 run particle minecraft:dust{color:[0.984, 0.549, 1.0], scale:3.0} ~ ~ ~ 0 0 0 0 1 normal

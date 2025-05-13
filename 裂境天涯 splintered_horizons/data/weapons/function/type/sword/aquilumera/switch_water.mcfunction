@@ -1,10 +1,9 @@
 
 # player
-scoreboard players set @s weapon.aquilumera.cd 25
-effect give @s levitation 1 5 true
-effect give @s resistance 1 255 true
-effect give @s fire_resistance 1 255 true
-effect give @s instant_health 1 1 true
+scoreboard players set @s weapon.aquilumera.cd 15
+effect give @s levitation 1 3 true
+effect give @s resistance 2 2 true
+effect give @s fire_resistance 2 2 true
 
 scoreboard players set @s player.disable.elytra_switch 50
 
