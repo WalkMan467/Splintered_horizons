@@ -1,5 +1,6 @@
 {
 	"values": [
+		"animated_java:amysis/on_load",
 		"animated_java:aska/on_load",
 		"animated_java:boss_1/on_load",
 		"animated_java:chain_lock/on_load",
