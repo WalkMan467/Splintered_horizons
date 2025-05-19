@@ -3,6 +3,7 @@ scoreboard objectives add monster.skill.cast.cd dummy "怪物技能目前冷卻"
 scoreboard objectives add monster.skill.casting dummy "怪物技能施法中"
 scoreboard objectives add monster.skill.rdm.skill dummy "隨機放技能"
 scoreboard objectives add monster.skill.silence dummy "怪物技能沉默"
+scoreboard objectives add monster.boss.spawn dummy "BOSS生成"
 
 scoreboard objectives add global.monsters.health dummy
 scoreboard objectives add particle dummy
@@ -14,3 +15,4 @@ scoreboard objectives add particle dummy
 scoreboard objectives add monster.abyss_soulcutter dummy "深淵斷魂者血量"
 scoreboard objectives add monster.abyss_soulcutter.state_machine.state dummy "深淵斷魂者狀態機行為"
 scoreboard objectives add monster.abyss_soulcutter.state_machine.action dummy "深淵斷魂者狀態機運行"
+scoreboard objectives add monster.abyss_soulcutter.state_machine.back dummy "深淵斷魂者後退"

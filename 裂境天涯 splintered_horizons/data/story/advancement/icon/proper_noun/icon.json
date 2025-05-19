@@ -4,10 +4,7 @@
       "id": "minecraft:writable_book",
       "components": {
         "minecraft:enchantments": {
-          "levels": {
-            "minecraft:aqua_affinity": 1
-          },
-          "show_in_tooltip": false
+          "minecraft:mending": 1
         }
       },
       "count": 1
@@ -15,10 +12,11 @@
     "title": {
       "translate": "story.icon.proper_noun",
       "bold": true,
-      "italic": false
+      "italic": false,
+      "underlined": true
     },
     "description": "",
-    "background": "minecraft:textures/gui/advancements/backgrounds/crying_obsidian.png",
+    "background": "minecraft:gui/advancements/backgrounds/crying_obsidian",
     "show_toast": false,
     "announce_to_chat": false,
     "hidden": true

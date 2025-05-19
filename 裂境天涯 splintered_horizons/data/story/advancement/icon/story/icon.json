@@ -7,10 +7,11 @@
     "title": {
       "translate": "story.icon.story",
       "bold": true,
-      "italic": false
+      "italic": false,
+      "underlined": true
     },
     "description": "",
-    "background": "minecraft:textures/gui/advancements/backgrounds/obsidian.png",
+    "background": "minecraft:gui/advancements/backgrounds/obsidian",
     "show_toast": false,
     "announce_to_chat": false,
     "hidden": true

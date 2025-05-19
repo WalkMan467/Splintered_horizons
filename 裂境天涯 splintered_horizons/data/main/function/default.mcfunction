@@ -2,6 +2,8 @@ execute in minecraft:overworld run tp @s 9999 131 10071 180 0
 
 setworldspawn 9999 131 10071
 
+scoreboard players set abyss_soulcutter monster.boss.spawn 1
+
 function players:setup
 advancement revoke @a only players:new_player
 

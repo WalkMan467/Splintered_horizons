@@ -1,4 +1,7 @@
 scoreboard players set story.chapter_1.ml story.chapter_1 1
+scoreboard players set story.chapter_1.ml.2 story.chapter_1 1
+weather clear
+
 
 advancement grant @s only story:icon/story/chapter_1/scebe_1
 advancement grant @s only story:icon/story/chapter_1

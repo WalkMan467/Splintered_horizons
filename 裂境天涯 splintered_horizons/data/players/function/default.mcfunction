@@ -1,7 +1,4 @@
-give @p wooden_sword[enchantments={"minecraft:sharpness":2,"minecraft:unbreaking":2}}] 1
-give @p wooden_pickaxe[enchantments={"minecraft:efficiency":2,"minecraft:unbreaking":1}}] 1
-give @s apple 12
-give @s crafting_table 1
+clear @s
 
 function players:scoreboard
 
@@ -13,6 +10,7 @@ scoreboard players add @s main.3d_dizziness 0
 scoreboard players enable @a environment_particles
 scoreboard players add @a environment_particles 0
 
+scoreboard players set #story global.main 0
 
 execute in minecraft:overworld run spawnpoint @s 38 64 11
 execute in minecraft:overworld run tp @s 39 64 10 90 0
@@ -29,8 +27,6 @@ function music:remove_bgn_icon
 function weapons:remove_weapons_icon
 function story:remove_story_icon
 function story:remove_proper_noun_icon
-
-function #main:scoreboard
 
 advancement grant @s only world_area:main/environment_particles/true
 

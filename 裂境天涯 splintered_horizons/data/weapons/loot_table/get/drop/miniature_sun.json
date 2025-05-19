@@ -10,29 +10,67 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:jukebox_playable": {
-                  "song": "5",
-                  "show_in_tooltip": false
+                "minecraft:item_name": {
+                  "bold": true,
+                  "color": "#B30000",
+                  "italic": false,
+                  "translate": "weapon.miniature_sun"
                 },
-                "minecraft:tooltip_style": "rare",
-                "minecraft:item_name": "[{\"translate\":\"weapon.miniature_sun\",\"color\":\"#b30000\",\"italic\":false,\"bold\":true}]",
                 "minecraft:lore": [
-                  "[{\"translate\":\"weapon.miniature_sun.type\",\"italic\":false,\"color\":\"dark_gray\"}]",
-                  "{\"text\":\"\"}",
-                  "[{\"translate\":\"weapon.miniature_sun.story.1\",\"italic\":false,\"color\":\"blue\"}]",
-                  "[{\"translate\":\"weapon.miniature_sun.story.2\",\"italic\":false,\"color\":\"blue\"}]",
-                  "{\"text\":\"\"}",
-                  "[{\"text\":\"\",\"italic\":false},{\"translate\":\"weapon.miniature_sun.skill\",\"color\":\"dark_red\",\"bold\":true},{\"text\":\"  \"}]",
-                  "[{\"text\":\"\",\"italic\":false},{\"translate\":\"weapon.miniature_sun.skill.1\",\"color\":\"red\"}]",
-                  "[{\"text\":\"\",\"italic\":false},{\"translate\":\"weapon.miniature_sun.skill.2\",\"color\":\"red\",\"with\": [{\"keybind\":\"key.use\",\"underlined\":true,\"color\":\"dark_green\"}]}]",
-                  "[{\"text\":\"\",\"italic\":false},{\"translate\":\"weapon.miniature_sun.skill.3\",\"color\":\"red\"}]",
-                  "[{\"text\":\"\",\"italic\":false},{\"translate\":\"weapon.miniature_sun.skill.4\",\"color\":\"red\"}]"
+                  {
+                    "color": "dark_gray",
+                    "italic": false,
+                    "translate": "weapon.miniature_sun.type"
+                  },
+                  {
+                    "color": "blue",
+                    "italic": false,
+                    "translate": "weapon.miniature_sun.story.1"
+                  },
+                  {
+                    "color": "blue",
+                    "italic": false,
+                    "translate": "weapon.miniature_sun.story.2"
+                  },
+                  {
+                    "bold": true,
+                    "color": "dark_red",
+                    "italic": false,
+                    "translate": "weapon.miniature_sun.skill"
+                  },
+                  {
+                    "color": "red",
+                    "italic": false,
+                    "translate": "weapon.miniature_sun.skill.1"
+                  },
+                  {
+                    "color": "red",
+                    "italic": false,
+                    "translate": "weapon.miniature_sun.skill.2",
+                    "with": [
+                      {
+                        "keybind": "key.use",
+                        "underlined": true,
+                        "color": "dark_green"
+                      }
+                    ]
+                  },
+                  {
+                    "color": "red",
+                    "italic": false,
+                    "translate": "weapon.miniature_sun.skill.3"
+                  },
+                  {
+                    "color": "red",
+                    "italic": false,
+                    "translate": "weapon.miniature_sun.skill.4"
+                  }
                 ],
                 "minecraft:attribute_modifiers": [
                   {
                     "id": "base_attack_damage",
                     "type": "attack_damage",
-                    "amount": 4,
+                    "amount": 0,
                     "operation": "add_value",
                     "slot": "mainhand"
                   },
@@ -51,8 +89,18 @@
                   "consume_seconds": 10000,
                   "animation": "none",
                   "has_consume_particles": false
+                },
+                "minecraft:tooltip_style": "rare",
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers"
+                  ]
                 }
               }
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": 64
             }
           ]
         }

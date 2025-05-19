@@ -15,6 +15,8 @@ execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.1] run function
 data modify entity @s data.uuids.bone_1 set from storage aj:uuid main.out
 execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.4] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_4 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.bone1] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_bone1 set from storage aj:uuid main.out
 execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.3] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_3 set from storage aj:uuid main.out
 execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.6] run function animated_java:global/internal/gu/convert_uuid_array_to_string
@@ -25,3 +27,107 @@ execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.8] run function
 data modify entity @s data.uuids.bone_8 set from storage aj:uuid main.out
 execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.7] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_7 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.guide13] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_guide13 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.guide9] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_guide9 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.guide10] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_guide10 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.guide18] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_guide18 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.guide21] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_guide21 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.guide22] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_guide22 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.guide23] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_guide23 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.guide24] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_guide24 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.guide25] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_guide25 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.guide26] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_guide26 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.guide27] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_guide27 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.guide28] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_guide28 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.guide29] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_guide29 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.guide30] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_guide30 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.guide46] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_guide46 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.guide94] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_guide94 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.guide15] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_guide15 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.guide19] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_guide19 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.guide43] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_guide43 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.guide44] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_guide44 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.guide45] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_guide45 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.guide47] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_guide47 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.guide48] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_guide48 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.guide42] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_guide42 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.guide41] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_guide41 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.guide40] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_guide40 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.guide91] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_guide91 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.guide61] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_guide61 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.guide90] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_guide90 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.guide92] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_guide92 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.guide93] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_guide93 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.guide57] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_guide57 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.guide58] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_guide58 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.guide17] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_guide17 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.guide89] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_guide89 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.guide11] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_guide11 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.guide60] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_guide60 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.guide12] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_guide12 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.guide5] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_guide5 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.guide7] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_guide7 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.guide6] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_guide6 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.guide31] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_guide31 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.guide49] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_guide49 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.guide50] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_guide50 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.guide39] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_guide39 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.guide51] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_guide51 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.guide52] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_guide52 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.guide38] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_guide38 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.guide34] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_guide34 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.guide20] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_guide20 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.guide97] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_guide97 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.blade] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.item_display_blade set from storage aj:uuid main.out

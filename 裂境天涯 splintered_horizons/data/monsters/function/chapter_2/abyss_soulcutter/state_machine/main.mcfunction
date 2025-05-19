@@ -3,6 +3,8 @@
 # 用途: 設定怪物狀態機邏輯 (Monsters State Machine)
 
 scoreboard players remove @s[scores={monster.abyss_soulcutter.state_machine.action=1..}] monster.abyss_soulcutter.state_machine.action 1
+scoreboard players remove @s[scores={monster.abyss_soulcutter.state_machine.back=1..}] monster.abyss_soulcutter.state_machine.back 1
+execute if score @s monster.abyss_soulcutter.state_machine.back matches 1.. anchored feet rotated ~ 0 if block ^ ^1 ^-1 #air run tp @s ^ ^0.1 ^-1
 
 execute if score @s monster.abyss_soulcutter.state_machine.action matches 1.. run return 0
 

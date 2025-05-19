@@ -74,6 +74,7 @@ scoreboard players add @a weapon.nightfall.state 0
 scoreboard players add @a weapon.nightfall.cd 0
 
 #===================================================================
+# 水鏡之光
 
 scoreboard objectives add weapon.aquilumera_passive dummy "水鏡之光被動"
 scoreboard objectives add weapon.aquilumera.state dummy "水鏡之光狀態"
@@ -82,4 +83,13 @@ scoreboard objectives add weapon.aquilumera.cd dummy "水鏡之光 CD"
 scoreboard players add @a weapon.aquilumera_passive 0
 scoreboard players add @a weapon.aquilumera.state 0
 scoreboard players add @a weapon.aquilumera.cd 0
+#===================================================================
+# 武器狀態
+
+scoreboard objectives add weapon.effect.resplendence dummy "輝煌"
+scoreboard objectives add weapon.effect.shadow dummy "暗影"
+
+scoreboard players add @a weapon.effect.resplendence 0
+scoreboard players add @a weapon.effect.shadow 0
+
 #===================================================================

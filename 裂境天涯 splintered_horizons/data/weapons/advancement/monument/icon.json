@@ -4,10 +4,7 @@
       "id": "minecraft:cyan_wool",
       "components": {
         "minecraft:enchantments": {
-          "levels": {
-            "minecraft:mending": 1
-          },
-          "show_in_tooltip": false
+          "minecraft:mending": 1
         }
       },
       "count": 1
@@ -19,7 +16,7 @@
       "underlined": true
     },
     "description": "",
-    "background": "minecraft:textures/gui/advancements/backgrounds/gray_wool.png",
+    "background": "minecraft:gui/advancements/backgrounds/gray_wool",
     "frame": "task",
     "show_toast": false,
     "announce_to_chat": false,

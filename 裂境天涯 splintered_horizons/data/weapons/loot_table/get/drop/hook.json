@@ -10,25 +10,75 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:jukebox_playable": {
-                  "song": "5",
-                  "show_in_tooltip": false
+                "minecraft:item_name": {
+                  "bold": true,
+                  "color": "#B30000",
+                  "italic": false,
+                  "translate": "weapon.hook"
                 },
-                "minecraft:tooltip_style": "epic",
-                "minecraft:item_model": "drop/hook/1",
-                "minecraft:custom_data": "{type:\"drop\",weapon:\"hook\",rc:1b}",
-                "minecraft:lore": [
-                  "{\"bold\":false,\"color\":\"#686868\",\"fallback\":\"Throwable Item\",\"italic\":false,\"translate\":\"weapons.drop_weapons\"}",
-                  "\" \"",
-                  "[{\"bold\":false,\"color\":\"blue\",\"fallback\":\"Toss a glass pane,\",\"italic\":false,\"translate\":\"weapons.hook.lore.1\",\"with\": [{\"keybind\":\"key.use\",\"underlined\":true,\"color\":\"dark_green\"}]}]",
-                  "{\"bold\":false,\"color\":\"blue\",\"fallback\":\"has 50% chance to inflict wither to the target for 10 sec.\",\"italic\":false,\"translate\":\"weapons.hook.lore.2\",\"with\": [{\"keybind\":\"key.sneak\",\"underlined\":true,\"color\":\"dark_green\"}]}"
+                "minecraft:attribute_modifiers": [
+                  {
+                    "id": "base_attack_damage",
+                    "type": "attack_damage",
+                    "amount": 0,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "id": "base_attack_speed",
+                    "type": "attack_speed",
+                    "amount": -2.5,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  }
                 ],
-                "minecraft:custom_name": "{\"bold\":true,\"color\":\"white\",\"fallback\":\"Hook\",\"italic\":false,\"translate\":\"weapons.hook\"}",
+                "minecraft:unbreakable": {},
+                "minecraft:item_model": "drop/hook/1",
+                "minecraft:custom_data": "{rc:1b,type:\"drop\",weapon:\"hook\"}",
                 "minecraft:consumable": {
                   "consume_seconds": 10000,
                   "animation": "none",
                   "has_consume_particles": false
-                }
+                },
+                "minecraft:tooltip_style": "epic",
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers"
+                  ]
+                },
+                "minecraft:lore": [
+                  {
+                    "color": "dark_gray",
+                    "italic": false,
+                    "translate": "weapon.hook.type"
+                  },
+                  {
+                    "color": "blue",
+                    "italic": false,
+                    "translate": "weapon.hook.story.1"
+                  },
+                  {
+                    "color": "blue",
+                    "italic": false,
+                    "translate": "weapon.hook.story.2"
+                  },
+                  {
+                    "bold": true,
+                    "color": "dark_red",
+                    "italic": false,
+                    "translate": "weapon.hook.skill"
+                  },
+                  {
+                    "color": "red",
+                    "italic": false,
+                    "translate": "weapon.hook.skill.1"
+                  },
+                  {
+                    "color": "red",
+                    "italic": false,
+                    "translate": "weapon.hook.skill.2"
+                  }
+                ]
               }
             }
           ]

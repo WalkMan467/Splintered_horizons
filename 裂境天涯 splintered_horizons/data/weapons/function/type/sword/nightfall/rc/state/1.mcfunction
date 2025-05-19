@@ -12,6 +12,8 @@ playsound minecraft:entity.iron_golem.death voice @a ~ ~1 ~ 1 0.75
 playsound minecraft:entity.illusioner.prepare_blindness voice @a ~ ~1 ~ 1 1.5
 playsound minecraft:entity.illusioner.cast_spell voice @a ~ ~1 ~ 1 1
 
+scoreboard players set @s weapon.effect.shadow 160
+
 scoreboard players set @s weapon.nightfall.state 1
 
 scoreboard players set @s weapon.nightfall.cd 5
