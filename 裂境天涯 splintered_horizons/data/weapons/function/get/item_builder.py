@@ -13,13 +13,13 @@
 attribute = []
 # ----- 設定參數 ----- #
 
-name = ['水鏡之光', '#0066ff', '紀念碑物品 / 劍']
-story = {'info': ['始源 6 魔劍之一', '掌控水元素之力', '同時也是地圖的目標物品'], 'color': 'dark_aqua'}
-item_data     = {'real_item': 'stone_sword', 'id': 'aquilumera', 'item_model': '"sword/light_of_water_mirror/0"', 'custom_data': '{rc:1b,type:"sword",weapon:"aquilumera",monument:1b,wl_light:0b,wl_water:1b}', 'max_damage': -1, 'rc': True, 'other': ['custom_model_data={flags:[1]}']}
-skill    = {'is_skill': True, 'cd': 25, 'name': ['水光切換', '#0066ff', '#00afe4'], 'info': ['[%s] 可以切換 水/光 型態', '當你攻擊敵人可以獲得 1 層能量，最高可以有 10 層', '切換型態會引爆層數，造成 50% 攻擊力傷害', '兩種型態的增益不同', '', '如果你擁有 [%s] ', '可以使此武器冷卻時間更改為 15 秒']}
-ultimate    = {'is_ultimate': False, 'cd': 0, 'name': ['終焉之月', '#aa00c0', '#7100b3'], 'info': ['右鍵點擊消耗一個終焉之眼，', '開啟【終焉之月】型態持續 15 秒', '大幅強化武器，', '此形態下如果攻擊會有25%機率造成大量傷害']}
-attribute.append({'attribute': 'attack_damage', 'value': 4.5, 'slot': 'mainhand', 'operation': 'add_value'})
-attribute.append({'attribute': 'attack_speed', 'value': -2.3, 'slot': 'mainhand', 'operation': 'add_value'})
+name = ['終焉之墟', '#810092', '鐮刀 / 神話']
+story = {'info': ['最終決戰過後，舊宇宙迎來了終點的結局', '同時，宇宙出現了由深淵延伸的新力量「終焉」', '這把武器的誕生目前無法得知', '同時也埋藏了很多秘密。'], 'color': 'blue'}
+item_data     = {'real_item': 'stone_sword', 'id': 'ruins_of_the_finality', 'item_model': '"sickle/ruins_of_the_finality/1"', 'custom_data': '{rc:1b,type:"scythe",weapon:"ruins_of_the_finality"}', 'max_damage': -1, 'rc': True, 'other': ['tooltip_style="mythic"']}
+skill    = {'is_skill': False, 'cd': 10, 'name': ['終焉之鎖', '#aa00c0', '#7100b3'], 'info': ['[%s]可以召喚終焉之鎖，', '並且開啟終焉領域，', '可以透過按下 [%s] 來釋放 [斬滅]', '', '每次對8格範圍內敵人造成 150% 攻擊力傷害', '並且最後一擊造成 300%攻擊力傷害']}
+ultimate    = {'is_ultimate': True, 'cd': 10, 'name': ['終焉之鎖', '#aa00c0', '#7100b3'], 'info': ['[%s]可以召喚終焉之鎖，', '並且開啟終焉領域，', '可以透過按下 [%s] 來釋放 [斬滅]', '', '每次對8格範圍內敵人造成 150% 攻擊力傷害', '並且最後一擊造成 300%攻擊力傷害']}
+attribute.append({'attribute': 'attack_damage', 'value': 4, 'slot': 'mainhand', 'operation': 'add_value'})
+attribute.append({'attribute': 'attack_speed', 'value': -2.5, 'slot': 'mainhand', 'operation': 'add_value'})
 
 # ----- init ----- #
 
