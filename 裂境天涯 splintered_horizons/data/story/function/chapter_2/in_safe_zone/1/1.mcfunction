@@ -2,12 +2,12 @@
 
 #透過scoreboard story(dummy) + schedule 指令運行整個劇情
 
-execute if score story.chapter_2.ml story.chapter_2 matches 1 run tellraw @a {"translate": "story.chapter_2.ml.1","fallback": "［蘇菲亞］這裡...居然還有人類生活的痕跡"}
+execute if score story.chapter_2.ml story.chapter_2 matches 1 run tellraw @a {"translate": "story.chapter_2.ml.1","fallback": "［你］這裡...居然還有人類生活的痕跡"}
 execute if score story.chapter_2.ml story.chapter_2 matches 2 run tellraw @a {"translate": "story.chapter_2.ml.2","fallback": "［？？？］究竟是遠道而來的刺客，還是新的夥伴?"}
 execute if score story.chapter_2.ml story.chapter_2 matches 3 run tellraw @a {"translate": "story.chapter_2.ml.3","fallback": "(剎那間，你被 3 名強大的敵人團團圍住)","color": "red"}
 execute if score story.chapter_2.ml story.chapter_2 matches 4 run tellraw @a {"translate": "story.chapter_2.ml.4","fallback": "［守衛1］我勸你們別冒然靠近這裡"}
 execute if score story.chapter_2.ml story.chapter_2 matches 5 run tellraw @a {"translate": "story.chapter_2.ml.5","fallback": "［守衛2］警戒，對方雖然只有兩個人"}
-execute if score story.chapter_2.ml story.chapter_2 matches 6 run tellraw @a {"translate": "story.chapter_2.ml.6","fallback": "［守衛2］但是我能感受得到2位實力不容小覷"}
+execute if score story.chapter_2.ml story.chapter_2 matches 6 run tellraw @a {"translate": "story.chapter_2.ml.6","fallback": "［守衛2］各位小心，我有股感覺... 他們並非常人"}
 execute if score story.chapter_2.ml story.chapter_2 matches 7 run tellraw @a {"translate": "story.chapter_2.ml.7","fallback": "［守衛3］深淵的爪牙居然會保護擁有世界樹力量的男孩？"}
 execute if score story.chapter_2.ml story.chapter_2 matches 8 run tellraw @a {"translate": "story.chapter_2.ml.8","fallback": "(場面片刻安靜，似乎一場不可避免的戰鬥即將發生)","color": "red"}
 execute if score story.chapter_2.ml story.chapter_2 matches 9 run tellraw @a [{"translate": "story.chapter_2.ml.9","fallback": "［？？？］我想，大家可能誤會了什麼，對吧，蘇菲亞"}]
@@ -36,4 +36,4 @@ execute if score story.chapter_2.ml story.chapter_2 matches 30 run tellraw @a {"
 
 scoreboard players add story.chapter_2.ml story.chapter_2 1
 
-execute if score story.chapter_2.ml story.chapter_2 matches 1..30 run schedule function story:chapter_2/in_safe_zone/1/1 8s
+execute if score story.chapter_2.ml story.chapter_2 matches 1..30 run schedule function story:chapter_2/in_safe_zone/1/1 9s

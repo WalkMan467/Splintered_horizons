@@ -151,6 +151,24 @@ execute on vehicle on passengers if entity @s[tag=aj.rainy_night.node.guide97] r
 data modify entity @s data.uuids.bone_guide97 set from storage aj:uuid main.out
 execute on vehicle on passengers if entity @s[tag=aj.rainy_night.node.layer] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_layer set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.rainy_night.node.l_1] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_l_1 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.rainy_night.node.eye_l] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_eye_l set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.rainy_night.node.r_1] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_r_1 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.rainy_night.node.eye_r] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_eye_r set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.rainy_night.node.eyes_up] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_eyes_up set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.rainy_night.node.bone] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_bone set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.rainy_night.node.l] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_l set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.rainy_night.node.r] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_r set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.rainy_night.node.eyes_down] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_eyes_down set from storage aj:uuid main.out
 execute on vehicle on passengers if entity @s[tag=aj.rainy_night.node.head] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_head set from storage aj:uuid main.out
 execute on vehicle on passengers if entity @s[tag=aj.rainy_night.node.6] run function animated_java:global/internal/gu/convert_uuid_array_to_string

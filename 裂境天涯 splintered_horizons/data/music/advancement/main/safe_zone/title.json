@@ -18,7 +18,7 @@
         "italic": false
       },
       {
-        "translate": "music.mandragora",
+        "translate": "music.fallen_kingdom",
         "color": "white",
         "bold": true,
         "italic": false,
@@ -39,17 +39,17 @@
         "italic": false
       },
       {
-        "translate": "music.miyolophone",
+        "translate": "music.whitesand",
         "color": "white"
       }
     ],
-    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone",
     "frame": "goal",
     "show_toast": true,
     "announce_to_chat": false,
     "hidden": false
   },
-  "parent": "music:main/icon",
+  "parent": "music:main/safe_zone/icon",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:impossible",

@@ -9,4 +9,6 @@ execute as @a[scores={music.chapter2.land_of_finality=1}] at @s run function mus
 
 execute as @a[scores={music.main.safe_zone=1}] at @s run function music:main/safe_zone/start
 
+execute as @a[scores={music.chapter2.forest_of_souls=1}] at @s run function music:chapter_2/forest_of_souls/start
+
 schedule function music:main 1t

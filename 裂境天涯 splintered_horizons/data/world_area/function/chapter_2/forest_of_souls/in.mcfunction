@@ -4,4 +4,9 @@ title @s times 20 20 20
 
 playsound minecraft:entity.allay.ambient_without_item voice @s ~ ~1 ~ 1 1
 
+function music:chapter_2/forest_of_souls/start
+
+advancement grant @s only music:chapter_2/forest_of_souls/icon
+
+
 advancement revoke @s only world_area:chapter_2/forest_of_souls/out

@@ -45,10 +45,7 @@ data modify storage temp bag[{Slot:33b}].Slot set value 6b
 data modify storage temp bag[{Slot:34b}].Slot set value 7b
 data modify storage temp bag[{Slot:35b}].Slot set value 8b
 
-data modify storage temp bag[{Slot:100b}].Slot set value 13b
-data modify storage temp bag[{Slot:101b}].Slot set value 14b
-data modify storage temp bag[{Slot:102b}].Slot set value 15b
-data modify storage temp bag[{Slot:103b}].Slot set value 16b
+
 data modify storage temp bag[{Slot:-106b}].Slot set value 17b
 data modify block ~ 255 ~ Items set from storage temp bag
 
@@ -61,15 +58,32 @@ item replace entity @s container.32 from block ~ 255 ~ container.5
 item replace entity @s container.33 from block ~ 255 ~ container.6
 item replace entity @s container.34 from block ~ 255 ~ container.7
 item replace entity @s container.35 from block ~ 255 ~ container.8
-item replace entity @s armor.feet from block ~ 255 ~ container.13
-item replace entity @s armor.legs from block ~ 255 ~ container.14
-item replace entity @s armor.chest from block ~ 255 ~ container.15
-item replace entity @s armor.head from block ~ 255 ~ container.16
+
 item replace entity @s weapon.offhand from block ~ 255 ~ container.17
 
 # get levels
 $data modify storage temp lvl set from storage bag:$(bag) $(0)$(1)$(2)$(3)_lvl
 function players:inventory/return3 with storage temp lvl
+
+# # get equipment
+
+$data modify storage temp bag set from storage bag:$(bag) $(0)$(1)$(2)$(3)_equipment
+
+data modify block ~ 255 ~ Items append from storage temp bag.head
+execute if data storage temp bag.head run item replace entity @s armor.head from block ~ 255 ~ container.0
+
+data modify block ~ 255 ~ Items append from storage temp bag.chest
+execute if data storage temp bag.chest run item replace entity @s armor.chest from block ~ 255 ~ container.0
+
+data modify block ~ 255 ~ Items append from storage temp bag.legs
+execute if data storage temp bag.legs run item replace entity @s armor.legs from block ~ 255 ~ container.0
+
+data modify block ~ 255 ~ Items append from storage temp bag.feet
+execute if data storage temp bag.feet run item replace entity @s armor.feet from block ~ 255 ~ container.0
+
+data modify block ~ 255 ~ Items append from storage temp bag.offhand
+execute if data storage temp bag.offhand run item replace entity @s weapon.offhand from block ~ 255 ~ container.0
+
 
 data remove storage temp bag
 data remove storage temp lvl

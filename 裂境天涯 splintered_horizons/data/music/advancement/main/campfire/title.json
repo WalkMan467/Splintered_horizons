@@ -18,7 +18,7 @@
         "italic": false
       },
       {
-        "translate": "music.melting",
+        "translate": "music.filaments",
         "color": "white",
         "bold": true,
         "italic": false,
@@ -39,11 +39,11 @@
         "italic": false
       },
       {
-        "translate": "music.nico_cartosio",
+        "translate": "music.scott_buckley",
         "color": "white"
       }
     ],
-    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone",
     "frame": "goal",
     "show_toast": true,
     "announce_to_chat": false,

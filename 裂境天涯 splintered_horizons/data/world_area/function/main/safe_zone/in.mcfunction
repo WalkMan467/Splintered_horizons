@@ -1,5 +1,5 @@
-title @s title ["",{"text":"☀","color":"dark_aqua"},{"text":"安全區","underlined":true,"color":"dark_aqua"},{"text":"☀","color":"dark_aqua"}]
-title @s subtitle [{"text":"☀","color":"dark_aqua"},{"text":"Safe Zone","italic":true,"underlined":true,"color":"dark_aqua"},{"text":"☀","color":"dark_aqua"}]
+title @s title ["",{"text":"☀","color":"dark_aqua"},{"translate":"world_area.icon.main.safe_zone","underlined":true,"color":"dark_aqua"},{"text":"☀","color":"dark_aqua"}]
+title @s subtitle [{"text":""},{"text":"《","bold":true,"color":"gold"},{"translate":"monument.icon.chapter_2","bold":true,"color":"gold"},{"text":"》","bold":true,"color":"gold"}]
 title @s times 20 20 20
 
 stopsound @s voice minecraft:voice.join_game

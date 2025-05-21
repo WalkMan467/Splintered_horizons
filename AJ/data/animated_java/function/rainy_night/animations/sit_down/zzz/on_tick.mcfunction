@@ -6,5 +6,5 @@ execute if score @s aj.sit_down.frame matches -1 run function animated_java:rain
 data remove storage aj:temp args
 execute store result storage aj:temp args.frame int 1 run scoreboard players get @s aj.sit_down.frame
 function animated_java:rainy_night/animations/sit_down/zzz/apply_frame with storage aj:temp args
-execute if score @s aj.sit_down.frame matches 139.. run return run scoreboard players set @s aj.sit_down.frame -1
+execute if score @s aj.sit_down.frame matches 559.. run return run scoreboard players set @s aj.sit_down.frame -1
 scoreboard players add @s aj.sit_down.frame 1
