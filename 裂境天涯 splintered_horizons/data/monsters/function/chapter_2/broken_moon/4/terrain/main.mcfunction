@@ -3,5 +3,4 @@ execute as @a at @s if function monsters:chapter_2/broken_moon/4/terrain/detect 
 
 execute as @s[type=!#minecraft:dummy_mob,type=!player] at @s if function monsters:chapter_2/broken_moon/4/terrain/detect run function monsters:chapter_2/broken_moon/4/terrain/death_protection/monster/run
 
-
-execute as @a unless score @s monster.broken_moon.skill.4.player_timer matches 0.. as @e[type=skeleton,tag=monster.broken_moon.4.monster] at @s run function monsters:chapter_2/broken_moon/4/remove_monster
+execute as @a unless score @s monster.broken_moon.skill.4.player_timer matches 0.. as @e[type=bogged,tag=monster.broken_moon.4.monster] at @s run function monsters:chapter_2/broken_moon/4/remove_monster

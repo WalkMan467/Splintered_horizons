@@ -1,7 +1,6 @@
 # 距離玩家過遠執行指令
 
 bossbar remove minecraft:monster.boss.broken_moon
-bossbar remove minecraft:monster.boss.broken_moon.passive
 
 tag @a[distance=..65] remove monsters.broken_moon.1.target
 tag @a[distance=..65] remove monster.broken_moon.skill.3.player_sun

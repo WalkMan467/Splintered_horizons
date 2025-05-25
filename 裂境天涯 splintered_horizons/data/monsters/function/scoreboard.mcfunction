@@ -12,7 +12,6 @@ scoreboard objectives add particle dummy
 # 「破碎之月」拉爾西斯
 
 scoreboard objectives add monster.broken_moon.passive dummy "[破碎之月] 被動"
-scoreboard objectives add monster.broken_moon.passive.cd dummy "[破碎之月] 被動 CD"
 scoreboard objectives add monster.broken_moon.1.count dummy "[破碎之月] 1技能段數"
 
 scoreboard objectives add monster.broken_moon.skill.1.cd dummy "[破碎之月] 1技能CD"
