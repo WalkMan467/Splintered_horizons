@@ -1,0 +1,62 @@
+{
+  "anvil_cost": 4,
+  "description": {
+    "translate": "weapon.sword.echo_rhythm.use",
+    "with": []
+  },
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "requirements": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "attacker",
+            "scores": {
+              "weapon.echo_rhythm.cd": 0
+            }
+          }
+        ],
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "weapons:type/sword/echo_rhythm/use"
+        },
+        "enchanted": "attacker",
+        "affected": "attacker"
+      },
+      {
+        "effect": {
+          "type": "minecraft:play_sound",
+          "sound": "minecraft:block.note_block.basedrum",
+          "volume": 1,
+          "pitch": 1
+        },
+        "enchanted": "attacker",
+        "affected": "attacker"
+      },
+      {
+        "effect": {
+          "type": "minecraft:play_sound",
+          "sound": "minecraft:block.note_block.snare",
+          "volume": 1,
+          "pitch": 1
+        },
+        "enchanted": "attacker",
+        "affected": "attacker"
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 50,
+    "per_level_above_first": 0
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 20,
+    "per_level_above_first": 0
+  },
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "#minecraft:enchantable/crossbow",
+  "weight": 2
+}

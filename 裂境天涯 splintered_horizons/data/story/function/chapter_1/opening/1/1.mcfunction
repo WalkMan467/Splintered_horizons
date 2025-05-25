@@ -2,6 +2,7 @@
 
 #透過scoreboard story(dummy) + schedule 指令運行整個劇情
 
+
 execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 1 run weather clear
 execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 1 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.1","fallback": "[？？？] 恩? 你醒了"}
 execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 2 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.2","fallback": "[你] 是你拯救了我嗎?"}
@@ -52,6 +53,7 @@ execute if score story.chapter_1.ml story.chapter_1 matches 42 run playsound min
 execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 43 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.1","fallback": "[？？？] 恩? 你醒了"}
 execute if score story.chapter_1.ml story.chapter_1 matches 43 run scoreboard players set story.chapter_1.ml story.chapter_1 1
 
+data remove entity @s interaction
 
 execute unless score story.chapter_1.ml story.chapter_1 matches 1..43 run return 0
 

@@ -2,7 +2,11 @@ summon minecraft:block_display 758 144.5 939.0 {Rotation:[180.0f,10.0f],start_in
 
 execute as 000000de-0000-000b-0000-001500000015 at @s run tp @s ~ ~ ~0.5
 
+execute positioned 758 144 946 rotated 180 0 run function animated_java:amysis/summon {args: {animation: 'cutscene_chapter_2_safe_zone_1', start_animation: true}}
+
 scoreboard players set @n[tag=main.duration.timer,tag=summon,type=marker] duration 200
 tag @n[tag=main.duration.timer,tag=summon,type=marker] remove summon
 
 function cutscene:safe_area/main
+
+schedule function cutscene:safe_area/2/0 5s

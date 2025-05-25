@@ -13,13 +13,13 @@
 attribute = []
 # ----- 設定參數 ----- #
 
-name = ['終焉之墟', '#810092', '鐮刀 / 神話']
+name = ['回音律動', '#ffee00', '劍 / 神話']
 story = {'info': ['最終決戰過後，舊宇宙迎來了終點的結局', '同時，宇宙出現了由深淵延伸的新力量「終焉」', '這把武器的誕生目前無法得知', '同時也埋藏了很多秘密。'], 'color': 'blue'}
-item_data     = {'real_item': 'stone_sword', 'id': 'ruins_of_the_finality', 'item_model': '"sickle/ruins_of_the_finality/1"', 'custom_data': '{rc:1b,type:"scythe",weapon:"ruins_of_the_finality"}', 'max_damage': -1, 'rc': True, 'other': ['tooltip_style="mythic"']}
-skill    = {'is_skill': False, 'cd': 10, 'name': ['終焉之鎖', '#aa00c0', '#7100b3'], 'info': ['[%s]可以召喚終焉之鎖，', '並且開啟終焉領域，', '可以透過按下 [%s] 來釋放 [斬滅]', '', '每次對8格範圍內敵人造成 150% 攻擊力傷害', '並且最後一擊造成 300%攻擊力傷害']}
-ultimate    = {'is_ultimate': True, 'cd': 10, 'name': ['終焉之鎖', '#aa00c0', '#7100b3'], 'info': ['[%s]可以召喚終焉之鎖，', '並且開啟終焉領域，', '可以透過按下 [%s] 來釋放 [斬滅]', '', '每次對8格範圍內敵人造成 150% 攻擊力傷害', '並且最後一擊造成 300%攻擊力傷害']}
-attribute.append({'attribute': 'attack_damage', 'value': 4, 'slot': 'mainhand', 'operation': 'add_value'})
-attribute.append({'attribute': 'attack_speed', 'value': -2.5, 'slot': 'mainhand', 'operation': 'add_value'})
+item_data     = {'real_item': 'stone_sword', 'id': 'echo_rhythm', 'item_model': '"sword/echo_rhythm/1"', 'custom_data': '{rc:1b,type:"sword",weapon:"echo_rhythm"}', 'max_damage': -1, 'rc': True, 'other': ['minecraft:enchantments={"weapons:type/sword/echo_rhythm/use":1}','tooltip_style="mythic"', 'enchantment_glint_override=false', 'tooltip_display={hidden_components:["enchantments"]}']}
+skill    = {'is_skill': True, 'cd': 3, 'name': ['潮汐音浪', '#9443ff', '#ea00ff'], 'info': ['攻擊有 30%機率觸發【回聲音爆】','可對6格範圍內敵人造成一次攻擊力250%的基礎傷害','如果玩家擁有【至暗】狀態','會使【回聲音爆】造成傷害改為 攻擊力 250% 真實傷害']}
+ultimate    = {'is_ultimate': True, 'cd': 60, 'name': ['低音狂響', '#ff3300', '#001aff'], 'info': ['[%s]可以消耗一顆終焉之眼', '立即釋放【終焉音爆】', '對 8 格範圍內敵人造成 250% 真實傷害', '並且附帶 3 秒緩速 50%']}
+attribute.append({'attribute': 'attack_damage', 'value': 5, 'slot': 'mainhand', 'operation': 'add_value'})
+attribute.append({'attribute': 'attack_speed', 'value': -2.4, 'slot': 'mainhand', 'operation': 'add_value'})
 
 # ----- init ----- #
 

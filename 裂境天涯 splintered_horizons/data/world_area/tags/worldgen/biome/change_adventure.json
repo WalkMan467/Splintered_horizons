@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "world_area:chapter_2/dusks_fractured_maw"
+    "world_area:chapter_2/dusks_fractured_maw",
+    "world_area:main/safe_zone"
   ]
 }

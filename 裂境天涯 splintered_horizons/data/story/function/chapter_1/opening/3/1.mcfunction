@@ -35,6 +35,8 @@ execute positioned 312 188 -232 if score story.chapter_1.ml.3 story.chapter_1 ma
 execute positioned 312 188 -232 if score story.chapter_1.ml.3 story.chapter_1 matches 28 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.3.1","fallback": "［蘇菲亞］這就是你說得水之魔劍水鏡之光嗎？"}
 execute if score story.chapter_1.ml.3 story.chapter_1 matches 28 run scoreboard players set story.chapter_1.ml.3 story.chapter_1 1
 
+data remove entity @s interaction
+
 execute unless score story.chapter_1.ml.3 story.chapter_1 matches 1..28 run return 0
 
 scoreboard players add story.chapter_1.ml.3 story.chapter_1 1

@@ -2,3 +2,4 @@
 execute unless entity @s[type=minecraft:item_display,tag=aj.amysis.root] run return run function animated_java:global/errors/function_not_executed_as_root_entity {'export_namespace': 'amysis', 'function_path': 'animated_java:amysis/animations/pause_all'}
 tag @s remove aj.amysis.animation.sit_down.playing
 tag @s remove aj.amysis.animation.idle.playing
+tag @s remove aj.amysis.animation.cutscene_chapter_2_safe_zone_1.playing

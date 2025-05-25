@@ -69,11 +69,25 @@
                     "translate": "weapon.hook.skill"
                   },
                   {
+                    "with": [
+                      {
+                        "keybind": "key.use",
+                        "color": "dark_green",
+                        "underlined": true
+                      }
+                    ],
                     "color": "red",
                     "italic": false,
                     "translate": "weapon.hook.skill.1"
                   },
                   {
+                    "with": [
+                      {
+                        "keybind": "key.sneak",
+                        "color": "dark_green",
+                        "underlined": true
+                      }
+                    ],
                     "color": "red",
                     "italic": false,
                     "translate": "weapon.hook.skill.2"

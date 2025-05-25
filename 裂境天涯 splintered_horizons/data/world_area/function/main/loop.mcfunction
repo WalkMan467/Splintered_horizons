@@ -12,6 +12,7 @@
 #==================================================
 
 function world_area:main/environment_particles/main
+function world_area:main/safe_zone/amysis/main
 
 # 全局
 

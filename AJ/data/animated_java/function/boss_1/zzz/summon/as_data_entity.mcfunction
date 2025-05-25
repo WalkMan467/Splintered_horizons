@@ -7,10 +7,36 @@ execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.10] run functio
 data modify entity @s data.uuids.bone_10 set from storage aj:uuid main.out
 execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.9] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_9 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.bone14] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_bone14 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.bone13] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_bone13 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.bone16] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_bone16 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.bone15] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_bone15 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.bone18] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_bone18 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.bone17] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_bone17 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.bone19] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_bone19 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.bone20] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_bone20 set from storage aj:uuid main.out
 execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.item_display] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.item_display_item_display set from storage aj:uuid main.out
 execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.2] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_2 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.bone5] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_bone5 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.bone6] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_bone6 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.bone7] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_bone7 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.bone8] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_bone8 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.bone9] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.bone_bone9 set from storage aj:uuid main.out
 execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.1] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_1 set from storage aj:uuid main.out
 execute on vehicle on passengers if entity @s[tag=aj.boss_1.node.4] run function animated_java:global/internal/gu/convert_uuid_array_to_string

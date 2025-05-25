@@ -4,6 +4,8 @@
     "weapons:type/sword/nightfall",
     "armors:type/black_hole/damage",
     "weapons:type/scythe/ruins_of_the_finality/damage",
-    "weapons:type/sword/aquilumera"
+    "weapons:type/sword/aquilumera",
+    "weapons:type/sword/echo_rhythm",
+    "weapons:type/sword/echo_rhythm_stronger"
   ]
 }

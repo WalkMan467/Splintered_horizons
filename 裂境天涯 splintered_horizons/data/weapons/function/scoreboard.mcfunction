@@ -84,6 +84,13 @@ scoreboard players add @a weapon.aquilumera_passive 0
 scoreboard players add @a weapon.aquilumera.state 0
 scoreboard players add @a weapon.aquilumera.cd 0
 #===================================================================
+# 回聲律動
+
+scoreboard objectives add weapon.echo_rhythm.cd dummy "回聲律動 CD"
+
+scoreboard players add @a weapon.echo_rhythm.cd 0
+#===================================================================
+
 # 武器狀態
 
 scoreboard objectives add weapon.effect.resplendence dummy "輝煌"
