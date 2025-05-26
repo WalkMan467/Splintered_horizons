@@ -13,6 +13,9 @@ function players:replace/block/main
 function players:replace/torch/main
 function players:replace/food/main
 
+# 怪物 load
+function monsters:load
+
 # 微型太陽
 function weapons:type/drop/miniature_sun/rc/main
 
@@ -21,7 +24,7 @@ schedule function monsters:timer_s 1s
 schedule function main:timer/1s 1s
 
 schedule function monsters:chapter_2/abyss_soulcutter/main 10t
-schedule function monsters:boss_spawn 1t
+schedule function monsters:boss_respawn 1t
 
 # 快捷欄切換
 

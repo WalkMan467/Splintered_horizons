@@ -2155,7 +2155,7 @@
 				"data/animated_java/function/stellar_animation/remove_animation_objectives.mcfunction",
 				"data/animated_java/function/stellar_animation/root/on_tick.mcfunction",
 				"data/animated_java/function/stellar_animation/root/zzz/on_tick/locators_and_cameras.mcfunction",
-				"data/animated_java/function/stellar_animation/root/zzz/on_tick/select_camera_camera.mcfunction",
+				"data/animated_java/function/stellar_animation/root/zzz/on_tick/select_camera_camera3.mcfunction",
 				"data/animated_java/function/stellar_animation/set_default_pose.mcfunction",
 				"data/animated_java/function/stellar_animation/summon.mcfunction",
 				"data/animated_java/function/stellar_animation/zzz/as_camera/as_data.mcfunction",
@@ -2167,7 +2167,7 @@
 				"data/animated_java/function/stellar_animation/zzz/summon/animation_arg/zzz/1.mcfunction",
 				"data/animated_java/function/stellar_animation/zzz/summon/animation_arg/zzz/2.mcfunction",
 				"data/animated_java/function/stellar_animation/zzz/summon/as_data_entity.mcfunction",
-				"data/animated_java/function/stellar_animation/zzz/summon/as_data_entity/as_camera/camera.mcfunction",
+				"data/animated_java/function/stellar_animation/zzz/summon/as_data_entity/as_camera/camera3.mcfunction",
 				"data/animated_java/function/stellar_animation/zzz/summon/as_root_entity.mcfunction",
 				"data/animated_java/function/stellar_animation/zzz/summon/zzz/variant_arg/no_variants_warning.mcfunction"
 			]

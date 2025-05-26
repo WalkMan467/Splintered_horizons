@@ -1,6 +1,5 @@
 kill @e[tag=weapon.ruins_of_the_finality.effect.chain]
 
-effect give @s darkness 5 255 true
 title @s times 0 0 20
 title @s title {"translate":"\uE000","font":"minecraft:screen"}
 title @s subtitle ""

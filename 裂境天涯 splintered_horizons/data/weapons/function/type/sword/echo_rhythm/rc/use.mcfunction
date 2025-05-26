@@ -1,6 +1,5 @@
 scoreboard players add @s player.ultimate 0
 execute if score @s player.ultimate matches 1.. run return 0
-function particle:sound_wave/use
 
 title @s title {"text":"\uE004","font":"minecraft:screen"}
 title @s subtitle ""

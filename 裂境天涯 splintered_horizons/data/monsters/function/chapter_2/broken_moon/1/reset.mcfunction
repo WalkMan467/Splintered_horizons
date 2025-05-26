@@ -5,7 +5,6 @@ effect give @s slow_falling 1 255 true
 
 scoreboard players set @s monster.broken_moon.1.count 0
 scoreboard players set @s monster.broken_moon.passive 0
-scoreboard players set @s monster.broken_moon.passive.cd 20
 
 bossbar set minecraft:monster.boss.broken_moon.passive name {"translate": "monster.broken_moon.passive.cding"}
 bossbar set minecraft:monster.boss.broken_moon.passive color yellow

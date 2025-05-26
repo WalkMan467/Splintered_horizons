@@ -13,6 +13,7 @@ execute as @s[tag=monsters.broken_moon.1.throwing_objects,type=block_display] at
 execute positioned 1721 100 882 run function monsters:chapter_2/broken_moon/4/terrain/main
 
 
+
 # BOSS 自身
 execute as @s[tag=monsters.broken_moon] at @s run function monsters:chapter_2/broken_moon/main.monster
 

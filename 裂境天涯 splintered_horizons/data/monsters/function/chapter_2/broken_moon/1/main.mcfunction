@@ -11,7 +11,6 @@ execute if score @s monster.broken_moon.skill.1.casting matches 1 run function m
 execute if score @s monster.broken_moon.skill.1.casting matches 11 run playsound minecraft:entity.warden.sonic_charge voice @a ~ ~1 ~ 2 2
 
 # 開始偵測是否還有能量跟技能剩餘次數
-execute if score @s monster.broken_moon.skill.1.casting matches 30.. unless score @s monster.broken_moon.passive matches 1.. run function monsters:chapter_2/broken_moon/1/reset
 execute if score @s monster.broken_moon.skill.1.casting matches 30.. unless score @s monster.broken_moon.1.count matches 1.. run function monsters:chapter_2/broken_moon/1/end
 
 # 消耗能量並且釋放技能

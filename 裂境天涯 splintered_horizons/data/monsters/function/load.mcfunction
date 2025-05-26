@@ -1,0 +1,2 @@
+function monsters:chapter_2/broken_moon/health
+function monsters:chapter_2/abyss_soulcutter/main
