@@ -6,4 +6,4 @@ execute on passengers at @s if entity @s[type=item_display,tag=aj.boss_1.root] r
 
 execute store result bossbar minecraft:monster.boss.abyss_soulcutter value run scoreboard players get @s monster.abyss_soulcutter
 bossbar set minecraft:monster.boss.abyss_soulcutter players @a[distance=..60]
-execute unless entity @p[distance=..60,gamemode=!spectator] unless entity @p[tag=animation] run function monsters:chapter_2/abyss_soulcutter/void
+# execute unless entity @p[distance=..60,gamemode=!spectator] unless entity @p[tag=animation] run function monsters:chapter_2/abyss_soulcutter/void

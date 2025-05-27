@@ -14,6 +14,3 @@ execute if score @s monster.broken_moon.skill.4.cd matches 0 run function monste
 
 # 顯示 bossbar
 bossbar set minecraft:monster.boss.broken_moon players @a[distance=..60]
-
-# 偵測是否沒有玩家在 60 格範圍內
-execute unless entity @p[distance=..60,gamemode=!spectator] unless entity @p[tag=animation] run function monsters:chapter_2/broken_moon/void

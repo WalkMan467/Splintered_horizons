@@ -11,7 +11,6 @@ scoreboard objectives add particle dummy
 
 # 「破碎之月」拉爾西斯
 
-scoreboard objectives add monster.broken_moon.player_die dummy "[破碎之月] 玩家死亡偵測"
 scoreboard objectives add monster.broken_moon.1.count dummy "[破碎之月] 1技能段數"
 
 scoreboard objectives add monster.broken_moon.skill.1.cd dummy "[破碎之月] 1技能CD"

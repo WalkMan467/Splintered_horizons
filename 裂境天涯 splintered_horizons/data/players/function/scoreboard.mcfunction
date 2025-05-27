@@ -5,7 +5,7 @@ scoreboard objectives add player.gamemode dummy "[玩家] 遊戲模式"
 scoreboard objectives add player.health health "[玩家] 血量"
 scoreboard objectives add player.hurt_time dummy "[玩家] 受傷時間"
 scoreboard objectives add player.ultimate dummy "[玩家] 終焉之眼CD"
-scoreboard objectives add player.die_detect dummy "死亡偵測"
+scoreboard objectives add player.death_count dummy [{"text":"💀","bold":true,"color":"red"},{"translate":"tips.player_death.3","bold":false,"color":"white"},{"text":"💀","bold":true,"color":"red"}]
 
 
 scoreboard players add @a player.ultimate 0
@@ -55,5 +55,6 @@ scoreboard objectives add player.disable.movement dummy "[玩家] 禁用移動"
 # 偵測
 scoreboard objectives add player.detect.drop minecraft.custom:minecraft.drop "[玩家] 偵測丟棄"
 scoreboard objectives add player.detect.air dummy "[玩家] 空中時間"
+scoreboard objectives add player.detect.death deathCount "死亡偵測"
 
 # ==================================================================================================

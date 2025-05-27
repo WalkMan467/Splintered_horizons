@@ -31,7 +31,11 @@ function items:type/tp_book/rc/reset
 
 team join team.player @s
 
+scoreboard objectives setdisplay sidebar player.death_count
+scoreboard objectives setdisplay list player.death_count
+
 scoreboard players set @s death_count 0
+scoreboard players add @s player.death_count 0
 
 
 function players:id/detect

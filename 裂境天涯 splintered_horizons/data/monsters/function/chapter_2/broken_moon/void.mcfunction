@@ -21,12 +21,13 @@ execute as @e[type=bogged,tag=monster.broken_moon.4.monster] at @s run function 
 
 kill @e[tag=monster.broken_moon.skill.3.player_sun,type=area_effect_cloud]
 
+tp 000000d4-0000-0002-0000-000100000002 ~ -255 ~
+kill 000000d4-0000-0002-0000-000100000002
 
-execute if entity @s[type=player] run return 0
-
-tp @s ~ -255 ~
-kill @s
+scoreboard players set #boss_area.chapter_2 global.main 0
 
 stopsound @a[distance=..65] record
 
 function monsters:chapter_2/broken_moon/4/terrain/false
+
+scoreboard players set @a monster.broken_moon.player_die 0

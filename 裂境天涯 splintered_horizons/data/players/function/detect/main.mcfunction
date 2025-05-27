@@ -4,3 +4,4 @@ execute if entity @s[gamemode=!creative,gamemode=!spectator] if predicate player
 execute unless predicate players:detect/air run function players:detect/ground
 
 function players:detect/hurt
+function players:detect/death
