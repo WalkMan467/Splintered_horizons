@@ -18,13 +18,13 @@
     },
     "description": [
       {
-        "translate": "weapon.grip_of_withering.skill.1",
+        "translate": "weapon.grip_of_withering.story.1",
         "color": "blue",
         "bold": false,
         "italic": false
       },
       {
-        "translate": "weapon.grip_of_withering.skill.2",
+        "translate": "weapon.grip_of_withering.story.2",
         "color": "blue",
         "bold": false,
         "italic": false
@@ -32,9 +32,9 @@
     ],
     "show_toast": true,
     "announce_to_chat": false,
-    "hidden": false
+    "hidden": true
   },
-  "parent": "weapons:icon/orantes",
+  "parent": "weapons:icon/chapter_1",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:inventory_changed",

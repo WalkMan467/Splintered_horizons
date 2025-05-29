@@ -18,7 +18,7 @@
     "frame": "goal",
     "show_toast": false,
     "announce_to_chat": false,
-    "hidden": true
+    "hidden": false
   },
   "parent": "story:icon/proper_noun/old_story",
   "criteria": {

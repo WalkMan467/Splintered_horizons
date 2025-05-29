@@ -1,0 +1,73 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:wooden_sword",
+      "components": {
+        "minecraft:custom_model_data": {
+          "floats": [
+            0
+          ],
+          "strings": []
+        },
+        "minecraft:item_model": "minecraft:sword/echo_rhythm/1"
+      },
+      "count": 1
+    },
+    "title": {
+      "translate": "weapon.echo_rhythm"
+    },
+    "description": [
+      {
+        "translate": "weapon.echo_rhythm.story.1",
+        "color": "blue",
+        "bold": false,
+        "italic": false
+      },
+      {
+        "translate": "weapon.echo_rhythm.story.2",
+        "color": "blue",
+        "bold": false,
+        "italic": false
+      },
+      {
+        "translate": "weapon.echo_rhythm.story.3",
+        "with": [
+          {
+            "translate": "weapon.effect.shadow",
+            "color": "#470041",
+            "underlined": true
+          }
+        ],
+        "color": "blue",
+        "bold": false,
+        "italic": false
+      },
+      {
+        "translate": "weapon.echo_rhythm.story.4",
+        "color": "blue",
+        "bold": false,
+        "italic": false
+      }
+    ],
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "weapons:icon/new_world/chapter_2",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "predicates": {
+              "minecraft:custom_data": {
+                "weapon": "echo_rhythm"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -21,7 +21,7 @@ execute if score story.chapter_1.ml.2 story.chapter_1 matches 17 run tellraw @a 
 execute if score story.chapter_1.ml.2 story.chapter_1 matches 18 run tellraw @a {"translate": "story.chapter_1.ml.2.18","fallback": "[蘇菲亞] 當我拔刀時，它將具有完全毀滅整個宇宙的能力"}
 execute if score story.chapter_1.ml.2 story.chapter_1 matches 19 run tellraw @a {"translate": "story.chapter_1.ml.2.19","fallback": "[蘇菲亞] 不過以目前的情況並不會讓我拔刀"}
 execute if score story.chapter_1.ml.2 story.chapter_1 matches 20 run tellraw @a {"translate": "story.chapter_1.ml.2.20","fallback": "[蘇菲亞] 在面對「深淵之主」時，我才會拔刀"}
-execute if score story.chapter_1.ml.2 story.chapter_1 matches 20 run advancement grant @s only story:icon/story/chapter_1/scebe_2
+execute if score story.chapter_1.ml.2 story.chapter_1 matches 20 run scoreboard players set #story:icon/story/chapter_1/scebe_2 global.main 1
 
 scoreboard players add story.chapter_1.ml.2 story.chapter_1 1
 

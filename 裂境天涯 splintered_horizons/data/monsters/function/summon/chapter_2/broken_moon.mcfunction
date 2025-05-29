@@ -21,9 +21,12 @@ scoreboard players set 000000d4-0000-0002-0000-000100000002 monster.broken_moon.
 scoreboard players set max monster.broken_moon.skill.4.cd 55
 
 tag @a remove monster.broken_moon.skill.4.death_protection
+tag @a remove monsters.broken_moon.1.target
 
-stopsound @a[distance=..60] record
-execute positioned 1721 100 882 as @a[distance=..60] at @s run playsound minecraft:bgm.scott_buckley_the_rise record @s ~ ~0.5 ~ 1 1
+
+stopsound @a record minecraft:bgm.scott_buckley_terminus
+stopsound @a record minecraft:bgm.makai_symphony_endless_storm
+execute positioned 1721 100 882 as @a[distance=..60] at @s run function music:chapter_2/bossfight/2/start
 
 tag @e[tag=monsters.spawn] remove monsters.spawn
 

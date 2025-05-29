@@ -17,4 +17,4 @@ playsound minecraft:entity.lightning_bolt.thunder voice @a ~ ~0.5 ~ 1 2
 playsound minecraft:block.beacon.deactivate voice @a ~ ~0.5 ~ 1 1
 playsound minecraft:block.beacon.deactivate voice @a ~ ~0.5 ~ 1 1
 
-say death.4.skill
+damage @s[gamemode=!spectator,gamemode=!creative] 9999 out_of_world by 000000d4-0000-0002-0000-000100000002

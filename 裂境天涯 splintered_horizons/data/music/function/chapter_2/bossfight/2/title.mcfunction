@@ -1,0 +1,1 @@
+tellraw @s [{"text":"\n=================================\n\n"},{"translate": "music.name","fallback": "Music Name"},": ",{"translate": "music.endless_storm","fallback": "Endless Storm"},"\n\n",{"translate": "music.composer","fallback": "Composer"},": ",{"translate": "music.makai_symphony","fallback": "Makai Symphony"},{"text":"\n\n=================================\n"}]

@@ -5,3 +5,4 @@ scoreboard players remove @s[scores={music.main.campfire=1..}] music.main.campfi
 scoreboard players remove @s[scores={music.chapter2.land_of_finality=1..}] music.chapter2.land_of_finality 1
 scoreboard players remove @s[scores={music.main.safe_zone=1..}] music.main.safe_zone 1
 scoreboard players remove @s[scores={music.chapter2.forest_of_souls=1..}] music.chapter2.forest_of_souls 1
+scoreboard players remove @s[scores={music.chapter2.bossfight.2=1..}] music.chapter2.bossfight.2 1

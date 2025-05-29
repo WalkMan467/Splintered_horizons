@@ -13,7 +13,10 @@
     "title": {
       "translate": "weapon.monument.silvaverdis"
     },
-    "description": ""
+    "description": "",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
   },
   "parent": "weapons:monument/area_1",
   "criteria": {

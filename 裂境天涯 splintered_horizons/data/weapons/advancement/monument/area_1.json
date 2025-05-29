@@ -18,7 +18,10 @@
     "title": {
       "translate": "weapon.monument.aquilumera"
     },
-    "description": ""
+    "description": "",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
   },
   "parent": "weapons:monument/icon",
   "criteria": {

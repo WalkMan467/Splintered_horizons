@@ -21,7 +21,7 @@
     "background": "minecraft:gui/advancements/backgrounds/quartz_bricks",
     "show_toast": false,
     "announce_to_chat": false,
-    "hidden": true
+    "hidden": false
   },
   "criteria": {
     "requirement": {

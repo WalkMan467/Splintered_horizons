@@ -17,7 +17,7 @@ execute in minecraft:overworld run tp @s 39 64 10 90 0
 
 team join team.player @a
 
-scoreboard players add @a death_count 0
+scoreboard players set @a death_count 0
 
 advancement revoke @a only weapons:monument/area_1
 advancement grant @a only weapons:monument/icon

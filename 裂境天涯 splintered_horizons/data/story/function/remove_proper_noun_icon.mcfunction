@@ -12,6 +12,11 @@ advancement grant @s only story:icon/proper_noun/icon
 
         advancement grant @s only story:icon/proper_noun/final_battle
     
+    advancement revoke @s only story:icon/proper_noun/new_story
+
+        advancement revoke @s only story:icon/proper_noun/eye_of_finality
+
+    
 # =============================================================================================
 
 advancement grant @s only story:icon/character/icon

@@ -17,6 +17,19 @@ kill @e[tag=system.monument_point.sword]
 
 scoreboard players set #monument.area_1 global.main 0
 scoreboard players set #monument.area_2 global.main 0
+
+scoreboard players set #story:icon/proper_noun/eye_of_finality global.main 0
+scoreboard players set #story:icon/proper_noun/new_story global.main 0
+scoreboard players set #story:icon/character/sophia/icon global.main 0
+scoreboard players set #story:icon/character/sophia/story_1 global.main 0
+scoreboard players set #story:icon/story/chapter_1 global.main 0
+scoreboard players set #story:icon/character/sophia/story_1_1 global.main 0
+scoreboard players set #story:icon/story/chapter_1/scebe_1 global.main 0
+scoreboard players set #story:icon/story/chapter_1/scebe_2 global.main 0
+
+scoreboard players set #weapons:monument/area_1 global.main 0
+scoreboard players set #weapons:monument/area_2 global.main 0
+
 scoreboard players set #story global.main 1
 advancement revoke @a only weapons:monument/area_1
 advancement revoke @a only weapons:monument/area_2

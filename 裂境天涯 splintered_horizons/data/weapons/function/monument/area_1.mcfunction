@@ -10,3 +10,5 @@ title @s title {"translate":"tips.area_1.title","color": "blue"}
 title @s subtitle {"translate":"tips.area_1.subtitle","color": "blue"}
 
 execute as @a at @s run playsound minecraft:ui.toast.challenge_complete voice @s ~ ~1 ~ 1 1
+
+scoreboard players set #weapons:monument/area_1 global.main 1

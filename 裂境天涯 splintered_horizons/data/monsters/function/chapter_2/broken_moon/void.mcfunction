@@ -4,8 +4,8 @@ bossbar remove minecraft:monster.boss.broken_moon
 
 scoreboard players set abyss_soulcutter monster.boss.spawn 1
 
-tag @a[distance=..65] remove monsters.broken_moon.1.target
-tag @a[distance=..65] remove monster.broken_moon.skill.3.player_sun
+tag @a remove monsters.broken_moon.1.target
+tag @a remove monster.broken_moon.skill.3.player_sun
 
 scoreboard players reset @a monster.broken_moon.skill.3.player_timer
 scoreboard players reset @a monster.broken_moon.skill.3.count

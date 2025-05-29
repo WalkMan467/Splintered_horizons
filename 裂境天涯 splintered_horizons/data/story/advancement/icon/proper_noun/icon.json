@@ -19,7 +19,7 @@
     "background": "minecraft:gui/advancements/backgrounds/crying_obsidian",
     "show_toast": false,
     "announce_to_chat": false,
-    "hidden": true
+    "hidden": false
   },
   "criteria": {
     "requirement": {

@@ -18,7 +18,7 @@
     "background": "minecraft:textures/gui/advancements/backgrounds/quartz_bricks.png",
     "show_toast": false,
     "announce_to_chat": false,
-    "hidden": true
+    "hidden": false
   },
   "parent": "story:icon/character/stellar/story_1_1",
   "criteria": {

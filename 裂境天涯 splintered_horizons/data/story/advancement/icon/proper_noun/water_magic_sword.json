@@ -21,9 +21,9 @@
     "frame": "goal",
     "show_toast": false,
     "announce_to_chat": false,
-    "hidden": true
+    "hidden": false
   },
-  "parent": "story:icon/proper_noun/orantes",
+  "parent": "story:icon/proper_noun/magic_sword",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:impossible"

@@ -4,28 +4,31 @@
       "id": "minecraft:iron_sword",
       "components": {
         "minecraft:custom_model_data": {
+          "floats": [],
           "flags": [
             true
-          ]
+          ],
+          "strings": []
         },
-        "minecraft:item_model": "sword/light_of_water_mirror/1"
+        "minecraft:item_model": "minecraft:sword/entangling_vine_of_despair/1"
       },
       "count": 1
     },
     "title": {
-      "translate": "weapon.icon.old_story.orantes",
+      "translate": "monument.icon.chapter_2",
+      "color": "white",
       "bold": true,
       "italic": false,
       "underlined": true
     },
     "description": "",
-    "background": "minecraft:textures/gui/advancements/backgrounds/sculk.png",
+    "background": "minecraft:textures/gui/advancements/backgrounds/sculk",
     "frame": "goal",
     "show_toast": false,
     "announce_to_chat": false,
     "hidden": true
   },
-  "parent": "weapons:icon/old_story",
+  "parent": "weapons:icon/new_story",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:impossible",

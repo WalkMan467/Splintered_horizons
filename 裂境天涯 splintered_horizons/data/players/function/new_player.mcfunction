@@ -7,7 +7,8 @@ give @s crafting_table 1
 advancement grant @s only music:icon
 advancement grant @s only weapons:icon/icon
 advancement grant @s only weapons:icon/old_story
-advancement grant @s only weapons:icon/orantes
+advancement grant @s only weapons:icon/chapter_1
+advancement grant @s only weapons:icon/chapter_2
 advancement grant @s only story:icon/story/icon
 advancement grant @s only story:icon/proper_noun/icon
 advancement grant @s only story:icon/proper_noun/old_story

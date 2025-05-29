@@ -12,4 +12,6 @@ attribute @s gravity modifier add monsters.broken_moon.1 -1 add_multiplied_base
 execute store result score @s monster.broken_moon.1.count run random value 1..5
 
 # 隨機目標 (玩家)
+tag @a remove monsters.broken_moon.1.target
+
 tag @r add monsters.broken_moon.1.target

@@ -23,6 +23,4 @@ playsound minecraft:entity.lightning_bolt.thunder voice @a ~ ~0.5 ~ 1 2
 playsound minecraft:block.beacon.deactivate voice @a ~ ~0.5 ~ 1 1
 playsound minecraft:block.beacon.deactivate voice @a ~ ~0.5 ~ 1 1
 
-execute if score @s monster.broken_moon.skill.3.player_sun matches 1.. run say damage.3.skill
-
 execute if score @s monster.broken_moon.skill.3.count matches 1 run tag @s remove monster.broken_moon.skill.3.player_sun

@@ -26,8 +26,8 @@
       "fallback": "終焉行者，她流浪於無盡的宇宙，尋找著故人的回憶"
     },
     "background": "minecraft:textures/gui/advancements/backgrounds/quartz_bricks.png",
-    "show_toast": false,
-    "announce_to_chat": false,
+    "show_toast": true,
+    "announce_to_chat": true,
     "hidden": true
   },
   "parent": "story:icon/character/icon",
