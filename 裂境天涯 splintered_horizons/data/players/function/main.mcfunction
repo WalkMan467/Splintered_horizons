@@ -16,3 +16,5 @@ execute if predicate players:detect/input/sneak run attribute @s step_height bas
 scoreboard players set @s[scores={player.ultimate=2..,player.infinite.mana=1..}] player.ultimate 1
 
 function armors:loop
+
+execute if items entity @s weapon.mainhand bow run enchant @s weapons:arrow_detect 1

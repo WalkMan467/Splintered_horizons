@@ -4,6 +4,7 @@ gamemode spectator @a
 spectate 00000079-0000-000c-0000-001500000015
 spectate 000000de-0000-000b-0000-001500000015
 spectate 00000015-0000-0016-0000-001500000015
+spectate 00000016-0000-0016-0000-001500000015
 
 # 蘇菲亞
 execute as @n[type=item_display,tag=cutscene.safe_area.0.rainy_night] if score @s cutscene.aj.animation.change matches 1.. run scoreboard players remove @s cutscene.aj.animation.change 1

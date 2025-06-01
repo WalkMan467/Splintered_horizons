@@ -47,7 +47,6 @@ execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 4
 execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 41 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.41","fallback": "[蘇菲亞] 或許你會需要一點裝備與食物"}
 execute positioned 38 64 9 if score story.chapter_1.ml story.chapter_1 matches 42 run tellraw @a[distance=..16] {"translate": "story.chapter_1.ml.42","fallback": "[蘇菲亞] 如果你準備好了，我們就離開這裡吧"}
 execute if score story.chapter_1.ml story.chapter_1 matches 42 run scoreboard players set #story:icon/proper_noun/new_story global.main 1
-execute if score story.chapter_1.ml story.chapter_1 matches 42 run scoreboard players set #story:icon/proper_noun/eye_of_finality global.main 1
 execute if score story.chapter_1.ml story.chapter_1 matches 42 run scoreboard players set #story:icon/character/sophia/icon global.main 1
 execute if score story.chapter_1.ml story.chapter_1 matches 42 run scoreboard players set #story:icon/character/sophia/story_1 global.main 1
 execute if score story.chapter_1.ml story.chapter_1 matches 42 run scoreboard players set #story:icon/character/sophia/story_1_1 global.main 1

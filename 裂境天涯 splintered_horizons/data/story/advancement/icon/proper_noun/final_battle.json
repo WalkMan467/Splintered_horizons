@@ -23,7 +23,7 @@
   "parent": "story:icon/proper_noun/war_of_light_and_darkness",
   "criteria": {
     "requirement": {
-      "trigger": "minecraft:impossible"
+      "trigger": "minecraft:tick"
     }
   }
 }

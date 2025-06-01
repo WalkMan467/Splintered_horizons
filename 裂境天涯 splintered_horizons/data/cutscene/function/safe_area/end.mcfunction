@@ -3,6 +3,7 @@ scoreboard players set .safe_area cutscene.story -1
 kill 00000079-0000-000c-0000-001500000015
 kill 000000de-0000-000b-0000-001500000015
 kill 00000015-0000-0016-0000-001500000015
+kill 00000016-0000-0016-0000-001500000015
 
 forceload remove 762 931 758 935
 
@@ -20,5 +21,10 @@ clear @a
 execute as @a at @s run function players:inventory/-return {bag:"overworld"}
 
 function animated_java:amysis/remove/all
+function animated_java:elina/remove/all
+
+stopsound @a record
+execute as @a at @s run function music:reset
+
 
 schedule clear cutscene:safe_area/main

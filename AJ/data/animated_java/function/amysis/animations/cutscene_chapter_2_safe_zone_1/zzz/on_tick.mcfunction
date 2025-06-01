@@ -6,5 +6,5 @@ execute if score @s aj.cutscene_chapter_2_safe_zone_1.frame matches -1 run funct
 data remove storage aj:temp args
 execute store result storage aj:temp args.frame int 1 run scoreboard players get @s aj.cutscene_chapter_2_safe_zone_1.frame
 function animated_java:amysis/animations/cutscene_chapter_2_safe_zone_1/zzz/apply_frame with storage aj:temp args
-execute if score @s aj.cutscene_chapter_2_safe_zone_1.frame matches 139.. run return run scoreboard players set @s aj.cutscene_chapter_2_safe_zone_1.frame -1
+execute if score @s aj.cutscene_chapter_2_safe_zone_1.frame matches 79.. run return run scoreboard players set @s aj.cutscene_chapter_2_safe_zone_1.frame -1
 scoreboard players add @s aj.cutscene_chapter_2_safe_zone_1.frame 1

@@ -2,8 +2,16 @@ summon minecraft:block_display 758.5 145.25 945.0 {Rotation:[0.0f,0.0f],start_in
 
 execute as 00000015-0000-0016-0000-001500000015 at @s run tp @s ~ ~ ~-0.5
 
+execute positioned 758 143 935 as @n[type=item_display,distance=..10,tag=aj.rainy_night.root] run function animated_java:rainy_night/remove/this
 
-scoreboard players set @n[tag=main.duration.timer,tag=summon,type=marker] duration 200
+execute positioned 759 144 946 facing 758.5 145.25 944.5 run function animated_java:amysis/summon {args: {animation: 'cutscene_chapter_2_safe_zone_1', start_animation: true}}
+
+execute positioned 757 144 946 facing 758.5 145.25 944.5 run function animated_java:elina/summon {args: {animation: 'idle', start_animation: true}}
+
+
+scoreboard players set @n[tag=main.duration.timer,tag=summon,type=marker] duration 260
 tag @n[tag=main.duration.timer,tag=summon,type=marker] remove summon
 
 function cutscene:safe_area/main
+
+schedule function cutscene:safe_area/3/use 13s

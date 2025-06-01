@@ -1,0 +1,1 @@
+execute as 00000015-0000-0002-0000-001f00000003 at @s if data entity @s interaction.timestamp run function monsters:bossfight/chapter_2/act/menu

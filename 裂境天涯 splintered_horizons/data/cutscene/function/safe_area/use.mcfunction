@@ -3,5 +3,10 @@ tp @a 758 143 935
 title @a times 20 20 20
 title @a title {"text":"\uE000","font":"minecraft:screen"}
 
+stopsound @a record
+
+execute as @a at @s run playsound minecraft:voice.footsteps voice @s ~ ~ ~ 1 1
+execute as @a at @s run playsound minecraft:bgm.scott_buckley_into_the_unknown record @s ~ ~ ~ 1 1
+
 function cutscene:safe_area/stop
 schedule function cutscene:safe_area/0/use 10t

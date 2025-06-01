@@ -33,7 +33,7 @@
   "parent": "story:icon/character/icon",
   "criteria": {
     "requirement": {
-      "trigger": "minecraft:impossible"
+      "trigger": "minecraft:tick"
     }
   }
 }

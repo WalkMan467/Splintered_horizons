@@ -25,3 +25,9 @@ execute unless score #story:icon/story/chapter_1/scebe_1 global.main matches 1..
 
 execute if score #story:icon/story/chapter_1/scebe_2 global.main matches 1.. run advancement grant @a only story:icon/story/chapter_1/scebe_2
 execute unless score #story:icon/story/chapter_1/scebe_2 global.main matches 1.. run advancement revoke @a only story:icon/story/chapter_1/scebe_2
+
+execute if score #story:icon/proper_noun/resplendence global.main matches 1.. run advancement grant @a only story:icon/proper_noun/resplendence
+execute unless score #story:icon/proper_noun/resplendence global.main matches 1.. run advancement revoke @a only story:icon/proper_noun/resplendence
+
+execute if score #story:icon/proper_noun/shadow global.main matches 1.. run advancement grant @a only story:icon/proper_noun/shadow
+execute unless score #story:icon/proper_noun/shadow global.main matches 1.. run advancement revoke @a only story:icon/proper_noun/shadow

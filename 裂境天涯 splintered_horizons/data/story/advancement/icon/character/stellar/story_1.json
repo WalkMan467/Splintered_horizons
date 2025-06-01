@@ -29,7 +29,7 @@
   "parent": "story:icon/character/stellar/icon",
   "criteria": {
     "requirement": {
-      "trigger": "minecraft:impossible"
+      "trigger": "minecraft:tick"
     }
   }
 }

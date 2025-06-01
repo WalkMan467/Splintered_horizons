@@ -1,0 +1,81 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:ender_eye",
+      "components": {
+        "minecraft:item_model": "shadow"
+      },
+      "count": 1
+    },
+    "title": {
+      "translate": "weapon.effect.shadow",
+      "bold": true,
+      "italic": false
+    },
+    "description": [
+      {
+        "translate": "story.icon.proper_noun.shadow.1",
+        "color": "gray",
+        "bold": true,
+        "italic": false,
+        "underlined": false
+      },
+      {
+        "text": "\n"
+      },
+      {
+        "translate": "story.icon.proper_noun.shadow.2",
+        "color": "blue",
+        "bold": false,
+        "italic": false,
+        "underlined": false
+      },
+      {
+        "translate": "story.icon.proper_noun.shadow.3",
+        "color": "blue",
+        "bold": false,
+        "italic": false,
+        "underlined": false
+      },
+      {
+        "translate": "story.icon.proper_noun.shadow.4",
+        "color": "blue",
+        "bold": false,
+        "italic": false,
+        "underlined": false
+      },
+      {
+        "text": "\n\n"
+      },
+      {
+        "translate": "story.icon.proper_noun.shadow.5",
+        "color": "blue",
+        "bold": false,
+        "italic": false,
+        "underlined": false
+      },
+      {
+        "translate": "story.icon.proper_noun.shadow.6",
+        "color": "blue",
+        "bold": false,
+        "italic": false,
+        "underlined": false
+      }
+    ],
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "story:icon/proper_noun/new_story",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+  },
+  "rewards": {
+    "function": "players:tips/eye_of_finality"
+  }
+}

@@ -23,7 +23,7 @@
   "parent": "story:icon/proper_noun/old_story",
   "criteria": {
     "requirement": {
-      "trigger": "minecraft:impossible"
+      "trigger": "minecraft:tick"
     }
   }
 }

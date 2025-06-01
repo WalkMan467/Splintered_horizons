@@ -15,3 +15,5 @@ execute as @a run function music:chapter_2/bossfight/2/reset
 tp @a 946.0 146 728.0
 
 schedule clear monsters:bossfight/chapter_2/broken_moon/loop
+
+scoreboard players set #bossfight.chapter_2.act.setup global.main 1

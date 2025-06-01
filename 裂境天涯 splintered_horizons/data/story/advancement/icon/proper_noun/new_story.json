@@ -24,7 +24,7 @@
   "parent": "story:icon/proper_noun/icon",
   "criteria": {
     "requirement": {
-      "trigger": "minecraft:impossible",
+      "trigger": "minecraft:tick",
       "conditions": {}
     }
   }

@@ -24,7 +24,7 @@ schedule function monsters:timer_s 1s
 schedule function main:timer/1s 1s
 
 schedule function monsters:chapter_2/abyss_soulcutter/main 10t
-schedule function monsters:boss_respawn 1t
+schedule function system:monument_point/main 1t
 
 # 快捷欄切換
 
