@@ -14,3 +14,5 @@ function animated_java:boss_1/remove/all
 function monsters:summon/chapter_2/abyss_soulcutter
 
 scoreboard players set #bossfight.chapter_2.act.setup global.main 0
+
+schedule function story:chapter_2/bossfight/1/0 1t

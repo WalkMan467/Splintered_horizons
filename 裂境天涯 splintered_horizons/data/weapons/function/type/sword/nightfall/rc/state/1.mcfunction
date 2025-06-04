@@ -1,6 +1,8 @@
 item modify entity @s weapon.mainhand weapons:type/sword/nightfall/1
 
 title @s title {"text":"\uE005","font":"screen"}
+title @s subtitle ""
+
 title @s times 5 5 5
 
 particle minecraft:smoke ~ ~1 ~ 0 0 0 0.1 80 normal @a

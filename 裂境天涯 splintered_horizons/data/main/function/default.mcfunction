@@ -18,7 +18,7 @@ kill @e[tag=system.monument_point.sword]
 scoreboard players set #monument.area_1 global.main 0
 scoreboard players set #monument.area_2 global.main 0
 
-scoreboard players set story.chapter_2.ml story.chapter_2 0
+scoreboard players set story.chapter_2.in_safe_zone.ml story.chapter_2 0
 
 scoreboard players set #story:icon/proper_noun/eye_of_finality global.main 0
 scoreboard players set #story:icon/proper_noun/new_story global.main 0

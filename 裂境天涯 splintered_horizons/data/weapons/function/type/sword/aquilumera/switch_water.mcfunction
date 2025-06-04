@@ -12,6 +12,8 @@ scoreboard players set @s player.disable.elytra_switch 50
 # particle
 title @s times 10 5 10
 title @s title {"text":"\uE006","font": "screen"}
+title @s subtitle ""
+
 particle flash ~ ~1 ~ 0 0 0 1 2 normal @a[scores={main.light_sensitivity=0}]
 particle dripping_dripstone_water ~ ~5 ~ 5 5 5 0 600 normal @a
 playsound entity.zombie.converted_to_drowned voice @a ~ ~1 ~ 1 0.7

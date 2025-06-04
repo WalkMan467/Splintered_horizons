@@ -1,5 +1,8 @@
 scoreboard players add @s player.ultimate 0
-execute if score @s player.ultimate matches 1.. run return 0
+execute unless score @s player.ultimate matches ..0 unless score @s player.click.interval matches 1.. run function weapons:ultimate_use_failed
+execute unless score @s player.ultimate matches ..0 run return 0
+
+scoreboard players set @s player.click.interval 20
 
 title @s title {"text":"\uE004","font":"minecraft:screen"}
 title @s subtitle ""

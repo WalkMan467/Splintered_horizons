@@ -3,6 +3,7 @@
 scoreboard objectives add weapon.eye_of_the_end.interval dummy "終焉之眼使用間隔"
 
 scoreboard players add @a weapon.eye_of_the_end.interval 0
+
 #===================================================================
 #風力劍
 

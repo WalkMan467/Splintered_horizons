@@ -9,7 +9,7 @@ forceload remove 762 931 758 935
 
 execute positioned 758 143 935 as @n[type=item_display,distance=..10,tag=aj.rainy_night.root] run function animated_java:rainy_night/remove/this
 
-function story:chapter_2/in_safe_zone/stop
+function story:chapter_2/stop
 function animated_java:amysis/remove/all
 function animated_java:elina/remove/all
 

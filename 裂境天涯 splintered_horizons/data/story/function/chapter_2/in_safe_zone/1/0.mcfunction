@@ -1,7 +1,7 @@
 
-function story:chapter_2/in_safe_zone/stop
+function story:chapter_2/stop
 
-scoreboard players set story.chapter_2.ml story.chapter_2 1
+scoreboard players set story.chapter_2.in_safe_zone.ml story.chapter_2 1
 
 stopsound @a record minecraft:bgm.whitesand_fallen_kingdom
 function cutscene:safe_area/use

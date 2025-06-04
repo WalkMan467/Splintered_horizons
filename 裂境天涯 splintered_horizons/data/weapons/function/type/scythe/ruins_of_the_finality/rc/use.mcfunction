@@ -1,6 +1,8 @@
-execute unless score @s player.ultimate matches ..0 run function weapons:skill_use_failed with entity @s SelectedItem.components."minecraft:custom_data"
-scoreboard players set @s player.click.interval 20
+scoreboard players add @s player.ultimate 0
+execute unless score @s player.ultimate matches ..0 run function weapons:ultimate_use_failed
 execute unless score @s player.ultimate matches ..0 run return 0
+
+scoreboard players set @s player.click.interval 20
 
 tellraw @s [{"translate":"weapon.ruins_of_the_finality.skill","color":"dark_green","bold":true}," ",{"translate":"weapon.skill_activation","color":"green","bold":true}]
 
