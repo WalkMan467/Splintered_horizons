@@ -25,4 +25,6 @@ summon item ~ ~0.5 ~ {Glowing:1b,Motion:[0.0f,0.25f,0.0f],Item:{id:"minecraft:st
 
 function monsters:chapter_2/broken_moon/4/terrain/false
 
+schedule function story:chapter_2/bossfight/2/0 1t
+
 scoreboard players set #bossfight.chapter_2.act.setup global.main 0

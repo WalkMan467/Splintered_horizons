@@ -6,6 +6,7 @@ scoreboard objectives add world_area.realm_of_the_black_hole.fx dummy
 scoreboard objectives add world_area.realm_of_the_black_hole.fx.marker dummy
 scoreboard objectives add world_area.realm_of_the_black_hole.fx.marker_temp dummy
 scoreboard objectives add world_area.realm_of_the_black_hole.fx2.rotation dummy
+scoreboard objectives add world_area.other.otherworld_portal.delay dummy
 
 scoreboard objectives add environment_particles trigger
 scoreboard objectives add environment_particles.switch trigger
