@@ -13,13 +13,12 @@
 attribute = []
 # ----- 設定參數 ----- #
 
-
-name = ['古老的石頭', '#ffffff', '副手物品']
-story = {'info': [''], 'color': 'blue'}
-item_data     = {'real_item': 'quartz', 'id': 'ancient_stone', 'item_model': '""', 'custom_data': '{type:"item",id:"ancient_stone"}', 'max_damage': -1}
-skill    = {'is_skill': False, 'name': ['Phase Black Hole', 'dark_aqua', '#00ccff'], 'info': ['Kills grant a charge.', 'Rapidly pressing [%s]','consumes 10 charges and creates a black hole.']}
-ultimate    = {'is_ultimate': False, 'name': ['終焉之月', 'dark_aqua', '#00ccff'], 'info': ['右鍵點擊消耗一個終焉之眼，', '開啟【終焉之月】型態持續 15 秒', '大幅強化武器，', '此形態下如果攻擊會有25%機率造成大量傷害']}
-attribute.append({'attribute': 'attack_speed', 'value': 0.25, 'slot': 'offhand', 'operation': 'add_value'})
+name = ['硬幣(小)', '#ea00ff', '貨幣 / 史詩']
+story = {'info': ['一枚普通的硬幣', '可以做為貨幣兌換任何你想要的物品', '也可以集齊 5 枚兌換 1 枚硬幣(中)'], 'color': 'blue'}
+item_data     = {'real_item': 'echo_shard', 'id': 'coin_s', 'item_model': '"coin/s"', 'custom_data': '{type:"item",item:"coin_s"}', 'max_damage': -1, 'rc': False, 'other': ['tooltip_style="epic"', 'tooltip_display={hidden_components:["attribute_modifiers","unbreakable"]}']}
+skill    = {'is_skill': False, 'cd': 3, 'name': ['潮汐音浪', '#9443ff', '#ea00ff'], 'info': ['攻擊有 30%機率觸發【回聲音爆】', '可對6格範圍內敵人造成一次攻擊力250%的基礎傷害', '如果玩家擁有【至暗】狀態', '會使【回聲音爆】造成傷害改為 攻擊力 250% 真實傷害']}
+ultimate    = {'is_ultimate': False, 'cd': 60, 'name': ['低音狂響', '#ff3300', '#001aff'], 'info': ['[%s]可以消耗一顆終焉之眼', '立即釋放【終焉音爆】', '對 8 格範圍內敵人造成 250% 真實傷害', '並且附帶 3 秒緩速 50%']}
+attribute.append({'attribute': 'attack_damage', 'value': 0, 'slot': 'mainhand', 'operation': 'add_value'})
 
 # ----- init ----- #
 
@@ -29,7 +28,9 @@ translate = {'story':[], 'skill':[], 'ultimate':[]}
 
 # attribute 屬性
 def attribute_id(x):
-    return f'{x["slot"]}.{str(attribute_index)}' 
+    if x["attribute"] == 'attack_damage': return 'base_attack_damage'
+    elif x["attribute"] == 'attack_speed': return 'base_attack_speed'
+    else: return f'{x["slot"]}.{str(attribute_index)}' 
 
 # 耐久度
 if int(item_data["max_damage"]) != -1: 
@@ -45,35 +46,43 @@ with open(__file__.replace("item_builder.py","#temp.mcfunction"),mode="w+",encod
     f.write(f'give @s {item_data["real_item"]}[')
     
     # item name
-    f.write(f'item_name=\'[{{"translate":"armor.{item_data["id"]}","color":"{name[1]}","italic":false,"bold":true}}]\'')
+    f.write(f'item_name=[{{"translate":"weapon.{item_data["id"]}","color":"{name[1]}","italic":false,"bold":true}}]')
     
     # lore
         # type
-    f.write(f',lore=[\'[{{"translate":"armor.{item_data["id"]}.type","italic":false,"color":"dark_gray"}}]\',\'{{"text":""}}\'')
+    f.write(f',lore=[[{{"translate":"weapon.{item_data["id"]}.type","italic":false,"color":"dark_gray"}}],{{"text":""}}')
         # story
     for i in range(1,len(story["info"])+1):
-        f.write(f',\'[{{"translate":"armor.{item_data["id"]}.story.{str(i)}","italic":false,"color":"{story["color"]}"}}]\'')
-        translate["story"].append(f'# "armor.{item_data["id"]}.story.{str(i)}" : "{story["info"][i-1]}"')
+        f.write(f',[{{"translate":"weapon.{item_data["id"]}.story.{str(i)}","italic":false,"color":"{story["color"]}"}}]')
+        translate["story"].append(f'# "weapon.{item_data["id"]}.story.{str(i)}" : "{story["info"][i-1]}"')
         # skill
     if skill['is_skill'] == True:
-        f.write(f',\'{{"text":""}}\',\'[{{"text":"","italic":false}},{{"translate":"armor.{item_data["id"]}.skill","color":"{skill["name"][1]}","bold":true}}]\'')
-        translate["skill"].append(f'# "armor.{item_data["id"]}.skill" : "[{skill["name"][0]}] "')
-#        translate["skill"].append(f'# "armor.{item_data["id"]}.skill.1" : "{skill["info"][0]}"')
+
+        if int(skill["cd"]) >= 1: skill["cd"] = ',{\"translate\":\"weapon.skill_cd\",\"color\":\"#6E6E6E\"},{\"text\":\"'+str(skill["cd"])+'s\"}'
+        else: skill["cd"] = ""
+    
+        f.write(f',{{"text":""}},[{{"text":"","italic":false}},{{"translate":"weapon.{item_data["id"]}.skill","color":"{skill["name"][1]}","bold":true}},{{"text":"  "}}{skill["cd"]}]')
+        translate["skill"].append(f'# "weapon.{item_data["id"]}.skill" : "[{skill["name"][0]}] "')
+#        translate["skill"].append(f'# "weapon.{item_data["id"]}.skill.1" : "{skill["info"][0]}"')
 
         if len(skill["info"]) >= 1:
             for i in range(1,len(skill["info"])+1):
-                f.write(f',\'[{{"text":"","italic":false}},{{"translate":"armor.{item_data["id"]}.skill.{str(i)}","color":"{skill["name"][2]}"}}]\'')
-                translate["skill"].append(f'# "armor.{item_data["id"]}.skill.{str(i)}" : "{skill["info"][i-1]}"')
+                f.write(f',[{{"text":"","italic":false}},{{"translate":"weapon.{item_data["id"]}.skill.{str(i)}","color":"{skill["name"][2]}"}}]')
+                translate["skill"].append(f'# "weapon.{item_data["id"]}.skill.{str(i)}" : "{skill["info"][i-1]}"')
         # ultimate
     if ultimate['is_ultimate'] == True:
-        f.write(f',\'{{"text":""}}\',\'[{{"text":"","italic":false}},{{"text":"\uE000","font":"minecraft:icon"}},{{"translate":"armor.{item_data["id"]}.ultimate","color":"{ultimate["name"][1]}","bold":true}},{{"text":"\uE000","font":"minecraft:icon"}}]\'')
-        translate["ultimate"].append(f'# "armor.{item_data["id"]}.ultimate" : "[{ultimate["name"][0]}] "')
-#        translate["ultimate"].append(f'# "armor.{item_data["id"]}.ultimate.1" : "{ultimate["info"][0]}"')
+
+        if int(ultimate["cd"]) >= 1: ultimate["cd"] = ',{\"translate\":\"weapon.skill_cd\",\"color\":\"#6E6E6E\"},{\"text\":\"'+str(ultimate["cd"])+'s\"}'
+        else: ultimate["cd"] = ""
+    
+        f.write(f',{{"text":""}},[{{"text":"","italic":false}},{{"text":"\uE000","font":"minecraft:icon"}},{{"translate":"weapon.{item_data["id"]}.ultimate","color":"{ultimate["name"][1]}","bold":true}},{{"text":"\uE000","font":"minecraft:icon"}},{{"text":"  "}}{ultimate["cd"]}]')
+        translate["ultimate"].append(f'# "weapon.{item_data["id"]}.ultimate" : "[{ultimate["name"][0]}] "')
+#        translate["ultimate"].append(f'# "weapon.{item_data["id"]}.ultimate.1" : "{ultimate["info"][0]}"')
 
         if len(ultimate["info"]) >= 1:
             for i in range(1,len(ultimate["info"])+1):
-                f.write(f',\'[{{"text":"","italic":false}},{{"translate":"armor.{item_data["id"]}.ultimate.{str(i)}","color":"{skill["name"][2]}"}}]\'')
-                translate["ultimate"].append(f'# "armor.{item_data["id"]}.ultimate.{str(i)}" : "{ultimate["info"][i-1]}"')
+                f.write(f',[{{"text":"","italic":false}},{{"translate":"weapon.{item_data["id"]}.ultimate.{str(i)}","color":"{skill["name"][2]}"}}]')
+                translate["ultimate"].append(f'# "weapon.{item_data["id"]}.ultimate.{str(i)}" : "{ultimate["info"][i-1]}"')
                 
     f.write(']')
     
@@ -90,13 +99,25 @@ with open(__file__.replace("item_builder.py","#temp.mcfunction"),mode="w+",encod
     
     # others
     if str(item_data["item_model"]) != '""': 
-        f.write(f',max_stack_size=1{item_data["max_damage"]},item_model={item_data["item_model"]},custom_data={item_data["custom_data"]}]')
+        f.write(f',max_stack_size=1{item_data["max_damage"]},item_model={item_data["item_model"]},custom_data={item_data["custom_data"]}')
     else:
-        f.write(f',max_stack_size=1{item_data["max_damage"]},custom_data={item_data["custom_data"]}]')
+        f.write(f',max_stack_size=1{item_data["max_damage"]},custom_data={item_data["custom_data"]}')
+
+    #  rc
+    if item_data.get('rc', True):
+
+        f.write(',consumable={consume_seconds:10000,animation:"none",has_consume_particles:false}')
+
+    # others
+    for component in item_data["other"]:
+        if component.strip():
+            f.write(f',{component}')
+
+    f.write(']')
     
     # translate
-    f.write(f'\n\n# "armor.{item_data["id"]}" : "{name[0]}"')
-    f.write(f'\n# "armor.{item_data["id"]}.type" : "{name[2]}"')
+    f.write(f'\n\n# "weapon.{item_data["id"]}" : "{name[0]}"')
+    f.write(f'\n# "weapon.{item_data["id"]}.type" : "{name[2]}"')
     for i in translate['story']: f.write('\n'+i)
     for i in translate['skill']: f.write('\n'+i)
     for i in translate['ultimate']: f.write('\n'+i)

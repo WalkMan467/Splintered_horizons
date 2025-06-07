@@ -5,10 +5,15 @@ scoreboard objectives add player.gamemode dummy "[玩家] 遊戲模式"
 scoreboard objectives add player.health health "[玩家] 血量"
 scoreboard objectives add player.hurt_time dummy "[玩家] 受傷時間"
 scoreboard objectives add player.ultimate dummy "[玩家] 終焉之眼CD"
+scoreboard objectives add player.coin dummy "[玩家] 擁有硬幣"
+scoreboard objectives add player.diamond dummy "[玩家] 擁有鑽石"
+
 scoreboard objectives add player.death_count dummy [{"text":"💀","bold":true,"color":"red"},{"translate":"tips.player_death.3","bold":false,"color":"white"},{"text":"💀","bold":true,"color":"red"}]
 
 
 scoreboard players add @a player.ultimate 0
+scoreboard players add @a player.diamond 0
+scoreboard players add @a player.coin 0
 
 # ==================================================================================================
 
@@ -28,9 +33,11 @@ scoreboard players add @a player.backup.timer 0
 # actionbar
 scoreboard objectives add player.actionbar.state_machine dummy "[玩家] actionbar 狀態機"
 scoreboard objectives add player.actionbar.state_machine.timer dummy "[玩家] actionbar 狀態機持續時間"
+scoreboard objectives add player.actionbar.shop dummy "[玩家] actionbar 狀態機 商店 GUI 顯示"
 
 
 scoreboard players add @a player.actionbar.state_machine 0
+scoreboard players add @a player.actionbar.shop 0
 
 # ==================================================================================================
 # 其他

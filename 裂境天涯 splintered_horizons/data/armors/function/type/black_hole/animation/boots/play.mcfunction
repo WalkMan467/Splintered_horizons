@@ -1,6 +1,6 @@
 tag @s add animation
 
-scoreboard players set @s armor.black_hole.boots.power 0
+scoreboard players set @s armor.black_hole.boots.cd 60
 scoreboard players set @a player.animation.lock 37
 
 scoreboard players set @s armor.black_hole.boots.effect 20

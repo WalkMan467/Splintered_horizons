@@ -4,5 +4,6 @@ scoreboard players remove @s[scores={player.actionbar.state_machine.timer=1..}] 
 scoreboard players remove @s[scores={player.animation.lock=1..}] player.animation.lock 1
 scoreboard players remove @s[scores={player.disable.elytra_switch=1..}] player.disable.elytra_switch 1
 scoreboard players remove @s[scores={player.hurt_time=1..}] player.hurt_time 1
+scoreboard players remove @s[scores={player.actionbar.shop=1..}] player.actionbar.shop 1
 
 function weapons:timer_t
