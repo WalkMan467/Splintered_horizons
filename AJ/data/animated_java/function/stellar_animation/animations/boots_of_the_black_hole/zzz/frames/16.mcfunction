@@ -9,6 +9,7 @@ $data merge entity $(bone_2) {transformation: [0.6461f,0.7621f,-0.0306f,-0.4623f
 $data merge entity $(bone_1) {transformation: [0.6468f,0.5641f,-0.5133f,-0.3108f,-0.7544f,0.5724f,-0.3215f,1.3281f,0.1125f,0.5952f,0.7957f,-0.0801f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(bone_4) {transformation: [-0.3438f,0.2618f,0.9017f,0.4623f,-0.7036f,0.563f,-0.4323f,1.0892f,-0.6202f,-0.7839f,-0.0094f,0.1114f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(bone_3) {transformation: [-0.3441f,-0.2637f,0.9011f,0.3461f,-0.7044f,0.7071f,-0.0621f,1.3125f,-0.6209f,-0.6561f,-0.4291f,-0.0776f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
-$data merge entity $(bone_8) {transformation: [-0.9929f,0.0522f,0.0972f,-0.1816f,0.0614f,0.9936f,0.0947f,0.3847f,-0.0915f,0.1001f,-0.9908f,0.0999f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
-$data merge entity $(bone_7) {transformation: [-0.9939f,0.1042f,0.0364f,-0.1499f,0.0615f,0.7965f,-0.6015f,0.608f,-0.0916f,-0.5956f,-0.7981f,-0.0943f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+$data merge entity $(bone_8) {transformation: [-0.9929f,0.0522f,0.0972f,-0.1517f,0.0614f,0.9936f,0.0947f,0.416f,-0.0915f,0.1001f,-0.9908f,0.0673f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+$data merge entity $(bone_7) {transformation: [-0.9939f,0.1042f,0.0364f,-0.12f,0.0615f,0.7965f,-0.6015f,0.6393f,-0.0916f,-0.5956f,-0.7981f,-0.1269f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+$data merge entity $(item_display_item_display) {transformation: [0f,0f,0f,-0.0445f,0f,0f,0f,0.8909f,0f,0f,0f,2.5137f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 data modify entity @s data merge value {"cameras":{"camera3":{"posx":-0.04446064139941727,"posy":0.8908527696793003,"posz":2.513666180758017,"roty":178.9974926543957,"rotx":4.964940882697255}},"locators":{}}

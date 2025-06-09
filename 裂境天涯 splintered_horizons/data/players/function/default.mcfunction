@@ -2,7 +2,7 @@ clear @s
 
 function players:scoreboard
 
-scoreboard players set @s player.infinite.mana 0
+scoreboard players set @s player.no_cd 0
 
 scoreboard players add @s main.light_sensitivity 0
 scoreboard players add @s main.3d_dizziness 0

@@ -2,6 +2,22 @@
 # @s = BOSS
 bossbar remove minecraft:monster.boss.broken_moon
 
+execute as @a at @s run function monsters:bossfight/chapter_2/reset_player_die
+
+summon area_effect_cloud ~ ~ ~ {Duration:20,Tags:["monster.death_particle.1","summon"],Particle:{type:"block",block_state:"air"},Radius:0}
+
+scoreboard players set abyss_soulcutter monster.boss.spawn 0
+
+bossbar remove minecraft:monster.boss.abyss_soulcutter
+
+function animated_java:boss_1/remove/all
+
+function story:chapter_2/stop
+
+scoreboard players set story.chapter_2.bossfight.ml story.chapter_2 1
+
+
+
 tag @a remove monsters.broken_moon.1.target
 tag @a remove monster.broken_moon.skill.3.player_sun
 

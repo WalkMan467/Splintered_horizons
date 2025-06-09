@@ -17,38 +17,21 @@ scoreboard players add @a player.coin 0
 
 # ==================================================================================================
 
-# 數據備份
-scoreboard objectives add player.backup dummy "[玩家] 數據備份"
-scoreboard objectives add player.backup.timer dummy "[玩家] 數據備份計時器"
-
-scoreboard objectives add backup trigger
-scoreboard objectives add backtracking trigger
-scoreboard players enable @a backup
-scoreboard players enable @a backtracking
-scoreboard players add @a player.backup 0
-scoreboard players add @a player.backup.timer 0
-
-# ==================================================================================================
-
 # actionbar
-scoreboard objectives add player.actionbar.state_machine dummy "[玩家] actionbar 狀態機"
-scoreboard objectives add player.actionbar.state_machine.timer dummy "[玩家] actionbar 狀態機持續時間"
 scoreboard objectives add player.actionbar.shop dummy "[玩家] actionbar 狀態機 商店 GUI 顯示"
 
-
-scoreboard players add @a player.actionbar.state_machine 0
 scoreboard players add @a player.actionbar.shop 0
 
 # ==================================================================================================
 # 其他
 scoreboard objectives add player.animation.lock dummy "[玩家] 強制鎖玩家動畫"
-scoreboard objectives add player.infinite.mana dummy "[玩家] 無限魔力"
+scoreboard objectives add player.no_cd dummy "[玩家] 鎖 CD"
 scoreboard objectives add player.click.interval dummy "[玩家] 使用間隔"
 scoreboard objectives add player.auto_crafting.brick dummy "[玩家] 自動合成 紅磚頭"
 scoreboard objectives add player.auto_crafting.coal dummy "[玩家] 自動合成 木棒"
 scoreboard objectives add player.bow dummy "[玩家] 箭矢偵測附魔"
 
-scoreboard players add @a player.infinite.mana 0
+scoreboard players add @a player.no_cd 0
 scoreboard players add @a player.animation.lock 0
 scoreboard players add @a player.click.interval 0
 scoreboard players add @a player.auto_crafting.brick 0

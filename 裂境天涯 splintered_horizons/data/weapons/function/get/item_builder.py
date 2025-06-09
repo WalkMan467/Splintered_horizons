@@ -13,13 +13,13 @@
 attribute = []
 # ----- 設定參數 ----- #
 
-name = ['回音律動', '#ffee00', '劍 / 神話']
-story = {'info': ['最終決戰過後，舊宇宙迎來了終點的結局', '同時，宇宙出現了由深淵延伸的新力量「終焉」', '這把武器的誕生目前無法得知', '同時也埋藏了很多秘密。'], 'color': 'blue'}
-item_data     = {'real_item': 'stone_sword', 'id': 'echo_rhythm', 'item_model': '"sword/echo_rhythm/1"', 'custom_data': '{rc:1b,type:"sword",weapon:"echo_rhythm"}', 'max_damage': -1, 'rc': True, 'other': ['minecraft:enchantments={"weapons:type/sword/echo_rhythm/use":1}','tooltip_style="mythic"', 'enchantment_glint_override=false', 'tooltip_display={hidden_components:["enchantments"]}']}
-skill    = {'is_skill': True, 'cd': 3, 'name': ['潮汐音浪', '#9443ff', '#ea00ff'], 'info': ['攻擊有 30%機率觸發【回聲音爆】','可對6格範圍內敵人造成一次攻擊力250%的基礎傷害','如果玩家擁有【至暗】狀態','會使【回聲音爆】造成傷害改為 攻擊力 250% 真實傷害']}
-ultimate    = {'is_ultimate': True, 'cd': 60, 'name': ['低音狂響', '#ff3300', '#001aff'], 'info': ['[%s]可以消耗一顆終焉之眼', '立即釋放【終焉音爆】', '對 8 格範圍內敵人造成 250% 真實傷害', '並且附帶 3 秒緩速 50%']}
-attribute.append({'attribute': 'attack_damage', 'value': 5, 'slot': 'mainhand', 'operation': 'add_value'})
-attribute.append({'attribute': 'attack_speed', 'value': -2.4, 'slot': 'mainhand', 'operation': 'add_value'})
+name = ['深淵短劍', "#c2c2c2", '鐮刀 / 注能材料']
+story = {'info': ['注能用材料', '看似無用的武器但蘊含著隱藏的力量', '可以去安全區鍛造室熔煉該武器', '可以換到相應的注能之石與提升注能成功機率材料'], 'color': 'blue'}
+item_data     = {'real_item': 'iron_sword', 'id': 'sculk_sword', 'item_model': '"sword/sculk_sword/1"', 'custom_data': '{rc:1b,type:"sword",weapon:"sculk_sword"}', 'max_damage': -1, 'rc': False, 'other': ['tooltip_style="common"','tooltip_display={hidden_components:["attribute_modifiers","unbreakable"]}']}
+skill    = {'is_skill': False, 'cd': 3, 'name': ['潮汐音浪', '#9443ff', '#ea00ff'], 'info': ['攻擊有 30%機率觸發【回聲音爆】','可對6格範圍內敵人造成一次攻擊力250%的基礎傷害','如果玩家擁有【至暗】狀態','會使【回聲音爆】造成傷害改為 攻擊力 250% 真實傷害']}
+ultimate    = {'is_ultimate': False, 'cd': 60, 'name': ['低音狂響', '#ff3300', '#001aff'], 'info': ['[%s]可以消耗一顆終焉之眼', '立即釋放【終焉音爆】', '對 8 格範圍內敵人造成 250% 真實傷害', '並且附帶 3 秒緩速 50%']}
+attribute.append({'attribute': 'attack_damage', 'value': 0, 'slot': 'mainhand', 'operation': 'add_value'})
+attribute.append({'attribute': 'attack_speed', 'value': 0, 'slot': 'mainhand', 'operation': 'add_value'})
 
 # ----- init ----- #
 

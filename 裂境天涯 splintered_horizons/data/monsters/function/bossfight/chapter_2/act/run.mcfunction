@@ -6,6 +6,10 @@ scoreboard players set #boss_area.chapter_2 global.main 1
 stopsound @a record minecraft:bgm.scott_buckley_terminus
 stopsound @a record minecraft:bgm.makai_symphony_endless_storm
 
+function story:chapter_2/stop
+
+scoreboard players set story.chapter_2.bossfight.ml story.chapter_2 1
+
 schedule function monsters:bossfight/chapter_2/broken_moon/loop 1t
 
 execute as @a at @s if biome ~ ~ ~ world_area:chapter_2/dusks_fractured_maw run tp @s 1721 101 893 180 0

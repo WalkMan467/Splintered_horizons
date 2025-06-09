@@ -4,7 +4,7 @@ execute as @s[tag=monsters.soul_tree_remnant] run function monsters:chapter_2/so
 function monsters:chapter_2/broken_moon/main
 function monsters:chapter_1/abyssal_black_knight/main
 
-execute as @s[tag=abyss_berserker] unless data entity @s {HurtTime:0s} run function monsters:abyss_berserker/run
+execute as @s[tag=abyss_berserker] unless data entity @s {HurtTime:0s} run function monsters:chapter_1/abyss_berserker/run
 
 ## ----- 偵測怪物死亡 ----- ##
 

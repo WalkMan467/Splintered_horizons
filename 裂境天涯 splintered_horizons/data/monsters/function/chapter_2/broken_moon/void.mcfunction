@@ -2,6 +2,17 @@
 
 bossbar remove minecraft:monster.boss.broken_moon
 
+execute as @a at @s run function monsters:bossfight/chapter_2/reset_player_die
+
+setblock 1721 103 882 air replace
+
+function animated_java:boss_1/remove/all
+
+function story:chapter_2/stop
+
+scoreboard players set story.chapter_2.bossfight.ml story.chapter_2 1
+
+
 scoreboard players set abyss_soulcutter monster.boss.spawn 1
 
 tag @a remove monsters.broken_moon.1.target

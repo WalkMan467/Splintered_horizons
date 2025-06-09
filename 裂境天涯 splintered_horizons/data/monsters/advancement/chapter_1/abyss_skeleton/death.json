@@ -15,6 +15,6 @@
       ]
     ],
     "rewards": {
-      "function": "monsters:abyss_skeleton/death"
+      "function": "monsters:chapter_1/abyss_skeleton/death"
     }
   }
