@@ -29,6 +29,7 @@ schedule function armors:timer_s 1s
 
 schedule function monsters:chapter_2/abyss_soulcutter/main 10t
 schedule function system:monument_point/main 1t
+schedule function system:forging_table/main 1t
 
 # 快捷欄切換
 

@@ -77,7 +77,7 @@
                 ],
                 "minecraft:unbreakable": {},
                 "minecraft:item_model": "drop/broken_glass/1",
-                "minecraft:custom_data": "{rc:1b,type:\"drop\",weapon:\"broken_glass\"}",
+                "minecraft:custom_data": "{rc:1b,type:\"drop\",weapon:\"broken_glass\",rarity:\"rare\"}",
                 "minecraft:consumable": {
                   "consume_seconds": 10000,
                   "animation": "none",

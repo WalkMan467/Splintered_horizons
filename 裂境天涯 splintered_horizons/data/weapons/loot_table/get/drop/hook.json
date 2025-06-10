@@ -34,7 +34,7 @@
                 ],
                 "minecraft:unbreakable": {},
                 "minecraft:item_model": "drop/hook/1",
-                "minecraft:custom_data": "{rc:1b,type:\"drop\",weapon:\"hook\"}",
+                "minecraft:custom_data": "{rc:1b,type:\"drop\",weapon:\"hook\",rarity:\"epic\"}",
                 "minecraft:consumable": {
                   "consume_seconds": 10000,
                   "animation": "none",

@@ -18,12 +18,7 @@ execute if score story.chapter_2.bossfight.ml.2 story.chapter_2 matches 12 run t
 execute if score story.chapter_2.bossfight.ml.2 story.chapter_2 matches 13 run tellraw @a {"translate": "story.chapter_2.bossfight.ml.2.13","fallback": "［拉爾西斯］若你真的做到擊敗深淵之主"}
 execute if score story.chapter_2.bossfight.ml.2 story.chapter_2 matches 14 run tellraw @a {"translate": "story.chapter_2.bossfight.ml.2.14","fallback": "［拉爾西斯］那就去重新創造新的人類文明吧"}
 execute if score story.chapter_2.bossfight.ml.2 story.chapter_2 matches 15 run tellraw @a {"translate": "story.chapter_2.bossfight.ml.2.15","fallback": "(片刻間，拉爾西斯也嚥下最後一口氣)"}
-execute if score story.chapter_2.bossfight.ml.2 story.chapter_2 matches 16 as @a at @s if biome ~ ~ ~ world_area:chapter_2/dusks_fractured_maw run playsound minecraft:block.end_portal_frame.fill voice @a ~ ~1 ~ 1 1.25
-execute if score story.chapter_2.bossfight.ml.2 story.chapter_2 matches 16 as @a at @s if biome ~ ~ ~ world_area:chapter_2/dusks_fractured_maw run playsound minecraft:ui.toast.challenge_complete voice @a ~ ~1 ~ 1 1
-execute if score story.chapter_2.bossfight.ml.2 story.chapter_2 matches 16 as @a at @s if biome ~ ~ ~ world_area:chapter_2/dusks_fractured_maw run playsound minecraft:entity.firework_rocket.twinkle voice @a ~ ~1 ~ 1 0.75
-execute if score story.chapter_2.bossfight.ml.2 story.chapter_2 matches 16 run title @a title {"translate":"tips.bossfight.win","fallback":"勝利","color":"gold"}
-execute if score story.chapter_2.bossfight.ml.2 story.chapter_2 matches 16 run title @a subtitle ""
-execute if score story.chapter_2.bossfight.ml.2 story.chapter_2 matches 16 run title @a times 0 40 20
+execute if score story.chapter_2.bossfight.ml.2 story.chapter_2 matches 16 as @a at @s if biome ~ ~ ~ world_area:chapter_2/dusks_fractured_maw run function story:chapter_2/bossfight/2/sound
 
 scoreboard players add story.chapter_2.bossfight.ml.2 story.chapter_2 1
 

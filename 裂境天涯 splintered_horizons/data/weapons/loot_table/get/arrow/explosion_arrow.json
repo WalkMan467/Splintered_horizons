@@ -22,7 +22,7 @@
                   "bold": true,
                   "italic": false
                 },
-                "minecraft:custom_data": "{id:\"explosion_arrow\",ground_detect:1b}",
+                "minecraft:custom_data": "{id:\"explosion_arrow\",ground_detect:1b,rarity:\"rare\"}",
                 "minecraft:lore": [
                   {
                     "translate": "weapon.type.1",

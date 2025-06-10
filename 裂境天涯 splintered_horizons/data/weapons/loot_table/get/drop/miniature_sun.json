@@ -84,7 +84,7 @@
                 ],
                 "minecraft:unbreakable": {},
                 "minecraft:item_model": "drop/miniature_sun/1",
-                "minecraft:custom_data": "{rc:1b,type:\"drop\",weapon:\"miniature_sun\"}",
+                "minecraft:custom_data": "{rc:1b,type:\"drop\",weapon:\"miniature_sun\",rarity:\"epic\"}",
                 "minecraft:consumable": {
                   "consume_seconds": 10000,
                   "animation": "none",

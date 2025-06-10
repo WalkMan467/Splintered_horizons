@@ -1,0 +1,1 @@
+execute as @n[type=item,tag=weapon,tag=paste_item,nbt={Item:{components:{"minecraft:custom_data":{type:"sword",rarity:"rare",weapon:"wind_sword"}}}}] at @s if entity @n[distance=..2,type=item,nbt={Item:{components:{"minecraft:custom_data":{item:"beginner_energy_infusion_stone"}}}}] run function system:forging_table/sword/wind_sword
