@@ -1,0 +1,72 @@
+{
+  "type": "minecraft:dialog_list",
+  "inputs": [],
+  "can_close_with_escape": false,
+  "pause": true,
+  "title": {
+    "translate": "tips.settings"
+  },
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "translate": "tips.settings.1"
+      }
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "translate": "tips.settings.2"
+      }
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "translate": "tips.settings.3"
+      }
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "translate": "tips.settings.4"
+      }
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "translate": "tips.settings.5"
+      }
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "translate": "tips.settings.6"
+      }
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "translate": "tips.settings.7"
+      }
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "translate": "tips.settings.8"
+      }
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "translate": "tips.settings.9"
+      }
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "translate": "tips.settings.10"
+      }
+    }
+  ],
+  "dialogs": "players:shaders_settings"
+}

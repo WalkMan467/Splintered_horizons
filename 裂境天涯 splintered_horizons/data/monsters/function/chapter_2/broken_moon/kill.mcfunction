@@ -4,7 +4,7 @@ bossbar remove minecraft:monster.boss.broken_moon
 
 execute as @a at @s run function monsters:bossfight/chapter_2/reset_player_die
 
-summon area_effect_cloud ~ ~ ~ {Duration:20,Tags:["monster.death_particle.1","summon"],Particle:{type:"block",block_state:"air"},Radius:0}
+summon area_effect_cloud ~ ~ ~ {Duration:20,Tags:["monster.death_particle.1","summon"],custom_particle:{type:"block",block_state:"air"},Radius:0}
 
 scoreboard players set abyss_soulcutter monster.boss.spawn 0
 

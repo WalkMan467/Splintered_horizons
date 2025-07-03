@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:notice",
+  "inputs": [],
+  "can_close_with_escape": false,
+  "pause": true,
+  "title": {
+    "translate": "tips.shaderpacks"
+  },
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "translate": "tips.shaderpacks.7"
+      }
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "translate": "tips.shaderpacks.8"
+      }
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "translate": "tips.shaderpacks.9"
+      }
+    }
+  ]
+}

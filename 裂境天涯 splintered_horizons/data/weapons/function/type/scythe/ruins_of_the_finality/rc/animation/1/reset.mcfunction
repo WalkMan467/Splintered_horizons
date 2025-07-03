@@ -13,7 +13,7 @@ execute positioned ^ ^ ^-6 run function particle:ruins_of_the_finality_rupture/u
 execute positioned ^ ^ ^-6 run scoreboard players set @e[type=!#dummy_mob,type=!player] monster.skill.silence 100
 execute positioned ^ ^ ^-6 run effect give @e[type=!#dummy_mob,type=!player] slowness 5 255 true
 
-execute positioned ^ ^ ^-6 run summon area_effect_cloud ~ ~ ~ {Tags:["weapon.ruins_of_the_finality.effect"],Particle:{type:"block",block_state:"air"},Radius:0,Duration:100}
+execute positioned ^ ^ ^-6 run summon area_effect_cloud ~ ~ ~ {Tags:["weapon.ruins_of_the_finality.effect"],custom_particle:{type:"block",block_state:"air"},Radius:0,Duration:100}
 summon creeper ^ ^10 ^ {DeathLootTable:"",Silent:1b,Invulnerable:1b,PersistenceRequired:1b,NoAI:1b,Tags:["aj.stellar_animation.camera_2","summon"],active_effects:[{id:"minecraft:invisibility",amplifier:255,duration:-1,show_particles:0b,show_icon:0b,ambient:0b}],attributes:[{id:"minecraft:scale",base:0.00001}]}
 scoreboard players add #screen weapon.ruins_of_the_finality.id 1
 scoreboard players operation @n[tag=aj.stellar_animation.camera_2,tag=summon] weapon.ruins_of_the_finality.id = #screen weapon.ruins_of_the_finality.id

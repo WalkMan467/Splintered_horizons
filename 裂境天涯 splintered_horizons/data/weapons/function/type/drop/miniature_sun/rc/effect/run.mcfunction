@@ -1,5 +1,5 @@
-summon area_effect_cloud ~ ~0.5 ~ {Tags:["weapon.miniature_sun.main","summon"],Particle:{type:"block",block_state:"air"},Radius:0,Duration:100}
-summon area_effect_cloud ~ ~3 ~ {Tags:["weapon.miniature_sun.main.fx","summon"],Particle:{type:"block",block_state:"air"},Radius:0,Duration:100}
+summon area_effect_cloud ~ ~0.5 ~ {Tags:["weapon.miniature_sun.main","summon"],custom_particle:{type:"block",block_state:"air"},Radius:0,Duration:100}
+summon area_effect_cloud ~ ~3 ~ {Tags:["weapon.miniature_sun.main.fx","summon"],custom_particle:{type:"block",block_state:"air"},Radius:0,Duration:100}
 
 function weapons:type/drop/miniature_sun/rc/effect/fx_2/guide
 
