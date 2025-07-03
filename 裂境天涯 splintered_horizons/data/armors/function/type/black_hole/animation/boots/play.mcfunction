@@ -1,3 +1,12 @@
+# ===================================================
+# Black Hole Boots Main Function
+
+    ## Guide [ function armors:type/black_hole/animation/boots/play ] >>> Play Animation
+    ## Guide [ function armors:type/black_hole/animation/boots/reset ] >>> Animation End
+
+# ===================================================
+# Play Animation
+
 tag @s add animation
 
 scoreboard players set @s armor.black_hole.boots.cd 60

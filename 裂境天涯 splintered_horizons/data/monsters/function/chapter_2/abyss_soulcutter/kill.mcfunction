@@ -12,3 +12,5 @@ scoreboard players set story.chapter_2.bossfight.ml story.chapter_2 1
 
 
 schedule function monsters:summon/chapter_2/broken_moon 20t
+
+fill 1717 101 878 1725 108 886 air

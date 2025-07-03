@@ -1,8 +1,4 @@
-clear @s
-give @s wooden_sword[enchantments={"minecraft:sharpness":2,"minecraft:unbreaking":2}] 1
-give @s wooden_pickaxe[enchantments={"minecraft:efficiency":2,"minecraft:unbreaking":1}] 1
-give @s apple 12
-give @s crafting_table 1
+scoreboard players set @s player.give.item.delay 10
 
 advancement grant @s only music:icon
 advancement grant @s only weapons:icon/icon
@@ -14,7 +10,6 @@ advancement grant @s only story:icon/proper_noun/icon
 advancement grant @s only story:icon/proper_noun/old_story
 advancement grant @s only story:icon/proper_noun/war_of_light_and_darkness
 advancement grant @s only story:icon/proper_noun/final_battle
-advancement grant @s only story:icon/proper_noun/orantes
 advancement grant @s only story:icon/proper_noun/water_magic_sword
 advancement revoke @s only weapons:monument/area_1
 advancement grant @s only weapons:monument/icon

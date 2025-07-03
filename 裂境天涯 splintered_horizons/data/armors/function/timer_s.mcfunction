@@ -1,3 +1,14 @@
+# ===================================================
+# Armors Main Function
+
+    ## Guide [ function armors:loop ] >>> Armors Main Loop
+    ## Guide [ function armors:reload_rpg_armor_effect ] >>> Reload Armor Effect And Detect
+    ## Guide [ function armors:type/scoreboard ] >>> Armors Scoreboard
+    ## Guide [ function armors:type/timer_s ] >>> Armors 1s Timer
+    ## Guide [ function armors:type/timer_t ] >>> Armors 1t Timer
+
+# ===================================================
+
 scoreboard players remove @a[scores={armor.black_hole.boots.cd=1..}] armor.black_hole.boots.cd 1
 
 tellraw @a[scores={armor.black_hole.boots.cd=1}] [{"text":"[","color":"green","bold":true},{"translate":"armor.black_hole_boots","color":"dark_green","bold":true},{"text":"] ","color":"green","bold":true},{"translate":"weapon.cd_completed","color":"green","bold":true}]

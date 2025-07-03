@@ -13,3 +13,5 @@ scoreboard players set story.chapter_2.bossfight.ml story.chapter_2 1
 
 
 function animated_java:boss_1/remove/all
+
+fill 1717 101 878 1725 108 886 air

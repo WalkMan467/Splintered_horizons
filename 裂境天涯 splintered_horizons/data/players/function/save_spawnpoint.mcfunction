@@ -1,0 +1,1 @@
+execute at @n[tag=system.campfire,type=interaction] run spawnpoint @s ~ ~ ~-1

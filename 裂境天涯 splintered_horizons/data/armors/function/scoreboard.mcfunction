@@ -1,3 +1,14 @@
+# ===================================================
+# Armors Main Function
+
+    ## Guide [ function armors:loop ] >>> Armors Main Loop
+    ## Guide [ function armors:reload_rpg_armor_effect ] >>> Reload Armor Effect And Detect
+    ## Guide [ function armors:type/scoreboard ] >>> Armors Scoreboard
+    ## Guide [ function armors:type/timer_s ] >>> Armors 1s Timer
+    ## Guide [ function armors:type/timer_t ] >>> Armors 1t Timer
+
+# ===================================================
+
 scoreboard objectives add armor.tai_chis_shadow.effect dummy "調和之影 效果層數"
 scoreboard objectives add armor.tai_chis_shadow.restore_mana dummy "調和之影 恢復魔力"
 scoreboard objectives add armor.tai_chis_shadow.restore_mana_magnification dummy "調和之影 恢復魔力倍率"

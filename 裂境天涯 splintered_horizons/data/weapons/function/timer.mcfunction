@@ -1,4 +1,5 @@
 scoreboard players remove @s[scores={weapon.wind_sword.cd=1..}] weapon.wind_sword.cd 1
+scoreboard players remove @s[scores={weapon.twilight_wind.cd=1..}] weapon.twilight_wind.cd 1
 scoreboard players remove @s[scores={weapon.grip_of_withering.effect=1..}] weapon.grip_of_withering.effect 1
 scoreboard players remove @s[scores={weapon.ruins_of_the_finality.cd=1..}] weapon.ruins_of_the_finality.cd 1
 scoreboard players remove @s[scores={weapon.nightfall.cd=1..}] weapon.nightfall.cd 1

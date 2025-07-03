@@ -1,5 +1,3 @@
-say 成功
-
 playsound minecraft:block.anvil.use voice @a ~ ~0.5 ~ 1 0.5
 playsound minecraft:entity.illusioner.cast_spell voice @a ~ ~0.5 ~ 1 0.5
 

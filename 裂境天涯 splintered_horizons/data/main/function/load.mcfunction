@@ -26,6 +26,7 @@ schedule function system:shop_point/main 1t
 schedule function monsters:timer_s 1s
 schedule function main:timer/1s 1s
 schedule function armors:timer_s 1s
+schedule function monsters:spawn_area/main 1t
 
 schedule function monsters:chapter_2/abyss_soulcutter/main 10t
 schedule function system:monument_point/main 1t

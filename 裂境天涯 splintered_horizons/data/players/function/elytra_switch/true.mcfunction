@@ -5,8 +5,8 @@ playsound minecraft:block.respawn_anchor.set_spawn voice @s ~ ~ ~ 9999 1.5
 playsound minecraft:entity.generic.explode voice @s ~ ~ ~ 9999 1
 
 title @s times 10 20 20
-title @s title [{"color":"#4CB6C2","text":"敖"},{"color":"#4BA5C2","text":"翔 "},{"color":"#4A95C2","text":"👁 "},{"color":"#4884C2","text":"天"},{"color":"#4663C2","text":"際"}]
-title @s subtitle [{"text":"按 ","color": "red"},{"keybind": "key.jump","color": "green"},{"text":" 即可飛行","color": "red"}]
+title @s title [{"color":"#4CB6C2","fallback":"敖","translate":"player.elytra_switch.1"},{"color":"#4BA5C2","fallback":"翔","translate":"player.elytra_switch.2"},{"color":"#4A95C2","text":" 👁 "},{"color":"#4884C2","fallback":"天","translate":"player.elytra_switch.3"},{"color":"#4663C2","fallback":"際","translate":"player.elytra_switch.4"}]
+title @s subtitle [{"translate":"tips.player.elytra_switch.1","fallback":"按 ","color": "red"},{"keybind": "key.jump","color": "green"},{"translate":"tips.player.elytra_switch.2","fallback":" 即可飛行","color": "red"}]
 
 scoreboard players reset #airborne.range global.main
 execute anchored eyes run function players:actionbar/black_hole

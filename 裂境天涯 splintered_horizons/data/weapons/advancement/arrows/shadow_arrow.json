@@ -6,7 +6,7 @@
           "type": {
             "direct_entity": {
               "type": "#minecraft:arrows",
-              "nbt": "{item:{components:{\"minecraft:custom_data\":{id:\"void_arrow\"}}}}"
+              "nbt": "{item:{components:{\"minecraft:custom_data\":{id:\"shadow_arrow\"}}}}"
             },
             "tags": [
               {

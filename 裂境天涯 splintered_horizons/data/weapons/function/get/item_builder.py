@@ -13,13 +13,13 @@
 attribute = []
 # ----- 設定參數 ----- #
 
-name = ['深淵短劍', "#c2c2c2", '鐮刀 / 注能材料']
-story = {'info': ['注能用材料', '看似無用的武器但蘊含著隱藏的力量', '可以去安全區鍛造室熔煉該武器', '可以換到相應的注能之石與提升注能成功機率材料'], 'color': 'blue'}
-item_data     = {'real_item': 'iron_sword', 'id': 'sculk_sword', 'item_model': '"sword/sculk_sword/1"', 'custom_data': '{rc:1b,type:"sword",rarity:"rare",weapon:"sculk_sword"}', 'max_damage': -1, 'rc': False, 'other': ['tooltip_style="common"','tooltip_display={hidden_components:["attribute_modifiers","unbreakable"]}']}
-skill    = {'is_skill': False, 'cd': 3, 'name': ['潮汐音浪', '#9443ff', '#ea00ff'], 'info': ['攻擊有 30%機率觸發【回聲音爆】','可對6格範圍內敵人造成一次攻擊力250%的基礎傷害','如果玩家擁有【至暗】狀態','會使【回聲音爆】造成傷害改為 攻擊力 250% 真實傷害']}
-ultimate    = {'is_ultimate': False, 'cd': 60, 'name': ['低音狂響', '#ff3300', '#001aff'], 'info': ['[%s]可以消耗一顆終焉之眼', '立即釋放【終焉音爆】', '對 8 格範圍內敵人造成 250% 真實傷害', '並且附帶 3 秒緩速 50%']}
-attribute.append({'attribute': 'attack_damage', 'value': 0, 'slot': 'mainhand', 'operation': 'add_value'})
-attribute.append({'attribute': 'attack_speed', 'value': 0, 'slot': 'mainhand', 'operation': 'add_value'})
+name = ['࿓ 暮光之風 ࿓', 'dark_aqua', '劍 / 史詩']
+story = {'info': ['誕生於森林月光之下的武器''四周散發著風之能量，','守護著森林的白天'], 'color': 'blue'}
+item_data     = {'real_item': 'stone_sword', 'id': 'twilight_wind', 'item_model': '"sword/wind_sword/2"', 'custom_data': '{type:"sword",rarity:"epic",weapon:"twilight_wind"}', 'max_damage': -1, 'rc': False, 'other': ['minecraft:enchantments={"weapons:type/sword/wind_sword/use":1}', 'enchantment_glint_override=false', 'tooltip_display={hidden_components:["enchantments"]}', 'tooltip_style="epic"']}
+skill    = {'is_skill': True, 'cd': 13, 'name': ['暮光風刃', '#a6ff00', "#00ffaa"], 'info': ['每擁有 1 層【疾風能量】','可以使你提升 0.5 點攻擊速度','當你攻擊命中敵人','獲得一層【疾風能量】與獲得【%s】持續 5 秒', '並且根據當前疾風能量數量發射相應次數的風刃', '如果【疾風能量】大於等於 5 則清除所有【疾風能量】']}
+ultimate    = {'is_ultimate': False, 'name': ['狂風暴雨', 'dark_aqua', '#fceb00'], 'info': ['右鍵點擊消耗一個終焉之眼，', '接下來的8秒內如果在空中手持此武器擊中敵人', '在目標位置降下降下閃電造成5點傷害。']}
+attribute.append({'attribute': 'attack_damage', 'value': 3, 'slot': 'mainhand', 'operation': 'add_value'})
+attribute.append({'attribute': 'attack_speed', 'value': -2.4, 'slot': 'mainhand', 'operation': 'add_value'})
 
 # ----- init ----- #
 

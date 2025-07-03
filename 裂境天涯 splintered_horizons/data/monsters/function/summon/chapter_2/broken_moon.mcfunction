@@ -51,3 +51,5 @@ tag @a remove monster.broken_moon.skill.4.death_protection
 tag @a remove monsters.broken_moon.1.target
 
 tag @e[tag=monsters.spawn] remove monsters.spawn
+
+fill 1717 101 878 1725 108 886 air

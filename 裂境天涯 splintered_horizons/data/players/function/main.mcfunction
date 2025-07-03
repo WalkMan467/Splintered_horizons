@@ -1,6 +1,9 @@
 function players:elytra_switch/main
 function players:detect/main
 function players:auto_crafting/main
+function players:bow_detect
+
+execute if score @s player.give.item.delay matches 1 run function players:give_item
 
 # 平滑走方塊
 execute unless predicate players:detect/input/sneak run attribute @s step_height base set 1
@@ -9,5 +12,3 @@ execute if predicate players:detect/input/sneak run attribute @s step_height bas
 scoreboard players set @s[scores={player.ultimate=2..,player.no_cd=1..}] player.ultimate 1
 
 function armors:loop
-
-execute if items entity @s weapon.mainhand bow run enchant @s weapons:arrow_detect 1

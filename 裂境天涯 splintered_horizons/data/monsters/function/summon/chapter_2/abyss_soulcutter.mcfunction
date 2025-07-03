@@ -25,3 +25,5 @@ scoreboard players set 00000014-0000-0014-0000-000100000019 monster.abyss_soulcu
 scoreboard objectives add monster.broken_moon.player_die deathCount "[破碎之月] 玩家死亡偵測"
 
 tag @e[tag=monsters.spawn] remove monsters.spawn
+
+fill 1717 101 878 1725 108 886 air

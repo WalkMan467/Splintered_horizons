@@ -8,3 +8,7 @@ execute positioned 1721 103 882 as @e[type=item_display,distance=..1.5,tag=aj.bo
 execute positioned 1721 103 882 rotated 180 0 run function animated_java:boss_1/summon {args: {animation: 'idle', start_animation: true}}
 
 summon interaction 1721 101 882 {Tags:["bossfight.chapter_2","bossfight.chapter_2.act","interaction.sound.default"],width:1,height:2,UUID:[I;21,2,31,3]}
+
+fill 1717 101 878 1725 108 886 air
+setblock 1721 101 882 minecraft:light[level=15]
+setblock 1721 102 882 minecraft:light[level=15]

@@ -42,3 +42,5 @@ stopsound @a[distance=..65] record
 function monsters:chapter_2/broken_moon/4/terrain/false
 
 scoreboard players set @a monster.broken_moon.player_die 0
+
+fill 1717 101 878 1725 108 886 air

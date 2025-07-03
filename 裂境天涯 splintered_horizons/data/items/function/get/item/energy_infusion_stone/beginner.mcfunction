@@ -1,10 +1,10 @@
-give @s quartz[item_name=[{"translate":"weapon.beginner_energy_infusion_stone","color":"dark_green","italic":false,"bold":true}],lore=[[{"translate":"weapon.beginner_energy_infusion_stone.type","italic":false,"color":"dark_gray"}],{"text":""},[{"translate":"weapon.beginner_energy_infusion_stone.story.1","italic":false,"color":"blue"}],[{"translate":"weapon.beginner_energy_infusion_stone.story.2","italic":false,"color":"blue"}],[{"translate":"weapon.beginner_energy_infusion_stone.story.3","italic":false,"color":"blue"}]],attribute_modifiers=[{id:"base_attack_damage",type:"attack_damage",amount:0,operation:"add_value",slot:"mainhand"}],max_stack_size=64,unbreakable={},item_model="material/beginner_energy_infusion_stone",custom_data={type:"item",item:"beginner_energy_infusion_stone"},tooltip_style="rare",tooltip_display={hidden_components:["attribute_modifiers","unbreakable"]}] 64
+give @s quartz[item_name=[{"translate":"item.beginner_energy_infusion_stone","color":"dark_green","italic":false,"bold":true}],lore=[[{"translate":"item.beginner_energy_infusion_stone.type","italic":false,"color":"dark_gray"}],{"text":""},[{"translate":"item.beginner_energy_infusion_stone.story.1","italic":false,"color":"blue"}],[{"translate":"item.beginner_energy_infusion_stone.story.2","italic":false,"color":"blue"}],[{"translate":"item.beginner_energy_infusion_stone.story.3","italic":false,"color":"blue"}]],attribute_modifiers=[{id:"base_attack_damage",type:"attack_damage",amount:0,operation:"add_value",slot:"mainhand"}],max_stack_size=64,unbreakable={},item_model="material/beginner_energy_infusion_stone",custom_data={type:"item",item:"beginner_energy_infusion_stone"},tooltip_style="rare",tooltip_display={hidden_components:["attribute_modifiers","unbreakable"]}] 64
 
-# "weapon.beginner_energy_infusion_stone" : "低階注能之石"
-# "weapon.beginner_energy_infusion_stone.type" : "道具 / 稀有"
-# "weapon.beginner_energy_infusion_stone.story.1" : "低階的注能之石"
-# "weapon.beginner_energy_infusion_stone.story.2" : "可以用於進化武器"
-# "weapon.beginner_energy_infusion_stone.story.3" : "使它們能夠發揮更強大的力量"
+# "item.beginner_energy_infusion_stone" : "低階注能之石",
+# "item.beginner_energy_infusion_stone.type" : "道具 / 稀有",
+# "item.beginner_energy_infusion_stone.story.1" : "低階的注能之石",
+# "item.beginner_energy_infusion_stone.story.2" : "可以用於進化武器",
+# "item.beginner_energy_infusion_stone.story.3" : "使它們能夠發揮更強大的力量",
 
 #name = ['低階注能之石', 'dark_green', '道具 / 稀有']
 #story = {'info': ['低階的注能之石', '可以用於進化武器', '使它們能夠發揮更強大的力量'], 'color': 'blue'}

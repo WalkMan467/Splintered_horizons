@@ -1,7 +1,13 @@
-# 擊殺敵人獲得一層【太極】上限 3 層
-# 當你受到傷害時可以用【太極】抵銷1次傷害
-# 並且恢復 2 點魔力
-# 如果你身上有更多該系列的裝備，則恢復的魔力會根據裝備數量提升
+# ===================================================
+# Clear Tai Chis Shadow Main Function
+
+    ## Guide [ function armors:type/tai_chis_shadow/main ] >>> Main Function
+    ## Guide [ function armors:type/tai_chis_shadow/clear ] >>> Clear Tai Chis Shadow Armor Effect
+    ## Guide [ function armors:type/tai_chis_shadow/eqipment ] >>> Armor Eqipment
+    ## Guide [ function armors:type/tai_chis_shadow/take_off ] >>> Armor Take Off
+    ## Guide [ function armors:type/tai_chis_shadow/use ] >>> Trigger Tai Chis Shadow Armor Effect
+
+# ===================================================
 
 advancement revoke @s only armors:type/tai_chis_shadow/use
 

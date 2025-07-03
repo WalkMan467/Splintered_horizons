@@ -13,6 +13,18 @@ scoreboard objectives add weapon.wind_sword.timer dummy "風力劍使用時間"
 scoreboard players add @a weapon.wind_sword.cd 0
 scoreboard players add @a weapon.wind_sword.timer 0
 #===================================================================
+#暮光之風
+
+scoreboard objectives add weapon.twilight_wind.cd dummy "暮光之風CD"
+scoreboard objectives add weapon.twilight_wind.timer dummy "暮光之風使用時間"
+scoreboard objectives add weapon.twilight_wind.gale_energy dummy "暮光之風颶風能量"
+
+scoreboard players add @a weapon.twilight_wind.cd 0
+scoreboard players add @a weapon.twilight_wind.timer 0
+scoreboard players add @a weapon.twilight_wind.gale_energy 0
+
+#===================================================================
+
 #凋零之握
 
 scoreboard objectives add weapon.grip_of_withering.effect dummy "凋零之握型態持續時間"
