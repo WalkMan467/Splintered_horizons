@@ -13,10 +13,10 @@
 attribute = []
 # ----- 設定參數 ----- #
 
-name = ['Boots of the Black Hole', 'dark_purple', 'Boots']
-story = {'info': ['The old world has fallen,', 'and a new world shrouded in darkness has arrived.', 'The long boots born from the massive black hole', 'in the broken city absorb the energy of the black hole.'], 'color': 'blue'}
-item_data     = {'real_item': 'leather_boots', 'id': 'black_hole_boots', 'item_model': '"equipment/black_hole_boots"', 'custom_data': '{black_hole:1b,type:"armor"}', 'max_damage': -1, 'rc': False, 'other': ['tooltip_style="epic"', 'tooltip_display={hidden_components:["dyed_color"]}', 'dyed_color=16187647']}
-skill    = {'is_skill': True, 'cd': 60, 'name': ['Phase Black Hole', 'dark_aqua', '#00ccff'], 'info': ['Kills grant a charge.', 'Rapidly pressing [%s]', 'consumes 10 charges and creates a black hole.']}
+name = ['迅捷之靴', "#6af7fc", '護甲']
+story = {'info': ['迅捷之風凝聚而成的靴子', '曾被人們稱之為神聖之靴', '在最終之戰之後深淵扭曲了時空', '目前漂流在這片破碎的宇宙'], 'color': 'blue'}
+item_data     = {'real_item': 'iron_boots', 'id': 'swift_boots', 'item_model': '""', 'custom_data': '{swift:1b,type:"armor"}', 'max_damage': -1, 'rc': False, 'other': ['tooltip_style="rare"']}
+skill    = {'is_skill': True, 'cd': 0, 'name': ['迅捷祝福', '#6af7fc', "#6a8cfc"], 'info': ['當 %s 技能條件被觸發時', '使自身獲得 加速 I (00:02)']}
 ultimate    = {'is_ultimate': False, 'cd': 0, 'name': ['終焉之月', 'dark_aqua', '#00ccff'], 'info': ['右鍵點擊消耗一個終焉之眼，', '開啟【終焉之月】型態持續 15 秒', '大幅強化武器，', '此形態下如果攻擊會有25%機率造成大量傷害']}
 attribute.append({'attribute': 'armor', 'value': 2, 'slot': 'chest', 'operation': 'add_value'})
 

@@ -41,3 +41,5 @@ playsound minecraft:block.trial_spawner.ominous_activate voice @a ~ ~1 ~ 1 1
 playsound minecraft:block.note_block.snare voice @a ~ ~1 ~ 1 1
 
 playsound minecraft:block.note_block.basedrum voice @a ~ ~1 ~ 1 1
+
+scoreboard players set @s armor.chestplate.effect.actived 1

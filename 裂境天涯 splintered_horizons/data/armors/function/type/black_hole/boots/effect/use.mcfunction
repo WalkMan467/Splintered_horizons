@@ -14,3 +14,5 @@ summon minecraft:area_effect_cloud ~ ~1 ~ {custom_particle:{type:"block",block_s
 
 attribute @s movement_speed modifier remove armor.black_hole.animation.boots
 attribute @s jump_strength modifier remove armor.black_hole.animation.boots
+
+scoreboard players set @s armor.boots.effect.actived 1

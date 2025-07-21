@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:multi_action",
+  "inputs": [],
+  "can_close_with_escape": false,
+  "title": {
+    "translate": "tips.settings"
+  },
+  "pause": false,
+  "actions": [
+    {
+      "label": ""
+    }
+  ]
+}

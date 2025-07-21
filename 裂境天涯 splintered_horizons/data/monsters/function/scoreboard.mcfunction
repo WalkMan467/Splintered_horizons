@@ -37,3 +37,9 @@ scoreboard objectives add monster.abyss_soulcutter.state_machine.action dummy "�
 scoreboard objectives add monster.abyss_soulcutter.state_machine.back dummy "深淵斷魂者後退"
 
 # ===============================================================================
+
+# 深淵斷魂者
+
+scoreboard objectives add monster.effect.finality dummy "[怪物] 終焉轉化"
+
+# ===============================================================================

@@ -37,3 +37,5 @@ particle block{block_state:"minecraft:black_stained_glass"} ~ ~0.5 ~ 0.5 1 0.5 1
 particle dust_color_transition{from_color:[0.000,0.000,0.000],scale:1.5,to_color:[1.000,0.980,0.980]} ~ ~1 ~ 2 2 2 1 80 normal @a
 particle dust{color:[0.000,0.000,0.000],scale:2} ~ ~1 ~ 2 2 2 1 20 normal
 particle dust{color:[1.000,1.000,1.000],scale:2} ~ ~1 ~ 2 2 2 1 20 normal
+
+scoreboard players set @s armor.chestplate.effect.actived 1

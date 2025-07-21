@@ -25,4 +25,9 @@
     execute if entity @s[gamemode=!spectator] if biome ~ ~ ~ world_area:chapter_2/dusks_fractured_maw run advancement grant @s only world_area:chapter_2/dusks_fractured_maw/in
     execute unless biome ~ ~ ~ world_area:chapter_2/dusks_fractured_maw run advancement grant @s only world_area:chapter_2/dusks_fractured_maw/out
 
+    # 往昔的櫻花之城
+    
+    execute if entity @s[gamemode=!spectator] if biome ~ ~ ~ world_area:chapter_2/forgotten_sakura_city run advancement grant @s only world_area:chapter_2/forgotten_sakura_city/in
+    execute unless biome ~ ~ ~ world_area:chapter_2/forgotten_sakura_city run advancement grant @s only world_area:chapter_2/forgotten_sakura_city/out
+
     function world_area:chapter_2/dusks_fractured_maw/main

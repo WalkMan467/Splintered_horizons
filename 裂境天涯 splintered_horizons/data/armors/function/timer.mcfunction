@@ -10,3 +10,8 @@
 # ===================================================
 
 scoreboard players remove @s[scores={armor.black_hole.boots.effect=1..}] armor.black_hole.boots.effect 1
+
+scoreboard players remove @s[scores={armor.helmet.effect.actived=1..}] armor.helmet.effect.actived 1
+scoreboard players remove @s[scores={armor.chestplate.effect.actived=1..}] armor.chestplate.effect.actived 1
+scoreboard players remove @s[scores={armor.leggings.effect.actived=1..}] armor.leggings.effect.actived 1
+scoreboard players remove @s[scores={armor.boots.effect.actived=1..}] armor.boots.effect.actived 1

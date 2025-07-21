@@ -6,6 +6,8 @@ function monsters:chapter_1/abyssal_black_knight/main
 
 execute as @s[tag=abyss_berserker] unless data entity @s {HurtTime:0s} run function monsters:chapter_1/abyss_berserker/run
 
+execute as @s[type=area_effect_cloud] at @s run function monsters:chapter_2/finality_creeper/main
+
 ## ----- 偵測怪物死亡 ----- ##
 
 function monsters:detect_kill/loop

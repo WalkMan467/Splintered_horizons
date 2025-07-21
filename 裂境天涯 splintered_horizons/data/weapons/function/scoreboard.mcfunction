@@ -106,10 +106,18 @@ scoreboard players add @a weapon.echo_rhythm.cd 0
 
 # 武器狀態
 
-scoreboard objectives add weapon.effect.resplendence dummy "輝煌"
-scoreboard objectives add weapon.effect.shadow dummy "暗影"
+scoreboard objectives add weapon.effect.resplendence dummy "輝煌之光"
+scoreboard objectives add weapon.effect.shadow dummy "至深之暗"
+scoreboard objectives add weapon.effect.chaotic_thunder dummy "渾沌之雷"
+scoreboard objectives add weapon.effect.crimson_claw dummy "緋紅之爪"
+scoreboard objectives add weapon.effect.holy_fire dummy "神聖之火"
+scoreboard objectives add weapon.effect.starry_sky_frost dummy "星空之霜"
 
 scoreboard players add @a weapon.effect.resplendence 0
 scoreboard players add @a weapon.effect.shadow 0
+scoreboard players add @a weapon.effect.chaotic_thunder 0
+scoreboard players add @a weapon.effect.crimson_claw 0
+scoreboard players add @a weapon.effect.holy_fire 0
+scoreboard players add @a weapon.effect.starry_sky_frost 0
 
 #===================================================================

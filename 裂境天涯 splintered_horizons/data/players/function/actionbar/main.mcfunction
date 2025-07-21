@@ -8,5 +8,3 @@ execute as @s[gamemode=!spectator] if score @s item.tp_book.casting matches 1.. 
 
 execute as @s[gamemode=!spectator] if score @s player.actionbar.shop matches 1.. run function players:actionbar/shop
 execute as @s[gamemode=!spectator] if score @s player.actionbar.shop matches 1.. run return 0
-
-execute as @s[gamemode=!spectator] if score @s player.actionbar.state_machine matches 2 run function players:actionbar/black_hole
