@@ -36,6 +36,8 @@ schedule clear cutscene:opening/main
 
 scoreboard players set .opening cutscene.story -1
 
+execute positioned 9998 93 10070 as @e[type=item_display,tag=aj.boss_1.root] at @s run function animated_java:boss_1/remove/this
+
 stopsound @a record
 
 gamemode survival @a

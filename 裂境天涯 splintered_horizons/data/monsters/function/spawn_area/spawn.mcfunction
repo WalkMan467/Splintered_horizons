@@ -1,1 +1,0 @@
-summon marker ~ ~ ~ {Tags:["monster.spawn_area.chapter_1","monster.spawn_area","monster.spawn_area.chapter_1.main"]}

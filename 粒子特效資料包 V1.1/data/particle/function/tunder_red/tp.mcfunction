@@ -1,0 +1,1 @@
+$tp @s ~$(motion_x) ~$(motion_y) ~$(motion_z) ~$(facing_x) ~$(facing_y)

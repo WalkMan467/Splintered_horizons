@@ -3,6 +3,8 @@ weather clear
 
 execute in minecraft:overworld run forceload add 42 11 42 11
 
+function cutscene:opening/remove_camera
+
 function animated_java:aska/remove/all
 function animated_java:oceanid/remove/all
 

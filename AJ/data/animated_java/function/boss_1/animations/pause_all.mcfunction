@@ -6,3 +6,4 @@ tag @s remove aj.boss_1.animation.attack_1.playing
 tag @s remove aj.boss_1.animation.attack_2.playing
 tag @s remove aj.boss_1.animation.back.playing
 tag @s remove aj.boss_1.animation.idle.playing
+tag @s remove aj.boss_1.animation.cutscene_attack.playing

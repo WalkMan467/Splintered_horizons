@@ -7,4 +7,5 @@ execute if entity @s[tag=aj.boss_1.animation.attack_1.playing] run function anim
 execute if entity @s[tag=aj.boss_1.animation.attack_2.playing] run function animated_java:boss_1/animations/attack_2/zzz/on_tick
 execute if entity @s[tag=aj.boss_1.animation.back.playing] run function animated_java:boss_1/animations/back/zzz/on_tick
 execute if entity @s[tag=aj.boss_1.animation.idle.playing] run function animated_java:boss_1/animations/idle/zzz/on_tick
+execute if entity @s[tag=aj.boss_1.animation.cutscene_attack.playing] run function animated_java:boss_1/animations/cutscene_attack/zzz/on_tick
 execute at @s on passengers run rotate @s ~ ~

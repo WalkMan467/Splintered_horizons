@@ -1,9 +1,9 @@
-title @s times 0 10 60
+title @s times 0 65 0
 title @s title {"text":"\uE000","font":"minecraft:screen"}
 
 scoreboard players set .opening cutscene.story 0
 
-schedule function cutscene:opening/0/music 4.75s
+function cutscene:opening/0/music
 
 function cutscene:opening/remove_camera
 

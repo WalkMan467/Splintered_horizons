@@ -6,4 +6,5 @@ scoreboard objectives remove aj.attack_1.frame
 scoreboard objectives remove aj.attack_2.frame
 scoreboard objectives remove aj.back.frame
 scoreboard objectives remove aj.idle.frame
+scoreboard objectives remove aj.cutscene_attack.frame
 tellraw @a [[{"text":"\n[","color":"gray"},{"text":"AJ","color":"aqua"},"] ",[{"text":"(from ","color":"gray","italic":true},"boss_1",")"]," -> "],{"text":"Successfully removed known animation scoreboard objectives.","color":"red"},{"text":"\nIf you have exported multiple times you may have to manually remove some objectives from previous exports manually, as Animated Java can only remove the latest export's objectives.","color":"gray","italic":true},["\n"]]
