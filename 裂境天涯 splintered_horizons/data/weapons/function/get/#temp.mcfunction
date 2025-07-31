@@ -1,16 +1,23 @@
-give @s arrow[item_name=[{"translate":"weapon.crimson_claw_arrow","color":"#e00000","italic":false,"bold":true}],lore=[[{"translate":"weapon.crimson_claw_arrow.type","italic":false,"color":"dark_gray"}],{"text":""},[{"translate":"weapon.crimson_claw_arrow.story.1","italic":false,"color":"blue"}],[{"translate":"weapon.crimson_claw_arrow.story.2","italic":false,"color":"blue"}],{"text":""},[{"text":"","italic":false},{"translate":"weapon.crimson_claw_arrow.skill","color":"#e00000","bold":true},{"text":"  "}],[{"text":"","italic":false},{"translate":"weapon.crimson_claw_arrow.skill.1","color":"#8a0000"}],[{"text":"","italic":false},{"translate":"weapon.crimson_claw_arrow.skill.2","color":"#8a0000"}]],attribute_modifiers=[{id:"base_attack_speed",type:"attack_speed",amount:0,operation:"add_value",slot:"mainhand"}],max_stack_size=1,unbreakable={},item_model="arrow/shadow_arrow",custom_data={type:"arrow",rarity:"epic",id:"crimson_claw_arrow",ground_detect:1b},tooltip_display={hidden_components:["enchantments","attribute_modifiers","unbreakable"]},tooltip_style="epic"]
+give @s stone_sword[item_name=[{"translate":"weapon.ruins_of_the_finality","color":"#810092","italic":false,"bold":true}],lore=[[{"translate":"weapon.ruins_of_the_finality.type","italic":false,"color":"dark_gray"}],{"text":""},[{"translate":"weapon.ruins_of_the_finality.story.1","italic":false,"color":"blue"}],[{"translate":"weapon.ruins_of_the_finality.story.2","italic":false,"color":"blue"}],[{"translate":"weapon.ruins_of_the_finality.story.3","italic":false,"color":"blue"}],[{"translate":"weapon.ruins_of_the_finality.story.4","italic":false,"color":"blue"}],{"text":""},[{"text":"","italic":false},{"text":"","font":"minecraft:icon"},{"translate":"weapon.ruins_of_the_finality.ultimate","color":"#aa00c0","bold":true},{"text":"","font":"minecraft:icon"},{"text":"  "},{"translate":"weapon.skill_cd","color":"#6E6E6E"},{"text":"30s"}],[{"text":"","italic":false},{"translate":"weapon.ruins_of_the_finality.ultimate.1","color":"#7100b3"}],[{"text":"","italic":false},{"translate":"weapon.ruins_of_the_finality.ultimate.2","color":"#7100b3"}],[{"text":"","italic":false},{"translate":"weapon.ruins_of_the_finality.ultimate.3","color":"#7100b3"}],[{"text":"","italic":false},{"translate":"weapon.ruins_of_the_finality.ultimate.4","color":"#7100b3"}],[{"text":"","italic":false},{"translate":"weapon.ruins_of_the_finality.ultimate.5","color":"#7100b3"}],[{"text":"","italic":false},{"translate":"weapon.ruins_of_the_finality.ultimate.6","color":"#7100b3"}]],attribute_modifiers=[{id:"base_attack_damage",type:"attack_damage",amount:5.5,operation:"add_value",slot:"mainhand"},{id:"base_attack_speed",type:"attack_speed",amount:-1.75,operation:"add_value",slot:"mainhand"}],max_stack_size=1,unbreakable={},item_model="sickle/ruins_of_the_finality/1",custom_data={rc:1b,type:"scythe",rarity:"mythic",weapon:"ruins_of_the_finality"},consumable={consume_seconds:10000,animation:"none",has_consume_particles:false},tooltip_style="mythic"]
 
-# "weapon.crimson_claw_arrow" : "緋紅之爪 - 符文箭矢"
-# "weapon.crimson_claw_arrow.type" : "箭矢 / 史詩"
-# "weapon.crimson_claw_arrow.story.1" : "擁有符文力量的箭矢，"
-# "weapon.crimson_claw_arrow.story.2" : "命中地板或目標可以生成該符文的符文陣"
-# "weapon.crimson_claw_arrow.skill" : "[符文陣 - 緋紅之爪] "
-# "weapon.crimson_claw_arrow.skill.1" : "箭矢命中地板或目標可以生成該符文的符文陣"
-# "weapon.crimson_claw_arrow.skill.2" : "可以讓 4 格範圍內玩家持續獲得該符文持續 5 秒"
+# "weapon.ruins_of_the_finality" : "終焉之墟"
+# "weapon.ruins_of_the_finality.type" : "鐮刀 / 神話"
+# "weapon.ruins_of_the_finality.story.1" : "最終決戰過後，舊宇宙迎來了終點的結局"
+# "weapon.ruins_of_the_finality.story.2" : "同時，宇宙出現了由深淵延伸的新力量「終焉」"
+# "weapon.ruins_of_the_finality.story.3" : "這把武器的誕生目前無法得知"
+# "weapon.ruins_of_the_finality.story.4" : "同時也埋藏了很多秘密。"
+# "weapon.ruins_of_the_finality.ultimate" : "[終焉之鎖] "
+# "weapon.ruins_of_the_finality.ultimate.1" : "[%s]可以召喚終焉之鎖，"
+# "weapon.ruins_of_the_finality.ultimate.2" : "並且開啟終焉領域，"
+# "weapon.ruins_of_the_finality.ultimate.3" : "可以透過按下 [%s] 來釋放 [斬滅]"
+# "weapon.ruins_of_the_finality.ultimate.4" : ""
+# "weapon.ruins_of_the_finality.ultimate.5" : "每次對8格範圍內敵人造成 150% 攻擊力傷害"
+# "weapon.ruins_of_the_finality.ultimate.6" : "並且最後一擊造成 300%攻擊力傷害"
 
-#name = ['緋紅之爪 - 符文箭矢', '#e00000', '箭矢 / 史詩']
-#story = {'info': ['擁有符文力量的箭矢，', '命中地板或目標可以生成該符文的符文陣'], 'color': 'blue'}
-#item_data     = {'real_item': 'arrow', 'id': 'crimson_claw_arrow', 'item_model': '"arrow/shadow_arrow"', 'custom_data': '{type:"arrow",rarity:"epic",id:"crimson_claw_arrow",ground_detect:1b}', 'max_damage': -1, 'rc': False, 'other': ['tooltip_display={hidden_components:["enchantments","attribute_modifiers","unbreakable"]}', 'tooltip_style="epic"']}
-#skill    = {'is_skill': True, 'cd': 0, 'name': ['符文陣 - 緋紅之爪', '#e00000', '#8a0000'], 'info': ['箭矢命中地板或目標可以生成該符文的符文陣', '可以讓 4 格範圍內玩家持續獲得該符文持續 5 秒']}
-#ultimate    = {'is_ultimate': False, 'name': ['狂風暴雨', 'dark_aqua', '#8a0000'], 'info': ['右鍵點擊消耗一個終焉之眼，', '接下來的8秒內如果在空中手持此武器擊中敵人', '在目標位置降下降下閃電造成5點傷害。']}
-#attribute.append({'attribute': 'attack_speed', 'value': 0, 'slot': 'mainhand', 'operation': 'add_value'})
+#name = ['終焉之墟', '#810092', '鐮刀 / 神話']
+#story = {'info': ['最終決戰過後，舊宇宙迎來了終點的結局', '同時，宇宙出現了由深淵延伸的新力量「終焉」', '這把武器的誕生目前無法得知', '同時也埋藏了很多秘密。'], 'color': 'blue'}
+#item_data     = {'real_item': 'stone_sword', 'id': 'ruins_of_the_finality', 'item_model': '"sickle/ruins_of_the_finality/1"', 'custom_data': '{rc:1b,type:"scythe",rarity:"mythic",weapon:"ruins_of_the_finality"}', 'max_damage': -1, 'rc': True, 'other': ['tooltip_style="mythic"']}
+#skill    = {'is_skill': False, 'cd': 60, 'name': ['終焉之鎖', '#aa00c0', '#7100b3'], 'info': ['[%s]可以召喚終焉之鎖，', '並且開啟終焉領域，', '可以透過按下 [%s] 來釋放 [斬滅]', '', '每次對8格範圍內敵人造成 150% 攻擊力傷害', '並且最後一擊造成 300%攻擊力傷害']}
+#ultimate    = {'is_ultimate': True, 'cd': 30, 'name': ['終焉之鎖', '#aa00c0', '#7100b3'], 'info': ['[%s]可以召喚終焉之鎖，', '並且開啟終焉領域，', '可以透過按下 [%s] 來釋放 [斬滅]', '', '每次對8格範圍內敵人造成 150% 攻擊力傷害', '並且最後一擊造成 300%攻擊力傷害']}
+#attribute.append({'attribute': 'attack_damage', 'value': 5.5, 'slot': 'mainhand', 'operation': 'add_value'})
+#attribute.append({'attribute': 'attack_speed', 'value': -1.75, 'slot': 'mainhand', 'operation': 'add_value'})

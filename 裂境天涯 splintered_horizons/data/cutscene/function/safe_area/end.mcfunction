@@ -24,7 +24,7 @@ gamemode survival @a
 
 clear @a
 
-execute as @a at @s run function players:inventory/-return {bag:"overworld"}
+execute as @a at @s run function players:inventory/return {bag:"overworld"}
 
 execute as @a if items entity @s armor.head *[minecraft:item_model="camera"] run item replace entity @s armor.head with minecraft:air
 

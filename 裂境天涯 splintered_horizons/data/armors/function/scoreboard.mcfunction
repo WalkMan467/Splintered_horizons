@@ -16,6 +16,8 @@ scoreboard objectives add armor.black_hole.boots.sneak dummy "黑洞之靴 潛�
 scoreboard objectives add armor.black_hole.boots.cd dummy "黑洞之靴 CD"
 scoreboard objectives add armor.black_hole.boots.active dummy "黑洞之靴 啟動狀態"
 scoreboard objectives add armor.armor_of_the_coiled_rock.cd dummy "盤岩之鎧 CD"
+scoreboard objectives add armor.finality_chestplate.cd dummy "終焉之鎧 CD"
+scoreboard objectives add armor.finality_chestplate.attack_increased dummy "終焉之鎧 攻擊力提升計時器"
 
 scoreboard objectives add armor.black_hole.boots.effect dummy "黑洞之靴 技能觸發"
 scoreboard objectives add armor.black_hole.boots.damage_delay dummy "黑洞之靴 傷害間隔"
@@ -36,3 +38,4 @@ scoreboard players add @a armor.chestplate.effect.actived 0
 scoreboard players add @a armor.leggings.effect.actived 0
 scoreboard players add @a armor.boots.effect.actived 0
 scoreboard players add @a armor.armor_of_the_coiled_rock.cd 0
+scoreboard players add @a armor.finality_chestplate.cd 0

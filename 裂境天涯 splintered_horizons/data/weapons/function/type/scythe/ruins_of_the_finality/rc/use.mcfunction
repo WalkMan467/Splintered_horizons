@@ -7,7 +7,7 @@ scoreboard players set @s player.click.interval 20
 tellraw @s [{"translate":"weapon.ruins_of_the_finality.skill","color":"dark_green","bold":true}," ",{"translate":"weapon.skill_activation","color":"green","bold":true}]
 
 
-scoreboard players set @s[scores={player.ultimate=..0}] player.ultimate 60
+scoreboard players set @s[scores={player.ultimate=..0}] player.ultimate 30
 
 scoreboard players set @s weapon.ruins_of_the_finality.effect.time 41
 scoreboard players set @s weapon.ruins_of_the_finality.cd 60

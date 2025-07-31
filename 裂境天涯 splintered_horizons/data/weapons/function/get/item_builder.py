@@ -13,12 +13,13 @@
 attribute = []
 # ----- 設定參數 ----- #
 
-name = ['緋紅之爪 - 符文箭矢', "#e00000", '箭矢 / 史詩']
-story = {'info': ['擁有符文力量的箭矢，', '命中地板或目標可以生成該符文的符文陣'], 'color': 'blue'}
-item_data     = {'real_item': 'arrow', 'id': 'crimson_claw_arrow', 'item_model': '"arrow/shadow_arrow"', 'custom_data': '{type:"arrow",rarity:"epic",id:"crimson_claw_arrow",ground_detect:1b}', 'max_damage': -1, 'rc': False, 'other': ['tooltip_display={hidden_components:["enchantments","attribute_modifiers","unbreakable"]}', 'tooltip_style="epic"']}
-skill    = {'is_skill': True, 'cd': 0, 'name': ['符文陣 - 緋紅之爪', "#e00000", "#8a0000"], 'info': ['箭矢命中地板或目標可以生成該符文的符文陣', '可以讓 4 格範圍內玩家持續獲得該符文持續 5 秒']}
-ultimate    = {'is_ultimate': False, 'name': ['狂風暴雨', 'dark_aqua', '#8a0000'], 'info': ['右鍵點擊消耗一個終焉之眼，', '接下來的8秒內如果在空中手持此武器擊中敵人', '在目標位置降下降下閃電造成5點傷害。']}
-attribute.append({'attribute': 'attack_speed', 'value': 0, 'slot': 'mainhand', 'operation': 'add_value'})
+name = ['終焉之墟', '#810092', '鐮刀 / 神話']
+story = {'info': ['最終決戰過後，舊宇宙迎來了終點的結局', '同時，宇宙出現了由深淵延伸的新力量「終焉」', '這把武器的誕生目前無法得知', '同時也埋藏了很多秘密。'], 'color': 'blue'}
+item_data     = {'real_item': 'stone_sword', 'id': 'ruins_of_the_finality', 'item_model': '"sickle/ruins_of_the_finality/1"', 'custom_data': '{rc:1b,type:"scythe",rarity:"mythic",weapon:"ruins_of_the_finality"}', 'max_damage': -1, 'rc': True, 'other': ['tooltip_style="mythic"']}
+skill    = {'is_skill': False, 'cd': 60, 'name': ['終焉之鎖', '#aa00c0', '#7100b3'], 'info': ['[%s]可以召喚終焉之鎖，', '並且開啟終焉領域，', '可以透過按下 [%s] 來釋放 [斬滅]', '', '每次對8格範圍內敵人造成 150% 攻擊力傷害', '並且最後一擊造成 300%攻擊力傷害']}
+ultimate    = {'is_ultimate': True, 'cd': 30, 'name': ['終焉之鎖', '#aa00c0', '#7100b3'], 'info': ['[%s]可以召喚終焉之鎖，', '並且開啟終焉領域，', '可以透過按下 [%s] 來釋放 [斬滅]', '', '每次對8格範圍內敵人造成 150% 攻擊力傷害', '並且最後一擊造成 300%攻擊力傷害']}
+attribute.append({'attribute': 'attack_damage', 'value': 5.5, 'slot': 'mainhand', 'operation': 'add_value'})
+attribute.append({'attribute': 'attack_speed', 'value': -1.75, 'slot': 'mainhand', 'operation': 'add_value'})
 
 # ----- init ----- #
 

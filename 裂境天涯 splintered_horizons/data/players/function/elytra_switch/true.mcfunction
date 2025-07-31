@@ -1,4 +1,4 @@
-function players:inventory/-store {bag:"overworld"}
+function players:inventory/save {bag:"overworld"}
 
 particle minecraft:flash ~ ~ ~ 0.5 0.5 0.5 0 20 normal @a[scores={main.light_sensitivity=0}]
 playsound minecraft:block.respawn_anchor.set_spawn voice @s ~ ~ ~ 9999 1.5

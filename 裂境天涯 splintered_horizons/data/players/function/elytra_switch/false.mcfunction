@@ -1,4 +1,4 @@
-function players:inventory/-return {bag:"overworld"}
+function players:inventory/return {bag:"overworld"}
 
 scoreboard players set @s player.animation.lock 0
 

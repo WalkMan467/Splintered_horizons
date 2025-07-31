@@ -5,7 +5,7 @@ function cutscene:safe_area/0/0
 stopsound @a record minecraft:bgm.whitesand_fallen_kingdom
 
 
-execute as @a at @s run function players:inventory/-store {bag:"overworld"}
+execute as @a at @s run function players:inventory/save {bag:"overworld"}
 
 clear @a
 

@@ -12,4 +12,7 @@ execute if predicate players:detect/input/sneak run attribute @s step_height bas
 
 scoreboard players set @s[scores={player.ultimate=2..,player.no_cd=1..}] player.ultimate 1
 
+execute unless score @s player.ultimate matches 0.. run scoreboard players set @s player.ultimate 0
+
+
 function armors:loop

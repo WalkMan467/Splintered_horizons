@@ -1,1 +1,0 @@
-summon marker ~ ~ ~ {Tags:["system.shop_point"]}
