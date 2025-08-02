@@ -13,19 +13,20 @@
 attribute = []
 # ----- 設定參數 ----- #
 
-name = ['終焉之墟', '#810092', '鐮刀 / 神話']
-story = {'info': ['最終決戰過後，舊宇宙迎來了終點的結局', '同時，宇宙出現了由深淵延伸的新力量「終焉」', '這把武器的誕生目前無法得知', '同時也埋藏了很多秘密。'], 'color': 'blue'}
-item_data     = {'real_item': 'stone_sword', 'id': 'ruins_of_the_finality', 'item_model': '"sickle/ruins_of_the_finality/1"', 'custom_data': '{rc:1b,type:"scythe",rarity:"mythic",weapon:"ruins_of_the_finality"}', 'max_damage': -1, 'rc': True, 'other': ['tooltip_style="mythic"']}
-skill    = {'is_skill': False, 'cd': 60, 'name': ['終焉之鎖', '#aa00c0', '#7100b3'], 'info': ['[%s]可以召喚終焉之鎖，', '並且開啟終焉領域，', '可以透過按下 [%s] 來釋放 [斬滅]', '', '每次對8格範圍內敵人造成 150% 攻擊力傷害', '並且最後一擊造成 300%攻擊力傷害']}
-ultimate    = {'is_ultimate': True, 'cd': 30, 'name': ['終焉之鎖', '#aa00c0', '#7100b3'], 'info': ['[%s]可以召喚終焉之鎖，', '並且開啟終焉領域，', '可以透過按下 [%s] 來釋放 [斬滅]', '', '每次對8格範圍內敵人造成 150% 攻擊力傷害', '並且最後一擊造成 300%攻擊力傷害']}
-attribute.append({'attribute': 'attack_damage', 'value': 5.5, 'slot': 'mainhand', 'operation': 'add_value'})
-attribute.append({'attribute': 'attack_speed', 'value': -1.75, 'slot': 'mainhand', 'operation': 'add_value'})
+name = ['夜幕', '#b30000', '劍']
+story = {'info': ['誕生於森林月光之下的武器，', '守護著森林的夜晚，', '因為力量來原本是深淵，', '在最終決戰之後力量徹底的進化。'], 'color': 'blue'}
+item_data     = {'real_item': 'stone_sword', 'id': 'nightfall', 'item_model': '"sword/nightfall/1"', 'custom_data': '{rc:1b,type:"sword",rarity:"epic",weapon:"nightfall"}', 'max_damage': -1, 'rc': True, 'other': ['minecraft:enchantments={"weapons:type/sword/nightfall/0":1}', 'enchantment_glint_override=false', 'tooltip_display={hidden_components:["enchantments"]}', 'tooltip_style="epic"']}
+skill    = {'is_skill': True, 'cd': 5, 'name': ['赤月之力', 'dark_red', 'red'], 'info': ['使用 [%s] 切換 半月 / 血月 狀態', '每次切換型態時，', '立即對 4 格範圍內敵人造成 5 次 150% 攻擊力的一般傷害']}
+passive_skills    = {'is_passive_skills': True, 'cd': 0, 'name': ['煉獄之斬', 'dark_red', 'red'], 'info': ['攻擊怪物獲得 1 層【血月恩賜】','累積 8 層自身 加速I (00:02)','並對 1.5 ~ 4 格內敵人 造成 250% 基礎傷害','與給予自身 【至深之暗】符文 (00:10)','當武器處於血月狀態時自身血量越低造成傷害越高','但是有 25% 機率 恢復 4 點血量與額外造成 250 攻擊力真實傷害','當武器處於半月狀態下血量越高傷害越高','但是有 25% 機率 消耗 4 點血量與額外造成 250 攻擊力真實傷害']}
+ultimate    = {'is_ultimate': False, 'cd': 5, 'name': ['終焉之月', '#b30000', '#5a0000'], 'info': ['右鍵點擊消耗一個終焉之眼，', '開啟【終焉之月】型態持續 15 秒', '大幅強化武器，', '此形態下如果攻擊會有25%機率造成大量傷害']}
+attribute.append({'attribute': 'attack_damage', 'value': 4, 'slot': 'mainhand', 'operation': 'add_value'})
+attribute.append({'attribute': 'attack_speed', 'value': -2.5, 'slot': 'mainhand', 'operation': 'add_value'})
 
 # ----- init ----- #
 
-backup = "\n\n#name = "+str(name)+"\n#story = "+str(story)+"\n#item_data     = "+str(item_data)+"\n#skill    = "+str(skill)+"\n#ultimate    = "+str(ultimate)+"\n"
+backup = "\n\n#name = "+str(name)+"\n#story = "+str(story)+"\n#item_data     = "+str(item_data)+"\n#skill     = "+str(item_data)+"\n#passive_skills    = "+str(skill)+"\n#ultimate    = "+str(ultimate)+"\n"
 for i in attribute: backup = backup +"#attribute.append("+ str(i) + ")\n"
-translate = {'story':[], 'skill':[], 'ultimate':[]}
+translate = {'story':[], 'skill':[], 'passive_skills':[], 'ultimate':[]}
 
 # attribute 屬性
 def attribute_id(x):
@@ -63,13 +64,29 @@ with open(__file__.replace("item_builder.py","#temp.mcfunction"),mode="w+",encod
         else: skill["cd"] = ""
     
         f.write(f',{{"text":""}},[{{"text":"","italic":false}},{{"translate":"weapon.{item_data["id"]}.skill","color":"{skill["name"][1]}","bold":true}},{{"text":"  "}}{skill["cd"]}]')
-        translate["skill"].append(f'# "weapon.{item_data["id"]}.skill" : "[{skill["name"][0]}] "')
+        translate["skill"].append(f'# "weapon.{item_data["id"]}.skill" : "[{skill["name"][0]}]"')
 #        translate["skill"].append(f'# "weapon.{item_data["id"]}.skill.1" : "{skill["info"][0]}"')
 
         if len(skill["info"]) >= 1:
             for i in range(1,len(skill["info"])+1):
                 f.write(f',[{{"text":"","italic":false}},{{"translate":"weapon.{item_data["id"]}.skill.{str(i)}","color":"{skill["name"][2]}"}}]')
                 translate["skill"].append(f'# "weapon.{item_data["id"]}.skill.{str(i)}" : "{skill["info"][i-1]}"')
+
+    # passive skills
+    if passive_skills['is_passive_skills'] == True:
+
+        if int(passive_skills["cd"]) >= 1: passive_skills["cd"] = ',{\"translate\":\"weapon.skill_cd\",\"color\":\"#6E6E6E\"},{\"text\":\"'+str(passive_skills["cd"])+'s\"}'
+        else: passive_skills["cd"] = ""
+    
+        f.write(f',{{"text":""}},[{{"text":"","italic":false}},{{"translate":"weapon.{item_data["id"]}.passive_skills","color":"{passive_skills["name"][1]}","bold":true}},{{"text":"  "}}{passive_skills["cd"]}]')
+        translate["passive_skills"].append(f'# "weapon.{item_data["id"]}.passive_skills" : "[{passive_skills["name"][0]}]"')
+#        translate["passive_skills"].append(f'# "weapon.{item_data["id"]}.passive_skills.1" : "{passive_skills["info"][0]}"')
+
+        if len(passive_skills["info"]) >= 1:
+            for i in range(1,len(passive_skills["info"])+1):
+                f.write(f',[{{"text":"","italic":false}},{{"translate":"weapon.{item_data["id"]}.passive_skills.{str(i)}","color":"{passive_skills["name"][2]}"}}]')
+                translate["passive_skills"].append(f'# "weapon.{item_data["id"]}.passive_skills.{str(i)}" : "{passive_skills["info"][i-1]}"')
+
         # ultimate
     if ultimate['is_ultimate'] == True:
 
@@ -77,7 +94,7 @@ with open(__file__.replace("item_builder.py","#temp.mcfunction"),mode="w+",encod
         else: ultimate["cd"] = ""
     
         f.write(f',{{"text":""}},[{{"text":"","italic":false}},{{"text":"\uE000","font":"minecraft:icon"}},{{"translate":"weapon.{item_data["id"]}.ultimate","color":"{ultimate["name"][1]}","bold":true}},{{"text":"\uE000","font":"minecraft:icon"}},{{"text":"  "}}{ultimate["cd"]}]')
-        translate["ultimate"].append(f'# "weapon.{item_data["id"]}.ultimate" : "[{ultimate["name"][0]}] "')
+        translate["ultimate"].append(f'# "weapon.{item_data["id"]}.ultimate" : "[{ultimate["name"][0]}]"')
 #        translate["ultimate"].append(f'# "weapon.{item_data["id"]}.ultimate.1" : "{ultimate["info"][0]}"')
 
         if len(ultimate["info"]) >= 1:
@@ -121,6 +138,7 @@ with open(__file__.replace("item_builder.py","#temp.mcfunction"),mode="w+",encod
     f.write(f'\n# "weapon.{item_data["id"]}.type" : "{name[2]}"')
     for i in translate['story']: f.write('\n'+i)
     for i in translate['skill']: f.write('\n'+i)
+    for i in translate['passive_skills']: f.write('\n'+i)
     for i in translate['ultimate']: f.write('\n'+i)
 
     f.write(backup)

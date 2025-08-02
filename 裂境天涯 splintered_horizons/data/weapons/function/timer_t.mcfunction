@@ -13,6 +13,4 @@ scoreboard players remove @s[type=player,scores={weapon.effect.crimson_claw=1..}
 scoreboard players remove @s[type=player,scores={weapon.effect.holy_fire=1..}] weapon.effect.holy_fire 1
 scoreboard players remove @s[type=player,scores={weapon.effect.starry_sky_frost=1..}] weapon.effect.starry_sky_frost 1
 
-scoreboard players remove @s[type=player,scores={weapon.use_delay=1..}] weapon.use_delay 1
-
 execute if score #is_water_sword_demon.passive? global.main matches 0.. run scoreboard players remove #is_water_sword_demon.passive? global.main 1

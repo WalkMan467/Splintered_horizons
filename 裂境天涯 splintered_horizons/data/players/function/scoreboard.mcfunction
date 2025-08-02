@@ -3,6 +3,8 @@ scoreboard objectives add player.id dummy "[玩家] ID"
 scoreboard objectives add player.hide dummy "[玩家] 隱藏"
 scoreboard objectives add player.gamemode dummy "[玩家] 遊戲模式"
 scoreboard objectives add player.health health "[玩家] 血量"
+scoreboard objectives add player.max_health dummy "[玩家] 最大血量"
+
 scoreboard objectives add player.hurt_time dummy "[玩家] 受傷時間"
 scoreboard objectives add player.ultimate dummy "[玩家] 終焉之眼CD"
 scoreboard objectives add player.coin dummy "[玩家] 擁有硬幣"
@@ -19,9 +21,9 @@ scoreboard players add @a player.coin 0
 # ==================================================================================================
 
 # actionbar
-scoreboard objectives add player.actionbar.shop dummy "[玩家] actionbar 狀態機 商店 GUI 顯示"
+scoreboard objectives add player.actionbar.weapon.nightfall dummy "[玩家] actionbar 狀態機 夜幕技能顯示"
 
-scoreboard players add @a player.actionbar.shop 0
+scoreboard players add @a player.actionbar.weapon.nightfall 0
 
 # ==================================================================================================
 # 其他

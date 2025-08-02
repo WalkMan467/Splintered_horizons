@@ -82,6 +82,8 @@ scoreboard players add @a weapon.morning_light.cd 0
 
 scoreboard objectives add weapon.nightfall.state dummy "夜幕狀態"
 scoreboard objectives add weapon.nightfall.cd dummy "夜幕 CD"
+scoreboard objectives add weapon.nightfall.charge dummy "夜幕充能"
+scoreboard objectives add weapon.nightfall.charge_timer dummy "夜幕充能特效"
 
 scoreboard players add @a weapon.nightfall.state 0
 scoreboard players add @a weapon.nightfall.cd 0

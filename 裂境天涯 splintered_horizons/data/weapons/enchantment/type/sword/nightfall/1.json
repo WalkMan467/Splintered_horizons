@@ -1,38 +1,42 @@
 {
-    "description": "weapon.nightfall.1",
-    "supported_items": "#minecraft:swords",
-    "weight": 1,
-    "max_level": 1,
-    "min_cost": {
-      "base": 40,
-      "per_level_above_first": 0
-    },
-    "max_cost": {
-      "base": 50,
-      "per_level_above_first": 0
-    },
-    "anvil_cost": 20,
-    "slots": [
-      "mainhand"
-    ],
-    "effects": {
-      "minecraft:post_attack": [
-        {
-          "requirements": {
-            "condition": "minecraft:random_chance",
-            "chance": 0.5
-          },
-          "effect": {
-            "type": "minecraft:apply_mob_effect",
-            "to_apply": "minecraft:instant_health",
-            "min_duration": 0.05,
-            "max_duration": 0.05,
-            "min_amplifier": 0,
-            "max_amplifier": 0
-          },
-          "enchanted": "attacker",
-          "affected": "attacker"
-        }
-      ]
-    }
+  "description": "weapon.nightfall.1",
+  "supported_items": "#minecraft:swords",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 40,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 50,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 20,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "requirements": {
+          "condition": "minecraft:random_chance",
+          "chance": 0.5
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "weapons:type/sword/nightfall/rc/0/effect"
+        },
+        "enchanted": "attacker",
+        "affected": "victim"
+      },
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "weapons:type/sword/nightfall/passive/use"
+        },
+        "enchanted": "attacker",
+        "affected": "attacker"
+      }
+    ]
   }
+}

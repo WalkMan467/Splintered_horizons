@@ -16,17 +16,16 @@ function players:replace/food/main
 # 怪物 load
 function monsters:load
 
+# 武器
+schedule function weapons:type/core/main 1t
+
 # 微型太陽
 function weapons:type/drop/miniature_sun/rc/main
-
-# 設施
-schedule function system:shop_point/main 1t
 
 # 計時器(1s)
 schedule function monsters:timer_s 1s
 schedule function main:timer/1s 1s
 schedule function armors:timer_s 1s
-schedule function monsters:spawn_area/main 1t
 
 schedule function monsters:chapter_2/abyss_soulcutter/main 10t
 schedule function system:monument_point/main 1t

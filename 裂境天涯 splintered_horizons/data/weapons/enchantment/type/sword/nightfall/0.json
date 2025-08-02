@@ -28,6 +28,14 @@
         },
         "enchanted": "attacker",
         "affected": "victim"
+      },
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "weapons:type/sword/nightfall/passive/use"
+        },
+        "enchanted": "attacker",
+        "affected": "attacker"
       }
     ]
   }

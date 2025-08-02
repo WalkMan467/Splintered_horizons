@@ -5,7 +5,7 @@ give @s stone_sword[item_name=[{"translate":"weapon.aquilumera","color":"#0066ff
 # "weapon.aquilumera.story.1" : "始源 6 魔劍之一"
 # "weapon.aquilumera.story.2" : "掌控水元素之力"
 # "weapon.aquilumera.story.3" : "同時也是地圖的目標物品"
-# "weapon.aquilumera.skill" : "[水光切換] "
+# "weapon.aquilumera.skill" : "[水光切換]"
 # "weapon.aquilumera.skill.1" : "[%s] 可以切換 水/光 型態"
 # "weapon.aquilumera.skill.2" : "當你攻擊敵人可以獲得 1 層能量，"
 # "weapon.aquilumera.skill.3" : "最高可以有 10 層"
