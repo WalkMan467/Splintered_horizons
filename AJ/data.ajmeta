@@ -2869,6 +2869,44 @@
 				"data/animated_java/function/stellar_animation/zzz/summon/as_root_entity.mcfunction",
 				"data/animated_java/function/stellar_animation/zzz/summon/zzz/variant_arg/no_variants_warning.mcfunction"
 			]
+		},
+		"yibb_tstll": {
+			"coreFiles": [
+				"data/animated_java/function/global/errors/function_not_executed_as_root_entity.mcfunction",
+				"data/animated_java/function/global/internal/gu/convert_uuid_array_to_string.mcfunction",
+				"data/animated_java/function/global/internal/gu/load.mcfunction",
+				"data/animated_java/function/global/internal/gu/zzz/0.mcfunction",
+				"data/animated_java/function/global/internal/gu/zzz/1.mcfunction",
+				"data/animated_java/function/global/on_load.mcfunction",
+				"data/animated_java/function/global/on_tick.mcfunction",
+				"data/animated_java/function/global/remove/everything.mcfunction",
+				"data/animated_java/function/yibb_tstll/invalid_version_warning.mcfunction",
+				"data/animated_java/function/yibb_tstll/on_load.mcfunction",
+				"data/animated_java/tags/function/global/on_load.json",
+				"data/animated_java/tags/function/global/root/on_load.json",
+				"data/animated_java/tags/function/global/root/on_tick.json",
+				"data/minecraft/tags/function/load.json",
+				"data/minecraft/tags/function/tick.json",
+				"pack.mcmeta"
+			],
+			"versionedFiles": [
+				"data/animated_java/function/yibb_tstll/invalid_version_warning.mcfunction",
+				"data/animated_java/function/yibb_tstll/remove/all.mcfunction",
+				"data/animated_java/function/yibb_tstll/remove/entities.mcfunction",
+				"data/animated_java/function/yibb_tstll/remove/this.mcfunction",
+				"data/animated_java/function/yibb_tstll/remove/zzz/this/kill_camera.mcfunction",
+				"data/animated_java/function/yibb_tstll/remove/zzz/this/kill_locator.mcfunction",
+				"data/animated_java/function/yibb_tstll/remove/zzz/this/recursively_kill_passengers.mcfunction",
+				"data/animated_java/function/yibb_tstll/root/on_load.mcfunction",
+				"data/animated_java/function/yibb_tstll/root/on_tick.mcfunction",
+				"data/animated_java/function/yibb_tstll/root/zzz/check_rig_hash.mcfunction",
+				"data/animated_java/function/yibb_tstll/root/zzz/show_outdated_warning.mcfunction",
+				"data/animated_java/function/yibb_tstll/set_default_pose.mcfunction",
+				"data/animated_java/function/yibb_tstll/summon.mcfunction",
+				"data/animated_java/function/yibb_tstll/zzz/summon/as_data_entity.mcfunction",
+				"data/animated_java/function/yibb_tstll/zzz/summon/as_root_entity.mcfunction",
+				"data/animated_java/function/yibb_tstll/zzz/summon/zzz/variant_arg/no_variants_warning.mcfunction"
+			]
 		}
 	}
 }
