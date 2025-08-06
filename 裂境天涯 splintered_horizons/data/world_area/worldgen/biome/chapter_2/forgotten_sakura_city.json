@@ -12,9 +12,9 @@
     "foliage_color": 12171705,
     "particle": {
       "options": {
-        "type": "white_ash"
+        "type": "cherry_leaves"
       },
-      "probability": 0.05
+      "probability": 0.025
     }
   },
   "spawners": {},

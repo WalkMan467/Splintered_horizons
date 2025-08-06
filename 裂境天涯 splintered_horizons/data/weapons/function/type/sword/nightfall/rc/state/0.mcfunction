@@ -13,9 +13,6 @@ playsound minecraft:block.beacon.activate voice @a ~ ~1 ~ 1 2
 playsound minecraft:block.beacon.activate voice @a ~ ~1 ~ 0.5 2
 playsound minecraft:block.trial_spawner.ominous_activate voice @a ~ ~1 ~ 1 1
 
-scoreboard players set @s weapon.effect.shadow 160
-
-
 playsound minecraft:entity.generic.explode voice @a ~ ~1 ~ 0.5 0.5
 
 scoreboard players set @s weapon.nightfall.state 0

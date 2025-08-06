@@ -6,3 +6,4 @@ scoreboard objectives add music.chapter2.land_of_finality dummy "[音樂]: 終�
 scoreboard objectives add music.main.safe_zone dummy "[音樂]: 安全區BGM"
 scoreboard objectives add music.chapter2.forest_of_souls dummy "[音樂]: 靈魂之森BGM"
 scoreboard objectives add music.chapter2.bossfight.2 dummy "[音樂]: BOSS戰BGM"
+scoreboard objectives add music.other.the_forgooten_lost_city dummy "[音樂]: 被遺忘的失落之城BGM"

@@ -13,7 +13,6 @@ scoreboard objectives add player.give.item.delay dummy "[玩家] 給予玩家物
 
 scoreboard objectives add player.death_count dummy [{"text":"💀","bold":true,"color":"red"},{"translate":"tips.player_death.3","bold":false,"color":"white"},{"text":"💀","bold":true,"color":"red"}]
 
-
 scoreboard players add @a player.ultimate 0
 scoreboard players add @a player.diamond 0
 scoreboard players add @a player.coin 0

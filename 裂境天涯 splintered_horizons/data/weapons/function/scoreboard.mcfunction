@@ -84,9 +84,11 @@ scoreboard objectives add weapon.nightfall.state dummy "夜幕狀態"
 scoreboard objectives add weapon.nightfall.cd dummy "夜幕 CD"
 scoreboard objectives add weapon.nightfall.charge dummy "夜幕充能"
 scoreboard objectives add weapon.nightfall.charge_timer dummy "夜幕充能特效"
+scoreboard objectives add weapon.nightfall.effect.switch_dmg_count dummy "夜幕切換傷害次數"
 
 scoreboard players add @a weapon.nightfall.state 0
 scoreboard players add @a weapon.nightfall.cd 0
+scoreboard players add @a weapon.nightfall.effect.switch_dmg_count 0
 
 #===================================================================
 # 水鏡之光

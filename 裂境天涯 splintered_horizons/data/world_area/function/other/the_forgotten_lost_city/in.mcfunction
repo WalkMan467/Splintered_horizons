@@ -5,4 +5,6 @@ title @s times 20 20 20
 stopsound @s voice minecraft:ambient.cave
 playsound minecraft:ambient.cave voice @s ~ ~1 ~ 1 2
 
+function music:other/the_forgooten_lost_city/start
+
 advancement revoke @s only world_area:other/the_forgotten_lost_city/out

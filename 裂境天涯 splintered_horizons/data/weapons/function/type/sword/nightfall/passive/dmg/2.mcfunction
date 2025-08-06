@@ -1,4 +1,4 @@
-
+scoreboard players reset @s weapon.nightfall.charge_timer
 # player
 tag @s remove weapon.nightfall.charger
 function weapons:type/sword/nightfall/passive/dmg/hurt

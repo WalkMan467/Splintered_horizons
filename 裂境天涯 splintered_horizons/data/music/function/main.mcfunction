@@ -13,4 +13,6 @@ execute as @a[scores={music.chapter2.forest_of_souls=1}] at @s run function musi
 
 execute as @a[scores={music.chapter2.bossfight.2=1}] at @s run function music:chapter_2/bossfight/2/start
 
+execute as @a[scores={music.other.the_forgooten_lost_city=1}] at @s run function music:other/the_forgooten_lost_city/start
+
 schedule function music:main 1t
