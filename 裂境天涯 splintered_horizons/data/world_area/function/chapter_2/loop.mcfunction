@@ -30,4 +30,14 @@
     execute if entity @s[gamemode=!spectator] if biome ~ ~ ~ world_area:chapter_2/forgotten_sakura_city run advancement grant @s only world_area:chapter_2/forgotten_sakura_city/in
     execute unless biome ~ ~ ~ world_area:chapter_2/forgotten_sakura_city run advancement grant @s only world_area:chapter_2/forgotten_sakura_city/out
 
+    # 深紅之淵
+    
+    execute if entity @s[gamemode=!spectator] if biome ~ ~ ~ world_area:chapter_2/deep_crimson_abyss run advancement grant @s only world_area:chapter_2/deep_crimson_abyss/in
+    execute unless biome ~ ~ ~ world_area:chapter_2/deep_crimson_abyss run advancement grant @s only world_area:chapter_2/deep_crimson_abyss/out
+
+    # 光之神殿
+    
+    execute if entity @s[gamemode=!spectator] if biome ~ ~ ~ world_area:chapter_2/temple_of_light run advancement grant @s only world_area:chapter_2/temple_of_light/in
+    execute unless biome ~ ~ ~ world_area:chapter_2/temple_of_light run advancement grant @s only world_area:chapter_2/temple_of_light/out
+
     function world_area:chapter_2/dusks_fractured_maw/main

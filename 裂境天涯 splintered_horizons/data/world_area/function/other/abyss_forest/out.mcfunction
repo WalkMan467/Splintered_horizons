@@ -1,0 +1,1 @@
+advancement revoke @s only world_area:other/abyss_forest/in

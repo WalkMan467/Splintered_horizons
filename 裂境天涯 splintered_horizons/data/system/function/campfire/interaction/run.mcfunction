@@ -8,6 +8,6 @@ playsound minecraft:entity.illusioner.cast_spell voice @a ~ ~1 ~ 1 1
 
 particle minecraft:wax_on ~ ~0.5 ~ 0.5 0.5 0.5 0 80 normal @a
 
-execute on target run function players:reset_state
+execute if score #difficulty global.main matches 0..1 on target run function players:reset_state
 
 data remove entity @s interaction

@@ -1,0 +1,1 @@
+advancement revoke @s only world_area:other/land_of_the_trials/in

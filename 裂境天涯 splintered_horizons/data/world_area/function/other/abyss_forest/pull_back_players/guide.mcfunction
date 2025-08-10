@@ -1,4 +1,4 @@
-execute unless biome ~ ~ ~ world_area:other/the_forgooten_lost_city run return 0
+execute unless biome ~ ~ ~ world_area:other/abyss_forest run return 0
 
 stopsound @s voice minecraft:entity.wither.spawn
 

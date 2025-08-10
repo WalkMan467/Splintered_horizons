@@ -13,3 +13,13 @@ function world_area:other/otherworld_portal/2/main
 
     execute if entity @s[gamemode=!spectator] if biome ~ ~ ~ world_area:other/the_forgooten_lost_city run advancement grant @s only world_area:other/the_forgotten_lost_city/in
     execute unless biome ~ ~ ~ world_area:other/the_forgooten_lost_city run advancement grant @s only world_area:other/the_forgotten_lost_city/out
+
+    # 深淵之森
+
+    execute if entity @s[gamemode=!spectator] if biome ~ ~ ~ world_area:other/abyss_forest run advancement grant @s only world_area:other/abyss_forest/in
+    execute unless biome ~ ~ ~ world_area:other/abyss_forest run advancement grant @s only world_area:other/abyss_forest/out
+
+    # 試煉之地
+
+    execute if entity @s[gamemode=!spectator] if biome ~ ~ ~ world_area:other/land_of_the_trials run advancement grant @s only world_area:other/land_of_the_trials/in
+    execute unless biome ~ ~ ~ world_area:other/land_of_the_trials run advancement grant @s only world_area:other/land_of_the_trials/out
