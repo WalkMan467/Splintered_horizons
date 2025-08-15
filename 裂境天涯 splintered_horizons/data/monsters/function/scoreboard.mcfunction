@@ -43,3 +43,10 @@ scoreboard objectives add monster.abyss_soulcutter.state_machine.back dummy "深
 scoreboard objectives add monster.effect.finality dummy "[怪物] 終焉轉化"
 
 # ===============================================================================
+
+# 森林信使
+
+scoreboard objectives add monster.forest_messenger.cocoon.id dummy "[怪物] 森林信使 繭 ID"
+scoreboard objectives add monster.forest_messenger.user dummy "[怪物] 森林信使 繭 使用者"
+
+# ===============================================================================

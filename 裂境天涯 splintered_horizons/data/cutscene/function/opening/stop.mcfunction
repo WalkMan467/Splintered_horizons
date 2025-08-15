@@ -1,4 +1,6 @@
 execute in minecraft:overworld run forceload remove 42 11 42 11
+execute in minecraft:overworld run forceload remove 10055 10310
+function cutscene:opening/remove_camera
 
 function animated_java:aska/remove/all
 function animated_java:oceanid/remove/all
@@ -29,6 +31,7 @@ schedule clear cutscene:opening/6/use
 schedule clear cutscene:opening/7/use
 schedule clear cutscene:opening/end/use
 schedule clear cutscene:opening/6/2
+schedule clear cutscene:opening/1/0_1
 
 function story:chapter_1/opening/stop
 
@@ -43,6 +46,8 @@ stopsound @a record
 gamemode survival @a
 
 tp @a 9999 131 10071 180 0
+
+function cutscene:opening/remove_camera
 
 title @a times 10 40 10
 title @a title ""

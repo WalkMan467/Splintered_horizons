@@ -4,4 +4,6 @@ execute in minecraft:overworld run summon minecraft:block_display 9971.5 55.0 10
 
 execute as @n[tag=cutscene.opening.2,limit=1,type=block_display] at @s run tp @s ~-2.5 ~ ~ ~ 5
 
+forceload remove 10055 10310
+
 schedule function cutscene:opening/3/use 10s

@@ -10,6 +10,7 @@ scoreboard objectives add player.ultimate dummy "[玩家] 終焉之眼CD"
 scoreboard objectives add player.coin dummy "[玩家] 擁有硬幣"
 scoreboard objectives add player.diamond dummy "[玩家] 擁有鑽石"
 scoreboard objectives add player.give.item.delay dummy "[玩家] 給予玩家物品延遲"
+scoreboard objectives add player.sidebar.hide dummy "[玩家] 側邊欄隱藏"
 
 scoreboard objectives add player.death_count dummy [{"text":"💀","bold":true,"color":"red"},{"translate":"tips.player_death.3","bold":false,"color":"white"},{"text":"💀","bold":true,"color":"red"}]
 

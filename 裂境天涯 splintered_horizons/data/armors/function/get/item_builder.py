@@ -13,10 +13,10 @@
 attribute = []
 # ----- 設定參數 ----- #
 
-name = ['時間回朔之時', '#ff0000', '護腿 / 神話']
-story = {'info': ['時間還會回朔嗎?', '不，不會的，人們總是後悔著過往', '希望能夠回朔並改變過去','但終究只存在於假想之中','基於人們的慾望凝聚而成的裝備','即便乘載著眾人的渴望'], 'color': 'blue'}
-item_data     = {'real_item': 'iron_chestplate', 'id': 'finality_chestplate', 'item_model': '"chestplate/finality_chestplate"', 'custom_data': '{finality_chestplate:1b,type:"armor"}', 'max_damage': -1, 'rc': False, 'other': ['tooltip_style="mythic"', 'equippable={slot:"chest",asset_id:"armor_of_the_coiled_rock"}']}
-skill    = {'is_skill': True, 'cd': 15, 'name': ['終焉轉化', '#ff0000', '#FF5E00'], 'info': ['當你殺死怪物時，', '使「終焉之眼」冷卻時間減少 5 秒', '並且使你攻擊力 +25% 持續 5 秒']}
+name = ['隨機傳送護腿', "#00b7ff", '護腿 / 史詩']
+story = {'info': ['可以將你隨機傳送護腿'], 'color': 'blue'}
+item_data     = {'real_item': 'iron_leggings', 'id': 'random_teleport', 'item_model': '""', 'custom_data': '{random_teleport:1b,type:"armor"}', 'max_damage': -1, 'rc': False, 'other': ['tooltip_style="epic"', 'enchantments={"armors:random_teleport":1}','enchantment_glint_override=false','tooltip_display={hidden_components:["enchantments"]}']}
+skill    = {'is_skill': True, 'cd': 0, 'name': ['隨機傳送', "#00b7ff", "#0066ff"], 'info': ['當你受到傷害時', '使你傳送至 8 格內隨機位置']}
 ultimate    = {'is_ultimate': False, 'cd': 0, 'name': ['終焉之月', 'dark_aqua', '#ff0000'], 'info': ['右鍵點擊消耗一個終焉之眼，', '開啟【終焉之月】型態持續 15 秒', '大幅強化武器，', '此形態下如果攻擊會有25%機率造成大量傷害']}
 attribute.append({'attribute': 'armor', 'value': 5.5, 'slot': 'chest', 'operation': 'add_value'})
 

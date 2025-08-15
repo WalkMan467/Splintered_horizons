@@ -1,6 +1,8 @@
 function animated_java:screen_sneak/remove/all
 
 kill @e[tag=cutscene.opening.0]
+kill @e[tag=aj.oceanid.camera]
+
 kill @e[tag=cutscene.opening.0.1]
 kill @e[tag=cutscene.opening.1]
 kill @e[tag=cutscene.opening.2]

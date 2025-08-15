@@ -6,6 +6,7 @@ execute on passengers if entity @s[tag=aj.oceanid.bone.eye_l] run data merge ent
 execute on passengers if entity @s[tag=aj.oceanid.bone.r_1] run data merge entity @s {transformation: [-1f,0f,0f,0.1094f,0f,1f,0f,1.625f,0f,0f,-1f,0.1234f,0f,0f,0f,1f], start_interpolation: 0}
 execute on passengers if entity @s[tag=aj.oceanid.bone.eye_r] run data merge entity @s {transformation: [-1f,0f,0f,0.125f,0f,1f,0f,1.6406f,0f,0f,-1f,0.1172f,0f,0f,0f,1f], start_interpolation: 0}
 execute on passengers if entity @s[tag=aj.oceanid.bone.eyes_down] run data merge entity @s {transformation: [-1f,0f,0f,0f,0f,1f,0f,1.5469f,0f,0f,-1f,-0.125f,0f,0f,0f,1f], start_interpolation: 0}
+execute on passengers if entity @s[tag=aj.oceanid.bone.eyes_up] run data merge entity @s {transformation: [-1f,0f,0f,0f,0f,1f,0f,1.7344f,0f,0f,-1f,-0.125f,0f,0f,0f,1f], start_interpolation: 0}
 execute on passengers if entity @s[tag=aj.oceanid.bone.bone] run data merge entity @s {transformation: [-1f,0f,0f,0f,0f,1f,0f,1.5156f,0f,0f,-1f,-0.125f,0f,0f,0f,1f], start_interpolation: 0}
 execute on passengers if entity @s[tag=aj.oceanid.bone.l] run data merge entity @s {transformation: [-1f,0f,0f,-0.125f,0f,1f,0f,1.7266f,0f,0f,-1f,0.1312f,0f,0f,0f,1f], start_interpolation: 0}
 execute on passengers if entity @s[tag=aj.oceanid.bone.r] run data merge entity @s {transformation: [-1f,0f,0f,0.125f,0f,1f,0f,1.7266f,0f,0f,-1f,0.1312f,0f,0f,0f,1f], start_interpolation: 0}

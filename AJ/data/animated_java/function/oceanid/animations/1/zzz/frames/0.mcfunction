@@ -5,6 +5,7 @@ $data merge entity $(bone_eye_l) {transformation: [0f,0.1305f,-0.9914f,0.4375f,0
 $data merge entity $(bone_r_1) {transformation: [0f,0.0979f,-0.9914f,0.7001f,0f,0.7436f,0.1305f,1.3884f,0.7501f,0f,0f,-0.1156f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(bone_eye_r) {transformation: [0f,0.1305f,-0.9914f,0.6939f,0f,0.9914f,0.1305f,1.3892f,1.0001f,0f,0f,-0.125f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(bone_eyes_down) {transformation: [0f,0.1305f,-0.9914f,0.4416f,0f,0.9914f,0.1305f,1.3279f,1.0001f,0f,0f,0f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+$data merge entity $(bone_eyes_up) {transformation: [0f,0f,0f,0.4661f,0f,0f,0f,1.5138f,0f,0f,0f,0f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(bone_bone) {transformation: [0f,0.1305f,-0.9914f,0.4375f,0f,0.9914f,0.1305f,1.2969f,1.0001f,0f,0f,0f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(bone_l) {transformation: [-0.0057f,0.0978f,-0.9914f,0.7207f,-0.0432f,0.7429f,0.1305f,1.485f,0.9991f,0.0327f,0f,0.125f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(bone_r) {transformation: [0.0057f,0.0978f,-0.9914f,0.7207f,0.0432f,0.7429f,0.1305f,1.485f,0.9991f,-0.0327f,0f,-0.125f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
@@ -21,3 +22,4 @@ $data merge entity $(bone_4) {transformation: [-0.1726f,-0.9263f,-0.3027f,0.5191
 $data merge entity $(bone_3) {transformation: [-0.1728f,-0.7116f,-0.6658f,0.2967f,-0.4604f,0.6614f,-0.5904f,1.2795f,0.8622f,0.2035f,-0.4402f,-0.3892f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(bone_8) {transformation: [-0.0508f,0.2649f,-0.962f,0.1979f,0.1173f,0.9588f,0.2583f,0.47f,0.9908f,-0.1f,-0.08f,0.1711f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(bone_7) {transformation: [-0.0508f,-0.4154f,-0.9072f,0.0312f,0.1173f,0.9005f,-0.4184f,0.7344f,0.9908f,-0.128f,0.003f,0.1313f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+data modify entity @s data merge value {"cameras":{"camera":{"posx":-1.5308084989341916e-16,"posy":1.75,"posz":1.25,"roty":180,"rotx":0}},"locators":{}}

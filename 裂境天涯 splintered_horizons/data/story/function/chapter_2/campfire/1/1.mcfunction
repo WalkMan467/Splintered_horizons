@@ -1,6 +1,5 @@
 #透過scoreboard story(dummy) + schedule 指令運行整個劇情
 
-
 execute positioned 926 167 907 if score story.chapter_2.campfire.1 story.chapter_2 matches 1 run tellraw @a[distance=..16] {"translate": "story.chapter_2.ml.1","fallback": "[蘇菲亞] 這片世界雖然已被毀滅，但世界風景依舊美麗"}
 execute positioned 926 167 907 if score story.chapter_2.campfire.1 story.chapter_2 matches 2 run tellraw @a[distance=..16] {"translate": "story.chapter_2.ml.2","fallback": "[蘇菲亞] 但即便如此，隨著時間流逝，一切終將歸於虛無"}
 execute positioned 926 167 907 if score story.chapter_2.campfire.1 story.chapter_2 matches 3 run tellraw @a[distance=..16] {"translate": "story.chapter_2.ml.2","fallback": "[蘇菲亞] 之前與你提到的那位故人是萊卡"}

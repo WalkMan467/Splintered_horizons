@@ -1,1 +1,5 @@
-execute as @n[tag=cutscene.opening.1,limit=1,type=block_display] at @s run tp @s 10008.5 117.0 10180.0 0 10
+execute positioned 10009.0 116.0 10198.0 rotated 180 0 run function animated_java:oceanid/summon {args: {animation: '2', start_animation: true}}
+
+forceload add 10055 10310
+
+schedule function cutscene:opening/1/0_1 9s

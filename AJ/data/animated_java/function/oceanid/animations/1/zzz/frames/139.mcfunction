@@ -5,6 +5,7 @@ $data merge entity $(bone_eye_l) {transformation: [0f,0.9553f,-0.2955f,0.3968f,0
 $data merge entity $(bone_r_1) {transformation: [0f,0.7165f,-0.2955f,0.5836f,0f,0.2216f,0.9553f,0.3677f,0.7501f,0f,0f,-0.1219f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(bone_eye_r) {transformation: [0f,0.9553f,-0.2955f,0.5878f,0f,0.2955f,0.9553f,0.3755f,1.0001f,0f,0f,-0.125f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(bone_eyes_down) {transformation: [0f,0.9553f,-0.2955f,0.4266f,0f,0.2955f,0.9553f,0.5792f,1.0001f,0f,0f,0f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+$data merge entity $(bone_eyes_up) {transformation: [0f,0f,0f,0.6058f,0f,0f,0f,0.6346f,0f,0f,0f,0f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(bone_bone) {transformation: [0f,0.9553f,-0.2955f,0.3968f,0f,0.2955f,0.9553f,0.57f,1.0001f,0f,0f,0f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(bone_l) {transformation: [-0.1659f,0.7056f,-0.2955f,0.6889f,-0.0513f,0.2183f,0.9553f,0.3921f,0.9849f,0.1302f,0f,0.125f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(bone_r) {transformation: [0.1659f,0.7056f,-0.2955f,0.6889f,0.0513f,0.2183f,0.9553f,0.3921f,0.9849f,-0.1302f,0f,-0.125f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}

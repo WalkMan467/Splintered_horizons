@@ -2,6 +2,8 @@ function story:chapter_1/opening/1/main
 function story:chapter_1/opening/3/main
 function story:chapter_2/in_safe_zone/1/main
 function story:chapter_2/campfire/1/main
+function story:chapter_2/in_safe_zone/2/main
+execute as @e[type=text_display,tag=story.text_bubbles.main] at @s run function story:text_bubbles/main
 
 execute if score #story:icon/proper_noun/eye_of_finality global.main matches 1.. run advancement grant @a only story:icon/proper_noun/eye_of_finality
 execute unless score #story:icon/proper_noun/eye_of_finality global.main matches 1.. run advancement revoke @a only story:icon/proper_noun/eye_of_finality

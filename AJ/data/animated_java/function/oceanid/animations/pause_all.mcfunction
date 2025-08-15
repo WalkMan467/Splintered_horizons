@@ -2,3 +2,4 @@
 execute unless entity @s[type=minecraft:item_display,tag=aj.oceanid.root] run return run function animated_java:global/errors/function_not_executed_as_root_entity {'export_namespace': 'oceanid', 'function_path': 'animated_java:oceanid/animations/pause_all'}
 tag @s remove aj.oceanid.animation.idle.playing
 tag @s remove aj.oceanid.animation.1.playing
+tag @s remove aj.oceanid.animation.2.playing
