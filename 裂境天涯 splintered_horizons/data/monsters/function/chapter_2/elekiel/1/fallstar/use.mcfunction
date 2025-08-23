@@ -1,0 +1,4 @@
+kill 000000fb-0000-0228-0000-000100000018
+
+summon minecraft:block_display 912.5 79.5 2018.5 {Glowing:1b,glow_color_override:9961644,UUID:[I;251, 552, 1, 24],block_state: {Name: "minecraft:crying_obsidian"}, brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [0.0f, 0.0f, 0.0f], translation: [-0.5f, -0.5f, -0.5f]}, view_range: 2.0f}
+data merge entity 000000fb-0000-0228-0000-000100000018 {interpolation_duration:5,start_interpolation: 0, transformation: {left_rotation: [-0.42863855f, -0.38786948f, 0.15667592f, 0.80079895f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [15.000001f, 15.000001f, 15.000009f], translation: [0.1794486f, -12.988902f, -0.07877064f]}}

@@ -1,21 +1,11 @@
 {
   "display": {
     "icon": {
-      "id": "minecraft:iron_sword",
-      "components": {
-        "minecraft:custom_model_data": {
-          "floats": [],
-          "flags": [
-            true
-          ],
-          "strings": []
-        },
-        "minecraft:item_model": "minecraft:sword/entangling_vine_of_despair/1"
-      },
+      "id": "minecraft:end_portal_frame",
       "count": 1
     },
     "title": {
-      "translate": "monument.icon.chapter_2",
+      "translate": "world_area.hidden_area",
       "color": "white",
       "bold": true,
       "italic": false

@@ -3,7 +3,7 @@
 execute as @s[tag=monsters.soul_tree_remnant] run function monsters:chapter_2/soul_tree_remnant/main
 function monsters:chapter_2/forest_messenger/main
 function monsters:chapter_2/forest_messenger/cocoon/main
-function monsters:chapter_2/forest_afterimage/main
+execute as @s[tag=monsters.elekiel] run function monsters:chapter_2/elekiel/main
 function monsters:chapter_2/broken_moon/main
 function monsters:chapter_1/abyssal_black_knight/main
 function monsters:chapter_3/corroder/main

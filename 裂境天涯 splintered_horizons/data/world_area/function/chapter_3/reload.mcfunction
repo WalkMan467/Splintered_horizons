@@ -1,0 +1,1 @@
+advancement revoke @a only world_area:chapter_3/finalitys_embrace_rift/in

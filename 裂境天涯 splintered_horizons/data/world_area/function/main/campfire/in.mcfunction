@@ -1,5 +1,6 @@
-title @s title ["",{"text":"☀","color":"gold"},{"text":"營火","underlined":true,"color":"gold"},{"text":"☀","color":"gold"}]
-title @s subtitle [{"text":"☀","color":"gold"},{"text":"Campfire","italic":true,"underlined":true,"color":"gold"},{"text":"☀","color":"gold"}]
+title @s title ["",{"text":"☀","color":"gold"},{"translate":"block.minecraft.campfire","underlined":true,"color":"gold"},{"text":"☀","color":"gold"}]
+title @s subtitle [{"text":""},{"text":"《","bold":true,"color":"gold"},{"translate":"world_area.respawn_point","bold":true,"color":"gold"},{"text":"》","bold":true,"color":"gold"}]
+
 title @s times 20 20 20
 
 stopsound @s voice minecraft:voice.join_game

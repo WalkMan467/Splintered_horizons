@@ -1,0 +1,2 @@
+execute as @a at @s if function monsters:chapter_2/elekiel/1/block run function monsters:chapter_2/elekiel/1/crack/true
+execute as @a at @s unless function monsters:chapter_2/elekiel/1/block run function monsters:chapter_2/elekiel/1/crack/false

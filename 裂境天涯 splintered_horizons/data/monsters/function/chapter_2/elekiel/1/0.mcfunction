@@ -1,0 +1,9 @@
+execute as @e[type=#dummy_mob,tag=aj.global.camera] at @s if biome ~ ~ ~ world_area:chapter_2/bossfight/normal run tp @s ~ ~ ~1000
+execute as @e[type=item_display,tag=aj.global.root] at @s if biome ~ ~ ~ world_area:chapter_2/bossfight/normal run tp @s ~ ~ ~1000
+execute as @e[type=area_effect_cloud,tag=monster.elekiel.3.player_pos.save] at @s if biome ~ ~ ~ world_area:chapter_2/bossfight/normal run tp @s ~ ~ ~1000
+execute as 00000015-0000-0002-0000-003700000080 at @s if biome ~ ~ ~ world_area:chapter_2/bossfight/normal run tp @s ~ ~ ~1000
+
+execute as @a at @s if biome ~ ~ ~ #world_area:chapter_2_bossfight run advancement grant @s only monsters:chapter_2/elekiel/1/battlefield/fire
+
+execute if biome ~ ~ ~ world_area:chapter_2/bossfight/normal run tp @s 912 60 3018
+execute if biome ~ ~ ~ world_area:chapter_2/bossfight/normal run data modify entity @s NoAI set value 1b

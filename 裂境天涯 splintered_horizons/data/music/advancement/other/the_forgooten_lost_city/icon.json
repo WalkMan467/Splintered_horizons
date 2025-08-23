@@ -1,14 +1,11 @@
 {
   "display": {
     "icon": {
-      "id": "minecraft:ender_eye",
-      "components": {
-        "minecraft:item_model": "eye_of_the_end"
-      },
+      "id": "minecraft:sculk",
       "count": 1
     },
     "title": {
-      "translate": "world_area.icon.other.the_forgooten_lost_city",
+      "translate": "world_area.icon.other.the_forgotten_lost_city",
       "bold": true
     },
     "description": "",

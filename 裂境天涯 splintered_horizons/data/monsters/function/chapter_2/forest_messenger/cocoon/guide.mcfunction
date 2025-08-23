@@ -11,7 +11,7 @@ scoreboard players operation #detect monster.forest_messenger.cocoon.id = @s mon
 execute as @e[type=block_display,tag=monster.forest_messenger.cocoon] if score @s monster.forest_messenger.cocoon.id = #detect monster.forest_messenger.cocoon.id run tag @s add monster.forest_messenger.cocoon.tp
 execute as @e[scores={monster.forest_messenger.user=1..},limit=1,tag=!monster.forest_messenger.cocoon.user_temp,type=!player] if score @s monster.forest_messenger.cocoon.id = @e[type=item_display,tag=monster.forest_messenger.cocoon.main,tag=mid,limit=1] monster.forest_messenger.cocoon.id run tag @s add monster.forest_messenger.cocoon.user_temp
 
-execute as @e[type=block_display,tag=monster.forest_messenger.cocoon] if score @s monster.forest_messenger.cocoon.id = @e[tag=monster.forest_messenger.cocoon.user_temp,limit=1,tag=monster.forest_messenger.1.actived] monster.forest_messenger.cocoon.id run function monsters:chapter_2/forest_messenger/cocoon/tp/use
+execute as @e[type=block_display,tag=monster.forest_messenger.cocoon] if score @s monster.forest_messenger.cocoon.id = @e[tag=monster.forest_messenger.cocoon.user_temp,limit=1,tag=monster.forest_messenger.1.actived] monster.forest_messenger.cocoon.id at @s run function monsters:chapter_2/forest_messenger/cocoon/tp/raycast/use
 
 
 # 繭位置定位

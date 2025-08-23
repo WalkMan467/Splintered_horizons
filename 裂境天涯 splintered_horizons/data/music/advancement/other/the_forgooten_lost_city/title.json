@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "id": "minecraft:shroomlight",
+      "id": "minecraft:pearlescent_froglight",
       "count": 1
     },
     "title": [
@@ -18,7 +18,7 @@
         "italic": false
       },
       {
-        "translate": "music.disease",
+        "translate": "music.balefire",
         "color": "white",
         "bold": true,
         "italic": false,
@@ -39,7 +39,7 @@
         "italic": false
       },
       {
-        "translate": "music.producer",
+        "translate": "music.scott_buckley",
         "color": "white"
       }
     ],

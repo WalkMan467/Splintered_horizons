@@ -5,6 +5,7 @@
     "world_area:main/safe_zone",
     "world_area:main/game_lobby",
     "world_area:other/abyss_forest",
-    "world_area:other/land_of_the_trials"
+    "world_area:other/land_of_the_trials",
+    "#world_area:chapter_2_bossfight"
   ]
 }
