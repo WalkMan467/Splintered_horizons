@@ -8,6 +8,7 @@ tp @s ~ ~ ~ ~ ~
 execute at @s on passengers run rotate @s ~ ~
 data modify entity @s teleport_duration set value 1
 execute on passengers run data modify entity @s teleport_duration set value 1
+execute on passengers if entity @s[nbt={item: {id: "minecraft:iron_sword"}},type=minecraft:item_display] run data merge entity @s {brightness: {block: 15, sky: 15}, item: {components: {"minecraft:custom_model_data": {flags: [1b]}, "minecraft:item_model": "minecraft:sword/light_of_water_mirror/1"}, count: 1, id: "minecraft:iron_sword"}}
 rotate @s ~ 0
 tag @s remove aj.new
 execute on passengers run tag @s remove aj.new
