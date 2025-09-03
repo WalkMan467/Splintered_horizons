@@ -1,0 +1,1 @@
+execute as @a[tag=armor.black_hole.animation.boots.player] run spectate @n[tag=aj.stellar_animation.camera,type=item_display]

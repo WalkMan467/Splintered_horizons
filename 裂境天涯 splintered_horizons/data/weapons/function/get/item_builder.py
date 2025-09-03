@@ -13,14 +13,14 @@
 attribute = []
 # ----- 設定參數 ----- #
 
-name = ['夜幕', '#b30000', '劍']
-story = {'info': ['誕生於森林月光之下的武器，', '守護著森林的夜晚，', '因為力量來原本是深淵，', '在最終決戰之後力量徹底的進化。'], 'color': 'blue'}
-item_data     = {'real_item': 'stone_sword', 'id': 'nightfall', 'item_model': '"sword/nightfall/1"', 'custom_data': '{rc:1b,type:"sword",rarity:"epic",weapon:"nightfall"}', 'max_damage': -1, 'rc': True, 'other': ['minecraft:enchantments={"weapons:type/sword/nightfall/0":1}', 'enchantment_glint_override=false', 'tooltip_display={hidden_components:["enchantments"]}', 'tooltip_style="epic"']}
-skill    = {'is_skill': True, 'cd': 5, 'name': ['赤月之力', 'dark_red', 'red'], 'info': ['使用 [%s] 切換 半月 / 血月 狀態', '每次切換型態時，', '立即對 4 格範圍內敵人造成 5 次 150% 攻擊力的一般傷害']}
-passive_skills    = {'is_passive_skills': True, 'cd': 0, 'name': ['煉獄之斬', 'dark_red', 'red'], 'info': ['攻擊怪物獲得 1 層【血月恩賜】','累積 8 層自身 加速I (00:02)','並對 1.5 ~ 4 格內敵人 造成 250% 基礎傷害','與給予自身 【至深之暗】符文 (00:10)','當武器處於血月狀態時自身血量越低造成傷害越高','但是有 25% 機率 恢復 4 點血量與額外造成 250 攻擊力真實傷害','當武器處於半月狀態下血量越高傷害越高','但是有 25% 機率 消耗 4 點血量與額外造成 250 攻擊力真實傷害']}
+name = ['變形異獸', '#b30000', '鐮刀']
+story = {'info': ['來自異世界的武器', '可以隨意變換 3 種攻擊型態','目前漂流於新世界'], 'color': 'blue'}
+item_data     = {'real_item': 'stone_sword', 'id': 'morphaeast', 'item_model': '"sword/nightfall/1"', 'custom_data': '{rc:1b,type:"scythe",rarity:"rare",weapon:"morphaeast"}', 'max_damage': -1, 'rc': True, 'other': ['tooltip_style="epic"','custom_model_data={floats:[1]}']}
+skill    = {'is_skill': True, 'cd': 5, 'name': ['變形', 'dark_red', 'red'], 'info': ['使用 [%s] 切換 鐮刀 / 劍 / 斧頭 型態', '每次切換的型態會獲得特殊該型態特殊增益', '並且使你獲得 [%s] 持續 5 秒']}
+passive_skills    = {'is_passive_skills': True, 'cd': 0, 'name': ['異獸之刃', 'dark_red', 'red'], 'info': ['切換鐮刀型態時:','獲得 加速I (00:02)','切換斧頭型態時:','給予自身 吸收II (00:10)','切換連劍型態時:','獲得 力量I (00:05)']}
 ultimate    = {'is_ultimate': False, 'cd': 5, 'name': ['終焉之月', '#b30000', '#5a0000'], 'info': ['右鍵點擊消耗一個終焉之眼，', '開啟【終焉之月】型態持續 15 秒', '大幅強化武器，', '此形態下如果攻擊會有25%機率造成大量傷害']}
 attribute.append({'attribute': 'attack_damage', 'value': 4, 'slot': 'mainhand', 'operation': 'add_value'})
-attribute.append({'attribute': 'attack_speed', 'value': -2.5, 'slot': 'mainhand', 'operation': 'add_value'})
+attribute.append({'attribute': 'attack_speed', 'value': -2, 'slot': 'mainhand', 'operation': 'add_value'})
 
 # ----- init ----- #
 

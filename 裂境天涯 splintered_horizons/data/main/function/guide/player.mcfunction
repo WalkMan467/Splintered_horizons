@@ -2,6 +2,10 @@
 function story:tick
 function items:timer_t
 
+# 椅子
+execute as @e[tag=system.sit_down,type=interaction,distance=..15] at @s run function system:sit_down/interaction/main
+
+
 # 武器
 
 function weapons:type/core/player

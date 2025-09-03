@@ -61,5 +61,6 @@ scoreboard objectives add monster.elekiel.3.player_pos.save.timer dummy "[怪物
 scoreboard objectives add monster.elekiel.3.timer dummy "[怪物] 伊萊克爾 末世之鐘 計時器"
 
 scoreboard objectives add monster.elekiel.skill dummy "[怪物] 伊萊克爾 所有技能 CD"
+scoreboard objectives add monster.elekiel.player_die deathCount "[怪物] 伊萊克爾 玩家死亡偵測"
 
 # ===============================================================================

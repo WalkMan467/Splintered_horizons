@@ -6,6 +6,10 @@ function animated_java:aska/remove/all
 function animated_java:oceanid/remove/all
 function animated_java:kyle/remove/all
 
+weather clear
+
+scoreboard objectives setdisplay sidebar player.death_count
+
 
 schedule clear cutscene:opening/0/0
 schedule clear cutscene:opening/0/1

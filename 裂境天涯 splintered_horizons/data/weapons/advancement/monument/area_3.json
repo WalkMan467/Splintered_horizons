@@ -1,0 +1,45 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:stone_sword",
+      "components": {
+        "minecraft:custom_data": {
+          "weapon": "infernal_blaze"
+        },
+        "minecraft:item_model": "sword/infernal_blaze/1"
+      },
+      "count": 1
+    },
+    "title": {
+      "translate": "weapon.monument.pyrosolis"
+    },
+    "description": "",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "weapons:monument/area_2",
+  "criteria": {
+    "requirements": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:stone_sword",
+            "count": {
+              "min": 1
+            },
+            "predicates": {
+              "minecraft:custom_data": {
+                "monument": 3
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "weapons:monument/area_3"
+  }
+}

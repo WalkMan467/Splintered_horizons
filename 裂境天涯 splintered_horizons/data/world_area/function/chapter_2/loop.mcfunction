@@ -40,4 +40,9 @@
     execute if entity @s[gamemode=!spectator] if biome ~ ~ ~ world_area:chapter_2/temple_of_light run advancement grant @s only world_area:chapter_2/temple_of_light/in
     execute unless biome ~ ~ ~ world_area:chapter_2/temple_of_light run advancement grant @s only world_area:chapter_2/temple_of_light/out
 
+    # 光之神殿 (BOSS戰區域)
+    
+    execute if entity @s[gamemode=!spectator] if biome ~ ~ ~ world_area:chapter_2/bossfight/normal run advancement grant @s only world_area:chapter_2/temple_of_light/bossfight/in
+    execute unless biome ~ ~ ~ world_area:chapter_2/bossfight/normal run advancement grant @s only world_area:chapter_2/temple_of_light/bossfight/out
+
     function world_area:chapter_2/dusks_fractured_maw/main

@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:iron_sword",
+      "components": {
+        "minecraft:item_model": "sword/light_of_water_mirror/1",
+        "minecraft:custom_model_data": {
+          "flags": [
+            true
+          ]
+        }
+      },
+      "count": 1
+    },
+    "title": {
+      "translate": "story.timeline.aoteb.icon",
+      "fallback": "劍魔滅世",
+      "bold": true,
+      "italic": false,
+      "underlined": false
+    },
+    "description": [
+      {
+        "translate": "story.timeline.aoteb.1",
+        "fallback": "此地圖前作「劍魔滅世」的舊世界時間線，講述魔劍、執政官、深淵與世界樹的故事"
+      }
+    ],
+    "background": "minecraft:gui/advancements/backgrounds/end_stone",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "story:icon/timeline/icon",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

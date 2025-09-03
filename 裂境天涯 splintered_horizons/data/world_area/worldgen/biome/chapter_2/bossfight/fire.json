@@ -7,9 +7,17 @@
     "fog_color": 6109542,
     "sky_color": 6109542,
     "water_color": 6109542,
-    "water_fog_color": 6109542
+    "water_fog_color": 6109542,
+    "grass_color": 9409680,
+    "foliage_color": 9409680,
+    "particle": {
+      "options": {
+        "type": "minecraft:white_ash"
+      },
+      "probability": 0.05
+    }
   },
-  "has_precipitation": true,
+  "has_precipitation": false,
   "temperature": 0.5,
   "features": [
     []

@@ -16,6 +16,7 @@ execute unless items entity @s armor.feet *[custom_data~{black_hole:1b} | custom
 
 execute if score @s armor.black_hole.boots.active matches 1.. unless score @s armor.black_hole.boots.cd matches 1.. run function armors:type/black_hole/boots/main
 function armors:type/tai_chis_shadow/main
+function armors:type/black_hole/animation/boots/main
 
 
 # ===================================================

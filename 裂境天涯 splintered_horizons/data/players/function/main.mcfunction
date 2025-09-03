@@ -3,6 +3,7 @@ function players:detect/main
 function players:auto_crafting/main
 function players:bow_detect
 function players:crossbow_detect
+function players:slow_time/main
 
 execute if score @s player.give.item.delay matches 1 run function players:give_item
 

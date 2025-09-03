@@ -1,10 +1,12 @@
 ## ---開頭--- ##
 
     # Detect
-    execute positioned 926.50 166.98 909.50 store result score #story.chapter_2.campfire.1 global.main if entity @a[distance=..6,gamemode=!spectator]
+    execute positioned 807 201 149 store result score #story.chapter_2.campfire.1 global.main if entity @a[distance=..6,gamemode=!spectator]
+
+    execute positioned 807 201 149 as @n[tag=aj.rainy_night.root,limit=1,distance=..10,type=item_display] at @s facing entity @p[distance=..6] eyes run rotate @s ~ 0
 
     # If true;
-    execute positioned 926.50 166.98 909.50 if score #story.chapter_2.campfire.1 global.main matches 1 if score #story.chapter_2.campfire.1_temp global.main matches 0 run function story:chapter_2/campfire/1/true
+    execute positioned 807 201 149 if score #story.chapter_2.campfire.1 global.main matches 1 if score #story.chapter_2.campfire.1_temp global.main matches 0 run function story:chapter_2/campfire/1/true
 
     # Else
-    execute positioned 926.50 166.98 909.50 if score #story.chapter_2.campfire.1 global.main matches 0 if score #story.chapter_2.campfire.1_temp global.main matches 1 run function story:chapter_2/campfire/1/false
+    execute positioned 807 201 149 if score #story.chapter_2.campfire.1 global.main matches 0 if score #story.chapter_2.campfire.1_temp global.main matches 1 run function story:chapter_2/campfire/1/false

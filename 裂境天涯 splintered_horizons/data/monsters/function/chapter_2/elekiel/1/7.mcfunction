@@ -3,7 +3,8 @@ execute positioned 912 60 3018 as @e[type=item_display,tag=aj.global.root,distan
 execute positioned 912 60 3018 as @e[type=area_effect_cloud,tag=monster.elekiel.3.player_pos.save,distance=..60] at @s if biome ~ ~ ~ world_area:chapter_2/bossfight/fire run tp @s ~ ~ ~-1000
 execute positioned 912 60 3018 as 00000015-0000-0002-0000-003700000080 at @s if biome ~ ~ ~ world_area:chapter_2/bossfight/fire run tp @s ~ ~ ~-1000
 
-
+execute positioned 912 60 3018 as @e[type=minecraft:experience_orb,distance=..60] at @s if biome ~ ~ ~ world_area:chapter_2/bossfight/fire run kill @s
+execute positioned 912 60 3018 as @e[type=#arrows,distance=..60] at @s if biome ~ ~ ~ world_area:chapter_2/bossfight/fire run kill @s
 
 execute positioned 912 60 3018 as @e[tag=monsters.chapter_2.elekiel.1.tree.monsters,type=!#minecraft:dummy_mob,distance=..60] at @s if biome ~ ~ ~ world_area:chapter_2/bossfight/fire run function monsters:chapter_2/elekiel/1/void
 execute positioned 912 60 3018 as @e[tag=monsters.soul_tree_remnant,type=!#minecraft:dummy_mob,distance=..60] at @s if biome ~ ~ ~ world_area:chapter_2/bossfight/fire run function monsters:chapter_2/elekiel/1/void

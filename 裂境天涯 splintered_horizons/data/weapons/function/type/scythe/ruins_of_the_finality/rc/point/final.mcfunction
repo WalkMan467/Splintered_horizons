@@ -1,5 +1,6 @@
 summon area_effect_cloud ^ ^ ^ {custom_particle:{type:"block",block_state:"air"},Radius:0,Duration:1,Tags:["weapon.ruins_of_the_finality.effect.chain.final.point"]}
 
+
 function particle:space_crack/use
 
 kill @e[tag=weapons.ruins_of_the_finality.adsorption.point]

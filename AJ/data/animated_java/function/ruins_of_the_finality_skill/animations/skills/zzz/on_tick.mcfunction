@@ -5,5 +5,5 @@ execute if score @s aj.tween_duration matches 0 on passengers run data modify en
 data remove storage aj:temp args
 execute store result storage aj:temp args.frame int 1 run scoreboard players get @s aj.skills.frame
 function animated_java:ruins_of_the_finality_skill/animations/skills/zzz/apply_frame with storage aj:temp args
-execute if score @s aj.skills.frame matches 35.. run return run function animated_java:ruins_of_the_finality_skill/animations/skills/pause
+execute if score @s aj.skills.frame matches 26.. run return run function animated_java:ruins_of_the_finality_skill/animations/skills/pause
 scoreboard players add @s aj.skills.frame 1

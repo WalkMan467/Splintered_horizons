@@ -5,6 +5,7 @@ scoreboard players remove @s[scores={weapon.ruins_of_the_finality.cd=1..}] weapo
 scoreboard players remove @s[scores={weapon.nightfall.cd=1..}] weapon.nightfall.cd 1
 scoreboard players remove @s[scores={weapon.aquilumera.cd=1..}] weapon.aquilumera.cd 1
 scoreboard players remove @s[scores={weapon.echo_rhythm.cd=1..}] weapon.echo_rhythm.cd 1
+scoreboard players remove @s[scores={weapon.morphaeast.cd=1..}] weapon.morphaeast.cd 1
 
 # # 風力劍
 # tellraw @s[scores={weapon.wind_sword.cd=1}] [{"text":"[","color":"green","bold":true},{"translate":"weapon.wind_sword","color":"dark_green","bold":true},{"text":"] ","color":"green","bold":true},{"translate":"weapon.cd_completed","color":"green","bold":true}]

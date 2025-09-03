@@ -7,9 +7,15 @@
     "fog_color": 12171705,
     "sky_color": 12171705,
     "water_color": 12171705,
-    "water_fog_color": 12171705
+    "water_fog_color": 12171705,
+    "particle": {
+      "options": {
+        "type": "minecraft:firefly"
+      },
+      "probability": 0.01
+    }
   },
-  "has_precipitation": true,
+  "has_precipitation": false,
   "temperature": 0.5,
   "features": [
     []

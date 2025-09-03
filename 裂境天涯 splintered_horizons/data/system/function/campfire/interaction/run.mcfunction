@@ -1,5 +1,5 @@
-execute on target at @s if block ~ ~ ~ #air run spawnpoint @s ~ ~ ~
-execute on target at @s unless block ~ ~ ~ #air run spawnpoint @s ~ ~1 ~
+execute on target at @s align xz positioned ~0.5 ~ ~0.5 if block ~ ~ ~ #air run function system:campfire/the_last_campfire/summon
+execute on target at @s align xz positioned ~0.5 ~ ~0.5 unless block ~ ~ ~ #air positioned ~ ~1 ~ run function system:campfire/the_last_campfire/summon
 
 execute on target at @s run tellraw @s {"translate":"system.campfire.spawnpoint","color":"dark_green"}
 

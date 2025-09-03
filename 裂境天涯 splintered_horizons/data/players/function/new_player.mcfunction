@@ -18,6 +18,19 @@ advancement grant @s only story:icon/story/chapter_1
 advancement grant @s only world_area:main/environment_particles/true
 advancement revoke @s only story:icon/story/chapter_1/scebe_1
 
+attribute @s waypoint_receive_range base set 0
+attribute @s waypoint_transmit_range base set 0
+
+summon marker 38 64 11 {Tags:["system.campfire.the_last_campfire.point","summon"]}
+tag @s add system.campfire.the_last_campfire.target
+scoreboard players operation @n[tag=system.campfire.the_last_campfire.point,tag=summon] system.campfire.the_last_campfire.point = @p[tag=system.campfire.the_last_campfire.target] player.id
+tag @s remove system.campfire.the_last_campfire.target
+tag @n[tag=system.campfire.the_last_campfire.point,tag=summon,type=marker] remove summon
+
+
+scoreboard players add @s story.click_event.trigger 0
+scoreboard players enable @s story.click_event.trigger
+
 function #main:scoreboard
 function music:remove_bgn_icon
 function weapons:remove_weapons_icon

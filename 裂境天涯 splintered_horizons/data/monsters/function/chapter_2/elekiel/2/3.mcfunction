@@ -4,4 +4,4 @@ execute as @e[type=text_display,tag=monsters.elekiel.2.vampire_flower.timer,tag=
 execute as @a[tag=!monsters.elekiel.2.vampire_flower.target] run attribute @s max_health modifier remove monsters.elekiel.2.vampire_flower.health
 
 execute unless entity @p[tag=monsters.elekiel.2.vampire_flower.target] run return 0
-execute as @a[tag=monsters.elekiel.2.vampire_flower.target] at @s run function monsters:chapter_2/elekiel/2/vampire_flower/run
+execute as @a[tag=monsters.elekiel.2.vampire_flower.target,tag=!chapter_2.elekiel.lose] at @s run function monsters:chapter_2/elekiel/2/vampire_flower/run

@@ -1,8 +1,4 @@
 # @s = all entities
-execute unless score #difficulty global.main matches 1.. run kill @s[tag=monster.marker,type=marker]
-
-# 椅子
-execute as @s[tag=system.sit_down,type=interaction] run function system:sit_down/interaction/main
 
 # 裝備
 execute as @s[type=!#dummy_mob,type=!player] at @s run function armors:type/black_hole/boots/effect/main
@@ -20,5 +16,5 @@ function monsters:main
 execute as @s[type=silverfish] run function spawner:main
 
 # 其他
-execute as @s[type=interaction] run function system:campfire/interaction/main
+execute as @s[type=interaction,tag=system.campfire] run function system:campfire/interaction/main
 

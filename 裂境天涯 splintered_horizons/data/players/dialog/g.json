@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:multi_action",
+  "inputs": [],
+  "can_close_with_escape": true,
+  "pause": true,
+  "title": {
+    "translate": "menu.quick_actions.title"
+  },
+  "actions": [
+    {
+      "label": {
+        "translate": "test",
+        "click_event": {
+          "action": "run_command",
+          "command": "time set day"
+        }
+      },
+      "width": 300
+    }
+  ]
+}

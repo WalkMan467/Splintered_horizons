@@ -2,6 +2,7 @@
     "values": [
       "weapons:type/sword/grip_of_withering/detect",
       "weapons:type/sword/nightfall/detect",
+      "weapons:type/scythe/morphaeast/detect",
       "weapons:type/arrows/bow_setup/use"
     ]
   }

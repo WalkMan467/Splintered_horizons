@@ -9,7 +9,6 @@ advancement revoke @a only players:new_player
 
 clear @s
 gamemode survival @a
-advancement revoke @a only players:new_player
 time set midnight
 weather clear
 difficulty normal
@@ -17,6 +16,12 @@ kill @e[tag=system.monument_point.sword]
 
 scoreboard players set #monument.area_1 global.main 0
 scoreboard players set #monument.area_2 global.main 0
+scoreboard players set #monument.area_3 global.main 0
+scoreboard players set #monument.area_4 global.main 0
+scoreboard players set #monument.area_5 global.main 0
+scoreboard players set #monument.area_6 global.main 0
+scoreboard players set #monument.area_7 global.main 0
+scoreboard players set #monument.area_8 global.main 0
 
 scoreboard players set story.chapter_2.in_safe_zone.ml story.chapter_2 0
 

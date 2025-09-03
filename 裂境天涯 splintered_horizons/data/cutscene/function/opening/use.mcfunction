@@ -8,6 +8,10 @@ function cutscene:opening/remove_camera
 function animated_java:aska/remove/all
 function animated_java:oceanid/remove/all
 
+weather clear
+
+scoreboard objectives setdisplay sidebar
+
 schedule clear cutscene:opening/0/0
 schedule clear cutscene:opening/0/1
 schedule clear cutscene:opening/0/use

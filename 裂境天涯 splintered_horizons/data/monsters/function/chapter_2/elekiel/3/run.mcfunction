@@ -2,7 +2,7 @@ function monsters:chapter_2/elekiel/3/tp
 
 function monsters:chapter_2/elekiel/3/fx
 
-execute on target run tag @s add this
+execute on target run tag @s[tag=!chapter_2.elekiel.lose] add this
 execute as @e[type=area_effect_cloud,tag=monster.elekiel.3.player_pos.save,limit=1,tag=!this] if score @s monster.elekiel.3.player_pos.save.timer = @p[tag=this] player.id run tag @s add this
 
 execute on target if entity @s[tag=this] at @n[type=area_effect_cloud,tag=monster.elekiel.3.player_pos.save,tag=this] run tp @s ~ ~ ~

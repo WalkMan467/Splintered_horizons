@@ -1,12 +1,15 @@
 {
   "display": {
     "icon": {
-      "id": "minecraft:iron_sword",
+      "id": "minecraft:player_head",
       "components": {
-        "minecraft:item_model": "sword/light_of_water_mirror/1",
-        "minecraft:custom_model_data": {
-          "flags": [
-            true
+        "minecraft:profile": {
+          "name": "textures",
+          "properties": [
+            {
+              "name": "textures",
+              "value": "ewogICJ0aW1lc3RhbXAiIDogMTc1NjEwNDU3NzA5OCwKICAicHJvZmlsZUlkIiA6ICIyY2QyMTQwMGZmZDE0MDU3OWJiN2FlODEzNzUyMjBmNiIsCiAgInByb2ZpbGVOYW1lIiA6ICJCcnVoYUJydWgiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzdhZmIwYmQ1MjA2NDg4ZTI2MTZhNTMzYjMzMWM2MDVlNDAxMTNlZTM5NjIzMDc2ZGZjZTFkYWMzMGIzYTMxMCIKICAgIH0KICB9Cn0="
+            }
           ]
         }
       },

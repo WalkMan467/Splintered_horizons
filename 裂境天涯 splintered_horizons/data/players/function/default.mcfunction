@@ -4,6 +4,9 @@ function players:scoreboard
 
 scoreboard players set @s player.no_cd 0
 
+attribute @s minecraft:waypoint_transmit_range base set 0
+attribute @s minecraft:waypoint_receive_range base set 0
+
 scoreboard players add @s main.light_sensitivity 0
 scoreboard players add @s main.3d_dizziness 0
 

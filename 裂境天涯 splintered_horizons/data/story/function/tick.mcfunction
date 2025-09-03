@@ -2,6 +2,8 @@ function story:chapter_1/opening/1/main
 function story:chapter_1/opening/3/main
 function story:chapter_2/in_safe_zone/1/main
 function story:chapter_2/campfire/1/main
+function story:chapter_2/campfire/2/main
+function story:chapter_2/campfire/3/main
 function story:chapter_2/in_safe_zone/2/main
 execute as @e[type=text_display,tag=story.text_bubbles.main] at @s run function story:text_bubbles/main
 

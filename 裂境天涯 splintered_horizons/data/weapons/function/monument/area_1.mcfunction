@@ -1,5 +1,5 @@
-execute if score #monument.area_1 global.main matches 1 run return fail
-scoreboard players set #monument.area_1 global.main 1
+execute if score #weapons:monument/area_1 global.main matches 1 run return fail
+scoreboard players set #weapons:monument/area_1 global.main 1
 
 tellraw @a {"translate":"tips.monument.1"}
 tellraw @a {"translate":"tips.monument.2"}

@@ -1,0 +1,36 @@
+[
+  {
+    "function": "minecraft:set_custom_model_data",
+    "floats": {
+      "values": [
+        2
+      ],
+      "mode": "replace_all"
+    }
+  },
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "attribute": "minecraft:attack_damage",
+        "id": "minecraft:base_attack_damage",
+        "amount": 5,
+        "operation": "add_value",
+        "slot": "mainhand"
+      },
+      {
+        "attribute": "minecraft:attack_speed",
+        "id": "minecraft:base_attack_speed",
+        "amount": -3,
+        "operation": "add_value",
+        "slot": "mainhand"
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_model": "minecraft:netherite_axe"
+    }
+  }
+]

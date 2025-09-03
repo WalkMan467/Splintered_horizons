@@ -50,6 +50,11 @@ scoreboard objectives add weapon.ruins_of_the_finality.effect.count dummy "終�
 scoreboard objectives add weapon.ruins_of_the_finality.effect.count.delay dummy "終焉之墟 技能延遲"
 scoreboard objectives add weapon.ruins_of_the_finality.id dummy "終焉之墟 流水ID"
 
+scoreboard objectives add weapon.ruins_of_the_finality.blade.timer dummy "終焉之墟 斬擊計時器"
+scoreboard objectives add weapon.ruins_of_the_finality.blade.id dummy "終焉之墟 斬擊流水ID"
+scoreboard objectives add weapon.ruins_of_the_finality.blade.state dummy "終焉之墟 斬擊狀態"
+scoreboard objectives add weapon.ruins_of_the_finality.blade.animation dummy "終焉之墟 斬擊動畫狀態"
+
 scoreboard players add @a weapon.ruins_of_the_finality.effect.range 0
 scoreboard players add @a weapon.ruins_of_the_finality.effect.time 0
 scoreboard players add @a weapon.ruins_of_the_finality.cd 0
@@ -107,6 +112,16 @@ scoreboard objectives add weapon.echo_rhythm.cd dummy "回聲律動 CD"
 
 scoreboard players add @a weapon.echo_rhythm.cd 0
 #===================================================================
+# 變形異獸
+
+scoreboard objectives add weapon.morphaeast.state dummy "變形異獸狀態"
+scoreboard objectives add weapon.morphaeast.cd dummy "變形異獸 CD"
+
+scoreboard players add @a weapon.morphaeast.state 0
+scoreboard players add @a weapon.morphaeast.cd 0
+
+#===================================================================
+
 
 # 武器狀態
 
