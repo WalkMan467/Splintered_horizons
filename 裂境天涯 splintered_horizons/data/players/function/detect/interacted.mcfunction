@@ -4,3 +4,4 @@ function story:interacted
 function monsters:chapter_2/elekiel/interacted
 function monsters:bossfight/chapter_2/act/interacted
 function monsters:chapter_2/elekiel/bossfight/act/interacted
+function world_area:other/otherworld_portal/interacted

@@ -4,5 +4,5 @@ tag @s remove campfire
 
 kill 00000001-0000-0015-0000-003300000005
 kill @e[tag=story.chapter_1.opening.1]
-scoreboard players set story.chapter_1.ml story.chapter_1 1
+scoreboard players set story.chapter_1.campfire.1 story.chapter_1 1
 execute as @n[tag=aj.rainy_night.root,limit=1] run function animated_java:rainy_night/remove/this

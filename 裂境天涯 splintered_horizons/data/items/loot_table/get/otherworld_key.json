@@ -1,0 +1,81 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:firework_star",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "bold": true,
+                  "color": "dark_green",
+                  "italic": false,
+                  "translate": "item.otherworld_key"
+                },
+                "minecraft:lore": [
+                  {
+                    "color": "dark_gray",
+                    "italic": false,
+                    "translate": "item.otherworld_key.type"
+                  },
+                  {
+                    "color": "blue",
+                    "text": " "
+                  },
+                  {
+                    "color": "blue",
+                    "italic": false,
+                    "translate": "item.otherworld_key.story.1"
+                  },
+                  {
+                    "color": "blue",
+                    "italic": false,
+                    "translate": "item.otherworld_key.story.2"
+                  },
+                  {
+                    "color": "blue",
+                    "italic": false,
+                    "translate": "item.otherworld_key.story.3"
+                  },
+                  {
+                    "color": "blue",
+                    "italic": false,
+                    "translate": "item.otherworld_key.story.4"
+                  }
+                ],
+                "minecraft:attribute_modifiers": [
+                  {
+                    "id": "base_attack_damage",
+                    "type": "attack_damage",
+                    "amount": 0,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  }
+                ],
+                "minecraft:max_stack_size": 64,
+                "minecraft:unbreakable": {},
+                "minecraft:item_model": "otherworld_key",
+                "minecraft:custom_data": "{type:\"item\",item:\"otherworld_key\"}",
+                "minecraft:enchantments": {
+                  "minecraft:soul_speed": 1
+                },
+                "minecraft:tooltip_style": "legendary",
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers",
+                    "unbreakable",
+                    "enchantments"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

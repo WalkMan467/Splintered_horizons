@@ -18,7 +18,7 @@ advancement grant @s only story:icon/story/chapter_1
 advancement grant @s only world_area:main/environment_particles/true
 advancement revoke @s only story:icon/story/chapter_1/scebe_1
 
-attribute @s waypoint_receive_range base set 0
+attribute @s minecraft:waypoint_receive_range base reset
 attribute @s waypoint_transmit_range base set 0
 
 summon marker 38 64 11 {Tags:["system.campfire.the_last_campfire.point","summon"]}

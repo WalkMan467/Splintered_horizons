@@ -23,6 +23,8 @@ scoreboard players set #monument.area_6 global.main 0
 scoreboard players set #monument.area_7 global.main 0
 scoreboard players set #monument.area_8 global.main 0
 
+scoreboard players set #world_area.other.otherworld_portal.2.lock global.main 1
+
 scoreboard players set story.chapter_2.in_safe_zone.ml story.chapter_2 0
 
 scoreboard players set #story:icon/proper_noun/eye_of_finality global.main 0

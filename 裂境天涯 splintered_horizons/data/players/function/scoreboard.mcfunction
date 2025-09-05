@@ -7,23 +7,23 @@ scoreboard objectives add player.max_health dummy "[玩家] 最大血量"
 
 scoreboard objectives add player.hurt_time dummy "[玩家] 受傷時間"
 scoreboard objectives add player.ultimate dummy "[玩家] 終焉之眼CD"
-scoreboard objectives add player.coin dummy "[玩家] 擁有硬幣"
-scoreboard objectives add player.diamond dummy "[玩家] 擁有鑽石"
 scoreboard objectives add player.give.item.delay dummy "[玩家] 給予玩家物品延遲"
-scoreboard objectives add player.sidebar.hide dummy "[玩家] 側邊欄隱藏"
+scoreboard objectives add player.otherworld_key.count dummy "[玩家] 異界鑰匙數量"
 
 scoreboard objectives add player.death_count dummy [{"text":"💀","bold":true,"color":"red"},{"translate":"tips.player_death.3","bold":false,"color":"white"},{"text":"💀","bold":true,"color":"red"}]
 
 scoreboard players add @a player.ultimate 0
-scoreboard players add @a player.diamond 0
-scoreboard players add @a player.coin 0
 
 # ==================================================================================================
 
 # actionbar
 scoreboard objectives add player.actionbar.weapon.nightfall dummy "[玩家] actionbar 狀態機 夜幕技能顯示"
+scoreboard objectives add player.actionbar.otherworld_portal.1 dummy "[玩家] actionbar 狀態機 異界之門提示"
+scoreboard objectives add player.actionbar.otherworld_portal.2 dummy "[玩家] actionbar 狀態機 異界之門提示(未擁有鑰匙)"
 
 scoreboard players add @a player.actionbar.weapon.nightfall 0
+scoreboard players add @a player.actionbar.otherworld_portal.1 0
+scoreboard players add @a player.actionbar.otherworld_portal.2 0
 
 # ==================================================================================================
 # 其他

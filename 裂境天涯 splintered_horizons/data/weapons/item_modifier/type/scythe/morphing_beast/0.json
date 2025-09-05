@@ -30,7 +30,7 @@
   {
     "function": "minecraft:set_components",
     "components": {
-      "minecraft:item_model": "sickle/morphaeast/1"
+      "minecraft:item_model": "scythe/morphing_beast/1"
     }
   }
 ]

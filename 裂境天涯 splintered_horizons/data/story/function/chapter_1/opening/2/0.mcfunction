@@ -1,6 +1,6 @@
 function story:chapter_1/opening/stop
 
-scoreboard players set story.chapter_1.ml.2 story.chapter_1 1
+scoreboard players set story.chapter_1.campfire.1.2 story.chapter_1 1
 
 weather rain 120s
 

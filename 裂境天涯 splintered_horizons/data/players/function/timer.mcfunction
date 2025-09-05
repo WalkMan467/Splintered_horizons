@@ -5,5 +5,7 @@ scoreboard players remove @s[scores={player.disable.elytra_switch=1..}] player.d
 scoreboard players remove @s[scores={player.hurt_time=1..}] player.hurt_time 1
 scoreboard players remove @s[scores={player.actionbar.weapon.nightfall=1..}] player.actionbar.weapon.nightfall 1
 scoreboard players remove @s[scores={player.give.item.delay=1..}] player.give.item.delay 1
+scoreboard players remove @s[scores={player.actionbar.otherworld_portal.1=1..}] player.actionbar.otherworld_portal.1 1
+scoreboard players remove @s[scores={player.actionbar.otherworld_portal.2=1..}] player.actionbar.otherworld_portal.2 1
 
 function weapons:timer_t

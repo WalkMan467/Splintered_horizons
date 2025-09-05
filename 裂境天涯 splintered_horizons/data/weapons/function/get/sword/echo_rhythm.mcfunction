@@ -8,13 +8,13 @@ give @s stone_sword[item_name=[{"translate":"weapon.echo_rhythm","color":"#ffee0
 # "weapon.echo_rhythm.story.4" : "同時也埋藏了很多秘密。"
 # "weapon.echo_rhythm.skill" : "[潮汐音浪] "
 # "weapon.echo_rhythm.skill.1" : "攻擊有 30%機率觸發【回聲音爆】"
-# "weapon.echo_rhythm.skill.2" : "可對6格範圍內敵人造成一次攻擊力250%的基礎傷害"
+# "weapon.echo_rhythm.skill.2" : "可對6格範圍內敵人造成一次攻擊力 350%的基礎傷害"
 # "weapon.echo_rhythm.skill.3" : "如果玩家擁有【至暗】狀態"
-# "weapon.echo_rhythm.skill.4" : "會使【回聲音爆】造成傷害改為 攻擊力 250% 真實傷害"
+# "weapon.echo_rhythm.skill.4" : "會使【回聲音爆】造成傷害改為 攻擊力 350% 真實傷害"
 # "weapon.echo_rhythm.ultimate" : "[低音狂響] "
 # "weapon.echo_rhythm.ultimate.1" : "[%s]可以消耗一顆終焉之眼"
 # "weapon.echo_rhythm.ultimate.2" : "立即釋放【終焉音爆】"
-# "weapon.echo_rhythm.ultimate.3" : "對 8 格範圍內敵人造成 250% 真實傷害"
+# "weapon.echo_rhythm.ultimate.3" : "對 8 格範圍內敵人造成 350% 真實傷害"
 # "weapon.echo_rhythm.ultimate.4" : "並且附帶 3 秒緩速 50%"
 
 #name = ['回音律動', '#ffee00', '劍 / 神話']

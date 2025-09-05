@@ -114,11 +114,11 @@ scoreboard players add @a weapon.echo_rhythm.cd 0
 #===================================================================
 # 變形異獸
 
-scoreboard objectives add weapon.morphaeast.state dummy "變形異獸狀態"
-scoreboard objectives add weapon.morphaeast.cd dummy "變形異獸 CD"
+scoreboard objectives add weapon.morphing_beast.state dummy "變形異獸狀態"
+scoreboard objectives add weapon.morphing_beast.cd dummy "變形異獸 CD"
 
-scoreboard players add @a weapon.morphaeast.state 0
-scoreboard players add @a weapon.morphaeast.cd 0
+scoreboard players add @a weapon.morphing_beast.state 0
+scoreboard players add @a weapon.morphing_beast.cd 0
 
 #===================================================================
 
