@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-    "world_area:chapter_2/dusks_fractured_maw",
     "world_area:main/safe_zone",
     "world_area:main/game_lobby",
     "world_area:other/abyss_forest",

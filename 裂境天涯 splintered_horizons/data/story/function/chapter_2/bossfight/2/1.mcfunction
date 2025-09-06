@@ -1,6 +1,4 @@
- #水星初始離開太空站對話劇情
-
-#透過scoreboard story(dummy) + schedule 指令運行整個劇情
+ #透過scoreboard story(dummy) + schedule 指令運行整個劇情
 
 execute if score story.chapter_2.bossfight.ml.2 story.chapter_2 matches 1 run tellraw @a {"translate": "story.chapter_2.bossfight.ml.2.1","fallback": "［拉爾西斯］你擊敗我了，但難道你真的認為你能贏嗎?"}
 execute if score story.chapter_2.bossfight.ml.2 story.chapter_2 matches 2 run tellraw @a {"translate": "story.chapter_2.bossfight.ml.2.2","fallback": "［拉爾西斯］你根本擊敗不了深淵之主"}

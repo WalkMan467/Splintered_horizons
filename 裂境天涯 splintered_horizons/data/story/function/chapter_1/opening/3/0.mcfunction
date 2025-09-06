@@ -1,4 +1,4 @@
-scoreboard players set story.chapter_1.campfire.1.3 story.chapter_1 1
+scoreboard players set story.chapter_1.campfire.3 story.chapter_1 1
 
 advancement grant @s only story:icon/story/chapter_1/scebe_1
 advancement grant @s only story:icon/story/chapter_1

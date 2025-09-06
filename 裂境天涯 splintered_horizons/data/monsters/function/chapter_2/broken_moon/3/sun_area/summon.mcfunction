@@ -1,1 +1,0 @@
-summon area_effect_cloud 1721 101 882 {Tags:["monster.broken_moon.skill.3.player_sun"],Duration:101,custom_particle:{type:"block",block_state:"air"},Radius:0}
