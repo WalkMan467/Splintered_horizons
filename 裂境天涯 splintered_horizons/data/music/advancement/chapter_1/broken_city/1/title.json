@@ -49,7 +49,7 @@
     "announce_to_chat": false,
     "hidden": true
   },
-  "parent": "music:chapter_1/broken_city/icon",
+  "parent": "music:chapter_1/icon",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:impossible",

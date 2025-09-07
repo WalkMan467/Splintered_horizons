@@ -7,25 +7,25 @@ execute as @a run attribute @s minecraft:waypoint_transmit_range base set 0
 
 function music:main
 
-# 鉤爪輔助瞄準
+# Climbing claw assisted aiming
 function weapons:type/drop/hook/aim_assist/main
 function weapons:type/drop/hook/aim_assist/fx
 
-# 玩家快速替換物品功能
+# Player quick item swap functionality
 function players:replace/block/main
 function players:replace/torch/main
 function players:replace/food/main
 
-# 怪物 load
+# Monster load
 function monsters:load
 
-# 武器
+# Weapons
 schedule function weapons:type/core/main 1t
 
-# 微型太陽
+# Miniature Sun
 function weapons:type/drop/miniature_sun/rc/main
 
-# 計時器(1s)
+# Timer (1s)
 schedule function monsters:timer_s 1s
 schedule function main:timer/1s 1s
 schedule function armors:timer_s 1s
@@ -34,6 +34,6 @@ schedule function monsters:chapter_2/abyss_soulcutter/main 10t
 schedule function system:monument_point/main 1t
 schedule function system:forging_table/main 1t
 
-# 快捷欄切換
+# Hotbar switching
 
 schedule function hotbar_sound:guide 2t

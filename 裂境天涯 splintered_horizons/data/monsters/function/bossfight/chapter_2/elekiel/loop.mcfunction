@@ -2,7 +2,7 @@ schedule function monsters:bossfight/chapter_2/elekiel/loop 1t
 
 tag @a[tag=chapter_2.elekiel.lose] remove monsters.elekiel.2.vampire_flower.target
 
-# 偵測 BOSS 戰結束 ;移除玩家死亡偵測
+# Detect boss battle end; remove player death detection
 execute as @a unless score #boss_area.chapter_2.elekiel global.main matches 1.. run function monsters:bossfight/chapter_2/elekiel/reset_player_die
 execute unless score #boss_area.chapter_2.elekiel global.main matches 1.. run return 0
 

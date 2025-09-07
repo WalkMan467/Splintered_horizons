@@ -1,9 +1,9 @@
-# 終焉轉化
+# Finality Conversion
 
 scoreboard players remove @e[type=!player,type=!#minecraft:dummy_mob,scores={monster.effect.finality=0..}] monster.effect.finality 1
 scoreboard players reset @e[type=!player,type=!#minecraft:dummy_mob,scores={monster.effect.finality=-1}] monster.effect.finality
 
-# 計時器
+# Timer
 scoreboard players remove @e[type=text_display,scores={monster.elekiel.2.timer=0..}] monster.elekiel.2.timer 1
 scoreboard players remove @a[scores={monster.elekiel.2.player_timer=0..}] monster.elekiel.2.player_timer 1
 

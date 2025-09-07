@@ -1,4 +1,4 @@
-#透過scoreboard story(dummy) + schedule 指令運行整個劇情
+# The entire storyline is executed through the scoreboard story(dummy) combined with the schedule command
 
 execute positioned 765 146 992 if score story.chapter_2.in_safe_zone.ml.2 story.chapter_2 matches 1 run tellraw @a[distance=..16] [{"translate": "story.chapter_2.ml.12","fallback": "［蘇菲亞］你是...萊卡？"}]
 execute positioned 765 146 992 if score story.chapter_2.in_safe_zone.ml.2 story.chapter_2 matches 2 run tellraw @a[distance=..16] [{"translate": "story.chapter_2.ml.13","fallback": "［蘇菲亞］你不是在"},{"bold":true,"color":"gold","hoverEvent":{"action":"show_text","value":[{"translate":"story.icon.proper_noun","fallback":"[專有名詞]:","color":"white"},"\n",{"translate": "proper_noun.desc.2","fallback":"詳情請按","color":"white","bold":false,"italic":false},{"keybind": "key.advancements","color": "dark_green"},{"translate": "proper_noun.desc.3","fallback":"尋找對應內容","color":"white","bold":false,"italic":false}]},"italic":false,"translate":"story.icon.proper_noun.old_world","fallback": "舊世界","underlined":true},{"text": "已經死了嗎？","color": "white"}]

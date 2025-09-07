@@ -1,6 +1,5 @@
 schedule function monsters:bossfight/chapter_2/act/loop 2t
 
-## ---開頭--- ##
 scoreboard players add #bossfight.chapter_2.act global.main 0
 scoreboard players add #bossfight.chapter_2.act_temp global.main 0
 scoreboard players add #bossfight.chapter_2.act.setup global.main 0

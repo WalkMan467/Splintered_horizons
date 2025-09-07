@@ -1,20 +1,20 @@
 # @s = all entities
 
-# 裝備
+# Equipment
 execute as @s[type=!#dummy_mob,type=!player] at @s run function armors:type/black_hole/boots/effect/main
 
-# 實體存在時間計時器
+# Entity Lifetime Timer
 function main:duration/main
 
-# 傳送門
+# Portal
 function system:portal/loop
 
-# 怪物
+# Monsters
 function monsters:main
 
-# 生怪磚 (偵測 Silver Fish 位置，然後執行 function monsters:summon/<monsters> 跟 移除 Silver Fish)
+# Spawners (Detect the Silver Fish location, then execute 'function monsters:summon/<monsters>' and remove the Silver Fish)
 execute as @s[type=silverfish] run function spawner:main
 
-# 其他
+# Others
 execute as @s[type=interaction,tag=system.campfire] run function system:campfire/interaction/main
 

@@ -1,5 +1,7 @@
 scoreboard players set #story.chapter_1.campfire.2_temp global.main 1
 
+weather rain
+
 kill @e[tag=story.chapter_1.campfire.2]
 execute as @n[tag=aj.rainy_night.root,limit=1,distance=..3] run function animated_java:rainy_night/remove/this
 

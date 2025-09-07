@@ -1,2 +1,2 @@
-## 營火的區域顯示在這裡 [ function world_area:main/loop ]
+## The campfire area is shown here [ function world_area:main/loop ]
 execute as @s[tag=system.campfire,type=interaction] at @s if data entity @s interaction.timestamp run function system:campfire/interaction/run

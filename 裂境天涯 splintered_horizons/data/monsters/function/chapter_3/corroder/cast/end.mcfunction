@@ -1,9 +1,9 @@
 
-## ----- 重製 ----- ##
+## ----- Reset ----- ##
 scoreboard players reset @s monster.skill.casting
 
-# 標籤
+# Tags
 tag @s remove monsters.corroder.1
 
-# 隨機技能CD
+# Rdm Skill CS
 execute store result score @s monster.skill.cast.cd run random value 180..250

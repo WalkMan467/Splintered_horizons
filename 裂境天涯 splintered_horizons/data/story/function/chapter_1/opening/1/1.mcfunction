@@ -1,11 +1,11 @@
-#透過scoreboard story(dummy) + schedule 指令運行整個劇情
+# The entire storyline is executed through the scoreboard story(dummy) combined with the schedule command
 
 
 execute positioned 38 64 9 if score story.chapter_1.campfire.1 story.chapter_1 matches 1 run weather clear
 execute positioned 38 64 9 if score story.chapter_1.campfire.1 story.chapter_1 matches 1 run tellraw @a[distance=..16] {"translate": "story.chapter_1.campfire.1.1","fallback": "[？？？] 恩? 你醒了"}
 execute positioned 38 64 9 if score story.chapter_1.campfire.1 story.chapter_1 matches 2 run tellraw @a[distance=..16] {"translate": "story.chapter_1.campfire.1.2","fallback": "[你] 是你拯救了我嗎?"}
-execute positioned 38 64 9 if score story.chapter_1.campfire.1 story.chapter_1 matches 3 run tellraw @a[distance=..16] {"translate": "story.chapter_1.campfire.3","fallback": "[？？？] 是的"}
-execute positioned 38 64 9 if score story.chapter_1.campfire.1 story.chapter_1 matches 4 run tellraw @a[distance=..16] {"translate": "story.chapter_1.campfire.2","fallback": "[蘇菲亞] 初次見面，我叫蘇菲亞"}
+execute positioned 38 64 9 if score story.chapter_1.campfire.1 story.chapter_1 matches 3 run tellraw @a[distance=..16] {"translate": "story.chapter_1.campfire.1.3","fallback": "[？？？] 是的"}
+execute positioned 38 64 9 if score story.chapter_1.campfire.1 story.chapter_1 matches 4 run tellraw @a[distance=..16] {"translate": "story.chapter_1.campfire.1.4","fallback": "[蘇菲亞] 初次見面，我叫蘇菲亞"}
 execute positioned 38 64 9 if score story.chapter_1.campfire.1 story.chapter_1 matches 5 run tellraw @a[distance=..16] {"translate": "story.chapter_1.campfire.1.5","fallback": "[蘇菲亞] 在黑暗壟罩這個世界之後"}
 execute positioned 38 64 9 if score story.chapter_1.campfire.1 story.chapter_1 matches 6 run tellraw @a[distance=..16] {"translate": "story.chapter_1.campfire.1.6","fallback": "[蘇菲亞] 除了你以外，我已經很久很久沒看到其他人了"}
 execute positioned 38 64 9 if score story.chapter_1.campfire.1 story.chapter_1 matches 7 run tellraw @a[distance=..16] {"translate": "story.chapter_1.campfire.1.7","fallback": "[蘇菲亞] 你沉睡的時候，我恰好看到了你"}
@@ -31,19 +31,19 @@ execute positioned 38 64 9 if score story.chapter_1.campfire.1 story.chapter_1 m
 execute positioned 38 64 9 if score story.chapter_1.campfire.1 story.chapter_1 matches 27 run scoreboard players add story.chapter_1.campfire.1 story.chapter_1 1
 execute positioned 38 64 9 if score story.chapter_1.campfire.1 story.chapter_1 matches 28 run tellraw @a[distance=..16] {"translate": "story.chapter_1.campfire.1.28","fallback": "[你] 命運從未公平，留下我的，只有虛無與悲傷"}
 execute positioned 38 64 9 if score story.chapter_1.campfire.1 story.chapter_1 matches 29 run tellraw @a[distance=..16] {"translate": "story.chapter_1.campfire.1.29","fallback": "[你] 所以...我得重新收集魔劍"}
-execute positioned 38 64 9 if score story.chapter_1.campfire.1 story.chapter_1 matches 30 run tellraw @a[distance=..16] {"translate": "story.chapter_1.campfire.30","fallback": "[你] 不過這是一個非常漫長的旅途"}
-execute positioned 38 64 9 if score story.chapter_1.campfire.1 story.chapter_1 matches 31 run tellraw @a[distance=..16] {"translate": "story.chapter_1.campfire.31","fallback": "[蘇菲亞] 或許是命運捉弄了你..."}
-execute positioned 38 64 9 if score story.chapter_1.campfire.1 story.chapter_1 matches 32 run tellraw @a[distance=..16] {"translate": "story.chapter_1.campfire.32","fallback": "[蘇菲亞] 你的經歷讓我想起一名昔日的故人..."}
-execute positioned 38 64 9 if score story.chapter_1.campfire.1 story.chapter_1 matches 33 run tellraw @a[distance=..16] {"translate": "story.chapter_1.campfire.33","fallback": "[蘇菲亞] 但他已經不在了"}
-execute positioned 38 64 9 if score story.chapter_1.campfire.1 story.chapter_1 matches 34 run tellraw @a[distance=..16] {"translate": "story.chapter_1.campfire.34","fallback": "[蘇菲亞] 我們曾經也為了擊敗深淵貢獻出最終力量"}
-execute positioned 38 64 9 if score story.chapter_1.campfire.1 story.chapter_1 matches 35 run tellraw @a[distance=..16] {"translate": "story.chapter_1.campfire.35","fallback": "[蘇菲亞] 但最終與你一樣"}
-execute positioned 38 64 9 if score story.chapter_1.campfire.1 story.chapter_1 matches 36 run tellraw @a[distance=..16] {"translate": "story.chapter_1.campfire.36","fallback": "[蘇菲亞] 只剩下我，同時，我也背負著一股神秘的力量"}
-execute positioned 38 64 9 if score story.chapter_1.campfire.1 story.chapter_1 matches 37 run tellraw @a[distance=..16] {"translate": "story.chapter_1.campfire.37","fallback": "[蘇菲亞] 宇宙萬物總有盡頭，這是深淵與死亡力量的結合體"}
-execute positioned 38 64 9 if score story.chapter_1.campfire.1 story.chapter_1 matches 38 run tellraw @a[distance=..16] {"translate": "story.chapter_1.campfire.38","fallback": "[蘇菲亞] 名為 終焉之眼 的終極力量"}
-execute positioned 38 64 9 if score story.chapter_1.campfire.1 story.chapter_1 matches 39 run tellraw @a[distance=..16] {"translate": "story.chapter_1.campfire.39","fallback": "[蘇菲亞] 足以斬斷一切，但是力量太強會讓自身會受到反噬"}
-execute positioned 38 64 9 if score story.chapter_1.campfire.1 story.chapter_1 matches 40 run tellraw @a[distance=..16] {"translate": "story.chapter_1.campfire.20","fallback": "[蘇菲亞] 如果可以，我想與你同行"}
-execute positioned 38 64 9 if score story.chapter_1.campfire.1 story.chapter_1 matches 41 run tellraw @a[distance=..16] {"translate": "story.chapter_1.campfire.21","fallback": "[蘇菲亞] 或許你會需要一點裝備與食物"}
-execute positioned 38 64 9 if score story.chapter_1.campfire.1 story.chapter_1 matches 42 run tellraw @a[distance=..16] {"translate": "story.chapter_1.campfire.22","fallback": "[蘇菲亞] 如果你準備好了，我們就離開這裡吧"}
+execute positioned 38 64 9 if score story.chapter_1.campfire.1 story.chapter_1 matches 30 run tellraw @a[distance=..16] {"translate": "story.chapter_1.campfire.1.30","fallback": "[你] 不過這是一個非常漫長的旅途"}
+execute positioned 38 64 9 if score story.chapter_1.campfire.1 story.chapter_1 matches 31 run tellraw @a[distance=..16] {"translate": "story.chapter_1.campfire.1.31","fallback": "[蘇菲亞] 或許是命運捉弄了你..."}
+execute positioned 38 64 9 if score story.chapter_1.campfire.1 story.chapter_1 matches 32 run tellraw @a[distance=..16] {"translate": "story.chapter_1.campfire.1.32","fallback": "[蘇菲亞] 你的經歷讓我想起一名昔日的故人..."}
+execute positioned 38 64 9 if score story.chapter_1.campfire.1 story.chapter_1 matches 33 run tellraw @a[distance=..16] {"translate": "story.chapter_1.campfire.1.33","fallback": "[蘇菲亞] 但他已經不在了"}
+execute positioned 38 64 9 if score story.chapter_1.campfire.1 story.chapter_1 matches 34 run tellraw @a[distance=..16] {"translate": "story.chapter_1.campfire.1.34","fallback": "[蘇菲亞] 我們曾經也為了擊敗深淵貢獻出最終力量"}
+execute positioned 38 64 9 if score story.chapter_1.campfire.1 story.chapter_1 matches 35 run tellraw @a[distance=..16] {"translate": "story.chapter_1.campfire.1.35","fallback": "[蘇菲亞] 但最終與你一樣"}
+execute positioned 38 64 9 if score story.chapter_1.campfire.1 story.chapter_1 matches 36 run tellraw @a[distance=..16] {"translate": "story.chapter_1.campfire.1.36","fallback": "[蘇菲亞] 只剩下我，同時，我也背負著一股神秘的力量"}
+execute positioned 38 64 9 if score story.chapter_1.campfire.1 story.chapter_1 matches 37 run tellraw @a[distance=..16] {"translate": "story.chapter_1.campfire.1.37","fallback": "[蘇菲亞] 宇宙萬物總有盡頭，這是深淵與死亡力量的結合體"}
+execute positioned 38 64 9 if score story.chapter_1.campfire.1 story.chapter_1 matches 38 run tellraw @a[distance=..16] {"translate": "story.chapter_1.campfire.1.38","fallback": "[蘇菲亞] 名為 終焉之眼 的終極力量"}
+execute positioned 38 64 9 if score story.chapter_1.campfire.1 story.chapter_1 matches 39 run tellraw @a[distance=..16] {"translate": "story.chapter_1.campfire.1.39","fallback": "[蘇菲亞] 足以斬斷一切，但是力量太強會讓自身會受到反噬"}
+execute positioned 38 64 9 if score story.chapter_1.campfire.1 story.chapter_1 matches 40 run tellraw @a[distance=..16] {"translate": "story.chapter_1.campfire.1.40","fallback": "[蘇菲亞] 如果可以，我想與你同行"}
+execute positioned 38 64 9 if score story.chapter_1.campfire.1 story.chapter_1 matches 41 run tellraw @a[distance=..16] {"translate": "story.chapter_1.campfire.1.41","fallback": "[蘇菲亞] 或許你會需要一點裝備與食物"}
+execute positioned 38 64 9 if score story.chapter_1.campfire.1 story.chapter_1 matches 42 run tellraw @a[distance=..16] {"translate": "story.chapter_1.campfire.1.42","fallback": "[蘇菲亞] 如果你準備好了，我們就離開這裡吧"}
 execute if score story.chapter_1.campfire.1 story.chapter_1 matches 42 run scoreboard players set #story:icon/proper_noun/new_story global.main 1
 execute if score story.chapter_1.campfire.1 story.chapter_1 matches 42 run scoreboard players set #story:icon/character/sophia/icon global.main 1
 execute if score story.chapter_1.campfire.1 story.chapter_1 matches 42 run scoreboard players set #story:icon/character/sophia/story_1 global.main 1

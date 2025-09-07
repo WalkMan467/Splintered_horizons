@@ -1,5 +1,5 @@
-# 重製特定 BOSS 區域基本設置
+# Reset the basic settings of a specific BOSS area
     $function monsters:$(name)/kill
 
-    # Remove.
+    # Remove
     data remove storage death_temp name

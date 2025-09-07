@@ -1,4 +1,4 @@
-## ----- 怪物主程式 ----- ##
+## ----- Monster Main Program ----- ##
 
 execute as @s[tag=monsters.soul_tree_remnant] run function monsters:chapter_2/soul_tree_remnant/main
 function monsters:chapter_2/forest_messenger/main
@@ -12,19 +12,19 @@ execute as @s[tag=abyss_berserker] unless data entity @s {HurtTime:0s} run funct
 
 execute as @s[type=area_effect_cloud] at @s run function monsters:chapter_3/finality_creeper/main
 
-## ----- 偵測怪物死亡 ----- ##
+## ----- Detect monster death ----- ##
 
 function monsters:detect_kill/loop
 
-## ----- 怪物技能系統 ----- ##
-# 怪物即將施法提示(1s)
+## ----- Monster Skill System ----- ##
+# Monster is about to cast a spell (1s warning)
 execute as @s[tag=monster,scores={monster.skill.cast.cd=30},tag=!hide_skill_tip] run function monsters:unlease_skill_tip
 
-# 怪物技能CD冷卻
+# Monster skill cooldown
 scoreboard players remove @s[tag=monster,scores={monster.skill.cast.cd=0..},tag=!freeze] monster.skill.cast.cd 1
 
-# 怪物技能施法中
+# Monster skill is being cast
 scoreboard players add @s[tag=monster] monster.skill.casting 1
 
-# 技能沉默
+# Skill silenced
 scoreboard players remove @s[tag=monster,scores={monster.skill.silence=0..}] monster.skill.silence 1

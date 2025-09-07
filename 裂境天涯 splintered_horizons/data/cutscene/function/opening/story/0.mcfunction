@@ -1,4 +1,4 @@
-#透過scoreboard story(dummy) + schedule 指令運行整個劇情
+# The entire storyline is executed through the scoreboard story(dummy) combined with the schedule command
 
 # ========================================= #
 

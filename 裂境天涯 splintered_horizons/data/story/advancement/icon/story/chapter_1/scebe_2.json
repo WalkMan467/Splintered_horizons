@@ -15,27 +15,27 @@
       }
     },
     "title": {
-      "translate": "story.chapter_1.campfire.1.2.icon"
+      "translate": "story.chapter_1.campfire.2.icon"
     },
     "description": [
       {
-        "translate": "story.chapter_1.campfire.1.2.icon.disc.1",
+        "translate": "story.chapter_1.campfire.2.icon.disc.1",
         "color": "blue"
       },
       {
-        "translate": "story.chapter_1.campfire.1.2.icon.disc.2",
+        "translate": "story.chapter_1.campfire.2.icon.disc.2",
         "color": "blue"
       },
       {
-        "translate": "story.chapter_1.campfire.1.2.icon.disc.3",
+        "translate": "story.chapter_1.campfire.2.icon.disc.3",
         "color": "blue"
       },
       {
-        "translate": "story.chapter_1.campfire.1.2.icon.disc.4",
+        "translate": "story.chapter_1.campfire.2.icon.disc.4",
         "color": "blue"
       },
       {
-        "translate": "story.chapter_1.campfire.1.2.icon.disc.5",
+        "translate": "story.chapter_1.campfire.2.icon.disc.5",
         "color": "blue"
       }
     ],

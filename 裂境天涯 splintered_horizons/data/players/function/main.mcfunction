@@ -7,7 +7,7 @@ function players:slow_time/main
 
 execute if score @s player.give.item.delay matches 1 run function players:give_item
 
-# 平滑走方塊
+# Smooth walking of blocks
 execute unless predicate players:detect/input/sneak run attribute @s step_height base set 1
 execute if predicate players:detect/input/sneak run attribute @s step_height base reset
 

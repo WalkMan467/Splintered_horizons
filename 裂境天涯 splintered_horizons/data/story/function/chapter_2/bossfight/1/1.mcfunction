@@ -1,4 +1,4 @@
- #透過scoreboard story(dummy) + schedule 指令運行整個劇情
+ # The entire storyline is executed through the scoreboard story(dummy) combined with the schedule command
 
 execute if score story.chapter_2.bossfight.ml story.chapter_2 matches 1 run tellraw @a {"translate": "story.chapter_2.bossfight.ml.1","fallback": "［拉爾西斯］你果然還活著呀，救世主"}
 execute if score story.chapter_2.bossfight.ml story.chapter_2 matches 2 run tellraw @a {"translate": "story.chapter_2.bossfight.ml.2","fallback": "［拉爾西斯］但即便世界再度殞落為什麼仍像我揮劍"}

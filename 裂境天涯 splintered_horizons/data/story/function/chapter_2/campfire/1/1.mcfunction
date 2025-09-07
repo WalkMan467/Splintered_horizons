@@ -1,4 +1,4 @@
-#透過scoreboard story(dummy) + schedule 指令運行整個劇情
+# The entire storyline is executed through the scoreboard story(dummy) combined with the schedule command
 
 execute positioned 807 201 149 if score story.chapter_2.campfire.1 story.chapter_2 matches 1 run tellraw @a[distance=..16] [{"translate": "story.chapter_2.campfire.1.1","fallback": "[蘇菲亞] "},{"selector": "@a[distance=..6]","color": "dark_green"}," ",{"translate": "story.chapter_2.campfire.1.2","fallback": "我們到了"}]
 execute positioned 807 201 149 if score story.chapter_2.campfire.1 story.chapter_2 matches 2 run tellraw @a[distance=..16] {"translate": "story.chapter_2.campfire.1.3","fallback": "[蘇菲亞] 在前方危機危機四伏的洞穴最深處應該就是第二把魔劍的位置"}

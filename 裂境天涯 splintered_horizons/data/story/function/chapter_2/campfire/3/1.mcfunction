@@ -1,4 +1,4 @@
-#透過scoreboard story(dummy) + schedule 指令運行整個劇情
+# The entire storyline is executed through the scoreboard story(dummy) combined with the schedule command
 
 execute positioned 867 148 949 if score story.chapter_2.campfire.3 story.chapter_2 matches 1 run tellraw @a[distance=..16] {"translate": "story.chapter_2.campfire.3.1","fallback": "［蘇菲亞］看來我們越來越接近魔劍的位置了"}
 execute positioned 867 148 949 if score story.chapter_2.campfire.3 story.chapter_2 matches 2 run tellraw @a[distance=..16] {"translate": "story.chapter_2.campfire.3.2","fallback": "［蘇菲亞］昔日的櫻花之城，這裡曾經是我與萊卡的故鄉"}

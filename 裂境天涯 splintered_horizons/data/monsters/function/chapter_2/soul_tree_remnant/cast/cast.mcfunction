@@ -1,5 +1,5 @@
 
-## ----- 施法開始 ----- ##
+## ----- Casting begins ----- ##
 function monsters:-init/no_cast
 
 # Skill

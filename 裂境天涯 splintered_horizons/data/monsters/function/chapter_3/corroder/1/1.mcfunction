@@ -1,5 +1,3 @@
-# 警告
-
 # particle
 particle dust_color_transition{from_color:[1.000,0.000,0.000],scale:1.5,to_color:[0.561,0.290,0.114]} ^ ^1 ^1 0.25 0.25 0.25 0 5 force
 particle dust_color_transition{from_color:[1.000,0.000,0.000],scale:1.5,to_color:[0.561,0.290,0.114]} ^ ^1 ^2 0.25 0.25 0.25 0 5 force

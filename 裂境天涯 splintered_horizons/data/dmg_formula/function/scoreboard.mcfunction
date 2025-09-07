@@ -1,4 +1,4 @@
 scoreboard objectives add atk dummy
 
-#百分比倍率微調
+# Percentage rate fine-tuning
 scoreboard players set %math atk 100

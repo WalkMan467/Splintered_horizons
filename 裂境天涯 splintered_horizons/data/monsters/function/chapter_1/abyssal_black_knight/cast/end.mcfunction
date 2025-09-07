@@ -1,10 +1,10 @@
 
-## ----- 重製 ----- ##
+## ----- Reset ----- ##
 scoreboard players reset @s monster.skill.casting
 
-# 標籤
+# Tags
 tag @s remove chapter_1.abyssal_black_knight.1
 
-# 隨機技能CD
+# Rdm Skill CD
 
 execute store result score @s monster.skill.cast.cd run random value 160..260

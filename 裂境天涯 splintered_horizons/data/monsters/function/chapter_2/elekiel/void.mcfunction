@@ -1,4 +1,4 @@
-# 距離玩家過遠執行指令
+# Executing commands too far from the player
 
 execute as @a at @s run function monsters:bossfight/chapter_2/elekiel/reset_player_die
 

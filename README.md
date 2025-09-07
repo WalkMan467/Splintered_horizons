@@ -65,11 +65,11 @@ scoreboard players set @s world_area.broken_city 0
 ```hs
 # Guide
 
-    ## 導向到 [ function world_area:main/loop ]
+    ## Redirected to [ function world_area:main/loop ]
 
 #==================================================
 
-# 第一章
+# Chapter 1
 
     # 破碎之都
 
@@ -146,7 +146,7 @@ advancement revoke @s only world_area:chapter_1/broken_city/in
 10. world_area / 區域
 11. monsters / 所有怪物、BOSS
 
-## 特殊標籤
+## 特殊Tags
 
 ### 實體類型
 | 命名空間 | 名稱 | 包含內容 |
@@ -154,7 +154,7 @@ advancement revoke @s only world_area:chapter_1/broken_city/in
 | minecraft:     | dummy_mob     | area_effect_cloud, armor_stand, #minecraft:arrows, marker     |
 
 
-## 記分板、標籤等取名格式
+## 記分板、Tags等取名格式
 
 | 類別 | 命名格式 |
 | -------- | -------- |
@@ -243,12 +243,12 @@ execute if score @s effect.void matches 1 run function effects:void/false
 | 記分板 | 對應 |
 | -------- | -------- |
 | monsters.cast     | 怪物技能cd     |
-| monsters.casting     | 怪物技能施法中     |
+| monsters.casting     | 怪物技能Cast中     |
 
 | 通用function | 對應 |
 | -------- | -------- |
 | monsters:<namespace>/main     | 對應技能的Loop、怪物as跟at導向     |
-| monsters:<namespace>/main.monster     | 怪物施法     |
+| monsters:<namespace>/main.monster     | 怪物Cast     |
 | monsters:<namespace>/<skill_id>/use     | 給予對應技能tag     |
 | monsters:<namespace>/<skill_id>/main     | 對應技能loop     |
 | monsters:<namespace>/cast/cast     | 偵測技能並給予對應技能tag     |

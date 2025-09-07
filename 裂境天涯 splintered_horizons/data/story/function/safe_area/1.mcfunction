@@ -1,4 +1,4 @@
-#透過scoreboard story(dummy) + schedule 指令運行整個劇情
+# The entire storyline is executed through the scoreboard story(dummy) combined with the schedule command
 
 execute positioned 741 145 968 if score story.safe_area.elina.1 story.safe_area matches 1 run tellraw @a[distance=..16] [{"translate": "story.safe_area.elina.1.1","fallback": "［伊莉娜］你好，"},{"selector":"@a[distance=..16]","color": "dark_green"}]
 execute positioned 741 145 968 if score story.safe_area.elina.1 story.safe_area matches 2 run tellraw @a[distance=..16] [{"translate": "story.safe_area.elina.1.2","fallback": "［伊莉娜］有什麼事情嗎?"},"\n"]

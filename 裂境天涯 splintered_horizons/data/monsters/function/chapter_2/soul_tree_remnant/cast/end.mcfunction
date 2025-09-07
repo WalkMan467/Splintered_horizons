@@ -1,14 +1,14 @@
 
-## ----- 重製 ----- ##
+## ----- Reset ----- ##
 scoreboard players reset @s monster.skill.casting
 
-# 標籤
+# Tags
 tag @s remove chapter_2.soul_tree_remnant.1
 
 effect clear @s levitation
 effect clear @s slow_falling
 
 
-# 隨機技能CD
+# Rdm Skill CS
 
 execute store result score @s monster.skill.cast.cd run random value 150..250

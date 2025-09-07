@@ -1,4 +1,4 @@
- #透過scoreboard story(dummy) + schedule 指令運行整個劇情
+ # The entire storyline is executed through the scoreboard story(dummy) combined with the schedule command
 
 execute if score story.chapter_2.in_safe_zone.ml story.chapter_2 matches 1..180 run title @a actionbar {"translate": "story.chapter_2.ml.1","fallback": "［你］這裡...居然還有人類生活的痕跡"}
 execute if score story.chapter_2.in_safe_zone.ml story.chapter_2 matches 180..360 run title @a actionbar {"translate": "story.chapter_2.ml.2","fallback": "［？？？］究竟是遠道而來的刺客，還是新的夥伴?"}
