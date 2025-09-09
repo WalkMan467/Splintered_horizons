@@ -1,5 +1,6 @@
 # The entire storyline is executed through the scoreboard story(dummy) combined with the schedule command
 
+execute positioned 1 64 -109 if score story.chapter_1.campfire.2 story.chapter_1 matches 1 run scoreboard players set #story:icon/story/chapter_1/scebe_2 global.main 1
 execute positioned 1 64 -109 if score story.chapter_1.campfire.2 story.chapter_1 matches 1 run tellraw @a[distance=..16] {"translate": "story.chapter_1.campfire.2.1","fallback": "[蘇菲亞] 下雨了...雨滴有如淡淡的哀傷緩緩落下..."}
 execute positioned 1 64 -109 if score story.chapter_1.campfire.2 story.chapter_1 matches 2 run tellraw @a[distance=..16] {"translate": "story.chapter_1.campfire.2.2","fallback": "[蘇菲亞] 當與低落至地面，我內心的哀傷得到了片刻的平息..."}
 execute positioned 1 64 -109 if score story.chapter_1.campfire.2 story.chapter_1 matches 3 run tellraw @a[distance=..16] {"translate": "story.chapter_1.campfire.2.3","fallback": "[蘇菲亞] 有時，我無法理解為何世界留下了我們"}

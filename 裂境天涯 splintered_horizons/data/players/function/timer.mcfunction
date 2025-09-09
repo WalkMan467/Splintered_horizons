@@ -7,5 +7,6 @@ scoreboard players remove @s[scores={player.actionbar.weapon.nightfall=1..}] pla
 scoreboard players remove @s[scores={player.give.item.delay=1..}] player.give.item.delay 1
 scoreboard players remove @s[scores={player.actionbar.otherworld_portal.1=1..}] player.actionbar.otherworld_portal.1 1
 scoreboard players remove @s[scores={player.actionbar.otherworld_portal.2=1..}] player.actionbar.otherworld_portal.2 1
+scoreboard players remove @s[scores={player.shift.skill.disable=1..}] player.shift.skill.disable 1
 
 function weapons:timer_t

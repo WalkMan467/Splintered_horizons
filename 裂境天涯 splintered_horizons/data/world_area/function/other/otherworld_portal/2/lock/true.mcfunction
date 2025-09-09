@@ -19,6 +19,9 @@ execute on target run scoreboard players set @s player.actionbar.otherworld_port
 
 playsound minecraft:block.vault.open_shutter voice @a 161.00 92.50 -426.50 1 1
 
+playsound minecraft:block.vault.insert_item voice @a 161.00 92.50 -426.50 1 1.05
+playsound minecraft:block.vault.insert_item voice @a 161.00 92.50 -426.50 1 1.05
+
 particle minecraft:flash 161.00 92.50 -426.50 0 0 0 0 1 normal @a
 particle minecraft:sonic_boom 161.00 92.50 -426.50 0 0 0 0 1 normal @a
 

@@ -1,0 +1,66 @@
+{
+  "anvil_cost": 15,
+  "description": [
+    {
+      "text": "",
+      "color": "white",
+      "shadow_color": 0,
+      "font": "minecraft:icon",
+      "bold": false
+    },
+    {
+      "text": " ",
+      "font": "minecraft:default"
+    },
+    {
+      "translate": "weapon.rune_attachment",
+      "fallback": "Rune Attachment",
+      "color": "#470041",
+      "font": "minecraft:default",
+      "bold": true
+    },
+    {
+      "text": " - ",
+      "color": "#470041",
+      "font": "minecraft:default",
+      "bold": true
+    },
+    {
+      "translate": "weapon.effect.shadow",
+      "color": "#470041",
+      "font": "minecraft:default",
+      "bold": true
+    }
+  ],
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "requirements": {
+          "condition": "minecraft:random_chance",
+          "chance": 0.25
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "weapons:type/sword/rune_attachment/shadow"
+        },
+        "enchanted": "attacker",
+        "affected": "attacker"
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 5,
+    "per_level_above_first": 15
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 5,
+    "per_level_above_first": 15
+  },
+  "primary_items": "#minecraft:enchantable/sword",
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "#minecraft:swords",
+  "weight": 1
+}

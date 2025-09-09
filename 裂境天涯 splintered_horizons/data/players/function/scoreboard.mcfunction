@@ -8,6 +8,7 @@ scoreboard objectives add player.max_health dummy "[玩家] 最大血量"
 scoreboard objectives add player.hurt_time dummy "[玩家] 受傷時間"
 scoreboard objectives add player.ultimate dummy "[玩家] 終焉之眼CD"
 scoreboard objectives add player.give.item.delay dummy "[玩家] 給予玩家物品延遲"
+
 scoreboard objectives add player.otherworld_key.count dummy "[玩家] 異界鑰匙數量"
 
 scoreboard objectives add player.death_count dummy [{"text":"💀","bold":true,"color":"red"},{"translate":"tips.player_death.3","bold":false,"color":"white"},{"text":"💀","bold":true,"color":"red"}]
@@ -43,6 +44,8 @@ scoreboard players add @a player.auto_crafting.brick 0
 # 禁用
 scoreboard objectives add player.disable.elytra_switch dummy "[玩家] 禁用滑翔翼切換"
 scoreboard objectives add player.disable.movement dummy "[玩家] 禁用移動"
+scoreboard objectives add player.shift.skill.disable dummy "[玩家] 禁用 Shift 主動技偵測"
+
 
 # ==================================================================================================
 # 偵測

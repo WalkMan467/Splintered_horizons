@@ -1,0 +1,1 @@
+give @s chest[custom_name=[{"color":"white","font":"minecraft:space","italic":false,"text":"\uE016\uE003\uE002\uE002"},{"font":"minecraft:default","text":"\uA001"},{"font":"minecraft:space","text":"\uE016\uE016\uE015\uE013"},{"bold":true,"color":"dark_purple","fallback":"Nightfall","font":"minecraft:default","italic":false,"translate":"weapon.nightfall","underlined":true}]] 1

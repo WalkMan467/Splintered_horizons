@@ -10,7 +10,12 @@ weather clear
 
 scoreboard objectives setdisplay sidebar player.death_count
 
+scoreboard players set cutscene.opening.title cutscene.opening.title.timer 0
 
+kill 000000d3-0000-0004-0000-000100000001
+
+schedule clear cutscene:opening/use
+schedule clear cutscene:opening/0/title/main
 schedule clear cutscene:opening/0/0
 schedule clear cutscene:opening/0/1
 schedule clear cutscene:opening/0/use
