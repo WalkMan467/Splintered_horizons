@@ -11,6 +11,8 @@ execute as @a[scores={music.main.safe_zone=1}] at @s run function music:main/saf
 
 execute as @a[scores={music.chapter2.forest_of_souls=1}] at @s run function music:chapter_2/forest_of_souls/start
 
+execute as @a[scores={music.chapter2.forgotten_sakura_city=1}] at @s run function music:chapter_2/forgotten_sakura_city/start
+
 execute as @a[scores={music.chapter2.bossfight.2=1}] at @s run function music:chapter_2/bossfight/2/start
 
 execute as @a[scores={music.other.the_forgooten_lost_city=1}] at @s run function music:other/the_forgooten_lost_city/start

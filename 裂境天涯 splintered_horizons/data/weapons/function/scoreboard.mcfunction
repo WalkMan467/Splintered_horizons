@@ -1,6 +1,7 @@
 # 其他
 
 scoreboard objectives add weapon.eye_of_the_end.interval dummy "終焉之眼使用間隔"
+scoreboard objectives add weapon.enchant_with_levels dummy "新增附魔武器用"
 
 scoreboard players add @a weapon.eye_of_the_end.interval 0
 
@@ -41,6 +42,19 @@ scoreboard objectives add weapon.storm_sword.ultimate dummy "狂風之劍 大招
 scoreboard players add @a weapon.storm_sword.ultimate 0
 
 #===================================================================
+#蜘蛛
+
+scoreboard objectives add weapon.spider.cd dummy "蜘蛛 CD"
+scoreboard objectives add weapon.spider_passive dummy "蜘蛛 被動層數"
+scoreboard objectives add weapon.spider_passive_dot dummy "蜘蛛 被動DOT"
+
+scoreboard players add @a weapon.spider.cd 0
+scoreboard players add @a weapon.spider_passive 0
+scoreboard players set global weapon.spider_passive_dot 5
+
+
+#===================================================================
+
 #終焉之墟
 
 scoreboard objectives add weapon.ruins_of_the_finality.effect.range dummy "終焉之墟 技能距離"
@@ -76,11 +90,13 @@ scoreboard players add @a weapon.hook.target.id 0
 #===================================================================
 # 晨光
 
-scoreboard objectives add weapon.morning_light.motion dummy "晨光 Motion"
 scoreboard objectives add weapon.morning_light.cd dummy "晨光 cd"
+scoreboard objectives add weapon.morning_light.monster.armor.timer dummy "晨光 怪物減防 cd"
+scoreboard objectives add weapon.morning_light.monster.armor.state dummy "晨光 怪物減防 cd層數"
 
-scoreboard players add @a weapon.morning_light.motion 0
 scoreboard players add @a weapon.morning_light.cd 0
+scoreboard players add @a weapon.morning_light.monster.armor.timer 0
+scoreboard players add @a weapon.morning_light.monster.armor.state 0
 
 #===================================================================
 # 夜幕

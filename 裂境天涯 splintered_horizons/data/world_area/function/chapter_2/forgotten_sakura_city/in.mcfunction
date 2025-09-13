@@ -2,7 +2,8 @@ title @s title ["",{"text":"❀","color":"#64ad18"},{"translate":"world_area.ico
 title @s subtitle [{"text":""},{"text":"《","bold":true,"color":"gold"},{"translate":"monument.icon.chapter_2","bold":true,"color":"gold"},{"text":"》","bold":true,"color":"gold"}]
 title @s times 20 20 20
 
-playsound minecraft:block.beacon.deactivate voice @s ~ ~1 ~ 0.5 0.5
+stopsound @s voice minecraft:voice.flute
+playsound minecraft:voice.flute voice @s ~ ~1 ~ 0.5 2
 
 function music:chapter_2/forgotten_sakura_city/start
 

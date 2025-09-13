@@ -6,7 +6,7 @@
       "count": 1
     },
     "title": {
-      "translate": "weapon.icon.old_story.other",
+      "translate": "proper_nouns.icon.other",
       "bold": true,
       "italic": false,
       "underlined": true
@@ -21,7 +21,7 @@
   "parent": "weapons:icon/old_story",
   "criteria": {
     "requirement": {
-      "trigger": "minecraft:impossible",
+      "trigger": "minecraft:tick",
       "conditions": {}
     }
   }

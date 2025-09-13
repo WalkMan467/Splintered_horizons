@@ -1,0 +1,2 @@
+execute if score @s weapon.morning_light.monster.armor.timer matches 1.. run function weapons:type/sword/morning_light/effect/guide
+execute if score @s weapon.morning_light.monster.armor.timer matches 0 run function weapons:type/sword/morning_light/effect/reset

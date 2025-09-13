@@ -13,14 +13,14 @@
 attribute = []
 # ----- 設定參數 ----- #
 
-name = ['蜘蛛', '#FF2BA3', '劍']
-story = {'info': ['她以言靈操控人心', '如蜘蛛網般將獵物縛於指尖，','沒人能逃出她的魔掌'], 'color': 'blue'}
-item_data     = {'real_item': 'iron_sword', 'id': 'spider', 'item_model': '"sword/spider/1"', 'custom_data': '{rc:1b,type:"sword",rarity:"epic",weapon:"spider"}', 'max_damage': -1, 'rc': True, 'other': ['tooltip_style="epic"']}
-skill    = {'is_skill': True, 'cd': 20, 'name': ['月光摩挲連綿', '#FF2BA3', "#9C0059"], 'info': ['使用 [%s] 拔刀發起突刺，', '給予前方怪物造成 200% 一般傷害', '並且使你獲得 [%s] 持續 5 秒','如果你擁有 [%s]','可以立即對敵人額外造成 5 次 75% 一般傷害']}
-passive_skills    = {'is_passive_skills': True, 'cd': 0, 'name': ['寬恕無關慈悲', '#FF2BA3', '#9C0059'], 'info': ['攻擊命中敵人10次時，','給予前方怪物造成 250%% 一般傷害','並給予目標【折磨】狀態','每秒造成 75% 一般傷害，持續5秒']}
-ultimate    = {'is_ultimate': False, 'cd': 5, 'name': ['終焉之月', '#FF2BA3', '#9C0059'], 'info': ['右鍵點擊消耗一個終焉之眼，', '開啟【終焉之月】型態持續 15 秒', '大幅強化武器，', '此形態下如果攻擊會有25%機率造成大量傷害']}
-attribute.append({'attribute': 'attack_damage', 'value': 5, 'slot': 'mainhand', 'operation': 'add_value'})
-attribute.append({'attribute': 'attack_speed', 'value': -2.5, 'slot': 'mainhand', 'operation': 'add_value'})
+name = ['晨曦之光', '#ffd000', '劍']
+story = {'info': ['一把由聖光作為材料鍛造出來的劍，', '在世界被深淵壟罩之後', '依舊還保留了殘餘聖光的能量，', '即使黑暗時代降臨', '依舊無時無刻抵抗著深淵力量。'], 'color': 'blue'}
+item_data     = {'real_item': 'iron_sword', 'id': 'morning_light', 'item_model': '"minecraft:sword/morning_light/1"', 'custom_data': '{type:"sword",rarity:"epic",weapon:"morning_light"}', 'max_damage': -1, 'rc': False, 'other': ['minecraft:enchantments={"weapons:type/sword/morning_light/use":1}', 'enchantment_glint_override=false', 'tooltip_display={hidden_components:["enchantments"]}', 'tooltip_style="epic"']}
+skill    = {'is_skill': True, 'cd': 20, 'name': ['黃昏之殤', 'gold', "#fffb00"], 'info': ['攻擊命中時:', '在空中召喚【光之聖劍】落下', '並且對 3 格範圍內怪物造成 150% 傷害','如果你擁有 [%s]','立即刷新此技能CD']}
+passive_skills    = {'is_passive_skills': True, 'cd': 0, 'name': ['神聖制裁', 'gold', '#fffb00'], 'info': ['【光之聖劍】命中怪物時:','立即對怪物施加 盔甲 -10% (00:10)','最多疊加 3 層','並且使你獲得神聖之火 (00:10)']}
+ultimate    = {'is_ultimate': False, 'cd': 60, 'name': ['末日審判', "#ff0000", "#7a0000"], 'info': ['右鍵點擊消耗一個終焉之眼，', '召喚的【光之聖劍】有 50% 機率觸發以下技能']}
+attribute.append({'attribute': 'attack_damage', 'value': 4.5, 'slot': 'mainhand', 'operation': 'add_value'})
+attribute.append({'attribute': 'attack_speed', 'value': -2.35, 'slot': 'mainhand', 'operation': 'add_value'})
 
 # ----- init ----- #
 

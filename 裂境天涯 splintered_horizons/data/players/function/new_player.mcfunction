@@ -36,6 +36,7 @@ function music:remove_bgn_icon
 function weapons:remove_weapons_icon
 function story:remove_story_icon
 function story:remove_proper_noun_icon
+function players:adv/remove_adv
 function items:type/tp_book/rc/reset
 
 team join team.player @s

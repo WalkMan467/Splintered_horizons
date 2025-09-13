@@ -5,7 +5,7 @@
         "count": 1
       },
       "title": {
-        "translate": "weapon.icon",
+        "translate": "proper_nouns.weapon.icon",
         "bold": true,
         "italic": false,
         "underlined": true

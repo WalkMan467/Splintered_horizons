@@ -52,5 +52,6 @@ scoreboard objectives add player.shift.skill.disable dummy "[玩家] 禁用 Shif
 scoreboard objectives add player.detect.drop minecraft.custom:minecraft.drop "[玩家] 偵測丟棄"
 scoreboard objectives add player.detect.air dummy "[玩家] 空中時間"
 scoreboard objectives add player.detect.death deathCount "死亡偵測"
+scoreboard objectives add player.detect.click_event.trigger trigger "[玩家] 點擊事件觸發"
 
 # ==================================================================================================

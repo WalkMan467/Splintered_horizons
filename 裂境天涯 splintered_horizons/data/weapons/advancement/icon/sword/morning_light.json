@@ -1,0 +1,72 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:wooden_sword",
+      "components": {
+        "minecraft:custom_model_data": {
+          "floats": [
+            0
+          ],
+          "strings": []
+        },
+        "minecraft:item_model": "minecraft:sword/morning_light/1"
+      },
+      "count": 1
+    },
+    "title": {
+      "translate": "weapon.morning_light"
+    },
+    "description": [
+      {
+        "translate": "weapon.morning_light.story.1",
+        "color": "blue",
+        "bold": false,
+        "italic": false
+      },
+      {
+        "translate": "weapon.morning_light.story.2",
+        "color": "blue",
+        "bold": false,
+        "italic": false
+      },
+      {
+        "translate": "weapon.morning_light.story.3",
+        "color": "blue",
+        "bold": false,
+        "italic": false
+      },
+      {
+        "translate": "weapon.morning_light.story.4",
+        "color": "blue",
+        "bold": false,
+        "italic": false
+      },
+      {
+        "translate": "weapon.morning_light.story.5",
+        "color": "blue",
+        "bold": false,
+        "italic": false
+      }
+    ],
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "weapons:icon/new_world/chapter_1",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "predicates": {
+              "minecraft:custom_data": {
+                "weapon": "morning_light"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

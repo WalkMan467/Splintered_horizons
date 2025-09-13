@@ -5,13 +5,13 @@
       "count": 1
     },
     "title": {
-      "translate": "weapon.icon.new_story",
+      "translate": "proper_nouns.icon.new_story",
       "bold": true,
       "italic": false,
       "underlined": true
     },
     "description": {
-      "translate": "weapon.icon.new_story.1",
+      "translate": "proper_nouns.icon.new_story.1",
       "color": "blue",
       "bold": false,
       "italic": false

@@ -3,7 +3,6 @@ scoreboard players remove @s[type=player,scores={player.click.interval=1..}] pla
 
 scoreboard players remove @s[type=player,scores={weapon.ruins_of_the_finality.effect.time=1..}] weapon.ruins_of_the_finality.effect.time 1
 scoreboard players remove @s[type=player,scores={weapon.storm_sword.ultimate=0..}] weapon.storm_sword.ultimate 1
-scoreboard players remove @s[type=player,scores={weapon.morning_light.cd=0..}] weapon.morning_light.cd 1
 scoreboard players remove @s[type=player,scores={weapon.ruins_of_the_finality.effect.count.delay=1..}] weapon.ruins_of_the_finality.effect.count.delay 1
 scoreboard players remove @s[type=player,scores={weapon.ruins_of_the_finality.blade.animation=1..}] weapon.ruins_of_the_finality.blade.animation 1
 

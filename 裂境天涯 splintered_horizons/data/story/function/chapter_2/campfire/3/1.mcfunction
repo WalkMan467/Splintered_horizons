@@ -1,5 +1,8 @@
 # The entire storyline is executed through the scoreboard story(dummy) combined with the schedule command
 
+execute positioned 867 148 949 if score story.chapter_2.campfire.3 story.chapter_2 matches 1 unless score #story:icon/story/chapter_2/scebe_3 global.main matches 1 as @n[type=item_display,tag=aj.rainy_night.root,distance=..3] on passengers run data modify entity @s Glowing set value 0b
+execute if score story.chapter_2.campfire.3 story.chapter_2 matches 1 run scoreboard players set #story:icon/story/chapter_2/scebe_3 global.main 1
+
 execute positioned 867 148 949 if score story.chapter_2.campfire.3 story.chapter_2 matches 1 run tellraw @a[distance=..16] {"translate": "story.chapter_2.campfire.3.1","fallback": "［蘇菲亞］看來我們越來越接近魔劍的位置了"}
 execute positioned 867 148 949 if score story.chapter_2.campfire.3 story.chapter_2 matches 2 run tellraw @a[distance=..16] {"translate": "story.chapter_2.campfire.3.2","fallback": "［蘇菲亞］昔日的櫻花之城，這裡曾經是我與萊卡的故鄉"}
 execute positioned 867 148 949 if score story.chapter_2.campfire.3 story.chapter_2 matches 3 run tellraw @a[distance=..16] {"translate": "story.chapter_2.campfire.3.3","fallback": "［蘇菲亞］也是我們踏上旅途的開始"}

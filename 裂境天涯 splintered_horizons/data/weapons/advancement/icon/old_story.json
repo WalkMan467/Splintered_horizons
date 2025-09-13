@@ -5,13 +5,13 @@
       "count": 1
     },
     "title": {
-      "translate": "weapon.icon.old_story",
+      "translate": "proper_nouns.icon.old_story",
       "bold": true,
       "italic": false,
       "underlined": true
     },
     "description": {
-      "translate": "weapon.icon.old_story.1",
+      "translate": "proper_nouns.icon.old_story.1",
       "color": "blue",
       "bold": false,
       "italic": false
@@ -25,7 +25,7 @@
   "parent": "weapons:icon/icon",
   "criteria": {
     "requirement": {
-      "trigger": "minecraft:impossible",
+      "trigger": "minecraft:tick",
       "conditions": {}
     }
   }

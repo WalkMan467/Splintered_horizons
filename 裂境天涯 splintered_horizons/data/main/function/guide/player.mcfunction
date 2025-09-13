@@ -24,6 +24,7 @@ function players:hide/false
 function players:disable/movement/main
 function players:actionbar/main
 function players:timer
+function #players:detect/click_event_trigger
 
 # Area
 function world_area:main/loop

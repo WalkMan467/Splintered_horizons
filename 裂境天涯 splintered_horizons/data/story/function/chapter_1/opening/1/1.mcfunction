@@ -1,7 +1,9 @@
 # The entire storyline is executed through the scoreboard story(dummy) combined with the schedule command
 
 
+execute positioned 38 64 9 if score story.chapter_1.campfire.1 story.chapter_1 matches 1 unless score #story:icon/story/chapter_1/scebe_1 global.main matches 1 as @n[type=item_display,tag=aj.rainy_night.root,distance=..3] on passengers run data modify entity @s Glowing set value 0b
 execute positioned 38 64 9 if score story.chapter_1.campfire.1 story.chapter_1 matches 1 run weather clear
+execute if score story.chapter_1.campfire.1 story.chapter_1 matches 1 run scoreboard players set #story:icon/story/chapter_1/scebe_1 global.main 1
 execute positioned 38 64 9 if score story.chapter_1.campfire.1 story.chapter_1 matches 1 run tellraw @a[distance=..16] {"translate": "story.chapter_1.campfire.1.1","fallback": "[？？？] 恩? 你醒了"}
 execute positioned 38 64 9 if score story.chapter_1.campfire.1 story.chapter_1 matches 2 run tellraw @a[distance=..16] {"translate": "story.chapter_1.campfire.1.2","fallback": "[你] 是你拯救了我嗎?"}
 execute positioned 38 64 9 if score story.chapter_1.campfire.1 story.chapter_1 matches 3 run tellraw @a[distance=..16] {"translate": "story.chapter_1.campfire.1.3","fallback": "[？？？] 是的"}
@@ -48,7 +50,6 @@ execute if score story.chapter_1.campfire.1 story.chapter_1 matches 42 run score
 execute if score story.chapter_1.campfire.1 story.chapter_1 matches 42 run scoreboard players set #story:icon/character/sophia/icon global.main 1
 execute if score story.chapter_1.campfire.1 story.chapter_1 matches 42 run scoreboard players set #story:icon/character/sophia/story_1 global.main 1
 execute if score story.chapter_1.campfire.1 story.chapter_1 matches 42 run scoreboard players set #story:icon/character/sophia/story_1_1 global.main 1
-execute if score story.chapter_1.campfire.1 story.chapter_1 matches 42 run scoreboard players set #story:icon/story/chapter_1/scebe_1 global.main 1
 execute if score story.chapter_1.campfire.1 story.chapter_1 matches 42 run scoreboard players set #story:icon/story/chapter_1 global.main 1
 
 execute if score story.chapter_1.campfire.1 story.chapter_1 matches 42 run tellraw @a[distance=..16] [{"translate": "story.end","fallback": "對話結束，再次點擊可重複查看對話內容","color":"gold"},{"text":"\n"}]

@@ -21,3 +21,7 @@ advancement grant @s only weapons:icon/icon
         advancement grant @s only weapons:icon/new_world/chapter_2
 
             advancement revoke @s only weapons:icon/sword/echo_rhythm
+        
+                advancement grant @s only weapons:icon/new_world/chapter_1
+
+                    advancement revoke @s only weapons:icon/sword/morning_light

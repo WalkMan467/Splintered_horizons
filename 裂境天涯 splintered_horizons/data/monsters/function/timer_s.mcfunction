@@ -16,4 +16,6 @@ execute if score global monster.elekiel.3.timer matches 0.. run scoreboard playe
 
 execute as @e[type=text_display,tag=monsters.elekiel.2.vampire_flower.timer] run function monsters:chapter_2/elekiel/2/vampire_flower/text
 
+execute as @e[type=!player,type=!#minecraft:dummy_mob] run function weapons:type/sword/morning_light/effect/timer
+
 schedule function monsters:timer_s 1s

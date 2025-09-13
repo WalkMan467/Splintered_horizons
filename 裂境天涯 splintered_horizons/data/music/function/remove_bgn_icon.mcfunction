@@ -10,7 +10,6 @@ advancement revoke @s only music:main/icon
 
 advancement revoke @s only music:chapter_1/icon
 
-    advancement revoke @s only music:chapter_1/broken_city/icon
         advancement revoke @s only music:chapter_1/broken_city/1/title
 
 advancement revoke @s only music:chapter_2/icon
@@ -19,6 +18,8 @@ advancement revoke @s only music:chapter_2/icon
         advancement revoke @s only music:chapter_2/land_of_finality/title
         advancement revoke @s only music:chapter_2/forest_of_souls/icon
         advancement revoke @s only music:chapter_2/forest_of_souls/title
+        advancement revoke @s only music:chapter_2/forgotten_sakura_city/icon
+        advancement revoke @s only music:chapter_2/forgotten_sakura_city/title
         advancement revoke @s only music:chapter_2/bossfight/2/icon
         advancement revoke @s only music:chapter_2/bossfight/2/title
 

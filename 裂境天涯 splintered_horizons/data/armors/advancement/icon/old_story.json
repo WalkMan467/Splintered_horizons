@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:horn_coral",
+      "count": 1
+    },
+    "title": {
+      "translate": "proper_nouns.icon.old_story",
+      "bold": true,
+      "italic": false,
+      "underlined": true
+    },
+    "description": {
+      "translate": "proper_nouns.icon.old_story.1",
+      "color": "blue",
+      "bold": false,
+      "italic": false
+    },
+    "background": "minecraft:textures/gui/advancements/backgrounds/sculk.png",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "armors:icon/icon",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick",
+      "conditions": {}
+    }
+  }
+}

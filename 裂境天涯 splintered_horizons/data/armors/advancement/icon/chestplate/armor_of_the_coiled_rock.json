@@ -1,0 +1,66 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:iron_chestplate",
+      "components": {
+        "minecraft:custom_model_data": {
+          "floats": [
+            0
+          ],
+          "strings": []
+        },
+        "minecraft:item_model": "minecraft:chestplate/armor_of_the_coiled_rock"
+      },
+      "count": 1
+    },
+    "title": {
+      "translate": "armor.armor_of_the_coiled_rock"
+    },
+    "description": [
+      {
+        "translate": "armor.armor_of_the_coiled_rock.story.1",
+        "color": "blue",
+        "bold": false,
+        "italic": false
+      },
+      {
+        "translate": "armor.armor_of_the_coiled_rock.story.2",
+        "color": "blue",
+        "bold": false,
+        "italic": false
+      },
+      {
+        "translate": "armor.armor_of_the_coiled_rock.story.3",
+        "color": "blue",
+        "bold": false,
+        "italic": false
+      },
+      {
+        "translate": "armor.armor_of_the_coiled_rock.story.4",
+        "color": "blue",
+        "bold": false,
+        "italic": false
+      }
+    ],
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "armors:icon/new_world/chapter_1",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "predicates": {
+              "minecraft:custom_data": {
+                "colied_rock": true
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

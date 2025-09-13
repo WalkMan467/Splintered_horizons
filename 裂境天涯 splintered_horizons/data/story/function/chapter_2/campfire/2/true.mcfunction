@@ -5,6 +5,7 @@ execute as @n[tag=aj.rainy_night.root,limit=1,type=item_display] run function an
 
 
 execute positioned 926.50 167.2 907.75 rotated 0 0 run function animated_java:rainy_night/summon {args:{}}
+execute positioned 926.50 167.2 907.75 unless score #story:icon/story/chapter_2/scebe_2 global.main matches 1 as @n[type=item_display,tag=aj.rainy_night.root,distance=..3] on passengers run data modify entity @s Glowing set value 1b
 
 summon interaction 926.50 167.2 907.75 {Tags:["story.chapter_2.campfire.2.act","interaction.sound.default"],height:2,UUID:[I; 25, 21, 51, 5]}
 
