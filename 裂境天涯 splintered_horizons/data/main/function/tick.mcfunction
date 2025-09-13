@@ -1,5 +1,7 @@
 execute store result score #difficulty global.main run difficulty
 
+execute in minecraft:overworld run setworldspawn 9987 165 9978
+
 execute unless score #difficulty global.main matches 1.. run kill @s[tag=monster.marker,type=marker]
 
 

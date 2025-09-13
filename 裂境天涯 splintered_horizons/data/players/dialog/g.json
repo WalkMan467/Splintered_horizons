@@ -1,21 +1,26 @@
 {
   "type": "minecraft:multi_action",
   "inputs": [],
-  "can_close_with_escape": true,
-  "pause": true,
+  "columns": 1,
+  "exit_action": {
+    "label": {
+      "translate": "gui.back"
+    },
+    "width": 200
+  },
+  "external_title": {
+    "translate": "menu.quick_actions"
+  },
   "title": {
     "translate": "menu.quick_actions.title"
   },
   "actions": [
     {
-      "label": {
-        "translate": "test",
-        "click_event": {
-          "action": "run_command",
-          "command": "time set day"
-        }
-      },
-      "width": 300
+      "label": "test",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "say ok"
+      }
     }
   ]
 }

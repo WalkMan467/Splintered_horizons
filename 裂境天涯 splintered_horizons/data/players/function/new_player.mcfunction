@@ -34,6 +34,7 @@ scoreboard players enable @s story.click_event.trigger
 function #main:scoreboard
 function music:remove_bgn_icon
 function weapons:remove_weapons_icon
+function armors:remove_armors_icon
 function story:remove_story_icon
 function story:remove_proper_noun_icon
 function players:adv/remove_adv
@@ -54,6 +55,3 @@ attribute @s minecraft:movement_speed base set 0.1
 
 execute unless score #story global.main matches 1.. run function story:chapter_1/opening/1/0
 scoreboard players set #story global.main 1
-
-spawnpoint @s 38 64 11
-setworldspawn 38 64 11

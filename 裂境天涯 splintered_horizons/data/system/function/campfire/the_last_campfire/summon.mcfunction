@@ -1,5 +1,4 @@
 execute unless entity @s[type=player] run return 0
-spawnpoint @s ~ ~ ~
 
 tag @s add system.campfire.the_last_campfire.target
 

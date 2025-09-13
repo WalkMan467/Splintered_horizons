@@ -7,7 +7,6 @@ execute if score #sendCommandFeedback main.gamerule matches 1 run gamerule sendC
 tp @a 38 64 11 180 0
 
 execute as @a at @s run tp @s ~ 65 ~ -90 0
-execute as @a at @s run spawnpoint @s ~ ~ ~
 
 title @s times 0 20 40
 title @s title {"text":"\uE000","font":"minecraft:screen"}

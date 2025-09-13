@@ -25,3 +25,4 @@ advancement grant @s only weapons:icon/icon
                 advancement grant @s only weapons:icon/new_world/chapter_1
 
                     advancement revoke @s only weapons:icon/sword/morning_light
+                    advancement revoke @s only weapons:icon/scythe/morphing_beast

@@ -34,6 +34,10 @@ scoreboard objectives add player.click.interval dummy "[玩家] 使用間隔"
 scoreboard objectives add player.auto_crafting.brick dummy "[玩家] 自動合成 紅磚頭"
 scoreboard objectives add player.auto_crafting.coal dummy "[玩家] 自動合成 木棒"
 scoreboard objectives add player.bow dummy "[玩家] 箭矢偵測附魔"
+scoreboard objectives add player.spawnpoint.pos.x dummy "[玩家] 重生點 X座標"
+scoreboard objectives add player.spawnpoint.pos.y dummy "[玩家] 重生點 Y座標"
+scoreboard objectives add player.spawnpoint.pos.z dummy "[玩家] 重生點 Z座標"
+scoreboard objectives add player.spawnpoint.dimension dummy "[玩家] 重生點 維度"
 
 scoreboard players add @a player.no_cd 0
 scoreboard players add @a player.animation.lock 0

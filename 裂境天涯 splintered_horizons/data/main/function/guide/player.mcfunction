@@ -2,6 +2,11 @@
 function story:tick
 function items:timer_t
 
+execute if dimension minecraft:overworld in minecraft:overworld run spawnpoint @s 9987 165 9978
+execute if dimension minecraft:the_end in minecraft:the_end run spawnpoint @s 9987 165 9978
+
+execute positioned 9987 165 9978 as @s[tag=player.death,distance=..1] run function players:tp_to_spawnpoint/use
+
 # Chair
 execute as @e[tag=system.sit_down,type=interaction,distance=..15] at @s run function system:sit_down/interaction/main
 

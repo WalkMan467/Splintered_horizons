@@ -12,6 +12,8 @@ scoreboard players add @s player.death_count 1
 
 title @s title [{"translate":"tips.player_death.1","fallback":"死","color":"dark_red","bold":true,"font":"minecraft:default"},{"text":"\uE000","font":"minecraft:space"},{"text":"\uE000","font":"minecraft:icon","shadow_color":1,"bold":false,"color":"white"},{"text":"\uE000","font":"minecraft:space"},{"translate":"tips.player_death.2","fallback":"亡","color":"dark_red","bold":true,"font":"minecraft:default"}]
 title @s times 20 60 20
+
+tag @s add player.death
 execute if score @s player.death_count matches ..60 run title @s subtitle [{"translate":"tips.player_death.3","color":"white"},{"text":": "},{"score":{name:"@s",objective:"player.death_count"},"color":"white"}]
 execute if score @s player.death_count matches 60..80 run title @s subtitle [{"translate":"tips.player_death.3","color":"white"},{"text":": "},{"score":{name:"@s",objective:"player.death_count"},"color":"yellow"}]
 execute if score @s player.death_count matches 80..100 run title @s subtitle [{"translate":"tips.player_death.3","color":"white"},{"text":": "},{"score":{name:"@s",objective:"player.death_count"},"color":"gold"}]

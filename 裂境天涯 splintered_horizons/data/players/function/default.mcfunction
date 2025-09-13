@@ -12,8 +12,10 @@ scoreboard players add @s main.3d_dizziness 0
 
 scoreboard players set #story global.main 0
 
-execute in minecraft:overworld run spawnpoint @s 38 64 11
-execute in minecraft:overworld run tp @s 39 64 10 90 0
+scoreboard players set @s player.spawnpoint.dimension 0
+scoreboard players set @s player.spawnpoint.pos.x 38
+scoreboard players set @s player.spawnpoint.pos.y 64
+scoreboard players set @s player.spawnpoint.pos.z 11
 
 team join team.player @a
 
