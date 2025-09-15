@@ -1,6 +1,6 @@
 execute if score @s armor.armor_of_the_coiled_rock.cd matches 1.. run return 0
 
-execute unless items entity @s armor.chest iron_chestplate[minecraft:custom_data~{colied_rock:1b} | custom_data~{colied_rock:1}] run return 0
+execute unless items entity @s armor.chest *[minecraft:custom_data~{colied_rock:1b} | custom_data~{colied_rock:1}] run return 0
 
 effect give @s absorption 5 1 true
 

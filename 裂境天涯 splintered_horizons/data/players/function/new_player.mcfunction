@@ -45,6 +45,13 @@ team join team.player @s
 scoreboard objectives setdisplay sidebar player.death_count
 scoreboard objectives setdisplay list player.death_count
 
+scoreboard players set @s player.spawnpoint.dimension 0
+scoreboard players set @s player.spawnpoint.pos.x 38
+scoreboard players set @s player.spawnpoint.pos.y 64
+scoreboard players set @s player.spawnpoint.pos.z 11
+
+execute in minecraft:overworld run tp @s 38 64 11 90 0
+
 scoreboard players set @s death_count 0
 scoreboard players add @s player.death_count 0
 

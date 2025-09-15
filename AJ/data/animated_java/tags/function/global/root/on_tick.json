@@ -12,6 +12,7 @@
 		"animated_java:ruins_of_the_end_2/root/on_tick",
 		"animated_java:ruins_of_the_finality_skill/root/on_tick",
 		"animated_java:screen_sneak/root/on_tick",
+		"animated_java:selena/root/on_tick",
 		"animated_java:stellar_animation/root/on_tick",
 		"animated_java:yibb_tstll/root/on_tick"
 	]
