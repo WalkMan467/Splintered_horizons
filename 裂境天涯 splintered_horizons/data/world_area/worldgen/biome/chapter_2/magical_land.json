@@ -1,0 +1,25 @@
+{
+  "creature_spawn_probability": 0,
+  "carvers": [
+    "minecraft:canyon"
+  ],
+  "downfall": 0,
+  "effects": {
+    "fog_color": 12638463,
+    "sky_color": 7907327,
+    "water_color": 4159204,
+    "water_fog_color": 329011,
+    "foliage_color": 14385453,
+    "particle": {
+      "options": {
+        "type": "minecraft:enchant"
+      },
+      "probability": 0.025
+    }
+  },
+  "features": [],
+  "has_precipitation": false,
+  "spawn_costs": {},
+  "spawners": {},
+  "temperature": -0.3
+}

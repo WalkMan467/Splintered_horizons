@@ -1,0 +1,2 @@
+execute if score @s armor.finality_chestplate.effect.timer matches 1.. run function armors:type/finality_chestplate/effect/guide
+execute if score @s armor.finality_chestplate.effect.timer matches 0 run function armors:type/finality_chestplate/effect/reset

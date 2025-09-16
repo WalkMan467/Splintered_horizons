@@ -8,3 +8,4 @@ scoreboard objectives add music.chapter2.forest_of_souls dummy "[音樂]: 靈魂
 scoreboard objectives add music.chapter2.forgotten_sakura_city dummy "[音樂]: 往昔的櫻花之城BGM"
 scoreboard objectives add music.chapter2.bossfight.2 dummy "[音樂]: BOSS戰BGM"
 scoreboard objectives add music.other.the_forgooten_lost_city dummy "[音樂]: 被遺忘的失落之城BGM"
+scoreboard objectives add music.chapter2.temple_of_light dummy "[音樂]: 光明神殿BGM"

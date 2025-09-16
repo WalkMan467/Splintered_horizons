@@ -1,0 +1,1 @@
+tellraw @s [{"text":"\n=================================\n\n"},{"translate": "music.name","fallback": "Music Name"},": ",{"translate": "music.written_in_the_stars","fallback": "Written In The Stars"},"\n\n",{"translate": "music.composer","fallback": "Composer"},": ",{"translate": "music.whitesand","fallback": "Whitesand"},{"text":"\n\n=================================\n"}]

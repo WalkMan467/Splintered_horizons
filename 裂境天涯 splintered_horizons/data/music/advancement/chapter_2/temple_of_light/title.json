@@ -1,0 +1,62 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:soul_lantern",
+      "count": 1
+    },
+    "title": [
+      {
+        "translate": "music.name",
+        "color": "white",
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": ": ",
+        "color": "white",
+        "bold": false,
+        "italic": false
+      },
+      {
+        "translate": "music.written_in_the_stars",
+        "color": "white",
+        "bold": true,
+        "italic": false,
+        "underlined": false
+      }
+    ],
+    "description": [
+      {
+        "translate": "music.composer",
+        "color": "white",
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": ": ",
+        "color": "white",
+        "bold": false,
+        "italic": false
+      },
+      {
+        "translate": "music.whitesand",
+        "color": "white"
+      }
+    ],
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "music:chapter_2/temple_of_light/icon",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+  },
+  "rewards": {
+    "function": "music:chapter_2/temple_of_light/title"
+  }
+}

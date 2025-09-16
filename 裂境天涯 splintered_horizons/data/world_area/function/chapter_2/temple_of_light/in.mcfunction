@@ -7,4 +7,7 @@ stopsound @s voice minecraft:block.bell.resonate
 playsound minecraft:entity.allay.ambient_without_item voice @s ~ ~1 ~ 1 1
 playsound minecraft:block.bell.resonate voice @s ~ ~1 ~ 1 1
 
+advancement grant @s only music:chapter_2/temple_of_light/icon
+
+
 advancement revoke @s only world_area:chapter_2/temple_of_light/out

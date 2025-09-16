@@ -1,0 +1,2 @@
+
+give @p wooden_sword[custom_name={"italic":false,"text":"• 零傷害武器 •"},attribute_modifiers={modifiers:[{id:"_1",type:"attack_damage",amount:0,operation:"add_value",slot:"mainhand"},{id:"_2",type:"attack_speed",amount:-2.4,operation:"add_value",slot:"mainhand"}],show_in_tooltip:false}] 1

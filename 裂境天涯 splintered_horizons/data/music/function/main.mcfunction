@@ -15,6 +15,8 @@ execute as @a[scores={music.chapter2.forgotten_sakura_city=1}] at @s run functio
 
 execute as @a[scores={music.chapter2.bossfight.2=1}] at @s run function music:chapter_2/bossfight/2/start
 
+execute as @a[scores={music.chapter2.temple_of_light=1}] at @s run function music:chapter_2/temple_of_light/start
+
 execute as @a[scores={music.other.the_forgooten_lost_city=1}] at @s run function music:other/the_forgooten_lost_city/start
 
 schedule function music:main 1t

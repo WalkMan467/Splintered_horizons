@@ -30,6 +30,11 @@
     execute if entity @s[gamemode=!spectator] if biome ~ ~ ~ world_area:chapter_2/deep_crimson_abyss run advancement grant @s only world_area:chapter_2/deep_crimson_abyss/in
     execute unless biome ~ ~ ~ world_area:chapter_2/deep_crimson_abyss run advancement grant @s only world_area:chapter_2/deep_crimson_abyss/out
 
+    # Magical Land
+    
+    execute if entity @s[gamemode=!spectator] if biome ~ ~ ~ world_area:chapter_2/magical_land run advancement grant @s only world_area:chapter_2/magical_land/in
+    execute unless biome ~ ~ ~ world_area:chapter_2/magical_land run advancement grant @s only world_area:chapter_2/magical_land/out
+
     # Temple of Light
     
     execute if entity @s[gamemode=!spectator] if biome ~ ~ ~ world_area:chapter_2/temple_of_light run advancement grant @s only world_area:chapter_2/temple_of_light/in
@@ -39,6 +44,12 @@
     
     execute if entity @s[gamemode=!spectator] if biome ~ ~ ~ world_area:chapter_2/bossfight/normal run advancement grant @s only world_area:chapter_2/temple_of_light/bossfight/in
     execute unless biome ~ ~ ~ world_area:chapter_2/bossfight/normal run advancement grant @s only world_area:chapter_2/temple_of_light/bossfight/out
+
+    # Temple of Light
+    
+    execute if entity @s[gamemode=!spectator] if biome ~ ~ ~ #world_area:chapter_2_end run advancement grant @s only world_area:chapter_2/main/in
+    execute unless biome ~ ~ ~ #world_area:chapter_2_end run advancement grant @s only world_area:chapter_2/main/out
+
 
     # BOSS battle entrance detection
     

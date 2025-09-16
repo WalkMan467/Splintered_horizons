@@ -1,0 +1,58 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:sculk",
+      "count": 1
+    },
+    "title": {
+      "translate": "story.icon.proper_noun.great_old_ones",
+      "bold": true,
+      "italic": false
+    },
+    "description": [
+      {
+        "translate": "story.icon.proper_noun.great_old_ones.1",
+        "color": "blue",
+        "bold": false,
+        "italic": false,
+        "underlined": false
+      },
+      {
+        "text": "\n"
+      },
+      {
+        "translate": "story.icon.proper_noun.great_old_ones.2",
+        "color": "blue",
+        "bold": false,
+        "italic": false,
+        "underlined": false
+      },
+      {
+        "translate": "story.icon.proper_noun.great_old_ones.3",
+        "color": "blue",
+        "bold": false,
+        "italic": false,
+        "underlined": false
+      },
+      {
+        "translate": "story.icon.proper_noun.great_old_ones.4",
+        "color": "blue",
+        "bold": false,
+        "italic": false,
+        "underlined": false
+      }
+    ],
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "story:icon/proper_noun/new_story",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+  }
+}

@@ -3,6 +3,5 @@
   "description": {
     "translate": "trim_material.abyss_material",
     "color": "#00484c"
-  },
-  "ingredient": "minecraft:sculk"
+  }
 }

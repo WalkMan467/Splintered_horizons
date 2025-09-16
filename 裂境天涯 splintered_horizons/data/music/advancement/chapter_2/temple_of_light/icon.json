@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "id": "chiseled_quartz_block",
+      "count": 1
+    },
+    "title": {
+      "translate": "world_area.icon.chapter_2.temple_of_light",
+      "bold": true
+    },
+    "description": "",
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "music:chapter_2/icon",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+  }
+}

@@ -9,8 +9,6 @@ function story:chapter_2/campfire/1/main
 function story:chapter_2/campfire/2/main
 function story:chapter_2/campfire/3/main
 
-execute as @e[type=text_display,tag=story.text_bubbles.main] at @s run function story:text_bubbles/main
-
 execute if score #story:icon/proper_noun/eye_of_finality global.main matches 1.. run advancement grant @a only story:icon/proper_noun/eye_of_finality
 execute unless score #story:icon/proper_noun/eye_of_finality global.main matches 1.. run advancement revoke @a only story:icon/proper_noun/eye_of_finality
 execute if score #story:icon/proper_noun/new_story global.main matches 1.. run advancement grant @a only story:icon/proper_noun/new_story
@@ -33,6 +31,10 @@ execute unless score #story:icon/story/chapter_1/scebe_1 global.main matches 1..
 
 execute if score #story:icon/story/chapter_1/scebe_2 global.main matches 1.. run advancement grant @a only story:icon/story/chapter_1/scebe_2
 execute unless score #story:icon/story/chapter_1/scebe_2 global.main matches 1.. run advancement revoke @a only story:icon/story/chapter_1/scebe_2
+
+execute if score #story:icon/story/chapter_1/scebe_3 global.main matches 1.. run advancement grant @a only story:icon/story/chapter_1/scebe_3
+execute unless score #story:icon/story/chapter_1/scebe_3 global.main matches 1.. run advancement revoke @a only story:icon/story/chapter_1/scebe_3
+
 
 execute if score #story:icon/proper_noun/resplendence global.main matches 1.. run advancement grant @a only story:icon/proper_noun/resplendence
 execute unless score #story:icon/proper_noun/resplendence global.main matches 1.. run advancement revoke @a only story:icon/proper_noun/resplendence

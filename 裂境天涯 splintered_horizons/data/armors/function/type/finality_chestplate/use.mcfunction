@@ -21,7 +21,6 @@ scoreboard players operation @s player.ultimate -= #math global.main
 title @s title {"text":"\uE004","font":"minecraft:screen"}
 title @s times 10 0 10
 
-scoreboard players set @s armor.finality_chestplate.attack_increased 5
-attribute @s attack_damage modifier add armor.finality_chestplate.effect 0.25 add_multiplied_base
+scoreboard players set @s armor.finality_chestplate.effect.timer 6
 
 scoreboard players set @s armor.chestplate.effect.actived 1

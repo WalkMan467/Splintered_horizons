@@ -2,6 +2,5 @@
   "asset_id": "eventually_trim",
   "description": {
     "translate": "trim_pattern.eventually_trim"
-  },
-  "template_item": "minecraft:crying_obsidian"
+  }
 }

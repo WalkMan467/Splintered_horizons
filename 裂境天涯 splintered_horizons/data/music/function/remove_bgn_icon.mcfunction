@@ -22,6 +22,8 @@ advancement revoke @s only music:chapter_2/icon
         advancement revoke @s only music:chapter_2/forgotten_sakura_city/title
         advancement revoke @s only music:chapter_2/bossfight/2/icon
         advancement revoke @s only music:chapter_2/bossfight/2/title
+        advancement revoke @s only music:chapter_2/forgotten_sakura_city/icon
+        advancement revoke @s only music:chapter_2/forgotten_sakura_city/title
 
 advancement revoke @s only music:chapter_3/icon
 
