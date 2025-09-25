@@ -9,3 +9,5 @@ stopsound @s voice minecraft:event.mob_effect.trial_omen
 
 playsound minecraft:event.mob_effect.raid_omen voice @s ~ ~1 ~ 1 0.75
 playsound minecraft:event.mob_effect.trial_omen voice @s ~ ~1 ~ 1 0.75
+
+function music:chapter_3/realm_of_finality/start

@@ -3,7 +3,6 @@ playsound minecraft:entity.item.pickup voice @s ~ ~1 ~ 0.5 0.75
 
 scoreboard players set #player.replace.block.temp global.main 0
 
-
 execute if items entity @s container.1 #complete_block run item replace entity @s weapon.mainhand from entity @s container.1
 execute if items entity @s container.1 #complete_block run scoreboard players set #player.replace.block.temp global.main 1
 execute if items entity @s container.1 #complete_block run item replace entity @s container.1 with air

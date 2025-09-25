@@ -9,7 +9,7 @@
           ],
           "strings": []
         },
-        "minecraft:item_model": "minecraft:iron_boots"
+        "minecraft:item_model": "equipment/swift_boots"
       },
       "count": 1
     },
@@ -46,7 +46,7 @@
     "announce_to_chat": false,
     "hidden": true
   },
-  "parent": "armors:icon/new_world/other",
+  "parent": "armors:icon/other",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:inventory_changed",

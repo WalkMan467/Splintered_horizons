@@ -1,25 +1,21 @@
 {
   "type": "minecraft:multi_action",
-  "inputs": [],
-  "columns": 1,
-  "exit_action": {
-    "label": {
-      "translate": "gui.back"
-    },
-    "width": 200
-  },
-  "external_title": {
-    "translate": "menu.quick_actions"
-  },
   "title": {
-    "translate": "menu.quick_actions.title"
+    "translate": "key.quickActions"
   },
+  "inputs": [],
+  "can_close_with_escape": true,
+  "pause": true,
+  "after_action": "close",
   "actions": [
     {
-      "label": "test",
+      "label": {
+        "translate": "dialog.main.quick_actions.teleport_to_spawnpoint",
+        "fallback": "Teleport to Spawnpoint"
+      },
       "action": {
-        "type": "minecraft:run_command",
-        "command": "say ok"
+        "type": "run_command",
+        "command": "trigger player.detect.quick_actions.trigger set 1"
       }
     }
   ]

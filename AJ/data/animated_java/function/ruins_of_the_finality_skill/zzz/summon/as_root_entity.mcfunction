@@ -9,6 +9,5 @@ execute at @s on passengers run rotate @s ~ ~
 data modify entity @s teleport_duration set value 1
 execute on passengers run data modify entity @s teleport_duration set value 1
 tp @s ~ ~ ~ ~ 0
-function animated_java:ruins_of_the_finality_skill/animations/skills/play
 tag @s remove aj.new
 execute on passengers run tag @s remove aj.new

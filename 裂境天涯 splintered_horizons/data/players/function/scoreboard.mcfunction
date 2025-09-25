@@ -57,5 +57,7 @@ scoreboard objectives add player.detect.drop minecraft.custom:minecraft.drop "[�
 scoreboard objectives add player.detect.air dummy "[玩家] 空中時間"
 scoreboard objectives add player.detect.death deathCount "死亡偵測"
 scoreboard objectives add player.detect.click_event.trigger trigger "[玩家] 點擊事件觸發"
+scoreboard objectives add player.detect.quick_actions.trigger trigger "[玩家] 快速動作事件觸發"
+scoreboard objectives add player.detect.tp.trigger trigger "[玩家] 傳送書觸發"
 
 # ==================================================================================================

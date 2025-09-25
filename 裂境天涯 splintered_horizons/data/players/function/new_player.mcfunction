@@ -21,13 +21,6 @@ advancement revoke @s only story:icon/story/chapter_1/scebe_1
 attribute @s minecraft:waypoint_receive_range base reset
 attribute @s waypoint_transmit_range base set 0
 
-summon marker 38 64 11 {Tags:["system.campfire.the_last_campfire.point","summon"]}
-tag @s add system.campfire.the_last_campfire.target
-scoreboard players operation @n[tag=system.campfire.the_last_campfire.point,tag=summon] system.campfire.the_last_campfire.point = @p[tag=system.campfire.the_last_campfire.target] player.id
-tag @s remove system.campfire.the_last_campfire.target
-tag @n[tag=system.campfire.the_last_campfire.point,tag=summon,type=marker] remove summon
-
-
 scoreboard players add @s story.click_event.trigger 0
 scoreboard players enable @s story.click_event.trigger
 
@@ -39,6 +32,9 @@ function story:remove_story_icon
 function story:remove_proper_noun_icon
 function players:adv/remove_adv
 function items:type/tp_book/rc/reset
+
+xp set @s 0 levels
+xp set @s 0 points
 
 team join team.player @s
 
@@ -52,13 +48,8 @@ scoreboard players set @s player.spawnpoint.pos.z 11
 
 execute in minecraft:overworld run tp @s 38 64 11 90 0
 
-scoreboard players set @s death_count 0
 scoreboard players add @s player.death_count 0
 
 
 function players:id/detect
 attribute @s minecraft:movement_speed base set 0.1
-
-
-execute unless score #story global.main matches 1.. run function story:chapter_1/opening/1/0
-scoreboard players set #story global.main 1

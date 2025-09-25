@@ -12,6 +12,7 @@
 scoreboard players remove @a[scores={armor.black_hole.boots.cd=1..}] armor.black_hole.boots.cd 1
 scoreboard players remove @a[scores={armor.armor_of_the_coiled_rock.cd=1..}] armor.armor_of_the_coiled_rock.cd 1
 scoreboard players remove @a[scores={armor.finality_chestplate.cd=1..}] armor.finality_chestplate.cd 1
+scoreboard players remove @a[scores={armor.windriders_legplates.cd=1..}] armor.windriders_legplates.cd 1
 
 execute as @a at @s run function armors:type/finality_chestplate/effect/timer
 

@@ -1,0 +1,66 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:iron_leggings",
+      "components": {
+        "minecraft:custom_model_data": {
+          "floats": [
+            0
+          ],
+          "strings": []
+        },
+        "minecraft:item_model": "leggings/windriders_legplates"
+      },
+      "count": 1
+    },
+    "title": {
+      "translate": "armor.windriders_legplates"
+    },
+    "description": [
+      {
+        "translate": "armor.windriders_legplates.story.1",
+        "color": "blue",
+        "bold": false,
+        "italic": false
+      },
+      {
+        "translate": "armor.windriders_legplates.story.2",
+        "color": "blue",
+        "bold": false,
+        "italic": false
+      },
+      {
+        "translate": "armor.windriders_legplates.story.3",
+        "color": "blue",
+        "bold": false,
+        "italic": false
+      },
+      {
+        "translate": "armor.windriders_legplates.story.4",
+        "color": "blue",
+        "bold": false,
+        "italic": false
+      }
+    ],
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "armors:icon/chapter_2",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "predicates": {
+              "minecraft:custom_data": {
+                "windriders": true
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

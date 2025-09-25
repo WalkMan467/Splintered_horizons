@@ -51,6 +51,7 @@ execute if score story.chapter_1.campfire.1 story.chapter_1 matches 42 run score
 execute if score story.chapter_1.campfire.1 story.chapter_1 matches 42 run scoreboard players set #story:icon/character/sophia/story_1 global.main 1
 execute if score story.chapter_1.campfire.1 story.chapter_1 matches 42 run scoreboard players set #story:icon/character/sophia/story_1_1 global.main 1
 execute if score story.chapter_1.campfire.1 story.chapter_1 matches 42 run scoreboard players set #story:icon/story/chapter_1 global.main 1
+execute if score story.chapter_1.campfire.1 story.chapter_1 matches 42 run scoreboard players set #story:icon/proper_noun/eye_of_finality global.main 1
 
 execute if score story.chapter_1.campfire.1 story.chapter_1 matches 42 run tellraw @a[distance=..16] [{"translate": "story.end","fallback": "對話結束，再次點擊可重複查看對話內容","color":"gold"},{"text":"\n"}]
 execute if score story.chapter_1.campfire.1 story.chapter_1 matches 42 run playsound minecraft:entity.player.levelup voice @a ~ ~1 ~ 0.5 1

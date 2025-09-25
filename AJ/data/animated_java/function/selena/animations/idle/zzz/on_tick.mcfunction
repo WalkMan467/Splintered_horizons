@@ -6,5 +6,5 @@ execute if score @s aj.idle.frame matches -1 run function animated_java:selena/a
 data remove storage aj:temp args
 execute store result storage aj:temp args.frame int 1 run scoreboard players get @s aj.idle.frame
 function animated_java:selena/animations/idle/zzz/apply_frame with storage aj:temp args
-execute if score @s aj.idle.frame matches 79.. run return run scoreboard players set @s aj.idle.frame -1
+execute if score @s aj.idle.frame matches 119.. run return run scoreboard players set @s aj.idle.frame -1
 scoreboard players add @s aj.idle.frame 1

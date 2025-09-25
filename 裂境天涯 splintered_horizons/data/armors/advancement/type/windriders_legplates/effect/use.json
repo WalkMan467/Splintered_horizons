@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "requirements": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "armors:type/windriders_legplates/effect/charge": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "armors:type/windriders_legplates/effect/use"
+  }
+}

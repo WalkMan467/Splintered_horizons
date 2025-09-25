@@ -10,3 +10,4 @@ execute as @e[type=!player,tag=!aj.global.root,tag=!aj.global.camera,tag=!aj.dis
 # Player Guide
 
 execute as @a[tag=!aj.global.root,tag=!aj.global.camera,tag=!aj.display] at @s run function main:guide/player
+

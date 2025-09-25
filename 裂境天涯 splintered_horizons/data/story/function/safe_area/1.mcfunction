@@ -17,6 +17,7 @@ execute positioned 741 145 968 if score story.safe_area.elina.1 story.safe_area 
 execute positioned 741 145 968 if score story.safe_area.elina.1 story.safe_area matches 10 run tellraw @a[distance=..16] [{"translate": "story.safe_area.elina.1.10","fallback": "［伊莉娜］但即便這樣，我依然無法變強到能夠打敗阿薩洛爾"}]
 execute positioned 741 145 968 if score story.safe_area.elina.1 story.safe_area matches 11 run tellraw @a[distance=..16] [{"translate": "story.safe_area.elina.1.11","fallback": "［伊莉娜］這也是為什麼我想請你幫我一個忙"}]
 execute positioned 741 145 968 if score story.safe_area.elina.1 story.safe_area matches 12 run tellraw @a[distance=..16] [{"translate": "story.safe_area.elina.1.12","fallback": "［伊莉娜］願我們能夠戰勝舊日的支配者們，即便這個願望看起來如此渺小"}]
+execute positioned 741 145 968 if score story.safe_area.elina.1 story.safe_area matches 12 run scoreboard players set #story:icon/proper_noun/shadow global.main 1
 
 execute positioned 741 145 968 if score story.safe_area.elina.1 story.safe_area matches 12 run tellraw @a[distance=..16] [{"translate": "story.end","fallback": "對話結束，再次點擊可重複查看對話內容","color":"gold"},{"text":"\n"}]
 execute positioned 741 145 968 if score story.safe_area.elina.1 story.safe_area matches 12 run playsound minecraft:entity.player.levelup voice @a ~ ~1 ~ 0.5 1

@@ -1,26 +1,29 @@
 {
-    "display": {
-      "icon": {
-        "id": "minecraft:iron_chestplate",
-        "count": 1
+  "display": {
+    "icon": {
+      "id": "minecraft:iron_chestplate",
+      "components": {
+        "minecraft:item_model": "minecraft:chestplate/finality_chestplate/1"
       },
-      "title": {
-        "translate": "proper_nouns.armor.icon",
-        "bold": true,
-        "italic": false,
-        "underlined": true
-      },
-      "description": "",
-      "background": "minecraft:gui/advancements/backgrounds/sculk",
-      "frame": "task",
-      "show_toast": false,
-      "announce_to_chat": false,
-      "hidden": true
+      "count": 1
     },
-    "criteria": {
-      "requirement": {
-        "trigger": "minecraft:tick",
-        "conditions": {}
-      }
+    "title": {
+      "translate": "proper_nouns.armor.icon",
+      "bold": true,
+      "italic": false,
+      "underlined": true
+    },
+    "description": "",
+    "background": "minecraft:gui/advancements/backgrounds/sculk",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick",
+      "conditions": {}
     }
   }
+}

@@ -15,3 +15,4 @@ scoreboard players remove @s[scores={armor.helmet.effect.actived=1..}] armor.hel
 scoreboard players remove @s[scores={armor.chestplate.effect.actived=1..}] armor.chestplate.effect.actived 1
 scoreboard players remove @s[scores={armor.leggings.effect.actived=1..}] armor.leggings.effect.actived 1
 scoreboard players remove @s[scores={armor.boots.effect.actived=1..}] armor.boots.effect.actived 1
+scoreboard players remove @s[scores={armor.windriders_legplates.leggings.effect_delay=1..}] armor.windriders_legplates.leggings.effect_delay 1

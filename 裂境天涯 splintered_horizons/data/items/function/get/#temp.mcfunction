@@ -1,15 +1,14 @@
-give @s firework_star[item_name=[{"translate":"item.otherworld_key","color":"dark_green","italic":false,"bold":true}],lore=[[{"translate":"item.otherworld_key.type","italic":false,"color":"dark_gray"}],{"text":""},[{"translate":"item.otherworld_key.story.1","italic":false,"color":"blue"}],[{"translate":"item.otherworld_key.story.2","italic":false,"color":"blue"}],[{"translate":"item.otherworld_key.story.3","italic":false,"color":"blue"}],[{"translate":"item.otherworld_key.story.4","italic":false,"color":"blue"}]],attribute_modifiers=[{id:"base_attack_damage",type:"attack_damage",amount:0,operation:"add_value",slot:"mainhand"}],max_stack_size=64,unbreakable={},item_model="otherworld_key",custom_data={type:"item",item:"otherworld_key"},enchantments={"minecraft:soul_speed":1},tooltip_style="legendary",tooltip_display={hidden_components:["attribute_modifiers","unbreakable","enchantments"]}]
+give @s apple[item_name=[{"translate":"item.sun_apple","color":"#ff4800","italic":false,"bold":true}],lore=[[{"translate":"item.sun_apple.type","italic":false,"color":"dark_gray"}],{"text":""},[{"translate":"item.sun_apple.story.1","italic":false,"color":"blue"}],[{"translate":"item.sun_apple.story.2","italic":false,"color":"blue"}],[{"translate":"item.sun_apple.story.3","italic":false,"color":"blue"}]],max_stack_size=1,unbreakable={},item_model="food/sun_apple/0",custom_data={type:"food",rarity:"rare",item:"sun_apple"},tooltip_display={hidden_components:["unbreakable"]},tooltip_style="rare"]
 
-# "item.otherworld_key" : "異界鑰匙",
-# "item.otherworld_key.type" : "道具 / 傳說",
-# "item.otherworld_key.story.1" : "通往異界之門所需的鑰匙",
-# "item.otherworld_key.story.2" : "門後世界怪物將大幅提升戰力",
-# "item.otherworld_key.story.3" : "但是裡面的物資更加稀有",
-# "item.otherworld_key.story.4" : "擊殺怪物與BOSS有機率掉落此物品",
+# "item.sun_apple" : "太陽蘋果"
+# "item.sun_apple.type" : "道具 / 稀有"
+# "item.sun_apple.story.1" : "長相與顏色像太陽的蘋果"
+# "item.sun_apple.story.2" : "但唯獨沒有像太陽般的溫度"
+# "item.sun_apple.story.3" : "味道極甜並且能使玩家獲得火焰抗性"
 
-#name = ['異界鑰匙', 'dark_green', '道具 / 傳說']
-#story = {'info': ['通往異界之門所需的鑰匙', '門後世界怪物將大幅提升戰力', '但是裡面的物資更加稀有', '擊殺怪物與BOSS有機率掉落此物品'], 'color': 'blue'}
-#item_data     = {'real_item': 'firework_star', 'id': 'otherworld_key', 'item_model': '"otherworld_key"', 'custom_data': '{type:"item",item:"otherworld_key"}', 'max_damage': -1, 'rc': False, 'other': ['enchantments={"minecraft:soul_speed":1}', 'tooltip_style="legendary"', 'tooltip_display={hidden_components:["attribute_modifiers","unbreakable","enchantments"]}']}
-#skill    = {'is_skill': False, 'cd': 3, 'name': ['潮汐音浪', '#9443ff', '#ea00ff'], 'info': ['攻擊有 30%機率觸發【回聲音爆】', '可對6格範圍內敵人造成一次攻擊力250%的基礎傷害', '如果玩家擁有【至暗】狀態', '會使【回聲音爆】造成傷害改為 攻擊力 250% 真實傷害']}
-#ultimate    = {'is_ultimate': False, 'cd': 60, 'name': ['低音狂響', '#ff3300', '#001aff'], 'info': ['[%s]可以消耗一顆終焉之眼', '立即釋放【終焉音爆】', '對 8 格範圍內敵人造成 250% 真實傷害', '並且附帶 3 秒緩速 50%']}
-#attribute.append({'attribute': 'attack_damage', 'value': 0, 'slot': 'mainhand', 'operation': 'add_value'})
+#name = ['太陽蘋果', '#ff4800', '道具 / 稀有']
+#story = {'info': ['長相與顏色像太陽的蘋果', '但唯獨沒有像太陽般的溫度', '味道極甜並且能使玩家獲得火焰抗性'], 'color': 'blue'}
+#item_data     = {'real_item': 'apple', 'id': 'sun_apple', 'item_model': '"food/sun_apple/0"', 'custom_data': '{type:"food",rarity:"rare",item:"sun_apple"}', 'max_damage': -1, 'rc': False, 'other': ['tooltip_display={hidden_components:["unbreakable"]}', 'tooltip_style="rare"']}
+#skill     = {'real_item': 'apple', 'id': 'sun_apple', 'item_model': '"food/sun_apple/0"', 'custom_data': '{type:"food",rarity:"rare",item:"sun_apple"}', 'max_damage': -1, 'rc': False, 'other': ['tooltip_display={hidden_components:["unbreakable"]}', 'tooltip_style="rare"']}
+#passive_skills    = {'is_skill': False, 'cd': 0, 'name': ['黃昏之殤', '#00ff80', '#00a799'], 'info': ['> 當 %s 技能觸發時:', '立即獲得【狂風之斬】', '如果你擁有【狂風之斬】', '下次攻擊對目標造成自身 250% 基礎傷害並附加 %s I (00:20)', '使目標 4 格範圍內周圍敵人擊飛']}
+#ultimate    = {'is_ultimate': False, 'cd': 0, 'name': ['末日審判', '#ff0000', '#7a0000'], 'info': ['右鍵點擊消耗一個終焉之眼，', '召喚的【光之聖劍】有 50% 機率觸發以下技能']}

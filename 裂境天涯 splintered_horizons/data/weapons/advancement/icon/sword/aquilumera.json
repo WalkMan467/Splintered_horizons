@@ -3,7 +3,7 @@
     "icon": {
       "id": "minecraft:iron_sword",
       "components": {
-        "minecraft:item_model": "sword/light_of_water_mirror/1",
+        "minecraft:item_model": "sword/light_of_water_mirror/0",
         "minecraft:custom_model_data": {
           "flags": [
             true

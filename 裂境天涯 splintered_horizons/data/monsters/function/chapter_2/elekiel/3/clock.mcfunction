@@ -23,5 +23,6 @@ playsound minecraft:block.note_block.hat voice @s ~ ~1 ~ 1 1
 
 execute if score global monster.elekiel.3.timer matches 1.. run return 0
 
+execute as @a[gamemode=!creative,tag=!chapter_2.elekiel.lose] at @s run function players:stop_animation
 kill @s[gamemode=!creative,tag=!chapter_2.elekiel.lose]
 function monsters:chapter_2/elekiel/3/reset

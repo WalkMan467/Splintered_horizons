@@ -8,9 +8,12 @@
     "weapons:type/sword/echo_rhythm",
     "weapons:type/sword/echo_rhythm_stronger",
     "weapons:type/sword/twilight_wind",
+    "weapons:type/sword/wind_sword",
     "weapons:type/sword/nightfall_switch_dmg",
     "monsters:chapter_2/elekiel/1/space_crack",
     "weapons:type/sword/spider",
-    "weapons:type/sword/morning_light"
+    "weapons:type/sword/morning_light",
+    "armors:type/windriders_legplates/damage",
+    "monsters:chapter_1/abyssal_soulreaper/effect/dot"
   ]
 }

@@ -5,7 +5,9 @@ function monsters:chapter_2/forest_messenger/main
 function monsters:chapter_2/forest_messenger/cocoon/main
 execute as @s[tag=monsters.elekiel] run function monsters:chapter_2/elekiel/main
 function monsters:chapter_1/abyssal_black_knight/main
+function monsters:chapter_1/abyssal_soulreaper/main
 function monsters:chapter_3/corroder/main
+function monsters:other/abyss_crystal/main
 
 
 execute as @s[tag=abyss_berserker] unless data entity @s {HurtTime:0s} run function monsters:chapter_1/abyss_berserker/run

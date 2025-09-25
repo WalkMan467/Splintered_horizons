@@ -9,6 +9,7 @@ scoreboard players remove @s[scores={weapon.morphing_beast.cd=1..}] weapon.morph
 scoreboard players remove @s[scores={weapon.spider.cd=1..}] weapon.spider.cd 1
 scoreboard players remove @s[scores={weapon.morning_light.cd=1..}] weapon.morning_light.cd 1
 scoreboard players remove @s[scores={weapon.morning_light.monster.armor.timer=1..}] weapon.morning_light.monster.armor.timer 1
+scoreboard players remove @s[scores={weapon.ruins_of_the_finality.effect.cd=1..}] weapon.ruins_of_the_finality.effect.cd 1
 
 # # 風力劍
 # tellraw @s[scores={weapon.wind_sword.cd=1}] [{"text":"[","color":"green","bold":true},{"translate":"weapon.wind_sword","color":"dark_green","bold":true},{"text":"] ","color":"green","bold":true},{"translate":"weapon.cd_completed","color":"green","bold":true}]

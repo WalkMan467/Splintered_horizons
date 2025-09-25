@@ -2,8 +2,7 @@ tp @s ^ ^ ^1
 
 particle minecraft:crit ~ ~ ~ 0 0 0 0 1 normal @a
 
-execute as @n[type=!player,type=!item,type=!item_display,type=!block_display,type=!text_display,type=!marker,type=!area_effect_cloud,type=!armor_stand,distance=..1.5] run function weapons:type/drop/broken_glass/effect
+execute positioned ~ ~-0.5 ~ if entity @n[type=!player,type=!#minecraft:dummy_mob,distance=..1.5] run function weapons:type/drop/broken_glass/kill
+execute positioned ~ ~-0.5 ~ as @n[type=!player,type=!#minecraft:dummy_mob,distance=..1.5] run function weapons:type/drop/broken_glass/effect
 
-execute unless block ~ ~ ~ #penetrate run particle block{block_state:"minecraft:glass"} ~ ~ ~ 0.5 0.5 0.5 1 50 normal
-execute unless block ~ ~ ~ #penetrate run playsound minecraft:block.glass.break voice @a ~ ~1 ~ 1 1
-execute unless block ~ ~ ~ #penetrate run kill @s
+execute unless block ~ ~ ~ #penetrate run function weapons:type/drop/broken_glass/kill

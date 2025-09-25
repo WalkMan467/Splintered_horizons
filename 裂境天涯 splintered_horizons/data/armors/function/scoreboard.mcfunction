@@ -17,6 +17,8 @@ scoreboard objectives add armor.black_hole.boots.cd dummy "黑洞之靴 CD"
 scoreboard objectives add armor.black_hole.boots.active dummy "黑洞之靴 啟動狀態"
 scoreboard objectives add armor.armor_of_the_coiled_rock.cd dummy "盤岩之鎧 CD"
 scoreboard objectives add armor.finality_chestplate.cd dummy "終焉之鎧 CD"
+scoreboard objectives add armor.windriders_legplates.cd dummy "馭風戰騎腿鎧 CD"
+
 scoreboard objectives add armor.finality_chestplate.effect.timer dummy "終焉之鎧 攻擊力提升計時器"
 
 scoreboard objectives add armor.random_teleport.raycast dummy "隨機傳送 Raycast"
@@ -24,6 +26,11 @@ scoreboard objectives add armor.random_teleport.raycast.id dummy "隨機傳送 R
 
 scoreboard objectives add armor.black_hole.boots.effect dummy "黑洞之靴 技能觸發"
 scoreboard objectives add armor.black_hole.boots.damage_delay dummy "黑洞之靴 傷害間隔"
+scoreboard objectives add armor.black_hole.boots.aj.id dummy "黑洞之靴 AJ 模型 ID"
+
+scoreboard objectives add armor.windriders_legplates.leggings.effect dummy "馭風戰騎腿鎧 技能觸發"
+scoreboard objectives add armor.windriders_legplates.leggings.damage_delay dummy "馭風戰騎腿鎧 傷害間隔"
+
 
 scoreboard objectives add armor.chestplate.effect.actived dummy "鎧甲類技能啟動中"
 scoreboard objectives add armor.leggings.effect.actived dummy "護腿類技能啟動中"
@@ -35,6 +42,8 @@ scoreboard players add @a armor.tai_chis_shadow.restore_mana_magnification 0
 scoreboard players add @a armor.tai_chis_shadow.effect 0
 scoreboard players add @a armor.black_hole.boots.cd 0
 scoreboard players add @a armor.black_hole.boots.active 0
+scoreboard players add @a armor.windriders_legplates.leggings.effect 0
+scoreboard players add @a armor.windriders_legplates.leggings.damage_delay 0
 
 scoreboard players add @a armor.helmet.effect.actived 0
 scoreboard players add @a armor.chestplate.effect.actived 0

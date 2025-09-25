@@ -63,6 +63,9 @@ scoreboard objectives add weapon.ruins_of_the_finality.cd dummy "終焉之墟 CD
 scoreboard objectives add weapon.ruins_of_the_finality.effect.count dummy "終焉之墟 技能數量"
 scoreboard objectives add weapon.ruins_of_the_finality.effect.count.delay dummy "終焉之墟 技能延遲"
 scoreboard objectives add weapon.ruins_of_the_finality.id dummy "終焉之墟 流水ID"
+scoreboard objectives add weapon.ruins_of_the_finality.enhanced_finality_skill dummy "終焉之墟 強化終焉技持續時間"
+scoreboard objectives add weapon.ruins_of_the_finality.effect dummy "終焉之墟 被動層數"
+scoreboard objectives add weapon.ruins_of_the_finality.effect.cd dummy "終焉之墟 被動 CD"
 
 scoreboard objectives add weapon.ruins_of_the_finality.blade.timer dummy "終焉之墟 斬擊計時器"
 scoreboard objectives add weapon.ruins_of_the_finality.blade.id dummy "終焉之墟 斬擊流水ID"
@@ -75,6 +78,8 @@ scoreboard players add @a weapon.ruins_of_the_finality.cd 0
 scoreboard players add @a weapon.ruins_of_the_finality.effect.count 0
 scoreboard players add @a weapon.ruins_of_the_finality.effect.count.delay 0
 scoreboard players add @a weapon.ruins_of_the_finality.id 0
+scoreboard players add @a weapon.ruins_of_the_finality.enhanced_finality_skill 0
+scoreboard players add @a weapon.ruins_of_the_finality.effect 0
 
 #===================================================================
 #鉤子

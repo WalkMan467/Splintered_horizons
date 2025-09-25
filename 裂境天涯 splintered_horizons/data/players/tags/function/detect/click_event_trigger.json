@@ -1,5 +1,8 @@
 {
     "values": [
-      "players:detect/click_event_trigger"
+      "players:detect/click_event_trigger",
+      "main:trigger",
+      "players:tp_to_spawnpoint/main",
+      "players:tp/chapter_1/broken_city/1"
     ]
   }

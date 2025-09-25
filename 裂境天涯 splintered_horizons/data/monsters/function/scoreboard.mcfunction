@@ -11,14 +11,11 @@ scoreboard objectives add particle dummy
 
 # 深淵斷魂者
 
-scoreboard objectives add monster.abyss_soulcutter dummy "深淵斷魂者血量"
-scoreboard objectives add monster.abyss_soulcutter.state_machine.state dummy "深淵斷魂者狀態機行為"
-scoreboard objectives add monster.abyss_soulcutter.state_machine.action dummy "深淵斷魂者狀態機運行"
-scoreboard objectives add monster.abyss_soulcutter.state_machine.back dummy "深淵斷魂者後退"
+scoreboard objectives add monster.abyss_soulcutter.effect dummy "深淵斷魂者流血狀態"
+scoreboard objectives add monster.abyss_soulcutter.effect.delay dummy "深淵斷魂者流血"
+scoreboard objectives add monster.abyss_soulcutter.damage.health.detect dummy "深淵斷魂者 偵測玩家血量"
 
 # ===============================================================================
-
-# 深淵斷魂者
 
 scoreboard objectives add monster.effect.finality dummy "[怪物] 終焉轉化"
 

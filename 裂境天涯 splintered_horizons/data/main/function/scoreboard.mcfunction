@@ -12,10 +12,12 @@ scoreboard objectives add main.difficulty dummy
 scoreboard objectives add main.gamemode dummy
 scoreboard objectives add main.3d_dizziness dummy "3D暈眩"
 scoreboard objectives add main.light_sensitivity dummy "光敏感"
-
-scoreboard objectives add death_count deathCount [{"text":" ☠ 死亡次數 ☠","color":"red"}]
+scoreboard objectives add main.trigger trigger "Main 觸發器"
 
 scoreboard players add #monument.area_1 global.main 0
+
+scoreboard players enable @a main.trigger
+scoreboard players set @a main.trigger 0
 
 scoreboard objectives add player.leave_game minecraft.custom:minecraft.leave_game "玩家離開"
 

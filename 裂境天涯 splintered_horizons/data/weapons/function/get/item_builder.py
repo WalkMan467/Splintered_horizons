@@ -13,11 +13,11 @@
 attribute = []
 # ----- 設定參數 ----- #
 
-name = ['晨曦之光', '#ffd000', '劍']
+name = ['馭風戰騎腿鎧', "#00ff80", '劍']
 story = {'info': ['一把由聖光作為材料鍛造出來的劍，', '在世界被深淵壟罩之後', '依舊還保留了殘餘聖光的能量，', '即使黑暗時代降臨', '依舊無時無刻抵抗著深淵力量。'], 'color': 'blue'}
 item_data     = {'real_item': 'iron_sword', 'id': 'morning_light', 'item_model': '"minecraft:sword/morning_light/1"', 'custom_data': '{type:"sword",rarity:"epic",weapon:"morning_light"}', 'max_damage': -1, 'rc': False, 'other': ['minecraft:enchantments={"weapons:type/sword/morning_light/use":1}', 'enchantment_glint_override=false', 'tooltip_display={hidden_components:["enchantments"]}', 'tooltip_style="epic"']}
-skill    = {'is_skill': True, 'cd': 20, 'name': ['黃昏之殤', 'gold', "#fffb00"], 'info': ['攻擊命中時:', '在空中召喚【光之聖劍】落下', '並且對 3 格範圍內怪物造成 150% 傷害','如果你擁有 [%s]','立即刷新此技能CD']}
-passive_skills    = {'is_passive_skills': True, 'cd': 0, 'name': ['神聖制裁', 'gold', '#fffb00'], 'info': ['【光之聖劍】命中怪物時:','立即對怪物施加 盔甲 -10% (00:10)','最多疊加 3 層','並且使你獲得神聖之火 (00:10)']}
+skill    = {'is_skill': True, 'cd': 20, 'name': ['黃昏之殤', '#00ff80', "#00a799"], 'info': ['> 當 %s 技能觸發時:', '立即獲得【狂風之斬】', '如果你擁有【狂風之斬】','下次攻擊對目標造成自身 250% 基礎傷害並附加 %s I (00:20)','使目標 4 格範圍內周圍敵人擊飛']}
+passive_skills    = {'is_passive_skills': False, 'cd': 0, 'name': ['神聖制裁', '#00ff80', '#00a799'], 'info': ['【光之聖劍】命中怪物時:','立即對怪物施加 盔甲 -10% (00:10)','最多疊加 3 層','並且使你獲得神聖之火 (00:10)']}
 ultimate    = {'is_ultimate': False, 'cd': 60, 'name': ['末日審判', "#ff0000", "#7a0000"], 'info': ['右鍵點擊消耗一個終焉之眼，', '召喚的【光之聖劍】有 50% 機率觸發以下技能']}
 attribute.append({'attribute': 'attack_damage', 'value': 4.5, 'slot': 'mainhand', 'operation': 'add_value'})
 attribute.append({'attribute': 'attack_speed', 'value': -2.35, 'slot': 'mainhand', 'operation': 'add_value'})

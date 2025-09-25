@@ -8,6 +8,8 @@
 
 function world_area:other/otherworld_portal/1/main
 function world_area:other/otherworld_portal/2/main
+function world_area:other/otherworld_portal/3/main
+function world_area:other/otherworld_portal/4/main
 
 #==================================================
 

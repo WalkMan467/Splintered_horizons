@@ -8,6 +8,7 @@ execute if biome ~ ~ ~ world_area:chapter_2/forest_of_souls run scoreboard playe
 execute if biome ~ ~ ~ world_area:chapter_2/forgotten_sakura_city run scoreboard players set @s music.chapter2.forgotten_sakura_city 1
 execute if biome ~ ~ ~ world_area:other/the_forgooten_lost_city run scoreboard players set @s music.other.the_forgooten_lost_city 1
 execute if biome ~ ~ ~ #world_area:chapter_2_end run scoreboard players set @s music.chapter2.temple_of_light 1
+execute if biome ~ ~ ~ world_area:chapter_3/realm_of_finality run scoreboard players set @s music.chapter3.realm_of_finality 1
 
 execute unless biome ~ ~ ~ world_area:chapter_2/land_of_finality run scoreboard players set @s music.chapter2.land_of_finality 0
 execute unless biome ~ ~ ~ #world_area:chapter_1 run scoreboard players set @s music.chapter1.broken_city 0
@@ -16,3 +17,4 @@ execute unless biome ~ ~ ~ world_area:chapter_2/forest_of_souls run scoreboard p
 execute unless biome ~ ~ ~ world_area:chapter_2/forgotten_sakura_city run scoreboard players set @s music.chapter2.forgotten_sakura_city 0
 execute unless biome ~ ~ ~ world_area:other/the_forgooten_lost_city run scoreboard players set @s music.other.the_forgooten_lost_city 0
 execute unless biome ~ ~ ~ #world_area:chapter_2_end run scoreboard players set @s music.chapter2.temple_of_light 0
+execute unless biome ~ ~ ~ world_area:chapter_3/realm_of_finality run scoreboard players set @s music.chapter3.realm_of_finality 0
