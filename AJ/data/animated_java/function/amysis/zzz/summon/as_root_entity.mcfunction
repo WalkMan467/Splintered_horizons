@@ -8,6 +8,7 @@ tp @s ~ ~ ~ ~ ~
 execute at @s on passengers run rotate @s ~ ~
 data modify entity @s teleport_duration set value 5
 execute on passengers run data modify entity @s teleport_duration set value 5
+execute on passengers if entity @s[nbt={item: {id: "minecraft:slime_ball"}},type=minecraft:item_display] run data merge entity @s {item: {components: {"minecraft:item_model": "animated_java:blueprint/amysis/hair"}, count: 1, id: "minecraft:apple"}}
 tp @s ~ ~ ~ ~ 0
 tag @s remove aj.new
 execute on passengers run tag @s remove aj.new

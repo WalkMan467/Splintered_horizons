@@ -1,4 +1,5 @@
-execute if items entity @s weapon.mainhand *[custom_model_data={floats:[1]},custom_data~{weapon:"grip_of_withering"}] run item modify entity @s weapon.mainhand weapons:type/sword/grip_of_withering/0
+
+execute if items entity @s weapon.mainhand *[custom_data~{weapon:"grip_of_withering"}] run item modify entity @s weapon.mainhand weapons:type/sword/grip_of_withering/0
 
 scoreboard players set @s weapon.grip_of_withering.effect 0
 

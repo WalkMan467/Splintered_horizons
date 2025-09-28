@@ -1,6 +1,5 @@
 
 function story:tick
-function items:timer_t
 
 execute if dimension minecraft:overworld in minecraft:overworld run spawnpoint @s 9987 165 9978
 execute if dimension minecraft:the_end in minecraft:the_end run spawnpoint @s 9987 165 9978
@@ -28,7 +27,6 @@ function players:main
 function players:hide/false
 function players:disable/movement/main
 function players:actionbar/main
-function players:timer
 function #players:detect/click_event_trigger
 
 # Area

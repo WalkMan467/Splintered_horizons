@@ -3,4 +3,5 @@ execute unless entity @s[tag=aj.amysis.root] run return 0
 execute if entity @s[tag=aj.amysis.animation.sit_down.playing] run function animated_java:amysis/animations/sit_down/zzz/on_tick
 execute if entity @s[tag=aj.amysis.animation.idle.playing] run function animated_java:amysis/animations/idle/zzz/on_tick
 execute if entity @s[tag=aj.amysis.animation.cutscene_chapter_2_safe_zone_1.playing] run function animated_java:amysis/animations/cutscene_chapter_2_safe_zone_1/zzz/on_tick
+execute if entity @s[tag=aj.amysis.animation.cutscene_opening_1.playing] run function animated_java:amysis/animations/cutscene_opening_1/zzz/on_tick
 execute at @s on passengers run rotate @s ~ ~

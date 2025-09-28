@@ -76,6 +76,6 @@
     }
   },
   "rewards": {
-    "function": "players:tips/eye_of_finality"
+    "function": "players:tips/runes"
   }
 }

@@ -15,5 +15,3 @@ playsound minecraft:entity.illusioner.prepare_blindness voice @a ~ ~1 ~ 1 1.5
 playsound minecraft:entity.illusioner.cast_spell voice @a ~ ~1 ~ 1 1
 
 scoreboard players set @s weapon.nightfall.state 1
-
-scoreboard players set @s weapon.nightfall.cd 5

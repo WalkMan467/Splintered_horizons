@@ -3,3 +3,4 @@ execute unless entity @s[type=minecraft:item_display,tag=aj.amysis.root] run ret
 tag @s remove aj.amysis.animation.sit_down.playing
 tag @s remove aj.amysis.animation.idle.playing
 tag @s remove aj.amysis.animation.cutscene_chapter_2_safe_zone_1.playing
+tag @s remove aj.amysis.animation.cutscene_opening_1.playing

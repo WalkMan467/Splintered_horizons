@@ -1,0 +1,245 @@
+{
+  "type": "minecraft:loot_table",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_sword",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": [
+                  {
+                    "translate": "weapon.spider",
+                    "color": "#FF2BA3",
+                    "italic": false,
+                    "bold": true
+                  }
+                ],
+                "minecraft:lore": [
+                  [
+                    {
+                      "translate": "weapon.spider.type",
+                      "italic": false,
+                      "color": "dark_gray"
+                    }
+                  ],
+                  {
+                    "text": ""
+                  },
+                  [
+                    {
+                      "translate": "weapon.spider.story.1",
+                      "italic": false,
+                      "color": "blue"
+                    }
+                  ],
+                  [
+                    {
+                      "translate": "weapon.spider.story.2",
+                      "italic": false,
+                      "color": "blue"
+                    }
+                  ],
+                  [
+                    {
+                      "translate": "weapon.spider.story.3",
+                      "italic": false,
+                      "color": "blue"
+                    }
+                  ],
+                  {
+                    "text": ""
+                  },
+                  [
+                    {
+                      "text": "",
+                      "italic": false
+                    },
+                    {
+                      "translate": "weapon.spider.skill",
+                      "color": "#FF2BA3",
+                      "bold": true
+                    },
+                    {
+                      "text": "  "
+                    },
+                    {
+                      "translate": "weapon.skill_cd",
+                      "color": "#6E6E6E"
+                    },
+                    {
+                      "text": "20s"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "",
+                      "italic": false
+                    },
+                    {
+                      "translate": "weapon.spider.skill.1",
+                      "color": "#9C0059",
+                      "with": [
+                        {
+                          "keybind": "key.use",
+                          "underlined": true,
+                          "color": "dark_green"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "",
+                      "italic": false
+                    },
+                    {
+                      "translate": "weapon.spider.skill.2",
+                      "color": "#9C0059"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "",
+                      "italic": false
+                    },
+                    {
+                      "translate": "weapon.spider.skill.3",
+                      "color": "#9C0059",
+                      "with": [
+                        {
+                          "translate": "weapon.effect.chaotic_thunder",
+                          "underlined": true,
+                          "color": "#ff0077"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "",
+                      "italic": false
+                    },
+                    {
+                      "translate": "weapon.spider.skill.4",
+                      "color": "#9C0059",
+                      "with": [
+                        {
+                          "translate": "weapon.effect.shadow",
+                          "underlined": true,
+                          "color": "#470041"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "",
+                      "italic": false
+                    },
+                    {
+                      "translate": "weapon.spider.skill.5",
+                      "color": "#9C0059"
+                    }
+                  ],
+                  {
+                    "text": ""
+                  },
+                  [
+                    {
+                      "text": "",
+                      "italic": false
+                    },
+                    {
+                      "translate": "weapon.spider.passive_skills",
+                      "color": "#FF2BA3",
+                      "bold": true
+                    },
+                    {
+                      "text": "  "
+                    }
+                  ],
+                  [
+                    {
+                      "text": "",
+                      "italic": false
+                    },
+                    {
+                      "translate": "weapon.spider.passive_skills.1",
+                      "color": "#9C0059"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "",
+                      "italic": false
+                    },
+                    {
+                      "translate": "weapon.spider.passive_skills.2",
+                      "color": "#9C0059"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "",
+                      "italic": false
+                    },
+                    {
+                      "translate": "weapon.spider.passive_skills.3",
+                      "color": "#9C0059"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "",
+                      "italic": false
+                    },
+                    {
+                      "translate": "weapon.spider.passive_skills.4",
+                      "color": "#9C0059"
+                    }
+                  ]
+                ],
+                "minecraft:attribute_modifiers": [
+                  {
+                    "id": "base_attack_damage",
+                    "type": "attack_damage",
+                    "amount": 5,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "id": "base_attack_speed",
+                    "type": "attack_speed",
+                    "amount": -2.5,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  }
+                ],
+                "minecraft:max_stack_size": 1,
+                "minecraft:unbreakable": {},
+                "minecraft:item_model": "sword/spider/1",
+                "minecraft:custom_data": {
+                  "rc": true,
+                  "type": "sword",
+                  "rarity": "epic",
+                  "weapon": "spider"
+                },
+                "minecraft:consumable": {
+                  "consume_seconds": 10000,
+                  "animation": "none",
+                  "has_consume_particles": false
+                },
+                "minecraft:tooltip_style": "epic"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

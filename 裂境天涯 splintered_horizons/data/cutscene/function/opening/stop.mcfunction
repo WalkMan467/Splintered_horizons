@@ -2,9 +2,10 @@ execute in minecraft:overworld run forceload remove 42 11 42 11
 execute in minecraft:overworld run forceload remove 10055 10310
 function cutscene:opening/remove_camera
 
-function animated_java:aska/remove/all
-function animated_java:oceanid/remove/all
-function animated_java:kyle/remove/all
+execute positioned 10055 123 10310 as @n[tag=aj.amysis.root,type=item_display,distance=..3] run function animated_java:amysis/remove/this
+execute positioned 9998 93 10065 as @n[distance=..3,type=item_display,tag=aj.aska.root] run function animated_java:aska/remove/this
+execute positioned 10000 93 10065 as @n[distance=..3,type=item_display,tag=aj.oceanid.root] run function animated_java:oceanid/remove/this
+execute positioned 9999 95 10060 as @n[distance=..3,type=item_display,tag=aj.kyle.root] run function animated_java:kyle/remove/this
 
 weather clear
 

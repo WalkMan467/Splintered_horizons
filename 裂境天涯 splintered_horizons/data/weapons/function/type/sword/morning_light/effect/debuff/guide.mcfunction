@@ -1,4 +1,4 @@
-scoreboard players remove @s armor.finality_chestplate.effect.timer 1
+scoreboard players remove @s weapon.morning_light.monster.armor.timer 1
 
 attribute @s armor modifier remove weapon.morning_light.monster.effect
 

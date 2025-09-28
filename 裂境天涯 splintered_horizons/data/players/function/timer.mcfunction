@@ -1,12 +1,10 @@
-scoreboard players remove @s[scores={player.hide=1..}] player.hide 1
-scoreboard players remove @s[scores={player.disable.movement=0..}] player.disable.movement 1
-scoreboard players remove @s[scores={player.animation.lock=1..}] player.animation.lock 1
-scoreboard players remove @s[scores={player.disable.elytra_switch=1..}] player.disable.elytra_switch 1
-scoreboard players remove @s[scores={player.hurt_time=1..}] player.hurt_time 1
-scoreboard players remove @s[scores={player.actionbar.weapon.nightfall=1..}] player.actionbar.weapon.nightfall 1
-scoreboard players remove @s[scores={player.give.item.delay=1..}] player.give.item.delay 1
-scoreboard players remove @s[scores={player.actionbar.otherworld_portal.1=1..}] player.actionbar.otherworld_portal.1 1
-scoreboard players remove @s[scores={player.actionbar.otherworld_portal.2=1..}] player.actionbar.otherworld_portal.2 1
-scoreboard players remove @s[scores={player.shift.skill.disable=1..}] player.shift.skill.disable 1
-
-function weapons:timer_t
+scoreboard players remove @a[scores={player.hide=1..}] player.hide 1
+scoreboard players remove @a[scores={player.disable.movement=0..}] player.disable.movement 1
+scoreboard players remove @a[scores={player.animation.lock=1..}] player.animation.lock 1
+scoreboard players remove @a[scores={player.disable.elytra_switch=1..}] player.disable.elytra_switch 1
+scoreboard players remove @a[scores={player.hurt_time=1..}] player.hurt_time 1
+scoreboard players remove @a[scores={player.actionbar.weapon.nightfall=1..}] player.actionbar.weapon.nightfall 1
+scoreboard players remove @a[scores={player.give.item.delay=1..}] player.give.item.delay 1
+scoreboard players remove @a[scores={player.actionbar.otherworld_portal.1=1..}] player.actionbar.otherworld_portal.1 1
+scoreboard players remove @a[scores={player.actionbar.otherworld_portal.2=1..}] player.actionbar.otherworld_portal.2 1
+scoreboard players remove @a[scores={player.shift.skill.disable=1..}] player.shift.skill.disable 1

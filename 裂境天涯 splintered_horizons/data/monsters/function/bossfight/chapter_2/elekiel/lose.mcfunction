@@ -14,4 +14,8 @@ execute as @a run function music:chapter_2/bossfight/2/reset
 
 tp @a 1109 82 373
 
+forceload add 912 2018 912 2018
+
+execute as @a run function players:reset_state
+
 scoreboard players set #bossfight.chapter_2.act.setup global.main 1

@@ -1,7 +1,4 @@
 
-# player
-execute unless score @s weapon.effect.resplendence matches 1.. run scoreboard players set @s weapon.aquilumera.cd 25
-execute if score @s weapon.effect.resplendence matches 1.. run scoreboard players set @s weapon.aquilumera.cd 12
 
 effect give @s levitation 1 3 true
 effect give @s resistance 2 2 true

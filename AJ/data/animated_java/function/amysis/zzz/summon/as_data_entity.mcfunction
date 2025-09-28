@@ -21,12 +21,12 @@ execute on vehicle on passengers if entity @s[tag=aj.amysis.node.10] run functio
 data modify entity @s data.uuids.bone_10 set from storage aj:uuid main.out
 execute on vehicle on passengers if entity @s[tag=aj.amysis.node.9] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_9 set from storage aj:uuid main.out
-execute on vehicle on passengers if entity @s[tag=aj.amysis.node.item_display] run function animated_java:global/internal/gu/convert_uuid_array_to_string
-data modify entity @s data.uuids.item_display_item_display set from storage aj:uuid main.out
 execute on vehicle on passengers if entity @s[tag=aj.amysis.node.2] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_2 set from storage aj:uuid main.out
 execute on vehicle on passengers if entity @s[tag=aj.amysis.node.1] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_1 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.amysis.node.item_display] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.item_display_item_display set from storage aj:uuid main.out
 execute on vehicle on passengers if entity @s[tag=aj.amysis.node.4] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_4 set from storage aj:uuid main.out
 execute on vehicle on passengers if entity @s[tag=aj.amysis.node.3] run function animated_java:global/internal/gu/convert_uuid_array_to_string

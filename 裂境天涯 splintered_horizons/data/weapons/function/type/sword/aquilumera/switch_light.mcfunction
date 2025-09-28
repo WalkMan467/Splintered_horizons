@@ -1,8 +1,3 @@
-
-# player
-execute unless score @s weapon.effect.resplendence matches 1.. run scoreboard players set @s weapon.aquilumera.cd 25
-execute if score @s weapon.effect.resplendence matches 1.. run scoreboard players set @s weapon.aquilumera.cd 12
-
 effect give @s speed 1 2 true
 
 # particle

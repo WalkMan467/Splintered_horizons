@@ -1,0 +1,2 @@
+execute as @e[type=!player,type=!#minecraft:dummy_mob] at @s if score @s weapon.morning_light.monster.armor.timer matches 1.. run function weapons:type/sword/morning_light/effect/debuff/guide
+execute as @e[type=!player,type=!#minecraft:dummy_mob] at @s if score @s weapon.morning_light.monster.armor.timer matches 0 run function weapons:type/sword/morning_light/effect/debuff/reset

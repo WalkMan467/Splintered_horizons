@@ -1,1 +1,1 @@
-scoreboard players remove @s[scores={item.tp_book.casting=0..}] item.tp_book.casting 1
+scoreboard players remove @a[scores={item.tp_book.casting=0..}] item.tp_book.casting 1

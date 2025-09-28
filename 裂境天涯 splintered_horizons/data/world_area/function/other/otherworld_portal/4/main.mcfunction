@@ -1,7 +1,7 @@
 ## ---異界傳送門--- ##
 
-    execute positioned as 00000015-0000-0002-0000-000200000005 unless score #world_area.other.otherworld_portal.4.lock global.main matches 1.. if score #world_area.other.otherworld_portal.4 world_area.other.otherworld_portal.delay matches 85.. as @a[distance=..0.5] in minecraft:the_end run function world_area:other/otherworld_portal/4/in
-    execute positioned as 00000015-0000-0002-0000-000200000007 unless score #world_area.other.otherworld_portal.4.lock global.main matches 1.. if score #world_area.other.otherworld_portal.4 world_area.other.otherworld_portal.delay matches 85.. as @a[distance=..0.5] in minecraft:the_end run function world_area:other/otherworld_portal/4/in
+    execute positioned as 00000015-0000-0002-0000-000200000033 unless score #world_area.other.otherworld_portal.4.lock global.main matches 1.. if score #world_area.other.otherworld_portal.4 world_area.other.otherworld_portal.delay matches 85.. as @a[distance=..0.5] in minecraft:the_end run function world_area:other/otherworld_portal/4/in
+    execute positioned as 00000015-0000-0002-0000-00020000000c unless score #world_area.other.otherworld_portal.4.lock global.main matches 1.. if score #world_area.other.otherworld_portal.4 world_area.other.otherworld_portal.delay matches 85.. as @a[distance=..0.5] in minecraft:the_end run function world_area:other/otherworld_portal/4/in
 
 
     # Detect

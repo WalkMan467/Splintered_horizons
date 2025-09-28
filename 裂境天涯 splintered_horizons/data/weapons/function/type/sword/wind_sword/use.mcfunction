@@ -2,7 +2,7 @@
 # player
 tag @s add wind_sword.user
 
-scoreboard players set @s weapon.wind_sword.cd 13
+scoreboard players set @s weapon.wind_sword.cd 260
 scoreboard players set @s weapon.wind_sword.timer 0
 
 tellraw @s [{"translate":"weapon.wind_sword.skill","color":"dark_green","bold":true}," ",{"translate":"weapon.skill_activation","color":"green","bold":true}]

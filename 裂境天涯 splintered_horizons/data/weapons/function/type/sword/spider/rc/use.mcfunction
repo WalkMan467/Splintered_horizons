@@ -14,7 +14,7 @@ playsound minecraft:entity.generic.explode voice @s ~ ~1 ~ 0.5 1
 playsound minecraft:entity.player.attack.sweep voice @s ~ ~1 ~ 1 0.75
 playsound minecraft:voice.ruins_of_the_end_hurt voice @s ~ ~1 ~ 0.5 1.5
 
-scoreboard players set @s weapon.spider.cd 20
+scoreboard players set @s weapon.spider.cd 800
 scoreboard players set @s weapon.effect.chaotic_thunder 100
 
 tag @e[type=!player,type=!#dummy_mob,distance=..4] add dmger

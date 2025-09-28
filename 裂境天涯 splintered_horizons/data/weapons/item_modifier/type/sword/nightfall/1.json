@@ -33,5 +33,17 @@
       "weapons:type/sword/nightfall/1": 1,
       "weapons:type/sword/nightfall/0": 0
     }
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:custom_data": {
+        "state": true,
+        "rc": true,
+        "type": "sword",
+        "rarity": "epic",
+        "weapon": "nightfall"
+      }
+    }
   }
 ]

@@ -1,0 +1,24 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "min": 1,
+        "max": 5
+      },
+      "bonus_rolls": {
+        "min": 3,
+        "max": 5
+      },
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "system:memory_tree/chapter_1"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "system:memory_tree/chapter_2"
+        }
+      ]
+    }
+  ]
+}

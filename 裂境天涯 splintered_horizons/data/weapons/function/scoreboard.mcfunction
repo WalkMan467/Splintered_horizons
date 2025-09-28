@@ -29,9 +29,12 @@ scoreboard players add @a weapon.twilight_wind.gale_energy 0
 #凋零之握
 
 scoreboard objectives add weapon.grip_of_withering.effect dummy "凋零之握型態持續時間"
-scoreboard objectives add weapon.grip_of_withering.cd dummy "凋零之握型態持續時間"
+scoreboard objectives add weapon.grip_of_withering.effect.state dummy "凋零之握型態持續時間"
+
+scoreboard objectives add weapon.grip_of_withering.cd dummy "凋零之握 CD"
 
 scoreboard players add @a weapon.grip_of_withering.effect 0
+
 scoreboard players add @a weapon.grip_of_withering.cd 0
 
 #===================================================================
@@ -54,6 +57,17 @@ scoreboard players set global weapon.spider_passive_dot 5
 
 
 #===================================================================
+# 深淵之火
+
+scoreboard objectives add weapon.flame_of_abyss.cd dummy "深淵之火 CD"
+scoreboard objectives add weapon.flame_of_abyss.effect dummy "深淵之火 惡咒"
+scoreboard objectives add weapon.flame_of_abyss.effect.cd dummy "深淵之火 惡咒 CD"
+
+scoreboard players add @a weapon.flame_of_abyss.cd 0
+scoreboard players add @a weapon.flame_of_abyss.effect 0
+scoreboard players add @a weapon.flame_of_abyss.effect.cd 0
+
+#===================================================================
 
 #終焉之墟
 
@@ -66,6 +80,7 @@ scoreboard objectives add weapon.ruins_of_the_finality.id dummy "終焉之墟 �
 scoreboard objectives add weapon.ruins_of_the_finality.enhanced_finality_skill dummy "終焉之墟 強化終焉技持續時間"
 scoreboard objectives add weapon.ruins_of_the_finality.effect dummy "終焉之墟 被動層數"
 scoreboard objectives add weapon.ruins_of_the_finality.effect.cd dummy "終焉之墟 被動 CD"
+scoreboard objectives add weapon.ruins_of_the_finality.effect.detect dummy "終焉之墟 被動 偵測"
 
 scoreboard objectives add weapon.ruins_of_the_finality.blade.timer dummy "終焉之墟 斬擊計時器"
 scoreboard objectives add weapon.ruins_of_the_finality.blade.id dummy "終焉之墟 斬擊流水ID"
@@ -91,6 +106,7 @@ scoreboard objectives add weapon.hook.target.id dummy "鉤爪點流水ID"
 scoreboard players add @a weapon.hook.effect.id 0
 scoreboard players add @a weapon.hook.user.id 0
 scoreboard players add @a weapon.hook.target.id 0
+scoreboard players add @a weapon.ruins_of_the_finality.effect.detect 0
 
 #===================================================================
 # 晨光

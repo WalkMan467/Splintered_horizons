@@ -2,7 +2,7 @@
 # player
 tag @s add twilight_wind.user
 
-scoreboard players set @s weapon.twilight_wind.cd 5
+scoreboard players set @s weapon.twilight_wind.cd 100
 scoreboard players set @s weapon.twilight_wind.timer 0
 
 tellraw @s [{"translate":"weapon.twilight_wind.skill","color":"dark_green","bold":true}," ",{"translate":"weapon.skill_activation","color":"green","bold":true}]

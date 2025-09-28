@@ -1,2 +1,2 @@
-scoreboard players set @s weapon.morning_light.monster.armor.timer 10
+scoreboard players set @s weapon.morning_light.monster.armor.timer 400
 execute unless score @s weapon.morning_light.monster.armor.state matches 3.. run scoreboard players add @s weapon.morning_light.monster.armor.state 1

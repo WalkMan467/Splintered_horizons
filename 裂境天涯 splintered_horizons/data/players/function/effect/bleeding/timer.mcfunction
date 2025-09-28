@@ -1,2 +1,0 @@
-execute if score @s monster.abyss_soulcutter.effect matches 1.. run function players:effect/bleeding/guide
-execute if score @s monster.abyss_soulcutter.effect matches 0 run function players:effect/bleeding/reset

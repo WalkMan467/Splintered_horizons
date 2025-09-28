@@ -1,3 +1,5 @@
+execute unless score @s weapon.ruins_of_the_finality.effect.detect matches 1.. run return 0
+
 scoreboard players add @s weapon.ruins_of_the_finality.effect 0
 scoreboard players add @s weapon.ruins_of_the_finality.effect.cd 0
 

@@ -1,0 +1,180 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone_sword",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": [
+                  {
+                    "translate": "weapon.twilight_wind",
+                    "color": "dark_aqua",
+                    "italic": false,
+                    "bold": true
+                  }
+                ],
+                "minecraft:lore": [
+                  [
+                    {
+                      "translate": "weapon.twilight_wind.type",
+                      "italic": false,
+                      "color": "dark_gray"
+                    }
+                  ],
+                  {
+                    "text": ""
+                  },
+                  [
+                    {
+                      "translate": "weapon.twilight_wind.story.1",
+                      "italic": false,
+                      "color": "blue"
+                    }
+                  ],
+                  [
+                    {
+                      "translate": "weapon.twilight_wind.story.2",
+                      "italic": false,
+                      "color": "blue"
+                    }
+                  ],
+                  {
+                    "text": ""
+                  },
+                  [
+                    {
+                      "text": "",
+                      "italic": false
+                    },
+                    {
+                      "translate": "weapon.twilight_wind.skill",
+                      "color": "#a6ff00",
+                      "bold": true
+                    },
+                    {
+                      "text": "  "
+                    },
+                    {
+                      "translate": "weapon.skill_cd",
+                      "color": "#6E6E6E"
+                    },
+                    {
+                      "text": "5s"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "",
+                      "italic": false
+                    },
+                    {
+                      "translate": "weapon.twilight_wind.skill.1",
+                      "color": "#00ffaa"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "",
+                      "italic": false
+                    },
+                    {
+                      "translate": "weapon.twilight_wind.skill.2",
+                      "color": "#00ffaa"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "",
+                      "italic": false
+                    },
+                    {
+                      "translate": "weapon.twilight_wind.skill.3",
+                      "color": "#00ffaa"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "",
+                      "italic": false
+                    },
+                    {
+                      "translate": "weapon.twilight_wind.skill.4",
+                      "color": "#00ffaa",
+                      "with": [
+                        {
+                          "translate": "weapon.effect.resplendence",
+                          "underlined": true,
+                          "color": "gold"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "",
+                      "italic": false
+                    },
+                    {
+                      "translate": "weapon.twilight_wind.skill.5",
+                      "color": "#00ffaa"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "",
+                      "italic": false
+                    },
+                    {
+                      "translate": "weapon.twilight_wind.skill.6",
+                      "color": "#00ffaa"
+                    }
+                  ]
+                ],
+                "minecraft:attribute_modifiers": [
+                  {
+                    "id": "base_attack_damage",
+                    "type": "attack_damage",
+                    "amount": 4,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "id": "base_attack_speed",
+                    "type": "attack_speed",
+                    "amount": -2.4,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  }
+                ],
+                "minecraft:max_stack_size": 1,
+                "minecraft:unbreakable": {},
+                "minecraft:item_model": "sword/wind_sword/2",
+                "minecraft:custom_data": {
+                  "type": "sword",
+                  "rarity": "epic",
+                  "weapon": "twilight_wind"
+                },
+                "minecraft:enchantments": {
+                  "weapons:type/sword/twilight_wind/use": 1
+                },
+                "minecraft:enchantment_glint_override": false,
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "enchantments"
+                  ]
+                },
+                "minecraft:tooltip_style": "epic"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
