@@ -8,3 +8,4 @@ scoreboard players remove @a[scores={player.give.item.delay=1..}] player.give.it
 scoreboard players remove @a[scores={player.actionbar.otherworld_portal.1=1..}] player.actionbar.otherworld_portal.1 1
 scoreboard players remove @a[scores={player.actionbar.otherworld_portal.2=1..}] player.actionbar.otherworld_portal.2 1
 scoreboard players remove @a[scores={player.shift.skill.disable=1..}] player.shift.skill.disable 1
+scoreboard players remove @a[scores={player.gamemode.change.display_delay=1..}] player.gamemode.change.display_delay 1

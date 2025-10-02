@@ -28,6 +28,7 @@ function weapons:type/drop/miniature_sun/rc/main
 # Timer (1s)
 schedule function monsters:timer_s 1s
 schedule function armors:timer_s 1s
+schedule function music:timer 1s
 
 schedule function system:monument_point/main 1t
 schedule function system:forging_table/main 1t

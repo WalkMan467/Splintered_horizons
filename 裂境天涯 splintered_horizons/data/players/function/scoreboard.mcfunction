@@ -38,11 +38,13 @@ scoreboard objectives add player.spawnpoint.pos.x dummy "[玩家] 重生點 X座
 scoreboard objectives add player.spawnpoint.pos.y dummy "[玩家] 重生點 Y座標"
 scoreboard objectives add player.spawnpoint.pos.z dummy "[玩家] 重生點 Z座標"
 scoreboard objectives add player.spawnpoint.dimension dummy "[玩家] 重生點 維度"
+scoreboard objectives add player.gamemode.change.display_delay dummy "[玩家] 模式改變顯示延遲"
 
 scoreboard players add @a player.no_cd 0
 scoreboard players add @a player.animation.lock 0
 scoreboard players add @a player.click.interval 0
 scoreboard players add @a player.auto_crafting.brick 0
+scoreboard players add @a player.gamemode.change.display_delay 0
 
 # ==================================================================================================
 # 禁用

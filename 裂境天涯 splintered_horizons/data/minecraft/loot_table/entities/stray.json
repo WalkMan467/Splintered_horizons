@@ -86,14 +86,42 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 0,
-                "max": 1
+                "min": 1,
+                "max": 4
               }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.5
             }
           ]
         }
       ],
       "functions": []
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "items:get/world_memory_fragments",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1,
+              "conditions": []
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.2
+        }
+      ]
     }
   ],
   "random_sequence": "minecraft:entities/skeleton"

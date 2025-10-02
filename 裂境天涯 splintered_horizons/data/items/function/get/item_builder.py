@@ -13,17 +13,26 @@
 attribute = []
 # ----- 設定參數 ----- #
 
-name = ['不穩定的水晶', "#9500cf", '道具 / 貴重物品']
-story = {'info': ['世界記憶凝聚而成的水晶', '藏在隱密的角落','非常珍貴', '集其 9 個可以用合成台合成通往異界的鑰匙'], 'color': 'blue'}
-item_data     = {'real_item': 'echo_shard', 'id': 'unstable_crystal', 'item_model': '"echo_shard"', 'custom_data': '{type:"item",rarity:"epic",item:"unstable_crystal"}', 'max_damage': -1, 'rc': False, 'other': ['tooltip_display={hidden_components:["unbreakable"]}','tooltip_style="epic"']}
-skill    = {'is_skill': False, 'cd': 0, 'name': ['黃昏之殤', '#00ff80', "#00a799"], 'info': ['> 當 %s 技能觸發時:', '立即獲得【狂風之斬】', '如果你擁有【狂風之斬】','下次攻擊對目標造成自身 250% 基礎傷害並附加 %s I (00:20)','使目標 4 格範圍內周圍敵人擊飛']}
-passive_skills    = {'is_passive_skills': False, 'cd': 0, 'name': ['神聖制裁', '#00ff80', '#00a799'], 'info': ['【光之聖劍】命中怪物時:','立即對怪物施加 盔甲 -10% (00:10)','最多疊加 3 層','並且使你獲得神聖之火 (00:10)']}
-ultimate    = {'is_ultimate': False, 'cd': 0, 'name': ['末日審判', "#ff0000", "#7a0000"], 'info': ['右鍵點擊消耗一個終焉之眼，', '召喚的【光之聖劍】有 50% 機率觸發以下技能']}
+name = ['世界記憶碎片', "#fbff00", '道具 / 貴重物品']
+story = {'info': ['世界記憶凝聚而成的碎片', '記錄著過往世間的記憶', '似乎集其 9 個可以兌換打開異界之門的鑰匙'], 'color': 'blue'}
+item_data = {'real_item': 'echo_shard', 'id': 'world_memory_fragments', 'item_model': '"other/world_memory_fragments"', 'custom_data': '{type:"item",item:"world_memory_fragments"}', 'max_damage': -1, 'max_stack_size': 64, 'rc': False, 'other': ['minecraft:enchantments={"minecraft:mending":1}', 'tooltip_display={hidden_components:["enchantments","attribute_modifiers","unbreakable"]}','tooltip_style="legendary"']}
+skill = {'is_skill': False, 'cd': 10, 'name': ['災厄之火', '#ea00ff', '#a700b6'], 'info': ['立即引爆 8 格內的怪物所有的【惡咒】', '每層【惡咒】造成 150% 基礎傷害', '如果你擁有【%s】符文:', '對視角中心的怪物造成 150% 基礎傷害持續 5 秒']}
+passive_skills = {'is_passive_skills': False, 'cd': 5, 'name': ['深淵惡咒', '#8c00ff', '#480083'], 'info': ['當你攻擊命中怪物時:', '對 4 格內怪物添加 2 層【惡咒】']}
+ultimate = {'is_ultimate': False, 'cd': 30, 'name': ['災厄之火', '#ff0000', '#7a0000'], 'info': ['當你使用右鍵時:', '使【行星墜落】造成傷害變為真實傷害', '並且在該位置生成一片每秒造成 5 點燃燒傷害的區域', '持續 5 秒']}
+attribute.append({'attribute': 'attack_damage', 'value': 0.0, 'slot': 'mainhand', 'operation': 'add_value'})
 
 # ----- init ----- #
 
-backup = "\n\n#name = "+str(name)+"\n#story = "+str(story)+"\n#item_data     = "+str(item_data)+"\n#skill     = "+str(item_data)+"\n#passive_skills    = "+str(skill)+"\n#ultimate    = "+str(ultimate)+"\n"
-for i in attribute: backup = backup +"#attribute.append("+ str(i) + ")\n"
+backup = "\n\n"
+backup += "#name = " + str(name) + "\n"
+backup += "#story = " + str(story) + "\n"
+backup += "#item_data = " + str(item_data) + "\n"
+backup += "#skill = " + str(skill) + "\n"
+backup += "#passive_skills = " + str(passive_skills) + "\n"
+backup += "#ultimate = " + str(ultimate) + "\n"
+for i in attribute:
+    backup += "#attribute.append(" + str(i) + ")\n"
+
 translate = {'story':[], 'skill':[], 'passive_skills':[], 'ultimate':[]}
 
 # attribute 屬性
@@ -34,10 +43,9 @@ def attribute_id(x):
 
 # 耐久度
 if int(item_data["max_damage"]) != -1: 
-    item_data["max_damage"] = ',max_damage='+str(item_data["max_damage"])+',damage=0'
+    item_data["max_damage"] = f',max_damage={item_data["max_damage"]},damage=0'
 else: 
     item_data["max_damage"] = ",unbreakable={}"
-
 
 # ----- generator ----- #
 
@@ -63,7 +71,6 @@ with open(__file__.replace("item_builder.py","#temp.mcfunction"),mode="w+",encod
     
         f.write(f',{{"text":""}},[{{"text":"","italic":false}},{{"translate":"item.{item_data["id"]}.skill","color":"{skill["name"][1]}","bold":true}},{{"text":"  "}}{skill["cd"]}]')
         translate["skill"].append(f'# "item.{item_data["id"]}.skill" : "[{skill["name"][0]}]"')
-#        translate["skill"].append(f'# "item.{item_data["id"]}.skill.1" : "{skill["info"][0]}"')
 
         if len(skill["info"]) >= 1:
             for i in range(1,len(skill["info"])+1):
@@ -78,7 +85,6 @@ with open(__file__.replace("item_builder.py","#temp.mcfunction"),mode="w+",encod
     
         f.write(f',{{"text":""}},[{{"text":"","italic":false}},{{"translate":"item.{item_data["id"]}.passive_skills","color":"{passive_skills["name"][1]}","bold":true}},{{"text":"  "}}{passive_skills["cd"]}]')
         translate["passive_skills"].append(f'# "item.{item_data["id"]}.passive_skills" : "[{passive_skills["name"][0]}]"')
-#        translate["passive_skills"].append(f'# "item.{item_data["id"]}.passive_skills.1" : "{passive_skills["info"][0]}"')
 
         if len(passive_skills["info"]) >= 1:
             for i in range(1,len(passive_skills["info"])+1):
@@ -93,11 +99,10 @@ with open(__file__.replace("item_builder.py","#temp.mcfunction"),mode="w+",encod
     
         f.write(f',{{"text":""}},[{{"text":"","italic":false}},{{"text":"\uE000","font":"minecraft:icon"}},{{"translate":"item.{item_data["id"]}.ultimate","color":"{ultimate["name"][1]}","bold":true}},{{"text":"\uE000","font":"minecraft:icon"}},{{"text":"  "}}{ultimate["cd"]}]')
         translate["ultimate"].append(f'# "item.{item_data["id"]}.ultimate" : "[{ultimate["name"][0]}]"')
-#        translate["ultimate"].append(f'# "item.{item_data["id"]}.ultimate.1" : "{ultimate["info"][0]}"')
 
         if len(ultimate["info"]) >= 1:
             for i in range(1,len(ultimate["info"])+1):
-                f.write(f',[{{"text":"","italic":false}},{{"translate":"item.{item_data["id"]}.ultimate.{str(i)}","color":"{skill["name"][2]}"}}]')
+                f.write(f',[{{"text":"","italic":false}},{{"translate":"item.{item_data["id"]}.ultimate.{str(i)}","color":"{ultimate["name"][2]}"}}]')
                 translate["ultimate"].append(f'# "item.{item_data["id"]}.ultimate.{str(i)}" : "{ultimate["info"][i-1]}"')
                 
     f.write(']')
@@ -113,15 +118,23 @@ with open(__file__.replace("item_builder.py","#temp.mcfunction"),mode="w+",encod
         f.write(','.join(temp))
     f.write(']')
     
+    # max_stack_size 處理
+    max_stack = int(item_data.get("max_stack_size", 1))
+    if max_stack <= 1:
+        max_stack_val = 1
+    elif max_stack > 99:
+        max_stack_val = 99
+    else:
+        max_stack_val = max_stack
+    
     # others
     if str(item_data["item_model"]) != '""': 
-        f.write(f',max_stack_size=1{item_data["max_damage"]},item_model={item_data["item_model"]},custom_data={item_data["custom_data"]}')
+        f.write(f',max_stack_size={max_stack_val}{item_data["max_damage"]},item_model={item_data["item_model"]},custom_data={item_data["custom_data"]}')
     else:
-        f.write(f',max_stack_size=1{item_data["max_damage"]},custom_data={item_data["custom_data"]}')
+        f.write(f',max_stack_size={max_stack_val}{item_data["max_damage"]},custom_data={item_data["custom_data"]}')
 
     #  rc
     if item_data.get('rc', True):
-
         f.write(',consumable={consume_seconds:10000,animation:"none",has_consume_particles:false}')
 
     # others

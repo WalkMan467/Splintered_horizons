@@ -21,4 +21,6 @@ execute as @a[scores={music.other.the_forgooten_lost_city=1}] at @s run function
 
 execute as @a[scores={music.chapter3.realm_of_finality=1}] at @s run function music:chapter_3/realm_of_finality/start
 
+execute as @a[scores={music.chapter3.finalitys_embrace_rift=1}] at @s run function music:chapter_3/finalitys_embrace_rift/start
+
 schedule function music:main 1t

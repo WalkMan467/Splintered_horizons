@@ -1,0 +1,30 @@
+{
+  "criteria": {
+    "requirement": {
+      "conditions": {
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "type": "#minecraft:arrows",
+              "predicates": {
+                "minecraft:custom_data": {
+                  "id": "explosion_arrow"
+                }
+              }
+            },
+            "tags": [
+              {
+                "expected": true,
+                "id": "minecraft:is_projectile"
+              }
+            ]
+          }
+        }
+      },
+      "trigger": "minecraft:entity_hurt_player"
+    }
+  },
+  "rewards": {
+    "function": "weapons:type/arrows/explosion_arrow/monster"
+  }
+}

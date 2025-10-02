@@ -7,5 +7,7 @@ title @s times 20 20 20
 stopsound @s voice minecraft:entity.creaking.death
 stopsound @s voice minecraft:entity.creaking.spawn
 
+function music:chapter_3/finalitys_embrace_rift/start
+
 playsound minecraft:entity.creaking.death voice @s ~ ~1 ~ 1 0.5
 playsound minecraft:entity.creaking.spawn voice @s ~ ~1 ~ 1 0.5

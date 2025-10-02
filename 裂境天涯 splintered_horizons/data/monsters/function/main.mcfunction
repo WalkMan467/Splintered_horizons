@@ -6,6 +6,7 @@ function monsters:chapter_2/forest_messenger/cocoon/main
 execute as @s[tag=monsters.elekiel] run function monsters:chapter_2/elekiel/main
 function monsters:chapter_1/abyssal_black_knight/main
 function monsters:chapter_1/abyssal_soulreaper/main
+function monsters:chapter_1/explosion_arrow_skeleton/main
 function monsters:chapter_3/corroder/main
 function monsters:other/abyss_crystal/main
 

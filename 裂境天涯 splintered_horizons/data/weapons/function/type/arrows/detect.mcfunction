@@ -1,3 +1,5 @@
+execute on attacker unless entity @s[type=player] run return 0
+
 execute on attacker if entity @s[advancements={weapons:arrows/explosion_arrow=true}] run function weapons:type/arrows/explosion_arrow/use
 execute on attacker if entity @s[advancements={weapons:arrows/resplendence_arrow=true}] run function weapons:type/arrows/resplendence_arrow/use
 execute on attacker if entity @s[advancements={weapons:arrows/shadow_arrow=true}] run function weapons:type/arrows/shadow_arrow/use

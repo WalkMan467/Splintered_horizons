@@ -1,12 +1,17 @@
 {
   "criteria": {
-    "shot_arrow": {
+    "requirement": {
       "conditions": {
         "damage": {
           "type": {
             "direct_entity": {
               "type": "#minecraft:arrows",
-              "nbt": "{item:{components:{\"minecraft:custom_data\":{id:\"explosion_arrow\"}}}}"
+              "nbt": "{item:{components:{\"minecraft:custom_data\":{id:\"explosion_arrow\"}}}}",
+              "predicates": {
+                "minecraft:custom_data": {
+                  "id": "explosion_arrow"
+                }
+              }
             },
             "tags": [
               {
@@ -19,10 +24,5 @@
       },
       "trigger": "minecraft:player_hurt_entity"
     }
-  },
-  "requirements": [
-    [
-      "shot_arrow"
-    ]
-  ]
+  }
 }

@@ -1,0 +1,82 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:echo_shard",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": [
+                  {
+                    "translate": "item.unstable_crystal",
+                    "color": "#9500cf",
+                    "italic": false,
+                    "bold": true
+                  }
+                ],
+                "minecraft:lore": [
+                  [
+                    {
+                      "translate": "item.unstable_crystal.type",
+                      "italic": false,
+                      "color": "dark_gray"
+                    }
+                  ],
+                  {
+                    "text": ""
+                  },
+                  [
+                    {
+                      "translate": "item.unstable_crystal.story.1",
+                      "italic": false,
+                      "color": "blue"
+                    }
+                  ],
+                  [
+                    {
+                      "translate": "item.unstable_crystal.story.2",
+                      "italic": false,
+                      "color": "blue"
+                    }
+                  ],
+                  [
+                    {
+                      "translate": "item.unstable_crystal.story.3",
+                      "italic": false,
+                      "color": "blue"
+                    }
+                  ],
+                  [
+                    {
+                      "translate": "item.unstable_crystal.story.4",
+                      "italic": false,
+                      "color": "blue"
+                    }
+                  ]
+                ],
+                "minecraft:max_stack_size": 64,
+                "minecraft:unbreakable": {},
+                "minecraft:item_model": "other/unstable_crystal",
+                "minecraft:custom_data": {
+                  "type": "item",
+                  "rarity": "legendary",
+                  "item": "unstable_crystal"
+                },
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "unbreakable"
+                  ]
+                },
+                "minecraft:tooltip_style": "legendary"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

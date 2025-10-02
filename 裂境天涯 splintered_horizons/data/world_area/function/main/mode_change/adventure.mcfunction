@@ -2,6 +2,7 @@
 
     # 提示文字跟切換模式
 
-tellraw @s[gamemode=!adventure,gamemode=!spectator,gamemode=!creative] [{"translate": "commands.gamemode.success.self"},{"translate":"gameMode.adventure","color": "gold","bold":true}]
+execute unless score @s player.gamemode.change.display_delay matches 1.. run tellraw @s[gamemode=!adventure,gamemode=!spectator,gamemode=!creative] [{"translate": "commands.gamemode.success.self"},{"translate":"gameMode.adventure","color": "gold","bold":true}]
 
 gamemode adventure @s[gamemode=!adventure,gamemode=!spectator,gamemode=!creative]
+scoreboard players set @s player.gamemode.change.display_delay 40
