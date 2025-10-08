@@ -70,7 +70,7 @@ execute if block ~ ~ ~ minecraft:cherry_fence align xyz run particle minecraft:b
 execute if block ~ ~ ~ minecraft:cherry_door align xyz run particle minecraft:block{block_state:{Name:"minecraft:cherry_door"}} ~0.5 ~1.2 ~0.5 0.3 0.1 0.3 0 20 normal
 execute if block ~ ~ ~ minecraft:cherry_button align xyz run particle minecraft:block{block_state:{Name:"minecraft:cherry_button"}} ~0.5 ~1.2 ~0.5 0.3 0.1 0.3 0 20 normal
 execute if block ~ ~ ~ minecraft:chain_command_block align xyz run particle minecraft:block{block_state:{Name:"minecraft:chain_command_block"}} ~0.5 ~1.2 ~0.5 0.3 0.1 0.3 0 20 normal
-execute if block ~ ~ ~ minecraft:chain align xyz run particle minecraft:block{block_state:{Name:"minecraft:chain"}} ~0.5 ~1.2 ~0.5 0.3 0.1 0.3 0 20 normal
+execute if block ~ ~ ~ minecraft:iron_chain align xyz run particle minecraft:block{block_state:{Name:"minecraft:iron_chain"}} ~0.5 ~1.2 ~0.5 0.3 0.1 0.3 0 20 normal
 execute if block ~ ~ ~ minecraft:cave_vines_plant align xyz run particle minecraft:block{block_state:{Name:"minecraft:cave_vines_plant"}} ~0.5 ~1.2 ~0.5 0.3 0.1 0.3 0 20 normal
 execute if block ~ ~ ~ minecraft:cave_vines align xyz run particle minecraft:block{block_state:{Name:"minecraft:cave_vines"}} ~0.5 ~1.2 ~0.5 0.3 0.1 0.3 0 20 normal
 execute if block ~ ~ ~ minecraft:cave_air align xyz run particle minecraft:block{block_state:{Name:"minecraft:cave_air"}} ~0.5 ~1.2 ~0.5 0.3 0.1 0.3 0 20 normal

@@ -61,10 +61,10 @@ execute if data storage cartographer_repair_stations:tesseract Data.Current{id:"
 execute if data storage cartographer_repair_stations:tesseract Data.Current{id:"minecraft:golden_leggings"} run data modify entity @s Offers.Recipes[-1].buy set value {id:"minecraft:gold_ingot",count:8}
 execute if data storage cartographer_repair_stations:tesseract Data.Current{id:"minecraft:golden_boots"} run data modify entity @s Offers.Recipes[-1].buy set value {id:"minecraft:gold_ingot",count:8}
 
-execute if data storage cartographer_repair_stations:tesseract Data.Current{id:"minecraft:chainmail_helmet"} run data modify entity @s Offers.Recipes[-1].buy set value {id:"minecraft:chain",count:8}
-execute if data storage cartographer_repair_stations:tesseract Data.Current{id:"minecraft:chainmail_chestplate"} run data modify entity @s Offers.Recipes[-1].buy set value {id:"minecraft:chain",count:8}
-execute if data storage cartographer_repair_stations:tesseract Data.Current{id:"minecraft:chainmail_leggings"} run data modify entity @s Offers.Recipes[-1].buy set value {id:"minecraft:chain",count:8}
-execute if data storage cartographer_repair_stations:tesseract Data.Current{id:"minecraft:chainmail_boots"} run data modify entity @s Offers.Recipes[-1].buy set value {id:"minecraft:chain",count:8}
+execute if data storage cartographer_repair_stations:tesseract Data.Current{id:"minecraft:chainmail_helmet"} run data modify entity @s Offers.Recipes[-1].buy set value {id:"minecraft:iron_chain",count:8}
+execute if data storage cartographer_repair_stations:tesseract Data.Current{id:"minecraft:chainmail_chestplate"} run data modify entity @s Offers.Recipes[-1].buy set value {id:"minecraft:iron_chain",count:8}
+execute if data storage cartographer_repair_stations:tesseract Data.Current{id:"minecraft:chainmail_leggings"} run data modify entity @s Offers.Recipes[-1].buy set value {id:"minecraft:iron_chain",count:8}
+execute if data storage cartographer_repair_stations:tesseract Data.Current{id:"minecraft:chainmail_boots"} run data modify entity @s Offers.Recipes[-1].buy set value {id:"minecraft:iron_chain",count:8}
 
 execute if data storage cartographer_repair_stations:tesseract Data.Current{id:"minecraft:iron_helmet"} run data modify entity @s Offers.Recipes[-1].buy set value {id:"minecraft:iron_ingot",count:8}
 execute if data storage cartographer_repair_stations:tesseract Data.Current{id:"minecraft:iron_chestplate"} run data modify entity @s Offers.Recipes[-1].buy set value {id:"minecraft:iron_ingot",count:8}

@@ -17,7 +17,7 @@ execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand #ca
 execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand #cartographer_repair_stations:materials/netherite run data modify storage cartographer_repair_stations:data material set value "minecraft:netherite_ingot"
 
 execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand #cartographer_repair_stations:materials/leather run data modify storage cartographer_repair_stations:data material set value "minecraft:leather"
-execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand #cartographer_repair_stations:materials/chainmail run data modify storage cartographer_repair_stations:data material set value "minecraft:chain"
+execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand #cartographer_repair_stations:materials/chainmail run data modify storage cartographer_repair_stations:data material set value "minecraft:iron_chain"
 
 execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand turtle_helmet run data modify storage cartographer_repair_stations:data material set value "minecraft:turtle_scute"
 execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand wolf_armor run data modify storage cartographer_repair_stations:data material set value "minecraft:armadillo_scute"
