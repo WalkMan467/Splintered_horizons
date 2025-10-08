@@ -15,4 +15,4 @@ attribute @s minecraft:safe_fall_distance modifier remove monsters.abyssal_soulr
 
 # Rdm Skill CD
 
-execute store result score @s monster.skill.cast.cd run random value 100..160
+execute store result score @s monster.skill.cast.cd run random value 60..120

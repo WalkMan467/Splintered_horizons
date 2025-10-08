@@ -1,2 +1,0 @@
-execute as @a at @s if score @s monster.abyss_soulcutter.effect matches 1.. run function monsters:chapter_1/abyssal_soulreaper/effect/bleeding/guide
-execute as @a at @s if score @s monster.abyss_soulcutter.effect matches 0 run function monsters:chapter_1/abyssal_soulreaper/effect/bleeding/reset

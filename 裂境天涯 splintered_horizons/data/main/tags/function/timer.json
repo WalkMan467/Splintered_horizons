@@ -5,7 +5,6 @@
       "weapons:timer",
       "armors:timer",
       "items:timer_t",
-      "monsters:chapter_1/abyssal_soulreaper/effect/bleeding/timer",
       "weapons:type/sword/morning_light/effect/debuff/timer"
     ]
   }

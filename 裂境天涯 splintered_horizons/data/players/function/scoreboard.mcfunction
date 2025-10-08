@@ -19,10 +19,14 @@ scoreboard players add @a player.ultimate 0
 
 # actionbar
 scoreboard objectives add player.actionbar.weapon.nightfall dummy "[玩家] actionbar 狀態機 夜幕技能顯示"
+scoreboard objectives add player.actionbar.weapon.spider dummy "[玩家] actionbar 狀態機 蜘蛛技能顯示"
+
 scoreboard objectives add player.actionbar.otherworld_portal.1 dummy "[玩家] actionbar 狀態機 異界之門提示"
 scoreboard objectives add player.actionbar.otherworld_portal.2 dummy "[玩家] actionbar 狀態機 異界之門提示(未擁有鑰匙)"
 
 scoreboard players add @a player.actionbar.weapon.nightfall 0
+scoreboard players add @a player.actionbar.weapon.spider 0
+
 scoreboard players add @a player.actionbar.otherworld_portal.1 0
 scoreboard players add @a player.actionbar.otherworld_portal.2 0
 
@@ -39,12 +43,15 @@ scoreboard objectives add player.spawnpoint.pos.y dummy "[玩家] 重生點 Y座
 scoreboard objectives add player.spawnpoint.pos.z dummy "[玩家] 重生點 Z座標"
 scoreboard objectives add player.spawnpoint.dimension dummy "[玩家] 重生點 維度"
 scoreboard objectives add player.gamemode.change.display_delay dummy "[玩家] 模式改變顯示延遲"
+scoreboard objectives add screen_filters.glitch_effect.id dummy "[玩家] 螢幕故障濾鏡 ID"
+scoreboard objectives add screen_filters.glitch_effect.noise dummy "[玩家] 螢幕故障 雜訊"
 
 scoreboard players add @a player.no_cd 0
 scoreboard players add @a player.animation.lock 0
 scoreboard players add @a player.click.interval 0
 scoreboard players add @a player.auto_crafting.brick 0
 scoreboard players add @a player.gamemode.change.display_delay 0
+scoreboard players add @a screen_filters.glitch_effect.noise 0
 
 # ==================================================================================================
 # 禁用

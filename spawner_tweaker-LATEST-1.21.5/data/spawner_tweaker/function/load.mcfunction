@@ -1,7 +1,7 @@
 #Runs when the datapack loads, sets up any necessary scoreboards and teams
 
 #Debug message
-say Link's Spawner Tweaker loaded
+# say Link's Spawner Tweaker loaded
 
 #Fix visuals of volume
 execute unless score $st_ongoing_process temp matches 4 run kill 18c359ed-00ca-4242-9e49-91cd8846f33a

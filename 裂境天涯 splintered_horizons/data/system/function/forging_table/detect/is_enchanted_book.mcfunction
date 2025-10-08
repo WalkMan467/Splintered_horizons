@@ -1,0 +1,1 @@
+execute if entity @s[nbt={Item:{id:"minecraft:enchanted_book"}}] run return 1

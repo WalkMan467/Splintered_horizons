@@ -27,6 +27,8 @@
       "minecraft:fireball",
       "minecraft:trident",
       "minecraft:command_block_minecart",
-      "minecraft:snowball"
+      "minecraft:snowball",
+      "minecraft:item_frame",
+      "minecraft:glow_item_frame"
     ]
   }

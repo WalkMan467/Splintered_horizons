@@ -17,6 +17,16 @@ scoreboard objectives add monster.abyss_soulcutter.damage.health.detect dummy "�
 
 # ===============================================================================
 
+# 烈陽使者
+
+scoreboard objectives add monster.sunfire_emissary.death.timer dummy "烈陽使者 自爆蓄力計時器"
+scoreboard objectives add monster.sunfire_emissary.death.fx dummy "烈陽使者 自爆特效"
+scoreboard objectives add monster.sunfire_emissary.1.raycast dummy "烈陽使者 雷射射線"
+scoreboard objectives add monster.sunfire_emissary.1.sunfire_actived.sfx dummy "烈陽使者 音效"
+
+# ===============================================================================
+
+
 scoreboard objectives add monster.effect.finality dummy "[怪物] 終焉轉化"
 
 # ===============================================================================

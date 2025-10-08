@@ -1,3 +1,1 @@
-execute as @n[type=item,tag=weapon,tag=paste_item,nbt={Item:{components:{"minecraft:custom_data":{type:"scythe",rarity:"rare",weapon:"flame_of_abyss"}}}}] at @s if entity @n[distance=..2.5,type=item,nbt={Item:{components:{"minecraft:custom_data":{item:"beginner_energy_infusion_stone"}}}}] run function system:forging_table/scythe/flame_of_finality
-
-execute as @n[type=item,tag=weapon,tag=paste_item,nbt={Item:{components:{"minecraft:custom_data":{type:"sword",rarity:"rare",weapon:"wind_sword"}}}}] at @s if entity @n[distance=..2.5,type=item,nbt={Item:{components:{"minecraft:custom_data":{item:"beginner_energy_infusion_stone"}},count:10}}] run function system:forging_table/sword/twilight_wind
+execute as @n[tag=weapon,tag=paste_item,type=minecraft:item] at @s if entity @n[type=minecraft:item,tag=enchanted_book,tag=paste_item,distance=..2.5] run function system:forging_table/fusion/run

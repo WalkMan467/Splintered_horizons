@@ -1,0 +1,1 @@
+function players:effect/ignite/use {duration:3}

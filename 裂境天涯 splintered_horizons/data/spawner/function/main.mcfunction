@@ -4,4 +4,5 @@ execute as @s[tag=monsters.forest_messenger.summon] at @s run function spawner:t
 execute as @s[tag=monsters.abyssal_black_knight.summon] at @s run function spawner:type/chapter_1/abyssal_black_knight/sunmmon
 execute as @s[tag=monsters.abyssal_soulreaper.summon] at @s run function spawner:type/chapter_1/abyssal_soulreaper/sunmmon
 execute as @s[tag=monsters.explosion_arrow_skeleton.summon] at @s run function spawner:type/chapter_1/explosion_arrow_skeleton/sunmmon
+execute as @s[tag=monsters.sunfire_emissary.summon] at @s run function spawner:type/chapter_3/sunfire_emissary/sunmmon
 execute as @s[tag=monsters.abyss_crystal.summon] at @s run function spawner:type/other/abyss_crystal/sunmmon

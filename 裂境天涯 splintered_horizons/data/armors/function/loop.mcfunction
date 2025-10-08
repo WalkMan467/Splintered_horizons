@@ -36,5 +36,3 @@ execute if score @s armor.leggings.effect.actived matches 1.. run function #armo
 execute if score @s armor.boots.effect.actived matches 1.. run function #armors:boots
 
 # ===================================================
-
-function armors:timer

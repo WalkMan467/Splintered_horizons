@@ -1,5 +1,19 @@
+# Spawners (Detect the Silver Fish location, then execute 'function monsters:summon/<monsters>' and remove the Silver Fish)
+execute as @e[type=silverfish,distance=..30,limit=10,sort=nearest] at @s run function spawner:main
+
+# Campfire
+execute as @e[type=interaction,tag=system.campfire,distance=..30,limit=5,sort=nearest] at @s run function system:campfire/interaction/main
+
+# Portal
+
+execute as @e[tag=portal,type=marker,distance=..30,limit=5,sort=nearest] at @s run function system:portal/loop
+
+function armors:loop
 
 function story:tick
+
+# Equipment
+execute as @e[type=!#dummy_mob,type=!player,distance=..15] at @s run function armors:type/black_hole/boots/effect/main
 
 execute if dimension minecraft:overworld in minecraft:overworld run spawnpoint @s 9987 165 9978
 execute if dimension minecraft:the_end in minecraft:the_end run spawnpoint @s 9987 165 9978

@@ -1,0 +1,6 @@
+{
+  "function": "minecraft:set_enchantments",
+  "enchantments": {
+    "players:effect/ignite": 0
+  }
+}

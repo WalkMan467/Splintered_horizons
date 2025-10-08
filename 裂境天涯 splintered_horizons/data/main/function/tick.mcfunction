@@ -2,10 +2,12 @@ execute store result score #difficulty global.main run difficulty
 
 execute in minecraft:overworld run setworldspawn 9987 165 9978
 
-execute unless score #difficulty global.main matches 1.. run kill @s[tag=monster.marker,type=marker]
+execute unless score #difficulty global.main matches 1.. if entity @n[type=marker,tag=monster.marker] run kill @e[tag=monster.marker,type=marker]
 
+# Monsters
+function monsters:guide
 
-execute as @e[type=!player,tag=!aj.global.root,tag=!aj.global.camera,tag=!aj.display] at @s run function main:guide/main
+function main:duration/detect
 
 # Player Guide
 

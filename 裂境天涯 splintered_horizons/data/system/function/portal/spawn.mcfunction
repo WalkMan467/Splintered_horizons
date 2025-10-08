@@ -1,1 +1,1 @@
-summon marker 83.5 64.00 10.0 {Tags:["portal"],data:{Transmit:[1070,59,1542],Transmit_facing:[180,-2]}}
+summon marker -1000 115 -6 {Tags:["portal"],data:{Transmit:[784,146,972],Transmit_facing:[0,0]}}

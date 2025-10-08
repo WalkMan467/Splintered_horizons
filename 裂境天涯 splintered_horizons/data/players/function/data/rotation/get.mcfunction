@@ -12,6 +12,6 @@ rotate @n[tag=player_data.rotation,type=marker] ~ ~
 execute as @n[tag=player_data.rotation,type=marker] run data modify entity @s data.rotation.x set from entity @s Rotation[0]
 execute as @n[tag=player_data.rotation,type=marker] run data modify entity @s data.rotation.y set from entity @s Rotation[1]
 
-# execute positioned ~ ~1.5 ~ run function <function> with entity @n[tag=player_data.rotation,type=marker] data.rotation
+execute positioned ~ ~1.5 ~ run function players:screen_filters/glitch_effect/use with entity @n[tag=player_data.rotation,type=marker] data.rotation
 
 kill @n[tag=player_data.rotation,type=marker]
