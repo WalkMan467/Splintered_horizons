@@ -1,0 +1,1 @@
+execute on vehicle on passengers if entity @s[type=sheep] on passengers if entity @s[type=allay] unless score @s ca.revive_cdl matches 1.. run function cartographer_charon:multiplayer/reviving

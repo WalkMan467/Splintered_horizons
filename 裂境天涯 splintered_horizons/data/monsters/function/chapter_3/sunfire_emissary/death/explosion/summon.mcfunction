@@ -4,7 +4,7 @@ summon husk ~ ~ ~ {Glowing:1b,Team:"glow_color_yellow",Passengers:[{id:"minecraf
 
 execute as @e[type=husk,tag=monsters.sunfire_emissary,tag=monsters.spawn] at @s run function monsters:chapter_3/sunfire_emissary/setup
 
-particle minecraft:flash{color:[1.000,1.000,1.000,1.00]} ~ ~1 ~ 1 1 1 0 5 normal @a
+particle flash{color:[1.000,0.835,0.000,1.00]} ~ ~1 ~ 1 1 1 0 5 normal @a
 particle dust_color_transition{from_color:[1.000,0.933,0.000],scale:3,to_color:[1.000,0.569,0.000]} ~ ~1 ~ 1 1 1 1 100 normal @a
 particle minecraft:wax_on ~ ~ ~ 0 0 0 40 200 normal @a
 particle dust_pillar{block_state:"minecraft:lava"} ~ ~ ~ 1 0 1 1 200 normal @a

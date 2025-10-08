@@ -16,7 +16,7 @@ execute positioned ~ ~1.5 ~ run function players:screen_filters/glitch_effect/su
 
 kill @n[tag=player_data.rotation,type=marker]
 
-particle flash{color:[1.000,1.000,1.000,1.00]} ~ ~1 ~ 1 1 1 0 15 force @s
+particle flash{color:[1.000,0.000,0.000,1.00]} ~ ~1 ~ 1 1 1 0 15 force @s
 particle explosion_emitter ~ ~1 ~ 0 0 0 0 1 force @a
 
 scoreboard players set @s screen_filters.glitch_effect.noise 20

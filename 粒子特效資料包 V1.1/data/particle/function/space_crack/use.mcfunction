@@ -1,4 +1,4 @@
-particle flash{color:[1.000,1.000,1.000,1.00]} ~ ~ ~ 0 0 0 0 1 normal @a[scores={main.light_sensitivity=0}]
+particle flash{color:[1.000,0.000,0.000,1.00]} ~ ~ ~ 0 0 0 0 1 normal @a[scores={main.light_sensitivity=0}]
 
 playsound minecraft:entity.illusioner.prepare_blindness voice @a ~ ~ ~ 3 1
 playsound minecraft:block.beacon.activate voice @a ~ ~ ~ 3 1

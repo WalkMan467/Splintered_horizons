@@ -1,0 +1,2 @@
+#Debug Message
+tellraw @a[tag=debug] [{"text":"[Debug] ","color":"red","hover_event":{"action":"show_text","value":[{"text":"","color":"#FFE0A3","italic":true}]}},{"text":"❱ ","color":"#FFE0A3","hover_event":{"action":"show_text","value":[{"text":"","color":"#FFE0A3"}]}},{"selector":"@s","color":"aqua","hover_event":{"action":"show_text","value":[{"text":"","color":"#FFE0A3"}]}},{"text":" died (Charon).","color":"#FFE0A3","hover_event":{"action":"show_text","value":[{"text":"","color":"#FFE0A3"}]}}]

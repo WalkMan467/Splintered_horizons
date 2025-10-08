@@ -11,7 +11,7 @@ title @s times 10 5 10
 title @s title {"text":"\uE006","font": "screen"}
 title @s subtitle ""
 
-particle flash{color:[1.000,1.000,1.000,1.00]} ~ ~1 ~ 0 0 0 1 2 normal @a[scores={main.light_sensitivity=0}]
+particle flash{color:[0.000,0.667,1.000,1.00]} ~ ~ ~ 0 0 0 1 2 normal @a[scores={main.light_sensitivity=0}]
 particle dripping_dripstone_water ~ ~5 ~ 5 5 5 0 600 normal @a
 playsound entity.zombie.converted_to_drowned voice @a ~ ~1 ~ 1 0.7
 playsound block.beacon.deactivate voice @a ~ ~1 ~ 999999 0.5 1

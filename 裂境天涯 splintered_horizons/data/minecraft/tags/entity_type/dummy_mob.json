@@ -29,6 +29,7 @@
       "minecraft:command_block_minecart",
       "minecraft:snowball",
       "minecraft:item_frame",
-      "minecraft:glow_item_frame"
+      "minecraft:glow_item_frame",
+      "minecraft:mannequin"
     ]
   }
