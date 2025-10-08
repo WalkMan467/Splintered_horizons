@@ -11,7 +11,7 @@ tag @s add monster.forest_messenger.cocoon.owner
 particle minecraft:ominous_spawning ~ ~1 ~ 0 0 0 1 50
 particle minecraft:end_rod ~ ~1 ~ 0 0 0 0.25 20
 playsound minecraft:block.respawn_anchor.charge voice @a ~ ~1 ~ 1 2
-particle flash ~ ~1 ~ 0 0 0 1 5 normal @a
+particle flash{color:[1.000,1.000,1.000,1.00]} ~ ~1 ~ 0 0 0 1 5 normal @a
 
 scoreboard players add .global monster.forest_messenger.cocoon.id 1
 

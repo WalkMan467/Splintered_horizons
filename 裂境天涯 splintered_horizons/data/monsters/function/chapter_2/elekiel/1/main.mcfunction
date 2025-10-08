@@ -27,6 +27,6 @@ execute if score @s monster.skill.casting matches 311 as @e[tag=monsters.elekiel
 execute if score @s monster.skill.casting matches 495 as @a at @s if biome ~ ~ ~ world_area:chapter_2/bossfight/fire run function monsters:chapter_2/elekiel/1/6
 execute if score @s monster.skill.casting matches 530 run function monsters:chapter_2/elekiel/1/7
 execute if score @s monster.skill.casting matches 531 as @a at @s run function monsters:chapter_2/elekiel/1/8
-execute if score @s monster.skill.casting matches 540..550 run particle flash ~ ~1 ~ 8 0 8 1 2
+execute if score @s monster.skill.casting matches 540..550 run particle flash{color:[1.000,1.000,1.000,1.00]} ~ ~1 ~ 8 0 8 1 2
 
 execute if score @s monster.skill.casting matches 550.. run function monsters:chapter_2/elekiel/cast/end

@@ -11,6 +11,6 @@ playsound minecraft:entity.illusioner.cast_spell voice @a ~ ~1 ~ 1 1.5
 
 playsound minecraft:entity.generic.explode voice @a ~ ~1 ~ 0.5 1.5
 
-particle minecraft:flash ~ ~1 ~ 0 0 0 1 1
+particle minecraft:flash{color:[1.000,1.000,1.000,1.00]} ~ ~1 ~ 0 0 0 1 1
 particle minecraft:wax_on ~ ~1 ~ 0 0 0 30 20 normal @a
 particle minecraft:crit ~ ~1 ~ 0 0 0 0.5 50 normal @a

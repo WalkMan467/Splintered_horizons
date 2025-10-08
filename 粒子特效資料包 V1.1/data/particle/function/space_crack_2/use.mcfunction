@@ -1,4 +1,4 @@
-particle flash ~ ~ ~ 0 0 0 0 1 normal @a[scores={main.light_sensitivity=0}]
+particle flash{color:[1.000,1.000,1.000,1.00]} ~ ~ ~ 0 0 0 0 1 normal @a[scores={main.light_sensitivity=0}]
 particle minecraft:reverse_portal ~ ~1 ~ 0 0 0 8 80 normal @a
 particle minecraft:ominous_spawning ~ ~2.5 ~ 1 2 1 1 80 normal @a
 particle minecraft:explosion_emitter ~ ~2.5 ~ 0 0 0 1 1 normal @a

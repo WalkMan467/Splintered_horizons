@@ -1,4 +1,4 @@
-particle minecraft:flash 949.50 89.5 494.00 0 0 0 0 1 normal @a
+particle minecraft:flash{color:[1.000,1.000,1.000,1.00]} 949.50 89.5 494.00 0 0 0 0 1 normal @a
 particle minecraft:sonic_boom 949.50 89.5 494.00 0 0 0 0 1 normal @a
 
 playsound minecraft:entity.ender_eye.death voice @a 949.50 89.5 494.00 1 0.5

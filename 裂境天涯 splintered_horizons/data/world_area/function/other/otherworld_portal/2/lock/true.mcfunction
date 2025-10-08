@@ -22,7 +22,7 @@ playsound minecraft:block.vault.open_shutter voice @a 161.00 92.50 -426.50 1 1
 playsound minecraft:block.vault.insert_item voice @a 161.00 92.50 -426.50 1 1.05
 playsound minecraft:block.vault.insert_item voice @a 161.00 92.50 -426.50 1 1.05
 
-particle minecraft:flash 161.00 92.50 -426.50 0 0 0 0 1 normal @a
+particle minecraft:flash{color:[1.000,1.000,1.000,1.00]} 161.00 92.50 -426.50 0 0 0 0 1 normal @a
 particle minecraft:sonic_boom 161.00 92.50 -426.50 0 0 0 0 1 normal @a
 
 scoreboard players set #world_area.other.otherworld_portal.2_temp global.main 0

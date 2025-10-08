@@ -16,6 +16,6 @@ data remove entity @s interaction
 
 # 註: 之後在執行點擊事件前添加一個偵測是否有效來防止玩家在戰鬥中點擊有效事件
 
-particle flash ~ ~1 ~ 0 0 0 1 1 normal @a
+particle flash{color:[1.000,1.000,1.000,1.00]} ~ ~1 ~ 0 0 0 1 1 normal @a
 playsound minecraft:item.trident.return voice @a ~ ~1 ~ 1 1
 playsound minecraft:item.hoe.till voice @a ~ ~1 ~ 1 1
