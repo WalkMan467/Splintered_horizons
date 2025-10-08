@@ -1,0 +1,8 @@
+{
+    "values": [
+      "cartographer_custom_statuses:kill/mightiness",
+      "cartographer_custom_statuses:kill/swiftness",
+      "cartographer_custom_statuses:kill/hastiness",
+      "cartographer_custom_statuses:kill/stealthiness"
+    ]
+  }
