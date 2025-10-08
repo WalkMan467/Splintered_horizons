@@ -1,0 +1,2 @@
+execute if entity @s[advancements={entityid:player_hurt_entity={is_player_attack=true}}] run function cartographer_core:handlers/attack_speed/did_swing
+execute if entity @s[advancements={entityid:player_killed_entity={is_player_attack=true}}] run function cartographer_core:handlers/attack_speed/did_swing
