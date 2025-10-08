@@ -1,1 +1,0 @@
-function carto_event:api/create_single_entity_event {event:"custom_attribute/healing_power",duration:100,delay:0,parameters:{},merge_behavior:"merge"}
