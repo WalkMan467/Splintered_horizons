@@ -1,0 +1,5 @@
+execute if entity @s[type=player] if predicate cartographer_custom_enchantments:has/repeating/mainhand unless items entity @s weapon.mainhand crossbow run function cartographer_custom_enchantments:enchantment/weapon/unique/other/repeating/consumable/run_branch
+execute if entity @s[type=player] if predicate cartographer_custom_enchantments:has/repeating/offhand unless predicate cartographer_custom_enchantments:has/repeating/mainhand unless items entity @s weapon.offhand crossbow run function cartographer_custom_enchantments:enchantment/weapon/unique/other/repeating/consumable/run_branch
+
+execute if entity @s[type=player] if predicate cartographer_custom_enchantments:has/repeating/mainhand if items entity @s weapon.mainhand crossbow run function cartographer_custom_enchantments:enchantment/weapon/unique/other/repeating/run_branch
+execute if entity @s[type=player] if predicate cartographer_custom_enchantments:has/repeating/offhand unless predicate cartographer_custom_enchantments:has/repeating/mainhand if items entity @s weapon.offhand crossbow run function cartographer_custom_enchantments:enchantment/weapon/unique/other/repeating/run_branch

@@ -1,0 +1,118 @@
+{
+  "description": {
+    "translate": "enchantment.cartographer.repeating",
+    "fallback": "Repeating"
+  },
+  "exclusive_set": "#cartographer_custom_enchantments:exclusive_set/repeating_blacklist",
+  "supported_items": "minecraft:crossbow",
+  "weight": 1,
+  "max_level": 50,
+  "min_cost": {
+    "base": 5,
+    "per_level_above_first": 8
+  },
+  "max_cost": {
+    "base": 25,
+    "per_level_above_first": 8
+  },
+  "anvil_cost": 4,
+  "slots": [
+    "offhand",
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "cartographer_custom_enchantments:enchantment/weapon/unique/other/repeating/schedule"
+        },
+          "requirements": {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "type": "#cartographer_core:can_use_enchants"
+                }
+              },
+              {
+                "condition": "minecraft:inverted",
+                "term": {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "ca.ench_repeating_lvl": {
+                      "min": 1
+                    }
+                  }
+                }
+              }
+            ]
+          }
+      }
+    ],
+    "minecraft:hit_block": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "cartographer_custom_enchantments:enchantment/weapon/unique/other/repeating/hit_block"
+        },
+        "requirements": [
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "equipment": {
+                  "mainhand": {
+                    "predicates": {
+                      "minecraft:custom_data": "{repeating_no_partial_reload:1b}"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "ca.repeating_reload_cdl": {
+                  "min": 1
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "ca.repeating_ammo": {
+                "min": 1
+              }
+            }
+          },
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:player",
+              "flags": {
+                "is_sneaking": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "minecraft:crossbow_charge_time": {
+      "type": "minecraft:set",
+      "value": 1000
+    }
+  }
+}
