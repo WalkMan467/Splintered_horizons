@@ -1,0 +1,1 @@
+tag @s add ca.projectile_find_loc
