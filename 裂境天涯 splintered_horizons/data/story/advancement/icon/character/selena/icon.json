@@ -1,0 +1,34 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:player_head",
+      "components": {
+        "minecraft:profile": {
+          "texture": "entity/player/slim/selena",
+          "model": "slim"
+        }
+      },
+      "count": 1
+    },
+    "title": {
+      "translate": "story.icon.character.selena",
+      "fallback": "賽琳娜",
+      "bold": true,
+      "italic": false
+    },
+    "description": {
+      "translate": "story.icon.character.selena.desc.1",
+      "fallback": "一名偵探，辦案過程中偶然發現了時空裂縫與深淵怪物，再被追逐中觸碰裂縫獲得了名為 星空之霜 的力量的少女"
+    },
+    "background": "minecraft:textures/gui/advancements/backgrounds/quartz_bricks.png",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "story:icon/character/icon",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

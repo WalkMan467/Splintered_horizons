@@ -1,0 +1,35 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:book",
+        "components": {},
+        "count": 1
+      },
+      "title": {
+        "translate": "story.icon.character.selena.story.1_5",
+        "fallback": "人物故事1: 最終的對決",
+        "bold": true,
+        "italic": false
+      },
+      "description": [
+        {
+          "translate": "story.icon.character.selena.story.1_5.desc.1",
+          "fallback": "起初 賽羅尼斯  可以調用世界記憶之樹力量去使怪物消失但漸漸地免疫回朔的引響，"
+        },
+        {
+          "translate": "story.icon.character.selena.story.1_5.desc.2",
+          "fallback": "且 空之支配者 - 伊萊克爾 發現了這裡，試圖透過摧毀回朔記憶片段來毀滅世界從而征服世界"
+        }
+      ],
+      "background": "minecraft:textures/gui/advancements/backgrounds/quartz_bricks.png",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "story:icon/character/selena/story_1_4",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

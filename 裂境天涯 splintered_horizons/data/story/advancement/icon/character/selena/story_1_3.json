@@ -1,0 +1,35 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:book",
+        "components": {},
+        "count": 1
+      },
+      "title": {
+        "translate": "story.icon.character.selena.story.1_3",
+        "fallback": "人物故事1: 時空觀測者的使命",
+        "bold": true,
+        "italic": false
+      },
+      "description": [
+        {
+          "translate": "story.icon.character.selena.story.1_3.desc.1",
+          "fallback": "世間已經輪迴了無數次的真相，在世界記憶之樹附近發現了名為 賽羅尼斯 的時空觀測者"
+        },
+        {
+          "translate": "story.icon.character.selena.story.1_3.desc.2",
+          "fallback": "賽羅尼斯 作為時空觀測者並不想這個世界就此毀滅，所以調用了世界記憶之樹的力量重複回放世界平靜之時的片段"
+        }
+      ],
+      "background": "minecraft:textures/gui/advancements/backgrounds/quartz_bricks.png",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "story:icon/character/selena/story_1_2",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

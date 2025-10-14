@@ -13,19 +13,27 @@
 attribute = []
 # ----- 設定參數 ----- #
 
-name = ['馭風戰騎腿鎧', "#00ff80", '護腿 / 史詩']
-story = {'info': ['它曾與風之執政官的腿鎧','四周蘊含的靈風之力','與風之執政共同守護舊世','在最終之戰風之執政殞落後它漂流於此處'], 'color': 'blue'}
-item_data     = {'real_item': 'bundle', 'id': 'windriders_legplates', 'item_model': '"iron_leggings"', 'custom_data': '{windriders:1b,type:"armor"}', 'max_damage': -1, 'rc': False, 'other': ['tooltip_style="epic"','equippable={slot:"legs",equip_sound:"entity.illusioner.mirror_move",asset_id:"iron"}']}
-skill    = {'is_skill': True, 'cd': 1, 'name': ['狂風之影', "#00ff80", "#00a799"], 'info': ['當 %s 技能觸發時:', '立即獲得【狂風之斬】', '如果你擁有【狂風之斬】','下次攻擊對目標造成自身 250% 基礎傷害並附加 %s I (00:20)','使目標 4 格範圍內周圍敵人擊飛']}
-ultimate    = {'is_ultimate': False, 'cd': 0, 'name': ['終焉之月', '#00ff80', '#00a799'], 'info': ['右鍵點擊消耗一個終焉之眼，', '開啟【終焉之月】型態持續 15 秒', '大幅強化武器，', '此形態下如果攻擊會有25%機率造成大量傷害']}
-attribute.append({'attribute': 'armor', 'value': 4.5, 'slot': 'legs', 'operation': 'add_value'})
-attribute.append({'attribute': 'movement_speed', 'value': 0.15, 'slot': 'legs', 'operation': 'add_multiplied_base'})
+name = ['Boots of the Black Hole', 'dark_purple', 'Boots']
+story = {'info': ['The old world has fallen,', 'and a new world shrouded in darkness has arrived.', 'The long boots born from the massive black hole', 'in the broken city absorb the energy of the black hole.'], 'color': 'blue'}
+item_data = {'real_item': 'bundle', 'id': 'black_hole_boots', 'item_model': '"equipment/black_hole_boots"', 'custom_data': '{active_skills:1b,animation:1b,black_hole:1b,type:"armor",rarity:"epic"}', 'max_damage': -1, 'max_stack_size': 1 , 'other': ['tooltip_style="epic"', 'tooltip_display={hidden_components:["dyed_color"]}', 'dyed_color=16187647','equippable={slot:"feet",equip_sound:"item.armor.equip_leather",asset_id:"leather"}']}
+skill = {'is_skill': True, 'cd': 30, 'name': ['Phase Black Hole', 'dark_aqua', '#00ccff'], 'info': ['Kills grant a charge.', 'Rapidly pressing [%s]', 'consumes 10 charges and creates a black hole.']}
+passive_skills = {'is_passive_skills': False, 'cd': 0, 'name': ['微光', "#ffea75", "#f8de48"], 'info': ['每過 5 秒立即放置一個火把在腳下', '並且消耗一個火把']}
+ultimate = {'is_ultimate': False, 'cd': 0, 'name': ['終焉之月', 'dark_aqua', '#00ccff'], 'info': ['右鍵點擊消耗一個終焉之眼，', '開啟【終焉之月】型態持續 15 秒', '大幅強化武器，', '此形態下如果攻擊會有25%機率造成大量傷害']}
+attribute.append({'attribute': 'armor', 'value': 2, 'slot': 'feet', 'operation': 'add_value'})
 
 # ----- init ----- #
 
-backup = "\n\n#name = "+str(name)+"\n#story = "+str(story)+"\n#item_data     = "+str(item_data)+"\n#skill    = "+str(skill)+"\n#ultimate    = "+str(ultimate)+"\n"
-for i in attribute: backup = backup +"#attribute.append("+ str(i) + ")\n"
-translate = {'story':[], 'skill':[], 'ultimate':[]}
+backup = "\n\n"
+backup += "#name = " + str(name) + "\n"
+backup += "#story = " + str(story) + "\n"
+backup += "#item_data = " + str(item_data) + "\n"
+backup += "#skill = " + str(skill) + "\n"
+backup += "#passive_skills = " + str(passive_skills) + "\n"
+backup += "#ultimate = " + str(ultimate) + "\n"
+for i in attribute:
+    backup += "#attribute.append(" + str(i) + ")\n"
+
+translate = {'story':[], 'skill':[], 'passive_skills':[], 'ultimate':[]}
 
 # attribute 屬性
 def attribute_id(x):
@@ -35,10 +43,9 @@ def attribute_id(x):
 
 # 耐久度
 if int(item_data["max_damage"]) != -1: 
-    item_data["max_damage"] = ',max_damage='+str(item_data["max_damage"])+',damage=0'
+    item_data["max_damage"] = f',max_damage={item_data["max_damage"]},damage=0'
 else: 
     item_data["max_damage"] = ",unbreakable={}"
-
 
 # ----- generator ----- #
 
@@ -63,13 +70,27 @@ with open(__file__.replace("item_builder.py","#temp.mcfunction"),mode="w+",encod
         else: skill["cd"] = ""
     
         f.write(f',{{"text":""}},[{{"text":"","italic":false}},{{"translate":"armor.{item_data["id"]}.skill","color":"{skill["name"][1]}","bold":true}},{{"text":"  "}}{skill["cd"]}]')
-        translate["skill"].append(f'# "armor.{item_data["id"]}.skill" : "[{skill["name"][0]}] "')
-#        translate["skill"].append(f'# "armor.{item_data["id"]}.skill.1" : "{skill["info"][0]}"')
+        translate["skill"].append(f'# "armor.{item_data["id"]}.skill" : "[{skill["name"][0]}]"')
 
         if len(skill["info"]) >= 1:
             for i in range(1,len(skill["info"])+1):
                 f.write(f',[{{"text":"","italic":false}},{{"translate":"armor.{item_data["id"]}.skill.{str(i)}","color":"{skill["name"][2]}"}}]')
                 translate["skill"].append(f'# "armor.{item_data["id"]}.skill.{str(i)}" : "{skill["info"][i-1]}"')
+
+    # passive skills
+    if passive_skills['is_passive_skills'] == True:
+
+        if int(passive_skills["cd"]) >= 1: passive_skills["cd"] = ',{\"translate\":\"armor.skill_cd\",\"color\":\"#6E6E6E\"},{\"text\":\"'+str(passive_skills["cd"])+'s\"}'
+        else: passive_skills["cd"] = ""
+    
+        f.write(f',{{"text":""}},[{{"text":"","italic":false}},{{"translate":"armor.{item_data["id"]}.passive_skills","color":"{passive_skills["name"][1]}","bold":true}},{{"text":"  "}}{passive_skills["cd"]}]')
+        translate["passive_skills"].append(f'# "armor.{item_data["id"]}.passive_skills" : "[{passive_skills["name"][0]}]"')
+
+        if len(passive_skills["info"]) >= 1:
+            for i in range(1,len(passive_skills["info"])+1):
+                f.write(f',[{{"text":"","italic":false}},{{"translate":"armor.{item_data["id"]}.passive_skills.{str(i)}","color":"{passive_skills["name"][2]}"}}]')
+                translate["passive_skills"].append(f'# "armor.{item_data["id"]}.passive_skills.{str(i)}" : "{passive_skills["info"][i-1]}"')
+
         # ultimate
     if ultimate['is_ultimate'] == True:
 
@@ -77,12 +98,11 @@ with open(__file__.replace("item_builder.py","#temp.mcfunction"),mode="w+",encod
         else: ultimate["cd"] = ""
     
         f.write(f',{{"text":""}},[{{"text":"","italic":false}},{{"text":"\uE000","font":"minecraft:icon"}},{{"translate":"armor.{item_data["id"]}.ultimate","color":"{ultimate["name"][1]}","bold":true}},{{"text":"\uE000","font":"minecraft:icon"}},{{"text":"  "}}{ultimate["cd"]}]')
-        translate["ultimate"].append(f'# "armor.{item_data["id"]}.ultimate" : "[{ultimate["name"][0]}] "')
-#        translate["ultimate"].append(f'# "armor.{item_data["id"]}.ultimate.1" : "{ultimate["info"][0]}"')
+        translate["ultimate"].append(f'# "armor.{item_data["id"]}.ultimate" : "[{ultimate["name"][0]}]"')
 
         if len(ultimate["info"]) >= 1:
             for i in range(1,len(ultimate["info"])+1):
-                f.write(f',[{{"text":"","italic":false}},{{"translate":"armor.{item_data["id"]}.ultimate.{str(i)}","color":"{skill["name"][2]}"}}]')
+                f.write(f',[{{"text":"","italic":false}},{{"translate":"armor.{item_data["id"]}.ultimate.{str(i)}","color":"{ultimate["name"][2]}"}}]')
                 translate["ultimate"].append(f'# "armor.{item_data["id"]}.ultimate.{str(i)}" : "{ultimate["info"][i-1]}"')
                 
     f.write(']')
@@ -98,16 +118,20 @@ with open(__file__.replace("item_builder.py","#temp.mcfunction"),mode="w+",encod
         f.write(','.join(temp))
     f.write(']')
     
+    # max_stack_size 處理
+    max_stack = int(item_data.get("max_stack_size", 1))
+    if max_stack <= 1:
+        max_stack_val = 1
+    elif max_stack > 99:
+        max_stack_val = 99
+    else:
+        max_stack_val = max_stack
+    
     # others
     if str(item_data["item_model"]) != '""': 
-        f.write(f',max_stack_size=1{item_data["max_damage"]},item_model={item_data["item_model"]},custom_data={item_data["custom_data"]}')
+        f.write(f',max_stack_size={max_stack_val}{item_data["max_damage"]},item_model={item_data["item_model"]},custom_data={item_data["custom_data"]}')
     else:
-        f.write(f',max_stack_size=1{item_data["max_damage"]},custom_data={item_data["custom_data"]}')
-
-    #  rc
-    if item_data.get('rc', True):
-
-        f.write(',consumable={consume_seconds:10000,animation:"none",has_consume_particles:false}')
+        f.write(f',max_stack_size={max_stack_val}{item_data["max_damage"]},custom_data={item_data["custom_data"]}')
 
     # others
     for component in item_data["other"]:
@@ -121,6 +145,7 @@ with open(__file__.replace("item_builder.py","#temp.mcfunction"),mode="w+",encod
     f.write(f'\n# "armor.{item_data["id"]}.type" : "{name[2]}"')
     for i in translate['story']: f.write('\n'+i)
     for i in translate['skill']: f.write('\n'+i)
+    for i in translate['passive_skills']: f.write('\n'+i)
     for i in translate['ultimate']: f.write('\n'+i)
 
     f.write(backup)

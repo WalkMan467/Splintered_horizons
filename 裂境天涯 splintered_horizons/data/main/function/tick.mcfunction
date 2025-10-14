@@ -9,6 +9,9 @@ function monsters:guide
 
 function main:duration/detect
 
+# Tree of World Memory
+function system:tree_of_world_memory/main
+
 # Player Guide
 
 execute as @a[tag=!aj.global.root,tag=!aj.global.camera,tag=!aj.display] at @s run function main:guide/player

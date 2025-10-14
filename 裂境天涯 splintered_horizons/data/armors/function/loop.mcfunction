@@ -9,12 +9,20 @@
 
 # ===================================================
 
+execute if predicate players:detect/input/sneak run scoreboard players add @s player.detect.sneak 1
+execute if score @s player.detect.sneak matches 1..3 unless predicate players:detect/input/sneak run function armors:detect/active_skills
+execute unless predicate players:detect/input/sneak run scoreboard players set @s player.detect.sneak 0
+
 execute as @s[scores={armor.black_hole.boots.effect=1}] at @s positioned ~ ~-1 ~ run function armors:type/black_hole/boots/effect/use
 
 execute if items entity @s armor.feet *[custom_data~{black_hole:1b} | custom_data={black_hole:1}] run advancement grant @s only armors:type/black_hole/boots/eqipment
 execute unless items entity @s armor.feet *[custom_data~{black_hole:1b} | custom_data={black_hole:1}] run advancement grant @s only armors:type/black_hole/boots/take_off
 
-execute if score @s armor.black_hole.boots.active matches 1.. unless score @s armor.black_hole.boots.cd matches 1.. run function armors:type/black_hole/boots/main
+execute if items entity @s armor.head *[custom_data~{radiant:1b} | custom_data={radiant:1}] run advancement grant @s only armors:type/radiant_guardians_helmet/eqipment
+execute unless items entity @s armor.head *[custom_data~{radiant:1b} | custom_data={radiant:1}] run advancement grant @s only armors:type/radiant_guardians_helmet/take_off
+
+function armors:type/radiant_guardians_helmet/main
+
 function armors:type/tai_chis_shadow/main
 function armors:type/black_hole/animation/boots/main
 

@@ -16,3 +16,4 @@ playsound minecraft:block.trial_spawner.ominous_activate voice @a ~ ~1 ~ 1 1
 playsound minecraft:entity.generic.explode voice @a ~ ~1 ~ 0.5 0.5
 
 scoreboard players set @s weapon.nightfall.state 0
+scoreboard players set @s weapon.nightfall.cd 100

@@ -8,7 +8,7 @@ title @s title {"text":"\uE004","font":"minecraft:screen"}
 title @s subtitle ""
 title @s times 10 10 20
 
-scoreboard players set @s player.ultimate 20
+scoreboard players set @s player.ultimate 400
 
 playsound minecraft:entity.warden.sonic_boom voice @a ~ ~1 ~ 1 1
 

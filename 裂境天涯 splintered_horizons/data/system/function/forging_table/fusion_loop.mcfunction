@@ -1,1 +1,0 @@
-execute as @n[tag=weapon,tag=paste_item,type=minecraft:item] at @s if entity @n[type=minecraft:item,tag=enchanted_book,tag=paste_item,distance=..2.5] run function system:forging_table/fusion/run

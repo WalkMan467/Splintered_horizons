@@ -8,9 +8,11 @@ scoreboard players remove @a[scores={player.actionbar.weapon.spider=1..}] player
 scoreboard players remove @a[scores={player.give.item.delay=1..}] player.give.item.delay 1
 scoreboard players remove @a[scores={player.actionbar.otherworld_portal.1=1..}] player.actionbar.otherworld_portal.1 1
 scoreboard players remove @a[scores={player.actionbar.otherworld_portal.2=1..}] player.actionbar.otherworld_portal.2 1
+scoreboard players remove @a[scores={player.actionbar.tree_of_world_memory.1=1..}] player.actionbar.tree_of_world_memory.1 1
+scoreboard players remove @a[scores={player.actionbar.tree_of_world_memory.2=1..}] player.actionbar.tree_of_world_memory.2 1
 scoreboard players remove @a[scores={player.shift.skill.disable=1..}] player.shift.skill.disable 1
 scoreboard players remove @a[scores={player.gamemode.change.display_delay=1..}] player.gamemode.change.display_delay 1
 scoreboard players remove @a[scores={screen_filters.glitch_effect.noise=1..}] screen_filters.glitch_effect.noise 1
-
+scoreboard players remove @a[scores={player.ultimate=1..}] player.ultimate 1
 
 execute as @a at @s run function players:screen_filters/glitch_effect/main

@@ -1,6 +1,6 @@
-execute unless entity @s[gamemode=creative] run playsound minecraft:ui.cartography_table.take_result player @s ~ ~ ~ 0.6 1
-execute unless entity @s[gamemode=creative] run playsound minecraft:ui.cartography_table.take_result player @s ~ ~ ~ 0.6 1.1
-execute unless entity @s[gamemode=creative] run playsound minecraft:ui.cartography_table.take_result player @s ~ ~ ~ 0.6 1.2
+# execute unless entity @s[gamemode=creative] run playsound minecraft:ui.cartography_table.take_result player @s ~ ~ ~ 0.6 1
+# execute unless entity @s[gamemode=creative] run playsound minecraft:ui.cartography_table.take_result player @s ~ ~ ~ 0.6 1.1
+# execute unless entity @s[gamemode=creative] run playsound minecraft:ui.cartography_table.take_result player @s ~ ~ ~ 0.6 1.2
 
 execute if entity @s[gamemode=creative] run playsound minecraft:item.bundle.insert_fail player @s ~ ~ ~ 0.75 2
 execute if entity @s[gamemode=creative] run playsound minecraft:block.note_block.didgeridoo player @s ~ ~ ~ 0.5 1.5

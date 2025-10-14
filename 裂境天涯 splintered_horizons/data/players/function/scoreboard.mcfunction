@@ -24,11 +24,18 @@ scoreboard objectives add player.actionbar.weapon.spider dummy "[玩家] actionb
 scoreboard objectives add player.actionbar.otherworld_portal.1 dummy "[玩家] actionbar 狀態機 異界之門提示"
 scoreboard objectives add player.actionbar.otherworld_portal.2 dummy "[玩家] actionbar 狀態機 異界之門提示(未擁有鑰匙)"
 
+scoreboard objectives add player.actionbar.tree_of_world_memory.1 dummy "[玩家] actionbar 狀態機 世界記憶之樹提示"
+scoreboard objectives add player.actionbar.tree_of_world_memory.2 dummy "[玩家] actionbar 狀態機 世界記憶之樹提示2"
+
+
 scoreboard players add @a player.actionbar.weapon.nightfall 0
 scoreboard players add @a player.actionbar.weapon.spider 0
 
 scoreboard players add @a player.actionbar.otherworld_portal.1 0
 scoreboard players add @a player.actionbar.otherworld_portal.2 0
+
+scoreboard players add @a player.actionbar.tree_of_world_memory.1 0
+scoreboard players add @a player.actionbar.tree_of_world_memory.2 0
 
 # ==================================================================================================
 # 其他
@@ -45,6 +52,7 @@ scoreboard objectives add player.spawnpoint.dimension dummy "[玩家] 重生點 
 scoreboard objectives add player.gamemode.change.display_delay dummy "[玩家] 模式改變顯示延遲"
 scoreboard objectives add screen_filters.glitch_effect.id dummy "[玩家] 螢幕故障濾鏡 ID"
 scoreboard objectives add screen_filters.glitch_effect.noise dummy "[玩家] 螢幕故障 雜訊"
+scoreboard objectives add player.join_game.detect.delay dummy "[玩家] 進入遊戲偵測延遲"
 
 scoreboard players add @a player.no_cd 0
 scoreboard players add @a player.animation.lock 0
@@ -52,6 +60,7 @@ scoreboard players add @a player.click.interval 0
 scoreboard players add @a player.auto_crafting.brick 0
 scoreboard players add @a player.gamemode.change.display_delay 0
 scoreboard players add @a screen_filters.glitch_effect.noise 0
+scoreboard players add @a player.join_game.detect.delay 0
 
 # ==================================================================================================
 # 禁用
@@ -68,5 +77,6 @@ scoreboard objectives add player.detect.death deathCount "死亡偵測"
 scoreboard objectives add player.detect.click_event.trigger trigger "[玩家] 點擊事件觸發"
 scoreboard objectives add player.detect.quick_actions.trigger trigger "[玩家] 快速動作事件觸發"
 scoreboard objectives add player.detect.tp.trigger trigger "[玩家] 傳送書觸發"
+scoreboard objectives add player.detect.sneak dummy "[玩家] 潛行偵測"
 
 # ==================================================================================================

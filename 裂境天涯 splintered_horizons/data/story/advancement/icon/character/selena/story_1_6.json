@@ -1,0 +1,35 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:book",
+        "components": {},
+        "count": 1
+      },
+      "title": {
+        "translate": "story.icon.character.selena.story.1_6",
+        "fallback": "人物故事1: 新秩序的降臨",
+        "bold": true,
+        "italic": false
+      },
+      "description": [
+        {
+          "translate": "story.icon.character.selena.story.1_6.desc.1",
+          "fallback": "在經歷多次世界回朔與 空之支配者 - 伊萊克爾 的交戰，伊萊克爾取得了勝利，同時也重傷了 賽羅尼斯"
+        },
+        {
+          "translate": "story.icon.character.selena.story.1_6.desc.2",
+          "fallback": "伊萊克爾從被世界記憶組成的牢籠破殼而出，與其餘的 舊日支配者 成為了新世界的統治者"
+        }
+      ],
+      "background": "minecraft:textures/gui/advancements/backgrounds/quartz_bricks.png",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "story:icon/character/selena/story_1_5",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

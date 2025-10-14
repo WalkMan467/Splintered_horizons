@@ -15,7 +15,7 @@ execute if score @s armor.finality_chestplate.cd matches 1.. run return 0
 
 scoreboard players set @s armor.finality_chestplate.cd 5
 
-scoreboard players set #math global.main 5
+scoreboard players set #math global.main 100
 scoreboard players operation @s player.ultimate -= #math global.main
 
 title @s title {"text":"\uE004","font":"minecraft:screen"}

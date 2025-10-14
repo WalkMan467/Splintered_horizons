@@ -13,14 +13,14 @@
 attribute = []
 # ----- 設定參數 ----- #
 
-name = ['深淵雙重火', '#a700b6', '鐮刀 / 史詩']
-story = {'info': ['沾染深淵力量的武器，', '紫色的火焰散發著邪氣，', '彷彿將要吞噬一切'], 'color': 'blue'}
-item_data = {'real_item': 'iron_sword', 'id': 'flame_of_abyss', 'item_model': '"scythe/flame_of_abyss/1"', 'custom_data': '{rc:1b,type:"scythe",rarity:"epic",weapon:"flame_of_abyss"}', 'max_damage': 50, 'max_stack_size': 1, 'rc': True, 'other': ['minecraft:enchantments={"weapons:type/scythe/flame_of_abyss/use":1}', 'enchantment_glint_override=false', 'tooltip_display={hidden_components:["enchantments"]}','tooltip_style="epic"']}
-skill = {'is_skill': True, 'cd': 10, 'name': ['災厄之火', '#ea00ff', '#a700b6'], 'info': ['立即引爆 8 格內的怪物所有的【惡咒】', '每層【惡咒】造成 150% 基礎傷害', '如果你擁有【%s】符文:', '對視角中心的怪物造成 150% 基礎傷害持續 5 秒']}
-passive_skills = {'is_passive_skills': True, 'cd': 5, 'name': ['深淵惡咒', '#8c00ff', '#480083'], 'info': ['當你攻擊命中怪物時:', '對 4 格內怪物添加 2 層【惡咒】']}
+name = ['異界晨星', '#ffe600', '劍 / 傳說']
+story = {'info': ['異界中的一把劍像流星一般墜落在地面，', '它散發著隕星能量，', '如同耀眼的星星'], 'color': 'blue'}
+item_data     = {'real_item': 'iron_sword', 'id': 'otherworld_star', 'item_model': '""', 'custom_data': '{rc:1b,type:"sword",rarity:"mythic",weapon:"otherworld_star"}', 'max_damage': -1, 'max_stack_size': 1 , 'rc': True, 'other': ['enchantments={"cartographer_custom_enchantments:passive/starfall":3}', 'enchantment_glint_override=false', 'tooltip_display={hidden_components:["enchantments"]}','tooltip_style="legendary"']}
+skill = {'is_skill': True, 'cd': 15, 'name': ['超導晨星', "#00D9FF", "#00bbb2"], 'info': ['當你攻擊命中時:','目標獲得一層【感光】', '8 秒後消耗全部層數釋放【行星墜落】造成 200% 基礎傷害', '根據【感光】層數 + 2 點傷害', '當你擁有 %s 時:','可以使附近 4 格範圍內玩家獲得 加速 II 持續 2 秒']}
+passive_skills = {'is_passive_skills': True, 'cd': 0, 'name': ['冰霜之落', "#A4DEFF", "#209AE0"], 'info': ['當你攻擊命中時:', '有一定概率召喚冰霜隕石墜落在目標位置', '落在被攻擊實體附近', '造成 150% 基礎傷害']}
 ultimate = {'is_ultimate': False, 'cd': 30, 'name': ['災厄之火', '#ff0000', '#7a0000'], 'info': ['當你使用右鍵時:', '使【行星墜落】造成傷害變為真實傷害', '並且在該位置生成一片每秒造成 5 點燃燒傷害的區域', '持續 5 秒']}
-attribute.append({'attribute': 'attack_damage', 'value': 3.5, 'slot': 'mainhand', 'operation': 'add_value'})
-attribute.append({'attribute': 'attack_speed', 'value': -2, 'slot': 'mainhand', 'operation': 'add_value'})
+attribute.append({'attribute': 'attack_damage', 'value': 4.5, 'slot': 'mainhand', 'operation': 'add_value'})
+attribute.append({'attribute': 'attack_speed', 'value': -2.4, 'slot': 'mainhand', 'operation': 'add_value'})
 
 # ----- init ----- #
 

@@ -8,3 +8,5 @@ execute positioned 766 145 966 rotated 135 0 run function animated_java:selena/s
 execute positioned 766 145 966 run tag @n[tag=aj.selena.root,distance=..2] add world_area.main.safe_zone.selena
 
 summon interaction 766 145 966 {Tags:["world_area.main.safe_zone.selena.act","interaction.sound.default"],height:2,UUID:[I; 2, 22, 51, 55]}
+
+scoreboard players set story.safe_area.selena.1 story.safe_area 1

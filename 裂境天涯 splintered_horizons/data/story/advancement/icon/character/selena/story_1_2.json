@@ -1,0 +1,35 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:book",
+        "components": {},
+        "count": 1
+      },
+      "title": {
+        "translate": "story.icon.character.selena.story.1_2",
+        "fallback": "人物故事1: 記憶與輪迴",
+        "bold": true,
+        "italic": false
+      },
+      "description": [
+        {
+          "translate": "story.icon.character.selena.story.1_2.desc.1",
+          "fallback": "在她的宇宙中偶然發現了所有事物都是由世界記憶之樹回放並且維持著壽命"
+        },
+        {
+          "translate": "story.icon.character.selena.story.1_2.desc.2",
+          "fallback": "且透過觸碰記憶發現從世界誕生到走向毀滅"
+        }
+      ],
+      "background": "minecraft:textures/gui/advancements/backgrounds/quartz_bricks.png",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "story:icon/character/selena/story_1_1",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

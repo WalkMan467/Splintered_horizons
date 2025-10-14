@@ -1,0 +1,2 @@
+execute if score @s armor.radiant_guardians_helmet.effect.cd matches 0 if items entity @s armor.head *[custom_data~{radiant:1b}] run function armors:type/radiant_guardians_helmet/effect/add_torch
+execute as @n[tag=armors.radiant_guardians_helmet.torch,type=item] at @s unless block ~ ~-1 ~ #penetrate run function armors:type/radiant_guardians_helmet/guide

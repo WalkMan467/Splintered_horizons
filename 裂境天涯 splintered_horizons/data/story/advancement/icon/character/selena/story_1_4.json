@@ -1,0 +1,35 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:book",
+        "components": {},
+        "count": 1
+      },
+      "title": {
+        "translate": "story.icon.character.selena.story.1_4",
+        "fallback": "人物故事1: 毀滅的逼近",
+        "bold": true,
+        "italic": false
+      },
+      "description": [
+        {
+          "translate": "story.icon.character.selena.story.1_4.desc.1",
+          "fallback": "直到 賽琳娜 的出現，它不受回朔力量的引響，並且可以來到世界記憶之樹所在的特殊空間"
+        },
+        {
+          "translate": "story.icon.character.selena.story.1_4.desc.2",
+          "fallback": "但無非是徒勞，世界走向毀滅的源頭是因為世界出現了 空之支配者 - 伊萊克爾"
+        }
+      ],
+      "background": "minecraft:textures/gui/advancements/backgrounds/quartz_bricks.png",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "story:icon/character/selena/story_1_3",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

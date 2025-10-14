@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:book",
+      "components": {},
+      "count": 1
+    },
+    "title": {
+      "translate": "story.icon.character.selena.story.1",
+      "fallback": "人物故事1: 力量的覺醒",
+      "bold": true,
+      "italic": false
+    },
+    "description": {
+      "translate": "story.icon.character.selena.story.1.desc.1",
+      "fallback": "一名偵探，辦案過程中偶然發現了時空裂縫與深淵怪物，再被追逐中觸碰裂縫獲得了名為 星空之霜 的力量，能使星空中落下帶有記憶片段的冰霜，無視回朔力量得引響，"
+    },
+    "background": "minecraft:textures/gui/advancements/backgrounds/quartz_bricks.png",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "story:icon/character/selena/icon",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

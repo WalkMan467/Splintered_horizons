@@ -8,6 +8,9 @@ execute as @e[type=interaction,tag=system.campfire,distance=..30,limit=5,sort=ne
 
 execute as @e[tag=portal,type=marker,distance=..30,limit=5,sort=nearest] at @s run function system:portal/loop
 
+execute unless entity @s[gamemode=!survival,gamemode=!adventure] as @n[tag=system.item_frame,type=glow_item_frame,distance=..8] unless data entity @s Item.id at @s run kill @s[tag=system.item_frame,type=glow_item_frame]
+
+
 function armors:loop
 
 function story:tick

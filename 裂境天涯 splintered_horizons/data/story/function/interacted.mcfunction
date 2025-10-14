@@ -16,6 +16,9 @@ execute as 00000019-0000-0015-0000-003300000033 at @s if data entity @s interact
 # Elina 1
 execute as 00000002-0000-0016-0000-003300000016 at @s if data entity @s interaction.timestamp if score story.safe_area.elina.1 story.safe_area matches 1..14 run function story:safe_area/1
 
+# Selena 1
+execute as 00000002-0000-0016-0000-003300000037 at @s if data entity @s interaction.timestamp if score story.safe_area.selena.1 story.safe_area matches 1..40 run function story:safe_area/selena/1
+
 # Main Line 2
 execute as 0000000c-0000-0015-0000-001800000019 at @s if data entity @s interaction.timestamp if score story.chapter_2.in_safe_zone.ml.2 story.chapter_2 matches 1..20 run function story:chapter_2/in_safe_zone/2/1
 

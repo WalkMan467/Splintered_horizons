@@ -1,4 +1,4 @@
-function world_area:main/reload
+execute as @a unless score @s player.leave_game matches 1.. run function world_area:main/reload
 
 execute as @a at @s run function #main:scoreboard
 
@@ -31,7 +31,6 @@ schedule function armors:timer_s 1s
 schedule function music:timer 1s
 
 schedule function system:monument_point/main 1t
-schedule function system:forging_table/main 1t
 
 # Hotbar switching
 

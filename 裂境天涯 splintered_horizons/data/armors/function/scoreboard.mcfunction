@@ -12,12 +12,14 @@
 scoreboard objectives add armor.tai_chis_shadow.effect dummy "調和之影 效果層數"
 scoreboard objectives add armor.tai_chis_shadow.restore_mana dummy "調和之影 恢復魔力"
 scoreboard objectives add armor.tai_chis_shadow.restore_mana_magnification dummy "調和之影 恢復魔力倍率"
-scoreboard objectives add armor.black_hole.boots.sneak dummy "黑洞之靴 潛行偵測"
 scoreboard objectives add armor.black_hole.boots.cd dummy "黑洞之靴 CD"
 scoreboard objectives add armor.black_hole.boots.active dummy "黑洞之靴 啟動狀態"
 scoreboard objectives add armor.armor_of_the_coiled_rock.cd dummy "盤岩之鎧 CD"
 scoreboard objectives add armor.finality_chestplate.cd dummy "終焉之鎧 CD"
 scoreboard objectives add armor.windriders_legplates.cd dummy "馭風戰騎腿鎧 CD"
+scoreboard objectives add armor.radiant_guardians_helmet.cd dummy "耀光守護頭盔 CD"
+scoreboard objectives add armor.radiant_guardians_helmet.effect.cd dummy "耀光守護頭盔被動 CD"
+
 
 scoreboard objectives add armor.finality_chestplate.effect.timer dummy "終焉之鎧 攻擊力提升計時器"
 

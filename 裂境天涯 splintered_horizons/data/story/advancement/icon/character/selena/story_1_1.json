@@ -1,0 +1,35 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:book",
+        "components": {},
+        "count": 1
+      },
+      "title": {
+        "translate": "story.icon.character.selena.story.1_1",
+        "fallback": "人物故事1: 真相的探索",
+        "bold": true,
+        "italic": false
+      },
+      "description": [
+        {
+          "translate": "story.icon.character.selena.story.1_1.desc.1",
+          "fallback": "利用這股力量持續與深淵怪物交戰與解開世界異常現象，"
+        },
+        {
+          "translate": "story.icon.character.selena.story.1_1.desc.2",
+          "fallback": "在她不斷地推理與跟怪物交戰之中，賽琳娜 再次進入了初次進入的異空間"
+        }
+      ],
+      "background": "minecraft:textures/gui/advancements/backgrounds/quartz_bricks.png",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "story:icon/character/selena/story_1",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }
