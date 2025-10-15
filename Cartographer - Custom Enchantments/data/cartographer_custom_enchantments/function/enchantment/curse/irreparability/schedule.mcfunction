@@ -1,1 +1,0 @@
-execute if entity @s[type=player,tag=ca.core_check_inv] unless score @s ca.core_delay_check matches 1.. unless data entity @s SelectedItem.components."minecraft:custom_data".irreparability_applied run function cartographer_custom_enchantments:enchantment/curse/irreparability/apply {data:"SelectedItem",slot:"weapon.mainhand"}

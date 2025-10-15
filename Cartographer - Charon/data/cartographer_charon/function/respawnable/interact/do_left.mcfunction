@@ -1,1 +1,0 @@
-execute on vehicle at @s run function cartographer_charon:respawnable/set_spawn

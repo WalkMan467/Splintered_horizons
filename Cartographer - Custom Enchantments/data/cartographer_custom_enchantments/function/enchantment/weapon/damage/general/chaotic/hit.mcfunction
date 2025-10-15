@@ -1,4 +1,0 @@
-
-function cartographer_custom_enchantments:enchantment/weapon/damage/general/chaotic/roll
-
-function cartographer_custom_enchantments:enchantment/weapon/damage/general/chaotic/damage with storage cartographer:custom_enchantments

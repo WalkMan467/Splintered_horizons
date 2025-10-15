@@ -1,1 +1,0 @@
-scoreboard players set $charon ca.installed 1

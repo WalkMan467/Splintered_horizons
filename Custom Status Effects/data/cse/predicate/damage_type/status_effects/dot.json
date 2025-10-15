@@ -1,0 +1,11 @@
+{
+  "condition": "minecraft:damage_source_properties",
+  "predicate": {
+    "tags": [
+      {
+        "id": "cse:status_effects/dot",
+        "expected": true
+      }
+    ]
+  }
+}

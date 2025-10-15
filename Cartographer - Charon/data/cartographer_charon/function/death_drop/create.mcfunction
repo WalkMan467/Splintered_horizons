@@ -1,1 +1,0 @@
-function cartographer_charon:death_drop/find_spot

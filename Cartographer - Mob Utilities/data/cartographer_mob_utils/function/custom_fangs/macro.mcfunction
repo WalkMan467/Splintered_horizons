@@ -1,1 +1,0 @@
-$execute summon $(id) run function cartographer_mob_utils:custom_fangs/modify with storage cartographer_mob_utils:fangs data

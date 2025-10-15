@@ -1,1 +1,0 @@
-tellraw @a {"text":"Custom Statuses Options: ","color":"#57dec0","italic":false}

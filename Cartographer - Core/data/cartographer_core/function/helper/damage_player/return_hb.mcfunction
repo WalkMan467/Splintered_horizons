@@ -1,1 +1,0 @@
-$effect give @s health_boost $(hb_dur) $(hb_amp)

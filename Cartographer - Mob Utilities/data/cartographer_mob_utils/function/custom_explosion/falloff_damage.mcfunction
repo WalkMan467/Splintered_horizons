@@ -1,1 +1,0 @@
-$damage @s $(partial_damage) $(type) at ~ ~ ~

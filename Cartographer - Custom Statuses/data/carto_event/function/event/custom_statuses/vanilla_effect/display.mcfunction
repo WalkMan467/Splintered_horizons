@@ -1,1 +1,0 @@
-$effect give @s $(vanilla_effect) $(vanilla_duration) $(vanilla_amplifier)

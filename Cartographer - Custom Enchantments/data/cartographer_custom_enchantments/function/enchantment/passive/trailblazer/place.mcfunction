@@ -1,2 +1,0 @@
-scoreboard players set @s ca.raycast 21
-execute at @s if score @s ca.raycast matches 1.. align y positioned ~ ~0.1 ~ run function cartographer_custom_enchantments:enchantment/passive/trailblazer/place_raycast

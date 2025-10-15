@@ -1,1 +1,0 @@
-$execute positioned ^ ^ ^$(place_pos) run function cartographer_custom_enchantments:enchantment/passive/surge/release_branch with storage cartographer:custom_enchantments

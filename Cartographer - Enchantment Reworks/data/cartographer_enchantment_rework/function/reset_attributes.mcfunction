@@ -1,2 +1,0 @@
-execute unless score @s ca.ench_hazard_protection_lvl matches 1.. run attribute @s minecraft:burning_time modifier remove ca.hazard_protection_stat
-execute unless score @s ca.ench_hazard_protection_lvl matches 1.. run attribute @s minecraft:explosion_knockback_resistance modifier remove ca.hazard_protection_stat

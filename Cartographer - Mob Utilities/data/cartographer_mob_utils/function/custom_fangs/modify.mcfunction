@@ -1,1 +1,0 @@
-data modify entity @s {} merge from storage cartographer_mob_utils:fangs data.nbt

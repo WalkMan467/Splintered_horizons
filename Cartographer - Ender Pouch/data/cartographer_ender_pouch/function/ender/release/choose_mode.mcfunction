@@ -1,2 +1,0 @@
-execute if predicate cartographer_core:player/key_press/sneak run function cartographer_ender_pouch:ender/release/recurse with storage cartographer:ender_pouch
-execute unless predicate cartographer_core:player/key_press/sneak run function cartographer_ender_pouch:ender/release/single with storage cartographer:ender_pouch

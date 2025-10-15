@@ -1,2 +1,0 @@
-execute unless score $repeating ca.ench_auto_charge_slot matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/other/auto_charge/consumable/activate/refill/normal
-execute if score $repeating ca.ench_auto_charge_slot matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/other/auto_charge/consumable/activate/refill/repeating/start

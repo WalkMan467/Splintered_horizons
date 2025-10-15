@@ -1,1 +1,0 @@
-execute if score @s ca.repeating_ammo <= @s ca.ench_repeating_lvl run function cartographer_custom_enchantments:enchantment/weapon/unique/other/repeating/reload/partial/start

@@ -1,1 +1,0 @@
-$effect give @s $(effect) $(duration) 0

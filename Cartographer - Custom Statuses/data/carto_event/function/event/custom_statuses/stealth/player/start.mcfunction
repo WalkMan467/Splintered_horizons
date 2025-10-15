@@ -1,1 +1,0 @@
-$effect give @s invisibility $(visual_seconds) 1

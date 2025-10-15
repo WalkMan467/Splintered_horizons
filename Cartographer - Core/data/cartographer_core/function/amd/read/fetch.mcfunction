@@ -1,1 +1,0 @@
-$data modify storage amd:mob_data working_data set from storage amd:mob_data storage[{uuid:"$(out)"}]

@@ -1,1 +1,0 @@
-$execute as $(uuid) at @s run scoreboard players set $amd_found ca.var 1

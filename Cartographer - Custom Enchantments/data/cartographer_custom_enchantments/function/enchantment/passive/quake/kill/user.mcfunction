@@ -1,1 +1,0 @@
-function cartographer_custom_enchantments:enchantment/passive/quake/get_data

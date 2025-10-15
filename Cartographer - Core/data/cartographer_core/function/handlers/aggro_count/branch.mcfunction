@@ -1,1 +1,0 @@
-execute on target if entity @s[tag=ca.aggro_ct_test] run scoreboard players add $aggro_ct ca.var 1

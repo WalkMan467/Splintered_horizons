@@ -1,2 +1,0 @@
-data remove storage loe:datapacks active_datapacks
-schedule function cartographer_custom_enchantments:load/integration/active/set 1t

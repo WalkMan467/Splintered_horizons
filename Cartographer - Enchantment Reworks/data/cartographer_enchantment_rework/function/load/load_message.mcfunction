@@ -1,1 +1,0 @@
-tellraw @a [{"text":"❱ ","color":"#FFE0A3"},{"text":"Enchantment Rework","color":"#db7ecc","hover_event":{"action":"show_text","value":[{"text":"Modifies some vanilla enchantments to alter the balance of Protection enchantments.","color":"#FFE0A3","italic":true}]}},{"text":" installed!","color":"#FFE0A3"}]

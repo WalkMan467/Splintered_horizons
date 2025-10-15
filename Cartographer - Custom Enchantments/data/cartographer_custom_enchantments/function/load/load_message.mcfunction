@@ -1,1 +1,0 @@
-tellraw @a [{"text":"❱ ","color":"#FFE0A3"},{"text":"Custom Enchantments","color":"#58da63","hover_event":{"action":"show_text","value":[{"text":"Adds over 50 new custom enchantments for weapons, tools, armor, and more!","color":"#FFE0A3","italic":true}]}},{"text":" installed!","color":"#FFE0A3"}]

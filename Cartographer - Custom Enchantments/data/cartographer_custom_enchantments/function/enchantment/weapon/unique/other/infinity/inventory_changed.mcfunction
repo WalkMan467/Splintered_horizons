@@ -1,2 +1,0 @@
-execute if entity @s[tag=!ca.infinity_restore_inv] run function cartographer_custom_enchantments:enchantment/weapon/unique/other/infinity/save
-advancement revoke @s only cartographer_custom_enchantments:inventory_changed_infinity

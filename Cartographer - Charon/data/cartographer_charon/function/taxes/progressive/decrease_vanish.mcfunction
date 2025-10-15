@@ -1,1 +1,0 @@
-scoreboard players operation $tax_vanish charon.gmr /= $2 ca.CONSTANT

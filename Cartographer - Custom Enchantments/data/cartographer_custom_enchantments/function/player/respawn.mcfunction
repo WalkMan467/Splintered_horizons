@@ -1,1 +1,0 @@
-tag @s remove ca.enchant_opportunist

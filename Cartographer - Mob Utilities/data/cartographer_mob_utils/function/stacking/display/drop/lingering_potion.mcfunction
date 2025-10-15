@@ -1,1 +1,0 @@
-data modify entity @s Item set from storage cartographer:mob_utils item

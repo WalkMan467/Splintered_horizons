@@ -1,1 +1,0 @@
-$execute if data storage cartographer:ender_pouch pocketed.$(player)[0] at @s anchored eyes positioned ^ ^ ^ run function cartographer_ender_pouch:ender/release/raycast with storage cartographer:ender_pouch

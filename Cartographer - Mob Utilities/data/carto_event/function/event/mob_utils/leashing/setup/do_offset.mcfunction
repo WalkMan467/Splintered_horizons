@@ -1,1 +1,0 @@
-$execute positioned $(offset) run function carto_event:event/mob_utils/leashing/setup/do_summon with storage cartographer_mob_utils:leashing data

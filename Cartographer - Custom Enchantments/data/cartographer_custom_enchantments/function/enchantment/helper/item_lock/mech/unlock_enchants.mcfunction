@@ -1,4 +1,0 @@
-data modify storage cartographer_custom_enchantments:item_lock item.components.minecraft:enchantments set from storage cartographer_custom_enchantments:item_lock item.components.minecraft:custom_data.locked_enchantments
-data remove storage cartographer_custom_enchantments:item_lock item.components.minecraft:custom_data.locked_enchantments
-
-# item.components.minecraft:custom_data.locked_enchantments

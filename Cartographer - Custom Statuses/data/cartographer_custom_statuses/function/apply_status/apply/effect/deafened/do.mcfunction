@@ -1,1 +1,0 @@
-function cartographer_custom_statuses:apply_status/apply/effect/deafened/branch

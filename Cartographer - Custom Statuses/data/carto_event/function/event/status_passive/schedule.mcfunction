@@ -1,1 +1,0 @@
-execute as @e[tag=ca.schedule_passive_status] at @s run function carto_event:event/status_passive/schedule_branch

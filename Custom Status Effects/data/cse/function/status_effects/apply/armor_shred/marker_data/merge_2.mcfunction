@@ -1,0 +1,1 @@
+$attribute @s minecraft:armor modifier add cse.status_effects.armor_shred -$(value) add_multiplied_base

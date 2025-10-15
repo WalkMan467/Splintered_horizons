@@ -1,1 +1,0 @@
-$data modify storage cartographer_custom_statuses:mob equips append from entity @s $(path).components.minecraft:custom_data.apply_status

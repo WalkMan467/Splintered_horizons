@@ -1,1 +1,0 @@
-$function carto_event:api/create_single_entity_event {event:"custom_attribute/restrike_hit",duration:2,delay:2,parameters:{restrike_hit_damage:$(restrike_hit_damage),restrike_count:$(restrike_count),restrike_owner:"$(restrike_owner)"},merge_behavior:"merge"}

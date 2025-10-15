@@ -1,0 +1,1 @@
+execute as @e[tag=!aj.global.root] at @s run function cse:entity

@@ -1,1 +1,0 @@
-$effect give @s hunger $(duration) 40 true

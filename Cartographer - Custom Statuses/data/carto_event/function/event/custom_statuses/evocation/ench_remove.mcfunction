@@ -1,2 +1,0 @@
-execute unless items entity @s armor.head minecraft:stone_button[minecraft:enchantments={"cartographer_custom_statuses:evocation_blocker":1}] run item modify entity @s armor.head cartographer_custom_statuses:remove_evocation_blocker
-execute if items entity @s armor.head minecraft:stone_button[minecraft:enchantments={"cartographer_custom_statuses:evocation_blocker":1}] run item replace entity @s armor.head with air

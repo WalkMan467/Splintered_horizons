@@ -1,1 +1,0 @@
-$damage @s $(damage) cartographer_custom_enchantments:vengeance_damage by @n[tag=ca.vengeance_owner]

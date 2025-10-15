@@ -1,1 +1,0 @@
-execute if block ~ ~ ~ #cartographer_core:can_raycast unless block ~ ~-1 ~ #cartographer_core:can_raycast unless block ~ ~-1 ~ #cartographer_core:partial_block run function cartographer_custom_enchantments:enchantment/tool/lightborn/do_place

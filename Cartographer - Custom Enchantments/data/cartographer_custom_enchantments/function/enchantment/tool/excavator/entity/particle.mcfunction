@@ -1,1 +1,0 @@
-$particle minecraft:block{block_state:"$(block)"} ~ ~ ~ 0.35 0.35 0.35 0 5 normal

@@ -1,1 +1,0 @@
-$execute as @a[distance=..$(size)] run function carto_event:event/custom_ench/quake/charge/detect_player/warning

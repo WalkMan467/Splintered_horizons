@@ -1,1 +1,0 @@
-scoreboard players set $repair_stations ca.installed 1

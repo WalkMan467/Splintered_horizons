@@ -1,1 +1,0 @@
-$summon armor_stand ~ ~ ~ {Tags:["ca.explosion_emitter"],Invisible:1b,Marker:1b,equipment:{feet:{id:"minecraft:stick",components:{enchantments:{"cartographer_core:explosion/$(type)":$(radius)}}}}}

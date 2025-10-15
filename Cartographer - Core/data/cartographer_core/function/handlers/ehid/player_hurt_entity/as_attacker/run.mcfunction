@@ -1,1 +1,0 @@
-execute at @s run function #minecraft:cartographer/api/handlers/ehid/player_hurt_entity/as_attacker_context

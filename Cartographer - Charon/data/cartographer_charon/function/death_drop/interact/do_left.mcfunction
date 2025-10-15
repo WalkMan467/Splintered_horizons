@@ -1,1 +1,0 @@
-execute on vehicle if entity @s[type=item_display] run function cartographer_charon:death_drop/ground_drop

@@ -1,1 +1,0 @@
-scoreboard players set $ender_pouch ca.installed 1

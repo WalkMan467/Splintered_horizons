@@ -1,1 +1,0 @@
-$data remove amd:mob_data storage[{uuid:"$(uuid)"}]

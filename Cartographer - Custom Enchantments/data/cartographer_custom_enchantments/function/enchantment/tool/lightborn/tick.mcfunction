@@ -1,1 +1,0 @@
-execute unless score @s ca.ench_lightborn_lvl matches 0.. run scoreboard players set @s ca.ench_lightborn_lvl 0

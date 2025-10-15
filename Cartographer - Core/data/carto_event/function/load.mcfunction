@@ -1,1 +1,0 @@
-scoreboard objectives add carto_event dummy

@@ -1,3 +1,0 @@
-tag @s remove ca.diversion_first_hit
-
-function cartographer_custom_enchantments:enchantment/passive/diversion/entity/spawn_clones

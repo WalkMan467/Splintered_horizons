@@ -1,1 +1,0 @@
-execute at @s run function #minecraft:cartographer/api/handlers/ehid/entity_killed_player/as_entity_context

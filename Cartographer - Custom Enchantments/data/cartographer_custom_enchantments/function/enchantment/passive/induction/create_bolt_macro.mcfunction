@@ -1,2 +1,0 @@
-
-$function carto_event:api/create_single_entity_event {event:"custom_ench/induction/bolt",duration:1,delay:2,parameters:{spread:4,length:$(size),damage:"$(damage)",owner:"$(owner)",previous:"$(previous)"},merge_behavior:"none"}
