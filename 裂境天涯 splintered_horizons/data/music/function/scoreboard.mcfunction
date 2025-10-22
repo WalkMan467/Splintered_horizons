@@ -4,6 +4,7 @@ scoreboard objectives add music.chapter1.abyssal_ruins dummy "[音樂]: 深淵�
 scoreboard objectives add music.main.campfire dummy "[音樂]: 營火BGM"
 scoreboard objectives add music.chapter2.land_of_finality dummy "[音樂]: 終焉之地BGM"
 scoreboard objectives add music.main.safe_zone dummy "[音樂]: 安全區BGM"
+scoreboard objectives add music.main.tree_of_world_memory dummy "[音樂]: 世界記憶之樹BGM"
 scoreboard objectives add music.chapter2.forest_of_souls dummy "[音樂]: 靈魂之森BGM"
 scoreboard objectives add music.chapter2.forgotten_sakura_city dummy "[音樂]: 往昔的櫻花之城BGM"
 scoreboard objectives add music.chapter2.bossfight.2 dummy "[音樂]: BOSS戰BGM"

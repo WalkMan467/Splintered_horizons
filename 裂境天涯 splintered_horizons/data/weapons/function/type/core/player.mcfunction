@@ -1,6 +1,9 @@
 # @s = Players
 
+execute if entity @s[tag=zeuss_lightning.user] run function weapons:type/drop/zeuss_lightning/rc/main
 execute if entity @s[tag=wind_sword.user] run function weapons:type/sword/wind_sword/main
+
+function weapons:type/sword/otherworld_star/main
 
 execute if entity @s[tag=twilight_wind.user] run function weapons:type/sword/twilight_wind/main
 

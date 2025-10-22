@@ -1,0 +1,1 @@
+$attribute @s minecraft:movement_speed modifier add cse.status_effects.tactical_scroll_of_brilliance.speed $(value) add_multiplied_base

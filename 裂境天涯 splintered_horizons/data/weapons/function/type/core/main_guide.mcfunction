@@ -14,5 +14,5 @@ execute as @s[type=marker,tag=weapon.ruins_of_the_finality.blade.1] at @s run fu
 
 function weapons:type/arrows/ground_detect/main
 function weapons:type/sword/grip_of_withering/main
-function weapons:type/sword/morning_light/main
 function weapons:type/drop/miniature_sun/rc/main
+function weapons:type/drop/zeuss_lightning/lightning/main

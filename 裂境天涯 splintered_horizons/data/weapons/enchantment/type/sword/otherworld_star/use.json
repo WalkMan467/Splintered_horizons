@@ -1,0 +1,33 @@
+{
+  "anvil_cost": 4,
+  "description": {
+    "translate": "weapon.sword.otherworld_star.use",
+    "fallback": "Otherworld Star Skill"
+  },
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "weapons:type/sword/otherworld_star/use"
+        },
+        "enchanted": "attacker",
+        "affected": "attacker"
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 50,
+    "per_level_above_first": 0
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 20,
+    "per_level_above_first": 0
+  },
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "barrier",
+  "weight": 2
+}

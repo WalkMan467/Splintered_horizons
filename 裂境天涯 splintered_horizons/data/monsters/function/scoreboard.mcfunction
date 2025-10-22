@@ -26,6 +26,15 @@ scoreboard objectives add monster.sunfire_emissary.1.sunfire_actived.sfx dummy "
 
 # ===============================================================================
 
+# 暗蝕的烈陽
+
+scoreboard objectives add monster.sun_of_the_abyssal_eclipse.death.timer dummy "暗蝕的烈陽 自爆蓄力計時器"
+scoreboard objectives add monster.sun_of_the_abyssal_eclipse.death.fx dummy "暗蝕的烈陽 自爆特效"
+scoreboard objectives add monster.sun_of_the_abyssal_eclipse.1.raycast dummy "暗蝕的烈陽 雷射射線"
+scoreboard objectives add monster.sun_of_the_abyssal_eclipse.1.sunfire_actived.sfx dummy "暗蝕的烈陽 音效"
+
+# ===============================================================================
+
 
 scoreboard objectives add monster.effect.finality dummy "[怪物] 終焉轉化"
 
@@ -49,5 +58,16 @@ scoreboard objectives add monster.elekiel.3.timer dummy "[怪物] 伊萊克爾 �
 
 scoreboard objectives add monster.elekiel.skill dummy "[怪物] 伊萊克爾 所有技能 CD"
 scoreboard objectives add monster.elekiel.player_die deathCount "[怪物] 伊萊克爾 玩家死亡偵測"
+
+# ===============================================================================
+
+# 「空之支配者」伊萊克爾 二階段
+
+scoreboard objectives add monster.elekiel_phase_2.cd dummy "[怪物] 伊萊克爾二階段 CD"
+
+scoreboard objectives add monster.elekiel_phase_2.skill.special.1.casting dummy "[怪物] 伊萊克爾二階段 特殊技能1 施法中"
+
+scoreboard objectives add monster.elekiel_phase_2.skill.1.casting dummy "[怪物] 伊萊克爾二階段 技能1 施法中"
+scoreboard objectives add monster.elekiel_phase_2.skill.2.casting dummy "[怪物] 伊萊克爾二階段 技能2 施法中"
 
 # ===============================================================================

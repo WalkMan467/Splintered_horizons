@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:target_hit",
+      "conditions": {
+        "shooter": {
+          "nbt": "{Tags:[\"system.shooting_contest\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "system:shooting_contest/bow/add_score"
+  }
+}

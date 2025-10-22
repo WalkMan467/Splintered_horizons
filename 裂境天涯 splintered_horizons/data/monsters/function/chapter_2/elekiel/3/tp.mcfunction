@@ -1,6 +1,7 @@
 summon area_effect_cloud ~ ~ ~ {Duration:1,custom_particle:{type:"block",block_state:"minecraft:air"},NoGravity:1b,Radius:0f,Tags:["monsters.elekiel.3.tp.point"]}
 
-spreadplayers 912 2018 5 10 under 60 false @e[tag=monsters.elekiel.3.tp.point,type=area_effect_cloud]
+execute if biome ~ ~ ~ world_area:chapter_2/bossfight/normal run spreadplayers 912 2018 5 10 under 60 false @e[tag=monsters.elekiel.3.tp.point,type=area_effect_cloud]
+execute if biome ~ ~ ~ world_area:chapter_2/bossfight/fire run spreadplayers 912 3018 5 10 under 60 false @e[tag=monsters.elekiel.3.tp.point,type=area_effect_cloud]
 
 execute as @e[tag=monsters.elekiel.3.tp.point,type=area_effect_cloud] at @s run tp @s ~ 60 ~
 

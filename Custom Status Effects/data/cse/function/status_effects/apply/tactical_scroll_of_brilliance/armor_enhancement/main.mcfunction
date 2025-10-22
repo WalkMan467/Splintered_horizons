@@ -1,0 +1,2 @@
+execute if score @s cse.status_effects.tactical_scroll_of_brilliance.armor_enhancement matches 1.. run function cse:status_effects/apply/tactical_scroll_of_brilliance/armor_enhancement/guide
+execute if score @s cse.status_effects.tactical_scroll_of_brilliance.armor_enhancement matches 0 run function cse:status_effects/apply/tactical_scroll_of_brilliance/armor_enhancement/reset

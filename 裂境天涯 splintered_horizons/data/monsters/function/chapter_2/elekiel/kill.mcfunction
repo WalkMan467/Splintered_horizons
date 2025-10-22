@@ -23,3 +23,5 @@ advancement revoke @a only monsters:chapter_2/elekiel/1/battlefield/fire
 kill 000000fb-0000-0228-0000-000100000018
 
 tp @a 1109 82 373
+
+schedule clear monsters:chapter_2/elekiel/main

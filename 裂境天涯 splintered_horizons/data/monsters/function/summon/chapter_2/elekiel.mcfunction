@@ -27,3 +27,5 @@ scoreboard players set $monster.chapter_2.elekiel.3.cd monster.elekiel.skill 100
 execute as @a at @s if biome ~ ~ ~ #world_area:chapter_2_bossfight run function music:chapter_2/bossfight/2/start
 
 tag @e[tag=monsters.spawn] remove monsters.spawn
+
+schedule function monsters:chapter_2/elekiel/main 1t

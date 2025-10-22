@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:prismarine_shard",
+      "components": {
+        "minecraft:item_model": "other/world_memory_fragments_no_frame"
+      },
+      "count": 1
+    },
+    "title": {
+      "translate": "world_area.icon.main.tree_of_world_memory",
+      "color": "white",
+      "bold": true,
+      "italic": false
+    },
+    "description": "",
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "music:main/icon",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+  }
+}

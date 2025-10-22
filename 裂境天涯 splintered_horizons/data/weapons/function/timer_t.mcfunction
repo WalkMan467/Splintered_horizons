@@ -14,6 +14,7 @@ scoreboard players remove @a[scores={weapon.effect.crimson_claw=1..}] weapon.eff
 scoreboard players remove @a[scores={weapon.effect.holy_fire=1..}] weapon.effect.holy_fire 1
 scoreboard players remove @a[scores={weapon.effect.starry_sky_frost=1..}] weapon.effect.starry_sky_frost 1
 scoreboard players remove @a[scores={weapon.ruins_of_the_finality.enhanced_finality_skill=1..}] weapon.ruins_of_the_finality.enhanced_finality_skill 1
+scoreboard players remove @a[scores={weapon.zeuss_lightning.use=1..}] weapon.zeuss_lightning.use 1
 
 execute if score #is_water_sword_demon.passive? global.main matches 0.. run scoreboard players remove #is_water_sword_demon.passive? global.main 1
 

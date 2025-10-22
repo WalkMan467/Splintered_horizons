@@ -2,16 +2,16 @@
 
 execute unless score #difficulty global.main matches 1.. run return 0
 
-execute as @s[tag=monsters.soul_tree_remnant] run function monsters:chapter_2/soul_tree_remnant/main
+function monsters:chapter_2/soul_tree_remnant/main
 function monsters:chapter_2/forest_messenger/main
 function monsters:chapter_2/forest_messenger/cocoon/main
-execute as @s[tag=monsters.elekiel] run function monsters:chapter_2/elekiel/main
 function monsters:chapter_1/abyssal_black_knight/main
 function monsters:chapter_1/abyssal_soulreaper/main
 function monsters:chapter_1/explosion_arrow_skeleton/main
 function monsters:chapter_3/corroder/main
 function monsters:chapter_3/sunfire_emissary/main
 function monsters:other/abyss_crystal/main
+function monsters:other/sun_of_the_abyssal_eclipse/main
 
 
 execute as @s[tag=abyss_berserker] unless data entity @s {HurtTime:0s} run function monsters:chapter_1/abyss_berserker/run

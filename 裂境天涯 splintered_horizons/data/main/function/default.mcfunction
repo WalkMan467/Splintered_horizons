@@ -55,6 +55,7 @@ scoreboard players set #story:icon/story/chapter_2/scebe_2 global.main 0
 scoreboard players set #story:icon/story/chapter_2/scebe_3 global.main 0
 scoreboard players set #story:icon/proper_noun/resplendence global.main 0
 scoreboard players set #story:icon/proper_noun/shadow global.main 0
+scoreboard players set #story:icon/proper_noun/starry_sky_frost global.main 0
 
 scoreboard players set #weapons:monument/area_1 global.main 0
 scoreboard players set #weapons:monument/area_2 global.main 0

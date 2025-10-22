@@ -1,0 +1,1 @@
+summon interaction 1039 152 -70 {height:2,width:1,Tags:["system.shooting_contest"],UUID:[I; 125, 241, 1, 1]}

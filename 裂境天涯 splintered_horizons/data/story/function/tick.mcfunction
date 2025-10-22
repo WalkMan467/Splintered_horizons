@@ -66,3 +66,6 @@ execute unless score #story:icon/proper_noun/resplendence global.main matches 1.
 
 execute if score #story:icon/proper_noun/shadow global.main matches 1.. run advancement grant @a only story:icon/proper_noun/shadow
 execute unless score #story:icon/proper_noun/shadow global.main matches 1.. run advancement revoke @a only story:icon/proper_noun/shadow
+
+execute if score #story:icon/proper_noun/starry_sky_frost global.main matches 1.. run advancement grant @a only story:icon/proper_noun/starry_sky_frost
+execute unless score #story:icon/proper_noun/starry_sky_frost global.main matches 1.. run advancement revoke @a only story:icon/proper_noun/starry_sky_frost

@@ -7,6 +7,9 @@ execute unless score #difficulty global.main matches 1.. if entity @n[type=marke
 # Monsters
 function monsters:guide
 
+# System
+function system:main
+
 function main:duration/detect
 
 # Tree of World Memory

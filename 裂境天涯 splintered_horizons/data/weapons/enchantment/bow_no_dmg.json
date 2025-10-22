@@ -1,0 +1,56 @@
+{
+  "description": {
+    "text": "弓箭無傷害",
+    "color": "red",
+    "bold": true,
+    "italic": false
+  },
+  "supported_items": "minecraft:barrier",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "any"
+  ],
+  "effects": {
+    "minecraft:damage": [
+      {
+        "effect": {
+          "type": "minecraft:multiply",
+          "factor": -999
+        },
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "direct_attacker",
+          "predicate": {
+            "type": "#minecraft:arrows"
+          }
+        }
+      }
+    ],
+    "minecraft:ammo_use": [
+      {
+        "effect": {
+          "type": "minecraft:set",
+          "value": 0
+        }
+      }
+    ],
+    "minecraft:item_damage": [
+      {
+        "effect": {
+          "type": "minecraft:remove_binomial",
+          "chance": 9999
+        }
+      }
+    ]
+  }
+}

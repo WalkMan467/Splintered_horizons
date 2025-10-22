@@ -43,6 +43,7 @@ execute positioned 766 144 966 if score story.safe_area.selena.1 story.safe_area
 execute positioned 766 144 966 if score story.safe_area.selena.1 story.safe_area matches 37 run tellraw @a[distance=..16] {"translate": "story.safe_area.selena.1.37","fallback": "［賽琳娜］如果可以，我希望能夠和你們一起對抗 伊萊克爾"}
 execute positioned 766 144 966 if score story.safe_area.selena.1 story.safe_area matches 38 run tellraw @a[distance=..16] {"translate": "story.safe_area.selena.1.38","fallback": "［賽琳娜］我想要守護這個世界，守護你們"}
 execute positioned 766 144 966 if score story.safe_area.selena.1 story.safe_area matches 39 run tellraw @a[distance=..16] {"translate": "story.safe_area.selena.1.39","fallback": "［賽琳娜］因為我不想再失去一切了"}
+execute if score story.safe_area.selena.1 story.safe_area matches 39 run scoreboard players set #story:icon/proper_noun/starry_sky_frost global.main 1
 execute positioned 766 144 966 if score story.safe_area.selena.1 story.safe_area matches 39 run tellraw @a[distance=..16] [{"translate": "story.end","fallback": "對話結束，再次點擊可重複查看對話內容","color":"gold"},{"text":"\n"}]
 
 execute positioned 766 144 966 if score story.safe_area.selena.1 story.safe_area matches 39 run function story:safe_area/selena/character_story

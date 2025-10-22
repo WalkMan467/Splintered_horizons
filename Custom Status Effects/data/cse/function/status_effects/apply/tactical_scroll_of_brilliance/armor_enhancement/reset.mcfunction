@@ -1,0 +1,9 @@
+scoreboard players reset @s cse.status_effects.tactical_scroll_of_brilliance.armor_enhancement
+scoreboard players reset @s cse.status_effects.tactical_scroll_of_brilliance.armor_enhancement.base.value
+scoreboard players reset @s cse.status_effects.tactical_scroll_of_brilliance.armor_enhancement.value.max
+scoreboard players reset @s cse.status_effects.tactical_scroll_of_brilliance.armor_enhancement.value
+
+tag @s remove cse.status_effect.tactical_scroll_of_brilliance.armor_enhancement
+attribute @s minecraft:armor modifier remove cse.status_effects.tactical_scroll_of_brilliance.armor_enhancement
+
+function cse:status_effects/apply/tactical_scroll_of_brilliance/armor_enhancement/marker_data/remove

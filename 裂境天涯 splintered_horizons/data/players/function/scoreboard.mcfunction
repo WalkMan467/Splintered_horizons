@@ -8,6 +8,7 @@ scoreboard objectives add player.max_health dummy "[玩家] 最大血量"
 scoreboard objectives add player.hurt_time dummy "[玩家] 受傷時間"
 scoreboard objectives add player.ultimate dummy "[玩家] 終焉之眼CD"
 scoreboard objectives add player.give.item.delay dummy "[玩家] 給予玩家物品延遲"
+scoreboard objectives add player.leave_game minecraft.custom:minecraft.leave_game "[玩家] 離開遊戲"
 
 scoreboard objectives add player.otherworld_key.count dummy "[玩家] 異界鑰匙數量"
 

@@ -1,0 +1,1 @@
+execute as @s[type=item_display,tag=weapon.zeuss_lightning.lightning] at @s run function weapons:type/drop/zeuss_lightning/lightning/guide

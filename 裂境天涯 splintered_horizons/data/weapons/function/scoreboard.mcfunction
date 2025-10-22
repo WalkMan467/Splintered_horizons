@@ -38,6 +38,17 @@ scoreboard players add @a weapon.grip_of_withering.effect 0
 scoreboard players add @a weapon.grip_of_withering.cd 0
 
 #===================================================================
+
+#異界晨星
+
+scoreboard objectives add weapon.otherworld_star.cd dummy "異界晨星 CD"
+scoreboard objectives add weapon.otherworld_star.timer dummy "異界晨星 行星墜落計時器"
+scoreboard objectives add weapon.otherworld_star.effect dummy "異界晨星 行星墜落層數"
+
+scoreboard players add @a weapon.otherworld_star.cd 0
+
+#===================================================================
+
 #狂風之劍
 
 scoreboard objectives add weapon.storm_sword.ultimate dummy "狂風之劍 大招"
@@ -45,6 +56,13 @@ scoreboard objectives add weapon.storm_sword.ultimate dummy "狂風之劍 大招
 scoreboard players add @a weapon.storm_sword.ultimate 0
 
 #===================================================================
+#宙斯閃電
+
+scoreboard objectives add weapon.zeuss_lightning.hold_down dummy "宙斯閃電 長按"
+scoreboard objectives add weapon.zeuss_lightning.use dummy "宙斯閃電 使用"
+
+#===================================================================
+
 #蜘蛛
 
 scoreboard objectives add weapon.spider.cd dummy "蜘蛛 CD"

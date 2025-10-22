@@ -5,6 +5,8 @@
     "world_area:main/game_lobby",
     "world_area:other/land_of_the_trials",
     "world_area:other/abyss_forest",
-    "#world_area:chapter_2_bossfight"
+    "#world_area:chapter_2_bossfight",
+    "world_area:main/tree_of_world_memory",
+    "world_area:other/mini_game"
   ]
 }

@@ -28,4 +28,6 @@ execute on passengers as @n[tag=aj.yibb_tstll.root,type=item_display] run functi
 advancement revoke @a only monsters:chapter_2/elekiel/1/battlefield/fire
 kill 000000fb-0000-0228-0000-000100000018
 
-summon interaction 912 60 2018 {UUID:[I; 2541, 123, 1, 1],Tags:["world_area.chapter_2.temple_of_light.bossfight.act"],height:2} 
+summon interaction 912 60 2018 {UUID:[I; 2541, 123, 1, 1],Tags:["world_area.chapter_2.temple_of_light.bossfight.act"],height:2}
+
+schedule clear monsters:chapter_2/elekiel/main
