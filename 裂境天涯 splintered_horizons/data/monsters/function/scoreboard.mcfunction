@@ -65,9 +65,14 @@ scoreboard objectives add monster.elekiel.player_die deathCount "[怪物] 伊萊
 
 scoreboard objectives add monster.elekiel_phase_2.cd dummy "[怪物] 伊萊克爾二階段 CD"
 
-scoreboard objectives add monster.elekiel_phase_2.skill.special.1.casting dummy "[怪物] 伊萊克爾二階段 特殊技能1 施法中"
-
 scoreboard objectives add monster.elekiel_phase_2.skill.1.casting dummy "[怪物] 伊萊克爾二階段 技能1 施法中"
 scoreboard objectives add monster.elekiel_phase_2.skill.2.casting dummy "[怪物] 伊萊克爾二階段 技能2 施法中"
+scoreboard objectives add monster.elekiel_phase_2.skill.3.casting dummy "[怪物] 伊萊克爾二階段 技能3 施法中"
+scoreboard objectives add monster.elekiel_phase_2.skill.4.casting dummy "[怪物] 伊萊克爾二階段 技能4 施法中"
+scoreboard objectives add monster.elekiel_phase_2.skill.4.effect.void dummy "[怪物] 伊萊克爾二階段 技能4 虛空折越"
+scoreboard objectives add monster.elekiel_phase_2.skill.4.portal.id dummy "[怪物] 伊萊克爾二階段 技能4 傳送門ID"
+scoreboard objectives add monster.elekiel_phase_2.skill.4.player.gamemode dummy "[怪物] 伊萊克爾二階段 技能4 遊戲模式"
+scoreboard objectives add monster.elekiel_phase_2.skill.4.portal.tp.cd dummy "[怪物] 伊萊克爾二階段 技能4 傳送CD"
+scoreboard objectives add monster.elekiel_phase_2.skill.4.portal.tp.id dummy "[怪物] 伊萊克爾二階段 技能4 傳送ID"
 
 # ===============================================================================

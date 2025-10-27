@@ -9,7 +9,7 @@ playsound minecraft:voice.join_game voice @s ~ ~1 ~ 0.5 1
 
 tag @s add campfire
 
-execute as @s[tag=campfire] run function music:reset
+function music:stop
 
 function music:main/campfire/start
 

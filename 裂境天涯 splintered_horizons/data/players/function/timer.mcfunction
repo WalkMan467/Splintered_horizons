@@ -14,5 +14,6 @@ scoreboard players remove @a[scores={player.shift.skill.disable=1..}] player.shi
 scoreboard players remove @a[scores={player.gamemode.change.display_delay=1..}] player.gamemode.change.display_delay 1
 scoreboard players remove @a[scores={screen_filters.glitch_effect.noise=1..}] screen_filters.glitch_effect.noise 1
 scoreboard players remove @a[scores={player.ultimate=1..}] player.ultimate 1
+scoreboard players remove @a[scores={monster.elekiel_phase_2.skill.4.portal.tp.cd=1..}] monster.elekiel_phase_2.skill.4.portal.tp.cd 1
 
 execute as @a at @s run function players:screen_filters/glitch_effect/main

@@ -1,5 +1,9 @@
 scoreboard players set #story.chapter_1.campfire.2_temp global.main 1
 
+execute if predicate main:weather/is_sunny run scoreboard players set #weather.temp global.main 0
+execute if predicate main:weather/is_rain run scoreboard players set #weather.temp global.main 1
+execute if predicate main:weather/is_thunder run scoreboard players set #weather.temp global.main 2
+
 weather rain
 
 kill @e[tag=story.chapter_1.campfire.2]

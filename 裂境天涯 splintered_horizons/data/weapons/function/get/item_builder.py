@@ -13,11 +13,11 @@
 attribute = []
 # ----- 設定參數 ----- #
 
-name = ['宙斯閃電', "#ce0000", '投擲物 / 神話']
-story = {'info': ['宙斯降下的閃電'], 'color': 'blue'}
-item_data     = {'real_item': 'iron_sword', 'id': 'zeuss_lightning', 'item_model': '"breeze_rod"', 'custom_data': '{rc:1b,type:"drop",rarity:"mythic",weapon:"zeuss_lightning"}', 'max_damage': -1, 'max_stack_size': 64 , 'rc': True, 'other': ['tooltip_display={hidden_components:["enchantments","attribute_modifiers"]}','tooltip_style="mythic"']}
-skill = {'is_skill': True, 'cd': 0, 'name': ['雷霆天罰', "#ff0000", "#c50202"], 'info': ['[%s] 長按時:','進入瞄準模式', '如果處於瞄準模式受到傷害則會被打斷', '蓄力完成後可以投擲閃電', '對 4 格範圍內敵人造成 5 點傷害']}
-passive_skills = {'is_passive_skills': False, 'cd': 0, 'name': ['冰霜之落', "#A4DEFF", "#209AE0"], 'info': ['當你攻擊命中時:', '有一定概率召喚冰霜隕石墜落在目標位置', '落在被攻擊實體附近', '造成 150% 基礎傷害']}
+name = ['流血箭矢', '#e00000', '箭矢 / 史詩']
+story = {'info': ['尖頭有著特殊構造的箭矢', '可以使命中的敵人流血一段時間'], 'color': 'blue'}
+item_data     = {'real_item': 'arrow', 'id': 'bleeding_arrow', 'item_model': '"arrow/crimson_claw_arrow"', 'custom_data': '{rc:1b,type:"arrow",rarity:"epic",id:"bleeding_arrow"}', 'max_damage': -1, 'max_stack_size': 64 , 'rc': False, 'other': ['tooltip_display={hidden_components:["unbreakable","attribute_modifiers"]}','tooltip_style="epic"']}
+skill = {'is_skill': True, 'cd': 0, 'name': ['創傷', "#ff0000", "#c50202"], 'info': ['命中敵人可以造成']}
+passive_skills = {'is_passive_skills': False, 'cd': 0, 'name': ['冰霜之落', "#A4DEFF", "#209AE0"], 'info': ['當你攻擊命中時:', '對敵人施加流血 (00:05)', '初始流血傷害為 2', '當你對流血目標造成傷害時','會使每秒流血傷害增加']}
 ultimate = {'is_ultimate': False, 'cd': 0, 'name': ['災厄之火', '#ff0000', '#7a0000'], 'info': ['當你使用右鍵時:', '使【行星墜落】造成傷害變為真實傷害', '並且在該位置生成一片每秒造成 5 點燃燒傷害的區域', '持續 5 秒']}
 attribute.append({'attribute': 'attack_damage', 'value': 0.0, 'slot': 'mainhand', 'operation': 'add_multiplied_base'})
 

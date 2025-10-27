@@ -7,6 +7,7 @@ execute positioned 912 60 2018 as @n[distance=..3,type=item_display,tag=aj.globa
 kill 000009ed-0000-007b-0000-000100000001
 
 scoreboard players set #boss_area.chapter_2.elekiel global.main 1
+scoreboard players set @s player.detect.is_bossfight 1
 
 schedule function monsters:bossfight/chapter_2/elekiel/loop 1t
 

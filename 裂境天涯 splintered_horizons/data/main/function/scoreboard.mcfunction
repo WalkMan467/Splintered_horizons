@@ -13,20 +13,27 @@ scoreboard objectives add main.gamemode dummy
 scoreboard objectives add main.3d_dizziness dummy "3D暈眩"
 scoreboard objectives add main.light_sensitivity dummy "光敏感"
 scoreboard objectives add main.trigger trigger "Main 觸發器"
+scoreboard objectives add main.tombstone_system trigger "是否開啟墓碑系統"
 
 scoreboard players add #monument.area_1 global.main 0
+scoreboard players add #monument.area_2 global.main 0
+scoreboard players add #monument.area_3 global.main 0
+scoreboard players add #monument.area_4 global.main 0
+scoreboard players add #monument.area_5 global.main 0
+scoreboard players add #monument.area_6 global.main 0
+scoreboard players add #monument.area_7 global.main 0
+scoreboard players add #monument.area_8 global.main 0
+
+scoreboard players add #tombstone_system global.main 0
+
+scoreboard players enable @a main.tombstone_system
+scoreboard players set @a main.tombstone_system 0
 
 scoreboard players enable @a main.trigger
 scoreboard players set @a main.trigger 0
 
-scoreboard objectives add player.leave_game minecraft.custom:minecraft.leave_game "玩家離開"
-
-team add team.light "[隊伍] 光明陣營"
-team add team.dark "[隊伍] 黑暗怪物陣營"
 team add team.player "[隊伍] 玩家"
 
-team modify team.light friendlyFire false
-team modify team.dark friendlyFire false
 team modify team.player friendlyFire false
 
 team join team.player @a

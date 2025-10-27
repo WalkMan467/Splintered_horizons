@@ -1,0 +1,11 @@
+function music:chapter_1/reset
+function music:chapter_2/bossfight/2/reset
+function music:chapter_2/forest_of_souls/reset
+function music:chapter_2/forgotten_sakura_city/reset
+function music:chapter_2/land_of_finality/reset
+function music:chapter_2/temple_of_light/reset
+function music:chapter_3/finalitys_embrace_rift/reset
+function music:chapter_3/realm_of_finality/reset
+function music:main/safe_zone/reset
+function music:main/tree_of_world_memory/reset
+function music:main/campfire/reset

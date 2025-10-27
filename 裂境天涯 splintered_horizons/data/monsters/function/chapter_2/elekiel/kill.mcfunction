@@ -1,5 +1,6 @@
 scoreboard players set #boss_area.chapter_2.elekiel global.main 0
 scoreboard players set #bossfight.chapter_2.act.setup global.main 1
+scoreboard players set @s player.detect.is_bossfight 0
 
 schedule clear monsters:bossfight/chapter_2/elekiel/loop
 

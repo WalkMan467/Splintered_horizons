@@ -4,7 +4,7 @@ particle dust_color_transition{from_color:[1.000,0.800,0.000],scale:1,to_color:[
 
 execute on attacker unless score @s weapon.effect.resplendence matches 1.. run scoreboard players set @s weapon.morning_light.cd 100
 tag @e[type=!player,type=!#dummy_mob,distance=..3] add dmger
-execute as @e[type=!player,type=!#dummy_mob,distance=..3] run function cse:status_effects/apply/armor_shred/use {duration:200,base:0.1, value:0.1,max:0.3}
+execute as @e[type=!player,type=!#dummy_mob,distance=..3] unless score @s entity.dummy_mob matches 1.. run function cse:status_effects/apply/armor_shred/use {duration:200,base:0.1, value:0.1,max:0.3}
 
 function weapons:type/sword/morning_light/effect/fx/use
 

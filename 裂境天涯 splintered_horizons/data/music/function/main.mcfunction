@@ -5,7 +5,7 @@ execute as @a[scores={music.chapter1.broken_city=1,music.chapter1.broken_city.rd
 
 execute as @a[scores={music.main.campfire=1}] at @s run function music:main/campfire/start
 
-execute as @a[scores={music.main.tree_of_world_memory=1}] at @s run function music:main/campfire/start
+execute as @a[scores={music.main.tree_of_world_memory=1}] at @s run function music:main/tree_of_world_memory/start
 
 execute as @a[scores={music.chapter2.land_of_finality=1}] at @s run function music:chapter_2/land_of_finality/start
 

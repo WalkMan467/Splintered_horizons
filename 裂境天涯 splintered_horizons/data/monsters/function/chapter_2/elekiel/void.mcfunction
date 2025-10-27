@@ -5,6 +5,7 @@ execute as @a at @s run function monsters:bossfight/chapter_2/elekiel/reset_play
 function animated_java:yibb_tstll/remove/all
 
 scoreboard players set #boss_area.chapter_2.elekiel global.main 0
+scoreboard players set @s player.detect.is_bossfight 0
 
 stopsound @a record minecraft:bgm.tunetank_meridian
 

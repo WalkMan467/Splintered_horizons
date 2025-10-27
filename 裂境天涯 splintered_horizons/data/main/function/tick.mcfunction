@@ -1,4 +1,5 @@
 execute store result score #difficulty global.main run difficulty
+execute store result score #player.count global.main if entity @a
 
 execute in minecraft:overworld run setworldspawn 9987 165 9978
 

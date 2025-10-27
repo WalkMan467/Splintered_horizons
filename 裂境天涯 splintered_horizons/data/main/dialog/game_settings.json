@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:confirmation",
+  "type": "minecraft:multi_action",
   "title": {
     "translate": "dialog.main.game_settings.title",
     "fallback": "Game Settings"
@@ -37,25 +37,49 @@
           }
         }
       ]
+    },
+    {
+      "type": "minecraft:single_option",
+      "key": "tombstone_system",
+      "label": {
+        "translate": "dialog.main.tombstone_system",
+        "fallback": "死亡墓碑系統",
+        "color": "white"
+      },
+      "options": [
+        {
+          "id": "2",
+          "display": {
+            "translate": "dialog.main.disabled",
+            "fallback": "關閉",
+            "color": "dark_red"
+          },
+          "initial": true
+        },
+        {
+          "id": "1",
+          "display": {
+            "translate": "dialog.main.enabled",
+            "fallback": "開啟",
+            "color": "dark_green"
+          }
+        }
+      ]
     }
   ],
   "can_close_with_escape": true,
   "pause": true,
   "after_action": "close",
-  "yes": {
-    "label": {
-      "translate": "dialog.main.confirm",
-      "fallback": "Confirm"
-    },
-    "action": {
-      "type": "dynamic/run_command",
-      "template": "trigger main.trigger set $(daytime)"
+  "actions": [
+    {
+      "label": {
+        "translate": "dialog.main.confirm",
+        "fallback": "確認"
+      },
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function main:game_settings/use {daytime:\"$(daytime)\",tombstone_system:\"$(tombstone_system)\"}"
+      }
     }
-  },
-  "no": {
-    "label": {
-      "translate": "dialog.main.cancel",
-      "fallback": "Cancel"
-    }
-  }
+  ]
 }

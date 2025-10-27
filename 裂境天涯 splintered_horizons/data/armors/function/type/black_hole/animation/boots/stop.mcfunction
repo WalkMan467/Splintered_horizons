@@ -12,7 +12,7 @@ execute as @n[type=item_display,distance=..10,tag=aj.stellar_animation.root,tag=
 kill @n[tag=aj.stellar_animation.camera,tag=aj.stellar_animation.camera.camera3,tag=delete,type=item_display,distance=..10]
 kill @n[type=area_effect_cloud,tag=armor.black_hole.effect,tag=delete,distance=..10]
 
-scoreboard players set @s armor.black_hole.boots.cd 0
+execute unless entity @s[tag=forced_interrupt_animation] run scoreboard players set @s armor.black_hole.boots.cd 0
 scoreboard players set @s player.animation.lock 0
 scoreboard players set @s armor.black_hole.boots.effect 0
 

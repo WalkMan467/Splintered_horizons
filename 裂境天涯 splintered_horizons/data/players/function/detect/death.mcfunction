@@ -1,9 +1,8 @@
 scoreboard players add @s player.detect.death 0
 execute unless score @s player.detect.death matches 1.. run return 0
 
+tag @s add forced_interrupt_animation
 function #players:detect/death
-
-function music:reset
 
 particle minecraft:end_rod ~ ~0.5 ~ 0 0 0 0.5 20 normal @a
 playsound minecraft:entity.wither.spawn voice @a ~ ~1 ~ 0.5 2

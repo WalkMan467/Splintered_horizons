@@ -54,6 +54,7 @@ scoreboard objectives add player.gamemode.change.display_delay dummy "[玩家] �
 scoreboard objectives add screen_filters.glitch_effect.id dummy "[玩家] 螢幕故障濾鏡 ID"
 scoreboard objectives add screen_filters.glitch_effect.noise dummy "[玩家] 螢幕故障 雜訊"
 scoreboard objectives add player.join_game.detect.delay dummy "[玩家] 進入遊戲偵測延遲"
+scoreboard objectives add player.tombstone_system.id dummy "[玩家] 墓碑系統ID"
 
 scoreboard players add @a player.no_cd 0
 scoreboard players add @a player.animation.lock 0
@@ -79,5 +80,6 @@ scoreboard objectives add player.detect.click_event.trigger trigger "[玩家] �
 scoreboard objectives add player.detect.quick_actions.trigger trigger "[玩家] 快速動作事件觸發"
 scoreboard objectives add player.detect.tp.trigger trigger "[玩家] 傳送書觸發"
 scoreboard objectives add player.detect.sneak dummy "[玩家] 潛行偵測"
+scoreboard objectives add player.detect.is_bossfight dummy "[玩家] 是否處於BOSS戰"
 
 # ==================================================================================================

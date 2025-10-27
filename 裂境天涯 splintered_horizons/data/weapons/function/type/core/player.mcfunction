@@ -12,6 +12,9 @@ execute as @s[tag=weapon.nightfall.charger] at @s run function weapons:type/swor
 # aquilumera
 execute as @s[tag=water_sword.w_user] at @s if score @s weapon.aquilumera_passive matches 0.. run function weapons:type/sword/aquilumera/passive/water
 execute as @s[tag=water_sword.l_user] at @s if score @s weapon.aquilumera_passive matches 0.. run function weapons:type/sword/aquilumera/passive/light
+execute unless score @s weapon.aquilumera_passive matches 1.. run tag @s[tag=water_sword.w_user] remove water_sword.w_user
+execute unless score @s weapon.aquilumera_passive matches 1.. run tag @s[tag=water_sword.l_user] remove water_sword.l_user
+
 
 # Nightfall
 execute as @s[tag=nightfall.user] at @s if score @s weapon.nightfall.effect.switch_dmg_count matches 0.. run function weapons:type/sword/nightfall/rc/switch_dmg

@@ -6,5 +6,6 @@ scoreboard objectives add item.tp_book.point.z dummy "傳送書記錄點 z"
 scoreboard objectives add item.tp_book.point.facing.x dummy "傳送書記錄點朝向 x"
 scoreboard objectives add item.tp_book.point.facing.y dummy "傳送書記錄點朝向 y"
 scoreboard objectives add item.tp_book.point.area dummy "傳送書傳送目標區域"
+scoreboard objectives add item.tactical_scroll_of_brilliance.cd dummy "錦囊妙計 CD"
 
 scoreboard players add @a item.tp_book.casting 0

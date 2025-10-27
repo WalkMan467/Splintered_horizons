@@ -21,6 +21,9 @@ execute unless items entity @s armor.feet *[custom_data~{black_hole:1b} | custom
 execute if items entity @s armor.head *[custom_data~{radiant:1b} | custom_data={radiant:1}] run advancement grant @s only armors:type/radiant_guardians_helmet/eqipment
 execute unless items entity @s armor.head *[custom_data~{radiant:1b} | custom_data={radiant:1}] run advancement grant @s only armors:type/radiant_guardians_helmet/take_off
 
+execute if items entity @s armor.legs *[custom_data~{windriders:1b} | custom_data={windriders:1}] run advancement grant @s only armors:type/windriders_legplates/eqipment
+execute unless items entity @s armor.legs *[custom_data~{windriders:1b} | custom_data={windriders:1}] run advancement grant @s only armors:type/windriders_legplates/take_off
+
 function armors:type/radiant_guardians_helmet/main
 
 function armors:type/tai_chis_shadow/main

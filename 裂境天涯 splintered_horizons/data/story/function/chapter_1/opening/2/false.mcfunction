@@ -1,6 +1,8 @@
 scoreboard players set #story.chapter_1.campfire.2_temp global.main 0
 
-weather clear
+execute if score #weather.temp global.main matches 0 run weather clear
+execute if score #weather.temp global.main matches 1 run weather rain
+execute if score #weather.temp global.main matches 2 run weather thunder
 
 scoreboard players set story.chapter_1.campfire.2 story.chapter_1 1
 kill 00000016-0000-0139-0000-00370000000b

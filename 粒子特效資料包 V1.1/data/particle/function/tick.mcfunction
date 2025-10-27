@@ -1,3 +1,9 @@
+execute as @e[type=item_display,tag=mob.elekiel.2.crack] at @s run function particle:portal/crack/main
+execute as @e[type=text_display,tag=mob.elekiel.2.crack_silhouette] at @s run function particle:portal/crack_silhouette/main
+execute as @e[type=text_display,tag=mob.elekiel.2.digit] at @s run function particle:portal/digit/main
+execute as @e[type=text_display,tag=mob.elekiel.2.digit] at @s run function particle:portal/digit/main
+execute as @e[type=block_display,tag=monsters.elekiel_phase_2.portal.tp] at @s run function particle:portal/crack/tp/main
+
 # 時空破碎
 function particle:space_rupture/main
 

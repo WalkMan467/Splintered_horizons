@@ -1,5 +1,0 @@
-tellraw @s [{"text":"\n"}]
-tellraw @s [{"translate": "tips.music_statement.1"}]
-tellraw @s [{"translate": "tips.music_statement.2"}]
-tellraw @s [{"translate": "tips.music_statement.3"}]
-tellraw @s [{"text":"\n"}]

@@ -1,4 +1,8 @@
-execute if entity @s[tag=chapter_2.elekiel.lose] run return 0
+tag @a remove monsters.elekiel.2.vampire_flower.target
 
-tag @s add monsters.elekiel.2.vampire_flower.target
-scoreboard players set @s monster.elekiel.2.player_timer 10
+tag @a add temp
+tag @a[tag=!animation,gamemode=spectator] remove temp
+tag @a[tag=chapter_2.elekiel.lose] remove temp
+execute as @a if score @s entity.dummy_mob matches 1.. run tag @s remove temp
+
+execute as @r[tag=temp] run function monsters:chapter_2/elekiel/2/vampire_flower/target_guide

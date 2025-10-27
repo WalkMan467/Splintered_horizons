@@ -1,3 +1,4 @@
+execute if score @s entity.dummy_mob matches 1.. run return 0
 execute if entity @s[gamemode=!survival,gamemode=!adventure] run return 0
 
 execute store result score @s player.max_health run attribute @s max_health get
@@ -15,4 +16,4 @@ title @s subtitle [{"text":"[","color": "dark_red"},{"translate":"player.effect.
 title @s times 20 20 20
 playsound minecraft:entity.zombie_villager.cure voice @a ~ ~1 ~ 0.5 2
 
-function carto_event:api/create_single_entity_event {event:"custom_statuses/bleeding",duration:40,delay:0,parameters:{tick_rate:38,amount:5,cap:10,owner:"@n[type=zombie,tag=monsters.abyssal_soulreaper]",tick_command:"",proc_command:"function monsters:chapter_1/abyssal_soulreaper/effect/bleeding/proc_command"},merge_behavior:"custom"}
+function cse:status_effects/apply/bleeding/use {duration:100, tick_rate:40, dot:2, max:10}
