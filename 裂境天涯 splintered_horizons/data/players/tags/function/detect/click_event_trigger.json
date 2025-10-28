@@ -1,0 +1,7 @@
+{
+    "values": [
+      "players:detect/click_event_trigger",
+      "main:trigger",
+      "players:tp_to_spawnpoint/main"
+    ]
+  }
