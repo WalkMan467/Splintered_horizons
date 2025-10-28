@@ -1,4 +1,6 @@
 advancement revoke @s only system:shooting_contest/add_score
+
+execute unless entity @s[tag=system.shooting_contest] run return 0
 scoreboard players add #system.shooting_contest.score global.main 1
 
 playsound minecraft:entity.experience_orb.pickup voice @s ~ ~1 ~ 1 1

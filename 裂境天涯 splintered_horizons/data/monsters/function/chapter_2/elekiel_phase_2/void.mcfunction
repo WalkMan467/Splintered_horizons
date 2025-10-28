@@ -5,7 +5,6 @@ stopsound @a record minecraft:bgm.tunetank_meridian
 
 scoreboard players reset skill.1 monster.elekiel_phase_2.cd
 scoreboard players reset skill.2 monster.elekiel_phase_2.cd
-scoreboard players reset skill.3 monster.elekiel_phase_2.cd
 scoreboard players reset skill.4 monster.elekiel_phase_2.cd
 
 schedule clear monsters:chapter_2/elekiel_phase_2/main
@@ -34,5 +33,5 @@ scoreboard players reset @a monster.elekiel_phase_2.skill.4.effect.void
 scoreboard players reset #monster.elekiel_phase_2.skill.4.portal.actived global.main
 scoreboard players set @s player.detect.is_bossfight 0
 
-advancement revoke @a only mob:elekiel/2/in
-advancement revoke @a only mob:elekiel/2/out
+advancement revoke @a only monsters:chapter_2/elekiel_phase_2/2/in
+advancement revoke @a only monsters:chapter_2/elekiel_phase_2/2/out

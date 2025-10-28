@@ -2,5 +2,5 @@ summon area_effect_cloud ~ ~ ~ {custom_particle:{type:"block",block_state:"minec
 
 spreadplayers ~ ~ 2 10 false 00000227-0000-0141-0000-08a300000209
 
-execute as 00000227-0000-0141-0000-08a300000209 at @s positioned ~ ~0.5 ~ rotated ~ 0 run function mob:elekiel/1/mysterray/use
+execute as 00000227-0000-0141-0000-08a300000209 at @s positioned ~ ~1.5 ~ rotated ~ 0 run function mob:elekiel/1/mysterray/use
 kill 00000227-0000-0141-0000-08a300000209

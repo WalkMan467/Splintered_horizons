@@ -1,0 +1,30 @@
+{
+  "anvil_cost": 2,
+  "description": {
+    "text": ""
+  },
+  "effects": {
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "particle:blade/enchantment_guide"
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 25,
+    "per_level_above_first": 8
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 5,
+    "per_level_above_first": 8
+  },
+  "slots": [
+    "any"
+  ],
+  "supported_items": "barrier",
+  "weight": 51
+}

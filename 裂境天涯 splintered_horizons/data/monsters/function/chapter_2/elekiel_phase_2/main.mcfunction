@@ -1,5 +1,4 @@
 # Special Skill 1
-execute as 00000100-0000-0080-0000-008000000005 at @s if entity @s[tag=chapter_2.elekiel_phase_2.special.1] run function monsters:chapter_2/elekiel_phase_2/special/1/main
 
 # Skill 1
 execute as 00000100-0000-0080-0000-008000000005 at @s if entity @s[tag=chapter_2.elekiel_phase_2.1] run function monsters:chapter_2/elekiel_phase_2/1/main

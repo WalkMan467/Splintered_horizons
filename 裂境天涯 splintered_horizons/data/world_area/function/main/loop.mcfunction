@@ -17,6 +17,7 @@
 function world_area:main/safe_zone/amysis/main
 function world_area:main/safe_zone/elina/main
 function world_area:main/safe_zone/selena/main
+function world_area:main/safe_zone/melisna/main
 
 # Global
 

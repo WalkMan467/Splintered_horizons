@@ -4,4 +4,4 @@ execute if entity @s[tag=aj.rainy_night.animation.idle.playing] run function ani
 execute if entity @s[tag=aj.rainy_night.animation.idle2.playing] run function animated_java:rainy_night/animations/idle2/zzz/on_tick
 execute if entity @s[tag=aj.rainy_night.animation.sit_down.playing] run function animated_java:rainy_night/animations/sit_down/zzz/on_tick
 execute if entity @s[tag=aj.rainy_night.animation.walk.playing] run function animated_java:rainy_night/animations/walk/zzz/on_tick
-execute at @s on passengers run rotate @s ~ ~
+execute on passengers run rotate @s ~ ~

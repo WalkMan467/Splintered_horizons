@@ -1,0 +1,55 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "particle:blade/item_guide",
+          "functions": [
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": {
+                "particle": true
+              }
+            },
+            {
+              "function": "minecraft:set_custom_model_data",
+              "floats": {
+                "values": [
+                  0
+                ],
+                "mode": "replace_all"
+              },
+              "strings": {
+                "values": [
+                  "particle.atk_glint.blade_glint"
+                ],
+                "mode": "replace_all"
+              },
+              "colors": {
+                "values": [
+                  7405543
+                ],
+                "mode": "replace_all"
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "fx/blade/normal",
+                "minecraft:enchantment_glint_override": false
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "particle:blade/enchantment_guide": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

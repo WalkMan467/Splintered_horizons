@@ -1,0 +1,38 @@
+{
+  "anvil_cost": 2,
+  "description": {
+    "text": "roll_immunity"
+  },
+  "effects": {
+    "minecraft:damage_immunity": [
+      {
+        "requirements": {
+          "condition": "minecraft:damage_source_properties",
+          "predicate": {
+            "tags": [
+              {
+                "id": "minecraft:all_dmg",
+                "expected": true
+              }
+            ]
+          }
+        },
+        "effect": {}
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 25,
+    "per_level_above_first": 8
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 5,
+    "per_level_above_first": 8
+  },
+  "slots": [
+    "any"
+  ],
+  "supported_items": "barrier",
+  "weight": 5
+}

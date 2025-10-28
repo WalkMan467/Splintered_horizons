@@ -1,12 +1,7 @@
 {
   "criteria": {
     "requirement": {
-      "trigger": "minecraft:target_hit",
-      "conditions": {
-        "shooter": {
-          "nbt": "{Tags:[\"system.shooting_contest\"]}"
-        }
-      }
+      "trigger": "minecraft:target_hit"
     }
   },
   "rewards": {

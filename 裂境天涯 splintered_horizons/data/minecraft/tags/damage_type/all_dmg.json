@@ -1,0 +1,26 @@
+{
+  "values": [
+    "minecraft:mob_attack",
+    "#minecraft:is_explosion",
+    "minecraft:indirect_magic",
+    "#minecraft:is_player_attack",
+    "#minecraft:is_projectile",
+    "#minecraft:is_fall",
+    "#minecraft:damages_helmet",
+    "#minecraft:is_fire",
+    "#minecraft:is_freezing",
+    "#minecraft:is_lightning",
+    "#minecraft:mace_smash",
+    "#minecraft:no_anger",
+    "#minecraft:no_impact",
+    "#minecraft:no_knockback",
+    "#minecraft:is_drowning",
+    "#minecraft:panic_causes",
+    "#minecraft:witch_resistant_to",
+    "#minecraft:wither_immune_to",
+    "#minecraft:bypass_enchantments",
+    "#minecraft:bypass_resistance",
+    "#minecraft:bypasses_armor",
+    "#minecraft:bypasses_cooldown"
+  ]
+}

@@ -10,6 +10,8 @@ effect clear @s darkness
 
 scoreboard players reset @s monster.elekiel_phase_2.skill.4.effect.void
 
+item replace entity @s armor.chest with air
+
 attribute @s attack_damage modifier remove monster.elekiel_phase_2.skill.4.effect.void
 attribute @s attack_knockback modifier remove monster.elekiel_phase_2.skill.4.effect.void
 attribute @s knockback_resistance modifier remove monster.elekiel_phase_2.skill.4.effect.void

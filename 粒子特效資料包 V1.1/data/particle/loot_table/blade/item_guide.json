@@ -1,0 +1,25 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:poisonous_potato",
+          "weight": 9999,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:equippable": {
+                  "slot": "chest",
+                  "asset_id": "air"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

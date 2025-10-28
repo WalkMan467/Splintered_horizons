@@ -1,10 +1,12 @@
 {
+	"replace": false,
 	"values": [
 		"animated_java:amysis/root/on_tick",
 		"animated_java:aska/root/on_tick",
 		"animated_java:boss_1/root/on_tick",
 		"animated_java:chain_lock/root/on_tick",
 		"animated_java:elina/root/on_tick",
+		"animated_java:isokla/root/on_tick",
 		"animated_java:kyle/root/on_tick",
 		"animated_java:oceanid/root/on_tick",
 		"animated_java:portal/root/on_tick",

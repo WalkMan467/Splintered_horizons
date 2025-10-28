@@ -4,6 +4,8 @@ scoreboard players add @s mob.duration 1
 # digit
 function particle:portal/digit/use
 
+rotate @s ~ 0
+
 
 # detect
 execute as @a[distance=..5] positioned ~-2 ~ ~-2 if entity @s[dx=3,dy=1,dz=3] run advancement grant @s only monsters:chapter_2/elekiel_phase_2/2/in
