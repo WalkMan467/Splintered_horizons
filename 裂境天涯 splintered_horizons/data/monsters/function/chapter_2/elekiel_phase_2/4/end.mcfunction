@@ -8,4 +8,4 @@ execute as @e[tag=mob.elekiel.2.display,type=!player] on passengers on passenger
 
 kill @e[tag=mob.elekiel.2.display,type=!player]
 
-tag @s remove chapter_2.elekiel_phase_2.4
+tag @a[tag=monster.elekiel_phase_2.4.death_timer] remove chapter_2.elekiel_phase_2.4

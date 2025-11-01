@@ -19,19 +19,23 @@ execute as @e[tag=mob.elekiel.display,type=!player] on passengers run kill @s
 execute as @e[tag=mob.elekiel.display,type=!player] on passengers on passengers run kill @s
 execute as @e[type=!#minecraft:dummy_mob,tag=monster.elekiel_phase_2.3,type=!player] on passengers run kill @s
 
-kill @e[tag=monster.elekiel_phase_2.3,type=!#minecraft:dummy_mob,type=!player]
 kill @e[tag=mob.elekiel.display,type=!player]
+execute as @e[type=!#minecraft:dummy_mob,tag=monster.elekiel_phase_2.3,type=!player] on passengers run kill @s
+kill @e[tag=monster.elekiel_phase_2.3,type=!#minecraft:dummy_mob,type=!player]
 
 effect clear @a[scores={monster.elekiel_phase_2.skill.4.effect.void=0..}] glowing
 
 tag @a remove monster.elekiel_phase_2.effect
 tag @a remove monster.elekiel_phase_2.4.effect.target
 tag @a remove monster.elekiel_phase_2.skill.2.target
+tag @a remove chapter_2.elekiel_phase_2.4
+tag @a remove monster.elekiel_phase_2.4.death_timer
 
 scoreboard players reset @a entity.dummy_mob
 scoreboard players reset @a monster.elekiel_phase_2.skill.4.effect.void
 scoreboard players reset #monster.elekiel_phase_2.skill.4.portal.actived global.main
 scoreboard players set @s player.detect.is_bossfight 0
+scoreboard players set #boss_area.chapter_2.elekiel_phase_2 global.main 0
 
 advancement revoke @a only monsters:chapter_2/elekiel_phase_2/2/in
 advancement revoke @a only monsters:chapter_2/elekiel_phase_2/2/out

@@ -5,6 +5,8 @@ data merge entity 000000fb-0000-00ff-0000-000100000022 {Glowing:1b,glow_color_ov
 execute at 00000080-0000-0100-0000-019c00000006 run loot spawn ~ ~ ~ loot system:memory_tree/main
 scoreboard players remove #system.tree_of_world_memory.crystal global.main 1
 
+schedule function system:tree_of_world_memory/crystal/main 1t
+
 execute if score #system.tree_of_world_memory.crystal global.main matches 0 at 00000080-0000-0100-0000-019c00000006 run summon minecraft:block_display ~ ~0.5 ~ {Glowing:1b,Tags:["system.tree_of_world_memory.crystal","system.tree_of_world_memory"],UUID:[I; 128, 256, 412, 5],billboard: "center", block_state: {Name: "minecraft:glowstone"}, brightness: {block: 15, sky: 15}, transformation: {left_rotation: [-0.3535534f, -0.3535534f, -0.14644665f, 0.85355335f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [0.50000006f, 0.5f, 0.5f], translation: [-0.17677668f, -0.35355335f, -0.17677669f]}}
 execute if score #system.tree_of_world_memory.crystal global.main matches 0 run tag 00000080-0000-0100-0000-019c00000006 remove system.tree_of_world_memory.crystal.run
 execute if score #system.tree_of_world_memory.crystal global.main matches 0 run kill 000000fb-0000-00ff-0000-000100000022

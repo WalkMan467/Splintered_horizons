@@ -1,0 +1,1 @@
+playsound minecraft:entity.warden.sonic_charge voice @a ~ ~1 ~ 1 1

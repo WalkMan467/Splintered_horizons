@@ -16,5 +16,8 @@ function particle:sound_wave/main
 # 虛空場域
 function particle:void_wave/main
 
+# 災厄領主範圍特效
+function particle:stone_explosion/main
+
 # 相位裂縫
 execute as @e[tag=particle.space_crack.main] at @s run function particle:space_crack/main

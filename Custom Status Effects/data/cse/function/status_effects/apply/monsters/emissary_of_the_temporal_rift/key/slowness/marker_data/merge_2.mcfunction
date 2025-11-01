@@ -1,0 +1,1 @@
+$attribute @s minecraft:movement_speed modifier add cse.status_effects.monsters.emissary_of_the_temporal_rift.key -$(value) add_multiplied_base

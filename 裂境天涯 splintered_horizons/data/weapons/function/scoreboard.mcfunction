@@ -1,7 +1,7 @@
 # 其他
 
 scoreboard objectives add weapon.eye_of_the_end.interval dummy "終焉之眼使用間隔"
-scoreboard objectives add weapon.enchant_with_levels dummy "新增附魔武器用"
+scoreboard objectives add weapon.cd.math dummy "CD 冷卻換算"
 
 scoreboard players add @a weapon.eye_of_the_end.interval 0
 

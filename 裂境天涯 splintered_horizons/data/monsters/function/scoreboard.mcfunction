@@ -48,6 +48,19 @@ scoreboard objectives add monster.forest_messenger.cocoon.tp.raycast dummy "[怪
 
 # ===============================================================================
 
+# 災厄之主
+
+scoreboard objectives add monster.lord_of_the_cataclysm.1.rdm dummy "[怪物] 災厄之主 生成隨機值"
+
+# ===============================================================================
+
+# 時空裂痕的使者
+
+scoreboard objectives add monster.emissary_of_the_temporal_rift.id dummy "[怪物] 時空裂痕的使者 召喚物 ID"
+scoreboard objectives add monster.emissary_of_the_temporal_rift.key.timer dummy "[怪物] 時空裂痕的使者 時空之鑰 計時器"
+
+# ===============================================================================
+
 # 「空之支配者」伊萊克爾
 
 scoreboard objectives add monster.elekiel.1.rdm_monsters dummy "[怪物] 伊萊克爾 隨機怪物ID"

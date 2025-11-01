@@ -10,6 +10,8 @@ execute if entity @s[tag=!animation,gamemode=spectator] run return 0
 
 tag @s add forced_interrupt_animation
 
+tag @s add monsters.elekiel_phase_2.portal.in
+
 scoreboard players set @s player.animation.lock 9999
 
 function players:stop_animation

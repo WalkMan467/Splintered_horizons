@@ -1,0 +1,160 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:poisonous_potato",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": [
+                  {
+                    "translate": "weapon.zeuss_lightning",
+                    "color": "#ce0000",
+                    "italic": false,
+                    "bold": true
+                  }
+                ],
+                "minecraft:lore": [
+                  [
+                    {
+                      "translate": "weapon.zeuss_lightning.type",
+                      "italic": false,
+                      "color": "dark_gray"
+                    }
+                  ],
+                  {
+                    "text": ""
+                  },
+                  [
+                    {
+                      "translate": "weapon.zeuss_lightning.story.1",
+                      "italic": false,
+                      "color": "blue"
+                    }
+                  ],
+                  {
+                    "text": ""
+                  },
+                  [
+                    {
+                      "text": "",
+                      "italic": false
+                    },
+                    {
+                      "translate": "weapon.zeuss_lightning.skill",
+                      "color": "#ff0000",
+                      "bold": true
+                    },
+                    {
+                      "text": "  "
+                    }
+                  ],
+                  [
+                    {
+                      "text": "",
+                      "italic": false
+                    },
+                    {
+                      "translate": "weapon.zeuss_lightning.skill.1",
+                      "color": "#c50202",
+                      "with": [
+                        {
+                          "keybind": "key.use",
+                          "underlined": true,
+                          "color": "dark_green"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "",
+                      "italic": false
+                    },
+                    {
+                      "translate": "weapon.zeuss_lightning.skill.2",
+                      "color": "#c50202"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "",
+                      "italic": false
+                    },
+                    {
+                      "translate": "weapon.zeuss_lightning.skill.3",
+                      "color": "#c50202"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "",
+                      "italic": false
+                    },
+                    {
+                      "translate": "weapon.zeuss_lightning.skill.4",
+                      "color": "#c50202"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "",
+                      "italic": false
+                    },
+                    {
+                      "translate": "weapon.zeuss_lightning.skill.5",
+                      "color": "#c50202"
+                    }
+                  ]
+                ],
+                "minecraft:attribute_modifiers": [
+                  {
+                    "id": "base_attack_damage",
+                    "type": "attack_damage",
+                    "amount": 0,
+                    "operation": "add_multiplied_base",
+                    "slot": "mainhand"
+                  }
+                ],
+                "minecraft:max_stack_size": 64,
+                "minecraft:unbreakable": {},
+                "minecraft:item_model": "drop/zeuss_lightning/1",
+                "minecraft:custom_data": {
+                  "rc": true,
+                  "type": "drop",
+                  "rarity": "mythic",
+                  "weapon": "zeuss_lightning"
+                },
+                "minecraft:consumable": {
+                  "consume_seconds": 10000,
+                  "animation": "spear",
+                  "has_consume_particles": false
+                },
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "enchantments",
+                    "attribute_modifiers"
+                  ]
+                },
+                "minecraft:tooltip_style": "mythic",
+                "minecraft:food": {
+                  "nutrition": 0,
+                  "saturation": 0,
+                  "can_always_eat": true
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

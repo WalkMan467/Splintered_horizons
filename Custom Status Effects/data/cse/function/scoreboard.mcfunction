@@ -30,6 +30,17 @@ scoreboard objectives add cse.status_effects.armor_shred.value.max dummy "[CSE] 
 
 # ===============================================================================
 
+# Slowness
+scoreboard objectives add cse.status_effects.monsters.emissary_of_the_temporal_rift.key dummy "[CSE] Slowness"
+scoreboard objectives add cse.status_effects.monsters.emissary_of_the_temporal_rift.key.base.value dummy "[CSE] Slowness Base Value"
+scoreboard objectives add cse.status_effects.monsters.emissary_of_the_temporal_rift.key.value dummy "[CSE] Slowness Value"
+scoreboard objectives add cse.status_effects.monsters.emissary_of_the_temporal_rift.key.math dummy "[CSE] Slowness Math"
+scoreboard objectives add cse.status_effects.monsters.emissary_of_the_temporal_rift.key.id dummy "[CSE] Slowness ID"
+
+scoreboard objectives add cse.status_effects.monsters.emissary_of_the_temporal_rift.key.value.max dummy "[CSE] Slowness Value Max"
+
+# ===============================================================================
+
 # Tactical Scroll of Brilliance
 
     # Armor Enhancement

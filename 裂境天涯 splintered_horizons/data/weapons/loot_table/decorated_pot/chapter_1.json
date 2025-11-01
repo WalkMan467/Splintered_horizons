@@ -12,16 +12,15 @@
           "children": [
             {
               "type": "minecraft:loot_table",
-              "name": "minecraft:prismarine_shard",
               "value": "weapons:get/drop/broken_glass",
-              "weight": 70,
-              "quality": 20,
+              "weight": 40,
+              "quality": 10,
               "functions": [
                 {
                   "function": "minecraft:set_count",
                   "count": {
-                    "min": 3,
-                    "max": 10
+                    "min": 1,
+                    "max": 5
                   }
                 }
               ]
@@ -29,8 +28,8 @@
             {
               "type": "minecraft:loot_table",
               "value": "weapons:get/drop/hook",
-              "weight": 70,
-              "quality": 20,
+              "weight": 20,
+              "quality": 10,
               "functions": [
                 {
                   "function": "minecraft:set_count",
@@ -44,14 +43,14 @@
             {
               "type": "minecraft:item",
               "name": "minecraft:arrow",
-              "weight": 40,
-              "quality": 20,
+              "weight": 20,
+              "quality": 10,
               "functions": [
                 {
                   "function": "minecraft:set_count",
                   "count": {
-                    "min": 5,
-                    "max": 8
+                    "min": 1,
+                    "max": 3
                   }
                 }
               ]
@@ -59,14 +58,14 @@
             {
               "type": "minecraft:loot_table",
               "value": "weapons:get/arrow/explosion_arrow",
-              "weight": 40,
-              "quality": 20,
+              "weight": 20,
+              "quality": 10,
               "functions": [
                 {
                   "function": "minecraft:set_count",
                   "count": {
-                    "min": 2,
-                    "max": 4
+                    "min": 1,
+                    "max": 2
                   }
                 }
               ]

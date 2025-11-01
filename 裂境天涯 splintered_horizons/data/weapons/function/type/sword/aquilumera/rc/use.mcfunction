@@ -14,5 +14,5 @@ execute if score @s weapon.aquilumera.state matches 2 run function weapons:type/
 execute if score @s weapon.aquilumera.state matches 2 run item modify entity @s weapon.mainhand weapons:type/sword/aquilumera/light
 
 # player
-execute unless score @s weapon.effect.resplendence matches 1.. run scoreboard players set @s weapon.aquilumera.cd 1000
-execute if score @s weapon.effect.resplendence matches 1.. run scoreboard players set @s weapon.aquilumera.cd 240
+execute unless score @s weapon.effect.resplendence matches 1.. run scoreboard players set @s weapon.aquilumera.cd 500
+execute if score @s weapon.effect.resplendence matches 1.. run scoreboard players set @s weapon.aquilumera.cd 300

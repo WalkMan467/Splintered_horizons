@@ -18,3 +18,4 @@ scoreboard players reset @s monster.elekiel_phase_2.skill.4.player.gamemode
 
 tag @s remove monsters.elekiel_phase_2.portal.tp.remove
 tag @s remove monsters.elekiel_phase_2.portal.tp.player
+tag @s remove monsters.elekiel_phase_2.portal.in
