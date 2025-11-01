@@ -1,13 +1,13 @@
 # ===================================================
-# Clear Tai Chis Shadow Main Function
+# Finality Chestplate Main Function
 
-    ## Guide [ function armors:type/tai_chis_shadow/main ] >>> Main Function
-    ## Guide [ function armors:type/tai_chis_shadow/clear ] >>> Clear Tai Chis Shadow Armor Effect
-    ## Guide [ function armors:type/tai_chis_shadow/eqipment ] >>> Armor Eqipment
-    ## Guide [ function armors:type/tai_chis_shadow/take_off ] >>> Armor Take Off
-    ## Guide [ function armors:type/tai_chis_shadow/use ] >>> Trigger Tai Chis Shadow Armor Effect
+    ## Guide [ function armors:type/finality_chestplate/use ] >>> Finality Chestplate Armor Use
+    ## Guide [ function armors:type/finality_chestplate/effect/guide ] >>> Effect Guide
+    ## Guide [ function armors:type/finality_chestplate/effect/reset ] >>> Effect Clear
+    ## Guide [ function armors:type/finality_chestplate/effect/timer ] >>> Effect Timer
 
 # ===================================================
+# Detect kill monster ; Execute the Function
 
 advancement revoke @s only armors:type/finality_chestplate/use
 

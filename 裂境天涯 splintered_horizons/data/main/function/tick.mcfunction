@@ -11,6 +11,7 @@ function monsters:guide
 # System
 function system:main
 
+# Duration Detect
 function main:duration/detect
 
 # Tree of World Memory
@@ -18,6 +19,7 @@ function system:tree_of_world_memory/main
 
 # Player Guide
 
-execute as @a[tag=!aj.global.root,tag=!aj.global.camera,tag=!aj.display] at @s run function main:guide/player
+execute as @a at @s run function main:guide/player
 
+# Timer
 function #main:timer

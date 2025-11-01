@@ -1,3 +1,16 @@
+# ===================================================
+# Function
+
+    ## Guide [ function hotbar_sound:detect ] >>> Detect
+    ## Guide [ function hotbar_sound:guide ] >>> Guide
+    ## Guide [ function hotbar_sound:item ] >>> Is Item?
+    ## Guide [ function hotbar_sound:sword ] >>> Is Sword?
+    ## Guide [ function hotbar_sound:tool ] >>> Is Tool?
+    ## Guide [ function hotbar_sound:reset ] >>> Reset
+    ## Guide [ function hotbar_sound:main ] >>> Main
+
+# ===================================================
+
 function #players:detect/hotbar_switch
 
 execute if items entity @s weapon.mainhand #weapon run playsound minecraft:hotbar.switch_sword voice @a ~ ~1 ~ 0.375 1

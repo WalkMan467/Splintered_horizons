@@ -5,7 +5,6 @@
       "weapons:timer",
       "armors:timer",
       "items:timer_t",
-      "weapons:type/sword/morning_light/effect/debuff/timer",
       "system:timer"
     ]
   }

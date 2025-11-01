@@ -1,3 +1,11 @@
+# ===================================================
+# Swift Boots Main Function
+
+    ## Guide [ function armors:type/swift_boots/use ] >>> Use Function
+
+# ===================================================
+# Detecting and triggering armor skills ; Execute the Function
+
 execute unless items entity @s armor.feet *[minecraft:custom_data~{swift:1b} | custom_data~{swift:1}] run return 0
 execute if score @s armor.boots.effect.actived matches 1.. run return 0
 

@@ -1,0 +1,1 @@
+execute if block ~ ~ ~ trapped_chest align xyz run summon minecraft:marker ~0.5 ~0.5 ~0.5 {Tags:["traps.marker"],data:{chapter:"chapter_2",id:"1"}}

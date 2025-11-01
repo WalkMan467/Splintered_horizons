@@ -45,5 +45,8 @@ function players:disable/movement/main
 function players:actionbar/main
 function #players:detect/click_event_trigger
 
+# Traps
+function traps:main
+
 # Area
 function world_area:main/loop

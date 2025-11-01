@@ -1,0 +1,1 @@
+$function traps:$(chapter)/chest/$(id)/trigger

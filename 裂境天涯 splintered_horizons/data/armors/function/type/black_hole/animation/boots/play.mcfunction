@@ -3,6 +3,8 @@
 
     ## Guide [ function armors:type/black_hole/animation/boots/play ] >>> Play Animation
     ## Guide [ function armors:type/black_hole/animation/boots/reset ] >>> Animation End
+    ## Guide [ function armors:type/black_hole/animation/boots/main ] >>> Animation Main
+    ## Guide [ function armors:type/black_hole/animation/boots/stop ] >>> Animation Stop
 
 # ===================================================
 # Play Animation

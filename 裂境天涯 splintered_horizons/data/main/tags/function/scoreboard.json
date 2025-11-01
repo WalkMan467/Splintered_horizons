@@ -11,6 +11,7 @@
       "armors:scoreboard",
       "items:scoreboard",
       "dmg_formula:scoreboard",
-      "world_area:scoreboard"
+      "world_area:scoreboard",
+      "traps:scoreboard"
     ]
   }

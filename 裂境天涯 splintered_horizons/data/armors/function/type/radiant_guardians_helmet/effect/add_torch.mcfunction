@@ -1,3 +1,17 @@
+# ===================================================
+# Radiant Guardians Helmet Main Function
+
+    ## Guide [ function armors:type/radiant_guardians_helmet/effect/add_torch ] >>> Passive Auto Place Torch
+    ## Guide [ function armors:type/radiant_guardians_helmet/use ] >>> Detect use
+    ## Guide [ function armors:type/radiant_guardians_helmet/eqipment ] >>> Eqipment
+    ## Guide [ function armors:type/radiant_guardians_helmet/take_off ] >>> Take Off
+    ## Guide [ function armors:type/radiant_guardians_helmet/guide ] >>> Function Guide
+    ## Guide [ function armors:type/radiant_guardians_helmet/main ] >>> Main Function
+    ## Guide [ function armors:type/radiant_guardians_helmet/add_torch ] >>> Add Torch
+
+# ===================================================
+# Passive Auto Place Torch
+
 scoreboard players set @s armor.radiant_guardians_helmet.effect.cd 100
 
 execute store result score #have.torch? global.main run clear @s #torchs 0

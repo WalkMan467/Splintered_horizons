@@ -5,6 +5,7 @@ execute as @a at @s run function #main:scoreboard
 execute as @a run attribute @s minecraft:waypoint_receive_range base set 0
 execute as @a run attribute @s minecraft:waypoint_transmit_range base set 0
 
+# Music
 function music:main
 
 # Climbing claw assisted aiming
@@ -30,8 +31,8 @@ schedule function monsters:timer_s 1s
 schedule function armors:timer_s 1s
 schedule function music:timer 1s
 
+# System
 schedule function system:monument_point/main 1t
 
-# Hotbar switching
-
+# Hotbar Switching
 schedule function hotbar_sound:guide 2t

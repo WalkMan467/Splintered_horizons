@@ -1,1 +1,0 @@
-scoreboard players set @s weapon.morning_light.monster.armor.timer 10

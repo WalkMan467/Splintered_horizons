@@ -1,3 +1,14 @@
+# ===================================================
+# Black Hole Boots Main Function
+
+    ## Guide [ function armors:type/black_hole/animation/boots/stop ] >>> Animation Stop
+    ## Guide [ function armors:type/black_hole/animation/boots/play ] >>> Play Animation
+    ## Guide [ function armors:type/black_hole/animation/boots/reset ] >>> Animation End
+    ## Guide [ function armors:type/black_hole/animation/boots/main ] >>> Animation Main
+
+# ===================================================
+# Stop the Animation
+
 tag @s add armor.black_hole.animation.stop.user
 
 execute as @e[type=item_display,tag=aj.stellar_animation.root,tag=aj.stellar_animation.animation.boots_of_the_black_hole.playing,tag=!delete,distance=..10,limit=1] if score @p[tag=armor.black_hole.animation.stop.user] player.id = @s armor.black_hole.boots.aj.id run tag @s add delete

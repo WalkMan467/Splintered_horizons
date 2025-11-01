@@ -1,3 +1,13 @@
+# ===================================================
+# Active skill trigger priority Function
+
+    ## Guide [ function armors:detect/active_skills ] >>> Active skill trigger priority
+
+# ===================================================
+# Addressing the issue of multiple button conflicts
+
+    # helmet > chestplate > leggings > boots
+
 execute unless entity @s[gamemode=!spectator,gamemode=!creative] run return 0
 execute if score @s player.shift.skill.disable matches 1.. run return 0
 
