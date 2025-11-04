@@ -6,7 +6,7 @@ execute if score @s weapon.zeuss_lightning.hold_down matches 40 run function wea
 scoreboard players reset @s weapon.zeuss_lightning.use
 scoreboard players reset @s weapon.zeuss_lightning.hold_down
 
-scoreboard players set @s player.click.interval 20
+scoreboard players set @s player.click.interval 10
 
 tag @s add player.elytra_switch.safe_fall
 

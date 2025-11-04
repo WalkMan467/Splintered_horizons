@@ -20,8 +20,6 @@ execute positioned 774 146 987 if score story.safe_area.melisna.1 story.safe_are
 execute positioned 774 146 987 if score story.safe_area.melisna.1 story.safe_area matches 17 run tellraw @a[distance=..16] {"translate": "story.safe_area.melisna.1.17","fallback": "［梅倫絲娜］但願這個世界不再有深淵就好"}
 execute positioned 774 146 987 if score story.safe_area.melisna.1 story.safe_area matches 18 run tellraw @a[distance=..16] {"translate": "story.safe_area.melisna.1.18","fallback": "［梅倫絲娜］我只想，默默守護者哥哥"}
 execute positioned 774 146 987 if score story.safe_area.melisna.1 story.safe_area matches 19 run tellraw @a[distance=..16] {"translate": "story.safe_area.melisna.1.19","fallback": "［梅倫絲娜］即便他如此暴躁..."}
-execute positioned 774 146 987 if score story.safe_area.melisna.1 story.safe_area matches 19 run tellraw @a[distance=..16] {"translate": "story.safe_area.melisna.1.20","fallback": "［梅倫絲娜］在我們的舊世界我們曾是被父母販賣到黑市的孤兒"}
-
 
 execute positioned 774 146 987 if score story.safe_area.melisna.1 story.safe_area matches 19 run tellraw @a[distance=..16] [{"translate": "story.end","fallback": "對話結束，再次點擊可重複查看對話內容","color":"gold"},{"text":"\n"}]
 execute positioned 774 146 987 if score story.safe_area.melisna.1 story.safe_area matches 19 run playsound minecraft:entity.player.levelup voice @a ~ ~1 ~ 0.5 1

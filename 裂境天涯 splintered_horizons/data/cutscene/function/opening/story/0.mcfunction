@@ -56,9 +56,10 @@ execute if score .opening cutscene.story matches 2600 run title @a title {"trans
 execute if score .opening cutscene.story matches 2650 run function cutscene:opening/6/1
 
 
-execute if score .opening cutscene.story matches 2628 run function animated_java:kyle/remove/all
-execute if score .opening cutscene.story matches 2628 positioned 9998 93 10066 rotated 180 0 run function animated_java:kyle/summon {args:{}}
-execute if score .opening cutscene.story matches 2628 as @n[tag=aj.kyle.root] run function animated_java:kyle/animations/cutscene_attack_1/play
+execute if score .opening cutscene.story matches 2628 run function cutscene:opening/6/1_1
+execute if score .opening cutscene.story matches 2659 as @n[type=item_display,tag=aj.aska.root] run function animated_java:aska/animations/pause_all
+execute if score .opening cutscene.story matches 2659 as @n[type=item_display,tag=aj.aska.root] run function animated_java:aska/animations/death/play
+
 # score +1
 execute if score .opening cutscene.story matches 0..4000 run scoreboard players add .opening cutscene.story 1
 

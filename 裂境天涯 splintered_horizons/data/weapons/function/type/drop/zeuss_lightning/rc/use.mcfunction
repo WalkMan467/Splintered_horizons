@@ -1,5 +1,11 @@
 execute unless score @s weapon.zeuss_lightning.hold_down matches 0.. run function weapons:type/drop/zeuss_lightning/rc/0
 
+execute if score @s weapon.zeuss_lightning.hold_down matches 1 run title @s title {"text":"\uE011","font":"minecraft:screen",shadow_color:0}
+execute if score @s weapon.zeuss_lightning.hold_down matches 1 run title @s times 20 5 5
+
+execute if score @s weapon.zeuss_lightning.hold_down matches 20.. run title @s title {"text":"\uE011","font":"minecraft:screen",shadow_color:0}
+execute if score @s weapon.zeuss_lightning.hold_down matches 20.. run title @s times 0 5 5
+
 execute if score @s weapon.zeuss_lightning.hold_down matches 39 run particle sonic_boom ~ ~1 ~ 0 0 0 0 1 force @a
 execute if score @s weapon.zeuss_lightning.hold_down matches 39 run playsound minecraft:entity.experience_orb.pickup voice @a ~ ~1 ~ 1 1
 execute if score @s weapon.zeuss_lightning.hold_down matches 15 run playsound minecraft:entity.warden.sonic_charge voice @a ~ ~1 ~ 1 1.5

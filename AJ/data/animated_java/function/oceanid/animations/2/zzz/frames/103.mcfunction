@@ -22,4 +22,4 @@ $data merge entity $(bone_4) {transformation: [-0.5257f,0.3294f,0.7843f,0.4369f,
 $data merge entity $(bone_3) {transformation: [-0.534f,-0.7432f,0.403f,0.1582f,-0.8015f,0.2933f,-0.5211f,1.2597f,0.2691f,-0.6013f,-0.7524f,-0.1978f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(bone_8) {transformation: [-0.8346f,0.4265f,-0.3487f,-0.2055f,0.1567f,0.7906f,0.5919f,0.405f,0.5282f,0.4394f,-0.7267f,0.2058f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(bone_7) {transformation: [-0.8346f,0.1038f,-0.541f,-0.1951f,0.1567f,0.9863f,-0.0525f,0.7111f,0.5282f,-0.1286f,-0.8394f,0.1315f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
-data modify entity @s data merge value {"cameras":{"camera":{"posx":0.19524218749999972,"posy":1.5221640625,"posz":1.8284843750000002,"roty":158.920891875,"rotx":0}},"locators":{}}
+data modify entity @s data merge value {"cameras":{"camera1":{"px":0.19524218749999972,"py":1.5221640625,"pz":1.8284843750000002,"ry":158.920891875,"rx":0}},"locators":{}}

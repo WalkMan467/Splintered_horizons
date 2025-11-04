@@ -1,0 +1,11 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible"
+      }
+    },
+    "rewards": {
+      "function": "music:chapter_3/lord_of_the_cataclysm/start"
+    }
+  }
+  

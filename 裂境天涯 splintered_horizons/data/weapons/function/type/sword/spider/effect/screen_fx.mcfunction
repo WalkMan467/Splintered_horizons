@@ -1,5 +1,5 @@
-## 蜘蛛 被動螢幕特效
-# function weapons:type/spider/passive/screen_fx
+## Spider passive screen effect
+
 title @s title {"text":"\uE010","font":"minecraft:screen"}
 title @s subtitle ""
 title @s times 5 5 20

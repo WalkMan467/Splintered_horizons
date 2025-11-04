@@ -22,4 +22,4 @@ $data merge entity $(bone_4) {transformation: [-0.7901f,0.3439f,0.5075f,0.5173f,
 $data merge entity $(bone_3) {transformation: [-0.8111f,-0.5514f,0.1951f,0.3106f,-0.5189f,0.5245f,-0.6751f,1.265f,0.2699f,-0.6488f,-0.7115f,-0.0045f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(bone_8) {transformation: [-0.9475f,0.2821f,-0.1508f,-0.1332f,0.134f,0.7782f,0.6136f,0.3945f,0.2905f,0.5612f,-0.7751f,0.2627f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(bone_7) {transformation: [-0.9475f,0.1192f,-0.2969f,-0.108f,0.134f,0.9905f,-0.0301f,0.7028f,0.2905f,-0.0683f,-0.9544f,0.2026f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
-execute on vehicle unless entity @s[tag=aj.transforms_only] at @s run function animated_java:oceanid/animations/2/zzz/frames/220_root_commands
+execute on vehicle unless entity @s[tag=aj.transforms_only] at @s run function animated_java:oceanid/animations/2/zzz/frames/220_root_function

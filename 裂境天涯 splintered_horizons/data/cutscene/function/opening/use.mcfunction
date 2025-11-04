@@ -7,6 +7,7 @@ function cutscene:opening/remove_camera
 
 function animated_java:aska/remove/all
 function animated_java:oceanid/remove/all
+function animated_java:kyle/remove/all
 
 weather clear
 

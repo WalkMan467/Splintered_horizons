@@ -13,11 +13,11 @@
 attribute = []
 # ----- 設定參數 ----- #
 
-name = ['流血箭矢', '#e00000', '箭矢 / 史詩']
+name = ['赤血詛咒箭矢', '#e00000', '箭矢 / 神話']
 story = {'info': ['尖頭有著特殊構造的箭矢', '可以使命中的敵人流血一段時間'], 'color': 'blue'}
-item_data     = {'real_item': 'arrow', 'id': 'bleeding_arrow', 'item_model': '"arrow/crimson_claw_arrow"', 'custom_data': '{rc:1b,type:"arrow",rarity:"epic",id:"bleeding_arrow"}', 'max_damage': -1, 'max_stack_size': 64 , 'rc': False, 'other': ['tooltip_display={hidden_components:["unbreakable","attribute_modifiers"]}','tooltip_style="epic"']}
-skill = {'is_skill': True, 'cd': 0, 'name': ['創傷', "#ff0000", "#c50202"], 'info': ['命中敵人可以造成']}
-passive_skills = {'is_passive_skills': False, 'cd': 0, 'name': ['冰霜之落', "#A4DEFF", "#209AE0"], 'info': ['當你攻擊命中時:', '對敵人施加流血 (00:05)', '初始流血傷害為 2', '當你對流血目標造成傷害時','會使每秒流血傷害增加']}
+item_data = {'real_item': 'arrow', 'id': 'bleeding_arrow', 'item_model': '"arrow/bleeding_arrow"', 'custom_data': '{rc:1b,type:"arrow",rarity:"mythic",id:"bleeding_arrow"}', 'max_damage': -1, 'max_stack_size': 64, 'rc': False, 'other': ['tooltip_display={hidden_components:["unbreakable","attribute_modifiers"]}', 'tooltip_style="mythic"']}
+skill = {'is_skill': False, 'cd': 0, 'name': ['創傷', '#ff0000', '#c50202'], 'info': ['命中敵人可以造成']}
+passive_skills = {'is_passive_skills': True, 'cd': 0, 'name': ['赤血詛咒', '#7a0000', '#e00000'], 'info': ['當你攻擊命中時:', '對敵人施加流血 (00:05)', '初始流血傷害為 2', '當你對流血目標造成傷害時', '會使每秒流血傷害增加']}
 ultimate = {'is_ultimate': False, 'cd': 0, 'name': ['災厄之火', '#ff0000', '#7a0000'], 'info': ['當你使用右鍵時:', '使【行星墜落】造成傷害變為真實傷害', '並且在該位置生成一片每秒造成 5 點燃燒傷害的區域', '持續 5 秒']}
 attribute.append({'attribute': 'attack_damage', 'value': 0.0, 'slot': 'mainhand', 'operation': 'add_multiplied_base'})
 

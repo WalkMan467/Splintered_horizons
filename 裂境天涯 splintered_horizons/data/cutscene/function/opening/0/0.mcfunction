@@ -1,5 +1,6 @@
 title @s times 0 65 0
 title @s title {"text":"\uE000","font":"minecraft:screen"}
+title @s subtitle ""
 
 scoreboard players set .opening cutscene.story 0
 

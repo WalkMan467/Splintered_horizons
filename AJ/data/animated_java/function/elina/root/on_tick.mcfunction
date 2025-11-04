@@ -2,4 +2,4 @@
 execute unless entity @s[tag=aj.elina.root] run return 0
 execute if entity @s[tag=aj.elina.animation.idle.playing] run function animated_java:elina/animations/idle/zzz/on_tick
 execute if entity @s[tag=aj.elina.animation.sit_down.playing] run function animated_java:elina/animations/sit_down/zzz/on_tick
-execute at @s on passengers run rotate @s ~ ~
+execute on passengers run rotate @s ~ ~

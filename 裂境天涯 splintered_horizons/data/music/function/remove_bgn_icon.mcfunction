@@ -37,6 +37,8 @@ advancement revoke @s only music:chapter_3/icon
     advancement revoke @s only music:chapter_3/realm_of_finality/title
     advancement revoke @s only music:chapter_3/finalitys_embrace_rift/icon
     advancement revoke @s only music:chapter_3/finalitys_embrace_rift/title
+    advancement revoke @s only music:chapter_3/lord_of_the_cataclysm/icon
+    advancement revoke @s only music:chapter_3/lord_of_the_cataclysm/title
 
     advancement revoke @s only music:other/icon
 

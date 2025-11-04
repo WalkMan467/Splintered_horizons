@@ -1,3 +1,3 @@
-execute as @n[type=!player,type=!#minecraft:dummy_mob] at @s run function cse:status_effects/apply/bleeding/use {duration:100, tick_rate:40, dot:2, max:10}
+execute as @n[type=!player,type=!#minecraft:dummy_mob,tag=!cse.status.effect.bleeding] at @s run function weapons:type/arrows/bleeding_arrow/guide
 
 advancement revoke @a only weapons:arrows/bleeding_arrow

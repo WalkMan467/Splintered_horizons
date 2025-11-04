@@ -8,7 +8,9 @@ execute unless score @s cse.status_effects.bleeding.tr_max matches 1.. run score
 execute unless score @s cse.status_effects.bleeding.dot matches 1.. run scoreboard players set @s cse.status_effects.bleeding.dot 1
 execute unless score @s cse.status_effects.bleeding.dot_max matches 1.. run scoreboard players set @s cse.status_effects.bleeding.dot_max 1
 
+scoreboard players operation @s cse.status_effects.bleeding.base_dot = @s cse.status_effects.bleeding.dot
+
 scoreboard players operation @s cse.status_effects.bleeding.tr = @s cse.status_effects.bleeding.tr_max
 
     # Example:
-# function cse:status_effects/apply/bleeding/use {duration:100, tick_rate:40, dot:1, max:10}
+# function cse:status_effects/apply/bleeding/use {duration:100, tick_rate:40, dot:20, max:100}

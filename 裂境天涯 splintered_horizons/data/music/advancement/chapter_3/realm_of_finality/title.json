@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "id": "minecraft:sea_lantern",
+      "id": "minecraft:red_nether_bricks",
       "count": 1
     },
     "title": [
@@ -18,7 +18,7 @@
         "italic": false
       },
       {
-        "translate": "music.rise",
+        "translate": "music.hurt",
         "color": "white",
         "bold": true,
         "italic": false,
@@ -39,7 +39,7 @@
         "italic": false
       },
       {
-        "translate": "music.whitesand",
+        "translate": "music.ben_berkenbosch",
         "color": "white"
       }
     ],

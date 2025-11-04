@@ -1,3 +1,5 @@
+function monsters:vehicle_remove
+
 execute on passengers if entity @s[type=marker,tag=main.duration.timer,tag=summon] run scoreboard players set @s duration 600
 execute on passengers if entity @s[type=marker,tag=main.duration.timer,tag=summon] run tag @s remove summon
 

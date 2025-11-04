@@ -1,3 +1,3 @@
-function cse:timer
-function cse:detect/damage_dealt
 function cse:detect/death
+
+scoreboard players reset @s cse.detect.damage_taken

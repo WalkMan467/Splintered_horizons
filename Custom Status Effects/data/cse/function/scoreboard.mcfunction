@@ -3,9 +3,9 @@ scoreboard objectives add cse.global.main dummy "[CSE] Global Main"
 
 scoreboard objectives add cse.detect.player.max_health dummy "[CSE] Player Max Health"
 scoreboard objectives add cse.detect.player.health health "[CSE] Player Health"
-scoreboard objectives add cse.detect.player.dmg_taken minecraft.custom:damage_taken "[CSE] Player Dmg Taken"
 scoreboard objectives add cse.detect.player.hurt_time dummy "[CSE] Player Hurt Time"
 scoreboard objectives add cse.detect.player.death deathCount "[CSE] Player Death"
+scoreboard objectives add cse.detect.damage_taken minecraft.custom:minecraft.damage_taken "[CSE] Dmg Taken"
 
 # Status Effects
 # ===============================================================================
@@ -15,7 +15,11 @@ scoreboard objectives add cse.status_effects.bleeding dummy "[CSE] Bleeding"
 scoreboard objectives add cse.status_effects.bleeding.tr dummy "[CSE] Bleeding Tick Rate"
 scoreboard objectives add cse.status_effects.bleeding.tr_max dummy "[CSE] Bleeding Tick Rate Max"
 scoreboard objectives add cse.status_effects.bleeding.dot dummy "[CSE] Bleeding Dot"
+scoreboard objectives add cse.status_effects.bleeding.base_dot dummy "[CSE] Bleeding Base Dot"
 scoreboard objectives add cse.status_effects.bleeding.dot_max dummy "[CSE] Bleeding Dot Max"
+scoreboard objectives add cse.status_effects.bleeding.health_temp dummy "[CSE] Bleeding Health Temp"
+scoreboard objectives add cse.status_effects.bleeding.max_health_temp dummy "[CSE] Bleeding Max Health Temp"
+scoreboard objectives add cse.status_effects.bleeding.health dummy "[CSE] Bleeding Health"
 
 # ===============================================================================
 

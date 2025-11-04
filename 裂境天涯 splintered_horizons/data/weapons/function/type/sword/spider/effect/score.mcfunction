@@ -10,7 +10,7 @@ execute as @a[scores={weapon.spider_passive=10}] run function weapons:type/sword
 
 # mob
 execute as @s[scores={weapon.spider_passive=10}] at @s run tag @e[type=!#minecraft:dummy_mob,distance=..6,type=!player] add dmger
-execute as @s[scores={weapon.spider_passive=10}] at @s as @e[type=!player,type=!#dummy_mob,distance=..6] at @s run function carto_event:api/create_single_entity_event {event:"custom_statuses/bleeding",duration:40,delay:0,parameters:{tick_rate:18,amount:4,cap:10,owner:"@p",tick_command:"",proc_command:""},merge_behavior:"custom"}
+execute as @s[scores={weapon.spider_passive=10}] at @s as @e[type=!player,type=!#dummy_mob,distance=..6] at @s run function cse:status_effects/apply/bleeding/use {duration:100, tick_rate:40, dot:20, max:100}
 
 tag @s[tag=!atker] add atker
 

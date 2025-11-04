@@ -1,4 +1,9 @@
-bossbar set minecraft:monsters.lord_of_the_cataclysm players @a[distance=..60]
+bossbar set minecraft:monsters.lord_of_the_cataclysm players @a[distance=..20]
+
+effect give @a[distance=..20] night_vision 1 255 true
+
+execute as @a[distance=..20] at @s run advancement grant @s only music:chapter_3/lord_of_the_cataclysm/play
+execute as @a[distance=20..] at @s run advancement grant @s only music:chapter_3/lord_of_the_cataclysm/reset
 
 # Bossbar
 execute store result bossbar minecraft:monsters.lord_of_the_cataclysm max run attribute @s max_health get

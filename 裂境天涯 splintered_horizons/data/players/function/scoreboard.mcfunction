@@ -82,5 +82,6 @@ scoreboard objectives add player.detect.quick_actions.trigger trigger "[玩家] 
 scoreboard objectives add player.detect.tp.trigger trigger "[玩家] 傳送書觸發"
 scoreboard objectives add player.detect.sneak dummy "[玩家] 潛行偵測"
 scoreboard objectives add player.detect.is_bossfight dummy "[玩家] 是否處於BOSS戰"
+scoreboard objectives add player.detect.broken_spawner minecraft.mined:minecraft.spawner "[玩家] 破壞生怪磚"
 
 # ==================================================================================================

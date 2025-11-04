@@ -9,3 +9,5 @@ setblock 1118 210 158 minecraft:campfire[lit=true]
 setblock 1120 208 143 minecraft:campfire[lit=true]
 setblock 1089 209 143 minecraft:campfire[lit=true]
 setblock 1086 208 152 minecraft:campfire[lit=true]
+
+advancement grant @a only music:chapter_3/lord_of_the_cataclysm/reset

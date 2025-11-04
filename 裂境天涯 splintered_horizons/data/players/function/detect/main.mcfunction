@@ -10,6 +10,9 @@ execute if function players:detect/get_runics unless entity @s[tag=player.detect
 execute if function players:detect/get_runics unless entity @s[tag=player.detect.get_runics] run tag @s add player.detect.get_runics
 execute unless function players:detect/get_runics if entity @s[tag=player.detect.get_runics] run tag @s remove player.detect.get_runics
 
+# Broken Spawner
+execute if score @s player.detect.broken_spawner matches 1.. run function players:detect/broken_spawner
+
 # Detecting injuries
 function players:detect/hurt
 

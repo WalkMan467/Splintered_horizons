@@ -13,3 +13,4 @@ scoreboard objectives add music.other.the_forgooten_lost_city dummy "[音樂]: �
 scoreboard objectives add music.chapter2.temple_of_light dummy "[音樂]: 光明神殿BGM"
 scoreboard objectives add music.chapter3.realm_of_finality dummy "[音樂]: 終焉之境BGM"
 scoreboard objectives add music.chapter3.finalitys_embrace_rift dummy "[音樂]: 終焉裂隙之谷BGM"
+scoreboard objectives add music.chapter3.lord_of_the_cataclysm dummy "[音樂]: 災厄領主BGM"
