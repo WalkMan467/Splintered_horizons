@@ -1,13 +1,13 @@
 {
   "pack": {
     "description": "裂境天涯 Splintered Horizons Datapack",
-    "pack_format": 93,
+    "pack_format": 88,
     "min_format": [
-      93,
+      88,
       0
     ],
     "max_format": [
-      93,
+      88,
       0
     ]
   },
@@ -23,13 +23,13 @@
     "entries": [
       {
         "directory": "animated_java",
-        "formats": 93,
+        "formats": 88,
         "min_format": [
-          93,
+          88,
           0
         ],
         "max_format": [
-          93,
+          88,
           0
         ]
       }
