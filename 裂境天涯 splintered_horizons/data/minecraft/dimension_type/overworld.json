@@ -1,23 +1,44 @@
 {
-  "ambient_light": 0,
-  "bed_works": false,
+  "ambient_light": 0.25,
+  "attributes": {
+    "minecraft:gameplay/bed_rule": {
+      "can_set_spawn": "never",
+      "can_sleep": "never",
+      "explodes": false,
+      "error_message": {
+        "translate": "block.minecraft.bed.no_sleep"
+      }
+    },
+    "minecraft:gameplay/respawn_anchor_works": false,
+    "minecraft:visual/fog_color": "#000000",
+    "minecraft:visual/sky_color": "#000000",
+    "minecraft:visual/sky_light_color": "#e580ff",
+    "minecraft:visual/star_brightness": 1,
+    "minecraft:visual/sky_light_factor": 0,
+    "minecraft:visual/sun_angle": 180,
+    "minecraft:visual/moon_angle": 180,
+    "minecraft:gameplay/piglins_zombify": false,
+    "minecraft:gameplay/creaking_active": false,
+    "minecraft:gameplay/monsters_burn": false,
+    "minecraft:gameplay/surface_slime_spawn_chance": 0,
+    "minecraft:gameplay/turtle_egg_hatch_chance": 0,
+    "minecraft:visual/default_dripstone_particle": {
+      "type": "minecraft:block",
+      "block_state": "minecraft:air"
+    },
+    "minecraft:gameplay/increased_fire_burnout": false,
+    "gameplay/fast_lava": true
+  },
   "coordinate_scale": 1,
-  "effects": "minecraft:overworld",
   "has_ceiling": false,
-  "has_raids": true,
+  "has_fixed_time": true,
   "has_skylight": true,
   "height": 400,
   "infiniburn": "#minecraft:infiniburn_overworld",
   "logical_height": 400,
-  "min_y": -64,
+  "min_y": 0,
   "monster_spawn_block_light_limit": 0,
-  "monster_spawn_light_level": {
-    "type": "minecraft:uniform",
-    "max_inclusive": 7,
-    "min_inclusive": 0
-  },
-  "natural": true,
-  "piglin_safe": true,
-  "respawn_anchor_works": false,
-  "ultrawarm": false
+  "monster_spawn_light_level": 15,
+  "skybox": "end",
+  "timelines": "#minecraft:in_overworld"
 }
