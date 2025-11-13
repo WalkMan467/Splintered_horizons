@@ -1,20 +1,34 @@
 {
-	"pack": {
-		"pack_format": 71,
-		"description": "",
-		"min_format": 88,
-		"max_format": 9999999,
-		"supported_formats": {
-			"min_inclusive": 71,
-			"max_inclusive": 79
-		}
-	},
-	"overlays": {
-		"entries": [
-			{
-				"directory": "animated_java",
-				"formats": 61
-			}
-		]
-	}
+  "pack": {
+    "pack_format": 93,
+    "description": "",
+    "min_format": [
+      93,
+      0
+    ],
+    "max_format": [
+      93,
+      0
+    ],
+    "supported_formats": {
+      "min_inclusive": 93,
+      "max_inclusive": 0
+    }
+  },
+  "overlays": {
+    "entries": [
+      {
+        "directory": "animated_java",
+        "formats": 93,
+        "min_format": [
+          93,
+          0
+        ],
+        "max_format": [
+          93,
+          0
+        ]
+      }
+    ]
+  }
 }
