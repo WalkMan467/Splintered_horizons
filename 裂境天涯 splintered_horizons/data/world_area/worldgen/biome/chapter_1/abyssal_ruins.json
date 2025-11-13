@@ -1,21 +1,23 @@
 {
+  "attributes": {
+    "minecraft:visual/ambient_particles": [
+      {
+        "particle": {
+          "type": "white_ash"
+        },
+        "probability": 0.05
+      }
+    ],
+    "minecraft:visual/sky_color": "#000000"
+  },
   "temperature": -0.3,
   "downfall": 0,
   "has_precipitation": true,
   "creature_spawn_probability": 0,
   "effects": {
-    "sky_color": 5395026,
-    "fog_color": 4212557,
     "water_color": 9276813,
-    "water_fog_color": 4212557,
     "grass_color": 4212557,
-    "foliage_color": 13619151,
-    "particle": {
-      "options": {
-        "type": "white_ash"
-      },
-      "probability": 0.05
-    }
+    "foliage_color": 13619151
   },
   "spawners": {},
   "spawn_costs": {},
