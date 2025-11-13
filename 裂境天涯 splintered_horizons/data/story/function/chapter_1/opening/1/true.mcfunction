@@ -4,7 +4,7 @@ kill @e[tag=story.chapter_1.opening.1]
 execute as @n[tag=aj.rainy_night.root,limit=1] run function animated_java:rainy_night/remove/this
 
 
-execute positioned 38 63.75 6.85 rotated 0 0 run function animated_java:rainy_night/summon {args: {animation: 'sit_down', start_animation: true}}
+execute positioned 38 64.15 6.85 rotated 0 0 run function animated_java:rainy_night/summon {args: {animation: 'sit_down', start_animation: true}}
 
 execute positioned 38 64.15 6.85 unless score #story:icon/story/chapter_1/scebe_1 global.main matches 1 as @n[type=item_display,tag=aj.rainy_night.root,distance=..3] on passengers run data modify entity @s Glowing set value 1b
 
