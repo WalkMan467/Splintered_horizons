@@ -1,0 +1,2 @@
+summon interaction 770 147.005 981 {height:1.25,width:1.01,Tags:["system.forging_table.act"],UUID:[I; 125, 5112, 1, 1]}
+summon interaction 773 147.005 978 {height:1.25,width:1.01,Tags:["system.forging_table.act"],UUID:[I; 125, 5112, 5, 1]}

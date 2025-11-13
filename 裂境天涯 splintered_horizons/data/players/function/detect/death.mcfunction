@@ -1,6 +1,9 @@
 scoreboard players add @s player.detect.death 0
 execute unless score @s player.detect.death matches 1.. run return 0
 
+scoreboard players reset @s player.detect.air
+advancement grant @s only players:elytra_switch/false
+
 tag @s add forced_interrupt_animation
 function #players:detect/death
 

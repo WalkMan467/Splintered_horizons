@@ -40,10 +40,15 @@
     execute if entity @s[gamemode=!spectator] if biome ~ ~ ~ world_area:chapter_2/temple_of_light run advancement grant @s only world_area:chapter_2/temple_of_light/in
     execute unless biome ~ ~ ~ world_area:chapter_2/temple_of_light run advancement grant @s only world_area:chapter_2/temple_of_light/out
 
-    # Temple of Light (BOSS battle area)
+    # Elekiel Bossfight
     
     execute if entity @s[gamemode=!spectator] if biome ~ ~ ~ world_area:chapter_2/bossfight/normal run advancement grant @s only world_area:chapter_2/temple_of_light/bossfight/in
     execute unless biome ~ ~ ~ world_area:chapter_2/bossfight/normal run advancement grant @s only world_area:chapter_2/temple_of_light/bossfight/out
+
+    # Elekiel Phase 2 Bossfight
+    
+    execute if entity @s[gamemode=!spectator] if biome ~ ~ ~ world_area:chapter_2/bossfight/elekiel_phase_2/bossfight_area run advancement grant @s only world_area:chapter_2/temple_of_light/bossfight/elekiel_phase_2/bossfight_area/in
+    execute unless biome ~ ~ ~ world_area:chapter_2/bossfight/elekiel_phase_2/bossfight_area run advancement grant @s only world_area:chapter_2/temple_of_light/bossfight/elekiel_phase_2/bossfight_area/out
 
     # Temple of Light
     

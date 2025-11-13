@@ -1,0 +1,67 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:beacon",
+      "components": {
+        "minecraft:enchantments": {
+          "minecraft:mending": 1
+        }
+      },
+      "count": 1
+    },
+    "title": [
+      {
+        "translate": "music.name",
+        "color": "white",
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": ": ",
+        "color": "white",
+        "bold": false,
+        "italic": false
+      },
+      {
+        "translate": "music.endless_storm",
+        "color": "white",
+        "bold": true,
+        "italic": false,
+        "underlined": false
+      }
+    ],
+    "description": [
+      {
+        "translate": "music.composer",
+        "color": "white",
+        "bold": false,
+        "italic": false
+      },
+      {
+        "text": ": ",
+        "color": "white",
+        "bold": false,
+        "italic": false
+      },
+      {
+        "translate": "music.makai_symphony",
+        "color": "white"
+      }
+    ],
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "music:chapter_2/bossfight/2/icon",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+  },
+  "rewards": {
+    "function": "music:chapter_2/bossfight/3/title"
+  }
+}

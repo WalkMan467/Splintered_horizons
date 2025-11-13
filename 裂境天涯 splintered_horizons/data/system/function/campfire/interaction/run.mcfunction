@@ -1,4 +1,5 @@
 execute on target at @s run function system:campfire/interaction/store_pos
+execute on target at @s unless block ~ ~ ~ #penetrate run scoreboard players add @s player.spawnpoint.pos.y 1
 
 execute on target at @s run tellraw @s {"translate":"system.campfire.spawnpoint","color":"dark_green"}
 

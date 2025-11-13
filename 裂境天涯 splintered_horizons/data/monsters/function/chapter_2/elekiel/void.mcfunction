@@ -4,6 +4,9 @@ execute as @a at @s run function monsters:bossfight/chapter_2/elekiel/reset_play
 
 function animated_java:yibb_tstll/remove/all
 
+bossbar remove minecraft:monsters.elekiel
+
+
 scoreboard players set #boss_area.chapter_2.elekiel global.main 0
 scoreboard players set @s player.detect.is_bossfight 0
 
@@ -17,6 +20,9 @@ kill 00000100-0000-0080-0000-008000000001
 
 scoreboard players set @a monster.elekiel.player_die 0
 
+bossbar remove chapter_2.elekiel.2
+bossbar remove chapter_2.elekiel.3
+
 function monsters:chapter_2/elekiel/3/reset
 execute as @e[tag=monsters.elekiel.2.vampire_flower.hit_box,type=slime] run function monsters:chapter_2/elekiel/2/vampire_flower/kill
 tag @a remove monsters.elekiel.2.vampire_flower.target
@@ -28,6 +34,7 @@ execute on passengers as @n[tag=aj.yibb_tstll.root,type=item_display] run functi
 
 advancement revoke @a only monsters:chapter_2/elekiel/1/battlefield/fire
 kill 000000fb-0000-0228-0000-000100000018
+execute positioned 912 60 2018 run kill @e[distance=..60,type=experience_orb]
 
 summon interaction 912 60 2018 {UUID:[I; 2541, 123, 1, 1],Tags:["world_area.chapter_2.temple_of_light.bossfight.act"],height:2}
 

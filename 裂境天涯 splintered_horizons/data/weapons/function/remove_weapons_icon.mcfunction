@@ -11,6 +11,7 @@ advancement grant @s only weapons:icon/icon
         advancement grant @s only weapons:icon/other
         
             advancement revoke @s only weapons:icon/scythe/ruins_of_the_end
+            advancement revoke @s only weapons:icon/scythe/flame_of_abyss
 
         advancement grant @s only weapons:icon/chapter_2
 

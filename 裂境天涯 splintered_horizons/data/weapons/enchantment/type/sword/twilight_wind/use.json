@@ -1,8 +1,7 @@
 {
   "anvil_cost": 4,
   "description": {
-    "translate": "weapon.sword.twilight_wind.use",
-    "with": []
+    "translate": "weapon.enchantment.twilight_wind"
   },
   "effects": {
     "minecraft:post_attack": [
@@ -35,6 +34,6 @@
   "slots": [
     "mainhand"
   ],
-  "supported_items": "#minecraft:enchantable/crossbow",
+  "supported_items": "air",
   "weight": 2
 }

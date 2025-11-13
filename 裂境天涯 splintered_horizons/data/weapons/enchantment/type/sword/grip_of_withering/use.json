@@ -1,8 +1,7 @@
 {
   "anvil_cost": 4,
   "description": {
-    "translate": "weapon.sword.grip_of_withering.use",
-    "with": []
+    "translate": "weapon.enchantment.grip_of_withering"
   },
   "effects": {
     "minecraft:post_attack": [
@@ -36,6 +35,6 @@
   "slots": [
     "mainhand"
   ],
-  "supported_items": "#minecraft:enchantable/crossbow",
+  "supported_items": "air",
   "weight": 2
 }

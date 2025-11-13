@@ -1,4 +1,4 @@
-# 箭矢條件偵測 Arrow Condition Detection.
+# Arrow Condition Detection
 
 # Void Arrow
 
@@ -6,7 +6,7 @@ execute if predicate weapons:type/arrows/ground_detect/void_arrow run tag @s add
 execute if predicate weapons:type/arrows/ground_detect/void_arrow on origin unless predicate weapons:type/arrows/void_arrow/wither run return fail
 
 # ==============================================
-# 無條件 Unconditionally
+# Unconditionally
 
 $function weapons:type/arrows/$(id)/use
 

@@ -1,33 +1,32 @@
 {
-    "anvil_cost": 0,
-    "description": "弓箭偵測",
-    "max_cost": {
-      "base": 0,
-      "per_level_above_first": 0
-    },
-    "max_level": 1,
-    "min_cost": {
-      "base": 0,
-      "per_level_above_first": 0
-    },
-    "slots": [
-      "any"
-    ],
-    "supported_items": [
-      "minecraft:bow",
-      "minecraft:crossbow"
-    ],
-    "weight": 1,
-    "effects": {
-      "minecraft:post_attack": [
-        {
-          "effect": {
-            "type": "minecraft:run_function",
-            "function": "weapons:type/arrows/detect"
-          },
-          "enchanted": "attacker",
-          "affected": "victim"
-        }
-      ]
-    }
+  "anvil_cost": 0,
+  "description": {
+    "translate": "weapon.enchantment.bow"
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "slots": [
+    "any"
+  ],
+  "supported_items": "minecraft:air",
+  "weight": 1,
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "weapons:type/arrows/detect"
+        },
+        "enchanted": "attacker",
+        "affected": "victim"
+      }
+    ]
   }
+}

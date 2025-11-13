@@ -1,8 +1,7 @@
 {
   "anvil_cost": 4,
   "description": {
-    "translate": "weapon.sword.otherworld_star.use",
-    "fallback": "Otherworld Star Skill"
+    "translate": "weapon.enchantment.otherworld_star"
   },
   "effects": {
     "minecraft:post_attack": [
@@ -28,6 +27,6 @@
   "slots": [
     "mainhand"
   ],
-  "supported_items": "barrier",
+  "supported_items": "air",
   "weight": 2
 }

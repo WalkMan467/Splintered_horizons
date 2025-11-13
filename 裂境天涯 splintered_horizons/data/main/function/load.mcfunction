@@ -33,6 +33,7 @@ schedule function music:timer 1s
 
 # System
 schedule function system:monument_point/main 1t
+schedule function system:forging_table/main 1t
 
 # Hotbar Switching
 schedule function hotbar_sound:guide 2t

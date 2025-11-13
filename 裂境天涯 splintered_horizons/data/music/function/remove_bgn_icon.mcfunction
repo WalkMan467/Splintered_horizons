@@ -25,6 +25,8 @@ advancement revoke @s only music:chapter_2/icon
         advancement revoke @s only music:chapter_2/forgotten_sakura_city/title
         advancement revoke @s only music:chapter_2/bossfight/2/icon
         advancement revoke @s only music:chapter_2/bossfight/2/title
+        advancement revoke @s only music:chapter_2/bossfight/3/icon
+        advancement revoke @s only music:chapter_2/bossfight/3/title
         advancement revoke @s only music:chapter_2/forgotten_sakura_city/icon
         advancement revoke @s only music:chapter_2/forgotten_sakura_city/title
         advancement revoke @s only music:chapter_2/temple_of_light/icon
@@ -37,7 +39,6 @@ advancement revoke @s only music:chapter_3/icon
     advancement revoke @s only music:chapter_3/realm_of_finality/title
     advancement revoke @s only music:chapter_3/finalitys_embrace_rift/icon
     advancement revoke @s only music:chapter_3/finalitys_embrace_rift/title
-    advancement revoke @s only music:chapter_3/lord_of_the_cataclysm/icon
     advancement revoke @s only music:chapter_3/lord_of_the_cataclysm/title
 
     advancement revoke @s only music:other/icon

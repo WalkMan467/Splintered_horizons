@@ -13,13 +13,14 @@
 attribute = []
 # ----- 設定參數 ----- #
 
-name = ['赤血詛咒箭矢', '#e00000', '箭矢 / 神話']
-story = {'info': ['尖頭有著特殊構造的箭矢', '可以使命中的敵人流血一段時間'], 'color': 'blue'}
-item_data = {'real_item': 'arrow', 'id': 'bleeding_arrow', 'item_model': '"arrow/bleeding_arrow"', 'custom_data': '{rc:1b,type:"arrow",rarity:"mythic",id:"bleeding_arrow"}', 'max_damage': -1, 'max_stack_size': 64, 'rc': False, 'other': ['tooltip_display={hidden_components:["unbreakable","attribute_modifiers"]}', 'tooltip_style="mythic"']}
-skill = {'is_skill': False, 'cd': 0, 'name': ['創傷', '#ff0000', '#c50202'], 'info': ['命中敵人可以造成']}
-passive_skills = {'is_passive_skills': True, 'cd': 0, 'name': ['赤血詛咒', '#7a0000', '#e00000'], 'info': ['當你攻擊命中時:', '對敵人施加流血 (00:05)', '初始流血傷害為 2', '當你對流血目標造成傷害時', '會使每秒流血傷害增加']}
-ultimate = {'is_ultimate': False, 'cd': 0, 'name': ['災厄之火', '#ff0000', '#7a0000'], 'info': ['當你使用右鍵時:', '使【行星墜落】造成傷害變為真實傷害', '並且在該位置生成一片每秒造成 5 點燃燒傷害的區域', '持續 5 秒']}
-attribute.append({'attribute': 'attack_damage', 'value': 0.0, 'slot': 'mainhand', 'operation': 'add_multiplied_base'})
+name = ['虛空碎裂風暴複合弓', '#ea00ff', '弓 / 傳說']
+story = {'info': ['由破碎的虛空碎片打造而成的特殊複合弓', '可以使箭矢附加特殊能力'], 'color': 'blue'}
+item_data = {'real_item': 'bow', 'id': 'ethereal_shatterstorm_compound_bow', 'item_model': '""', 'custom_data': '{rc:1b,type:"bow",rarity:"legendary",weapon:"ethereal_shatterstorm_compound_bow"}', 'max_damage': 300, 'max_stack_size': 1, 'rc': False, 'other': ['minecraft:enchantments={"minecraft:mending":1}', 'tooltip_style="legendary"']}
+skill = {'is_skill': True, 'cd': 20, 'name': ['虛空風暴', '#85007e', '#591BA0'], 'info': ['蓄力完成可以進入二階段蓄力', '當二階段蓄力完成時：', '獲得【星空之霜】【輝煌之光】符文 (00:10)']}
+passive_skills = {'is_passive_skills': False, 'cd': 0, 'name': ['吸收', '#85007e', '#591BA0'], 'info': ['當你破壞生怪磚時:', '使自身終焉之眼冷卻減少 5 秒']}
+ultimate = {'is_ultimate': False, 'cd': 0, 'name': ['災厄之火', '#7a0000', '#ff0000'], 'info': ['當你使用右鍵時:', '使【行星墜落】造成傷害變為真實傷害', '並且在該位置生成一片每秒造成 5 點燃燒傷害的區域', '持續 5 秒']}
+attribute.append({'attribute': 'attack_damage', 'value': 5.0, 'slot': 'mainhand', 'operation': 'add_value'})
+attribute.append({'attribute': 'attack_speed', 'value': -2.4, 'slot': 'mainhand', 'operation': 'add_value'})
 
 # ----- init ----- #
 

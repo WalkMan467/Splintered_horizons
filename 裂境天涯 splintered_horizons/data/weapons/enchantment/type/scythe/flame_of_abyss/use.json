@@ -1,6 +1,6 @@
 {
   "anvil_cost": 4,
-  "description": "",
+  "description": "weapon.enchantment.flame_of_abyss",
   "effects": {
     "minecraft:post_attack": [
       {
@@ -25,6 +25,6 @@
   "slots": [
     "mainhand"
   ],
-  "supported_items": "#minecraft:enchantable/crossbow",
+  "supported_items": "air",
   "weight": 2
 }

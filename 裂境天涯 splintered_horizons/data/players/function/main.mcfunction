@@ -1,8 +1,6 @@
 function players:elytra_switch/main
 function players:detect/main
 function players:auto_crafting/main
-function players:bow_detect
-function players:crossbow_detect
 
 tag @s remove player.tombstone_system.disabled
 

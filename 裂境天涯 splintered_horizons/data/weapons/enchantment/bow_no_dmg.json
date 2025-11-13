@@ -1,11 +1,9 @@
 {
   "description": {
-    "text": "弓箭無傷害",
-    "color": "red",
-    "bold": true,
-    "italic": false
+    "translate": "weapon.enchantment.bow.no_dmg",
+    "color": "red"
   },
-  "supported_items": "minecraft:barrier",
+  "supported_items": "minecraft:air",
   "weight": 1,
   "max_level": 1,
   "min_cost": {

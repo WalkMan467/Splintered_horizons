@@ -17,4 +17,4 @@ scoreboard players operation #duration mob.main = @s mob.duration
 scoreboard players operation #duration mob.main %= #5 mob.main
 execute if score #duration mob.main matches 0 run function particle:portal/crack_silhouette/use
 
-execute if score @s mob.duration matches 400.. run kill @s
+execute if score @s mob.duration matches 500.. run kill @s

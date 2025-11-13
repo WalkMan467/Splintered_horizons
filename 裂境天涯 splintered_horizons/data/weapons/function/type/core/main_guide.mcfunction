@@ -4,6 +4,8 @@
 
 execute as @s[type=item_display,tag=wind_sword.wind] at @s run function weapons:type/sword/wind_sword/wind/main
 
+execute as @s[tag=weapon.otherworld_star.fallstar.display,type=block_display] at @s run function weapons:type/sword/otherworld_star/fallstar/main
+
 # twilight wind
 
 execute as @s[type=item_display,tag=twilight_wind.wind] at @s run function weapons:type/sword/twilight_wind/wind/main

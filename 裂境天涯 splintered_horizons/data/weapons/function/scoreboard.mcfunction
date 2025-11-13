@@ -1,6 +1,7 @@
 # 其他
 
 scoreboard objectives add weapon.cd.math dummy "CD 冷卻換算"
+scoreboard objectives add weapon.ultimate.cd.math dummy "終焉技 CD 冷卻換算"
 
 #===================================================================
 #風力劍

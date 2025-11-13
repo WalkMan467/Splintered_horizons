@@ -1,0 +1,1 @@
+execute store result score @s particle.technological_force_field.line.color run random value 1..5

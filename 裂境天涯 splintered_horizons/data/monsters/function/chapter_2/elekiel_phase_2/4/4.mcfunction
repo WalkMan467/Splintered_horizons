@@ -1,13 +1,5 @@
-playsound minecraft:entity.warden.sonic_boom voice @s ~ ~1 ~ 1 1
+bossbar set minecraft:chapter_2.elekiel_phase_2.4 players @a[distance=..60]
 
-tag @s[tag=!animation,gamemode=spectator] remove monster.elekiel_phase_2.4.death_timer
-tag @s[tag=chapter_2.elekiel_phase_2.lose] remove monster.elekiel_phase_2.4.death_timer
-tag @s[gamemode=creative] remove monster.elekiel_phase_2.4.death_timer
+scoreboard players add #chapter_2.elekiel_phase_2.4 monster.elekiel_phase_2.skill.2.casting 1
 
-tag @s add forced_interrupt_animation
-function players:stop_animation
-
-kill @s[tag=monster.elekiel_phase_2.4.death_timer]
-tag @s[tag=monster.elekiel_phase_2.4.death_timer] add chapter_2.elekiel_phase_2.lose
-
-tag @s remove monster.elekiel_phase_2.4.death_timer
+execute store result bossbar chapter_2.elekiel_phase_2.4 value run scoreboard players get #chapter_2.elekiel_phase_2.4 monster.elekiel_phase_2.skill.2.casting

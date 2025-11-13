@@ -40,4 +40,7 @@ execute if score @s mob.duration matches 26 run data merge entity @s {transforma
 particle minecraft:falling_dust{block_state:"gold_block"} ~ ~-0.5 ~ 0.3 0.1 0.3 0 1 force
 particle minecraft:falling_dust{block_state:"black_concrete"} ~ ~-0.5 ~ 0.3 0.1 0.3 0 1 force
 
+execute if score @s mob.duration matches 320 positioned -916 60 2750 as @a[distance=..60] run damage @s 8 weapons:bypasses_cooldown_no_knockback
+execute if score @s mob.duration matches 320 run function particle:space_rupture/use
+
 execute if score @s mob.duration matches 320.. run function sys:void

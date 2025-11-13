@@ -1,7 +1,7 @@
 {
     "anvil_cost": 4,
     "description": {
-      "translate": "weapon.sword.ruins_of_the_finality.use",
+      "translate": "weapon.enchantment.ruins_of_the_finality",
       "with": [],
       "fallback": {
         "text": "ruins_of_the_finality"
@@ -40,6 +40,6 @@
     "slots": [
       "mainhand"
     ],
-    "supported_items": "#minecraft:enchantable/crossbow",
+    "supported_items": "air",
     "weight": 2
   }

@@ -1,8 +1,7 @@
 {
   "anvil_cost": 4,
   "description": {
-    "translate": "weapon.sword.storm_sword.use",
-    "with": []
+    "translate": "weapon.enchantment.storm_sword"
   },
   "effects": {
     "minecraft:post_attack": [
@@ -150,6 +149,6 @@
   "slots": [
     "mainhand"
   ],
-  "supported_items": "#minecraft:swords",
+  "supported_items": "air",
   "weight": 2
 }

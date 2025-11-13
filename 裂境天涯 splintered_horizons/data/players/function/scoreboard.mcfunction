@@ -28,6 +28,7 @@ scoreboard objectives add player.actionbar.otherworld_portal.2 dummy "[玩家] a
 scoreboard objectives add player.actionbar.tree_of_world_memory.1 dummy "[玩家] actionbar 狀態機 世界記憶之樹提示"
 scoreboard objectives add player.actionbar.tree_of_world_memory.2 dummy "[玩家] actionbar 狀態機 世界記憶之樹提示2"
 
+scoreboard objectives add player.actionbar.system.forging_table.energy_infusion_failure dummy "[玩家] actionbar 狀態機 注能失敗提示"
 
 scoreboard players add @a player.actionbar.weapon.nightfall 0
 scoreboard players add @a player.actionbar.weapon.spider 0
@@ -37,6 +38,8 @@ scoreboard players add @a player.actionbar.otherworld_portal.2 0
 
 scoreboard players add @a player.actionbar.tree_of_world_memory.1 0
 scoreboard players add @a player.actionbar.tree_of_world_memory.2 0
+
+scoreboard players add @a player.actionbar.system.forging_table.energy_infusion_failure 0
 
 # ==================================================================================================
 # 其他

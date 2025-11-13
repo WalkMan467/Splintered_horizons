@@ -1,20 +1,19 @@
-give @s arrow[item_name=[{"translate":"weapon.bleeding_arrow","color":"#e00000","italic":false,"bold":true}],lore=[[{"translate":"weapon.bleeding_arrow.type","italic":false,"color":"dark_gray"}],{"text":""},[{"translate":"weapon.bleeding_arrow.story.1","italic":false,"color":"blue"}],[{"translate":"weapon.bleeding_arrow.story.2","italic":false,"color":"blue"}],{"text":""},[{"text":"","italic":false},{"translate":"weapon.bleeding_arrow.passive_skills","color":"#7a0000","bold":true},{"text":"  "}],[{"text":"","italic":false},{"translate":"weapon.bleeding_arrow.passive_skills.1","color":"#e00000"}],[{"text":"","italic":false},{"translate":"weapon.bleeding_arrow.passive_skills.2","color":"#e00000"}],[{"text":"","italic":false},{"translate":"weapon.bleeding_arrow.passive_skills.3","color":"#e00000"}],[{"text":"","italic":false},{"translate":"weapon.bleeding_arrow.passive_skills.4","color":"#e00000"}],[{"text":"","italic":false},{"translate":"weapon.bleeding_arrow.passive_skills.5","color":"#e00000"}]],attribute_modifiers=[{id:"base_attack_damage",type:"attack_damage",amount:0.0,operation:"add_multiplied_base",slot:"mainhand"}],max_stack_size=64,unbreakable={},item_model="arrow/bleeding_arrow",custom_data={rc:1b,type:"arrow",rarity:"mythic",id:"bleeding_arrow"},tooltip_display={hidden_components:["unbreakable","attribute_modifiers"]},tooltip_style="mythic"]
+give @s bow[item_name=[{"translate":"weapon.ethereal_shatterstorm_compound_bow","color":"#ea00ff","italic":false,"bold":true}],lore=[[{"translate":"weapon.ethereal_shatterstorm_compound_bow.type","italic":false,"color":"dark_gray"}],{"text":""},[{"translate":"weapon.ethereal_shatterstorm_compound_bow.story.1","italic":false,"color":"blue"}],[{"translate":"weapon.ethereal_shatterstorm_compound_bow.story.2","italic":false,"color":"blue"}],{"text":""},[{"text":"","italic":false},{"translate":"weapon.ethereal_shatterstorm_compound_bow.skill","color":"#85007e","bold":true},{"text":"  "},{"translate":"weapon.skill_cd","color":"#6E6E6E"},{"text":"20s"}],[{"text":"","italic":false},{"translate":"weapon.ethereal_shatterstorm_compound_bow.skill.1","color":"#591BA0"}],[{"text":"","italic":false},{"translate":"weapon.ethereal_shatterstorm_compound_bow.skill.2","color":"#591BA0"}],[{"text":"","italic":false},{"translate":"weapon.ethereal_shatterstorm_compound_bow.skill.3","color":"#591BA0"}]],attribute_modifiers=[{id:"base_attack_damage",type:"attack_damage",amount:5.0,operation:"add_value",slot:"mainhand"},{id:"base_attack_speed",type:"attack_speed",amount:-2.4,operation:"add_value",slot:"mainhand"}],max_stack_size=1,max_damage=300,damage=0,custom_data={rc:1b,type:"bow",rarity:"legendary",weapon:"ethereal_shatterstorm_compound_bow"},minecraft:enchantments={"minecraft:mending":1},tooltip_style="legendary"]
 
-# "weapon.bleeding_arrow" : "赤血詛咒箭矢"
-# "weapon.bleeding_arrow.type" : "箭矢 / 神話"
-# "weapon.bleeding_arrow.story.1" : "尖頭有著特殊構造的箭矢"
-# "weapon.bleeding_arrow.story.2" : "可以使命中的敵人流血一段時間"
-# "weapon.bleeding_arrow.passive_skills" : "[赤血詛咒]"
-# "weapon.bleeding_arrow.passive_skills.1" : "當你攻擊命中時:"
-# "weapon.bleeding_arrow.passive_skills.2" : "對敵人施加流血 (00:05)"
-# "weapon.bleeding_arrow.passive_skills.3" : "初始流血傷害為 2"
-# "weapon.bleeding_arrow.passive_skills.4" : "當你對流血目標造成傷害時"
-# "weapon.bleeding_arrow.passive_skills.5" : "會使每秒流血傷害增加"
+# "weapon.ethereal_shatterstorm_compound_bow" : "虛空碎裂風暴複合弓"
+# "weapon.ethereal_shatterstorm_compound_bow.type" : "弓 / 傳說"
+# "weapon.ethereal_shatterstorm_compound_bow.story.1" : "由破碎的虛空碎片打造而成的特殊複合弓"
+# "weapon.ethereal_shatterstorm_compound_bow.story.2" : "可以使箭矢附加特殊能力"
+# "weapon.ethereal_shatterstorm_compound_bow.skill" : "[虛空風暴]"
+# "weapon.ethereal_shatterstorm_compound_bow.skill.1" : "蓄力完成可以進入二階段蓄力"
+# "weapon.ethereal_shatterstorm_compound_bow.skill.2" : "當二階段蓄力完成時："
+# "weapon.ethereal_shatterstorm_compound_bow.skill.3" : "獲得【星空之霜】【輝煌之光】符文 (00:10)"
 
-#name = ['赤血詛咒箭矢', '#e00000', '箭矢 / 神話']
-#story = {'info': ['尖頭有著特殊構造的箭矢', '可以使命中的敵人流血一段時間'], 'color': 'blue'}
-#item_data = {'real_item': 'arrow', 'id': 'bleeding_arrow', 'item_model': '"arrow/bleeding_arrow"', 'custom_data': '{rc:1b,type:"arrow",rarity:"mythic",id:"bleeding_arrow"}', 'max_damage': -1, 'max_stack_size': 64, 'rc': False, 'other': ['tooltip_display={hidden_components:["unbreakable","attribute_modifiers"]}', 'tooltip_style="mythic"']}
-#skill = {'is_skill': False, 'cd': 0, 'name': ['創傷', '#ff0000', '#c50202'], 'info': ['命中敵人可以造成']}
-#passive_skills = {'is_passive_skills': True, 'cd': 0, 'name': ['赤血詛咒', '#7a0000', '#e00000'], 'info': ['當你攻擊命中時:', '對敵人施加流血 (00:05)', '初始流血傷害為 2', '當你對流血目標造成傷害時', '會使每秒流血傷害增加']}
-#ultimate = {'is_ultimate': False, 'cd': 0, 'name': ['災厄之火', '#ff0000', '#7a0000'], 'info': ['當你使用右鍵時:', '使【行星墜落】造成傷害變為真實傷害', '並且在該位置生成一片每秒造成 5 點燃燒傷害的區域', '持續 5 秒']}
-#attribute.append({'attribute': 'attack_damage', 'value': 0.0, 'slot': 'mainhand', 'operation': 'add_multiplied_base'})
+#name = ['虛空碎裂風暴複合弓', '#ea00ff', '弓 / 傳說']
+#story = {'info': ['由破碎的虛空碎片打造而成的特殊複合弓', '可以使箭矢附加特殊能力'], 'color': 'blue'}
+#item_data = {'real_item': 'bow', 'id': 'ethereal_shatterstorm_compound_bow', 'item_model': '""', 'custom_data': '{rc:1b,type:"bow",rarity:"legendary",weapon:"ethereal_shatterstorm_compound_bow"}', 'max_damage': 300, 'max_stack_size': 1, 'rc': False, 'other': ['minecraft:enchantments={"minecraft:mending":1}', 'tooltip_style="legendary"']}
+#skill = {'is_skill': True, 'cd': 20, 'name': ['虛空風暴', '#85007e', '#591BA0'], 'info': ['蓄力完成可以進入二階段蓄力', '當二階段蓄力完成時：', '獲得【星空之霜】【輝煌之光】符文 (00:10)']}
+#passive_skills = {'is_passive_skills': False, 'cd': 0, 'name': ['吸收', '#85007e', '#591BA0'], 'info': ['當你破壞生怪磚時:', '使自身終焉之眼冷卻減少 5 秒']}
+#ultimate = {'is_ultimate': False, 'cd': 0, 'name': ['災厄之火', '#7a0000', '#ff0000'], 'info': ['當你使用右鍵時:', '使【行星墜落】造成傷害變為真實傷害', '並且在該位置生成一片每秒造成 5 點燃燒傷害的區域', '持續 5 秒']}
+#attribute.append({'attribute': 'attack_damage', 'value': 5.0, 'slot': 'mainhand', 'operation': 'add_value'})
+#attribute.append({'attribute': 'attack_speed', 'value': -2.4, 'slot': 'mainhand', 'operation': 'add_value'})

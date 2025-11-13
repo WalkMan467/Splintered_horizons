@@ -27,4 +27,6 @@ execute as @a[scores={music.chapter3.finalitys_embrace_rift=1}] at @s run functi
 
 execute as @a[scores={music.chapter3.lord_of_the_cataclysm=1}] at @s run function music:chapter_3/lord_of_the_cataclysm/start
 
+execute as @a[scores={music.chapter2.bossfight.3=1}] at @s run function music:chapter_2/bossfight/3/start
+
 schedule function music:main 1t
