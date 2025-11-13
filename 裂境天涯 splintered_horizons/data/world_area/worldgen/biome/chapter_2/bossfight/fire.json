@@ -1,25 +1,28 @@
 {
+  "attributes": {
+    "minecraft:visual/ambient_particles": [
+      {
+        "particle": {
+          "type": "white_ash"
+        },
+        "probability": 0.05
+      }
+    ],
+    "minecraft:visual/sky_color": 9276813,
+    "minecraft:visual/fog_color": 4212557,
+    "minecraft:visual/water_fog_color": 4212557
+  },
+  "temperature": 0.8,
+  "downfall": 0,
+  "has_precipitation": true,
+  "creature_spawn_probability": 0,
+  "effects": {
+    "water_color": 9276813,
+    "grass_color": 4212557,
+    "foliage_color": 13619151
+  },
   "spawners": {},
   "spawn_costs": {},
-  "carvers": [],
-  "downfall": 0,
-  "effects": {
-    "fog_color": 6109542,
-    "sky_color": 6109542,
-    "water_color": 6109542,
-    "water_fog_color": 6109542,
-    "grass_color": 9409680,
-    "foliage_color": 9409680,
-    "particle": {
-      "options": {
-        "type": "minecraft:white_ash"
-      },
-      "probability": 0.05
-    }
-  },
-  "has_precipitation": false,
-  "temperature": 0.5,
-  "features": [
-    []
-  ]
+  "carvers": "minecraft:canyon",
+  "features": []
 }

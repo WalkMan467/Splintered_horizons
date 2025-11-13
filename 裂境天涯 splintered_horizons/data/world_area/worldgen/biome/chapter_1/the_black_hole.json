@@ -1,28 +1,32 @@
 {
+  "attributes": {
+    "minecraft:visual/sky_color": 6109542,
+    "minecraft:visual/fog_color": 8400022,
+    "minecraft:visual/water_fog_color": 8400022,
+    "minecraft:visual/ambient_particles": [
+      {
+        "particle": {
+          "type": "minecraft:trail",
+          "target": [
+            305,
+            181,
+            -225
+          ],
+          "color": 8400022,
+          "duration": 400
+        },
+        "probability": 0.01
+      }
+    ]
+  },
   "temperature": -0.3,
   "downfall": 0,
   "has_precipitation": true,
   "creature_spawn_probability": 0,
   "effects": {
-    "sky_color": 6109542,
-    "fog_color": 8400022,
     "water_color": 6109542,
-    "water_fog_color": 8400022,
     "grass_color": 8400022,
-    "foliage_color": 8400022,
-    "particle": {
-      "options": {
-        "type": "minecraft:trail",
-        "target": [
-          305,
-          181,
-          -225
-        ],
-        "color": 8400022,
-        "duration": 400
-      },
-      "probability": 0.01
-    }
+    "foliage_color": 8400022
   },
   "spawners": {},
   "spawn_costs": {},
