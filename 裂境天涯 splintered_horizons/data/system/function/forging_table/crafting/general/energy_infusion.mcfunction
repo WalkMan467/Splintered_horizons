@@ -1,0 +1,2 @@
+# Energy Infusion
+execute if entity @n[distance=..1.5,predicate=system:forging_table/crafting/sword/general/energy_infusion,type=item] run function system:forging_table/crafting/sword/weapon_energy_infusion/run
