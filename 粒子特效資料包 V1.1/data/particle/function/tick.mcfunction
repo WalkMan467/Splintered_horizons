@@ -13,9 +13,6 @@ function particle:ruins_of_the_finality_rupture/main
 # 音波場域
 function particle:sound_wave/main
 
-# 水墨展開
-function particle:ink_painting_expansion/main
-
 # 宙斯閃電波
 function particle:zeuss_lightning_wave/main
 
