@@ -9,10 +9,8 @@ execute if score @s particle.ink_painting_expansion matches 12.. run particle du
 function particle:ink_painting_expansion/air_ash/summon
 playsound minecraft:block.furnace.fire_crackle master @a
 
-# execute if score @s particle.ink_painting_expansion matches 42 run playsound minecraft:entity.zombie.infect voice @a ~ ~1 ~ 1 0.5
-# execute if score @s particle.ink_painting_expansion matches 42 run playsound minecraft:entity.zombie_villager.cure voice @a ~ ~1 ~ 1 2
-# execute if score @s particle.ink_painting_expansion matches 42 run playsound minecraft:entity.generic.explode voice @a ~ ~1 ~ 1 0.75
-execute if score @s particle.ink_painting_expansion matches 42 run playsound minecraft:block.beacon.deactivate master @a ~ ~ ~ 1 0.75
+execute if score @s particle.ink_painting_expansion matches 12.. positioned ^ ^1 ^1.5 run function particle:ink_painting_expansion/ink/summon
+execute if score @s particle.ink_painting_expansion matches 12.. positioned ^ ^1 ^-1.5 run function particle:ink_painting_expansion/ink/summon
 
 # reset 
 execute if score @s particle.ink_painting_expansion matches 42.. run kill @s

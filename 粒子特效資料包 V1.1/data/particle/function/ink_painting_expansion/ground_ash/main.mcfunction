@@ -11,13 +11,10 @@ execute if score @s particle.ink_painting_expansion matches 0..6 run particle du
 execute if score @s particle.ink_painting_expansion matches 6..12 run particle dust_color_transition{from_color:[1.000,1.000,1.000],to_color:[0.0,0.0,0.0],scale:2.5} ~ ~ ~ 0.25 0 0.25 0 5 normal
 execute if score @s particle.ink_painting_expansion matches 13.. run particle dust_color_transition{from_color:[0.000,0.000,0.000],to_color:[1.0,1.0,1.0],scale:4} ~ ~ ~ 0.25 0 0.25 0 2 normal
 
-execute if score @s particle.ink_painting_expansion matches 0..6 run particle minecraft:dust_pillar{block_state:black_wool} ~ ~ ~ 0.5 0.5 0.5 0.1 10 normal
-execute if score @s particle.ink_painting_expansion matches 6..12 run particle minecraft:dust_pillar{block_state:gray_wool} ~ ~ ~ 0.5 0.5 0.5 0.1 10 normal
-
-execute if score @s particle.ink_painting_expansion matches 13..21 run particle minecraft:dust_pillar{block_state:black_wool} ~ ~ ~ 0.5 0.5 0.5 0.1 20 normal
-execute if score @s particle.ink_painting_expansion matches 21..29 run particle minecraft:dust_pillar{block_state:gray_wool} ~ ~ ~ 0.5 0.5 0.5 0.1 20 normal
-execute if score @s particle.ink_painting_expansion matches 29..37 run particle minecraft:dust_pillar{block_state:light_gray_wool} ~ ~ ~ 0.5 0.5 0.5 0.1 20 normal
-execute if score @s particle.ink_painting_expansion matches 37..42 run particle minecraft:dust_pillar{block_state:white_wool} ~ ~ ~ 0.5 0.5 0.5 0.1 20 normal
+execute if score @s particle.ink_painting_expansion matches 13..21 run particle minecraft:dust_pillar{block_state:black_wool} ~ ~ ~ 0.5 0.5 0.5 0.1 10 normal
+execute if score @s particle.ink_painting_expansion matches 21..29 run particle minecraft:dust_pillar{block_state:gray_wool} ~ ~ ~ 0.5 0.5 0.5 0.1 10 normal
+execute if score @s particle.ink_painting_expansion matches 29..37 run particle minecraft:dust_pillar{block_state:light_gray_wool} ~ ~ ~ 0.5 0.5 0.5 0.1 10 normal
+execute if score @s particle.ink_painting_expansion matches 37..42 run particle minecraft:dust_pillar{block_state:white_wool} ~ ~ ~ 0.5 0.5 0.5 0.1 10 normal
 
 
 # reset

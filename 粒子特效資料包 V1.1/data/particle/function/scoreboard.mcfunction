@@ -17,6 +17,8 @@ scoreboard players set #20 mob.main 20
 
 
 scoreboard objectives add particle.ink_painting_expansion dummy
+scoreboard objectives add particle.ink_painting_expansion.ink.rdm_motion dummy
+
 scoreboard players set 2 particle.ink_painting_expansion 2
 scoreboard players set 4 particle.ink_painting_expansion 4
 
