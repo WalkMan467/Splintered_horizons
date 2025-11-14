@@ -13,14 +13,14 @@
 attribute = []
 # ----- 設定參數 ----- #
 
-name = ['虛空碎裂風暴複合弓', '#ea00ff', '弓 / 傳說']
-story = {'info': ['由破碎的虛空碎片打造而成的特殊複合弓', '可以使箭矢附加特殊能力'], 'color': 'blue'}
-item_data = {'real_item': 'bow', 'id': 'ethereal_shatterstorm_compound_bow', 'item_model': '""', 'custom_data': '{rc:1b,type:"bow",rarity:"legendary",weapon:"ethereal_shatterstorm_compound_bow"}', 'max_damage': 300, 'max_stack_size': 1, 'rc': False, 'other': ['minecraft:enchantments={"minecraft:mending":1}', 'tooltip_style="legendary"']}
-skill = {'is_skill': True, 'cd': 20, 'name': ['虛空風暴', '#85007e', '#591BA0'], 'info': ['蓄力完成可以進入二階段蓄力', '當二階段蓄力完成時：', '獲得【星空之霜】【輝煌之光】符文 (00:10)']}
-passive_skills = {'is_passive_skills': False, 'cd': 0, 'name': ['吸收', '#85007e', '#591BA0'], 'info': ['當你破壞生怪磚時:', '使自身終焉之眼冷卻減少 5 秒']}
-ultimate = {'is_ultimate': False, 'cd': 0, 'name': ['災厄之火', '#7a0000', '#ff0000'], 'info': ['當你使用右鍵時:', '使【行星墜落】造成傷害變為真實傷害', '並且在該位置生成一片每秒造成 5 點燃燒傷害的區域', '持續 5 秒']}
-attribute.append({'attribute': 'attack_damage', 'value': 5.0, 'slot': 'mainhand', 'operation': 'add_value'})
-attribute.append({'attribute': 'attack_speed', 'value': -2.4, 'slot': 'mainhand', 'operation': 'add_value'})
+name = ['水墨龍泉劍', '#616161', '劍 / 傳說']
+story = {'info': ['水墨點綴著大地與山水', '由龍的傳人留下的龍泉劍'], 'color': 'blue'}
+item_data = {'real_item': 'iron_sword', 'id': 'ink_paint_longquan_sword', 'item_model': '""', 'custom_data': '{rc:1b,type:"sword",rarity:"legendary",weapon:"ink_paint_longquan_sword"}', 'max_damage': 300, 'max_stack_size': 1, 'rc': True, 'other': ['minecraft:enchantments={"minecraft:mending":1}', 'enchantment_glint_override=false', 'tooltip_style="legendary"','swing_animation={duration:6,type:"whack"}','piercing_weapon={min_reach:0.0,max_reach:0.0,hitbox_margin:0.0}']}
+skill = {'is_skill': True, 'cd': 0, 'name': ['墨繪萬象 / 丹青萬壑', "#000000", "#FFFFFF"], 'info': ['當你按下 [%s] 時:', '並將一個【畫布】轉換成【白墨】','如果沒有【畫布】並且【白墨】<【黑墨】:','將【黑墨】【白墨】轉換成【畫布】','並向前方射出 4 個【水墨彈】造成 75% 基礎傷害']}
+passive_skills = {'is_passive_skills': True, 'cd': 0, 'name': ['水墨斬', "#3D3D3D", '#FFFFFF'], 'info': ['普通攻擊時:', '並將一個【畫布】轉換成【黑墨】', '如果沒有【畫布】並且【黑墨】<【白墨】:','將【黑墨】【白墨】轉換成【畫布】', '並立即在目標位置生成一個【水墨領域】','怪物受到傷害會額外造成 2 點真實傷害']}
+ultimate = {'is_ultimate': True, 'cd': 15, 'name': ['墨海騰龍', '#7a0000', '#ff0000'], 'info': ['使用 技能 / 一般攻擊 將獲得一層【點篬苔】(最高 20 層)','當【畫布】只有【白墨】時:', '消耗一顆終焉之眼與全部【點篬苔】層數', '對 8 格範圍內隨機一名敵人造成 150% 基礎傷害']}
+attribute.append({'attribute': 'attack_damage', 'value': 5.25, 'slot': 'mainhand', 'operation': 'add_value'})
+attribute.append({'attribute': 'attack_speed', 'value': -2.5, 'slot': 'mainhand', 'operation': 'add_value'})
 
 # ----- init ----- #
 

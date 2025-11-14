@@ -1,19 +1,33 @@
-give @s bow[item_name=[{"translate":"weapon.ethereal_shatterstorm_compound_bow","color":"#ea00ff","italic":false,"bold":true}],lore=[[{"translate":"weapon.ethereal_shatterstorm_compound_bow.type","italic":false,"color":"dark_gray"}],{"text":""},[{"translate":"weapon.ethereal_shatterstorm_compound_bow.story.1","italic":false,"color":"blue"}],[{"translate":"weapon.ethereal_shatterstorm_compound_bow.story.2","italic":false,"color":"blue"}],{"text":""},[{"text":"","italic":false},{"translate":"weapon.ethereal_shatterstorm_compound_bow.skill","color":"#85007e","bold":true},{"text":"  "},{"translate":"weapon.skill_cd","color":"#6E6E6E"},{"text":"20s"}],[{"text":"","italic":false},{"translate":"weapon.ethereal_shatterstorm_compound_bow.skill.1","color":"#591BA0"}],[{"text":"","italic":false},{"translate":"weapon.ethereal_shatterstorm_compound_bow.skill.2","color":"#591BA0"}],[{"text":"","italic":false},{"translate":"weapon.ethereal_shatterstorm_compound_bow.skill.3","color":"#591BA0"}]],attribute_modifiers=[{id:"base_attack_damage",type:"attack_damage",amount:5.0,operation:"add_value",slot:"mainhand"},{id:"base_attack_speed",type:"attack_speed",amount:-2.4,operation:"add_value",slot:"mainhand"}],max_stack_size=1,max_damage=300,damage=0,custom_data={rc:1b,type:"bow",rarity:"legendary",weapon:"ethereal_shatterstorm_compound_bow"},minecraft:enchantments={"minecraft:mending":1},tooltip_style="legendary"]
+give @s iron_sword[item_name=[{"translate":"weapon.ink_paint_longquan_sword","color":"#616161","italic":false,"bold":true}],lore=[[{"translate":"weapon.ink_paint_longquan_sword.type","italic":false,"color":"dark_gray"}],{"text":""},[{"translate":"weapon.ink_paint_longquan_sword.story.1","italic":false,"color":"blue"}],[{"translate":"weapon.ink_paint_longquan_sword.story.2","italic":false,"color":"blue"}],{"text":""},[{"text":"","italic":false},{"translate":"weapon.ink_paint_longquan_sword.skill","color":"#000000","bold":true},{"text":"  "}],[{"text":"","italic":false},{"translate":"weapon.ink_paint_longquan_sword.skill.1","color":"#FFFFFF",with:[{"keybind":"key.use","underlined":true,"color":"dark_green"}]}],[{"text":"","italic":false},{"translate":"weapon.ink_paint_longquan_sword.skill.2","color":"#FFFFFF"}],[{"text":"","italic":false},{"translate":"weapon.ink_paint_longquan_sword.skill.3","color":"#FFFFFF"}],[{"text":"","italic":false},{"translate":"weapon.ink_paint_longquan_sword.skill.4","color":"#FFFFFF"}],[{"text":"","italic":false},{"translate":"weapon.ink_paint_longquan_sword.skill.5","color":"#FFFFFF"}],{"text":""},[{"text":"","italic":false},{"translate":"weapon.ink_paint_longquan_sword.passive_skills","color":"#616161","bold":true},{"text":"  "}],[{"text":"","italic":false},{"translate":"weapon.ink_paint_longquan_sword.passive_skills.1","color":"#FFFFFF"}],[{"text":"","italic":false},{"translate":"weapon.ink_paint_longquan_sword.passive_skills.2","color":"#FFFFFF"}],[{"text":"","italic":false},{"translate":"weapon.ink_paint_longquan_sword.passive_skills.3","color":"#FFFFFF"}],[{"text":"","italic":false},{"translate":"weapon.ink_paint_longquan_sword.passive_skills.4","color":"#FFFFFF"}],[{"text":"","italic":false},{"translate":"weapon.ink_paint_longquan_sword.passive_skills.5","color":"#FFFFFF"}],[{"text":"","italic":false},{"translate":"weapon.ink_paint_longquan_sword.passive_skills.6","color":"#FFFFFF"}],{"text":""},[{"text":"","italic":false},{"text":"","font":"minecraft:icon"},{"translate":"weapon.ink_paint_longquan_sword.ultimate","color":"#7a0000","bold":true},{"text":"","font":"minecraft:icon"},{"text":"  "},{"translate":"weapon.skill_cd","color":"#6E6E6E"},{"text":"15s"}],[{"text":"","italic":false},{"translate":"weapon.ink_paint_longquan_sword.ultimate.1","color":"#ff0000"}],[{"text":"","italic":false},{"translate":"weapon.ink_paint_longquan_sword.ultimate.2","color":"#ff0000"}],[{"text":"","italic":false},{"translate":"weapon.ink_paint_longquan_sword.ultimate.3","color":"#ff0000"}],[{"text":"","italic":false},{"translate":"weapon.ink_paint_longquan_sword.ultimate.4","color":"#ff0000"}]],attribute_modifiers=[{id:"base_attack_damage",type:"attack_damage",amount:5.25,operation:"add_value",slot:"mainhand"},{id:"base_attack_speed",type:"attack_speed",amount:-2.5,operation:"add_value",slot:"mainhand"}],max_stack_size=1,max_damage=300,damage=0,custom_data={rc:1b,type:"sword",rarity:"legendary",weapon:"ink_paint_longquan_sword"},consumable={consume_seconds:10000,animation:"none",has_consume_particles:false},minecraft:enchantments={"minecraft:mending":1},enchantment_glint_override=false,tooltip_style="legendary",swing_animation={duration:6,type:"whack"},piercing_weapon={min_reach:0.0,max_reach:0.0,hitbox_margin:0.0}]
 
-# "weapon.ethereal_shatterstorm_compound_bow" : "虛空碎裂風暴複合弓"
-# "weapon.ethereal_shatterstorm_compound_bow.type" : "弓 / 傳說"
-# "weapon.ethereal_shatterstorm_compound_bow.story.1" : "由破碎的虛空碎片打造而成的特殊複合弓"
-# "weapon.ethereal_shatterstorm_compound_bow.story.2" : "可以使箭矢附加特殊能力"
-# "weapon.ethereal_shatterstorm_compound_bow.skill" : "[虛空風暴]"
-# "weapon.ethereal_shatterstorm_compound_bow.skill.1" : "蓄力完成可以進入二階段蓄力"
-# "weapon.ethereal_shatterstorm_compound_bow.skill.2" : "當二階段蓄力完成時："
-# "weapon.ethereal_shatterstorm_compound_bow.skill.3" : "獲得【星空之霜】【輝煌之光】符文 (00:10)"
+# "weapon.ink_paint_longquan_sword" : "水墨龍泉劍"
+# "weapon.ink_paint_longquan_sword.type" : "劍 / 傳說"
+# "weapon.ink_paint_longquan_sword.story.1" : "水墨點綴著大地與山水"
+# "weapon.ink_paint_longquan_sword.story.2" : "由龍的傳人留下的龍泉劍"
+# "weapon.ink_paint_longquan_sword.skill" : "[墨繪萬象 / 丹青萬壑]"
+# "weapon.ink_paint_longquan_sword.skill.1" : "當你按下 [%s] 時:"
+# "weapon.ink_paint_longquan_sword.skill.2" : "並將一個【畫布】轉換成【白墨】"
+# "weapon.ink_paint_longquan_sword.skill.3" : "如果沒有【畫布】並且【白墨】<【黑墨】:"
+# "weapon.ink_paint_longquan_sword.skill.4" : "將【黑墨】【白墨】轉換成【畫布】"
+# "weapon.ink_paint_longquan_sword.skill.5" : "並向前方射出 4 個【水墨彈】造成 75% 基礎傷害"
+# "weapon.ink_paint_longquan_sword.passive_skills" : "[水墨斬]"
+# "weapon.ink_paint_longquan_sword.passive_skills.1" : "普通攻擊時:"
+# "weapon.ink_paint_longquan_sword.passive_skills.2" : "並將一個【畫布】轉換成【黑墨】"
+# "weapon.ink_paint_longquan_sword.passive_skills.3" : "如果沒有【畫布】並且【黑墨】<【白墨】:"
+# "weapon.ink_paint_longquan_sword.passive_skills.4" : "將【黑墨】【白墨】轉換成【畫布】"
+# "weapon.ink_paint_longquan_sword.passive_skills.5" : "並立即在目標位置生成一個【水墨領域】"
+# "weapon.ink_paint_longquan_sword.passive_skills.6" : "怪物受到傷害會額外造成 2 點真實傷害"
+# "weapon.ink_paint_longquan_sword.ultimate" : "[墨海騰龍]"
+# "weapon.ink_paint_longquan_sword.ultimate.1" : "使用 技能 / 一般攻擊 將獲得一層【點篬苔】(最高 20 層)"
+# "weapon.ink_paint_longquan_sword.ultimate.2" : "當【畫布】只有【白墨】時:"
+# "weapon.ink_paint_longquan_sword.ultimate.3" : "消耗一顆終焉之眼與全部【點篬苔】層數"
+# "weapon.ink_paint_longquan_sword.ultimate.4" : "對 8 格範圍內隨機一名敵人造成 150% 基礎傷害"
 
-#name = ['虛空碎裂風暴複合弓', '#ea00ff', '弓 / 傳說']
-#story = {'info': ['由破碎的虛空碎片打造而成的特殊複合弓', '可以使箭矢附加特殊能力'], 'color': 'blue'}
-#item_data = {'real_item': 'bow', 'id': 'ethereal_shatterstorm_compound_bow', 'item_model': '""', 'custom_data': '{rc:1b,type:"bow",rarity:"legendary",weapon:"ethereal_shatterstorm_compound_bow"}', 'max_damage': 300, 'max_stack_size': 1, 'rc': False, 'other': ['minecraft:enchantments={"minecraft:mending":1}', 'tooltip_style="legendary"']}
-#skill = {'is_skill': True, 'cd': 20, 'name': ['虛空風暴', '#85007e', '#591BA0'], 'info': ['蓄力完成可以進入二階段蓄力', '當二階段蓄力完成時：', '獲得【星空之霜】【輝煌之光】符文 (00:10)']}
-#passive_skills = {'is_passive_skills': False, 'cd': 0, 'name': ['吸收', '#85007e', '#591BA0'], 'info': ['當你破壞生怪磚時:', '使自身終焉之眼冷卻減少 5 秒']}
-#ultimate = {'is_ultimate': False, 'cd': 0, 'name': ['災厄之火', '#7a0000', '#ff0000'], 'info': ['當你使用右鍵時:', '使【行星墜落】造成傷害變為真實傷害', '並且在該位置生成一片每秒造成 5 點燃燒傷害的區域', '持續 5 秒']}
-#attribute.append({'attribute': 'attack_damage', 'value': 5.0, 'slot': 'mainhand', 'operation': 'add_value'})
-#attribute.append({'attribute': 'attack_speed', 'value': -2.4, 'slot': 'mainhand', 'operation': 'add_value'})
+#name = ['水墨龍泉劍', '#616161', '劍 / 傳說']
+#story = {'info': ['水墨點綴著大地與山水', '由龍的傳人留下的龍泉劍'], 'color': 'blue'}
+#item_data = {'real_item': 'iron_sword', 'id': 'ink_paint_longquan_sword', 'item_model': '""', 'custom_data': '{rc:1b,type:"sword",rarity:"legendary",weapon:"ink_paint_longquan_sword"}', 'max_damage': 300, 'max_stack_size': 1, 'rc': True, 'other': ['minecraft:enchantments={"minecraft:mending":1}', 'enchantment_glint_override=false', 'tooltip_style="legendary"', 'swing_animation={duration:6,type:"whack"}', 'piercing_weapon={min_reach:0.0,max_reach:0.0,hitbox_margin:0.0}']}
+#skill = {'is_skill': True, 'cd': 0, 'name': ['墨繪萬象 / 丹青萬壑', '#000000', '#FFFFFF'], 'info': ['當你按下 [%s] 時:', '並將一個【畫布】轉換成【白墨】', '如果沒有【畫布】並且【白墨】<【黑墨】:', '將【黑墨】【白墨】轉換成【畫布】', '並向前方射出 4 個【水墨彈】造成 75% 基礎傷害']}
+#passive_skills = {'is_passive_skills': True, 'cd': 0, 'name': ['水墨斬', '#616161', '#FFFFFF'], 'info': ['普通攻擊時:', '並將一個【畫布】轉換成【黑墨】', '如果沒有【畫布】並且【黑墨】<【白墨】:', '將【黑墨】【白墨】轉換成【畫布】', '並立即在目標位置生成一個【水墨領域】', '怪物受到傷害會額外造成 2 點真實傷害']}
+#ultimate = {'is_ultimate': True, 'cd': 15, 'name': ['墨海騰龍', '#7a0000', '#ff0000'], 'info': ['使用 技能 / 一般攻擊 將獲得一層【點篬苔】(最高 20 層)', '當【畫布】只有【白墨】時:', '消耗一顆終焉之眼與全部【點篬苔】層數', '對 8 格範圍內隨機一名敵人造成 150% 基礎傷害']}
+#attribute.append({'attribute': 'attack_damage', 'value': 5.25, 'slot': 'mainhand', 'operation': 'add_value'})
+#attribute.append({'attribute': 'attack_speed', 'value': -2.5, 'slot': 'mainhand', 'operation': 'add_value'})
