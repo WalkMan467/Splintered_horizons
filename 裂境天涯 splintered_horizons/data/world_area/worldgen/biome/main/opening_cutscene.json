@@ -1,25 +1,22 @@
 {
-  "attributes": {
-    "minecraft:visual/sky_color": 3431796,
-    "minecraft:visual/fog_color": 12638463,
-    "minecraft:visual/water_fog_color": 26987,
-    "minecraft:visual/ambient_particles": [
-      {
-        "particle": {
-          "type": "dolphin"
-        },
-        "probability": 0.01
-      }
-    ]
-  },
-  "temperature": -0.3,
+  "temperature": 0.5,
   "downfall": 0,
   "has_precipitation": true,
+  "temperature_modifier": "none",
   "creature_spawn_probability": 0,
   "effects": {
+    "sky_color": 3431796,
+    "fog_color": 12638463,
     "water_color": 799552,
+    "water_fog_color": 26987,
     "grass_color": 372130,
-    "foliage_color": 2663664
+    "foliage_color": 2663664,
+    "particle": {
+      "options": {
+        "type": "minecraft:dolphin"
+      },
+      "probability": 0.1
+    }
   },
   "spawners": {},
   "spawn_costs": {},

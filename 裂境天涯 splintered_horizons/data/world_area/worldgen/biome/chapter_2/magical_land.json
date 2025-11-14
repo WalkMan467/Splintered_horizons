@@ -1,28 +1,25 @@
 {
-  "attributes": {
-    "minecraft:visual/sky_color": 12638463,
-    "minecraft:visual/fog_color": 7907327,
-    "minecraft:visual/water_fog_color": 329011,
-    "minecraft:visual/ambient_particles": [
-      {
-        "particle": {
-          "type": "minecraft:enchant"
-        },
-        "probability": 0.025
-      }
-    ]
-  },
-  "temperature": -0.3,
-  "downfall": 0,
-  "has_precipitation": false,
   "creature_spawn_probability": 0,
+  "carvers": [
+    "minecraft:canyon"
+  ],
+  "downfall": 0,
   "effects": {
-    "water_color": 12171705,
-    "grass_color": 12171705,
-    "foliage_color": 12171705
+    "fog_color": 12638463,
+    "sky_color": 7907327,
+    "water_color": 4159204,
+    "water_fog_color": 329011,
+    "foliage_color": 14385453,
+    "particle": {
+      "options": {
+        "type": "minecraft:enchant"
+      },
+      "probability": 0.025
+    }
   },
-  "spawners": {},
+  "features": [],
+  "has_precipitation": false,
   "spawn_costs": {},
-  "carvers": "minecraft:canyon",
-  "features": []
+  "spawners": {},
+  "temperature": -0.3
 }
