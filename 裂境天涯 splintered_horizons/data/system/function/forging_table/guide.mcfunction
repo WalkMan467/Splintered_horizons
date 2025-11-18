@@ -4,4 +4,4 @@ execute if entity @n[distance=..1.5,predicate=system:forging_table/crafting/swor
 # Nightfall
 execute if entity @n[distance=..1.5,predicate=system:forging_table/crafting/sword/nightfall/moonlight_star,type=item] run function system:forging_table/crafting/sword/nightfall/run
 
-function system:forging_table/crafting/general/energy_infusion
+function system:forging_table/crafting/general/weapon_energy_infusion

@@ -43,6 +43,7 @@ function players:main
 function players:hide/false
 function players:disable/movement/main
 function players:actionbar/main
+
 function #players:detect/click_event_trigger
 
 # Traps

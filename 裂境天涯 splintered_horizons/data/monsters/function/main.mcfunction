@@ -28,7 +28,10 @@ function monsters:detect_kill/loop
 execute as @s[tag=monster,scores={monster.skill.cast.cd=30},tag=!hide_skill_tip] run function monsters:unlease_skill_tip
 
 # Monster skill cooldown
-scoreboard players remove @s[tag=monster,scores={monster.skill.cast.cd=0..},tag=!freeze] monster.skill.cast.cd 1
+execute unless entity @s[tag=freeze] unless score @s monster.skill.freeze matches 0.. if score @s monster.skill.cast.cd matches 0.. run scoreboard players remove @s monster.skill.cast.cd 1
+
+# Monster Freeze
+execute as @s[scores={monster.skill.freeze=0..}] at @s run function monsters:freeze/main
 
 # Monster skill is being cast
 scoreboard players add @s[tag=monster] monster.skill.casting 1

@@ -4,6 +4,7 @@ execute unless score @s player.detect.death matches 1.. run return 0
 scoreboard players reset @s player.detect.air
 advancement grant @s only players:elytra_switch/false
 
+clear @s *[custom_data~{type:"item",item:"coin_s"}]
 tag @s add forced_interrupt_animation
 function #players:detect/death
 

@@ -7,3 +7,4 @@ execute as @s[tag=monsters.explosion_arrow_skeleton.summon] at @s run function s
 execute as @s[tag=monsters.sunfire_emissary.summon] at @s run function spawner:type/chapter_3/sunfire_emissary/sunmmon
 execute as @s[tag=monsters.emissary_of_the_temporal_rift.summon] at @s run function spawner:type/chapter_3/emissary_of_the_temporal_rift/sunmmon
 execute as @s[tag=monsters.abyss_crystal.summon] at @s run function spawner:type/other/abyss_crystal/sunmmon
+execute as @s[tag=monsters.sun_of_the_abyssal_eclipse.summon] at @s run function spawner:type/other/sun_of_the_abyssal_eclipse/sunmmon

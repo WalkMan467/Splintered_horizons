@@ -1,6 +1,10 @@
 # @s = Players
 
+# Ethereal Shatterstorm Compound Bow
 execute if entity @s[tag=ethereal_shatterstorm_compound_bow.user] run function weapons:type/bow/ethereal_shatterstorm_compound_bow/rc/main
+
+# Frostbow
+execute if entity @s[tag=frostbow.user] run function weapons:type/bow/frostbow/rc/main
 
 execute if entity @s[tag=zeuss_lightning.user] run function weapons:type/drop/zeuss_lightning/rc/main
 execute if entity @s[tag=wind_sword.user] run function weapons:type/sword/wind_sword/main

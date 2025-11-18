@@ -1,0 +1,18 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "slots": {
+      "container.0": {
+        "components": {
+          "minecraft:item_model": "material/armor_energy_infusion_stone"
+        },
+        "predicates": {
+          "minecraft:custom_data": {
+            "id": "energy_infusion_stone"
+          }
+        }
+      }
+    }
+  }
+}

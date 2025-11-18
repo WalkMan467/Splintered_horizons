@@ -1,7 +1,6 @@
 ## June 2025
 ## CooledBeans
 ## 1.21.6
-say Player Graves loaded
 scoreboard objectives add mp.const dummy
 scoreboard objectives add mp.persist dummy
 scoreboard objectives add mp.temp dummy

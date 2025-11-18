@@ -3,7 +3,7 @@ execute if predicate system:forging_table/crafting/have_energy_infusion run retu
 
 tag @s add system.forging_table.crafted_item.energy_infusion.target
 
-execute as @n[distance=..3,predicate=system:forging_table/crafting/sword/general/energy_infusion,type=item] run function system:forging_table/crafting/sword/weapon_energy_infusion/get
+execute as @n[distance=..3,predicate=system:forging_table/crafting/sword/general/weapon_energy_infusion,type=item] run function system:forging_table/crafting/sword/weapon_energy_infusion/get
 
 data modify entity @s Motion[1] set value 0.375
 data modify entity @s PickupDelay set value 0s

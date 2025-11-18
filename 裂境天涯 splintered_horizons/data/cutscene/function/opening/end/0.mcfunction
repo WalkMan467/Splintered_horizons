@@ -15,6 +15,6 @@ playsound minecraft:voice.join_game voice @s ~ ~1 ~ 3 1
 
 stopsound @s voice minecraft:voice.in_world_area
 
-schedule function story:chapter_1/opening/1/0 6s
+schedule function story:chapter_1/ml/1/0 6s
 
 schedule function cutscene:opening/end/1 2s

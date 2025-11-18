@@ -50,6 +50,8 @@ scoreboard players set #story:icon/character/selena/story_1_6 global.main 0
 scoreboard players set #story:icon/story/chapter_1/scebe_1 global.main 0
 scoreboard players set #story:icon/story/chapter_1/scebe_2 global.main 0
 scoreboard players set #story:icon/story/chapter_1/scebe_3 global.main 0
+scoreboard players set story.chapter_1.ml.4 story.chapter_1 0
+
 scoreboard players set #story:icon/story/chapter_2/scebe_1 global.main 0
 scoreboard players set #story:icon/story/chapter_2/scebe_2 global.main 0
 scoreboard players set #story:icon/story/chapter_2/scebe_3 global.main 0

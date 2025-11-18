@@ -43,7 +43,7 @@ schedule clear cutscene:opening/end/use
 schedule clear cutscene:opening/6/2
 schedule clear cutscene:opening/1/0_1
 
-function story:chapter_1/opening/stop
+function story:chapter_1/ml/stop
 
 schedule clear cutscene:opening/main
 

@@ -1,3 +1,4 @@
+execute if score @s monster.skill.freeze matches 0.. run return 0
 
 # Skill 1
 execute as @s[tag=other.sun_of_the_abyssal_eclipse.1,type=husk] run function monsters:other/sun_of_the_abyssal_eclipse/1/main

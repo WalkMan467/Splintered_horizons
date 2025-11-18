@@ -1,4 +1,3 @@
-
 # Self
 execute as @s[tag=monsters.corroder,type=zombie] at @s run function monsters:chapter_3/corroder/main.self
 

@@ -60,10 +60,16 @@ scoreboard objectives add weapon.zeuss_lightning.hold_down dummy "宙斯閃電 �
 scoreboard objectives add weapon.zeuss_lightning.use dummy "宙斯閃電 使用"
 
 #===================================================================
-#宙斯閃電
+#虛空碎裂風暴複合弓
 
 scoreboard objectives add weapon.ethereal_shatterstorm_compound_bow.hold_down dummy "虛空碎裂風暴複合弓 長按"
 scoreboard objectives add weapon.ethereal_shatterstorm_compound_bow.use dummy "虛空碎裂風暴複合弓 使用"
+
+#===================================================================
+#寒霜之弓
+
+scoreboard objectives add weapon.frostbow.hold_down dummy "寒霜之弓 長按"
+scoreboard objectives add weapon.frostbow.use dummy "寒霜之弓 使用"
 
 #===================================================================
 

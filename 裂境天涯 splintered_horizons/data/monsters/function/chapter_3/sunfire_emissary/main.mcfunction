@@ -1,4 +1,3 @@
-
 # Skill 1
 execute as @s[tag=chapter_3.sunfire_emissary.1,type=husk] run function monsters:chapter_3/sunfire_emissary/1/main
 

@@ -1,6 +1,7 @@
 ## Clear and store this player's inventory and xp
 clear @s *[enchantments~[{"enchantments":"vanishing_curse"}]]
 execute if score #graves.lose_items mp.settings matches 1 run clear @s #m_graves:lost_items
+execute if score #graves.lose_items mp.settings matches 1 run clear @s *[custom_data~{lost_items:true} | custom_data~{lost_items:1b} | custom_data~{lost_items:1}]
 execute if score #graves.keep_xp mp.settings matches 0 run function m_graves:graves/store/experience
 execute if score #graves.keep_xp mp.settings matches 1 run data modify storage multipack:graves Xp set value 0
 data modify storage multipack:graves Items set from entity @s Inventory

@@ -1,17 +1,8 @@
 {
-  "description": [
-    {
-      "translate": "item.energy_infusion_stone",
-      "fallback": "Energy Infusion Stone"
-    },
-    {
-      "text": " - "
-    },
-    {
-      "translate": "item.energy_infusion_stone.destroyer",
-      "fallback": "Destroyer"
-    }
-  ],
+  "description": {
+    "translate": "item.energy_infusion_stone.destroyer",
+    "fallback": "Destroyer"
+  },
   "exclusive_set": "#items:energy_infusion_stone",
   "supported_items": "minecraft:air",
   "weight": 1,

@@ -1,0 +1,9 @@
+scoreboard players set story.chapter_1.ml.4 story.chapter_1 1
+
+advancement grant @s only story:icon/story/chapter_1/scebe_1
+advancement grant @s only story:icon/story/chapter_1
+
+function story:chapter_1/ml/stop
+
+
+schedule function story:chapter_1/ml/1/1 1s
