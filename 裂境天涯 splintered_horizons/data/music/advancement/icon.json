@@ -5,7 +5,7 @@
       "count": 1
     },
     "title": {
-      "translate": "soundCategory.music",
+      "translate": "story.icon.music",
       "bold": true,
       "italic": false,
       "underlined": true

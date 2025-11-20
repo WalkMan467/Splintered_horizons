@@ -1,0 +1,66 @@
+{
+  "description": {
+    "translate": "item.energy_infusion_stone.executioner",
+    "fallback": "Executioner"
+  },
+  "exclusive_set": "#items:energy_infusion_stone",
+  "supported_items": "minecraft:air",
+  "weight": 1,
+  "max_level": 3,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "attribute": "minecraft:attack_damage",
+        "id": "minecraft:weapon.energy_infusion_stone",
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 0.25,
+          "per_level_above_first": 0.25
+        },
+        "operation": "add_value"
+      },
+      {
+        "attribute": "minecraft:attack_speed",
+        "id": "minecraft:weapon.energy_infusion_stone",
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 0.2,
+          "per_level_above_first": 0.2
+        },
+        "operation": "add_value"
+      },
+      {
+        "attribute": "minecraft:movement_speed",
+        "id": "minecraft:weapon.energy_infusion_stone",
+        "amount": {
+          "type": "minecraft:linear",
+          "base": -0.1,
+          "per_level_above_first": -0.1
+        },
+        "operation": "add_multiplied_base"
+      },
+      {
+        "attribute": "minecraft:max_health",
+        "id": "minecraft:weapon.energy_infusion_stone",
+        "amount": {
+          "type": "minecraft:linear",
+          "base": -2,
+          "per_level_above_first": -2
+        },
+        "operation": "add_value"
+      }
+    ]
+  }
+}

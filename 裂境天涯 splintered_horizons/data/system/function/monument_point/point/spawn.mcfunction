@@ -1,3 +1,4 @@
 summon minecraft:marker 760 150.75 1020 {UUID:[I; 13,1,1,1],Tags:["system.monument_point.main","system.monument_point.point"]}
+summon minecraft:text_display 760 151.5 1020 {UUID:[I; 13,1,1,2],alignment: "center", background: 0, billboard: "vertical", brightness: {block: 15, sky: 15}, default_background: 0b, line_width: 200, see_through: 0b, shadow: 0b, text: {bold: 1b, fallback: "請將 魔劍(彩色邊框的紀念碑物品) 投擲到水池", translate: "tips.system.monument_point.3"}, text_opacity: -1b,transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [2.0f, 2.0f, 2.0f], translation: [0.0f, 0.0f, 0.0f]}}
 
 schedule function system:monument_point/main 1t

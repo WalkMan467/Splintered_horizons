@@ -9,6 +9,8 @@
 
 # ===================================================
 
+scoreboard players add @s armor.black_hole.boots.cd 0
+
 execute if predicate players:detect/input/sneak run scoreboard players add @s player.detect.sneak 1
 execute if score @s player.detect.sneak matches 1..3 unless predicate players:detect/input/sneak run function armors:detect/active_skills
 execute unless predicate players:detect/input/sneak run scoreboard players set @s player.detect.sneak 0

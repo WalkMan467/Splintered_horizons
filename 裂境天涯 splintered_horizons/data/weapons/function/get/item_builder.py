@@ -15,7 +15,7 @@ attribute = []
 
 name = ['寒霜之弓', "#00b2f8", '弓 / 史詩']
 story = {'info': ['來自 賽琳娜 舊世界的武器', '由記憶之樹的冰打造而成','能使周圍敵人冰凍','如同記憶般在此刻凝結不願消失'], 'color': 'blue'}
-item_data = {'real_item': 'bow', 'id': 'frostbow', 'item_model': '"minecraft:bow/frostbow/1"', 'custom_data': '{rc:1b,type:"bow",rarity:"epic",weapon:"frostbow"}', 'max_damage': 300, 'max_stack_size': 1, 'rc': False, 'other': ['minecraft:enchantments={"minecraft:mending":1}', 'tooltip_style="epic"']}
+item_data = {'real_item': 'bow', 'id': 'sagittarius', 'item_model': '"minecraft:bow/sagittarius/1"', 'custom_data': '{rc:1b,type:"bow",rarity:"epic",weapon:"sagittarius"}', 'max_damage': 300, 'max_stack_size': 1, 'rc': False, 'other': ['minecraft:enchantments={"minecraft:mending":1}', 'tooltip_style="epic"']}
 skill = {'is_skill': True, 'cd': 10, 'name': ['冰霜附魔', "#0061f3", '#00b2f8'], 'info': ['蓄力完成可以進入二階段蓄力', '當二階段蓄力完成時：','獲得【星空之霜】符文 (00:10)','並且箭矢將附帶冰凍效果','擊中地面與怪物將會引爆箭矢','使敵人技能中斷與無法冰凍 (00:05)']}
 passive_skills = {'is_passive_skills': False, 'cd': 0, 'name': ['吸收', '#0061f3', '#00b2f8'], 'info': ['當你破壞生怪磚時:', '使自身終焉之眼冷卻減少 5 秒']}
 ultimate = {'is_ultimate': False, 'cd': 0, 'name': ['災厄之火', '#7a0000', '#ff0000'], 'info': ['當你使用右鍵時:', '使【行星墜落】造成傷害變為真實傷害', '並且在該位置生成一片每秒造成 5 點燃燒傷害的區域', '持續 5 秒']}

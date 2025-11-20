@@ -1,5 +1,7 @@
 tp @s ~ ~ ~ ~1 0
 
+advancement grant @a[distance=..16] only system:monument_point/tips/main
+
 execute if entity @n[type=item,distance=..5,nbt={Item:{components: {"minecraft:custom_data": {monument:1b}}}}] at @n[tag=system.monument_point.point,type=marker] positioned ^ ^ ^4 run function system:monument_point/water/spawn
 execute if entity @n[type=item,distance=..5,nbt={Item:{components: {"minecraft:custom_data": {monument:2b}}}}] at @n[tag=system.monument_point.point,type=marker] positioned ^ ^ ^4 run function system:monument_point/grass/spawn
 

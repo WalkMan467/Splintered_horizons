@@ -1,0 +1,43 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:cobbled_deepslate"
+    },
+    "title": {
+      "translate": "story.chapter_1.sq.2.icon"
+    },
+    "description": [
+      {
+        "translate": "story.chapter_1.sq.2.icon.disc.1",
+        "color": "blue"
+      },
+      {
+        "translate": "story.chapter_1.sq.2.icon.disc.2",
+        "color": "blue"
+      },
+      {
+        "translate": "story.chapter_1.sq.2.icon.disc.3",
+        "color": "blue"
+      },
+      {
+        "translate": "story.chapter_1.sq.2.icon.disc.4",
+        "color": "blue"
+      }
+    ],
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "story:icon/story/chapter_1/sq/1/1",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "requirement"
+    ]
+  ]
+}

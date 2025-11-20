@@ -5,7 +5,8 @@
 execute if score @s player.detect.click_event.trigger matches 1 run function story:safe_area/click_event/1/run
 execute if score @s player.detect.click_event.trigger matches 2 run function story:safe_area/click_event/selena/1/run
 execute if score @s player.detect.click_event.trigger matches 3 run function system:shooting_contest/start
-execute if score @s player.detect.click_event.trigger matches 4 run function story:chapter_1/ml/4/trigger/1/run
+execute if score @s player.detect.click_event.trigger matches 4 run function story:chapter_1/sq/1/trigger/1/run
+execute if score @s player.detect.click_event.trigger matches 5 run function story:chapter_1/sq/1/trigger/2/run
 
 scoreboard players set @s player.detect.click_event.trigger 0
 scoreboard players enable @s player.detect.click_event.trigger

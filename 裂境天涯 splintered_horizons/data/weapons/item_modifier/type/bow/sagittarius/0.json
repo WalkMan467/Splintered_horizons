@@ -1,0 +1,9 @@
+[
+  {
+    "function": "minecraft:set_enchantments",
+    "add": false,
+    "enchantments": {
+      "weapons:type/bow/sagittarius/use": 0
+    }
+  }
+]

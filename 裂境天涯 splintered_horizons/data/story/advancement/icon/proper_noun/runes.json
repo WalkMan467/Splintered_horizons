@@ -1,0 +1,155 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:ender_eye",
+      "components": {
+        "minecraft:item_model": "resplendence"
+      },
+      "count": 1
+    },
+    "title": {
+      "translate": "story.icon.proper_noun.runes",
+      "bold": true,
+      "italic": false
+    },
+    "description": [
+      {
+        "translate": "tips.runes.1",
+        "with": [
+          {
+            "translate": "tips.runes.2",
+            "color": "dark_green",
+            "bold": false,
+            "italic": false,
+            "underlined": false
+          }
+        ],
+        "color": "blue",
+        "bold": false,
+        "italic": false,
+        "underlined": false
+      },
+      "\n",
+      {
+        "translate": "tips.runes.3",
+        "color": "blue"
+      },
+      " ",
+      {
+        "translate": "tips.runes.4",
+        "color": "green",
+        "bold": false,
+        "italic": false,
+        "underlined": true
+      },
+      "\n",
+      "\n",
+      {
+        "translate": "tips.runes.5",
+        "color": "blue",
+        "bold": false,
+        "italic": false,
+        "underlined": false
+      },
+      "\n",
+      {
+        "translate": "tips.runes.6",
+        "color": "blue",
+        "bold": false,
+        "italic": false,
+        "underlined": false
+      },
+      {
+        "translate": "tips.runes.7",
+        "color": "blue",
+        "bold": false,
+        "italic": false,
+        "underlined": false
+      },
+      "\n",
+      "\n",
+      {
+        "translate": "tips.runes.8",
+        "color": "blue",
+        "bold": false,
+        "italic": false,
+        "underlined": false
+      }
+    ],
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "story:icon/proper_noun/new_story",
+  "criteria": {
+    "sword": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "predicates": {
+              "minecraft:custom_data": {
+                "type": "sword"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "pickaxe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "predicates": {
+              "minecraft:custom_data": {
+                "type": "pickaxe"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "scythe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "predicates": {
+              "minecraft:custom_data": {
+                "type": "scythe"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "bow": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "predicates": {
+              "minecraft:custom_data": {
+                "type": "bow"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "sword",
+      "bow",
+      "pickaxe",
+      "scythe"
+    ]
+  ],
+  "rewards": {
+    "function": "players:tips/runes"
+  }
+}

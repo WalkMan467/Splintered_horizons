@@ -25,7 +25,7 @@ function monsters:detect_kill/loop
 
 ## ----- Monster Skill System ----- ##
 # Monster is about to cast a spell (1s warning)
-execute as @s[tag=monster,scores={monster.skill.cast.cd=30},tag=!hide_skill_tip] run function monsters:unlease_skill_tip
+execute as @s[tag=monster,tag=!hide_skill_tip] if score @s monster.skill.cast.cd matches 30 unless score @s monster.skill.freeze matches 0.. run function monsters:unlease_skill_tip
 
 # Monster skill cooldown
 execute unless entity @s[tag=freeze] unless score @s monster.skill.freeze matches 0.. if score @s monster.skill.cast.cd matches 0.. run scoreboard players remove @s monster.skill.cast.cd 1

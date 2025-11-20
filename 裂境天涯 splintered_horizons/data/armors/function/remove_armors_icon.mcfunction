@@ -6,6 +6,8 @@ advancement grant @s only armors:icon/icon
 
             advancement revoke @s only armors:icon/chestplate/tai_chis_shadow
         
+            advancement revoke @s only armors:icon/leggings/windriders_legplates
+        
         advancement grant @s only armors:icon/other
         
             advancement revoke @s only armors:icon/boots/swift_boots

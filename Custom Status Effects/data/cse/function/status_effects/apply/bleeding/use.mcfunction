@@ -4,6 +4,8 @@ $scoreboard players set @s cse.status_effects.bleeding.tr_max $(tick_rate)
 $scoreboard players set @s cse.status_effects.bleeding.dot $(dot)
 $scoreboard players set @s cse.status_effects.bleeding.dot_max $(max)
 
+advancement grant @s only players:tips/bleeding
+
 execute unless score @s cse.status_effects.bleeding.tr_max matches 1.. run scoreboard players set @s cse.status_effects.bleeding.tr_max 1
 execute unless score @s cse.status_effects.bleeding.dot matches 1.. run scoreboard players set @s cse.status_effects.bleeding.dot 1
 execute unless score @s cse.status_effects.bleeding.dot_max matches 1.. run scoreboard players set @s cse.status_effects.bleeding.dot_max 1

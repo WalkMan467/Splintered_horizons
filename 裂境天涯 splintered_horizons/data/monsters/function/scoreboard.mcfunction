@@ -15,7 +15,6 @@ scoreboard objectives add particle dummy
 
 scoreboard objectives add monster.abyss_soulcutter.effect dummy "深淵斷魂者流血狀態"
 scoreboard objectives add monster.abyss_soulcutter.effect.delay dummy "深淵斷魂者流血"
-scoreboard objectives add monster.abyss_soulcutter.damage.health.detect dummy "深淵斷魂者 偵測玩家血量"
 
 # ===============================================================================
 

@@ -2,7 +2,7 @@ advancement grant @s only story:icon/proper_noun/icon
 
     advancement grant @s only story:icon/proper_noun/old_story
 
-        advancement grant @s only story:icon/proper_noun/water_magic_sword
+        advancement grant @s only story:icon/proper_noun/aquilumera
 
         advancement grant @s only story:icon/proper_noun/magic_sword
 

@@ -1,3 +1,5 @@
+scoreboard players set #story:icon/proper_noun/runes global.main 1
+
 tellraw @s [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"font":"minecraft:default","text":"[","color":"white","bold":true},{"font":"minecraft:default","text":"📢","color":"blue","bold":false},{"font":"minecraft:default","text":"]","color":"white","bold":true},{"font":"minecraft:default","text":"\n"},{"font":"minecraft:default","text":"☞ ","color":"dark_gray"},{"font":"minecraft:default","translate":"tips.runes.1","fallback":"符文是地圖的","color":"white","with":[{"font":"minecraft:default","translate":"tips.runes.2","color":"dark_green","underlined":false}]}]
 tellraw @s [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"font":"minecraft:default","translate":"tips.runes.3","fallback":"每個符文都","color":"white"},{"font":"minecraft:default","translate":"tips.runes.4","fallback":"代表著一種來自異世界人們的力量與故事","color":"green","underlined":true}]
 tellraw @s [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"font":"minecraft:default","translate":"tips.runes.5","fallback":"有些武器能產生特定符文","color":"white"}]

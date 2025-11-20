@@ -3,6 +3,8 @@ execute in minecraft:overworld run tp @s 9999 131 10071 180 0
 setworldspawn 9999 131 10071
 
 function players:setup
+function story:chapter_1/sq/1/reset
+
 advancement revoke @a only players:new_player
 
 clear @s
@@ -30,8 +32,9 @@ scoreboard players add @a player.death_count 0
 function world_area:other/otherworld_portal/all_lock
 
 scoreboard players set story.chapter_2.in_safe_zone.ml story.chapter_2 0
-
+scoreboard players set #story:icon/proper_noun/great_old_ones global.main 0
 scoreboard players set #story:icon/proper_noun/eye_of_finality global.main 0
+scoreboard players set #story:icon/proper_noun/runes global.main 0
 scoreboard players set #story:icon/proper_noun/new_story global.main 0
 scoreboard players set #story:icon/character/sophia/icon global.main 0
 scoreboard players set #story:icon/character/sophia/story_1 global.main 0
@@ -47,10 +50,12 @@ scoreboard players set #story:icon/character/selena/story_1_4 global.main 0
 scoreboard players set #story:icon/character/selena/story_1_5 global.main 0
 scoreboard players set #story:icon/character/selena/story_1_6 global.main 0
 
+scoreboard players set #story:icon/story/chapter_1/sq/1/1 global.main 0
+
 scoreboard players set #story:icon/story/chapter_1/scebe_1 global.main 0
 scoreboard players set #story:icon/story/chapter_1/scebe_2 global.main 0
 scoreboard players set #story:icon/story/chapter_1/scebe_3 global.main 0
-scoreboard players set story.chapter_1.ml.4 story.chapter_1 0
+scoreboard players set story.chapter_1.sq.1 story.chapter_1 0
 
 scoreboard players set #story:icon/story/chapter_2/scebe_1 global.main 0
 scoreboard players set #story:icon/story/chapter_2/scebe_2 global.main 0
