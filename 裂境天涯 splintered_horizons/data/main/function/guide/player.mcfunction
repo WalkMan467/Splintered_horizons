@@ -1,3 +1,5 @@
+execute if score #game.start global.main matches 1.. run advancement grant @s only players:new_player
+
 # Spawners (Detect the Silver Fish location, then execute 'function monsters:summon/<monsters>' and remove the Silver Fish)
 execute as @e[type=silverfish,distance=..30,limit=10,sort=nearest] at @s run function spawner:main
 

@@ -55,7 +55,7 @@ stopsound @a record
 
 gamemode survival @a
 
-tp @a 9999 131 10071 180 0
+execute in minecraft:overworld run tp @a 9999 131 10071 180 0
 
 function cutscene:opening/remove_camera
 

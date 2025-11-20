@@ -5,7 +5,6 @@ setworldspawn 9999 131 10071
 function players:setup
 function story:chapter_1/sq/1/reset
 
-advancement revoke @a only players:new_player
 
 clear @s
 gamemode survival @a
@@ -30,6 +29,9 @@ scoreboard players reset WalkMan467 player.death_count
 scoreboard players add @a player.death_count 0
 
 function world_area:other/otherworld_portal/all_lock
+
+scoreboard players set #game.start global.main 0
+advancement revoke @a only players:new_player
 
 scoreboard players set story.chapter_2.in_safe_zone.ml story.chapter_2 0
 scoreboard players set #story:icon/proper_noun/great_old_ones global.main 0
