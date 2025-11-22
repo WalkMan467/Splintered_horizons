@@ -1,0 +1,79 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:can_break": [
+        {
+          "blocks": [
+            "minecraft:spawner",
+            "minecraft:shulker_box",
+            "minecraft:black_shulker_box",
+            "minecraft:blue_shulker_box",
+            "minecraft:brown_shulker_box",
+            "minecraft:cyan_shulker_box",
+            "minecraft:gray_shulker_box",
+            "minecraft:green_shulker_box",
+            "minecraft:light_blue_shulker_box",
+            "minecraft:light_gray_shulker_box",
+            "minecraft:lime_shulker_box",
+            "minecraft:magenta_shulker_box",
+            "minecraft:orange_shulker_box",
+            "minecraft:pink_shulker_box",
+            "minecraft:purple_shulker_box",
+            "minecraft:red_shulker_box",
+            "minecraft:white_shulker_box",
+            "minecraft:yellow_shulker_box"
+          ]
+        }
+      ],
+      "minecraft:tooltip_display": {
+        "hidden_components": [
+          "minecraft:can_break"
+        ]
+      }
+    }
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "translate": "item.canBreak",
+          "color": "dark_green",
+          "bold": false,
+          "italic": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "translate": "block.minecraft.spawner",
+          "color": "dark_green",
+          "bold": false,
+          "italic": false
+        },
+        {
+          "text": ", ",
+          "color": "dark_green",
+          "bold": false,
+          "italic": false
+        },
+        {
+          "translate": "block.minecraft.shulker_box",
+          "color": "dark_green",
+          "bold": false,
+          "italic": false
+        }
+      ]
+    ],
+    "mode": "insert",
+    "offset": 2
+  },
+  {
+    "function": "minecraft:set_custom_data",
+    "tag": {
+      "can_break": true
+    }
+  }
+]

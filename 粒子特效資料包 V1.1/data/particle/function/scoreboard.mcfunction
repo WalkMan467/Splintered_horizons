@@ -42,6 +42,10 @@ scoreboard objectives add particle.zeuss_lightning_wave dummy
 scoreboard players set 2 particle.zeuss_lightning_wave 2
 scoreboard players set 4 particle.zeuss_lightning_wave 4
 
+scoreboard objectives add particle.sagittarius_wave dummy
+scoreboard players set 2 particle.sagittarius_wave 2
+scoreboard players set 4 particle.sagittarius_wave 4
+
 scoreboard objectives add particle.void_wave dummy
 scoreboard players set 2 particle.void_wave 2
 scoreboard players set 4 particle.void_wave 4

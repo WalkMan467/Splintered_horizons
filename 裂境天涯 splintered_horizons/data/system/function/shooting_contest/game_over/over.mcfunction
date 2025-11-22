@@ -4,8 +4,13 @@ tellraw @a[distance=..10] [{"text":"[WalkMan467] ","color":"white"},{"text":"遊
 tellraw @a[distance=..10] ["",{"text":"恭喜獲得: "},{"score":{"name":"#system.shooting_contest.score","objective":"global.main"}},{"text":"分！"}]
 playsound minecraft:entity.player.levelup voice @a[distance=..10] 1042 152 -78 1 1
 
+# over 40
+execute if score #system.shooting_contest.sagittarius global.main matches 1.. if score #system.shooting_contest.score global.main matches 40.. run tellraw @a[tag=system.shooting_contest] ["送你 ",{"text":"1個","color":"light_purple"},{"translate":"weapon.sagittarius","color":"dark_aqua"},{"text":" ！","color":"white"}]
+execute if score #system.shooting_contest.sagittarius global.main matches 1.. if score #system.shooting_contest.score global.main matches 40.. as @a[tag=system.shooting_contest] run function weapons:get/bow/sagittarius
+execute if score #system.shooting_contest.sagittarius global.main matches 1.. if score #system.shooting_contest.score global.main matches 40.. run scoreboard players remove #system.shooting_contest.sagittarius global.main 1
+
 # over 20
-execute if score #system.shooting_contest.score global.main matches 20.. run tellraw @a[tag=system.shooting_contest] ["送你 ",{"text":"20個","color":"light_purple"},{"translate":"weapon.coin_s","color":"dark_purple"},{"text":" ！","color":"white"}]
+execute if score #system.shooting_contest.score global.main matches 20.. run tellraw @a[tag=system.shooting_contest] ["送你 ",{"text":"20個","color":"aqua"},{"translate":"weapon.coin_s","color":"dark_purple"},{"text":" ！","color":"white"}]
 execute if score #system.shooting_contest.score global.main matches 20.. as @a[tag=system.shooting_contest] run give @s minecraft:echo_shard[minecraft:item_name={bold:1b,color:"#EA00FF",italic:0b,translate:"weapon.coin_s"},minecraft:lore=[{color:"dark_gray",italic:0b,translate:"weapon.coin_s.type"},{color:"blue",italic:0b,translate:"weapon.coin_s.story.1"},{color:"blue",italic:0b,translate:"weapon.coin_s.story.2"},{color:"blue",italic:0b,translate:"weapon.coin_s.story.3"}],minecraft:attribute_modifiers=[{id:"base_attack_damage",type:"attack_damage",amount:0,operation:"add_value",slot:"mainhand"}],minecraft:max_stack_size=64,minecraft:unbreakable={},minecraft:item_model="coin/s",minecraft:custom_data="{type:\"item\",item:\"coin_s\"}",minecraft:tooltip_style="epic",minecraft:tooltip_display={hidden_components:["attribute_modifiers","unbreakable"]}] 20
 
 # player

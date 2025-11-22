@@ -18,7 +18,6 @@ execute if score @s weapon.sagittarius.hold_down matches 46 if items entity @s w
 execute if score @s weapon.sagittarius.hold_down matches 46 run particle sonic_boom ~ ~1 ~ 0 0 0 0 1 force @a
 execute if score @s weapon.sagittarius.hold_down matches 46 run playsound minecraft:entity.experience_orb.pickup voice @a ~ ~1 ~ 1 1
 execute if score @s weapon.sagittarius.hold_down matches 46 run function weapons:type/bow/sagittarius/rc/sfx
-execute if score @s weapon.sagittarius.hold_down matches 46 run function particle:ink_painting_expansion/use
 
 
 execute if score @s weapon.sagittarius.hold_down matches 46.. run function weapons:type/bow/sagittarius/rc/charged

@@ -19,6 +19,9 @@ function particle:ink_painting_expansion/main
 # 宙斯閃電波
 function particle:zeuss_lightning_wave/main
 
+# 射手座範圍特效
+function particle:sagittarius_wave/main
+
 # 虛空場域
 function particle:void_wave/main
 

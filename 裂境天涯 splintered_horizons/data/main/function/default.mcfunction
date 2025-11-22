@@ -33,6 +33,8 @@ function world_area:other/otherworld_portal/all_lock
 scoreboard players set #game.start global.main 0
 advancement revoke @a only players:new_player
 
+scoreboard players set #system.shooting_contest.sagittarius global.main 1
+
 scoreboard players set story.chapter_2.in_safe_zone.ml story.chapter_2 0
 scoreboard players set #story:icon/proper_noun/great_old_ones global.main 0
 scoreboard players set #story:icon/proper_noun/eye_of_finality global.main 0

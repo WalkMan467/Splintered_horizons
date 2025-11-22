@@ -1,0 +1,1 @@
+execute unless block ~ ~-0.5 ~ #air unless entity @s[tag=ground] run function particle:sagittarius_wave/fragments/in_ground

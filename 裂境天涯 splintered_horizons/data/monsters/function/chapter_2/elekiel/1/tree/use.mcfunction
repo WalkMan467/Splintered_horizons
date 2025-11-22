@@ -2,7 +2,7 @@ particle minecraft:explosion_emitter ~ ~1 ~ 0 0 0 0 1 force @a
 execute as @a at @s run playsound minecraft:block.vault.open_shutter voice @s ~ ~1 ~ 1 0.75
 execute as @a at @s run playsound minecraft:entity.generic.explode voice @s ~ ~1 ~ 1 0.75
 
-summon minecraft:block_display ~ ~ ~ {teleport_duration:2,glow_color_override:45336,Glowing:1b,start_interpolation:1,interpolation_duration: 5, Tags:["summon","monsters.elekiel.2.tree"],block_state: {Name: "minecraft:oak_sapling", Properties: {stage: "1"}}, brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 1.0f], translation: [-0.5f, 0.0f, -0.5f]}}
+summon minecraft:block_display ~ ~ ~ {teleport_duration:2,glow_color_override:45336,Glowing:1b,start_interpolation:1,interpolation_duration: 5, Tags:["summon","monsters.elekiel.2.tree"],block_state: {Name: "minecraft:air"}, brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 1.0f], translation: [-0.5f, 0.0f, -0.5f]}}
 
 execute as @e[tag=monsters.elekiel.2.tree,tag=summon,type=block_display] run data merge entity @s {transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [5.0f, 10.0f, 5.0f], translation: [-2.5f, 0.0f, -2.5f]}}
 execute as @e[tag=monsters.elekiel.2.tree,tag=summon,type=block_display] run scoreboard players set @s duration 100
