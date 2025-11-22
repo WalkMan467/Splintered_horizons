@@ -8,5 +8,9 @@ execute if score @s player.detect.click_event.trigger matches 3 run function sys
 execute if score @s player.detect.click_event.trigger matches 4 run function story:chapter_1/sq/1/trigger/1/run
 execute if score @s player.detect.click_event.trigger matches 5 run function story:chapter_1/sq/1/trigger/2/run
 
+
+execute if score @s player.detect.click_event.trigger matches 6 run function players:tp_to_spawnpoint/use
+execute if score @s player.detect.click_event.trigger matches 7 run function players:tp_to_safe_area/use
+
 scoreboard players set @s player.detect.click_event.trigger 0
 scoreboard players enable @s player.detect.click_event.trigger

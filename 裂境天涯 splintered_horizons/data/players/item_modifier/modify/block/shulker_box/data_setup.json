@@ -7,7 +7,7 @@
           "minecraft:can_place_on"
         ]
       },
-      "minecraft:can_place_on": []
+      "minecraft:can_place_on": {}
     }
   },
   {
@@ -22,8 +22,8 @@
           "italic": false
         },
         {
-          "translate": "block.any",
-          "fallback": "Any Block"
+          "translate": "block.any_block",
+          "fallback": "Any Blocks"
         }
       ]
     ],

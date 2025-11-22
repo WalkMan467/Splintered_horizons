@@ -1,3 +1,6 @@
+scoreboard players remove @a[scores={player.modify.data_setup.bow=1..}] player.modify.data_setup.bow 1
+scoreboard players remove @a[scores={player.modify.data_setup.pickaxe=1..}] player.modify.data_setup.pickaxe 1
+scoreboard players remove @a[scores={player.modify.data_setup.block.shulker_box=1..}] player.modify.data_setup.block.shulker_box 1
 scoreboard players remove @a[scores={player.hide=1..}] player.hide 1
 scoreboard players remove @a[scores={player.disable.movement=0..}] player.disable.movement 1
 scoreboard players remove @a[scores={player.animation.lock=1..}] player.animation.lock 1

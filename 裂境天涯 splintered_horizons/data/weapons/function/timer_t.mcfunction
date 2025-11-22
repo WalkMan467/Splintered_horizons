@@ -5,8 +5,6 @@ scoreboard players remove @a[scores={weapon.storm_sword.ultimate=0..}] weapon.st
 scoreboard players remove @a[scores={weapon.ruins_of_the_finality.effect.count.delay=1..}] weapon.ruins_of_the_finality.effect.count.delay 1
 scoreboard players remove @a[scores={weapon.ruins_of_the_finality.blade.animation=1..}] weapon.ruins_of_the_finality.blade.animation 1
 
-scoreboard players remove @a[scores={player.modify.data_setup.bow=1..}] player.modify.data_setup.bow 1
-scoreboard players remove @a[scores={player.modify.data_setup.pickaxe=1..}] player.modify.data_setup.pickaxe 1
 scoreboard players remove @a[scores={weapon.effect.resplendence=1..}] weapon.effect.resplendence 1
 scoreboard players remove @a[scores={weapon.effect.shadow=1..}] weapon.effect.shadow 1
 scoreboard players remove @a[scores={weapon.effect.chaotic_thunder=1..}] weapon.effect.chaotic_thunder 1
