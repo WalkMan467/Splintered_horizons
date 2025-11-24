@@ -17,16 +17,6 @@
         "type": "run_command",
         "command": "trigger player.detect.click_event.trigger set 6"
       }
-    },
-    {
-      "label": {
-        "translate": "dialog.main.quick_actions.teleport_to_safe_area",
-        "fallback": "Teleport to Safe area"
-      },
-      "action": {
-        "type": "run_command",
-        "command": "trigger player.detect.click_event.trigger set 7"
-      }
     }
   ]
 }

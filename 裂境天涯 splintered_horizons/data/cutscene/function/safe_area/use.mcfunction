@@ -3,6 +3,8 @@ tp @a 758 143 935
 title @a times 20 20 20
 title @a title {"text":"\uE000","font":"minecraft:screen"}
 
+execute as @a run function items:type/tp_book/rc/cancel
+
 stopsound @a record
 stopsound @a voice minecraft:voice.footsteps
 

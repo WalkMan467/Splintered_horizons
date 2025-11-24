@@ -25,6 +25,8 @@ scoreboard players set #monument.area_6 global.main 0
 scoreboard players set #monument.area_7 global.main 0
 scoreboard players set #monument.area_8 global.main 0
 
+scoreboard players set #in_safe_zone.ml global.main 0
+
 scoreboard players reset WalkMan467 player.death_count
 scoreboard players add @a player.death_count 0
 

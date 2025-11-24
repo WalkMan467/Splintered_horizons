@@ -2,6 +2,8 @@ scoreboard players add @s player.ultimate 0
 execute unless score @s player.ultimate matches ..0 run function weapons:ultimate_use_failed
 execute unless score @s player.ultimate matches ..0 run return 0
 
+scoreboard players operation @s player.finality_tunder.temp = @s player.finality_tunder
+
 schedule function weapons:type/axe/earthquake_axe/animation/main 1t
 
 scoreboard players set @s player.click.interval 20

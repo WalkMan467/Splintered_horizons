@@ -13,4 +13,6 @@ execute if score story.chapter_2.in_safe_zone.ml story.chapter_2 matches 1620 ru
 
 scoreboard players add story.chapter_2.in_safe_zone.ml story.chapter_2 1
 
+execute as @a run function items:type/tp_book/rc/cancel
+
 execute if score story.chapter_2.in_safe_zone.ml story.chapter_2 matches 1..1620 run schedule function story:chapter_2/in_safe_zone/1/1 1t

@@ -13,14 +13,14 @@
 attribute = []
 # ----- 設定參數 ----- #
 
-name = ['地震之斧', "#7a0000", '斧頭 / 神話']
-story = {'info': ['舊世界受到地震之力祝福的斧頭', '在它身上彷彿能感受到曾經的怒火'], 'color': 'blue'}
-item_data = {'real_item': 'iron_sword', 'id': 'earthquake_axe', 'item_model': '"minecraft:axe/earthquake_axe/1"', 'custom_data': '{rc:1b,type:"sword",rarity:"mythic",weapon:"earthquake_axe"}', 'max_damage': 300, 'max_stack_size': 1, 'rc': True, 'other': ['minecraft:enchantments={"minecraft:mending":1}', 'tooltip_style="mythic"', 'enchantment_glint_override=false']}
+name = ['地獄之火', "#7a0000", '劍 / 紀念碑物品']
+story = {'info': ['我還在想這把劍的技能設計', '所以說暫時沒技能'], 'color': 'blue'}
+item_data = {'real_item': 'iron_sword', 'id': 'pyrosolis', 'item_model': '"minecraft:sword/infernal_blaze/1"', 'custom_data': '{rc:1b,type:"sword",rarity:"monument",weapon:"pyrosolis",monument:3b,kept_items:true}', 'max_damage': 300, 'max_stack_size': 1, 'rc': True, 'other': ['minecraft:enchantments={"minecraft:mending":1}', 'tooltip_style="mythic"', 'enchantment_glint_override=false']}
 skill = {'is_skill': False, 'cd': 10, 'name': ['冰霜附魔', "#0061f3", '#00b2f8'], 'info': ['蓄力完成可以進入二階段蓄力', '當二階段蓄力完成時：','獲得【星空之霜】符文 (00:10)','並且箭矢將附帶冰凍效果','擊中地面與怪物將會引爆箭矢','使敵人技能中斷與無法冰凍 (00:05)']}
-passive_skills = {'is_passive_skills': True, 'cd': 4, 'name': ['大地崩裂', "#cfcfcf", "#727272"], 'info': ['當你攻擊命中時:', '使你獲得一層【終焉閃電】','並且在 2.5 範圍內怪物造成 150% 基礎傷害']}
-ultimate = {'is_ultimate': True, 'cd': 25, 'name': ['震天動地', '#7a0000', "#ff3a3a"], 'info': ['使用 [%s] 消耗一個終焉之眼:', '用地震之力的斧頭砸向地面使周圍敵人受到 250% 基礎傷害', '如果你擁有【終焉閃電】', '可以透過按下 [%s] 消耗一個【終焉閃電】','再次釋放該技能','並且每次提升 50% 基礎傷害倍率(最多疊加 5 層)','或者可以透過按下 [%s] 取消']}
-attribute.append({'attribute': 'attack_damage', 'value': 7.0, 'slot': 'mainhand', 'operation': 'add_value'})
-attribute.append({'attribute': 'attack_speed', 'value': -2.8, 'slot': 'mainhand', 'operation': 'add_value'})
+passive_skills = {'is_passive_skills': False, 'cd': 4, 'name': ['大地崩裂', "#cfcfcf", "#727272"], 'info': ['當你攻擊命中時:', '使你獲得一層【終焉閃電】','並且在 2.5 範圍內怪物造成 150% 基礎傷害']}
+ultimate = {'is_ultimate': False, 'cd': 25, 'name': ['震天動地', '#7a0000', "#ff3a3a"], 'info': ['使用 [%s] 消耗一個終焉之眼:', '用地震之力的斧頭砸向地面使周圍敵人受到 250% 基礎傷害', '如果你擁有【終焉閃電】', '可以透過按下 [%s] 消耗一個【終焉閃電】','再次釋放該技能','並且每次提升 50% 基礎傷害倍率(最多疊加 5 層)','或者可以透過按下 [%s] 取消']}
+attribute.append({'attribute': 'attack_damage', 'value': 5.0, 'slot': 'mainhand', 'operation': 'add_value'})
+attribute.append({'attribute': 'attack_speed', 'value': -2.4, 'slot': 'mainhand', 'operation': 'add_value'})
 
 # ----- init ----- #
 
