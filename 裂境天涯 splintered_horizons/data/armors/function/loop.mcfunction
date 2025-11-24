@@ -11,10 +11,6 @@
 
 scoreboard players add @s armor.black_hole.boots.cd 0
 
-execute if predicate players:detect/input/sneak run scoreboard players add @s player.detect.sneak 1
-execute if score @s player.detect.sneak matches 1..3 unless predicate players:detect/input/sneak run function armors:detect/active_skills
-execute unless predicate players:detect/input/sneak run scoreboard players set @s player.detect.sneak 0
-
 execute as @s[scores={armor.black_hole.boots.effect=1}] at @s positioned ~ ~-1 ~ run function armors:type/black_hole/boots/effect/use
 
 execute if items entity @s armor.feet *[custom_data~{black_hole:1b} | custom_data={black_hole:1}] run advancement grant @s only armors:type/black_hole/boots/eqipment

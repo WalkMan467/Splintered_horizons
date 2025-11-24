@@ -12,5 +12,6 @@ $data merge entity $(bone_3) {transformation: [-0.0259f,-0.0639f,0.9976f,0.2899f
 $data merge entity $(bone_8) {transformation: [-0.7608f,-0.0146f,0.6479f,-0.2346f,0.0614f,0.9936f,0.0947f,0.416f,-0.6445f,0.1119f,-0.7558f,-0.0545f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(bone_7) {transformation: [-0.7616f,0.4269f,0.4875f,-0.0972f,0.0615f,0.7965f,-0.6015f,0.6393f,-0.6451f,-0.4281f,-0.6329f,-0.1954f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(item_display_item_display) {transformation: [0f,0f,0f,-1.375f,0f,0f,0f,0.9375f,0f,0f,0f,0.9375f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+$data merge entity $(item_display_item_display1) {transformation: [0f,0f,0f,-0.3125f,0f,0f,0f,0.8281f,0f,0f,0f,0.3125f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(block_display_block_display) {transformation: [-1f,0f,0f,0f,0f,1f,0f,0f,0f,0f,-1f,0f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 data modify entity @s data merge value {"cameras":{"camera3":{"px":-1.3750000000000002,"py":0.9375,"pz":0.9374999999999998,"ry":222.70490254801206,"rx":10.079294881742507}},"locators":{}}

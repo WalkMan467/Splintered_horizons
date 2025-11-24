@@ -15,6 +15,8 @@
     "weapons:type/sword/morning_light",
     "armors:type/windriders_legplates/damage",
     "monsters:chapter_1/abyssal_soulreaper/effect/dot",
-    "weapons:type/sword/otherworld_star_effect"
+    "weapons:type/sword/otherworld_star_effect",
+    "weapons:type/axe/earthquake_axe/damage",
+    "weapons:type/axe/earthquake_axe/damage_effect"
   ]
 }

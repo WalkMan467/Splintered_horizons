@@ -18,9 +18,9 @@ execute positioned -2 65 22 if score story.chapter_1.sq.1 story.chapter_1 matche
 
 execute positioned -2 65 22 \
     if score story.chapter_1.sq.1 story.chapter_1 matches 5 \
-    if score #story:icon/story/chapter_1/4/page_1 global.main matches 1 \
-    if score #story:icon/story/chapter_1/4/page_2 global.main matches 1 \
-    if score #story:icon/story/chapter_1/4/page_3 global.main matches 1 run \
+    if score #story:icon/story/chapter_1/mq/4/page_1 global.main matches 1 \
+    if score #story:icon/story/chapter_1/mq/4/page_2 global.main matches 1 \
+    if score #story:icon/story/chapter_1/mq/4/page_3 global.main matches 1 run \
 tellraw @a[distance=..16] [{"font":"minecraft:default","text":"☞ ","color":"dark_gray"},{"translate": "story.chapter_1.sq.1.8","fallback": "【我找到一些書頁】","color":"dark_green","click_event":{action:"run_command",command:"/trigger player.detect.click_event.trigger set 5"}}]
 
 execute positioned -2 65 22 if score story.chapter_1.sq.1 story.chapter_1 matches 5 run tellraw @a[distance=..16] [{"text":""}]

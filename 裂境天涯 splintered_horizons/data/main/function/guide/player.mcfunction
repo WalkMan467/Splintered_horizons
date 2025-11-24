@@ -42,7 +42,7 @@ function weapons:monument/synchronize_data
 
 # Players
 function players:main
-function players:hide/false
+execute if score @s player.hide matches 1 run function players:hide/false
 function players:disable/movement/main
 function players:actionbar/main
 

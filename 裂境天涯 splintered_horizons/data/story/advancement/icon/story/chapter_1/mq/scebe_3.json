@@ -1,0 +1,47 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:iron_sword",
+      "components": {
+        "minecraft:item_model": "sword/light_of_water_mirror/1",
+        "minecraft:custom_model_data": {
+          "flags": [
+            true
+          ]
+        }
+      }
+    },
+    "title": {
+      "translate": "story.chapter_1.mq.3.icon"
+    },
+    "description": [
+      {
+        "translate": "story.chapter_1.mq.3.icon.disc.1",
+        "color": "blue"
+      },
+      {
+        "translate": "story.chapter_1.mq.3.icon.disc.2",
+        "color": "blue"
+      },
+      {
+        "translate": "story.chapter_1.mq.3.icon.disc.3",
+        "color": "blue"
+      }
+    ],
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "story:icon/story/chapter_1/mq/scebe_2",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "requirement"
+    ]
+  ]
+}

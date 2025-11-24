@@ -7,8 +7,11 @@ scoreboard players remove @a[scores={player.animation.lock=1..}] player.animatio
 scoreboard players remove @a[scores={player.disable.elytra_switch=1..}] player.disable.elytra_switch 1
 scoreboard players remove @a[scores={player.hurt_time=1..}] player.hurt_time 1
 scoreboard players remove @a[scores={player.actionbar.weapon.nightfall=1..}] player.actionbar.weapon.nightfall 1
+scoreboard players remove @a[scores={player.actionbar.weapon.earthquake_axe=1..}] player.actionbar.weapon.earthquake_axe 1
+scoreboard players remove @a[scores={player.actionbar.eye_of_finality=1..}] player.actionbar.eye_of_finality 1
 scoreboard players remove @a[scores={player.actionbar.weapon.spider=1..}] player.actionbar.weapon.spider 1
 scoreboard players remove @a[scores={player.give.item.delay=1..}] player.give.item.delay 1
+scoreboard players remove @a[scores={player.detect.sneak.delay=1..}] player.detect.sneak.delay 1
 scoreboard players remove @a[scores={player.actionbar.otherworld_portal.1=1..}] player.actionbar.otherworld_portal.1 1
 scoreboard players remove @a[scores={player.actionbar.otherworld_portal.2=1..}] player.actionbar.otherworld_portal.2 1
 scoreboard players remove @a[scores={player.actionbar.tree_of_world_memory.1=1..}] player.actionbar.tree_of_world_memory.1 1

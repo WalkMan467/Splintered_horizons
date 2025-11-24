@@ -6,6 +6,6 @@ scoreboard players set #story:icon/story/chapter_1/sq/1/title global.main 0
 scoreboard players set #story:icon/story/chapter_1/sq/1/1 global.main 0
 scoreboard players set #story:icon/story/chapter_1/sq/1/2 global.main 0
 
-scoreboard players set #story:icon/story/chapter_1/4/page_1 global.main 0
-scoreboard players set #story:icon/story/chapter_1/4/page_2 global.main 0
-scoreboard players set #story:icon/story/chapter_1/4/page_3 global.main 0
+scoreboard players set #story:icon/story/chapter_1/mq/4/page_1 global.main 0
+scoreboard players set #story:icon/story/chapter_1/mq/4/page_2 global.main 0
+scoreboard players set #story:icon/story/chapter_1/mq/4/page_3 global.main 0

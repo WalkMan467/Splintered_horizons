@@ -10,4 +10,4 @@ function monsters:chapter_3/sunfire_emissary/death/explosion/summon
 
 execute if score @s entity.dummy_mob matches 1.. run return 0
 execute as @a[distance=..5,gamemode=!spectator,gamemode=!creative] at @s run function players:effect/ignite/use {duration:8}
-execute as @a[distance=..5,gamemode=!spectator,gamemode=!creative] run damage @s 6 explosion by @n[tag=monsters.sunfire_emissary,type=husk,distance=..7]
+execute as @a[distance=..5,gamemode=!spectator,gamemode=!creative] run damage @s 7 explosion by @n[tag=monsters.sunfire_emissary,type=husk,distance=..7]

@@ -1,0 +1,1 @@
+scoreboard players set #game.start global.main 1

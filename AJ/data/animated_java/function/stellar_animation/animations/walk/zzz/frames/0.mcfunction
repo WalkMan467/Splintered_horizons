@@ -12,5 +12,6 @@ $data merge entity $(bone_3) {transformation: [-0.9811f,-0.1222f,-0.0305f,0.3456
 $data merge entity $(bone_8) {transformation: [-0.9988f,0.0029f,-0.0192f,-0.1287f,-0.0099f,0.7867f,0.6171f,0.4255f,0.0168f,0.6171f,-0.7855f,0.006f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(bone_7) {transformation: [-0.9988f,-0.0071f,-0.018f,-0.1312f,-0.0099f,0.9898f,0.1411f,0.7344f,0.0168f,0.1417f,-0.9889f,0.0312f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(item_display_item_display) {transformation: [0f,0f,0f,0f,0f,0f,0f,0f,0f,0f,0f,0f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+$data merge entity $(item_display_item_display1) {transformation: [0f,0f,0f,-0.3125f,0f,0f,0f,0.8281f,0f,0f,0f,0.3125f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(block_display_block_display) {transformation: [-1f,0f,0f,0f,0f,1f,0f,0f,0f,0f,-1f,0f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 data modify entity @s data merge value {"cameras":{"camera3":{"px":0,"py":0,"pz":0,"ry":0,"rx":0}},"locators":{}}

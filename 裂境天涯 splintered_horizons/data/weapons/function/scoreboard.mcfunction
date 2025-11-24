@@ -47,11 +47,17 @@ scoreboard players add @a weapon.otherworld_star.cd 0
 
 #===================================================================
 
-#狂風之劍
+#地震之斧
 
-scoreboard objectives add weapon.storm_sword.ultimate dummy "狂風之劍 大招"
+scoreboard objectives add weapon.earthquake_axe.cd dummy "地震之斧CD"
+scoreboard objectives add weapon.earthquake_axe.user.id dummy "地震之斧使用者 ID"
+scoreboard objectives add weapon.earthquake_axe.animation dummy "地震之斧動畫時長"
+scoreboard objectives add weapon.earthquake_axe.hit.sfx dummy "地震之斧命中音效"
+scoreboard objectives add weapon.earthquake_axe.effect.cd dummy "地震之斧 被動 CD"
 
-scoreboard players add @a weapon.storm_sword.ultimate 0
+scoreboard players add @a weapon.earthquake_axe.cd 0
+scoreboard players add @a weapon.earthquake_axe.animation 0
+scoreboard players add @a weapon.earthquake_axe.effect.cd 0
 
 #===================================================================
 #宙斯閃電

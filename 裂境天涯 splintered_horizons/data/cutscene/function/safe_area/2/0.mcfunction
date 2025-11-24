@@ -4,7 +4,7 @@ execute as 00000015-0000-0016-0000-001500000015 at @s run tp @s ~ ~ ~-0.5
 
 execute positioned 758 143 935 as @n[type=item_display,distance=..10,tag=aj.rainy_night.root] run function animated_java:rainy_night/remove/this
 
-execute positioned 759 144 946 facing 758.5 145.25 944.5 rotated ~ 0 run function animated_java:amysis/summon {args: {animation: 'cutscene_chapter_2_safe_zone_1', start_animation: true}}
+execute positioned 759 144 946 facing 758.5 145.25 944.5 rotated ~ 0 run function animated_java:isokla/summon {args: {animation: 'cutscene_chapter_2_1_safe_area_1', start_animation: true}}
 
 execute positioned 757 144 946 facing 758.5 145.25 944.5 rotated ~ 0 run function animated_java:elina/summon {args: {animation: 'idle', start_animation: true}}
 

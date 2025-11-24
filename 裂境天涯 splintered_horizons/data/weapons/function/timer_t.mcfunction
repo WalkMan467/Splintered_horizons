@@ -1,7 +1,9 @@
 scoreboard players remove @a[scores={player.click.interval=1..}] player.click.interval 1
 
 scoreboard players remove @a[scores={weapon.ruins_of_the_finality.effect.time=1..}] weapon.ruins_of_the_finality.effect.time 1
-scoreboard players remove @a[scores={weapon.storm_sword.ultimate=0..}] weapon.storm_sword.ultimate 1
+scoreboard players remove @a[scores={weapon.earthquake_axe.cd=1..}] weapon.earthquake_axe.cd 1
+scoreboard players remove @a[scores={weapon.earthquake_axe.effect.cd=1..}] weapon.earthquake_axe.effect.cd 1
+
 scoreboard players remove @a[scores={weapon.ruins_of_the_finality.effect.count.delay=1..}] weapon.ruins_of_the_finality.effect.count.delay 1
 scoreboard players remove @a[scores={weapon.ruins_of_the_finality.blade.animation=1..}] weapon.ruins_of_the_finality.blade.animation 1
 

@@ -1,7 +1,3 @@
-scoreboard players add #traps.chapter_2.chest traps.global.main 0
-scoreboard players add #traps.chapter_2.chest.actived traps.global.main 0
-
-execute unless score #traps.chapter_2.chest.actived traps.global.main matches 1.. run return 0
 execute unless score #difficulty global.main matches 1.. run return 0
 
 execute if biome ~ ~ ~ world_area:chapter_3/finalitys_embrace_rift_trap positioned 1101 206 148 as @a[distance=..20] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{location:{can_see_sky:0b}}} at @s run function traps:chapter_2/chest/1/true

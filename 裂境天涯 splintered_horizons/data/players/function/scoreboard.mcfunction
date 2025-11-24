@@ -7,6 +7,7 @@ scoreboard objectives add player.max_health dummy "[玩家] 最大血量"
 
 scoreboard objectives add player.hurt_time dummy "[玩家] 受傷時間"
 scoreboard objectives add player.ultimate dummy "[玩家] 終焉之眼CD"
+scoreboard objectives add player.finality_tunder dummy "[玩家] 終焉閃電層數"
 scoreboard objectives add player.give.item.delay dummy "[玩家] 給予玩家物品延遲"
 scoreboard objectives add player.leave_game minecraft.custom:minecraft.leave_game "[玩家] 離開遊戲"
 
@@ -15,12 +16,15 @@ scoreboard objectives add player.otherworld_key.count dummy "[玩家] 異界鑰�
 scoreboard objectives add player.death_count dummy [{"text":"💀","bold":true,"color":"red"},{"translate":"tips.player_death.3","bold":false,"color":"white"},{"text":"💀","bold":true,"color":"red"}]
 
 scoreboard players add @a player.ultimate 0
+scoreboard players add @a player.finality_tunder 0
 
 # ==================================================================================================
 
 # actionbar
 scoreboard objectives add player.actionbar.weapon.nightfall dummy "[玩家] actionbar 狀態機 夜幕技能顯示"
 scoreboard objectives add player.actionbar.weapon.spider dummy "[玩家] actionbar 狀態機 蜘蛛技能顯示"
+scoreboard objectives add player.actionbar.weapon.earthquake_axe dummy "[玩家] actionbar 狀態機 地震之斧"
+
 
 scoreboard objectives add player.actionbar.otherworld_portal.1 dummy "[玩家] actionbar 狀態機 異界之門提示"
 scoreboard objectives add player.actionbar.otherworld_portal.2 dummy "[玩家] actionbar 狀態機 異界之門提示(未擁有鑰匙)"
@@ -29,6 +33,10 @@ scoreboard objectives add player.actionbar.tree_of_world_memory.1 dummy "[玩家
 scoreboard objectives add player.actionbar.tree_of_world_memory.2 dummy "[玩家] actionbar 狀態機 世界記憶之樹提示2"
 
 scoreboard objectives add player.actionbar.system.forging_table.energy_infusion_failure dummy "[玩家] actionbar 狀態機 注能失敗提示"
+
+scoreboard objectives add player.actionbar.eye_of_finality dummy "[玩家] actionbar 狀態機 終焉之眼"
+
+scoreboard players add @a player.actionbar.eye_of_finality 0
 
 scoreboard players add @a player.actionbar.weapon.nightfall 0
 scoreboard players add @a player.actionbar.weapon.spider 0
@@ -86,6 +94,7 @@ scoreboard objectives add player.detect.click_event.trigger trigger "[玩家] �
 scoreboard objectives add player.detect.quick_actions.trigger trigger "[玩家] 快速動作事件觸發"
 scoreboard objectives add player.detect.tp.trigger trigger "[玩家] 傳送書觸發"
 scoreboard objectives add player.detect.sneak dummy "[玩家] 潛行偵測"
+scoreboard objectives add player.detect.sneak.delay dummy "[玩家] 潛行偵測延遲"
 scoreboard objectives add player.detect.is_bossfight dummy "[玩家] 是否處於BOSS戰"
 scoreboard objectives add player.detect.broken_spawner minecraft.mined:minecraft.spawner "[玩家] 破壞生怪磚"
 

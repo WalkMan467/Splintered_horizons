@@ -4,7 +4,7 @@ setworldspawn 9999 131 10071
 
 function players:setup
 function story:chapter_1/sq/1/reset
-
+function main:map_lobby/reset
 
 clear @s
 gamemode survival @a
@@ -31,6 +31,8 @@ scoreboard players add @a player.death_count 0
 function world_area:other/otherworld_portal/all_lock
 
 scoreboard players set #game.start global.main 0
+scoreboard players set #main.map_lobby.act global.main 1
+
 advancement revoke @a only players:new_player
 
 scoreboard players set #system.shooting_contest.sagittarius global.main 1
@@ -55,11 +57,11 @@ scoreboard players set #story:icon/character/selena/story_1_4 global.main 0
 scoreboard players set #story:icon/character/selena/story_1_5 global.main 0
 scoreboard players set #story:icon/character/selena/story_1_6 global.main 0
 
-scoreboard players set #story:icon/story/chapter_1/sq/1/1 global.main 0
+scoreboard players set #story:icon/story/chapter_1/mq/sq/1/1 global.main 0
 
-scoreboard players set #story:icon/story/chapter_1/scebe_1 global.main 0
-scoreboard players set #story:icon/story/chapter_1/scebe_2 global.main 0
-scoreboard players set #story:icon/story/chapter_1/scebe_3 global.main 0
+scoreboard players set #story:icon/story/chapter_1/mq/scebe_1 global.main 0
+scoreboard players set #story:icon/story/chapter_1/mq/scebe_2 global.main 0
+scoreboard players set #story:icon/story/chapter_1/mq/scebe_3 global.main 0
 scoreboard players set story.chapter_1.sq.1 story.chapter_1 0
 
 scoreboard players set #story:icon/story/chapter_2/scebe_1 global.main 0
