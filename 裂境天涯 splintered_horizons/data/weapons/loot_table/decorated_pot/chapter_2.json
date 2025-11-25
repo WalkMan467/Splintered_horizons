@@ -13,7 +13,7 @@
             {
               "type": "minecraft:loot_table",
               "value": "weapons:get/drop/hook",
-              "weight": 50,
+              "weight": 25,
               "quality": 10,
               "functions": [
                 {
@@ -43,7 +43,7 @@
             {
               "type": "minecraft:loot_table",
               "value": "weapons:get/arrow/explosion_arrow",
-              "weight": 40,
+              "weight": 20,
               "quality": 10,
               "functions": [
                 {
@@ -58,7 +58,7 @@
             {
               "type": "minecraft:item",
               "name": "minecraft:arrow",
-              "weight": 40,
+              "weight": 20,
               "quality": 10,
               "functions": [
                 {

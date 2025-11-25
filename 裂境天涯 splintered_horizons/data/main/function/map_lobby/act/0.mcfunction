@@ -17,7 +17,7 @@ execute as @a if dimension world_area:main/game_lobby if score #main.map_lobby.a
 execute as @a if dimension world_area:main/game_lobby if score #main.map_lobby.act global.main matches 17 run tellraw @s {"translate": "main.start.text.17","fallback": ""}
 execute as @a if dimension world_area:main/game_lobby if score #main.map_lobby.act global.main matches 18 run tellraw @s {"translate": "main.start.text.18","fallback": ""}
 
-execute if score #main.map_lobby.act global.main matches 19 run function main:map_lobby/act/start
+execute if score #main.map_lobby.act global.main matches 19 run schedule function main:map_lobby/act/title/0 1t
 execute if score #main.map_lobby.act global.main matches 19 as 00000079-0000-0018-0000-000200000209 on passengers run kill @s
 execute if score #main.map_lobby.act global.main matches 19 run kill 00000079-0000-0018-0000-000200000209
 

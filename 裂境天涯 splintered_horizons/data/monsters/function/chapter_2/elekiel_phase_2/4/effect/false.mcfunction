@@ -1,6 +1,6 @@
 advancement revoke @s only monsters:chapter_2/elekiel_phase_2/4/effect/true
 
-function players:inventory/return {bag:"monsters/elekiel_phase_2/4/effect/void"}
+function monsters:chapter_2/elekiel_phase_2/4/effect/disable_inventory/false
 
 effect clear @s invisibility
 effect clear @s glowing
@@ -10,7 +10,6 @@ effect clear @s darkness
 
 scoreboard players reset @s monster.elekiel_phase_2.skill.4.effect.void
 
-item replace entity @s armor.chest with air
 
 attribute @s attack_damage modifier remove monster.elekiel_phase_2.skill.4.effect.void
 attribute @s attack_knockback modifier remove monster.elekiel_phase_2.skill.4.effect.void

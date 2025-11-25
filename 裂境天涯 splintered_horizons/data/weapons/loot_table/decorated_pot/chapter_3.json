@@ -13,14 +13,14 @@
             {
               "type": "minecraft:loot_table",
               "value": "weapons:get/drop/broken_glass",
-              "weight": 70,
+              "weight": 35,
               "quality": 10,
               "functions": [
                 {
                   "function": "minecraft:set_count",
                   "count": {
                     "min": 3,
-                    "max": 7
+                    "max": 5
                   }
                 }
               ]
@@ -28,7 +28,7 @@
             {
               "type": "minecraft:loot_table",
               "value": "weapons:get/arrow/explosion_arrow",
-              "weight": 40,
+              "weight": 20,
               "quality": 10,
               "functions": [
                 {
@@ -43,7 +43,7 @@
             {
               "type": "minecraft:loot_table",
               "value": "weapons:get/drop/zeuss_lightning",
-              "weight": 50,
+              "weight": 25,
               "quality": 25,
               "functions": [
                 {
@@ -58,7 +58,7 @@
             {
               "type": "minecraft:loot_table",
               "value": "weapons:get/drop/hook",
-              "weight": 40,
+              "weight": 20,
               "quality": 10,
               "functions": [
                 {
@@ -70,7 +70,7 @@
             {
               "type": "minecraft:item",
               "name": "minecraft:arrow",
-              "weight": 35,
+              "weight": 20,
               "quality": 10,
               "functions": [
                 {

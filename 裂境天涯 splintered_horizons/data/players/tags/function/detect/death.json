@@ -1,6 +1,7 @@
 {
     "values": [
       "monsters:bossfight/chapter_2/elekiel/player_death",
+      "monsters:chapter_2/elekiel_phase_2/4/effect/false",
       "monsters:bossfight/chapter_2/elekiel_phase_2/player_death",
       "particle:portal/crack/tp/remove",
       "players:stop_animation",

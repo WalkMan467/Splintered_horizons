@@ -60,7 +60,7 @@ scoreboard players set #story:icon/character/selena/story_1_5 global.main 0
 scoreboard players set #story:icon/character/selena/story_1_6 global.main 0
 
 scoreboard players set #story:icon/story/chapter_1/mq/sq/1/1 global.main 0
-
+scoreboard players set #story:icon/story/chapter_1/mq/title global.main 0
 scoreboard players set #story:icon/story/chapter_1/mq/scebe_1 global.main 0
 scoreboard players set #story:icon/story/chapter_1/mq/scebe_2 global.main 0
 scoreboard players set #story:icon/story/chapter_1/mq/scebe_3 global.main 0

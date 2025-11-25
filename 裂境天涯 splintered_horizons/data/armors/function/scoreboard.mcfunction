@@ -20,6 +20,12 @@ scoreboard objectives add armor.windriders_legplates.cd dummy "馭風戰騎腿�
 scoreboard objectives add armor.radiant_guardians_helmet.cd dummy "耀光守護頭盔 CD"
 scoreboard objectives add armor.radiant_guardians_helmet.effect.cd dummy "耀光守護頭盔被動 CD"
 
+scoreboard objectives add armor.animation_skills.helmet.cd dummy "頭盔 特殊動畫技能 CD"
+scoreboard objectives add armor.animation_skills.chestplate.cd dummy "盔甲 特殊動畫技能 CD"
+scoreboard objectives add armor.animation_skills.legs.cd dummy "護腿 特殊動畫技能 CD"
+scoreboard objectives add armor.animation_skills.feet.cd dummy "鞋子 特殊動畫技能 CD"
+
+scoreboard objectives add armor.animation_skills.return dummy "鞋子 特殊動畫技能 Return 回傳結果"
 
 scoreboard objectives add armor.finality_chestplate.effect.timer dummy "終焉之鎧 攻擊力提升計時器"
 
