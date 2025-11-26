@@ -1,5 +1,7 @@
 execute in minecraft:overworld run tp @s 9999 131 10071 180 0
 
+gamerule send_command_feedback false
+
 setworldspawn 9999 131 10071
 
 function players:setup

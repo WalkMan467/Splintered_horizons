@@ -11,6 +11,7 @@
 
 scoreboard players remove @a[scores={armor.black_hole.boots.effect=1..}] armor.black_hole.boots.effect 1
 scoreboard players remove @a[scores={armor.radiant_guardians_helmet.effect.cd=1..}] armor.radiant_guardians_helmet.effect.cd 1
+scoreboard players remove @a[scores={armor.resilient.cd=1..}] armor.resilient.cd 1
 
 scoreboard players remove @a[scores={armor.helmet.effect.actived=1..}] armor.helmet.effect.actived 1
 scoreboard players remove @a[scores={armor.chestplate.effect.actived=1..}] armor.chestplate.effect.actived 1

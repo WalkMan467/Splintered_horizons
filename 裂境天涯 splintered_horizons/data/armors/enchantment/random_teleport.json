@@ -1,7 +1,7 @@
 {
   "anvil_cost": 0,
   "description": {
-    "translate": "armor.random_teleport"
+    "translate": "armor.enchantment.random_teleport"
   },
   "effects": {
     "minecraft:tick": [
