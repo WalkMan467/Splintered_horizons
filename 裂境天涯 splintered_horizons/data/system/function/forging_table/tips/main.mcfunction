@@ -5,3 +5,6 @@ tellraw @s [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"font":"mine
 tellraw @s [{"text":""}]
 tellraw @s [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"font":"minecraft:default","translate":"tips.system.forging_table.8","fallback":"合成之後的武器與裝備將繼承所有鍛造材料的注能與原版附魔","color":"yellow","underlined": false}]
 tellraw @s [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"font":"minecraft:default","translate":"tips.system.forging_table.9","fallback":"所以路程收集到的附魔武器與裝備合成之後將使你變得更強大","color":"yellow","underlined": true}]
+tellraw @s [{"text":""}]
+
+tellraw @s {"translate":"tips.system.forging_table.10","fallback":"【查看合成配方】","bold":true,"color":"dark_green","click_event":{"action":"run_command","command":"/trigger player.detect.click_event.trigger set 8"}}

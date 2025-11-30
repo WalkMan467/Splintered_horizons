@@ -11,6 +11,8 @@ function monsters:chapter_1/explosion_arrow_skeleton/main
 function monsters:chapter_3/corroder/main
 function monsters:chapter_3/sunfire_emissary/main
 function monsters:chapter_3/emissary_of_the_temporal_rift/main
+function monsters:chapter_3/bloody_blade_spider/main
+
 function monsters:other/abyss_crystal/main
 function monsters:other/sun_of_the_abyssal_eclipse/main
 

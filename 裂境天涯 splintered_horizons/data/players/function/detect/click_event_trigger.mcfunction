@@ -12,5 +12,7 @@ execute if score @s player.detect.click_event.trigger matches 5 run function sto
 execute if score @s player.detect.click_event.trigger matches 6 run function players:tp_to_spawnpoint/use
 execute if score @s player.detect.click_event.trigger matches 7 run function players:tp_to_safe_area/use
 
+execute if score @s player.detect.click_event.trigger matches 8 run function system:forging_table/act/crafting
+
 scoreboard players set @s player.detect.click_event.trigger 0
 scoreboard players enable @s player.detect.click_event.trigger

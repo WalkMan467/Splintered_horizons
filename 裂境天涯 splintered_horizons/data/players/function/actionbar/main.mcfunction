@@ -22,6 +22,9 @@ execute as @s[gamemode=!spectator] if score @s player.actionbar.weapon.spider ma
 execute as @s[gamemode=!spectator] if score @s player.actionbar.otherworld_portal.2 matches 1.. run function players:actionbar/otherworld_portal_2
 execute as @s[gamemode=!spectator] if score @s player.actionbar.otherworld_portal.2 matches 1.. run return 0
 
+execute as @s[gamemode=!spectator] if score @s player.actionbar.otherworld_portal.1 matches 1.. run function players:actionbar/otherworld_portal_1
+execute as @s[gamemode=!spectator] if score @s player.actionbar.otherworld_portal.1 matches 1.. run return 0
+
 execute as @s[gamemode=!spectator] if score @s player.actionbar.tree_of_world_memory.2 matches 1.. run function players:actionbar/tree_of_world_memory_2
 execute as @s[gamemode=!spectator] if score @s player.actionbar.tree_of_world_memory.2 matches 1.. run return 0
 

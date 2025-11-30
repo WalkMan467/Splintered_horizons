@@ -15,9 +15,9 @@ attribute = []
 
 name = ['Boots of the Black Hole', 'dark_purple', 'Boots']
 story = {'info': ['The old world has fallen,', 'and a new world shrouded in darkness has arrived.', 'The long boots born from the massive black hole', 'in the broken city absorb the energy of the black hole.'], 'color': 'blue'}
-item_data = {'real_item': 'bundle', 'id': 'black_hole_boots', 'item_model': '"equipment/black_hole_boots"', 'custom_data': '{active_skills:1b,animation:1b,black_hole:1b,type:"armor",rarity:"epic"}', 'max_damage': -1, 'max_stack_size': 1 , 'other': ['tooltip_style="epic"', 'tooltip_display={hidden_components:["dyed_color"]}', 'dyed_color=16187647','equippable={slot:"feet",equip_sound:"item.armor.equip_leather",asset_id:"leather"}']}
+item_data = {'real_item': 'bundle', 'id': 'black_hole_boots', 'item_model': '"equipment/black_hole_boots"', 'custom_data': '{active_skills:1b,animation:1b,black_hole:1b,type:"armor",rarity:"epic"}', 'max_damage': -1, 'max_stack_size': 1, 'other': ['tooltip_style="epic"', 'tooltip_display={hidden_components:["dyed_color"]}', 'dyed_color=16187647', 'equippable={slot:"feet",equip_sound:"item.armor.equip_leather",asset_id:"leather"}']}
 skill = {'is_skill': True, 'cd': 30, 'name': ['Phase Black Hole', 'dark_aqua', '#00ccff'], 'info': ['Kills grant a charge.', 'Rapidly pressing [%s]', 'consumes 10 charges and creates a black hole.']}
-passive_skills = {'is_passive_skills': False, 'cd': 0, 'name': ['微光', "#ffea75", "#f8de48"], 'info': ['每過 5 秒立即放置一個火把在腳下', '並且消耗一個火把']}
+passive_skills = {'is_passive_skills': False, 'cd': 0, 'name': ['微光', '#ffea75', '#f8de48'], 'info': ['每過 5 秒立即放置一個火把在腳下', '並且消耗一個火把']}
 ultimate = {'is_ultimate': False, 'cd': 0, 'name': ['終焉之月', 'dark_aqua', '#00ccff'], 'info': ['右鍵點擊消耗一個終焉之眼，', '開啟【終焉之月】型態持續 15 秒', '大幅強化武器，', '此形態下如果攻擊會有25%機率造成大量傷害']}
 attribute.append({'attribute': 'armor', 'value': 2, 'slot': 'feet', 'operation': 'add_value'})
 

@@ -23,6 +23,9 @@
     "#minecraft:bypasses_armor",
     "#minecraft:bypasses_cooldown",
     "weapons:type/axe/earthquake_axe/damage",
-    "weapons:type/axe/earthquake_axe/damage_effect"
+    "weapons:type/axe/earthquake_axe/damage_effect",
+    "monsters:chapter_3/bloody_blade_spider/dot",
+    "monsters:chapter_2/elekiel/1/space_crack",
+    "monsters:chapter_1/abyssal_soulreaper/effect/dot"
   ]
 }

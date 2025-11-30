@@ -1,6 +1,7 @@
 function story:chapter_1/mq/1/main
 function story:chapter_1/mq/2/main
 function story:chapter_1/mq/3/main
+function story:chapter_1/mq/4/main
 function story:chapter_1/sq/1/main
 
 function story:chapter_2/in_safe_zone/1/main

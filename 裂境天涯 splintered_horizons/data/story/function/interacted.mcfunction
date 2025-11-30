@@ -1,11 +1,13 @@
 # General Interaction Feedback
 
-
+# Main Quest
 execute as 00000001-0000-0015-0000-003300000005 at @s if data entity @s interaction.timestamp if score story.chapter_1.mq.1 story.chapter_1 matches 1..44 run function story:chapter_1/mq/1/1
-execute as 00000002-0000-0139-0000-00370000000b at @s if data entity @s interaction.timestamp if score story.chapter_1.mq.3 story.chapter_1 matches 1..28 run function story:chapter_1/mq/3/1
 execute as 00000016-0000-0139-0000-00370000000b at @s if data entity @s interaction.timestamp if score story.chapter_1.mq.2 story.chapter_1 matches 1..28 run function story:chapter_1/mq/2/1
-execute as 00000002-0000-0139-0000-003700000033 at @s if data entity @s interaction.timestamp if score story.chapter_1.sq.1 story.chapter_1 matches 1..13 run function story:chapter_1/sq/1/1
+execute as 00000002-0000-0139-0000-00370000000b at @s if data entity @s interaction.timestamp if score story.chapter_1.mq.3 story.chapter_1 matches 1..28 run function story:chapter_1/mq/3/1
+execute as 00000002-0000-01ff-0000-02270000000b at @s if data entity @s interaction.timestamp if score story.chapter_1.mq.4 story.chapter_1 matches 1..6 run function story:chapter_1/mq/4/1
 
+# Side Quests
+execute as 00000002-0000-0139-0000-003700000033 at @s if data entity @s interaction.timestamp if score story.chapter_1.sq.1 story.chapter_1 matches 1..13 run function story:chapter_1/sq/1/1
 
 # Chapter 2
 execute as 00000016-0000-0015-0000-003300000005 at @s if data entity @s interaction.timestamp if score story.chapter_2.ml.1 story.chapter_2 matches 1..7 run function story:chapter_2/ml/1/1

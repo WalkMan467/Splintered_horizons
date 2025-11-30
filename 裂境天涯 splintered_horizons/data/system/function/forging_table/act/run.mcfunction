@@ -7,15 +7,6 @@ execute on target run tellraw @s [{"font":"minecraft:space","text":"\ue003\ue002
 execute on target run tellraw @s [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"font":"minecraft:default","translate":"tips.system.forging_table.9","fallback":"所以路程收集到的附魔武器與裝備合成之後將使你變得更強大","color":"yellow","underlined": true}]
 execute on target run tellraw @s [{"text":"\n"}]
 
-execute on target run tellraw @s [{"font":"minecraft:default","translate":"tips.system.forging_table.crafting.title","fallback":"目前可以合成的配方:","color":"white"},{"text":"\n"}]
-execute on target run tellraw @s [{"translate":"weapon.wind_sword","color":"dark_aqua","italic":false,"bold":true}]
-execute on target run tellraw @s [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"translate":"item.dust_of_the_wind","color":"dark_green","italic":false,"font": "minecraft:default"},{"text": "*3","font": "minecraft:default"}]
-execute on target run tellraw @s [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"translate":"item.minecraft.stone_sword","color":"white","italic":false,"font": "minecraft:default"},{"text": "*1","font": "minecraft:default"}]
-
-execute on target run tellraw @s [{"text":"\n"}]
-
-execute on target run tellraw @s [{"translate":"weapon.nightfall","color":"#b30000","italic":false,"bold":true}]
-execute on target run tellraw @s [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"translate":"item.moonlight_star","color":"dark_purple","italic":false,"font": "minecraft:default"},{"text": "*5","font": "minecraft:default"}]
-execute on target run tellraw @s [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"translate":"item.minecraft.stone_sword","color":"white","italic":false,"font": "minecraft:default"},{"text": "*1","font": "minecraft:default"}]
+execute on target run tellraw @s {"translate":"tips.system.forging_table.10","fallback":"【查看合成配方】","bold":true,"color":"dark_green","click_event":{"action":"run_command","command":"/trigger player.detect.click_event.trigger set 8"}}
 
 data remove entity @s interaction

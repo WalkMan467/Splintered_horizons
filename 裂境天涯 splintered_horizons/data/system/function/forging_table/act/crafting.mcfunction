@@ -1,0 +1,26 @@
+tellraw @s [{"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}]
+
+tellraw @s [{"font":"minecraft:default","translate":"tips.system.forging_table.crafting.title","fallback":"目前可以合成的配方:","color":"white"},{"text":"\n"}]
+tellraw @s [{"translate":"weapon.wind_sword","color":"dark_aqua","italic":false,"bold":true}]
+tellraw @s [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"translate":"item.dust_of_the_wind","color":"dark_green","italic":false,"font": "minecraft:default"},{"text": "*3","font": "minecraft:default"}]
+tellraw @s [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"translate":"item.minecraft.stone_sword","color":"white","italic":false,"font": "minecraft:default"},{"text": "*1","font": "minecraft:default"}]
+
+tellraw @s [{"text":"\n"}]
+
+tellraw @s [{"translate":"weapon.nightfall","color":"#b30000","italic":false,"bold":true}]
+tellraw @s [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"translate":"item.moonlight_star","color":"dark_purple","italic":false,"font": "minecraft:default"},{"text": "*5","font": "minecraft:default"}]
+tellraw @s [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"translate":"item.minecraft.stone_sword","color":"white","italic":false,"font": "minecraft:default"},{"text": "*1","font": "minecraft:default"}]
+
+tellraw @s [{"text":"\n"}]
+
+tellraw @s [{"translate":"weapon.twilight_wind","color":"dark_aqua","italic":false,"bold":true}]
+tellraw @s [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"translate":"item.dust_of_the_wind","color":"dark_green","italic":false,"font": "minecraft:default"},{"text": "*6","font": "minecraft:default"}]
+tellraw @s [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"translate":"item.minecraft.stone_sword","color":"white","italic":false,"font": "minecraft:default"},{"text": "*1","font": "minecraft:default"}]
+
+tellraw @s [{"text":"\n"}]
+
+tellraw @s [{"translate":"weapon.morning_light","color":"#ffd000","italic":false,"bold":true}]
+tellraw @s [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"translate":"item.holy_light_iron_ingot","color":"#ffd000","italic":false,"font": "minecraft:default"},{"text": "*5","font": "minecraft:default"}]
+tellraw @s [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"translate":"item.minecraft.stone_sword","color":"white","italic":false,"font": "minecraft:default"},{"text": "*1","font": "minecraft:default"}]
+
+data remove entity @s interaction
