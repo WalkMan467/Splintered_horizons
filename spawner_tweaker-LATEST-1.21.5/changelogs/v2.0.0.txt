@@ -1,7 +1,7 @@
 Improvements from the previous version (Tweaker 1.0/LEGACY):
 
 Features:
--Multiple players may now use the system at once (previously, only 1 player could tweak at a time)
+-Multiple players may now use the sys at once (previously, only 1 player could tweak at a time)
 -You may now edit multiple spawners at a time if you sneak while selecting new spawners
 -Added a trigger to enable/disable tweaker
 -Added a trigger to enable/disable block piercing for the raycast
@@ -19,9 +19,9 @@ Features:
 -Added a trigger to highlight loaded spawners for a time
 
 QOL:
--All systems now detect holding down the sneak key rather than if the player is crouched
+-All syss now detect holding down the sneak key rather than if the player is crouched
 -You will no longer select or reselect spawners when crouching
--Reworked the priming system to be more reliable
+-Reworked the priming sys to be more reliable
 -Tweaker will show the new toggle trigger to anyone that enters creative mode
 -Improved the title display so that the only units showing are seconds
 -Modifying delay preserves the ratio of the min and max
@@ -36,5 +36,5 @@ Bugs:
 -Fixed a bug where placing a spawner while sneaking sometimes selected it
 -Slightly improved display precision
 -Fixed a bug where increasing block light from "-" then removing it did not reset the spawn rule
--Added multiple failsafes to the spawner priming system, including a timeout system
+-Added multiple failsafes to the spawner priming sys, including a timeout sys
 -Through great effort, prevented the spawner names from inbeedring

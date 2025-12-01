@@ -1,0 +1,12 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "slots": {
+      "container.0": {
+        "item": "minecraft:leather_helmet",
+        "count": 1
+      }
+    }
+  }
+}

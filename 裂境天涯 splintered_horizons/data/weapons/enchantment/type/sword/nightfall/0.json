@@ -2,7 +2,7 @@
   "description": {
     "translate": "weapon.enchantment.nightfall.0"
   },
-  "supported_items": "minecraft:air",
+  "supported_item": "minecraft:air",
   "weight": 1,
   "max_level": 1,
   "min_cost": {

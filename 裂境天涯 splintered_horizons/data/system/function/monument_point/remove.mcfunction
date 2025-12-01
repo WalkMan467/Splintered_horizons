@@ -1,1 +1,0 @@
-kill @e[tag=system.monument_point.sword]

@@ -33,7 +33,7 @@
     "requirement": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
-        "items": [
+        "item": [
           {
             "predicates": {
               "minecraft:custom_data": {

@@ -1,4 +1,4 @@
-## Players leave graves containing their items and xp on death.
+## Players leave graves containing their item and xp on death.
 execute unless score #graves.version mp.settings matches -2147483648..2147483647 run scoreboard players set #graves.version mp.settings 10300000
 scoreboard objectives add mp.death deathCount
 scoreboard objectives add mp.graves dummy

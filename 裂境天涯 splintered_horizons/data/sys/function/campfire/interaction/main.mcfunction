@@ -1,0 +1,2 @@
+## The campfire area is shown here [ function world_area:main/loop ]
+execute as @s[tag=sys.campfire,type=interaction] at @s if data entity @s interaction.timestamp run function sys:campfire/interaction/run

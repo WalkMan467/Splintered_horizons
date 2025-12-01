@@ -12,7 +12,7 @@ execute if data storage multipack:graves {LastDeathLocation:{dimension:"minecraf
   {text:" in ",color:"yellow"},{text:"The Nether",color:"green"}]
 execute if score &grave_spawned mp.temp matches 0 if data storage multipack:graves {LastDeathLocation:{dimension:"minecraft:the_end"}} run return run tellraw @s [\
   {text:"You died at ",color:"yellow"},{text:"X: ",color:"green"},{score:{name:"&x",objective:"mp.temp"},color:"green"},{text:", Z: ",color:"green"},{score:{name:"&z",objective:"mp.temp"},color:"green"},\
-  {text:" in ",color:"yellow"},{text:"The End Void ",color:"green"},{text:"(Items cannot be retrieved)",color:"gray"}]
+  {text:" in ",color:"yellow"},{text:"The End Void ",color:"green"},{text:"(item cannot be retrieved)",color:"gray"}]
 execute if data storage multipack:graves {LastDeathLocation:{dimension:"minecraft:the_end"}} run return run tellraw @s [\
   {text:"You died at ",color:"yellow"},{text:"X: ",color:"green"},{score:{name:"&x",objective:"mp.temp"},color:"green"},{text:", Z: ",color:"green"},{score:{name:"&z",objective:"mp.temp"},color:"green"},\
   {text:" in ",color:"yellow"},{text:"The End",color:"green"}]

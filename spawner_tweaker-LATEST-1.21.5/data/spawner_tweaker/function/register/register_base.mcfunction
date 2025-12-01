@@ -1,4 +1,4 @@
-#Run this at a position to register the spawner into the id and priming systems
+#Run this at a position to register the spawner into the id and priming syss
 
 #Write spawn potentials to the spawner if none exist
 execute unless data block ~ ~ ~ SpawnPotentials[0] run function spawner_tweaker:register/write_potentials

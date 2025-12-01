@@ -15,7 +15,7 @@
   "slots": [
     "any"
   ],
-  "supported_items": "minecraft:air",
+  "supported_item": "minecraft:air",
   "weight": 1,
   "effects": {
     "minecraft:post_attack": [

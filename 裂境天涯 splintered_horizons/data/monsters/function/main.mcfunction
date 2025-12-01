@@ -25,7 +25,7 @@ execute as @s[type=area_effect_cloud] at @s run function monsters:chapter_3/fina
 
 function monsters:detect_kill/loop
 
-## ----- Monster Skill System ----- ##
+## ----- Monster Skill sys ----- ##
 # Monster is about to cast a spell (1s warning)
 execute as @s[tag=monster,tag=!hide_skill_tip] if score @s monster.skill.cast.cd matches 30 unless score @s monster.skill.freeze matches 0.. run function monsters:unlease_skill_tip
 

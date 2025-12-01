@@ -1,3 +1,0 @@
-function system:tree_of_world_memory/crystal/reset
-summon minecraft:block_display ~ ~1 ~ {Glowing:1b,Tags:["system.tree_of_world_memory.crystal","system.tree_of_world_memory"],UUID:[I; 128, 256, 412, 5],billboard: "center", block_state: {Name: "minecraft:glowstone"}, brightness: {block: 15, sky: 15}, transformation: {left_rotation: [-0.3535534f, -0.3535534f, -0.14644665f, 0.85355335f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [0.50000006f, 0.5f, 0.5f], translation: [-0.17677668f, -0.35355335f, -0.17677669f]}}
-summon minecraft:interaction ~ ~0.5 ~ {UUID:[I; 128, 256, 412, 6],Tags:["system.tree_of_world_memory.crystal.act","system.tree_of_world_memory"],width:1,height:1}

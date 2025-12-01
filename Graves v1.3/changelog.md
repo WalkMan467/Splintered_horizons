@@ -15,7 +15,7 @@
   - If void recovery is enabled, dying over the void will be treated as dying in the void
 - (+) When the datapack is enabled/disabled through the settings, it will restore relevant gamerules to their original values
 - (/) Grave depawn timers continue even when the grave is not in a loaded chunk
-- (+) Added music disc Tears to the `rare_items` item tag
+- (+) Added music disc Tears to the `rare_item` item tag
 ## Bugfixes:
 - Spectators no longer leave graves
 - Gold blocks were missing from the `resources` item tag

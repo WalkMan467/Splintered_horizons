@@ -33,6 +33,6 @@
   "slots": [
     "any"
   ],
-  "supported_items": "air",
+  "supported_item": "air",
   "weight": 5
 }

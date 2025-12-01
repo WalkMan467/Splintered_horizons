@@ -6,6 +6,6 @@ execute if score @s player.actionbar.otherworld_portal.1 matches 1.. run return 
 execute if score @s player.actionbar.otherworld_portal.2 matches 1.. run return 0
 execute if score @s player.actionbar.tree_of_world_memory.1 matches 1.. run return 0
 execute if score @s player.actionbar.tree_of_world_memory.2 matches 1.. run return 0
-execute if score @s player.actionbar.system.forging_table.energy_infusion_failure matches 1.. run return 0
+execute if score @s player.actionbar.sys.forging_table.energy_infusion_failure matches 1.. run return 0
 
 return 1

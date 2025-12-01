@@ -1,10 +1,10 @@
-## Drop all items from this grave then remove this grave.
+## Drop all item from this grave then remove this grave.
 scoreboard players operation &id mp.temp = @s mp.const
-# Summon all items and experience in this grave
-data modify storage multipack:graves Items set from entity @s data.Items
+# Summon all item and experience in this grave
+data modify storage multipack:graves item set from entity @s data.item
 data modify storage multipack:graves Xp set from entity @s data.Xp
-execute unless data storage multipack:graves Items[-1].components run data modify storage multipack:graves Items[-1].components set value "{}"
-function m_graves:graves/drop_items with storage multipack:graves Items[-1]
+execute unless data storage multipack:graves item[-1].components run data modify storage multipack:graves item[-1].components set value "{}"
+function m_graves:graves/drop_item with storage multipack:graves item[-1]
 execute unless data storage multipack:graves {Xp:0} summon experience_orb run data modify entity @s Value set from storage multipack:graves Xp
 data modify storage multipack:graves Xp set value 0
 # Clear key

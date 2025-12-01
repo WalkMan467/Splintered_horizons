@@ -1,3 +1,0 @@
-summon armor_stand 1116 82 368 {UUID:[I; 212, 222, 1, 1],NoGravity:1b,Silent:1b,Small:1b,Marker:1b,Invisible:1b,Tags:["system.waypoint.objectives.chapter_1"],attributes:[{id:"minecraft:scale",base:0.001},{id:"minecraft:waypoint_transmit_range",base:100}]}
-waypoint modify 000000d4-0000-00de-0000-000100000001 style set objectives/lime_wool
-waypoint modify 000000d4-0000-00de-0000-000100000001 color white

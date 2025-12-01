@@ -1,6 +1,8 @@
 execute in minecraft:overworld run tp @s 9999 131 10071 180 0
 
-gamerule send_command_feedback false
+gamerule sendCommandFeedback false
+
+datapack disable "file/spawner_tweaker-LATEST-1.21.5"
 
 setworldspawn 9999 131 10071
 
@@ -13,7 +15,7 @@ gamemode survival @a
 time set midnight
 weather clear
 difficulty normal
-kill @e[tag=system.monument_point.sword]
+kill @e[tag=sys.monument_point.sword]
 
 xp set @a 0 levels
 xp set @a 0 points
@@ -39,7 +41,7 @@ scoreboard players set #main.map_lobby.act global.main 1
 
 advancement revoke @a only players:new_player
 
-scoreboard players set #system.shooting_contest.sagittarius global.main 1
+scoreboard players set #sys.shooting_contest.sagittarius global.main 1
 scoreboard players set #safe_area.enter global.main 0
 
 scoreboard players set story.chapter_2.in_safe_zone.ml story.chapter_2 0

@@ -25,6 +25,6 @@
   "slots": [
     "any"
   ],
-  "supported_items": "barrier",
+  "supported_item": "barrier",
   "weight": 51
 }

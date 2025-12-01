@@ -12,14 +12,14 @@ execute unless score #difficulty global.main matches 1.. if entity @n[type=marke
 # Monsters
 function monsters:guide
 
-# System
-function system:main
+# sys
+function sys:main
 
 # Duration Detect
 function main:duration/detect
 
 # Tree of World Memory
-function system:tree_of_world_memory/main
+function sys:tree_of_world_memory/main
 
 # Player Guide
 

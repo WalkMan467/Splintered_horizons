@@ -3,7 +3,7 @@ weather clear
 
 execute in minecraft:overworld run forceload add 42 11 42 11
 
-execute as @a run function items:type/tp_book/rc/cancel
+execute as @a run function item:type/tp_book/rc/cancel
 
 function cutscene:opening/remove_camera
 

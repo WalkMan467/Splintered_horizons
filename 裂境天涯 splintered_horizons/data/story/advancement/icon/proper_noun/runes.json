@@ -87,7 +87,7 @@
     "sword": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
-        "items": [
+        "item": [
           {
             "predicates": {
               "minecraft:custom_data": {
@@ -101,7 +101,7 @@
     "pickaxe": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
-        "items": [
+        "item": [
           {
             "predicates": {
               "minecraft:custom_data": {
@@ -115,7 +115,7 @@
     "scythe": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
-        "items": [
+        "item": [
           {
             "predicates": {
               "minecraft:custom_data": {
@@ -129,7 +129,7 @@
     "bow": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
-        "items": [
+        "item": [
           {
             "predicates": {
               "minecraft:custom_data": {

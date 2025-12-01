@@ -2,7 +2,7 @@
 # ===================================================
 # Actionbar Gui Main Function
 
-    ## Guide [ function system:shop_point/main ] >>> Controlling the store GUI scope
+    ## Guide [ function sys:shop_point/main ] >>> Controlling the store GUI scope
     ## Guide [ function players:actionbar/shop ] >>> Control GUI Icons
 
 # ===================================================

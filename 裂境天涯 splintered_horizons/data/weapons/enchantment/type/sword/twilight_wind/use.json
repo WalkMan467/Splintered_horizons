@@ -34,6 +34,6 @@
   "slots": [
     "mainhand"
   ],
-  "supported_items": "air",
+  "supported_item": "air",
   "weight": 2
 }

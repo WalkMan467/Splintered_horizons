@@ -1,3 +1,3 @@
 $trigger main.trigger set $(daytime)
 
-$trigger main.tombstone_system set $(tombstone_system)
+$trigger main.tombstone_sys set $(tombstone_sys)

@@ -8,6 +8,7 @@ playsound minecraft:voice.join_game voice @s ~ ~1 ~ 0.5 1
 
 
 tag @s add campfire
+execute if entity @n[tag=campfire.darkness,limit=1,distance=..6,type=minecraft:interaction] run tag @s add campfire.darkness
 
 function music:stop
 

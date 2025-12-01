@@ -3,7 +3,7 @@
     "translate": "weapon.enchantment.bow.no_dmg",
     "color": "red"
   },
-  "supported_items": "minecraft:air",
+  "supported_item": "minecraft:air",
   "weight": 1,
   "max_level": 1,
   "min_cost": {

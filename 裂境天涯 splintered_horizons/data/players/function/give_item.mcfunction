@@ -1,5 +1,5 @@
 clear @s
-execute if score #weapons:monument/area_1 global.main matches 1.. run function items:get/main/tp_book
+execute if score #weapons:monument/area_1 global.main matches 1.. run function item:get/main/tp_book
 
 execute if score #in_safe_zone.ml global.main matches 1 run scoreboard players operation @s item.tp_book.point.x = @s item.tp_book.point.x.temp
 execute if score #in_safe_zone.ml global.main matches 1 run scoreboard players operation @s item.tp_book.point.y = @s item.tp_book.point.y.temp

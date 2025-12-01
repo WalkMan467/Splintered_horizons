@@ -40,9 +40,9 @@
     },
     {
       "type": "minecraft:single_option",
-      "key": "tombstone_system",
+      "key": "tombstone_sys",
       "label": {
-        "translate": "dialog.main.tombstone_system",
+        "translate": "dialog.main.tombstone_sys",
         "fallback": "死亡墓碑系統",
         "color": "white"
       },
@@ -78,7 +78,7 @@
       },
       "action": {
         "type": "minecraft:dynamic/run_command",
-        "template": "function main:game_settings/use {daytime:\"$(daytime)\",tombstone_system:\"$(tombstone_system)\"}"
+        "template": "function main:game_settings/use {daytime:\"$(daytime)\",tombstone_sys:\"$(tombstone_sys)\"}"
       }
     }
   ]

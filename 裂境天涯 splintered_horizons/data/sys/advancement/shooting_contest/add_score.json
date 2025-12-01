@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:target_hit"
+    }
+  },
+  "rewards": {
+    "function": "sys:shooting_contest/bow/add_score"
+  }
+}

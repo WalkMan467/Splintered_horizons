@@ -11,8 +11,8 @@ advancement grant @s only story:icon/proper_noun/icon
 advancement grant @s only story:icon/proper_noun/old_story
 advancement grant @s only story:icon/proper_noun/war_of_light_and_darkness
 advancement grant @s only story:icon/proper_noun/final_battle
-advancement revoke @s only system:forging_table/tips/main
-advancement revoke @s only system:monument_point/tips/main
+advancement revoke @s only sys:forging_table/tips/main
+advancement revoke @s only sys:monument_point/tips/main
 advancement revoke @s only weapons:monument/area_1
 advancement grant @s only weapons:monument/icon
 advancement grant @s only weapons:icon/other
@@ -33,7 +33,7 @@ function armors:remove_armors_icon
 function story:remove_story_icon
 function story:remove_proper_noun_icon
 function players:adv/remove_adv
-function items:type/tp_book/rc/reset
+function item:type/tp_book/rc/reset
 
 xp set @s 0 levels
 xp set @s 0 points

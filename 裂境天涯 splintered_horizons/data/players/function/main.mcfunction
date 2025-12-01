@@ -2,7 +2,9 @@ function players:elytra_switch/main
 function players:detect/main
 function players:auto_crafting/main
 
-tag @s remove player.tombstone_system.disabled
+tag @s remove player.tombstone_sys.disabled
+
+execute as @e[tag=system.campfire,type=interaction] run function players:update
 
 execute if score @s player.give.item.delay matches 1 run function players:give_item
 

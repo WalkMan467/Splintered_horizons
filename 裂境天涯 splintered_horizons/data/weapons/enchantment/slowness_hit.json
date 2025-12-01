@@ -3,7 +3,7 @@
     "text": "[冰霜]: 攻擊命中敵人有25%機率使單個敵人緩速",
     "color": "dark_green"
   },
-  "supported_items": "air",
+  "supported_item": "air",
   "weight": 1,
   "max_level": 1,
   "min_cost": {

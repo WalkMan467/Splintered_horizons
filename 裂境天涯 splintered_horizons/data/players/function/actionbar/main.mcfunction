@@ -7,8 +7,8 @@ execute if score @s player.actionbar.eye_of_finality matches 1.. if function pla
 execute as @s[gamemode=!spectator] if score @s item.tp_book.casting matches 1.. run function players:actionbar/tp_book_casting
 execute as @s[gamemode=!spectator] if score @s item.tp_book.casting matches 1.. run return 0
 
-execute as @s[gamemode=!spectator] if score @s player.actionbar.system.forging_table.energy_infusion_failure matches 1.. run function players:actionbar/energy_infusion_failure
-execute as @s[gamemode=!spectator] if score @s player.actionbar.system.forging_table.energy_infusion_failure matches 1.. run return 0
+execute as @s[gamemode=!spectator] if score @s player.actionbar.sys.forging_table.energy_infusion_failure matches 1.. run function players:actionbar/energy_infusion_failure
+execute as @s[gamemode=!spectator] if score @s player.actionbar.sys.forging_table.energy_infusion_failure matches 1.. run return 0
 
 execute if score @s player.actionbar.weapon.earthquake_axe matches 1.. run function players:actionbar/earthquake_axe
 execute if score @s player.actionbar.weapon.earthquake_axe matches 1.. run return 0

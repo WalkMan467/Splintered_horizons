@@ -10,7 +10,7 @@ execute if score @s mp.settings matches 13 run data merge storage multipack:sett
   death_coords:$(death_coords), compass:$(compass)}}}"}}
 execute if score @s mp.settings matches 13 run function m_graves:settings/graves/settings_general with storage multipack:settings graves
 execute if score @s mp.settings matches 14 run data merge storage multipack:settings {graves:{template:"/function m_graves:settings/save {page:14, \
-  settings:{graves:{keep_xp:$(keep_xp), keep_hotbar:$(keep_hotbar), keep_armor:$(keep_armor), keep_items:$(keep_items), lose_items:$(lose_items)}}}"}}
+  settings:{graves:{keep_xp:$(keep_xp), keep_hotbar:$(keep_hotbar), keep_armor:$(keep_armor), keep_item:$(keep_item), lose_item:$(lose_item)}}}"}}
 execute if score @s mp.settings matches 14 run function m_graves:settings/graves/settings_inventory with storage multipack:settings graves
 execute if score @s mp.settings matches 15 run data merge storage multipack:settings {graves:{template:"/function m_graves:settings/save {page:15, \
   settings:{graves:{glowing:$(glowing), display_name:$(display_name), display_head:$(display_head), grave_decorators:$(grave_decorators)}}}"}}

@@ -13,7 +13,7 @@ scoreboard objectives add main.gamemode dummy
 scoreboard objectives add main.3d_dizziness dummy "3D暈眩"
 scoreboard objectives add main.light_sensitivity dummy "光敏感"
 scoreboard objectives add main.trigger trigger "Main 觸發器"
-scoreboard objectives add main.tombstone_system trigger "是否開啟墓碑系統"
+scoreboard objectives add main.tombstone_sys trigger "是否開啟墓碑系統"
 scoreboard objectives add main.raycast trigger "Raycast 射線偵測"
 
 scoreboard players add #monument.area_1 global.main 0
@@ -25,10 +25,10 @@ scoreboard players add #monument.area_6 global.main 0
 scoreboard players add #monument.area_7 global.main 0
 scoreboard players add #monument.area_8 global.main 0
 
-scoreboard players add #tombstone_system global.main 0
+scoreboard players add #tombstone_sys global.main 0
 
-scoreboard players enable @a main.tombstone_system
-scoreboard players set @a main.tombstone_system 0
+scoreboard players enable @a main.tombstone_sys
+scoreboard players set @a main.tombstone_sys 0
 
 scoreboard players enable @a main.trigger
 scoreboard players set @a main.trigger 0

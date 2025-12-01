@@ -5,9 +5,9 @@ execute as @s[tag=cse.status_effect.armor_shred] at @s run function cse:status_e
 execute as @s[tag=cse.status_effect.weakness] at @s run function cse:status_effects/apply/weakness/main
 execute as @s[tag=cse.status_effects.monsters.emissary_of_the_temporal_rift.key] at @s run function cse:status_effects/apply/monsters/emissary_of_the_temporal_rift/key/slowness/main
 
-execute as @s[tag=cse.status_effect.tactical_scroll_of_brilliance.armor_enhancement] at @s run function cse:status_effects/apply/items/tactical_scroll_of_brilliance/armor_enhancement/main
-execute as @s[tag=cse.status_effect.tactical_scroll_of_brilliance.strength] at @s run function cse:status_effects/apply/items/tactical_scroll_of_brilliance/strength/main
-execute as @s[tag=cse.status_effect.tactical_scroll_of_brilliance.speed] at @s run function cse:status_effects/apply/items/tactical_scroll_of_brilliance/speed/main
+execute as @s[tag=cse.status_effect.tactical_scroll_of_brilliance.armor_enhancement] at @s run function cse:status_effects/apply/item/tactical_scroll_of_brilliance/armor_enhancement/main
+execute as @s[tag=cse.status_effect.tactical_scroll_of_brilliance.strength] at @s run function cse:status_effects/apply/item/tactical_scroll_of_brilliance/strength/main
+execute as @s[tag=cse.status_effect.tactical_scroll_of_brilliance.speed] at @s run function cse:status_effects/apply/item/tactical_scroll_of_brilliance/speed/main
 
 execute as @s[distance=..60,type=!#minecraft:dummy_mob] run function cse:timer
 

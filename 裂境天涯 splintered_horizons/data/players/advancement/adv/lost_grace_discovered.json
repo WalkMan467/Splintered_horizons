@@ -23,7 +23,7 @@
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
         "entity": {
-          "nbt": "{Tags:[\"system.campfire\"]}"
+          "nbt": "{Tags:[\"sys.campfire\"]}"
         }
       }
     }

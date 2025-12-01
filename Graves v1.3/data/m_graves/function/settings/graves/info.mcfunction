@@ -40,16 +40,16 @@ dialog show @s {\
       hover_event:{action:"show_text",value:"Experience is kept on death"}}, \
       {underlined:false, text:".............................................................Default is Disabled"}]}, \
     {type:"plain_message", width:500, contents:[{underlined:true, text:"Keep Hotbar", \
-      hover_event:{action:"show_text",value:"Items in the hotbar are kept on death"}}, \
+      hover_event:{action:"show_text",value:"item in the hotbar are kept on death"}}, \
       {underlined:false, text:"........................................................................Default is Disabled"}]}, \
     {type:"plain_message", width:500, contents:[{underlined:true, text:"Keep Armor", \
       hover_event:{action:"show_text",value:"Equipped armor is kept on death"}}, \
       {underlined:false, text:"..........................................................................Default is Disabled"}]}, \
-    {type:"plain_message", width:500, contents:[{underlined:true, text:"Keep Some Items", \
-      hover_event:{action:"show_text",value:"Keep some types of items on death. Change by editing m_graves/tags/items/kept_items, which contains tools, weapons, armor, and other equipment by default"}}, \
+    {type:"plain_message", width:500, contents:[{underlined:true, text:"Keep Some item", \
+      hover_event:{action:"show_text",value:"Keep some types of item on death. Change by editing m_graves/tags/item/kept_item, which contains tools, weapons, armor, and other equipment by default"}}, \
       {underlined:false, text:"..............................................................Default is Disabled"}]}, \
-    {type:"plain_message", width:500, contents:[{underlined:true, text:"Lose Some Items", \
-      hover_event:{action:"show_text",value:"Delete some types of items on death. Change by editing m_graves/tags/items/lost_items, which is empty by default."}}, \
+    {type:"plain_message", width:500, contents:[{underlined:true, text:"Lose Some item", \
+      hover_event:{action:"show_text",value:"Delete some types of item on death. Change by editing m_graves/tags/item/lost_item, which is empty by default."}}, \
       {underlined:false, text:"..............................................................Default is Disabled"}]}, \
     {type:"plain_message", contents:"Cosmetic Settings"}, \
     {type:"plain_message", width:500, contents:[{underlined:true, text:"Glowing Graves", \

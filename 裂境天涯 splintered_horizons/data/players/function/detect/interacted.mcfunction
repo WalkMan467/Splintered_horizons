@@ -6,6 +6,6 @@ function monsters:chapter_2/elekiel/interacted
 function monsters:bossfight/chapter_2/act/interacted
 function monsters:bossfight/chapter_2/act/elekiel/interacted
 function world_area:other/otherworld_portal/interacted
-function system:tree_of_world_memory/interacted
-function system:interacted
-function players:tombstone_system/act/interacted
+function sys:tree_of_world_memory/interacted
+function sys:interacted
+function players:tombstone_sys/act/interacted

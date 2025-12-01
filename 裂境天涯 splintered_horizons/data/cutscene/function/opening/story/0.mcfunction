@@ -63,7 +63,7 @@ execute if score .opening cutscene.story matches 2659 as @n[type=item_display,ta
 # score +1
 execute if score .opening cutscene.story matches 0..4000 run scoreboard players add .opening cutscene.story 1
 
-execute as @a run function items:type/tp_book/rc/cancel
+execute as @a run function item:type/tp_book/rc/cancel
 
 # loop
 execute if score .opening cutscene.story matches 0..4000 run schedule function cutscene:opening/story/0 1t

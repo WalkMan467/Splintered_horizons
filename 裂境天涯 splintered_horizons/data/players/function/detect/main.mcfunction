@@ -1,4 +1,4 @@
-# Detect discarded items
+# Detect discarded item
 execute if score @s player.detect.drop matches 1.. run function players:detect/drop
 
 # Detection in the air / on land

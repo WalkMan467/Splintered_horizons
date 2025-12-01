@@ -81,7 +81,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "value": "items:get/coin",
+          "value": "item:get/coin",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -106,7 +106,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "value": "items:get/world_memory_fragments",
+          "value": "item:get/world_memory_fragments",
           "functions": [
             {
               "function": "minecraft:set_count",
