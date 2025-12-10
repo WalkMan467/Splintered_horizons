@@ -4,7 +4,7 @@
   "predicate": {
     "slots": {
       "container.0": {
-        "item": "minecraft:wooden_sword",
+        "items": "minecraft:wooden_sword",
         "count": 1
       }
     }

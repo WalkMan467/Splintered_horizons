@@ -1,0 +1,1 @@
+# tellraw @s [{"text":"\n=================================\n\n"},{"translate": "music.name","fallback": "Music Name"},": ",{"translate": "music.balefire","fallback": "Balefire"},"\n\n",{"translate": "music.composer","fallback": "Composer"},": ",{"translate": "music.scott_buckley","fallback": "Scott Buckley"},{"text":"\n\n=================================\n"}]

@@ -18,9 +18,6 @@ function sys:main
 # Duration Detect
 function main:duration/detect
 
-# Tree of World Memory
-function sys:tree_of_world_memory/main
-
 # Player Guide
 
 execute as @a at @s run function main:guide/player

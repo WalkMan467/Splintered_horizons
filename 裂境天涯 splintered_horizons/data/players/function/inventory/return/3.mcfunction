@@ -1,8 +1,8 @@
 
-# item
+# Items
 setblock ~ 319 ~ shulker_box
 summon item_display ~ ~ ~ {UUID:[I;847892230,-1441643320,-1398921292,-1778493248]}
-data modify block ~ 319 ~ item set from storage minecraft:temp bag.inventory
+data modify block ~ 319 ~ Items set from storage minecraft:temp bag.inventory
 item replace entity @s container.0 from block ~ 319 ~ container.0
 item replace entity @s container.1 from block ~ 319 ~ container.1
 item replace entity @s container.2 from block ~ 319 ~ container.2

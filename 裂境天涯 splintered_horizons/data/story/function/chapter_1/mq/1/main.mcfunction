@@ -1,4 +1,4 @@
-## ---Main Line 1--- ##
+## --- Interaction --- ##
 
     # Detect
     execute positioned 38 64 9 store result score #story.chapter_1.opening.1 global.main \

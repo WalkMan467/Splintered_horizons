@@ -18,6 +18,7 @@
     "weapons:type/sword/otherworld_star_effect",
     "weapons:type/axe/earthquake_axe/damage",
     "weapons:type/axe/earthquake_axe/damage_effect",
-    "monsters:chapter_3/bloody_blade_spider/dot"
+    "monsters:chapter_3/bloody_blade_spider/dot",
+    "armors:type/symbiotic_blood_oath/damage"
   ]
 }

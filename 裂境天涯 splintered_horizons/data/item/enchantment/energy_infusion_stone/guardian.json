@@ -4,7 +4,7 @@
     "fallback": "Guardian"
   },
   "exclusive_set": "#item:energy_infusion_stone",
-  "supported_item": "minecraft:air",
+  "supported_items": "minecraft:air",
   "weight": 1,
   "max_level": 3,
   "min_cost": {

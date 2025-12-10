@@ -9,6 +9,12 @@
 # ===================================================
 # Stop the Animation
 
+title @s title ""
+title @s subtitle {"translate": "player.stop_animation","bold":true,"color":"dark_red"}
+title @s times 10 20 20
+
+playsound minecraft:entity.zombie_villager.cure voice @s ~ ~1 ~ 1 2
+
 tag @s add weapon.earthquake_axe.stop.user
 
 execute as @e[type=item_display,tag=aj.stellar_animation.root,tag=aj.stellar_animation.animation.earthquake_axe.playing,tag=!delete,distance=..10,limit=1] if score @a[sort=arbitrary,limit=1,tag=armor.black_hole.animation.stop.user] player.id = @s weapon.earthquake_axe.user.id run tag @s add delete
@@ -32,7 +38,3 @@ stopsound @s voice minecraft:voice.ruins_of_the_end_hurt
 stopsound @s voice minecraft:entity.warden.sonic_boom
 stopsound @s voice minecraft:entity.generic.explode
 stopsound @s voice minecraft:entity.lightning_bolt.thunder
-
-title @s times 20 20 20
-title @s title ""
-title @s subtitle ""

@@ -32,10 +32,6 @@ function world_area:main/safe_zone/melisna/main
     execute if biome ~ ~ ~ world_area:main/safe_zone run advancement grant @s only world_area:main/safe_zone/in
     execute unless biome ~ ~ ~ world_area:main/safe_zone run advancement grant @s only world_area:main/safe_zone/out
 
-    # Tree of World Memory
-    execute if biome ~ ~ ~ world_area:main/tree_of_world_memory run advancement grant @s only world_area:main/tree_of_world_memory/in
-    execute unless biome ~ ~ ~ world_area:main/tree_of_world_memory run advancement grant @s only world_area:main/tree_of_world_memory/out
-
     # Adventure / Survival mode area detection (including campfires)
     execute if entity @s[gamemode=survival] if function world_area:main/mode_change/main run function world_area:main/mode_change/adventure
     execute if entity @s[gamemode=adventure] unless function world_area:main/mode_change/main run function world_area:main/mode_change/survival

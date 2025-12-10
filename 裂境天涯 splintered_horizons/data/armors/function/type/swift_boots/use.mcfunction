@@ -6,7 +6,7 @@
 # ===================================================
 # Detecting and triggering armor skills ; Execute the Function
 
-execute unless item entity @s armor.feet *[minecraft:custom_data~{swift:1b} | custom_data~{swift:1}] run return 0
+execute unless items entity @s armor.feet *[minecraft:custom_data~{swift:1b} | custom_data~{swift:1}] run return 0
 execute if score @s armor.boots.effect.actived matches 1.. run return 0
 
 effect give @s speed 5 0 true

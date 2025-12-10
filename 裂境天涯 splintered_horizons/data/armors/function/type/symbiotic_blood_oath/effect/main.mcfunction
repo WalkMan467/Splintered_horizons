@@ -1,0 +1,1 @@
+execute if score @s player.hurt_time matches 9 if predicate armors:type/symbiotic_blood_oath/effect/50 run function armors:type/symbiotic_blood_oath/effect/use

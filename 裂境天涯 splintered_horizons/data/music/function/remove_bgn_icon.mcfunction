@@ -46,3 +46,6 @@ advancement revoke @s only music:chapter_3/icon
 
         advancement revoke @s only music:other/the_forgooten_lost_city/title
         advancement revoke @s only music:other/the_forgooten_lost_city/icon
+    
+        advancement revoke @s only music:other/hasanor/title
+        advancement revoke @s only music:other/hasanor/icon

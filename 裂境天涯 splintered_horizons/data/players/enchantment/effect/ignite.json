@@ -2,7 +2,7 @@
   "description": {
     "text": "ignite"
   },
-  "supported_item": "minecraft:barrier",
+  "supported_items": "minecraft:barrier",
   "weight": 1,
   "max_level": 255,
   "max_cost": {

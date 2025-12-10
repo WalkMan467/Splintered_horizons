@@ -1,5 +1,5 @@
-execute if function players:actionbar/detect/runes run function players:actionbar/runes
-execute if function players:actionbar/detect/runes run return 0
+execute as @s[gamemode=!creative] if function players:actionbar/detect/runes run function players:actionbar/runes
+execute as @s[gamemode=!creative] if function players:actionbar/detect/runes run return 0
 
 execute if score @s player.actionbar.eye_of_finality matches 1.. if function players:actionbar/detect/finality run function players:actionbar/eye_of_finality
 execute if score @s player.actionbar.eye_of_finality matches 1.. if function players:actionbar/detect/finality run return 0

@@ -18,6 +18,8 @@ scoreboard objectives add armor.armor_of_the_coiled_rock.cd dummy "盤岩之鎧 
 scoreboard objectives add armor.finality_chestplate.cd dummy "終焉之鎧 CD"
 scoreboard objectives add armor.windriders_legplates.cd dummy "馭風戰騎腿鎧 CD"
 scoreboard objectives add armor.radiant_guardians_helmet.cd dummy "耀光守護頭盔 CD"
+scoreboard objectives add armor.symbiotic_blood_oath.cd dummy "共生血誓 CD"
+scoreboard objectives add armor.symbiotic_blood_oath.player.health dummy "共生血誓 玩家血量"
 scoreboard objectives add armor.radiant_guardians_helmet.effect.cd dummy "耀光守護頭盔被動 CD"
 scoreboard objectives add armor.resilient.hit dummy "堅韌受擊次數"
 scoreboard objectives add armor.resilient.cd dummy "堅韌技能 CD"

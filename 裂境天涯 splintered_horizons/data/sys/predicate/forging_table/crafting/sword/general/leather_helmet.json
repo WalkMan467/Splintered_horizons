@@ -4,7 +4,7 @@
   "predicate": {
     "slots": {
       "container.0": {
-        "item": "minecraft:leather_helmet",
+        "items": "minecraft:leather_helmet",
         "count": 1
       }
     }

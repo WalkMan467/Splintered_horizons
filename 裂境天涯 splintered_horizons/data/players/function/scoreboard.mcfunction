@@ -98,5 +98,6 @@ scoreboard objectives add player.detect.sneak dummy "[玩家] 潛行偵測"
 scoreboard objectives add player.detect.sneak.delay dummy "[玩家] 潛行偵測延遲"
 scoreboard objectives add player.detect.is_bossfight dummy "[玩家] 是否處於BOSS戰"
 scoreboard objectives add player.detect.broken_spawner minecraft.mined:minecraft.spawner "[玩家] 破壞生怪磚"
+scoreboard objectives add player.detect.hurt dummy "[玩家] 偵測受傷"
 
 # ==================================================================================================

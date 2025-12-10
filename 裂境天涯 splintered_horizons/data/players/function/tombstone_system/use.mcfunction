@@ -8,5 +8,3 @@ execute if entity @s[tag=player.tombstone_sys.disabled] run return 0
 
 function players:inventory/save {bag:"tombstone"}
 clear @s
-
-function players:tombstone_sys/act/summon

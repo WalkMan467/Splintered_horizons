@@ -1,5 +1,5 @@
 # Spawners (Detect the Silver Fish location, then execute 'function monsters:summon/<monsters>' and remove the Silver Fish)
-execute as @e[type=silverfish,distance=..30,limit=10,sort=nearest] at @s run function spawner:main
+execute as @e[distance=..30,limit=10,sort=arbitrary,type=silverfish] at @s run function spawner:main
 
 # Campfire
 execute as @e[type=interaction,tag=sys.campfire,distance=..30,limit=5,sort=nearest] at @s run function sys:campfire/interaction/main

@@ -1,4 +1,4 @@
-execute unless item entity @s armor.legs *[minecraft:custom_data~{windriders:1b} | custom_data~{windriders:1}] run return 0
+execute unless items entity @s armor.legs *[minecraft:custom_data~{windriders:1b} | custom_data~{windriders:1}] run return 0
 execute if score @s armor.windriders_legplates.cd matches 1.. run return 0
 execute if score @s armor.leggings.effect.actived matches 1.. run return 0
 

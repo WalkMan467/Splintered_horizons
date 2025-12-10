@@ -22,6 +22,11 @@ function world_area:other/otherworld_portal/4/main
     execute if entity @s[gamemode=!spectator] if biome ~ ~ ~ world_area:other/the_forgooten_lost_city run advancement grant @s only world_area:other/the_forgotten_lost_city/in
     execute unless biome ~ ~ ~ world_area:other/the_forgooten_lost_city run advancement grant @s only world_area:other/the_forgotten_lost_city/out
 
+    # Nightfall Citadel: Hasanor
+
+    execute if entity @s[gamemode=!spectator] if biome ~ ~ ~ world_area:other/hasanor run advancement grant @s only world_area:other/hasanor/in
+    execute unless biome ~ ~ ~ world_area:other/hasanor run advancement grant @s only world_area:other/hasanor/out
+
     # Mini Game
     execute if biome ~ ~ ~ world_area:other/mini_game run advancement grant @s only world_area:other/mini_game/in
     execute unless biome ~ ~ ~ world_area:other/mini_game run advancement grant @s only world_area:other/mini_game/out

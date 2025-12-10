@@ -10,11 +10,13 @@ function players:setup
 function story:chapter_1/sq/1/reset
 function main:map_lobby/reset
 
+function sys:forging_table/crafting/recipe/lock
+
 clear @s
 gamemode survival @a
 time set midnight
 weather clear
-difficulty normal
+difficulty hard
 kill @e[tag=sys.monument_point.sword]
 
 xp set @a 0 levels

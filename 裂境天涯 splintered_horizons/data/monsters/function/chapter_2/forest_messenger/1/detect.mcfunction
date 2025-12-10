@@ -1,2 +1,2 @@
-execute if entity @s[tag=chapter_2.forest_messenger.1] unless item entity @s weapon.offhand totem_of_undying run tag @s add monster.forest_messenger.1.actived
-execute if entity @s[tag=chapter_2.forest_messenger.1] unless item entity @s weapon.offhand totem_of_undying run function monsters:chapter_2/forest_messenger/cast/end
+execute if entity @s[tag=chapter_2.forest_messenger.1] unless items entity @s weapon.offhand totem_of_undying run tag @s add monster.forest_messenger.1.actived
+execute if entity @s[tag=chapter_2.forest_messenger.1] unless items entity @s weapon.offhand totem_of_undying run function monsters:chapter_2/forest_messenger/cast/end

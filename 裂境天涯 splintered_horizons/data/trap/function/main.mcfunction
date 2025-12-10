@@ -1,1 +1,1 @@
-function trap:chapter_2/chest/1/main
+function trap:chapter_3/chest/1/main
