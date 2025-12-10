@@ -3,3 +3,5 @@ tag @s remove aj.stellar_animation.animation.boots_of_the_black_hole.playing
 tag @s remove aj.stellar_animation.animation.ruins_of_the_finality_2.playing
 tag @s remove aj.stellar_animation.animation.walk.playing
 tag @s remove aj.stellar_animation.animation.idle.playing
+tag @s remove aj.stellar_animation.animation.earthquake_axe.playing
+tag @s remove aj.stellar_animation.animation.earthquake_axe2.playing

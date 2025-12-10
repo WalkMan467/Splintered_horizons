@@ -1,0 +1,16 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "slots": {
+      "container.0": {
+        "count": 5,
+        "predicates": {
+          "minecraft:custom_data": {
+            "id": "holy_light_iron_ingot"
+          }
+        }
+      }
+    }
+  }
+}

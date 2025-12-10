@@ -1,7 +1,7 @@
 {
   "anvil_cost": 2,
   "description": {
-    "text": "roll_immunity"
+    "text": "damage_immunity"
   },
   "effects": {
     "minecraft:damage_immunity": [
@@ -33,6 +33,6 @@
   "slots": [
     "any"
   ],
-  "supported_items": "barrier",
+  "supported_items": "air",
   "weight": 5
 }

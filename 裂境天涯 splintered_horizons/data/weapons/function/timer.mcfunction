@@ -14,6 +14,7 @@ scoreboard players remove @a[scores={weapon.flame_of_abyss.cd=1..}] weapon.flame
 scoreboard players remove @a[scores={weapon.flame_of_abyss.effect.cd=1..}] weapon.flame_of_abyss.effect.cd 1
 scoreboard players remove @a[scores={weapon.otherworld_star.timer=0..}] weapon.otherworld_star.timer 1
 scoreboard players remove @a[scores={weapon.otherworld_star.cd=1..}] weapon.otherworld_star.cd 1
+scoreboard players remove @a[scores={weapon.sagittarius.cd=1..}] weapon.sagittarius.cd 1
 
 # # 風力劍
 # tellraw @a[scores={weapon.wind_sword.cd=1}] [{"text":"[","color":"green","bold":true},{"translate":"weapon.wind_sword","color":"dark_green","bold":true},{"text":"] ","color":"green","bold":true},{"translate":"weapon.cd_completed","color":"green","bold":true}]

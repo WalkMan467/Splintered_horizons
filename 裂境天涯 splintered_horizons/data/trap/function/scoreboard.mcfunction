@@ -1,0 +1,1 @@
+scoreboard objectives add trap.global.main dummy

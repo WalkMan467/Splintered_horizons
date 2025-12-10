@@ -1,0 +1,38 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:tooltip_display": {
+        "hidden_components": [
+          "minecraft:can_place_on"
+        ]
+      },
+      "minecraft:can_place_on": {}
+    }
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "translate": "item.canPlace",
+          "color": "dark_green",
+          "bold": false,
+          "italic": false
+        },
+        {
+          "translate": "block.any_block",
+          "fallback": "Any Blocks"
+        }
+      ]
+    ],
+    "mode": "insert"
+  },
+  {
+    "function": "minecraft:set_custom_data",
+    "tag": {
+      "can_place_on": true
+    }
+  }
+]

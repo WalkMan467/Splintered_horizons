@@ -59,7 +59,7 @@ This tag will always set the setting to Player Range when re-entering tweaking m
 
 ### Spawner and Chest Randomizer
 **ALWAYS MAKE BACKUPS WHEN USING RANDOMIZERS**<br>
-Spawner Tweaker comes with randomizer capabilities. Randomized spawners have their potentials and SpawnData randomized, but not other aspects such as player range, delay, and count. Container (chest) randomization swaps the contents or loot tables of all registered containers. Containers register into the system just as spawners do--either passively while looking around or by running volume checks.<br>
+Spawner Tweaker comes with randomizer capabilities. Randomized spawners have their potentials and SpawnData randomized, but not other aspects such as player range, delay, and count. Container (chest) randomization swaps the contents or loot tables of all registered containers. Containers register into the sys just as spawners do--either passively while looking around or by running volume checks.<br>
 Before using the randomizer, make sure you first:<br>
 * Remove problematic spawners (such as anti-cheese or potion) with `/trigger delete_spawner_id set <id>`, see all map spawners with `/trigger give_all_spawners`
 * Remove problematic chests (such as dev chests and fleecy boxes) with `/trigger delete_nearby_chests set <range>`<br>
@@ -73,9 +73,9 @@ Each spawner will choose a random id with equal probability.<br>
 `/function spawner_tweaker:randomizer/randomize_weighted`<br>
 Spawners in the map will be randomized, but keep their id distribution (so if your original map has 5 skeleton and 10 zombie spawners, the randomizer will have 5 sekeleton and 10 zombie spawners total).<br>
 `/function spawner_tweaker:chests/randomizer/randomize`<br>
-Randomizes all loot containers in the map (a loot container is any chest, barrel, or shulker that has items or a loot table)<br>
+Randomizes all loot containers in the map (a loot container is any chest, barrel, or shulker that has item or a loot table)<br>
 `/trigger delete_nearby_chests set <range>`<br>
-Cubical range centered on yourself to remove chests from the chest id system. Use this to clear out chests inside of dev rooms or ones you always want to generate in the same spot.<br>
+Cubical range centered on yourself to remove chests from the chest id sys. Use this to clear out chests inside of dev rooms or ones you always want to generate in the same spot.<br>
 
 Known limitations:<br>
 Randomized containers that had loot tables will cause block updates. This is because mojang doesn't allow /data remove on block loot tables.<br>

@@ -2,7 +2,7 @@
 
 #Basic checks to see if this container is something with stuff inside
 scoreboard players set chest_pass temp 0
-execute if data block ~ ~ ~ Items[{}] run scoreboard players set chest_pass temp 1
+execute if data block ~ ~ ~ item[{}] run scoreboard players set chest_pass temp 1
 execute if data block ~ ~ ~ LootTable run scoreboard players set chest_pass temp 1
 
 #Getting the relevant positioning information

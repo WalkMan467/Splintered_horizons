@@ -5,6 +5,6 @@
       "particle:portal/crack/tp/remove",
       "players:stop_animation",
       "music:reset",
-      "players:tombstone_system/use"
+      "m_graves:graves/on_death"
     ]
   }

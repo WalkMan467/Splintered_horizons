@@ -5,7 +5,7 @@
       "entries": [
         {
           "type": "minecraft:empty",
-          "weight": 50
+          "weight": 30
         },
         {
           "type": "minecraft:group",
@@ -13,13 +13,13 @@
             {
               "type": "minecraft:loot_table",
               "value": "weapons:get/drop/broken_glass",
-              "weight": 40,
+              "weight": 35,
               "quality": 10,
               "functions": [
                 {
                   "function": "minecraft:set_count",
                   "count": {
-                    "min": 1,
+                    "min": 3,
                     "max": 5
                   }
                 }
@@ -43,12 +43,15 @@
             {
               "type": "minecraft:loot_table",
               "value": "weapons:get/drop/zeuss_lightning",
-              "weight": 20,
-              "quality": 20,
+              "weight": 25,
+              "quality": 25,
               "functions": [
                 {
                   "function": "minecraft:set_count",
-                  "count": 1
+                  "count": {
+                    "min": 1,
+                    "max": 2
+                  }
                 }
               ]
             },

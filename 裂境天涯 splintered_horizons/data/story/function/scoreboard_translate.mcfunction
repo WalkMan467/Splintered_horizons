@@ -1,4 +1,4 @@
 # Scoreboard Name Translate Commands
 
 scoreboard objectives modify story.chapter_2 displayname [{"text":"[","color":"gold"},{"translate":"monument.icon.chapter_2","color":"gold"},{"text":"] ","color":"gold"},{"translate":"story.icon.main_line","color":"gray"},{"text":" "}]
-scoreboard players display name story.chapter_2.campfire.3 story.chapter_2 [{"text":"[","color":"gold"},{"translate":"monument.icon.chapter_2","color":"gold"},{"text":"] ","color":"gold"},{"translate":"block.minecraft.campfire","color":"white"},{"text":" "},{"translate":"story.icon.story","color":"white"},{"text":" "},{"text":"3","color":"white"}]
+scoreboard players display name story.chapter_2.ml.3 story.chapter_2 [{"text":"[","color":"gold"},{"translate":"monument.icon.chapter_2","color":"gold"},{"text":"] ","color":"gold"},{"translate":"block.minecraft.campfire","color":"white"},{"text":" "},{"translate":"story.icon.story","color":"white"},{"text":" "},{"text":"3","color":"white"}]

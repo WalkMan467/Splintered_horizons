@@ -4,5 +4,7 @@ execute if entity @s[tag=aj.stellar_animation.animation.boots_of_the_black_hole.
 execute if entity @s[tag=aj.stellar_animation.animation.ruins_of_the_finality_2.playing] run function animated_java:stellar_animation/animations/ruins_of_the_finality_2/zzz/on_tick
 execute if entity @s[tag=aj.stellar_animation.animation.walk.playing] run function animated_java:stellar_animation/animations/walk/zzz/on_tick
 execute if entity @s[tag=aj.stellar_animation.animation.idle.playing] run function animated_java:stellar_animation/animations/idle/zzz/on_tick
+execute if entity @s[tag=aj.stellar_animation.animation.earthquake_axe.playing] run function animated_java:stellar_animation/animations/earthquake_axe/zzz/on_tick
+execute if entity @s[tag=aj.stellar_animation.animation.earthquake_axe2.playing] run function animated_java:stellar_animation/animations/earthquake_axe2/zzz/on_tick
 execute on passengers if entity @s[tag=aj.global.data] run function animated_java:stellar_animation/root/on_tick/transform_floating_entities
 execute on passengers run rotate @s ~ ~

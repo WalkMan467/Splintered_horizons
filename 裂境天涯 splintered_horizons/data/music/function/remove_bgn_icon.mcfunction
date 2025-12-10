@@ -3,13 +3,15 @@ advancement grant @s only music:icon
 advancement revoke @s only music:main/icon
     
     advancement revoke @s only music:main/campfire/icon
+    
         advancement revoke @s only music:main/campfire/1/title
-
-    advancement revoke @s only music:main/campfire/icon
         advancement revoke @s only music:main/campfire/2/title
 
     advancement revoke @s only music:main/safe_zone/icon
         advancement revoke @s only music:main/safe_zone/title
+        
+    advancement revoke @s only music:main/tree_of_world_memory/icon
+        advancement revoke @s only music:main/tree_of_world_memory/title
 
 advancement revoke @s only music:chapter_1/icon
 
@@ -25,7 +27,6 @@ advancement revoke @s only music:chapter_2/icon
         advancement revoke @s only music:chapter_2/forgotten_sakura_city/title
         advancement revoke @s only music:chapter_2/bossfight/2/icon
         advancement revoke @s only music:chapter_2/bossfight/2/title
-        advancement revoke @s only music:chapter_2/bossfight/3/icon
         advancement revoke @s only music:chapter_2/bossfight/3/title
         advancement revoke @s only music:chapter_2/forgotten_sakura_city/icon
         advancement revoke @s only music:chapter_2/forgotten_sakura_city/title
@@ -45,3 +46,6 @@ advancement revoke @s only music:chapter_3/icon
 
         advancement revoke @s only music:other/the_forgooten_lost_city/title
         advancement revoke @s only music:other/the_forgooten_lost_city/icon
+    
+        advancement revoke @s only music:other/hasanor/title
+        advancement revoke @s only music:other/hasanor/icon

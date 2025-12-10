@@ -1,0 +1,1 @@
+$function monsters:summon/$(mob)

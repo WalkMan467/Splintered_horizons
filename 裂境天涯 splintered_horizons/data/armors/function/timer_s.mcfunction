@@ -14,6 +14,7 @@ scoreboard players remove @a[scores={armor.armor_of_the_coiled_rock.cd=1..}] arm
 scoreboard players remove @a[scores={armor.finality_chestplate.cd=1..}] armor.finality_chestplate.cd 1
 scoreboard players remove @a[scores={armor.windriders_legplates.cd=1..}] armor.windriders_legplates.cd 1
 scoreboard players remove @a[scores={armor.radiant_guardians_helmet.cd=1..}] armor.radiant_guardians_helmet.cd 1
+scoreboard players remove @a[scores={armor.symbiotic_blood_oath.cd=1..}] armor.symbiotic_blood_oath.cd 1
 
 execute as @a at @s run function armors:type/finality_chestplate/effect/timer
 

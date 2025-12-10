@@ -1,4 +1,4 @@
-# Detect discarded items
+# Detect discarded item
 execute if score @s player.detect.drop matches 1.. run function players:detect/drop
 
 # Detection in the air / on land
@@ -12,6 +12,9 @@ execute unless function players:detect/get_runics if entity @s[tag=player.detect
 
 # Broken Spawner
 execute if score @s player.detect.broken_spawner matches 1.. run function players:detect/broken_spawner
+
+# Detecting Sneak
+function players:detect/sneak
 
 # Detecting injuries
 function players:detect/hurt

@@ -35,4 +35,4 @@ team join team.player @s
 
 advancement grant @s only world_area:main/environment_particles/true
 
-advancement revoke @s only story:icon/story/chapter_1/scebe_1
+advancement revoke @s only story:icon/story/chapter_1/mq/scebe_1

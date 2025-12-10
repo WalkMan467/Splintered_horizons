@@ -11,7 +11,7 @@ QOL:
 -Hotbar display for light levels now shows 0-15 for light immune values
 
 Bugs:
--Added system failsafe to delete tweaker displays accidentally copied with axiom
+-Added sys failsafe to delete tweaker displays accidentally copied with axiom
 
 TODO in future version updates:
 Add new blocks to raycast list

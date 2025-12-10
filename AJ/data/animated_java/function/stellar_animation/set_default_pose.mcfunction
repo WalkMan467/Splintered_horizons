@@ -19,5 +19,6 @@ execute on passengers if entity @s[tag=aj.stellar_animation.node.7] run data mer
 execute on passengers if entity @s[tag=aj.stellar_animation.node.rightleg] run data merge entity @s { transformation: [-1f,0f,0f,-0.1312f,0f,1f,0f,0.7656f,0f,0f,-1f,-0.125f,0f,0f,0f,1f], start_interpolation: -1 }
 execute on passengers if entity @s[tag=aj.stellar_animation.node.group] run data merge entity @s { transformation: [-1f,0f,0f,0f,0f,1f,0f,0.5156f,0f,0f,-1f,-0.125f,0f,0f,0f,1f], start_interpolation: -1 }
 execute on passengers if entity @s[tag=aj.stellar_animation.node.item_display] run data merge entity @s { transformation: [-1f,0f,0f,0f,0f,1f,0f,0f,0f,0f,-1f,0f,0f,0f,0f,1f], start_interpolation: -1 }
+execute on passengers if entity @s[tag=aj.stellar_animation.node.item_display1] run data merge entity @s { transformation: [0f,0f,-2f,-0.3125f,-1.4142f,1.4142f,0f,0.8281f,1.4142f,1.4142f,0f,0.3125f,0f,0f,0f,1f], start_interpolation: -1 }
 execute on passengers if entity @s[tag=aj.stellar_animation.node.block_display] run data merge entity @s { transformation: [-1f,0f,0f,0f,0f,1f,0f,0f,0f,0f,-1f,0f,0f,0f,0f,1f], start_interpolation: -1 }
 execute on passengers if entity @s[tag=aj.stellar_animation.node.bone] run data merge entity @s { transformation: [-1f,0f,0f,0f,0f,1f,0f,0f,0f,0f,-1f,0f,0f,0f,0f,1f], start_interpolation: -1 }

@@ -13,6 +13,7 @@
 # Passive Auto Place Torch
 
 scoreboard players set @s armor.radiant_guardians_helmet.effect.cd 100
+execute unless predicate armors:type/radiant_guardians_helmet/effect/light_detect run return 0
 
 execute store result score #have.torch? global.main run clear @s #torchs 0
 execute unless score #have.torch? global.main matches 1.. run return 0

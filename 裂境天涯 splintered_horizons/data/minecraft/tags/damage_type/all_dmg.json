@@ -21,6 +21,14 @@
     "#minecraft:bypass_enchantments",
     "#minecraft:bypass_resistance",
     "#minecraft:bypasses_armor",
-    "#minecraft:bypasses_cooldown"
+    "#minecraft:bypasses_cooldown",
+    "weapons:type/axe/earthquake_axe/damage",
+    "weapons:type/axe/earthquake_axe/damage_effect",
+    "monsters:chapter_3/bloody_blade_spider/dot",
+    "monsters:chapter_2/elekiel/1/space_crack",
+    "monsters:chapter_1/abyssal_soulreaper/effect/dot",
+    "armors:type/symbiotic_blood_oath/damage",
+    "armors:type/black_hole/damage",
+    "armors:type/windriders_legplates/damage"
   ]
 }

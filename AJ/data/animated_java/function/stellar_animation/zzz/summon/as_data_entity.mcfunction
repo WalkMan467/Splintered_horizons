@@ -4,7 +4,7 @@ function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.data_data set from storage animated_java:gu out
 summon minecraft:item_display ^0 ^0 ^0 {Tags:["aj.global.camera","aj.global.entity","aj.global.node","aj.global.node.camera3","aj.global.root.child","aj.global.root.child.camera","aj.new","aj.stellar_animation.camera","aj.stellar_animation.camera.camera3","aj.stellar_animation.entity","aj.stellar_animation.node","aj.stellar_animation.node.camera3"], teleport_duration: 2}
-execute as @n[ type=minecraft:item_display, tag=aj.stellar_animation.camera.camera3, tag=aj.new, distance=..3 ] run function animated_java:stellar_animation/zzz/summon/as_data_entity/as_camera/camera3
+execute as @n[ type=minecraft:item_display, tag=aj.stellar_animation.camera.camera3, tag=aj.new, distance=..4 ] run function animated_java:stellar_animation/zzz/summon/as_data_entity/as_camera/camera3
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.camera_camera3 set from storage animated_java:gu out
 data modify entity @s data.cameras.camera3.uuid set from storage animated_java:gu out
@@ -47,6 +47,9 @@ data modify entity @s data.uuids_by_name.bone_7 set from storage animated_java:g
 execute on vehicle on passengers if entity @s[tag=aj.stellar_animation.node.item_display] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.item_display_item_display set from storage animated_java:gu out
+execute on vehicle on passengers if entity @s[tag=aj.stellar_animation.node.item_display1] run function animated_java:global/gu/get_entity_uuid_string
+data modify entity @s data.uuids append from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.item_display_item_display1 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.stellar_animation.node.block_display] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.block_display_block_display set from storage animated_java:gu out

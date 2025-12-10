@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "i": "minecraft:air"
+  },
+  "pattern": [
+    "iii"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:air"
+  }
+}

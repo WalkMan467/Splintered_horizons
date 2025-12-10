@@ -1,5 +1,6 @@
-execute if score @s monster.skill.casting matches 1.. if score @s monster.skill.silence matches 1.. run function monsters:chapter_3/emissary_of_the_temporal_rift/cast/end
-execute if score @s monster.skill.casting matches 1.. if score @s monster.skill.silence matches 1.. run return 0
+execute if score @s monster.skill.freeze matches 0.. run function monsters:chapter_3/emissary_of_the_temporal_rift/cast/end
+execute if score @s monster.skill.freeze matches 0.. run return 0
+
 
 execute if score @s monster.skill.casting matches 1 run function monsters:chapter_3/emissary_of_the_temporal_rift/1/0
 

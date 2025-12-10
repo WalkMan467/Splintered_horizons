@@ -7,11 +7,11 @@
       "players:scoreboard",
       "cutscene:scoreboard",
       "monsters:scoreboard",
-      "system:scoreboard",
+      "sys:scoreboard",
       "armors:scoreboard",
-      "items:scoreboard",
+      "item:scoreboard",
       "dmg_formula:scoreboard",
       "world_area:scoreboard",
-      "traps:scoreboard"
+      "trap:scoreboard"
     ]
   }

@@ -1,0 +1,13 @@
+{
+  "function": "minecraft:enchant_with_levels",
+  "levels": {
+    "type": "minecraft:score",
+    "target": {
+      "type": "minecraft:fixed",
+      "name": "#rdm_enchantment"
+    },
+    "score": "global.main",
+    "scale": 1
+  },
+  "options": "#minecraft:in_enchanting_table"
+}

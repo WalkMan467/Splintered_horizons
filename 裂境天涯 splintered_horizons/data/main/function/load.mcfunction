@@ -31,9 +31,9 @@ schedule function monsters:timer_s 1s
 schedule function armors:timer_s 1s
 schedule function music:timer 1s
 
-# System
-schedule function system:monument_point/main 1t
-schedule function system:forging_table/main 1t
+# sys
+schedule function sys:monument_point/main 1t
+schedule function sys:forging_table/main 1t
 
 # Hotbar Switching
 schedule function hotbar_sound:guide 2t

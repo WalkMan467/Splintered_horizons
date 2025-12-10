@@ -43,7 +43,7 @@ schedule clear cutscene:opening/end/use
 schedule clear cutscene:opening/6/2
 schedule clear cutscene:opening/1/0_1
 
-function story:chapter_1/opening/stop
+function story:chapter_1/mq/stop
 
 schedule clear cutscene:opening/main
 
@@ -55,7 +55,7 @@ stopsound @a record
 
 gamemode survival @a
 
-tp @a 9999 131 10071 180 0
+execute in minecraft:overworld run tp @a 9999 131 10071 180 0
 
 function cutscene:opening/remove_camera
 

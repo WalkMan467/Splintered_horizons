@@ -30,6 +30,8 @@ kill @e[tag=monster.elekiel_phase_2.3,type=!#minecraft:dummy_mob,type=!player]
 
 effect clear @a[scores={monster.elekiel_phase_2.skill.4.effect.void=0..}] glowing
 
+advancement grant @a[tag=monster.elekiel_phase_2.4.effect.target] only monsters:chapter_2/elekiel_phase_2/4/effect/false
+
 tag @a remove monster.elekiel_phase_2.effect
 tag @a remove monster.elekiel_phase_2.4.effect.target
 tag @a remove monster.elekiel_phase_2.skill.2.target
@@ -44,6 +46,14 @@ scoreboard players reset @a monster.elekiel_phase_2.skill.4.effect.void
 scoreboard players reset #monster.elekiel_phase_2.skill.4.portal.actived global.main
 scoreboard players set @s player.detect.is_bossfight 0
 scoreboard players set #boss_area.chapter_2.elekiel_phase_2 global.main 0
+
+scoreboard players reset $monster.chapter_2.elekiel.1 monster.elekiel.skill.casting
+scoreboard players reset $monster.chapter_2.elekiel.2 monster.elekiel.skill.casting
+scoreboard players reset $monster.chapter_2.elekiel.3 monster.elekiel.skill.casting
+
+scoreboard players reset $monster.chapter_2.elekiel.1 monster.elekiel.skill.cd
+scoreboard players reset $monster.chapter_2.elekiel.2 monster.elekiel.skill.cd
+scoreboard players reset $monster.chapter_2.elekiel.3 monster.elekiel.skill.cd
 
 execute positioned -916 60 2750 run kill @e[type=experience_orb,distance=..60]
 execute positioned -916 60 2750 run tp @a[distance=..60] 1109 82 373

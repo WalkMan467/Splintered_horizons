@@ -15,7 +15,7 @@
       },
       "action": {
         "type": "run_command",
-        "command": "trigger player.detect.quick_actions.trigger set 1"
+        "command": "trigger player.detect.click_event.trigger set 6"
       }
     }
   ]

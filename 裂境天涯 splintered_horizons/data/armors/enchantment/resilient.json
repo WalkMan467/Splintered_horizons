@@ -1,0 +1,127 @@
+{
+  "description": {
+    "translate": "armor.enchantment.resilient"
+  },
+  "supported_items": "minecraft:air",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 10,
+    "per_level_above_first": 15
+  },
+  "max_cost": {
+    "base": 25,
+    "per_level_above_first": 15
+  },
+  "anvil_cost": 1,
+  "slots": [
+    "armor"
+  ],
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "armors:type/resilient/use"
+        },
+        "enchanted": "victim",
+        "affected": "victim"
+      }
+    ],
+    "minecraft:damage_protection": [
+      {
+        "requirements": {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "armor.resilient.hit": 1
+          }
+        },
+        "effect": {
+          "type": "minecraft:add",
+          "value": {
+            "type": "minecraft:linear",
+            "base": 1,
+            "per_level_above_first": 1
+          }
+        }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "armor.resilient.hit": 2
+          }
+        },
+        "effect": {
+          "type": "minecraft:add",
+          "value": {
+            "type": "minecraft:linear",
+            "base": 2,
+            "per_level_above_first": 2
+          }
+        }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "armor.resilient.hit": 3
+          }
+        },
+        "effect": {
+          "type": "minecraft:add",
+          "value": {
+            "type": "minecraft:linear",
+            "base": 3,
+            "per_level_above_first": 3
+          }
+        }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "armor.resilient.hit": 4
+          }
+        },
+        "effect": {
+          "type": "minecraft:add",
+          "value": {
+            "type": "minecraft:linear",
+            "base": 4,
+            "per_level_above_first": 4
+          }
+        }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "armor.resilient.hit": 5
+          }
+        },
+        "effect": {
+          "type": "minecraft:add",
+          "value": {
+            "type": "minecraft:linear",
+            "base": 5,
+            "per_level_above_first": 5
+          }
+        }
+      }
+    ],
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "armors:type/resilient/main"
+        }
+      }
+    ]
+  }
+}

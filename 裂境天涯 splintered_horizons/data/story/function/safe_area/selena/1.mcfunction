@@ -2,12 +2,9 @@
 
 execute positioned 766 144 966 if score story.safe_area.selena.1 story.safe_area matches 1 run tellraw @a[distance=..16] {"translate": "story.safe_area.selena.1.1","fallback": "［賽琳娜］你好"}
 execute positioned 766 144 966 if score story.safe_area.selena.1 story.safe_area matches 2 run tellraw @a[distance=..16] {"translate": "story.safe_area.selena.1.2","fallback": "［賽琳娜］有什麼是嗎?","color":"white"}
-execute positioned 766 144 966 if score story.safe_area.selena.1 story.safe_area matches 2 run tellraw @a[distance=..16] [{"font":"minecraft:default","text":"☞ ","color":"dark_gray"},{"translate": "story.safe_area.elina.1.3","fallback": "【詢問關於你的力量】","color":"dark_green","click_event":{action:"run_command",command:"/trigger player.detect.click_event.trigger set 2"}}]
+execute positioned 766 144 966 if score story.safe_area.selena.1 story.safe_area matches 2 run tellraw @a[distance=..16] [{"font":"minecraft:default","text":"☞ ","color":"dark_gray"},{"translate": "story.safe_area.selena.1.3","fallback": "【關於你的故事】","color":"dark_green","click_event":{action:"run_command",command:"/trigger player.detect.click_event.trigger set 2"}}]
 
-execute positioned 766 144 966 if score story.safe_area.selena.1 story.safe_area matches 3 run tellraw @a[distance=..16] {"translate": "story.safe_area.selena.1.1","fallback": "［賽琳娜］你好"}
-execute if score story.safe_area.selena.1 story.safe_area matches 3 run scoreboard players set story.safe_area.selena.1 story.safe_area 1
-
-execute positioned 766 144 966 if score story.safe_area.selena.1 story.safe_area matches 4 run tellraw @a[distance=..16] {"translate": "story.safe_area.selena.1.4","fallback": "［賽琳娜］關於我的力量嗎?"}
+execute positioned 766 144 966 if score story.safe_area.selena.1 story.safe_area matches 4 run tellraw @a[distance=..16] {"translate": "story.safe_area.selena.1.4","fallback": "［賽琳娜］關於我的故事嗎?"}
 execute positioned 766 144 966 if score story.safe_area.selena.1 story.safe_area matches 5 run tellraw @a[distance=..16] {"translate": "story.safe_area.selena.1.5","fallback": "［賽琳娜］這就要從很久以前說起了..."}
 execute positioned 766 144 966 if score story.safe_area.selena.1 story.safe_area matches 6 run tellraw @a[distance=..16] {"translate": "story.safe_area.selena.1.6","fallback": "［賽琳娜］在我的舊世界裡，我是一名偵探"}
 execute positioned 766 144 966 if score story.safe_area.selena.1 story.safe_area matches 7 run tellraw @a[distance=..16] {"translate": "story.safe_area.selena.1.7","fallback": "［賽琳娜］有天收到一個奇怪的案子引起我的好奇心"}

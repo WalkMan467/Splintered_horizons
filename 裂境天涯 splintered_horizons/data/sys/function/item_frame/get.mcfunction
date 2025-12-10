@@ -1,0 +1,1 @@
+give @s glow_item_frame[entity_data={id:"minecraft:glow_item_frame",ItemDropChance:1f,Invisible:1b,Tags:["sys.item_frame"]},item_name={"bold":true,"color":"white","italic":false,"text":"[開發用] 物品掉落撿拾專用框架"}] 1

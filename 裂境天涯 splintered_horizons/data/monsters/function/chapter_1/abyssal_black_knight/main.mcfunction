@@ -1,4 +1,3 @@
-
 # Skill 1
 execute as @s[tag=chapter_1.abyssal_black_knight.1,type=zombie] run function monsters:chapter_1/abyssal_black_knight/1/main
 

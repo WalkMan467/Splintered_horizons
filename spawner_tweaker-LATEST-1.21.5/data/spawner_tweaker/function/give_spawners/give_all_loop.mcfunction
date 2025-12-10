@@ -17,7 +17,7 @@ $execute positioned ~ ~$(y) ~ unless block ~ ~ ~ barrel run setblock ~ ~ ~ barre
 data modify storage spawner_tweaker:temp give_all.item set value {Slot:0b}
 data modify storage spawner_tweaker:temp give_all.item set from entity @e[distance=..1,type=item,limit=1,sort=nearest,tag=st_item] Item
 execute store result storage spawner_tweaker:temp give_all.item.Slot byte 1 run scoreboard players get slot_in_barrel temp
-execute if data storage spawner_tweaker:temp give.spawner run function spawner_tweaker:give_spawners/insert_items with storage spawner_tweaker:temp give_all
+execute if data storage spawner_tweaker:temp give.spawner run function spawner_tweaker:give_spawners/insert_item with storage spawner_tweaker:temp give_all
 kill @e[distance=..1,type=item,limit=1,sort=nearest,tag=st_item]
 
 #Incriment and loop

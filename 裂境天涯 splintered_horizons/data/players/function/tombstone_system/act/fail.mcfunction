@@ -1,4 +1,4 @@
-tellraw @s [{"player":"WalkMan467","color":"white","bold":false},{"text":" "},{"text":"WalkMan467","color":"gold","bold":true},{"text":" : ","color":"white"},{"translate":"player.tombstone_system.1","fallback":"你無法拿取對方墓碑中的物品","color":"red"}]
+tellraw @s [{"player":"WalkMan467","color":"white","bold":false},{"text":" "},{"text":"WalkMan467","color":"gold","bold":true},{"text":" : ","color":"white"},{"translate":"player.tombstone_sys.1","fallback":"你無法拿取對方墓碑中的物品","color":"red"}]
 
 playsound minecraft:block.vault.insert_item_fail voice @a ~ ~0.5 ~ 1 1
 playsound minecraft:block.vault.insert_item_fail voice @a ~ ~0.5 ~ 1 1

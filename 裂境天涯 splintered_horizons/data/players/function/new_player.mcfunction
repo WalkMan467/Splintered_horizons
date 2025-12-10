@@ -1,5 +1,6 @@
 scoreboard players set @s player.give.item.delay 10
 
+advancement revoke @s only players:tips/bleeding
 advancement grant @s only music:icon
 advancement grant @s only weapons:icon/icon
 advancement grant @s only weapons:icon/old_story
@@ -10,13 +11,14 @@ advancement grant @s only story:icon/proper_noun/icon
 advancement grant @s only story:icon/proper_noun/old_story
 advancement grant @s only story:icon/proper_noun/war_of_light_and_darkness
 advancement grant @s only story:icon/proper_noun/final_battle
-advancement revoke @s only system:forging_table/tips/main
+advancement revoke @s only sys:forging_table/tips/main
+advancement revoke @s only sys:monument_point/tips/main
 advancement revoke @s only weapons:monument/area_1
 advancement grant @s only weapons:monument/icon
 advancement grant @s only weapons:icon/other
 advancement grant @s only story:icon/story/chapter_1
 advancement grant @s only world_area:main/environment_particles/true
-advancement revoke @s only story:icon/story/chapter_1/scebe_1
+advancement revoke @s only story:icon/story/chapter_1/mq/scebe_1
 
 attribute @s minecraft:waypoint_receive_range base reset
 attribute @s waypoint_transmit_range base set 0
@@ -31,7 +33,7 @@ function armors:remove_armors_icon
 function story:remove_story_icon
 function story:remove_proper_noun_icon
 function players:adv/remove_adv
-function items:type/tp_book/rc/reset
+function item:type/tp_book/rc/reset
 
 xp set @s 0 levels
 xp set @s 0 points

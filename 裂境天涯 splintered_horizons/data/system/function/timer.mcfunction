@@ -1,2 +1,0 @@
-execute if score #system.tree_of_world_memory.crystal.return.delay global.main matches 1.. run scoreboard players remove #system.tree_of_world_memory.crystal.return.delay global.main 1
-execute if score #system.tree_of_world_memory.crystal.run.delay global.main matches 1.. run scoreboard players remove #system.tree_of_world_memory.crystal.run.delay global.main 1

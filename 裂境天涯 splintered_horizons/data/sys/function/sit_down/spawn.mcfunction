@@ -1,0 +1,1 @@
+execute align xyz run summon minecraft:interaction ~0.5 ~0.5 ~0.5 {Tags:["sys.sit_down.act","sys.sit_down"]}

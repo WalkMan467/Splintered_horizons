@@ -21,6 +21,8 @@ execute as @a[scores={music.chapter2.temple_of_light=1}] at @s run function musi
 
 execute as @a[scores={music.other.the_forgooten_lost_city=1}] at @s run function music:other/the_forgooten_lost_city/start
 
+execute as @a[scores={music.other.hasanor=1}] at @s run function music:other/hasanor/start
+
 execute as @a[scores={music.chapter3.realm_of_finality=1}] at @s run function music:chapter_3/realm_of_finality/start
 
 execute as @a[scores={music.chapter3.finalitys_embrace_rift=1}] at @s run function music:chapter_3/finalitys_embrace_rift/start

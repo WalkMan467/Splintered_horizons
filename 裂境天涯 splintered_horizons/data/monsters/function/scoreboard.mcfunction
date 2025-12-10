@@ -3,6 +3,8 @@ scoreboard objectives add monster.skill.cast.cd dummy "怪物技能目前冷卻"
 scoreboard objectives add monster.skill.casting dummy "怪物技能Cast中"
 scoreboard objectives add monster.skill.rdm.skill dummy "隨機放技能"
 scoreboard objectives add monster.skill.silence dummy "怪物技能沉默"
+scoreboard objectives add monster.skill.freeze dummy "怪物技能凍結"
+scoreboard objectives add monster.skill.freeze.id dummy "怪物技能凍結 ID"
 
 scoreboard objectives add global.monsters.health dummy
 scoreboard objectives add particle dummy
@@ -13,7 +15,6 @@ scoreboard objectives add particle dummy
 
 scoreboard objectives add monster.abyss_soulcutter.effect dummy "深淵斷魂者流血狀態"
 scoreboard objectives add monster.abyss_soulcutter.effect.delay dummy "深淵斷魂者流血"
-scoreboard objectives add monster.abyss_soulcutter.damage.health.detect dummy "深淵斷魂者 偵測玩家血量"
 
 # ===============================================================================
 
@@ -69,7 +70,9 @@ scoreboard objectives add monster.elekiel.2.player_timer dummy "[怪物] 伊萊�
 scoreboard objectives add monster.elekiel.3.player_pos.save.timer dummy "[怪物] 伊萊克爾 玩家位置儲存 計時器"
 scoreboard objectives add monster.elekiel.3.timer dummy "[怪物] 伊萊克爾 末世之鐘 計時器"
 
-scoreboard objectives add monster.elekiel.skill dummy "[怪物] 伊萊克爾 所有技能 CD"
+scoreboard objectives add monster.elekiel.skill.cd dummy "[怪物] 伊萊克爾 技能 CD"
+scoreboard objectives add monster.elekiel.skill.casting dummy "[怪物] 伊萊克爾 技能 釋放中"
+
 scoreboard objectives add monster.elekiel.player_die deathCount "[怪物] 伊萊克爾 玩家死亡偵測"
 
 # ===============================================================================

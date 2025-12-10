@@ -1,14 +1,14 @@
 # Spawners (Detect the Silver Fish location, then execute 'function monsters:summon/<monsters>' and remove the Silver Fish)
-execute as @e[type=silverfish,distance=..30,limit=10,sort=nearest] at @s run function spawner:main
+execute as @e[distance=..30,limit=10,sort=arbitrary,type=silverfish] at @s run function spawner:main
 
 # Campfire
-execute as @e[type=interaction,tag=system.campfire,distance=..30,limit=5,sort=nearest] at @s run function system:campfire/interaction/main
+execute as @e[type=interaction,tag=sys.campfire,distance=..30,limit=5,sort=nearest] at @s run function sys:campfire/interaction/main
 
 # Portal
 
-execute as @e[tag=portal,type=marker,distance=..30,limit=5,sort=nearest] at @s run function system:portal/loop
+execute as @e[tag=portal,type=marker,distance=..30,limit=5,sort=nearest] at @s run function sys:portal/loop
 
-execute unless entity @s[gamemode=!survival,gamemode=!adventure] as @n[tag=system.item_frame,type=glow_item_frame,distance=..8] unless data entity @s Item.id at @s run kill @s[tag=system.item_frame,type=glow_item_frame]
+execute unless entity @s[gamemode=!survival,gamemode=!adventure] as @n[tag=sys.item_frame,type=glow_item_frame,distance=..8] unless data entity @s Item.id at @s run kill @s[tag=sys.item_frame,type=glow_item_frame]
 
 function armors:loop
 
@@ -23,7 +23,7 @@ execute if dimension minecraft:the_end in minecraft:the_end run spawnpoint @s 99
 execute positioned 9987 165 9978 as @s[tag=player.death,distance=..1] run function players:tp_to_spawnpoint/use
 
 # Chair
-execute as @e[tag=system.sit_down,type=interaction,distance=..15] at @s run function system:sit_down/interaction/main
+execute as @e[tag=sys.sit_down,type=interaction,distance=..15] at @s run function sys:sit_down/interaction/main
 
 
 # Weapons
@@ -40,13 +40,14 @@ function weapons:monument/synchronize_data
 
 # Players
 function players:main
-function players:hide/false
+execute if score @s player.hide matches 1 run function players:hide/false
 function players:disable/movement/main
 function players:actionbar/main
+
 function #players:detect/click_event_trigger
 
-# Traps
-function traps:main
+# trap
+function trap:main
 
 # Area
 function world_area:main/loop

@@ -1,11 +1,13 @@
 title @s title ["",{"text":"☀","color":"yellow"},{"translate":"world_area.icon.chapter_2.temple_of_light","underlined":true,"color":"white"},{"text":"☀","color":"yellow"}]
 title @s subtitle [{"text":""},{"text":"《","bold":true,"color":"gold"},{"translate":"monument.icon.chapter_2","bold":true,"color":"gold"},{"text":"》","bold":true,"color":"gold"}]
-title @s times 20 20 20
+title @s times 20 20 10
 
 stopsound @s voice minecraft:entity.allay.ambient_without_item
 stopsound @s voice minecraft:block.bell.resonate
 playsound minecraft:entity.allay.ambient_without_item voice @s ~ ~1 ~ 1 1
 playsound minecraft:block.bell.resonate voice @s ~ ~1 ~ 1 1
+
+scoreboard players set #rdm_enchantment global.main 16
 
 advancement grant @s only music:chapter_2/temple_of_light/icon
 

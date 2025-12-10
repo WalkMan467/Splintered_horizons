@@ -14,5 +14,6 @@ scoreboard players remove @a[scores={music.chapter3.realm_of_finality=1..}] musi
 scoreboard players remove @a[scores={music.chapter3.finalitys_embrace_rift=1..}] music.chapter3.finalitys_embrace_rift 1
 scoreboard players remove @a[scores={music.chapter3.lord_of_the_cataclysm=1..}] music.chapter3.lord_of_the_cataclysm 1
 scoreboard players remove @a[scores={music.other.the_forgooten_lost_city=1..}] music.other.the_forgooten_lost_city 1
+scoreboard players remove @a[scores={music.other.hasanor=1..}] music.other.hasanor 1
 
 schedule function music:timer 1s

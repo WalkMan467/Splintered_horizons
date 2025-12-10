@@ -3,6 +3,8 @@
       "weapons:type/sword/grip_of_withering/detect",
       "weapons:type/sword/nightfall/detect",
       "weapons:type/scythe/morphing_beast/detect",
-      "weapons:type/bow/data_setup/use"
+      "players:modify/weapon/bow/data_setup/use",
+      "players:modify/tool/pickaxe/data_setup/use",
+      "players:modify/block/shulker_box/data_setup/use"
     ]
   }

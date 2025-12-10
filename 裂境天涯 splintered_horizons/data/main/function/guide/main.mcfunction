@@ -1,2 +1,0 @@
-# @s = all entities
-

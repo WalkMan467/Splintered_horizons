@@ -4,7 +4,7 @@
       "weapons:timer_t",
       "weapons:timer",
       "armors:timer",
-      "items:timer_t",
-      "system:timer"
+      "item:timer_t",
+      "sys:timer"
     ]
   }

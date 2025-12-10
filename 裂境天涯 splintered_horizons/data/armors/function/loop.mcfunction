@@ -9,9 +9,7 @@
 
 # ===================================================
 
-execute if predicate players:detect/input/sneak run scoreboard players add @s player.detect.sneak 1
-execute if score @s player.detect.sneak matches 1..3 unless predicate players:detect/input/sneak run function armors:detect/active_skills
-execute unless predicate players:detect/input/sneak run scoreboard players set @s player.detect.sneak 0
+scoreboard players add @s armor.black_hole.boots.cd 0
 
 execute as @s[scores={armor.black_hole.boots.effect=1}] at @s positioned ~ ~-1 ~ run function armors:type/black_hole/boots/effect/use
 
@@ -28,7 +26,7 @@ function armors:type/radiant_guardians_helmet/main
 
 function armors:type/tai_chis_shadow/main
 function armors:type/black_hole/animation/boots/main
-
+function armors:type/symbiotic_blood_oath/effect/main
 
 # ===================================================
 

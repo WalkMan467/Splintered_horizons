@@ -1,13 +1,13 @@
 #Rewrites the container's contents to the randomly assigned properties
 
 #Kill contents of the container
-data remove block ~ ~ ~ Items
+data remove block ~ ~ ~ item
 data remove block ~ ~ ~ LootTable
 
 execute if data block ~ ~ ~ LootTable run function spawner_tweaker:chests/randomizer/i_hate_mojang1
 
 #Generate new contents
-$data modify block ~ ~ ~ Items set from storage spawner_tweaker:temp container_randomizer[$(n)].contents_source.Items
+$data modify block ~ ~ ~ item set from storage spawner_tweaker:temp container_randomizer[$(n)].contents_source.item
 $data modify block ~ ~ ~ LootTable set from storage spawner_tweaker:temp container_randomizer[$(n)].contents_source.LootTable
 
 #Bells and wistles

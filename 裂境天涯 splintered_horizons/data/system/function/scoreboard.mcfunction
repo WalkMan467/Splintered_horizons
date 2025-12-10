@@ -1,1 +1,0 @@
-scoreboard objectives add system.campfire.the_last_campfire.point dummy

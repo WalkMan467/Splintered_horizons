@@ -9,6 +9,12 @@
 # ===================================================
 # Stop the Animation
 
+title @s title ""
+title @s subtitle {"translate": "player.stop_animation","bold":true,"color":"dark_red"}
+title @s times 10 20 20
+
+playsound minecraft:entity.zombie_villager.cure voice @s ~ ~1 ~ 1 2
+
 tag @s add armor.black_hole.animation.stop.user
 
 execute as @e[type=item_display,tag=aj.stellar_animation.root,tag=aj.stellar_animation.animation.boots_of_the_black_hole.playing,tag=!delete,distance=..10,limit=1] if score @p[tag=armor.black_hole.animation.stop.user] player.id = @s armor.black_hole.boots.aj.id run tag @s add delete
@@ -29,7 +35,3 @@ scoreboard players set @s armor.black_hole.boots.effect 0
 
 stopsound @s voice minecraft:entity.warden.sonic_charge
 stopsound @s voice minecraft:voice.time_and_space_portal_open
-
-title @s times 20 20 20
-title @s title ""
-title @s subtitle ""

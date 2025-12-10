@@ -1,3 +1,6 @@
+execute if score @s monster.skill.freeze matches 0.. run function monsters:chapter_3/sunfire_emissary/cast/end
+execute if score @s monster.skill.freeze matches 0.. run return 0
+
 execute if score @s monster.skill.casting matches 1 run data modify entity @s NoAI set value 1b
 execute if score @s monster.skill.casting matches 1 run playsound minecraft:entity.illusioner.prepare_mirror voice @a ~ ~1 ~ 1 1.75
 execute if score @s monster.skill.casting matches 1 positioned ~ ~ ~4 run summon area_effect_cloud ~ ~ ~ {Tags:["monster.sunfire_emissary.1.damage.main"],Duration:21,custom_particle:{type:"block",block_state:"air"},Radius:0}

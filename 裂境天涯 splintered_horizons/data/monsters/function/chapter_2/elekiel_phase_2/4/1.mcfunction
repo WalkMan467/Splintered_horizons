@@ -4,4 +4,4 @@ tag @s add monster.elekiel_phase_2.4.effect.target
 function players:stop_animation
 advancement grant @s only monsters:chapter_2/elekiel_phase_2/4/effect/true
 
-function particle:portal/crack/use
+function monsters:chapter_2/elekiel_phase_2/4/portal/use

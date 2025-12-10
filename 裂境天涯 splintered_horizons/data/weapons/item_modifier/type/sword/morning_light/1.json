@@ -11,32 +11,28 @@
   {
     "function": "minecraft:set_components",
     "components": {
-      "minecraft:attribute_modifiers": {
-        "modifiers": [
-          {
-            "type": "minecraft:attack_damage",
-            "id": "minecraft:base_attack_damage",
-            "amount": 4,
-            "operation": "add_value",
-            "slot": "mainhand"
-          },
-          {
-            "type": "minecraft:attack_speed",
-            "id": "minecraft:base_attack_speed",
-            "amount": -2.4,
-            "operation": "add_value",
-            "slot": "mainhand"
-          },
-          {
-            "type": "minecraft:safe_fall_distance",
-            "id": "weapon.morning_light",
-            "amount": 1024,
-            "operation": "add_value",
-            "slot": "mainhand"
-          }
-        ],
-        "show_in_tooltip": true
-      },
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "attack_damage",
+          "id": "base_attack_damage",
+          "amount": 0,
+          "operation": "add_value"
+        },
+        {
+          "type": "attack_damage",
+          "id": "base_attack_damage",
+          "amount": 4,
+          "operation": "add_value",
+          "slot": "mainhand"
+        },
+        {
+          "type": "safe_fall_distance",
+          "id": "weapon.morning_light",
+          "amount": 1024,
+          "operation": "add_value",
+          "slot": "mainhand"
+        }
+      ],
       "minecraft:item_model": "minecraft:sword/morning_light/1"
     }
   },
