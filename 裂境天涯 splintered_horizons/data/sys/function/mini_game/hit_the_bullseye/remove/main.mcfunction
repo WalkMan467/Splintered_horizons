@@ -1,0 +1,1 @@
+function sys:mini_game/hit_the_bullseye/remove/scarch

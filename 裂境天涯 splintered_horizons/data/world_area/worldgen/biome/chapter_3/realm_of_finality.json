@@ -11,7 +11,7 @@
     "minecraft:visual/star_brightness": 1,
     "minecraft:visual/sky_light_color": 11272192
   },
-  "temperature": 0.8,
+  "temperature": -0.3,
   "downfall": 0,
   "has_precipitation": true,
   "creature_spawn_probability": 0,

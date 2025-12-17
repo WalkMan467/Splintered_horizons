@@ -1,6 +1,7 @@
 advancement revoke @s only item:recipe/twilight_wind
-execute if score #sys.forging_table.twilight_wind sys.forging_table.recipes matches 1.. run return 0
 clear @s *[custom_data~{type:"recipe",id:"twilight_wind"}]
+
+execute if score #sys.forging_table.twilight_wind sys.forging_table.recipes matches 1.. run return 0
 
 scoreboard players set #sys.forging_table.twilight_wind sys.forging_table.recipes 1
 execute as @a at @s run playsound minecraft:entity.player.levelup voice @s ~ ~1 ~ 0.75 1

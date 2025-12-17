@@ -2,6 +2,8 @@
   "values": [
     "item:energy_infusion_stone/berserker",
     "item:energy_infusion_stone/destroyer",
-    "item:energy_infusion_stone/guardian"
+    "item:energy_infusion_stone/guardian",
+    "item:energy_infusion_stone/cavalryman",
+    "item:energy_infusion_stone/executioner"
   ]
 }

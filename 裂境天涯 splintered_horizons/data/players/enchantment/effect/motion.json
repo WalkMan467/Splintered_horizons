@@ -1,0 +1,100 @@
+{
+  "anvil_cost": 2,
+  "description": {
+    "text": ""
+  },
+  "effects": {
+    "minecraft:tick": [
+      {
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "flags": {
+              "is_on_ground": true
+            }
+          }
+        },
+        "effect": {
+          "type": "minecraft:all_of",
+          "effects": [
+            {
+              "type": "minecraft:apply_impulse",
+              "direction": [
+                0,
+                0,
+                -1
+              ],
+              "coordinate_scale": [
+                1,
+                0,
+                1
+              ],
+              "magnitude": {
+                "type": "minecraft:linear",
+                "base": 1,
+                "per_level_above_first": 1
+              }
+            },
+            {
+              "type": "minecraft:run_function",
+              "function": "players:effect/motion/use"
+            }
+          ]
+        }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "flags": {
+              "is_on_ground": false
+            }
+          }
+        },
+        "effect": {
+          "type": "minecraft:all_of",
+          "effects": [
+            {
+              "type": "minecraft:apply_impulse",
+              "direction": [
+                0,
+                0,
+                -1
+              ],
+              "coordinate_scale": [
+                1,
+                0,
+                1
+              ],
+              "magnitude": {
+                "type": "minecraft:linear",
+                "base": 0.375,
+                "per_level_above_first": 0.375
+              }
+            },
+            {
+              "type": "minecraft:run_function",
+              "function": "players:effect/motion/use"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 25,
+    "per_level_above_first": 8
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 5,
+    "per_level_above_first": 8
+  },
+  "slots": [
+    "any"
+  ],
+  "supported_items": "minecraft:air",
+  "weight": 5
+}

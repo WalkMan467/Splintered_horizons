@@ -3,3 +3,4 @@ tag @s remove aj.rainy_night.animation.idle.playing
 tag @s remove aj.rainy_night.animation.idle2.playing
 tag @s remove aj.rainy_night.animation.sit_down.playing
 tag @s remove aj.rainy_night.animation.walk.playing
+tag @s remove aj.rainy_night.animation.chat1.playing

@@ -82,7 +82,8 @@
         "rc": false,
         "type": "sword",
         "rarity": "epic",
-        "weapon": "twilight_wind"
+        "weapon": "twilight_wind",
+        "forging_table": true
       },
       "minecraft:tooltip_style": "epic",
       "minecraft:enchantment_glint_override": false

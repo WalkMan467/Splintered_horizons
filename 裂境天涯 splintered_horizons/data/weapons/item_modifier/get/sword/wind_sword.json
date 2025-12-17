@@ -97,7 +97,8 @@
         "rc": false,
         "type": "sword",
         "rarity": "rare",
-        "weapon": "wind_sword"
+        "weapon": "wind_sword",
+        "forging_table": true
       },
       "minecraft:enchantment_glint_override": false,
       "minecraft:tooltip_style": "rare"

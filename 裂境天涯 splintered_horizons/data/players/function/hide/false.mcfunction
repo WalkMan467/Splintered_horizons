@@ -4,3 +4,5 @@ gamemode spectator @s[scores={player.gamemode=3}]
 gamemode survival @s[scores={player.gamemode=4}]
 
 scoreboard players reset @s player.hide
+
+scoreboard players reset @s player.gamemode

@@ -34,6 +34,7 @@ schedule function music:timer 1s
 # sys
 schedule function sys:monument_point/main 1t
 schedule function sys:forging_table/main 1t
+schedule function sys:mini_game/hit_the_bullseye/main 1t
 
 # Hotbar Switching
 schedule function hotbar_sound:guide 2t

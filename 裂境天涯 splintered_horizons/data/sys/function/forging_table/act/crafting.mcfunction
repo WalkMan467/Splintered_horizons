@@ -24,4 +24,10 @@ tellraw @s [{"translate":"weapon.morning_light","color":"#ffd000","italic":false
 tellraw @s [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"translate":"item.holy_light_iron_ingot","color":"#ffd000","italic":false,"font": "minecraft:default"},{"text": "*5","font": "minecraft:default"}]
 tellraw @s [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"translate":"item.minecraft.stone_sword","color":"white","italic":false,"font": "minecraft:default"},{"text": "*1","font": "minecraft:default"}]
 
+execute if score #sys.forging_table.rock_crushing_greatsword sys.forging_table.recipes matches 1.. run tellraw @a [{"text":"\n"}]
+
+execute if score #sys.forging_table.rock_crushing_greatsword sys.forging_table.recipes matches 1.. run tellraw @a [{"translate":"weapon.rock_crushing_greatsword","color":"#b19000","italic":false,"bold":true}]
+execute if score #sys.forging_table.rock_crushing_greatsword sys.forging_table.recipes matches 1.. run tellraw @a [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"translate":"item.rockbound_crystal","color":"#b19000","italic":false,"font": "minecraft:default"},{"text": "*6","font": "minecraft:default"}]
+execute if score #sys.forging_table.rock_crushing_greatsword sys.forging_table.recipes matches 1.. run tellraw @a [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"translate":"item.minecraft.stone_sword","color":"white","italic":false,"font": "minecraft:default"},{"text": "*1","font": "minecraft:default"}]
+
 data remove entity @s interaction

@@ -1,0 +1,36 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "translate": "weapon.enchantment.bleeding_hit"
+  },
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "requirements": {
+          "condition": "minecraft:random_chance",
+          "chance": 0.3
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "weapons:enchantment/bleeding_hit/use"
+        },
+        "enchanted": "attacker",
+        "affected": "victim"
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 12,
+    "per_level_above_first": 11
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 11
+  },
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "minecraft:air",
+  "weight": 10
+}

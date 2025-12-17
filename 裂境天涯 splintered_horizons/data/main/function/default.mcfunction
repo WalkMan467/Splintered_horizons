@@ -1,6 +1,6 @@
 execute in minecraft:overworld run tp @s 9999 131 10071 180 0
 
-gamerule sendCommandFeedback false
+gamerule send_command_feedback false
 
 datapack disable "file/spawner_tweaker-LATEST-1.21.5"
 

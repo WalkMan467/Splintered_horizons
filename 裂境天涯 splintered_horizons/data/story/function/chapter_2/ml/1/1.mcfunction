@@ -19,5 +19,8 @@ data remove entity @s interaction
 
 execute unless score story.chapter_2.ml.1 story.chapter_2 matches 1..7 run return 0
 
+execute as @n[distance=..1,tag=aj.rainy_night.root,type=item_display] at @s run function animated_java:rainy_night/animations/chat1/stop
+execute as @n[distance=..1,tag=aj.rainy_night.root,type=item_display] at @s run function animated_java:rainy_night/animations/chat1/tween {to_frame: 5, duration: 5}
+
 scoreboard players add story.chapter_2.ml.1 story.chapter_2 1
 playsound minecraft:ui.button.click voice @a ~ ~1 ~ 0.5 1

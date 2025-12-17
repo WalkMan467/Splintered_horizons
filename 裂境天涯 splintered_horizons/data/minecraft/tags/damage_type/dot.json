@@ -1,0 +1,10 @@
+{
+  "values": [
+    "#minecraft:is_fire",
+    "#minecraft:is_freezing",
+    "minecraft:indirect_magic",
+    "monsters:chapter_3/bloody_blade_spider/dot",
+    "monsters:chapter_1/abyssal_soulreaper/effect/dot",
+    "armors:type/symbiotic_blood_oath/damage"
+  ]
+}

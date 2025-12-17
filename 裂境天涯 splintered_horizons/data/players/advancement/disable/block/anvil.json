@@ -1,0 +1,47 @@
+{
+  "criteria": {
+    "1": {
+      "trigger": "minecraft:any_block_use",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:block_state_property",
+            "block": "minecraft:anvil"
+          }
+        ]
+      }
+    },
+    "2": {
+      "trigger": "minecraft:any_block_use",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:block_state_property",
+            "block": "minecraft:chipped_anvil"
+          }
+        ]
+      }
+    },
+    "3": {
+      "trigger": "minecraft:any_block_use",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:block_state_property",
+            "block": "minecraft:damaged_anvil"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "1",
+      "2",
+      "3"
+    ]
+  ],
+  "rewards": {
+    "function": "players:disable/block/anvil"
+  }
+}

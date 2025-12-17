@@ -33,7 +33,11 @@ scoreboard objectives add player.actionbar.otherworld_portal.2 dummy "[玩家] a
 scoreboard objectives add player.actionbar.tree_of_world_memory.1 dummy "[玩家] actionbar 狀態機 世界記憶之樹提示"
 scoreboard objectives add player.actionbar.tree_of_world_memory.2 dummy "[玩家] actionbar 狀態機 世界記憶之樹提示2"
 
-scoreboard objectives add player.actionbar.sys.forging_table.energy_infusion_failure dummy "[玩家] actionbar 狀態機 注能失敗提示"
+scoreboard objectives add player.actionbar.disabled_bed dummy "[玩家] actionbar 狀態機 禁用床提示"
+
+scoreboard objectives add player.actionbar.disabled_anvil dummy "[玩家] actionbar 狀態機 禁用鐵砧提示"
+
+scoreboard objectives add player.actionbar.sys.forging_table.failure dummy "[玩家] actionbar 狀態機 失敗提示"
 
 scoreboard objectives add player.actionbar.eye_of_finality dummy "[玩家] actionbar 狀態機 終焉之眼"
 
@@ -48,7 +52,11 @@ scoreboard players add @a player.actionbar.otherworld_portal.2 0
 scoreboard players add @a player.actionbar.tree_of_world_memory.1 0
 scoreboard players add @a player.actionbar.tree_of_world_memory.2 0
 
-scoreboard players add @a player.actionbar.sys.forging_table.energy_infusion_failure 0
+scoreboard players add @a player.actionbar.sys.forging_table.failure 0
+
+scoreboard players add @a player.actionbar.disabled_bed 0
+
+scoreboard players add @a player.actionbar.disabled_anvil 0
 
 # ==================================================================================================
 # 其他

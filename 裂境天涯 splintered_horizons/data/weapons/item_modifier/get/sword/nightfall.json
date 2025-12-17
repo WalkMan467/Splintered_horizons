@@ -1,7 +1,7 @@
 [
   {
     "function": "minecraft:set_item",
-    "item": "minecraft:iron_sword"
+    "item": "minecraft:stone_sword"
   },
   {
     "function": "minecraft:set_components",
@@ -139,7 +139,8 @@
         "rc": true,
         "type": "sword",
         "rarity": "epic",
-        "weapon": "nightfall"
+        "weapon": "nightfall",
+        "forging_table": true
       },
       "minecraft:consumable": {
         "consume_seconds": 10000,

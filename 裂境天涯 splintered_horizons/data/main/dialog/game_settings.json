@@ -7,39 +7,6 @@
   "inputs": [
     {
       "type": "minecraft:single_option",
-      "key": "daytime",
-      "label": {
-        "translate": "dialog.main.daytime",
-        "fallback": "Day Time"
-      },
-      "label_visible": true,
-      "options": [
-        {
-          "id": "1",
-          "display": {
-            "translate": "dialog.main.daytime.eternal_night",
-            "fallback": "Eternal Night"
-          },
-          "initial": true
-        },
-        {
-          "id": "2",
-          "display": {
-            "translate": "dialog.main.daytime.cycles",
-            "fallback": "Cycles"
-          }
-        },
-        {
-          "id": "3",
-          "display": {
-            "translate": "dialog.main.daytime.eternal_day",
-            "fallback": "Eternal Day"
-          }
-        }
-      ]
-    },
-    {
-      "type": "minecraft:single_option",
       "key": "tombstone_sys",
       "label": {
         "translate": "dialog.main.tombstone_sys",

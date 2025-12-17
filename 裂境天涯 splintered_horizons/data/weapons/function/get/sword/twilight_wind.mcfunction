@@ -14,7 +14,7 @@ give @s stone_sword[item_name=[{"translate":"weapon.twilight_wind","color":"dark
 
 #name = ['࿓ 暮光之風 ࿓', 'dark_aqua', '劍 / 史詩']
 #story = {'info': ['誕生於森林月光之下的武器四周散發著風之能量，', '守護著森林的白天'], 'color': 'blue'}
-#item_data = {'real_item': 'stone_sword', 'id': 'twilight_wind', 'item_model': '"sword/wind_sword/2"', 'custom_data': '{rc:0b, type:"sword",rarity:"epic",weapon:"twilight_wind"}', 'max_damage': 150, 'max_stack_size': 1, 'rc': False, 'other': ['minecraft:enchantments={"weapons:type/sword/twilight_wind/use":1,"minecraft:mending":1}', 'enchantment_glint_override=false', 'tooltip_style="epic"']}
+#item_data = {'real_item': 'stone_sword', 'id': 'twilight_wind', 'item_model': '"sword/wind_sword/2"', 'custom_data': '{rc:0b, type:"sword",rarity:"epic",weapon:"twilight_wind",forging_table:1b}', 'max_damage': 150, 'max_stack_size': 1, 'rc': False, 'other': ['minecraft:enchantments={"weapons:type/sword/twilight_wind/use":1,"minecraft:mending":1}', 'enchantment_glint_override=false', 'tooltip_style="epic"']}
 #skill = {'is_skill': True, 'cd': 5, 'name': ['暮光風刃', '#a6ff00', '#00ffaa'], 'info': ['每擁有 1 層【疾風能量】', '可以使你提升 0.1 點攻擊速度', '當你攻擊命中敵人', '獲得一層【疾風能量】與獲得【%s】持續 5 秒', '並且根據當前疾風能量數量發射相應次數的風刃', '如果【疾風能量】大於等於 5 則清除所有【疾風能量】']}
 #passive_skills = {'is_passive_skills': False, 'cd': 0, 'name': ['冰霜之落', '#A4DEFF', '#209AE0'], 'info': ['當你攻擊命中時:', '有一定概率召喚冰霜隕石墜落在目標位置', '落在被攻擊實體附近', '造成 150% 基礎傷害']}
 #ultimate = {'is_ultimate': False, 'cd': 0, 'name': ['狂風暴雨', 'dark_aqua', '#fceb00'], 'info': ['右鍵點擊消耗一個終焉之眼，', '接下來的8秒內如果在空中手持此武器擊中敵人', '在目標位置降下降下閃電造成5點傷害。']}

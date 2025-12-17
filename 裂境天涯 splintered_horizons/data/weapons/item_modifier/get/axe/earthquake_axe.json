@@ -127,7 +127,8 @@
         "rc": true,
         "type": "axe",
         "rarity": "mythic",
-        "weapon": "earthquake_axe"
+        "weapon": "earthquake_axe",
+        "forging_table": true
       },
       "minecraft:consumable": {
         "consume_seconds": 10000,

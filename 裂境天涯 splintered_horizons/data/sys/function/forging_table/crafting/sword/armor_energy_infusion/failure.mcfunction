@@ -1,6 +1,7 @@
 tag @s add sys.forging_table.crafted_item.energy_infusion.failure
 
-scoreboard players set @a[distance=..6] player.actionbar.sys.forging_table.energy_infusion_failure 40
+scoreboard players set #player.actionbar.sys.forging_table.failure global.main 1
+scoreboard players set @a[distance=..6] player.actionbar.sys.forging_table.failure 40
 
 playsound minecraft:block.vault.insert_item_fail voice @a ~ ~1 ~ 1 1
 playsound minecraft:block.vault.insert_item_fail voice @a ~ ~1 ~ 1 1

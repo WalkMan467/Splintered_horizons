@@ -15,6 +15,8 @@ scoreboard players remove @a[scores={weapon.effect.holy_fire=1..}] weapon.effect
 scoreboard players remove @a[scores={weapon.effect.starry_sky_frost=1..}] weapon.effect.starry_sky_frost 1
 scoreboard players remove @a[scores={weapon.ruins_of_the_finality.enhanced_finality_skill=1..}] weapon.ruins_of_the_finality.enhanced_finality_skill 1
 scoreboard players remove @a[scores={weapon.zeuss_lightning.use=1..}] weapon.zeuss_lightning.use 1
+scoreboard players remove @a[scores={weapon.rock_crushing_greatsword.use=1..}] weapon.rock_crushing_greatsword.use 1
+
 scoreboard players remove @a[scores={weapon.ethereal_shatterstorm_compound_bow.use=1..}] weapon.ethereal_shatterstorm_compound_bow.use 1
 scoreboard players remove @a[scores={weapon.sagittarius.use=1..}] weapon.sagittarius.use 1
 

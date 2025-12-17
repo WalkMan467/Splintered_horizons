@@ -12,6 +12,8 @@ gamemode creative @s[scores={monster.elekiel_phase_2.skill.4.player.gamemode=2}]
 gamemode adventure @s[scores={monster.elekiel_phase_2.skill.4.player.gamemode=3}]
 gamemode spectator @s[scores={monster.elekiel_phase_2.skill.4.player.gamemode=4}]
 
+scoreboard players reset @s player.gamemode
+
 tp @s ~ ~ ~
 
 scoreboard players reset @s monster.elekiel_phase_2.skill.4.player.gamemode

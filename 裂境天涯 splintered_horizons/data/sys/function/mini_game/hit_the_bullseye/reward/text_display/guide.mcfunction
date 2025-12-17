@@ -1,0 +1,3 @@
+data merge entity @s {Tags:["sys.mini_game.hit_the_bullseye.entity","sys.mini_game.hit_the_bullseye.reward.text_display"],alignment: "center", background: 16383998, billboard: "vertical", brightness: {block: 15, sky: 0}, default_background: 0b, interpolation_duration: 1, line_width: 200, see_through: 1b, shadow: 0b, teleport_duration: 1, text: {bold: 0b, color: "white", font: "minecraft:icon", italic: 0b, text: ""}, text_opacity: -1b, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [0.375f, 0.375f, 0.375f], translation: [-0.05f, -0.325f, 0.0f]}}
+
+scoreboard players set @s duration 100

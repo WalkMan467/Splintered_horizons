@@ -6,13 +6,12 @@
       "can_sleep": "never",
       "explodes": false,
       "error_message": {
-        "translate": "block.minecraft.bed.no_sleep"
+        "translate": "block.minecraft.bed.disabled"
       }
     },
     "minecraft:gameplay/respawn_anchor_works": false,
     "minecraft:visual/fog_color": "#000000",
     "minecraft:visual/sky_color": "#000000",
-    "minecraft:visual/sky_light_color": "#e580ff",
     "minecraft:visual/star_brightness": 1,
     "minecraft:visual/sky_light_factor": 0,
     "minecraft:visual/sun_angle": 180,
@@ -31,14 +30,16 @@
   },
   "coordinate_scale": 1,
   "has_ceiling": false,
-  "has_fixed_time": true,
   "has_skylight": true,
   "height": 400,
   "infiniburn": "#minecraft:infiniburn_overworld",
   "logical_height": 400,
-  "min_y": 0,
+  "min_y": -64,
   "monster_spawn_block_light_limit": 0,
-  "monster_spawn_light_level": 15,
-  "skybox": "end",
+  "monster_spawn_light_level": {
+    "type": "minecraft:uniform",
+    "max_inclusive": 7,
+    "min_inclusive": 0
+  },
   "timelines": "#minecraft:in_overworld"
 }

@@ -28,9 +28,17 @@ function world_area:main/safe_zone/melisna/main
     # Campfire Darkness Effect
     effect give @s[tag=campfire.darkness,type=player] darkness 2 255 true
 
+    # Safe Zone Music
+    execute if biome ~ ~ ~ #world_area:safe_area run advancement grant @s only world_area:main/safe_zone/music/in
+    execute unless biome ~ ~ ~ #world_area:safe_area run advancement grant @s only world_area:main/safe_zone/music/out
+
     # Safe Zone
     execute if biome ~ ~ ~ world_area:main/safe_zone run advancement grant @s only world_area:main/safe_zone/in
     execute unless biome ~ ~ ~ world_area:main/safe_zone run advancement grant @s only world_area:main/safe_zone/out
+
+    # Safe Zone
+    execute if biome ~ ~ ~ world_area:main/resource_warehouse run advancement grant @s only world_area:main/resource_warehouse/in
+    execute unless biome ~ ~ ~ world_area:main/resource_warehouse run advancement grant @s only world_area:main/resource_warehouse/out
 
     # Adventure / Survival mode area detection (including campfires)
     execute if entity @s[gamemode=survival] if function world_area:main/mode_change/main run function world_area:main/mode_change/adventure

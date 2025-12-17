@@ -14,6 +14,8 @@ gamemode creative @s[tag=armor.black_hole.animation.boots.player,scores={main.ga
 gamemode spectator @s[tag=armor.black_hole.animation.boots.player,scores={main.gamemode=3}]
 gamemode survival @s[tag=armor.black_hole.animation.boots.player,scores={main.gamemode=4}]
 
+scoreboard players reset @s player.gamemode
+
 attribute @s movement_speed modifier remove armor.black_hole.animation.boots
 attribute @s jump_strength modifier remove armor.black_hole.animation.boots
 

@@ -1,6 +1,6 @@
 execute positioned 770 148 979 run advancement grant @a[distance=..8] only sys:forging_table/tips/main
 
-execute positioned 770 148 979 as @n[tag=!sys.forging_table.item,type=item,distance=..2] run function sys:forging_table/tp
+execute positioned 770 148 979 as @n[tag=!sys.forging_table.item,type=item,distance=..1.5] run function sys:forging_table/tp
 
 # Wooden Sword
 execute positioned 770 148 979 as @n[distance=..1.5,type=item,predicate=sys:forging_table/crafting/sword/general/wooden_sword] run function sys:forging_table/crafting/general/weapon_energy_infusion

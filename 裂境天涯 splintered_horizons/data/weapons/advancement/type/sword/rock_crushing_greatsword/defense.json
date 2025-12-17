@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "requirements": {
+      "conditions": {
+        "damage": {
+          "blocked": false
+        }
+      },
+      "trigger": "minecraft:entity_hurt_player"
+    }
+  },
+  "rewards": {
+    "function": "weapons:type/sword/rock_crushing_greatsword/rc/defense/default_fx"
+  }
+}

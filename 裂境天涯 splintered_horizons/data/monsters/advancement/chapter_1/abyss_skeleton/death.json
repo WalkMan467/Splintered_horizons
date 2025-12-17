@@ -1,20 +1,15 @@
 {
-    "criteria": {
-      "requirements": {
-        "trigger": "minecraft:player_killed_entity",
-        "conditions": {
-          "entity": {
-            "nbt": "{Tags:[\"monster.abyss_skeleton\"]}"
-          }
+  "criteria": {
+    "requirements": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "nbt": "{Tags:[\"monster.abyss_skeleton\"]}"
         }
       }
-    },
-    "requirements": [
-      [
-        "requirements"
-      ]
-    ],
-    "rewards": {
-      "function": "monsters:chapter_1/abyss_skeleton/death"
     }
+  },
+  "rewards": {
+    "function": "monsters:chapter_1/abyss_skeleton/death"
   }
+}

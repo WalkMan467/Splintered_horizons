@@ -60,6 +60,16 @@ scoreboard players add @a weapon.earthquake_axe.animation 0
 scoreboard players add @a weapon.earthquake_axe.effect.cd 0
 
 #===================================================================
+#碎岩大劍
+
+scoreboard objectives add weapon.rock_crushing_greatsword.cd dummy "碎岩大劍CD"
+scoreboard objectives add weapon.rock_crushing_greatsword.hold_down dummy "碎岩大劍 長按"
+scoreboard objectives add weapon.rock_crushing_greatsword.use dummy "碎岩大劍 使用"
+
+scoreboard players add @a weapon.rock_crushing_greatsword.cd 0
+
+#===================================================================
+
 #宙斯閃電
 
 scoreboard objectives add weapon.zeuss_lightning.hold_down dummy "宙斯閃電 長按"

@@ -18,6 +18,7 @@
     execute as 00000019-0000-0015-0000-003300000005 at @s if data entity @s interaction.timestamp if score story.chapter_2.ml.2 story.chapter_2 matches 1..46 run function story:chapter_2/ml/2/1
     execute as 00000019-0000-0015-0000-003300000033 at @s if data entity @s interaction.timestamp if score story.chapter_2.ml.3 story.chapter_2 matches 1..16 run function story:chapter_2/ml/3/1
     execute as 0007d070-0000-c819-0000-c94100050e3b at @s if data entity @s interaction.timestamp if score story.chapter_2.ml.4 story.chapter_2 matches 1..18 run function story:chapter_2/ml/4/1
+    execute as 000052f9-0282-94f1-0000-a4890007fb72 at @s if data entity @s interaction.timestamp if score story.chapter_2.ml.5 story.chapter_2 matches 1..12 run function story:chapter_2/ml/5/1
 
 # Safe Area
 

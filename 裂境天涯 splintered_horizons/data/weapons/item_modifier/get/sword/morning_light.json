@@ -120,7 +120,8 @@
       "minecraft:custom_data": {
         "type": "sword",
         "rarity": "epic",
-        "weapon": "morning_light"
+        "weapon": "morning_light",
+        "forging_table": true
       },
       "minecraft:tooltip_style": "epic",
       "minecraft:enchantment_glint_override": false
