@@ -1,8 +1,10 @@
+execute if entity @s[tag=!player.elytra_switch] run return 0
+
 kill @n[type=item,nbt={Item:{components:{"minecraft:custom_data":{disable_drop:1b}}}}]
 
 scoreboard players set @s player.animation.lock 2147483647
 clear @s *
-item replace entity @s armor.chest with elytra[unbreakable={},tooltip_display={hide_tooltip:true},equippable={slot:"chest",asset_id:"air"},enchantment_glint_override=false,enchantments={"minecraft:binding_curse":1}] 1
+item replace entity @s armor.chest with elytra[unbreakable={},tooltip_display={hide_tooltip:true},custom_data={elytra_switch:1b,disable_drop:1b},equippable={slot:"chest",asset_id:"air"},enchantment_glint_override=false,enchantments={"minecraft:binding_curse":1}] 1
 item replace entity @s weapon.offhand with firework_rocket[tooltip_display={hide_tooltip:true},custom_data={elytra_switch:1b,disable_drop:1b},fireworks={flight_duration:1}] 1
 
 item replace entity @s armor.head with disc_fragment_5[enchantment_glint_override=false,enchantments={"minecraft:binding_curse":1},equippable={slot:"head",equip_sound:"entity.chicken.step"},item_model="disable_icon",tooltip_display={hide_tooltip:true},custom_data={disable_drop:1b},attribute_modifiers=[{id:"attack_damage",type:"attack_damage",amount:0.0,operation:"add_multiplied_base",slot:"mainhand"},{id:"attack_speed",type:"attack_speed",amount:0.0,operation:"add_multiplied_base",slot:"mainhand"}]] 1

@@ -8,14 +8,13 @@ kill 00000016-0000-0016-0000-001500000019
 
 forceload remove 762 931 758 935
 
-execute positioned 758 143 935 as @n[type=item_display,distance=..10,tag=aj.rainy_night.root] run function animated_java:rainy_night/remove/this
-
-execute positioned 758 143 935 as @n[type=item_display,distance=..10,tag=aj.stellar_animation.root] run function animated_java:stellar_animation/remove/this
-execute positioned 758 143 935 as @e[type=item_display,distance=..10,tag=aj.stellar_animation.entity] run kill @s
+execute positioned 758 143 935 as @n[sort=arbitrary,distance=..10,tag=aj.sophia.root,type=item_display] run function animated_java:sophia/remove/this
+execute positioned 758 143 935 as @n[sort=arbitrary,distance=..10,tag=aj.stellar_animation.root,type=item_display] run function animated_java:stellar_animation/remove/this
+execute positioned 758 143 935 as @e[sort=arbitrary,distance=..10,tag=aj.stellar_animation.entity,type=item_display] run kill @s
+execute positioned 759 144 946 as @n[sort=arbitrary,distance=..10,tag=aj.isokla.root,type=item_display] run function animated_java:isokla/remove/this
+execute positioned 757 144 946 as @n[sort=arbitrary,distance=..10,tag=aj.elina.root,type=item_display] run function animated_java:elina/remove/this
 
 function story:chapter_2/stop
-function animated_java:amysis/remove/all
-function animated_java:elina/remove/all
 
 schedule clear cutscene:safe_area/main
 schedule clear cutscene:safe_area/1/0

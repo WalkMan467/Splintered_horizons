@@ -1,6 +1,7 @@
 tag @s add monster.elekiel_phase_2.void.target
 
 function players:inventory/save {bag:"overworld"}
+
 function cse:status_effects/apply/clear
 clear @s
 

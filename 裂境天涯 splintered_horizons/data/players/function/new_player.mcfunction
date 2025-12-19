@@ -1,6 +1,7 @@
 scoreboard players set @s player.give.item.delay 10
 
 advancement revoke @s only players:tips/bleeding
+advancement revoke @s only players:tips/mending
 advancement grant @s only music:icon
 advancement grant @s only weapons:icon/icon
 advancement grant @s only weapons:icon/old_story

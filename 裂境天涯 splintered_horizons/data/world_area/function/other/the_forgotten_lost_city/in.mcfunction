@@ -7,4 +7,6 @@ playsound minecraft:ambient.cave voice @s ~ ~1 ~ 1 2
 
 function music:other/the_forgooten_lost_city/start
 
+scoreboard players set #rdm_enchantment global.main 12
+
 advancement revoke @s only world_area:other/the_forgotten_lost_city/out

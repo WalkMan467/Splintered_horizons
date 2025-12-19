@@ -1,7 +1,7 @@
 advancement revoke @s only item:recipe/rock_crushing_greatsword
-clear @s *[custom_data~{type:"recipe",id:"rock_crushing_greatsword"}]
 
 execute if score #sys.forging_table.rock_crushing_greatsword sys.forging_table.recipes matches 1.. run return 0
+clear @s *[custom_data~{type:"recipe",id:"rock_crushing_greatsword"}]
 
 scoreboard players set #sys.forging_table.rock_crushing_greatsword sys.forging_table.recipes 1
 execute as @a at @s run playsound minecraft:entity.player.levelup voice @s ~ ~1 ~ 0.75 1
@@ -13,6 +13,6 @@ tellraw @a [{"translate": "sys.forging_table.unlock.1","color":"white","bold": f
 
 tellraw @a [{"text":"\n"}]
 
-tellraw @a [{"translate":"weapon.rock_crushing_greatsword","color":"dark_aqua","italic":false,"bold":true}]
+tellraw @a [{"translate":"weapon.rock_crushing_greatsword","color":"gold","italic":false,"bold":true}]
 tellraw @a [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"translate":"item.rockbound_crystal","color":"#b19000","italic":false,"font": "minecraft:default"},{"text": "*6","font": "minecraft:default"}]
 tellraw @a [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"translate":"item.minecraft.stone_sword","color":"white","italic":false,"font": "minecraft:default"},{"text": "*1","font": "minecraft:default"}]

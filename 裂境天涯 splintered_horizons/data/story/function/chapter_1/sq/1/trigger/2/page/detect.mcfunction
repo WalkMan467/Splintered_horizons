@@ -1,3 +1,11 @@
-execute if items entity @s container.* written_book[custom_data~{page:1}] run scoreboard players set #story:icon/story/chapter_1/mq/4/page_1 global.main 1
-execute if items entity @s container.* written_book[custom_data~{page:2}] run scoreboard players set #story:icon/story/chapter_1/mq/4/page_2 global.main 1
-execute if items entity @s container.* written_book[custom_data~{page:3}] run scoreboard players set #story:icon/story/chapter_1/mq/4/page_3 global.main 1
+execute \
+    if items entity @s container.* written_book[custom_data~{page:1}] run \
+scoreboard players set #story:icon/story/chapter_1/mq/4/page_1 global.main 1
+
+execute \
+    if items entity @s container.* written_book[custom_data~{page:2}] run \
+scoreboard players set #story:icon/story/chapter_1/mq/4/page_2 global.main 1
+
+execute \
+    if items entity @s container.* written_book[custom_data~{page:3}] run \
+scoreboard players set #story:icon/story/chapter_1/mq/4/page_3 global.main 1

@@ -7,4 +7,6 @@ playsound minecraft:ambient.cave voice @s ~ ~1 ~ 1 2
 
 function music:other/hasanor/start
 
+scoreboard players set #rdm_enchantment global.main 18
+
 advancement revoke @s only world_area:other/hasanor/out

@@ -26,7 +26,7 @@ tellraw @s [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"translate":
 
 execute if score #sys.forging_table.rock_crushing_greatsword sys.forging_table.recipes matches 1.. run tellraw @a [{"text":"\n"}]
 
-execute if score #sys.forging_table.rock_crushing_greatsword sys.forging_table.recipes matches 1.. run tellraw @a [{"translate":"weapon.rock_crushing_greatsword","color":"#b19000","italic":false,"bold":true}]
+execute if score #sys.forging_table.rock_crushing_greatsword sys.forging_table.recipes matches 1.. run tellraw @a [{"translate":"weapon.rock_crushing_greatsword","color":"gold","italic":false,"bold":true}]
 execute if score #sys.forging_table.rock_crushing_greatsword sys.forging_table.recipes matches 1.. run tellraw @a [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"translate":"item.rockbound_crystal","color":"#b19000","italic":false,"font": "minecraft:default"},{"text": "*6","font": "minecraft:default"}]
 execute if score #sys.forging_table.rock_crushing_greatsword sys.forging_table.recipes matches 1.. run tellraw @a [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"translate":"item.minecraft.stone_sword","color":"white","italic":false,"font": "minecraft:default"},{"text": "*1","font": "minecraft:default"}]
 

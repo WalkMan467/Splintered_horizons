@@ -1,6 +1,6 @@
 # The entire storyline is executed through the scoreboard story(dummy) combined with the schedule command
 
-execute positioned 867 148 949 if score story.chapter_2.ml.3 story.chapter_2 matches 1 unless score #story:icon/story/chapter_2/scebe_3 global.main matches 1 as @n[type=item_display,tag=aj.rainy_night.root,distance=..3] on passengers run data modify entity @s Glowing set value 0b
+execute positioned 867 148 949 if score story.chapter_2.ml.3 story.chapter_2 matches 1 unless score #story:icon/story/chapter_2/scebe_3 global.main matches 1 as @n[type=item_display,tag=aj.sophia.root,distance=..3] on passengers run data modify entity @s Glowing set value 0b
 execute if score story.chapter_2.ml.3 story.chapter_2 matches 1 run scoreboard players set #story:icon/story/chapter_2/scebe_3 global.main 1
 
 execute positioned 867 148 949 if score story.chapter_2.ml.3 story.chapter_2 matches 1 run tellraw @a[distance=..16] [{"translate": "stoy.characters.sophia",color:"white","bold":true},{"player":{"properties":[{"name":"textures","value":"ewogICJ0aW1lc3RhbXAiIDogMTczODMyNzM1NjE5OCwKICAicHJvZmlsZUlkIiA6ICJjNDIzYjQwMWZiOGU0ODc3YjMzMmVmMjhiZDdlZGZmZCIsCiAgInByb2ZpbGVOYW1lIiA6ICJSZWFjdGlvbkJyaW5lWVQiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWU2YzhhOWE1OWNkYjY5YzJiM2E3NjAxYWJhODJmNjMwOWQ3ZGQ0NWM0ZTg3OGE5YzQ2M2YwNDkxNDllYzI1IiwKICAgICAgIm1ldGFkYXRhIiA6IHsKICAgICAgICAibW9kZWwiIDogInNsaW0iCiAgICAgIH0KICAgIH0KICB9Cn0="}]},"bold":false},{"text":" : ","color":"white","bold": false},{"translate": "story.chapter_2.ml.3.1","fallback": "［蘇菲亞］看來我們越來越接近魔劍的位置了","bold": false}]
@@ -31,5 +31,5 @@ execute unless score story.chapter_2.ml.3 story.chapter_2 matches 1..16 run retu
 scoreboard players add story.chapter_2.ml.3 story.chapter_2 1
 playsound minecraft:ui.button.click voice @a ~ ~1 ~ 0.5 1
 
-execute as @n[distance=..1,tag=aj.rainy_night.root,type=item_display] at @s run function animated_java:rainy_night/animations/chat1/stop
-execute as @n[distance=..1,tag=aj.rainy_night.root,type=item_display] at @s run function animated_java:rainy_night/animations/chat1/tween {to_frame: 5, duration: 5}
+execute as @n[distance=..1,tag=aj.sophia.root,type=item_display] at @s run function animated_java:sophia/animations/chat1/stop
+execute as @n[distance=..1,tag=aj.sophia.root,type=item_display] at @s run function animated_java:sophia/animations/chat1/tween {to_frame: 5, duration: 5}

@@ -1,3 +1,7 @@
+execute if entity @s[tag=player.elytra_switch] run return 0
+
+tag @s add player.elytra_switch
+
 function players:inventory/save {bag:"overworld"}
 
 particle minecraft:flash{color:[1.000,1.000,1.000,1.00]} ~ ~ ~ 0.5 0.5 0.5 0 20 normal @a[scores={main.light_sensitivity=0}]
@@ -9,13 +13,12 @@ title @s title [{"color":"#4CB6C2","fallback":"敖","translate":"player.elytra_s
 title @s subtitle [{"translate":"tips.player.elytra_switch.1","fallback":"按 ","color": "red"},{"keybind": "key.jump","color": "green"},{"translate":"tips.player.elytra_switch.2","fallback":" 即可飛行","color": "red"}]
 
 scoreboard players reset #airborne.range global.main
-execute anchored eyes run function players:actionbar/black_hole
 
 
 effect give @s slow_falling 2 1 true
 scoreboard players set @s player.animation.lock 2147483647
 clear @s *
-item replace entity @s armor.chest with elytra[unbreakable={},tooltip_display={hide_tooltip:true},equippable={slot:"chest",asset_id:"air"},enchantment_glint_override=false,enchantments={"minecraft:binding_curse":1}] 1
+item replace entity @s armor.chest with elytra[unbreakable={},tooltip_display={hide_tooltip:true},equippable={slot:"chest",asset_id:"air"},custom_data={elytra_switch:1b,disable_drop:1b},enchantment_glint_override=false,enchantments={"minecraft:binding_curse":1}] 1
 item replace entity @s weapon.offhand with firework_rocket[tooltip_display={hide_tooltip:true},custom_data={elytra_switch:1b,disable_drop:1b},fireworks={flight_duration:1}] 1
 
 item replace entity @s armor.head with disc_fragment_5[enchantment_glint_override=false,enchantments={"minecraft:binding_curse":1},equippable={slot:"head",equip_sound:"entity.chicken.step"},item_model="disable_icon",tooltip_display={hide_tooltip:true},custom_data={disable_drop:1b},attribute_modifiers=[{id:"attack_damage",type:"attack_damage",amount:0.0,operation:"add_multiplied_base",slot:"mainhand"},{id:"attack_speed",type:"attack_speed",amount:0.0,operation:"add_multiplied_base",slot:"mainhand"}]] 1

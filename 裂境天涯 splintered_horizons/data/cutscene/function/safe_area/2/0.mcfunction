@@ -2,7 +2,7 @@ summon minecraft:block_display 758.5 145.25 945.0 {Rotation:[0.0f,0.0f],start_in
 
 execute as 00000015-0000-0016-0000-001500000015 at @s run tp @s ~ ~ ~-0.5
 
-execute positioned 758 143 935 as @n[type=item_display,distance=..10,tag=aj.rainy_night.root] run function animated_java:rainy_night/remove/this
+execute positioned 758 143 935 as @n[type=item_display,distance=..10,tag=aj.sophia.root] run function animated_java:sophia/remove/this
 
 execute positioned 759 144 946 facing 758.5 145.25 944.5 rotated ~ 0 run function animated_java:isokla/summon {args: {animation: 'cutscene_chapter_2_1_safe_area_1', start_animation: true}}
 

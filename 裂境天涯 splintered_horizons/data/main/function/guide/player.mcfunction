@@ -1,6 +1,9 @@
 # Spawners (Detect the Silver Fish location, then execute 'function monsters:summon/<monsters>' and remove the Silver Fish)
 execute as @e[distance=..30,limit=10,sort=arbitrary,type=silverfish] at @s run function spawner:main
 
+# Multiple players glow
+execute if score #player.count global.main matches 2.. run effect give @a glowing 1 255 true
+
 # Campfire
 execute as @e[type=interaction,tag=sys.campfire,distance=..30,limit=5,sort=nearest] at @s run function sys:campfire/interaction/main
 

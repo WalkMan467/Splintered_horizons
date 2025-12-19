@@ -1,7 +1,7 @@
 advancement revoke @s only item:recipe/nightfall
-clear @s *[custom_data~{type:"recipe",id:"nightfall"}]
 
 execute if score #sys.forging_table.nightfall sys.forging_table.recipes matches 1.. run return 0
+clear @s *[custom_data~{type:"recipe",id:"nightfall"}]
 
 scoreboard players set #sys.forging_table.nightfall sys.forging_table.recipes 1
 execute as @a at @s run playsound minecraft:entity.player.levelup voice @s ~ ~1 ~ 0.75 1

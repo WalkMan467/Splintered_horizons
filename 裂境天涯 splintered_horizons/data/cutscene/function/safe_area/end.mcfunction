@@ -10,10 +10,11 @@ scoreboard objectives setdisplay sidebar player.death_count
 
 forceload remove 762 931 758 935
 
-execute positioned 758 143 935 as @n[type=item_display,distance=..10,tag=aj.rainy_night.root] run function animated_java:rainy_night/remove/this
-
-execute positioned 758 143 935 as @n[type=item_display,distance=..10,tag=aj.stellar_animation.root] run function animated_java:stellar_animation/remove/this
-execute positioned 758 143 935 as @e[type=item_display,distance=..10,tag=aj.stellar_animation.entity] run kill @s
+execute positioned 758 143 935 as @n[sort=arbitrary,distance=..10,tag=aj.sophia.root,type=item_display] run function animated_java:sophia/remove/this
+execute positioned 758 143 935 as @n[sort=arbitrary,distance=..10,tag=aj.stellar_animation.root,type=item_display] run function animated_java:stellar_animation/remove/this
+execute positioned 758 143 935 as @e[sort=arbitrary,distance=..10,tag=aj.stellar_animation.entity,type=item_display] run kill @s
+execute positioned 759 144 946 as @n[sort=arbitrary,distance=..10,tag=aj.isokla.root,type=item_display] run function animated_java:isokla/remove/this
+execute positioned 757 144 946 as @n[sort=arbitrary,distance=..10,tag=aj.elina.root,type=item_display] run function animated_java:elina/remove/this
 
 tp @a 760 145 969 0 0
 
@@ -28,8 +29,6 @@ execute as @a at @s run function players:inventory/return {bag:"overworld"}
 
 execute as @a if items entity @s armor.head *[minecraft:item_model="camera"] run item replace entity @s armor.head with minecraft:air
 
-function animated_java:amysis/remove/all
-function animated_java:elina/remove/all
 
 stopsound @a record
 execute as @a at @s run function music:reset

@@ -4,12 +4,12 @@ scoreboard players set story.chapter_1.mq.1 story.chapter_1 1
 
 kill @e[tag=story.chapter_1.opening.1]
 
-execute as @n[tag=aj.rainy_night.root,limit=1] run \
-function animated_java:rainy_night/remove/this
+execute as @n[tag=aj.sophia.root,limit=1] run \
+function animated_java:sophia/remove/this
 
 
 execute positioned 38 63.75 6.85 rotated 0 0 run \
-function animated_java:rainy_night/summon \
+function animated_java:sophia/summon \
     { \
         args:\
         { \
@@ -20,7 +20,7 @@ function animated_java:rainy_night/summon \
 
 
 execute positioned 38 64.15 6.85 unless score #story:icon/story/chapter_1/mq/scebe_1 global.main matches 1 \
-as @n[type=item_display,tag=aj.rainy_night.root,distance=..3] on passengers run data modify entity @s Glowing set value 1b
+as @n[type=item_display,tag=aj.sophia.root,distance=..3] on passengers run data modify entity @s Glowing set value 1b
 
 summon interaction 38 64.15 6.85 \
     { \

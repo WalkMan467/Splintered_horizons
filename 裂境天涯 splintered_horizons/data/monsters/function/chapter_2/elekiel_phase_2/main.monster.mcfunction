@@ -10,5 +10,7 @@ bossbar set minecraft:monsters.elekiel_phase_2 players @a[distance=..60]
 execute as @a[distance=..60] at @s run advancement grant @s only music:chapter_2/bossfight/3/play
 execute as @a[distance=60..] at @s run advancement grant @s only music:chapter_2/bossfight/3/reset
 
+scoreboard players set @a[distance=..60] player.disable.elytra_switch 10
+
 execute on passengers at @s if entity @s[type=item_display,tag=aj.boss_1.root] rotated as 00000100-0000-0080-0000-008000000005 run rotate @s ~ 0
 ride @n[tag=aj.boss_1.root,type=item_display] mount 00000100-0000-0080-0000-008000000005

@@ -2,11 +2,13 @@ scoreboard players set #story.chapter_1.mq.4_temp global.main 1
 scoreboard players set story.chapter_1.mq.4 story.chapter_1 1
 
 kill @e[tag=story.chapter_1.mq.4]
-execute as @n[tag=aj.rainy_night.root,limit=1,distance=..3] run \
-function animated_java:rainy_night/remove/this
+execute as @n[tag=aj.sophia.root,limit=1,distance=..3] run \
+function animated_java:sophia/remove/this
 
-execute positioned 14 83 -337 rotated 90 0 run \
-function animated_java:rainy_night/summon \
+execute \
+    positioned 14 83 -337 \
+    rotated 90 0 run \
+function animated_java:sophia/summon \
     { \
         args: \
         { \
@@ -15,8 +17,10 @@ function animated_java:rainy_night/summon \
         } \
     }
 
-execute positioned 14 83 -337 unless score #story:icon/story/chapter_1/mq/scebe_4 global.main matches 1 \
-as @n[type=item_display,tag=aj.rainy_night.root,distance=..3] on passengers run data modify entity @s Glowing set value 1b
+execute \
+    positioned 14 83 -337 \
+    unless score #story:icon/story/chapter_1/mq/scebe_4 global.main matches 1 \
+as @n[type=item_display,tag=aj.sophia.root,distance=..3] on passengers run data modify entity @s Glowing set value 1b
 
 summon interaction 14 83 -337 \
     { \

@@ -29,16 +29,9 @@
     "conditions": []
   },
   {
-    "function": "minecraft:set_components",
-    "components": {
-      "minecraft:enchantments": {
-        "weapons:type/sword/grip_of_withering/use": 1
-      },
-      "minecraft:tooltip_display": {
-        "hidden_components": [
-          "minecraft:enchantments"
-        ]
-      }
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "weapons:type/sword/grip_of_withering/use": 1
     }
   }
 ]
