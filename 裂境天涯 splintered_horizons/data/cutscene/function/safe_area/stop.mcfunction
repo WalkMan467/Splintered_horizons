@@ -1,6 +1,7 @@
 scoreboard players set .safe_area cutscene.story -1
 
 scoreboard players set #cutscene global.main 0
+scoreboard players set #cutscene.safe_area global.main 2
 
 kill 00000079-0000-000c-0000-001500000015
 kill 000000de-0000-000b-0000-001500000015
@@ -17,6 +18,8 @@ execute positioned 759 144 946 as @n[sort=arbitrary,distance=..10,tag=aj.isokla.
 execute positioned 757 144 946 as @n[sort=arbitrary,distance=..10,tag=aj.elina.root,type=item_display] run function animated_java:elina/remove/this
 
 function story:chapter_2/stop
+execute as @a[tag=cutscene.player_leave.detect] at @s run function players:inventory/return {bag:"cutscene/safe_area"}
+tag @a remove cutscene.player_leave.detect
 
 schedule clear cutscene:safe_area/main
 schedule clear cutscene:safe_area/1/0

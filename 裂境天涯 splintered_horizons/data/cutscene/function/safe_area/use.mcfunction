@@ -1,6 +1,7 @@
 tp @a 758 143 935
 
 scoreboard players set #cutscene global.main 1
+scoreboard players set #cutscene.safe_area global.main 1
 
 title @a times 20 20 20
 title @a title {"text":"\uE000","font":"minecraft:screen"}

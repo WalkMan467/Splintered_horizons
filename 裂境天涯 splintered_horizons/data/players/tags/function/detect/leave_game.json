@@ -1,0 +1,6 @@
+{
+    "values": [
+      "players:join_game/0",
+      "cutscene:safe_area/player_leave"
+    ]
+  }

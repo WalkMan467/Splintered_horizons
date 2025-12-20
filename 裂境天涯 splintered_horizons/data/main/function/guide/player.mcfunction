@@ -39,7 +39,7 @@ function weapons:type/core/player
 
 # Join the Game
 
-execute as @s[scores={player.leave_game=1..}] run function players:join_game/0
+function players:detect/leave_game
 
 # Mnument
 

@@ -8,6 +8,4 @@ stopsound @s voice minecraft:voice.in_world_area
 
 team join team.player @a
 
-scoreboard players set @s player.leave_game 0
-
 function music:reset

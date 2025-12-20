@@ -1,6 +1,7 @@
 scoreboard players set .safe_area cutscene.story -1
 
 scoreboard players set #cutscene global.main 0
+scoreboard players set #cutscene.safe_area global.main 2
 
 kill 00000079-0000-000c-0000-001500000015
 kill 000000de-0000-000b-0000-001500000015
@@ -27,7 +28,8 @@ gamemode survival @a
 
 clear @a
 
-execute as @a at @s run function players:inventory/return {bag:"overworld"}
+execute as @a[tag=cutscene.player_leave.detect] at @s run function players:inventory/return {bag:"cutscene/safe_area"}
+tag @a remove cutscene.player_leave.detect
 
 execute as @a if items entity @s armor.head *[minecraft:item_model="camera"] run item replace entity @s armor.head with minecraft:air
 

@@ -1,11 +1,13 @@
+scoreboard players set #cutscene.safe_area global.main 1
+
 title @a actionbar ""
 
 function cutscene:safe_area/0/0
 
 stopsound @a record minecraft:bgm.whitesand_fallen_kingdom
 
-
-execute as @a at @s run function players:inventory/save {bag:"overworld"}
+tag @a add cutscene.player_leave.detect
+execute as @a[tag=cutscene.player_leave.detect] at @s run function players:inventory/save {bag:"cutscene/safe_area"}
 
 clear @a
 

@@ -14,5 +14,8 @@ execute if score @s player.detect.click_event.trigger matches 7 run function pla
 
 execute if score @s player.detect.click_event.trigger matches 8 run function sys:forging_table/act/crafting
 
+execute if score @s player.detect.click_event.trigger matches 9 run function sys:walkman467/support_me
+execute if score @s player.detect.click_event.trigger matches 10 run function sys:walkman467/select_lang
+
 scoreboard players set @s player.detect.click_event.trigger 0
 scoreboard players enable @s player.detect.click_event.trigger
