@@ -1,0 +1,6 @@
+tellraw @s [{"text": ""}]
+tellraw @s [{"translate": "sys.walkman467.support_me.1", "fallback": "請選擇支持的平台:","color": "white"}]
+tellraw @s [{"text": ""}]
+tellraw @s [{"text":"【","color": "dark_green","bold": true},{"translate": "sys.walkman467.support_me.2", "fallback": "愛發電","color": "dark_green","bold": true},{"text":"】","color": "dark_green","bold": true}]
+tellraw @s [{"text":"【","color": "dark_green","bold": true},{"translate": "sys.walkman467.support_me.3", "fallback": "Patreon","color": "dark_green","bold": true},{"text":"】","color": "dark_green","bold": true}]
+tellraw @s [{"text": ""}]

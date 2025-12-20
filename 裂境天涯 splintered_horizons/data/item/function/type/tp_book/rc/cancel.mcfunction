@@ -1,1 +1,0 @@
-scoreboard players set @s item.tp_book.casting -1

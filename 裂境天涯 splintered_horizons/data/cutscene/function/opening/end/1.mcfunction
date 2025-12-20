@@ -1,5 +1,7 @@
 tag @a remove cutscene.opening
 
+scoreboard players set #cutscene global.main 0
+
 function cutscene:opening/remove_camera
 
 execute in minecraft:overworld run function cutscene:opening/remove_forceload

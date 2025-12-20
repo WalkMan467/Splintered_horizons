@@ -1,5 +1,7 @@
 scoreboard players set .safe_area cutscene.story -1
 
+scoreboard players set #cutscene global.main 0
+
 kill 00000079-0000-000c-0000-001500000015
 kill 000000de-0000-000b-0000-001500000015
 kill 00000015-0000-0016-0000-001500000015

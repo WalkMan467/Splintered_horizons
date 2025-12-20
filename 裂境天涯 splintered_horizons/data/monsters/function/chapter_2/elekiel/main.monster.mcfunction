@@ -7,6 +7,8 @@ execute store result bossbar minecraft:monsters.elekiel value run data get entit
 bossbar set minecraft:monsters.elekiel visible true
 bossbar set minecraft:monsters.elekiel players @a[distance=..60]
 
+scoreboard players set @a[distance=..60] player.disable.tp_book 10
+
 execute on passengers at @s if entity @s[type=item_display,tag=aj.yibb_tstll.root] rotated as 00000100-0000-0080-0000-008000000001 run rotate @s ~ 0
 ride @n[tag=aj.yibb_tstll.root,type=item_display] mount 00000100-0000-0080-0000-008000000001
 

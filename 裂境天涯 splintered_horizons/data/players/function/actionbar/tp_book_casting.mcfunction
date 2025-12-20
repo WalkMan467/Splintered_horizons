@@ -1,1 +1,0 @@
-title @s actionbar [{"translate":"tips.tp_book.casting","color": "dark_red","bold": true},{"text":" | ","color": "gray"},{"translate": "tips.tp_book.casting.1","color": "gold"},{"score": {"name": "@s","objective": "item.tp_book.casting"},"color": "dark_green"}]

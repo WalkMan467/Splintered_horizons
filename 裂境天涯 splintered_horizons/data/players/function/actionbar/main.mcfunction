@@ -10,8 +10,8 @@ execute as @s[gamemode=!spectator] if score @s player.actionbar.disabled_bed mat
 execute as @s[gamemode=!spectator] if score @s player.actionbar.disabled_anvil matches 1.. run function players:actionbar/disabled_anvil
 execute as @s[gamemode=!spectator] if score @s player.actionbar.disabled_anvil matches 1.. run return 0
 
-execute as @s[gamemode=!spectator] if score @s item.tp_book.casting matches 1.. run function players:actionbar/tp_book_casting
-execute as @s[gamemode=!spectator] if score @s item.tp_book.casting matches 1.. run return 0
+execute as @s[gamemode=!spectator] if score @s player.actionbar.tp_book.failure matches 1.. run function players:actionbar/tp_book_failure
+execute as @s[gamemode=!spectator] if score @s player.actionbar.tp_book.failure matches 1.. run return 0
 
 execute as @s[gamemode=!spectator] if score @s player.actionbar.sys.forging_table.failure matches 1.. run function players:actionbar/forging_table_failure
 execute as @s[gamemode=!spectator] if score @s player.actionbar.sys.forging_table.failure matches 1.. run return 0

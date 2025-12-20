@@ -33,6 +33,8 @@ scoreboard players set #monument.area_8 global.main 0
 
 scoreboard players set #in_safe_zone.ml global.main 0
 
+scoreboard players set #cutscene global.main 0
+
 scoreboard players reset WalkMan467 player.death_count
 scoreboard players add @a player.death_count 0
 
@@ -78,6 +80,8 @@ scoreboard players set #story:icon/story/chapter_2/scebe_3 global.main 0
 scoreboard players set #story:icon/proper_noun/resplendence global.main 0
 scoreboard players set #story:icon/proper_noun/shadow global.main 0
 scoreboard players set #story:icon/proper_noun/starry_sky_frost global.main 0
+
+scoreboard players set #sys.walkman467.glowing global.main 0
 
 scoreboard players set #weapons:monument/area_1 global.main 0
 scoreboard players set #weapons:monument/area_2 global.main 0

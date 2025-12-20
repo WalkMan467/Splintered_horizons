@@ -1,6 +1,8 @@
 time set midnight
 weather clear
 
+scoreboard players set #cutscene global.main 1
+
 execute in minecraft:overworld run forceload add 42 11 42 11
 
 execute as @a run function item:type/tp_book/rc/cancel

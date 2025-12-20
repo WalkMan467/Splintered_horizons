@@ -36,7 +36,7 @@ function world_area:main/safe_zone/melisna/main
     execute if biome ~ ~ ~ world_area:main/safe_zone run advancement grant @s only world_area:main/safe_zone/in
     execute unless biome ~ ~ ~ world_area:main/safe_zone run advancement grant @s only world_area:main/safe_zone/out
 
-    # Safe Zone
+    # Resource Warehouse
     execute if biome ~ ~ ~ world_area:main/resource_warehouse run advancement grant @s only world_area:main/resource_warehouse/in
     execute unless biome ~ ~ ~ world_area:main/resource_warehouse run advancement grant @s only world_area:main/resource_warehouse/out
 

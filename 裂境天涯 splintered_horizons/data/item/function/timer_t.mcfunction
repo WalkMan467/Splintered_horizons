@@ -1,2 +1,2 @@
-scoreboard players remove @a[scores={item.tp_book.casting=0..}] item.tp_book.casting 1
+scoreboard players remove @a[scores={player.actionbar.tp_book.failure=0..}] player.actionbar.tp_book.failure 1
 scoreboard players remove @a[scores={item.tactical_scroll_of_brilliance.cd=0..}] item.tactical_scroll_of_brilliance.cd 1

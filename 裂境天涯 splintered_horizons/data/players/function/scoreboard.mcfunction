@@ -25,6 +25,7 @@ scoreboard players add @a player.finality_tunder 0
 scoreboard objectives add player.actionbar.weapon.nightfall dummy "[玩家] actionbar 狀態機 夜幕技能顯示"
 scoreboard objectives add player.actionbar.weapon.spider dummy "[玩家] actionbar 狀態機 蜘蛛技能顯示"
 scoreboard objectives add player.actionbar.weapon.earthquake_axe dummy "[玩家] actionbar 狀態機 地震之斧"
+scoreboard objectives add player.actionbar.weapon.earthquake_axe dummy "[玩家] actionbar 狀態機 地震之斧"
 
 
 scoreboard objectives add player.actionbar.otherworld_portal.1 dummy "[玩家] actionbar 狀態機 異界之門提示"
@@ -38,6 +39,7 @@ scoreboard objectives add player.actionbar.disabled_bed dummy "[玩家] actionba
 scoreboard objectives add player.actionbar.disabled_anvil dummy "[玩家] actionbar 狀態機 禁用鐵砧提示"
 
 scoreboard objectives add player.actionbar.sys.forging_table.failure dummy "[玩家] actionbar 狀態機 失敗提示"
+scoreboard objectives add player.actionbar.sys.forging_table.failure.id dummy "[玩家] actionbar 狀態機 失敗提示 ID"
 
 scoreboard objectives add player.actionbar.eye_of_finality dummy "[玩家] actionbar 狀態機 終焉之眼"
 
@@ -92,7 +94,9 @@ scoreboard players add @a player.join_game.detect.delay 0
 scoreboard objectives add player.disable.elytra_switch dummy "[玩家] 禁用滑翔翼切換"
 scoreboard objectives add player.disable.movement dummy "[玩家] 禁用移動"
 scoreboard objectives add player.shift.skill.disable dummy "[玩家] 禁用 Shift 主動技偵測"
+scoreboard objectives add player.disable.tp_book dummy "[玩家] 禁用 傳送書"
 
+scoreboard players add @a player.disable.tp_book 0
 
 # ==================================================================================================
 # 偵測

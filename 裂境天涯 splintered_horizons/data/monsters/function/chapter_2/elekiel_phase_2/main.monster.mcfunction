@@ -7,6 +7,8 @@ execute store result bossbar minecraft:monsters.elekiel_phase_2 value run data g
 bossbar set minecraft:monsters.elekiel_phase_2 visible true
 bossbar set minecraft:monsters.elekiel_phase_2 players @a[distance=..60]
 
+scoreboard players set @a[distance=..60] player.disable.tp_book 10
+
 execute as @a[distance=..60] at @s run advancement grant @s only music:chapter_2/bossfight/3/play
 execute as @a[distance=60..] at @s run advancement grant @s only music:chapter_2/bossfight/3/reset
 

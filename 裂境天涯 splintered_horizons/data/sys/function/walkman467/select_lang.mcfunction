@@ -1,0 +1,7 @@
+tellraw @s [{"text": ""}]
+tellraw @s [{"translate": "sys.walkman467.lang.1", "fallback": "請選擇語言:","color": "white"}]
+tellraw @s [{"text": ""}]
+tellraw @s [{"text":"【","color": "dark_green","bold": true},{"translate": "sys.walkman467.lang.2", "fallback": "繁體中文","color": "dark_green","bold": true},{"text":"】","color": "dark_green","bold": true}]
+tellraw @s [{"text":"【","color": "dark_green","bold": true},{"translate": "sys.walkman467.lang.3", "fallback": "簡體中文","color": "dark_green","bold": true},{"text":"】","color": "dark_green","bold": true}]
+tellraw @s [{"text":"【","color": "dark_green","bold": true},{"translate": "sys.walkman467.lang.4", "fallback": "英文","color": "dark_green","bold": true},{"text":"】","color": "dark_green","bold": true}]
+tellraw @s [{"text": ""}]

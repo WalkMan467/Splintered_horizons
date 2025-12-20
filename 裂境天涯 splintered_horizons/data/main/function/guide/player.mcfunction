@@ -4,6 +4,8 @@ execute as @e[distance=..30,limit=10,sort=arbitrary,type=silverfish] at @s run f
 execute as @n[sort=arbitrary,distance=..20,tag=sys.detect.player_death.point,type=marker] at @s unless block ~ ~ ~ #air run setblock ~ ~ ~ air
 execute as @n[sort=arbitrary,distance=..20,tag=sys.detect.player_death.point,type=marker] at @s unless block ~ ~1 ~ #air run setblock ~ ~1 ~ air
 
+execute if dimension minecraft:the_end run scoreboard players set @s player.disable.tp_book 10
+
 # Multiple players glow
 execute if score #player.count global.main matches 2.. run effect give @a glowing 1 255 true
 

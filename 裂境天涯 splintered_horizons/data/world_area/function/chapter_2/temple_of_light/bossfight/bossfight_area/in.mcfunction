@@ -6,7 +6,7 @@ execute if entity 00000806-0000-0002-0000-001f00000003 run return 0
 
 forceload remove -916 2750 -916 2750
 
-summon interaction -916 60 2750 {UUID:[I; 2054, 2, 31, 3],height:2}
+summon interaction -916 60 2750 {UUID:[I; 2054, 2, 31, 3],height:2,Tags:["bossfight.act"]}
 
 execute positioned -916 62 2750 as @n[distance=..1,type=item_display,tag=aj.boss_1.root] run function animated_java:boss_1/remove/this
 execute positioned -916 62 2750 rotated 180 0 run function animated_java:boss_1/summon {args: {animation: 'idle', start_animation: true}}
