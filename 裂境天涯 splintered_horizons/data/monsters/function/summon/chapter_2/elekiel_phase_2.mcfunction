@@ -1,5 +1,10 @@
 execute unless score #difficulty global.main matches 1.. run return 0
 execute if entity 00000100-0000-0080-0000-008000000005 run return 0
+execute if score #boss_area.chapter_2.elekiel_phase_2 global.main matches 1.. run function monsters:bossfight/chapter_2/act/failure
+execute if score #boss_area.chapter_2.elekiel_phase_2 global.main matches 1.. run return 0
+
+execute if score #boss_area.chapter_2.elekiel global.main matches 1.. run function monsters:bossfight/chapter_2/act/failure
+execute if score #boss_area.chapter_2.elekiel global.main matches 1.. run return 0
 
 setblock -916 60 2750 air
 setblock -916 61 2750 air

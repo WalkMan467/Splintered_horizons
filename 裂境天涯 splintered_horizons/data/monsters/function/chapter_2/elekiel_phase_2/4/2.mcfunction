@@ -1,4 +1,4 @@
-advancement grant @s only monsters:chapter_2/elekiel_phase_2/4/effect/false
+function monsters:chapter_2/elekiel_phase_2/4/effect/false
 
 scoreboard players set #monster.elekiel_phase_2.skill.4.portal.actived global.main 1
 

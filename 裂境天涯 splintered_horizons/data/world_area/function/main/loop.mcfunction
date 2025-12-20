@@ -45,7 +45,7 @@ function world_area:main/safe_zone/melisna/main
     execute if entity @s[gamemode=adventure] unless function world_area:main/mode_change/main run function world_area:main/mode_change/survival
 
     # Border Wall
-    execute if biome ~ ~ ~ world_area:main/boundary if predicate players:detect/not_creative_spectator run function world_area:main/boundary/in
+    execute if biome ~ ~ ~ world_area:main/boundary if predicate players:detect/not_creative_spectator if entity @s[tag=!player.death] run function world_area:main/boundary/in
 
     # Death Zone
-    execute if biome ~ ~ ~ world_area:main/death_area if predicate players:detect/not_creative_spectator run kill @s
+    execute if biome ~ ~ ~ world_area:main/death_area if predicate players:detect/not_creative_spectator if entity @s[tag=!player.death] run kill @s

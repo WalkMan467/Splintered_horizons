@@ -11,3 +11,5 @@ function monsters:chapter_2/elekiel_phase_2/void
 execute as @a run function music:chapter_2/bossfight/2/reset
 
 execute as @a run function players:reset_state
+
+scoreboard players set #boss_area.chapter_2.elekiel_phase_2 global.main 0

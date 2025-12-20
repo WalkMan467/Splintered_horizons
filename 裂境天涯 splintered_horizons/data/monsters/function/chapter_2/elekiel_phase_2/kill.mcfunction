@@ -30,7 +30,7 @@ kill @e[tag=monster.elekiel_phase_2.3,type=!#minecraft:dummy_mob,type=!player]
 
 effect clear @a[scores={monster.elekiel_phase_2.skill.4.effect.void=0..}] glowing
 
-advancement grant @a[tag=monster.elekiel_phase_2.4.effect.target] only monsters:chapter_2/elekiel_phase_2/4/effect/false
+execute as @a[tag=monster.elekiel_phase_2.4.effect.target] at @s run function monsters:chapter_2/elekiel_phase_2/4/effect/false
 
 tag @a remove monster.elekiel_phase_2.effect
 tag @a remove monster.elekiel_phase_2.4.effect.target

@@ -6,4 +6,6 @@ playsound minecraft:entity.breeze.deflect voice @s ~ ~ ~ 1 1
 playsound minecraft:entity.breeze.deflect voice @s ~ ~ ~ 1 1
 
 tag @s remove sys.mini_game.hit_the_bullseye.remove.user
+tag @s remove sys.mini_game.hit_the_bullseye.remove.target
+
 scoreboard players reset @s sys.mini_game.hit_the_bullseye.remove.id

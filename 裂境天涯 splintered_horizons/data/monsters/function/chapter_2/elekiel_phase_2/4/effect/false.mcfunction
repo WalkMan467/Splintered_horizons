@@ -1,4 +1,14 @@
-advancement revoke @s only monsters:chapter_2/elekiel_phase_2/4/effect/true
+execute \
+    unless entity @s[tag=monster.elekiel_phase_2.void.target] run \
+return 0
+
+execute \
+    unless entity @s[tag=monster.elekiel_phase_2.4.effect.target] run \
+return 0
+
+tag @s add forced_interrupt_animation
+
+function players:stop_animation
 
 function monsters:chapter_2/elekiel_phase_2/4/effect/disable_inventory/false
 
@@ -9,7 +19,6 @@ effect clear @s resistance
 effect clear @s darkness
 
 scoreboard players reset @s monster.elekiel_phase_2.skill.4.effect.void
-
 
 attribute @s attack_damage modifier remove monster.elekiel_phase_2.skill.4.effect.void
 attribute @s attack_knockback modifier remove monster.elekiel_phase_2.skill.4.effect.void

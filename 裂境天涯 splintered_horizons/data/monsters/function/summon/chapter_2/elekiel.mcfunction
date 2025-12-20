@@ -1,6 +1,10 @@
 execute unless score #difficulty global.main matches 1.. run return 0
 execute if entity 00000100-0000-0080-0000-008000000001 run return 0
-execute if score #boss_area.chapter_2.elekiel global.main matches 1 run return 0
+execute if score #boss_area.chapter_2.elekiel_phase_2 global.main matches 1.. run function monsters:bossfight/chapter_2/act/failure
+execute if score #boss_area.chapter_2.elekiel_phase_2 global.main matches 1.. run return 0
+
+execute if score #boss_area.chapter_2.elekiel global.main matches 1.. run function monsters:bossfight/chapter_2/act/failure
+execute if score #boss_area.chapter_2.elekiel global.main matches 1.. run return 0
 
 execute positioned 912 60 2018 as @n[distance=..3,type=item_display,tag=aj.global.root] run function animated_java:yibb_tstll/remove/this
 

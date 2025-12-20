@@ -1,4 +1,4 @@
-tag @s add sys.forging_table.crafted_item.failure
+tag @s[type=!player] add sys.forging_table.crafted_item.failure
 
 scoreboard players set #player.actionbar.sys.forging_table.failure global.main 2
 scoreboard players set @a[distance=..6] player.actionbar.sys.forging_table.failure 40

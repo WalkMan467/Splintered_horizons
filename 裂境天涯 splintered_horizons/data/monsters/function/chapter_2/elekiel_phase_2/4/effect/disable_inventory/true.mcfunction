@@ -1,3 +1,19 @@
+execute \
+    if entity @s[tag=monster.elekiel_phase_2.void.target] run \
+return 0
+
+execute \
+    unless entity @s[tag=monster.elekiel_phase_2.4.effect.target] run \
+return 0
+
+execute \
+    unless entity @s[tag=temp] run \
+return 0
+
+execute \
+    if entity @s[tag=chapter_2.elekiel_phase_2.lose] run \
+return 0
+
 tag @s add monster.elekiel_phase_2.void.target
 
 function players:inventory/save {bag:"overworld"}
@@ -12,6 +28,6 @@ item replace entity @s armor.legs with iron_sword[equippable={slot:"legs",asset_
 item replace entity @s armor.feet with iron_sword[equippable={slot:"feet",asset_id:"air"},item_model="disable_icon",tooltip_display={hide_tooltip:true},enchantment_glint_override=false,enchantments={"binding_curse":1,"monsters:chapter_2/elekiel_phase_2/4/damage_immunity":1},attribute_modifiers=[{id:"base_attack_damage",type:"attack_damage",amount:0.0,operation:"add_multiplied_base",slot:"feet"},{id:"base_attack_speed",type:"attack_speed",amount:0.0,operation:"add_multiplied_base",slot:"feet"}],unbreakable={},custom_data={disable_inventory:1b,no_switch_sfx:1b}] 1
 item replace entity @s weapon.offhand with iron_sword[item_model="disable_icon",tooltip_display={hide_tooltip:true},enchantment_glint_override=false,attribute_modifiers=[{id:"base_attack_damage",type:"attack_damage",amount:0.0,operation:"add_multiplied_base",slot:"offhand"},{id:"base_attack_speed",type:"attack_speed",amount:0.0,operation:"add_multiplied_base",slot:"offhand"}],unbreakable={},custom_data={disable_inventory:1b,no_switch_sfx:1b}] 1
 
-kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{disable_inventory:1b}}}}]
+kill @e[sort=arbitrary,predicate=monsters:chapter_2/elekiel_phase_2/disable_inventory/item,type=item]
 
 function players:inventory/save {bag:"disable_inventory"}
