@@ -26,19 +26,115 @@
               ]
             },
             {
-              "type": "minecraft:loot_table",
-              "value": "weapons:get/arrow/explosion_arrow",
-              "weight": 20,
-              "quality": 10,
-              "functions": [
+              "type": "minecraft:group",
+              "children": [
                 {
-                  "function": "minecraft:set_count",
-                  "count": {
-                    "min": 1,
-                    "max": 2
-                  }
+                  "type": "minecraft:loot_table",
+                  "value": "weapons:get/arrow/explosion_arrow",
+                  "weight": 20,
+                  "quality": 10,
+                  "functions": [
+                    {
+                      "function": "minecraft:set_count",
+                      "count": {
+                        "min": 1,
+                        "max": 2
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "weapons:get/arrow/starry_sky_frost_arrow",
+                  "weight": 20,
+                  "quality": 10,
+                  "functions": [
+                    {
+                      "function": "minecraft:set_count",
+                      "count": {
+                        "min": 1,
+                        "max": 2
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "weapons:get/arrow/shadow_arrow",
+                  "weight": 20,
+                  "quality": 10,
+                  "functions": [
+                    {
+                      "function": "minecraft:set_count",
+                      "count": {
+                        "min": 1,
+                        "max": 2
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "weapons:get/arrow/resplendence_arrow",
+                  "weight": 20,
+                  "quality": 10,
+                  "functions": [
+                    {
+                      "function": "minecraft:set_count",
+                      "count": {
+                        "min": 1,
+                        "max": 2
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "weapons:get/arrow/holy_fire_arrow",
+                  "weight": 20,
+                  "quality": 10,
+                  "functions": [
+                    {
+                      "function": "minecraft:set_count",
+                      "count": {
+                        "min": 1,
+                        "max": 2
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "weapons:get/arrow/crimson_claw_arrow",
+                  "weight": 20,
+                  "quality": 10,
+                  "functions": [
+                    {
+                      "function": "minecraft:set_count",
+                      "count": {
+                        "min": 1,
+                        "max": 2
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "weapons:get/arrow/chaotic_thunder_arrow",
+                  "weight": 20,
+                  "quality": 10,
+                  "functions": [
+                    {
+                      "function": "minecraft:set_count",
+                      "count": {
+                        "min": 1,
+                        "max": 2
+                      }
+                    }
+                  ]
                 }
-              ]
+              ],
+              "conditions": []
             },
             {
               "type": "minecraft:loot_table",

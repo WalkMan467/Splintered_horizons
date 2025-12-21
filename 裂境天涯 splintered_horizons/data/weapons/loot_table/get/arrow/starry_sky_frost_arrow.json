@@ -1,0 +1,127 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:arrow",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": [
+                  {
+                    "text": "\uE009",
+                    "font": "minecraft:icon",
+                    "color": "white"
+                  },
+                  {
+                    "translate": "weapon.starry_sky_frost_arrow",
+                    "color": "#5de7ff",
+                    "font": "minecraft:default",
+                    "italic": false,
+                    "bold": true
+                  },
+                  {
+                    "text": "\uE009",
+                    "font": "minecraft:icon",
+                    "color": "white"
+                  }
+                ],
+                "minecraft:lore": [
+                  [
+                    {
+                      "translate": "weapon.starry_sky_frost_arrow.type",
+                      "italic": false,
+                      "color": "dark_gray"
+                    }
+                  ],
+                  {
+                    "text": ""
+                  },
+                  [
+                    {
+                      "translate": "weapon.starry_sky_frost_arrow.story.1",
+                      "italic": false,
+                      "color": "blue"
+                    }
+                  ],
+                  [
+                    {
+                      "translate": "weapon.starry_sky_frost_arrow.story.2",
+                      "italic": false,
+                      "color": "blue"
+                    }
+                  ],
+                  {
+                    "text": ""
+                  },
+                  [
+                    {
+                      "text": "",
+                      "italic": false
+                    },
+                    {
+                      "translate": "weapon.starry_sky_frost_arrow.skill",
+                      "color": "#5de7ff",
+                      "bold": true
+                    },
+                    {
+                      "text": "  "
+                    }
+                  ],
+                  [
+                    {
+                      "text": "",
+                      "italic": false
+                    },
+                    {
+                      "translate": "weapon.starry_sky_frost_arrow.skill.1",
+                      "color": "#277cb4"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "",
+                      "italic": false
+                    },
+                    {
+                      "translate": "weapon.starry_sky_frost_arrow.skill.2",
+                      "color": "#277cb4"
+                    }
+                  ]
+                ],
+                "minecraft:attribute_modifiers": [
+                  {
+                    "id": "base_attack_speed",
+                    "type": "attack_speed",
+                    "amount": 0,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  }
+                ],
+                "minecraft:item_model": "arrow/starry_sky_frost_arrow",
+                "minecraft:custom_data": {
+                  "type": "arrow",
+                  "rarity": "epic",
+                  "id": "starry_sky_frost_arrow",
+                  "ground_detect": true
+                },
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "enchantments",
+                    "attribute_modifiers",
+                    "unbreakable"
+                  ]
+                },
+                "minecraft:tooltip_style": "epic"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

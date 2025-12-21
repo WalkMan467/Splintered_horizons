@@ -3,6 +3,12 @@
     "minecraft:visual/ambient_particles": [
       {
         "particle": {
+          "type": "minecraft:lava"
+        },
+        "probability": 0.0005
+      },
+      {
+        "particle": {
           "type": "minecraft:white_ash"
         },
         "probability": 0.05

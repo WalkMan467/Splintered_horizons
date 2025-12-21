@@ -7,8 +7,8 @@
 # Chapter 3
 
     # Main 
-    execute if biome ~ ~ ~ #world_area:chapter_3 run advancement grant @s only music:chapter_3/icon
-
+    execute if score #weapons:monument/area_2 global.main matches 1.. if biome ~ ~ ~ #world_area:chapter_3 run advancement grant @s only music:chapter_3/icon
+    execute unless score #weapons:monument/area_2 global.main matches 1.. if biome ~ ~ ~ #world_area:chapter_3 run function world_area:chapter_3/death_area
 
     # Finalitys Embrace Rift
     
