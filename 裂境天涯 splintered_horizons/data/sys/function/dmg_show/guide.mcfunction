@@ -1,6 +1,3 @@
-## dummy
-execute as @e[tag=sys.dmg_show.dummy,distance=..30] at @s run function wma:dummy/main
-
 ## show dmg
 
 execute as @e[type=!#minecraft:dummy_mob,distance=..30] at @s run function sys:dmg_show/main
