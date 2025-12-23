@@ -10,7 +10,10 @@ execute if dimension minecraft:the_end run scoreboard players set @s player.disa
 execute if score #player.count global.main matches 2.. run effect give @a glowing 1 255 true
 
 # Campfire
-execute as @e[type=interaction,tag=sys.campfire,distance=..30,limit=5,sort=nearest] at @s run function sys:campfire/interaction/main
+execute as @e[distance=..15,sort=nearest,limit=5,tag=sys.campfire,type=interaction] at @s run function sys:campfire/interaction/main
+
+# Chair
+function sys:sit_down/interaction/main
 
 # Portal
 
@@ -22,16 +25,14 @@ function armors:loop
 
 function story:tick
 
+function sys:dmg_show/guide
+
 # Equipment
 execute as @e[type=!#dummy_mob,type=!player,distance=..15] at @s run function armors:type/black_hole/boots/effect/main
 
 execute at @n[tag=sys.detect.player_death.point,type=marker] run spawnpoint @s ~ ~ ~
 
 execute as @s[tag=player.death] at @s if entity @n[sort=arbitrary,distance=..1,tag=sys.detect.player_death.point,type=marker] run function players:tp_to_spawnpoint/use
-
-# Chair
-execute as @e[tag=sys.sit_down,type=interaction,distance=..15] at @s run function sys:sit_down/interaction/main
-
 
 # Weapons
 

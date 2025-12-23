@@ -1,1 +1,0 @@
-execute as @a at @s run function wma:dmg_show/guide

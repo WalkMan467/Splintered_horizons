@@ -1,7 +1,18 @@
 {
-    "condition": "minecraft:entity_properties",
-    "entity": "this",
-    "predicate": {
-      "nbt": "{inGround:1b,item:{components:{\"minecraft:custom_data\":{ground_detect:1b}}}}"
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "flags": {
+      "is_on_ground": true
+    },
+    "slots": {
+      "container.0": {
+        "predicates": {
+          "minecraft:custom_data": {
+            "ground_detect": 1
+          }
+        }
+      }
     }
   }
+}

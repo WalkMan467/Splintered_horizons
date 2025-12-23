@@ -1,3 +1,5 @@
+execute if score @s cse.detect.player.hurt_time matches 1.. run scoreboard players remove @s cse.detect.player.hurt_time 1
+
 scoreboard players add @s cse.status_effects.bleeding.health_temp 0
 scoreboard players add @s cse.status_effects.bleeding.health 0
 

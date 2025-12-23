@@ -1,1 +1,0 @@
-execute as @s[type=arrow,tag=!ability.failure,nbt={inGround:1b,item:{components:{"minecraft:custom_data":{ground_detect:1b}}}}] at @s run function weapons:type/arrows/ground_detect/run with entity @s item.components."minecraft:custom_data"

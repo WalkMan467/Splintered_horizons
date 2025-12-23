@@ -40,3 +40,5 @@ scoreboard players add @s[tag=monster] monster.skill.casting 1
 
 # Skill silenced
 scoreboard players remove @s[tag=monster,scores={monster.skill.silence=0..}] monster.skill.silence 1
+
+tag @s remove monsters.guide

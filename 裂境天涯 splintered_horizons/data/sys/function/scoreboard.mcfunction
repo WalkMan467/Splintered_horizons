@@ -7,4 +7,8 @@ scoreboard objectives add sys.mini_game.hit_the_bullseye.reward.id dummy
 scoreboard objectives add sys.mini_game.hit_the_bullseye.reset.id dummy
 scoreboard objectives add sys.mini_game.hit_the_bullseye.remove.id dummy
 
+scoreboard objectives add sys.dmg_show.main dummy
+scoreboard objectives add sys.dmg_show.life dummy
+scoreboard objectives add sys.dmg_show.hpmax dummy
+
 scoreboard players add .index sys.mini_game.hit_the_bullseye.main.id 0

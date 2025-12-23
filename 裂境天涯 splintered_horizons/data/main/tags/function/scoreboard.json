@@ -12,6 +12,7 @@
       "item:scoreboard",
       "dmg_formula:scoreboard",
       "world_area:scoreboard",
-      "trap:scoreboard"
+      "trap:scoreboard",
+      "sys:hp_display/scoreobard"
     ]
   }

@@ -1,6 +1,7 @@
 {
     "values": [
-        "main:load"
+        "main:load",
+        "sys:hp_display/load"
     ]
   }
   
