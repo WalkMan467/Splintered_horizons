@@ -6,6 +6,12 @@ scoreboard objectives add sys.mini_game.hit_the_bullseye.main.id dummy
 scoreboard objectives add sys.mini_game.hit_the_bullseye.reward.id dummy
 scoreboard objectives add sys.mini_game.hit_the_bullseye.reset.id dummy
 scoreboard objectives add sys.mini_game.hit_the_bullseye.remove.id dummy
+scoreboard objectives add sys.monster_wave.main dummy
+scoreboard objectives add sys.monster_wave.kill dummy
+scoreboard objectives add sys.monster_wave.target_wave dummy
+scoreboard objectives add sys.monster_wave.remaining_monster dummy
+scoreboard objectives add sys.monster_wave.wave dummy
+scoreboard objectives add sys.monster_wave.rdm dummy
 
 scoreboard objectives add sys.dmg_show.main dummy
 scoreboard objectives add sys.dmg_show.life dummy

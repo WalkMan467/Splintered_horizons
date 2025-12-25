@@ -27,6 +27,7 @@ execute as @e[tag=mob.elekiel.display,type=!player] on passengers on passengers 
 kill @e[tag=mob.elekiel.display,type=!player]
 execute as @e[type=!#minecraft:dummy_mob,tag=monster.elekiel_phase_2.3,type=!player] on passengers run kill @s
 kill @e[tag=monster.elekiel_phase_2.3,type=!#minecraft:dummy_mob,type=!player]
+kill @n[sort=arbitrary,tag=monster.elekiel_phase_2.4.effect.target.player_leave.detect,type=marker]
 
 effect clear @a[scores={monster.elekiel_phase_2.skill.4.effect.void=0..}] glowing
 

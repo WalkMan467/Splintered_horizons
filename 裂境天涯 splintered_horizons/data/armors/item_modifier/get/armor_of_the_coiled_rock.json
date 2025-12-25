@@ -1,0 +1,74 @@
+[
+  {
+    "function": "minecraft:set_item",
+    "item": "minecraft:bundle"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_model": "chestplate/armor_of_the_coiled_rock",
+      "minecraft:item_name": [
+        {
+          "translate": "armor.armor_of_the_coiled_rock",
+          "color": "#b37400",
+          "italic": false,
+          "bold": true
+        }
+      ],
+      "minecraft:lore": [
+        [
+          { "translate": "armor.armor_of_the_coiled_rock.type", "italic": false, "color": "dark_gray" }
+        ],
+        { "text": "" },
+        [
+          { "translate": "armor.armor_of_the_coiled_rock.story.1", "italic": false, "color": "blue" }
+        ],
+        [
+          { "translate": "armor.armor_of_the_coiled_rock.story.2", "italic": false, "color": "blue" }
+        ],
+        [
+          { "translate": "armor.armor_of_the_coiled_rock.story.3", "italic": false, "color": "blue" }
+        ],
+        [
+          { "translate": "armor.armor_of_the_coiled_rock.story.4", "italic": false, "color": "blue" }
+        ],
+        { "text": "" },
+        [
+          { "text": "", "italic": false },
+          { "translate": "armor.armor_of_the_coiled_rock.skill", "color": "gold", "bold": true },
+          { "text": "  " }
+        ],
+        [
+          { "text": "", "italic": false },
+          { "translate": "armor.armor_of_the_coiled_rock.skill.1", "color": "#b37400" }
+        ],
+        [
+          { "text": "", "italic": false },
+          { "translate": "armor.armor_of_the_coiled_rock.skill.2", "color": "#b37400" }
+        ]
+      ],
+      "minecraft:attribute_modifiers": [
+        {
+          "id": "chest.1",
+          "type": "armor",
+          "amount": 5,
+          "operation": "add_value",
+          "slot": "chest"
+        }
+      ],
+      "minecraft:max_stack_size": 1,
+      "minecraft:unbreakable": {},
+      "minecraft:custom_data": {
+        "colied_rock": true,
+        "type": "armor",
+        "id": "armor_of_the_coiled_rock"
+      },
+      "minecraft:tooltip_style": "rare",
+      "minecraft:equippable": {
+        "slot": "chest",
+        "equip_sound": "item.armor.equip_iron",
+        "asset_id": "armor_of_the_coiled_rock"
+      }
+    }
+  }
+]

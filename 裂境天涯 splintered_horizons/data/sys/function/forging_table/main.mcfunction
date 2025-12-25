@@ -6,7 +6,7 @@ execute positioned 770 148 979 as @n[tag=!sys.forging_table.item,type=item,dista
 execute positioned 770 148 979 as @n[distance=..1.5,type=item,predicate=sys:forging_table/crafting/sword/general/wooden_sword] run function sys:forging_table/crafting/general/weapon_energy_infusion
 
 # Stone Sword
-execute positioned 770 148 979 as @n[distance=..1.5,type=item,predicate=sys:forging_table/crafting/sword/general/stone_sword] run function sys:forging_table/guide
+execute positioned 770 148 979 as @n[distance=..1.5,type=item,predicate=sys:forging_table/crafting/sword/general/stone_sword] run function sys:forging_table/crafting/sword/guide
 
 # Copper Sword
 execute positioned 770 148 979 as @n[distance=..1.5,type=item,predicate=sys:forging_table/crafting/sword/general/copper_sword] run function sys:forging_table/crafting/general/weapon_energy_infusion
@@ -29,7 +29,7 @@ execute positioned 770 148 979 as @n[distance=..1.5,type=item,predicate=sys:forg
 execute positioned 770 148 979 as @n[distance=..1.5,type=item,predicate=sys:forging_table/crafting/sword/general/leather_helmet] run function sys:forging_table/crafting/general/armor_energy_infusion
 
 # Leather Chestplate
-execute positioned 770 148 979 as @n[distance=..1.5,type=item,predicate=sys:forging_table/crafting/sword/general/leather_chestplate] run function sys:forging_table/crafting/general/armor_energy_infusion
+execute positioned 770 148 979 as @n[distance=..1.5,type=item,predicate=sys:forging_table/crafting/sword/general/leather_chestplate] run function sys:forging_table/crafting/armor/guide
 
 # Leather Leggings
 execute positioned 770 148 979 as @n[distance=..1.5,type=item,predicate=sys:forging_table/crafting/sword/general/leather_leggings] run function sys:forging_table/crafting/general/armor_energy_infusion

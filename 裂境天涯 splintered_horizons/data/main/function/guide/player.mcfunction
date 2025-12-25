@@ -15,6 +15,9 @@ execute as @e[distance=..15,sort=nearest,limit=5,tag=sys.campfire,type=interacti
 # Chair
 function sys:sit_down/interaction/main
 
+# Glitch Effect
+function players:effect/glitch_effect/main
+
 # Portal
 
 execute as @e[tag=portal,type=marker,distance=..30,limit=5,sort=nearest] at @s run function sys:portal/loop

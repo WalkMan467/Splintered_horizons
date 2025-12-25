@@ -11,6 +11,7 @@ function story:chapter_1/sq/1/reset
 function main:map_lobby/reset
 
 function sys:forging_table/crafting/recipe/lock
+function sys:monster_wave/reset
 
 clear @s
 gamemode survival @a

@@ -12,6 +12,8 @@ scoreboard objectives add player.finality_tunder.temp dummy "[玩家] 終焉閃�
 scoreboard objectives add player.give.item.delay dummy "[玩家] 給予玩家物品延遲"
 scoreboard objectives add player.leave_game minecraft.custom:minecraft.leave_game "[玩家] 離開遊戲"
 
+scoreboard objectives add player.effect.glitch_effect dummy "[玩家] Glitch Effect"
+
 scoreboard objectives add player.otherworld_key.count dummy "[玩家] 異界鑰匙數量"
 
 scoreboard objectives add player.death_count dummy [{"text":"💀","bold":true,"color":"red"},{"translate":"tips.player_death.3","bold":false,"color":"white"},{"text":"💀","bold":true,"color":"red"}]

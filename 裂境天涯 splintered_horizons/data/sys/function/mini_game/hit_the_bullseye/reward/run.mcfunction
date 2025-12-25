@@ -1,4 +1,5 @@
-setblock ~ ~ ~ chest replace
+setblock ~ ~ ~ air replace
+clone ~ ~-3 ~ ~ ~-3 ~ ~ ~ ~ replace
 
 execute summon text_display run function sys:mini_game/hit_the_bullseye/reward/text_display/guide
 

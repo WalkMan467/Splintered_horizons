@@ -7,7 +7,9 @@ execute at 00000079-0000-0018-0000-000200000209 run particle end_rod ~ ~0.5 ~ ^ 
 
 execute in minecraft:overworld run setworldspawn 9987 165 9978
 
-execute unless score #difficulty global.main matches 1.. if entity @n[type=marker,tag=monster.marker] run kill @e[tag=monster.marker,type=marker]
+execute unless score #difficulty global.main matches 1.. if entity @n[sort=arbitrary,type=marker,tag=monster.marker] run kill @e[sort=arbitrary,tag=monster.marker,type=marker]
+execute unless score #difficulty global.main matches 1.. if entity @n[sort=arbitrary,type=marker,tag=main.duration.timer] run kill @e[sort=arbitrary,tag=main.duration.timer,type=marker]
+
 execute unless score #difficulty global.main matches 1.. as @n[sort=arbitrary,tag=monsters.display,type=#dummy_mob] on passengers on passengers run kill @s
 execute unless score #difficulty global.main matches 1.. as @n[sort=arbitrary,tag=monsters.display,type=#dummy_mob] on passengers run kill @s
 execute unless score #difficulty global.main matches 1.. run kill @n[sort=arbitrary,tag=monsters.display,type=#dummy_mob]
