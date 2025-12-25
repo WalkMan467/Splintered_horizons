@@ -1,4 +1,5 @@
 scoreboard players add @s player.detect.death 0
+scoreboard players add @s player.death_count 0
 execute unless score @s player.detect.death matches 1.. run return 0
 
 scoreboard players reset @s player.detect.air
@@ -11,7 +12,7 @@ function #players:detect/death
 particle minecraft:end_rod ~ ~0.5 ~ 0 0 0 0.5 20 normal @a
 playsound minecraft:entity.wither.spawn voice @a ~ ~1 ~ 0.5 2
 
-scoreboard players add @s player.death_count 1
+execute if score #game.start global.main matches 1.. run scoreboard players add @s player.death_count 1
 
 title @s title [{"translate":"tips.player_death.1","fallback":"死","color":"dark_red","bold":true,"font":"minecraft:default"},{"text":"\uE000","font":"minecraft:space"},{"text":"\uE000","font":"minecraft:icon","shadow_color":1,"bold":false,"color":"white"},{"text":"\uE000","font":"minecraft:space"},{"translate":"tips.player_death.2","fallback":"亡","color":"dark_red","bold":true,"font":"minecraft:default"}]
 title @s times 20 60 20

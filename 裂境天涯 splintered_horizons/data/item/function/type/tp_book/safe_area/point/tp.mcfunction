@@ -1,2 +1,2 @@
 function players:stop_animation
-$tp @s $(x) $(y) $(z) ~ ~
+$execute positioned $(x) $(y) $(z) run tp @s ~ ~ ~

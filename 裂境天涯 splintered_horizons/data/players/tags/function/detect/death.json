@@ -4,7 +4,6 @@
       "monsters:bossfight/chapter_2/elekiel_phase_2/player_death",
       "particle:portal/crack/tp/remove",
       "players:stop_animation",
-      "music:reset",
-      "m_graves:graves/on_death"
+      "music:reset"
     ]
   }
