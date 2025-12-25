@@ -2,6 +2,9 @@ clear @s
 
 function players:scoreboard
 
+team modify team.player friendlyFire false
+team join team.player @a
+
 scoreboard players set @s player.no_cd 0
 
 scoreboard players set #story global.main 0
