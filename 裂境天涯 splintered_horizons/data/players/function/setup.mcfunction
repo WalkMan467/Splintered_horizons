@@ -1,6 +1,6 @@
 gamemode adventure @s
 
-execute unless score #chapter_test global.main matches -2147483648..2147483647 in world_area:main/game_lobby run tp @s 72 61 -4 180 0
+execute in world_area:main/game_lobby run tp @s 72 61 -4 180 0
 
 clear @s
 
@@ -20,5 +20,4 @@ function players:adv/remove_adv
 
 dialog show @s players:settings
 
-execute unless score #chapter_test global.main matches -2147483648..2147483647 in world_area:main/game_lobby run advancement revoke @s only players:new_player
-execute if score #chapter_test global.main matches -2147483648..2147483647 run function main:chapter_test
+advancement revoke @s only players:new_player

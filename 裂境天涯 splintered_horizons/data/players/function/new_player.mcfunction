@@ -56,3 +56,5 @@ scoreboard players add @s player.death_count 0
 
 function players:id/detect
 attribute @s minecraft:movement_speed base set 0.1
+
+function main:chapter_test

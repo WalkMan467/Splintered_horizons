@@ -1,12 +1,10 @@
-function players:new_player
+
 execute unless score #chapter_test global.main matches -2147483648..2147483647 run return 0
 
 gamemode survival @s
 
 # Chapter 2
 execute if score #chapter_test global.main matches ..1 run return 0
-
-scoreboard players set #safe_area.enter global.main 0
 
 execute in minecraft:overworld run tp @s 757 142 912 0 0
 
