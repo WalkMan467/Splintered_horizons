@@ -100,3 +100,42 @@ function armors:get/swift_boots
 function armors:get/windriders_legplates
 give @s crafting_table
 item replace entity @s weapon.offhand with torch 20
+
+execute if score #chapter_test global.main matches ..2 run return 0
+
+execute in minecraft:overworld run tp @s 788 109 183 135 0
+
+scoreboard players set @s player.spawnpoint.dimension 0
+scoreboard players set @s player.spawnpoint.pos.x 788
+scoreboard players set @s player.spawnpoint.pos.y 109
+scoreboard players set @s player.spawnpoint.pos.z 183
+
+advancement revoke @s only music:chapter_3/icon
+
+    advancement revoke @s only music:chapter_3/realm_of_finality/icon
+    advancement revoke @s only music:chapter_3/realm_of_finality/title
+    advancement revoke @s only music:chapter_3/finalitys_embrace_rift/icon
+    advancement revoke @s only music:chapter_3/finalitys_embrace_rift/title
+    advancement revoke @s only music:chapter_3/lord_of_the_cataclysm/title
+
+advancement grant @s only music:main/safe_zone/icon
+    advancement grant @s only music:main/safe_zone/title
+
+advancement grant @s only music:chapter_3/icon
+
+    advancement grant @s only music:chapter_3/realm_of_finality/icon
+    advancement grant @s only music:chapter_3/realm_of_finality/title
+    advancement grant @s only music:chapter_3/finalitys_embrace_rift/icon
+    advancement grant @s only music:chapter_3/finalitys_embrace_rift/title
+    advancement grant @s only music:chapter_3/lord_of_the_cataclysm/title
+
+
+scoreboard players set #safe_area.enter global.main 1
+
+scoreboard players set #monument.area_2 global.main 1
+scoreboard players set #weapons:monument/area_2 global.main 1
+
+scoreboard players set @s player.spawnpoint.dimension 0
+scoreboard players set @s player.spawnpoint.pos.x 757
+scoreboard players set @s player.spawnpoint.pos.y 142
+scoreboard players set @s player.spawnpoint.pos.z 912

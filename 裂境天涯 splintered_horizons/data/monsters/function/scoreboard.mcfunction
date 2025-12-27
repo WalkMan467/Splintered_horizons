@@ -69,6 +69,8 @@ scoreboard objectives add monster.elekiel.2.timer dummy "[怪物] 伊萊克爾 �
 scoreboard objectives add monster.elekiel.2.player_timer dummy "[怪物] 伊萊克爾 拘魂之花 玩家倒計時"
 scoreboard objectives add monster.elekiel.3.player_pos.save.timer dummy "[怪物] 伊萊克爾 玩家位置儲存 計時器"
 scoreboard objectives add monster.elekiel.3.timer dummy "[怪物] 伊萊克爾 末世之鐘 計時器"
+scoreboard objectives add monster.elekiel.3.state dummy "[怪物] 伊萊克爾 狀態ID"
+scoreboard objectives add monster.elekiel.3.atk.delay dummy "[怪物] 伊萊克爾 狀態ID"
 
 scoreboard objectives add monster.elekiel.skill.cd dummy "[怪物] 伊萊克爾 技能 CD"
 scoreboard objectives add monster.elekiel.skill.casting dummy "[怪物] 伊萊克爾 技能 釋放中"

@@ -30,7 +30,7 @@ function monsters:chapter_2/elekiel/1/7
 bossbar remove chapter_2.elekiel.2
 bossbar remove chapter_2.elekiel.3
 
-execute on passengers as @n[tag=aj.yibb_tstll.root,type=item_display] run function animated_java:yibb_tstll/remove/this
+execute on passengers as @n[tag=aj.boss_1.root,type=item_display] run function animated_java:boss_1/remove/this
 
 advancement revoke @a only monsters:chapter_2/elekiel/1/battlefield/fire
 kill 000000fb-0000-0228-0000-000100000018

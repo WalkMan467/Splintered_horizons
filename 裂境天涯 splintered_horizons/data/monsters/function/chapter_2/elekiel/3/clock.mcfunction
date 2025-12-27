@@ -33,7 +33,7 @@ tag @a remove monster.elekiel_phase_2.4.effect.target
 tag @a add temp
 tag @a[tag=!animation,gamemode=spectator] remove temp
 tag @a[tag=chapter_2.elekiel.lose] remove temp
-
+tag @a[gamemode=creative] remove temp
 tag @a[tag=temp] add forced_interrupt_animation
 tag @a[tag=temp] add player.death
 

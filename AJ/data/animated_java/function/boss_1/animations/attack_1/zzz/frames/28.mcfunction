@@ -76,4 +76,3 @@ $data merge entity $(bone_guide38) {transformation: [1.2041f,0.4663f,0.3499f,0.6
 $data merge entity $(bone_guide34) {transformation: [1.2216f,0.4001f,0.3704f,0.6995f,0.1559f,-0.9601f,0.2572f,-0.6309f,0.7785f,-0.0419f,-0.9166f,-0.1856f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(bone_guide20) {transformation: [-0.5795f,0.1943f,1.19f,0.8096f,-0.4582f,-0.8809f,-0.162f,-0.89f,0.674f,-0.4317f,0.8986f,-0.5311f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(bone_guide97) {transformation: [0.5609f,0.221f,-1.1942f,0.2656f,0.4605f,-0.8843f,0.135f,-0.8223f,-0.688f,-0.4115f,-0.8974f,-0.9408f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
-$data merge entity $(item_display_blade) {transformation: [0.7468f,-3.484f,-0.6816f,-0.3395f,1.6965f,-1.383f,1.2555f,-0.9952f,-3.5446f,-1.396f,0.4573f,0.1959f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}

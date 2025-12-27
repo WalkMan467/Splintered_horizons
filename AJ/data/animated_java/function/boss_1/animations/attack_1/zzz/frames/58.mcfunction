@@ -76,5 +76,3 @@ $data merge entity $(bone_guide38) {transformation: [0.5758f,0.4488f,0.7821f,1.1
 $data merge entity $(bone_guide34) {transformation: [0.5986f,0.3634f,0.8089f,1.1498f,0.3432f,-0.9228f,0.1793f,-0.613f,1.2833f,0.3161f,-0.5975f,-0.137f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(bone_guide20) {transformation: [-0.8508f,0.403f,0.5083f,1.4319f,-0.4232f,-0.906f,0.0397f,-0.9003f,0.3116f,-0.1297f,1.4106f,-0.3281f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(bone_guide97) {transformation: [0.8428f,0.4145f,-0.5124f,1.199f,0.4224f,-0.9048f,-0.0666f,-0.9246f,-0.3336f,-0.0981f,-1.4081f,-0.9712f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
-$data merge entity $(item_display_blade) {transformation: [0f,-3.7165f,-0.5546f,0.5145f,1.5531f,-1.3629f,1.2844f,-0.851f,-3.6862f,-0.5743f,0.5411f,-0.625f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
-execute on vehicle unless entity @s[tag=aj.transforms_only] at @s run function animated_java:boss_1/animations/attack_1/zzz/frames/58_root_commands

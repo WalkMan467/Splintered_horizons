@@ -2,7 +2,7 @@
 
 execute as @a at @s run function monsters:bossfight/chapter_2/elekiel/reset_player_die
 
-function animated_java:yibb_tstll/remove/all
+function animated_java:boss_1/remove/all
 
 bossbar remove minecraft:monsters.elekiel
 
@@ -38,7 +38,7 @@ tag @a remove monsters.elekiel.2.vampire_flower.target
 function monsters:chapter_2/elekiel/1/7
 execute as @a at @s if biome ~ ~ ~ #world_area:chapter_2_bossfight run function music:chapter_2/bossfight/2/reset
 
-execute on passengers as @n[tag=aj.yibb_tstll.root,type=item_display] run function animated_java:yibb_tstll/remove/this
+execute on passengers as @n[tag=aj.boss_1.root,type=item_display] run function animated_java:boss_1/remove/this
 
 advancement revoke @a only monsters:chapter_2/elekiel/1/battlefield/fire
 kill 000000fb-0000-0228-0000-000100000018
