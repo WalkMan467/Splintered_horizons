@@ -11,14 +11,37 @@ kill 00000016-0000-0016-0000-001500000019
 
 forceload remove 762 931 758 935
 
-execute positioned 758 143 935 as @n[sort=arbitrary,distance=..10,tag=aj.sophia.root,type=item_display] run function animated_java:sophia/remove/this
-execute positioned 758 143 935 as @n[sort=arbitrary,distance=..10,tag=aj.stellar_animation.root,type=item_display] run function animated_java:stellar_animation/remove/this
-execute positioned 758 143 935 as @e[sort=arbitrary,distance=..10,tag=aj.stellar_animation.entity,type=item_display] run kill @s
-execute positioned 759 144 946 as @n[sort=arbitrary,distance=..10,tag=aj.isokla.root,type=item_display] run function animated_java:isokla/remove/this
-execute positioned 757 144 946 as @n[sort=arbitrary,distance=..10,tag=aj.elina.root,type=item_display] run function animated_java:elina/remove/this
+
+execute \
+    positioned 758 143 935 \
+    as @n[sort=arbitrary,distance=..10,tag=aj.sophia.root,type=item_display] run \
+function animated_java:sophia/remove/this
+
+execute \
+    positioned 758 143 935 \
+    as @n[sort=arbitrary,distance=..10,tag=aj.stellar_animation.root,type=item_display] run \
+function animated_java:stellar_animation/remove/this
+
+execute \
+    positioned 758 143 935 \
+    as @e[sort=arbitrary,distance=..10,tag=aj.stellar_animation.entity,type=item_display] run \
+kill @s
+
+execute \
+    positioned 759 144 946 \
+    as @n[sort=arbitrary,distance=..10,tag=aj.isokla.root,type=item_display] run \
+function animated_java:isokla/remove/this
+
+execute \
+    positioned 757 144 946 \
+    as @n[sort=arbitrary,distance=..10,tag=aj.elina.root,type=item_display] run \
+function animated_java:elina/remove/this
 
 function story:chapter_2/stop
-execute as @a[tag=cutscene.player_leave.detect] at @s run function players:inventory/return {bag:"cutscene/safe_area"}
+
+execute \
+    as @a[tag=cutscene.player_leave.detect] at @s run \
+function players:inventory/return {bag:"cutscene/safe_area"}
 tag @a remove cutscene.player_leave.detect
 
 schedule clear cutscene:safe_area/main

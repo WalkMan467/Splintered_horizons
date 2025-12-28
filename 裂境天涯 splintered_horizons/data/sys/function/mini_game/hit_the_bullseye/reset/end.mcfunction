@@ -1,4 +1,7 @@
-execute unless entity @s[type=player] run return 0
+
+execute \
+    unless entity @s[type=player] run \
+return 0
 
 tellraw @s [{"translate":"sys.mini_game.hit_the_bullseye.reset.0","fallback": "已重置所有 ID 為 ","color": "white","bold": false},{"score":{"name":"@s","objective":"sys.mini_game.hit_the_bullseye.reset.id"},"color":"green","bold": true},{"translate":"sys.mini_game.hit_the_bullseye.reset.1","fallback": " 的目標靶心！","color": "white","bold": false}]
 

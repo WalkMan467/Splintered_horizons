@@ -2,7 +2,8 @@ Improvements from the previous version (Tweaker 1.0/LEGACY):
 
 Features:
 -Multiple players may now use the sys at once (previously, only 1 player could tweak at a time)
--You may now edit multiple spawners at a time if you sneak while selecting new spawners
+-You may now edit multiple spawners at a time \
+    if you sneak while selecting new spawners
 -Added a trigger to enable/disable tweaker
 -Added a trigger to enable/disable block piercing for the raycast
 -Spawners are now assigned an ID to allow for bulk editing
@@ -19,7 +20,8 @@ Features:
 -Added a trigger to highlight loaded spawners for a time
 
 QOL:
--All syss now detect holding down the sneak key rather than if the player is crouched
+-All syss now detect holding down the sneak key rather than \
+    if the player is crouched
 -You will no longer select or reselect spawners when crouching
 -Reworked the priming sys to be more reliable
 -Tweaker will show the new toggle trigger to anyone that enters creative mode

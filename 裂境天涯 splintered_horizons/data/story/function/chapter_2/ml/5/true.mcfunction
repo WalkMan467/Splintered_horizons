@@ -1,3 +1,4 @@
+
 execute \
     if score #story.chapter_2.ml.5 global.main matches 1 \
     if score #story.chapter_2.ml.5_temp global.main matches 1 run \
@@ -6,7 +7,9 @@ return 0
 scoreboard players set #story.chapter_2.ml.5_temp global.main 1
 scoreboard players set story.chapter_2.ml.5 story.chapter_2 1
 
-execute positioned 1112 82 375 rotated 95 0 run \
+
+execute \
+    positioned 1112 82 375 rotated 95 0 run \
 summon mannequin ~ ~ ~ \
     { \
         UUID:[I; 521241, 4214124, 414241, 52314], \
@@ -20,8 +23,12 @@ summon mannequin ~ ~ ~ \
             } \
     }
 
-execute positioned 1112 82 375 unless score #story:icon/story/chapter_2/mq/scebe_5 global.main matches 1 \
-as @n[sort=arbitrary,distance=..1,tag=world_area.main.safe_zone.melisna,type=mannequin] on passengers run data modify entity @s Glowing set value 1b
+
+execute \
+    positioned 1112 82 375 \
+    unless score #story:icon/story/chapter_2/mq/scebe_5 global.main matches 1 \
+as @n[sort=arbitrary,distance=..1,tag=world_area.main.safe_zone.melisna,type=mannequin] on passengers run \
+data modify entity @s Glowing set value 1b
 
 summon interaction 1112 82 375 \
     { \

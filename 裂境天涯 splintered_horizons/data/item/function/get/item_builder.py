@@ -49,7 +49,8 @@ else:
 
 # ----- generator ----- #
 
-with open(__file__.replace("item_builder.py","#temp.mcfunction"), mode="w+", encoding="utf-8") as f:
+with open(__file__.replace("item_builder.py","#temp.mcfunction"), mode="w+", encoding="utf-8") \
+    as f:
     # id
     f.write(f'give @s {item_data["real_item"]}[')
     
@@ -64,7 +65,8 @@ with open(__file__.replace("item_builder.py","#temp.mcfunction"), mode="w+", enc
 
     # skill
     if skill['is_skill']:
-        skill_cd = f',{{"translate":"item.skill_cd","color":"#6E6E6E"}},{{"text":"{skill["cd"]}s"}}' if int(skill["cd"]) >= 1 else ""
+        skill_cd = f',{{"translate":"item.skill_cd","color":"#6E6E6E"}},{{"text":"{skill["cd"]}s"}}' \
+    if int(skill["cd"]) >= 1 else ""
         f.write(f',{{"text":""}},[{{"text":"","italic":false}},{{"translate":"item.{item_data["id"]}.skill","color":"{skill["name"][1]}","bold":true}},{{"text":"  "}}{skill_cd}]')
         translate["skill"].append(f'# "item.{item_data["id"]}.skill" : "[{skill["name"][0]}]"')
         for i in range(1, len(skill["info"]) + 1):
@@ -73,7 +75,8 @@ with open(__file__.replace("item_builder.py","#temp.mcfunction"), mode="w+", enc
 
     # passive skills
     if passive_skills['is_passive_skills']:
-        cd_text = f',{{"translate":"item.skill_cd","color":"#6E6E6E"}},{{"text":"{passive_skills["cd"]}s"}}' if int(passive_skills["cd"]) >= 1 else ""
+        cd_text = f',{{"translate":"item.skill_cd","color":"#6E6E6E"}},{{"text":"{passive_skills["cd"]}s"}}' \
+    if int(passive_skills["cd"]) >= 1 else ""
         f.write(f',{{"text":""}},[{{"text":"","italic":false}},{{"translate":"item.{item_data["id"]}.passive_skills","color":"{passive_skills["name"][1]}","bold":true}},{{"text":"  "}}{cd_text}]')
         translate["passive_skills"].append(f'# "item.{item_data["id"]}.passive_skills" : "[{passive_skills["name"][0]}]"')
         for i in range(1, len(passive_skills["info"]) + 1):
@@ -82,7 +85,8 @@ with open(__file__.replace("item_builder.py","#temp.mcfunction"), mode="w+", enc
 
     # ultimate
     if ultimate['is_ultimate']:
-        cd_text = f',{{"translate":"item.skill_cd","color":"#6E6E6E"}},{{"text":"{ultimate["cd"]}s"}}' if int(ultimate["cd"]) >= 1 else ""
+        cd_text = f',{{"translate":"item.skill_cd","color":"#6E6E6E"}},{{"text":"{ultimate["cd"]}s"}}' \
+    if int(ultimate["cd"]) >= 1 else ""
         f.write(f',{{"text":""}},[{{"text":"","italic":false}},{{"text":"\uE000","font":"minecraft:icon"}},{{"translate":"item.{item_data["id"]}.ultimate","color":"{ultimate["name"][1]}","bold":true}},{{"text":"\uE000","font":"minecraft:icon"}},{{"text":"  "}}{cd_text}]')
         translate["ultimate"].append(f'# "item.{item_data["id"]}.ultimate" : "[{ultimate["name"][0]}]"')
         for i in range(1, len(ultimate["info"]) + 1):
@@ -105,7 +109,8 @@ with open(__file__.replace("item_builder.py","#temp.mcfunction"), mode="w+", enc
     max_stack_val = max(1, min(max_stack, 99))
 
     # other data
-    item_model_part = f',item_model={item_data["item_model"]}' if str(item_data.get("item_model","")) != '""' else ""
+    item_model_part = f',item_model={item_data["item_model"]}' \
+    if str(item_data.get("item_model","")) != '""' else ""
     f.write(f',max_stack_size={max_stack_val}{item_data["max_damage"]}{item_model_part},custom_data={item_data["custom_data"]}')
 
     # rc

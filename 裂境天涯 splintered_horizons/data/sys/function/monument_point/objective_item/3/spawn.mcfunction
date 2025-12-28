@@ -1,7 +1,10 @@
 tp @n[type=item,predicate=sys:monument_point/objective_item/3] @p
 data modify entity @n[type=item,predicate=sys:monument_point/objective_item/3] PickupDelay set value 0
 
-execute at 0000000d-0000-0001-0000-000100000001 positioned ^ ^ ^4 run summon minecraft:item_display ~ ~ ~ {UUID:[I; 13,4,1,1],Tags:["sys.monument_point.sword","sys.monument_point.main","sys.monument_point.fire"],brightness: {block: 15, sky: 15}, interpolation_duration: 1, item: {components: {"minecraft:item_model": "minecraft:sword/infernal_blaze/0"}, count: 1, id: "minecraft:iron_sword"}, teleport_duration: 1, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.5f, 1.5f, 1.5f], translation: [0.0f, 0.0f, 0.0f]}, view_range: 1}
+
+execute at 0000000d-0000-0001-0000-000100000001 \
+    positioned ^ ^ ^4 run \
+summon minecraft:item_display ~ ~ ~ {UUID:[I; 13,4,1,1],Tags:["sys.monument_point.sword","sys.monument_point.main","sys.monument_point.fire"],brightness: {block: 15, sky: 15}, interpolation_duration: 1, item: {components: {"minecraft:item_model": "minecraft:sword/infernal_blaze/0"}, count: 1, id: "minecraft:iron_sword"}, teleport_duration: 1, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.5f, 1.5f, 1.5f], translation: [0.0f, 0.0f, 0.0f]}, view_range: 1}
 
 playsound minecraft:entity.ender_eye.death voice @a ^ ^ ^-1 1 0.5
 playsound minecraft:entity.ender_eye.death voice @a ^ ^ ^-1 1 0.5

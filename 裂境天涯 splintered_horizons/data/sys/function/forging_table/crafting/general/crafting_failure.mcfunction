@@ -11,4 +11,7 @@ particle dust_color_transition{from_color: [1.0f, 0.0f, 0.0f], scale: 1.5f, to_c
 playsound minecraft:block.note_block.didgeridoo voice @a ~ ~1 ~ 1 1
 playsound minecraft:block.note_block.didgeridoo voice @a ~ ~1 ~ 1 1
 
-execute as @e[sort=arbitrary,distance=..1.5,tag=sys.forging_table.item,type=item] run data modify entity @s Motion[1] set value 0.25
+
+execute \
+    as @e[sort=arbitrary,distance=..1.5,tag=sys.forging_table.item,type=item] run \
+data modify entity @s Motion[1] set value 0.25

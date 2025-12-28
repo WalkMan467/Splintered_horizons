@@ -8,6 +8,12 @@
 # ===================================================
 
 # Display Actionbar
-execute if score #player.actionbar.sys.forging_table.failure global.main matches 1 run title @s actionbar [{"translate": "sys.forging_table.energy_infusion_failure","color": "red"}]
 
-execute if score #player.actionbar.sys.forging_table.failure global.main matches 2 run title @s actionbar [{"translate": "sys.forging_table.crafting.failure","color": "red"}]
+execute \
+    if score #player.actionbar.sys.forging_table.failure global.main matches 1 run \
+title @s actionbar [{"translate": "sys.forging_table.energy_infusion_failure","color": "red"}]
+
+
+execute \
+    if score #player.actionbar.sys.forging_table.failure global.main matches 2 run \
+title @s actionbar [{"translate": "sys.forging_table.crafting.failure","color": "red"}]

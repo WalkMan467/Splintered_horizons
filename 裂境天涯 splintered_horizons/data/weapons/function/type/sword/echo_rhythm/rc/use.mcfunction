@@ -1,6 +1,13 @@
 scoreboard players add @s player.ultimate 0
-execute if score @s player.ultimate matches 1.. unless score @s player.click.interval matches 1.. run function weapons:ultimate_use_failed
-execute if score @s player.ultimate matches 1.. run return 0
+
+execute \
+    if score @s player.ultimate matches 1.. \
+    unless score @s player.click.interval matches 1.. run \
+function weapons:ultimate_use_failed
+
+execute \
+    if score @s player.ultimate matches 1.. run \
+return 0
 
 scoreboard players set @s player.click.interval 20
 

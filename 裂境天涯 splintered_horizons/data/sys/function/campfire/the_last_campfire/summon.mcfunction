@@ -1,8 +1,15 @@
-execute unless entity @s[type=player] run return 0
+
+execute \
+    unless entity @s[type=player] run \
+return 0
 
 tag @s add sys.campfire.the_last_campfire.target
 
-execute as @e[tag=sys.campfire.the_last_campfire.point] if score @s sys.campfire.the_last_campfire.point = @p[tag=sys.campfire.the_last_campfire.target] player.id run kill @s
+
+execute \
+    as @e[tag=sys.campfire.the_last_campfire.point] \
+    if score @s sys.campfire.the_last_campfire.point = @p[tag=sys.campfire.the_last_campfire.target] player.id run \
+kill @s
 
 summon marker ~ ~ ~ {Tags:["sys.campfire.the_last_campfire.point","summon"]}
 

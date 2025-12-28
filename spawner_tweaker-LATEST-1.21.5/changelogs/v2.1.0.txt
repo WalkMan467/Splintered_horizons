@@ -7,7 +7,8 @@ Features:
 -Dropping a spawner while tweaking will open chat prompts for bulk editing and highlighting
 
 QOL:
--Added failsafe for if updates are triggered on non-spawners
+-Added failsafe for \
+    if updates are triggered on non-spawners
 -Hotbar display for light levels now shows 0-15 for light immune values
 
 Bugs:

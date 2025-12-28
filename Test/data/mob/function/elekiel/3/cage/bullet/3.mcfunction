@@ -1,7 +1,9 @@
 
 # rotate
 rotate @s ~90 ~
-execute store result entity @s Rotation[1] float -0.01 run data get entity @s Rotation[1] 100
+
+execute store result entity @s Rotation[1] float -0.01 run \
+data get entity @s Rotation[1] 100
 
 # fx
 playsound mob:cage_release master @a ~ ~ ~ 0.1 1

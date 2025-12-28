@@ -96,4 +96,6 @@ $data merge entity $(bone_2) {transformation: [0.9739f,0.1539f,0.0637f,-0.3719f,
 $data merge entity $(bone_1) {transformation: [0.9749f,0.1664f,-0.0073f,-0.3148f,-0.1632f,0.948f,-0.2337f,1.4284f,-0.0323f,0.2318f,0.961f,-0.0058f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(bone_4) {transformation: [-0.9782f,-0.0643f,0.1248f,0.3919f,-0.0952f,0.9685f,-0.228f,1.1322f,-0.1068f,-0.2321f,-0.9557f,-0.0688f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(bone_3) {transformation: [-0.9792f,-0.111f,0.0859f,0.3572f,-0.0953f,0.9741f,0.2027f,1.4366f,-0.1069f,0.1935f,-0.9642f,-0.0083f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
-execute on vehicle unless entity @s[tag=aj.transforms_only] at @s run function animated_java:sophia/animations/chat1/zzz/frames/80_root_function
+
+execute on vehicle \
+    unless entity @s[tag=aj.transforms_only] at @s run function animated_java:sophia/animations/chat1/zzz/frames/80_root_function

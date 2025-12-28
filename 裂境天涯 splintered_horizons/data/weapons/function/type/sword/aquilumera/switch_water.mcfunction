@@ -20,4 +20,7 @@ playsound block.beacon.deactivate voice @a ~ ~1 ~ 999999 0.5 1
 tag @s add water_sword.w_user
 effect give @e[type=!#dummy_mob,distance=..16,type=!player] slowness 3 5 true
 effect give @e[type=!#dummy_mob,distance=..16,type=!player] weakness 3 255 true
-execute as @e[type=!#dummy_mob,distance=..16,type=!player] run data merge entity @s {Motion:[0.0d,-10.0d,0.0d]}
+
+execute \
+    as @e[type=!#dummy_mob,distance=..16,type=!player] run \
+data merge entity @s {Motion:[0.0d,-10.0d,0.0d]}

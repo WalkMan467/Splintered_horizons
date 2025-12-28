@@ -3,5 +3,6 @@ function animated_java:kyle/animations/pause_all
 tag @s add aj.kyle.animation.cutscene_attack_1.playing
 scoreboard players set @s aj.cutscene_attack_1.frame 0
 tag @s add aj.transforms_only
+
 execute at @s run function animated_java:kyle/animations/cutscene_attack_1/zzz/set_frame {frame: 0}
 tag @s remove aj.transforms_only

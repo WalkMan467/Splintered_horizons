@@ -1,6 +1,8 @@
+
 execute \
     as @n[distance=..1,tag=aj.sophia.root,type=item_display] at @s run \
 function animated_java:sophia/animations/chat1/stop
+
 
 execute \
     as @n[distance=..1,tag=aj.sophia.root,type=item_display] at @s run \

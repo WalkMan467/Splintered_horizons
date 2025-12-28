@@ -8,7 +8,10 @@
 # ===================================================
 
 # Display Actionbar
-execute unless score @s weapon.nightfall.charge matches 1.. run title @s actionbar [{"text": "⚡  □ □ □ □ □ ⚡","color": "white"}]
+
+execute \
+    unless score @s weapon.nightfall.charge matches 1.. run \
+title @s actionbar [{"text": "⚡  □ □ □ □ □ ⚡","color": "white"}]
 title @s[scores={weapon.nightfall.charge=1}] actionbar [{"text": "⚡  ■ □ □ □ □ ⚡","color": "aqua"}]
 title @s[scores={weapon.nightfall.charge=2}] actionbar [{"text": "⚡  ■ ■ □ □ □ ⚡","color": "dark_aqua"}]
 title @s[scores={weapon.nightfall.charge=3}] actionbar [{"text": "⚡  ■ ■ ■ □ □ ⚡","color": "yellow"}]

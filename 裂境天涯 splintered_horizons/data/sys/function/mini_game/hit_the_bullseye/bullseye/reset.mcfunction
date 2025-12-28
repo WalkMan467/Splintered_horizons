@@ -1,4 +1,7 @@
-execute if entity @s[type=player] run return 0
+
+execute \
+    if entity @s[type=player] run \
+return 0
 
 data modify entity @s block_state set value {Name: "minecraft:target"}
 data modify entity @s Glowing set value 1b

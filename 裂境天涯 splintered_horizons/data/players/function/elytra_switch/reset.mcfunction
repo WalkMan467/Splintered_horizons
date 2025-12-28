@@ -1,6 +1,12 @@
-execute if entity @s[tag=!player.elytra_switch] run return 0
 
-execute unless entity @n[type=item,nbt={Item:{components:{"minecraft:custom_data":{disable_drop:1b}}}}] run return 0
+execute \
+    if entity @s[tag=!player.elytra_switch] run \
+return 0
+
+
+execute \
+    unless entity @n[type=item,nbt={Item:{components:{"minecraft:custom_data":{disable_drop:1b}}}}] run \
+return 0
 kill @n[type=item,nbt={Item:{components:{"minecraft:custom_data":{disable_drop:1b}}}}]
 
 scoreboard players set @s player.animation.lock 2147483647

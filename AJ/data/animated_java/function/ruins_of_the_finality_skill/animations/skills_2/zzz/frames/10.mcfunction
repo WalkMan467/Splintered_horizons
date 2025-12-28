@@ -87,4 +87,6 @@ $data merge entity $(bone_4) {transformation: [-0.8698f,-0.4718f,0.1393f,0.4857f
 $data merge entity $(bone_3) {transformation: [-0.8706f,-0.4419f,-0.216f,0.3612f,-0.4857f,0.7029f,0.5196f,1.2514f,-0.0778f,0.5573f,-0.8267f,9.159f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(bone_8) {transformation: [-0.9126f,0.4037f,0.0654f,-0.2577f,0.3201f,0.6056f,0.7286f,0.4499f,0.2545f,0.6858f,-0.6819f,9.1009f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(bone_7) {transformation: [-0.9126f,0.3935f,-0.1113f,-0.1313f,0.3201f,0.8568f,0.4044f,0.7334f,0.2545f,0.3334f,-0.9078f,9.1979f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
-execute on vehicle unless entity @s[tag=aj.transforms_only] at @s run function animated_java:ruins_of_the_finality_skill/animations/skills_2/zzz/frames/10_root_commands
+
+execute on vehicle \
+    unless entity @s[tag=aj.transforms_only] at @s run function animated_java:ruins_of_the_finality_skill/animations/skills_2/zzz/frames/10_root_commands

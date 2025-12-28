@@ -1,4 +1,7 @@
-execute if score #trap.chapter_2.chest trap.global.main matches 1 run return 0
+
+execute \
+    if score #trap.chapter_2.chest trap.global.main matches 1 run \
+return 0
 
 scoreboard players set #trap.chapter_2.chest trap.global.main 1
 

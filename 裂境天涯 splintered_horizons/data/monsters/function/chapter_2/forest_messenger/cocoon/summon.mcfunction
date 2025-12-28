@@ -1,8 +1,14 @@
-execute if entity @s[type=player] run return 0
+
+execute \
+    if entity @s[type=player] run \
+return 0
 
 scoreboard players add @s monster.forest_messenger.user 0
 
-execute if score @s monster.forest_messenger.user matches 1.. run return 0
+
+execute \
+    if score @s monster.forest_messenger.user matches 1.. run \
+return 0
 
 scoreboard players set @s monster.forest_messenger.user 200
 
@@ -23,8 +29,14 @@ scoreboard players operation @s monster.forest_messenger.cocoon.id = .global mon
 
 summon block_display ^ ^1 ^8 {Glowing:1b,teleport_duration:1,Tags:["monster.forest_messenger.cocoon","summon","monster.forest_messenger.cocoon.display"],Passengers:[{id:"minecraft:block_display",Glowing:1b,teleport_duration:1,brightness:{sky:15,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-0.25f,-0.125f,-0.25f],scale:[0.5f,0.5f,0.5f]},block_state:{Name:"minecraft:azalea"}},{id:"minecraft:block_display",Glowing:1b,teleport_duration:1,brightness:{sky:15,block:15},transformation:{left_rotation:[1f,0f,0f,0f],right_rotation:[0f,0f,0f,1f],translation:[-0.25f,0.125f,0.25f],scale:[0.5f,0.5f,0.5f]},block_state:{Name:"minecraft:azalea"}},{id:"minecraft:block_display",Glowing:1b,billboard:"vertical",teleport_duration:1,brightness:{sky:15,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-0.25f,0.375f,-0.25f],scale:[0.5f,0.5f,0.5f]},block_state:{Name:"minecraft:bush"}},{id:"minecraft:block_display",Glowing:1b,billboard:"vertical",teleport_duration:1,brightness:{sky:15,block:15},transformation:{left_rotation:[1f,0f,0f,0f],right_rotation:[0f,0f,0f,1f],translation:[-0.25f,-0.375f,0.25f],scale:[0.5f,0.5f,0.5f]},block_state:{Name:"minecraft:bush"}}],brightness:{sky:15,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-0.175f,-0.175f,-0.175f],scale:[0.375f,0.375f,0.375f]},block_state:{Name:"minecraft:raw_gold_block"}}
 
-execute as @n[tag=monster.forest_messenger.cocoon,tag=summon,type=block_display] on passengers run scoreboard players set @s duration 200
-execute as @n[tag=monster.forest_messenger.cocoon,tag=summon,type=block_display] on passengers run scoreboard players operation @s monster.forest_messenger.cocoon.id = .global monster.forest_messenger.cocoon.id
+
+execute \
+    as @n[tag=monster.forest_messenger.cocoon,tag=summon,type=block_display] on passengers run \
+scoreboard players set @s duration 200
+
+execute \
+    as @n[tag=monster.forest_messenger.cocoon,tag=summon,type=block_display] on passengers run \
+scoreboard players operation @s monster.forest_messenger.cocoon.id = .global monster.forest_messenger.cocoon.id
 
 scoreboard players set @n[tag=monster.forest_messenger.cocoon,tag=summon,type=block_display] duration 200
 scoreboard players operation @n[tag=monster.forest_messenger.cocoon,tag=summon,type=block_display] monster.forest_messenger.cocoon.id = .global monster.forest_messenger.cocoon.id

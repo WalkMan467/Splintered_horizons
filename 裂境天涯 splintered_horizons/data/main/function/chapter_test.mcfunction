@@ -1,12 +1,21 @@
 
-execute unless score #chapter_test global.main matches -2147483648..2147483647 run return 0
+
+execute \
+    unless score #chapter_test global.main matches -2147483648..2147483647 run \
+return 0
 
 gamemode survival @s
 
 # Chapter 2
-execute if score #chapter_test global.main matches ..1 run return 0
 
-execute in minecraft:overworld run tp @s 757 142 912 0 0
+execute \
+    if score #chapter_test global.main matches ..1 run \
+return 0
+
+
+execute \
+    in minecraft:overworld run \
+tp @s 757 142 912 0 0
 
 scoreboard players reset WalkMan467 player.death_count
 scoreboard players add @a player.death_count 0
@@ -101,9 +110,15 @@ function armors:get/windriders_legplates
 give @s crafting_table
 item replace entity @s weapon.offhand with torch 20
 
-execute if score #chapter_test global.main matches ..2 run return 0
 
-execute in minecraft:overworld run tp @s 788 109 183 135 0
+execute \
+    if score #chapter_test global.main matches ..2 run \
+return 0
+
+
+execute \
+    in minecraft:overworld run \
+tp @s 788 109 183 135 0
 
 scoreboard players set @s player.spawnpoint.dimension 0
 scoreboard players set @s player.spawnpoint.pos.x 788

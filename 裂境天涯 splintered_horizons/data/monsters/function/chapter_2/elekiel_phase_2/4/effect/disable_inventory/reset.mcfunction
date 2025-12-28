@@ -1,12 +1,15 @@
+
 execute \
     unless entity @s[tag=monster.elekiel_phase_2.void.target] run \
 return 0
+
 
 execute \
     if entity @s[tag=chapter_2.elekiel_phase_2.lose] run \
 return 0
 
 clear @s *[custom_data~{disable_inventory:1b}]
+
 
 execute \
     if items entity @s player.cursor *[custom_data~{disable_inventory:1b}] run \

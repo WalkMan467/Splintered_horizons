@@ -1,7 +1,19 @@
-execute if score #boss_area.chapter_2.elekiel global.main matches 1 run tellraw @s {"translate": "dialog.main.quick_actions.fail.boss","color": "red"}
-execute if score #boss_area.chapter_2.elekiel global.main matches 1 run return 0
-execute if score #boss_area.chapter_2.elekiel_phase_2 global.main matches 1 run tellraw @s {"translate": "dialog.main.quick_actions.fail.boss","color": "red"}
-execute if score #boss_area.chapter_2.elekiel_phase_2 global.main matches 1 run return 0
+
+execute \
+    if score #boss_area.chapter_2.elekiel global.main matches 1 run \
+tellraw @s {"translate": "dialog.main.quick_actions.fail.boss","color": "red"}
+
+execute \
+    if score #boss_area.chapter_2.elekiel global.main matches 1 run \
+return 0
+
+execute \
+    if score #boss_area.chapter_2.elekiel_phase_2 global.main matches 1 run \
+tellraw @s {"translate": "dialog.main.quick_actions.fail.boss","color": "red"}
+
+execute \
+    if score #boss_area.chapter_2.elekiel_phase_2 global.main matches 1 run \
+return 0
 
 function music:stop
 tag @s remove player.death

@@ -2,8 +2,11 @@ scoreboard players set #story.chapter_1.mq.4_temp global.main 1
 scoreboard players set story.chapter_1.mq.4 story.chapter_1 1
 
 kill @e[tag=story.chapter_1.mq.4]
-execute as @n[tag=aj.sophia.root,limit=1,distance=..3] run \
+
+execute \
+    as @n[tag=aj.sophia.root,limit=1,distance=..3] run \
 function animated_java:sophia/remove/this
+
 
 execute \
     positioned 14 83 -337 \
@@ -17,10 +20,12 @@ function animated_java:sophia/summon \
         } \
     }
 
+
 execute \
     positioned 14 83 -337 \
     unless score #story:icon/story/chapter_1/mq/scebe_4 global.main matches 1 \
-as @n[type=item_display,tag=aj.sophia.root,distance=..3] on passengers run data modify entity @s Glowing set value 1b
+as @n[type=item_display,tag=aj.sophia.root,distance=..3] on passengers run \
+data modify entity @s Glowing set value 1b
 
 summon interaction 14 83 -337 \
     { \

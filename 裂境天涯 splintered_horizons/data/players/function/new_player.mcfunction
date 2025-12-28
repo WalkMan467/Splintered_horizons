@@ -1,4 +1,7 @@
-execute unless score #chapter_test global.main matches -2147483648..2147483647 run scoreboard players set @s player.give.item.delay 10
+
+execute \
+    unless score #chapter_test global.main matches -2147483648..2147483647 run \
+scoreboard players set @s player.give.item.delay 10
 
 advancement revoke @s only players:tips/bleeding
 advancement revoke @s only players:tips/mending
@@ -49,7 +52,11 @@ scoreboard players set @s player.spawnpoint.pos.x 38
 scoreboard players set @s player.spawnpoint.pos.y 64
 scoreboard players set @s player.spawnpoint.pos.z 11
 
-execute unless score #chapter_test global.main matches -2147483648..2147483647 in minecraft:overworld run tp @s 38 64 11 90 0
+
+execute \
+    unless score #chapter_test global.main matches -2147483648..2147483647 \
+    in minecraft:overworld run \
+tp @s 38 64 11 90 0
 
 scoreboard players add @s player.death_count 0
 

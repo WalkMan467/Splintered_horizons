@@ -1,16 +1,51 @@
 
 # effect
-execute positioned ^ ^ ^1 as @a[distance=..1.5] run damage @s 8 mob_attack
-execute positioned ^ ^ ^3 as @a[distance=..1.5] run damage @s 8 mob_attack
-execute positioned ^ ^ ^5 as @a[distance=..1.5] run damage @s 8 mob_attack
-execute positioned ^ ^ ^7 as @a[distance=..1.5] run damage @s 8 mob_attack
-execute positioned ^ ^ ^9 as @a[distance=..1.5] run damage @s 8 mob_attack
 
-execute positioned ^ ^ ^1 run effect give @a[distance=..1.5] slowness 3 2 false
-execute positioned ^ ^ ^3 run effect give @a[distance=..1.5] slowness 3 2 false
-execute positioned ^ ^ ^5 run effect give @a[distance=..1.5] slowness 3 2 false
-execute positioned ^ ^ ^7 run effect give @a[distance=..1.5] slowness 3 2 false
-execute positioned ^ ^ ^9 run effect give @a[distance=..1.5] slowness 3 2 false
+execute \
+    positioned ^ ^ ^1 \
+    as @a[distance=..1.5] run \
+damage @s 8 mob_attack
+
+execute \
+    positioned ^ ^ ^3 \
+    as @a[distance=..1.5] run \
+damage @s 8 mob_attack
+
+execute \
+    positioned ^ ^ ^5 \
+    as @a[distance=..1.5] run \
+damage @s 8 mob_attack
+
+execute \
+    positioned ^ ^ ^7 \
+    as @a[distance=..1.5] run \
+damage @s 8 mob_attack
+
+execute \
+    positioned ^ ^ ^9 \
+    as @a[distance=..1.5] run \
+damage @s 8 mob_attack
+
+
+execute \
+    positioned ^ ^ ^1 run \
+effect give @a[distance=..1.5] slowness 3 2 false
+
+execute \
+    positioned ^ ^ ^3 run \
+effect give @a[distance=..1.5] slowness 3 2 false
+
+execute \
+    positioned ^ ^ ^5 run \
+effect give @a[distance=..1.5] slowness 3 2 false
+
+execute \
+    positioned ^ ^ ^7 run \
+effect give @a[distance=..1.5] slowness 3 2 false
+
+execute \
+    positioned ^ ^ ^9 run \
+effect give @a[distance=..1.5] slowness 3 2 false
 
 # particle
 particle dust_color_transition{from_color:[1.000,0.000,0.000],scale:2.5,to_color:[0.000,0.000,0.000]} ^ ^1 ^1 0.25 0.25 0.25 0 1 force

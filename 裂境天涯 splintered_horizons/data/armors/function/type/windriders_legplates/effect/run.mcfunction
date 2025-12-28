@@ -1,5 +1,7 @@
 scoreboard players reset #armor.windriders_legplates.fx particle
-execute rotated ~ 0 run function armors:type/windriders_legplates/effect/fx
+
+execute rotated ~ 0 run \
+function armors:type/windriders_legplates/effect/fx
 
 playsound minecraft:entity.illusioner.cast_spell voice @a ~ ~1 ~ 1 1.25
 playsound minecraft:entity.breeze.charge voice @a ~ ~1 ~ 1 0.5
@@ -15,4 +17,6 @@ schedule function armors:type/windriders_legplates/effect/knockback/main 1t
 tag @s add dmger
 effect give @s wind_charged 20 0 false
 
-execute on attacker run function armors:type/windriders_legplates/effect/damage
+
+execute on attacker run \
+function armors:type/windriders_legplates/effect/damage

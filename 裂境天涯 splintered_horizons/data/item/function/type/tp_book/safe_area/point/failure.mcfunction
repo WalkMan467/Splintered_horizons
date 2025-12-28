@@ -1,4 +1,7 @@
-execute if score @s item.tp_book.point.x.temp matches -2147483648..2147483647 run return 0
+
+execute \
+    if score @s item.tp_book.point.x.temp matches -2147483648..2147483647 run \
+return 0
 tag @s add item.tp_book.safe_area.point.failure
 
 scoreboard players set @s player.actionbar.sys.forging_table.failure.id 2

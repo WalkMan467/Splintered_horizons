@@ -1,8 +1,17 @@
 # loop
 
-execute if score sys.shooting_contest.timer global.main matches 1.. run schedule function sys:shooting_contest/loop 1t
-execute if score sys.shooting_contest.timer global.main matches 1.. run scoreboard players remove sys.shooting_contest.timer global.main 1
-execute if score #sys.shooting_contest.target.timer global.main matches 1.. run scoreboard players remove #sys.shooting_contest.target.timer global.main 1
+
+execute \
+    if score sys.shooting_contest.timer global.main matches 1.. run \
+schedule function sys:shooting_contest/loop 1t
+
+execute \
+    if score sys.shooting_contest.timer global.main matches 1.. run \
+scoreboard players remove sys.shooting_contest.timer global.main 1
+
+execute \
+    if score #sys.shooting_contest.target.timer global.main matches 1.. run \
+scoreboard players remove #sys.shooting_contest.target.timer global.main 1
 
 scoreboard players set #sys.shooting_contest.math global.main 20
 scoreboard players operation sys.shooting_contest.timer_s global.main = sys.shooting_contest.timer global.main 
@@ -25,13 +34,32 @@ setblock 1058 153 -75 target replace
 setblock 1058 153 -73 target replace
 setblock 1058 153 -71 target replace
 
-execute in minecraft:overworld positioned 1046 152 -84 as @a[dx=12,dy=4,dz=14] run tp @s 1039 152 -77 -90 0
 
-execute if score sys.shooting_contest.timer global.main matches 1..100 run return 0
-execute if score #sys.shooting_contest.target.timer global.main matches 1.. run return 0
+execute \
+    in minecraft:overworld \
+    positioned 1046 152 -84 \
+    as @a[dx=12,dy=4,dz=14] run \
+tp @s 1039 152 -77 -90 0
+
+
+execute \
+    if score sys.shooting_contest.timer global.main matches 1..100 run \
+return 0
+
+execute \
+    if score #sys.shooting_contest.target.timer global.main matches 1.. run \
+return 0
 
 # summon
-execute in minecraft:overworld run function sys:shooting_contest/sys/reset
-execute in minecraft:overworld run function sys:shooting_contest/sys/setup
 
-execute store result score #sys.shooting_contest.target.timer global.main run random value 60..100
+execute \
+    in minecraft:overworld run \
+function sys:shooting_contest/sys/reset
+
+execute \
+    in minecraft:overworld run \
+function sys:shooting_contest/sys/setup
+
+
+execute store result score #sys.shooting_contest.target.timer global.main run \
+random value 60..100

@@ -10,7 +10,10 @@ playsound minecraft:entity.zombie_villager.converted voice @a[distance=..16] ~ ~
 
 # reset
 scoreboard players remove @s weapon.nightfall.effect.switch_dmg_count 1
-execute if score @s weapon.nightfall.effect.switch_dmg_count matches ..0 run tag @s remove nightfall.user
+
+execute \
+    if score @s weapon.nightfall.effect.switch_dmg_count matches ..0 run \
+tag @s remove nightfall.user
 
 #區分這個是引爆的玩家傷害而不是一般玩家普攻命中的傷害
 #判斷用計時器 0 = 不是 ; 1.. = 是 

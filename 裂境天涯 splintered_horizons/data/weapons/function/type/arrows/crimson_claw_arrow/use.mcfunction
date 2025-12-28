@@ -12,7 +12,10 @@ particle minecraft:sweep_attack ~ ~ ~ 1.5 0.5 1.5 1 5
 particle minecraft:crit ~ ~ ~ 0 0 0 1.25 100 force @a
 
 
-execute as @e[distance=..4,type=!player] run damage @s 8 magic
+
+execute \
+    as @e[distance=..4,type=!player] run \
+damage @s 8 magic
 scoreboard players set @a[distance=..4] weapon.effect.crimson_claw 100
 
 advancement revoke @a only weapons:arrows/crimson_claw_arrow

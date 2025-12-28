@@ -1,4 +1,7 @@
-execute if entity @s[tag=player.elytra_switch] run return 0
+
+execute \
+    if entity @s[tag=player.elytra_switch] run \
+return 0
 
 tag @s add player.elytra_switch
 

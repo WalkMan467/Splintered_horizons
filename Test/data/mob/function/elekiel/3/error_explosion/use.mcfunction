@@ -1,2 +1,5 @@
 summon minecraft:text_display ~ ~ ~ {Tags:[mob.elekiel.3.error_explosion,"summon","mob.elekiel.1.display","mob.elekiel.display"], alignment: "center", background: 0, brightness: {block: 15, sky: 0}, default_background: 0b, line_width: 200, see_through: 0b, shadow: 0b, shadow_strength: 0.0f, text: {font: "mob:elekiel", text: "\u0301"}, transformation: {left_rotation: [0.7071068f, 0.0f, 0.0f, 0.7071068f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [0.0f, 0.0f, 0.0f], translation: [-0.125f, 0.0f, -0.9f]}, view_range: 2.0f, Passengers: [{alignment: "center", background: 0, brightness: {block: 15, sky: 0}, default_background: 0b,Tags:["mob.elekiel.1.display","mob.elekiel.display"], id: "minecraft:text_display", line_width: 200, see_through: 0b, shadow: 0b, shadow_strength: 0.0f, text: {font: "mob:elekiel", text: "\u0301"}, transformation: {left_rotation: [0.0f, 0.7071068f, 0.7071068f, 0.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [0.0f, 0.0f, 0.0f], translation: [0.125f, 0.0f, -0.9f]}, view_range: 2.0f}]}
-execute as @e[type=text_display,tag=summon,limit=1,tag=mob.elekiel.3.error_explosion] run function mob:elekiel/3/error_explosion/data
+
+execute \
+    as @e[type=text_display,tag=summon,limit=1,tag=mob.elekiel.3.error_explosion] run \
+function mob:elekiel/3/error_explosion/data

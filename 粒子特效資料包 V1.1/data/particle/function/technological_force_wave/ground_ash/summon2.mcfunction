@@ -10,4 +10,7 @@ tp @n[tag=summon,tag=fx.technological_force_wave.ga,type=block_display] ~ ~ ~ ~ 
 tag @n[tag=summon,tag=fx.technological_force_wave.ga,type=block_display] remove summon
 
 # loop
-execute if score #temp global.main matches ..360 rotated ~6 ~ run function particle:technological_force_wave/ground_ash/summon2
+
+execute \
+    if score #temp global.main matches ..360 rotated ~6 ~ run \
+function particle:technological_force_wave/ground_ash/summon2

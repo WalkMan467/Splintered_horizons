@@ -1,5 +1,11 @@
-execute unless score #difficulty global.main matches 1.. run return 0
+
+execute \
+    unless score #difficulty global.main matches 1.. run \
+return 0
 
 summon husk ~ ~ ~ {DeathLootTable:"",Passengers:[{id:"minecraft:marker",Tags:["monster.marker"],data:{Death:"other/sun_of_the_abyssal_eclipse"}}],CustomName:{"translate":"monsters.sun_of_the_abyssal_eclipse","color": "dark_red","fallback": "Sunfire Emissary"},PersistenceRequired:1b,IsBaby:0b,CanBreakDoors:0b,Tags:["ca.status_slot_main","ca.has_custom_status","monsters.spawn","monster","monsters.sun_of_the_abyssal_eclipse"],equipment:{legs:{id:"minecraft:iron_leggings",count:1,components:{"minecraft:attribute_modifiers":[{id:"armor",type:"armor",amount:0.0,operation:"add_multiplied_base",slot:"legs"}],"minecraft:equippable":{slot:"legs",asset_id:"sun_of_the_abyssal_eclipse"}}},chest:{id:"minecraft:iron_chestplate",count:1,components:{"minecraft:enchantments":{"cartographer_custom_enchantments:passive/hardened":5,"cartographer_custom_enchantments:passive/frenzy":2,"cartographer_custom_enchantments:passive/adrenaline":2},"minecraft:equippable":{slot:"chest",asset_id:"sun_of_the_abyssal_eclipse"},enchantment_glint_override:false,"minecraft:attribute_modifiers":[{id:"armor",type:"armor",amount:0.0,operation:"add_multiplied_base",slot:"chest"}]}},head:{id:"minecraft:player_head",count:1,components:{"minecraft:profile":{properties:[{name:"textures",value:"ewogICJ0aW1lc3RhbXAiIDogMTYxOTgxMDM4MTgxNywKICAicHJvZmlsZUlkIiA6ICIxNzhmMTJkYWMzNTQ0ZjRhYjExNzkyZDc1MDkzY2JmYyIsCiAgInByb2ZpbGVOYW1lIiA6ICJzaWxlbnRkZXRydWN0aW9uIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzk5ZmJhOGQ3YjFiYzI5MDFhZTE5MzM3NjMyOTk0MTgyNDc0OWRjOWQxZDMxMmU4ODI4MDJjYzU1ZmY5MjRkZTEiCiAgICB9CiAgfQp9"}]}}},mainhand:{id:"minecraft:wooden_sword",count:1}},drop_chances:{legs:0.000,feet:0.000,chest:0.000,head:0.000,mainhand:0.000,offhand:0.000},attributes:[{id:"minecraft:armor",base:5},{id:"minecraft:attack_damage",base:4},{id:"minecraft:max_health",base:30},{id:"minecraft:movement_speed",base:0.27}]}
 
-execute as @e[type=husk,tag=monsters.sun_of_the_abyssal_eclipse,tag=monsters.spawn] at @s run function monsters:other/sun_of_the_abyssal_eclipse/setup
+
+execute \
+    as @e[type=husk,tag=monsters.sun_of_the_abyssal_eclipse,tag=monsters.spawn] at @s run \
+function monsters:other/sun_of_the_abyssal_eclipse/setup

@@ -1,7 +1,16 @@
-execute if block ~ ~-1 ~ #air run tp @s ~ ~-2 ~ ~ ~
 
-execute if block ~ ~-1 ~ #air run return 0
-execute if entity @s[tag=ground] run return 0
+execute \
+    if block ~ ~-1 ~ #air run \
+tp @s ~ ~-2 ~ ~ ~
+
+
+execute \
+    if block ~ ~-1 ~ #air run \
+return 0
+
+execute \
+    if entity @s[tag=ground] run \
+return 0
 tag @s add ground
 
 rotate @s ~ 0
@@ -15,7 +24,13 @@ function weapons:type/sword/otherworld_star/damage
 
 schedule function weapons:type/sword/otherworld_star/effect_dmg 1t
 
-execute positioned ~ ~1 ~ run function particle:otherworld_star/use
-execute if entity @s[tag=weapon.otherworld_star.effect.speed] run effect give @a[distance=..8] speed 5 1 false
+
+execute \
+    positioned ~ ~1 ~ run \
+function particle:otherworld_star/use
+
+execute \
+    if entity @s[tag=weapon.otherworld_star.effect.speed] run \
+effect give @a[distance=..8] speed 5 1 false
 
 scoreboard players set @s duration 10

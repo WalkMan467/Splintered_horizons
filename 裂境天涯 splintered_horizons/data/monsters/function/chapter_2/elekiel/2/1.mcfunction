@@ -15,7 +15,10 @@ scoreboard players set @e[type=block_display,tag=monsters.elekiel.2.vampire_flow
 scoreboard players set @e[type=text_display,tag=monsters.elekiel.2.vampire_flower.timer,tag=summon] monster.elekiel.2.timer 10
 scoreboard players set @e[type=slime,tag=monsters.elekiel.2.vampire_flower.hit_box,tag=summon] duration 401
 
-execute as @e[type=block_display,tag=monsters.elekiel.2.vampire_flower,tag=summon] on passengers run scoreboard players set @s duration 401
+
+execute \
+    as @e[type=block_display,tag=monsters.elekiel.2.vampire_flower,tag=summon] on passengers run \
+scoreboard players set @s duration 401
 
 tag @e[type=block_display,tag=monsters.elekiel.2.vampire_flower,tag=summon] remove summon
 tag @e[type=text_display,tag=monsters.elekiel.2.vampire_flower.timer,tag=summon] remove summon

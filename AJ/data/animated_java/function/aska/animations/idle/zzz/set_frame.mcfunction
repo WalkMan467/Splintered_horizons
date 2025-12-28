@@ -60,5 +60,6 @@ $execute on passengers run data modify entity @s[tag=aj.aska.node.4] {} merge fr
 $execute on passengers run data modify entity @s[tag=aj.aska.node.3] {} merge from storage aj.aska:animations idle.$(frame).b_3
 $execute on passengers run data modify entity @s[tag=aj.aska.node.8] {} merge from storage aj.aska:animations idle.$(frame).b_8
 $execute on passengers run data modify entity @s[tag=aj.aska.node.7] {} merge from storage aj.aska:animations idle.$(frame).b_7
+
 execute on passengers run data modify entity @s[tag=!aj.global.data] start_interpolation set value -1
 return 1

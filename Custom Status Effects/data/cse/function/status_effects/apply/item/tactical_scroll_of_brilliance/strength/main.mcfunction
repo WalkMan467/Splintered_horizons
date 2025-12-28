@@ -1,2 +1,8 @@
-execute if score @s cse.status_effects.tactical_scroll_of_brilliance.strength matches 1.. run function cse:status_effects/apply/item/tactical_scroll_of_brilliance/strength/guide
-execute if score @s cse.status_effects.tactical_scroll_of_brilliance.strength matches 0 run function cse:status_effects/apply/item/tactical_scroll_of_brilliance/strength/reset
+
+execute \
+    if score @s cse.status_effects.tactical_scroll_of_brilliance.strength matches 1.. run \
+function cse:status_effects/apply/item/tactical_scroll_of_brilliance/strength/guide
+
+execute \
+    if score @s cse.status_effects.tactical_scroll_of_brilliance.strength matches 0 run \
+function cse:status_effects/apply/item/tactical_scroll_of_brilliance/strength/reset

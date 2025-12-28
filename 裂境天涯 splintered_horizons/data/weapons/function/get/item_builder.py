@@ -50,7 +50,8 @@ else:
 
 # ----- generator ----- #
 
-with open(__file__.replace("item_builder.py","#temp.mcfunction"),mode="w+",encoding="utf-8") as f:
+with open(__file__.replace("item_builder.py","#temp.mcfunction"),mode="w+",encoding="utf-8") \
+    as f:
     # id
     f.write(f'give @s {item_data["real_item"]}[')
     

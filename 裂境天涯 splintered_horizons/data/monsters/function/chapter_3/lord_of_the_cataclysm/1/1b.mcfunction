@@ -6,9 +6,15 @@ tag @s add chapter_3.lord_of_the_cataclysm.1.1
 
 tag @a add temp
 tag @a[tag=!animation,gamemode=spectator] remove temp
-execute as @a[tag=temp] if score @s entity.dummy_mob matches 1.. run tag @s remove temp
 
-execute facing entity @p[distance=..60,tag=temp] feet rotated ~ 0 run tp @n[tag=chapter_3.lord_of_the_cataclysm.1.1] ~ ~ ~ ~ ~
+execute \
+    as @a[tag=temp] \
+    if score @s entity.dummy_mob matches 1.. run \
+tag @s remove temp
+
+
+execute facing entity @p[distance=..60,tag=temp] feet rotated ~ 0 run \
+tp @n[tag=chapter_3.lord_of_the_cataclysm.1.1] ~ ~ ~ ~ ~
 
 tag @a remove temp
 

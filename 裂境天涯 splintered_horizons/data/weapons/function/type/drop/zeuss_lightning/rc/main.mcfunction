@@ -1,7 +1,13 @@
-execute if score @s weapon.zeuss_lightning.use matches 1.. run return 0
+
+execute \
+    if score @s weapon.zeuss_lightning.use matches 1.. run \
+return 0
 
 stopsound @s voice minecraft:entity.warden.sonic_charge
-execute if score @s weapon.zeuss_lightning.hold_down matches 40 run function weapons:type/drop/zeuss_lightning/rc/run
+
+execute \
+    if score @s weapon.zeuss_lightning.hold_down matches 40 run \
+function weapons:type/drop/zeuss_lightning/rc/run
 
 scoreboard players reset @s weapon.zeuss_lightning.use
 scoreboard players reset @s weapon.zeuss_lightning.hold_down

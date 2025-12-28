@@ -16,4 +16,7 @@ summon minecraft:block_display 9999 95 10070 {Rotation:[180.0f,-5.0f],Tags:["cut
 function cutscene:opening/main
 function cutscene:opening/story/0
 
-execute as @a at @s run schedule function cutscene:opening/0/1 12s
+
+execute \
+    as @a at @s run \
+schedule function cutscene:opening/0/1 12s

@@ -16,10 +16,28 @@ scoreboard players set @s weapon.effect.resplendence 100
 
 scoreboard players add @s weapon.twilight_wind.gale_energy 5
 
-execute if score @s weapon.twilight_wind.gale_energy matches 26.. run scoreboard players set @s weapon.twilight_wind.gale_energy 1
 
-execute if score @s weapon.twilight_wind.gale_energy matches 0..1 run item modify entity @s weapon.mainhand weapons:type/sword/twilight_wind/1
-execute if score @s weapon.twilight_wind.gale_energy matches 6 run item modify entity @s weapon.mainhand weapons:type/sword/twilight_wind/2
-execute if score @s weapon.twilight_wind.gale_energy matches 11 run item modify entity @s weapon.mainhand weapons:type/sword/twilight_wind/3
-execute if score @s weapon.twilight_wind.gale_energy matches 16 run item modify entity @s weapon.mainhand weapons:type/sword/twilight_wind/4
-execute if score @s weapon.twilight_wind.gale_energy matches 21 run item modify entity @s weapon.mainhand weapons:type/sword/twilight_wind/5
+execute \
+    if score @s weapon.twilight_wind.gale_energy matches 26.. run \
+scoreboard players set @s weapon.twilight_wind.gale_energy 1
+
+
+execute \
+    if score @s weapon.twilight_wind.gale_energy matches 0..1 run \
+item modify entity @s weapon.mainhand weapons:type/sword/twilight_wind/1
+
+execute \
+    if score @s weapon.twilight_wind.gale_energy matches 6 run \
+item modify entity @s weapon.mainhand weapons:type/sword/twilight_wind/2
+
+execute \
+    if score @s weapon.twilight_wind.gale_energy matches 11 run \
+item modify entity @s weapon.mainhand weapons:type/sword/twilight_wind/3
+
+execute \
+    if score @s weapon.twilight_wind.gale_energy matches 16 run \
+item modify entity @s weapon.mainhand weapons:type/sword/twilight_wind/4
+
+execute \
+    if score @s weapon.twilight_wind.gale_energy matches 21 run \
+item modify entity @s weapon.mainhand weapons:type/sword/twilight_wind/5

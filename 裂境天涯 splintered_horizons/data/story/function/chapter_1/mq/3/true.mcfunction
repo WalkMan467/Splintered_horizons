@@ -3,14 +3,17 @@ scoreboard players set story.chapter_1.mq.3 story.chapter_1 1
 
 kill @e[tag=story.chapter_1.opening.3]
 
+
 execute \
     as @n[tag=aj.sophia.root,limit=1] run \
 function animated_java:sophia/remove/this
+
 
 execute \
     positioned 287 182 -187 \
     rotated 90 0 run \
 function animated_java:sophia/summon {args: {animation: 'idle', start_animation: true}}
+
 
 execute \
     positioned 287 182 -187 \

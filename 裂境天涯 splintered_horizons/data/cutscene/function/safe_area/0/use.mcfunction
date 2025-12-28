@@ -7,7 +7,10 @@ function cutscene:safe_area/0/0
 stopsound @a record minecraft:bgm.whitesand_fallen_kingdom
 
 tag @a add cutscene.player_leave.detect
-execute as @a[tag=cutscene.player_leave.detect] at @s run function players:inventory/save {bag:"cutscene/safe_area"}
+
+execute \
+    as @a[tag=cutscene.player_leave.detect] at @s run \
+function players:inventory/save {bag:"cutscene/safe_area"}
 
 clear @a
 

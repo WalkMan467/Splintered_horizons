@@ -1,2 +1,10 @@
-execute as @e[type=interaction,distance=..10,tag=player.tombstone] at @s if data entity @s interaction.timestamp run function players:tombstone_sys/act/run
-execute as @e[type=interaction,distance=..10,tag=player.tombstone] at @s if data entity @s interaction.timestamp run data remove entity @s interaction
+
+execute \
+    as @e[type=interaction,distance=..10,tag=player.tombstone] at @s \
+    if data entity @s interaction.timestamp run \
+function players:tombstone_sys/act/run
+
+execute \
+    as @e[type=interaction,distance=..10,tag=player.tombstone] at @s \
+    if data entity @s interaction.timestamp run \
+data remove entity @s interaction

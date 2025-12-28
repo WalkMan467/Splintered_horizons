@@ -1,2 +1,8 @@
-execute if score @s cse.status_effects.monsters.emissary_of_the_temporal_rift.key matches 1.. run function cse:status_effects/apply/monsters/emissary_of_the_temporal_rift/key/slowness/guide
-execute if score @s cse.status_effects.monsters.emissary_of_the_temporal_rift.key matches 0 run function cse:status_effects/apply/monsters/emissary_of_the_temporal_rift/key/slowness/reset
+
+execute \
+    if score @s cse.status_effects.monsters.emissary_of_the_temporal_rift.key matches 1.. run \
+function cse:status_effects/apply/monsters/emissary_of_the_temporal_rift/key/slowness/guide
+
+execute \
+    if score @s cse.status_effects.monsters.emissary_of_the_temporal_rift.key matches 0 run \
+function cse:status_effects/apply/monsters/emissary_of_the_temporal_rift/key/slowness/reset

@@ -12,7 +12,10 @@ summon minecraft:block_display ^ ^1 ^-4 {Tags:["weapon.nightfall.p","2","3","sum
 summon block_display ^ ^1 ^-4 {Tags:["weapon.nightfall.p","2","3","summon"],Passengers:[{id:"minecraft:item_display",item:{id:"minecraft:red_glazed_terracotta"},teleport_duration:1,transformation:[-0.5000f,0.0000f,-0.0000f,0.2500f,0.0000f,0.5000f,0.0000f,-0.1875f,0.0000f,0.0000f,-0.5000f,1.1250f,0.0000f,0.0000f,0.0000f,1.0000f]},{id:"minecraft:item_display",item:{id:"minecraft:dead_brain_coral_fan"},teleport_duration:1,transformation:[0.0000f,-2.0000f,0.0000f,-1.0000f,0.0000f,-0.0000f,-2.0000f,0.0000f,2.0000f,0.0000f,0.0000f,-0.0625f,0.0000f,0.0000f,0.0000f,1.0000f]}],teleport_duration:1}
 scoreboard players operation @e[tag=weapon.nightfall.p,tag=summon] weapon.nightfall.charge = #id weapon.nightfall.charge
 
-execute as @e[tag=weapon.nightfall.p,tag=summon,type=block_display] on passengers run scoreboard players set @s duration 13
+
+execute \
+    as @e[tag=weapon.nightfall.p,tag=summon,type=block_display] on passengers run \
+scoreboard players set @s duration 13
 
 # particle
 playsound minecraft:item.trident.thunder master @a ~ ~ ~ 0.5 2

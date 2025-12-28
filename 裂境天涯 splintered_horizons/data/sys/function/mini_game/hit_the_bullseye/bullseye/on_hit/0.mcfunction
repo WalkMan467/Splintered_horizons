@@ -1,3 +1,4 @@
+
 execute \
     as @n[sort=arbitrary,distance=..1.5,type=#arrows] at @s run \
 function sys:mini_game/hit_the_bullseye/bullseye/on_hit/1

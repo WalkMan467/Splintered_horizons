@@ -4,6 +4,9 @@ summon minecraft:block_display 9997.5 94.75 10067.00 {Rotation:[-135.00f,15.0f],
 
 gamemode spectator @a
 
-execute as @a[gamemode=spectator] run spectate @n[type=block_display,tag=cutscene.opening.6.2,limit=1]
+
+execute \
+    as @a[gamemode=spectator] run \
+spectate @n[type=block_display,tag=cutscene.opening.6.2,limit=1]
 
 schedule function cutscene:opening/6/3 0.5s

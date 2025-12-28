@@ -26,4 +26,7 @@ scoreboard players remove @a[scores={player.ultimate=1..}] player.ultimate 1
 scoreboard players remove @a[scores={monster.elekiel_phase_2.skill.4.portal.tp.cd=1..}] monster.elekiel_phase_2.skill.4.portal.tp.cd 1
 scoreboard players remove @a[scores={player.disable.tp_book=1..}] player.disable.tp_book 1
 
-execute as @a at @s run function players:screen_filters/glitch_effect/main
+
+execute \
+    as @a at @s run \
+function players:screen_filters/glitch_effect/main

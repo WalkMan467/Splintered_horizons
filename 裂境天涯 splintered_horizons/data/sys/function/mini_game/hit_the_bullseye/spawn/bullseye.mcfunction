@@ -56,7 +56,10 @@ summon minecraft:block_display ~ ~0.5 ~ \
 
 tag @s add sys.mini_game.hit_the_bullseye.bullseye.user
 
-execute as @n[sort=arbitrary,distance=..10,tag=summon,tag=sys.mini_game.hit_the_bullseye.bullseye,type=block_display] at @s run function sys:mini_game/hit_the_bullseye/bullseye/setup
+
+execute \
+    as @n[sort=arbitrary,distance=..10,tag=summon,tag=sys.mini_game.hit_the_bullseye.bullseye,type=block_display] at @s run \
+function sys:mini_game/hit_the_bullseye/bullseye/setup
 
 tag @s remove sys.mini_game.hit_the_bullseye.bullseye.user
 

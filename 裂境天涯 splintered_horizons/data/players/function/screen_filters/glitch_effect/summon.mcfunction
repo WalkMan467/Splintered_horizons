@@ -2,12 +2,23 @@ $summon creeper ^ ^ ^-0.0001 {Rotation:[$(x),$(y)],Passengers:[{data:{aj_kill:{n
 
 # rotate @n[type=creeper,tag=summon,tag=screen_filters.glitch_effect,distance=..3] facing entity @s feet
 
-execute as @n[type=creeper,tag=summon,tag=screen_filters.glitch_effect,distance=..3] at @s run tp @s ~ ~1 ~
+
+execute \
+    as @n[type=creeper,tag=summon,tag=screen_filters.glitch_effect,distance=..3] at @s run \
+tp @s ~ ~1 ~
 scoreboard players operation @n[type=creeper,tag=summon,tag=screen_filters.glitch_effect,distance=..3] screen_filters.glitch_effect.id = @s player.id
 
-execute as @n[type=creeper,tag=summon,tag=screen_filters.glitch_effect,distance=..3] on passengers if entity @s[type=marker,tag=main.duration.timer,tag=summon] run scoreboard players set @s duration 61
 
-execute as @n[type=creeper,tag=summon,tag=screen_filters.glitch_effect,distance=..3] on passengers if entity @s[type=marker,tag=main.duration.timer,tag=summon] run tag @s remove summon
+execute \
+    as @n[type=creeper,tag=summon,tag=screen_filters.glitch_effect,distance=..3] on passengers \
+    if entity @s[type=marker,tag=main.duration.timer,tag=summon] run \
+scoreboard players set @s duration 61
+
+
+execute \
+    as @n[type=creeper,tag=summon,tag=screen_filters.glitch_effect,distance=..3] on passengers \
+    if entity @s[type=marker,tag=main.duration.timer,tag=summon] run \
+tag @s remove summon
 
 function players:hide/true {duration:60}
 spectate @n[type=creeper,tag=summon,tag=screen_filters.glitch_effect,distance=..3]

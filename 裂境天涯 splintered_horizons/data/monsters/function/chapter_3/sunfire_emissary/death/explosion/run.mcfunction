@@ -1,8 +1,14 @@
-execute unless score #difficulty global.main matches 1.. run return 0
+
+execute \
+    unless score #difficulty global.main matches 1.. run \
+return 0
 
 summon husk ~ ~ ~ {Glowing:1b,Team:"glow_color_yellow",Passengers:[{id:"minecraft:marker",Tags:["monster.marker"],data:{Death:"chapter_3/sunfire_emissary/death/explosion"}},{data:{aj_kill:{name:""}},id:"minecraft:marker",Tags:["main.duration.timer","summon"]}],CustomName:{"translate":"monsters.sunfire_emissary.sunfire_actived","color": "yellow","fallback": "I'm the blazing sun, destined to rise"},PersistenceRequired:1b,IsBaby:0b,CanBreakDoors:0b,Tags:["sunfire_actived","melee_hit","ca.status_slot_main","ca.has_custom_status","monsters.sunfire_emissary","monster","monsters.spawn"],equipment:{feet:{id:"minecraft:iron_boots",count:1,components:{trim:{material:"resin",pattern:"tide"},"minecraft:attribute_modifiers":[{id:"armor",type:"armor",amount:0.0,operation:"add_multiplied_base",slot:"feet"}],"minecraft:equippable":{slot:"feet",asset_id:"gold"}}},legs:{id:"minecraft:iron_leggings",count:1,components:{trim:{material:"resin",pattern:"tide"},"minecraft:attribute_modifiers":[{id:"armor",type:"armor",amount:0.0,operation:"add_multiplied_base",slot:"legs"}],"minecraft:equippable":{slot:"legs",asset_id:"gold"}}},chest:{id:"minecraft:iron_chestplate",count:1,components:{trim:{material:"resin",pattern:"tide"},"minecraft:equippable":{slot:"chest",asset_id:"gold"},enchantment_glint_override:false,"minecraft:attribute_modifiers":[{id:"armor",type:"armor",amount:0.0,operation:"add_multiplied_base",slot:"chest"}]}},head:{id:"minecraft:apple",count:1,components:{"minecraft:item_model":"freerot:sunfire"}},mainhand:{id:"minecraft:wooden_sword",count:1,components:{item_model:"sword/morning_light/3",custom_data:{apply_status:{melee_hit:{target:[{id:"fire_aspect",duration:100,amplifier:0b}]}}}}}},drop_chances:{legs:0.000,feet:0.000,chest:0.000,head:0.000,mainhand:0.000,offhand:0.000},active_effects:[{id:"minecraft:invisibility",amplifier:255,duration:-1,show_particles:0b,show_icon:0b,ambient:0b}],attributes:[{id:"minecraft:armor",base:5},{id:"minecraft:attack_damage",base:7},{id:"minecraft:max_health",base:30},{id:"minecraft:movement_speed",base:0.27},{id:"minecraft:max_health",base:30},{id:"minecraft:scale",base:1.25}]}
 
-execute as @e[type=husk,tag=monsters.sunfire_emissary,tag=monsters.spawn] at @s run function monsters:chapter_3/sunfire_emissary/setup
+
+execute \
+    as @e[type=husk,tag=monsters.sunfire_emissary,tag=monsters.spawn] at @s run \
+function monsters:chapter_3/sunfire_emissary/setup
 
 particle flash{color:[1.000,0.835,0.000,1.00]} ~ ~1 ~ 1 1 1 0 5 normal @a
 particle dust_color_transition{from_color:[1.000,0.933,0.000],scale:3,to_color:[1.000,0.569,0.000]} ~ ~1 ~ 1 1 1 1 100 normal @a

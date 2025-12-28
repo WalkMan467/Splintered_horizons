@@ -9,11 +9,26 @@ scoreboard players reset #world_area.other.otherworld_portal.2 world_area.other.
 
 kill 000000d4-0000-0002-0000-000100000033
 
-execute if score #world_area.other.otherworld_portal.2.lock global.main matches 1.. run function world_area:other/otherworld_portal/2/lock/run
-execute if score #world_area.other.otherworld_portal.2.lock global.main matches 1.. run return 0
 
-execute positioned 161.0 91 -427 rotated 0 0 in minecraft:overworld as @e[tag=aj.portal.root,distance=..3] run function animated_java:portal/remove/this
+execute \
+    if score #world_area.other.otherworld_portal.2.lock global.main matches 1.. run \
+function world_area:other/otherworld_portal/2/lock/run
 
-execute positioned 161.0 91 -427 rotated 0 0 in minecraft:overworld run function animated_java:portal/summon {args: {animation: 'spawn', start_animation: true}}
+execute \
+    if score #world_area.other.otherworld_portal.2.lock global.main matches 1.. run \
+return 0
+
+
+execute \
+    positioned 161.0 91 -427 rotated 0 0 \
+    in minecraft:overworld \
+    as @e[tag=aj.portal.root,distance=..3] run \
+function animated_java:portal/remove/this
+
+
+execute \
+    positioned 161.0 91 -427 rotated 0 0 \
+    in minecraft:overworld run \
+function animated_java:portal/summon {args: {animation: 'spawn', start_animation: true}}
 
 scoreboard players set #world_area.other.otherworld_portal.2 world_area.other.otherworld_portal.delay 0

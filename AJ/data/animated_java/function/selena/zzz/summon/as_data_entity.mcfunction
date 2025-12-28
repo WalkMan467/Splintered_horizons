@@ -3,186 +3,308 @@ data modify entity @s data.uuids append from storage animated_java:gu out
 function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.data_data set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.body] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.body] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_body set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.right_arm] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.right_arm] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_right_arm set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.left_arm] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.left_arm] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_left_arm set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.right_leg] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.right_leg] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_right_leg set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.left_leg] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.left_leg] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_left_leg set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.layer] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.layer] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_layer set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.l_1] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.l_1] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_l_1 set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.eye_l] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.eye_l] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_eye_l set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.r_1] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.r_1] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_r_1 set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.eye_r] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.eye_r] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_eye_r set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.eyes_down] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.eyes_down] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_eyes_down set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.eyes_up] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.eyes_up] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_eyes_up set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.l] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.l] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_l set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.r] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.r] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_r set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.head] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.head] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_head set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.guide13] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.guide13] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_guide13 set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.guide9] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.guide9] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_guide9 set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.guide10] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.guide10] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_guide10 set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.guide18] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.guide18] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_guide18 set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.guide21] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.guide21] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_guide21 set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.guide22] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.guide22] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_guide22 set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.guide23] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.guide23] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_guide23 set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.guide24] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.guide24] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_guide24 set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.guide25] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.guide25] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_guide25 set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.guide26] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.guide26] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_guide26 set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.guide27] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.guide27] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_guide27 set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.guide28] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.guide28] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_guide28 set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.guide29] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.guide29] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_guide29 set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.guide30] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.guide30] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_guide30 set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.guide46] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.guide46] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_guide46 set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.guide94] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.guide94] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_guide94 set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.guide15] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.guide15] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_guide15 set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.guide19] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.guide19] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_guide19 set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.guide43] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.guide43] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_guide43 set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.guide44] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.guide44] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_guide44 set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.guide45] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.guide45] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_guide45 set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.guide47] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.guide47] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_guide47 set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.guide48] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.guide48] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_guide48 set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.guide42] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.guide42] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_guide42 set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.guide41] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.guide41] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_guide41 set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.guide40] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.guide40] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_guide40 set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.guide91] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.guide91] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_guide91 set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.guide61] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.guide61] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_guide61 set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.guide90] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.guide90] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_guide90 set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.guide92] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.guide92] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_guide92 set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.guide93] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.guide93] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_guide93 set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.guide57] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.guide57] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_guide57 set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.guide58] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.guide58] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_guide58 set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.guide17] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.guide17] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_guide17 set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.guide89] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.guide89] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_guide89 set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.guide11] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.guide11] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_guide11 set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.guide60] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.guide60] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_guide60 set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.guide12] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.guide12] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_guide12 set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.guide7] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.guide7] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_guide7 set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.guide6] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.guide6] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_guide6 set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.guide31] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.guide31] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_guide31 set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.guide49] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.guide49] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_guide49 set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.guide50] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.guide50] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_guide50 set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.guide51] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.guide51] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_guide51 set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.guide20] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.guide20] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_guide20 set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.selena.node.guide97] run function animated_java:global/gu/get_entity_uuid_string
+
+execute on vehicle on passengers \
+    if entity @s[tag=aj.selena.node.guide97] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_guide97 set from storage animated_java:gu out

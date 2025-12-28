@@ -1,9 +1,22 @@
-execute as @a unless score @s player.leave_game matches 1.. run function world_area:main/reload
 
-execute as @a at @s run function #main:scoreboard
+execute \
+    as @a \
+    unless score @s player.leave_game matches 1.. run \
+function world_area:main/reload
 
-execute as @a run attribute @s minecraft:waypoint_receive_range base set 0
-execute as @a run attribute @s minecraft:waypoint_transmit_range base set 0
+
+execute \
+    as @a at @s run \
+function #main:scoreboard
+
+
+execute \
+    as @a run \
+attribute @s minecraft:waypoint_receive_range base set 0
+
+execute \
+    as @a run \
+attribute @s minecraft:waypoint_transmit_range base set 0
 
 # Music
 function music:main

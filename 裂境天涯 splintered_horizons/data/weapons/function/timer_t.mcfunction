@@ -20,11 +20,24 @@ scoreboard players remove @a[scores={weapon.rock_crushing_greatsword.use=1..}] w
 scoreboard players remove @a[scores={weapon.ethereal_shatterstorm_compound_bow.use=1..}] weapon.ethereal_shatterstorm_compound_bow.use 1
 scoreboard players remove @a[scores={weapon.sagittarius.use=1..}] weapon.sagittarius.use 1
 
-execute if score #is_water_sword_demon.passive? global.main matches 0.. run scoreboard players remove #is_water_sword_demon.passive? global.main 1
 
-execute if score #is_nightfall.passive? global.main matches 0.. run scoreboard players remove #is_nightfall.passive? global.main 1
+execute \
+    if score #is_water_sword_demon.passive? global.main matches 0.. run \
+scoreboard players remove #is_water_sword_demon.passive? global.main 1
 
-execute if score #kill_sword_shoot.timer global.main matches 0.. run scoreboard players remove #kill_sword_shoot.timer global.main 1
 
-execute as @a if score @s weapon.ruins_of_the_finality.blade.animation matches 0 run tag @a remove animation
+execute \
+    if score #is_nightfall.passive? global.main matches 0.. run \
+scoreboard players remove #is_nightfall.passive? global.main 1
+
+
+execute \
+    if score #kill_sword_shoot.timer global.main matches 0.. run \
+scoreboard players remove #kill_sword_shoot.timer global.main 1
+
+
+execute \
+    as @a \
+    if score @s weapon.ruins_of_the_finality.blade.animation matches 0 run \
+tag @a remove animation
 scoreboard players reset @a[scores={weapon.ruins_of_the_finality.blade.animation=0}] weapon.ruins_of_the_finality.blade.animation

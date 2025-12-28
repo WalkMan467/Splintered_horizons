@@ -1,4 +1,7 @@
-execute unless entity @s[type=block_display] run return 0
+
+execute \
+    unless entity @s[type=block_display] run \
+return 0
 
 rotate @s facing entity @e[type=minecraft:item_display,tag=mob.elekiel.2.crack,tag=mob.elekiel.2.display,tag=mob.elekiel.display,sort=furthest,limit=1] feet
 tp @s ^ ^ ^1

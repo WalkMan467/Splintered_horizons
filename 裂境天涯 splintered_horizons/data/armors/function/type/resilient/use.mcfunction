@@ -1,7 +1,10 @@
 #\
 {
 
-execute if score @s armor.resilient.cd matches 1.. run return 0
+
+execute \
+    if score @s armor.resilient.cd matches 1.. run \
+return 0
 
 scoreboard players add @s armor.resilient.hit 0
 

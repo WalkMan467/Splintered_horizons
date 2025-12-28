@@ -88,4 +88,6 @@ $data merge entity $(bone_3) {transformation: [-0.9101f,0.226f,0.3473f,0.3086f,0
 $data merge entity $(bone_8) {transformation: [-0.9947f,0.0474f,0.0909f,-0.1916f,0.0534f,0.9965f,0.0642f,0.3786f,-0.0876f,0.0687f,-0.9938f,0.0971f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(bone_7) {transformation: [-0.9979f,0.0396f,0.0507f,-0.1778f,-0.0279f,0.4442f,-0.8955f,0.5145f,-0.058f,-0.8951f,-0.4422f,-0.2049f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 data modify entity @s data merge value {"cameras":{"camera2":{"posx":-3.6739403974420594e-16,"posy":1.625,"posz":3,"roty":180,"rotx":0}},"locators":{}}
-execute on vehicle unless entity @s[tag=aj.transforms_only] at @s run function animated_java:ruins_of_the_finality_skill/animations/skills_3/zzz/frames/20_root_commands
+
+execute on vehicle \
+    unless entity @s[tag=aj.transforms_only] at @s run function animated_java:ruins_of_the_finality_skill/animations/skills_3/zzz/frames/20_root_commands

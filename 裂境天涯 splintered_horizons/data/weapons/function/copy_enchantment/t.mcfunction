@@ -1,2 +1,8 @@
-execute if items entity @s weapon.mainhand *[item_model="material/beginner_energy_infusion_stone"] run function weapons:copy_enchantment/weapon
-execute if items entity @s weapon.mainhand *[item_model="material/armor_energy_infusion_stone"] run function weapons:copy_enchantment/armor
+
+execute \
+    if items entity @s weapon.mainhand *[item_model="material/beginner_energy_infusion_stone"] run \
+function weapons:copy_enchantment/weapon
+
+execute \
+    if items entity @s weapon.mainhand *[item_model="material/armor_energy_infusion_stone"] run \
+function weapons:copy_enchantment/armor

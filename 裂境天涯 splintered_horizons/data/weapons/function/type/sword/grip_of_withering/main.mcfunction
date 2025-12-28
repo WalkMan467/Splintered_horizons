@@ -1,1 +1,5 @@
-execute unless score @s weapon.grip_of_withering.effect matches 1.. if items entity @s weapon.mainhand *[minecraft:item_model="minecraft:sword/grip_of_withering/1"] run advancement grant @s only weapons:type/sword/grip_of_withering/0
+
+execute \
+    unless score @s weapon.grip_of_withering.effect matches 1.. \
+    if items entity @s weapon.mainhand *[minecraft:item_model="minecraft:sword/grip_of_withering/1"] run \
+advancement grant @s only weapons:type/sword/grip_of_withering/0

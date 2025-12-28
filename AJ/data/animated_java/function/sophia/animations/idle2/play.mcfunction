@@ -3,5 +3,6 @@ function animated_java:sophia/animations/pause_all
 tag @s add aj.sophia.animation.idle2.playing
 scoreboard players set @s aj.idle2.frame 0
 tag @s add aj.transforms_only
+
 execute at @s run function animated_java:sophia/animations/idle2/zzz/set_frame {frame: 0}
 tag @s remove aj.transforms_only

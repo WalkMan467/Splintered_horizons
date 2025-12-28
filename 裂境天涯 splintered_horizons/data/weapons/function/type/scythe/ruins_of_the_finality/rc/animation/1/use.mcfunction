@@ -26,5 +26,11 @@ function animated_java:stellar_animation/summon {args: {animation: 'ruins_of_the
 
 # Set GameMode
 gamemode spectator @s
-execute unless score @s main.3d_dizziness matches 1.. run spectate @n[tag=aj.stellar_animation.camera]
-execute if score @s main.3d_dizziness matches 1.. run spectate @n[tag=3d_dizziness]
+
+execute \
+    unless score @s main.3d_dizziness matches 1.. run \
+spectate @n[tag=aj.stellar_animation.camera]
+
+execute \
+    if score @s main.3d_dizziness matches 1.. run \
+spectate @n[tag=3d_dizziness]

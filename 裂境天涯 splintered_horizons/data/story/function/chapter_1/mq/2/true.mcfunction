@@ -3,13 +3,16 @@ scoreboard players set story.chapter_1.mq.2 story.chapter_1 1
 
 # Detect Weather \
 {
-    execute if predicate main:weather/is_sunny run \
+    execute \
+    if predicate main:weather/is_sunny run \
     scoreboard players set #weather.temp global.main 0
 
-    execute if predicate main:weather/is_rain run \
+    execute \
+    if predicate main:weather/is_rain run \
     scoreboard players set #weather.temp global.main 1
 
-    execute if predicate main:weather/is_thunder run \
+    execute \
+    if predicate main:weather/is_thunder run \
     scoreboard players set #weather.temp global.main 2
 #\
 }
@@ -17,8 +20,11 @@ scoreboard players set story.chapter_1.mq.2 story.chapter_1 1
 weather rain
 
 kill @e[tag=story.chapter_1.mq.2]
-execute as @n[tag=aj.sophia.root,limit=1,distance=..3] run \
+
+execute \
+    as @n[tag=aj.sophia.root,limit=1,distance=..3] run \
 function animated_java:sophia/remove/this
+
 
 execute \
     positioned 1 64 -109 \
@@ -31,6 +37,7 @@ function animated_java:sophia/summon \
         start_animation: true\
         } \
     }
+
 
 execute \
     positioned 1 64 -109 \

@@ -10,4 +10,7 @@
 
 tp @s ^ ^ ^-0.25
 
-execute unless score @s armor.windriders_legplates.leggings.damage_delay matches 1.. run scoreboard players set @s armor.windriders_legplates.leggings.damage_delay 3
+
+execute \
+    unless score @s armor.windriders_legplates.leggings.damage_delay matches 1.. run \
+scoreboard players set @s armor.windriders_legplates.leggings.damage_delay 3

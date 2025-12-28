@@ -1,2 +1,5 @@
-execute as @p[sort=arbitrary,distance=..3,tag=!item.tp_book.player.actived] run function item:type/tp_book/point/tp
+
+execute \
+    as @p[sort=arbitrary,distance=..3,tag=!item.tp_book.player.actived] run \
+function item:type/tp_book/point/tp
 tag @p[sort=arbitrary,tag=item.tp_book.player.actived,distance=3..6] remove item.tp_book.player.actived

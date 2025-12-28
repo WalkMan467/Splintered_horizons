@@ -1,7 +1,18 @@
-execute store result score #temp global.main run random value 1..3
-execute if score #temp global.main matches 1 run summon minecraft:item_display ~ ~-2 ~ {Tags:[fx.zlw.aa,summon],start_interpolation:1,billboard: "center", brightness: {block: 15, sky: 15}, interpolation_duration: 40, item: {components: {"minecraft:item_model": "minecraft:fx/tunder_red"}, count: 1, id: "minecraft:iron_sword"}, teleport_duration: 20, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [2.0f, 2.0f, 2.0f], translation: [0.0f, 0.0f, 0.0f]}}
-execute if score #temp global.main matches 2 run summon minecraft:item_display ~ ~-2 ~ {Tags:[fx.zlw.aa,summon],start_interpolation:1,billboard: "center", brightness: {block: 15, sky: 15}, interpolation_duration: 40, item: {components: {"minecraft:item_model": "minecraft:fx/tunder_red"}, count: 1, id: "minecraft:iron_sword"}, teleport_duration: 20, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 1.0f], translation: [0.0f, 0.0f, 0.0f]}}
-execute if score #temp global.main matches 3 run summon minecraft:item_display ~ ~-2 ~ {Tags:[fx.zlw.aa,summon],start_interpolation:1,billboard: "center", brightness: {block: 15, sky: 15}, interpolation_duration: 40, item: {components: {"minecraft:item_model": "minecraft:fx/tunder_red"}, count: 1, id: "minecraft:iron_sword"}, teleport_duration: 20, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [0.5f, 0.5f, 0.5f], translation: [0.0f, 0.0f, 0.0f]}}
+
+execute store result score #temp global.main run \
+random value 1..3
+
+execute \
+    if score #temp global.main matches 1 run \
+summon minecraft:item_display ~ ~-2 ~ {Tags:[fx.zlw.aa,summon],start_interpolation:1,billboard: "center", brightness: {block: 15, sky: 15}, interpolation_duration: 40, item: {components: {"minecraft:item_model": "minecraft:fx/tunder_red"}, count: 1, id: "minecraft:iron_sword"}, teleport_duration: 20, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [2.0f, 2.0f, 2.0f], translation: [0.0f, 0.0f, 0.0f]}}
+
+execute \
+    if score #temp global.main matches 2 run \
+summon minecraft:item_display ~ ~-2 ~ {Tags:[fx.zlw.aa,summon],start_interpolation:1,billboard: "center", brightness: {block: 15, sky: 15}, interpolation_duration: 40, item: {components: {"minecraft:item_model": "minecraft:fx/tunder_red"}, count: 1, id: "minecraft:iron_sword"}, teleport_duration: 20, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 1.0f], translation: [0.0f, 0.0f, 0.0f]}}
+
+execute \
+    if score #temp global.main matches 3 run \
+summon minecraft:item_display ~ ~-2 ~ {Tags:[fx.zlw.aa,summon],start_interpolation:1,billboard: "center", brightness: {block: 15, sky: 15}, interpolation_duration: 40, item: {components: {"minecraft:item_model": "minecraft:fx/tunder_red"}, count: 1, id: "minecraft:iron_sword"}, teleport_duration: 20, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [0.5f, 0.5f, 0.5f], translation: [0.0f, 0.0f, 0.0f]}}
 
 spreadplayers ~ ~ 10 10 false @n[tag=summon]
 tag @n[tag=summon] remove summon

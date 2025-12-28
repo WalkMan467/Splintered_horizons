@@ -1,6 +1,20 @@
-execute unless block ~ ~ ~ #campfires run setblock ~ ~ ~ campfire replace
-execute align xyz positioned ~0.5 ~-0.025 ~0.5 unless entity @n[sort=arbitrary,distance=..1.5,tag=sys.campfire,type=interaction] run summon minecraft:interaction ~ ~ ~ {Motion: [0.0d, 0.0d, 0.0d], Invulnerable: 0b, Air: 300s, OnGround: 0b, PortalCooldown: 0, Rotation: [0.0f, 0.0f], FallDistance: 0.0f, attack: {player: [I; -917892778, 1050166911, -1708814842, -1562756102], timestamp: 6216585L}, response: 0b, Fire: 0s, width: 1.01f, Tags: ["sys.campfire"], height: 1.01f}
 
-execute align xyz positioned ~0.5 ~1.5 ~0.5 unless entity @n[sort=arbitrary,distance=..1.5,tag=sys.campfire.text,type=interaction] run summon minecraft:text_display ~ ~ ~ {Tags:["sys.campfire.text"],alignment: "center", background: 0, billboard: "vertical", brightness: {block: 15, sky: 15}, default_background: 0b, line_width: 200, see_through: 0b, shadow: 0b, text: {"text":"","font":"minecraft:icon"}, text_opacity: -1b, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [2.5f, 2.5f, 2.5f], translation: [-0.1f, -0.25f, 0.0f]}}
+execute \
+    unless block ~ ~ ~ #campfires run \
+setblock ~ ~ ~ campfire replace
 
-execute positioned ~ ~-5 ~ run function sys:add_death_point
+execute align xyz \
+    positioned ~0.5 ~-0.025 ~0.5 \
+    unless entity @n[sort=arbitrary,distance=..1.5,tag=sys.campfire,type=interaction] run \
+summon minecraft:interaction ~ ~ ~ {Motion: [0.0d, 0.0d, 0.0d], Invulnerable: 0b, Air: 300s, OnGround: 0b, PortalCooldown: 0, Rotation: [0.0f, 0.0f], FallDistance: 0.0f, attack: {player: [I; -917892778, 1050166911, -1708814842, -1562756102], timestamp: 6216585L}, response: 0b, Fire: 0s, width: 1.01f, Tags: ["sys.campfire"], height: 1.01f}
+
+
+execute align xyz \
+    positioned ~0.5 ~1.5 ~0.5 \
+    unless entity @n[sort=arbitrary,distance=..1.5,tag=sys.campfire.text,type=interaction] run \
+summon minecraft:text_display ~ ~ ~ {Tags:["sys.campfire.text"],alignment: "center", background: 0, billboard: "vertical", brightness: {block: 15, sky: 15}, default_background: 0b, line_width: 200, see_through: 0b, shadow: 0b, text: {"text":"","font":"minecraft:icon"}, text_opacity: -1b, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [2.5f, 2.5f, 2.5f], translation: [-0.1f, -0.25f, 0.0f]}}
+
+
+execute \
+    positioned ~ ~-5 ~ run \
+function sys:add_death_point

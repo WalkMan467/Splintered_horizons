@@ -17,4 +17,6 @@ $data merge entity $(bone_chain2) {transformation: [-1.9319f,0.5f,0.134f,-1.25f,
 $data merge entity $(bone_chain) {transformation: [-1.9319f,0.55f,0.134f,-1.75f,0.5176f,2.0526f,0.5f,0.808f,0f,0.5694f,-1.9319f,-1.7412f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(item_display_item_display) {transformation: [-2f,0f,0f,0f,0f,2f,0f,2.8125f,0f,0f,-6f,-0.1875f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(item_display_item_display1) {transformation: [2.8284f,-2.8284f,0f,0.0625f,-2.8284f,-2.8284f,0f,2.625f,0f,0f,-4f,-0.1875f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
-execute on vehicle unless entity @s[tag=aj.transforms_only] at @s run function animated_java:chain_lock/animations/unlock/zzz/frames/0_root_commands
+
+execute on vehicle \
+    unless entity @s[tag=aj.transforms_only] at @s run function animated_java:chain_lock/animations/unlock/zzz/frames/0_root_commands

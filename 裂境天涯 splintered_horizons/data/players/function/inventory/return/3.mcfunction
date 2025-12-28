@@ -31,35 +31,105 @@ item replace entity @s container.24 from block ~ 319 ~ container.24
 item replace entity @s container.25 from block ~ 319 ~ container.25
 item replace entity @s container.26 from block ~ 319 ~ container.26
 
-execute store success score #has_item hp_display run data modify entity 3289cf06-aa12-44c8-ac9e-27b495fe58c0 item set from storage minecraft:temp bag.inventory[{Slot:27b}]
-execute if score #has_item hp_display matches 1 run item replace entity @s container.27 from entity 3289cf06-aa12-44c8-ac9e-27b495fe58c0 contents
-execute store success score #has_item hp_display run data modify entity 3289cf06-aa12-44c8-ac9e-27b495fe58c0 item set from storage minecraft:temp bag.inventory[{Slot:28b}]
-execute if score #has_item hp_display matches 1 run item replace entity @s container.28 from entity 3289cf06-aa12-44c8-ac9e-27b495fe58c0 contents
-execute store success score #has_item hp_display run data modify entity 3289cf06-aa12-44c8-ac9e-27b495fe58c0 item set from storage minecraft:temp bag.inventory[{Slot:29b}]
-execute if score #has_item hp_display matches 1 run item replace entity @s container.29 from entity 3289cf06-aa12-44c8-ac9e-27b495fe58c0 contents
-execute store success score #has_item hp_display run data modify entity 3289cf06-aa12-44c8-ac9e-27b495fe58c0 item set from storage minecraft:temp bag.inventory[{Slot:30b}]
-execute if score #has_item hp_display matches 1 run item replace entity @s container.30 from entity 3289cf06-aa12-44c8-ac9e-27b495fe58c0 contents
-execute store success score #has_item hp_display run data modify entity 3289cf06-aa12-44c8-ac9e-27b495fe58c0 item set from storage minecraft:temp bag.inventory[{Slot:31b}]
-execute if score #has_item hp_display matches 1 run item replace entity @s container.31 from entity 3289cf06-aa12-44c8-ac9e-27b495fe58c0 contents
-execute store success score #has_item hp_display run data modify entity 3289cf06-aa12-44c8-ac9e-27b495fe58c0 item set from storage minecraft:temp bag.inventory[{Slot:32b}]
-execute if score #has_item hp_display matches 1 run item replace entity @s container.32 from entity 3289cf06-aa12-44c8-ac9e-27b495fe58c0 contents
-execute store success score #has_item hp_display run data modify entity 3289cf06-aa12-44c8-ac9e-27b495fe58c0 item set from storage minecraft:temp bag.inventory[{Slot:33b}]
-execute if score #has_item hp_display matches 1 run item replace entity @s container.33 from entity 3289cf06-aa12-44c8-ac9e-27b495fe58c0 contents
-execute store success score #has_item hp_display run data modify entity 3289cf06-aa12-44c8-ac9e-27b495fe58c0 item set from storage minecraft:temp bag.inventory[{Slot:34b}]
-execute if score #has_item hp_display matches 1 run item replace entity @s container.34 from entity 3289cf06-aa12-44c8-ac9e-27b495fe58c0 contents
-execute store success score #has_item hp_display run data modify entity 3289cf06-aa12-44c8-ac9e-27b495fe58c0 item set from storage minecraft:temp bag.inventory[{Slot:35b}]
-execute if score #has_item hp_display matches 1 run item replace entity @s container.35 from entity 3289cf06-aa12-44c8-ac9e-27b495fe58c0 contents
 
-execute store success score #has_item hp_display run data modify entity 3289cf06-aa12-44c8-ac9e-27b495fe58c0 item set from storage minecraft:temp bag.equipment.offhand
-execute if score #has_item hp_display matches 1 run item replace entity @s weapon.offhand from entity 3289cf06-aa12-44c8-ac9e-27b495fe58c0 contents
-execute store success score #has_item hp_display run data modify entity 3289cf06-aa12-44c8-ac9e-27b495fe58c0 item set from storage minecraft:temp bag.equipment.head
-execute if score #has_item hp_display matches 1 run item replace entity @s armor.head from entity 3289cf06-aa12-44c8-ac9e-27b495fe58c0 contents
-execute store success score #has_item hp_display run data modify entity 3289cf06-aa12-44c8-ac9e-27b495fe58c0 item set from storage minecraft:temp bag.equipment.chest
-execute if score #has_item hp_display matches 1 run item replace entity @s armor.chest from entity 3289cf06-aa12-44c8-ac9e-27b495fe58c0 contents
-execute store success score #has_item hp_display run data modify entity 3289cf06-aa12-44c8-ac9e-27b495fe58c0 item set from storage minecraft:temp bag.equipment.legs
-execute if score #has_item hp_display matches 1 run item replace entity @s armor.legs from entity 3289cf06-aa12-44c8-ac9e-27b495fe58c0 contents
-execute store success score #has_item hp_display run data modify entity 3289cf06-aa12-44c8-ac9e-27b495fe58c0 item set from storage minecraft:temp bag.equipment.feet
-execute if score #has_item hp_display matches 1 run item replace entity @s armor.feet from entity 3289cf06-aa12-44c8-ac9e-27b495fe58c0 contents
+execute store success score #has_item hp_display run \
+data modify entity 3289cf06-aa12-44c8-ac9e-27b495fe58c0 item set from storage minecraft:temp bag.inventory[{Slot:27b}]
+
+execute \
+    if score #has_item hp_display matches 1 run \
+item replace entity @s container.27 from entity 3289cf06-aa12-44c8-ac9e-27b495fe58c0 contents
+
+execute store success score #has_item hp_display run \
+data modify entity 3289cf06-aa12-44c8-ac9e-27b495fe58c0 item set from storage minecraft:temp bag.inventory[{Slot:28b}]
+
+execute \
+    if score #has_item hp_display matches 1 run \
+item replace entity @s container.28 from entity 3289cf06-aa12-44c8-ac9e-27b495fe58c0 contents
+
+execute store success score #has_item hp_display run \
+data modify entity 3289cf06-aa12-44c8-ac9e-27b495fe58c0 item set from storage minecraft:temp bag.inventory[{Slot:29b}]
+
+execute \
+    if score #has_item hp_display matches 1 run \
+item replace entity @s container.29 from entity 3289cf06-aa12-44c8-ac9e-27b495fe58c0 contents
+
+execute store success score #has_item hp_display run \
+data modify entity 3289cf06-aa12-44c8-ac9e-27b495fe58c0 item set from storage minecraft:temp bag.inventory[{Slot:30b}]
+
+execute \
+    if score #has_item hp_display matches 1 run \
+item replace entity @s container.30 from entity 3289cf06-aa12-44c8-ac9e-27b495fe58c0 contents
+
+execute store success score #has_item hp_display run \
+data modify entity 3289cf06-aa12-44c8-ac9e-27b495fe58c0 item set from storage minecraft:temp bag.inventory[{Slot:31b}]
+
+execute \
+    if score #has_item hp_display matches 1 run \
+item replace entity @s container.31 from entity 3289cf06-aa12-44c8-ac9e-27b495fe58c0 contents
+
+execute store success score #has_item hp_display run \
+data modify entity 3289cf06-aa12-44c8-ac9e-27b495fe58c0 item set from storage minecraft:temp bag.inventory[{Slot:32b}]
+
+execute \
+    if score #has_item hp_display matches 1 run \
+item replace entity @s container.32 from entity 3289cf06-aa12-44c8-ac9e-27b495fe58c0 contents
+
+execute store success score #has_item hp_display run \
+data modify entity 3289cf06-aa12-44c8-ac9e-27b495fe58c0 item set from storage minecraft:temp bag.inventory[{Slot:33b}]
+
+execute \
+    if score #has_item hp_display matches 1 run \
+item replace entity @s container.33 from entity 3289cf06-aa12-44c8-ac9e-27b495fe58c0 contents
+
+execute store success score #has_item hp_display run \
+data modify entity 3289cf06-aa12-44c8-ac9e-27b495fe58c0 item set from storage minecraft:temp bag.inventory[{Slot:34b}]
+
+execute \
+    if score #has_item hp_display matches 1 run \
+item replace entity @s container.34 from entity 3289cf06-aa12-44c8-ac9e-27b495fe58c0 contents
+
+execute store success score #has_item hp_display run \
+data modify entity 3289cf06-aa12-44c8-ac9e-27b495fe58c0 item set from storage minecraft:temp bag.inventory[{Slot:35b}]
+
+execute \
+    if score #has_item hp_display matches 1 run \
+item replace entity @s container.35 from entity 3289cf06-aa12-44c8-ac9e-27b495fe58c0 contents
+
+
+execute store success score #has_item hp_display run \
+data modify entity 3289cf06-aa12-44c8-ac9e-27b495fe58c0 item set from storage minecraft:temp bag.equipment.offhand
+
+execute \
+    if score #has_item hp_display matches 1 run \
+item replace entity @s weapon.offhand from entity 3289cf06-aa12-44c8-ac9e-27b495fe58c0 contents
+
+execute store success score #has_item hp_display run \
+data modify entity 3289cf06-aa12-44c8-ac9e-27b495fe58c0 item set from storage minecraft:temp bag.equipment.head
+
+execute \
+    if score #has_item hp_display matches 1 run \
+item replace entity @s armor.head from entity 3289cf06-aa12-44c8-ac9e-27b495fe58c0 contents
+
+execute store success score #has_item hp_display run \
+data modify entity 3289cf06-aa12-44c8-ac9e-27b495fe58c0 item set from storage minecraft:temp bag.equipment.chest
+
+execute \
+    if score #has_item hp_display matches 1 run \
+item replace entity @s armor.chest from entity 3289cf06-aa12-44c8-ac9e-27b495fe58c0 contents
+
+execute store success score #has_item hp_display run \
+data modify entity 3289cf06-aa12-44c8-ac9e-27b495fe58c0 item set from storage minecraft:temp bag.equipment.legs
+
+execute \
+    if score #has_item hp_display matches 1 run \
+item replace entity @s armor.legs from entity 3289cf06-aa12-44c8-ac9e-27b495fe58c0 contents
+
+execute store success score #has_item hp_display run \
+data modify entity 3289cf06-aa12-44c8-ac9e-27b495fe58c0 item set from storage minecraft:temp bag.equipment.feet
+
+execute \
+    if score #has_item hp_display matches 1 run \
+item replace entity @s armor.feet from entity 3289cf06-aa12-44c8-ac9e-27b495fe58c0 contents
 
 # Execution Point
 $xp set @s $(xp_level) levels

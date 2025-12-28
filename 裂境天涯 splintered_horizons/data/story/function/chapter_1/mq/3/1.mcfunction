@@ -1,5 +1,6 @@
 # The entire storyline is executed through the scoreboard story(dummy) combined with the schedule command
 
+
 execute \
     positioned 287 182 -187 \
     if score story.chapter_1.mq.3 story.chapter_1 matches 1 \
@@ -9,13 +10,16 @@ execute \
 data modify entity @s Glowing set value 0b
 
 
+
 execute \
     if score story.chapter_1.mq.3 story.chapter_1 matches 1 run \
 scoreboard players set #story:icon/story/chapter_1/mq/scebe_3 global.main 1
 
+
 execute \
     if score story.chapter_1.mq.3 story.chapter_1 matches 1 run \
 scoreboard players set #story:icon/story/chapter_1/mq/title global.main 1
+
 
 execute \
     positioned 287 182 -187 \
@@ -27,6 +31,7 @@ tellraw @a[distance=..16] \
         {"text":" : ","color":"white","bold": false},\
         {"translate": "story.chapter_1.mq.3.1","fallback": "［蘇菲亞］這就是你說得水之魔劍水鏡之光嗎？","bold": false,"with":[{"bold":true,"color":"blue","hover_event":{"action":"show_text","value":[{"translate":"monument.icon","fallback":"[專有名詞]:","color":"white"},"\n",{"translate": "proper_noun.desc.2","fallback":"詳情請按","color":"white","bold":false,"italic":false},{"keybind": "key.advancements","color": "dark_green"},{"translate": "proper_noun.desc.3","fallback":"尋找對應內容","color":"white","bold":false,"italic":false},{"text":"\n\n"},{"translate": "proper_noun.desc.4","fallback":"定義為魔劍，遊戲的核心元素","color":"white","bold":false,"italic":false},{"text":"\n"},{"translate": "proper_noun.desc.5","fallback":"同時，它也是遊戲中目標物品(羊毛)","color":"white","bold":false,"italic":false}]},"italic":false,"translate":"weapon.monument.aquilumera","underlined":true,"fallback": "水之魔劍 - 水鏡之光"}]}\
     ]
+
 
 execute \
     positioned 287 182 -187 \
@@ -39,6 +44,7 @@ tellraw @a[distance=..16] \
         {"translate": "story.chapter_1.mq.3.2","fallback": "［你］沒錯","bold": false}\
     ]
     
+
 execute \
     positioned 287 182 -187 \
     if score story.chapter_1.mq.3 story.chapter_1 matches 3 run \
@@ -48,6 +54,7 @@ tellraw @a[distance=..16] \
         {"player":{"properties":[{"name":"textures","value":"ewogICJ0aW1lc3RhbXAiIDogMTcxNjcwMDczNzg4NSwKICAicHJvZmlsZUlkIiA6ICI3ZjU2ZjY1MDI2NjY0ZmM1OWFjNWYyYjVjMTNlZGY3NyIsCiAgInByb2ZpbGVOYW1lIiA6ICJNYXhBbnRvbnkiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmQ3ODVmZmM5MDdiN2ViZWY4NTljOTljNzA4MzU4M2RhNmE1MmU4YmMzMmQxMDIwNjE1MGRlOTkyOTM1ODU5NCIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9CiAgfQp9"}]},"bold":false},\
         {"text":" : ","color":"white","bold": false},\
         {"translate": "story.chapter_1.mq.3.3","fallback": "［你］這把魔劍有著足以匹敵深淵的強大力量","bold": false,"with":[{"bold":true,"color":"dark_purple","hover_event":{"action":"show_text","value":[{"translate":"story.icon.proper_noun","fallback":"[專有名詞]:","color":"white"},"\n",{"translate": "proper_noun.desc.2","fallback":"詳情請按","color":"white","bold":false,"italic":false},{"keybind": "key.advancements","color": "dark_green"},{"translate": "proper_noun.desc.3","fallback":"尋找對應內容","color":"white","bold":false,"italic":false}]},"italic":false,"translate":"story.icon.proper_noun.abyss","underlined":true,"fallback": "深淵"}]}]
+
 execute \
     positioned 287 182 -187 \
     if score story.chapter_1.mq.3 story.chapter_1 matches 4 run \
@@ -58,6 +65,7 @@ tellraw @a[distance=..16] \
         {"text":" : ","color":"white","bold": false},\
         {"translate": "story.chapter_1.mq.3.4","fallback": "［你］不過，我們真的可以嗎？","bold": false}\
     ]
+
 
 execute \
     positioned 287 182 -187 \
@@ -70,6 +78,7 @@ tellraw @a[distance=..16] \
         {"translate": "story.chapter_1.mq.3.5","fallback": "［你］當我感受到它時，過往的片段如潮水般湧出","bold": false}\
     ]
 
+
 execute \
     positioned 287 182 -187 \
     if score story.chapter_1.mq.3 story.chapter_1 matches 6 run \
@@ -80,6 +89,7 @@ tellraw @a[distance=..16] \
         {"text":" : ","color":"white","bold": false},\
         {"translate": "story.chapter_1.mq.3.6","fallback": "［蘇菲亞］我能理解，面對故人，我們從事放不下","bold": false}\
     ]
+
 
 execute \
     positioned 287 182 -187 \
@@ -92,6 +102,7 @@ tellraw @a[distance=..16] \
         {"translate": "story.chapter_1.mq.3.7","fallback": "［蘇菲亞］不過我相信一切會好起來的","bold": false}\
     ]
 
+
 execute \
     positioned 287 182 -187 \
     if score story.chapter_1.mq.3 story.chapter_1 matches 8 run \
@@ -103,6 +114,7 @@ tellraw @a[distance=..16] \
         {"translate": "story.chapter_1.mq.3.8","fallback": "［蘇菲亞］即便我總是掙扎，但是失敗乃是成功之母","bold": false}\
     ]
 
+
 execute \
     positioned 287 182 -187 \
     if score story.chapter_1.mq.3 story.chapter_1 matches 9 run \
@@ -112,6 +124,7 @@ tellraw @a[distance=..16] \
         {"player":{"properties":[{"name":"textures","value":"ewogICJ0aW1lc3RhbXAiIDogMTcxNjcwMDczNzg4NSwKICAicHJvZmlsZUlkIiA6ICI3ZjU2ZjY1MDI2NjY0ZmM1OWFjNWYyYjVjMTNlZGY3NyIsCiAgInByb2ZpbGVOYW1lIiA6ICJNYXhBbnRvbnkiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmQ3ODVmZmM5MDdiN2ViZWY4NTljOTljNzA4MzU4M2RhNmE1MmU4YmMzMmQxMDIwNjE1MGRlOTkyOTM1ODU5NCIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9CiAgfQp9"}]},"bold":false},\
         {"text":" : ","color":"white","bold": false},\
         {"translate": "story.chapter_1.mq.3.9","fallback": "［你］當我誕生於世界樹之下時","bold": false,"with":[{"bold":true,"color":"yellow","hover_event":{"action":"show_text","value":[{"translate":"story.icon.proper_noun","fallback":"[專有名詞]:","color":"white"},"\n",{"translate": "proper_noun.desc.2","fallback":"詳情請按","color":"white","bold":false,"italic":false},{"keybind": "key.advancements","color": "dark_green"},{"translate": "proper_noun.desc.3","fallback":"尋找對應內容","color":"white","bold":false,"italic":false}]},"italic":false,"translate":"story.icon.proper_noun.world_tree","underlined":true,"fallback": "世界樹"}]}]
+
 execute \
     positioned 287 182 -187 \
     if score story.chapter_1.mq.3 story.chapter_1 matches 10 run \
@@ -123,6 +136,7 @@ tellraw @a[distance=..16] \
         {"translate": "story.chapter_1.mq.3.10","fallback": "［你］我總是很困惑，為什麼要託付給我守護世界的使命","bold": false}\
     ]
 
+
 execute \
     positioned 287 182 -187 \
     if score story.chapter_1.mq.3 story.chapter_1 matches 11 run \
@@ -132,6 +146,7 @@ tellraw @a[distance=..16] \
         {"player":{"properties":[{"name":"textures","value":"ewogICJ0aW1lc3RhbXAiIDogMTcxNjcwMDczNzg4NSwKICAicHJvZmlsZUlkIiA6ICI3ZjU2ZjY1MDI2NjY0ZmM1OWFjNWYyYjVjMTNlZGY3NyIsCiAgInByb2ZpbGVOYW1lIiA6ICJNYXhBbnRvbnkiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmQ3ODVmZmM5MDdiN2ViZWY4NTljOTljNzA4MzU4M2RhNmE1MmU4YmMzMmQxMDIwNjE1MGRlOTkyOTM1ODU5NCIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9CiAgfQp9"}]},"bold":false},\
         {"text":" : ","color":"white","bold": false},\
         {"translate": "story.chapter_1.mq.3.11","fallback": "［你］但在舊世界的旅途中，我逐漸了解世界的美","bold": false,"with":[{"bold":true,"color":"yellow","hover_event":{"action":"show_text","value":[{"translate":"story.icon.proper_noun","fallback":"[專有名詞]:","color":"white"},"\n",{"translate": "proper_noun.desc.2","fallback":"詳情請按","color":"white","bold":false,"italic":false},{"keybind": "key.advancements","color": "dark_green"},{"translate": "proper_noun.desc.3","fallback":"尋找對應內容","color":"white","bold":false,"italic":false}]},"italic":false,"translate":"proper_nouns.icon.old_story","underlined":true,"fallback": "舊世界"}]}]
+
 execute \
     positioned 287 182 -187 \
     if score story.chapter_1.mq.3 story.chapter_1 matches 12 run \
@@ -141,6 +156,7 @@ tellraw @a[distance=..16] \
         {"player":{"properties":[{"name":"textures","value":"ewogICJ0aW1lc3RhbXAiIDogMTcxNjcwMDczNzg4NSwKICAicHJvZmlsZUlkIiA6ICI3ZjU2ZjY1MDI2NjY0ZmM1OWFjNWYyYjVjMTNlZGY3NyIsCiAgInByb2ZpbGVOYW1lIiA6ICJNYXhBbnRvbnkiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmQ3ODVmZmM5MDdiN2ViZWY4NTljOTljNzA4MzU4M2RhNmE1MmU4YmMzMmQxMDIwNjE1MGRlOTkyOTM1ODU5NCIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9CiAgfQp9"}]},"bold":false},\
         {"text":" : ","color":"white","bold": false},\
         {"translate": "story.chapter_1.mq.3.12","fallback": "［你］能與朋友們陪伴，去幫助那些被深淵波及的人們","bold": false,"with":[{"bold":true,"color":"dark_purple","hover_event":{"action":"show_text","value":[{"translate":"story.icon.proper_noun","fallback":"[專有名詞]:","color":"white"},"\n",{"translate": "proper_noun.desc.2","fallback":"詳情請按","color":"white","bold":false,"italic":false},{"keybind": "key.advancements","color": "dark_green"},{"translate": "proper_noun.desc.3","fallback":"尋找對應內容","color":"white","bold":false,"italic":false}]},"italic":false,"translate":"story.icon.proper_noun.abyss","underlined":true,"fallback": "深淵"}]}]
+
 execute \
     positioned 287 182 -187 \
     if score story.chapter_1.mq.3 story.chapter_1 matches 13 run \
@@ -151,6 +167,7 @@ tellraw @a[distance=..16] \
         {"text":" : ","color":"white","bold": false},\
         {"translate": "story.chapter_1.mq.3.13","fallback": "［你］這就是存在的意義，也是守護世界的意義","bold": false}\
     ]
+
 
 execute \
     positioned 287 182 -187 \
@@ -163,6 +180,7 @@ tellraw @a[distance=..16] \
         {"translate": "story.chapter_1.mq.3.14","fallback": "［蘇菲亞］一切的一切都是具有意義的","bold": false}\
     ]
 
+
 execute \
     positioned 287 182 -187 \
     if score story.chapter_1.mq.3 story.chapter_1 matches 15 run \
@@ -174,6 +192,7 @@ tellraw @a[distance=..16] \
         {"translate": "story.chapter_1.mq.3.15","fallback": "［蘇菲亞］不過在魔劍身旁似乎有一本破舊的書","bold": false}\
     ]
 
+
 execute \
     positioned 287 182 -187 \
     if score story.chapter_1.mq.3 story.chapter_1 matches 16 run \
@@ -183,6 +202,7 @@ tellraw @a[distance=..16] \
         {"player":{"properties":[{"name":"textures","value":"ewogICJ0aW1lc3RhbXAiIDogMTcxNjcwMDczNzg4NSwKICAicHJvZmlsZUlkIiA6ICI3ZjU2ZjY1MDI2NjY0ZmM1OWFjNWYyYjVjMTNlZGY3NyIsCiAgInByb2ZpbGVOYW1lIiA6ICJNYXhBbnRvbnkiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmQ3ODVmZmM5MDdiN2ViZWY4NTljOTljNzA4MzU4M2RhNmE1MmU4YmMzMmQxMDIwNjE1MGRlOTkyOTM1ODU5NCIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9CiAgfQp9"}]},"bold":false},\
         {"text":" : ","color":"white","bold": false},\
         {"translate": "story.chapter_1.mq.3.16","fallback": "［你］那本書好像是舊世界的傳送書","bold": false,"with":[{"bold":true,"color":"yellow","hover_event":{"action":"show_text","value":[{"translate":"story.icon.proper_noun","fallback":"[專有名詞]:","color":"white"},"\n",{"translate": "proper_noun.desc.2","fallback":"詳情請按","color":"white","bold":false,"italic":false},{"keybind": "key.advancements","color": "dark_green"},{"translate": "proper_noun.desc.3","fallback":"尋找對應內容","color":"white","bold":false,"italic":false}]},"italic":false,"translate":"proper_nouns.icon.old_story","underlined":true,"fallback": "舊世界"}]}]
+
 execute \
     positioned 287 182 -187 \
     if score story.chapter_1.mq.3 story.chapter_1 matches 17 run \
@@ -193,6 +213,7 @@ tellraw @a[distance=..16] \
         {"text":" : ","color":"white","bold": false},\
         {"translate": "story.chapter_1.mq.3.17","fallback": "［你］他能帶領我們傳送至下一個魔劍的附近島嶼","bold": false}\
     ]
+
 
 execute \
     positioned 287 182 -187 \
@@ -205,6 +226,7 @@ tellraw @a[distance=..16] \
         {"translate": "story.chapter_1.mq.3.18","fallback": "［你］但似乎已經不能用了","bold": false}\
     ]
 
+
 execute \
     positioned 287 182 -187 \
     if score story.chapter_1.mq.3 story.chapter_1 matches 19 run \
@@ -214,6 +236,7 @@ tellraw @a[distance=..16] \
         {"player":{"properties":[{"name":"textures","value":"ewogICJ0aW1lc3RhbXAiIDogMTczODMyNzM1NjE5OCwKICAicHJvZmlsZUlkIiA6ICJjNDIzYjQwMWZiOGU0ODc3YjMzMmVmMjhiZDdlZGZmZCIsCiAgInByb2ZpbGVOYW1lIiA6ICJSZWFjdGlvbkJyaW5lWVQiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWU2YzhhOWE1OWNkYjY5YzJiM2E3NjAxYWJhODJmNjMwOWQ3ZGQ0NWM0ZTg3OGE5YzQ2M2YwNDkxNDllYzI1IiwKICAgICAgIm1ldGFkYXRhIiA6IHsKICAgICAgICAibW9kZWwiIDogInNsaW0iCiAgICAgIH0KICAgIH0KICB9Cn0="}]},"bold":false},\
         {"text":" : ","color":"white","bold": false},\
         {"translate": "story.chapter_1.mq.3.19","fallback": "［蘇菲亞］似乎可以用我的終焉力量修復看看","bold": false,"with":[{"bold":true,"color":"dark_red","hover_event":{"action":"show_text","value":[{"translate":"story.icon.proper_noun","fallback":"[專有名詞]:","color":"white"},"\n",{"translate": "proper_noun.desc.2","fallback":"詳情請按","color":"white","bold":false,"italic":false},{"keybind": "key.advancements","color": "dark_green"},{"translate": "proper_noun.desc.3","fallback":"尋找對應內容","color":"white","bold":false,"italic":false}]},"italic":false,"translate":"story.icon.proper_noun.finality","underlined":true,"fallback": "終焉"}]}]
+
 execute \
     positioned 287 182 -187 \
     if score story.chapter_1.mq.3 story.chapter_1 matches 20 run \
@@ -224,6 +247,7 @@ tellraw @a[distance=..16] \
         {"text":" : ","color":"white","bold": false},\
         {"translate": "story.chapter_1.mq.3.20","fallback": "［蘇菲亞］有了，成功了！","bold": false}\
     ]
+
 
 execute \
     positioned 287 182 -187 \
@@ -236,6 +260,7 @@ tellraw @a[distance=..16] \
         {"translate": "story.chapter_1.mq.3.21","fallback": "［你］？！","bold": false}\
     ]
 
+
 execute \
     positioned 287 182 -187 \
     if score story.chapter_1.mq.3 story.chapter_1 matches 22 run \
@@ -246,6 +271,7 @@ tellraw @a[distance=..16] \
         {"text":" : ","color":"white","bold": false},\
         {"translate": "story.chapter_1.mq.3.22","fallback": "［你］你居然修復了","bold": false}\
     ]
+
 
 execute \
     positioned 287 182 -187 \
@@ -258,6 +284,7 @@ tellraw @a[distance=..16] \
         {"translate": "story.chapter_1.mq.3.23","fallback": "［蘇菲亞］雖然我不是很懂魔法","bold": false}\
     ]
 
+
 execute \
     positioned 287 182 -187 \
     if score story.chapter_1.mq.3 story.chapter_1 matches 24 run \
@@ -268,6 +295,7 @@ tellraw @a[distance=..16] \
         {"text":" : ","color":"white","bold": false},\
         {"translate": "story.chapter_1.mq.3.24","fallback": "［蘇菲亞］但是我就簡單使用我的力量它好像就能用了","bold": false}\
     ]
+
 
 execute \
     positioned 287 182 -187 \
@@ -280,6 +308,7 @@ tellraw @a[distance=..16] \
         {"translate": "story.chapter_1.mq.3.25","fallback": "［蘇菲亞］這本書給你，你知道怎麼使用它嗎？","bold": false}\
     ]
 
+
 execute \
     positioned 287 182 -187 \
     if score story.chapter_1.mq.3 story.chapter_1 matches 26 run \
@@ -291,6 +320,7 @@ tellraw @a[distance=..16] \
         {"translate": "story.chapter_1.mq.3.26","fallback": "［你］我嘗試看看","bold": false}\
     ]
 
+
 execute \
     positioned 287 182 -187 \
     if score story.chapter_1.mq.3 story.chapter_1 matches 27 run \
@@ -298,6 +328,7 @@ tellraw @a[distance=..16] \
     [\
         {"translate": "story.chapter_1.mq.3.27","fallback": "【目標】右鍵點擊選取傳送位置並且傳送至終焉之地","color":"gold"}\
     ]
+
 
 execute \
     positioned 287 182 -187 \
@@ -309,10 +340,12 @@ tellraw @a[distance=..16] \
         {"text":"\n"}\
     ]
 
+
 execute \
     positioned 287 182 -187 \
     if score story.chapter_1.mq.3 story.chapter_1 matches 27 run \
 playsound minecraft:entity.player.levelup voice @a ~ ~1 ~ 0.5 1
+
 
 execute \
     positioned 287 182 -187 \
@@ -325,19 +358,23 @@ tellraw @a[distance=..16] \
         {"translate": "story.chapter_1.mq.3.1","fallback": "［蘇菲亞］這就是你說得水之魔劍水鏡之光嗎？","bold": false,"with":[{"bold":true,"color":"blue","hover_event":{"action":"show_text","value":[{"translate":"monument.icon","fallback":"[專有名詞]:","color":"white"},"\n",{"translate": "proper_noun.desc.2","fallback":"詳情請按","color":"white","bold":false,"italic":false},{"keybind": "key.advancements","color": "dark_green"},{"translate": "proper_noun.desc.3","fallback":"尋找對應內容","color":"white","bold":false,"italic":false},{"text":"\n\n"},{"translate": "proper_noun.desc.4","fallback":"定義為魔劍，遊戲的核心元素","color":"white","bold":false,"italic":false},{"text":"\n"},{"translate": "proper_noun.desc.5","fallback":"同時，它也是遊戲中目標物品(羊毛)","color":"white","bold":false,"italic":false}]},"italic":false,"translate":"weapon.monument.aquilumera","underlined":true,"fallback": "水之魔劍 - 水鏡之光"}]}\
     ]
 
+
 execute \
     if score story.chapter_1.mq.3 story.chapter_1 matches 28 run \
 scoreboard players set story.chapter_1.mq.3 story.chapter_1 1
 
 data remove entity @s interaction
 
+
 execute \
     unless score story.chapter_1.mq.3 story.chapter_1 matches 1..28 run \
 return 0
 
+
 execute \
     as @n[distance=..1,tag=aj.sophia.root,type=item_display] at @s run \
 function animated_java:sophia/animations/chat1/stop
+
 
 execute \
     as @n[distance=..1,tag=aj.sophia.root,type=item_display] at @s run \

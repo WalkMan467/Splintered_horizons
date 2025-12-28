@@ -1,5 +1,6 @@
 advancement revoke @s only weapons:type/sword/rock_crushing_greatsword/defense
 
+
 execute \
     unless score @s weapon.rock_crushing_greatsword.hold_down matches 9..14 run \
 return 0

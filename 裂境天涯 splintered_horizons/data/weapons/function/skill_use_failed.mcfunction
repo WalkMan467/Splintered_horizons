@@ -2,7 +2,9 @@
 
 scoreboard players set %2 weapon.cd.math 2
 $scoreboard players operation %temp weapon.cd.math = @s weapon.$(weapon).cd
-execute store result storage temp cd float 0.1 run scoreboard players operation %temp weapon.cd.math /= %2 weapon.cd.math
+
+execute store result storage temp cd float 0.1 run \
+scoreboard players operation %temp weapon.cd.math /= %2 weapon.cd.math
 data modify storage temp cd set string storage temp cd 0 -1
 
 title @s title ""

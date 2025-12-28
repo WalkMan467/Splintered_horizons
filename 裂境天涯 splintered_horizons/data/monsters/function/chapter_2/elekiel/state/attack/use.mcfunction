@@ -3,14 +3,19 @@ tag @a[sort=arbitrary,distance=..5,tag=!animation,gamemode=spectator] remove tem
 tag @a[sort=arbitrary,distance=..5,gamemode=creative] remove temp2
 tag @a[sort=arbitrary,distance=..5,tag=chapter_2.elekiel.lose] remove temp2
 
-execute unless entity @a[sort=arbitrary,distance=..5,tag=temp2] run return 0
+
+execute \
+    unless entity @a[sort=arbitrary,distance=..5,tag=temp2] run \
+return 0
 
 scoreboard players set @s monster.elekiel.3.state 2
 scoreboard players set @s monster.elekiel.3.atk.delay 100
 
+
 execute \
     store result score #rdm global.main run \
 random value 1..3
+
 
 execute \
     on passengers \
@@ -22,6 +27,7 @@ function animated_java:boss_1/animations/attack_1/tween \
         duration:10 \
     }
 
+
 execute \
     on passengers \
     if score #rdm global.main matches 2 \
@@ -31,6 +37,7 @@ function animated_java:boss_1/animations/attack_2/tween \
         to_frame:8, \
         duration:10 \
     }
+
 
 execute \
     on passengers \

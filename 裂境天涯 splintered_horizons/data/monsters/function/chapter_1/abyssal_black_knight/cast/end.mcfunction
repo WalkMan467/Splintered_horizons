@@ -7,4 +7,6 @@ tag @s remove chapter_1.abyssal_black_knight.1
 
 # Rdm Skill CD
 
-execute store result score @s monster.skill.cast.cd run random value 160..260
+
+execute store result score @s monster.skill.cast.cd run \
+random value 160..260

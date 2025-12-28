@@ -1,7 +1,9 @@
+
 execute \
     as @a[sort=arbitrary] at @s \
     if score @s sys.mini_game.hit_the_bullseye.main.id matches -2147483648..2147483647 run \
 function sys:mini_game/hit_the_bullseye/set_id
+
 
 execute \
     if score .index sys.mini_game.hit_the_bullseye.main.id matches ..1 run \

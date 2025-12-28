@@ -4,7 +4,10 @@ particle minecraft:squid_ink ~ ~1 ~ 0 0 0 0.25 200 normal
 particle minecraft:lava ~ ~1 ~ 0 0 0 1 50 force @a
 particle dust_pillar{block_state:"minecraft:redstone_block"} ~ ~1 ~ 1 0 1 1 400 normal @a
 
-execute positioned ~ ~1 ~ run function particle:tunder_red/use {duration:10,spread:3}
+
+execute \
+    positioned ~ ~1 ~ run \
+function particle:tunder_red/use {duration:10,spread:3}
 
 playsound minecraft:entity.warden.sonic_boom voice @a ~ ~1 ~ 1 1
 playsound minecraft:entity.warden.nearby_closest voice @a ~ ~1 ~ 1 0.75

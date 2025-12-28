@@ -13,4 +13,7 @@ $data merge entity $(bone_8) {transformation: [-0.9912f,-0.0035f,0.1325f,-0.1382
 $data merge entity $(bone_7) {transformation: [-0.991f,0.0549f,0.1217f,-0.1188f,0.0982f,0.9171f,0.3863f,0.6052f,-0.0904f,0.3948f,-0.9143f,-0.0519f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(item_display_item_display1) {transformation: [0.0274f,-0.1184f,-1.9963f,-0.0647f,-1.2951f,1.5202f,-0.108f,0.4329f,1.5238f,1.2941f,-0.0558f,1.1035f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 data modify entity @s data merge value {"cameras":{"camera3":{"px":2.5625,"py":1.75,"pz":-0.49999999999999967,"ry":70.00000000000001,"rx":4.2315934850178553e-16}},"locators":{}}
-execute on vehicle unless entity @s[tag=aj.transforms_only] at @s positioned ^ ^-0.5 ^1.375 rotated ~ 0 run function animated_java:stellar_animation/animations/earthquake_axe2/zzz/frames/14_root_function
+
+execute on vehicle \
+    unless entity @s[tag=aj.transforms_only] at @s \
+    positioned ^ ^-0.5 ^1.375 rotated ~ 0 run function animated_java:stellar_animation/animations/earthquake_axe2/zzz/frames/14_root_function

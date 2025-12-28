@@ -1,7 +1,10 @@
 tp @e[tag=weapon.ruins_of_the_finality.effect.chain] ~ -255 ~
 kill @e[tag=weapon.ruins_of_the_finality.effect.chain]
 
-execute as @e[tag=ruins_of_the_end.skills_2.play] run function animated_java:ruins_of_the_end_skill/remove/this
+
+execute \
+    as @e[tag=ruins_of_the_end.skills_2.play] run \
+function animated_java:ruins_of_the_end_skill/remove/this
 
 tag @s remove weapon.ruins_of_the_finality.screen
 tag @s add animation

@@ -1,4 +1,5 @@
 # story.chapter_1.sq.1.6
+
 execute \
     unless score story.chapter_1.sq.1 story.chapter_1 matches 6 run \
 tellraw @s \
@@ -7,6 +8,7 @@ tellraw @s \
         {"color": "red", "translate": "tips.player.detect.click_event.trigger.failed"}, \
         {"text": ")","color": "red"} \
     ]
+
 
 execute \
     unless score story.chapter_1.sq.1 story.chapter_1 matches 6 run \

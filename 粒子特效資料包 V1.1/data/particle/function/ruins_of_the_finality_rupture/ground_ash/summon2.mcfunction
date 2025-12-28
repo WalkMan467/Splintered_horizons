@@ -9,4 +9,7 @@ tp @e[tag=summon,tag=fx.rotf.ga2,sort=nearest,limit=1] ~ ~ ~ ~180 ~
 tag @e[tag=summon,limit=2,tag=!aj.display] remove summon
 
 # loop
-execute if score #temp global.main matches ..360 rotated ~12 ~ run function particle:ruins_of_the_finality_rupture/ground_ash/summon2
+
+execute \
+    if score #temp global.main matches ..360 rotated ~12 ~ run \
+function particle:ruins_of_the_finality_rupture/ground_ash/summon2

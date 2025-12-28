@@ -1,32 +1,127 @@
 # The entire storyline is executed through the scoreboard story(dummy) combined with the schedule command
 
-execute positioned 765 146 992 if score story.chapter_2.in_safe_zone.ml.2 story.chapter_2 matches 1 run tellraw @a[distance=..16] [{"translate": "story.chapter_2.ml.12","fallback": "［蘇菲亞］你是...萊卡？"}]
-execute positioned 765 146 992 if score story.chapter_2.in_safe_zone.ml.2 story.chapter_2 matches 2 run tellraw @a[distance=..16] [{"translate": "story.chapter_2.ml.13","fallback": "［蘇菲亞］你不是在"},{"bold":true,"color":"gold","hover_event":{"action":"show_text","value":[{"translate":"story.icon.proper_noun","fallback":"[專有名詞]:","color":"white"},"\n",{"translate": "proper_noun.desc.2","fallback":"詳情請按","color":"white","bold":false,"italic":false},{"keybind": "key.advancements","color": "dark_green"},{"translate": "proper_noun.desc.3","fallback":"尋找對應內容","color":"white","bold":false,"italic":false}]},"italic":false,"translate":"story.icon.proper_noun.old_world","fallback": "舊世界","underlined":true},{"text": "已經死了嗎？","color": "white"}]
-execute positioned 765 146 992 if score story.chapter_2.in_safe_zone.ml.2 story.chapter_2 matches 3 run tellraw @a[distance=..16] [{"translate": "story.chapter_2.ml.14","fallback": "［萊卡］這件事情可能有些複雜，我晚點跟你解釋"}]
-execute positioned 765 146 992 if score story.chapter_2.in_safe_zone.ml.2 story.chapter_2 matches 4 run tellraw @a[distance=..16] {"translate": "story.chapter_2.ml.15","fallback": "［萊卡］大家可以放鬆警惕，對方是我昔日的故人"}
-execute positioned 765 146 992 if score story.chapter_2.in_safe_zone.ml.2 story.chapter_2 matches 5 run tellraw @a[distance=..16] {"translate": "story.chapter_2.ml.16","fallback": "［萊卡］我不認為你是深淵的爪牙，因為我們曾是對抗深淵的夥伴"}
-execute positioned 765 146 992 if score story.chapter_2.in_safe_zone.ml.2 story.chapter_2 matches 6 run tellraw @a[distance=..16] {"translate": "story.chapter_2.ml.17","fallback": "［萊卡］只是我想確定你身上的未知力量究竟是來自哪裡？"}
-execute positioned 765 146 992 if score story.chapter_2.in_safe_zone.ml.2 story.chapter_2 matches 7 run tellraw @a[distance=..16] {"translate": "story.chapter_2.ml.18","fallback": "［蘇菲亞］這是一股名為「終焉」的力量"}
-execute positioned 765 146 992 if score story.chapter_2.in_safe_zone.ml.2 story.chapter_2 matches 8 run tellraw @a[distance=..16] [{"translate": "story.chapter_2.ml.19","fallback": "［蘇菲亞］在"},{"bold":true,"color":"gold","hover_event":{"action":"show_text","value":[{"translate":"story.icon.proper_noun","fallback":"[專有名詞]:","color":"white"},"\n",{"translate": "proper_noun.desc.2","fallback":"詳情請按","color":"white","bold":false,"italic":false},{"keybind": "key.advancements","color": "dark_green"},{"translate": "proper_noun.desc.3","fallback":"尋找對應內容","color":"white","bold":false,"italic":false}]},"italic":false,"translate":"story.icon.proper_noun.final_battle","fallback": "最終決戰","underlined":true},{"text":"之後深淵吞噬了","color": "white"},{"bold":true,"color":"gold","hover_event":{"action":"show_text","value":[{"translate":"story.icon.proper_noun","fallback":"[專有名詞]:","color":"white"},"\n",{"translate": "proper_noun.desc.2","fallback":"詳情請按","color":"white","bold":false,"italic":false},{"keybind": "key.advancements","color": "dark_green"},{"translate": "proper_noun.desc.3","fallback":"尋找對應內容","color":"white","bold":false,"italic":false}]},"italic":false,"translate":"story.icon.proper_noun.old_world","fallback": "舊世界","underlined":true}]
-execute positioned 765 146 992 if score story.chapter_2.in_safe_zone.ml.2 story.chapter_2 matches 9 run tellraw @a[distance=..16] [{"translate": "story.chapter_2.ml.20","fallback": "［蘇菲亞］除了我之外的人都死於"},{"bold":true,"color":"gold","hover_event":{"action":"show_text","value":[{"translate":"story.icon.proper_noun","fallback":"[專有名詞]:","color":"white"},"\n",{"translate": "proper_noun.desc.2","fallback":"詳情請按","color":"white","bold":false,"italic":false},{"keybind": "key.advancements","color": "dark_green"},{"translate": "proper_noun.desc.3","fallback":"尋找對應內容","color":"white","bold":false,"italic":false}]},"italic":false,"translate":"story.icon.proper_noun.final_battle","fallback": "最終決戰","underlined":true},{"text": "，只有我奇蹟般的活下來","color": "white"}]
-execute positioned 765 146 992 if score story.chapter_2.in_safe_zone.ml.2 story.chapter_2 matches 10 run tellraw @a[distance=..16] {"translate": "story.chapter_2.ml.21","fallback": "［蘇菲亞］但在我穿越到了新世界，我掌握了一種新的力量「終焉」"}
-execute positioned 765 146 992 if score story.chapter_2.in_safe_zone.ml.2 story.chapter_2 matches 11 run tellraw @a[distance=..16] {"translate": "story.chapter_2.ml.22","fallback": "［蘇菲亞］它是一種融合了 死亡 與 深淵 的終極力量"}
-execute positioned 765 146 992 if score story.chapter_2.in_safe_zone.ml.2 story.chapter_2 matches 12 run tellraw @a[distance=..16] {"translate": "story.chapter_2.ml.23","fallback": "［蘇菲亞］萊卡，能見到你真是太好了"}
-execute positioned 765 146 992 if score story.chapter_2.in_safe_zone.ml.2 story.chapter_2 matches 13 run tellraw @a[distance=..16] {"translate": "story.chapter_2.ml.24","fallback": "［蘇菲亞］我有好多好多話想對你說"}
-execute positioned 765 146 992 if score story.chapter_2.in_safe_zone.ml.2 story.chapter_2 matches 14 run tellraw @a[distance=..16] {"translate": "story.chapter_2.ml.25","fallback": "［萊卡］能再次相遇，我也有好多話想對你說"}
-execute positioned 765 146 992 if score story.chapter_2.in_safe_zone.ml.2 story.chapter_2 matches 15 run tellraw @a[distance=..16] {"translate": "story.chapter_2.ml.26","fallback": "［萊卡］2位已是我們的盟友，今後這裡就是你們的家園"}
-execute positioned 765 146 992 if score story.chapter_2.in_safe_zone.ml.2 story.chapter_2 matches 16 run tellraw @a[distance=..16] {"translate": "story.chapter_2.ml.27","fallback": "［萊卡］你們來到這裡之前似乎盡力了許多惡戰"}
-execute positioned 765 146 992 if score story.chapter_2.in_safe_zone.ml.2 story.chapter_2 matches 17 run tellraw @a[distance=..16] {"translate": "story.chapter_2.ml.28","fallback": "［萊卡］不如你們可以去附近的鍛造台與商店升級裝備"}
-execute positioned 765 146 992 if score story.chapter_2.in_safe_zone.ml.2 story.chapter_2 matches 18 run tellraw @a[distance=..16] {"translate": "story.chapter_2.ml.29","fallback": "［萊卡］有什麼問題可以來中間的始源神殿找我"}
-execute positioned 765 146 992 if score story.chapter_2.in_safe_zone.ml.2 story.chapter_2 matches 19 run tellraw @a[distance=..16] ["\n",{"translate": "story.chapter_2.ml.30","fallback": "【目標】去始源神殿找蘇菲亞與萊卡","color": "gold"}]
-execute positioned 765 146 992 if score story.chapter_2.in_safe_zone.ml.2 story.chapter_2 matches 19 run tellraw @a[distance=..16] [{"translate": "story.chapter_2.ml.31","fallback": "【目標】去附近的商店&鍛造台升級裝備 (非必要)","color": "gold",},"\n"]
-execute positioned 765 146 992 if score story.chapter_2.in_safe_zone.ml.2 story.chapter_2 matches 19 run playsound minecraft:entity.player.levelup voice @a ~ ~1 ~ 0.5 1
-execute positioned 765 146 992 if score story.chapter_2.in_safe_zone.ml.2 story.chapter_2 matches 19 run tellraw @a[distance=..16] [{"translate": "story.end","fallback": "對話結束，再次點擊可重複查看對話內容","color":"gold"},{"text":"\n"}]
-execute positioned 765 146 992 if score story.chapter_2.in_safe_zone.ml.2 story.chapter_2 matches 19 run function story:chapter_2/in_safe_zone/2/remove_npc
+
+execute \
+    positioned 765 146 992 \
+    if score story.chapter_2.in_safe_zone.ml.2 story.chapter_2 matches 1 run \
+tellraw @a[distance=..16] [{"translate": "story.chapter_2.ml.12","fallback": "［蘇菲亞］你是...萊卡？"}]
+
+execute \
+    positioned 765 146 992 \
+    if score story.chapter_2.in_safe_zone.ml.2 story.chapter_2 matches 2 run \
+tellraw @a[distance=..16] [{"translate": "story.chapter_2.ml.13","fallback": "［蘇菲亞］你不是在"},{"bold":true,"color":"gold","hover_event":{"action":"show_text","value":[{"translate":"story.icon.proper_noun","fallback":"[專有名詞]:","color":"white"},"\n",{"translate": "proper_noun.desc.2","fallback":"詳情請按","color":"white","bold":false,"italic":false},{"keybind": "key.advancements","color": "dark_green"},{"translate": "proper_noun.desc.3","fallback":"尋找對應內容","color":"white","bold":false,"italic":false}]},"italic":false,"translate":"story.icon.proper_noun.old_world","fallback": "舊世界","underlined":true},{"text": "已經死了嗎？","color": "white"}]
+
+execute \
+    positioned 765 146 992 \
+    if score story.chapter_2.in_safe_zone.ml.2 story.chapter_2 matches 3 run \
+tellraw @a[distance=..16] [{"translate": "story.chapter_2.ml.14","fallback": "［萊卡］這件事情可能有些複雜，我晚點跟你解釋"}]
+
+execute \
+    positioned 765 146 992 \
+    if score story.chapter_2.in_safe_zone.ml.2 story.chapter_2 matches 4 run \
+tellraw @a[distance=..16] {"translate": "story.chapter_2.ml.15","fallback": "［萊卡］大家可以放鬆警惕，對方是我昔日的故人"}
+
+execute \
+    positioned 765 146 992 \
+    if score story.chapter_2.in_safe_zone.ml.2 story.chapter_2 matches 5 run \
+tellraw @a[distance=..16] {"translate": "story.chapter_2.ml.16","fallback": "［萊卡］我不認為你是深淵的爪牙，因為我們曾是對抗深淵的夥伴"}
+
+execute \
+    positioned 765 146 992 \
+    if score story.chapter_2.in_safe_zone.ml.2 story.chapter_2 matches 6 run \
+tellraw @a[distance=..16] {"translate": "story.chapter_2.ml.17","fallback": "［萊卡］只是我想確定你身上的未知力量究竟是來自哪裡？"}
+
+execute \
+    positioned 765 146 992 \
+    if score story.chapter_2.in_safe_zone.ml.2 story.chapter_2 matches 7 run \
+tellraw @a[distance=..16] {"translate": "story.chapter_2.ml.18","fallback": "［蘇菲亞］這是一股名為「終焉」的力量"}
+
+execute \
+    positioned 765 146 992 \
+    if score story.chapter_2.in_safe_zone.ml.2 story.chapter_2 matches 8 run \
+tellraw @a[distance=..16] [{"translate": "story.chapter_2.ml.19","fallback": "［蘇菲亞］在"},{"bold":true,"color":"gold","hover_event":{"action":"show_text","value":[{"translate":"story.icon.proper_noun","fallback":"[專有名詞]:","color":"white"},"\n",{"translate": "proper_noun.desc.2","fallback":"詳情請按","color":"white","bold":false,"italic":false},{"keybind": "key.advancements","color": "dark_green"},{"translate": "proper_noun.desc.3","fallback":"尋找對應內容","color":"white","bold":false,"italic":false}]},"italic":false,"translate":"story.icon.proper_noun.final_battle","fallback": "最終決戰","underlined":true},{"text":"之後深淵吞噬了","color": "white"},{"bold":true,"color":"gold","hover_event":{"action":"show_text","value":[{"translate":"story.icon.proper_noun","fallback":"[專有名詞]:","color":"white"},"\n",{"translate": "proper_noun.desc.2","fallback":"詳情請按","color":"white","bold":false,"italic":false},{"keybind": "key.advancements","color": "dark_green"},{"translate": "proper_noun.desc.3","fallback":"尋找對應內容","color":"white","bold":false,"italic":false}]},"italic":false,"translate":"story.icon.proper_noun.old_world","fallback": "舊世界","underlined":true}]
+
+execute \
+    positioned 765 146 992 \
+    if score story.chapter_2.in_safe_zone.ml.2 story.chapter_2 matches 9 run \
+tellraw @a[distance=..16] [{"translate": "story.chapter_2.ml.20","fallback": "［蘇菲亞］除了我之外的人都死於"},{"bold":true,"color":"gold","hover_event":{"action":"show_text","value":[{"translate":"story.icon.proper_noun","fallback":"[專有名詞]:","color":"white"},"\n",{"translate": "proper_noun.desc.2","fallback":"詳情請按","color":"white","bold":false,"italic":false},{"keybind": "key.advancements","color": "dark_green"},{"translate": "proper_noun.desc.3","fallback":"尋找對應內容","color":"white","bold":false,"italic":false}]},"italic":false,"translate":"story.icon.proper_noun.final_battle","fallback": "最終決戰","underlined":true},{"text": "，只有我奇蹟般的活下來","color": "white"}]
+
+execute \
+    positioned 765 146 992 \
+    if score story.chapter_2.in_safe_zone.ml.2 story.chapter_2 matches 10 run \
+tellraw @a[distance=..16] {"translate": "story.chapter_2.ml.21","fallback": "［蘇菲亞］但在我穿越到了新世界，我掌握了一種新的力量「終焉」"}
+
+execute \
+    positioned 765 146 992 \
+    if score story.chapter_2.in_safe_zone.ml.2 story.chapter_2 matches 11 run \
+tellraw @a[distance=..16] {"translate": "story.chapter_2.ml.22","fallback": "［蘇菲亞］它是一種融合了 死亡 與 深淵 的終極力量"}
+
+execute \
+    positioned 765 146 992 \
+    if score story.chapter_2.in_safe_zone.ml.2 story.chapter_2 matches 12 run \
+tellraw @a[distance=..16] {"translate": "story.chapter_2.ml.23","fallback": "［蘇菲亞］萊卡，能見到你真是太好了"}
+
+execute \
+    positioned 765 146 992 \
+    if score story.chapter_2.in_safe_zone.ml.2 story.chapter_2 matches 13 run \
+tellraw @a[distance=..16] {"translate": "story.chapter_2.ml.24","fallback": "［蘇菲亞］我有好多好多話想對你說"}
+
+execute \
+    positioned 765 146 992 \
+    if score story.chapter_2.in_safe_zone.ml.2 story.chapter_2 matches 14 run \
+tellraw @a[distance=..16] {"translate": "story.chapter_2.ml.25","fallback": "［萊卡］能再次相遇，我也有好多話想對你說"}
+
+execute \
+    positioned 765 146 992 \
+    if score story.chapter_2.in_safe_zone.ml.2 story.chapter_2 matches 15 run \
+tellraw @a[distance=..16] {"translate": "story.chapter_2.ml.26","fallback": "［萊卡］2位已是我們的盟友，今後這裡就是你們的家園"}
+
+execute \
+    positioned 765 146 992 \
+    if score story.chapter_2.in_safe_zone.ml.2 story.chapter_2 matches 16 run \
+tellraw @a[distance=..16] {"translate": "story.chapter_2.ml.27","fallback": "［萊卡］你們來到這裡之前似乎盡力了許多惡戰"}
+
+execute \
+    positioned 765 146 992 \
+    if score story.chapter_2.in_safe_zone.ml.2 story.chapter_2 matches 17 run \
+tellraw @a[distance=..16] {"translate": "story.chapter_2.ml.28","fallback": "［萊卡］不如你們可以去附近的鍛造台與商店升級裝備"}
+
+execute \
+    positioned 765 146 992 \
+    if score story.chapter_2.in_safe_zone.ml.2 story.chapter_2 matches 18 run \
+tellraw @a[distance=..16] {"translate": "story.chapter_2.ml.29","fallback": "［萊卡］有什麼問題可以來中間的始源神殿找我"}
+
+execute \
+    positioned 765 146 992 \
+    if score story.chapter_2.in_safe_zone.ml.2 story.chapter_2 matches 19 run \
+tellraw @a[distance=..16] ["\n",{"translate": "story.chapter_2.ml.30","fallback": "【目標】去始源神殿找蘇菲亞與萊卡","color": "gold"}]
+
+execute \
+    positioned 765 146 992 \
+    if score story.chapter_2.in_safe_zone.ml.2 story.chapter_2 matches 19 run \
+tellraw @a[distance=..16] [{"translate": "story.chapter_2.ml.31","fallback": "【目標】去附近的商店&鍛造台升級裝備 (非必要)","color": "gold",},"\n"]
+
+execute \
+    positioned 765 146 992 \
+    if score story.chapter_2.in_safe_zone.ml.2 story.chapter_2 matches 19 run \
+playsound minecraft:entity.player.levelup voice @a ~ ~1 ~ 0.5 1
+
+execute \
+    positioned 765 146 992 \
+    if score story.chapter_2.in_safe_zone.ml.2 story.chapter_2 matches 19 run \
+tellraw @a[distance=..16] [{"translate": "story.end","fallback": "對話結束，再次點擊可重複查看對話內容","color":"gold"},{"text":"\n"}]
+
+execute \
+    positioned 765 146 992 \
+    if score story.chapter_2.in_safe_zone.ml.2 story.chapter_2 matches 19 run \
+function story:chapter_2/in_safe_zone/2/remove_npc
 
 data remove entity @s interaction
 
-execute unless score story.chapter_2.in_safe_zone.ml.2 story.chapter_2 matches 1..20 run return 0
+
+execute \
+    unless score story.chapter_2.in_safe_zone.ml.2 story.chapter_2 matches 1..20 run \
+return 0
 
 scoreboard players add story.chapter_2.in_safe_zone.ml.2 story.chapter_2 1
 playsound minecraft:ui.button.click voice @a ~ ~1 ~ 0.5 1

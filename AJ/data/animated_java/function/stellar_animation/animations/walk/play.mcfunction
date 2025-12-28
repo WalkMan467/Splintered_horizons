@@ -3,5 +3,6 @@ function animated_java:stellar_animation/animations/pause_all
 tag @s add aj.stellar_animation.animation.walk.playing
 scoreboard players set @s aj.walk.frame 0
 tag @s add aj.transforms_only
+
 execute at @s run function animated_java:stellar_animation/animations/walk/zzz/set_frame {frame: 0}
 tag @s remove aj.transforms_only

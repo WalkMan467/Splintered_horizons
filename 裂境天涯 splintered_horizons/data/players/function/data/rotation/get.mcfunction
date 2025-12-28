@@ -9,9 +9,18 @@ rotate @n[tag=player_data.rotation,type=marker] facing entity @p eyes
 # 我不知道為什麼加這行就能讓 Rotation 有正確的數值，然後拔掉會有誤差
 rotate @n[tag=player_data.rotation,type=marker] ~ ~
 
-execute as @n[tag=player_data.rotation,type=marker] run data modify entity @s data.rotation.x set from entity @s Rotation[0]
-execute as @n[tag=player_data.rotation,type=marker] run data modify entity @s data.rotation.y set from entity @s Rotation[1]
 
-execute positioned ~ ~1.5 ~ run function players:screen_filters/glitch_effect/use with entity @n[tag=player_data.rotation,type=marker] data.rotation
+execute \
+    as @n[tag=player_data.rotation,type=marker] run \
+data modify entity @s data.rotation.x set from entity @s Rotation[0]
+
+execute \
+    as @n[tag=player_data.rotation,type=marker] run \
+data modify entity @s data.rotation.y set from entity @s Rotation[1]
+
+
+execute \
+    positioned ~ ~1.5 ~ run \
+function players:screen_filters/glitch_effect/use with entity @n[tag=player_data.rotation,type=marker] data.rotation
 
 kill @n[tag=player_data.rotation,type=marker]

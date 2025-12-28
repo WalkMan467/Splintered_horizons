@@ -16,4 +16,6 @@ function particle:technological_force_wave/ground_ash/summon
 function particle:technological_force_wave/ground_ash_2/summon
 
 scoreboard players reset #particle.technological_force_wave.range.fx particle
-execute rotated 0 0 run function particle:technological_force_wave/fx
+
+execute rotated 0 0 run \
+function particle:technological_force_wave/fx

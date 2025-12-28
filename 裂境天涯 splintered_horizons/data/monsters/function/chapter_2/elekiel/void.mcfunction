@@ -1,6 +1,9 @@
 # Executing commands too far from the player
 
-execute as @a at @s run function monsters:bossfight/chapter_2/elekiel/reset_player_die
+
+execute \
+    as @a at @s run \
+function monsters:bossfight/chapter_2/elekiel/reset_player_die
 
 function animated_java:boss_1/remove/all
 
@@ -32,17 +35,30 @@ bossbar remove chapter_2.elekiel.2
 bossbar remove chapter_2.elekiel.3
 
 function monsters:chapter_2/elekiel/3/reset
-execute as @e[tag=monsters.elekiel.2.vampire_flower.hit_box,type=slime] run function monsters:chapter_2/elekiel/2/vampire_flower/kill
+
+execute \
+    as @e[tag=monsters.elekiel.2.vampire_flower.hit_box,type=slime] run \
+function monsters:chapter_2/elekiel/2/vampire_flower/kill
 tag @a remove monsters.elekiel.2.vampire_flower.target
 
 function monsters:chapter_2/elekiel/1/7
-execute as @a at @s if biome ~ ~ ~ #world_area:chapter_2_bossfight run function music:chapter_2/bossfight/2/reset
 
-execute on passengers as @n[tag=aj.boss_1.root,type=item_display] run function animated_java:boss_1/remove/this
+execute \
+    as @a at @s \
+    if biome ~ ~ ~ #world_area:chapter_2_bossfight run \
+function music:chapter_2/bossfight/2/reset
+
+
+execute on passengers \
+    as @n[tag=aj.boss_1.root,type=item_display] run \
+function animated_java:boss_1/remove/this
 
 advancement revoke @a only monsters:chapter_2/elekiel/1/battlefield/fire
 kill 000000fb-0000-0228-0000-000100000018
-execute positioned 912 60 2018 run kill @e[distance=..60,type=experience_orb]
+
+execute \
+    positioned 912 60 2018 run \
+kill @e[distance=..60,type=experience_orb]
 
 summon interaction 912 60 2018 {UUID:[I; 2541, 123, 1, 1],Tags:["world_area.chapter_2.temple_of_light.bossfight.act"],height:2}
 

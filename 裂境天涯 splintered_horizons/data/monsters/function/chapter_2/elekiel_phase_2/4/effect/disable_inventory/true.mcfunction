@@ -1,14 +1,18 @@
+
 execute \
     if entity @s[tag=monster.elekiel_phase_2.void.target] run \
 return 0
+
 
 execute \
     unless entity @s[tag=monster.elekiel_phase_2.4.effect.target] run \
 return 0
 
+
 execute \
     unless entity @s[tag=temp] run \
 return 0
+
 
 execute \
     if entity @s[tag=chapter_2.elekiel_phase_2.lose] run \

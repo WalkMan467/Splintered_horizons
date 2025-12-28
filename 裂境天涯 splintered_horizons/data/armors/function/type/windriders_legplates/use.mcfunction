@@ -1,6 +1,15 @@
-execute unless items entity @s armor.legs *[minecraft:custom_data~{windriders:1b} | custom_data~{windriders:1}] run return 0
-execute if score @s armor.windriders_legplates.cd matches 1.. run return 0
-execute if score @s armor.leggings.effect.actived matches 1.. run return 0
+
+execute \
+    unless items entity @s armor.legs *[minecraft:custom_data~{windriders:1b} | custom_data~{windriders:1}] run \
+return 0
+
+execute \
+    if score @s armor.windriders_legplates.cd matches 1.. run \
+return 0
+
+execute \
+    if score @s armor.leggings.effect.actived matches 1.. run \
+return 0
 
 scoreboard players set @s armor.windriders_legplates.cd 1
 
@@ -12,7 +21,9 @@ advancement grant @s only armors:type/windriders_legplates/effect/charge
 function armors:type/windriders_legplates/fx
 
 scoreboard players reset #armor.windriders_legplates.fx particle
-execute rotated ~ 0 run function armors:type/windriders_legplates/fx
+
+execute rotated ~ 0 run \
+function armors:type/windriders_legplates/fx
 
 playsound minecraft:entity.illusioner.cast_spell voice @a ~ ~1 ~ 1 1.25
 playsound minecraft:entity.breeze.charge voice @a ~ ~1 ~ 1 0.5

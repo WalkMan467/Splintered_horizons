@@ -13,4 +13,7 @@ tp @e[tag=summon,tag=fx.gz.ga2,sort=nearest,limit=1] ~ ~ ~ ~180 ~
 tag @e[tag=summon,limit=2] remove summon
 
 # loop
-execute if score #temp global.main matches ..360 rotated ~12 ~ run function particle:stone_explosion/ground_ash/summon2
+
+execute \
+    if score #temp global.main matches ..360 rotated ~12 ~ run \
+function particle:stone_explosion/ground_ash/summon2

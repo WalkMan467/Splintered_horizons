@@ -13,7 +13,10 @@ summon item_display ~ ~1 ~ {Tags:["hook.effect","hook.effect.spawn"],brightness:
 scoreboard players set @n[type=item_display,tag=hook.effect.spawn] duration 25
 scoreboard players operation @n[type=item_display,tag=hook.effect.spawn] weapon.hook.user.id = #weapons.hook.user.id weapon.hook.user.id
 
-execute as @n[type=item_display,tag=hook.effect.spawn] run rotate @s ~ ~
+
+execute \
+    as @n[type=item_display,tag=hook.effect.spawn] run \
+rotate @s ~ ~
 
 tag @n[type=item_display,tag=hook.effect.spawn] remove hook.effect.spawn
 

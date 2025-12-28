@@ -4,4 +4,7 @@ particle dust_color_transition{from_color: [0.0f, 0.75f, 0.75f], scale: 1.5f, to
 
 particle trial_spawner_detection_ominous ^ ^ ^8 0.1 0.1 0.1 0 2 normal @a
 
-execute rotated ~3 0 if score #monster.abyssal_soulreaper.fx particle matches ..360 run function monsters:chapter_1/abyssal_soulreaper/1/fx
+
+execute rotated ~3 0 \
+    if score #monster.abyssal_soulreaper.fx particle matches ..360 run \
+function monsters:chapter_1/abyssal_soulreaper/1/fx

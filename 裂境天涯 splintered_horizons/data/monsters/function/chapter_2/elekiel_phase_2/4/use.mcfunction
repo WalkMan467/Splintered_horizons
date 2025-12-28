@@ -6,6 +6,9 @@ tag @s add chapter_2.elekiel_phase_2.4
 
 scoreboard players set skill.3 monster.elekiel_phase_2.cd 1
 
-execute unless score #player.count global.main matches 2.. run return 0
+
+execute \
+    unless score #player.count global.main matches 2.. run \
+return 0
 
 scoreboard players set skill.2 monster.elekiel_phase_2.cd 20

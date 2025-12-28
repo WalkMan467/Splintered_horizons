@@ -2,5 +2,6 @@
 function animated_java:sophia/animations/pause_all
 scoreboard players set @s aj.sit_down.frame 0
 tag @s add aj.transforms_only
+
 execute at @s run function animated_java:sophia/animations/sit_down/zzz/set_frame {frame: 0}
 tag @s remove aj.transforms_only

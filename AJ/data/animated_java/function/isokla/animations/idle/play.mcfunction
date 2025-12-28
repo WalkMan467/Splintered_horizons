@@ -3,5 +3,6 @@ function animated_java:isokla/animations/pause_all
 tag @s add aj.isokla.animation.idle.playing
 scoreboard players set @s aj.idle.frame 0
 tag @s add aj.transforms_only
+
 execute at @s run function animated_java:isokla/animations/idle/zzz/set_frame {frame: 0}
 tag @s remove aj.transforms_only

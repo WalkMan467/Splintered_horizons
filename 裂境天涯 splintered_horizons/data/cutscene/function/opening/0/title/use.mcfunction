@@ -9,11 +9,17 @@ schedule function cutscene:opening/0/title/main 1t
 summon area_effect_cloud 9999 95 10070 {custom_particle:{type:"block",block_state:"minecraft:air"},UUID:[I;211,4,1,1],Radius:0f,Duration:360,Tags:["cutscene.opening.0.title"]}
 
 gamemode spectator @a
-execute as @a[gamemode=spectator] run spectate 000000d3-0000-0004-0000-000100000001
+
+execute \
+    as @a[gamemode=spectator] run \
+spectate 000000d3-0000-0004-0000-000100000001
 title @a actionbar ""
 
 scoreboard objectives setdisplay sidebar
 
-execute as @a at @s run playsound minecraft:block.fire.ambient voice @s ~ ~1 ~ 1 0.5
+
+execute \
+    as @a at @s run \
+playsound minecraft:block.fire.ambient voice @s ~ ~1 ~ 1 0.5
 
 schedule function cutscene:opening/use 40s

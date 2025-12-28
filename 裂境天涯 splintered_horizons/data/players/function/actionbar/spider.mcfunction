@@ -8,7 +8,10 @@
 # ===================================================
 
 # Display Actionbar
-execute unless score @s weapon.nightfall.charge matches 1.. run title @s actionbar [{"text": "⚡ 充能值 □ □ □ □ □ □ □ □ □ □ ⚡","color": "white"}]
+
+execute \
+    unless score @s weapon.nightfall.charge matches 1.. run \
+title @s actionbar [{"text": "⚡ 充能值 □ □ □ □ □ □ □ □ □ □ ⚡","color": "white"}]
 title @s[scores={weapon.spider_passive=1}] actionbar [{"text": "⚡ 充能值 ■ □ □ □ □ □ □ □ □ □ ⚡","color": "aqua"}]
 title @s[scores={weapon.spider_passive=2}] actionbar [{"text": "⚡ 充能值 ■ ■ □ □ □ □ □ □ □ □ ⚡","color": "aqua"}]
 title @s[scores={weapon.spider_passive=3}] actionbar [{"text": "⚡ 充能值 ■ ■ ■ □ □ □ □ □ □ □ ⚡","color": "dark_aqua"}]

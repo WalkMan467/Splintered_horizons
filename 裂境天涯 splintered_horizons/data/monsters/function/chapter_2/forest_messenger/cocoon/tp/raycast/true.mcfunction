@@ -1,4 +1,7 @@
-execute if entity @s[tag=monster.forest_messenger.cocoon.tp.raycast.true,type=area_effect_cloud] run return 0
+
+execute \
+    if entity @s[tag=monster.forest_messenger.cocoon.tp.raycast.true,type=area_effect_cloud] run \
+return 0
 
 tag @s add monster.forest_messenger.cocoon.tp.raycast.true
 

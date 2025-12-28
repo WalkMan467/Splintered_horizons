@@ -2,6 +2,8 @@
 function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.data_data set from storage aj:uuid main.out
 summon minecraft:item_display ^0 ^0 ^0 {Tags:["aj.global.camera","aj.global.entity","aj.global.node","aj.global.node.camera","aj.global.root.child","aj.global.root.child.camera","aj.new","aj.screen_sneak.camera","aj.screen_sneak.camera.camera","aj.screen_sneak.entity","aj.screen_sneak.node","aj.screen_sneak.node.camera"], teleport_duration: 2}
-execute as @n[ type=minecraft:item_display, tag=aj.new, tag=aj.screen_sneak.camera.camera, distance=..1.9100137361600646 ] run function animated_java:screen_sneak/zzz/summon/as_data_entity/../as_camera/camera
+
+execute \
+    as @n[ type=minecraft:item_display, tag=aj.new, tag=aj.screen_sneak.camera.camera, distance=..1.9100137361600646 ] run function animated_java:screen_sneak/zzz/summon/as_data_entity/../as_camera/camera
 data modify entity @s data.uuids.camera_camera set from storage aj:uuid main.out
 data modify entity @s data.cameras.camera.uuid set from storage aj:uuid main.out

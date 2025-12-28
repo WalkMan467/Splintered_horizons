@@ -3,9 +3,15 @@ weather clear
 
 scoreboard players set #cutscene global.main 1
 
-execute in minecraft:overworld run forceload add 42 11 42 11
 
-execute as @a run function item:type/tp_book/rc/cancel
+execute \
+    in minecraft:overworld run \
+forceload add 42 11 42 11
+
+
+execute \
+    as @a run \
+function item:type/tp_book/rc/cancel
 
 function cutscene:opening/remove_camera
 
@@ -48,7 +54,10 @@ schedule clear cutscene:opening/end/use
 
 schedule clear cutscene:opening/main
 
-execute as @a at @s run function cutscene:opening/0/use
+
+execute \
+    as @a at @s run \
+function cutscene:opening/0/use
 
 item replace entity @a armor.head with leather_helmet[tooltip_display={hide_tooltip:true},item_name='{"bold":true,"color":"yellow","italic":false,"text":"Camera"}',minecraft:item_model="camera",equippable={slot:"head",equip_sound:"event.raid.horn",asset_id:"minecraft:air",camera_overlay:"minecraft:screen/cutscene"},enchantments={"minecraft:binding_curse":1},enchantment_glint_override=false] 1
 

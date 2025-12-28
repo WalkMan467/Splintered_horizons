@@ -1,5 +1,11 @@
-execute if score @s entity.dummy_mob matches 1.. run return 0
-execute if entity @s[gamemode=!survival,gamemode=!adventure] run return 0
+
+execute \
+    if score @s entity.dummy_mob matches 1.. run \
+return 0
+
+execute \
+    if entity @s[gamemode=!survival,gamemode=!adventure] run \
+return 0
 
 damage @s 6 mob_attack by @n[type=zombie,tag=monsters.abyssal_soulreaper]
 

@@ -10,4 +10,7 @@ tp @n[tag=summon,distance=..3,tag=fx.sagittarius_wave.ga,type=block_display] ~ ~
 tag @n[tag=summon,distance=..3,tag=fx.sagittarius_wave.ga,type=block_display] remove summon
 
 # loop
-execute if score #temp global.main matches ..360 rotated ~12 ~ run function particle:sagittarius_wave/ground_ash/summon2
+
+execute \
+    if score #temp global.main matches ..360 rotated ~12 ~ run \
+function particle:sagittarius_wave/ground_ash/summon2

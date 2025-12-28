@@ -1,1 +1,4 @@
-execute as @a[gamemode=!spectator,gamemode=!creative] at @s run function world_area:other/abyss_forest/pull_back_players/guide
+
+execute \
+    as @a[gamemode=!spectator,gamemode=!creative] at @s run \
+function world_area:other/abyss_forest/pull_back_players/guide

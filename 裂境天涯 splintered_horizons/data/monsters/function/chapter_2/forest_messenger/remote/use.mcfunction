@@ -1,4 +1,7 @@
-execute if entity @s[tag=monster.forest_afterimage.remote] run return 0
+
+execute \
+    if entity @s[tag=monster.forest_afterimage.remote] run \
+return 0
 
 tag @s remove monster.forest_afterimage.melee
 

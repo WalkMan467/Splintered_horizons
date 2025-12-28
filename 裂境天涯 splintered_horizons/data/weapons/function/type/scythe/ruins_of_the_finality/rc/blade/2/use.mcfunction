@@ -3,8 +3,14 @@ rotate @n[tag=weapon.ruins_of_the_finality.blade.2,type=block_display,tag=summon
 rotate @n[tag=weapon.ruins_of_the_finality.blade.2,type=block_display,tag=summon] ~ 0
 
 data modify entity @n[tag=weapon.ruins_of_the_finality.blade.2,type=block_display,tag=summon] teleport_duration set value 20
-execute as @n[tag=weapon.ruins_of_the_finality.blade.2,type=block_display,tag=summon] at @s run tp @s ^ ^ ^5
-execute as @n[tag=weapon.ruins_of_the_finality.blade.2,type=block_display,tag=summon] at @s run scoreboard players set @s duration 20
+
+execute \
+    as @n[tag=weapon.ruins_of_the_finality.blade.2,type=block_display,tag=summon] at @s run \
+tp @s ^ ^ ^5
+
+execute \
+    as @n[tag=weapon.ruins_of_the_finality.blade.2,type=block_display,tag=summon] at @s run \
+scoreboard players set @s duration 20
 
 function players:hide/true {duration:10}
 spectate @n[tag=weapon.ruins_of_the_finality.blade.2,type=block_display,tag=summon]

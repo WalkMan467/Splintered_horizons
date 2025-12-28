@@ -2,4 +2,6 @@
 data modify storage aj:temp args set value {variant:'', animation:'', frame: 0}
 $execute store success score #success aj.i run data modify storage aj:temp args set value $(args)
 summon minecraft:item_display ~ ~ ~ { Tags:[ 'aj.new', 'aj.global.entity', 'aj.global.root', 'aj.screen_sneak.entity', 'aj.screen_sneak.root' ], teleport_duration: 0, interpolation_duration: 1, Passengers:[{id:"minecraft:item_display",Tags:["aj.new","aj.global.entity","aj.global.data","aj.screen_sneak.entity","aj.screen_sneak.data"],data:{rigHash:"3bdae359b8d0d25d7d5f941c30d0cbe8336d4c154cbbc51813381f688989eec9",locators:{},cameras:{camera:{posx:0f,posy:0f,posz:0f,rotx:0f,roty:0f}},uuids:{data_data:"",camera_camera:""}}}], }
-execute as @e[type=minecraft:item_display,tag=aj.new,limit=1,distance=..0.01] run function animated_java:screen_sneak/zzz/summon/as_root_entity
+
+execute \
+    as @e[type=minecraft:item_display,tag=aj.new,limit=1,distance=..0.01] run function animated_java:screen_sneak/zzz/summon/as_root_entity

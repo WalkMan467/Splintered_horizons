@@ -9,4 +9,7 @@ tp @n[tag=summon,tag=fx.ipe.ga,type=block_display] ~ ~ ~ ~ ~
 tag @n[tag=summon,tag=fx.ipe.ga,type=block_display] remove summon
 
 # loop
-execute if score #temp global.main matches ..360 rotated ~12 ~ run function particle:ink_painting_expansion/ground_ash/summon2
+
+execute \
+    if score #temp global.main matches ..360 rotated ~12 ~ run \
+function particle:ink_painting_expansion/ground_ash/summon2

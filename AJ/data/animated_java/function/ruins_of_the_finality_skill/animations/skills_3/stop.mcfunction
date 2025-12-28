@@ -2,5 +2,6 @@
 tag @s remove aj.ruins_of_the_finality_skill.animation.skills_3.playing
 scoreboard players set @s aj.skills_3.frame 0
 tag @s add aj.transforms_only
+
 execute at @s run function animated_java:ruins_of_the_finality_skill/animations/skills_3/zzz/set_frame {frame: 0}
 tag @s remove aj.transforms_only

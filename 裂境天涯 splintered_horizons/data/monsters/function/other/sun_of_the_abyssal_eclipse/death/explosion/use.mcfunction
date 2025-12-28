@@ -8,5 +8,11 @@ playsound minecraft:entity.warden.sonic_boom voice @a ~ ~1 ~ 1 1
 
 function monsters:other/sun_of_the_abyssal_eclipse/death/explosion/summon
 
-execute as @a[distance=..5,gamemode=!spectator,gamemode=!creative] at @s run function players:effect/ignite/use {duration:8}
-execute as @a[distance=..5,gamemode=!spectator,gamemode=!creative] run damage @s 6 explosion by @n[tag=monsters.sun_of_the_abyssal_eclipse,type=husk,distance=..7]
+
+execute \
+    as @a[distance=..5,gamemode=!spectator,gamemode=!creative] at @s run \
+function players:effect/ignite/use {duration:8}
+
+execute \
+    as @a[distance=..5,gamemode=!spectator,gamemode=!creative] run \
+damage @s 6 explosion by @n[tag=monsters.sun_of_the_abyssal_eclipse,type=husk,distance=..7]

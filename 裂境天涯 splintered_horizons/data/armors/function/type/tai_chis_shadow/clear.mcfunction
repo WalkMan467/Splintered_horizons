@@ -11,7 +11,10 @@
 
 advancement revoke @s only armors:type/tai_chis_shadow/clear
 
-execute unless score @s armor.tai_chis_shadow.effect matches 1.. run return 0
+
+execute \
+    unless score @s armor.tai_chis_shadow.effect matches 1.. run \
+return 0
 scoreboard players set @s armor.tai_chis_shadow.restore_mana 2
 scoreboard players operation @s armor.tai_chis_shadow.restore_mana *= @s armor.tai_chis_shadow.restore_mana_magnification
 

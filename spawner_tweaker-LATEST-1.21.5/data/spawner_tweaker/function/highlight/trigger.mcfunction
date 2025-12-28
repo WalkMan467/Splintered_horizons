@@ -6,7 +6,9 @@ scoreboard players set @s highlight_spawners 0
 
 #Figuring out which spawners are loaded
 scoreboard players set n temp 0
-execute store result score $total_spawners temp if data storage spawner_tweaker:temp Spawners[]
+
+execute store result score $total_spawners temp \
+    if data storage spawner_tweaker:temp Spawners[]
 data modify storage spawner_tweaker:temp highlight set from storage spawner_tweaker:temp Spawners
 data modify storage spawner_tweaker:temp highlight[0].n set value 0
 data modify storage spawner_tweaker:temp highlight[0].next set value 1
@@ -17,7 +19,9 @@ function spawner_tweaker:highlight/load_checker with storage spawner_tweaker:tem
 data remove storage spawner_tweaker:temp highlight[{loaded:0b}]
 
 #Go, my pretties! Make markers!
-execute if data storage spawner_tweaker:temp highlight[0] run function spawner_tweaker:highlight/create_marker_loop with storage spawner_tweaker:temp highlight[0]
+
+execute \
+    if data storage spawner_tweaker:temp highlight[0] run function spawner_tweaker:highlight/create_marker_loop with storage spawner_tweaker:temp highlight[0]
 
 #Begin killer ticking
 team join spawner_tweaker_gray @e[tag=st_highlight]

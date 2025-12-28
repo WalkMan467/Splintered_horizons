@@ -1,3 +1,12 @@
-execute if score @s player.actionbar.sys.forging_table.failure.id matches 1 run title @s actionbar {"translate": "sys.tp_book.failure.1","fallback": "首次進入安全區才能解鎖","color": "red","bold": true}
-execute if score @s player.actionbar.sys.forging_table.failure.id matches 2 run title @s actionbar {"translate": "sys.tp_book.failure.2","fallback": "尚未設置傳送位置，無法傳送","color": "red","bold": true}
-execute if score @s player.actionbar.sys.forging_table.failure.id matches 3.. run title @s actionbar {"translate": "sys.tp_book.failure.3","fallback": "傳送書暫時不能使用","color": "red","bold": true}
+
+execute \
+    if score @s player.actionbar.sys.forging_table.failure.id matches 1 run \
+title @s actionbar {"translate": "sys.tp_book.failure.1","fallback": "首次進入安全區才能解鎖","color": "red","bold": true}
+
+execute \
+    if score @s player.actionbar.sys.forging_table.failure.id matches 2 run \
+title @s actionbar {"translate": "sys.tp_book.failure.2","fallback": "尚未設置傳送位置，無法傳送","color": "red","bold": true}
+
+execute \
+    if score @s player.actionbar.sys.forging_table.failure.id matches 3.. run \
+title @s actionbar {"translate": "sys.tp_book.failure.3","fallback": "傳送書暫時不能使用","color": "red","bold": true}

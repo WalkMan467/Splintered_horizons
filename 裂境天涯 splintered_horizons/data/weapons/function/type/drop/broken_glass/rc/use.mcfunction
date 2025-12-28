@@ -7,7 +7,11 @@ summon minecraft:item_display ~ ~1 ~ {interpolation_duration:20,teleport_duratio
 
 scoreboard players set @n[tag=broken_glass.effect.spawn] duration 60
 
-execute as @n[tag=broken_glass.effect.spawn] at @s rotated as @p run tp @s ~ ~ ~ ~ ~
+
+execute \
+    as @n[tag=broken_glass.effect.spawn] at @s rotated \
+    as @p run \
+tp @s ~ ~ ~ ~ ~
 
 tag @n[tag=broken_glass.effect.spawn,limit=1] remove broken_glass.effect.spawn
 

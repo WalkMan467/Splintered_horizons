@@ -8,4 +8,6 @@ $data merge entity $(item_display_item_display7) {transformation: [0f,0f,0f,0f,0
 $data merge entity $(item_display_item_display8) {transformation: [0f,0f,0f,-0.25f,0f,0f,0f,1.4375f,0f,0f,0f,-3.5625f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(item_display_item_display9) {transformation: [-0.2323f,-0.3791f,0.0694f,0.3875f,-0.3042f,0.2301f,0.2388f,1.2625f,-0.4733f,0.1527f,-0.7501f,-2.5625f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(item_display_item_display10) {transformation: [0f,0f,0f,0f,0f,0f,0f,1.625f,0f,0f,0f,-0.9375f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
-execute on vehicle unless entity @s[tag=aj.transforms_only] at @s run function animated_java:portal/animations/idle/zzz/frames/20_root_commands
+
+execute on vehicle \
+    unless entity @s[tag=aj.transforms_only] at @s run function animated_java:portal/animations/idle/zzz/frames/20_root_commands

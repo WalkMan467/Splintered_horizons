@@ -4,4 +4,7 @@ particle dust_color_transition{from_color:[0.239,0.000,0.420],scale:1,to_color:[
 particle minecraft:enchant ^ ^1 ^4 0.1 0.1 0.1 0 2 normal @a
 particle minecraft:enchanted_hit ^ ^ ^1 ^ ^ ^1000000 0.0000025 0 force
 
-execute rotated ~3 0 if score #weapon.shadow_arrow.range global.main matches ..360 run function weapons:type/arrows/shadow_arrow/range
+
+execute rotated ~3 0 \
+    if score #weapon.shadow_arrow.range global.main matches ..360 run \
+function weapons:type/arrows/shadow_arrow/range

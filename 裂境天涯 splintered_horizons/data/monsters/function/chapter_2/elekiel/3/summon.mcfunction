@@ -12,6 +12,9 @@ bossbar set chapter_2.elekiel.3 players @a[distance=..60]
 function monsters:chapter_2/elekiel/3/fx
 function monsters:chapter_2/elekiel/3/tp
 
-execute as @a at @s run function monsters:chapter_2/elekiel/3/save_pos
+
+execute \
+    as @a at @s run \
+function monsters:chapter_2/elekiel/3/save_pos
 
 scoreboard players set global monster.elekiel.3.timer 15

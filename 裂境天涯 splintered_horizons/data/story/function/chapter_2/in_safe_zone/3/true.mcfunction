@@ -1,7 +1,13 @@
 scoreboard players set #story.chapter_2.in_safe_zone.3_temp global.main 1
 
-execute unless score story.chapter_2.in_safe_zone.ml story.chapter_2 matches 1620.. run return 0
-execute if score story.chapter_2.in_safe_zone.ml.3 story.chapter_2 matches 20.. run return 0
+
+execute \
+    unless score story.chapter_2.in_safe_zone.ml story.chapter_2 matches 1620.. run \
+return 0
+
+execute \
+    if score story.chapter_2.in_safe_zone.ml.3 story.chapter_2 matches 20.. run \
+return 0
 
 kill @e[type=#minecraft:dummy_mob,tag=story.chapter_2.in_safe_zone.3]
 

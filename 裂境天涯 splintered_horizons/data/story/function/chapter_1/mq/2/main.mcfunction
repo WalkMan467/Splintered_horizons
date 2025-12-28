@@ -9,7 +9,8 @@
     execute \
         positioned 1 64 -109 \
         as @n[tag=aj.sophia.root,limit=1,distance=..10,type=item_display] at @s \
-    facing entity @p[distance=..8] eyes run rotate @s ~ 0
+    facing entity @p[distance=..8] eyes run \
+rotate @s ~ 0
 
     # If true;
     execute \

@@ -1,3 +1,4 @@
+
 execute \
     if score @s sys.mini_game.hit_the_bullseye.main.id matches -2147483648..1 run \
 scoreboard players set @s sys.mini_game.hit_the_bullseye.main.id 1

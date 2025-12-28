@@ -13,7 +13,8 @@ Any spawner you interact with will be registered in storage and assigned an id. 
 
 You can prime all registered spawners using `/trigger prime_spawners set <ticks>` This works accross dimensions.<br>
 
-If you want to bulk edit spawners of a specific id, modify that spawner in your world (by placing a new one in the same spot, or by using /data modify), then select it with spawner tweaker. You will be prompted on how you would like to bulk edit spawners that share the same id. Please make sure to place modified spawners on the same block, or else it will be registered as a new id.<br>
+If you want to bulk edit spawners of a specific id, modify that spawner in your world (by placing a new one in the same spot, or by using /data modify), then select it with spawner tweaker. You will be prompted on how you would like to bulk edit spawners that share the same id. Please make sure to place modified spawners on the same block, or else it will be registered \
+    as a new id.<br>
 
 Alternatively, drop your spawner while tweaking the spawner you wish to modify. This will always force the menu open, along with providing options to highlight spawners and transform spawners into the held spawner's id.<br>
 
@@ -23,7 +24,8 @@ Alternatively, drop your spawner while tweaking the spawner you wish to modify. 
 `/trigger toggle_spawner_tweaker`<br>
 Enables/disables spawner tweaker for you (default is on)<br>
 `/trigger toggle_piercing_spawner_tweaker`<br>
-Toggles if spawner tweaker's raycast halts when hitting solid blocks (default is piercing)<br>
+Toggles \
+    if spawner tweaker's raycast halts when hitting solid blocks (default is piercing)<br>
 `/trigger give_spawner set <id>`<br>
 Gives you a placable spawner<br>
 `/trigger give_all_spawners`<br>
@@ -46,23 +48,30 @@ Default of -1 (meaning any id), resets on reload. Only shows spawners with this 
 Default of -1, cubical range to prime or update spawners in, with negative numbers being infinite (ex. 100 would be a 200 sized cube centered on the player)<br>
 `/scoreboard players set $reselect_ticks spawner_tweaker <ticks>`<br>
 Default of 20, minimum of 1. How many ticks it takes for tweaker to select a new spawner<br>
-`/execute positioned <x> <y> <z> run function spawner_tweaker:bulk_edit/trigger_update`<br>
+`/execute \
+    positioned <x> <y> <z> run function spawner_tweaker:bulk_edit/trigger_update`<br>
 Forces an id update for the spawner at that location (updates SpawnPotentials for that id)<br>
-`/execute positioned <x> <y> <z> run function spawner_tweaker:bulk_edit/trigger_bse`<br>
+`/execute \
+    positioned <x> <y> <z> run function spawner_tweaker:bulk_edit/trigger_bse`<br>
 Forces a bulk spawner edit for the spawner at that location (updates all spawner attributes for that id)<br>
 `/tag @s add st_reset_settings`<br>
 This tag will always set the setting to Player Range when re-entering tweaking mode (default off)<br>
 `/scoreboard players set $efficient_data spawner_tweaker 1`<br>
 1 or 0, default 1. Wheather or not to delete unnecessary data in spawners when priming. Useful for reducing lag when publishing maps.<br>
 `/scoreboard players set $data_population spawner_tweaker 1`<br>
-1 or 0, default 1. Wheather or not to populate spawner data when priming/bulk editing; no mob will appear in the spawner until a player gets in range, useful if you use weights or want this effect.<br>
+1 or 0, default 1. Wheather or not to populate spawner data when priming/bulk editing; no mob will appear in the spawner until a player gets in range, useful \
+    if you use weights or want this effect.<br>
 
 ### Spawner and Chest Randomizer
 **ALWAYS MAKE BACKUPS WHEN USING RANDOMIZERS**<br>
-Spawner Tweaker comes with randomizer capabilities. Randomized spawners have their potentials and SpawnData randomized, but not other aspects such as player range, delay, and count. Container (chest) randomization swaps the contents or loot tables of all registered containers. Containers register into the sys just as spawners do--either passively while looking around or by running volume checks.<br>
+Spawner Tweaker comes with randomizer capabilities. Randomized spawners have their potentials and SpawnData randomized, but not other aspects such \
+    as player range, delay, and count. Container (chest) randomization swaps the contents or loot tables of all registered containers. Containers register into the sys just \
+    as spawners do--either passively while looking around or by running volume checks.<br>
 Before using the randomizer, make sure you first:<br>
-* Remove problematic spawners (such as anti-cheese or potion) with `/trigger delete_spawner_id set <id>`, see all map spawners with `/trigger give_all_spawners`
-* Remove problematic chests (such as dev chests and fleecy boxes) with `/trigger delete_nearby_chests set <range>`<br>
+* Remove problematic spawners (such \
+    as anti-cheese or potion) with `/trigger delete_spawner_id set <id>`, see all map spawners with `/trigger give_all_spawners`
+* Remove problematic chests (such \
+    as dev chests and fleecy boxes) with `/trigger delete_nearby_chests set <range>`<br>
 
 You may now run the chest and spawner randomizer functions.<br>
 
@@ -71,7 +80,8 @@ Sets the seed for the randomizer. If unassigned, a random seed will be chosen.<b
 `/function spawner_tweaker:randomizer/randomize_equally`<br>
 Each spawner will choose a random id with equal probability.<br>
 `/function spawner_tweaker:randomizer/randomize_weighted`<br>
-Spawners in the map will be randomized, but keep their id distribution (so if your original map has 5 skeleton and 10 zombie spawners, the randomizer will have 5 sekeleton and 10 zombie spawners total).<br>
+Spawners in the map will be randomized, but keep their id distribution (so \
+    if your original map has 5 skeleton and 10 zombie spawners, the randomizer will have 5 sekeleton and 10 zombie spawners total).<br>
 `/function spawner_tweaker:chests/randomizer/randomize`<br>
 Randomizes all loot containers in the map (a loot container is any chest, barrel, or shulker that has item or a loot table)<br>
 `/trigger delete_nearby_chests set <range>`<br>

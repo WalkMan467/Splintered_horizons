@@ -1,3 +1,4 @@
+
 execute \
     unless entity @s[tag=monster.elekiel_phase_2.void.target] run \
 return 0

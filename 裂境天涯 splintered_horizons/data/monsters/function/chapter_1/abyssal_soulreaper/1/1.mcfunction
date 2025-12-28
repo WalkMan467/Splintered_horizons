@@ -1,5 +1,7 @@
 scoreboard players reset #monster.abyssal_soulreaper.fx particle
-execute rotated ~ 0 run function monsters:chapter_1/abyssal_soulreaper/1/fx
+
+execute rotated ~ 0 run \
+function monsters:chapter_1/abyssal_soulreaper/1/fx
 
 playsound minecraft:block.trial_spawner.ominous_activate voice @a ~ ~1 ~ 1 1
 playsound minecraft:block.note_block.basedrum voice @a ~ ~1 ~ 1 1
@@ -11,4 +13,7 @@ ride @n[type=item_display,tag=monsters.abyssal_soulreaper.1.display,tag=summon] 
 scoreboard players set @n[tag=main.duration.timer,tag=summon,type=marker] duration 8
 tag @n[tag=main.duration.timer,tag=summon,type=marker,distance=..3] remove summon
 
-execute as @a[distance=..8] run function monsters:chapter_1/abyssal_soulreaper/effect/bleeding/use
+
+execute \
+    as @a[distance=..8] run \
+function monsters:chapter_1/abyssal_soulreaper/effect/bleeding/use

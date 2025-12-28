@@ -9,5 +9,9 @@ tag @s add monsters.lord_of_the_cataclysm
 tag @s add monster
 tag @s add freeze.immunity
 
-execute store result score @s monster.skill.rdm.skill run random value 1..2
-execute store result score @s monster.skill.cast.cd run random value 60..100
+
+execute store result score @s monster.skill.rdm.skill run \
+random value 1..2
+
+execute store result score @s monster.skill.cast.cd run \
+random value 60..100
