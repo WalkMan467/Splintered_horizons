@@ -4,6 +4,4 @@ kill @n[tag=aj.ruins_of_the_finality_skill.camera,type=minecraft:item_display]
 tag @p[tag=weapon.ruins_of_the_finality.blade.1.animation] remove weapon.ruins_of_the_finality.blade.1.animation
 tag @p[tag=weapon.ruins_of_the_finality.blade.1.user] remove weapon.ruins_of_the_finality.blade.1.user
 function animated_java:ruins_of_the_finality_skill/remove/this
-
-execute \
-    as @p[tag=weapon.ruins_of_the_finality.animation.player] run function weapons:type/scythe/ruins_of_the_finality/rc/animation/2/reset
+execute as @p[tag=weapon.ruins_of_the_finality.animation.player] run function weapons:type/scythe/ruins_of_the_finality/rc/animation/2/reset

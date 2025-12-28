@@ -5,10 +5,7 @@ $scoreboard players set @s aj.tween_duration $(duration)
 $scoreboard players set @s aj.skills.frame $(to_frame)
 scoreboard players operation #this aj.i = @s aj.tween_duration
 tag @s add aj.transforms_only
-
 execute at @s run function animated_java:ruins_of_the_finality_skill/animations/skills/zzz/apply_frame {frame: 0}
 $execute at @s run function animated_java:ruins_of_the_finality_skill/animations/skills/zzz/apply_frame {frame: $(to_frame)}
 tag @s remove aj.transforms_only
-
-execute on passengers \
-    store result entity @s interpolation_duration int 1 run scoreboard players get #this aj.i
+execute on passengers store result entity @s interpolation_duration int 1 run scoreboard players get #this aj.i

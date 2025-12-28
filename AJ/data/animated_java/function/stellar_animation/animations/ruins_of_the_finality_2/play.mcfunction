@@ -3,6 +3,5 @@ function animated_java:stellar_animation/animations/pause_all
 tag @s add aj.stellar_animation.animation.ruins_of_the_finality_2.playing
 scoreboard players set @s aj.ruins_of_the_finality_2.frame 0
 tag @s add aj.transforms_only
-
 execute at @s run function animated_java:stellar_animation/animations/ruins_of_the_finality_2/zzz/set_frame {frame: 0}
 tag @s remove aj.transforms_only

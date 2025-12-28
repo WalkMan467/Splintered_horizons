@@ -2,6 +2,5 @@
 function animated_java:stellar_animation/animations/pause_all
 scoreboard players set @s aj.earthquake_axe2.frame 0
 tag @s add aj.transforms_only
-
 execute at @s run function animated_java:stellar_animation/animations/earthquake_axe2/zzz/set_frame {frame: 0}
 tag @s remove aj.transforms_only

@@ -3,6 +3,5 @@ function animated_java:boss_1/animations/pause_all
 tag @s add aj.boss_1.animation.cutscene_attack.playing
 scoreboard players set @s aj.cutscene_attack.frame 0
 tag @s add aj.transforms_only
-
 execute at @s run function animated_java:boss_1/animations/cutscene_attack/zzz/set_frame {frame: 0}
 tag @s remove aj.transforms_only

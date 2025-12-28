@@ -6,8 +6,6 @@ $data modify storage spawner_tweaker:temp variables.name set from storage spawne
 
 #Rewrite
 $data remove storage spawner_tweaker:temp Ids[{id:$(id)}]
-
-execute \
-    if data storage spawner_tweaker:temp variables.name run data modify storage spawner_tweaker:temp update_to.name set from storage spawner_tweaker:temp variables.name
+execute if data storage spawner_tweaker:temp variables.name run data modify storage spawner_tweaker:temp update_to.name set from storage spawner_tweaker:temp variables.name
 data modify storage spawner_tweaker:temp Ids append from storage spawner_tweaker:temp update_to
 

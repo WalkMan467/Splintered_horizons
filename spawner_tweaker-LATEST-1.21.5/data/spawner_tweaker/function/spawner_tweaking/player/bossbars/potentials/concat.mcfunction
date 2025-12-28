@@ -9,6 +9,4 @@ data remove storage spawner_tweaker:temp potentials.potentials[0]
 data modify storage spawner_tweaker:temp potentials.potentials[0].concat set from storage spawner_tweaker:temp potentials.name
 
 #Looping
-
-execute \
-    if data storage spawner_tweaker:temp potentials.potentials[0] run function spawner_tweaker:spawner_tweaking/player/bossbars/potentials/concat with storage spawner_tweaker:temp potentials.potentials[0]
+execute if data storage spawner_tweaker:temp potentials.potentials[0] run function spawner_tweaker:spawner_tweaking/player/bossbars/potentials/concat with storage spawner_tweaker:temp potentials.potentials[0]

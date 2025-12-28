@@ -2,6 +2,4 @@
 $data merge entity $(item_display_item_display) {transformation: [-0.375f,0f,0f,0f,0f,0.375f,0f,1.3125f,0f,0f,-0.375f,0.625f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(block_display_block_display) {transformation: [-1f,0f,0f,0f,0f,1f,0f,1.4375f,0f,0f,-1f,1.4375f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 data modify entity @s data merge value {"cameras":{"camera3":{"px":-1.3777276490407724e-16,"py":1.4375,"pz":1.125,"ry":180,"rx":-7.016709298534878e-15}},"locators":{}}
-
-execute on vehicle \
-    unless entity @s[tag=aj.transforms_only] at @s run function animated_java:stellar_animation/animations/ruins_of_the_finality_2/zzz/frames/9_root_function
+execute on vehicle unless entity @s[tag=aj.transforms_only] at @s run function animated_java:stellar_animation/animations/ruins_of_the_finality_2/zzz/frames/9_root_function

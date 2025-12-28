@@ -2,6 +2,5 @@
 function animated_java:isokla/animations/pause_all
 scoreboard players set @s aj.cutscene_chapter_2_1_safe_area_1.frame 0
 tag @s add aj.transforms_only
-
 execute at @s run function animated_java:isokla/animations/cutscene_chapter_2_1_safe_area_1/zzz/set_frame {frame: 0}
 tag @s remove aj.transforms_only

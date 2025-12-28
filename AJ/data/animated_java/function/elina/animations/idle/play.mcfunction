@@ -3,6 +3,5 @@ function animated_java:elina/animations/pause_all
 tag @s add aj.elina.animation.idle.playing
 scoreboard players set @s aj.idle.frame 0
 tag @s add aj.transforms_only
-
 execute at @s run function animated_java:elina/animations/idle/zzz/set_frame {frame: 0}
 tag @s remove aj.transforms_only

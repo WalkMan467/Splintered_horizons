@@ -2,6 +2,5 @@
 tag @s add aj.ruins_of_the_end_2.animation.ruins_of_the_end_2.playing
 scoreboard players set @s aj.ruins_of_the_end_2.frame 0
 tag @s add aj.transforms_only
-
 execute at @s run function animated_java:ruins_of_the_end_2/animations/ruins_of_the_end_2/zzz/set_frame {frame: 0}
 tag @s remove aj.transforms_only

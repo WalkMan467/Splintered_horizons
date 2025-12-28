@@ -2,9 +2,7 @@
 
 #Set up storage
 data modify storage spawner_tweaker:temp give set value {id:-1}
-
-execute \
-    store result storage spawner_tweaker:temp give.id int 1 run scoreboard players get @s give_spawner
+execute store result storage spawner_tweaker:temp give.id int 1 run scoreboard players get @s give_spawner
 
 #Begin getting needed variables
 tag @s add st_give_single

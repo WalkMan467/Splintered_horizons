@@ -7,5 +7,4 @@ scoreboard objectives remove aj.attack_2.frame
 scoreboard objectives remove aj.back.frame
 scoreboard objectives remove aj.idle.frame
 scoreboard objectives remove aj.cutscene_attack.frame
-tellraw @a [{color:'gray',text:'\n '},{color:'#00aced',text:'ᴀɴɪᴍᴀᴛᴇᴅ ᴊᴀᴠᴀ'},{color:'dark_gray',italic:true,text:'\n (animated_java:boss_1)'},'\n → ',{color:'green',text:'Successfully uninstalled '},{color:'yellow',text:'boss_1'},{color:'green',text:'!'},{color:'gray',italic:true,text:'\n If you have exported multiple times, you may have to remove objectives from previous exports manually, \
-    as Animated Java only knows about the objectives from the most recent export.'},'\n']
+tellraw @a [{color:'gray',text:'\n '},{color:'#00aced',text:'ᴀɴɪᴍᴀᴛᴇᴅ ᴊᴀᴠᴀ'},{color:'dark_gray',italic:true,text:'\n (animated_java:boss_1)'},'\n → ',{color:'green',text:'Successfully uninstalled '},{color:'yellow',text:'boss_1'},{color:'green',text:'!'},{color:'gray',italic:true,text:'\n If you have exported multiple times, you may have to remove objectives from previous exports manually, as Animated Java only knows about the objectives from the most recent export.'},'\n']

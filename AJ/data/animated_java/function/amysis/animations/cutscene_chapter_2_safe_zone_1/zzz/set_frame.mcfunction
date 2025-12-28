@@ -16,6 +16,5 @@ $execute on passengers run data modify entity @s[tag=aj.amysis.node.4] {} merge 
 $execute on passengers run data modify entity @s[tag=aj.amysis.node.3] {} merge from storage aj.amysis:animations cutscene_chapter_2_safe_zone_1.$(frame).b_3
 $execute on passengers run data modify entity @s[tag=aj.amysis.node.8] {} merge from storage aj.amysis:animations cutscene_chapter_2_safe_zone_1.$(frame).b_8
 $execute on passengers run data modify entity @s[tag=aj.amysis.node.7] {} merge from storage aj.amysis:animations cutscene_chapter_2_safe_zone_1.$(frame).b_7
-
 execute on passengers run data modify entity @s[tag=!aj.global.data] start_interpolation set value -1
 return 1

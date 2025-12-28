@@ -11,10 +11,7 @@ data modify storage spawner_tweaker:temp container_checker set from storage spaw
 scoreboard players set chests_randomized st_priming 0
 scoreboard players set chests_checked st_priming 0
 scoreboard players add total_chests st_priming 0
-
-execute \
-    store result score total_chests st_priming \
-    if data storage spawner_tweaker:temp container_checker[]
+execute store result score total_chests st_priming if data storage spawner_tweaker:temp container_checker[]
 
 #Figuring out which chests must be foreloaded
 scoreboard players set n temp 0

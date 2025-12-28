@@ -3,183 +3,111 @@ data modify entity @s data.uuids append from storage animated_java:gu out
 function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.data_data set from storage animated_java:gu out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.kyle.node.layer] run function animated_java:global/gu/get_entity_uuid_string
+execute on vehicle on passengers if entity @s[tag=aj.kyle.node.layer] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_layer set from storage animated_java:gu out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.kyle.node.head] run function animated_java:global/gu/get_entity_uuid_string
+execute on vehicle on passengers if entity @s[tag=aj.kyle.node.head] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_head set from storage animated_java:gu out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.kyle.node.6] run function animated_java:global/gu/get_entity_uuid_string
+execute on vehicle on passengers if entity @s[tag=aj.kyle.node.6] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_6 set from storage animated_java:gu out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.kyle.node.12] run function animated_java:global/gu/get_entity_uuid_string
+execute on vehicle on passengers if entity @s[tag=aj.kyle.node.12] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_12 set from storage animated_java:gu out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.kyle.node.group3] run function animated_java:global/gu/get_entity_uuid_string
+execute on vehicle on passengers if entity @s[tag=aj.kyle.node.group3] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_group3 set from storage animated_java:gu out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.kyle.node.group1] run function animated_java:global/gu/get_entity_uuid_string
+execute on vehicle on passengers if entity @s[tag=aj.kyle.node.group1] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_group1 set from storage animated_java:gu out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.kyle.node.group4] run function animated_java:global/gu/get_entity_uuid_string
+execute on vehicle on passengers if entity @s[tag=aj.kyle.node.group4] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_group4 set from storage animated_java:gu out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.kyle.node.group2] run function animated_java:global/gu/get_entity_uuid_string
+execute on vehicle on passengers if entity @s[tag=aj.kyle.node.group2] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_group2 set from storage animated_java:gu out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.kyle.node.10] run function animated_java:global/gu/get_entity_uuid_string
+execute on vehicle on passengers if entity @s[tag=aj.kyle.node.10] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_10 set from storage animated_java:gu out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.kyle.node.9] run function animated_java:global/gu/get_entity_uuid_string
+execute on vehicle on passengers if entity @s[tag=aj.kyle.node.9] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_9 set from storage animated_java:gu out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.kyle.node.bone12] run function animated_java:global/gu/get_entity_uuid_string
+execute on vehicle on passengers if entity @s[tag=aj.kyle.node.bone12] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_bone12 set from storage animated_java:gu out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.kyle.node.bone1] run function animated_java:global/gu/get_entity_uuid_string
+execute on vehicle on passengers if entity @s[tag=aj.kyle.node.bone1] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_bone1 set from storage animated_java:gu out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.kyle.node.2] run function animated_java:global/gu/get_entity_uuid_string
+execute on vehicle on passengers if entity @s[tag=aj.kyle.node.2] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_2 set from storage animated_java:gu out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.kyle.node.bone2] run function animated_java:global/gu/get_entity_uuid_string
+execute on vehicle on passengers if entity @s[tag=aj.kyle.node.bone2] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_bone2 set from storage animated_java:gu out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.kyle.node.1] run function animated_java:global/gu/get_entity_uuid_string
+execute on vehicle on passengers if entity @s[tag=aj.kyle.node.1] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_1 set from storage animated_java:gu out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.kyle.node.4] run function animated_java:global/gu/get_entity_uuid_string
+execute on vehicle on passengers if entity @s[tag=aj.kyle.node.4] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_4 set from storage animated_java:gu out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.kyle.node.group5] run function animated_java:global/gu/get_entity_uuid_string
+execute on vehicle on passengers if entity @s[tag=aj.kyle.node.group5] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_group5 set from storage animated_java:gu out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.kyle.node.group7] run function animated_java:global/gu/get_entity_uuid_string
+execute on vehicle on passengers if entity @s[tag=aj.kyle.node.group7] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_group7 set from storage animated_java:gu out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.kyle.node.group6] run function animated_java:global/gu/get_entity_uuid_string
+execute on vehicle on passengers if entity @s[tag=aj.kyle.node.group6] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_group6 set from storage animated_java:gu out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.kyle.node.group8] run function animated_java:global/gu/get_entity_uuid_string
+execute on vehicle on passengers if entity @s[tag=aj.kyle.node.group8] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_group8 set from storage animated_java:gu out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.kyle.node.group9] run function animated_java:global/gu/get_entity_uuid_string
+execute on vehicle on passengers if entity @s[tag=aj.kyle.node.group9] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_group9 set from storage animated_java:gu out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.kyle.node.group10] run function animated_java:global/gu/get_entity_uuid_string
+execute on vehicle on passengers if entity @s[tag=aj.kyle.node.group10] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_group10 set from storage animated_java:gu out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.kyle.node.group11] run function animated_java:global/gu/get_entity_uuid_string
+execute on vehicle on passengers if entity @s[tag=aj.kyle.node.group11] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_group11 set from storage animated_java:gu out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.kyle.node.group12] run function animated_java:global/gu/get_entity_uuid_string
+execute on vehicle on passengers if entity @s[tag=aj.kyle.node.group12] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_group12 set from storage animated_java:gu out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.kyle.node.group13] run function animated_java:global/gu/get_entity_uuid_string
+execute on vehicle on passengers if entity @s[tag=aj.kyle.node.group13] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_group13 set from storage animated_java:gu out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.kyle.node.group14] run function animated_java:global/gu/get_entity_uuid_string
+execute on vehicle on passengers if entity @s[tag=aj.kyle.node.group14] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_group14 set from storage animated_java:gu out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.kyle.node.group15] run function animated_java:global/gu/get_entity_uuid_string
+execute on vehicle on passengers if entity @s[tag=aj.kyle.node.group15] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_group15 set from storage animated_java:gu out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.kyle.node.group16] run function animated_java:global/gu/get_entity_uuid_string
+execute on vehicle on passengers if entity @s[tag=aj.kyle.node.group16] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_group16 set from storage animated_java:gu out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.kyle.node.group17] run function animated_java:global/gu/get_entity_uuid_string
+execute on vehicle on passengers if entity @s[tag=aj.kyle.node.group17] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_group17 set from storage animated_java:gu out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.kyle.node.group18] run function animated_java:global/gu/get_entity_uuid_string
+execute on vehicle on passengers if entity @s[tag=aj.kyle.node.group18] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_group18 set from storage animated_java:gu out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.kyle.node.group19] run function animated_java:global/gu/get_entity_uuid_string
+execute on vehicle on passengers if entity @s[tag=aj.kyle.node.group19] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_group19 set from storage animated_java:gu out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.kyle.node.group20] run function animated_java:global/gu/get_entity_uuid_string
+execute on vehicle on passengers if entity @s[tag=aj.kyle.node.group20] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_group20 set from storage animated_java:gu out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.kyle.node.bone11] run function animated_java:global/gu/get_entity_uuid_string
+execute on vehicle on passengers if entity @s[tag=aj.kyle.node.bone11] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_bone11 set from storage animated_java:gu out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.kyle.node.3] run function animated_java:global/gu/get_entity_uuid_string
+execute on vehicle on passengers if entity @s[tag=aj.kyle.node.3] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_3 set from storage animated_java:gu out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.kyle.node.8] run function animated_java:global/gu/get_entity_uuid_string
+execute on vehicle on passengers if entity @s[tag=aj.kyle.node.8] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_8 set from storage animated_java:gu out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.kyle.node.7] run function animated_java:global/gu/get_entity_uuid_string
+execute on vehicle on passengers if entity @s[tag=aj.kyle.node.7] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_7 set from storage animated_java:gu out

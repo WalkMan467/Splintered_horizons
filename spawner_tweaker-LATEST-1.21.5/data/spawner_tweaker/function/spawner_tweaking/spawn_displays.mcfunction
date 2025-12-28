@@ -1,5 +1,4 @@
-#Spawns the needed displays \
-    if they do not exist
+#Spawns the needed displays if they do not exist
 
 #Main rotating glass display
 summon item_display ~ ~ ~ {Tags:["st_display","st_glass","st_uninitialized"],Glowing:1b,width:100f,height:100f,interpolation_duration:5,teleport_duration:11,brightness:{sky:15,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.01f,1.01f,1.01f]},item:{id:"minecraft:glass",count:1b}}
@@ -31,27 +30,13 @@ summon text_display ~ ~ ~ {Glowing:1b,view_range:100f,width:100f,height:100f,bil
 summon text_display ~ ~ ~ {Glowing:1b,view_range:100f,width:100f,height:100f,billboard:"vertical",start_interpolation:-1,interpolation_duration:2,teleport_duration:12,text_opacity:120,Rotation:[0F,90F],Tags:["st_display","st_radius_x2","st_radius_x","st_radius","st_uninitialized"],brightness:{sky:15,block:15},transformation:[0.1f,0f,0f,0f,0f,0.1f,0f,0f,0f,0f,0.1f,0f,0f,0f,0f,1f],text:{"color":"red","italic":false,"text":"⬤"},background:16711680}
 
 #Player interactions
-
-execute \
-    if entity @s[tag=!st_multiple_select] run summon interaction ~ ~ ~ {width:5.0f,height:2.0f,response:0b,Tags:["spawner_interaction","top","st_uninitialized"]}
-
-execute \
-    if entity @s[tag=!st_multiple_select] run summon interaction ~ ~ ~ {width:5.0f,height:2.0f,response:0b,Tags:["spawner_interaction","bottom","st_uninitialized"]}
+execute if entity @s[tag=!st_multiple_select] run summon interaction ~ ~ ~ {width:5.0f,height:2.0f,response:0b,Tags:["spawner_interaction","top","st_uninitialized"]}
+execute if entity @s[tag=!st_multiple_select] run summon interaction ~ ~ ~ {width:5.0f,height:2.0f,response:0b,Tags:["spawner_interaction","bottom","st_uninitialized"]}
 
 #Assign ids and scores
-
-execute \
-    store result score random temp run random value -100..100
-
-execute \
-    as @e[tag=st_glass] \
-    if score @s spawner_tweaker_offset = random temp \
-    store result score random temp run random value -100..100
-
-execute \
-    store result score @e[distance=..0.1,tag=st_uninitialized,tag=st_glass] spawner_tweaker_offset run scoreboard players get random temp
+execute store result score random temp run random value -100..100
+execute as @e[tag=st_glass] if score @s spawner_tweaker_offset = random temp store result score random temp run random value -100..100
+execute store result score @e[distance=..0.1,tag=st_uninitialized,tag=st_glass] spawner_tweaker_offset run scoreboard players get random temp
 scoreboard players operation @e[distance=..0.1,tag=st_uninitialized] spawner_tweaker_id = tweaker_id spawner_tweaker
-
-execute \
-    if entity @s[tag=st_multiple_select] run tag @e[distance=..0.1,tag=st_uninitialized] add st_multiple_select
+execute if entity @s[tag=st_multiple_select] run tag @e[distance=..0.1,tag=st_uninitialized] add st_multiple_select
 tag @e[distance=..0.1,tag=st_uninitialized] remove st_uninitialized

@@ -2,6 +2,4 @@
 data modify storage aj:temp args.uuid set from entity @s data.cameras.$(name)
 scoreboard players set #aj.check aj.i 0
 function animated_java:screen_sneak/zzz/as_camera/execute_as_uuid with storage aj:temp args
-
-execute \
-    if score #aj.check aj.i matches 0 run tellraw @a [[{"text":"\n[","color":"gray"},{"text":"AJ","color":"aqua"},"] ",[{"text":"(from ","color":"gray","italic":true},"screen_sneak",")"]," -> "],{"text":"Camera ","color":"red"},{"nbt":"args.name","storage":"aj:temp","color":"aqua"},{"text":" not found!","color":"red"},{"text":"\nPlease ensure that it's name is spelled correctly.","color":"gray","italic":true},["\n"]]
+execute if score #aj.check aj.i matches 0 run tellraw @a [[{"text":"\n[","color":"gray"},{"text":"AJ","color":"aqua"},"] ",[{"text":"(from ","color":"gray","italic":true},"screen_sneak",")"]," -> "],{"text":"Camera ","color":"red"},{"nbt":"args.name","storage":"aj:temp","color":"aqua"},{"text":" not found!","color":"red"},{"text":"\nPlease ensure that it's name is spelled correctly.","color":"gray","italic":true},["\n"]]

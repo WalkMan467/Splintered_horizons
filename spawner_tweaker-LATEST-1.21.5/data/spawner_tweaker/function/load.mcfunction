@@ -4,15 +4,9 @@
 # say Link's Spawner Tweaker loaded
 
 #Fix visuals of volume
-
-execute \
-    unless score $st_ongoing_process temp matches 4 run kill 18c359ed-00ca-4242-9e49-91cd8846f33a
-
-execute \
-    unless score $st_ongoing_process temp matches 4 run scoreboard players set $pos1_set st_volume 0
-
-execute \
-    unless score $st_ongoing_process temp matches 4 run scoreboard players set $pos2_set st_volume 0
+execute unless score $st_ongoing_process temp matches 4 run kill 18c359ed-00ca-4242-9e49-91cd8846f33a
+execute unless score $st_ongoing_process temp matches 4 run scoreboard players set $pos1_set st_volume 0
+execute unless score $st_ongoing_process temp matches 4 run scoreboard players set $pos2_set st_volume 0
 
 #Scoreboards
 scoreboard objectives add temp dummy
@@ -41,28 +35,13 @@ scoreboard objectives add st_volume dummy
 
 #Scores
 scoreboard players set $highlight_id spawner_tweaker -1
-
-execute \
-    unless score setup spawner_tweaker matches 6.. \
-    unless score $reselect_ticks spawner_tweaker matches ..19 run scoreboard players set $reselect_ticks spawner_tweaker 5
-
-execute \
-    unless score setup spawner_tweaker matches 4.. run scoreboard players set $data_population spawner_tweaker 1
-
-execute \
-    unless score setup spawner_tweaker matches 4.. run scoreboard players set $search_range spawner_tweaker 6
-
-execute \
-    unless score setup spawner_tweaker matches 4.. run scoreboard players set $modification_limit spawner_tweaker 20
-
-execute \
-    unless score setup spawner_tweaker matches 1.. run scoreboard players set $efficient_data spawner_tweaker 1
-
-execute \
-    unless score setup spawner_tweaker matches 4.. run scoreboard players set $prime_range spawner_tweaker -1
-
-execute \
-    unless score setup spawner_tweaker matches 7.. run scoreboard players set $randomizer_seed spawner_tweaker 0
+execute unless score setup spawner_tweaker matches 6.. unless score $reselect_ticks spawner_tweaker matches ..19 run scoreboard players set $reselect_ticks spawner_tweaker 5
+execute unless score setup spawner_tweaker matches 4.. run scoreboard players set $data_population spawner_tweaker 1
+execute unless score setup spawner_tweaker matches 4.. run scoreboard players set $search_range spawner_tweaker 6
+execute unless score setup spawner_tweaker matches 4.. run scoreboard players set $modification_limit spawner_tweaker 20
+execute unless score setup spawner_tweaker matches 1.. run scoreboard players set $efficient_data spawner_tweaker 1
+execute unless score setup spawner_tweaker matches 4.. run scoreboard players set $prime_range spawner_tweaker -1
+execute unless score setup spawner_tweaker matches 7.. run scoreboard players set $randomizer_seed spawner_tweaker 0
 scoreboard players set setup spawner_tweaker 7
 
 scoreboard players set -1 numbers -1

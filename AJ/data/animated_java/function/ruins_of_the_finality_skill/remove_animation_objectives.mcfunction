@@ -2,5 +2,4 @@
 scoreboard objectives remove aj.skills.frame
 scoreboard objectives remove aj.skills_2.frame
 scoreboard objectives remove aj.skills_3.frame
-tellraw @a [[{"text":"\n[","color":"gray"},{"text":"AJ","color":"aqua"},"] ",[{"text":"(from ","color":"gray","italic":true},"ruins_of_the_finality_skill",")"]," -> "],{"text":"Successfully removed known animation scoreboard objectives.","color":"red"},{"text":"\nIf you have exported multiple times you may have to manually remove some objectives from previous exports manually, \
-    as Animated Java can only remove the latest export's objectives.","color":"gray","italic":true},["\n"]]
+tellraw @a [[{"text":"\n[","color":"gray"},{"text":"AJ","color":"aqua"},"] ",[{"text":"(from ","color":"gray","italic":true},"ruins_of_the_finality_skill",")"]," -> "],{"text":"Successfully removed known animation scoreboard objectives.","color":"red"},{"text":"\nIf you have exported multiple times you may have to manually remove some objectives from previous exports manually, as Animated Java can only remove the latest export's objectives.","color":"gray","italic":true},["\n"]]

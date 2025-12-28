@@ -2,364 +2,184 @@
 function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.data_data set from storage aj:uuid main.out
 summon minecraft:item_display ^0 ^1.25 ^1.5625 {Tags:["aj.global.camera","aj.global.entity","aj.global.node","aj.global.node.camera2","aj.global.root.child","aj.global.root.child.camera","aj.new","aj.ruins_of_the_finality_skill.camera","aj.ruins_of_the_finality_skill.camera.camera2","aj.ruins_of_the_finality_skill.entity","aj.ruins_of_the_finality_skill.node","aj.ruins_of_the_finality_skill.node.camera2"], teleport_duration: 2}
-
-execute \
-    as @n[ type=minecraft:item_display, tag=aj.new, tag=aj.ruins_of_the_finality_skill.camera.camera2, distance=..5 ] run function animated_java:ruins_of_the_finality_skill/zzz/summon/as_data_entity/as_camera/camera2
+execute as @n[ type=minecraft:item_display, tag=aj.new, tag=aj.ruins_of_the_finality_skill.camera.camera2, distance=..5 ] run function animated_java:ruins_of_the_finality_skill/zzz/summon/as_data_entity/as_camera/camera2
 data modify entity @s data.uuids.camera_camera2 set from storage aj:uuid main.out
 data modify entity @s data.cameras.camera2.uuid set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.layer] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.layer] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_layer set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.head] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.head] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_head set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.6] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.6] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_6 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.12] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.12] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_12 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.10] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.10] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_10 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.9] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.9] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_9 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group2] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group2] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group2 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group3] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group3] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group3 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group4] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group4] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group4 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group7] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group7] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group7 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group8] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group8] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group8 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group9] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group9] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group9 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group10] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group10] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group10 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.plate] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.plate] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_plate set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group12] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group12] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group12 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group13] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group13] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group13 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group14] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group14] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group14 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group17] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group17] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group17 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group18] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group18] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group18 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group19] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group19] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group19 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group20] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group20] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group20 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.plate1] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.plate1] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_plate1 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group21] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group21] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group21 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group22] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group22] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group22 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group23] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group23] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group23 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group26] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group26] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group26 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group27] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group27] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group27 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group28] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group28] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group28 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.plate2] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.plate2] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_plate2 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group31] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group31] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group31 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group32] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group32] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group32 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group36] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group36] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group36 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.plate3] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.plate3] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_plate3 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group40] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group40] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group40 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group41] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group41] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group41 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group45] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group45] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group45 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.plate4] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.plate4] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_plate4 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group49] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group49] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group49 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group50] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group50] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group50 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group54] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group54] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group54 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.plate5] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.plate5] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_plate5 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group58] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group58] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group58 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group59] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group59] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group59 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.plate6] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.plate6] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_plate6 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group66] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group66] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group66 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group67] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group67] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group67 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group68] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group68] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group68 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group71] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group71] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group71 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group72] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group72] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group72 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group73] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group73] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group73 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group74] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group74] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group74 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.plate7] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.plate7] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_plate7 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group75] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group75] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group75 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group76] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group76] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group76 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group77] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group77] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group77 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group80] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group80] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group80 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group81] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group81] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group81 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group82] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group82] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group82 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group83] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group83] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group83 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.plate8] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.plate8] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_plate8 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group85] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group85] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group85 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group87] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group87] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group87 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group88] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group88] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group88 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group92] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group92] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group92 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.plate9] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.plate9] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_plate9 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group96] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group96] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group96 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group97] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group97] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group97 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group95] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group95] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group95 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group1] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group1] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group1 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group98] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group98] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group98 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group100] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group100] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group100 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group99] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group99] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group99 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group101] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group101] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group101 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group102] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group102] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group102 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group103] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group103] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group103 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group104] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group104] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group104 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group107] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group107] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group107 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group108] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group108] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group108 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group109] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group109] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group109 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group110] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group110] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group110 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.plate10] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.plate10] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_plate10 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.group111] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.group111] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_group111 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.2] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.2] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_2 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.1] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.1] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_1 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.4] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.4] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_4 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.3] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.3] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_3 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.8] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.8] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_8 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.7] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.7] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_7 set from storage aj:uuid main.out
-
-execute on vehicle on passengers \
-    if entity @s[tag=aj.ruins_of_the_finality_skill.node.block_display] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+execute on vehicle on passengers if entity @s[tag=aj.ruins_of_the_finality_skill.node.block_display] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.block_display_block_display set from storage aj:uuid main.out
