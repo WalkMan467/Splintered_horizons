@@ -4,7 +4,8 @@ execute \
     if score @s aj.earthquake_axe.frame matches 31.. run scoreboard players set @s aj.earthquake_axe.frame 1
 data remove storage animated_java:temp args
 
-execute store result storage animated_java:temp args.frame int 1 run scoreboard players get @s aj.earthquake_axe.frame
+execute \
+    store result storage animated_java:temp args.frame int 1 run scoreboard players get @s aj.earthquake_axe.frame
 
 execute at @s run function animated_java:stellar_animation/animations/earthquake_axe/zzz/apply_frame with storage animated_java:temp args
 scoreboard players add @s aj.earthquake_axe.frame 1

@@ -10,4 +10,5 @@ execute at @s run function animated_java:stellar_animation/animations/ruins_of_t
 $execute at @s run function animated_java:stellar_animation/animations/ruins_of_the_finality_2/zzz/apply_frame {frame: $(to_frame)}
 tag @s remove aj.transforms_only
 
-execute on passengers store result entity @s interpolation_duration int 1 run scoreboard players get #this aj.i
+execute on passengers \
+    store result entity @s interpolation_duration int 1 run scoreboard players get #this aj.i

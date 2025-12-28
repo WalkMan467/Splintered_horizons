@@ -20,19 +20,24 @@ execute \
 scoreboard players set total_chests temp 0
 scoreboard players set removed_chests temp 0
 
-execute store result score total_chests temp \
+execute \
+    store result score total_chests temp \
     if data storage spawner_tweaker:temp Chests[{}]
 
 #Enter loop for range checking
 scoreboard players set n temp 0
 
-execute store result score x temp run data get entity @s Pos[0]
+execute \
+    store result score x temp run data get entity @s Pos[0]
 
-execute store result score y temp run data get entity @s Pos[1]
+execute \
+    store result score y temp run data get entity @s Pos[1]
 
-execute store result score z temp run data get entity @s Pos[2]
+execute \
+    store result score z temp run data get entity @s Pos[2]
 
-execute store result storage spawner_tweaker:temp variables.n int 1 run scoreboard players get n temp
+execute \
+    store result storage spawner_tweaker:temp variables.n int 1 run scoreboard players get n temp
 function spawner_tweaker:chests/delete/range_checker with storage spawner_tweaker:temp variables
 
 #Delete

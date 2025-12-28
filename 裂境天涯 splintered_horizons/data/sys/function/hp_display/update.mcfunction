@@ -8,10 +8,14 @@ function sys:hp_display/new
 # 顯示設定
 data modify storage hp_display CustomName.name set from entity @s data.hp_display.CustomName
 
-execute store result storage hp_display CustomName.hp int 1 store result score @s hp_display run \
+execute \
+    store result storage hp_display CustomName.hp int 1 \
+    store result score @s hp_display run \
 data get entity @s Health
 
-execute store result storage hp_display CustomName.hpmax int 1 store result score @s hp_display.hpmax run \
+execute \
+    store result storage hp_display CustomName.hpmax int 1 \
+    store result score @s hp_display.hpmax run \
 attribute @s minecraft:max_health base get
 
 # 結果

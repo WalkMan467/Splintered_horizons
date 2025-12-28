@@ -9,8 +9,10 @@ $execute in $(dimension) \
     if loaded ~ ~ ~ run data modify storage spawner_tweaker:temp highlight[$(n)].loaded set value 1b
 
 #Incrementing and wiring needed data
-$execute store result storage spawner_tweaker:temp highlight[$(next)].n int 1 run scoreboard players add n temp 1
-$execute store result storage spawner_tweaker:temp highlight[$(next)].next int 1 run scoreboard players add n temp 1
+$execute \
+    store result storage spawner_tweaker:temp highlight[$(next)].n int 1 run scoreboard players add n temp 1
+$execute \
+    store result storage spawner_tweaker:temp highlight[$(next)].next int 1 run scoreboard players add n temp 1
 $data modify storage spawner_tweaker:temp highlight[$(next)].x set from storage spawner_tweaker:temp highlight[$(next)].Pos[0]
 $data modify storage spawner_tweaker:temp highlight[$(next)].y set from storage spawner_tweaker:temp highlight[$(next)].Pos[1]
 $data modify storage spawner_tweaker:temp highlight[$(next)].z set from storage spawner_tweaker:temp highlight[$(next)].Pos[2]

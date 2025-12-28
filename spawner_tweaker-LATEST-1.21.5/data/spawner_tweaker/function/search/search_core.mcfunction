@@ -16,9 +16,11 @@ scoreboard players operation max_length temp = temp temp
 scoreboard players operation max_length temp *= 2 numbers
 scoreboard players add max_length temp 1
 
-execute store result storage spawner_tweaker:temp variables.start float 1 run scoreboard players get temp temp
+execute \
+    store result storage spawner_tweaker:temp variables.start float 1 run scoreboard players get temp temp
 
-execute store result storage spawner_tweaker:temp variables.max_length float 1 run scoreboard players get max_length temp
+execute \
+    store result storage spawner_tweaker:temp variables.max_length float 1 run scoreboard players get max_length temp
 scoreboard players set search_x temp 0
 scoreboard players set search_y temp 0
 scoreboard players set search_z temp 0

@@ -13,4 +13,5 @@ execute at @s run function animated_java:chain_lock/animations/unlock/zzz/apply_
 $execute at @s run function animated_java:chain_lock/animations/unlock/zzz/apply_frame {frame: $(to_frame)}
 tag @s remove aj.transforms_only
 
-execute on passengers store result entity @s interpolation_duration int 1 run scoreboard players get #this aj.i
+execute on passengers \
+    store result entity @s interpolation_duration int 1 run scoreboard players get #this aj.i

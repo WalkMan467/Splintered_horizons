@@ -61,5 +61,6 @@ execute \
 function sys:shooting_contest/sys/setup
 
 
-execute store result score #sys.shooting_contest.target.timer global.main run \
+execute \
+    store result score #sys.shooting_contest.target.timer global.main run \
 random value 60..100

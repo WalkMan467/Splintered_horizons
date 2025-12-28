@@ -7,7 +7,8 @@ execute \
     if score @s aj.cutscene_opening_1.frame matches 241.. run scoreboard players set @s aj.cutscene_opening_1.frame 1
 data remove storage aj:temp args
 
-execute store result storage aj:temp args.frame int 1 run scoreboard players get @s aj.cutscene_opening_1.frame
+execute \
+    store result storage aj:temp args.frame int 1 run scoreboard players get @s aj.cutscene_opening_1.frame
 
 execute at @s run function animated_java:amysis/animations/cutscene_opening_1/zzz/apply_frame with storage aj:temp args
 scoreboard players add @s aj.cutscene_opening_1.frame 1

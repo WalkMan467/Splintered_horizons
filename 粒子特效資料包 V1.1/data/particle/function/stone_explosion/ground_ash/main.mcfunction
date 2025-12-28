@@ -19,7 +19,8 @@ tp @s ~ ~-1 ~
 
 # text
 
-execute store result score #temp global.main run \
+execute \
+    store result score #temp global.main run \
 random value 0..3
 
 

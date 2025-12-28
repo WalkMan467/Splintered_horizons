@@ -7,7 +7,8 @@ scoreboard players set @s highlight_spawners 0
 #Figuring out which spawners are loaded
 scoreboard players set n temp 0
 
-execute store result score $total_spawners temp \
+execute \
+    store result score $total_spawners temp \
     if data storage spawner_tweaker:temp Spawners[]
 data modify storage spawner_tweaker:temp highlight set from storage spawner_tweaker:temp Spawners
 data modify storage spawner_tweaker:temp highlight[0].n set value 0

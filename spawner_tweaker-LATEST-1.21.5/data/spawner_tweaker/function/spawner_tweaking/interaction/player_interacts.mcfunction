@@ -17,9 +17,11 @@ tag @s add st_holding_ticking
 
 execute \
     unless score @s spawner_tweaker_id matches 1.. \
-    unless score @s spawner_tweaker_id matches ..1 store result score @s spawner_tweaker_id run data get entity @s UUID[0]
+    unless score @s spawner_tweaker_id matches ..1 \
+    store result score @s spawner_tweaker_id run data get entity @s UUID[0]
 
-execute store result storage spawner_tweaker:temp variables.tweaker_id long 1 run scoreboard players operation tweaker_id spawner_tweaker = @s spawner_tweaker_id
+execute \
+    store result storage spawner_tweaker:temp variables.tweaker_id long 1 run scoreboard players operation tweaker_id spawner_tweaker = @s spawner_tweaker_id
 scoreboard players set sneak temp 0
 
 execute \

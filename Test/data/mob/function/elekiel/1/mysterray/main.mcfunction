@@ -12,7 +12,8 @@ function mob:elekiel/1/mysterray/2
 # slime
 
 execute \
-    if score @s mob.duration matches 3.. on passengers \
+    if score @s mob.duration matches 3.. \
+    on passengers \
     if entity @s[type=slime] at @s run \
 function mob:elekiel/1/mysterray/slime/main
 

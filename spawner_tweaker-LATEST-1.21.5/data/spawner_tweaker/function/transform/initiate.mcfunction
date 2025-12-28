@@ -37,13 +37,16 @@ execute \
 #Fix this list by removing spawners outside of range
 
 execute \
-    if score $prime_range spawner_tweaker matches 1.. store result score x temp run data get entity @s Pos[0]
+    if score $prime_range spawner_tweaker matches 1.. \
+    store result score x temp run data get entity @s Pos[0]
 
 execute \
-    if score $prime_range spawner_tweaker matches 1.. store result score y temp run data get entity @s Pos[1]
+    if score $prime_range spawner_tweaker matches 1.. \
+    store result score y temp run data get entity @s Pos[1]
 
 execute \
-    if score $prime_range spawner_tweaker matches 1.. store result score z temp run data get entity @s Pos[2]
+    if score $prime_range spawner_tweaker matches 1.. \
+    store result score z temp run data get entity @s Pos[2]
 
 execute \
     if score $prime_range spawner_tweaker matches 1.. run function spawner_tweaker:spawner_priming/range_checker
@@ -52,7 +55,8 @@ execute \
 scoreboard players set spawners_transformed st_priming 0
 scoreboard players add total_spawners st_priming 0
 
-execute store result score total_spawners st_priming \
+execute \
+    store result score total_spawners st_priming \
     if data storage spawner_tweaker:temp Priming[]
 
 #Figuring out which spawners must be foreloaded
@@ -72,6 +76,7 @@ data remove storage spawner_tweaker:temp Priming[{valid:0b}]
 scoreboard players set spawners_transformed st_priming 0
 scoreboard players add total_spawners st_priming 0
 
-execute store result score total_spawners st_priming \
+execute \
+    store result score total_spawners st_priming \
     if data storage spawner_tweaker:temp Priming[]
 

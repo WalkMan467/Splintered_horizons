@@ -1,7 +1,8 @@
 
 ## calculate
 
-execute store result storage wma:data dmg float 0.001 run \
+execute \
+    store result storage wma:data dmg float 0.001 run \
 scoreboard players operation @s sys.dmg_show.hpmax -= #hp sys.dmg_show.main
 
 execute \

@@ -17,7 +17,8 @@ execute \
 #Get container counts
 scoreboard players add total_chests st_priming 0
 
-execute store result score total_chests st_priming \
+execute \
+    store result score total_chests st_priming \
     if data storage spawner_tweaker:temp container_randomizer[]
 
 #Assign containers a random source

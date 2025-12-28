@@ -1,7 +1,8 @@
 # Executor: Player
 tag @s add weapon.spider.dot.player
 
-execute store result score @s[tag=weapon.spider.dot.player] weapon.spider_passive_dot run \
+execute \
+    store result score @s[tag=weapon.spider.dot.player] weapon.spider_passive_dot run \
 attribute @s attack_damage get
 tag @e[type=!#minecraft:dummy_mob,tag=!weapon.spider.dot,type=!player,distance=..4] add weapon.spider.dot
 

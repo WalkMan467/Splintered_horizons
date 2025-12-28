@@ -2,7 +2,8 @@
 
 #Giving out the new spawner
 
-execute store result storage spawner_tweaker:temp variables.id int 1 run scoreboard players get id st_priming
+execute \
+    store result storage spawner_tweaker:temp variables.id int 1 run scoreboard players get id st_priming
 function spawner_tweaker:bulk_edit/clear_and_give with storage spawner_tweaker:temp variables
 
 #Displays

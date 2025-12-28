@@ -1,6 +1,7 @@
 
 execute \
-    as @e[sort=arbitrary,tag=cse.detect.death,type=marker] on vehicle \
+    as @e[sort=arbitrary,tag=cse.detect.death,type=marker] \
+    on vehicle \
     unless data entity @s {DeathTime:0s} at @s run \
 function cse:status_effects/apply/clear
 

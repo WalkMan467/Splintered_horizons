@@ -1,8 +1,10 @@
 
-execute store result score #difficulty global.main run \
+execute \
+    store result score #difficulty global.main run \
 difficulty
 
-execute store result score #player.count global.main \
+execute \
+    store result score #player.count global.main \
     if entity @a
 
 
@@ -33,12 +35,15 @@ kill @e[sort=arbitrary,tag=main.duration.timer,type=marker]
 
 execute \
     unless score #difficulty global.main matches 1.. \
-    as @n[sort=arbitrary,tag=monsters.display,type=#dummy_mob] on passengers on passengers run \
+    as @n[sort=arbitrary,tag=monsters.display,type=#dummy_mob] \
+    on passengers \
+    on passengers run \
 kill @s
 
 execute \
     unless score #difficulty global.main matches 1.. \
-    as @n[sort=arbitrary,tag=monsters.display,type=#dummy_mob] on passengers run \
+    as @n[sort=arbitrary,tag=monsters.display,type=#dummy_mob] \
+    on passengers run \
 kill @s
 
 execute \

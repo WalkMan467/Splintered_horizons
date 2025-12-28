@@ -24,7 +24,8 @@ function animated_java:sophia/summon \
 execute \
     positioned 14 83 -337 \
     unless score #story:icon/story/chapter_1/mq/scebe_4 global.main matches 1 \
-as @n[type=item_display,tag=aj.sophia.root,distance=..3] on passengers run \
+as @n[type=item_display,tag=aj.sophia.root,distance=..3] \
+    on passengers run \
 data modify entity @s Glowing set value 1b
 
 summon interaction 14 83 -337 \

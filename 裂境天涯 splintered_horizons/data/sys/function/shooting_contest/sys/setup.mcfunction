@@ -1,5 +1,6 @@
 
-execute store result score #sys.shooting_contest.rdm global.main run \
+execute \
+    store result score #sys.shooting_contest.rdm global.main run \
 random value 1..7
 
 

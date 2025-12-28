@@ -16,7 +16,8 @@ execute rotated ~ 0 run \
 function monsters:chapter_3/bloody_blade_spider/1/fx
 
 
-execute on passengers run \
+execute \
+    on passengers run \
 ride @s[type=player] dismount
 
 tag @a[distance=..6,tag=!monsters.bloody_blade_spider.target] add monsters.bloody_blade_spider.target

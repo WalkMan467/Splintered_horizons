@@ -2,7 +2,8 @@
 # Initialization
 
 execute \
-    unless score @s monster.skill.cast.cd matches -2147483648..2147483647 store result score @s monster.skill.cast.cd run \
+    unless score @s monster.skill.cast.cd matches -2147483648..2147483647 \
+    store result score @s monster.skill.cast.cd run \
 random value 60..160
 
 # Cast

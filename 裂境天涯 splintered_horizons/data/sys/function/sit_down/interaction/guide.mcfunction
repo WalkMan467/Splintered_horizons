@@ -16,7 +16,8 @@ function sys:sit_down/interaction/view/1
 
 
 execute \
-    as @s[tag=active] on passengers \
+    as @s[tag=active] \
+    on passengers \
     if entity @s[type=player] run \
 function sys:sit_down/interaction/view/0
 
@@ -26,7 +27,8 @@ execute \
 function sys:sit_down/interaction/view/0
 
 
-execute on passengers \
+execute \
+    on passengers \
     if entity @s[type=player] run \
 scoreboard players set @s player.shift.skill.disable 11
 

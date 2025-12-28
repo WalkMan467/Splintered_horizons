@@ -11,7 +11,8 @@ execute \
     if score @s aj.cutscene_chapter_2_safe_zone_1.frame matches -1 run function animated_java:amysis/animations/cutscene_chapter_2_safe_zone_1/zzz/commands_keyframe_loop_patch
 data remove storage aj:temp args
 
-execute store result storage aj:temp args.frame int 1 run scoreboard players get @s aj.cutscene_chapter_2_safe_zone_1.frame
+execute \
+    store result storage aj:temp args.frame int 1 run scoreboard players get @s aj.cutscene_chapter_2_safe_zone_1.frame
 function animated_java:amysis/animations/cutscene_chapter_2_safe_zone_1/zzz/apply_frame with storage aj:temp args
 
 execute \

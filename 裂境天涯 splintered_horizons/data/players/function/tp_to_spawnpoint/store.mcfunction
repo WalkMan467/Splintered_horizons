@@ -4,13 +4,16 @@ execute \
 return 0
 
 
-execute store result storage minecraft:player.data spawnpoint.x int 1 run \
+execute \
+    store result storage minecraft:player.data spawnpoint.x int 1 run \
 scoreboard players get @s player.spawnpoint.pos.x
 
-execute store result storage minecraft:player.data spawnpoint.y int 1 run \
+execute \
+    store result storage minecraft:player.data spawnpoint.y int 1 run \
 scoreboard players get @s player.spawnpoint.pos.y
 
-execute store result storage minecraft:player.data spawnpoint.z int 1 run \
+execute \
+    store result storage minecraft:player.data spawnpoint.z int 1 run \
 scoreboard players get @s player.spawnpoint.pos.z
 
 execute \

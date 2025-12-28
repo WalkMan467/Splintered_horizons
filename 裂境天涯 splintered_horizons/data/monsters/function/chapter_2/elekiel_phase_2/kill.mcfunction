@@ -6,7 +6,8 @@ scoreboard players reset skill.3 monster.elekiel_phase_2.cd
 scoreboard players reset skill.4 monster.elekiel_phase_2.cd
 
 
-execute on passengers \
+execute \
+    on passengers \
     as @s[tag=aj.boss_1.root,type=item_display] run \
 function animated_java:boss_1/remove/this
 
@@ -39,17 +40,21 @@ function particle:portal/crack/tp/remove
 
 
 execute \
-    as @e[tag=mob.elekiel.display,type=!player] on passengers run \
+    as @e[tag=mob.elekiel.display,type=!player] \
+    on passengers run \
 kill @s
 
 execute \
-    as @e[tag=mob.elekiel.display,type=!player] on passengers on passengers run \
+    as @e[tag=mob.elekiel.display,type=!player] \
+    on passengers \
+    on passengers run \
 kill @s
 
 kill @e[tag=mob.elekiel.display,type=!player]
 
 execute \
-    as @e[type=!#minecraft:dummy_mob,tag=monster.elekiel_phase_2.3,type=!player] on passengers run \
+    as @e[type=!#minecraft:dummy_mob,tag=monster.elekiel_phase_2.3,type=!player] \
+    on passengers run \
 kill @s
 kill @e[tag=monster.elekiel_phase_2.3,type=!#minecraft:dummy_mob,type=!player]
 kill @n[sort=arbitrary,tag=monster.elekiel_phase_2.4.effect.target.player_leave.detect,type=marker]

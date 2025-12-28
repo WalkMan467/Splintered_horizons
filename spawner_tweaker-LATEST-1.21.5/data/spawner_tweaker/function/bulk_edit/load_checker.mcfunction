@@ -10,8 +10,10 @@ $execute in $(dimension) \
     if loaded ~ ~ ~ run data modify storage spawner_tweaker:temp BSE[$(n)].force_load set value 0b
 
 #Incrementing and wiring needed data
-$execute store result storage spawner_tweaker:temp BSE[$(next)].n int 1 run scoreboard players add n temp 1
-$execute store result storage spawner_tweaker:temp BSE[$(next)].next int 1 run scoreboard players add n temp 1
+$execute \
+    store result storage spawner_tweaker:temp BSE[$(next)].n int 1 run scoreboard players add n temp 1
+$execute \
+    store result storage spawner_tweaker:temp BSE[$(next)].next int 1 run scoreboard players add n temp 1
 $data modify storage spawner_tweaker:temp BSE[$(next)].x set from storage spawner_tweaker:temp BSE[$(next)].Pos[0]
 $data modify storage spawner_tweaker:temp BSE[$(next)].y set from storage spawner_tweaker:temp BSE[$(next)].Pos[1]
 $data modify storage spawner_tweaker:temp BSE[$(next)].z set from storage spawner_tweaker:temp BSE[$(next)].Pos[2]

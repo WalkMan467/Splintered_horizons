@@ -6,7 +6,8 @@ $execute \
 
 
 execute \
-    if score pass temp matches 0 store result storage spawner_tweaker:temp variables.id int 1 run scoreboard players add id temp 1
+    if score pass temp matches 0 \
+    store result storage spawner_tweaker:temp variables.id int 1 run scoreboard players add id temp 1
 
 execute \
     if score pass temp matches 0 run function spawner_tweaker:register/find_next_id with storage spawner_tweaker:temp variables

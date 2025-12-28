@@ -2,7 +2,8 @@
 
     # Detect
     execute \
-    positioned 38 64 9 store result score #story.chapter_1.opening.1 global.main \
+    positioned 38 64 9 \
+    store result score #story.chapter_1.opening.1 global.main \
     if entity @a[distance=..6,gamemode=!spectator]
 
     # If true;

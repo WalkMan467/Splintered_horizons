@@ -1,6 +1,7 @@
 
 execute \
-    as @a store result score @s player.auto_crafting.brick run \
+    as @a \
+    store result score @s player.auto_crafting.brick run \
 clear @s minecraft:brick 0
 
 

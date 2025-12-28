@@ -18,5 +18,6 @@ tag @s add dmger
 effect give @s wind_charged 20 0 false
 
 
-execute on attacker run \
+execute \
+    on attacker run \
 function armors:type/windriders_legplates/effect/damage

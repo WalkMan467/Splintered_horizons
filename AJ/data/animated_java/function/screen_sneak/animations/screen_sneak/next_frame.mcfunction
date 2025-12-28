@@ -7,7 +7,8 @@ execute \
     if score @s aj.screen_sneak.frame matches 11.. run scoreboard players set @s aj.screen_sneak.frame 1
 data remove storage aj:temp args
 
-execute store result storage aj:temp args.frame int 1 run scoreboard players get @s aj.screen_sneak.frame
+execute \
+    store result storage aj:temp args.frame int 1 run scoreboard players get @s aj.screen_sneak.frame
 
 execute at @s run function animated_java:screen_sneak/animations/screen_sneak/zzz/apply_frame with storage aj:temp args
 scoreboard players add @s aj.screen_sneak.frame 1

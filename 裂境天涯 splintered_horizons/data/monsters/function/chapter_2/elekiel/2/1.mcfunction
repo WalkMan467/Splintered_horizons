@@ -17,7 +17,8 @@ scoreboard players set @e[type=slime,tag=monsters.elekiel.2.vampire_flower.hit_b
 
 
 execute \
-    as @e[type=block_display,tag=monsters.elekiel.2.vampire_flower,tag=summon] on passengers run \
+    as @e[type=block_display,tag=monsters.elekiel.2.vampire_flower,tag=summon] \
+    on passengers run \
 scoreboard players set @s duration 401
 
 tag @e[type=block_display,tag=monsters.elekiel.2.vampire_flower,tag=summon] remove summon

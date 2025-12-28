@@ -39,7 +39,8 @@ execute \
 data merge entity @s {transformation: {scale: [0.0f, 0.0f, 0.0f], translation: [-0.0f, 0.0f, -0.0f]},interpolation_duration:1}
 
 
-execute on passengers run \
+execute \
+    on passengers run \
 function mob:elekiel/3/error_explosion/passenger
 
 

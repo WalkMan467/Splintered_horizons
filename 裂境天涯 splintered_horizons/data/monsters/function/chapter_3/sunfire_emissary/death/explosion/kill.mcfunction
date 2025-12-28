@@ -1,4 +1,5 @@
 
-execute on passengers \
+execute \
+    on passengers \
     if entity @s[type=marker,tag=main.duration.timer] run \
 kill @s

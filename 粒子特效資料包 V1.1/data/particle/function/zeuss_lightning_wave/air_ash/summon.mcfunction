@@ -1,5 +1,6 @@
 
-execute store result score #temp global.main run \
+execute \
+    store result score #temp global.main run \
 random value 1..3
 
 execute \

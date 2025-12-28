@@ -4,7 +4,8 @@ execute \
 function particle:technological_force_field/raycast/color_change
 
 
-execute store result score @s particle.technological_force_field.line.rdm run \
+execute \
+    store result score @s particle.technological_force_field.line.rdm run \
 random value 1..4
 
 execute \
@@ -24,7 +25,8 @@ execute \
 rotate @s -90 0
 
 
-execute store result score @s particle.technological_force_field.line run \
+execute \
+    store result score @s particle.technological_force_field.line run \
 random value 10..20
 
 function particle:technological_force_field/raycast/use

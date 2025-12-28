@@ -1,7 +1,8 @@
 #Primes the spawner 
 
 #Update the records
-$execute store result storage spawner_tweaker:temp Spawners[{dimension:"$(dimension)",Pos:$(Pos)}].id int 1 run scoreboard players get id_new st_priming
+$execute \
+    store result storage spawner_tweaker:temp Spawners[{dimension:"$(dimension)",Pos:$(Pos)}].id int 1 run scoreboard players get id_new st_priming
 
 #Read the current light levels
 data modify storage spawner_tweaker:temp spawner set value {}
@@ -19,7 +20,8 @@ data modify block ~ ~ ~ SpawnPotentials set from storage spawner_tweaker:temp up
 scoreboard players set different temp 1
 scoreboard players set count temp 0
 
-execute store result score count temp \
+execute \
+    store result score count temp \
     if data block ~ ~ ~ SpawnPotentials[]
 
 execute \
@@ -30,7 +32,8 @@ execute \
     if score count temp matches 1 run data modify storage spawner_tweaker:temp same set from block ~ ~ ~ SpawnPotentials[0].data
 
 execute \
-    if score count temp matches 1 store success score different temp run data modify storage spawner_tweaker:temp same set from block ~ ~ ~ SpawnData
+    if score count temp matches 1 \
+    store success score different temp run data modify storage spawner_tweaker:temp same set from block ~ ~ ~ SpawnData
 
 execute \
     if score efficient_data spawner_tweaker matches 1.. \
@@ -40,7 +43,8 @@ execute \
 
 #Writing a random spawn potential
 
-execute store result storage spawner_tweaker:temp variables.count int 1 run scoreboard players get count temp
+execute \
+    store result storage spawner_tweaker:temp variables.count int 1 run scoreboard players get count temp
 
 execute \
     if score count temp matches 2.. \

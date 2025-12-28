@@ -67,7 +67,8 @@ function spawner_tweaker:register/check_spawner with storage spawner_tweaker:tem
 scoreboard players set old_id temp -1
 
 execute \
-    if score exists temp matches 1.. store result score old_id temp run data get storage spawner_tweaker:temp Comparison.id
+    if score exists temp matches 1.. \
+    store result score old_id temp run data get storage spawner_tweaker:temp Comparison.id
 scoreboard players set id temp -1
 
 execute \
@@ -91,7 +92,8 @@ data modify storage spawner_tweaker:temp compare_ids set from storage spawner_tw
 scoreboard players set n temp 0
 scoreboard players set not_new temp 1
 
-execute store result score n temp \
+execute \
+    store result score n temp \
     if data storage spawner_tweaker:temp Ids[{}]
 
 execute \
@@ -124,7 +126,8 @@ execute \
     if score exists temp matches 0 \
     if score register_new temp matches 1 run function spawner_tweaker:register/register_new_id with block ~ ~ ~
 
-execute store result storage spawner_tweaker:temp Spawner.id int 1 run scoreboard players get id temp
+execute \
+    store result storage spawner_tweaker:temp Spawner.id int 1 run scoreboard players get id temp
 
 execute \
     if score exists temp matches 0 run function spawner_tweaker:spawner_priming/prune with storage spawner_tweaker:temp Spawner

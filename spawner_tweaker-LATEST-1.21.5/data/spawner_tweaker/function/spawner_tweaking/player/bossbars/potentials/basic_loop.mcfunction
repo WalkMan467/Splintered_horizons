@@ -11,7 +11,8 @@ execute \
 #Add weight
 scoreboard players set temp temp 0
 
-execute store result score temp temp run data get storage spawner_tweaker:temp potentials.potentials[0].weight
+execute \
+    store result score temp temp run data get storage spawner_tweaker:temp potentials.potentials[0].weight
 scoreboard players operation weight temp += temp temp
 
 #Write to list

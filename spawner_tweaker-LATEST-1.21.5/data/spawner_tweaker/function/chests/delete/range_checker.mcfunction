@@ -1,7 +1,10 @@
 #Get range of chest
-$execute store result score x1 temp run data get storage spawner_tweaker:temp Chests[$(n)].x
-$execute store result score y1 temp run data get storage spawner_tweaker:temp Chests[$(n)].y
-$execute store result score z1 temp run data get storage spawner_tweaker:temp Chests[$(n)].z
+$execute \
+    store result score x1 temp run data get storage spawner_tweaker:temp Chests[$(n)].x
+$execute \
+    store result score y1 temp run data get storage spawner_tweaker:temp Chests[$(n)].y
+$execute \
+    store result score z1 temp run data get storage spawner_tweaker:temp Chests[$(n)].z
 scoreboard players operation x2 temp = x1 temp
 scoreboard players operation y2 temp = y1 temp
 scoreboard players operation z2 temp = z1 temp
@@ -37,7 +40,8 @@ $execute \
 #Loop
 scoreboard players add n temp 1
 
-execute store result storage spawner_tweaker:temp variables.n int 1 run scoreboard players get n temp
+execute \
+    store result storage spawner_tweaker:temp variables.n int 1 run scoreboard players get n temp
 
 execute \
     if score n temp <= total_chests temp run function spawner_tweaker:chests/delete/range_checker with storage spawner_tweaker:temp variables

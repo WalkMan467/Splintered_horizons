@@ -10,5 +10,6 @@ execute \
 function music:main/campfire/2/start
 
 
-execute store result score @s music.main.campfire.rdm run \
+execute \
+    store result score @s music.main.campfire.rdm run \
 random value 1..2

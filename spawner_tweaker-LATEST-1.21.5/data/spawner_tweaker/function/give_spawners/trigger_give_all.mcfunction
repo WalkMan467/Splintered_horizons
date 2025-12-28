@@ -11,12 +11,15 @@ scoreboard players set give_all_y temp 0
 scoreboard players set spawners_generated temp 0
 scoreboard players set slot_in_barrel temp 0
 
-execute store result score total_spawners temp \
+execute \
+    store result score total_spawners temp \
     if data storage spawner_tweaker:temp Ids[]
 
-execute store result storage spawner_tweaker:temp give_all.id int 1 run scoreboard players get give_all_id temp
+execute \
+    store result storage spawner_tweaker:temp give_all.id int 1 run scoreboard players get give_all_id temp
 
-execute store result storage spawner_tweaker:temp give_all.y int 1 run scoreboard players get give_all_y temp
+execute \
+    store result storage spawner_tweaker:temp give_all.y int 1 run scoreboard players get give_all_y temp
 
 #Enter loop to give everything
 function spawner_tweaker:give_spawners/give_all_loop with storage spawner_tweaker:temp give_all

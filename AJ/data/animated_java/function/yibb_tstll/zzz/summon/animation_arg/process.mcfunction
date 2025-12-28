@@ -3,12 +3,15 @@
 execute \
     if data storage aj:temp {args:{animation:''}} run return run function animated_java:yibb_tstll/zzz/summon/animation_arg/zzz/0
 
-execute store result storage aj:temp args.frame int 1 store result score #frame aj.i run data get storage aj:temp args.frame
+execute \
+    store result storage aj:temp args.frame int 1 \
+    store result score #frame aj.i run data get storage aj:temp args.frame
 
 execute \
     if score #frame aj.i matches ..-1 run return run function animated_java:yibb_tstll/zzz/summon/animation_arg/zzz/1
 
-execute store success score #success aj.i run function animated_java:yibb_tstll/zzz/summon/animation_arg/try_set_frame with storage aj:temp args
+execute \
+    store success score #success aj.i run function animated_java:yibb_tstll/zzz/summon/animation_arg/try_set_frame with storage aj:temp args
 
 execute \
     unless score #success aj.i matches 1 run return run function animated_java:yibb_tstll/zzz/summon/animation_arg/zzz/2 with storage aj:temp args

@@ -4,7 +4,8 @@ execute \
     if score @s aj.attack_1.frame matches 71.. run scoreboard players set @s aj.attack_1.frame 1
 data remove storage animated_java:temp args
 
-execute store result storage animated_java:temp args.frame int 1 run scoreboard players get @s aj.attack_1.frame
+execute \
+    store result storage animated_java:temp args.frame int 1 run scoreboard players get @s aj.attack_1.frame
 
 execute at @s run function animated_java:boss_1/animations/attack_1/zzz/apply_frame with storage animated_java:temp args
 scoreboard players add @s aj.attack_1.frame 1

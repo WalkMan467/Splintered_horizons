@@ -11,7 +11,8 @@ execute \
     if score @s aj.idle.frame matches -1 run function animated_java:oceanid/animations/idle/zzz/function_keyframe_loop_patch
 data remove storage animated_java:temp args
 
-execute store result storage animated_java:temp args.frame int 1 run scoreboard players get @s aj.idle.frame
+execute \
+    store result storage animated_java:temp args.frame int 1 run scoreboard players get @s aj.idle.frame
 function animated_java:oceanid/animations/idle/zzz/apply_frame with storage animated_java:temp args
 
 execute \

@@ -19,7 +19,8 @@ execute \
 return 0
 
 
-execute store result score #have.torch? global.main run \
+execute \
+    store result score #have.torch? global.main run \
 clear @s #torchs 0
 
 execute \

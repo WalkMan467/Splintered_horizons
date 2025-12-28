@@ -36,13 +36,17 @@ data modify storage spawner_tweaker:temp give.MaxNearbyEntities set from storage
 data modify storage spawner_tweaker:temp give.Delay set from storage spawner_tweaker:temp give.spawner.Delay
 data modify storage spawner_tweaker:temp give.RequiredPlayerRange set from storage spawner_tweaker:temp give.spawner.RequiredPlayerRange
 
-execute store result storage spawner_tweaker:temp give.MaxSpawnDelay_s float 0.05 run data get storage spawner_tweaker:temp give.spawner.MaxSpawnDelay
+execute \
+    store result storage spawner_tweaker:temp give.MaxSpawnDelay_s float 0.05 run data get storage spawner_tweaker:temp give.spawner.MaxSpawnDelay
 
-execute store result storage spawner_tweaker:temp give.MinSpawnDelay_s float 0.05 run data get storage spawner_tweaker:temp give.spawner.MinSpawnDelay
+execute \
+    store result storage spawner_tweaker:temp give.MinSpawnDelay_s float 0.05 run data get storage spawner_tweaker:temp give.spawner.MinSpawnDelay
 
-execute store result storage spawner_tweaker:temp give.MaxSpawnDelay float 1 run data get storage spawner_tweaker:temp give.spawner.MaxSpawnDelay
+execute \
+    store result storage spawner_tweaker:temp give.MaxSpawnDelay float 1 run data get storage spawner_tweaker:temp give.spawner.MaxSpawnDelay
 
-execute store result storage spawner_tweaker:temp give.MinSpawnDelay float 1 run data get storage spawner_tweaker:temp give.spawner.MinSpawnDelay
+execute \
+    store result storage spawner_tweaker:temp give.MinSpawnDelay float 1 run data get storage spawner_tweaker:temp give.spawner.MinSpawnDelay
 data modify storage spawner_tweaker:temp give.SpawnCount set from storage spawner_tweaker:temp give.spawner.SpawnCount
 data modify storage spawner_tweaker:temp give.SpawnRange set from storage spawner_tweaker:temp give.spawner.SpawnRange
 data modify storage spawner_tweaker:temp give.MinBlockLight set from storage spawner_tweaker:temp give.spawner.SpawnPotentials[0].data.custom_spawn_rules.block_light_limit[0]
@@ -54,20 +58,24 @@ execute \
     if data storage spawner_tweaker:temp give.spawner.SpawnPotentials[0].data.entity.Passengers[] run data modify storage spawner_tweaker:temp give.Jockey set value " (Jockey)"
 scoreboard players set health temp 0
 
-execute store result score health temp run data get storage spawner_tweaker:temp give.spawner.SpawnPotentials[0].data.entity.Health 100
+execute \
+    store result score health temp run data get storage spawner_tweaker:temp give.spawner.SpawnPotentials[0].data.entity.Health 100
 
 execute \
-    if data storage spawner_tweaker:temp give.spawner.SpawnPotentials[0].data.entity.Health store result storage spawner_tweaker:temp give.Health double 0.01 run scoreboard players get health temp
+    if data storage spawner_tweaker:temp give.spawner.SpawnPotentials[0].data.entity.Health \
+    store result storage spawner_tweaker:temp give.Health double 0.01 run scoreboard players get health temp
 data modify storage spawner_tweaker:temp give.Absorption set from storage spawner_tweaker:temp give.spawner.SpawnPotentials[0].data.entity.AbsorptionAmount
 
 execute \
     if data storage spawner_tweaker:temp give.spawner.SpawnPotentials[0].data.entity.AbsorptionAmount run data modify storage spawner_tweaker:temp give.Absorption_desc set value " ❤ "
 scoreboard players set damage temp 0
 
-execute store result score damage temp run data get storage spawner_tweaker:temp give.spawner.SpawnPotentials[0].data.entity.attributes[{id:"minecraft:attack_damage"}].base 100
+execute \
+    store result score damage temp run data get storage spawner_tweaker:temp give.spawner.SpawnPotentials[0].data.entity.attributes[{id:"minecraft:attack_damage"}].base 100
 
 execute \
-    if data storage spawner_tweaker:temp give.spawner.SpawnPotentials[0].data.entity.attributes[{id:"minecraft:attack_damage"}].base store result storage spawner_tweaker:temp give.Attack double 0.01 run scoreboard players get damage temp
+    if data storage spawner_tweaker:temp give.spawner.SpawnPotentials[0].data.entity.attributes[{id:"minecraft:attack_damage"}].base \
+    store result storage spawner_tweaker:temp give.Attack double 0.01 run scoreboard players get damage temp
 data modify storage spawner_tweaker:temp give.Speed set from storage spawner_tweaker:temp give.spawner.SpawnPotentials[0].data.entity.attributes.[{id:"minecraft:movement_speed"}].base
 
 execute \

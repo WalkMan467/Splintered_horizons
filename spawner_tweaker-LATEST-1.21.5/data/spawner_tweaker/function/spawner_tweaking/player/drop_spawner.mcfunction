@@ -20,9 +20,11 @@ data remove storage spawner_tweaker:temp temp.Item
 execute at @s run data modify storage spawner_tweaker:temp temp.Item set from entity @e[distance=..5,limit=1,sort=nearest,nbt={Item:{id:"minecraft:spawner"}}] Item
 
 execute \
-    if data storage spawner_tweaker:temp temp.Item.components."minecraft:custom_data".spawner_tweaker_id store result score transform_id temp run data get storage spawner_tweaker:temp temp.Item.components."minecraft:custom_data".spawner_tweaker_id
+    if data storage spawner_tweaker:temp temp.Item.components."minecraft:custom_data".spawner_tweaker_id \
+    store result score transform_id temp run data get storage spawner_tweaker:temp temp.Item.components."minecraft:custom_data".spawner_tweaker_id
 
-execute store result score transform_from temp run data get storage spawner_tweaker:temp Comparison.id
+execute \
+    store result score transform_from temp run data get storage spawner_tweaker:temp Comparison.id
 
 execute \
     if score transform_id temp = transform_from temp run scoreboard players set transform_id temp -1

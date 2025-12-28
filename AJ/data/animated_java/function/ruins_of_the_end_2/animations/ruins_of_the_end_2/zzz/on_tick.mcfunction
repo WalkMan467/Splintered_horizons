@@ -8,7 +8,8 @@ execute \
     if score @s aj.tween_duration matches 0 on passengers run data modify entity @s interpolation_duration set value 1
 data remove storage aj:temp args
 
-execute store result storage aj:temp args.frame int 1 run scoreboard players get @s aj.ruins_of_the_end_2.frame
+execute \
+    store result storage aj:temp args.frame int 1 run scoreboard players get @s aj.ruins_of_the_end_2.frame
 function animated_java:ruins_of_the_end_2/animations/ruins_of_the_end_2/zzz/apply_frame with storage aj:temp args
 
 execute \

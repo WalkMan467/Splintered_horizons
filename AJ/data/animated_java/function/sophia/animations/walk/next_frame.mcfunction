@@ -4,7 +4,8 @@ execute \
     if score @s aj.walk.frame matches 121.. run scoreboard players set @s aj.walk.frame 1
 data remove storage animated_java:temp args
 
-execute store result storage animated_java:temp args.frame int 1 run scoreboard players get @s aj.walk.frame
+execute \
+    store result storage animated_java:temp args.frame int 1 run scoreboard players get @s aj.walk.frame
 
 execute at @s run function animated_java:sophia/animations/walk/zzz/apply_frame with storage animated_java:temp args
 scoreboard players add @s aj.walk.frame 1

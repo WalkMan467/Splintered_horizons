@@ -5,7 +5,8 @@ execute \
     positioned 928 167 908 \
     if score story.chapter_2.ml.4 story.chapter_2 matches 1 \
     unless score #story:icon/story/chapter_2/mq/scebe_4 global.main matches 1 \
-    as @n[sort=arbitrary,distance=..1,tag=aj.isokla.root,type=item_display] on passengers run \
+    as @n[sort=arbitrary,distance=..1,tag=aj.isokla.root,type=item_display] \
+    on passengers run \
 data modify entity @s Glowing set value 0b
 
 

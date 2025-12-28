@@ -27,7 +27,8 @@ summon mannequin ~ ~ ~ \
 execute \
     positioned 1112 82 375 \
     unless score #story:icon/story/chapter_2/mq/scebe_5 global.main matches 1 \
-as @n[sort=arbitrary,distance=..1,tag=world_area.main.safe_zone.melisna,type=mannequin] on passengers run \
+as @n[sort=arbitrary,distance=..1,tag=world_area.main.safe_zone.melisna,type=mannequin] \
+    on passengers run \
 data modify entity @s Glowing set value 1b
 
 summon interaction 1112 82 375 \

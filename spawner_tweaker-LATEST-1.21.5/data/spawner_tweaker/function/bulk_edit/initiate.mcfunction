@@ -31,7 +31,8 @@ kill fd59e8ab-1bd7-454f-803c-6eedeeea7aa6
 function spawner_tweaker:register/get_id with storage spawner_tweaker:temp Spawner
 scoreboard players operation id st_priming = id temp
 
-execute store result storage spawner_tweaker:temp update_to.id int 1 run scoreboard players get id temp
+execute \
+    store result storage spawner_tweaker:temp update_to.id int 1 run scoreboard players get id temp
 
 #Update the actual id
 function spawner_tweaker:bulk_edit/update_id with storage spawner_tweaker:temp update_to
@@ -54,13 +55,16 @@ execute \
 #Fix this list by removing spawners outside of range
 
 execute \
-    if score $prime_range spawner_tweaker matches 1.. store result score x temp run data get entity @s Pos[0]
+    if score $prime_range spawner_tweaker matches 1.. \
+    store result score x temp run data get entity @s Pos[0]
 
 execute \
-    if score $prime_range spawner_tweaker matches 1.. store result score y temp run data get entity @s Pos[1]
+    if score $prime_range spawner_tweaker matches 1.. \
+    store result score y temp run data get entity @s Pos[1]
 
 execute \
-    if score $prime_range spawner_tweaker matches 1.. store result score z temp run data get entity @s Pos[2]
+    if score $prime_range spawner_tweaker matches 1.. \
+    store result score z temp run data get entity @s Pos[2]
 
 execute \
     if score $prime_range spawner_tweaker matches 1.. run function spawner_tweaker:spawner_priming/range_checker
@@ -69,7 +73,8 @@ execute \
 scoreboard players set spawners_updated st_priming 0
 scoreboard players add total_spawners st_priming 0
 
-execute store result score total_spawners st_priming \
+execute \
+    store result score total_spawners st_priming \
     if data storage spawner_tweaker:temp BSE[]
 
 #Figuring out which spawners must be foreloaded

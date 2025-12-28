@@ -11,7 +11,8 @@ execute \
     if score @s aj.spawn_loop.frame matches -1 run function animated_java:boss_1/animations/spawn_loop/zzz/function_keyframe_loop_patch
 data remove storage animated_java:temp args
 
-execute store result storage animated_java:temp args.frame int 1 run scoreboard players get @s aj.spawn_loop.frame
+execute \
+    store result storage animated_java:temp args.frame int 1 run scoreboard players get @s aj.spawn_loop.frame
 function animated_java:boss_1/animations/spawn_loop/zzz/apply_frame with storage animated_java:temp args
 
 execute \

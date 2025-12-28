@@ -14,7 +14,8 @@ scoreboard players operation @e[tag=weapon.nightfall.p,tag=summon] weapon.nightf
 
 
 execute \
-    as @e[tag=weapon.nightfall.p,tag=summon,type=block_display] on passengers run \
+    as @e[tag=weapon.nightfall.p,tag=summon,type=block_display] \
+    on passengers run \
 scoreboard players set @s duration 13
 
 # particle

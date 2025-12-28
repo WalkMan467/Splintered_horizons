@@ -9,7 +9,8 @@ execute at @s \
     unless block ^ ^ ^0.5 #penetrate run \
 return 1
 
-execute on passengers \
+execute \
+    on passengers \
     unless entity @s[tag=user] run \
 return 1
 

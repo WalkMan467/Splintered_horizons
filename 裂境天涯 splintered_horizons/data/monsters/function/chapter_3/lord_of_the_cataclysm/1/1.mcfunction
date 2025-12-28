@@ -1,5 +1,6 @@
 
-execute store result score @s monster.lord_of_the_cataclysm.1.rdm run \
+execute \
+    store result score @s monster.lord_of_the_cataclysm.1.rdm run \
 random value 1..4
 
 

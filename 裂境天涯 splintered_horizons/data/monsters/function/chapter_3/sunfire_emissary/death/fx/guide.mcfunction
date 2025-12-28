@@ -1,6 +1,7 @@
 scoreboard players add @s monster.sunfire_emissary.death.fx 1
 
-execute store result score @s particle run \
+execute \
+    store result score @s particle run \
 random value 0..100
 
 

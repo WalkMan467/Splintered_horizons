@@ -2,7 +2,8 @@
 
 #Priming
 
-execute store result block ~ ~ ~ Delay short 1 run scoreboard players get delay st_priming
+execute \
+    store result block ~ ~ ~ Delay short 1 run scoreboard players get delay st_priming
 
 #Remove junk data
 #Basically, spawners don't need spawnpotentials. So \
@@ -10,7 +11,8 @@ execute store result block ~ ~ ~ Delay short 1 run scoreboard players get delay 
 scoreboard players set different temp 1
 scoreboard players set count temp 0
 
-execute store result score count temp \
+execute \
+    store result score count temp \
     if data block ~ ~ ~ SpawnPotentials[]
 
 execute \
@@ -21,7 +23,8 @@ execute \
     if score count temp matches 1 run data modify storage spawner_tweaker:temp same set from block ~ ~ ~ SpawnPotentials[0].data
 
 execute \
-    if score count temp matches 1 store success score different temp run data modify storage spawner_tweaker:temp same set from block ~ ~ ~ SpawnData
+    if score count temp matches 1 \
+    store success score different temp run data modify storage spawner_tweaker:temp same set from block ~ ~ ~ SpawnData
 
 execute \
     if score efficient_data spawner_tweaker matches 1.. \

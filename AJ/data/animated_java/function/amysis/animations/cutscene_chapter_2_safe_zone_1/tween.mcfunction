@@ -13,4 +13,5 @@ execute at @s run function animated_java:amysis/animations/cutscene_chapter_2_sa
 $execute at @s run function animated_java:amysis/animations/cutscene_chapter_2_safe_zone_1/zzz/apply_frame {frame: $(to_frame)}
 tag @s remove aj.transforms_only
 
-execute on passengers store result entity @s interpolation_duration int 1 run scoreboard players get #this aj.i
+execute on passengers \
+    store result entity @s interpolation_duration int 1 run scoreboard players get #this aj.i

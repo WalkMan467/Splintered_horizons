@@ -24,7 +24,8 @@ execute at @s \
 tp @s ~ ~ ~ ~ ~
 
 execute \
-    as @e[type=block_display,tag=rotater] on passengers at @s facing entity @e[type=marker,tag=mid,limit=1] eyes run \
+    as @e[type=block_display,tag=rotater] \
+    on passengers at @s facing entity @e[type=marker,tag=mid,limit=1] eyes run \
 tp @s ~ ~ ~ ~180 ~
 
 # particle

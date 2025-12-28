@@ -4,7 +4,8 @@ execute \
     if score @s aj.skills_2.frame matches 11.. run scoreboard players set @s aj.skills_2.frame 1
 data remove storage aj:temp args
 
-execute store result storage aj:temp args.frame int 1 run scoreboard players get @s aj.skills_2.frame
+execute \
+    store result storage aj:temp args.frame int 1 run scoreboard players get @s aj.skills_2.frame
 
 execute at @s run function animated_java:ruins_of_the_finality_skill/animations/skills_2/zzz/apply_frame with storage aj:temp args
 scoreboard players add @s aj.skills_2.frame 1

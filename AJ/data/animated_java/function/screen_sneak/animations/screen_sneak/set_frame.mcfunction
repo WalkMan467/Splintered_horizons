@@ -3,6 +3,7 @@
 execute \
     unless entity @s[type=minecraft:item_display,tag=aj.screen_sneak.root] run return run function animated_java:global/errors/function_not_executed_as_root_entity {'export_namespace': 'screen_sneak', 'function_path': 'animated_java:screen_sneak/animations/screen_sneak/set_frame'}
 data remove storage aj:temp args
-$execute store result storage aj:temp args.frame int 1 run scoreboard players set @s aj.screen_sneak.frame $(frame)
+$execute \
+    store result storage aj:temp args.frame int 1 run scoreboard players set @s aj.screen_sneak.frame $(frame)
 
 execute at @s run function animated_java:screen_sneak/animations/screen_sneak/zzz/set_frame with storage aj:temp args

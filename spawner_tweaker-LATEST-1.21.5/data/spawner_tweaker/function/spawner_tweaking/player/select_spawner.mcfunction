@@ -13,7 +13,8 @@ data modify storage spawner_tweaker:temp name.name set string block ~ ~ ~ SpawnP
 data modify storage spawner_tweaker:temp name.name set from block ~ ~ ~ components."minecraft:custom_name"
 data modify storage spawner_tweaker:temp name.name set from block ~ ~ ~ components."minecraft:item_name"
 
-execute store result storage spawner_tweaker:temp name.id int 1 run scoreboard players get id temp
+execute \
+    store result storage spawner_tweaker:temp name.id int 1 run scoreboard players get id temp
 function spawner_tweaker:spawner_tweaking/player/count_spawners with storage spawner_tweaker:temp name
 data modify storage spawner_tweaker:temp name.tweaker_id set from storage spawner_tweaker:temp variables.tweaker_id
 scoreboard players set id_in_name temp 0
@@ -27,7 +28,8 @@ execute \
     if data block ~ ~ ~ SpawnPotentials[0].data.entity.Passengers[] run data modify storage spawner_tweaker:temp name.jockey set value " (Jockey)"
 scoreboard players set potentials temp 0
 
-execute store result score potentials temp \
+execute \
+    store result score potentials temp \
     if data block ~ ~ ~ SpawnPotentials[]
 
 #Fix up when the id is in the name

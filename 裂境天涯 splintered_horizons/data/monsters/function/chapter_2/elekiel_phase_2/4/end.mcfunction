@@ -9,11 +9,14 @@ function particle:portal/crack/tp/remove
 
 
 execute \
-    as @e[tag=mob.elekiel.2.display,type=!player] on passengers run \
+    as @e[tag=mob.elekiel.2.display,type=!player] \
+    on passengers run \
 kill @s
 
 execute \
-    as @e[tag=mob.elekiel.2.display,type=!player] on passengers on passengers run \
+    as @e[tag=mob.elekiel.2.display,type=!player] \
+    on passengers \
+    on passengers run \
 kill @s
 
 kill @e[tag=mob.elekiel.2.display,type=!player]

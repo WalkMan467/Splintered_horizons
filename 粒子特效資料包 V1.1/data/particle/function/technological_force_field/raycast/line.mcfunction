@@ -6,7 +6,8 @@ return 0
 scoreboard players remove @s particle.technological_force_field.line 1
 
 
-execute store result score @s particle.technological_force_field.line.rdm run \
+execute \
+    store result score @s particle.technological_force_field.line.rdm run \
 random value 1..12
 
 

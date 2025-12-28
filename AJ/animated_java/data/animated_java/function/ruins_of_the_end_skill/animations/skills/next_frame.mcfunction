@@ -3,7 +3,8 @@
 execute \
     if score @s aj.skills.frame matches 36.. run scoreboard players set @s aj.skills.frame 1
 
-execute store result storage aj:temp frame int 1 run scoreboard players get @s aj.skills.frame
+execute \
+    store result storage aj:temp frame int 1 run scoreboard players get @s aj.skills.frame
 
 execute at @s run function animated_java:ruins_of_the_finality_skill/animations/skills/zzz/apply_frame with storage aj:temp
 scoreboard players add @s aj.skills.frame 1

@@ -1,11 +1,14 @@
 
-execute store result score @s player.spawnpoint.pos.x run \
+execute \
+    store result score @s player.spawnpoint.pos.x run \
 data get entity @s Pos[0] 1
 
-execute store result score @s player.spawnpoint.pos.y run \
+execute \
+    store result score @s player.spawnpoint.pos.y run \
 data get entity @s Pos[1] 1
 
-execute store result score @s player.spawnpoint.pos.z run \
+execute \
+    store result score @s player.spawnpoint.pos.z run \
 data get entity @s Pos[2] 1
 
 execute \

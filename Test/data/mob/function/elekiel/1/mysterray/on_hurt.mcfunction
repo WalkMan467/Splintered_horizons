@@ -1,13 +1,15 @@
 
 # refresh hp info
 
-execute on vehicle run \
+execute \
+    on vehicle run \
 function mob:elekiel/1/mysterray/info
 
 # on death
 
 execute \
-    if data entity @s {Health:0f} on vehicle run \
+    if data entity @s {Health:0f} \
+    on vehicle run \
 function mob:elekiel/1/mysterray/on_death
 
 # fx

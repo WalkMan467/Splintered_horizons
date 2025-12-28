@@ -20,10 +20,12 @@ scoreboard players set $st_ongoing_process temp 8
     if none exists
 
 execute \
-    if score $randomizer_seed spawner_tweaker matches 0 store result score $randomizer_seed spawner_tweaker run random value 1..1000000
+    if score $randomizer_seed spawner_tweaker matches 0 \
+    store result score $randomizer_seed spawner_tweaker run random value 1..1000000
 tellraw @a [{"color":"green","text":"Your randomizer seed is "},{"color":"yellow","score":{"name":"$randomizer_seed","objective":"spawner_tweaker"}}]
 
-execute store result storage spawner_tweaker:temp variables.seed int 1 run scoreboard players get $randomizer_seed spawner_tweaker
+execute \
+    store result storage spawner_tweaker:temp variables.seed int 1 run scoreboard players get $randomizer_seed spawner_tweaker
 
 #Continue to main bulk of code
 function spawner_tweaker:chests/randomizer/initiate with storage spawner_tweaker:temp variables

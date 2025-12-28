@@ -6,7 +6,8 @@ summon item_display ^ ^ ^ {Tags:[twilight_wind.wind,summon],item:{id:"minecraft:
 data modify entity @n[tag=summon,limit=1] Rotation set from entity @s Rotation
 
 
-execute store result score #rdm weapon.twilight_wind.timer run \
+execute \
+    store result score #rdm weapon.twilight_wind.timer run \
 random value 1..5
 
 execute \

@@ -30,7 +30,8 @@ function monsters:chapter_3/lord_of_the_cataclysm/1/3c
 
 # particle
 
-execute store result score @s particle run \
+execute \
+    store result score @s particle run \
 random value 0..1
 
 

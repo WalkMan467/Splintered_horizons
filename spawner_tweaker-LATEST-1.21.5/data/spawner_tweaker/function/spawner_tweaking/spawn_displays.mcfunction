@@ -40,13 +40,16 @@ execute \
 
 #Assign ids and scores
 
-execute store result score random temp run random value -100..100
+execute \
+    store result score random temp run random value -100..100
 
 execute \
     as @e[tag=st_glass] \
-    if score @s spawner_tweaker_offset = random temp store result score random temp run random value -100..100
+    if score @s spawner_tweaker_offset = random temp \
+    store result score random temp run random value -100..100
 
-execute store result score @e[distance=..0.1,tag=st_uninitialized,tag=st_glass] spawner_tweaker_offset run scoreboard players get random temp
+execute \
+    store result score @e[distance=..0.1,tag=st_uninitialized,tag=st_glass] spawner_tweaker_offset run scoreboard players get random temp
 scoreboard players operation @e[distance=..0.1,tag=st_uninitialized] spawner_tweaker_id = tweaker_id spawner_tweaker
 
 execute \

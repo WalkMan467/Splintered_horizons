@@ -26,7 +26,8 @@ function animated_java:isokla/summon \
 execute \
     positioned 928 167 908 \
     unless score #story:icon/story/chapter_2/mq/scebe_4 global.main matches 1 \
-as @n[sort=arbitrary,distance=..1,tag=aj.isokla.root,type=item_display] on passengers run \
+as @n[sort=arbitrary,distance=..1,tag=aj.isokla.root,type=item_display] \
+    on passengers run \
 data modify entity @s Glowing set value 1b
 
 summon interaction 928 167 908 \

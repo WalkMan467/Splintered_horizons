@@ -1,7 +1,8 @@
 ## ---開頭--- ##
 
     # Detect
-    execute store result score @s world_area.realm_of_the_black_hole.fx.marker \
+    execute \
+    store result score @s world_area.realm_of_the_black_hole.fx.marker \
     if entity @a[distance=..30,gamemode=!spectator,tag=!animation]
 
     # If true;

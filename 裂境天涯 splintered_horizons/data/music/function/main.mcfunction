@@ -1,6 +1,7 @@
 
 execute \
-    as @a[scores={music.chapter1.broken_city=1}] store result score @s music.chapter1.broken_city.rdm run \
+    as @a[scores={music.chapter1.broken_city=1}] \
+    store result score @s music.chapter1.broken_city.rdm run \
 random value 1..2
 
 

@@ -10,8 +10,10 @@ $execute in $(dimension) \
     if loaded ~ ~ ~ run data modify storage spawner_tweaker:temp container_checker[$(n)].force_load set value 0b
 
 #Incrementing and wiring needed data
-$execute store result storage spawner_tweaker:temp container_checker[$(next)].n int 1 run scoreboard players add n temp 1
-$execute store result storage spawner_tweaker:temp container_checker[$(next)].next int 1 run scoreboard players add n temp 1
+$execute \
+    store result storage spawner_tweaker:temp container_checker[$(next)].n int 1 run scoreboard players add n temp 1
+$execute \
+    store result storage spawner_tweaker:temp container_checker[$(next)].next int 1 run scoreboard players add n temp 1
 scoreboard players remove n temp 1
 
 #Looping

@@ -45,7 +45,8 @@ data modify entity @s text set value [{"text":"░░░░░░░░░░","
 
 
 execute \
-    if score @s monster.elekiel.2.timer matches 0.. store result bossbar chapter_2.elekiel.2 value run \
+    if score @s monster.elekiel.2.timer matches 0.. \
+    store result bossbar chapter_2.elekiel.2 value run \
 scoreboard players get @s monster.elekiel.2.timer
 
 execute \

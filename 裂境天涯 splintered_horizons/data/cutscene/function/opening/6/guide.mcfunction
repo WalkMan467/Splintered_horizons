@@ -1,5 +1,6 @@
 
-execute store result score #send_command_feedback main.gamerule run \
+execute \
+    store result score #send_command_feedback main.gamerule run \
 gamerule send_command_feedback
 gamerule send_command_feedback false
 gamemode survival @a

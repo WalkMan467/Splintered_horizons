@@ -7,10 +7,12 @@ scoreboard players add @s cse.status_effects.bleeding.health_temp 0
 scoreboard players add @s cse.status_effects.bleeding.health 0
 
 
-execute store result score @s cse.status_effects.bleeding.max_health_temp run \
+execute \
+    store result score @s cse.status_effects.bleeding.max_health_temp run \
 attribute @s max_health get 10
 
-execute store result score @s cse.status_effects.bleeding.health run \
+execute \
+    store result score @s cse.status_effects.bleeding.health run \
 data get entity @s Health 10
 
 

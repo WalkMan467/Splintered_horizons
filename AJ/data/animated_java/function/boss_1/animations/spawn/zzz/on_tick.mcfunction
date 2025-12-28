@@ -8,7 +8,8 @@ execute \
     if score @s aj.tween_duration matches 0 on passengers run data modify entity @s interpolation_duration set value 1
 data remove storage animated_java:temp args
 
-execute store result storage animated_java:temp args.frame int 1 run scoreboard players get @s aj.spawn.frame
+execute \
+    store result storage animated_java:temp args.frame int 1 run scoreboard players get @s aj.spawn.frame
 function animated_java:boss_1/animations/spawn/zzz/apply_frame with storage animated_java:temp args
 
 execute \

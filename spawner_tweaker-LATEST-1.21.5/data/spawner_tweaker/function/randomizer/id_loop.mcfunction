@@ -9,14 +9,16 @@ execute \
 #Random, weighted
 
 execute \
-    if score $st_ongoing_process temp matches 7 store result storage spawner_tweaker:temp variables.max_rng int 1 \
+    if score $st_ongoing_process temp matches 7 \
+    store result storage spawner_tweaker:temp variables.max_rng int 1 \
     if data storage spawner_tweaker:temp random_source[{}]
 
 execute \
     if score $st_ongoing_process temp matches 7 run function spawner_tweaker:randomizer/select_id_weighted with storage spawner_tweaker:temp variables
 
 #Assign the new random id
-$execute store result storage spawner_tweaker:temp Priming[$(n)].id int 1 run scoreboard players get random temp
+$execute \
+    store result storage spawner_tweaker:temp Priming[$(n)].id int 1 run scoreboard players get random temp
 
 #Loop
 $execute \

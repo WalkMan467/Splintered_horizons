@@ -18,7 +18,8 @@ function world_area:other/otherworld_portal/2/out
     # Detect
     execute \
     positioned 6 35 97.0 \
-    in minecraft:the_end store result score #world_area.other.otherworld_portal.1 global.main \
+    in minecraft:the_end \
+    store result score #world_area.other.otherworld_portal.1 global.main \
     if entity @a[distance=..6,gamemode=!spectator]
     execute \
     positioned 6 35 97.0 \

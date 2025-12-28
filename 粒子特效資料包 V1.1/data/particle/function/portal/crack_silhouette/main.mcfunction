@@ -53,10 +53,13 @@ execute \
     if score @s mob.duration matches 20 run \
 scoreboard players set #opacity mob.main 25
 
-execute store result entity @s text_opacity int 1 run \
+execute \
+    store result entity @s text_opacity int 1 run \
 scoreboard players get #opacity mob.main
 
-execute on passengers store result entity @s text_opacity int 1 run \
+execute \
+    on passengers \
+    store result entity @s text_opacity int 1 run \
 scoreboard players get #opacity mob.main
 
 

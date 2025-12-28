@@ -4,7 +4,8 @@ execute \
     if score @s aj.chat1.frame matches 81.. run scoreboard players set @s aj.chat1.frame 1
 data remove storage animated_java:temp args
 
-execute store result storage animated_java:temp args.frame int 1 run scoreboard players get @s aj.chat1.frame
+execute \
+    store result storage animated_java:temp args.frame int 1 run scoreboard players get @s aj.chat1.frame
 
 execute at @s run function animated_java:sophia/animations/chat1/zzz/apply_frame with storage animated_java:temp args
 scoreboard players add @s aj.chat1.frame 1

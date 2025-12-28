@@ -26,12 +26,15 @@ execute \
 
 #Spawn area display
 
-execute store result score temp temp run data get storage spawner_tweaker:temp spawner.SpawnRange 2
+execute \
+    store result score temp temp run data get storage spawner_tweaker:temp spawner.SpawnRange 2
 scoreboard players add temp temp 1
 
-execute store result storage spawner_tweaker:temp spawner.SpawnVolume float 1.001 run scoreboard players get temp temp
+execute \
+    store result storage spawner_tweaker:temp spawner.SpawnVolume float 1.001 run scoreboard players get temp temp
 
-execute store result storage spawner_tweaker:temp spawner.HalfSpawnVolume float 0.5001 run scoreboard players get temp temp
+execute \
+    store result storage spawner_tweaker:temp spawner.HalfSpawnVolume float 0.5001 run scoreboard players get temp temp
 
 execute \
     unless entity @s[tag=st_player_near] \
@@ -41,22 +44,28 @@ execute \
     if entity @s[tag=st_player_near] \
     as @e[limit=1,sort=nearest,distance=..1,tag=st_box] run data modify entity @s block_state.Name set value "minecraft:red_stained_glass"
 
-execute store result storage spawner_tweaker:temp spawner.height float 0.0001 run scoreboard players get @s spawner_tweaker_offset
+execute \
+    store result storage spawner_tweaker:temp spawner.height float 0.0001 run scoreboard players get @s spawner_tweaker_offset
 
 execute \
     as @e[limit=1,sort=nearest,distance=..1,tag=st_box] run function spawner_tweaker:spawner_tweaking/spawn_area with storage spawner_tweaker:temp spawner
 
 #Radius display
 
-execute store result score temp temp run data get storage spawner_tweaker:temp spawner.RequiredPlayerRange 1200
+execute \
+    store result score temp temp run data get storage spawner_tweaker:temp spawner.RequiredPlayerRange 1200
 
-execute store result storage spawner_tweaker:temp temp.scale float 0.0103 run scoreboard players get temp temp
+execute \
+    store result storage spawner_tweaker:temp temp.scale float 0.0103 run scoreboard players get temp temp
 
-execute store result storage spawner_tweaker:temp temp.y float 0.00135 run scoreboard players get temp temp
+execute \
+    store result storage spawner_tweaker:temp temp.y float 0.00135 run scoreboard players get temp temp
 
-execute store result storage spawner_tweaker:temp temp.x float 0.00018 run scoreboard players get temp temp
+execute \
+    store result storage spawner_tweaker:temp temp.x float 0.00018 run scoreboard players get temp temp
 
-execute store result storage spawner_tweaker:temp temp.height float 0.0001 run scoreboard players get @s spawner_tweaker_offset
+execute \
+    store result storage spawner_tweaker:temp temp.height float 0.0001 run scoreboard players get @s spawner_tweaker_offset
 scoreboard players operation temp temp += @s spawner_tweaker_offset
 
 execute \
@@ -116,9 +125,11 @@ data modify storage spawner_tweaker:temp variables.max_nearby set from storage s
 data modify storage spawner_tweaker:temp variables.range set from storage spawner_tweaker:temp spawner.SpawnRange
 data modify storage spawner_tweaker:temp variables.player_range set from storage spawner_tweaker:temp spawner.RequiredPlayerRange
 
-execute store result storage spawner_tweaker:temp variables.min_delay int 0.05 run data get storage spawner_tweaker:temp spawner.MinSpawnDelay
+execute \
+    store result storage spawner_tweaker:temp variables.min_delay int 0.05 run data get storage spawner_tweaker:temp spawner.MinSpawnDelay
 
-execute store result storage spawner_tweaker:temp variables.max_delay int 0.05 run data get storage spawner_tweaker:temp spawner.MaxSpawnDelay
+execute \
+    store result storage spawner_tweaker:temp variables.max_delay int 0.05 run data get storage spawner_tweaker:temp spawner.MaxSpawnDelay
 data modify storage spawner_tweaker:temp variables.block_light_min set value "0"
 data modify storage spawner_tweaker:temp variables.block_light_max set value "15"
 data modify storage spawner_tweaker:temp variables.sky_light_min set value "0"

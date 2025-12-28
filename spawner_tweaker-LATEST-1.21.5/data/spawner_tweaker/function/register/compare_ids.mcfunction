@@ -11,12 +11,14 @@ data remove storage spawner_tweaker:temp compare_ids[0].SpawnPotentials[6].data.
 data remove storage spawner_tweaker:temp compare_ids[0].SpawnPotentials[7].data.custom_spawn_rules
 data remove storage spawner_tweaker:temp compare_ids[0].SpawnPotentials[8].data.custom_spawn_rules
 
-execute store success score not_new temp run data modify storage spawner_tweaker:temp compare_ids[0].SpawnPotentials set from storage spawner_tweaker:temp physical_spawner.SpawnPotentials
+execute \
+    store success score not_new temp run data modify storage spawner_tweaker:temp compare_ids[0].SpawnPotentials set from storage spawner_tweaker:temp physical_spawner.SpawnPotentials
 
 scoreboard players add id temp 1
 
 execute \
-    if score not_new temp matches 0 store result score id temp run data get storage spawner_tweaker:temp compare_ids[0].id
+    if score not_new temp matches 0 \
+    store result score id temp run data get storage spawner_tweaker:temp compare_ids[0].id
 data remove storage spawner_tweaker:temp compare_ids[0]
 scoreboard players remove n temp 1
 

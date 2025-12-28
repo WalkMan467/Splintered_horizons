@@ -22,7 +22,8 @@ function animated_java:sophia/summon \
 execute \
     positioned -2 65 22 \
     unless score story.chapter_1.sq.1 global.main matches 1 \
-as @n[type=item_display,tag=aj.sophia.root,distance=..3] on passengers run \
+as @n[type=item_display,tag=aj.sophia.root,distance=..3] \
+    on passengers run \
 data modify entity @s Glowing set value 1b
 
 summon interaction -2 65 22 \

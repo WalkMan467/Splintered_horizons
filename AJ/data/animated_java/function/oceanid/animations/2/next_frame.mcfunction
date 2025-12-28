@@ -4,7 +4,8 @@ execute \
     if score @s aj.2.frame matches 221.. run scoreboard players set @s aj.2.frame 1
 data remove storage animated_java:temp args
 
-execute store result storage animated_java:temp args.frame int 1 run scoreboard players get @s aj.2.frame
+execute \
+    store result storage animated_java:temp args.frame int 1 run scoreboard players get @s aj.2.frame
 
 execute at @s run function animated_java:oceanid/animations/2/zzz/apply_frame with storage animated_java:temp args
 scoreboard players add @s aj.2.frame 1

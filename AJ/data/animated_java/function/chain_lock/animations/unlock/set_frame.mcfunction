@@ -3,6 +3,7 @@
 execute \
     unless entity @s[type=minecraft:item_display,tag=aj.chain_lock.root] run return run function animated_java:global/errors/function_not_executed_as_root_entity {'export_namespace': 'chain_lock', 'function_path': 'animated_java:chain_lock/animations/unlock/set_frame'}
 data remove storage aj:temp args
-$execute store result storage aj:temp args.frame int 1 run scoreboard players set @s aj.unlock.frame $(frame)
+$execute \
+    store result storage aj:temp args.frame int 1 run scoreboard players set @s aj.unlock.frame $(frame)
 
 execute at @s run function animated_java:chain_lock/animations/unlock/zzz/set_frame with storage aj:temp args

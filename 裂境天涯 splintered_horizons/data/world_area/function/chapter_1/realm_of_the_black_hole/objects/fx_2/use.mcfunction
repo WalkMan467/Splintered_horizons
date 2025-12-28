@@ -6,7 +6,8 @@ summon area_effect_cloud ~ ~ ~ {Tags:["world_area.realm_of_the_black_hole.fx_2",
 
 
 execute \
-    as @e[tag=world_area.realm_of_the_black_hole.fx_2,type=area_effect_cloud] store result score @s world_area.realm_of_the_black_hole.fx2.rotation run \
+    as @e[tag=world_area.realm_of_the_black_hole.fx_2,type=area_effect_cloud] \
+    store result score @s world_area.realm_of_the_black_hole.fx2.rotation run \
 random value 1..8
 
 

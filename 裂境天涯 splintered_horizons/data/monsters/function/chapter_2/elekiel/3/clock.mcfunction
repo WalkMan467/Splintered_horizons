@@ -62,7 +62,8 @@ data modify entity 00000037-0000-0079-0000-001500000001 text set value [{"text":
 
 
 execute \
-    if score global monster.elekiel.3.timer matches 0.. store result bossbar chapter_2.elekiel.3 value run \
+    if score global monster.elekiel.3.timer matches 0.. \
+    store result bossbar chapter_2.elekiel.3 value run \
 scoreboard players get global monster.elekiel.3.timer
 
 execute \

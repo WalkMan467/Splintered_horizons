@@ -20,7 +20,8 @@ execute \
 scoreboard players set @s duration 100
 
 execute \
-    as @e[tag=monsters.elekiel.2.tree,tag=summon,type=block_display] store result score @s monster.elekiel.1.rdm_monsters run \
+    as @e[tag=monsters.elekiel.2.tree,tag=summon,type=block_display] \
+    store result score @s monster.elekiel.1.rdm_monsters run \
 random value 1..4
 
 

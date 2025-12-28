@@ -27,7 +27,8 @@ scoreboard players set @a[distance=..6,gamemode=!spectator] player.actionbar.oth
 
     execute \
     positioned 949.50 88.00 494.00 \
-    in minecraft:overworld store result score #world_area.other.otherworld_portal.4 global.main \
+    in minecraft:overworld \
+    store result score #world_area.other.otherworld_portal.4 global.main \
     if entity @a[distance=..6,gamemode=!spectator]
     execute \
     positioned 949.50 88.00 494.00 \

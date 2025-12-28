@@ -10,12 +10,14 @@ title @s times 0 5 0
 
 
 execute \
-    if score @s player.effect.glitch_effect matches ..10 store result score #rdm global.main run \
+    if score @s player.effect.glitch_effect matches ..10 \
+    store result score #rdm global.main run \
 random value 1..5
 
 execute \
     if score @s player.effect.glitch_effect matches ..10 \
-    if score #rdm.temp global.main = #rdm global.main store result score #rdm global.main run \
+    if score #rdm.temp global.main = #rdm global.main \
+    store result score #rdm global.main run \
 random value 1..5
 
 
@@ -51,12 +53,14 @@ title @s title {"text": ""}
 
 
 execute \
-    if score @s player.effect.glitch_effect matches 20..30 store result score #rdm global.main run \
+    if score @s player.effect.glitch_effect matches 20..30 \
+    store result score #rdm global.main run \
 random value 1..6
 
 execute \
     if score @s player.effect.glitch_effect matches 20..30 \
-    if score #rdm.temp global.main = #rdm global.main store result score #rdm global.main run \
+    if score #rdm.temp global.main = #rdm global.main \
+    store result score #rdm global.main run \
 random value 1..6
 
 
@@ -97,12 +101,14 @@ title @s title {"text": ""}
 
 
 execute \
-    if score @s player.effect.glitch_effect matches 35..50 store result score #rdm global.main run \
+    if score @s player.effect.glitch_effect matches 35..50 \
+    store result score #rdm global.main run \
 random value 1..6
 
 execute \
     if score @s player.effect.glitch_effect matches 35..50 \
-    if score #rdm.temp global.main = #rdm global.main store result score #rdm global.main run \
+    if score #rdm.temp global.main = #rdm global.main \
+    store result score #rdm global.main run \
 random value 1..6
 
 
@@ -143,12 +149,14 @@ title @s title {"text": ""}
 
 
 execute \
-    if score @s player.effect.glitch_effect matches 55..70 store result score #rdm global.main run \
+    if score @s player.effect.glitch_effect matches 55..70 \
+    store result score #rdm global.main run \
 random value 1..5
 
 execute \
     if score @s player.effect.glitch_effect matches 55..70 \
-    if score #rdm.temp global.main = #rdm global.main store result score #rdm global.main run \
+    if score #rdm.temp global.main = #rdm global.main \
+    store result score #rdm global.main run \
 random value 1..5
 
 
@@ -229,12 +237,14 @@ title @s title {"text": "\uE026","shadow_color":0,"color": "white", "font": "min
 
 
 execute \
-    if score @s player.effect.glitch_effect matches 106..110 store result score #rdm global.main run \
+    if score @s player.effect.glitch_effect matches 106..110 \
+    store result score #rdm global.main run \
 random value 1..5
 
 execute \
     if score @s player.effect.glitch_effect matches 106..110 \
-    if score #rdm.temp global.main = #rdm global.main store result score #rdm global.main run \
+    if score #rdm.temp global.main = #rdm global.main \
+    store result score #rdm global.main run \
 random value 1..5
 
 
@@ -265,12 +275,14 @@ title @s title {"text": "\uE025","shadow_color":0,"color": "white", "font": "min
 
 
 execute \
-    if score @s player.effect.glitch_effect matches 110..115 store result score #rdm global.main run \
+    if score @s player.effect.glitch_effect matches 110..115 \
+    store result score #rdm global.main run \
 random value 1..6
 
 execute \
     if score @s player.effect.glitch_effect matches 110..115 \
-    if score #rdm.temp global.main = #rdm global.main store result score #rdm global.main run \
+    if score #rdm.temp global.main = #rdm global.main \
+    store result score #rdm global.main run \
 random value 1..6
 
 
@@ -306,12 +318,14 @@ title @s title {"text": "\uE021","shadow_color":0,"color": "white", "font": "min
 
 
 execute \
-    if score @s player.effect.glitch_effect matches 115..120 store result score #rdm global.main run \
+    if score @s player.effect.glitch_effect matches 115..120 \
+    store result score #rdm global.main run \
 random value 1..6
 
 execute \
     if score @s player.effect.glitch_effect matches 115..120 \
-    if score #rdm.temp global.main = #rdm global.main store result score #rdm global.main run \
+    if score #rdm.temp global.main = #rdm global.main \
+    store result score #rdm global.main run \
 random value 1..6
 
 
@@ -347,12 +361,14 @@ title @s title {"text": "\uE018","shadow_color":0,"color": "white", "font": "min
 
 
 execute \
-    if score @s player.effect.glitch_effect matches 120..125 store result score #rdm global.main run \
+    if score @s player.effect.glitch_effect matches 120..125 \
+    store result score #rdm global.main run \
 random value 1..5
 
 execute \
     if score @s player.effect.glitch_effect matches 120..125 \
-    if score #rdm.temp global.main = #rdm global.main store result score #rdm global.main run \
+    if score #rdm.temp global.main = #rdm global.main \
+    store result score #rdm global.main run \
 random value 1..5
 
 

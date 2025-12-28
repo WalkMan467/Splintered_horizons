@@ -2,7 +2,8 @@
 
     # Detect
     execute \
-    positioned 807 201 149 store result score #story.chapter_2.ml.1 global.main \
+    positioned 807 201 149 \
+    store result score #story.chapter_2.ml.1 global.main \
     if entity @a[distance=..6,gamemode=!spectator]
 
     execute \

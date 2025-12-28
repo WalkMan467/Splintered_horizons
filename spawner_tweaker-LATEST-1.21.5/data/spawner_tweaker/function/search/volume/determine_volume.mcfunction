@@ -70,4 +70,5 @@ scoreboard players operation time_s st_volume = time st_volume
 scoreboard players operation time_s st_volume /= 20 numbers
 data remove storage spawner_tweaker:temp variables.volume_time
 
-execute store result storage spawner_tweaker:temp variables.volume_time double 0.05 run scoreboard players get time st_volume
+execute \
+    store result storage spawner_tweaker:temp variables.volume_time double 0.05 run scoreboard players get time st_volume

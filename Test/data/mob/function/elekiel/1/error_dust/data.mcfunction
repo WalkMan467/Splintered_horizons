@@ -4,12 +4,15 @@ data merge entity @s {Tags:["mob.elekiel.1.error_dust","mob.elekiel.1.display","
 function mob:elekiel/1/error_dust/2
 
 
-execute store result score @s mob.duration run \
+execute \
+    store result score @s mob.duration run \
 random value -5..15
 
 
-execute store result entity @s Rotation[0] float 0.1 run \
+execute \
+    store result entity @s Rotation[0] float 0.1 run \
 random value 0..3600
 
-execute store result entity @s Rotation[1] float 0.1 run \
+execute \
+    store result entity @s Rotation[1] float 0.1 run \
 random value -300..300

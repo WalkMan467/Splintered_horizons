@@ -4,12 +4,15 @@ scoreboard players set #success aj.i 0
 execute \
     if data storage animated_java:temp {args:{animation:''}} run return run function animated_java:boss_1/zzz/summon/animation_arg/if_empty
 
-execute store result storage animated_java:temp args.frame int 1 store result score #frame aj.i run data get storage animated_java:temp args.frame
+execute \
+    store result storage animated_java:temp args.frame int 1 \
+    store result score #frame aj.i run data get storage animated_java:temp args.frame
 
 execute \
     if score #frame aj.i matches ..-1 run return run function animated_java:boss_1/zzz/summon/animation_arg/no_negative
 
-execute store success score #success aj.i run function animated_java:boss_1/zzz/summon/animation_arg/try_set_frame with storage animated_java:temp args
+execute \
+    store success score #success aj.i run function animated_java:boss_1/zzz/summon/animation_arg/try_set_frame with storage animated_java:temp args
 
 execute \
     unless score #success aj.i matches 1 run return run function animated_java:boss_1/zzz/summon/animation_arg/invalid_animation

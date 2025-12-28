@@ -11,7 +11,8 @@ rotate @s 135 0
 
     # Detect
     execute \
-    positioned 766 145 966 store result score #world_area.main.safe_zone.selena global.main \
+    positioned 766 145 966 \
+    store result score #world_area.main.safe_zone.selena global.main \
     if entity @a[distance=..8,gamemode=!spectator]
 
     # If true;

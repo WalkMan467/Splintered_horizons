@@ -1,13 +1,16 @@
 scoreboard players operation @s item.tp_book.player_id = @p[tag=temp] player.id
 
 
-execute store result score @s item.tp_book.point.x run \
+execute \
+    store result score @s item.tp_book.point.x run \
 data get entity @s Pos[0] 1000
 
-execute store result score @s item.tp_book.point.y run \
+execute \
+    store result score @s item.tp_book.point.y run \
 data get entity @s Pos[1] 1000
 
-execute store result score @s item.tp_book.point.z run \
+execute \
+    store result score @s item.tp_book.point.z run \
 data get entity @s Pos[2] 1000
 
 scoreboard players operation @p[tag=temp] item.tp_book.point.x.temp = @s[tag=summon] item.tp_book.point.x

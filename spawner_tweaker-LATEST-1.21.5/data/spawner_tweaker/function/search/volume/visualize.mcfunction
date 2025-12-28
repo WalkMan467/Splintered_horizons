@@ -19,22 +19,28 @@ data modify storage spawner_tweaker:temp variables.z2 set value 999999
 
 
 execute \
-    unless score $pos1_set st_volume matches 0 store result storage spawner_tweaker:temp variables.x int 1 run scoreboard players get x st_volume
+    unless score $pos1_set st_volume matches 0 \
+    store result storage spawner_tweaker:temp variables.x int 1 run scoreboard players get x st_volume
 
 execute \
-    unless score $pos1_set st_volume matches 0 store result storage spawner_tweaker:temp variables.y int 1 run scoreboard players get y st_volume
+    unless score $pos1_set st_volume matches 0 \
+    store result storage spawner_tweaker:temp variables.y int 1 run scoreboard players get y st_volume
 
 execute \
-    unless score $pos1_set st_volume matches 0 store result storage spawner_tweaker:temp variables.z int 1 run scoreboard players get z st_volume
+    unless score $pos1_set st_volume matches 0 \
+    store result storage spawner_tweaker:temp variables.z int 1 run scoreboard players get z st_volume
 
 execute \
-    unless score $pos2_set st_volume matches 0 store result storage spawner_tweaker:temp variables.x2 int 1 run scoreboard players get x2 st_volume
+    unless score $pos2_set st_volume matches 0 \
+    store result storage spawner_tweaker:temp variables.x2 int 1 run scoreboard players get x2 st_volume
 
 execute \
-    unless score $pos2_set st_volume matches 0 store result storage spawner_tweaker:temp variables.y2 int 1 run scoreboard players get y2 st_volume
+    unless score $pos2_set st_volume matches 0 \
+    store result storage spawner_tweaker:temp variables.y2 int 1 run scoreboard players get y2 st_volume
 
 execute \
-    unless score $pos2_set st_volume matches 0 store result storage spawner_tweaker:temp variables.z2 int 1 run scoreboard players get z2 st_volume
+    unless score $pos2_set st_volume matches 0 \
+    store result storage spawner_tweaker:temp variables.z2 int 1 run scoreboard players get z2 st_volume
 
 function spawner_tweaker:search/volume/visualize_particles with storage spawner_tweaker:temp variables
 
@@ -56,16 +62,22 @@ execute \
 kill 18c359ed-00ca-4242-9e49-91cd8846f33a
 
 
-execute store result storage spawner_tweaker:temp variables.x float 1 run scoreboard players get min_x st_volume
+execute \
+    store result storage spawner_tweaker:temp variables.x float 1 run scoreboard players get min_x st_volume
 
-execute store result storage spawner_tweaker:temp variables.y float 1 run scoreboard players get min_y st_volume
+execute \
+    store result storage spawner_tweaker:temp variables.y float 1 run scoreboard players get min_y st_volume
 
-execute store result storage spawner_tweaker:temp variables.z float 1 run scoreboard players get min_z st_volume
+execute \
+    store result storage spawner_tweaker:temp variables.z float 1 run scoreboard players get min_z st_volume
 
-execute store result storage spawner_tweaker:temp variables.dx float 1.0001 run scoreboard players get x_length st_volume
+execute \
+    store result storage spawner_tweaker:temp variables.dx float 1.0001 run scoreboard players get x_length st_volume
 
-execute store result storage spawner_tweaker:temp variables.dy float 1.0001 run scoreboard players get y_length st_volume
+execute \
+    store result storage spawner_tweaker:temp variables.dy float 1.0001 run scoreboard players get y_length st_volume
 
-execute store result storage spawner_tweaker:temp variables.dz float 1.0001 run scoreboard players get z_length st_volume
+execute \
+    store result storage spawner_tweaker:temp variables.dz float 1.0001 run scoreboard players get z_length st_volume
 
 function spawner_tweaker:search/volume/visualize_box with storage spawner_tweaker:temp variables

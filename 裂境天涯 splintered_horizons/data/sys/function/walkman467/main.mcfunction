@@ -4,7 +4,8 @@
 
     # Detect
     execute \
-    positioned 765 146 995 store result score #sys.walkman467 global.main \
+    positioned 765 146 995 \
+    store result score #sys.walkman467 global.main \
     if entity @a[distance=..16,gamemode=!spectator]
 
     execute \

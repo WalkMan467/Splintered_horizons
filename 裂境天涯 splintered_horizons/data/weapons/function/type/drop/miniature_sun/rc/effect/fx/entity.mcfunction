@@ -1,7 +1,8 @@
 rotate @s ~3 0
 
 
-execute store result score #weapon.miniature_sun.probability particle run \
+execute \
+    store result score #weapon.miniature_sun.probability particle run \
 random value 0..100
 
 

@@ -10,4 +10,5 @@ execute at @s run function animated_java:boss_1/animations/spawn/zzz/apply_frame
 $execute at @s run function animated_java:boss_1/animations/spawn/zzz/apply_frame {frame: $(to_frame)}
 tag @s remove aj.transforms_only
 
-execute on passengers store result entity @s interpolation_duration int 1 run scoreboard players get #this aj.i
+execute on passengers \
+    store result entity @s interpolation_duration int 1 run scoreboard players get #this aj.i

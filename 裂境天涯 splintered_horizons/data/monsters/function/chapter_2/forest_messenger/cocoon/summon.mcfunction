@@ -31,11 +31,13 @@ summon block_display ^ ^1 ^8 {Glowing:1b,teleport_duration:1,Tags:["monster.fore
 
 
 execute \
-    as @n[tag=monster.forest_messenger.cocoon,tag=summon,type=block_display] on passengers run \
+    as @n[tag=monster.forest_messenger.cocoon,tag=summon,type=block_display] \
+    on passengers run \
 scoreboard players set @s duration 200
 
 execute \
-    as @n[tag=monster.forest_messenger.cocoon,tag=summon,type=block_display] on passengers run \
+    as @n[tag=monster.forest_messenger.cocoon,tag=summon,type=block_display] \
+    on passengers run \
 scoreboard players operation @s monster.forest_messenger.cocoon.id = .global monster.forest_messenger.cocoon.id
 
 scoreboard players set @n[tag=monster.forest_messenger.cocoon,tag=summon,type=block_display] duration 200

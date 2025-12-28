@@ -1,8 +1,11 @@
 
-execute on passengers on passengers run \
+execute \
+    on passengers \
+    on passengers run \
 kill @s
 
-execute on passengers run \
+execute \
+    on passengers run \
 kill @s
 
 playsound minecraft:entity.blaze.death voice @a ~ ~1 ~ 1 1

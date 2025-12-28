@@ -31,7 +31,8 @@ function armors:type/symbiotic_blood_oath/fx
 tag @s add armor.symbiotic_blood_oath.user
 
 
-execute store result storage temp symbiotic_blood_oath.player.health float 0.25 run \
+execute \
+    store result storage temp symbiotic_blood_oath.player.health float 0.25 run \
 scoreboard players get @s player.health
 
 

@@ -1,6 +1,7 @@
 
 
-execute store result score #random mob.main run \
+execute \
+    store result score #random mob.main run \
 random value 1..8
 
 execute \

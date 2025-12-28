@@ -114,7 +114,8 @@ schedule function main:map_lobby/act/title/0 1t
 
 execute \
     if score #main.map_lobby.act global.main matches 19 \
-    as 00000079-0000-0018-0000-000200000209 on passengers run \
+    as 00000079-0000-0018-0000-000200000209 \
+    on passengers run \
 kill @s
 
 execute \

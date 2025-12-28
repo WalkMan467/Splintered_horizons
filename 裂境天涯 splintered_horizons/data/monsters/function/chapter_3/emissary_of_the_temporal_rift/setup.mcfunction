@@ -11,5 +11,6 @@ tag @s add monsters.emissary_of_the_temporal_rift
 tag @s add monster
 
 
-execute store result score @s monster.skill.cast.cd run \
+execute \
+    store result score @s monster.skill.cast.cd run \
 random value 60..100

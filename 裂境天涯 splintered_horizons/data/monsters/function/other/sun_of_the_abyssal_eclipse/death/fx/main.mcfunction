@@ -1,6 +1,7 @@
 scoreboard players add @s monster.sun_of_the_abyssal_eclipse.death.fx 1
 
-execute store result score @s particle run \
+execute \
+    store result score @s particle run \
 random value 0..100
 
 

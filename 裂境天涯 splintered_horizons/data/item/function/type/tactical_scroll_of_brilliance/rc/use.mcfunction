@@ -3,7 +3,8 @@ scoreboard players set @s player.click.interval 5
 clear @s *[custom_data~{id:"tactical_scroll_of_brilliance"}] 1
 
 
-execute store result score #item.tactical_scroll_of_brilliance.rdm.effect global.main run \
+execute \
+    store result score #item.tactical_scroll_of_brilliance.rdm.effect global.main run \
 random value 1..3
 
 

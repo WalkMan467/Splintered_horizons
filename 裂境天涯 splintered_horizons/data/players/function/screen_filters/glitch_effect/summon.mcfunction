@@ -10,13 +10,15 @@ scoreboard players operation @n[type=creeper,tag=summon,tag=screen_filters.glitc
 
 
 execute \
-    as @n[type=creeper,tag=summon,tag=screen_filters.glitch_effect,distance=..3] on passengers \
+    as @n[type=creeper,tag=summon,tag=screen_filters.glitch_effect,distance=..3] \
+    on passengers \
     if entity @s[type=marker,tag=main.duration.timer,tag=summon] run \
 scoreboard players set @s duration 61
 
 
 execute \
-    as @n[type=creeper,tag=summon,tag=screen_filters.glitch_effect,distance=..3] on passengers \
+    as @n[type=creeper,tag=summon,tag=screen_filters.glitch_effect,distance=..3] \
+    on passengers \
     if entity @s[type=marker,tag=main.duration.timer,tag=summon] run \
 tag @s remove summon
 

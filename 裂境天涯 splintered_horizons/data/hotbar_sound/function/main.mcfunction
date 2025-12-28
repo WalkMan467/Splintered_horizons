@@ -13,7 +13,8 @@
 
 # Detecting column changes
 
-execute store result score @s hotbar run \
+execute \
+    store result score @s hotbar run \
 data get entity @s SelectedItemSlot
 
 execute \

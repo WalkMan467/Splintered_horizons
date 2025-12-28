@@ -11,13 +11,16 @@ execute \
 #Fix this list by removing spawners outside of range
 
 execute \
-    if score $prime_range spawner_tweaker matches 1.. store result score x temp run data get entity @s Pos[0]
+    if score $prime_range spawner_tweaker matches 1.. \
+    store result score x temp run data get entity @s Pos[0]
 
 execute \
-    if score $prime_range spawner_tweaker matches 1.. store result score y temp run data get entity @s Pos[1]
+    if score $prime_range spawner_tweaker matches 1.. \
+    store result score y temp run data get entity @s Pos[1]
 
 execute \
-    if score $prime_range spawner_tweaker matches 1.. store result score z temp run data get entity @s Pos[2]
+    if score $prime_range spawner_tweaker matches 1.. \
+    store result score z temp run data get entity @s Pos[2]
 
 execute \
     if score $prime_range spawner_tweaker matches 1.. run function spawner_tweaker:spawner_priming/range_checker
@@ -26,7 +29,8 @@ execute \
 scoreboard players set spawners_randomized st_priming 0
 scoreboard players add total_spawners st_priming 0
 
-execute store result score total_spawners st_priming \
+execute \
+    store result score total_spawners st_priming \
     if data storage spawner_tweaker:temp Priming[]
 
 #Figuring out which spawners must be foreloaded
@@ -49,6 +53,7 @@ execute \
 execute \
     if score $st_ongoing_process temp matches 7 run data modify storage spawner_tweaker:temp random_source set from storage spawner_tweaker:temp Priming
 
-execute store result storage spawner_tweaker:temp variables.total_ids int 1 \
+execute \
+    store result storage spawner_tweaker:temp variables.total_ids int 1 \
     if data storage spawner_tweaker:temp Ids[{}]
 function spawner_tweaker:randomizer/id_loop with storage spawner_tweaker:temp Priming[0]

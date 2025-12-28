@@ -1,6 +1,7 @@
 
 
-execute store result score #sys.shooting_contest.money global.main run \
+execute \
+    store result score #sys.shooting_contest.money global.main run \
 clear @s *[custom_data~{type:"item",item:"coin_s"}] 0
 
 execute \

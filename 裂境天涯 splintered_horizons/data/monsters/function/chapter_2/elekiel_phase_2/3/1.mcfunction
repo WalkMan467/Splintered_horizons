@@ -1,5 +1,6 @@
 
-execute store result score #monster.elekiel_phase_2.3.summon_point.rdm global.main run \
+execute \
+    store result score #monster.elekiel_phase_2.3.summon_point.rdm global.main run \
 random value 1..3
 
 

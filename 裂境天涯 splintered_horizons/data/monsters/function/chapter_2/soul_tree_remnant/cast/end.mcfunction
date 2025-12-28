@@ -12,5 +12,6 @@ effect clear @s slow_falling
 # Rdm Skill CS
 
 
-execute store result score @s monster.skill.cast.cd run \
+execute \
+    store result score @s monster.skill.cast.cd run \
 random value 150..250

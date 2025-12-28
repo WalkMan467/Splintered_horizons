@@ -1,5 +1,6 @@
 
-execute on vehicle run \
+execute \
+    on vehicle run \
 tag @s add void
 ride @s dismount
 

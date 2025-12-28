@@ -7,7 +7,8 @@ execute \
     if score @s aj.lock.frame matches 41.. run scoreboard players set @s aj.lock.frame 1
 data remove storage aj:temp args
 
-execute store result storage aj:temp args.frame int 1 run scoreboard players get @s aj.lock.frame
+execute \
+    store result storage aj:temp args.frame int 1 run scoreboard players get @s aj.lock.frame
 
 execute at @s run function animated_java:chain_lock/animations/lock/zzz/apply_frame with storage aj:temp args
 scoreboard players add @s aj.lock.frame 1

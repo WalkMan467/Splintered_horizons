@@ -10,8 +10,10 @@ tag @s add monster
 tag @s add freeze.immunity
 
 
-execute store result score @s monster.skill.rdm.skill run \
+execute \
+    store result score @s monster.skill.rdm.skill run \
 random value 1..2
 
-execute store result score @s monster.skill.cast.cd run \
+execute \
+    store result score @s monster.skill.cast.cd run \
 random value 60..100

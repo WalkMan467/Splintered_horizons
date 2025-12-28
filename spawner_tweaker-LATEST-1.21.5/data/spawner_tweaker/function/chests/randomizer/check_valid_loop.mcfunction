@@ -6,7 +6,8 @@
 #Check to see \
     if this position needs to be force loaded
 scoreboard players set force_load temp 0
-$execute store result score force_load temp run data get storage spawner_tweaker:temp container_checker[$(n)].force_load
+$execute \
+    store result score force_load temp run data get storage spawner_tweaker:temp container_checker[$(n)].force_load
 $execute \
     if score force_load temp matches 1.. in $(dimension) \
     positioned $(x) $(y) $(z) run forceload add ~ ~
@@ -26,8 +27,10 @@ $execute \
     positioned $(x) $(y) $(z) run forceload remove ~ ~
 
 #Prep and run the next iteration
-$execute store result storage spawner_tweaker:temp container_checker[$(next)].n int 1 run scoreboard players add n temp 1
-$execute store result storage spawner_tweaker:temp container_checker[$(next)].next int 1 run scoreboard players add n temp 1
+$execute \
+    store result storage spawner_tweaker:temp container_checker[$(next)].n int 1 run scoreboard players add n temp 1
+$execute \
+    store result storage spawner_tweaker:temp container_checker[$(next)].next int 1 run scoreboard players add n temp 1
 scoreboard players remove n temp 1
 
 #Looping

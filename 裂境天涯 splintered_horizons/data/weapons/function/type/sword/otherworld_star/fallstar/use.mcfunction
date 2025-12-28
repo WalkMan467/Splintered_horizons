@@ -1,5 +1,6 @@
 
-execute store result score #rdm global.main run \
+execute \
+    store result score #rdm global.main run \
 random value 1..8
 
 

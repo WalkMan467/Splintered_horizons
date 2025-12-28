@@ -4,7 +4,8 @@
 
     # Detect
     execute \
-    positioned 928 167 908 store result score #story.chapter_2.ml.4 global.main \
+    positioned 928 167 908 \
+    store result score #story.chapter_2.ml.4 global.main \
     if entity @a[distance=..16,gamemode=!spectator]
 
     # Rotate to Player

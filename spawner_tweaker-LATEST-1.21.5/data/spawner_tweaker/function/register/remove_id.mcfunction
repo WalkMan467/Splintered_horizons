@@ -1,6 +1,7 @@
 #Removes a specific spawner id, run with appropriate storage
 scoreboard players set remove temp 0
-$execute store success score remove temp run data remove storage spawner_tweaker:temp Ids[{id:$(id)}]
+$execute \
+    store success score remove temp run data remove storage spawner_tweaker:temp Ids[{id:$(id)}]
 $data remove storage spawner_tweaker:temp Spawners[{id:$(id)}]
 scoreboard players set @s delete_spawner_id -1
 $execute \
@@ -20,7 +21,8 @@ execute \
 #flags
 
 execute \
-    as @s[tag=st_transformer] store result storage spawner_tweaker:temp variables.tweaker_id long 1 run scoreboard players get @s spawner_tweaker_id
+    as @s[tag=st_transformer] \
+    store result storage spawner_tweaker:temp variables.tweaker_id long 1 run scoreboard players get @s spawner_tweaker_id
 
 execute \
     as @s[tag=st_transformer] run function spawner_tweaker:spawner_tweaking/player/unselect_spawner with storage spawner_tweaker:temp variables

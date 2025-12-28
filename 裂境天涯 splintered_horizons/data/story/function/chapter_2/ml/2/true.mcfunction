@@ -15,7 +15,8 @@ function animated_java:sophia/summon {args:{}}
 execute \
     positioned 926.50 167.2 907.75 \
     unless score #story:icon/story/chapter_2/scebe_2 global.main matches 1 \
-    as @n[type=item_display,tag=aj.sophia.root,distance=..3] on passengers run \
+    as @n[type=item_display,tag=aj.sophia.root,distance=..3] \
+    on passengers run \
 data modify entity @s Glowing set value 1b
 
 summon interaction 926.50 167.2 907.75 {Tags:["story.chapter_2.ml.2.act","interaction.sound.default"],height:2,UUID:[I; 25, 21, 51, 5]}

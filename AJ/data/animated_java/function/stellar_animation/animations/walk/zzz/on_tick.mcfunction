@@ -11,7 +11,8 @@ execute \
     if score @s aj.walk.frame matches -1 run function animated_java:stellar_animation/animations/walk/zzz/function_keyframe_loop_patch
 data remove storage animated_java:temp args
 
-execute store result storage animated_java:temp args.frame int 1 run scoreboard players get @s aj.walk.frame
+execute \
+    store result storage animated_java:temp args.frame int 1 run scoreboard players get @s aj.walk.frame
 function animated_java:stellar_animation/animations/walk/zzz/apply_frame with storage animated_java:temp args
 
 execute \

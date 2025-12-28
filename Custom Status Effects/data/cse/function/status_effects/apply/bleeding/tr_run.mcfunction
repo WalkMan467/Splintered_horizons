@@ -5,7 +5,8 @@ scoreboard players operation @s cse.status_effects.bleeding.tr = @s cse.status_e
 
 particle block{block_state:"minecraft:redstone_block"} ~ ~1 ~ 0.5 0.5 0.5 1 20 normal @a
 
-execute store result storage cse:status_effects bleeding.dot int 0.1 run \
+execute \
+    store result storage cse:status_effects bleeding.dot int 0.1 run \
 scoreboard players get @s cse.status_effects.bleeding.dot
 
 scoreboard players set #cse.status_effects.apply.dot? cse.global.main 1

@@ -13,10 +13,12 @@ advancement grant @s only music:chapter_3/lord_of_the_cataclysm/reset
 
 # Bossbar
 
-execute store result bossbar minecraft:monsters.lord_of_the_cataclysm max run \
+execute \
+    store result bossbar minecraft:monsters.lord_of_the_cataclysm max run \
 attribute @s max_health get
 
-execute store result bossbar minecraft:monsters.lord_of_the_cataclysm value run \
+execute \
+    store result bossbar minecraft:monsters.lord_of_the_cataclysm value run \
 data get entity @s Health
 bossbar set minecraft:monsters.lord_of_the_cataclysm visible true
 

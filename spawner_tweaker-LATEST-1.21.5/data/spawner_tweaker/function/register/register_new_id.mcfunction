@@ -2,13 +2,15 @@
 
 #Find the next id
 
-execute store result storage spawner_tweaker:temp variables.id int 1 run scoreboard players set id temp 0
+execute \
+    store result storage spawner_tweaker:temp variables.id int 1 run scoreboard players set id temp 0
 function spawner_tweaker:register/find_next_id with storage spawner_tweaker:temp variables
 
 #Write data to new id
 data modify storage spawner_tweaker:temp id set from block ~ ~ ~
 
-execute store result storage spawner_tweaker:temp id.id int 1 run scoreboard players get id temp
+execute \
+    store result storage spawner_tweaker:temp id.id int 1 run scoreboard players get id temp
 data modify storage spawner_tweaker:temp id.Delay set value 0s
 data remove storage spawner_tweaker:temp id.x
 data remove storage spawner_tweaker:temp id.y
@@ -28,7 +30,8 @@ execute \
 execute \
     if data storage spawner_tweaker:temp id.components."minecraft:item_name" run scoreboard players set name temp 3
 
-execute store result storage spawner_tweaker:temp variables.id int 1 run data get storage spawner_tweaker:temp id.id
+execute \
+    store result storage spawner_tweaker:temp variables.id int 1 run data get storage spawner_tweaker:temp id.id
 
 execute \
     if score name temp matches 0 run data modify storage spawner_tweaker:temp id.name set string storage spawner_tweaker:temp id.SpawnPotentials[0].data.entity.id 10

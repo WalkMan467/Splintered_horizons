@@ -11,7 +11,8 @@ execute \
     if score @s aj.sit_down.frame matches -1 run function animated_java:elina/animations/sit_down/zzz/function_keyframe_loop_patch
 data remove storage animated_java:temp args
 
-execute store result storage animated_java:temp args.frame int 1 run scoreboard players get @s aj.sit_down.frame
+execute \
+    store result storage animated_java:temp args.frame int 1 run scoreboard players get @s aj.sit_down.frame
 function animated_java:elina/animations/sit_down/zzz/apply_frame with storage animated_java:temp args
 
 execute \

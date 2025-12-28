@@ -1,5 +1,6 @@
 
-execute store result score @s sys.monster_wave.rdm run \
+execute \
+    store result score @s sys.monster_wave.rdm run \
 random value 1..3
 
 

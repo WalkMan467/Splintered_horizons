@@ -23,5 +23,6 @@ return 0
 playsound minecraft:voice.kill_sword_shoot voice @a ~ ~1 ~ 0.1 1
 
 
-execute store result score #kill_sword_shoot.timer.temp global.main run \
+execute \
+    store result score #kill_sword_shoot.timer.temp global.main run \
 random value 5..10

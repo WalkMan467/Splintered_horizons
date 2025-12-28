@@ -37,7 +37,8 @@ bossbar remove chapter_2.elekiel.2
 bossbar remove chapter_2.elekiel.3
 
 
-execute on passengers \
+execute \
+    on passengers \
     as @n[tag=aj.boss_1.root,type=item_display] run \
 function animated_java:boss_1/remove/this
 
