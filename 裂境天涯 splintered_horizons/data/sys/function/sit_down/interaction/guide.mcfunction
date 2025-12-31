@@ -4,8 +4,8 @@ execute \
 kill @s
 
 execute \
-    if entity @n[sort=arbitrary,distance=..0.5,tag=!sys.sit_down,type=!player] run \
-kill @s
+    if entity @n[sort=arbitrary,distance=..1,tag=aj.global.root,type=item_display] run \
+kill @e[sort=arbitrary,tag=sys.sit_down,type=#dummy_mob]
 
 
 execute \

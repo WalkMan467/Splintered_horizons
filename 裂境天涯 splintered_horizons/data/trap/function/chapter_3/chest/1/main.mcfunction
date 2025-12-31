@@ -3,6 +3,9 @@ execute \
     unless score #difficulty global.main matches 1.. run \
 return 0
 
+execute \
+    unless score #trap.chapter_3.chest.actived trap.global.main matches 1.. run \
+return 0
 
 execute \
     if biome ~ ~ ~ world_area:chapter_3/finalitys_embrace_rift_trap \

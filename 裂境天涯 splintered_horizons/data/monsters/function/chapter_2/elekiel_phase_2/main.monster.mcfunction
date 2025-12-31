@@ -33,3 +33,5 @@ execute \
     as 00000100-0000-0080-0000-008000000005 run \
 rotate @s ~ 0
 ride @n[tag=aj.boss_1.root,type=item_display] mount 00000100-0000-0080-0000-008000000005
+
+function monsters:chapter_2/elekiel/state/main

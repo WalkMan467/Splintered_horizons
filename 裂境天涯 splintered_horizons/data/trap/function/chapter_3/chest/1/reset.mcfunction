@@ -1,6 +1,6 @@
-scoreboard players set #trap.chapter_2.chest.actived trap.global.main 1
+scoreboard players set #trap.chapter_3.chest.actived trap.global.main 1
 
-scoreboard players set #trap.chapter_2.chest trap.global.main 1
+scoreboard players set #trap.chapter_3.chest trap.global.main 1
 
 setblock 1103 209 166 minecraft:campfire[lit=false]
 setblock 1118 210 158 minecraft:campfire[lit=false]

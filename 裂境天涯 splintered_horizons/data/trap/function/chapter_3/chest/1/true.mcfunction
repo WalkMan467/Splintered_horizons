@@ -1,9 +1,9 @@
 
 execute \
-    if score #trap.chapter_2.chest trap.global.main matches 0 run \
+    if score #trap.chapter_3.chest trap.global.main matches 0 run \
 return 0
 
-scoreboard players set #trap.chapter_2.chest trap.global.main 0
+scoreboard players set #trap.chapter_3.chest trap.global.main 0
 
 setblock 1103 209 166 minecraft:campfire[lit=true]
 setblock 1118 210 158 minecraft:campfire[lit=true]

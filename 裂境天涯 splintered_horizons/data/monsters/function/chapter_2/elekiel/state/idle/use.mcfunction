@@ -1,1 +1,0 @@
-scoreboard players set @s monster.elekiel.3.state 0

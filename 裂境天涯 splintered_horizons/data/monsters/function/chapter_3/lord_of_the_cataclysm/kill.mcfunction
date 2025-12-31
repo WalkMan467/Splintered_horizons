@@ -2,7 +2,7 @@ bossbar remove minecraft:monsters.lord_of_the_cataclysm
 
 schedule clear monsters:chapter_3/lord_of_the_cataclysm/main
 
-scoreboard players set #trap.chapter_2.chest.actived trap.global.main 0
+scoreboard players set #trap.chapter_3.chest.actived trap.global.main 0
 
 setblock 1103 209 166 minecraft:campfire[lit=true]
 setblock 1118 210 158 minecraft:campfire[lit=true]

@@ -8,3 +8,4 @@ scoreboard objectives add aj.attack_2.frame dummy
 scoreboard objectives add aj.back.frame dummy
 scoreboard objectives add aj.idle.frame dummy
 scoreboard objectives add aj.cutscene_attack.frame dummy
+scoreboard objectives add aj.walk.frame dummy
