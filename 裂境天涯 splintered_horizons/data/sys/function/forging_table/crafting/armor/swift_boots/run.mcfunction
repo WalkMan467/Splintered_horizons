@@ -7,6 +7,6 @@ execute \
     if entity @s[tag=sys.forging_table.crafted_item.failure,type=item] run \
 return 0
 
-kill @n[distance=..1.5,predicate=sys:forging_table/crafting/armor/armor_of_the_coiled_rock/rockbound_crystal,type=item]
+kill @n[distance=..1.5,predicate=sys:forging_table/crafting/armor/swift_boots/dust_of_the_wind,type=item]
 
-function sys:forging_table/crafting/armor/armor_of_the_coiled_rock/setup
+function sys:forging_table/crafting/armor/swift_boots/setup

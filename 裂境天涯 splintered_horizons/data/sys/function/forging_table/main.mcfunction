@@ -65,28 +65,28 @@ function sys:forging_table/crafting/general/weapon_energy_infusion
 execute \
     positioned 770 148 979 \
     as @n[distance=..1.5,type=item,predicate=sys:forging_table/crafting/sword/general/leather_helmet] run \
-function sys:forging_table/crafting/general/armor_energy_infusion
+function sys:forging_table/crafting/armor/helmet
 
 # Leather Chestplate
 
 execute \
     positioned 770 148 979 \
     as @n[distance=..1.5,type=item,predicate=sys:forging_table/crafting/sword/general/leather_chestplate] run \
-function sys:forging_table/crafting/armor/guide
+function sys:forging_table/crafting/armor/chestplate
 
 # Leather Leggings
 
 execute \
     positioned 770 148 979 \
     as @n[distance=..1.5,type=item,predicate=sys:forging_table/crafting/sword/general/leather_leggings] run \
-function sys:forging_table/crafting/general/armor_energy_infusion
+function sys:forging_table/crafting/armor/leggings
 
 # Leather Boots
 
 execute \
     positioned 770 148 979 \
     as @n[distance=..1.5,type=item,predicate=sys:forging_table/crafting/sword/general/leather_boots] run \
-function sys:forging_table/crafting/general/armor_energy_infusion
+function sys:forging_table/crafting/armor/boots
 
 # Other Armor
 

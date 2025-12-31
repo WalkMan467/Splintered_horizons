@@ -1,0 +1,91 @@
+[
+  {
+    "function": "minecraft:set_item",
+    "item": "minecraft:bundle"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_model": "equipment/swift_boots",
+      "minecraft:item_name": [
+        {
+          "translate": "armor.swift_boots",
+          "color": "#6af7fc",
+          "italic": false,
+          "bold": true
+        }
+      ],
+      "minecraft:lore": [
+        [
+          { "translate": "armor.swift_boots.type", "italic": false, "color": "dark_gray" }
+        ],
+        { "text": "" },
+        [
+          { "translate": "armor.swift_boots.story.1", "italic": false, "color": "blue" }
+        ],
+        [
+          { "translate": "armor.swift_boots.story.2", "italic": false, "color": "blue" }
+        ],
+        [
+          { "translate": "armor.swift_boots.story.3", "italic": false, "color": "blue" }
+        ],
+        [
+          { "translate": "armor.swift_boots.story.4", "italic": false, "color": "blue" }
+        ],
+        { "text": "" },
+        [
+          { "text": "", "italic": false },
+          { "translate": "armor.swift_boots.skill", "color": "#6af7fc", "bold": true },
+          { "text": "  " }
+        ],
+        [
+          { "text": "", "italic": false },
+          {
+            "translate": "armor.swift_boots.skill.1",
+            "color": "#6a8cfc",
+            "with": [
+              { "translate": "armor.type.chestplate", "underlined": true, "color": "dark_green" }
+            ]
+          }
+        ],
+        [
+          { "text": "", "italic": false },
+          { "translate": "armor.swift_boots.skill.2", "color": "#6a8cfc" }
+        ]
+      ],
+      "minecraft:attribute_modifiers": [
+        {
+          "id": "feet.1",
+          "type": "armor",
+          "amount": 2,
+          "operation": "add_value",
+          "slot": "feet"
+        }
+      ],
+      "minecraft:max_stack_size": 1,
+      "minecraft:unbreakable": {},
+      "minecraft:custom_data": {
+        "swift": true,
+        "type": "armor",
+        "id": "swift_boots"
+      },
+      "minecraft:tooltip_style": "rare",
+      "minecraft:equippable": {
+        "slot": "feet",
+        "equip_sound": "item.armor.equip_iron",
+        "asset_id": "leather"
+      },
+      "minecraft:dyed_color": 7010300,
+      "minecraft:trim": {
+        "material": "minecraft:diamond",
+        "pattern": "minecraft:silence"
+      },
+      "minecraft:tooltip_display": {
+        "hidden_components": [
+          "dyed_color",
+          "trim"
+        ]
+      }
+    }
+  }
+]
