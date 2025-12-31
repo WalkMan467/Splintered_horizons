@@ -45,8 +45,8 @@ execute \
     if score @s player.death_count matches 120.. run \
 title @s subtitle [{"translate":"tips.player_death.3","color":"white"},{"text":": "},{"score":{name:"@s",objective:"player.death_count"},"color":"dark_red"}]
 
-scoreboard objectives setdisplay sidebar player.death_count
-scoreboard objectives setdisplay list player.death_count
+# scoreboard objectives setdisplay sidebar player.death_count
+# scoreboard objectives setdisplay list player.death_count
 
 effect give @s blindness 5 255 true
 effect give @s darkness 5 255 true

@@ -1,3 +1,10 @@
+execute \
+    if entity @s[tag=!animation,gamemode=spectator] run \
+return 0
+
+execute \
+    if entity @s[gamemode=!creative,gamemode=!spectator,gamemode=!survival,gamemode=!adventure] run \
+return 0
 
 execute \
     if score @s player.actionbar.tp_book.failure matches 1.. run \

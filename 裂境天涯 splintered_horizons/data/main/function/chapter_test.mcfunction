@@ -103,6 +103,7 @@ function weapons:get/drop/hook
 clear @s *[custom_data~{type:"drop",weapon:"hook"}] 56
 give @s apple 16
 function item:get/main/tp_book
+give @s bow 1
 function armors:get/black_hole
 function armors:get/armor_of_the_coiled_rock
 function armors:get/swift_boots

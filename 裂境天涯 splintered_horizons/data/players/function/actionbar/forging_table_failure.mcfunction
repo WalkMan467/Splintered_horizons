@@ -9,6 +9,13 @@
 # ===================================================
 
 # Display Actionbar
+execute \
+    if entity @s[tag=!animation,gamemode=spectator] run \
+return 0
+
+execute \
+    if entity @s[gamemode=!creative,gamemode=!spectator,gamemode=!survival,gamemode=!adventure] run \
+return 0
 
 execute \
     if score #player.actionbar.sys.forging_table.failure global.main matches 1 run \

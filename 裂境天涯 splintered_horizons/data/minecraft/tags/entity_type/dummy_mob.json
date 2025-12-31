@@ -2,7 +2,6 @@
     "values": [
       "minecraft:area_effect_cloud",
       "minecraft:armor_stand",
-      "#minecraft:arrows",
       "minecraft:marker",
       "minecraft:item_display",
       "minecraft:block_display",
@@ -15,21 +14,18 @@
       "minecraft:chest_minecart",
       "minecraft:experience_orb",
       "minecraft:experience_bottle",
-      "minecraft:egg",
       "#minecraft:boat",
       "minecraft:falling_block",
-      "minecraft:firework_rocket",
       "minecraft:evoker_fangs",
       "minecraft:splash_potion",
       "minecraft:lingering_potion",
-      "minecraft:breeze_wind_charge",
-      "minecraft:wind_charge",
-      "minecraft:fireball",
-      "minecraft:trident",
+      "#impact_projectiles",
       "minecraft:command_block_minecart",
-      "minecraft:snowball",
       "minecraft:item_frame",
       "minecraft:glow_item_frame",
-      "minecraft:mannequin"
+      "minecraft:mannequin",
+      "minecraft:ominous_item_spawner",
+      "minecraft:painting",
+      "minecraft:evoker_fangs"
     ]
   }

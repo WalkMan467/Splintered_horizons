@@ -5,7 +5,7 @@ tp @s 9999 131 10071 180 0
 
 gamerule send_command_feedback false
 
-datapack disable "file/spawner_tweaker-LATEST-1.21.5"
+datapack disable "file/spawner_tweaker-LATEST-1.21.11"
 
 setworldspawn 9999 131 10071
 
