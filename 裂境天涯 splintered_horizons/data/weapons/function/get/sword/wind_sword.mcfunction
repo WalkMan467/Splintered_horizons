@@ -13,7 +13,7 @@ give @s stone_sword[item_name=[{"translate":"weapon.wind_sword","color":"dark_aq
 
 #name = ['࿓ 風力劍 ࿓', 'dark_aqua', '石劍']
 #story = {'info': ['受到風之祝福的劍，擁有操控風的力量。'], 'color': 'blue'}
-#item_data = {'real_item': 'stone_sword', 'id': 'wind_sword', 'item_model': '"sword/wind_sword/1"', 'custom_data': '{rc:0b, type:"sword",rarity:"rare",weapon:"wind_sword",forging_table:1b}', 'max_damage': 150, 'max_stack_size': 1, 'rc': False, 'other': ['minecraft:enchantments={"weapons:type/sword/wind_sword/use":1,"minecraft:mending":1}', 'enchantment_glint_override=false', 'tooltip_style="rare"']}
+#item_data = {'real_item': 'stone_sword', 'id': 'wind_sword', 'item_model': '"sword/wind_sword/1"', 'custom_data': 'rc:0b, type:"sword",rarity:"rare",weapon:"wind_sword",forging_table:1b', 'max_damage': 150, 'max_stack_size': 1, 'rc': False, 'lc': False, 'other': ['minecraft:enchantments={"weapons:type/sword/wind_sword/use":1,"minecraft:mending":1}', 'enchantment_glint_override=false', 'tooltip_style="rare"']}
 #skill = {'is_skill': True, 'cd': 13, 'name': ['風速斬', 'dark_aqua', '#23768f'], 'info': ['連續施放2個風速劍氣，', '對路徑上的敵人造成8點攻擊傷害，', '並且使他們起飛。', '當你使用此武器技能時', '你將獲得 [%s] 持續 5 秒。', '可以讓特定武器 CD 減少或者更為強大']}
 #passive_skills = {'is_passive_skills': False, 'cd': 0, 'name': ['冰霜之落', '#A4DEFF', '#209AE0'], 'info': ['當你攻擊命中時:', '有一定概率召喚冰霜隕石墜落在目標位置', '落在被攻擊實體附近', '造成 150% 基礎傷害']}
 #ultimate = {'is_ultimate': False, 'cd': 30, 'name': ['狂風暴雨', 'dark_aqua', '#fceb00'], 'info': ['右鍵點擊消耗一個終焉之眼，', '接下來的8秒內如果在空中手持此武器擊中敵人', '在目標位置降下降下閃電造成5點傷害。']}

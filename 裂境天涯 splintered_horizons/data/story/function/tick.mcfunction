@@ -273,3 +273,12 @@ advancement grant @a only story:icon/proper_noun/starry_sky_frost
 execute \
     unless score #story:icon/proper_noun/starry_sky_frost global.main matches 1.. run \
 advancement revoke @a only story:icon/proper_noun/starry_sky_frost
+
+execute \
+    if score #story:icon/proper_noun/abyss/2 global.main matches 1.. run \
+advancement grant @a only story:icon/proper_noun/abyss/2
+
+
+execute \
+    unless score #story:icon/proper_noun/abyss/2 global.main matches 1.. run \
+advancement revoke @a only story:icon/proper_noun/abyss/2

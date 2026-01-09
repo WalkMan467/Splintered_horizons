@@ -38,6 +38,7 @@ scoreboard players set story.chapter_1.sq.1 story.chapter_1 1
 scoreboard players set #story:icon/story/chapter_1/sq/1/1 global.main 1
 scoreboard players set #story:icon/story/chapter_1/sq/1/2 global.main 1
 scoreboard players set #story:icon/story/chapter_1/sq/1/title global.main 1
+scoreboard players set #story:icon/proper_noun/abyss/2 global.main 0
 
 advancement grant @a only weapons:monument/area_1
 
@@ -120,6 +121,8 @@ return 0
 execute \
     in minecraft:overworld run \
 tp @s 788 109 183 135 0
+
+scoreboard players set #story:icon/proper_noun/abyss/2 global.main 1
 
 scoreboard players set @s player.spawnpoint.dimension 0
 scoreboard players set @s player.spawnpoint.pos.x 788

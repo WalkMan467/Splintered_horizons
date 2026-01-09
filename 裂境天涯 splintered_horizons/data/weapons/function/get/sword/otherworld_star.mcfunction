@@ -15,7 +15,7 @@ give @s iron_sword[item_name=[{"translate":"weapon.otherworld_star","color":"#ff
 
 #name = ['異界晨星', '#ffe600', '劍 / 傳說']
 #story = {'info': ['異界中的一把劍像流星一般墜落在地面，', '它散發著隕星能量，', '如同耀眼的星星'], 'color': 'blue'}
-#item_data = {'real_item': 'iron_sword', 'id': 'otherworld_star', 'item_model': '"sword/otherworld_star/1"', 'custom_data': '{rc:0b,type:"sword",rarity:"mythic",weapon:"otherworld_star",forging_table:1b}', 'max_damage': 150, 'max_stack_size': 1, 'rc': False, 'other': ['enchantments={"weapons:type/sword/otherworld_star/use":1, "minecraft:mending":1}', 'enchantment_glint_override=false', 'tooltip_style="legendary"']}
+#item_data = {'real_item': 'iron_sword', 'id': 'otherworld_star', 'item_model': '"sword/otherworld_star/1"', 'custom_data': 'rc:0b,type:"sword",rarity:"mythic",weapon:"otherworld_star",forging_table:1b', 'max_damage': 150, 'max_stack_size': 1, 'rc': False, 'lc': False, 'other': ['enchantments={"weapons:type/sword/otherworld_star/use":1, "minecraft:mending":1}', 'enchantment_glint_override=false', 'tooltip_style="legendary"']}
 #skill = {'is_skill': True, 'cd': 6, 'name': ['超導晨星', '#00D9FF', '#00bbb2'], 'info': ['當你攻擊命中時:', '目標獲得一層【感光】', '8 秒後消耗全部層數釋放【行星墜落】造成 200% 基礎傷害', '根據【感光】層數 + 2 點傷害', '當你擁有 %s 時:', '可以使附近 4 格範圍內玩家獲得 加速 II 持續 2 秒']}
 #passive_skills = {'is_passive_skills': False, 'cd': 0, 'name': ['冰霜之落', '#A4DEFF', '#209AE0'], 'info': ['當你攻擊命中時:', '有一定概率召喚冰霜隕石墜落在目標位置', '落在被攻擊實體附近', '造成 150% 基礎傷害']}
 #ultimate = {'is_ultimate': False, 'cd': 30, 'name': ['災厄之火', '#ff0000', '#7a0000'], 'info': ['當你使用右鍵時:', '使【行星墜落】造成傷害變為真實傷害', '並且在該位置生成一片每秒造成 5 點燃燒傷害的區域', '持續 5 秒']}

@@ -1,5 +1,9 @@
 
 execute \
+    unless entity @s[tag=monster.elekiel_phase_2.4.effect.player] run \
+return 0
+
+execute \
     unless entity @s[tag=monster.elekiel_phase_2.void.target] run \
 return 0
 

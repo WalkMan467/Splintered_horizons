@@ -3,7 +3,7 @@ scoreboard players add #temp global.main 12
 
 # summon
 
-summon minecraft:item_display ~ ~ ~ {Tags:[fx.zeuss_lightning_wave.ga,summon],brightness: {block: 15, sky: 15}, fall_distance: 0.0d, item: {components: {"minecraft:custom_name": {color: "yellow", italic: 0b, text: "item/sound_wave_red"}, "minecraft:item_model": "minecraft:sound_wave_red"}, count: 1, id: "minecraft:iron_sword"}, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [2.0f, 4.0f, 2.0f], translation: [0.0f, 0.5f, 0.0f]}}
+summon minecraft:item_display ~ ~ ~ {Tags:[fx.zeuss_lightning_wave.ga,summon],teleport_duration:1,interpolation_duration:1,start_interpolation:1,brightness: {block: 15, sky: 15}, fall_distance: 0.0d, item: {components: {"minecraft:custom_name": {color: "yellow", italic: 0b, text: "item/sound_wave_red"}, "minecraft:item_model": "minecraft:sound_wave_red"}, count: 1, id: "minecraft:iron_sword"}, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [2.0f, 2.0f, 2.0f], translation: [0.0f, -0.1375f, 0.0f]}}
 
 tp @e[tag=summon,sort=nearest,limit=1] ~ ~ ~ ~ ~
 

@@ -1,6 +1,5 @@
 advancement revoke @s only world_area:chapter_2/temple_of_light/bossfight/elekiel_phase_2/bossfight_area/out
 
-
 execute \
     if score #boss_area.chapter_2.elekiel_phase_2 global.main matches 1 run \
 return 0

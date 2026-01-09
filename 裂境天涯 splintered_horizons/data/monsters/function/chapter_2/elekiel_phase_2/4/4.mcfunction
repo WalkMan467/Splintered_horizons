@@ -1,8 +1,5 @@
-bossbar set minecraft:chapter_2.elekiel_phase_2.4 players @a[distance=..60]
+playsound minecraft:entity.warden.sonic_charge voice @s ~ ~1 ~ 1 0.5
 
-scoreboard players add #chapter_2.elekiel_phase_2.4 monster.elekiel_phase_2.skill.2.casting 1
-
-
-execute \
-    store result bossbar chapter_2.elekiel_phase_2.4 value run \
-scoreboard players get #chapter_2.elekiel_phase_2.4 monster.elekiel_phase_2.skill.2.casting
+tag @s add monster.elekiel_phase_2.4.kill
+tag @s[tag=!animation,gamemode=spectator] remove monster.elekiel_phase_2.4.kill
+tag @s[tag=chapter_2.elekiel_phase_2.lose] remove monster.elekiel_phase_2.4.kill

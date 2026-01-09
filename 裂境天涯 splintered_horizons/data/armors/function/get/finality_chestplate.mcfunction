@@ -12,7 +12,7 @@ give @s bundle[item_name=[{"translate":"armor.finality_chestplate","color":"#ff0
 
 #name = ['終焉之鎧', '#ff0000', '護甲 / 神話']
 #story = {'info': ['在舊世界「死亡之天啟 - 蘇菲亞」曾經的盔甲', '在世界毀滅之後它已染上終焉力量', '目前漂流在這片破碎的宇宙之中'], 'color': 'blue'}
-#item_data     = {'real_item': 'bundle', 'id': 'finality_chestplate', 'item_model': '"chestplate/finality_chestplate/0"', 'custom_data': '{finality_chestplate:1b,type:"armor",id:"finality_chestplate"}', 'max_damage': -1, 'rc': False, 'other': ['tooltip_style="mythic"', 'equippable={slot:"chest",equip_sound:"item.armor.equip_netherite",asset_id:"finality_chestplate"}','tooltip_display={hidden_components:["trim"]}']}
+#item_data     = {'real_item': 'bundle', 'id': 'finality_chestplate', 'item_model': '"chestplate/finality_chestplate/0"', 'custom_data': '{finality_chestplate:1b,type:"armor",id:"finality_chestplate"}', 'max_damage': -1, 'rc': False, 'lc': False, 'other': ['tooltip_style="mythic"', 'equippable={slot:"chest",equip_sound:"item.armor.equip_netherite",asset_id:"finality_chestplate"}','tooltip_display={hidden_components:["trim"]}']}
 #skill    = {'is_skill': True, 'cd': 5, 'name': ['終焉轉化', '#ff0000', '#FF5E00'], 'info': ['當你殺死怪物時，', '使「終焉之眼」冷卻時間減少 5 秒', '並且使你攻擊力 +25% 持續 5 秒']}
 #ultimate    = {'is_ultimate': False, 'cd': 0, 'name': ['終焉之月', 'dark_aqua', '#ff0000'], 'info': ['右鍵點擊消耗一個終焉之眼，', '開啟【終焉之月】型態持續 15 秒', '大幅強化武器，', '此形態下如果攻擊會有25%機率造成大量傷害']}
 #attribute.append({'attribute': 'armor', 'value': 5.5, 'slot': 'chest', 'operation': 'add_value'})

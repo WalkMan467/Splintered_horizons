@@ -1,6 +1,6 @@
 
-# main 
-summon marker ~ ~ ~ {Tags:[fx.sound_wave.main]}
+# # main 
+# summon marker ~ ~ ~ {Tags:[fx.sound_wave.main]}
 
 # particle
 playsound minecraft:entity.generic.explode voice @a ~ ~ ~ 3 0.5

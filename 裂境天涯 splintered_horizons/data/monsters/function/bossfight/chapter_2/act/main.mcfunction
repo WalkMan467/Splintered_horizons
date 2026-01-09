@@ -1,3 +1,4 @@
+function monsters:bossfight/chapter_2/act/elekiel/1/main
 
 execute \
     as @a at @s \

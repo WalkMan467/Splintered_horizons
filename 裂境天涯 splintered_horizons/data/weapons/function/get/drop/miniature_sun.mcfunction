@@ -12,7 +12,7 @@ give @s poisonous_potato[food={nutrition:0,saturation:0,can_always_eat:true},ite
 
 #name = ['微型太陽', '#b30000', '投擲物']
 #story = {'info': ['具有太陽一半的溫度，', '可以使周圍的敵人燃燒'], 'color': 'blue'}
-#item_data     = {'real_item': 'poisonous_potato', 'id': 'miniature_sun', 'item_model': '"drop/miniature_sun/1"', 'custom_data': '{rc:1b,type:"drop",rarity:"epic",weapon:"miniature_sun"}', 'max_damage': -1, 'rc': True, 'other': ['food={nutrition:0,saturation:0,can_always_eat:true}','tooltip_style="rare"']}
+#item_data     = {'real_item': 'poisonous_potato', 'id': 'miniature_sun', 'item_model': '"drop/miniature_sun/1"', 'custom_data': 'type:"drop",rarity:"epic",weapon:"miniature_sun"', 'max_damage': -1, 'rc': True, 'lc': False, 'other': ['food={nutrition:0,saturation:0,can_always_eat:true}','tooltip_style="rare"']}
 #skill    = {'is_skill': True, 'cd': 0, 'name': ['燃燒', 'dark_red', 'red'], 'info': ['無法投擲較遠距離，', '[%s]可以投擲微型太陽', '位於太陽 4 格範圍內的敵人', '每秒造成 3 點燃燒傷害']}
 #ultimate    = {'is_ultimate': False, 'cd': 0, 'name': ['終焉之月', '#b30000', '#5a0000'], 'info': ['[%s]消耗一個終焉之眼，', '開啟【終焉之月】型態持續 15 秒', '大幅強化武器，', '此形態下如果攻擊會有25%機率造成大量傷害']}
 #attribute.append({'attribute': 'attack_damage', 'value': 4, 'slot': 'mainhand', 'operation': 'add_value'})

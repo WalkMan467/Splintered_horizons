@@ -10,7 +10,7 @@ give @s stone_sword[item_name=[{"translate":"weapon.grip_of_withering","color":"
 
 #name = ['☠ 凋零之握 ☠', '#28778A', '劍 / 稀有']
 #story = {'info': ['昔日英雄的劍，在世界徹底被深淵壟罩之後這把劍受到的深淵的侵蝕，', '並且漂流在世界之外。'], 'color': 'blue'}
-#item_data = {'real_item': 'stone_sword', 'id': 'grip_of_withering', 'item_model': '"sword/grip_of_withering/1"', 'custom_data': '{type:"sword",rarity:"rare",weapon:"grip_of_withering",forging_table:1b}', 'max_damage': 150, 'max_stack_size': 1, 'rc': False, 'other': ['minecraft:enchantments={"weapons:type/sword/grip_of_withering/use":1, "minecraft:mending":1}', 'enchantment_glint_override=false', 'tooltip_style="rare"', 'custom_model_data={floats:[0]}']}
+#item_data = {'real_item': 'stone_sword', 'id': 'grip_of_withering', 'item_model': '"sword/grip_of_withering/1"', 'custom_data': 'type:"sword",rarity:"rare",weapon:"grip_of_withering",forging_table:1b', 'max_damage': 150, 'max_stack_size': 1, 'rc': False, 'lc': False, 'other': ['minecraft:enchantments={"weapons:type/sword/grip_of_withering/use":1, "minecraft:mending":1}', 'enchantment_glint_override=false', 'tooltip_style="rare"', 'custom_model_data={floats:[0]}']}
 #skill = {'is_skill': True, 'cd': 5, 'name': ['侵蝕', 'dark_aqua', '#23768f'], 'info': ['當你手持武器擊殺怪物', '強化武器該武器持續10秒。並且有50%機率附加 凋零 I(00:08)']}
 #passive_skills = {'is_passive_skills': False, 'cd': 0, 'name': ['神聖制裁', 'gold', '#fffb00'], 'info': ['【光之聖劍】命中怪物時:', '立即對怪物施加 盔甲 -10% (00:10)', '最多疊加 3 層', '並且使你獲得神聖之火 (00:10)']}
 #ultimate = {'is_ultimate': False, 'cd': 60, 'name': ['狂風暴雨', 'dark_aqua', '#fceb00'], 'info': ['右鍵點擊消耗一個終焉之眼，', '接下來的8秒內如果在空中手持此武器擊中敵人', '在目標位置降下降下閃電造成5點傷害。']}

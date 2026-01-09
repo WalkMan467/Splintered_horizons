@@ -2,6 +2,8 @@
 # main 
 summon marker ~ ~ ~ {Tags:[fx.zeuss_lightning_wave.main]}
 
+function particle:tunder_red/use {spread:3,duration:1}
+
 # particle
 playsound minecraft:entity.generic.explode voice @a ~ ~ ~ 1 0.5
 playsound minecraft:entity.lightning_bolt.thunder voice @a ~ ~1 ~ 0.75 2

@@ -1,0 +1,71 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:sculk_shrieker",
+      "count": 1
+    },
+    "title": {
+      "translate": "story.icon.proper_noun.abyss.1",
+      "bold": true,
+      "italic": false
+    },
+    "description": [
+      {
+        "translate": "story.icon.proper_noun.abyss.1.1",
+        "color": "blue",
+        "bold": false,
+        "italic": false,
+        "underlined": false
+      },
+      {
+        "translate": "story.icon.proper_noun.abyss.1.2",
+        "color": "blue",
+        "bold": false,
+        "italic": false,
+        "underlined": false
+      },
+      {
+        "translate": "story.icon.proper_noun.abyss.1.3",
+        "color": "blue",
+        "bold": false,
+        "italic": false,
+        "underlined": false
+      },
+      {
+        "translate": "story.icon.proper_noun.abyss.1.4",
+        "color": "blue",
+        "bold": false,
+        "italic": false,
+        "underlined": false
+      },
+      {
+        "text": "\n\n"
+      },
+      {
+        "translate": "story.icon.proper_noun.abyss.1.5",
+        "color": "blue",
+        "bold": false,
+        "italic": false,
+        "underlined": false
+      },
+      {
+        "translate": "story.icon.proper_noun.abyss.1.6",
+        "color": "blue",
+        "bold": false,
+        "italic": false,
+        "underlined": false
+      }
+    ],
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "story:icon/proper_noun/old_story",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

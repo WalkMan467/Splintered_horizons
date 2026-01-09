@@ -7,6 +7,10 @@ scoreboard objectives add particle.technological_force_field.line dummy "科技�
 scoreboard objectives add particle.technological_force_field.line.rdm dummy "科技力場特效分支隨機值"
 scoreboard objectives add particle.technological_force_field.line.color dummy "科技力場特效顏色"
 
+scoreboard objectives add particle.spacetime_collapse.id dummy "時空崩塌ID"
+scoreboard objectives add particle.spacetime_collapse.timer dummy "時空崩塌計時器"
+scoreboard objectives add particle.spacetime_collapse.sound dummy "時空崩塌聲音"
+
 scoreboard objectives add mob.main dummy
 scoreboard objectives add mob.cd dummy "技能冷卻時間"
 scoreboard objectives add mob.duration dummy "技能持續時間"

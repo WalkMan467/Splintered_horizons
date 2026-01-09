@@ -9,7 +9,7 @@ function animated_java:boss_1/remove/all
 
 bossbar remove minecraft:monsters.elekiel
 
-
+scoreboard players set #monster.bossfight.chapter_2.elekiel.act.enable global.main 1
 scoreboard players set #boss_area.chapter_2.elekiel global.main 0
 scoreboard players set @s player.detect.is_bossfight 0
 

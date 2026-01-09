@@ -19,7 +19,7 @@ give @s stone_sword[item_name=[{"translate":"weapon.morphing_beast","color":"#b3
 
 #name = ['變形異獸', '#b30000', '鐮刀']
 #story = {'info': ['來自異世界的武器', '可以隨意變換 3 種攻擊型態', '目前漂流於新世界'], 'color': 'blue'}
-#item_data = {'real_item': 'stone_sword', 'id': 'morphing_beast', 'item_model': '"scythe/morphing_beast/1"', 'custom_data': '{rc:1b,type:"scythe",rarity:"rare",weapon:"morphing_beast",forging_table:1b}', 'max_damage': 150, 'max_stack_size': 1, 'rc': True, 'other': ['enchantments={"minecraft:mending":1}', 'enchantment_glint_override=false', 'tooltip_style="rare"', 'custom_model_data={floats:[1]}']}
+#item_data = {'real_item': 'stone_sword', 'id': 'morphing_beast', 'item_model': '"scythe/morphing_beast/1"', 'custom_data': 'type:"scythe",rarity:"rare",weapon:"morphing_beast",forging_table:1b', 'max_damage': 150, 'max_stack_size': 1, 'rc': True, 'lc': False, 'other': ['enchantments={"minecraft:mending":1}', 'enchantment_glint_override=false', 'tooltip_style="rare"', 'custom_model_data={floats:[1]}']}
 #skill = {'is_skill': True, 'cd': 5, 'name': ['變形', 'dark_red', 'red'], 'info': ['使用 [%s] 切換 鐮刀 / 劍 / 斧頭 型態', '每次切換的型態會獲得特殊該型態特殊增益', '並且使你獲得 [%s] 持續 5 秒']}
 #passive_skills = {'is_passive_skills': True, 'cd': 0, 'name': ['異獸之刃', 'dark_red', 'red'], 'info': ['切換鐮刀型態時:', '獲得 加速I (00:02)', '切換斧頭型態時:', '給予自身 吸收II (00:10)', '切換連劍型態時:', '獲得 力量I (00:05)']}
 #ultimate = {'is_ultimate': False, 'cd': 5, 'name': ['終焉之月', '#b30000', '#5a0000'], 'info': ['右鍵點擊消耗一個終焉之眼，', '開啟【終焉之月】型態持續 15 秒', '大幅強化武器，', '此形態下如果攻擊會有25%機率造成大量傷害']}

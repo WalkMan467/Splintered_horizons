@@ -1,15 +1,21 @@
-playsound minecraft:entity.warden.sonic_charge voice @s ~ ~1 ~ 1 0.5
-
+scoreboard players set #monster.elekiel_phase_2.skill.4.portal.actived global.main 1
+scoreboard players reset #chapter_2.elekiel_phase_2.4 monster.elekiel_phase_2.skill.2.casting
 
 bossbar add chapter_2.elekiel_phase_2.4 {"translate": "chapter_2.elekiel_phase_2.4.casting","fallback": "BOSS 蓄力中..."}
 bossbar set chapter_2.elekiel_phase_2.4 max 200
 bossbar set chapter_2.elekiel_phase_2.4 color yellow
 
-scoreboard players reset #chapter_2.elekiel_phase_2.4 monster.elekiel_phase_2.skill.2.casting
+execute \
+    at 0020ac89-fe15-d2ca-0024-d629fff9b4fb \
+    positioned ~ 60 ~ run \
+function particle:portal/crack/use
 
-tag @s add temp
-tag @s[tag=!animation,gamemode=spectator] remove temp
+execute \
+    as @p[tag=monster.elekiel_phase_2.4.portal.target] at @s run \
+function monsters:chapter_2/elekiel_phase_2/4/effect/false
 
-tag @s[tag=temp] add monster.elekiel_phase_2.4.death_timer
+execute \
+    as @a[sort=arbitrary,distance=..60] at @s run \
+function monsters:chapter_2/elekiel_phase_2/4/4
 
-tag @s remove temp
+kill 0020ac89-fe15-d2ca-0024-d629fff9b4fb

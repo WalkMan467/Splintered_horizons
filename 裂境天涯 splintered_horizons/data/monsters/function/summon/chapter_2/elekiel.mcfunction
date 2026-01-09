@@ -24,13 +24,19 @@ execute \
     if score #boss_area.chapter_2.elekiel global.main matches 1.. run \
 return 0
 
+scoreboard players set #monster.bossfight.chapter_2.elekiel.act.enable global.main 0
+function monsters:bossfight/chapter_2/act/elekiel/1/false
+
+execute \
+    positioned 912 60 2018 run \
+tellraw @a[sort=arbitrary,distance=..60] "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
 
 execute \
     positioned 912 60 2018 \
     as @n[distance=..3,type=item_display,tag=aj.global.root] run \
 function animated_java:boss_1/remove/this
 
-kill 000009ed-0000-007b-0000-000100000001
+kill 0024ce6d-0003-ae59-0003-40dd00000005
 
 scoreboard players set #boss_area.chapter_2.elekiel global.main 1
 scoreboard players set @s player.detect.is_bossfight 1

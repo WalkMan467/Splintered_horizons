@@ -218,6 +218,9 @@ tellraw @a[distance=..16] \
         {"translate": "story.chapter_2.ml.4.17","fallback": "但願一切能夠好起來","bold": false} \
     ]
 
+execute \
+    if score story.chapter_2.ml.4 story.chapter_2 matches 17 run \
+scoreboard players set #story:icon/proper_noun/abyss/2 global.main 1
 
 execute \
     positioned 928 167 908 \

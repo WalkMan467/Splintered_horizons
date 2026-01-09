@@ -1,11 +1,6 @@
 
 execute \
-    unless entity @s[tag=monster.elekiel_phase_2.void.target] run \
-return 0
-
-
-execute \
-    unless entity @s[tag=monster.elekiel_phase_2.4.effect.target] run \
+    unless entity @s[tag=monster.elekiel_phase_2.4.effect.player] run \
 return 0
 
 tag @s add forced_interrupt_animation
@@ -13,6 +8,8 @@ tag @s add forced_interrupt_animation
 function players:stop_animation
 
 function monsters:chapter_2/elekiel_phase_2/4/effect/disable_inventory/false
+
+tag @s remove monster.elekiel_phase_2.4.effect.player
 
 effect clear @s invisibility
 effect clear @s glowing

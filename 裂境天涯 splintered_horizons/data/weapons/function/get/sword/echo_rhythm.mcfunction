@@ -19,7 +19,7 @@ give @s iron_sword[item_name=[{"translate":"weapon.echo_rhythm","color":"#ffee00
 
 #name = ['回音律動', '#ffee00', '劍 / 神話']
 #story = {'info': ['最終決戰過後，舊宇宙迎來了終點的結局', '同時，宇宙出現了由深淵延伸的新力量「終焉」', '這把武器的誕生目前無法得知', '同時也埋藏了很多秘密。'], 'color': 'blue'}
-#item_data = {'real_item': 'iron_sword', 'id': 'echo_rhythm', 'item_model': '"sword/echo_rhythm/1"', 'custom_data': '{rc:1b,type:"sword",rarity:"legendary",weapon:"echo_rhythm",forging_table:1b}', 'max_damage': 150, 'max_stack_size': 1, 'rc': True, 'other': ['minecraft:enchantments={"weapons:type/sword/echo_rhythm/use":1, "minecraft:mending":1}', 'tooltip_style="legendary"', 'enchantment_glint_override=false']}
+#item_data = {'real_item': 'iron_sword', 'id': 'echo_rhythm', 'item_model': '"sword/echo_rhythm/1"', 'custom_data': 'type:"sword",rarity:"legendary",weapon:"echo_rhythm",forging_table:1b', 'max_damage': 150, 'max_stack_size': 1, 'rc': True, 'lc': False, 'other': ['minecraft:enchantments={"weapons:type/sword/echo_rhythm/use":1, "minecraft:mending":1}', 'tooltip_style="legendary"', 'enchantment_glint_override=false']}
 #skill = {'is_skill': True, 'cd': 2, 'name': ['潮汐音浪', '#9443ff', '#ea00ff'], 'info': ['攻擊有 30%機率觸發【回聲音爆】', '可對6格範圍內敵人造成一次攻擊力250%的基礎傷害', '如果玩家擁有【至暗】狀態', '會使【回聲音爆】造成傷害改為 攻擊力 250% 真實傷害']}
 #passive_skills = {'is_passive_skills': False, 'cd': 0, 'name': ['神聖制裁', 'gold', '#fffb00'], 'info': ['【光之聖劍】命中怪物時:', '立即對怪物施加 盔甲 -10% (00:10)', '最多疊加 3 層', '並且使你獲得神聖之火 (00:10)']}
 #ultimate = {'is_ultimate': True, 'cd': 20, 'name': ['低音狂響', '#ff3150', '#ea00ff'], 'info': ['[%s]可以消耗一顆終焉之眼', '立即釋放【終焉音爆】', '對 8 格範圍內敵人造成 250% 真實傷害', '並且附帶 3 秒緩速 50%']}

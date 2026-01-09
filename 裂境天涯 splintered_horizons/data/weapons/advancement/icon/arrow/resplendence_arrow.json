@@ -1,0 +1,54 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:wooden_pickaxe",
+      "components": {
+        "minecraft:custom_model_data": {
+          "floats": [
+            0
+          ],
+          "strings": []
+        },
+        "minecraft:item_model": "minecraft:arrow/resplendence_arrow"
+      },
+      "count": 1
+    },
+    "title": {
+      "translate": "weapon.resplendence_arrow"
+    },
+    "description": [
+      {
+        "translate": "weapon.resplendence_arrow.story.1",
+        "color": "blue",
+        "bold": false,
+        "italic": false
+      },
+      {
+        "translate": "weapon.resplendence_arrow.story.2",
+        "color": "blue",
+        "bold": false,
+        "italic": false
+      }
+    ],
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "weapons:icon/new_world/chapter_2",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "predicates": {
+              "minecraft:custom_data": {
+                "id": "resplendence_arrow"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

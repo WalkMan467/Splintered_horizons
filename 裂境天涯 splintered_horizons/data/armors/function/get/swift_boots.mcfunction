@@ -12,7 +12,7 @@ give @s bundle[minecraft:item_model="equipment/swift_boots",item_name=[{"transla
 
 #name = ['迅捷之靴', '#6af7fc', '護甲']
 #story = {'info': ['迅捷之風凝聚而成的靴子', '曾被人們稱之為神聖之靴', '在最終之戰之後深淵扭曲了時空', '目前漂流在這片破碎的宇宙'], 'color': 'blue'}
-#item_data     = {'real_item': 'bundle', 'id': 'swift_boots', 'item_model': '"equipment/swift_boots"', 'custom_data': '{swift:1b,type:"armor",id:"swift_boots"}', 'max_damage': -1, 'rc': False, 'other': ['tooltip_style="rare"','tooltip_style="rare"','equippable={slot:"feet",equip_sound:"item.armor.equip_iron",asset_id:"leather"}','dyed_color=7010300','trim={material:"minecraft:diamond",pattern:"minecraft:silence"}','tooltip_display={hidden_components:["dyed_color","trim"]}']}
+#item_data     = {'real_item': 'bundle', 'id': 'swift_boots', 'item_model': '"equipment/swift_boots"', 'custom_data': '{swift:1b,type:"armor",id:"swift_boots"}', 'max_damage': -1, 'rc': False, 'lc': False, 'other': ['tooltip_style="rare"','tooltip_style="rare"','equippable={slot:"feet",equip_sound:"item.armor.equip_iron",asset_id:"leather"}','dyed_color=7010300','trim={material:"minecraft:diamond",pattern:"minecraft:silence"}','tooltip_display={hidden_components:["dyed_color","trim"]}']}
 #skill    = {'is_skill': True, 'cd': 0, 'name': ['迅捷祝福', '#6af7fc', '#6a8cfc'], 'info': ['當 %s 技能條件被觸發時', '使自身獲得 加速 I (00:02)']}
 #ultimate    = {'is_ultimate': False, 'cd': 0, 'name': ['終焉之月', 'dark_aqua', '#00ccff'], 'info': ['右鍵點擊消耗一個終焉之眼，', '開啟【終焉之月】型態持續 15 秒', '大幅強化武器，', '此形態下如果攻擊會有25%機率造成大量傷害']}
 #attribute.append({'attribute': 'armor', 'value': 2, 'slot': 'chest', 'operation': 'add_value'})

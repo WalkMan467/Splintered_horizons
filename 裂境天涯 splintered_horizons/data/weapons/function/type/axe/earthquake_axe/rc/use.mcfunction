@@ -8,6 +8,10 @@ execute \
     unless score @s player.ultimate matches ..0 run \
 return 0
 
+execute \
+    if score @s player.click.interval matches 0.. run \
+return 0
+
 scoreboard players operation @s player.finality_tunder.temp = @s player.finality_tunder
 
 schedule function weapons:type/axe/earthquake_axe/animation/main 1t

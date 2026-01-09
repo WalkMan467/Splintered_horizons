@@ -16,7 +16,7 @@ give @s iron_sword[item_name=[{"translate":"weapon.flame_of_abyss","color":"#a70
 
 #name = ['深淵雙重火', '#a700b6', '鐮刀 / 史詩']
 #story = {'info': ['沾染深淵力量的武器，', '紫色的火焰散發著邪氣，', '彷彿將要吞噬一切'], 'color': 'blue'}
-#item_data = {'real_item': 'iron_sword', 'id': 'flame_of_abyss', 'item_model': '"scythe/flame_of_abyss/1"', 'custom_data': '{rc:1b,type:"scythe",rarity:"epic",weapon:"flame_of_abyss",forging_table:1b}', 'max_damage': 50, 'max_stack_size': 1, 'rc': True, 'other': ['minecraft:enchantments={"weapons:type/scythe/flame_of_abyss/use":1}', 'enchantment_glint_override=false', 'tooltip_display={hidden_components:["enchantments"]}', 'tooltip_style="epic"']}
+#item_data = {'real_item': 'iron_sword', 'id': 'flame_of_abyss', 'item_model': '"scythe/flame_of_abyss/1"', 'custom_data': 'type:"scythe",rarity:"epic",weapon:"flame_of_abyss",forging_table:1b', 'max_damage': 50, 'max_stack_size': 1, 'rc': True, 'lc': False, 'other': ['minecraft:enchantments={"weapons:type/scythe/flame_of_abyss/use":1}', 'enchantment_glint_override=false', 'tooltip_display={hidden_components:["enchantments"]}', 'tooltip_style="epic"']}
 #skill = {'is_skill': True, 'cd': 10, 'name': ['災厄之火', '#ea00ff', '#a700b6'], 'info': ['立即引爆 8 格內的怪物所有的【惡咒】', '每層【惡咒】造成 150% 基礎傷害', '如果你擁有【%s】符文:', '對視角中心的怪物造成 150% 基礎傷害持續 5 秒']}
 #passive_skills = {'is_passive_skills': True, 'cd': 5, 'name': ['深淵惡咒', '#8c00ff', '#480083'], 'info': ['當你攻擊命中怪物時:', '對 4 格內怪物添加 2 層【惡咒】']}
 #ultimate = {'is_ultimate': False, 'cd': 30, 'name': ['災厄之火', '#ff0000', '#7a0000'], 'info': ['當你使用右鍵時:', '使【行星墜落】造成傷害變為真實傷害', '並且在該位置生成一片每秒造成 5 點燃燒傷害的區域', '持續 5 秒']}

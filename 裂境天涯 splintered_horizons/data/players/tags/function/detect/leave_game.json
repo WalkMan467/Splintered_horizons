@@ -4,6 +4,6 @@
       "players:join_game/0",
       "cutscene:safe_area/player_leave",
       "monsters:bossfight/chapter_2/elekiel/player_death",
-      "monsters:chapter_2/elekiel_phase_2/4/player_leave"
+      "monsters:bossfight/chapter_2/elekiel_phase_2/player_death"
     ]
   }

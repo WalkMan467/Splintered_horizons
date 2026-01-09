@@ -5,34 +5,35 @@
       "count": 1
     },
     "title": {
-      "translate": "story.icon.proper_noun.abyss",
+      "translate": "story.icon.proper_noun.abyss.2",
       "bold": true,
       "italic": false
     },
     "description": [
       {
-        "translate": "story.icon.proper_noun.abyss.1",
+        "translate": "story.icon.proper_noun.abyss.2.1",
         "color": "blue",
         "bold": false,
         "italic": false,
         "underlined": false
       },
       {
-        "translate": "story.icon.proper_noun.abyss.2",
+        "translate": "story.icon.proper_noun.abyss.2.2",
+        "color": "blue",
+        "bold": false,
+        "italic": false,
+        "underlined": false
+      },
+      "\n",
+      {
+        "translate": "story.icon.proper_noun.abyss.2.3",
         "color": "blue",
         "bold": false,
         "italic": false,
         "underlined": false
       },
       {
-        "translate": "story.icon.proper_noun.abyss.3",
-        "color": "blue",
-        "bold": false,
-        "italic": false,
-        "underlined": false
-      },
-      {
-        "translate": "story.icon.proper_noun.abyss.4",
+        "translate": "story.icon.proper_noun.abyss.2.4",
         "color": "blue",
         "bold": false,
         "italic": false,
@@ -42,14 +43,7 @@
         "text": "\n\n"
       },
       {
-        "translate": "story.icon.proper_noun.abyss.5",
-        "color": "blue",
-        "bold": false,
-        "italic": false,
-        "underlined": false
-      },
-      {
-        "translate": "story.icon.proper_noun.abyss.6",
+        "translate": "story.icon.proper_noun.abyss.2.5",
         "color": "blue",
         "bold": false,
         "italic": false,
@@ -58,14 +52,14 @@
     ],
     "background": "minecraft:textures/gui/advancements/backgrounds/stone",
     "frame": "task",
-    "show_toast": false,
+    "show_toast": true,
     "announce_to_chat": false,
     "hidden": true
   },
-  "parent": "story:icon/proper_noun/old_story",
+  "parent": "story:icon/proper_noun/abyss/1",
   "criteria": {
     "requirement": {
-      "trigger": "minecraft:tick"
+      "trigger": "minecraft:impossible"
     }
   }
 }

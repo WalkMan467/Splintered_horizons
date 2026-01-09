@@ -1,3 +1,5 @@
+function monsters:chapter_2/elekiel_phase_2/4/effect/false
+function particle:portal/crack/tp/remove
 
 execute \
     unless score #boss_area.chapter_2.elekiel_phase_2 global.main matches 1.. run \

@@ -13,14 +13,14 @@
 attribute = []
 # ----- 設定參數 ----- #
 
-name = ['修補附魔 - 石劍', "#d40000", '鍛造材料 / 神話']
-story = {'info': ['非常珍貴的鍛造材料', '與其餘附魔的 武器 / 裝備 一樣，可以繼承附魔、注能之石的賦予的屬性', '可以使武器幾乎永不破壞', '僅限 %s', '可以拿到'], 'color': 'blue'}
-item_data = {'real_item': 'stone_sword', 'id': 'mending_weapon', 'item_model': '"minecraft:sword/mending/stone_sword"', 'custom_data': '{rc:1b,type:"material",rarity:"mythic",weapon:"mending_weapon"}', 'max_damage': 300, 'max_stack_size': 1, 'rc': True, 'other': ['minecraft:enchantments={"minecraft:mending":1}', 'tooltip_style="mythic"']}
-skill = {'is_skill': False, 'cd': 3, 'name': ['盤岩之握', "#b19000", "#d1bd65"], 'info': ['手持狀態下擁有 4 點耐力值上限','每 3 秒恢復 1 點耐力值','防禦成功後消耗 1 點耐力值','長按 [%s] 可以進行防禦:', '如果在攻擊的 0.05 ~ 0.25 之間使用防禦','可以免疫此次受到的傷害','並且使你獲得一層【反擊】以及【神聖之火】(00:05)','在按下防禦劍後的 0.25 ~ 0.55 下受到攻擊:','此傷害減免 50%','並且使你獲得【神聖之火】(00:05)']}
-passive_skills = {'is_passive_skills': False, 'cd': 0, 'name': ['碎岩斬', "#cfcfcf", "#727272"], 'info': ['當你擁有【反擊】並攻擊命中敵人後:', '使敵人受到 250% 基礎傷害','並且移除一層【反擊】','如果你擁有【神聖之火】符文:','使你獲得吸收 I (00:10)']}
-ultimate = {'is_ultimate': False, 'cd': 25, 'name': ['震天動地', '#7a0000', "#ff3a3a"], 'info': ['使用 [%s] 消耗一個終焉之眼:', '用地震之力的斧頭砸向地面使周圍敵人受到 250% 基礎傷害', '如果你擁有【終焉閃電】', '可以透過按下 [%s] 消耗一個【終焉閃電】','再次釋放該技能','並且每次提升 50% 基礎傷害倍率(最多疊加 5 層)','或者可以透過按下 [%s] 取消']}
-attribute.append({'attribute': 'attack_damage', 'value': 5.0, 'slot': 'mainhand', 'operation': 'add_value'})
-attribute.append({'attribute': 'attack_speed', 'value': -2.4, 'slot': 'mainhand', 'operation': 'add_value'})
+name = ['終焉雙重火', '#b10000', '鐮刀 / 史詩']
+story = {'info': ['最終決戰過後，舊宇宙迎來了終點的結局', '同時，宇宙出現了由深淵延伸的新力量「終焉」', '這把武器的誕生目前無法得知', '同時也埋藏了很多秘密。'], 'color': 'blue'}
+item_data = {'real_item': 'iron_sword', 'id': 'flame_of_finality', 'item_model': '"scythe/flame_of_finality/1"', 'custom_data': 'type:"scythe",rarity:"mythic",weapon:"flame_of_finality",forging_table:1b', 'max_damage': -1, 'rc': True, 'lc': True, 'other': ['minecraft:enchantments={"weapons:lc":1}', 'enchantment_glint_override=false', 'tooltip_style="mythic"']}
+skill = {'is_skill': False, 'cd': 3, 'name': ['潮汐音浪', '#ff0000', '#b10000'], 'info': ['攻擊有 30%機率觸發【回聲音爆】', '可對6格範圍內敵人造成一次攻擊力250%的基礎傷害', '如果玩家擁有【至暗】狀態', '會使【回聲音爆】造成傷害改為 攻擊力 250% 真實傷害']}
+passive_skills = {'is_passive_skills': True, 'cd': 0, 'name': ['水墨斬', '#ff0000', '#b10000'], 'info': ['普通攻擊時:', '並將一個【畫布】轉換成【黑墨】', '如果沒有【畫布】並且【黑墨】<【白墨】:', '將【黑墨】【白墨】轉換成【畫布】', '並立即在目標位置生成一個【水墨領域】', '怪物受到傷害會額外造成 2 點真實傷害']}
+ultimate = {'is_ultimate': True, 'cd': 25, 'name': ['低音狂響', '#b10000', '#5c0000'], 'info': ['[%s]可以消耗一顆終焉之眼', '立即釋放【終焉音爆】', '對 8 格範圍內敵人造成 250% 真實傷害', '並且附帶 3 秒緩速 50%']}
+attribute.append({'attribute': 'attack_damage', 'value': 3.5, 'slot': 'mainhand', 'operation': 'add_value'})
+attribute.append({'attribute': 'attack_speed', 'value': -1, 'slot': 'mainhand', 'operation': 'add_value'})
 
 # ----- init ----- #
 
@@ -131,11 +131,26 @@ with open(__file__.replace("item_builder.py","#temp.mcfunction"),mode="w+",encod
     
     # others
     if str(item_data["item_model"]) != '""': 
-        f.write(f',max_stack_size={max_stack_val}{item_data["max_damage"]},item_model={item_data["item_model"]},custom_data={item_data["custom_data"]}')
+        f.write(f',max_stack_size={max_stack_val}{item_data["max_damage"]},item_model={item_data["item_model"]}')
     else:
-        f.write(f',max_stack_size={max_stack_val}{item_data["max_damage"]},custom_data={item_data["custom_data"]}')
+        f.write(f',max_stack_size={max_stack_val}{item_data["max_damage"]}')
+    
+    f.write(',custom_data={')
 
-    #  rc
+    #  rc & lc
+    if item_data.get('rc', True):
+        f.write('rc:1b,')
+
+    if item_data.get('lc', True):
+        f.write('lc:1b,')
+        f.write(f'{item_data["custom_data"]}')
+        f.write('}')
+        f.write(',piercing_weapon={deals_knockback:false,dismounts:false,hit_sound:"entity.player.attack.sweep"')
+    else:
+        f.write(f'{item_data["custom_data"]}')
+
+    f.write('}')
+
     if item_data.get('rc', True):
         f.write(',consumable={consume_seconds:10000,animation:"none",has_consume_particles:false}')
 
