@@ -244,6 +244,33 @@ execute \
     unless score #story:icon/story/chapter_1/mq/scebe_3 global.main matches 1.. run \
 advancement revoke @a only story:icon/story/chapter_1/mq/scebe_3
 
+execute \
+    if score #story:icon/story/chapter_2/mq/title global.main matches 1.. run \
+advancement grant @a only story:icon/story/chapter_2/mq/title
+
+
+execute \
+    unless score #story:icon/story/chapter_2/mq/title global.main matches 1.. run \
+advancement revoke @a only story:icon/story/chapter_2/mq/title
+
+
+execute \
+    if score #story:icon/story/chapter_2/mq/scebe_1 global.main matches 1.. run \
+advancement grant @a only story:icon/story/chapter_2/mq/scebe_1
+
+
+execute \
+    unless score #story:icon/story/chapter_2/mq/scebe_1 global.main matches 1.. run \
+advancement revoke @a only story:icon/story/chapter_2/mq/scebe_1
+
+execute \
+    if score #story:icon/story/chapter_2/mq/scebe_2 global.main matches 1.. run \
+advancement grant @a only story:icon/story/chapter_2/mq/scebe_2
+
+
+execute \
+    unless score #story:icon/story/chapter_2/mq/scebe_2 global.main matches 1.. run \
+advancement revoke @a only story:icon/story/chapter_2/mq/scebe_2
 
 execute \
     if score #story:icon/proper_noun/resplendence global.main matches 1.. run \

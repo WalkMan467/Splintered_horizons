@@ -34,6 +34,7 @@ function #main:scoreboard
 function music:remove_bgn_icon
 function weapons:remove_weapons_icon
 function armors:remove_armors_icon
+function monsters:remove_monsters_icon
 function story:remove_story_icon
 function story:remove_proper_noun_icon
 function players:adv/remove_adv

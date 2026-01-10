@@ -4,14 +4,14 @@
 execute \
     positioned 867 148 949 \
     if score story.chapter_2.ml.3 story.chapter_2 matches 1 \
-    unless score #story:icon/story/chapter_2/scebe_3 global.main matches 1 \
+    unless score #story:icon/story/chapter_2/mq/scebe_3 global.main matches 1 \
     as @n[type=item_display,tag=aj.sophia.root,distance=..3] \
     on passengers run \
 data modify entity @s Glowing set value 0b
 
 execute \
     if score story.chapter_2.ml.3 story.chapter_2 matches 1 run \
-scoreboard players set #story:icon/story/chapter_2/scebe_3 global.main 1
+scoreboard players set #story:icon/story/chapter_2/mq/scebe_3 global.main 1
 
 
 execute \

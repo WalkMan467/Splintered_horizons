@@ -1,24 +1,29 @@
 {
   "display": {
     "icon": {
-      "id": "minecraft:paper"
+      "id": "minecraft:ender_eye"
     },
     "title": {
-      "translate": "story.chapter_1.sq.1.icon"
+      "translate": "story.chapter_2.mq.1.icon"
     },
     "description": [
       {
-        "translate": "story.chapter_1.sq.1.icon.disc.1",
+        "translate": "story.chapter_2.mq.1.icon.disc.1",
         "color": "blue"
       },
       "\n",
       {
-        "translate": "story.chapter_1.sq.1.icon.disc.2",
+        "translate": "story.chapter_2.mq.1.icon.disc.2",
         "color": "blue"
       },
       "\n",
       {
-        "translate": "story.chapter_1.sq.1.icon.disc.3",
+        "translate": "story.chapter_2.mq.1.icon.disc.3",
+        "color": "blue"
+      },
+      "\n",
+      {
+        "translate": "story.chapter_2.mq.1.icon.disc.4",
         "color": "blue"
       }
     ],
@@ -27,7 +32,7 @@
     "announce_to_chat": true,
     "hidden": true
   },
-  "parent": "story:icon/story/chapter_1/sq/1/title",
+  "parent": "story:icon/story/chapter_2/mq/title",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:impossible"

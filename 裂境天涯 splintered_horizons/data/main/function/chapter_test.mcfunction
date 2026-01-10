@@ -40,6 +40,11 @@ scoreboard players set #story:icon/story/chapter_1/sq/1/2 global.main 1
 scoreboard players set #story:icon/story/chapter_1/sq/1/title global.main 1
 scoreboard players set #story:icon/proper_noun/abyss/2 global.main 0
 
+scoreboard players set #story:icon/story/chapter_2/mq/title global.main 1
+scoreboard players set #story:icon/story/chapter_2/mq/scebe_1 global.main 1
+scoreboard players set #story:icon/story/chapter_2/mq/scebe_2 global.main 1
+scoreboard players set #story:icon/story/chapter_2/mq/scebe_3 global.main 0
+
 advancement grant @a only weapons:monument/area_1
 
 advancement grant @s only music:icon
@@ -158,3 +163,8 @@ scoreboard players set @s player.spawnpoint.dimension 0
 scoreboard players set @s player.spawnpoint.pos.x 757
 scoreboard players set @s player.spawnpoint.pos.y 142
 scoreboard players set @s player.spawnpoint.pos.z 912
+
+scoreboard players set #story:icon/story/chapter_2/mq/title global.main 1
+scoreboard players set #story:icon/story/chapter_2/mq/scebe_1 global.main 1
+scoreboard players set #story:icon/story/chapter_2/mq/scebe_2 global.main 1
+scoreboard players set #story:icon/story/chapter_2/mq/scebe_3 global.main 1

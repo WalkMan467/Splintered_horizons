@@ -1,0 +1,68 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:player_head",
+      "components": {
+        "minecraft:profile": {
+          "name": "textures",
+          "properties": [
+            {
+              "name": "textures",
+              "value": "ewogICJ0aW1lc3RhbXAiIDogMTcxMTQ1Mjk0NjgzMywKICAicHJvZmlsZUlkIiA6ICJiZWNlZGU1YmRkODY0YTkwOTc3MTRmODk0ZWUxNmE3MCIsCiAgInByb2ZpbGVOYW1lIiA6ICJTYW1hQ29tcG9zZXIiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWQ0NzM5YjAyZTkzODIwNTI0ZmY0YzNjNGY1ZGQ2NDA3ODg5NDE0ZjRiYWE3NmFiNjFkZWQ5OTM0MzAxMzU0IgogICAgfQogIH0KfQ=="
+            }
+          ]
+        }
+      },
+      "count": 1
+    },
+    "title": {
+      "translate": "monster.abyss_swordsman",
+      "italic": false
+    },
+    "description": [
+      {
+        "translate": "monster.abyss_swordsman.1",
+        "color": "white",
+        "italic": false
+      },
+      "\n",
+      {
+        "translate": "monster.abyss_swordsman.2",
+        "color": "white",
+        "italic": false
+      }
+    ],
+    "background": "minecraft:gui/advancements/backgrounds/sculk",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "monsters:icon/chapter_1/icon",
+  "criteria": {
+    "attack": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "nbt": "{Tags:[\"monster.abyss_swordsman\"]}"
+          }
+        }
+      }
+    },
+    "hurt": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": {
+          "nbt": "{Tags:[\"monster.abyss_swordsman\"]}"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "attack",
+      "hurt"
+    ]
+  ]
+}

@@ -27,5 +27,6 @@ scoreboard players set #safe_area.enter global.main 1
 
 stopsound @a record minecraft:bgm.whitesand_fallen_kingdom
 function cutscene:safe_area/use
+scoreboard players set #story:icon/story/chapter_2/mq/scebe_2 global.main 1
 
 schedule function story:chapter_2/in_safe_zone/1/1 1s

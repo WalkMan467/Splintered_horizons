@@ -10,6 +10,10 @@ execute \
 tp 0020ac89-fe15-d2ca-0024-d629fff9b4fb ~ ~ ~
 
 execute \
+    as @e[sort=arbitrary,tag=mob.elekiel.2.crack,limit=2,type=item_display] at @s run \
+tp @s ~ 60 ~ ~ 0
+
+execute \
     if score @s monster.elekiel_phase_2.skill.4.casting matches 28 run \
 function monsters:chapter_2/elekiel_phase_2/4/2
 

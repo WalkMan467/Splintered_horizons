@@ -14,7 +14,7 @@ function animated_java:sophia/summon {args: {animation: 'idle', start_animation:
 
 execute \
     positioned 807 201 149 \
-    unless score #story:icon/story/chapter_2/scebe_1 global.main matches 1 \
+    unless score #story:icon/story/chapter_2/mq/scebe_1 global.main matches 1 \
     as @n[type=item_display,tag=aj.sophia.root,distance=..3] \
     on passengers run \
 data modify entity @s Glowing set value 1b

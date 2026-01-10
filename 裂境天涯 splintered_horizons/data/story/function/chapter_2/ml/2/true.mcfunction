@@ -14,7 +14,7 @@ function animated_java:sophia/summon {args:{}}
 
 execute \
     positioned 926.50 167.2 907.75 \
-    unless score #story:icon/story/chapter_2/scebe_2 global.main matches 1 \
+    unless score #story:icon/story/chapter_2/mq/scebe_2 global.main matches 1 \
     as @n[type=item_display,tag=aj.sophia.root,distance=..3] \
     on passengers run \
 data modify entity @s Glowing set value 1b
