@@ -141,7 +141,7 @@
   },
   {
     "function": "minecraft:set_enchantments",
-    "add": true,
+    "add": false,
     "enchantments": {
       "weapons:type/axe/earthquake_axe/use": 1
     }

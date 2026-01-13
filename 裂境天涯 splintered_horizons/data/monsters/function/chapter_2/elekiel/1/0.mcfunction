@@ -1,16 +1,16 @@
 
 execute \
-    as @e[type=#dummy_mob,tag=aj.global.camera] at @s \
+    as @e[distance=0..,tag=aj.global.camera,type=#dummy_mob] at @s \
     if biome ~ ~ ~ world_area:chapter_2/bossfight/normal run \
 tp @s ~ ~ ~1000
 
 execute \
-    as @e[type=item_display,tag=aj.global.root] at @s \
+    as @e[distance=0..,tag=aj.global.root,type=item_display] at @s \
     if biome ~ ~ ~ world_area:chapter_2/bossfight/normal run \
 tp @s ~ ~ ~1000
 
 execute \
-    as @e[type=area_effect_cloud,tag=monster.elekiel.3.player_pos.save] at @s \
+    as @e[distance=0..,tag=monster.elekiel.3.player_pos.save,type=area_effect_cloud] at @s \
     if biome ~ ~ ~ world_area:chapter_2/bossfight/normal run \
 tp @s ~ ~ ~1000
 

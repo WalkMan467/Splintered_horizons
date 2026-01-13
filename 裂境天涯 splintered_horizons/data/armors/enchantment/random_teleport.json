@@ -12,7 +12,7 @@
         },
         "effect": {
           "type": "minecraft:run_function",
-          "function": "armors:type/random_teleport/main"
+          "function": "armors:enchantment/random_teleport/main"
         }
       }
     ]

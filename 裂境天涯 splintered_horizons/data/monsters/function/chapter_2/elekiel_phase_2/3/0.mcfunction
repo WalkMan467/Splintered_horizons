@@ -6,5 +6,5 @@ spreadplayers -916 2750 2 10 under 60 false @e[distance=..60,limit=5,sort=neares
 
 
 execute \
-    as @e[distance=..60,limit=5,sort=nearest,type=area_effect_cloud,tag=monster.elekiel_phase_2.3.summon_point] at @s run \
+    as @e[distance=..60,limit=5,sort=nearest,tag=monster.elekiel_phase_2.3.summon_point,type=area_effect_cloud] at @s run \
 function monsters:chapter_2/elekiel_phase_2/3/1

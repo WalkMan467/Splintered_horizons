@@ -129,7 +129,7 @@
   },
   {
     "function": "minecraft:set_enchantments",
-    "add": true,
+    "add": false,
     "enchantments": {
       "weapons:type/sword/morning_light/use": 1
     }

@@ -14,17 +14,17 @@ execute \
 tag @s[tag=!chapter_2.elekiel.lose] add this
 
 execute \
-    as @e[type=area_effect_cloud,tag=monster.elekiel.3.player_pos.save,limit=1,tag=!this] \
+    as @e[distance=0..,tag=monster.elekiel.3.player_pos.save,limit=1,tag=!this,type=area_effect_cloud] \
     if score @s monster.elekiel.3.player_pos.save.timer = @p[tag=this] player.id run \
 tag @s add this
 
 
 execute \
     on target \
-    if entity @s[tag=this] at @n[type=area_effect_cloud,tag=monster.elekiel.3.player_pos.save,tag=this] run \
+    if entity @s[tag=this] at @n[distance=0..,tag=monster.elekiel.3.player_pos.save,tag=this,type=area_effect_cloud] run \
 tp @s ~ ~ ~
 
-tag @e[type=area_effect_cloud,tag=monster.elekiel.3.player_pos.save,limit=1,tag=this] remove this
+tag @e[distance=0..,tag=monster.elekiel.3.player_pos.save,limit=1,tag=this,type=area_effect_cloud] remove this
 
 execute \
     on target run \

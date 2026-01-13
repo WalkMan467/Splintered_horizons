@@ -106,7 +106,7 @@
   },
   {
     "function": "minecraft:set_enchantments",
-    "add": true,
+    "add": false,
     "enchantments": {
       "weapons:type/sword/wind_sword/use": 1
     }

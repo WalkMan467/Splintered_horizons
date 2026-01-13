@@ -1,6 +1,10 @@
 # Cast
 function monsters:chapter_2/elekiel_phase_2/cast/cast
 
+execute \
+    unless predicate monsters:chapter_2/elekiel/positian_fixed run \
+tp @s ~ 60 ~
+
 # Bossbar
 
 execute \

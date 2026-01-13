@@ -1,7 +1,7 @@
 
 execute \
     unless block ~ ~ ~ #penetrate run \
-function armors:type/random_teleport/end
+function armors:enchantment/random_teleport/end
 
 execute \
     unless block ~ ~ ~ #penetrate run \
@@ -15,16 +15,16 @@ execute \
     if score $value armor.random_teleport.raycast matches 1.. rotated ~ 90 \
     positioned ^ ^ ^1 \
     unless block ~ ~ ~ #penetrate run \
-function armors:type/random_teleport/point
+function armors:enchantment/random_teleport/point
 
 execute \
     if score $value armor.random_teleport.raycast matches ..1 rotated ~ 90 \
     positioned ^ ^ ^1 \
     if block ~ ~ ~ #penetrate run \
-function armors:type/random_teleport/end
+function armors:enchantment/random_teleport/end
 
 execute \
     if score $value armor.random_teleport.raycast matches 1.. rotated ~ 90 \
     positioned ^ ^ ^1 \
     if block ~ ~ ~ #penetrate run \
-function armors:type/random_teleport/racast
+function armors:enchantment/random_teleport/racast

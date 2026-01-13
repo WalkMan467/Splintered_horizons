@@ -7,6 +7,6 @@ tag @a[tag=chapter_2.elekiel.lose] remove temp
 
 execute \
     as @a[tag=temp] run \
-damage @s 5 mob_attack by @n[sort=arbitrary,tag=elekiel,type=skeleton]
+damage @s 5 mob_attack by @n[distance=0..,sort=arbitrary,tag=elekiel,type=skeleton]
 
 tag @a remove temp

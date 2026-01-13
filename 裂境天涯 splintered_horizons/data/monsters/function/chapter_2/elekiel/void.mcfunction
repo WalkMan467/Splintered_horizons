@@ -37,7 +37,7 @@ bossbar remove chapter_2.elekiel.3
 function monsters:chapter_2/elekiel/3/reset
 
 execute \
-    as @e[tag=monsters.elekiel.2.vampire_flower.hit_box,type=slime] run \
+    as @e[distance=0..,tag=monsters.elekiel.2.vampire_flower.hit_box,type=slime] run \
 function monsters:chapter_2/elekiel/2/vampire_flower/kill
 tag @a remove monsters.elekiel.2.vampire_flower.target
 
@@ -51,7 +51,7 @@ function music:chapter_2/bossfight/2/reset
 
 execute \
     on passengers \
-    as @n[tag=aj.boss_1.root,type=item_display] run \
+    as @n[distance=0..,tag=aj.boss_1.root,type=item_display] run \
 function animated_java:boss_1/remove/this
 
 advancement revoke @a only monsters:chapter_2/elekiel/1/battlefield/fire

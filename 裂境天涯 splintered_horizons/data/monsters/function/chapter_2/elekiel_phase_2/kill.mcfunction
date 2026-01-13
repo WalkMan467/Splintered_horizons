@@ -33,7 +33,6 @@ execute \
     as @e[tag=monster.elekiel_phase_2.3,tag=monster.forest_messenger,type=skeleton] at @s run \
 function monsters:chapter_2/forest_messenger/cocoon/remove
 
-
 execute \
     as @a at @s run \
 function particle:portal/crack/tp/remove

@@ -1,12 +1,12 @@
 
 execute \
-    as @e[type=text_display,tag=monsters.elekiel.2.vampire_flower.timer,tag=monsters.elekiel.2.vampire_flower.state.1] at @s \
+    as @e[distance=0..,tag=monsters.elekiel.2.vampire_flower.timer,tag=monsters.elekiel.2.vampire_flower.state.1,type=text_display] at @s \
     if score @s monster.elekiel.2.timer matches 0 \
     as @a run \
 function monsters:chapter_2/elekiel/2/vampire_flower/target
 
 execute \
-    as @e[type=text_display,tag=monsters.elekiel.2.vampire_flower.timer,tag=monsters.elekiel.2.vampire_flower.state.1] at @s \
+    as @e[distance=0..,tag=monsters.elekiel.2.vampire_flower.timer,tag=monsters.elekiel.2.vampire_flower.state.1,type=text_display] at @s \
     if score @s monster.elekiel.2.timer matches 0 run \
 function monsters:chapter_2/elekiel/2/vampire_flower/flower
 

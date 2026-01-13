@@ -28,7 +28,7 @@ scoreboard players set #bossfight.chapter_2.act.setup global.main 1
 function monsters:chapter_2/elekiel/3/reset
 
 execute \
-    as @e[tag=monsters.elekiel.2.vampire_flower.hit_box,type=slime] run \
+    as @e[distance=0..,tag=monsters.elekiel.2.vampire_flower.hit_box,type=slime] run \
 function monsters:chapter_2/elekiel/2/vampire_flower/kill
 tag @a remove monsters.elekiel.2.vampire_flower.target
 
@@ -40,7 +40,7 @@ bossbar remove chapter_2.elekiel.3
 
 execute \
     on passengers \
-    as @n[tag=aj.boss_1.root,type=item_display] run \
+    as @n[distance=0..,tag=aj.boss_1.root,type=item_display] run \
 function animated_java:boss_1/remove/this
 
 advancement revoke @a only monsters:chapter_2/elekiel/1/battlefield/fire

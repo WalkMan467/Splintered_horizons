@@ -1,0 +1,12 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "slots": {
+      "container.0": {
+        "items": "minecraft:golden_leggings",
+        "count": 1
+      }
+    }
+  }
+}

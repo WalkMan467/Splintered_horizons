@@ -7,7 +7,7 @@ bossbar set chapter_2.elekiel_phase_2.4 color yellow
 
 execute \
     at 0020ac89-fe15-d2ca-0024-d629fff9b4fb \
-    if entity @n[tag=mob.elekiel.2.crack,type=minecraft:item_display,distance=..8] \
+    if entity @n[tag=mob.elekiel.2.crack,distance=..8,type=minecraft:item_display] \
     facing -916 60 2750 \
     rotated ~ 0 \
     positioned ^ ^ ^9 run \
@@ -15,7 +15,7 @@ function particle:portal/crack/use
 
 execute \
     at 0020ac89-fe15-d2ca-0024-d629fff9b4fb \
-    unless entity @n[tag=mob.elekiel.2.crack,type=minecraft:item_display,distance=..8] run \
+    unless entity @n[tag=mob.elekiel.2.crack,distance=..8,type=minecraft:item_display] run \
 function particle:portal/crack/use
 
 execute \

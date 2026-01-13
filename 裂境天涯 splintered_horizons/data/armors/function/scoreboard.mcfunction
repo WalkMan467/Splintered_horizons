@@ -23,6 +23,8 @@ scoreboard objectives add armor.symbiotic_blood_oath.player.health dummy "共生
 scoreboard objectives add armor.radiant_guardians_helmet.effect.cd dummy "耀光守護頭盔被動 CD"
 scoreboard objectives add armor.resilient.hit dummy "堅韌受擊次數"
 scoreboard objectives add armor.resilient.cd dummy "堅韌技能 CD"
+scoreboard objectives add armor.enchantment.shockwave.id dummy "震波附魔 ID"
+scoreboard objectives add armor.enchantment.shockwave.timer dummy "震波附魔 計時器"
 
 scoreboard objectives add armor.animation_skills.helmet.cd dummy "頭盔 特殊動畫技能 CD"
 scoreboard objectives add armor.animation_skills.chestplate.cd dummy "盔甲 特殊動畫技能 CD"

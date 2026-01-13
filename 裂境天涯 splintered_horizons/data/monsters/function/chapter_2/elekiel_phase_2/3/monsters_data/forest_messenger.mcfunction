@@ -7,9 +7,9 @@ random value 60..160
 
 summon marker ~ ~ ~ {Tags:["monster.marker","main.duration.timer","summon"],data:{Death:"chapter_2/elekiel_phase_2/3/monsters_data",aj_kill:{name:""}}}
 
-ride @n[type=marker,tag=main.duration.timer,distance=..5,tag=summon] mount @s[tag=monsters.spawn]
+ride @n[tag=main.duration.timer,distance=..5,tag=summon,type=marker] mount @s[tag=monsters.spawn]
 
-scoreboard players set @n[tag=main.duration.timer,tag=summon,type=marker] duration 200
-tag @n[type=marker,tag=main.duration.timer,distance=..5,tag=summon] remove summon
+scoreboard players set @n[distance=0..,tag=main.duration.timer,tag=summon,type=marker] duration 200
+tag @n[tag=main.duration.timer,distance=..5,tag=summon,type=marker] remove summon
 
 tag @s remove monsters.spawn

@@ -35,7 +35,7 @@ function monsters:chapter_2/elekiel/2/3
 
 execute \
     if score $monster.chapter_2.elekiel.2 monster.elekiel.skill.casting matches 30.. \
-    unless entity @n[tag=monsters.elekiel.2.vampire_flower.hit_box,type=slime] run \
+    unless entity @n[distance=0..,tag=monsters.elekiel.2.vampire_flower.hit_box,type=slime] run \
 function monsters:chapter_2/elekiel/cast/end
 
 

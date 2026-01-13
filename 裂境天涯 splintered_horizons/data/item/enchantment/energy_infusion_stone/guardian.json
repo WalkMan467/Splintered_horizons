@@ -22,24 +22,24 @@
   "effects": {
     "minecraft:attributes": [
       {
-        "attribute": "minecraft:max_health",
-        "id": "armor.energy_infusion_stone",
-        "amount": {
-          "type": "minecraft:linear",
-          "base": 2,
-          "per_level_above_first": 2
-        },
-        "operation": "add_value"
-      },
-      {
         "attribute": "minecraft:armor",
         "id": "weapon.energy_infusion_stone",
         "amount": {
           "type": "minecraft:linear",
-          "base": -1,
-          "per_level_above_first": -1
+          "base": 0.05,
+          "per_level_above_first": 0.05
         },
-        "operation": "add_value"
+        "operation": "add_multiplied_base"
+      },
+      {
+        "attribute": "minecraft:max_health",
+        "id": "armor.energy_infusion_stone",
+        "amount": {
+          "type": "minecraft:linear",
+          "base": -0.05,
+          "per_level_above_first": -0.05
+        },
+        "operation": "add_multiplied_base"
       }
     ]
   }

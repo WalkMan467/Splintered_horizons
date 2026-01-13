@@ -2,17 +2,17 @@
   "condition": "minecraft:entity_properties",
   "entity": "this",
   "predicate": {
-    "flags": {
-      "is_on_ground": true
-    },
     "slots": {
       "container.0": {
         "predicates": {
           "minecraft:custom_data": {
-            "ground_detect": 1
+            "ground_detect": true
           }
         }
       }
+    },
+    "movement": {
+      "speed": 0
     }
   }
 }

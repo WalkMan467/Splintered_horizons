@@ -24,7 +24,7 @@ function monsters:chapter_2/elekiel/1/detect
 
 execute \
     if score $monster.chapter_2.elekiel.1 monster.elekiel.skill.casting matches 101.. \
-    as @e[tag=monsters.elekiel.1.abyss_crystal,type=item_display] at @s run \
+    as @e[distance=0..,tag=monsters.elekiel.1.abyss_crystal,type=item_display] at @s run \
 function monsters:chapter_2/elekiel/1/abyss_crystal/main
 
 
@@ -70,13 +70,13 @@ function monsters:chapter_2/elekiel/1/abyss_crystal/use
 
 execute \
     if score $monster.chapter_2.elekiel.1 monster.elekiel.skill.casting matches 291 \
-    as @e[tag=monsters.elekiel.1.abyss_crystal,type=item_display] at @s run \
+    as @e[distance=0..,tag=monsters.elekiel.1.abyss_crystal,type=item_display] at @s run \
 function monsters:chapter_2/elekiel/1/4
 
 
 execute \
     if score $monster.chapter_2.elekiel.1 monster.elekiel.skill.casting matches 311 \
-    as @e[tag=monsters.elekiel.1.abyss_crystal,type=item_display] at @s run \
+    as @e[distance=0..,tag=monsters.elekiel.1.abyss_crystal,type=item_display] at @s run \
 function monsters:chapter_2/elekiel/1/5
 
 

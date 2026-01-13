@@ -1,19 +1,19 @@
 
 execute \
     positioned 912 60 3018 \
-    as @e[type=#dummy_mob,tag=aj.global.camera,distance=..60] at @s \
+    as @e[sort=arbitrary,tag=aj.global.camera,distance=..60,type=#dummy_mob] at @s \
     if biome ~ ~ ~ world_area:chapter_2/bossfight/fire run \
 tp @s ~ ~ ~-1000
 
 execute \
     positioned 912 60 3018 \
-    as @e[type=item_display,tag=aj.global.root,distance=..60] at @s \
+    as @e[sort=arbitrary,tag=aj.global.root,distance=..60,type=item_display] at @s \
     if biome ~ ~ ~ world_area:chapter_2/bossfight/fire run \
 tp @s ~ ~ ~-1000
 
 execute \
     positioned 912 60 3018 \
-    as @e[type=area_effect_cloud,tag=monster.elekiel.3.player_pos.save,distance=..60] at @s \
+    as @e[tag=monster.elekiel.3.player_pos.save,distance=..60,type=area_effect_cloud] at @s \
     if biome ~ ~ ~ world_area:chapter_2/bossfight/fire run \
 tp @s ~ ~ ~-1000
 
@@ -26,26 +26,26 @@ tp @s ~ ~ ~-1000
 
 execute \
     positioned 912 60 3018 \
-    as @e[type=minecraft:experience_orb,distance=..60] at @s \
+    as @e[distance=..60,type=minecraft:experience_orb] at @s \
     if biome ~ ~ ~ world_area:chapter_2/bossfight/fire run \
 kill @s
 
 execute \
     positioned 912 60 3018 \
-    as @e[type=#arrows,distance=..60] at @s \
+    as @e[distance=..60,type=#arrows] at @s \
     if biome ~ ~ ~ world_area:chapter_2/bossfight/fire run \
 kill @s
 
 
 execute \
     positioned 912 60 3018 \
-    as @e[tag=monsters.chapter_2.elekiel.1.tree.monsters,type=!#minecraft:dummy_mob,distance=..60] at @s \
+    as @e[tag=monsters.chapter_2.elekiel.1.tree.monsters,distance=..60,type=!#minecraft:dummy_mob] at @s \
     if biome ~ ~ ~ world_area:chapter_2/bossfight/fire run \
 function monsters:chapter_2/elekiel/1/void
 
 execute \
     positioned 912 60 3018 \
-    as @e[tag=monsters.soul_tree_remnant,type=!#minecraft:dummy_mob,distance=..60] at @s \
+    as @e[tag=monsters.soul_tree_remnant,distance=..60,type=!#minecraft:dummy_mob] at @s \
     if biome ~ ~ ~ world_area:chapter_2/bossfight/fire run \
 function monsters:chapter_2/elekiel/1/void
 

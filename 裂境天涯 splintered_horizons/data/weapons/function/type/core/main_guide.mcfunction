@@ -25,7 +25,7 @@ function weapons:type/sword/nightfall/passive/dmg/blade_main
 # arrow ground detect
 
 execute \
-    as @e[type=arrow,tag=!ability.failure,predicate=weapons:type/arrows/ground_detect/main,limit=20] at @s run \
+    as @e[sort=arbitrary,limit=20,tag=!ability.failure,predicate=weapons:type/arrows/ground_detect/main,type=#arrows] at @s run \
 function weapons:type/arrows/ground_detect/run with entity @s item.components."minecraft:custom_data"
 
 # grip of withering

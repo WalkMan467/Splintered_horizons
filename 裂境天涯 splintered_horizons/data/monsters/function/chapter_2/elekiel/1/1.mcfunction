@@ -68,12 +68,12 @@ function particle:tunder_red/use {duration:20,spread:1}
 
 execute \
     positioned 912 60 3018 \
-    as @e[type=minecraft:experience_orb,distance=..60] at @s \
+    as @e[distance=..60,type=minecraft:experience_orb] at @s \
     if biome ~ ~ ~ world_area:chapter_2/bossfight/fire run \
 kill @s
 
 execute \
     positioned 912 60 3018 \
-    as @e[type=#arrows,distance=..60] at @s \
+    as @e[distance=..60,type=#arrows] at @s \
     if biome ~ ~ ~ world_area:chapter_2/bossfight/fire run \
 kill @s

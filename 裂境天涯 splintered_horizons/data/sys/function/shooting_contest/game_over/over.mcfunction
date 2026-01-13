@@ -9,18 +9,7 @@ playsound minecraft:entity.player.levelup voice @a[distance=..10] 1042 152 -78 1
 execute \
     if score #sys.shooting_contest.sagittarius global.main matches 1.. \
     if score #sys.shooting_contest.score global.main matches 40.. run \
-tellraw @a[tag=sys.shooting_contest] ["送你 ",{"text":"1個","color":"light_purple"},{"translate":"weapon.sagittarius","color":"dark_aqua"},{"text":" ！","color":"white"}]
-
-execute \
-    if score #sys.shooting_contest.sagittarius global.main matches 1.. \
-    if score #sys.shooting_contest.score global.main matches 40.. \
-    as @a[tag=sys.shooting_contest] run \
-function weapons:get/bow/sagittarius
-
-execute \
-    if score #sys.shooting_contest.sagittarius global.main matches 1.. \
-    if score #sys.shooting_contest.score global.main matches 40.. run \
-scoreboard players remove #sys.shooting_contest.sagittarius global.main 1
+function sys:shooting_contest/game_over/reward/sagittarius
 
 # over 20
 

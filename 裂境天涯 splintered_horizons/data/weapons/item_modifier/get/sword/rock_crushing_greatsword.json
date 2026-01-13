@@ -147,7 +147,7 @@
   },
   {
     "function": "minecraft:set_enchantments",
-    "add": true,
+    "add": false,
     "enchantments": {
       "weapons:type/sword/rock_crushing_greatsword/defense": 1
     }

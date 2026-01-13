@@ -7,50 +7,50 @@ execute align xyz \
     positioned ~0.5 ~0.5 ~0.5 \
     if score $value armor.random_teleport.raycast.id matches 1 rotated 0 0 \
     positioned ^ ^1 ^8 run \
-function armors:type/random_teleport/racast
+function armors:enchantment/random_teleport/racast
 
 execute align xyz \
     positioned ~0.5 ~0.5 ~0.5 \
     if score $value armor.random_teleport.raycast.id matches 2 rotated 0 0 \
     positioned ^ ^1 ^-8 run \
-function armors:type/random_teleport/racast
+function armors:enchantment/random_teleport/racast
 
 execute align xyz \
     positioned ~0.5 ~0.5 ~0.5 \
     if score $value armor.random_teleport.raycast.id matches 3 rotated 0 0 \
     positioned ^8 ^1 ^ run \
-function armors:type/random_teleport/racast
+function armors:enchantment/random_teleport/racast
 
 execute align xyz \
     positioned ~0.5 ~0.5 ~0.5 \
     if score $value armor.random_teleport.raycast.id matches 4 rotated 0 0 \
     positioned ^-8 ^1 ^ run \
-function armors:type/random_teleport/racast
+function armors:enchantment/random_teleport/racast
 
 
 execute align xyz \
     positioned ~0.5 ~0.5 ~0.5 \
     if score $value armor.random_teleport.raycast.id matches 5 rotated 0 0 \
     positioned ^8 ^1 ^8 run \
-function armors:type/random_teleport/racast
+function armors:enchantment/random_teleport/racast
 
 execute align xyz \
     positioned ~0.5 ~0.5 ~0.5 \
     if score $value armor.random_teleport.raycast.id matches 6 rotated 0 0 \
     positioned ^-8 ^1 ^-8 run \
-function armors:type/random_teleport/racast
+function armors:enchantment/random_teleport/racast
 
 execute align xyz \
     positioned ~0.5 ~0.5 ~0.5 \
     if score $value armor.random_teleport.raycast.id matches 7 rotated 0 0 \
     positioned ^8 ^1 ^-8 run \
-function armors:type/random_teleport/racast
+function armors:enchantment/random_teleport/racast
 
 execute align xyz \
     positioned ~0.5 ~0.5 ~0.5 \
     if score $value armor.random_teleport.raycast.id matches 8 rotated 0 0 \
     positioned ^-8 ^1 ^8 run \
-function armors:type/random_teleport/racast
+function armors:enchantment/random_teleport/racast
 
 tag @e[type=marker,tag=test,limit=1,sort=random] add armor.random_teleport.target
 

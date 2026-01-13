@@ -4,5 +4,5 @@ tag @s add chapter_3.emissary_of_the_temporal_rift.key
 
 scoreboard players set @s monster.emissary_of_the_temporal_rift.key.timer 300
 
-scoreboard players operation @s monster.emissary_of_the_temporal_rift.id = @n[type=skeleton,tag=chapter_3.emissary_of_the_temporal_rift.key.temp,distance=..5,tag=monsters.emissary_of_the_temporal_rift] monster.emissary_of_the_temporal_rift.id
+scoreboard players operation @s monster.emissary_of_the_temporal_rift.id = @n[tag=chapter_3.emissary_of_the_temporal_rift.key.temp,distance=..5,tag=monsters.emissary_of_the_temporal_rift,type=skeleton] monster.emissary_of_the_temporal_rift.id
 scoreboard players display name @s monster.emissary_of_the_temporal_rift.id [{text:"[",color:"white"},{selector:"@n[type=skeleton,tag=chapter_3.emissary_of_the_temporal_rift.key.temp,distance=..5,tag=monsters.emissary_of_the_temporal_rift]",bold:true,color:"gold"},{text:"]",color:"white"},{text:" "},{text:"Summoned Creature",color:"white"}]

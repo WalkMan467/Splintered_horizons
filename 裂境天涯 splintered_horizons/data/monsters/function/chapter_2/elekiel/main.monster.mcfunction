@@ -21,9 +21,11 @@ execute \
     if entity @s[type=item_display,tag=aj.boss_1.root] rotated \
     as 00000100-0000-0080-0000-008000000001 run \
 rotate @s ~ 0
-ride @n[tag=aj.boss_1.root,type=item_display] mount 00000100-0000-0080-0000-008000000001
+ride @n[distance=0..,tag=aj.boss_1.root,type=item_display] mount 00000100-0000-0080-0000-008000000001
 
-
+execute \
+    unless predicate monsters:chapter_2/elekiel/positian_fixed run \
+tp @s ~ 60 ~
 
 execute \
     if score $monster.chapter_2.elekiel.3 monster.elekiel.skill.cd matches ..0 run \

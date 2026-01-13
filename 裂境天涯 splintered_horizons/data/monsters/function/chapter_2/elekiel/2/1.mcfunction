@@ -11,15 +11,15 @@ particle dust_pillar{block_state:"minecraft:redstone_block"} ~ ~ ~ 0.25 0.25 0.2
 particle block{block_state:"minecraft:redstone_block"} ~ ~ ~ 0.75 0.75 0.75 1 60 normal
 particle flash{color:[1.000,1.000,1.000,1.00]} ~ ~ ~ 0 0 0 0 1 normal
 
-scoreboard players set @e[type=block_display,tag=monsters.elekiel.2.vampire_flower,tag=summon] duration 401
-scoreboard players set @e[type=text_display,tag=monsters.elekiel.2.vampire_flower.timer,tag=summon] monster.elekiel.2.timer 10
-scoreboard players set @e[type=slime,tag=monsters.elekiel.2.vampire_flower.hit_box,tag=summon] duration 401
+scoreboard players set @e[distance=0..,tag=monsters.elekiel.2.vampire_flower,tag=summon,type=block_display] duration 401
+scoreboard players set @e[distance=0..,tag=monsters.elekiel.2.vampire_flower.timer,tag=summon,type=text_display] monster.elekiel.2.timer 10
+scoreboard players set @e[distance=0..,tag=monsters.elekiel.2.vampire_flower.hit_box,tag=summon,type=slime] duration 401
 
 
 execute \
-    as @e[type=block_display,tag=monsters.elekiel.2.vampire_flower,tag=summon] \
+    as @e[distance=0..,tag=monsters.elekiel.2.vampire_flower,tag=summon,type=block_display] \
     on passengers run \
 scoreboard players set @s duration 401
 
-tag @e[type=block_display,tag=monsters.elekiel.2.vampire_flower,tag=summon] remove summon
-tag @e[type=text_display,tag=monsters.elekiel.2.vampire_flower.timer,tag=summon] remove summon
+tag @e[distance=0..,tag=monsters.elekiel.2.vampire_flower,tag=summon,type=block_display] remove summon
+tag @e[distance=0..,tag=monsters.elekiel.2.vampire_flower.timer,tag=summon,type=text_display] remove summon
