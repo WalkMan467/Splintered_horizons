@@ -45,6 +45,8 @@ scoreboard players set #story:icon/story/chapter_2/mq/scebe_1 global.main 1
 scoreboard players set #story:icon/story/chapter_2/mq/scebe_2 global.main 1
 scoreboard players set #story:icon/story/chapter_2/mq/scebe_3 global.main 0
 
+advancement revoke @s only item:type/tp_book/reset
+
 advancement grant @a only weapons:monument/area_1
 
 advancement grant @s only music:icon

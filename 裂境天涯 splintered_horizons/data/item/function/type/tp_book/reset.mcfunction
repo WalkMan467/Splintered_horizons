@@ -1,7 +1,7 @@
 tag @s add temp
 
 execute \
-    as @e[sort=arbitrary,tag=!temp,tag=item.tp_book.point,type=item_display] at @s \
+    as @e[distance=0..,sort=arbitrary,tag=!temp,tag=item.tp_book.point,type=item_display] at @s \
     if score @s item.tp_book.player_id = @p[sort=arbitrary,tag=temp] player.id run \
 kill @s[tag=item.tp_book.point,type=item_display]
 

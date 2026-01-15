@@ -21,7 +21,7 @@ gamemode survival @a
 time set midnight
 weather clear
 difficulty hard
-kill @e[tag=sys.monument_point.sword]
+kill @e[distance=0..,tag=sys.monument_point.sword]
 
 xp set @a 0 levels
 xp set @a 0 points
@@ -101,5 +101,6 @@ scoreboard players set #weapons:monument/area_8 global.main 0
 scoreboard players set #story global.main 1
 advancement revoke @a only weapons:monument/area_1
 advancement revoke @a only weapons:monument/area_2
+advancement revoke @s only item:type/tp_book/reset
 
 reload
