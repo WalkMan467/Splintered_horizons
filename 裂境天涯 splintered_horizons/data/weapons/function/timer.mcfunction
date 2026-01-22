@@ -1,6 +1,7 @@
 scoreboard players remove @a[scores={weapon.wind_sword.cd=1..}] weapon.wind_sword.cd 1
 scoreboard players remove @a[scores={weapon.twilight_wind.cd=1..}] weapon.twilight_wind.cd 1
-scoreboard players remove @a[scores={weapon.grip_of_withering.effect=1..}] weapon.grip_of_withering.effect 1
+scoreboard players remove @a[scores={weapon.grip_of_withering.cd=1..}] weapon.grip_of_withering.cd 1
+
 scoreboard players remove @a[scores={weapon.ruins_of_the_finality.cd=1..}] weapon.ruins_of_the_finality.cd 1
 scoreboard players remove @a[scores={weapon.nightfall.cd=1..}] weapon.nightfall.cd 1
 scoreboard players remove @a[scores={weapon.aquilumera.cd=1..}] weapon.aquilumera.cd 1
@@ -43,5 +44,3 @@ scoreboard players remove @a[scores={weapon.sagittarius.cd=1..}] weapon.sagittar
 # playsound minecraft:block.note_block.snare voice @a[scores={weapon.echo_rhythm.cd=1}] ~ ~1 ~ 1 1
 
 # scoreboard players set @a[scores={weapon.echo_rhythm.cd=1}] weapon.echo_rhythm.cd 0
-
-advancement grant @a[scores={weapon.grip_of_withering.effect=1}] only weapons:type/sword/grip_of_withering/0

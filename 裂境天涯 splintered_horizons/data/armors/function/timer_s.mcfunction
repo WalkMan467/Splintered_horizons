@@ -10,6 +10,7 @@
 # ===================================================
 
 scoreboard players remove @a[scores={armor.black_hole.boots.cd=1..}] armor.black_hole.boots.cd 1
+scoreboard players remove @a[scores={armor.paladins_helmet.cd=1..}] armor.paladins_helmet.cd 1
 scoreboard players remove @a[scores={armor.armor_of_the_coiled_rock.cd=1..}] armor.armor_of_the_coiled_rock.cd 1
 scoreboard players remove @a[scores={armor.finality_chestplate.cd=1..}] armor.finality_chestplate.cd 1
 scoreboard players remove @a[scores={armor.windriders_legplates.cd=1..}] armor.windriders_legplates.cd 1
@@ -20,6 +21,10 @@ scoreboard players remove @a[scores={armor.symbiotic_blood_oath.cd=1..}] armor.s
 execute \
     as @a at @s run \
 function armors:type/finality_chestplate/effect/timer
+
+execute \
+    as @a at @s run \
+function armors:type/paladins_helmet/effect/timer
 
 tellraw @a[scores={armor.black_hole.boots.cd=1}] [{"text":"[","color":"green","bold":true},{"translate":"armor.black_hole_boots","color":"dark_green","bold":true},{"text":"] ","color":"green","bold":true},{"translate":"weapon.cd_completed","color":"green","bold":true}]
 

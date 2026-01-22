@@ -1,3 +1,3 @@
 kill @s
 
-function particle:portal/crack/use
+function monsters:chapter_2/elekiel_phase_2/4/portal/crack/use

@@ -1,24 +1,3 @@
-
-execute \
-    as @e[type=item_display,tag=mob.elekiel.2.crack] at @s run \
-function particle:portal/crack/main
-
-execute \
-    as @e[type=text_display,tag=mob.elekiel.2.crack_silhouette] at @s run \
-function particle:portal/crack_silhouette/main
-
-execute \
-    as @e[type=text_display,tag=mob.elekiel.2.digit] at @s run \
-function particle:portal/digit/main
-
-execute \
-    as @e[type=text_display,tag=mob.elekiel.2.digit] at @s run \
-function particle:portal/digit/main
-
-execute \
-    as @e[type=block_display,tag=monsters.elekiel_phase_2.portal.tp] at @s run \
-function particle:portal/crack/tp/main
-
 # 時空破碎
 function particle:space_rupture/main
 
@@ -51,8 +30,11 @@ function particle:technological_force_wave/main
 
 # 相位裂縫
 execute \
-    as @e[tag=particle.space_crack.main] at @s run \
+    as @e[tag=particle.space_crack.main,distance=0..] at @s run \
 function particle:space_crack/main
 
 # 時空崩塌
 function particle:spacetime_collapse/main
+
+# 凋零之握被動特效
+function particle:type/expansion/grip_of_withering/passive/main

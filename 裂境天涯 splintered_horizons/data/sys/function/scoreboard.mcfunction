@@ -12,6 +12,7 @@ scoreboard objectives add sys.monster_wave.target_wave dummy
 scoreboard objectives add sys.monster_wave.remaining_monster dummy
 scoreboard objectives add sys.monster_wave.wave dummy
 scoreboard objectives add sys.monster_wave.rdm dummy
+scoreboard objectives add sys.environmental_mechanism.gravity.timer dummy
 
 scoreboard objectives add sys.dmg_show.main dummy
 scoreboard objectives add sys.dmg_show.life dummy

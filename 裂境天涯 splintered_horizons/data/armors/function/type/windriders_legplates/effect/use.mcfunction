@@ -22,3 +22,5 @@ function armors:type/windriders_legplates/effect/run
 tag @s remove armors.windriders_legplates.effect
 
 advancement revoke @s only armors:type/windriders_legplates/effect/charge
+
+scoreboard players set @s armor.leggings.effect.actived 10

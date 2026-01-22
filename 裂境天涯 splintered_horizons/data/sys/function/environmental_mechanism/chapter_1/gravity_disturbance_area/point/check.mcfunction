@@ -1,0 +1,2 @@
+tag @n[sort=random,distance=..60,tag=sys.environmental_mechanism.chapter_1.gravity.point,tag=!sys.environmental_mechanism.chapter_1.gravity.point.actived,type=marker] add sys.environmental_mechanism.chapter_1.gravity.point.actived
+tag @n[sort=random,distance=..60,tag=sys.environmental_mechanism.chapter_1.gravity.point,tag=!sys.environmental_mechanism.chapter_1.gravity.point.actived,type=marker] add sys.environmental_mechanism.chapter_1.gravity.point.actived

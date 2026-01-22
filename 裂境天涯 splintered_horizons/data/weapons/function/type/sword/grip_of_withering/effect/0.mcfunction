@@ -1,0 +1,1 @@
+scoreboard players add @s weapon.grip_of_withering.passive.chance 5

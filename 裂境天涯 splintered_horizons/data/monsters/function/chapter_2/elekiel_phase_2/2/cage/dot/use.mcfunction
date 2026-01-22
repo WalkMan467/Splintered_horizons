@@ -1,0 +1,10 @@
+
+summon minecraft:item_display ~4.0 ~ ~4.0 {Tags:[monster.elekiel_phase_2.2.cage.dot,"summon","monster.elekiel_phase_2.2.display","mob.elekiel.display"], item: {components: {"minecraft:item_model": "mob:elekiel/mysterray"}, count: 1, id: "minecraft:paper"}, transformation: {left_rotation: [-0.24479292f, -0.14339152f, -0.38306725f, 0.8790761f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [0.5f, 0.5f, 0.5f], translation: [0.0f, 0.0f, 0.0f]}, teleport_duration:1}
+summon minecraft:item_display ~4.0 ~ ~-4.0 {Tags:[monster.elekiel_phase_2.2.cage.dot,"summon","monster.elekiel_phase_2.2.display","mob.elekiel.display"], item: {components: {"minecraft:item_model": "mob:elekiel/mysterray"}, count: 1, id: "minecraft:paper"}, transformation: {left_rotation: [-0.24479292f, -0.14339152f, -0.38306725f, 0.8790761f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [0.5f, 0.5f, 0.5f], translation: [0.0f, 0.0f, 0.0f]}, teleport_duration:1}
+summon minecraft:item_display ~-4.0 ~ ~4.0 {Tags:[monster.elekiel_phase_2.2.cage.dot,"summon","monster.elekiel_phase_2.2.display","mob.elekiel.display"], item: {components: {"minecraft:item_model": "mob:elekiel/mysterray"}, count: 1, id: "minecraft:paper"}, transformation: {left_rotation: [-0.24479292f, -0.14339152f, -0.38306725f, 0.8790761f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [0.5f, 0.5f, 0.5f], translation: [0.0f, 0.0f, 0.0f]}, teleport_duration:1}
+summon minecraft:item_display ~-4.0 ~ ~-4.0 {Tags:[monster.elekiel_phase_2.2.cage.dot,"summon","monster.elekiel_phase_2.2.display","mob.elekiel.display"], item: {components: {"minecraft:item_model": "mob:elekiel/mysterray"}, count: 1, id: "minecraft:paper"}, transformation: {left_rotation: [-0.24479292f, -0.14339152f, -0.38306725f, 0.8790761f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [0.5f, 0.5f, 0.5f], translation: [0.0f, 0.0f, 0.0f]}, teleport_duration:1}
+
+execute \
+    as @e[type=item_display,tag=summon] run \
+rotate @s ~ ~
+tag @e[type=item_display,tag=summon] remove summon

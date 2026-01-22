@@ -35,7 +35,7 @@ function monsters:chapter_2/forest_messenger/cocoon/remove
 
 execute \
     as @a at @s run \
-function particle:portal/crack/tp/remove
+function monsters:chapter_2/elekiel_phase_2/4/portal/crack/tp/remove
 
 
 execute \
@@ -79,6 +79,7 @@ scoreboard players reset @a monster.elekiel_phase_2.skill.4.effect.void
 scoreboard players reset #monster.elekiel_phase_2.skill.4.portal.actived global.main
 scoreboard players set @s player.detect.is_bossfight 0
 scoreboard players set #boss_area.chapter_2.elekiel_phase_2 global.main 0
+scoreboard players set #monster.bossfight.chapter_2.elekiel_phase_2.act.enable global.main 1
 
 scoreboard players reset $monster.chapter_2.elekiel.1 monster.elekiel.skill.casting
 scoreboard players reset $monster.chapter_2.elekiel.2 monster.elekiel.skill.casting

@@ -5,7 +5,7 @@ tag @s remove chapter_2.elekiel_phase_2.4
 
 execute \
     as @a at @s run \
-function particle:portal/crack/tp/remove
+function monsters:chapter_2/elekiel_phase_2/4/portal/crack/tp/remove
 
 
 execute \

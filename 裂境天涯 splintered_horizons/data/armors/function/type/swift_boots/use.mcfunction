@@ -21,4 +21,4 @@ playsound minecraft:entity.illusioner.cast_spell voice @s ~ ~1 ~ 1 1.25
 playsound minecraft:entity.illusioner.prepare_blindness voice @a ~ ~1 ~ 1 1
 particle minecraft:trial_spawner_detection_ominous ~ ~ ~ 0.5 0.25 0.5 0 20
 
-scoreboard players set @s armor.boots.effect.actived 1
+scoreboard players set @s armor.boots.effect.actived 2

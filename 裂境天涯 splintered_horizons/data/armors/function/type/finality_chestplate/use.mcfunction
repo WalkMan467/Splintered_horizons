@@ -26,4 +26,4 @@ title @s times 10 0 10
 
 scoreboard players set @s armor.finality_chestplate.effect.timer 6
 
-scoreboard players set @s armor.chestplate.effect.actived 1
+scoreboard players set @s armor.chestplate.effect.actived 2

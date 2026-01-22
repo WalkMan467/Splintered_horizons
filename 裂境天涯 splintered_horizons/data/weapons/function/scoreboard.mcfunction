@@ -26,12 +26,8 @@ scoreboard players add @a weapon.twilight_wind.gale_energy 0
 
 #凋零之握
 
-scoreboard objectives add weapon.grip_of_withering.effect dummy "凋零之握型態持續時間"
-scoreboard objectives add weapon.grip_of_withering.effect.state dummy "凋零之握型態持續時間"
-
 scoreboard objectives add weapon.grip_of_withering.cd dummy "凋零之握 CD"
-
-scoreboard players add @a weapon.grip_of_withering.effect 0
+scoreboard objectives add weapon.grip_of_withering.passive.chance dummy "凋零之握 被動觸發機率"
 
 scoreboard players add @a weapon.grip_of_withering.cd 0
 

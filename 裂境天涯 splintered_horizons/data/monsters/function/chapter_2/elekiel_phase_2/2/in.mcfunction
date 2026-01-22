@@ -45,7 +45,7 @@ tag @s add monsters.elekiel_phase_2.portal.tp.player
 
 
 execute summon block_display at @s run \
-function particle:portal/crack/tp/setup
+function monsters:chapter_2/elekiel_phase_2/4/portal/crack/tp/setup
 
 scoreboard players set @s[gamemode=survival] monster.elekiel_phase_2.skill.4.player.gamemode 1
 scoreboard players set @s[gamemode=creative] monster.elekiel_phase_2.skill.4.player.gamemode 2

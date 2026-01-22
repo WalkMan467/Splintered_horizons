@@ -11,6 +11,10 @@ scoreboard objectives add particle.spacetime_collapse.id dummy "時空崩塌ID"
 scoreboard objectives add particle.spacetime_collapse.timer dummy "時空崩塌計時器"
 scoreboard objectives add particle.spacetime_collapse.sound dummy "時空崩塌聲音"
 
+scoreboard objectives add particle.grip_of_withering.passive.id dummy "時空崩塌ID"
+scoreboard objectives add particle.grip_of_withering.passive.timer dummy "時空崩塌計時器"
+scoreboard objectives add particle.grip_of_withering.passive.sound dummy "時空崩塌聲音"
+
 scoreboard objectives add mob.main dummy
 scoreboard objectives add mob.cd dummy "技能冷卻時間"
 scoreboard objectives add mob.duration dummy "技能持續時間"

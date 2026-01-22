@@ -27,6 +27,9 @@ return 0
 setblock -916 60 2750 air
 setblock -916 61 2750 air
 
+scoreboard players set #monster.bossfight.chapter_2.elekiel_phase_2.act.enable global.main 0
+function monsters:bossfight/chapter_2/act/elekiel_phase_2/1/false
+
 bossbar add monsters.elekiel_phase_2 [{"translate":"monsters.elekiel","fallback": "「空之支配者」伊萊克爾"}]
 bossbar set minecraft:monsters.elekiel_phase_2 color red
 bossbar set minecraft:monsters.elekiel_phase_2 style notched_10

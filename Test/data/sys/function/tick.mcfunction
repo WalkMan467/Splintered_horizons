@@ -1,2 +1,0 @@
-# Mob
-function mob:tick

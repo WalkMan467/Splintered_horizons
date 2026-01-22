@@ -1,5 +1,6 @@
 {
     "values": [
-      "armors:type/swift_boots/use"
+      "armors:type/swift_boots/use",
+      "armors:type/paladins_helmet/use"
     ]
   }

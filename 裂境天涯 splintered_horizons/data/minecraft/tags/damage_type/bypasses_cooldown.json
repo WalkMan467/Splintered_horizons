@@ -14,6 +14,7 @@
     "weapons:type/sword/otherworld_star_effect",
     "weapons:type/axe/earthquake_axe/damage",
     "weapons:type/axe/earthquake_axe/damage_effect",
-    "armors:type/symbiotic_blood_oath/damage"
+    "armors:type/symbiotic_blood_oath/damage",
+    "weapons:type/sword/grip_of_withering"
   ]
 }

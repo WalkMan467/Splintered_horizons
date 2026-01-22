@@ -9,6 +9,23 @@ scoreboard players add #monster.bossfight.chapter_2.elekiel.act.enable global.ma
     return 0
 
     execute \
+        unless loaded 912 60 2018 run \
+    return 0
+
+    execute \
+        unless entity 0024ce6d-0003-ae59-0003-40dd00000005 \
+        if score #monster.bossfight.chapter_2.elekiel global.main matches 1 \
+        if score #monster.bossfight.chapter_2.elekiel_temp global.main matches 1 run \
+    function monsters:bossfight/chapter_2/act/elekiel/1/true
+
+    execute \
+        positioned 912 62 2018 \ 
+        unless entity @n[sort=arbitrary,distance=..1,tag=aj.boss_1.root,type=item_display] \
+        if score #monster.bossfight.chapter_2.elekiel global.main matches 1 \
+        if score #monster.bossfight.chapter_2.elekiel_temp global.main matches 1 run \
+    function monsters:bossfight/chapter_2/act/elekiel/1/true
+
+    execute \
         positioned 912 60 2018 run \
     tag @a[sort=arbitrary,distance=..30,tag=!monster.bossfight.chapter_2.elekiel.temp] add monster.bossfight.chapter_2.elekiel.temp
 

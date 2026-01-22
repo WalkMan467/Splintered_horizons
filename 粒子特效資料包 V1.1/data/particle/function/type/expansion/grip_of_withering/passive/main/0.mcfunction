@@ -1,0 +1,1 @@
+particle wax_on ~ ~ ~ 1 1 1 0 5 force @a

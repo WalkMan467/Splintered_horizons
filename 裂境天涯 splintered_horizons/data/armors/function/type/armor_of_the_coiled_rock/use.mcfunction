@@ -21,5 +21,5 @@ effect give @s absorption 5 1 true
 playsound minecraft:block.anvil.land voice @s ~ ~1 ~ 1 1.05
 playsound minecraft:entity.illusioner.cast_spell voice @s ~ ~1 ~ 1 1.25
 
-scoreboard players set @s armor.chestplate.effect.actived 1
+scoreboard players set @s armor.chestplate.effect.actived 2
 scoreboard players set @s armor.armor_of_the_coiled_rock.cd 20

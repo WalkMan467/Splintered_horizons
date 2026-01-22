@@ -17,6 +17,6 @@ tag @a remove temp
 
 execute at @p[tag=monster.elekiel_phase_2.skill.2.target] \
     positioned ~ ~3.5 ~ rotated 0 0 run \
-function mob:elekiel/3/cage/use
+function monsters:chapter_2/elekiel_phase_2/2/cage/use
 
 tag @a remove monster.elekiel_phase_2.skill.2.target

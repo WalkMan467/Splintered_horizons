@@ -6,17 +6,9 @@
   "effects": {
     "minecraft:post_attack": [
       {
-        "requirements": {
-          "condition": "minecraft:random_chance",
-          "chance": 0.5
-        },
         "effect": {
-          "type": "minecraft:apply_mob_effect",
-          "to_apply": "minecraft:wither",
-          "min_duration": 8,
-          "max_duration": 8,
-          "min_amplifier": 1,
-          "max_amplifier": 1
+          "type": "minecraft:run_function",
+          "function": "weapons:type/sword/grip_of_withering/effect/use"
         },
         "enchanted": "attacker",
         "affected": "victim"

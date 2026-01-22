@@ -8,7 +8,7 @@ item replace entity @p[tag=monster.elekiel_phase_2.4.portal.target] armor.chest 
 
 execute \
     at 0020ac89-fe15-d2ca-0024-d629fff9b4fb run \
-function particle:portal/crack/use
+function monsters:chapter_2/elekiel_phase_2/4/portal/crack/use
 
 execute \
     as @p[tag=monster.elekiel_phase_2.4.portal.target] at @s run \

@@ -21,4 +21,4 @@ tag @n[type=area_effect_cloud,tag=armor.black_hole.effect,tag=summon] remove sum
 attribute @s movement_speed modifier remove armor.black_hole.animation.boots
 attribute @s jump_strength modifier remove armor.black_hole.animation.boots
 
-scoreboard players set @s armor.boots.effect.actived 1
+scoreboard players set @s armor.boots.effect.actived 5

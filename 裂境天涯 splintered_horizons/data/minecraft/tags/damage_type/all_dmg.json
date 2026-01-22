@@ -30,6 +30,7 @@
     "armors:type/symbiotic_blood_oath/damage",
     "armors:type/black_hole/damage",
     "armors:type/windriders_legplates/damage",
-    "weapons:type/sword/rock_crushing_greatsword"
+    "weapons:type/sword/rock_crushing_greatsword",
+    "weapons:type/sword/grip_of_withering"
   ]
 }

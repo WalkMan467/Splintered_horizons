@@ -13,14 +13,14 @@
 attribute = []
 # ----- 設定參數 ----- #
 
-name = ['共生血誓', 'dark_red', '護甲 / 稀有']
-story = {'info': ['來自緋紅之爪伊索克拉的舊世界', '昔日的光輝已被黑暗所壟罩', '被緋紅之力的渾沌之血侵蝕著這套騎士的鎧甲', '述說著曾經人們與深淵的慘烈戰鬥'], 'color': 'blue'}
-item_data = {'real_item': 'bundle', 'id': 'symbiotic_blood_oath', 'item_model': '"chestplate/symbiotic_blood_oath/0"', 'custom_data': '{active_skills:1b,animation:0b,type:"armor",rarity:"rare"}', 'max_damage': -1, 'max_stack_size': 1, 'other': ['tooltip_style="rare"','equippable={slot:"chest",equip_sound:"minecraft:block.anvil.use",asset_id:"finality_chestplate"}']}
-skill = {'is_skill': True, 'cd': 30, 'name': ['共生契約', 'dark_aqua', "#b10000"], 'info': ['當你附近有玩家時：', '扣除自己一定血量 25% 血量使 6 格範圍內玩家立即恢復 II', '如果沒有玩家，則使周圍 6 格範圍內怪物持續獲得流血 (00:05)']}
-passive_skills = {'is_passive_skills': True, 'cd': 0, 'name': ['血之祝福', "#ff0000", '#b10000'], 'info': ['當你受傷時:','有 50 % 機率使你獲得 回復 IV (00:01)']}
+name = ['聖騎士的頭盔', 'gold', '頭盔 / 稀有']
+story = {'info': ['昔日的騎士即使世界陷入黑暗之中', '他們也將戰鬥到死', '只為黎明到來之時'], 'color': 'blue'}
+item_data = {'real_item': 'bundle', 'id': 'paladins_helmet', 'item_model': '"head/paladins_helmet/1"', 'custom_data': '{type:"armor",rarity:"rare",id:"paladins_helmet"}', 'max_damage': -1, 'max_stack_size': 1, 'other': ['tooltip_style="rare"','equippable={slot:"head",equip_sound:"item.armor.equip_netherite",asset_id:"gold"}']}
+skill = {'is_skill': False, 'cd': 30, 'name': ['共生契約', 'dark_aqua', "#b10000"], 'info': ['當你附近有玩家時：', '扣除自己一定血量 25% 血量使 6 格範圍內玩家立即恢復 II', '如果沒有玩家，則使周圍 6 格範圍內怪物持續獲得流血 (00:05)']}
+passive_skills = {'is_passive_skills': True, 'cd': 25, 'name': ['騎士之護', "#ffe600", "#fff280"], 'info': ['當 %s 技能觸發時:','使你獲得 盔甲值提升 25% (00:08)']}
 ultimate = {'is_ultimate': False, 'cd': 0, 'name': ['終焉之月', 'dark_aqua', '#00ccff'], 'info': ['右鍵點擊消耗一個終焉之眼，', '開啟【終焉之月】型態持續 15 秒', '大幅強化武器，', '此形態下如果攻擊會有25%機率造成大量傷害']}
-attribute.append({'attribute': 'armor', 'value': 5, 'slot': 'chest', 'operation': 'add_value'})
-attribute.append({'attribute': 'max_health', 'value': 3, 'slot': 'chest', 'operation': 'add_value'})
+attribute.append({'attribute': 'armor', 'value': 2, 'slot': 'head', 'operation': 'add_value'})
+attribute.append({'attribute': 'armor_toughness', 'value': 1, 'slot': 'head', 'operation': 'add_value'})
 
 # ----- init ----- #
 

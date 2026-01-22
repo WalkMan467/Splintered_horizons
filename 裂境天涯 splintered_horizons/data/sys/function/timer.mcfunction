@@ -1,8 +1,3 @@
-
 execute \
-    if score #sys.tree_of_world_memory.crystal.return.delay global.main matches 1.. run \
-scoreboard players remove #sys.tree_of_world_memory.crystal.return.delay global.main 1
-
-execute \
-    if score #sys.tree_of_world_memory.crystal.run.delay global.main matches 1.. run \
-scoreboard players remove #sys.tree_of_world_memory.crystal.run.delay global.main 1
+    as @e[distance=0..,tag=sys.environmental_mechanism.gravity.target,type=!#minecraft:dummy_mob] at @s run \
+function sys:environmental_mechanism/chapter_1/gravity_disturbance_area/effect/timer

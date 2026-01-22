@@ -13,14 +13,14 @@
 attribute = []
 # ----- 設定參數 ----- #
 
-name = ['終焉雙重火', '#b10000', '鐮刀 / 史詩']
-story = {'info': ['最終決戰過後，舊宇宙迎來了終點的結局', '同時，宇宙出現了由深淵延伸的新力量「終焉」', '這把武器的誕生目前無法得知', '同時也埋藏了很多秘密。'], 'color': 'blue'}
-item_data = {'real_item': 'iron_sword', 'id': 'flame_of_finality', 'item_model': '"scythe/flame_of_finality/1"', 'custom_data': 'type:"scythe",rarity:"mythic",weapon:"flame_of_finality",forging_table:1b', 'max_damage': -1, 'rc': True, 'lc': True, 'other': ['minecraft:enchantments={"weapons:lc":1}', 'enchantment_glint_override=false', 'tooltip_style="mythic"']}
-skill = {'is_skill': False, 'cd': 3, 'name': ['潮汐音浪', '#ff0000', '#b10000'], 'info': ['攻擊有 30%機率觸發【回聲音爆】', '可對6格範圍內敵人造成一次攻擊力250%的基礎傷害', '如果玩家擁有【至暗】狀態', '會使【回聲音爆】造成傷害改為 攻擊力 250% 真實傷害']}
-passive_skills = {'is_passive_skills': True, 'cd': 0, 'name': ['水墨斬', '#ff0000', '#b10000'], 'info': ['普通攻擊時:', '並將一個【畫布】轉換成【黑墨】', '如果沒有【畫布】並且【黑墨】<【白墨】:', '將【黑墨】【白墨】轉換成【畫布】', '並立即在目標位置生成一個【水墨領域】', '怪物受到傷害會額外造成 2 點真實傷害']}
-ultimate = {'is_ultimate': True, 'cd': 25, 'name': ['低音狂響', '#b10000', '#5c0000'], 'info': ['[%s]可以消耗一顆終焉之眼', '立即釋放【終焉音爆】', '對 8 格範圍內敵人造成 250% 真實傷害', '並且附帶 3 秒緩速 50%']}
+name = ['☠ 凋零之握 ☠', '#28778A', '劍 / 稀有']
+story = {'info': ['昔日英雄的劍，在世界徹底被深淵壟罩之後這把劍受到的深淵的侵蝕，', '並且漂流在世界之外。'], 'color': 'blue'}
+item_data = {'real_item': 'stone_sword', 'id': 'grip_of_withering', 'item_model': '"sword/grip_of_withering/1"', 'custom_data': 'type:"sword",rarity:"rare",weapon:"grip_of_withering",forging_table:1b', 'max_damage': 150, 'max_stack_size': 1, 'rc': True, 'lc': False, 'other': ['minecraft:enchantments={"weapons:type/sword/grip_of_withering/use":1, "minecraft:mending":1}', 'enchantment_glint_override=false', 'tooltip_style="rare"', 'custom_model_data={floats:[0]}']}
+skill = {'is_skill': True, 'cd': 12, 'name': ['侵蝕', 'dark_aqua', '#23768f'], 'info': ['使你獲得【緋紅之爪】(00:08)', '對 3 格範圍內目標施加 凋零II (00:08)','並造成 150% 攻擊力傷害']}
+passive_skills = {'is_passive_skills': True, 'cd': 3, 'name': ['萬劍穿心', '#560758', "#47049E"], 'info': ['當你擁有【至深之暗】符文時:', '攻擊有 25% 機率在目標位置生成數把劍', '向中心突刺造成 150% 攻擊力傷害並且施加 流血 (00:05)','', '如果未觸發技能:','下次機率提升 5% 直到成功觸發']}
+ultimate = {'is_ultimate': False, 'cd': 60, 'name': ['狂風暴雨', 'dark_aqua', '#fceb00'], 'info': ['右鍵點擊消耗一個終焉之眼，', '接下來的8秒內如果在空中手持此武器擊中敵人', '在目標位置降下降下閃電造成5點傷害。']}
 attribute.append({'attribute': 'attack_damage', 'value': 3.5, 'slot': 'mainhand', 'operation': 'add_value'})
-attribute.append({'attribute': 'attack_speed', 'value': -1, 'slot': 'mainhand', 'operation': 'add_value'})
+attribute.append({'attribute': 'attack_speed', 'value': -2.35, 'slot': 'mainhand', 'operation': 'add_value'})
 
 # ----- init ----- #
 

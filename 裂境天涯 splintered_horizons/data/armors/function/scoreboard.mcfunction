@@ -13,6 +13,7 @@ scoreboard objectives add armor.tai_chis_shadow.effect dummy "調和之影 效�
 scoreboard objectives add armor.tai_chis_shadow.restore_mana dummy "調和之影 恢復魔力"
 scoreboard objectives add armor.tai_chis_shadow.restore_mana_magnification dummy "調和之影 恢復魔力倍率"
 scoreboard objectives add armor.black_hole.boots.cd dummy "黑洞之靴 CD"
+scoreboard objectives add armor.paladins_helmet.cd dummy "聖騎士頭盔 CD"
 scoreboard objectives add armor.black_hole.boots.active dummy "黑洞之靴 啟動狀態"
 scoreboard objectives add armor.armor_of_the_coiled_rock.cd dummy "盤岩之鎧 CD"
 scoreboard objectives add armor.finality_chestplate.cd dummy "終焉之鎧 CD"
@@ -32,6 +33,8 @@ scoreboard objectives add armor.animation_skills.legs.cd dummy "護腿 特殊動
 scoreboard objectives add armor.animation_skills.feet.cd dummy "鞋子 特殊動畫技能 CD"
 
 scoreboard objectives add armor.animation_skills.return dummy "鞋子 特殊動畫技能 Return 回傳結果"
+
+scoreboard objectives add armor.paladins_helmet.effect.timer dummy "聖騎士頭盔 盔甲值提升計時器"
 
 scoreboard objectives add armor.finality_chestplate.effect.timer dummy "終焉之鎧 攻擊力提升計時器"
 
