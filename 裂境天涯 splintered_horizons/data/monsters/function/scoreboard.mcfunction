@@ -5,6 +5,7 @@ scoreboard objectives add monster.skill.rdm.skill dummy "隨機放技能"
 scoreboard objectives add monster.skill.silence dummy "怪物技能沉默"
 scoreboard objectives add monster.skill.freeze dummy "怪物技能凍結"
 scoreboard objectives add monster.skill.freeze.id dummy "怪物技能凍結 ID"
+scoreboard objectives add monster.abyss_explode.timer dummy "夢魘模式深淵怪物爆炸"
 
 scoreboard objectives add global.monsters.health dummy
 scoreboard objectives add particle dummy
@@ -15,6 +16,14 @@ scoreboard objectives add particle dummy
 
 scoreboard objectives add monster.abyss_soulcutter.effect dummy "深淵斷魂者流血狀態"
 scoreboard objectives add monster.abyss_soulcutter.effect.delay dummy "深淵斷魂者流血"
+
+# ===============================================================================
+
+# 深淵狂暴者
+
+scoreboard objectives add monster.abyss_berserker.passive.cd dummy "深淵狂暴者 被動 CD"
+scoreboard objectives add monster.abyss_berserker.passive.hit dummy "深淵狂暴者 受擊次數"
+scoreboard objectives add monster.abyss_berserker.passive.timer dummy "深淵狂暴者 被動計時器"
 
 # ===============================================================================
 

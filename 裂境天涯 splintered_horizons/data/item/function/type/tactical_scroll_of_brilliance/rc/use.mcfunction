@@ -10,7 +10,7 @@ random value 1..3
 
 execute \
     if score #item.tactical_scroll_of_brilliance.rdm.effect global.main matches 1 run \
-function cse:status_effects/apply/item/tactical_scroll_of_brilliance/strength/use {duration:400,base:0.08, value:0.08,max:0.24}
+function cse:sys/status_effects/use {attribute:"attack_damage",duration:400,base:0.08,value:0.08,max:0.24, id:"tactical_scroll_of_brilliance"}
 
 execute \
     if score #item.tactical_scroll_of_brilliance.rdm.effect global.main matches 1 run \
@@ -19,7 +19,7 @@ tellraw @s [{"translate": "item.tactical_scroll_of_brilliance.effect.1","color":
 
 execute \
     if score #item.tactical_scroll_of_brilliance.rdm.effect global.main matches 2 run \
-function cse:status_effects/apply/item/tactical_scroll_of_brilliance/speed/use {duration:400,base:0.05, value:0.05,max:0.15}
+function cse:sys/status_effects/use {attribute:"movement_speed",duration:400,base:0.05,value:0.05,max:0.15, id:"tactical_scroll_of_brilliance"}
 
 execute \
     if score #item.tactical_scroll_of_brilliance.rdm.effect global.main matches 2 run \
@@ -28,7 +28,7 @@ tellraw @s [{"translate": "item.tactical_scroll_of_brilliance.effect.2","color":
 
 execute \
     if score #item.tactical_scroll_of_brilliance.rdm.effect global.main matches 3 run \
-function cse:status_effects/apply/item/tactical_scroll_of_brilliance/armor_enhancement/use {duration:400,base:0.08, value:0.08,max:0.24}
+function cse:sys/status_effects/use {attribute:"armor",duration:400,base:0.08,value:0.08,max:0.24, id:"tactical_scroll_of_brilliance"}
 
 execute \
     if score #item.tactical_scroll_of_brilliance.rdm.effect global.main matches 3 run \

@@ -96,7 +96,6 @@ function players:disable/movement/main
 function players:actionbar/main
 
 function #players:detect/click_event_trigger
-
 # trap
 function trap:main
 

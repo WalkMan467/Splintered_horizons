@@ -25,6 +25,8 @@ scoreboard players add #monument.area_6 global.main 0
 scoreboard players add #monument.area_7 global.main 0
 scoreboard players add #monument.area_8 global.main 0
 
+scoreboard players add #nightmare main.difficulty 0
+
 scoreboard players add #tombstone_sys global.main 0
 
 scoreboard players enable @a main.tombstone_sys

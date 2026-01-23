@@ -1,1 +1,0 @@
-$attribute @s minecraft:armor modifier add cse.status_effects.tactical_scroll_of_brilliance.armor_enhancement $(value) add_multiplied_base

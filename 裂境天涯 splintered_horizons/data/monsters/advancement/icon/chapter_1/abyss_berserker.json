@@ -1,0 +1,113 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:player_head",
+      "components": {
+        "minecraft:profile": {
+          "name": "textures",
+          "properties": [
+            {
+              "name": "textures",
+              "value": "ewogICJ0aW1lc3RhbXAiIDogMTcyNjEzNjcwOTQ1OSwKICAicHJvZmlsZUlkIiA6ICIxODA1Y2E2MmM0ZDI0M2NiOWQxYmY4YmM5N2E1YjgyNCIsCiAgInByb2ZpbGVOYW1lIiA6ICJSdWxsZWQiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzJlZTE5OWUzMTIzZTM2ODEwNWZlNzUzZTIzNTljMTgyMDk5YTM5ZjA5ZGQxMzY2ZDExODY1MTljMzBmM2Y5YiIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9CiAgfQp9"
+            }
+          ]
+        }
+      },
+      "count": 1
+    },
+    "title": {
+      "translate": "monster.abyss_berserker",
+      "italic": false
+    },
+    "description": [
+      {
+        "translate": "monster.abyss_berserker.1",
+        "color": "white",
+        "italic": false
+      },
+      "\n\n",
+      {
+        "translate": "monster.abyss_berserker.2",
+        "color": "white",
+        "italic": false
+      },
+      "\n",
+      {
+        "translate": "monster.abyss_berserker.3",
+        "color": "white",
+        "italic": false
+      },
+      "\n",
+      {
+        "translate": "monster.abyss_berserker.4",
+        "color": "white",
+        "italic": false
+      },
+      "\n",
+      {
+        "translate": "monster.abyss_berserker.5",
+        "color": "white",
+        "italic": false
+      },
+      "\n",
+      {
+        "translate": "monster.abyss_berserker.6",
+        "color": "white",
+        "italic": false
+      },
+      "\n\n",
+      {
+        "translate": "difficulty.nightmare",
+        "color": "#c700bd",
+        "italic": false,
+        "bold": true
+      },
+      "\n",
+      {
+        "translate": "monster.abyss_berserker.7",
+        "color": "#9900ff",
+        "italic": false,
+        "bold": false
+      },
+      "\n",
+      {
+        "translate": "monster.abyss_berserker.8",
+        "color": "#9900ff",
+        "italic": false,
+        "bold": false
+      }
+    ],
+    "background": "minecraft:gui/advancements/backgrounds/sculk",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "monsters:icon/chapter_1/icon",
+  "criteria": {
+    "attack": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "nbt": "{Tags:[\"monster.abyss_berserker\"]}"
+          }
+        }
+      }
+    },
+    "hurt": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": {
+          "nbt": "{Tags:[\"monster.abyss_berserker\"]}"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "attack",
+      "hurt"
+    ]
+  ]
+}

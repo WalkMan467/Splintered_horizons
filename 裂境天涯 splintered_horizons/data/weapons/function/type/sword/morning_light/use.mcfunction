@@ -16,7 +16,7 @@ tag @e[type=!player,type=!#dummy_mob,distance=..3] add dmger
 execute \
     as @e[type=!player,type=!#dummy_mob,distance=..3] \
     unless score @s entity.dummy_mob matches 1.. run \
-function cse:status_effects/apply/armor_shred/use {duration:200,base:0.1, value:0.1,max:0.3}
+function cse:sys/status_effects/use {attribute:"armor",duration:200,base:-0.1,value:-0.1,max:0.3, id:"morning_light"}
 
 function weapons:type/sword/morning_light/effect/fx/use
 

@@ -9,7 +9,6 @@ execute \
     if entity @s[dx=7,dy=5.75,dz=7] run \
 tag @s add monster.elekiel_phase_2.2.cage.imprison
 
-
 execute \
     as @a[tag=monster.elekiel_phase_2.2.cage.imprison.last_tick] at @s run \
 function monsters:chapter_2/elekiel_phase_2/2/cage/imprison/tp/use

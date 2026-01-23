@@ -1,1 +1,0 @@
-scoreboard players remove @s cse.status_effects.tactical_scroll_of_brilliance.armor_enhancement 1

@@ -1,5 +1,6 @@
 {
   "values": [
-    "players:g"
+    "players:g",
+    "main:game_settings"
   ]
 }

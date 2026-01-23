@@ -16,28 +16,25 @@ gamerule doDaylightCycle false
     if score @s main.trigger matches 3 run \
 time set day
 
+scoreboard players add #delay main.trigger 0
 
 execute \
-    if score #graves mp.settings matches 1 \
-    if score @s main.tombstone_sys matches 2 run \
-tellraw @a [{"text":"[","color": "white"},{"text": "⚠","color":"gold"},{"text":"]","color": "white"},{"text":" "},{"selector":"@s","color":"white","bold":true},{"text":" ","color":"white"},{"translate":"tips.main.game_settings.5","fallback":"關閉了墓碑系統！","color":"dark_red"}]
-
-execute \
-    if score @s main.tombstone_sys matches 2 run \
-scoreboard players set #graves mp.settings 0
+    unless score @s main.trigger matches 1.. run \
+return 0
 
 
 execute \
-    if score #graves mp.settings matches 0 \
-    if score @s main.tombstone_sys matches 1 run \
-tellraw @a [{"text":"[","color": "white"},{"text": "⚠","color":"gold"},{"text":"]","color": "white"},{"text":" "},{"selector":"@s","color":"white","bold":true},{"text":" ","color":"white"},{"translate":"tips.main.game_settings.4","fallback":"開啟了墓碑系統！","color":"dark_green"}]
+    unless score #delay main.trigger matches 1.. \
+    unless score #nightmare main.difficulty matches 1 \
+    if score @s main.trigger matches 1 run \
+function main:nightmare/1
 
 execute \
-    if score @s main.tombstone_sys matches 1 run \
-scoreboard players set #graves mp.settings 1
+    unless score #delay main.trigger matches 1.. \
+    if score #nightmare main.difficulty matches 1 \
+    if score @s main.trigger matches 1 run \
+function main:nightmare/0
 
 scoreboard players enable @s main.trigger
 scoreboard players set @s main.trigger 0
-
-scoreboard players enable @a main.tombstone_sys
-scoreboard players set @a main.tombstone_sys 0
+scoreboard players set #delay main.trigger 0

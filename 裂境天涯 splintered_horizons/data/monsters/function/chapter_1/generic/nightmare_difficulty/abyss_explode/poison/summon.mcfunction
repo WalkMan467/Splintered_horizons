@@ -1,0 +1,4 @@
+summon item ~ ~ ~ {Motion:[0.125,0.5,0.125],PickupDelay:32767,Tags:["monster.nightmare_difficulty.abyss_explode.poison"],Item:{id:"poisonous_potato",count:1,components:{item_model:"air"}},Age:5940}
+summon item ~ ~ ~ {Motion:[0.125,0.5,-0.125],PickupDelay:32767,Tags:["monster.nightmare_difficulty.abyss_explode.poison"],Item:{id:"poisonous_potato",count:1,components:{item_model:"air"}},Age:5940}
+summon item ~ ~ ~ {Motion:[-0.125,0.5,0.125],PickupDelay:32767,Tags:["monster.nightmare_difficulty.abyss_explode.poison"],Item:{id:"poisonous_potato",count:1,components:{item_model:"air"}},Age:5940}
+summon item ~ ~ ~ {Motion:[-0.125,0.5,-0.125],PickupDelay:32767,Tags:["monster.nightmare_difficulty.abyss_explode.poison"],Item:{id:"poisonous_potato",count:1,components:{item_model:"air"}},Age:5940}

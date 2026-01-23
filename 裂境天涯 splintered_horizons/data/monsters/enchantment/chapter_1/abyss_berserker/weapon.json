@@ -1,0 +1,109 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "translate": "monster.abyss_berserker.weapon"
+  },
+  "effects": {
+    "minecraft:damage": [
+      {
+        "requirements": {
+          "condition": "minecraft:entity_scores",
+          "entity": "attacker",
+          "scores": {
+            "monster.abyss_berserker.passive.hit": 1
+          }
+        },
+        "effect": {
+          "type": "minecraft:add",
+          "value": {
+            "type": "minecraft:linear",
+            "base": 0.5,
+            "per_level_above_first": 0.5
+          }
+        }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:entity_scores",
+          "entity": "attacker",
+          "scores": {
+            "monster.abyss_berserker.passive.hit": 2
+          }
+        },
+        "effect": {
+          "type": "minecraft:add",
+          "value": {
+            "type": "minecraft:linear",
+            "base": 1,
+            "per_level_above_first": 0.5
+          }
+        }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:entity_scores",
+          "entity": "attacker",
+          "scores": {
+            "monster.abyss_berserker.passive.hit": 3
+          }
+        },
+        "effect": {
+          "type": "minecraft:add",
+          "value": {
+            "type": "minecraft:linear",
+            "base": 1.5,
+            "per_level_above_first": 0.5
+          }
+        }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:entity_scores",
+          "entity": "attacker",
+          "scores": {
+            "monster.abyss_berserker.passive.hit": 4
+          }
+        },
+        "effect": {
+          "type": "minecraft:add",
+          "value": {
+            "type": "minecraft:linear",
+            "base": 2,
+            "per_level_above_first": 0.5
+          }
+        }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:entity_scores",
+          "entity": "attacker",
+          "scores": {
+            "monster.abyss_berserker.passive.hit": 5
+          }
+        },
+        "effect": {
+          "type": "minecraft:add",
+          "value": {
+            "type": "minecraft:linear",
+            "base": 2.5,
+            "per_level_above_first": 0.5
+          }
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 21,
+    "per_level_above_first": 11
+  },
+  "max_level": 5,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 11
+  },
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "minecraft:air",
+  "weight": 10
+}

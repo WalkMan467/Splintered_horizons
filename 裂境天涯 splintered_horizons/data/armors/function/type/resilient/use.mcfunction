@@ -1,7 +1,6 @@
 #\
 {
 
-
 execute \
     if score @s armor.resilient.cd matches 1.. run \
 return 0

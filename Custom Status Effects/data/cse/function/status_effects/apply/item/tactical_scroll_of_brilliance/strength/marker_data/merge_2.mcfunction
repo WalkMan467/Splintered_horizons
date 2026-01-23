@@ -1,1 +1,0 @@
-$attribute @s minecraft:attack_damage modifier add cse.status_effects.tactical_scroll_of_brilliance.strength $(value) add_multiplied_base

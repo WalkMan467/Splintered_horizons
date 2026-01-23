@@ -31,7 +31,7 @@ particle minecraft:end_rod ~ ~1 ~ 0 0 0 0.5 40 normal @a
 
 execute \
     as @e[distance=..4,type=!#minecraft:dummy_mob,type=!player] at @s run \
-function cse:status_effects/apply/weakness/use {duration:100,base:0.08, value:0.08,max:0.4}
+function cse:sys/status_effects/use {attribute:"movement_speed",duration:100,base:-0.08,value:-0.08,max:0.4, id:"radiant_guardians_helmet"}
 
 function armors:type/radiant_guardians_helmet/add_torch
 

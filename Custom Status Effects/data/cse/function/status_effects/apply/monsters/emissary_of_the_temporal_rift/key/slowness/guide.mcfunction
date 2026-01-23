@@ -1,1 +1,0 @@
-scoreboard players remove @s cse.status_effects.monsters.emissary_of_the_temporal_rift.key 1
