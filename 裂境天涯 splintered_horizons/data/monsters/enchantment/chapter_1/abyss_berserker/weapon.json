@@ -89,6 +89,27 @@
             "per_level_above_first": 0.5
           }
         }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:value_check",
+          "value": {
+            "type": "minecraft:score",
+            "target": {
+              "type": "minecraft:fixed",
+              "name": "#nightmare"
+            },
+            "score": "main.difficulty",
+            "scale": 1
+          },
+          "range": {
+            "min": 1
+          }
+        },
+        "effect": {
+          "type": "minecraft:add",
+          "value": 2.5
+        }
       }
     ]
   },

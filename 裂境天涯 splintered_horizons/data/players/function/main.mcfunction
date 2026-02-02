@@ -6,7 +6,7 @@ tag @s remove player.tombstone_sys.disabled
 
 
 execute \
-    as @e[tag=system.campfire,type=interaction] run \
+    as @e[tag=system.campfire,distance=0..,type=interaction] run \
 function players:update
 
 

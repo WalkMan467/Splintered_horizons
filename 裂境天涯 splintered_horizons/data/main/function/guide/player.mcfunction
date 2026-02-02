@@ -42,13 +42,13 @@ function players:effect/glitch_effect/main
 
 
 execute \
-    as @e[tag=portal,type=marker,distance=..30,limit=5,sort=nearest] at @s run \
+    as @e[tag=portal,distance=..30,limit=5,sort=nearest,type=marker] at @s run \
 function sys:portal/loop
 
 
 execute \
     unless entity @s[gamemode=!survival,gamemode=!adventure] \
-    as @n[tag=sys.item_frame,type=glow_item_frame,distance=..8] \
+    as @n[tag=sys.item_frame,distance=..8,type=glow_item_frame] \
     unless data entity @s Item.id at @s run \
 kill @s[tag=sys.item_frame,type=glow_item_frame]
 
@@ -65,7 +65,7 @@ execute \
 function armors:type/black_hole/boots/effect/main
 
 
-execute at @n[tag=sys.detect.player_death.point,type=marker] run \
+execute at @n[tag=sys.detect.player_death.point,distance=0..,type=marker] run \
 spawnpoint @s ~ ~ ~
 
 

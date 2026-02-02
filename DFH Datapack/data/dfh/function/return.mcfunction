@@ -1,1 +1,0 @@
-return run scoreboard players get #version dfh.settings

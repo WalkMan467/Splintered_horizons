@@ -1,31 +1,3 @@
-# Guide
-
-    # Chapter 1
-    execute \
-    if entity @s[tag=!campfire] run \
-function world_area:chapter_1/loop
-
-    # Chapter 2
-    execute \
-    if entity @s[tag=!campfire] run \
-function world_area:chapter_2/loop
-
-    # Chapter 3
-    execute \
-    if entity @s[tag=!campfire] run \
-function world_area:chapter_3/loop
-
-    # 其他
-    execute \
-    if entity @s[tag=!campfire] run \
-function world_area:other/loop
-
-#==================================================
-
-function world_area:main/safe_zone/elina/main
-function world_area:main/safe_zone/selena/main
-function world_area:main/safe_zone/melisna/main
-
 # Global
 
     # Campfire
@@ -40,7 +12,7 @@ advancement grant @s only world_area:main/campfire/in
     if entity @n[distance=..12,type=!#minecraft:dummy_mob,type=!minecraft:player,tag=!sys.campfire] run \
 advancement grant @s only world_area:main/campfire/out
     execute \
-    unless entity @n[tag=sys.campfire,limit=1,distance=..6] run \
+    unless entity @n[tag=sys.campfire,limit=1,distance=..6,type=minecraft:interaction] run \
 advancement grant @s only world_area:main/campfire/out
 
     # Campfire Darkness Effect
@@ -93,3 +65,32 @@ function world_area:main/boundary/in
     if predicate players:detect/not_creative_spectator \
     if entity @s[tag=!player.death] run \
 kill @s
+
+# Guide
+
+    # Chapter 1
+    execute \
+    if entity @s[tag=!campfire] run \
+function world_area:chapter_1/loop
+
+    # Chapter 2
+    execute \
+    if entity @s[tag=!campfire] run \
+function world_area:chapter_2/loop
+
+    # Chapter 3
+    execute \
+    if entity @s[tag=!campfire] run \
+function world_area:chapter_3/loop
+
+    # 其他
+    execute \
+    if entity @s[tag=!campfire] run \
+function world_area:other/loop
+
+#==================================================
+
+function world_area:main/safe_zone/elina/main
+function world_area:main/safe_zone/selena/main
+function world_area:main/safe_zone/melisna/main
+

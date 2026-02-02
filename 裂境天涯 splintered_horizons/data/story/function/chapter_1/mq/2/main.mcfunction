@@ -4,12 +4,12 @@
     execute \
         positioned 1 64 -109 \
         store result score #story.chapter_1.mq.2 global.main \
-    if entity @a[distance=..8,gamemode=!spectator]
+    if entity @a[distance=..16,gamemode=!spectator]
 
     execute \
         positioned 1 64 -109 \
-        as @n[tag=aj.sophia.root,limit=1,distance=..10,type=item_display] at @s \
-    facing entity @p[distance=..8] eyes run \
+        as @n[tag=aj.sophia.root,limit=1,distance=..16,type=item_display] at @s \
+    facing entity @p[distance=..16] eyes run \
 rotate @s ~ 0
 
     # If true;

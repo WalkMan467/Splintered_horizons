@@ -26,12 +26,17 @@ tp @s ~ ~-0.5 ~
 
 # particle
 
-execute store result score #rdm global.main run random value 0..1
+execute store result score #rdm global.main run random value 0..100
 
 execute \
-    if score #rdm global.main matches 1 \
-    if score @s particle.zeuss_lightning_wave matches 0..8 run \
-particle dust_color_transition{from_color:[1.000,0.039,0.039],scale:1.0,to_color:[0.000,0.000,0.000]} ~ ~ ~ 0.5 0 0.5 0 20 normal
+    if score @s particle.zeuss_lightning_wave matches 0..8 \
+    if score #rdm global.main matches 0..25 run \
+particle dust_color_transition{from_color:[1.000,0.039,0.039],scale:1.5,to_color:[0.000,0.000,0.000]} ~ ~ ~ 0.3 0 0.3 0 10 normal
+
+execute \
+    if score @s particle.zeuss_lightning_wave matches 0..8 \
+    if score #rdm global.main matches 25..100 run \
+particle dust_color_transition{from_color:[1.000,0.039,0.039],scale:1.5,to_color:[0.000,0.000,0.000]} ~ ~ ~ 0.3 0 0.3 0 10 normal @a[sort=arbitrary,scores={player.setting.reduce_particles=0}]
 
 # reset
 

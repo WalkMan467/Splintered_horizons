@@ -11,4 +11,16 @@ execute \
     store result storage wma:data rdm_pos.z float 0.1 run \
 random value -10..10
 
+execute \
+    if entity @s[tag=monster.target_dummy] run \
+data modify storage wma:data rdm_pos.x set value 0
+
+execute \
+    if entity @s[tag=monster.target_dummy] run \
+data modify storage wma:data rdm_pos.y set value 0
+
+execute \
+    if entity @s[tag=monster.target_dummy] run \
+data modify storage wma:data rdm_pos.z set value 0
+
 function sys:dmg_show/rdm_pos/run with storage wma:data rdm_pos

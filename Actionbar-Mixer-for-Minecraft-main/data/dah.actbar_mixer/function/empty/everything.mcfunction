@@ -1,1 +1,0 @@
-data modify storage dah:actbar data[].content set value [{id:"dah_actbar:ROOT_RESET",text:{text:""}}]

@@ -6,4 +6,7 @@ playsound minecraft:block.respawn_anchor.charge voice @s ~ ~ ~ 1 1
 
 scoreboard players set #rdm_enchantment global.main 3
 
+advancement grant @s only music:chapter_1/abyssal_ruins/title
+function music:chapter_1/abyssal_ruins/start
+
 advancement revoke @s only world_area:chapter_1/abyssal_ruins/out

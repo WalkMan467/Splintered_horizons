@@ -36,6 +36,10 @@ execute \
     if entity @s[type=item_display,tag=aj.boss_1.root] rotated \
     as 00000100-0000-0080-0000-008000000005 run \
 rotate @s ~ 0
-ride @n[tag=aj.boss_1.root,type=item_display] mount 00000100-0000-0080-0000-008000000005
+ride @n[distance=0..,tag=aj.boss_1.root,type=item_display] mount 00000100-0000-0080-0000-008000000005
+
+execute \
+    as 00000100-0000-0080-0000-008000000005 at @s run \
+tp @s ~ 60 ~
 
 function monsters:chapter_2/elekiel/state/main

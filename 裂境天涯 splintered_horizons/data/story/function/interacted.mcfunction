@@ -28,6 +28,12 @@
         if score story.chapter_1.mq.4 story.chapter_1 matches 1..6 run \
     function story:chapter_1/mq/4/1
 
+    execute \
+        as ffffa1bb-0000-1074-ffff-5b6d00007d70 at @s \
+        if data entity @s interaction.timestamp \
+        if score story.chapter_1.mq.5 story.chapter_1 matches 1..10 run \
+    function story:chapter_1/mq/5/1
+
     # Side Quests
 
     execute \

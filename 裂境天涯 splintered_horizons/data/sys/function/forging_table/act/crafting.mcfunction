@@ -102,6 +102,6 @@ tellraw @a [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"translate":
 
 execute \
     if score #sys.forging_table.swift_boots sys.forging_table.recipes matches 1.. run \
-tellraw @a [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"translate":"item.minecraft.leather_leggings","color":"white","italic":false,"font": "minecraft:default"},{"text": "*1","font": "minecraft:default"}]
+tellraw @a [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"translate":"item.minecraft.leather_boots","color":"white","italic":false,"font": "minecraft:default"},{"text": "*1","font": "minecraft:default"}]
 
 data remove entity @s interaction

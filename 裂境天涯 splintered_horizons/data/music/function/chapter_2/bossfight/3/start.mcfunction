@@ -1,5 +1,9 @@
 advancement revoke @s only music:chapter_2/bossfight/3/reset
 
+execute \
+    if entity @s[tag=campfire] run \
+return 0
+
 function music:stop
 stopsound @s record minecraft:bgm.makai_symphony_endless_storm
 playsound minecraft:bgm.makai_symphony_endless_storm record @s ~ ~1 ~ 1 1

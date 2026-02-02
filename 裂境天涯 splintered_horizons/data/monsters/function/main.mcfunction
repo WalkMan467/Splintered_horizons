@@ -20,13 +20,6 @@ function monsters:other/abyss_crystal/main
 function monsters:other/sun_of_the_abyssal_eclipse/main
 
 
-
-execute \
-    as @s[tag=abyss_berserker] \
-    unless data entity @s {HurtTime:0s} run \
-function monsters:chapter_1/abyss_berserker/run
-
-
 execute \
     as @s[type=area_effect_cloud] at @s run \
 function monsters:chapter_3/finality_creeper/main
@@ -52,7 +45,7 @@ scoreboard players remove @s monster.skill.cast.cd 1
 
 execute \
     as @s[scores={monster.skill.freeze=0..}] at @s run \
-function monsters:freeze/main
+function monsters:generic/freeze/main
 
 # Monster skill is being cast
 scoreboard players add @s[tag=monster] monster.skill.casting 1

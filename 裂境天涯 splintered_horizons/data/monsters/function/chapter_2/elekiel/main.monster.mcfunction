@@ -24,7 +24,7 @@ rotate @s ~ 0
 ride @n[distance=0..,tag=aj.boss_1.root,type=item_display] mount 00000100-0000-0080-0000-008000000001
 
 execute \
-    unless predicate monsters:chapter_2/elekiel/positian_fixed run \
+    as 00000100-0000-0080-0000-008000000001 at @s run \
 tp @s ~ 60 ~
 
 execute \

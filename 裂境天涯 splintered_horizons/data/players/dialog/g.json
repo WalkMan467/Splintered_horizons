@@ -1,21 +1,34 @@
 {
   "type": "minecraft:multi_action",
   "title": {
-    "translate": "key.quickActions"
+    "translate": "dialog.player.setting.title",
+    "fallback": "Player Settings"
   },
   "inputs": [],
   "can_close_with_escape": true,
   "pause": false,
-  "after_action": "close",
+  "after_action": "none",
   "actions": [
     {
       "label": {
-        "translate": "dialog.main.quick_actions.teleport_to_spawnpoint",
-        "fallback": "Teleport to Spawnpoint"
+        "translate": "dialog.main.quick_actions.reduce_particles",
+        "fallback": "Reduce Particles",
+        "color": "white"
       },
       "action": {
         "type": "run_command",
-        "command": "trigger player.detect.click_event.trigger set 6"
+        "command": "trigger player.setting.reduce_particles.trigger"
+      }
+    },
+    {
+      "label": {
+        "translate": "dialog.main.quick_actions.campfire_darkness",
+        "fallback": "Campfire Darkness",
+        "color": "white"
+      },
+      "action": {
+        "type": "run_command",
+        "command": "trigger player.setting.campfire_darkness.trigger"
       }
     }
   ]

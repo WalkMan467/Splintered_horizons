@@ -1,4 +1,6 @@
-
+execute \
+    if score #chapter_test global.main matches ..1 run \
+return 0
 
 execute \
     unless score #chapter_test global.main matches -2147483648..2147483647 run \
@@ -7,11 +9,6 @@ return 0
 gamemode survival @s
 
 # Chapter 2
-
-execute \
-    if score #chapter_test global.main matches ..1 run \
-return 0
-
 
 execute \
     in minecraft:overworld run \
@@ -66,7 +63,7 @@ advancement revoke @s only music:main/icon
 
 advancement grant @s only music:chapter_1/icon
 
-        advancement grant @s only music:chapter_1/broken_city/1/title
+        advancement grant @s only music:chapter_1/broken_city/title
 
 advancement grant @s only music:chapter_2/icon
 

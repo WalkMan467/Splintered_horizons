@@ -5,6 +5,10 @@ execute \
     as @e[sort=arbitrary,type=!#minecraft:dummy_mob,distance=..30] at @s run \
 function sys:dmg_show/main
 
+execute \
+    as 0004e6cf-0000-7e39-0000-091c0000a8df at @s run \
+function sys:dmg_show/main
+
 ## dmg show text
 
 execute \

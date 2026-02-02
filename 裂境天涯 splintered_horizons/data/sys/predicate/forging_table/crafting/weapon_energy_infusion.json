@@ -4,12 +4,9 @@
   "predicate": {
     "slots": {
       "container.0": {
-        "components": {
-          "minecraft:item_model": "material/beginner_energy_infusion_stone"
-        },
         "predicates": {
           "minecraft:custom_data": {
-            "id": "energy_infusion_stone"
+            "id": "weapon_energy_infusion"
           }
         }
       }

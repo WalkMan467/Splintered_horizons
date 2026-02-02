@@ -5,7 +5,7 @@ execute \
     positioned 1 64 -109 \
     unless score #story:icon/story/chapter_1/mq/scebe_2 global.main matches 1 \
     if score story.chapter_1.mq.2 story.chapter_1 matches 1 \
-    as @n[type=item_display,tag=aj.sophia.root,distance=..3] \
+    as @n[tag=aj.sophia.root,distance=..3,type=item_display] \
     on passengers run \
 data modify entity @s Glowing set value 0b
 

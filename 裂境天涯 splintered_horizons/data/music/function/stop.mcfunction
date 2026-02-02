@@ -1,5 +1,7 @@
-function music:chapter_1/reset
+function music:chapter_1/abyssal_ruins/reset
+function music:chapter_1/broken_city/reset
 function music:chapter_2/bossfight/2/reset
+function music:chapter_2/bossfight/3/reset
 function music:chapter_2/forest_of_souls/reset
 function music:chapter_2/forgotten_sakura_city/reset
 function music:chapter_2/land_of_finality/reset

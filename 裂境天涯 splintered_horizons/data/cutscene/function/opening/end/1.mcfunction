@@ -17,7 +17,7 @@ spawnpoint @a 44 65 10
 item replace entity @a armor.head with air 1
 
 stopsound @a record minecraft:bgm.moonlight_sonata
-stopsound @a record minecraft:bgm.etude_op_8_no_12
+stopsound @a record minecraft:bgm.nico_cartosio_girl_on_an_iceberg
 
 
 execute \

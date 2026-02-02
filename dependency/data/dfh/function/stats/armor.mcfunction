@@ -1,1 +1,0 @@
-# Immediately erase and redraw the armor bar for this player.

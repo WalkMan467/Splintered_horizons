@@ -1,5 +1,7 @@
 scoreboard players add @s music.main.campfire.rdm 0
 
+stopsound @s record
+function music:stop
 
 execute \
     if score @s music.main.campfire.rdm matches 0..1 run \

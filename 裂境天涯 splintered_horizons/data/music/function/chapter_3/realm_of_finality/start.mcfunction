@@ -1,3 +1,7 @@
+execute \
+    if entity @s[tag=campfire] run \
+return 0
+
 stopsound @s record minecraft:bgm.ben_berkenbosch_hurt
 playsound minecraft:bgm.ben_berkenbosch_hurt record @s ~ ~1 ~ 1 1
 scoreboard players set @s music.chapter3.realm_of_finality 331

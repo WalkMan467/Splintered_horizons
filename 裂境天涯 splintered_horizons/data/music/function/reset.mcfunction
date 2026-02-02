@@ -9,8 +9,12 @@ return 0
 
 
 execute \
-    if biome ~ ~ ~ #world_area:chapter_1 run \
+    if biome ~ ~ ~ #world_area:chapter_1_broken_city_and_the_black_hole run \
 scoreboard players set @s music.chapter1.broken_city 1
+
+execute \
+    if biome ~ ~ ~ world_area:chapter_1/abyssal_ruins run \
+scoreboard players set @s music.chapter1.abyssal_ruins 1
 
 execute \
     if biome ~ ~ ~ world_area:chapter_2/land_of_finality run \
@@ -62,7 +66,11 @@ execute \
 scoreboard players set @s music.chapter2.land_of_finality 0
 
 execute \
-    unless biome ~ ~ ~ #world_area:chapter_1 run \
+    unless biome ~ ~ ~ world_area:chapter_1/abyssal_ruins run \
+scoreboard players set @s music.chapter1.abyssal_ruins 0
+
+execute \
+    unless biome ~ ~ ~ #world_area:chapter_1_broken_city_and_the_black_hole run \
 scoreboard players set @s music.chapter1.broken_city 0
 
 execute \

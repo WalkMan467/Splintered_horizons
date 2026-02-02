@@ -1,3 +1,6 @@
+execute \
+    if score #chapter_test global.main matches ..1 run \
+scoreboard players set @s player.give.item.delay 10
 
 execute \
     unless score #chapter_test global.main matches -2147483648..2147483647 run \
@@ -39,6 +42,8 @@ function story:remove_story_icon
 function story:remove_proper_noun_icon
 function players:adv/remove_adv
 function item:type/tp_book/reset
+function players:setting/defaule_setup
+function players:tips/g
 
 xp set @s 0 levels
 xp set @s 0 points
@@ -53,6 +58,10 @@ scoreboard players set @s player.spawnpoint.pos.x 38
 scoreboard players set @s player.spawnpoint.pos.y 64
 scoreboard players set @s player.spawnpoint.pos.z 11
 
+execute \
+    if score #chapter_test global.main matches ..1 \
+    in minecraft:overworld run \
+tp @s 38 64 11 90 0
 
 execute \
     unless score #chapter_test global.main matches -2147483648..2147483647 \

@@ -6,7 +6,6 @@ execute \
     store result score #player.count global.main \
     if entity @a
 
-
 execute \
     if score #game.start global.main matches 1.. run \
 advancement grant @a only players:new_player

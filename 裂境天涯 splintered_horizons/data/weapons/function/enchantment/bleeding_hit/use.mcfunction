@@ -1,8 +1,34 @@
-title @s title ""
-title @s subtitle [{"text":"[","color": "dark_red"},{"translate":"player.effect.bleeding","color": "dark_red"},{"text":"]","color": "dark_red"}]
-title @s times 20 20 20
+execute \
+    on attacker \
+    if entity @s[type=player] run \
+tag @s add user.player
 
-function cse:status_effects/apply/bleeding/use {duration:100, tick_rate:40, dot:20, max:100}
-playsound minecraft:entity.zombie_villager.cure voice @a ~ ~1 ~ 0.5 2
+execute \
+    on attacker \
+    if entity @s[type=player] run \
+scoreboard players add @s weapon.enchantment.bleeding_hit.cd 0
 
-advancement grant @s only players:tips/bleeding
+execute \
+    on attacker \
+    unless entity @s[type=player] run \
+tag @s add user.enemy
+
+execute \
+    if score @p[tag=user.player] weapon.enchantment.bleeding_hit.cd matches ..1 run \
+function weapons:enchantment/bleeding_hit/run
+
+execute \
+    if entity @n[sort=arbitrary,tag=user.enemy,distance=0..,type=!player] run \
+function weapons:enchantment/bleeding_hit/run
+
+execute \
+    on attacker \
+    if entity @s[type=player] run \
+tag @s remove user.player
+
+execute \
+    on attacker \
+    unless entity @s[type=player] run \
+tag @s remove user.enemy
+
+advancement grant @s[type=player] only players:tips/bleeding

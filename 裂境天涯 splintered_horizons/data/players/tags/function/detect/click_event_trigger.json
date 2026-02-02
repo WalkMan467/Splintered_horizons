@@ -1,6 +1,7 @@
 {
     "values": [
       "players:detect/click_event_trigger",
-      "main:trigger"
+      "main:trigger",
+      "players:setting/main"
     ]
   }

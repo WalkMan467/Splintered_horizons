@@ -115,3 +115,13 @@ scoreboard objectives add player.detect.broken_spawner minecraft.mined:minecraft
 scoreboard objectives add player.detect.hurt dummy "[玩家] 偵測受傷"
 
 # ==================================================================================================
+# 玩家設定
+scoreboard objectives add player.setting.reduce_particles dummy "[玩家] 減少粒子"
+scoreboard objectives add player.setting.reduce_particles.trigger trigger "[玩家] 減少粒子 trigger"
+
+scoreboard objectives add player.setting.campfire_darkness dummy "[玩家] 營火黑暗效果"
+scoreboard objectives add player.setting.campfire_darkness.trigger trigger "[玩家] 營火黑暗效果 trigger"
+
+scoreboard players enable @a player.setting.reduce_particles.trigger
+
+scoreboard players enable @a player.setting.campfire_darkness.trigger

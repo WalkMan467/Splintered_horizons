@@ -1,3 +1,7 @@
+execute \
+    if entity @s[tag=campfire] run \
+return 0
+
 stopsound @s record minecraft:bgm.whitesand_the_lost_world
 playsound minecraft:bgm.whitesand_the_lost_world record @s ~ ~1 ~ 1 1
 scoreboard players set @s music.chapter3.finalitys_embrace_rift 324

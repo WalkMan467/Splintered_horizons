@@ -4,6 +4,10 @@ execute \
     unless entity @s[type=player] run \
 return 0
 
+execute \
+    on attacker \
+    if entity @s[advancements={weapons:arrows/sagittarius_arrow=true}] run \
+function weapons:type/arrows/sagittarius_arrow/use
 
 execute \
     on attacker \

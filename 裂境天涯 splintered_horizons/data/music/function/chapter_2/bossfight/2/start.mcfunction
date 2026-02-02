@@ -1,3 +1,7 @@
+execute \
+    if entity @s[tag=campfire] run \
+return 0
+
 stopsound @s record minecraft:bgm.tunetank_meridian
 playsound minecraft:bgm.tunetank_meridian record @s ~ ~1 ~ 1 1
 scoreboard players set @s music.chapter2.bossfight.2 192

@@ -7,5 +7,6 @@ playsound minecraft:voice.in_world_area voice @s ~ ~1 ~ 1 1
 scoreboard players set #rdm_enchantment global.main 1
 
 advancement grant @s only music:chapter_1/broken_city/icon
+function music:chapter_1/broken_city/start
 
 advancement revoke @s only world_area:chapter_1/broken_city/out

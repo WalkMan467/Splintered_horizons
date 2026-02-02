@@ -230,3 +230,10 @@ scoreboard players add @a weapon.effect.holy_fire 0
 scoreboard players add @a weapon.effect.starry_sky_frost 0
 
 #===================================================================
+# 注能附魔
+
+scoreboard objectives add weapon.enchantment.bleeding_hit.cd dummy "流血打擊 cd"
+
+scoreboard players add @a weapon.enchantment.bleeding_hit.cd 0
+
+#===================================================================

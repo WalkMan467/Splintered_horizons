@@ -1,1 +1,0 @@
-execute if score #dependency dfh.calculator matches 3.. run function dfh:private/tick

@@ -5,5 +5,6 @@ title @s times 20 20 10
 playsound minecraft:entity.wither.spawn voice @s ~ ~1 ~ 0.25 0.75
 
 scoreboard players set #rdm_enchantment global.main 7
+function music:chapter_1/broken_city/start
 
 advancement revoke @s only world_area:chapter_1/the_black_hole/out

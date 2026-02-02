@@ -1,3 +1,4 @@
+dialog clear @s
 
 execute \
     if score #boss_area.chapter_2.elekiel global.main matches 1 run \

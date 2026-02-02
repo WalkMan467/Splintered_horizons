@@ -1,10 +1,10 @@
 particle flash{color:[1.0,0.0,0.0,1.0]} ~ ~1 ~ 0 0 0 0 1 normal @a
 particle dust{color:[1.000,0.000,0.000],scale:1.5} ~ ~1 ~ 1 1 1 0 20 normal @a
 
-playsound minecraft:entity.breeze.shoot voice @a ~ ~1 ~ 1 0.5
-playsound minecraft:block.respawn_anchor.deplete voice @a ~ ~1 ~ 1 1
+execute \
+    as @e[sort=arbitrary,distance=..5,type=#arrows] at @s run \
+function weapons:type/bow/sagittarius/rc/effect/detect
 
-scoreboard players set @s weapon.effect.starry_sky_frost 200
 scoreboard players set @s weapon.sagittarius.charged.sfx 0
 
 
