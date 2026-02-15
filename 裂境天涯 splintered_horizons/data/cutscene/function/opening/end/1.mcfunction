@@ -2,7 +2,7 @@ tag @a remove cutscene.opening
 
 scoreboard players set #cutscene global.main 0
 
-function cutscene:opening/remove_camera
+function cutscene:opening/remove_camera/1
 
 
 execute \
@@ -19,6 +19,10 @@ item replace entity @a armor.head with air 1
 stopsound @a record minecraft:bgm.moonlight_sonata
 stopsound @a record minecraft:bgm.nico_cartosio_girl_on_an_iceberg
 
+attribute @s waypoint_receive_range modifier remove cutscene
+attribute @s waypoint_receive_range modifier remove cutscene.1
+attribute @s waypoint_transmit_range modifier remove cutscene
+attribute @s waypoint_transmit_range modifier remove cutscene.1
 
 execute \
     as @a[tag=campfire] run \

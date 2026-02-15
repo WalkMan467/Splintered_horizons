@@ -6,4 +6,4 @@ function cutscene:opening/guide
 
 execute \
     if score .opening cutscene.story matches 0..4000 run \
-schedule function cutscene:opening/main 1t
+schedule function cutscene:opening/main 2t

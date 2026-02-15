@@ -13,8 +13,6 @@ execute \
     as @a run \
 function item:type/tp_book/rc/cancel
 
-function cutscene:opening/remove_camera
-
 function animated_java:aska/remove/all
 function animated_java:oceanid/remove/all
 function animated_java:kyle/remove/all
@@ -60,6 +58,8 @@ execute \
 function cutscene:opening/0/use
 
 item replace entity @a armor.head with leather_helmet[tooltip_display={hide_tooltip:true},item_name='{"bold":true,"color":"yellow","italic":false,"text":"Camera"}',minecraft:item_model="camera",equippable={slot:"head",equip_sound:"event.raid.horn",asset_id:"minecraft:air",camera_overlay:"minecraft:screen/cutscene"},enchantments={"minecraft:binding_curse":1},enchantment_glint_override=false] 1
+
+schedule function cutscene:opening/summon_camera/1 1t
 
 stopsound @a voice event.raid.horn
 

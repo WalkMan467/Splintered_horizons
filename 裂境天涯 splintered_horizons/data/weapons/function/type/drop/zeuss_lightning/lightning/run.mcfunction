@@ -14,6 +14,6 @@ damage @s 5 player_attack by @p
 
 execute \
     as @e[type=!#minecraft:dummy_mob,type=!player,distance=..8] at @s run \
-function cse:sys/status_effects/use {attribute:"armor",duration:160,base:-0.15,value:-0.15,max:1.0, id:"zeuss_lightning"}
+function cse:sys/status_effects/use {type:"add_multiplied_base", attribute:"armor",duration:160,base:-0.15,value:-0.15,max:1.0, id:"zeuss_lightning"}
 
 kill @s

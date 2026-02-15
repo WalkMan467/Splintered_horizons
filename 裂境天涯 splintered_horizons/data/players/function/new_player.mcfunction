@@ -39,6 +39,7 @@ function weapons:remove_weapons_icon
 function armors:remove_armors_icon
 function monsters:remove_monsters_icon
 function story:remove_story_icon
+function item:remove_energy_infusion_stone_icon
 function story:remove_proper_noun_icon
 function players:adv/remove_adv
 function item:type/tp_book/reset
@@ -61,12 +62,23 @@ scoreboard players set @s player.spawnpoint.pos.z 11
 execute \
     if score #chapter_test global.main matches ..1 \
     in minecraft:overworld run \
-tp @s 38 64 11 90 0
+tp @s 9999 95 10070
 
 execute \
     unless score #chapter_test global.main matches -2147483648..2147483647 \
     in minecraft:overworld run \
-tp @s 38 64 11 90 0
+tp @s 9999 95 10070
+
+
+# execute \
+#     if score #chapter_test global.main matches ..1 \
+#     in minecraft:overworld run \
+# tp @s 38 64 11 90 0
+
+# execute \
+#     unless score #chapter_test global.main matches -2147483648..2147483647 \
+#     in minecraft:overworld run \
+# tp @s 38 64 11 90 0
 
 scoreboard players add @s player.death_count 0
 

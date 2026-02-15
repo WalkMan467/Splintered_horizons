@@ -1,6 +1,14 @@
 execute \
     if score #chapter_test global.main matches ..1 run \
+function cutscene:opening/0/title/use
+
+execute \
+    if score #chapter_test global.main matches ..1 run \
 return 0
+
+execute \
+    unless score #chapter_test global.main matches -2147483648..2147483647 run \
+function cutscene:opening/0/title/use
 
 execute \
     unless score #chapter_test global.main matches -2147483648..2147483647 run \

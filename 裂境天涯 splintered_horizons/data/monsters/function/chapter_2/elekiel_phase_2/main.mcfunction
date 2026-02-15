@@ -28,6 +28,13 @@ execute \
     if entity @s[tag=chapter_2.elekiel_phase_2.4] run \
 function monsters:chapter_2/elekiel_phase_2/4/main
 
+# Skill 4
+
+execute \
+    as 00000100-0000-0080-0000-008000000005 at @s \
+    if entity @s[tag=chapter_2.elekiel_phase_2.5] run \
+function monsters:chapter_2/elekiel_phase_2/5/main
+
 # Monster Self
 
 execute \

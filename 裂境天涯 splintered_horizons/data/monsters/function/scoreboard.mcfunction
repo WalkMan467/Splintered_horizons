@@ -96,6 +96,9 @@ scoreboard objectives add monster.elekiel_phase_2.skill.1.casting dummy "[怪物
 scoreboard objectives add monster.elekiel_phase_2.skill.2.casting dummy "[怪物] 伊萊克爾二階段 技能2 施法中"
 scoreboard objectives add monster.elekiel_phase_2.skill.3.casting dummy "[怪物] 伊萊克爾二階段 技能3 施法中"
 scoreboard objectives add monster.elekiel_phase_2.skill.4.casting dummy "[怪物] 伊萊克爾二階段 技能4 施法中"
+scoreboard objectives add monster.elekiel_phase_2.skill.5.casting dummy "[怪物] 伊萊克爾二階段 技能5 施法中"
+scoreboard objectives add monster.elekiel_phase_2.skill.5.act.click dummy "[怪物] 伊萊克爾二階段 技能5 殘影點擊"
+scoreboard objectives add monster.elekiel_phase_2.skill.5.act.id dummy "[怪物] 伊萊克爾二階段 技能5 殘影 ID"
 scoreboard objectives add monster.elekiel_phase_2.skill.4.effect.void dummy "[怪物] 伊萊克爾二階段 技能4 虛空折越"
 scoreboard objectives add monster.elekiel_phase_2.skill.4.portal.id dummy "[怪物] 伊萊克爾二階段 技能4 傳送門ID"
 scoreboard objectives add monster.elekiel_phase_2.skill.4.player.gamemode dummy "[怪物] 伊萊克爾二階段 技能4 遊戲模式"
@@ -109,5 +112,14 @@ scoreboard objectives add mob.duration dummy "技能持續時間"
 scoreboard players set #5 mob.main 5
 scoreboard players set #10 mob.main 10
 scoreboard players set #20 mob.main 20
+
+# ===============================================================================
+
+# 「守魂使徒」西格瑞納
+
+scoreboard objectives add monster.segrina.cd dummy "[怪物] 西格瑞納 CD"
+
+scoreboard objectives add monster.segrina.skill.1.casting dummy "[怪物] 西格瑞納 技能1 施法中"
+scoreboard objectives add monster.segrina.skill.2.casting dummy "[怪物] 西格瑞納 技能2 施法中"
 
 # ===============================================================================

@@ -1878,6 +1878,45 @@
 				"data/minecraft/tags/function/tick.json"
 			]
 		},
+		"player_projection": {
+			"coreFiles": ["pack.mcmeta"],
+			"versionedFiles": [
+				"data/animated_java/function/global/gu/get_entity_uuid_string.mcfunction",
+				"data/animated_java/function/global/gu/on_load.mcfunction",
+				"data/animated_java/function/global/gu/zzz/0.mcfunction",
+				"data/animated_java/function/global/gu/zzz/1.mcfunction",
+				"data/animated_java/function/global/on_load.mcfunction",
+				"data/animated_java/function/global/on_tick.mcfunction",
+				"data/animated_java/function/global/remove/as_data.mcfunction",
+				"data/animated_java/function/global/remove/as_data/loop_over_uuids.mcfunction",
+				"data/animated_java/function/global/remove/entity_stack.mcfunction",
+				"data/animated_java/function/global/remove/entity_stack_by_uuid.mcfunction",
+				"data/animated_java/function/global/remove/everything.mcfunction",
+				"data/animated_java/function/global/remove/outdated_rig.mcfunction",
+				"data/animated_java/function/global/util/get_entity_stack_uuids.mcfunction",
+				"data/animated_java/function/global/util/is_rig_outdated.mcfunction",
+				"data/animated_java/function/global/util/zzz/0.mcfunction",
+				"data/animated_java/function/global/util/zzz/1.mcfunction",
+				"data/animated_java/function/player_projection/invalid_version_warning.mcfunction",
+				"data/animated_java/function/player_projection/move.mcfunction",
+				"data/animated_java/function/player_projection/on_load.mcfunction",
+				"data/animated_java/function/player_projection/remove/all.mcfunction",
+				"data/animated_java/function/player_projection/remove/entities.mcfunction",
+				"data/animated_java/function/player_projection/remove/this.mcfunction",
+				"data/animated_java/function/player_projection/remove/this/without_on_remove_function.mcfunction",
+				"data/animated_java/function/player_projection/root/on_tick.mcfunction",
+				"data/animated_java/function/player_projection/set_default_pose.mcfunction",
+				"data/animated_java/function/player_projection/summon.mcfunction",
+				"data/animated_java/function/player_projection/zzz/summon/as_data_entity.mcfunction",
+				"data/animated_java/function/player_projection/zzz/summon/as_root_entity.mcfunction",
+				"data/animated_java/function/player_projection/zzz/summon/rig_on_summon.mcfunction",
+				"data/animated_java/function/player_projection/zzz/summon/zzz/variant_arg/no_variants_warning.mcfunction",
+				"data/animated_java/tags/function/global/on_load.json",
+				"data/animated_java/tags/function/global/root/on_tick.json",
+				"data/minecraft/tags/function/load.json",
+				"data/minecraft/tags/function/tick.json"
+			]
+		},
 		"portal": {
 			"coreFiles": [
 				"data/animated_java/function/global/errors/function_not_executed_as_root_entity.mcfunction",

@@ -1,0 +1,86 @@
+[
+  {
+    "function": "minecraft:set_item",
+    "item": "minecraft:bundle"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_name": [
+        {
+          "translate": "armor.paladins_helmet",
+          "color": "gold",
+          "italic": false,
+          "bold": true
+        }
+      ],
+      "minecraft:lore": [
+        [
+          { "translate": "armor.paladins_helmet.type", "italic": false, "color": "dark_gray" }
+        ],
+        { "text": "" },
+        [
+          { "translate": "armor.paladins_helmet.story.1", "italic": false, "color": "blue" }
+        ],
+        [
+          { "translate": "armor.paladins_helmet.story.2", "italic": false, "color": "blue" }
+        ],
+        [
+          { "translate": "armor.paladins_helmet.story.3", "italic": false, "color": "blue" }
+        ],
+        { "text": "" },
+        [
+          { "text": "", "italic": false },
+          { "translate": "armor.paladins_helmet.passive_skills", "color": "#ffe600", "bold": true },
+          { "text": "  " },
+          { "translate": "armor.skill_cd", "color": "#6E6E6E" },
+          { "text": "25s" }
+        ],
+        [
+          { "text": "", "italic": false },
+          {
+            "translate": "armor.paladins_helmet.passive_skills.1",
+            "color": "#fff280",
+            "with": [
+              { "translate": "armor.type.chestplate", "underlined": true, "color": "dark_green" }
+            ]
+          }
+        ],
+        [
+          { "text": "", "italic": false },
+          { "translate": "armor.paladins_helmet.passive_skills.2", "color": "#fff280" }
+        ]
+      ],
+      "minecraft:attribute_modifiers": [
+        {
+          "id": "head.1",
+          "type": "armor",
+          "amount": 2,
+          "operation": "add_value",
+          "slot": "head"
+        },
+        {
+          "id": "head.2",
+          "type": "armor_toughness",
+          "amount": 1,
+          "operation": "add_value",
+          "slot": "head"
+        }
+      ],
+      "minecraft:max_stack_size": 1,
+      "minecraft:unbreakable": {},
+      "minecraft:item_model": "head/paladins_helmet/1",
+      "minecraft:custom_data": {
+        "type": "armor",
+        "rarity": "rare",
+        "id": "paladins_helmet"
+      },
+      "minecraft:tooltip_style": "rare",
+      "minecraft:equippable": {
+        "slot": "head",
+        "equip_sound": "item.armor.equip_netherite",
+        "asset_id": "gold"
+      }
+    }
+  }
+]

@@ -4,6 +4,7 @@ scoreboard players reset skill.1 monster.elekiel_phase_2.cd
 scoreboard players reset skill.2 monster.elekiel_phase_2.cd
 scoreboard players reset skill.3 monster.elekiel_phase_2.cd
 scoreboard players reset skill.4 monster.elekiel_phase_2.cd
+scoreboard players reset skill.5 monster.elekiel_phase_2.cd
 
 
 execute \
@@ -27,6 +28,8 @@ execute \
     as @p \
     unless score #weapons:monument/area_2 global.main matches 1.. run \
 function weapons:get/monument/area_2
+
+function monsters:chapter_2/elekiel_phase_2/5/4
 
 
 execute \

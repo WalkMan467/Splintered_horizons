@@ -113,7 +113,7 @@ title @a actionbar {"translate":"cutscene.opening.story.17"}
 
 
 execute \
-    if score .opening cutscene.story matches 2120..2240 run \
+    if score .opening cutscene.story matches 2140..2240 run \
 title @a actionbar {"translate":"cutscene.opening.story.18"}
 
 
@@ -138,8 +138,6 @@ title @a title {"translate":"\uE000","font":"minecraft:screen"}
 execute \
     if score .opening cutscene.story matches 2650 run \
 function cutscene:opening/6/1
-
-
 
 execute \
     if score .opening cutscene.story matches 2628 run \

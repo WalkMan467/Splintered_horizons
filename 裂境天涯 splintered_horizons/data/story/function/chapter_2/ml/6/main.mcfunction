@@ -11,7 +11,7 @@
     # Rotate to Player
     execute \
     positioned 928 167 908 \
-        as @n[sort=arbitrary,distance=..1,tag=aj.isokla.root,type=item_display] at @s \
+        as @n[sort=arbitrary,distance=..1,tag=aj.selena.root,type=item_display] at @s \
         facing entity @p[distance=..16] eyes run \
     rotate @s ~ 0
 

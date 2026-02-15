@@ -1,4 +1,4 @@
-function cutscene:opening/remove_camera
+function cutscene:opening/remove_camera/1
 
 function animated_java:oceanid/remove/all
 kill @e[type=item_display,tag=aj.oceanid.camera]

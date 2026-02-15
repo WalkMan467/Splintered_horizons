@@ -12,7 +12,7 @@ tag @s remove temp
 
 execute \
     as @a[distance=..4,tag=temp] at @s run \
-function cse:sys/status_effects/use {attribute:"movement_speed",duration:100,base:-0.1,value:-0.1,max:0.5, id:"emissary_of_the_temporal_rift"}
+function cse:sys/status_effects/use {type:"add_multiplied_base", attribute:"movement_speed",duration:100,base:-0.1,value:-0.1,max:0.5, id:"emissary_of_the_temporal_rift"}
 
 tag @s add user.temp
 

@@ -12,6 +12,10 @@ execute \
     if entity @s[tag=sagittarius.user] run \
 function weapons:type/bow/sagittarius/rc/main
 
+# sagittarius
+
+function weapons:type/scythe/flame_of_finality/lc/main
+
 # Rock Crushing Greatsword
 
 execute \

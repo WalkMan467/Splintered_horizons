@@ -1,0 +1,1 @@
+execute as @e[distance=0..60,tag=monster.elekiel_phase_2.5.act,type=interaction] at @s if data entity @s attack run function monsters:chapter_2/elekiel_phase_2/5/3

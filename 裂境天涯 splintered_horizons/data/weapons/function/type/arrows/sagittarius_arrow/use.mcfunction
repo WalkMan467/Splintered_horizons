@@ -1,3 +1,5 @@
+advancement revoke @a only weapons:arrows/sagittarius_arrow
+
 scoreboard players reset #weapon.sagittarius_arrow.range global.main
 function weapons:type/arrows/sagittarius_arrow/range
 
@@ -10,10 +12,8 @@ particle minecraft:enchanted_hit ~ ~1 ~ 0 0 0 2 200 force @a
 particle minecraft:ominous_spawning ~ ~1 ~ 1 1 1 1 200
 
 execute \
-    as @e[distance=..4,type=!player,type=!#minecraft:dummy_mob] run \
+    as @e[distance=..8,type=!player,type=!#minecraft:dummy_mob] run \
 damage @s 8 magic
-
-advancement revoke @a only weapons:arrows/sagittarius_arrow
 
 scoreboard players set @e[distance=..6,sort=arbitrary,type=!#minecraft:dummy_mob,type=!player] monster.skill.freeze 100
 

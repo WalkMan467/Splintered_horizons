@@ -1,15 +1,11 @@
 {
   "pack": {
-    "description": "裂境天涯 Splintered Horizons Datapack",
-    "pack_format": 93,
+    "description": "",
     "min_format": [
-      93,
-      0
+      94,
+      1
     ],
-    "max_format": [
-      93,
-      0
-    ]
+    "max_format": 94
   },
   "filter": {
     "block": [

@@ -73,6 +73,7 @@ tag @a remove chapter_2.elekiel_phase_2.lose
 scoreboard players set skill.1 monster.elekiel_phase_2.cd 100
 scoreboard players set skill.2 monster.elekiel_phase_2.cd 300
 scoreboard players set skill.4 monster.elekiel_phase_2.cd 740
+scoreboard players set skill.5 monster.elekiel_phase_2.cd 700
 scoreboard players set @s player.detect.is_bossfight 1
 scoreboard players set #boss_area.chapter_2.elekiel_phase_2 global.main 1
 

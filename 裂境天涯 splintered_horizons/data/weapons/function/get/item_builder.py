@@ -1,12 +1,84 @@
-attribute = []
-
 def build_item_struct():
     return {
-        "name": ['盤岩晶體', "#e4a42f", '鍛造材料 / 史詩'],
-        "story": {'info': ['吸收岩之力量的晶體', '能夠透過鍛造台鍛造出強力的武器'], 'color': 'blue'},
-        "item_data": {'real_item': 'music_disc_11', 'id': 'rockbound_crystal', 'item_model': '"material/rockbound_crystal"', 'custom_data': '{rc:0b,type:"item",id:"rockbound_crystal"}', 'max_damage': -1, 'max_stack_size': 64, 'rc': False, 'lc': False, 'other': ['tooltip_display={hidden_components:["attribute_modifiers","unbreakable","jukebox_playable"]}', 'tooltip_style="epic"']},
-        "skill": {'is_skill': False, 'cd': 0, 'name': ['戰術增益', '#2ab172', '#2ab172'], 'info': ['使用後將獲得隨機以下效果', '攻擊力提升 8% (00:20)', '速度提升 5% (00:20)', '盔甲值提升 8% (00:20)', '每個效果最多疊加 3 層']},
-        "passive_skills": {'is_passive_skills': False, 'cd': 5, 'name': ['深淵惡咒', '#8c00ff', '#480083'], 'info': ['當你攻擊命中怪物時:', '對 4 格內怪物添加 2 層【惡咒】']},
-        "ultimate": {'is_ultimate': False, 'cd': 30, 'name': ['災厄之火', '#ff0000', '#7a0000'], 'info': ['當你使用右鍵時:', '使【行星墜落】造成傷害變為真實傷害', '並且在該位置生成一片每秒造成 5 點燃燒傷害的區域', '持續 5 秒']},
-        "attribute": {'attribute': 'attack_damage', 'value': 0.0, 'slot': 'mainhand', 'operation': 'add_value'}
+        "name": ['終焉雙重火', "#CE0000", '鐮刀 / 神話'],
+        "story": {
+            'info': ['最終決戰過後，舊宇宙迎來了終點的結局','同時，宇宙出現了由深淵延伸的新力量「終焉」','這把武器的誕生目前無法得知','同時也埋藏了很多秘密'],
+            'color': 'blue'
+        },
+        "item_data": {
+            'real_item': 'iron_sword',
+            'id': 'flame_of_finality',
+            'item_model': '"scythe/flame_of_finality/1"',
+            
+            'custom_data': 'type:"scythe",rarity:"mythic",weapon:"flame_of_finality",forging_table:1b',
+            
+            'rc': True,
+            'lc': True,
+
+            'max_damage': 200,
+            'max_stack_size': 1,
+            'other': [
+                'enchantment_glint_override=false',
+                'tooltip_style="mythic"',
+                'minecraft:enchantments={"weapons:lc":1}'
+            ]
+        },
+        "skill": {
+            "is_skill": False,
+            "cd": 0,
+            "name": ["紅炎之舞", "#A70000", "#7A0000"],
+            "info": [
+                "普通攻擊分為 4 段特殊攻擊：",
+                "",
+                "第一段：向左揮砍對前方 3 格內怪物造成 100% 基礎傷害",
+                "第二段：向右揮砍對前方 3 格內怪物造成 100% 基礎傷害",
+                "第三段：在前方 3 格遠的位置召喚【火紅蓮】",
+                "並且對 1.5 格範圍內怪物造成 150% 基礎傷害",
+                "第四段：引爆【火紅蓮】並且對 1.5 格範圍內怪物造成 150% 基礎傷害，",
+                "並且給予你一個終焉閃電"
+            ]
+        },
+        "passive_skills": {
+            'is_passive_skills': True,
+            'cd': 0,
+            'name': ['紅炎之舞', '#A70000', '#7A0000'],
+            'info': [
+                "普通攻擊分為 4 段特殊攻擊：",
+                "",
+                "第一段：向左揮砍對前方 3 格內怪物造成 100% 基礎傷害",
+                "第二段：向右揮砍對前方 3 格內怪物造成 100% 基礎傷害",
+                "第三段：在前方 3 格遠的位置召喚【火紅蓮】",
+                "並且對 1.5 格範圍內怪物造成 150% 基礎傷害",
+                "第四段：引爆【火紅蓮】並且對 1.5 格範圍內怪物造成 150% 基礎傷害，",
+                "並且給予你一個終焉閃電"
+                ]
+        },
+        "ultimate": {
+            'is_ultimate': True,
+            'cd': 20,
+            'name': ['八重黑火', '#ff0000', '#7a0000'],
+            'info': [
+                '當你按下【右鍵】時：',
+                '消耗一顆終焉之眼',
+                '對前方 7 格長範圍內怪物造成 150% 傷害',
+                '如果你擁有終焉閃電：',
+                '則消耗一個終焉閃電，並向前發射 1 發黑火彈，對怪物造成 150% 基礎傷害',
+                ]
+        },
+        "attributes": [
+            {
+                'attribute': 'attack_damage',
+                'id': 'base_attack_damage',
+                'value': 3.5,
+                'slot': 'mainhand',
+                'operation': 'add_value'
+            },
+            {
+                'attribute': 'attack_speed',
+                'id': "base_attack_speed",
+                'value': -1,
+                'slot': 'mainhand',
+                'operation': 'add_value'
+            }
+        ]
     }

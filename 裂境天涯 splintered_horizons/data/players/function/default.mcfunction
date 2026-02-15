@@ -38,6 +38,7 @@ function music:remove_bgn_icon
 function weapons:remove_weapons_icon
 function story:remove_story_icon
 function story:remove_proper_noun_icon
+function item:remove_energy_infusion_stone_icon
 function monsters:remove_monsters_icon
 
 

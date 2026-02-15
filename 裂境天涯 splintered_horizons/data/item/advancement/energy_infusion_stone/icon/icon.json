@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:poisonous_potato",
+      "components": {
+        "minecraft:item_model": "material/energy_infusion_stone/weapon/base",
+        "minecraft:enchantments": {
+          "mending": 1
+        }
+      },
+      "count": 1
+    },
+    "title": {
+      "translate": "proper_nouns.energy_infusion_stone.icon",
+      "bold": true,
+      "italic": false,
+      "underlined": true
+    },
+    "description": "",
+    "background": "minecraft:gui/advancements/backgrounds/raw_gold_block",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick",
+      "conditions": {}
+    }
+  }
+}

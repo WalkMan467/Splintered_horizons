@@ -7,6 +7,7 @@ scoreboard players reset skill.1 monster.elekiel_phase_2.cd
 scoreboard players reset skill.2 monster.elekiel_phase_2.cd
 scoreboard players reset skill.3 monster.elekiel_phase_2.cd
 scoreboard players reset skill.4 monster.elekiel_phase_2.cd
+scoreboard players reset skill.5 monster.elekiel_phase_2.cd
 
 
 execute \
@@ -20,6 +21,7 @@ bossbar remove minecraft:monsters.elekiel_phase_2
 
 schedule clear monsters:chapter_2/elekiel_phase_2/main
 
+function monsters:chapter_2/elekiel_phase_2/5/4
 
 execute \
     as @a run \

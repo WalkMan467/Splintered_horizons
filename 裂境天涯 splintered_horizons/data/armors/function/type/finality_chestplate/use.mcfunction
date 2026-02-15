@@ -24,6 +24,6 @@ scoreboard players operation @s player.ultimate -= #math global.main
 title @s title {"text":"\uE004","font":"minecraft:screen"}
 title @s times 10 0 10
 
-function cse:sys/status_effects/use {attribute:"attack_damage",duration:100,base:0.25,value:0.0,max:0.25, id:"finality_chestplate"}
+function cse:sys/status_effects/use {type:"add_multiplied_base", attribute:"attack_damage",duration:100,base:0.25,value:0.0,max:0.25, id:"finality_chestplate"}
 
 scoreboard players set @s armor.chestplate.effect.actived 2

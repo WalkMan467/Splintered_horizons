@@ -1,5 +1,0 @@
-
-execute \
-    if score @s screen_filters.glitch_effect.noise matches 1.. \
-    positioned ~ ~1 ~ run \
-function particle:ruins_of_the_finality_rupture/air_ash/summon

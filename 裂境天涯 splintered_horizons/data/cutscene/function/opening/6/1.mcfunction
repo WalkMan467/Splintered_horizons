@@ -1,4 +1,4 @@
-function cutscene:opening/remove_camera
+function cutscene:opening/remove_camera/1
 
 
 execute \

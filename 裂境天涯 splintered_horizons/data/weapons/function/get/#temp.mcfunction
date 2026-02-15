@@ -1,26 +1,114 @@
-give @s stone_sword[item_name=[{"translate":"weapon.grip_of_withering","color":"#28778A","italic":false,"bold":true}],lore=[[{"translate":"weapon.grip_of_withering.type","italic":false,"color":"dark_gray"}],{"text":""},[{"translate":"weapon.grip_of_withering.story.1","italic":false,"color":"blue"}],[{"translate":"weapon.grip_of_withering.story.2","italic":false,"color":"blue"}],{"text":""},[{"text":"","italic":false},{"translate":"weapon.grip_of_withering.skill","color":"dark_aqua","bold":true},{"text":"  "},{"translate":"weapon.skill_cd","color":"#6E6E6E"},{"text":"12s"}],[{"text":"","italic":false},{"translate":"weapon.grip_of_withering.skill.1","color":"#23768f"}],[{"text":"","italic":false},{"translate":"weapon.grip_of_withering.skill.2","color":"#23768f"}],[{"text":"","italic":false},{"translate":"weapon.grip_of_withering.skill.3","color":"#23768f"}],{"text":""},[{"text":"","italic":false},{"translate":"weapon.grip_of_withering.passive_skills","color":"#560758","bold":true},{"text":"  "},{"translate":"weapon.skill_cd","color":"#6E6E6E"},{"text":"3s"}],[{"text":"","italic":false},{"translate":"weapon.grip_of_withering.passive_skills.1","color":"#47049E"}],[{"text":"","italic":false},{"translate":"weapon.grip_of_withering.passive_skills.2","color":"#47049E"}],[{"text":"","italic":false},{"translate":"weapon.grip_of_withering.passive_skills.3","color":"#47049E"}],[{"text":"","italic":false},{"translate":"weapon.grip_of_withering.passive_skills.4","color":"#47049E"}],[{"text":"","italic":false},{"translate":"weapon.grip_of_withering.passive_skills.5","color":"#47049E"}],[{"text":"","italic":false},{"translate":"weapon.grip_of_withering.passive_skills.6","color":"#47049E"}]],attribute_modifiers=[{id:"base_attack_damage",type:"attack_damage",amount:3.5,operation:"add_value",slot:"mainhand"},{id:"base_attack_speed",type:"attack_speed",amount:-2.35,operation:"add_value",slot:"mainhand"}],max_stack_size=1,max_damage=150,damage=0,item_model="sword/grip_of_withering/1",custom_data={rc:1b,type:"sword",rarity:"rare",weapon:"grip_of_withering",forging_table:1b},consumable={consume_seconds:10000,animation:"none",has_consume_particles:false},minecraft:enchantments={"weapons:type/sword/grip_of_withering/use":1, "minecraft:mending":1},enchantment_glint_override=false,tooltip_style="rare",custom_model_data={floats:[0]}]
+give @s iron_sword[item_name=[{"translate": "weapon.flame_of_finality", "color": "#CE0000", "bold": true}],lore=[[{"translate": "weapon.flame_of_finality.type", "color": "dark_gray", "italic": false}], {"text": ""}, [{"translate": "weapon.flame_of_finality.story.1", "color": "blue", "italic": false}], [{"translate": "weapon.flame_of_finality.story.2", "color": "blue", "italic": false}], [{"translate": "weapon.flame_of_finality.story.3", "color": "blue", "italic": false}], [{"translate": "weapon.flame_of_finality.story.4", "color": "blue", "italic": false}], {"text": ""}, [{"text": "", "italic": false}, {"translate": "weapon.flame_of_finality.passive_skills", "color": "#A70000", "bold": true}, {"text": "  "}], [{"text": "", "italic": false}, {"translate": "weapon.flame_of_finality.passive_skills.1", "color": "#7A0000", "italic": false}], [{"text": "", "italic": false}, {"translate": "weapon.flame_of_finality.passive_skills.2", "color": "#7A0000", "italic": false}], [{"text": "", "italic": false}, {"translate": "weapon.flame_of_finality.passive_skills.3", "color": "#7A0000", "italic": false}], [{"text": "", "italic": false}, {"translate": "weapon.flame_of_finality.passive_skills.4", "color": "#7A0000", "italic": false}], [{"text": "", "italic": false}, {"translate": "weapon.flame_of_finality.passive_skills.5", "color": "#7A0000", "italic": false}], [{"text": "", "italic": false}, {"translate": "weapon.flame_of_finality.passive_skills.6", "color": "#7A0000", "italic": false}], [{"text": "", "italic": false}, {"translate": "weapon.flame_of_finality.passive_skills.7", "color": "#7A0000", "italic": false}], [{"text": "", "italic": false}, {"translate": "weapon.flame_of_finality.passive_skills.8", "color": "#7A0000", "italic": false}], {"text": ""}, [{"text": "", "italic": false}, {"translate": "weapon.flame_of_finality.ultimate", "color": "#ff0000", "bold": true}, {"text": "  "}, {"translate": "weapon.skill_cd", "color": "#6E6E6E"}, {"text": "20s"}], [{"text": "", "italic": false}, {"translate": "weapon.flame_of_finality.ultimate.1", "color": "#7a0000", "italic": false}], [{"text": "", "italic": false}, {"translate": "weapon.flame_of_finality.ultimate.2", "color": "#7a0000", "italic": false}], [{"text": "", "italic": false}, {"translate": "weapon.flame_of_finality.ultimate.3", "color": "#7a0000", "italic": false}], [{"text": "", "italic": false}, {"translate": "weapon.flame_of_finality.ultimate.4", "color": "#7a0000", "italic": false}], [{"text": "", "italic": false}, {"translate": "weapon.flame_of_finality.ultimate.5", "color": "#7a0000", "italic": false}]],attribute_modifiers=[{type:"attack_damage",id:"base_attack_damage",amount:3.5,operation:"add_value",slot:"mainhand"},{type:"attack_speed",id:"base_attack_speed",amount:-1,operation:"add_value",slot:"mainhand"}],max_stack_size=1,max_damage=200,damage=0,item_model="scythe/flame_of_finality/1",custom_data={type:"scythe",rarity:"mythic",weapon:"flame_of_finality",forging_table:1b},enchantment_glint_override=false,tooltip_style="mythic",minecraft:enchantments={"weapons:lc":1}]
 
-# "weapon.grip_of_withering" : "☠ 凋零之握 ☠"
-# "weapon.grip_of_withering.type" : "劍 / 稀有"
-# "weapon.grip_of_withering.story.1" : "昔日英雄的劍，在世界徹底被深淵壟罩之後這把劍受到的深淵的侵蝕，"
-# "weapon.grip_of_withering.story.2" : "並且漂流在世界之外。"
-# "weapon.grip_of_withering.skill" : "[侵蝕]"
-# "weapon.grip_of_withering.skill.1" : "使你獲得【緋紅之爪】(00:08)"
-# "weapon.grip_of_withering.skill.2" : "對 3 格範圍內目標施加 凋零II (00:08)"
-# "weapon.grip_of_withering.skill.3" : "並造成 150% 攻擊力傷害"
-# "weapon.grip_of_withering.passive_skills" : "[萬劍穿心]"
-# "weapon.grip_of_withering.passive_skills.1" : "當你擁有【至深之暗】符文時:"
-# "weapon.grip_of_withering.passive_skills.2" : "攻擊有 25% 機率在目標位置生成數把劍"
-# "weapon.grip_of_withering.passive_skills.3" : "向中心突刺造成 150% 攻擊力傷害並且施加 流血 (00:05)"
-# "weapon.grip_of_withering.passive_skills.4" : ""
-# "weapon.grip_of_withering.passive_skills.5" : "如果未觸發技能:"
-# "weapon.grip_of_withering.passive_skills.6" : "下次機率提升 5% 直到成功觸發"
+# ==============================
+# Translate Keys
+# ==============================
+# "weapon.flame_of_finality" : "終焉雙重火",
+# "weapon.flame_of_finality.type" : "鐮刀 / 神話",
+# "weapon.flame_of_finality.story.1" : "最終決戰過後，舊宇宙迎來了終點的結局",
+# "weapon.flame_of_finality.story.2" : "同時，宇宙出現了由深淵延伸的新力量「終焉」",
+# "weapon.flame_of_finality.story.3" : "這把武器的誕生目前無法得知",
+# "weapon.flame_of_finality.story.4" : "同時也埋藏了很多秘密",
+# "weapon.flame_of_finality.passive_skills" : "[紅炎之舞]",
+# "weapon.flame_of_finality.passive_skills.1" : "普通攻擊分為 4 段特殊攻擊：",
+# "weapon.flame_of_finality.passive_skills.2" : "",
+# "weapon.flame_of_finality.passive_skills.3" : "第一段：向左揮砍對前方 3 格內怪物造成 100% 基礎傷害",
+# "weapon.flame_of_finality.passive_skills.4" : "第二段：向右揮砍對前方 3 格內怪物造成 100% 基礎傷害",
+# "weapon.flame_of_finality.passive_skills.5" : "第三段：在前方 3 格遠的位置召喚【火紅蓮】",
+# "weapon.flame_of_finality.passive_skills.6" : "並且對 1.5 格範圍內怪物造成 150% 基礎傷害",
+# "weapon.flame_of_finality.passive_skills.7" : "第四段：引爆【火紅蓮】並且對 1.5 格範圍內怪物造成 150% 基礎傷害，",
+# "weapon.flame_of_finality.passive_skills.8" : "並且給予你一個終焉閃電",
+# "weapon.flame_of_finality.ultimate" : "[八重黑火]",
+# "weapon.flame_of_finality.ultimate.1" : "當你按下【右鍵】時：",
+# "weapon.flame_of_finality.ultimate.2" : "消耗一顆終焉之眼",
+# "weapon.flame_of_finality.ultimate.3" : "對前方 7 格長範圍內怪物造成 150% 傷害",
+# "weapon.flame_of_finality.ultimate.4" : "如果你擁有終焉閃電：",
+# "weapon.flame_of_finality.ultimate.5" : "則消耗一個終焉閃電，並向前發射 1 發黑火彈，對怪物造成 150% 基礎傷害",
 
-#name = ['☠ 凋零之握 ☠', '#28778A', '劍 / 稀有']
-#story = {'info': ['昔日英雄的劍，在世界徹底被深淵壟罩之後這把劍受到的深淵的侵蝕，', '並且漂流在世界之外。'], 'color': 'blue'}
-#item_data = {'real_item': 'stone_sword', 'id': 'grip_of_withering', 'item_model': '"sword/grip_of_withering/1"', 'custom_data': 'type:"sword",rarity:"rare",weapon:"grip_of_withering",forging_table:1b', 'max_damage': 150, 'max_stack_size': 1, 'rc': True, 'lc': False, 'other': ['minecraft:enchantments={"weapons:type/sword/grip_of_withering/use":1, "minecraft:mending":1}', 'enchantment_glint_override=false', 'tooltip_style="rare"', 'custom_model_data={floats:[0]}']}
-#skill = {'is_skill': True, 'cd': 12, 'name': ['侵蝕', 'dark_aqua', '#23768f'], 'info': ['使你獲得【緋紅之爪】(00:08)', '對 3 格範圍內目標施加 凋零II (00:08)', '並造成 150% 攻擊力傷害']}
-#passive_skills = {'is_passive_skills': True, 'cd': 3, 'name': ['萬劍穿心', '#560758', '#47049E'], 'info': ['當你擁有【至深之暗】符文時:', '攻擊有 25% 機率在目標位置生成數把劍', '向中心突刺造成 150% 攻擊力傷害並且施加 流血 (00:05)', '', '如果未觸發技能:', '下次機率提升 5% 直到成功觸發']}
-#ultimate = {'is_ultimate': False, 'cd': 60, 'name': ['狂風暴雨', 'dark_aqua', '#fceb00'], 'info': ['右鍵點擊消耗一個終焉之眼，', '接下來的8秒內如果在空中手持此武器擊中敵人', '在目標位置降下降下閃電造成5點傷害。']}
-#attribute.append({'attribute': 'attack_damage', 'value': 3.5, 'slot': 'mainhand', 'operation': 'add_value'})
-#attribute.append({'attribute': 'attack_speed', 'value': -2.35, 'slot': 'mainhand', 'operation': 'add_value'})
+# ==============================
+# item_builder.py Backup
+# ==============================
+# def build_item_struct():
+#     return {
+#         "name": ['終焉雙重火', "#CE0000", '鐮刀 / 神話'],
+#         "story": {
+#             'info': ['最終決戰過後，舊宇宙迎來了終點的結局','同時，宇宙出現了由深淵延伸的新力量「終焉」','這把武器的誕生目前無法得知','同時也埋藏了很多秘密'],
+#             'color': 'blue'
+#         },
+#         "item_data": {
+#             'real_item': 'iron_sword',
+#             'id': 'flame_of_finality',
+#             'item_model': '"scythe/flame_of_finality/1"',
+#             
+#             'custom_data': 'type:"scythe",rarity:"mythic",weapon:"flame_of_finality",forging_table:1b',
+#             
+#             'rc': True,
+#             'lc': True,
+# 
+#             'max_damage': 200,
+#             'max_stack_size': 1,
+#             'other': [
+#                 'enchantment_glint_override=false',
+#                 'tooltip_style="mythic"',
+#                 'minecraft:enchantments={"weapons:lc":1}'
+#             ]
+#         },
+#         "skill": {
+#             "is_skill": False,
+#             "cd": 0,
+#             "name": ["紅炎之舞", "#A70000", "#7A0000"],
+#             "info": [
+#                 "普通攻擊分為 4 段特殊攻擊：",
+#                 "",
+#                 "第一段：向左揮砍對前方 3 格內怪物造成 100% 基礎傷害",
+#                 "第二段：向右揮砍對前方 3 格內怪物造成 100% 基礎傷害",
+#                 "第三段：在前方 3 格遠的位置召喚【火紅蓮】",
+#                 "並且對 1.5 格範圍內怪物造成 150% 基礎傷害",
+#                 "第四段：引爆【火紅蓮】並且對 1.5 格範圍內怪物造成 150% 基礎傷害，",
+#                 "並且給予你一個終焉閃電"
+#             ]
+#         },
+#         "passive_skills": {
+#             'is_passive_skills': True,
+#             'cd': 0,
+#             'name': ['紅炎之舞', '#A70000', '#7A0000'],
+#             'info': [
+#                 "普通攻擊分為 4 段特殊攻擊：",
+#                 "",
+#                 "第一段：向左揮砍對前方 3 格內怪物造成 100% 基礎傷害",
+#                 "第二段：向右揮砍對前方 3 格內怪物造成 100% 基礎傷害",
+#                 "第三段：在前方 3 格遠的位置召喚【火紅蓮】",
+#                 "並且對 1.5 格範圍內怪物造成 150% 基礎傷害",
+#                 "第四段：引爆【火紅蓮】並且對 1.5 格範圍內怪物造成 150% 基礎傷害，",
+#                 "並且給予你一個終焉閃電"
+#                 ]
+#         },
+#         "ultimate": {
+#             'is_ultimate': True,
+#             'cd': 20,
+#             'name': ['八重黑火', '#ff0000', '#7a0000'],
+#             'info': [
+#                 '當你按下【右鍵】時：',
+#                 '消耗一顆終焉之眼',
+#                 '對前方 7 格長範圍內怪物造成 150% 傷害',
+#                 '如果你擁有終焉閃電：',
+#                 '則消耗一個終焉閃電，並向前發射 1 發黑火彈，對怪物造成 150% 基礎傷害',
+#                 ]
+#         },
+#         "attributes": [
+#             {
+#                 'attribute': 'attack_damage',
+#                 'id': 'base_attack_damage',
+#                 'value': 3.5,
+#                 'slot': 'mainhand',
+#                 'operation': 'add_value'
+#             },
+#             {
+#                 'attribute': 'attack_speed',
+#                 'id': "base_attack_speed",
+#                 'value': -1,
+#                 'slot': 'mainhand',
+#                 'operation': 'add_value'
+#             }
+#         ]
+#     }

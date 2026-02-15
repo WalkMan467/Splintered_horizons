@@ -6,10 +6,16 @@ forceload remove 42 11 42 11
 execute \
     in minecraft:overworld run \
 forceload remove 10055 10310
-function cutscene:opening/remove_camera
+function cutscene:opening/remove_camera/1
+
+schedule function cutscene:opening/remove_forceload 5t
 
 scoreboard players set #cutscene global.main 0
 
+attribute @s waypoint_receive_range modifier remove cutscene
+attribute @s waypoint_receive_range modifier remove cutscene.1
+attribute @s waypoint_transmit_range modifier remove cutscene
+attribute @s waypoint_transmit_range modifier remove cutscene.1
 
 execute \
     positioned 10055 123 10310 \
@@ -88,7 +94,7 @@ execute \
     in minecraft:overworld run \
 tp @a 9999 131 10071 180 0
 
-function cutscene:opening/remove_camera
+function cutscene:opening/remove_camera/1
 
 title @a times 10 40 10
 title @a title ""

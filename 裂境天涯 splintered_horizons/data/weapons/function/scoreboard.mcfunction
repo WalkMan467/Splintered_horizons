@@ -121,6 +121,18 @@ scoreboard players add @a weapon.flame_of_abyss.effect 0
 scoreboard players add @a weapon.flame_of_abyss.effect.cd 0
 
 #===================================================================
+# 終焉之火
+
+scoreboard objectives add weapon.flame_of_finality.cd dummy "終焉之火 CD"
+scoreboard objectives add weapon.flame_of_finality.attack dummy "終焉之火 攻擊"
+scoreboard objectives add weapon.flame_of_finality.attack.timer dummy "終焉之火 攻擊計時器"
+scoreboard objectives add weapon.flame_of_finality.flower.id dummy "終焉之火 花ID"
+
+scoreboard players add @a weapon.flame_of_finality.cd 0
+scoreboard players add @a weapon.flame_of_finality.attack.timer 0
+scoreboard players add @a weapon.flame_of_finality.flower.id 0
+
+#===================================================================
 
 #終焉之墟
 

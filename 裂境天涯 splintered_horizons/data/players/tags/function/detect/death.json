@@ -4,6 +4,7 @@
       "monsters:bossfight/chapter_2/elekiel_phase_2/player_death",
       "monsters:chapter_2/elekiel_phase_2/4/portal/crack/tp/remove",
       "players:stop_animation",
-      "music:reset"
+      "music:reset",
+      "cse:status_effects/apply/clear"
     ]
   }

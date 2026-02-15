@@ -1,0 +1,118 @@
+{
+  "type": "minecraft:item",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "music_disc_11",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "translate": "armor.rockbound_crystal",
+                  "color": "#e4a42f",
+                  "bold": true
+                },
+                "minecraft:lore": [
+                  [
+                    {
+                      "translate": "armor.rockbound_crystal.type",
+                      "italic": false,
+                      "color": "dark_gray"
+                    }
+                  ],
+                  {
+                    "text": ""
+                  },
+                  [
+                    {
+                      "translate": "armor.rockbound_crystal.story.1",
+                      "italic": false,
+                      "color": "blue"
+                    }
+                  ],
+                  [
+                    {
+                      "translate": "armor.rockbound_crystal.story.2",
+                      "italic": false,
+                      "color": "blue"
+                    }
+                  ],
+                  {
+                    "text": ""
+                  },
+                  [
+                    {
+                      "text": "",
+                      "italic": false
+                    },
+                    {
+                      "translate": "armor.rockbound_crystal.skill",
+                      "color": "#2ab172",
+                      "bold": true
+                    }
+                  ],
+                  {
+                    "text": ""
+                  },
+                  [
+                    {
+                      "text": "",
+                      "italic": false
+                    },
+                    {
+                      "translate": "armor.rockbound_crystal.passive_skills",
+                      "color": "#8c00ff",
+                      "bold": true
+                    }
+                  ],
+                  {
+                    "text": ""
+                  },
+                  [
+                    {
+                      "text": "",
+                      "font": "minecraft:icon"
+                    },
+                    {
+                      "translate": "armor.rockbound_crystal.ultimate",
+                      "color": "#ff0000",
+                      "bold": true
+                    },
+                    {
+                      "text": "",
+                      "font": "minecraft:icon"
+                    }
+                  ]
+                ],
+                "minecraft:max_stack_size": 64,
+                "minecraft:item_model": "material/rockbound_crystal",
+                "minecraft:custom_data": "{rc:0b,type:\"item\",id:\"rockbound_crystal\"}",
+                "minecraft:unbreakable": {},
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "attack_damage",
+                    "id": "base_attack_damage",
+                    "amount": 4.0,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "type": "attack_speed",
+                    "id": "base_attack_speed",
+                    "amount": -2.4,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

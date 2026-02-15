@@ -1,18 +1,16 @@
 scoreboard players set cutscene.opening.title cutscene.opening.title.timer 0
 
-item replace entity @a armor.head with leather_helmet[tooltip_display={hide_tooltip:true},item_name={"bold":true,"color":"yellow","italic":false,"text":"Camera"},item_model="camera",equippable={slot:"head",equip_sound:"event.raid.horn",asset_id:"minecraft:air",camera_overlay:"minecraft:screen/fade_out"},enchantments={"binding_curse":1},enchantment_glint_override=false] 1
+gamemode survival @a
+loot replace entity @a armor.head loot {pools:[{rolls:1,entries:[{type:"minecraft:item",name:"minecraft:leather_helmet",functions:[{function:"minecraft:set_components",components:{"minecraft:tooltip_display":{hide_tooltip:1b},"minecraft:item_name":{bold:1b,color:"yellow",italic:0b,text:"Camera"},"minecraft:item_model":"camera","minecraft:equippable":{slot:"head",equip_sound:"event.raid.horn",asset_id:"minecraft:air",camera_overlay:"minecraft:screen/fade_out"},"minecraft:enchantments":{binding_curse:1},"minecraft:enchantment_glint_override":0b}},{function:"minecraft:set_custom_data",tag:{camera:1b}}]}]}]}
 
 stopsound @a voice event.raid.horn
 
-schedule function cutscene:opening/0/title/main 1t
-
-summon area_effect_cloud 9999 95 10070 {custom_particle:{type:"block",block_state:"minecraft:air"},UUID:[I;211,4,1,1],Radius:0f,Duration:360,Tags:["cutscene.opening.0.title"]}
-
-gamemode spectator @a
+schedule function cutscene:opening/0/title/main 3t
 
 execute \
-    as @a[gamemode=spectator] run \
-spectate 000000d3-0000-0004-0000-000100000001
+    in minecraft:overworld run \
+summon area_effect_cloud 9999 95 10070 {Rotation:[180.0f,0.0f],custom_particle:{type:"block",block_state:"minecraft:air"},UUID:[I;211,4,1,1],Radius:0f,Duration:800,Tags:["cutscene.opening.0.title"]}
+
 title @a actionbar ""
 
 scoreboard objectives setdisplay sidebar

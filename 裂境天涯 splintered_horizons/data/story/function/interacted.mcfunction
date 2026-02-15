@@ -79,7 +79,7 @@
     execute \
         as fffffb31-0000-c819-0000-c94100050e3b at @s \
         if data entity @s interaction.timestamp \
-        if score story.chapter_2.ml.6 story.chapter_2 matches 1..18 run \
+        if score story.chapter_2.ml.6 story.chapter_2 matches 1..52 run \
     function story:chapter_2/ml/6/1
 
 # Safe Area
