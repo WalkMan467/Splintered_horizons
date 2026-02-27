@@ -18,6 +18,36 @@
         "color": "blue",
         "bold": false,
         "italic": false
+      },
+      "\n",
+      {
+        "translate": "weapon.enchantment.bleeding_hit.2",
+        "color": "blue",
+        "bold": false,
+        "italic": false
+      },
+      {
+        "translate": "weapon.enchantment.bleeding_hit.3",
+        "with": [
+          {
+            "translate": "player.effect.bleeding",
+            "color": "dark_red",
+            "bold": true,
+            "italic": false,
+            "underlined": true
+          }
+        ],
+        "color": "blue",
+        "bold": false,
+        "italic": false,
+        "underlined": false
+      },
+      "\n",
+      {
+        "translate": "weapon.enchantment.bleeding_hit.4",
+        "color": "blue",
+        "bold": false,
+        "italic": false
       }
     ],
     "show_toast": true,

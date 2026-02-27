@@ -1,7 +1,7 @@
 
 execute \
     on target at @s run \
-function sys:campfire/interaction/store_pos
+function sys:respawnpoint/store_pos
 
 execute \
     on target at @s \

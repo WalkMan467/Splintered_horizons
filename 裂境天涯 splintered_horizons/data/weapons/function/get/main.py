@@ -11,7 +11,7 @@ if settings["give"]:
 
     # 取得 main.py 所在資料夾
     base_dir = os.path.dirname(os.path.abspath(__file__))
-    output_path = os.path.join(base_dir, "#temp.mcfunction")
+    output_path = os.path.join(base_dir, "temp.mcfunction")
 
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(cmd)

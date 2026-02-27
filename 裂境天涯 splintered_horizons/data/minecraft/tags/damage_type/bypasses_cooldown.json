@@ -1,20 +1,21 @@
 {
   "values": [
-    "weapons:bypasses_cooldown",
-    "weapons:bypasses_cooldown_no_knockback",
-    "weapons:type/sword/nightfall",
-    "armors:type/black_hole/damage",
+    "#minecraft:dot",
+    "#weapons:type/sword/nightfall",
+    "#weapons:type/axe/earthquake_axe",
+    "#weapons:type/sword/echo_rhythm",
+    "#weapons:type/sword/otherworld_star",
+    "#weapons:type/scythe/flame_of_finality/attack",
+    "#monsters:chapter_2/elekiel_phase_2/1/all",
+    "weapons:type/sword/kill_sword",
+    "weapons:type/sword/grip_of_withering",
+    "weapons:type/drop/broken_glass/dmg",
     "weapons:type/scythe/ruins_of_the_finality/damage",
     "weapons:type/sword/aquilumera",
-    "weapons:type/sword/nightfall_switch_dmg",
     "weapons:type/sword/spider",
     "weapons:type/sword/morning_light",
-    "monsters:chapter_1/abyssal_soulreaper/effect/dot",
-    "weapons:type/sword/otherworld_star",
-    "weapons:type/sword/otherworld_star_effect",
-    "weapons:type/axe/earthquake_axe/damage",
-    "weapons:type/axe/earthquake_axe/damage_effect",
     "armors:type/symbiotic_blood_oath/damage",
-    "weapons:type/sword/grip_of_withering"
+    "armors:type/black_hole/damage",
+    "monsters:chapter_2/emissary_of_the_temporal_rift/key/dmg"
   ]
 }

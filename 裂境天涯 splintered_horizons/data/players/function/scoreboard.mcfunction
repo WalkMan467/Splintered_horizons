@@ -82,7 +82,7 @@ scoreboard objectives add screen_filters.glitch_effect.noise dummy "[玩家] 螢
 scoreboard objectives add player.join_game.detect.delay dummy "[玩家] 進入遊戲偵測延遲"
 scoreboard objectives add player.tombstone_sys.id dummy "[玩家] 墓碑系統ID"
 scoreboard objectives add player.tombstone_sys.safe_fall_distance dummy "[玩家] 墓碑系統 安全墜落距離偵測"
-
+scoreboard objectives add player.death.delay dummy
 scoreboard players add @a player.no_cd 0
 scoreboard players add @a player.animation.lock 0
 scoreboard players add @a player.click.interval 0

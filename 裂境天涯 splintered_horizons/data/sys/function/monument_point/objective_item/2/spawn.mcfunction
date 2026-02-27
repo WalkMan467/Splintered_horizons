@@ -4,7 +4,7 @@ data modify entity @n[type=item,predicate=sys:monument_point/objective_item/2] P
 
 execute at 0000000d-0000-0001-0000-000100000001 \
     positioned ^ ^ ^4 run \
-summon minecraft:item_display ~ ~ ~ {UUID:[I; 13,3,1,1],Tags:["sys.monument_point.sword","sys.monument_point.main","sys.monument_point.grass"],brightness: {block: 15, sky: 15}, interpolation_duration: 1, item: {components: {"minecraft:item_model": "minecraft:sword/entangling_vine_of_despair/1"}, count: 1, id: "minecraft:iron_sword"}, teleport_duration: 1, transformation: {left_rotation: [-0.38268346f, 0.9238795f, 0.0f, 0.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [2.5f, 2.5000005f, 2.5000002f], translation: [-1.7881393E-7f, 0.49999994f, 1.4901154E-7f]},view_range:1}
+summon minecraft:item_display ~ ~ ~ {UUID:[I; 13,3,1,1],Tags:["sys.monument_point.sword","sys.monument_point.main","sys.monument_point.grass"],bbrightness: {block: 15, sky: 15}, interpolation_duration: 1, item: {components: {"minecraft:item_model": "minecraft:sword/silvaverdis/0"}, count: 1, id: "minecraft:iron_sword"}, teleport_duration: 1, transformation: {left_rotation: [0.0f, 1.0f, 0.0f, 0.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [2.0f, 2.0000005f, 2.0000002f], translation: [0.075f, 0.625f, 1.4901154E-7f]}}
 
 playsound minecraft:entity.ender_eye.death voice @a ^ ^ ^-1 1 0.5
 playsound minecraft:entity.ender_eye.death voice @a ^ ^ ^-1 1 0.5

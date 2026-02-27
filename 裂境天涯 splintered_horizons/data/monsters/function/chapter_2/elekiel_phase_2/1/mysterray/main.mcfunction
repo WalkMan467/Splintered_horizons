@@ -128,7 +128,7 @@ execute \
     if score @s mob.duration matches 320 \
     positioned -916 60 2750 \
     as @a[distance=..60] run \
-damage @s 8 weapons:bypasses_cooldown_no_knockback
+damage @s 8 monsters:chapter_2/elekiel_phase_2/1/mysterray/dmg
 
 execute \
     if score @s mob.duration matches 320 run \

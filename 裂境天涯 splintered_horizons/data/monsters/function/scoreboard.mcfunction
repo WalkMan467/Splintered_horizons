@@ -6,6 +6,9 @@ scoreboard objectives add monster.skill.silence dummy "怪物技能沉默"
 scoreboard objectives add monster.skill.freeze dummy "怪物技能凍結"
 scoreboard objectives add monster.skill.freeze.id dummy "怪物技能凍結 ID"
 scoreboard objectives add monster.abyss_explode.timer dummy "夢魘模式深淵怪物爆炸"
+scoreboard objectives add monster.skill.ai_controller.cd dummy "怪物 AI 控制器 CD"
+scoreboard objectives add monster.skill.ai_controller.casting dummy "怪物 AI 控制器 Cast"
+scoreboard objectives add monster.skill.ai_controller.end dummy "怪物 AI 控制器 End"
 
 scoreboard objectives add global.monsters.health dummy
 scoreboard objectives add particle dummy
@@ -121,5 +124,11 @@ scoreboard objectives add monster.segrina.cd dummy "[怪物] 西格瑞納 CD"
 
 scoreboard objectives add monster.segrina.skill.1.casting dummy "[怪物] 西格瑞納 技能1 施法中"
 scoreboard objectives add monster.segrina.skill.2.casting dummy "[怪物] 西格瑞納 技能2 施法中"
+scoreboard objectives add monster.segrina.skill.3.casting dummy "[怪物] 西格瑞納 技能3 施法中"
+scoreboard objectives add monster.segrina.skill.4.casting dummy "[怪物] 西格瑞納 技能4 施法中"
+
+scoreboard objectives add monster.segrina.skill.3.timer dummy "[怪物] 西格瑞納 技能3 計時器"
+scoreboard objectives add monster.segrina.skill.4.effect dummy "[怪物] 西格瑞納 技能4 負面狀態"
+scoreboard objectives add monster.segrina.skill.4.invincible dummy "[怪物] 西格瑞納 技能4 無敵"
 
 # ===============================================================================

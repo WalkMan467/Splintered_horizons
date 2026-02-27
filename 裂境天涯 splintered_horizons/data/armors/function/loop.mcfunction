@@ -18,7 +18,6 @@ execute \
 function armors:type/black_hole/boots/effect/use
 
 function armors:enchantment/shockwave/main
-
 execute \
     if items entity @s armor.feet *[custom_data~{black_hole:1b} | custom_data={black_hole:1}] run \
 advancement grant @s only armors:type/black_hole/boots/eqipment

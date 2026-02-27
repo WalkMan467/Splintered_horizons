@@ -15,3 +15,10 @@ execute \
     positioned ~ ~0.5 ~ \
     rotated ~ ~90 run \
 function weapons:type/scythe/flame_of_finality/lc/3/fx_2/use
+
+
+execute \
+    anchored feet \
+    rotated ~ 0 \
+    as @e[distance=..4,tag=!weapon.flame_of_finality.flower,type=!#minecraft:dummy_mob,type=!player] at @s run \
+function weapons:type/scythe/flame_of_finality/lc/3/damage

@@ -3,5 +3,5 @@ tag @p[tag=!atker] add atker
 scoreboard players set @p[tag=atker] atk 250
 
 execute \
-    as @p run \
+    as @p[tag=atker] run \
 function dmg_formula:weapons/type/scythe/ruins_of_the_finality/calculate

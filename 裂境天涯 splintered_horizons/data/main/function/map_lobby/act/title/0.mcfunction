@@ -136,8 +136,11 @@ title @a times 20 20 20
 
 execute \
     if score #main.gamestart.title global.main matches 260 run \
-function main:map_lobby/act/start
+function cutscene:opening/0/title/use
 
+execute \
+    if score #main.gamestart.title global.main matches 260 run \
+function main:map_lobby/act/title/reset
 
 execute \
     if score #main.gamestart.title global.main matches 0..260 run \

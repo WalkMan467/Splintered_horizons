@@ -4,6 +4,12 @@ title @s title {"text":"\uE004","font":"minecraft:screen"}
 title @s subtitle ""
 title @s times 5 5 5
 
+playsound minecraft:entity.horse.saddle voice @a ~ ~1 ~ 0.5 0.75
+playsound minecraft:entity.horse.saddle voice @a ~ ~1 ~ 0.5 0.75
+playsound minecraft:entity.illusioner.cast_spell voice @a ~ ~1 ~ 0.5 1
+playsound minecraft:entity.blaze.shoot voice @a ~ ~1 ~ 0.75 0.75
+
+
 tag @s add temp
 
 scoreboard players set #weapon.flame_of_finality.raycast main.raycast 35

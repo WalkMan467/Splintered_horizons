@@ -24,7 +24,7 @@ scoreboard players set @s player.disable.tp_book 10
 
 execute \
     if score #player.count global.main matches 2.. run \
-effect give @a glowing 1 255 true
+effect give @a[tag=!player.death] glowing 1 255 true
 
 # Campfire
 
@@ -63,17 +63,6 @@ function sys:dmg_show/guide
 execute \
     as @e[type=!#dummy_mob,type=!player,distance=..15] at @s run \
 function armors:type/black_hole/boots/effect/main
-
-
-execute at @n[tag=sys.detect.player_death.point,distance=0..,type=marker] run \
-spawnpoint @s ~ ~ ~
-
-
-execute \
-    as @s[tag=player.death] at @s \
-    if entity @n[sort=arbitrary,distance=..1,tag=sys.detect.player_death.point,type=marker] run \
-function players:tp_to_spawnpoint/use
-
 # Weapons
 
 function weapons:type/core/player

@@ -1,8 +1,9 @@
 {
   "values": [
-    "minecraft:mob_attack",
+    "#minecraft:dot",
+    "#weapons:all",
+    "#monsters:all",
     "#minecraft:is_explosion",
-    "minecraft:indirect_magic",
     "#minecraft:is_player_attack",
     "#minecraft:is_projectile",
     "#minecraft:is_fall",
@@ -22,15 +23,9 @@
     "#minecraft:bypass_resistance",
     "#minecraft:bypasses_armor",
     "#minecraft:bypasses_cooldown",
-    "weapons:type/axe/earthquake_axe/damage",
-    "weapons:type/axe/earthquake_axe/damage_effect",
-    "monsters:chapter_3/bloody_blade_spider/dot",
-    "monsters:chapter_2/elekiel/1/space_crack",
-    "monsters:chapter_1/abyssal_soulreaper/effect/dot",
-    "armors:type/symbiotic_blood_oath/damage",
+    "minecraft:indirect_magic",
+    "minecraft:mob_attack",
     "armors:type/black_hole/damage",
-    "armors:type/windriders_legplates/damage",
-    "weapons:type/sword/rock_crushing_greatsword",
-    "weapons:type/sword/grip_of_withering"
+    "armors:type/windriders_legplates/damage"
   ]
 }

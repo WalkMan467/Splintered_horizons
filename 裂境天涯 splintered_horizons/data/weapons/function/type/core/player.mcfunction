@@ -33,6 +33,8 @@ function weapons:type/sword/wind_sword/main
 
 function weapons:type/sword/otherworld_star/main
 
+function weapons:type/scythe/flame_of_finality/main
+
 
 execute \
     if entity @s[tag=twilight_wind.user] run \

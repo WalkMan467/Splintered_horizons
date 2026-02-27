@@ -1,5 +1,9 @@
 # Global
 
+    execute \
+        if entity @s[tag=cutscene.opening.end] run \
+    return 0
+
     # Campfire
     execute \
     if entity @s[gamemode=!spectator] \

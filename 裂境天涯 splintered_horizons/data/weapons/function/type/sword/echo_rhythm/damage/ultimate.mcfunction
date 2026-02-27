@@ -9,8 +9,8 @@ tag @p[tag=!atker] add atker
 scoreboard players set @p[tag=atker] atk 250
 
 execute \
-    as @p run \
-function dmg_formula:weapons/type/sword/echo_rhythm/stronger/calculate
+    as @p[tag=atker] run \
+function dmg_formula:weapons/type/sword/echo_rhythm/ultimate/calculate
 
 scoreboard players set #particle.sound_wave.color particle 2
 function particle:sound_wave/use

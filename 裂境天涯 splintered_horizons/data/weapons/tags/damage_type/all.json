@@ -1,0 +1,8 @@
+{
+  "values": [
+    "#weapons:type/sword/all",
+    "#weapons:type/drop/all",
+    "#weapons:type/axe/all",
+    "#weapons:type/scythe/all"
+  ]
+}

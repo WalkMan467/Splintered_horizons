@@ -145,13 +145,37 @@ function cutscene:opening/6/1_1
 
 execute \
     if score .opening cutscene.story matches 2659 \
-    as @n[type=item_display,tag=aj.aska.root] run \
+    as @n[tag=aj.aska.root,distance=0..,type=item_display] run \
 function animated_java:aska/animations/pause_all
 
 execute \
     if score .opening cutscene.story matches 2659 \
-    as @n[type=item_display,tag=aj.aska.root] run \
+    as @n[tag=aj.aska.root,distance=0..,type=item_display] run \
 function animated_java:aska/animations/death/play
+
+execute \
+    if score .opening cutscene.story matches 2780 run \
+item modify entity @a armor.head [{function:"minecraft:set_item",item:"minecraft:leather_helmet"},{function:"minecraft:set_components",components:{"minecraft:tooltip_display":{hide_tooltip:1},"minecraft:item_name":{bold:true,color:"yellow",italic:false,text:"Camera"},"minecraft:item_model":"camera","minecraft:equippable":{slot:"head",equip_sound:"event.raid.horn",asset_id:"minecraft:air",camera_overlay:"minecraft:screen/fade_out"},"minecraft:enchantments":{binding_curse:1},"minecraft:enchantment_glint_override":false}}]
+
+execute \
+    if score .opening cutscene.story matches 2780 run \
+title @a actionbar ""
+
+execute \
+    if score .opening cutscene.story matches 2780 run \
+title @a title {"translate":"cutscene.opening.story.26","fallback": "多重時空交錯的新世界中"}
+
+execute \
+    if score .opening cutscene.story matches 2780 run \
+title @a subtitle {"translate":"cutscene.opening.story.27","fallback": "一切都將重新開始"}
+
+execute \
+    if score .opening cutscene.story matches 2780 run \
+title @a times 0 60 0
+
+execute \
+    if score .opening cutscene.story matches 2840 run \
+item modify entity @a armor.head [{function:"minecraft:set_item",item:"minecraft:leather_helmet"},{function:"minecraft:set_components",components:{"minecraft:tooltip_display":{hide_tooltip:1},"minecraft:item_name":{bold:true,color:"yellow",italic:false,text:"Camera"},"minecraft:item_model":"camera","minecraft:equippable":{slot:"head",equip_sound:"event.raid.horn",asset_id:"minecraft:air",camera_overlay:"minecraft:screen/cutscene"},"minecraft:enchantments":{binding_curse:1},"minecraft:enchantment_glint_override":false}}]
 
 # score +1
 

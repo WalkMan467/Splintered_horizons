@@ -1,9 +1,11 @@
 {
   "values": [
     "#minecraft:dot",
-    "monsters:chapter_2/elekiel/1/space_crack",
+    "#monsters:chapter_2/elekiel/all",
+    "#monsters:chapter_2/elekiel_phase_2/all",
     "armors:type/black_hole/damage",
     "armors:type/windriders_legplates/damage",
+    "#weapons:true_dmg",
     "#is_explosion",
     "#bypasses_shield",
     "#minecraft:bypasses_invulnerability",

@@ -1,5 +1,10 @@
 function weapons:type/core/main_guide
 
+function weapons:type/sword/aquilumera/detect
+
+execute \
+    as @a at @s run \
+function weapons:type/sword/aquilumera/return/tips
 
 execute \
     as @a \

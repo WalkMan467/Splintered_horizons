@@ -43,9 +43,12 @@ execute \
     as @a[distance=..60] at @s run \
 playsound minecraft:entity.wither.spawn voice @s ~ ~1 ~ 1 1
 
-summon skeleton 762 107 642 {UUID:[I;32123,128,128,5],DeathLootTable:"-",PersistenceRequired:1b,Tags:["freeze.immunity","segrina","monster","monsters.segrina"],Passengers:[{id:"minecraft:marker",Tags:["monster.marker"],data:{Death:"chapter_2/segrina"}}],CustomName:{"bold":false,"color":"gold","fallback":"「守魂使徒」西格瑞納","italic":false,"translate":"monsters.segrina"},equipment:{feet:{id:"minecraft:air",count:1},legs:{id:"minecraft:leather_leggings",count:1,components:{tooltip_display:{hidden_components:["trim"]},equippable:{slot:"legs",asset_id:"air"}}},chest:{id:"minecraft:leather_chestplate",count:1,components:{tooltip_display:{hidden_components:["trim"]},equippable:{slot:"chest",asset_id:"air"}}},head:{id:"minecraft:stone_button",count:1,components:{item_model:"air",equippable:{slot:"head",asset_id:"air"}}},mainhand:{id:"minecraft:wooden_axe",count:1,components:{attribute_modifiers:[{id:"attack_damage",type:"attack_damage",amount:0.0,operation:"add_multiplied_base",slot:"mainhand"}],item_model:"air"}},offhand:{id:"minecraft:air",count:1}},drop_chances:{feet:0.000,legs:0.000,chest:0.000,head:0.000,mainhand:0.000,offhand:0.000},attributes:[{id:"minecraft:armor",base:8},{id:"minecraft:armor_toughness",base:3},{id:"minecraft:attack_damage",base:0},{id:"minecraft:follow_range",base:1024},{id:"minecraft:max_health",base:500},{id:"minecraft:movement_speed",base:0.27},{id:"minecraft:safe_fall_distance",base:1024},{id:"minecraft:scale",base:1}]}
+summon skeleton 762 107 642 {UUID:[I;-32123,3123,23132,23213213],DeathLootTable:"-",PersistenceRequired:1b,Tags:["freeze.immunity","segrina","monster","monsters.segrina"],Passengers:[{id:"minecraft:marker",Tags:["monster.marker"],data:{Death:"chapter_2/segrina"}}],CustomName:{"bold":false,"color":"gold","fallback":"「守魂使徒」西格瑞納","italic":false,"translate":"monsters.segrina"},equipment:{feet:{id:"minecraft:air",count:1},legs:{id:"minecraft:leather_leggings",count:1,components:{tooltip_display:{hidden_components:["trim"]},equippable:{slot:"legs",asset_id:"air"}}},chest:{id:"minecraft:leather_chestplate",count:1,components:{enchantments:{"armors:resilient":2},enchantment_glint_override:false,unbreakable:{},tooltip_display:{hidden_components:["trim"]},equippable:{slot:"chest",asset_id:"air"}}},head:{id:"minecraft:stone_button",count:1,components:{item_model:"air",equippable:{slot:"head",asset_id:"air"}}},mainhand:{id:"minecraft:wooden_axe",count:1,components:{attribute_modifiers:[{id:"attack_damage",type:"attack_damage",amount:0.0,operation:"add_multiplied_base",slot:"mainhand"}],item_model:"air"}},offhand:{id:"minecraft:air",count:1}},drop_chances:{feet:0.000,legs:0.000,chest:0.000,head:0.000,mainhand:0.000,offhand:0.000},active_effects:[{id:"minecraft:invisibility",amplifier:255,duration:-1,show_particles:0b,show_icon:0b,ambient:0b}],attributes:[{id:"minecraft:armor",base:8},{id:"minecraft:armor_toughness",base:3},{id:"minecraft:attack_damage",base:8},{id:"minecraft:follow_range",base:1024},{id:"minecraft:max_health",base:500},{id:"minecraft:movement_speed",base:0.27},{id:"minecraft:safe_fall_distance",base:1024},{id:"minecraft:scale",base:1}]}
 
-effect give 00007d7b-0000-0080-0000-008000000005 instant_damage 1 27 true
+function animated_java:segrina/summon {args:{animation: 'idle',start_animation: true}}
+ride @n[tag=aj.boss_1.root,type=item_display] mount ffff8285-0000-0c33-0000-5a5c0162349d
+
+effect give ffff8285-0000-0c33-0000-5a5c0162349d instant_damage 1 27 true
 
 bossbar add monsters.segrina [{"translate":"monsters.segrina","fallback": "「守魂使徒」西格瑞納"}]
 bossbar set minecraft:monsters.segrina color red
@@ -55,9 +58,21 @@ gamemode adventure @a[tag=chapter_2.segrina.lose]
 tag @a remove chapter_2.segrina.lose
 
 scoreboard players set skill.1 monster.segrina.cd 100
-scoreboard players set skill.2 monster.segrina.cd 300
+scoreboard players set skill.2 monster.segrina.cd 200
+scoreboard players set skill.3 monster.segrina.cd 140
+scoreboard players set skill.4 monster.segrina.cd 440
+
+scoreboard players reset @s monster.segrina.skill.4.invincible
+execute \
+    as @a run \
+function monsters:chapter_2/segrina/4/7
+
 scoreboard players set @s player.detect.is_bossfight 1
 scoreboard players set #boss_area.chapter_2.segrina global.main 1
+
+execute as @e[sort=arbitrary,distance=0..60,tag=monster.segrina.skill.4.monster,type=skeleton] at @s run tp @s ~ -255 ~
+kill @e[sort=arbitrary,distance=0..60,tag=monster.segrina.skill.4.monster,type=skeleton]
+
 
 schedule function monsters:chapter_2/segrina/main 1t
 

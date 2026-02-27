@@ -2,9 +2,13 @@
 # entity
 
 execute \
-    as @e[type=!#minecraft:dummy_mob,distance=..4.5] \
-    unless entity @s[distance=..2] run \
+    as @e[sort=arbitrary,type=!#minecraft:dummy_mob,type=!player,distance=2..4.5] run \
 tag @s add dmger
+
+execute \
+    if entity @n[sort=arbitrary,tag=dmger,type=!#minecraft:dummy_mob,type=!player,distance=2..4.5] run \
+effect give @s instant_health 1 0 true
+
 scoreboard players set @s atk 250
 function dmg_formula:weapons/type/sword/nightfall/passive/calculate
 

@@ -23,7 +23,15 @@ scoreboard players add @s player.death_count 1
 title @s title [{"translate":"tips.player_death.1","fallback":"死","color":"dark_red","bold":true,"font":"minecraft:default"},{"text":"\uE000","font":"minecraft:space"},{"text":"\uE000","font":"minecraft:icon","shadow_color":1,"bold":false,"color":"white"},{"text":"\uE000","font":"minecraft:space"},{"translate":"tips.player_death.2","fallback":"亡","color":"dark_red","bold":true,"font":"minecraft:default"}]
 title @s times 20 60 20
 
+execute at @n[tag=sys.detect.player_death.point,type=marker] run \
+setblock ~ ~ ~ air destroy
+
+execute at @n[tag=sys.detect.player_death.point,type=marker] run \
+spawnpoint @s ~ ~ ~
+
 tag @s add player.death
+scoreboard players set @s player.death.delay 0
+schedule function sys:respawnpoint/tp/main 1t
 
 execute \
     if score @s player.death_count matches ..60 run \

@@ -6,6 +6,10 @@ execute \
     if entity @s[gamemode=!creative,gamemode=!spectator,gamemode=!survival,gamemode=!adventure] run \
 return 0
 
+execute \
+    if entity @s[gamemode=creative] run \
+return 0
+
 # 沒有終焉之眼
 
 execute \

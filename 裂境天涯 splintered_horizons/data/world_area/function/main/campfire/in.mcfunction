@@ -1,3 +1,6 @@
+advancement grant @s only music:main/campfire/icon
+advancement revoke @s only world_area:main/campfire/out
+
 title @s title ["",{"text":"☀","color":"gold"},{"translate":"block.minecraft.campfire","underlined":true,"color":"gold"},{"text":"☀","color":"gold"}]
 title @s subtitle [{"text":""},{"text":"《","bold":true,"color":"gold"},{"translate":"world_area.respawn_point","bold":true,"color":"gold"},{"text":"》","bold":true,"color":"gold"}]
 
@@ -15,7 +18,3 @@ tag @s add campfire.darkness
 
 
 function music:main/campfire/start
-
-advancement grant @s only music:main/campfire/icon
-
-advancement revoke @s only world_area:main/campfire/out

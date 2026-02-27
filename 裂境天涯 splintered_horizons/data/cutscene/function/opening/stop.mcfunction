@@ -37,6 +37,11 @@ execute \
     as @n[distance=..3,type=item_display,tag=aj.kyle.root] run \
 function animated_java:kyle/remove/this
 
+execute \
+    positioned 9998 93 10066 \
+    as @n[distance=..3,type=item_display,tag=aj.kyle.root] run \
+function animated_java:kyle/remove/this
+
 weather clear
 
 scoreboard objectives setdisplay sidebar player.death_count

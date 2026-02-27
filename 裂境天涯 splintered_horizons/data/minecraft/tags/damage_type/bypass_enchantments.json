@@ -1,11 +1,11 @@
 {
   "values": [
-    "weapons:type/sword/echo_rhythm_stronger",
+    "#minecraft:dot",
+    "#minecraft:true_dmg",
+    "#monsters:chapter_2/elekiel/1/all",
+    "#monsters:chapter_2/elekiel_phase_2/1/all",
     "weapons:type/sword/twilight_wind",
-    "monsters:chapter_2/elekiel/1/space_crack",
-    "monsters:chapter_1/abyssal_soulreaper/effect/dot",
     "weapons:type/sword/otherworld_star_effect",
-    "monsters:chapter_3/bloody_blade_spider/dot",
     "armors:type/symbiotic_blood_oath/damage"
   ]
 }

@@ -19,7 +19,7 @@ tag @s add user.temp
 
 execute \
     as @a[distance=..4,tag=temp] run \
-damage @s 5 weapons:bypasses_cooldown by @n[type=item_display,tag=user.temp]
+damage @s 5 monsters:chapter_2/emissary_of_the_temporal_rift/key/dmg by @n[tag=user.temp,distance=0..,type=item_display]
 
 tag @s remove user.temp
 tag @a remove temp

@@ -6,4 +6,4 @@ scoreboard players set ffcef8bf-0031-0421-0000-79ec0000cff9 duration 1000
 
 schedule function cutscene:opening/6/guide 10t
 
-schedule function cutscene:opening/7/use 50s
+schedule function cutscene:opening/end/use 50s

@@ -1,6 +1,14 @@
-tag @a remove cutscene.opening
+tag @a remove cutscene.opening.end
 
-scoreboard players set #cutscene global.main 0
+execute \
+    store result score #send_command_feedback main.gamerule run \
+gamerule send_command_feedback
+
+scoreboard players set #game.start global.main 1
+advancement grant @a only players:new_player
+
+gamerule send_command_feedback false
+gamemode adventure @a
 
 function cutscene:opening/remove_camera/1
 
@@ -9,21 +17,29 @@ execute \
     in minecraft:overworld run \
 function cutscene:opening/remove_forceload
 
+execute \
+    if score #send_command_feedback main.gamerule matches 0 run \
+gamerule send_command_feedback false
 
 execute \
-    in minecraft:overworld run \
-spawnpoint @a 44 65 10
+    if score #send_command_feedback main.gamerule matches 1 run \
+gamerule send_command_feedback true
 
-item replace entity @a armor.head with air 1
 
-stopsound @a record minecraft:bgm.moonlight_sonata
-stopsound @a record minecraft:bgm.nico_cartosio_girl_on_an_iceberg
-
+execute \
+    as @a run \
 attribute @s waypoint_receive_range modifier remove cutscene
+
+execute \
+    as @a run \
 attribute @s waypoint_receive_range modifier remove cutscene.1
+
+execute \
+    as @a run \
 attribute @s waypoint_transmit_range modifier remove cutscene
+
+execute \
+    as @a run \
 attribute @s waypoint_transmit_range modifier remove cutscene.1
 
-execute \
-    as @a[tag=campfire] run \
-function music:chapter_1/reset
+stopsound @a voice minecraft:voice.in_world_area

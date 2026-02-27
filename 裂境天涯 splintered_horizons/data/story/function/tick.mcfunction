@@ -15,6 +15,7 @@ function story:chapter_2/ml/3/main
 function story:chapter_2/ml/4/main
 function story:chapter_2/ml/5/main
 function story:chapter_2/ml/6/main
+function story:chapter_2/ml/7/main
 
 
 execute \

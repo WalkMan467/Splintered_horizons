@@ -59,26 +59,26 @@ scoreboard players set @s player.spawnpoint.pos.x 38
 scoreboard players set @s player.spawnpoint.pos.y 64
 scoreboard players set @s player.spawnpoint.pos.z 11
 
-execute \
-    if score #chapter_test global.main matches ..1 \
-    in minecraft:overworld run \
-tp @s 9999 95 10070
-
-execute \
-    unless score #chapter_test global.main matches -2147483648..2147483647 \
-    in minecraft:overworld run \
-tp @s 9999 95 10070
-
-
 # execute \
 #     if score #chapter_test global.main matches ..1 \
 #     in minecraft:overworld run \
-# tp @s 38 64 11 90 0
+# tp @s 9999 95 10070
 
 # execute \
 #     unless score #chapter_test global.main matches -2147483648..2147483647 \
 #     in minecraft:overworld run \
-# tp @s 38 64 11 90 0
+# tp @s 9999 95 10070
+
+
+execute \
+    if score #chapter_test global.main matches ..1 \
+    in minecraft:overworld run \
+tp @s 38 64 11 180 0
+
+execute \
+    unless score #chapter_test global.main matches -2147483648..2147483647 \
+    in minecraft:overworld run \
+tp @s 38 64 11 180 0
 
 scoreboard players add @s player.death_count 0
 

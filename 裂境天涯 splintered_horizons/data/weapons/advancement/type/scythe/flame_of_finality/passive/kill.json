@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "requirments": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "player": {
+          "slots": {
+            "weapon.mainhand": {
+              "predicates": {
+                "minecraft:custom_data": "{weapon:\"flame_of_finality\"}"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "weapons:type/scythe/flame_of_finality/passive/kill"
+  }
+}

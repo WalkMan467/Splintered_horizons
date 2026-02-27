@@ -19,5 +19,5 @@ function dmg_formula:weapons/type/sword/twilight_wind/damage with storage temp
 
 # reset
 tag @s remove atker
-tag @e[type=!#dummy_mob,tag=dmger] remove dmger
+tag @e[distance=0..,type=!#dummy_mob,tag=dmger] remove dmger
 scoreboard players reset @s atk

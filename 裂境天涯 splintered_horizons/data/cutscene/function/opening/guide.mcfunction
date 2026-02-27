@@ -1,3 +1,5 @@
+execute \
+    if score .opening cutscene.story matches ..3980 run \
 gamemode spectator @s[gamemode=!spectator]
 
 execute \

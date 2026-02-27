@@ -21,7 +21,7 @@ return 0
 execute \
     if score #weapon.flame_of_finality.raycast main.raycast matches 2.. \
     positioned ^ ^ ^0.25 \
-    if entity @n[sort=arbitrary,distance=..1,type=!#minecraft:dummy_mob,type=!player] run \
+    if entity @n[sort=arbitrary,distance=..1.5,type=!#minecraft:dummy_mob,type=!player] run \
 function weapons:type/scythe/flame_of_finality/lc/3/final
 
 # 擊中方塊

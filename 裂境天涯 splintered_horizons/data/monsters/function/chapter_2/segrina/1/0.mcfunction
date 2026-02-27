@@ -15,7 +15,7 @@ tag @s remove monster.segrina.1.target
 
 
 execute \
-    as @r[sort=arbitrary,tag=monster.segrina.1.target,distance=..60] at @s run \
-function cse:status_effects/apply/soul_restraint/use {duration:100, max: 8, value: -1}
+    as @r[sort=arbitrary,tag=monster.segrina.1.target,distance=..60] at @s positioned ~ 107 ~ run \
+function cse:status_effects/apply/soul_restraint/use {duration:200, max: 30, value: -1}
 
 tag @a[sort=arbitrary,distance=..60] remove monster.segrina.1.target
