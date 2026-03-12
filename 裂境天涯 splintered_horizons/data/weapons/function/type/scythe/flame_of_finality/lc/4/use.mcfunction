@@ -1,3 +1,6 @@
+scoreboard players set @s player.click.interval 12
+scoreboard players set @s weapon.flame_of_finality.attack.timer 12
+
 playsound minecraft:entity.horse.saddle voice @a ~ ~1 ~ 0.5 0.75
 playsound minecraft:entity.horse.saddle voice @a ~ ~1 ~ 0.5 0.75
 playsound minecraft:entity.illusioner.cast_spell voice @a ~ ~1 ~ 0.5 1

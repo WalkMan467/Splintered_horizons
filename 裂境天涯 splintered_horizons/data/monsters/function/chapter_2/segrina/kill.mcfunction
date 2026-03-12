@@ -32,8 +32,16 @@ scoreboard players set #boss_area.chapter_2.segrina global.main 0
 kill 01dc4318-ed62-7e6b-0003-873f004ff9e9
 kill 0023442d-ed62-7e6b-0003-873f004ff9e9
 
-execute as @e[sort=arbitrary,distance=0..60,tag=monster.segrina.skill.4.monster,type=skeleton] at @s run tp @s ~ -255 ~
-kill @e[sort=arbitrary,distance=0..60,tag=monster.segrina.skill.4.monster,type=skeleton]
+
+execute \
+    positioned 762 107 642 \
+    as @e[sort=arbitrary,distance=0..60,tag=monster.segrina.skill.4.monster,type=skeleton] at @s run \
+tp @s ~ -255 ~
+
+execute \
+    positioned 762 107 642 \
+    as @e[sort=arbitrary,distance=0..60,tag=monster.segrina.skill.4.monster,type=skeleton] at @s run \
+kill @s
 
 scoreboard players reset @s monster.segrina.skill.4.invincible
 execute \

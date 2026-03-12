@@ -3,6 +3,10 @@
     "minecraft:visual/sky_color": 12171705,
     "minecraft:visual/fog_color": 8947848,
     "minecraft:visual/water_fog_color": 8947848,
+    "minecraft:visual/star_brightness": 1,
+    "minecraft:visual/sky_light_factor": 0,
+    "minecraft:visual/sun_angle": 180,
+    "minecraft:visual/moon_angle": 180,
     "minecraft:visual/ambient_particles": [
       {
         "particle": {

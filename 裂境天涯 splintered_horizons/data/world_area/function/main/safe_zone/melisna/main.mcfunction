@@ -21,20 +21,20 @@ rotate @s 100 0
 
     # Detect
     execute \
-    positioned 774 146 987 \
+    positioned 774 150 987 \
     store result score #world_area.main.safe_zone.melisna global.main \
     if entity @a[distance=..16,gamemode=!spectator]
 
     # If true;
     execute \
-    positioned 774 146 987 \
+    positioned 774 150 987 \
     if score #world_area.main.safe_zone.melisna global.main matches 1 \
     if score #world_area.main.safe_zone.melisna_temp global.main matches 0 run \
 function world_area:main/safe_zone/melisna/true
 
     # Else
     execute \
-    positioned 774 146 987 \
+    positioned 774 150 987 \
     if score #world_area.main.safe_zone.melisna global.main matches 0 \
     if score #world_area.main.safe_zone.melisna_temp global.main matches 1 run \
 function world_area:main/safe_zone/melisna/false

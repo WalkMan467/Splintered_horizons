@@ -10,12 +10,6 @@
       }
     },
     "minecraft:gameplay/respawn_anchor_works": false,
-    "minecraft:visual/fog_color": "#000000",
-    "minecraft:visual/sky_color": "#000000",
-    "minecraft:visual/star_brightness": 1,
-    "minecraft:visual/sky_light_factor": 0,
-    "minecraft:visual/sun_angle": 180,
-    "minecraft:visual/moon_angle": 180,
     "minecraft:gameplay/piglins_zombify": false,
     "minecraft:gameplay/creaking_active": false,
     "minecraft:gameplay/monsters_burn": false,

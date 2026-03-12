@@ -62,6 +62,16 @@ advancement grant @s only world_area:chapter_2/magical_land/in
     unless biome ~ ~ ~ world_area:chapter_2/magical_land run \
 advancement grant @s only world_area:chapter_2/magical_land/out
 
+    # Magical Land
+    
+    execute \
+    if entity @s[gamemode=!spectator] \
+    if biome ~ ~ ~ world_area:chapter_2/garden_of_time_space_rifts run \
+advancement grant @s only world_area:chapter_2/garden_of_time_space_rifts/in
+    execute \
+    unless biome ~ ~ ~ world_area:chapter_2/garden_of_time_space_rifts run \
+advancement grant @s only world_area:chapter_2/garden_of_time_space_rifts/out
+
     # Temple of Light
     
     execute \

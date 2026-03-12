@@ -1,31 +1,36 @@
 ## ---開頭--- ##
 
-    execute \
-        if score #story.chapter_1.opening.4 global.main matches -1 run \
-    return 0
-    
+    scoreboard players add #story.chapter_1.sq.2_temp global.main 0
+    scoreboard players add #story.chapter_1.sq.2.enabled global.main 0
+
     # Detect
     execute \
-        positioned -2 65 22 \
-        store result score #story.chapter_1.opening.4 global.main \
-    if entity @a[distance=..10,gamemode=!spectator]
+        positioned 158 91 -429 \
+        store result score #story.chapter_1.sq.2 global.main \
+    if entity @a[distance=..16,gamemode=!spectator]
 
     execute \
-        positioned -2 65 22 \
-        as @n[tag=aj.sophia.root,limit=1,distance=..10,type=item_display] at @s \
-        facing entity @p[distance=..10] eyes run \
-    rotate @s ~ 0
+        positioned 158 91 -429 \
+        as 0004c3a7-ffff-827d-0031-079d00005a5b at @s \
+        facing entity @p[distance=..8] feet run \
+    rotate @s ~ ~
+
+        execute \
+        positioned 158 91 -429 \
+        as 0004c3a7-ffff-827d-0031-079d00005a5b at @s \
+        unless entity @p[sort=arbitrary,distance=..8] run \
+    rotate @s 180 0
 
     # If true;
     execute \
-        positioned -2 65 22 \
-        if score #story.chapter_1.opening.4 global.main matches 1 \
-        if score #story.chapter_1.opening.4_temp global.main matches 0 run \
-    function story:chapter_1/sq/1/true
+        positioned 158 91 -429 \
+        if score #story.chapter_1.sq.2 global.main matches 1 \
+        if score #story.chapter_1.sq.2_temp global.main matches 0 run \
+    function story:chapter_1/sq/2/true
 
     # Else
     execute \
-        positioned -2 65 22 \
-        if score #story.chapter_1.opening.4 global.main matches 0 \
-        if score #story.chapter_1.opening.4_temp global.main matches 1 run \
-    function story:chapter_1/sq/1/false
+        positioned 158 91 -429 \
+        if score #story.chapter_1.sq.2 global.main matches 0 \
+        if score #story.chapter_1.sq.2_temp global.main matches 1 run \
+    function story:chapter_1/sq/2/false

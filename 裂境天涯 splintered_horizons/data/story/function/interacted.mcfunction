@@ -26,7 +26,7 @@
         as 00000002-0000-01ff-0000-02270000000b at @s \
         if data entity @s interaction.timestamp \
         if score story.chapter_1.mq.4 story.chapter_1 matches 1..6 run \
-    function story:chapter_1/mq/4/1
+    function story:other/chapter_2/1/1
 
     execute \
         as ffffa1bb-0000-1074-ffff-5b6d00007d70 at @s \
@@ -41,6 +41,13 @@
         if data entity @s interaction.timestamp \
         if score story.chapter_1.sq.1 story.chapter_1 matches 1..13 run \
     function story:chapter_1/sq/1/1
+
+    execute \
+        as 0004e729-0000-1087-0000-084b00089f81 at @s \
+        if data entity @s interaction.timestamp \
+        if score story.chapter_1.sq.2 story.chapter_1 matches 1..27 run \
+    function story:chapter_1/sq/2/1
+
 
 # Chapter 2
 
@@ -65,18 +72,6 @@
     function story:chapter_2/ml/3/1
 
     execute \
-        as 0007d070-0000-c819-0000-c94100050e3b at @s \
-        if data entity @s interaction.timestamp \
-        if score story.chapter_2.ml.4 story.chapter_2 matches 1..18 run \
-    function story:chapter_2/ml/4/1
-
-    execute \
-        as 000052f9-0282-94f1-0000-a4890007fb72 at @s \
-        if data entity @s interaction.timestamp \
-        if score story.chapter_2.ml.5 story.chapter_2 matches 1..12 run \
-    function story:chapter_2/ml/5/1
-
-    execute \
         as fffffb31-0000-c819-0000-c94100050e3b at @s \
         if data entity @s interaction.timestamp \
         if score story.chapter_2.ml.6 story.chapter_2 matches 1..52 run \
@@ -87,6 +82,16 @@
         if data entity @s interaction.timestamp \
         if score story.chapter_2.ml.7 story.chapter_2 matches 1..18 run \
     function story:chapter_2/ml/7/1
+
+# Chapter 3
+
+    # Main Quests
+
+    execute \
+        as 0007d070-0000-c819-0000-c94100050e3b at @s \
+        if data entity @s interaction.timestamp \
+        if score story.other.chapter_2.1 story.other matches 1..18 run \
+    function story:other/chapter_2/1/1
 
 # Safe Area
 

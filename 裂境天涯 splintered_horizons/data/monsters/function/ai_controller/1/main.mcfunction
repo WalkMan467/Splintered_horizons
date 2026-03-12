@@ -6,11 +6,11 @@ scoreboard players add @s monster.skill.ai_controller.casting 1
 
 execute \
     if score @s monster.skill.ai_controller.casting matches 1 run \
-function monsters:ai_controller/1/0
+function monsters:ai_controller/1/check
 
 execute \
-    if score @s monster.skill.ai_controller.casting matches 100 run \
-function monsters:ai_controller/1/1
+    if score @s monster.skill.ai_controller.casting matches 1 run \
+function monsters:ai_controller/1/0 with storage minecraft:mob_item_model equipment
 
 execute \
     if score @s monster.skill.ai_controller.casting >= @s monster.skill.ai_controller.end run \

@@ -4,6 +4,7 @@ function story:chapter_1/mq/3/main
 function story:chapter_1/mq/4/main
 function story:chapter_1/mq/5/main
 function story:chapter_1/sq/1/main
+function story:chapter_1/sq/2/main
 
 function story:chapter_2/in_safe_zone/1/main
 function story:chapter_2/in_safe_zone/2/main
@@ -12,11 +13,11 @@ function story:chapter_2/in_safe_zone/3/main
 function story:chapter_2/ml/1/main
 function story:chapter_2/ml/2/main
 function story:chapter_2/ml/3/main
-function story:chapter_2/ml/4/main
 function story:chapter_2/ml/5/main
 function story:chapter_2/ml/6/main
 function story:chapter_2/ml/7/main
 
+function story:other/chapter_2/1/main
 
 execute \
     if score #story:icon/proper_noun/eye_of_finality global.main matches 1.. run \

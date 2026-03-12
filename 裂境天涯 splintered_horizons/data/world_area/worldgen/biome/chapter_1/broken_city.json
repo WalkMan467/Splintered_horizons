@@ -1,6 +1,10 @@
 {
   "attributes": {
     "minecraft:visual/sky_color": "#0e0101",
+    "minecraft:visual/star_brightness": 1,
+    "minecraft:visual/sky_light_factor": 0,
+    "minecraft:visual/sun_angle": 180,
+    "minecraft:visual/moon_angle": 180,
     "minecraft:visual/ambient_particles": [
       {
         "particle": {

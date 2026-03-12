@@ -1,3 +1,6 @@
+scoreboard players set @s player.click.interval 7
+scoreboard players set @s weapon.flame_of_finality.attack.timer 15
+
 execute \
     rotated ~-45 -15 \
     anchored eyes run \

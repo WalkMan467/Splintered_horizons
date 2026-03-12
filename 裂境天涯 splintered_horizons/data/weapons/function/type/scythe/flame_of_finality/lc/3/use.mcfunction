@@ -1,3 +1,6 @@
+scoreboard players set @s player.click.interval 8
+scoreboard players set @s weapon.flame_of_finality.attack.timer 15
+
 scoreboard players set @s weapon.flame_of_finality.flower.id 1
 
 title @s title {"text":"\uE004","font":"minecraft:screen"}

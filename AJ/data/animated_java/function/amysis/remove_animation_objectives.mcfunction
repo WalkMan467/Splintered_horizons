@@ -3,4 +3,4 @@ scoreboard objectives remove aj.sit_down.frame
 scoreboard objectives remove aj.idle.frame
 scoreboard objectives remove aj.cutscene_chapter_2_safe_zone_1.frame
 scoreboard objectives remove aj.cutscene_opening_1.frame
-tellraw @a [[{"text":"\n[","color":"gray"},{"text":"AJ","color":"aqua"},"] ",[{"text":"(from ","color":"gray","italic":true},"amysis",")"]," -> "],{"text":"Successfully removed known animation scoreboard objectives.","color":"red"},{"text":"\nIf you have exported multiple times you may have to manually remove some objectives from previous exports manually, as Animated Java can only remove the latest export's objectives.","color":"gray","italic":true},["\n"]]
+tellraw @a [{color:'gray',text:'\n '},{color:'#00aced',text:'ᴀɴɪᴍᴀᴛᴇᴅ ᴊᴀᴠᴀ'},{color:'dark_gray',italic:true,text:'\n (animated_java:amysis)'},'\n → ',{color:'green',text:'Successfully uninstalled '},{color:'yellow',text:'amysis'},{color:'green',text:'!'},{color:'gray',italic:true,text:'\n If you have exported multiple times, you may have to remove objectives from previous exports manually, as Animated Java only knows about the objectives from the most recent export.'},'\n']

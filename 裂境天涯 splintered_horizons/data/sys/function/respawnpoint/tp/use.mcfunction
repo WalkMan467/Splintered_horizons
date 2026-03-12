@@ -17,15 +17,15 @@ execute \
 return 0
 
 execute \
-    if score @s player.death.delay matches ..10 run \
+    if score @s player.death.delay matches ..20 run \
 function sys:respawnpoint/tp/loading
 
 execute \
-    if score @s player.death.delay matches ..10 run \
+    if score @s player.death.delay matches ..20 run \
 scoreboard players add @s player.death.delay 1
 
 execute \
-    unless score @s player.death.delay matches 10.. run \
+    unless score @s player.death.delay matches 20.. run \
 return 0
 
 scoreboard players reset @s player.death.delay

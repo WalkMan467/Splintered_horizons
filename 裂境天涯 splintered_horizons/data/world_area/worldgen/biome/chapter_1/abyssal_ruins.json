@@ -1,5 +1,9 @@
 {
   "attributes": {
+    "minecraft:visual/star_brightness": 1,
+    "minecraft:visual/sky_light_factor": 0,
+    "minecraft:visual/sun_angle": 180,
+    "minecraft:visual/moon_angle": 180,
     "minecraft:visual/ambient_particles": [
       {
         "particle": {
@@ -8,7 +12,8 @@
         "probability": 0.05
       }
     ],
-    "minecraft:visual/sky_color": "#000000"
+    "minecraft:visual/sky_color": "#000000",
+    "minecraft:visual/sky_light_color": 0
   },
   "temperature": 0.8,
   "downfall": 0,

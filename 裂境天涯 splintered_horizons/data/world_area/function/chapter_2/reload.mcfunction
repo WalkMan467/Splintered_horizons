@@ -6,4 +6,5 @@ advancement revoke @a only world_area:chapter_2/temple_of_light/in
 advancement revoke @a only world_area:chapter_2/temple_of_light/bossfight/in
 advancement revoke @a only world_area:chapter_2/temple_of_light/bossfight/elekiel_phase_2/bossfight_area/in
 advancement revoke @a only world_area:chapter_2/magical_land/in
+advancement revoke @a only world_area:chapter_2/garden_of_time_space_rifts/in
 advancement revoke @a only world_area:chapter_2/main/in

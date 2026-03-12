@@ -10,6 +10,10 @@
     ],
     "minecraft:visual/sky_color": 9276813,
     "minecraft:visual/fog_color": 4212557,
+    "minecraft:visual/star_brightness": 1,
+    "minecraft:visual/sky_light_factor": 0,
+    "minecraft:visual/sun_angle": 180,
+    "minecraft:visual/moon_angle": 180,
     "minecraft:visual/water_fog_color": 4212557
   },
   "temperature": 0.8,

@@ -1,0 +1,1 @@
+execute as @a at @s as @n[distance=..30,tag=sys.zipline_platform.as,type=minecraft:armor_stand] at @s run function c:start

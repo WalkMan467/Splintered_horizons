@@ -37,6 +37,12 @@ execute \
 function monsters:chapter_2/forest_messenger/cocoon/remove
 
 execute \
+    positioned -916 60 2750 \
+    as @e[sort=arbitrary,distance=..60,tag=monster.elekiel_phase_2.1.mysterray,type=item_display] at @s \
+    on passengers run \
+function monsters:chapter_2/elekiel_phase_2/fx.void
+
+execute \
     as @a at @s run \
 function monsters:chapter_2/elekiel_phase_2/4/portal/crack/tp/remove
 

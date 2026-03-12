@@ -19,11 +19,11 @@
         positioned 14 83 -337 \
         if score #story.chapter_1.mq.4 global.main matches 1 \
         if score #story.chapter_1.mq.4_temp global.main matches 0 run \
-    function story:chapter_1/mq/4/true
+    function story:other/chapter_2/1/true
 
     # Else;
     execute \
         positioned 14 83 -337 \
         if score #story.chapter_1.mq.4 global.main matches 0 \
         if score #story.chapter_1.mq.4_temp global.main matches 1 run \
-    function story:chapter_1/mq/4/false
+    function story:other/chapter_2/1/false

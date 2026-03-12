@@ -11,6 +11,7 @@ playsound minecraft:entity.witch.drink voice @a ~ ~1 ~ 1 1
 particle minecraft:heart ~ ~1 ~ 0.5 0.5 0.5 0 4
 scoreboard players set @s monster.segrina.skill.4.invincible 100
 effect give @s glowing 5 255 true
+attribute @s max_health base reset
 
 execute \
     if score @s monster.segrina.skill.4.effect matches 4 run \

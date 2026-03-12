@@ -1,10 +1,10 @@
-scoreboard players set #story.chapter_1.opening.4_temp global.main 0
+scoreboard players set #story.chapter_1.sq.2_temp global.main 0
 
-kill 00000002-0000-0139-0000-003700000033
-kill @e[tag=story.chapter_1.opening.4]
+tp 0004c3a7-ffff-827d-0031-079d00005a5b ~ -255 ~
+tp 00038799-ffff-827d-ffff-827d00003018 ~ -255 ~
 
-execute \
-    as @n[tag=aj.sophia.root,limit=1,distance=..10,type=item_display] run \
-function animated_java:sophia/remove/this
+kill 00038799-ffff-827d-ffff-827d00003018
+kill 0004c3a7-ffff-827d-0031-079d00005a5b
+kill 0004e729-0000-1087-0000-084b00089f81
 
-scoreboard players set story.chapter_1.sq.1 story.chapter_1 1
+scoreboard players set story.chapter_1.sq.2 story.chapter_1 1

@@ -2,6 +2,7 @@ title @s title ["",{"text":"☀","color":"yellow"},{"translate":"world_area.icon
 title @s subtitle [{"text":""},{"text":"《","bold":true,"color":"gold"},{"translate":"monument.icon.chapter_2","bold":true,"color":"gold"},{"text":"》","bold":true,"color":"gold"}]
 title @s times 20 20 10
 
+
 stopsound @s voice minecraft:entity.allay.ambient_without_item
 stopsound @s voice minecraft:block.bell.resonate
 playsound minecraft:entity.allay.ambient_without_item voice @s ~ ~1 ~ 1 1

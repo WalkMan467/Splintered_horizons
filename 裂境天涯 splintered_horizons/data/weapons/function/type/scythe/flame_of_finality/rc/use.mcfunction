@@ -15,10 +15,11 @@ execute \
 scoreboard players remove @s player.finality_tunder 1
 
 attribute @s attack_damage modifier remove weapon.flame_of_finality
+tag @s add weapon.flame_of_finality.user
 
 execute \
     unless score @s weapon.flame_of_finality.attack matches 2.. run \
-function weapons:type/scythe/flame_of_finality/rc/attack/1
+function weapons:type/scythe/flame_of_finality/rc/attack/1/use
 
 execute \
     if score @s weapon.flame_of_finality.attack matches 2 run \
@@ -29,3 +30,4 @@ execute \
 function weapons:type/scythe/flame_of_finality/rc/attack/3
 
 attribute @s attack_damage modifier add weapon.flame_of_finality -1 add_multiplied_base
+tag @s remove weapon.flame_of_finality.user

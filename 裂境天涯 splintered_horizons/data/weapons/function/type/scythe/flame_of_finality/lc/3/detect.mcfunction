@@ -2,20 +2,6 @@ scoreboard players remove #weapon.flame_of_finality.raycast main.raycast 1
 
 # particle flame ~ ~ ~ 0.25 0.25 0.25 0 3 force @a
 
-# 擊中敵人
-
-execute \
-    if score #weapon.flame_of_finality.raycast main.raycast matches 2.. \
-    positioned ^ ^ ^0.25 \
-    if entity @n[distance=..1,tag=trap.marker,type=marker] run \
-function weapons:type/scythe/flame_of_finality/lc/3/final
-
-execute \
-    if score #weapon.flame_of_finality.raycast main.raycast matches 2.. \
-    positioned ^ ^ ^0.25 \
-    if entity @n[distance=..1,tag=trap.marker,type=marker] run \
-return 0
-
 # 擊中實體
 
 execute \

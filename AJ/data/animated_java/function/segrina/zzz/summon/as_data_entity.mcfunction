@@ -252,3 +252,6 @@ data modify entity @s data.uuids_by_name.bone_8 set from storage animated_java:g
 execute on vehicle on passengers if entity @s[tag=aj.segrina.node.7] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_7 set from storage animated_java:gu out
+execute on vehicle on passengers if entity @s[tag=aj.segrina.node.ring] run function animated_java:global/gu/get_entity_uuid_string
+data modify entity @s data.uuids append from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.bone_ring set from storage animated_java:gu out

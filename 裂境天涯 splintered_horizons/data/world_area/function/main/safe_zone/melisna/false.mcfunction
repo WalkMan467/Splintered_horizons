@@ -6,7 +6,7 @@ kill @n[tag=world_area.main.safe_zone.melisna,type=mannequin]
 
 
 execute \
-    positioned 773 146 989 \
+    positioned 773 150 989 \
     as @e[tag=aj.isokla.root,type=item_display] run \
 function animated_java:isokla/remove/this
 
