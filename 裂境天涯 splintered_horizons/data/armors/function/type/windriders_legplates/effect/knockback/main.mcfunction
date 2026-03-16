@@ -13,7 +13,7 @@ scoreboard players remove @e[type=!player,type=!#minecraft:dummy_mob,scores={arm
 
 execute \
     as @e[type=!player,type=!#minecraft:dummy_mob] at @s \
-    unless score @s entity.dummy_mob matches 1.. facing entity @n[tag=armor.windriders_legplates.effect,distance=..4] feet rotated ~ 0 run \
+    unless score @s sys.dummy_mob matches 1.. facing entity @n[tag=armor.windriders_legplates.effect,distance=..4] feet rotated ~ 0 run \
 function armors:type/windriders_legplates/effect/knockback/run
 
 

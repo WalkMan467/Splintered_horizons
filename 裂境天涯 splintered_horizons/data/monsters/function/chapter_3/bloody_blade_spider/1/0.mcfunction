@@ -27,7 +27,7 @@ tag @a[distance=..6,tag=monsters.bloody_blade_spider.target,gamemode=creative] r
 
 execute \
     as @a[distance=..6,tag=monsters.bloody_blade_spider.target] \
-    if score @s entity.dummy_mob matches 1.. run \
+    if score @s sys.dummy_mob matches 1.. run \
 tag @s remove monsters.bloody_blade_spider.target
 
 tag @p[distance=..6,tag=monsters.bloody_blade_spider.target] add temp

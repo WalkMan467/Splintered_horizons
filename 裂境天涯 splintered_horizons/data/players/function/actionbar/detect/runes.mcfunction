@@ -35,6 +35,14 @@ execute \
 return 0
 
 execute \
+    if score @s player.actionbar.zipline_platform matches 1.. run \
+return 0
+
+execute \
+    if score @s player.actionbar.zipline_platform.useing matches 1.. run \
+return 0
+
+execute \
     if score @s player.actionbar.tree_of_world_memory.1 matches 1.. run \
 return 0
 

@@ -7,7 +7,7 @@ tag @a[tag=!animation,gamemode=spectator] remove temp
 
 execute \
     as @a[tag=temp] \
-    if score @s entity.dummy_mob matches 1.. run \
+    if score @s sys.dummy_mob matches 1.. run \
 tag @s remove temp
 
 

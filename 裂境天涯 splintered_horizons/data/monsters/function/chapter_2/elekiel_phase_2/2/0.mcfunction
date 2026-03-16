@@ -7,7 +7,7 @@ tag @a[scores={monster.elekiel_phase_2.skill.4.effect.void=1..}] remove temp
 
 execute \
     as @a \
-    if score @s entity.dummy_mob matches 1.. run \
+    if score @s sys.dummy_mob matches 1.. run \
 tag @s remove temp
 
 tag @r[tag=temp,distance=..60] add monster.elekiel_phase_2.skill.2.target

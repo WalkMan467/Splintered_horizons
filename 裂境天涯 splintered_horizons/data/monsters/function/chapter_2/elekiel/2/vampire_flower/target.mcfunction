@@ -6,7 +6,7 @@ tag @a[tag=chapter_2.elekiel.lose] remove temp
 
 execute \
     as @a \
-    if score @s entity.dummy_mob matches 1.. run \
+    if score @s sys.dummy_mob matches 1.. run \
 tag @s remove temp
 
 tag @a remove temp

@@ -1,45 +1,45 @@
 def build_item_struct():
     return {
-        "name": ['終焉雙重火', "#CE0000", '鐮刀 / 神話'],
+        "name": ['✮天地乖離開闢之星✮', "#ff0000", '劍 / 管理員武器'],
         "story": {
-            'info': ['最終決戰過後，舊宇宙迎來了終點的結局','同時，宇宙出現了由深淵延伸的新力量「終焉」','這把武器的誕生目前無法得知','同時也埋藏了很多秘密'],
+            'info': ['單純輔助殺怪弄的管理員武器'],
             'color': 'blue'
         },
         "item_data": {
             'real_item': 'iron_sword',
-            'id': 'flame_of_finality',
-            'item_model': '"scythe/flame_of_finality/1"',
+            'id': 'kill_sword',
+            'item_model': '"sword/enuma_elish/1"',
             
-            'custom_data': 'type:"scythe",rarity:"mythic",weapon:"flame_of_finality",forging_table:1b',
+            'custom_data': 'type:"sword",rarity:"mythic",weapon:"kill_sword"',
             
             'rc': True,
-            'lc': True,
+            'lc': False,
 
-            'max_damage': 200,
+            'max_damage': 0,
             'max_stack_size': 1,
             'other': [
                 'enchantment_glint_override=false',
                 'tooltip_style="mythic"',
-                'minecraft:enchantments={"weapons:lc":1}'
+                'kinetic_weapon={delay_ticks:5,contact_cooldown_ticks:10000,forward_movement:0.0,damage_multiplier:0.0,knockback_conditions:{max_duration_ticks:10000},damage_conditions:{max_duration_ticks:10000}}',
+                'piercing_weapon={deals_knockback:false,dismounts:false,sound:"item.spear.attack",hit_sound:"item.spear.hit"}',
+                'swing_animation={duration:20,type:"stab"}'
             ]
         },
         "skill": {
-            "is_skill": False,
+            "is_skill": True,
             "cd": 0,
-            "name": ["紅炎之舞", "#A70000", "#7A0000"],
+            "name": ["遠程清除", "#7a0000", "#ff0000"],
             "info": [
-                "普通攻擊分為 4 段特殊攻擊：",
-                "",
-                "第一段：向左揮砍對前方 3 格內怪物造成 100% 基礎傷害",
-                "第二段：向右揮砍對前方 3 格內怪物造成 100% 基礎傷害",
-                "第三段：在前方 3 格遠的位置召喚【火紅蓮】",
-                "並且對 1.5 格範圍內怪物造成 150% 基礎傷害",
-                "第四段：引爆【火紅蓮】並且對 1.5 格範圍內怪物造成 150% 基礎傷害，",
-                "並且給予你一個終焉閃電"
+                {
+                    "text": "釋放 [%s] 投射射線偵測擊殺所有準心的怪物",
+                    "with": [
+                        {"keybind":"key.use","underlined":true,"color":"dark_green"}
+                    ]
+                }
             ]
         },
         "passive_skills": {
-            'is_passive_skills': True,
+            'is_passive_skills': False,
             'cd': 0,
             'name': ['紅炎之舞', '#A70000', '#7A0000'],
             'info': [
@@ -54,7 +54,7 @@ def build_item_struct():
                 ]
         },
         "ultimate": {
-            'is_ultimate': True,
+            'is_ultimate': False,
             'cd': 20,
             'name': ['八重黑火', '#ff0000', '#7a0000'],
             'info': [
@@ -69,16 +69,16 @@ def build_item_struct():
             {
                 'attribute': 'attack_damage',
                 'id': 'base_attack_damage',
-                'value': 3.5,
+                'value': 9999999,
                 'slot': 'mainhand',
-                'operation': 'add_value'
+                'operation': 'add_multiplied_total'
             },
             {
                 'attribute': 'attack_speed',
                 'id': "base_attack_speed",
-                'value': -1,
+                'value': 9999999,
                 'slot': 'mainhand',
-                'operation': 'add_value'
+                'operation': 'add_multiplied_total'
             }
         ]
     }

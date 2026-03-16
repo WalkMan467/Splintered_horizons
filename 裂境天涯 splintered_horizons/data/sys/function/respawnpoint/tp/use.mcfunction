@@ -30,6 +30,10 @@ return 0
 
 scoreboard players reset @s player.death.delay
 
+execute \
+    if block ~ ~-1 ~ #penetrate run \
+setblock ~ ~-1 ~ bedrock replace
+
 attribute @s entity_interaction_range modifier remove sys.respawnpoint.tp.loading
 attribute @s block_interaction_range modifier remove sys.respawnpoint.tp.loading
 attribute @s attack_damage modifier remove sys.respawnpoint.tp.loading

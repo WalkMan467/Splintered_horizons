@@ -28,4 +28,4 @@ attribute @s jump_strength modifier remove monster.elekiel_phase_2.skill.4.effec
 attribute @s block_interaction_range modifier remove monster.elekiel_phase_2.skill.4.effect.void
 attribute @s entity_interaction_range modifier remove monster.elekiel_phase_2.skill.4.effect.void
 
-scoreboard players reset @s entity.dummy_mob
+scoreboard players reset @s sys.dummy_mob

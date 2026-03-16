@@ -83,7 +83,7 @@ tag @a remove monster.elekiel_phase_2.4.death_timer
 bossbar remove chapter_2.elekiel_phase_2.4
 scoreboard players reset #chapter_2.elekiel_phase_2.4 monster.elekiel_phase_2.skill.2.casting
 
-scoreboard players reset @a entity.dummy_mob
+scoreboard players reset @a sys.dummy_mob
 scoreboard players reset @a monster.elekiel_phase_2.skill.4.effect.void
 scoreboard players reset #monster.elekiel_phase_2.skill.4.portal.actived global.main
 scoreboard players set @s player.detect.is_bossfight 0

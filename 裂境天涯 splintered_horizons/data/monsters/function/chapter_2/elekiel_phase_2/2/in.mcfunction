@@ -2,7 +2,7 @@ advancement revoke @s only monsters:chapter_2/elekiel_phase_2/2/out
 
 
 execute \
-    if score @s entity.dummy_mob matches 1.. run \
+    if score @s sys.dummy_mob matches 1.. run \
 return 0
 
 execute \

@@ -18,3 +18,15 @@ summon minecraft:text_display ~ ~ ~ {Tags:["sys.campfire.text"],alignment: "cent
 execute \
     positioned ~ ~-5 ~ run \
 function sys:add_death_point
+
+setblock ~ ~-6 ~ bedrock replace
+setblock ~1 ~-4 ~ bedrock replace
+setblock ~-1 ~-4 ~ bedrock replace
+setblock ~ ~-4 ~1 bedrock replace
+setblock ~ ~-4 ~-1 bedrock replace
+
+setblock ~1 ~-5 ~ bedrock replace
+setblock ~-1 ~-5 ~ bedrock replace
+setblock ~ ~-5 ~1 bedrock replace
+setblock ~ ~-5 ~-1 bedrock replace
+setblock ~ ~-3 ~ bedrock replace

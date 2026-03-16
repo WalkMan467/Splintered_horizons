@@ -50,7 +50,7 @@ schedule function sys:forging_table/main 1t
 schedule function sys:mini_game/hit_the_bullseye/main 1t
 schedule function sys:monster_wave/main/loop 1t
 schedule function monsters:chapter_2/elekiel_phase_2/fx.main 1t
-schedule function sys:environmental_mechanism/chapter_1/gravity_disturbance_area/point/schedule 30s
+schedule function sys:fall_immunity/main 1t
 
 # Hotbar Switching
 schedule function hotbar_sound:guide 2t

@@ -1,7 +1,7 @@
 
 execute \
     as @e[type=!player,type=!#dummy_mob,distance=..8] \
-    unless score @s entity.dummy_mob matches 1.. run \
+    unless score @s sys.dummy_mob matches 1.. run \
 effect give @s slowness 3 2 false
 
 tag @e[type=!player,type=!#dummy_mob,distance=..8] add dmger

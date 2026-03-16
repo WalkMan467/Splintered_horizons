@@ -36,6 +36,9 @@ scoreboard objectives add player.actionbar.otherworld_portal.2 dummy "[玩家] a
 scoreboard objectives add player.actionbar.tree_of_world_memory.1 dummy "[玩家] actionbar 狀態機 世界記憶之樹提示"
 scoreboard objectives add player.actionbar.tree_of_world_memory.2 dummy "[玩家] actionbar 狀態機 世界記憶之樹提示2"
 
+scoreboard objectives add player.actionbar.zipline_platform dummy "[玩家] actionbar 狀態機 提示"
+scoreboard objectives add player.actionbar.zipline_platform.useing dummy "[玩家] actionbar 狀態機 使用中提示"
+
 scoreboard objectives add player.actionbar.disabled_bed dummy "[玩家] actionbar 狀態機 禁用床提示"
 
 scoreboard objectives add player.actionbar.disabled_anvil dummy "[玩家] actionbar 狀態機 禁用鐵砧提示"

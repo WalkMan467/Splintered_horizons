@@ -114,6 +114,16 @@ function players:actionbar/otherworld_portal_1
 
 execute \
     as @s[gamemode=!spectator] \
+    if score @s player.actionbar.zipline_platform.useing matches 1.. run \
+function players:actionbar/zipline_platform_using
+
+execute \
+    as @s[gamemode=!spectator] \
+    if score @s player.actionbar.zipline_platform matches 1.. run \
+function players:actionbar/zipline_platform
+
+execute \
+    as @s[gamemode=!spectator] \
     if score @s player.actionbar.otherworld_portal.1 matches 1.. run \
 return 0
 

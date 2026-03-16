@@ -14,6 +14,8 @@ scoreboard players remove @a[scores={player.actionbar.disabled_anvil=1..}] playe
 scoreboard players remove @a[scores={player.actionbar.weapon.spider=1..}] player.actionbar.weapon.spider 1
 scoreboard players remove @a[scores={player.give.item.delay=1..}] player.give.item.delay 1
 scoreboard players remove @a[scores={player.detect.sneak.delay=1..}] player.detect.sneak.delay 1
+scoreboard players remove @a[scores={player.actionbar.zipline_platform=1..}] player.actionbar.zipline_platform 1
+scoreboard players remove @a[scores={player.actionbar.zipline_platform.useing=1..}] player.actionbar.zipline_platform.useing 1
 scoreboard players remove @a[scores={player.actionbar.otherworld_portal.1=1..}] player.actionbar.otherworld_portal.1 1
 scoreboard players remove @a[scores={player.actionbar.otherworld_portal.2=1..}] player.actionbar.otherworld_portal.2 1
 scoreboard players remove @a[scores={player.actionbar.tree_of_world_memory.1=1..}] player.actionbar.tree_of_world_memory.1 1
