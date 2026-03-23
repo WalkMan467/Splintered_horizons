@@ -2,8 +2,6 @@
 
 # ========================================= #
 
-
-
 execute \
     if score .opening cutscene.story matches 120..240 run \
 title @a actionbar [{"translate":"cutscene.opening.story.1"}]
@@ -136,17 +134,12 @@ execute \
 title @a title {"translate":"\uE000","font":"minecraft:screen"}
 
 execute \
-    if score .opening cutscene.story matches 2650 run \
-function cutscene:opening/6/1
-
-execute \
     if score .opening cutscene.story matches 2628 run \
 function cutscene:opening/6/1_1
 
 execute \
-    if score .opening cutscene.story matches 2659 \
-    as @n[tag=aj.aska.root,distance=0..,type=item_display] run \
-function animated_java:aska/animations/pause_all
+    if score .opening cutscene.story matches 2650 run \
+function cutscene:opening/6/1
 
 execute \
     if score .opening cutscene.story matches 2659 \
@@ -171,10 +164,34 @@ title @a subtitle {"translate":"cutscene.opening.story.27","fallback": "一切�
 
 execute \
     if score .opening cutscene.story matches 2780 run \
-title @a times 0 60 0
+title @a times 0 130 0
 
 execute \
-    if score .opening cutscene.story matches 2840 run \
+    if score .opening cutscene.story matches 2910 run \
+item modify entity @a armor.head [{function:"minecraft:set_item",item:"minecraft:leather_helmet"},{function:"minecraft:set_components",components:{"minecraft:tooltip_display":{hide_tooltip:1},"minecraft:item_name":{bold:true,color:"yellow",italic:false,text:"Camera"},"minecraft:item_model":"camera","minecraft:equippable":{slot:"head",equip_sound:"event.raid.horn",asset_id:"minecraft:air",camera_overlay:"minecraft:screen/cutscene"},"minecraft:enchantments":{binding_curse:1},"minecraft:enchantment_glint_override":false}}]
+
+execute \
+    if score .opening cutscene.story matches 3020 run \
+item modify entity @a armor.head [{function:"minecraft:set_item",item:"minecraft:leather_helmet"},{function:"minecraft:set_components",components:{"minecraft:tooltip_display":{hide_tooltip:1},"minecraft:item_name":{bold:true,color:"yellow",italic:false,text:"Camera"},"minecraft:item_model":"camera","minecraft:equippable":{slot:"head",equip_sound:"event.raid.horn",asset_id:"minecraft:air",camera_overlay:"minecraft:screen/fade_out"},"minecraft:enchantments":{binding_curse:1},"minecraft:enchantment_glint_override":false}}]
+
+execute \
+    if score .opening cutscene.story matches 3020 run \
+title @a actionbar ""
+
+execute \
+    if score .opening cutscene.story matches 3020 run \
+title @a title {"translate":"cutscene.opening.story.28","fallback": "你將與來至不同舊世界的主角"}
+
+execute \
+    if score .opening cutscene.story matches 3020 run \
+title @a subtitle {"translate":"cutscene.opening.story.29","fallback": "重新收集 6 把魔劍"}
+
+execute \
+    if score .opening cutscene.story matches 3020 run \
+title @a times 0 130 0
+
+execute \
+    if score .opening cutscene.story matches 3150 run \
 item modify entity @a armor.head [{function:"minecraft:set_item",item:"minecraft:leather_helmet"},{function:"minecraft:set_components",components:{"minecraft:tooltip_display":{hide_tooltip:1},"minecraft:item_name":{bold:true,color:"yellow",italic:false,text:"Camera"},"minecraft:item_model":"camera","minecraft:equippable":{slot:"head",equip_sound:"event.raid.horn",asset_id:"minecraft:air",camera_overlay:"minecraft:screen/cutscene"},"minecraft:enchantments":{binding_curse:1},"minecraft:enchantment_glint_override":false}}]
 
 # score +1
@@ -182,11 +199,6 @@ item modify entity @a armor.head [{function:"minecraft:set_item",item:"minecraft
 execute \
     if score .opening cutscene.story matches 0..4000 run \
 scoreboard players add .opening cutscene.story 1
-
-
-execute \
-    as @a run \
-function item:type/tp_book/rc/cancel
 
 # loop
 

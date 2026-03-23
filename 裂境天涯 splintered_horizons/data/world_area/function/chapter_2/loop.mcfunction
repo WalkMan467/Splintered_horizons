@@ -8,6 +8,8 @@
 
     # Main 
     execute \
+    if entity @s[gamemode=!spectator] \
+    unless entity @s[tag=sys.hide_world_area.name] \
     if biome ~ ~ ~ #world_area:chapter_2 run \
 advancement grant @s only music:chapter_2/icon
 
@@ -16,6 +18,7 @@ advancement grant @s only music:chapter_2/icon
     
     execute \
     if entity @s[gamemode=!spectator] \
+    unless entity @s[tag=sys.hide_world_area.name] \
     if biome ~ ~ ~ world_area:chapter_2/land_of_finality run \
 advancement grant @s only world_area:chapter_2/land_of_finality/in
     execute \
@@ -26,6 +29,7 @@ advancement grant @s only world_area:chapter_2/land_of_finality/out
     
     execute \
     if entity @s[gamemode=!spectator] \
+    unless entity @s[tag=sys.hide_world_area.name] \
     if biome ~ ~ ~ world_area:chapter_2/forest_of_souls run \
 advancement grant @s only world_area:chapter_2/forest_of_souls/in
     execute \
@@ -36,6 +40,7 @@ advancement grant @s only world_area:chapter_2/forest_of_souls/out
     
     execute \
     if entity @s[gamemode=!spectator] \
+    unless entity @s[tag=sys.hide_world_area.name] \
     if biome ~ ~ ~ world_area:chapter_2/forgotten_sakura_city run \
 advancement grant @s only world_area:chapter_2/forgotten_sakura_city/in
     execute \
@@ -46,6 +51,7 @@ advancement grant @s only world_area:chapter_2/forgotten_sakura_city/out
     
     execute \
     if entity @s[gamemode=!spectator] \
+    unless entity @s[tag=sys.hide_world_area.name] \
     if biome ~ ~ ~ world_area:chapter_2/deep_crimson_abyss run \
 advancement grant @s only world_area:chapter_2/deep_crimson_abyss/in
     execute \
@@ -56,6 +62,7 @@ advancement grant @s only world_area:chapter_2/deep_crimson_abyss/out
     
     execute \
     if entity @s[gamemode=!spectator] \
+    unless entity @s[tag=sys.hide_world_area.name] \
     if biome ~ ~ ~ world_area:chapter_2/magical_land run \
 advancement grant @s only world_area:chapter_2/magical_land/in
     execute \
@@ -66,6 +73,7 @@ advancement grant @s only world_area:chapter_2/magical_land/out
     
     execute \
     if entity @s[gamemode=!spectator] \
+    unless entity @s[tag=sys.hide_world_area.name] \
     if biome ~ ~ ~ world_area:chapter_2/garden_of_time_space_rifts run \
 advancement grant @s only world_area:chapter_2/garden_of_time_space_rifts/in
     execute \
@@ -76,6 +84,7 @@ advancement grant @s only world_area:chapter_2/garden_of_time_space_rifts/out
     
     execute \
     if entity @s[gamemode=!spectator] \
+    unless entity @s[tag=sys.hide_world_area.name] \
     if biome ~ ~ ~ world_area:chapter_2/temple_of_light run \
 advancement grant @s only world_area:chapter_2/temple_of_light/in
     execute \
@@ -106,6 +115,7 @@ advancement grant @s only world_area:chapter_2/temple_of_light/bossfight/elekiel
     
     execute \
     if entity @s[gamemode=!spectator] \
+    unless entity @s[tag=sys.hide_world_area.name] \
     if biome ~ ~ ~ #world_area:chapter_2_end run \
 advancement grant @s only world_area:chapter_2/main/in
     execute \

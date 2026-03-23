@@ -4,7 +4,7 @@
     "translate": "armor.enchantment.random_teleport"
   },
   "effects": {
-    "minecraft:tick": [
+    "minecraft:post_attack": [
       {
         "requirements": {
           "condition": "minecraft:random_chance",
@@ -15,8 +15,10 @@
         },
         "effect": {
           "type": "minecraft:run_function",
-          "function": "armors:enchantment/random_teleport/main"
-        }
+          "function": "armors:enchantment/random_teleport/use"
+        },
+        "enchanted": "victim",
+        "affected": "victim"
       }
     ]
   },
@@ -24,15 +26,14 @@
     "base": 0,
     "per_level_above_first": 0
   },
-  "max_level": 1,
+  "max_level": 10,
   "min_cost": {
     "base": 0,
     "per_level_above_first": 0
   },
-  "primary_items": "#minecraft:enchantable/chest_armor",
   "slots": [
     "any"
   ],
-  "supported_items": "#minecraft:enchantable/armor",
+  "supported_items": "minecraft:air",
   "weight": 1
 }

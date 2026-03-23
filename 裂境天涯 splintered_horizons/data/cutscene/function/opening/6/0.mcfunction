@@ -4,6 +4,6 @@ summon minecraft:block_display 9999 95 10070 {UUID:[I;-3213121,3212321,31212,532
 
 scoreboard players set ffcef8bf-0031-0421-0000-79ec0000cff9 duration 1000
 
-schedule function cutscene:opening/6/guide 10t
+schedule function cutscene:opening/update_camera/1 5t
 
-schedule function cutscene:opening/end/use 50s
+schedule function cutscene:opening/6/guide 10t

@@ -29,6 +29,8 @@ scoreboard objectives add player.actionbar.weapon.spider dummy "[玩家] actionb
 scoreboard objectives add player.actionbar.weapon.earthquake_axe dummy "[玩家] actionbar 狀態機 地震之斧"
 scoreboard objectives add player.actionbar.weapon.earthquake_axe dummy "[玩家] actionbar 狀態機 地震之斧"
 
+scoreboard objectives add player.actionbar.segrina.1 dummy "[玩家] actionbar 狀態機 西格瑞納 技能 1 吸收提示"
+
 
 scoreboard objectives add player.actionbar.otherworld_portal.1 dummy "[玩家] actionbar 狀態機 異界之門提示"
 scoreboard objectives add player.actionbar.otherworld_portal.2 dummy "[玩家] actionbar 狀態機 異界之門提示(未擁有鑰匙)"
@@ -122,9 +124,19 @@ scoreboard objectives add player.detect.hurt dummy "[玩家] 偵測受傷"
 scoreboard objectives add player.setting.reduce_particles dummy "[玩家] 減少粒子"
 scoreboard objectives add player.setting.reduce_particles.trigger trigger "[玩家] 減少粒子 trigger"
 
+scoreboard players enable @a player.setting.reduce_particles.trigger
+
+scoreboard objectives add player.setting.backup dummy "[玩家] 資料備份"
+scoreboard objectives add player.setting.backup.trigger trigger "[玩家] 資料備份 trigger"
+scoreboard objectives add player.setting.backup.id dummy "[玩家] 資料備份 ID"
+scoreboard objectives add player.setting.backup.return.id trigger "[玩家] 還原備份 ID"
+
+scoreboard players add @a player.setting.backup.return.id 0
+scoreboard players enable @a player.setting.backup.return.id
+
+scoreboard players enable @a player.setting.backup.trigger
+
 scoreboard objectives add player.setting.campfire_darkness dummy "[玩家] 營火黑暗效果"
 scoreboard objectives add player.setting.campfire_darkness.trigger trigger "[玩家] 營火黑暗效果 trigger"
-
-scoreboard players enable @a player.setting.reduce_particles.trigger
 
 scoreboard players enable @a player.setting.campfire_darkness.trigger

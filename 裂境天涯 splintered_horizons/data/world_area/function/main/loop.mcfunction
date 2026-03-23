@@ -7,6 +7,7 @@
     # Campfire
     execute \
     if entity @s[gamemode=!spectator] \
+    unless entity @s[tag=sys.hide_world_area.name] \
     if entity @n[tag=sys.campfire,limit=1,distance=..6,type=minecraft:interaction] \
     unless entity @n[distance=..12,type=!#minecraft:dummy_mob,type=!minecraft:player,tag=!sys.campfire] run \
 advancement grant @s only world_area:main/campfire/in
@@ -24,6 +25,8 @@ advancement grant @s only world_area:main/campfire/out
 
     # Safe Zone Music
     execute \
+    unless entity @s[tag=sys.hide_world_area.name] \
+    if entity @s[gamemode=!spectator] \
     if biome ~ ~ ~ #world_area:safe_area run \
 advancement grant @s only world_area:main/safe_zone/music/in
     execute \
@@ -32,6 +35,7 @@ advancement grant @s only world_area:main/safe_zone/music/out
 
     # Safe Zone
     execute \
+    unless entity @s[tag=sys.hide_world_area.name] \
     if biome ~ ~ ~ world_area:main/safe_zone run \
 advancement grant @s only world_area:main/safe_zone/in
     execute \
@@ -40,6 +44,7 @@ advancement grant @s only world_area:main/safe_zone/out
 
     # Resource Warehouse
     execute \
+    unless entity @s[tag=sys.hide_world_area.name] \
     if biome ~ ~ ~ world_area:main/resource_warehouse run \
 advancement grant @s only world_area:main/resource_warehouse/in
     execute \
@@ -58,6 +63,7 @@ function world_area:main/mode_change/survival
 
     # Border Wall
     execute \
+    unless entity @s[tag=sys.hide_world_area.name] \
     if biome ~ ~ ~ world_area:main/boundary \
     if predicate players:detect/not_creative_spectator \
     if entity @s[tag=!player.death] run \
@@ -65,6 +71,7 @@ function world_area:main/boundary/in
 
     # Death Zone
     execute \
+    unless entity @s[tag=sys.hide_world_area.name] \
     if biome ~ ~ ~ world_area:main/death_area \
     if predicate players:detect/not_creative_spectator \
     if entity @s[tag=!player.death] run \

@@ -62,9 +62,9 @@ gamemode adventure @a[tag=chapter_2.segrina.lose]
 tag @a remove chapter_2.segrina.lose
 
 scoreboard players set skill.1 monster.segrina.cd 100
-scoreboard players set skill.2 monster.segrina.cd 200
-scoreboard players set skill.3 monster.segrina.cd 140
-scoreboard players set skill.4 monster.segrina.cd 440
+scoreboard players set skill.2 monster.segrina.cd 400
+scoreboard players set skill.3 monster.segrina.cd 340
+scoreboard players set skill.4 monster.segrina.cd 640
 
 scoreboard players reset @s monster.segrina.skill.4.invincible
 execute \

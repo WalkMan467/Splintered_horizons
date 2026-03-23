@@ -9,7 +9,11 @@ function animated_java:oceanid/summon {args: {animation: '1', start_animation: t
 
 gamemode spectator @a
 
+forceload add 1025 -126
 
 execute \
     as @a[gamemode=spectator] run \
 spectate @n[type=item_display,tag=aj.oceanid.camera,limit=1]
+
+
+schedule function cutscene:opening/7/use 5s

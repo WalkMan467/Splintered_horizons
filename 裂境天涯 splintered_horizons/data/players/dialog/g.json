@@ -30,6 +30,28 @@
         "type": "run_command",
         "command": "trigger player.setting.campfire_darkness.trigger"
       }
+    },
+    {
+      "label": {
+        "translate": "dialog.main.quick_actions.backup",
+        "fallback": "Data Backup",
+        "color": "white"
+      },
+      "action": {
+        "type": "run_command",
+        "command": "trigger player.setting.backup.trigger"
+      }
+    },
+    {
+      "label": {
+        "translate": "dialog.main.quick_actions.backup.return",
+        "fallback": "Data Backup Return",
+        "color": "white"
+      },
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "players:backup_return"
+      }
     }
   ]
 }

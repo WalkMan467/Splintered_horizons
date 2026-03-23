@@ -1,4 +1,4 @@
-scoreboard players set skill.4 monster.segrina.cd 660
+scoreboard players set skill.4 monster.segrina.cd 1340
 scoreboard players reset @s monster.segrina.skill.4.casting
 
 execute \

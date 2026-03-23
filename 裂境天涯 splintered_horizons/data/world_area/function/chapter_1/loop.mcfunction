@@ -10,6 +10,7 @@
 
     execute \
     if entity @s[gamemode=!spectator] \
+    unless entity @s[tag=sys.hide_world_area.name] \
     if biome ~ ~ ~ world_area:chapter_1/broken_city run \
 advancement grant @s only world_area:chapter_1/broken_city/in
     execute \
@@ -20,6 +21,7 @@ advancement grant @s only world_area:chapter_1/broken_city/out
 
     execute \
     if entity @s[gamemode=!spectator] \
+    unless entity @s[tag=sys.hide_world_area.name] \
     if biome ~ ~ ~ world_area:chapter_1/abyssal_ruins run \
 advancement grant @s only world_area:chapter_1/abyssal_ruins/in
     execute \
@@ -30,6 +32,7 @@ advancement grant @s only world_area:chapter_1/abyssal_ruins/out
 
     execute \
     if entity @s[gamemode=!spectator] \
+    unless entity @s[tag=sys.hide_world_area.name] \
     if biome ~ ~ ~ world_area:chapter_1/the_black_hole run \
 advancement grant @s only world_area:chapter_1/the_black_hole/in
     execute \

@@ -16,6 +16,7 @@ function world_area:other/otherworld_portal/4/main
     # Entering the hidden area
 
     execute \
+    unless entity @s[tag=sys.hide_world_area.name] \
     if entity @s[gamemode=!spectator] \
     if biome ~ ~ ~ #world_area:hidden_area run \
 advancement grant @s only music:other/icon
@@ -23,6 +24,7 @@ advancement grant @s only music:other/icon
     # The Forgooten Lost City
 
     execute \
+    unless entity @s[tag=sys.hide_world_area.name] \
     if entity @s[gamemode=!spectator] \
     if biome ~ ~ ~ world_area:other/the_forgooten_lost_city run \
 advancement grant @s only world_area:other/the_forgotten_lost_city/in
@@ -33,6 +35,7 @@ advancement grant @s only world_area:other/the_forgotten_lost_city/out
     # Nightfall Citadel: Hasanor
 
     execute \
+    unless entity @s[tag=sys.hide_world_area.name] \
     if entity @s[gamemode=!spectator] \
     if biome ~ ~ ~ world_area:other/hasanor run \
 advancement grant @s only world_area:other/hasanor/in
@@ -42,6 +45,8 @@ advancement grant @s only world_area:other/hasanor/out
 
     # Mini Game
     execute \
+    unless entity @s[tag=sys.hide_world_area.name] \
+    if entity @s[gamemode=!spectator]
     if biome ~ ~ ~ world_area:other/mini_game run \
 advancement grant @s only world_area:other/mini_game/in
     execute \
@@ -51,6 +56,7 @@ advancement grant @s only world_area:other/mini_game/out
     # Abyss Forest
 
     execute \
+    unless entity @s[tag=sys.hide_world_area.name] \
     if entity @s[gamemode=!spectator] \
     if biome ~ ~ ~ world_area:other/abyss_forest run \
 advancement grant @s only world_area:other/abyss_forest/in
@@ -61,6 +67,7 @@ advancement grant @s only world_area:other/abyss_forest/out
     # Land of the Trials
 
     execute \
+    unless entity @s[tag=sys.hide_world_area.name] \
     if entity @s[gamemode=!spectator] \
     if biome ~ ~ ~ world_area:other/land_of_the_trials run \
 advancement grant @s only world_area:other/land_of_the_trials/in

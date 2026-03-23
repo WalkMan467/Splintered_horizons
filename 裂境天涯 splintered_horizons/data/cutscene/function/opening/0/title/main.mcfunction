@@ -48,7 +48,6 @@ execute \
     if score cutscene.opening.title cutscene.opening.title.timer matches 140 run \
 title @a times 20 140 20
 
-
 execute \
     if score cutscene.opening.title cutscene.opening.title.timer matches 210 run \
 title @a subtitle {"translate": "cutscene.opening.title.3","color": "white","bold": false}
@@ -101,4 +100,6 @@ execute \
     as @a[gamemode=spectator] at @s run \
 spectate 000000d3-0000-0004-0000-000100000001
 
+execute \
+    if score cutscene.opening.title cutscene.opening.title.timer matches ..631 run \
 schedule function cutscene:opening/0/title/main 1t

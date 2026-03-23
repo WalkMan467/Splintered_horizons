@@ -6,11 +6,10 @@ forceload remove 42 11 42 11
 execute \
     in minecraft:overworld run \
 forceload remove 10055 10310
+
 function cutscene:opening/remove_camera/1
 
 schedule function cutscene:opening/remove_forceload 5t
-
-scoreboard players set #cutscene global.main 0
 
 attribute @s waypoint_receive_range modifier remove cutscene
 attribute @s waypoint_receive_range modifier remove cutscene.1
@@ -42,6 +41,23 @@ execute \
     as @n[distance=..3,type=item_display,tag=aj.kyle.root] run \
 function animated_java:kyle/remove/this
 
+execute \
+    positioned 1026 136 -130 \
+    as @e[sort=arbitrary,distance=..3,tag=aj.stellar_animation.root,type=item_display] run \
+function animated_java:stellar_animation/remove/this
+
+execute \
+    positioned 1028 136 -129 \
+    as @e[sort=arbitrary,distance=..3,tag=aj.sophia.root,type=item_display] run \
+function animated_java:sophia/remove/this
+
+
+execute \
+    positioned 1027 136 -129 \
+    as @e[sort=arbitrary,distance=..3,tag=aj.isokla.root,type=item_display] run \
+function animated_java:isokla/remove/this
+
+
 weather clear
 
 scoreboard objectives setdisplay sidebar player.death_count
@@ -66,7 +82,6 @@ schedule clear cutscene:opening/3/0
 schedule clear cutscene:opening/4/0
 schedule clear cutscene:opening/5/0
 schedule clear cutscene:opening/6/0
-schedule clear cutscene:opening/7/0
 schedule clear cutscene:opening/end/use
 schedule clear cutscene:opening/2/use
 schedule clear cutscene:opening/3/use
@@ -74,11 +89,30 @@ schedule clear cutscene:opening/4/use
 schedule clear cutscene:opening/5/use
 schedule clear cutscene:opening/6/use
 schedule clear cutscene:opening/7/use
+schedule clear cutscene:opening/7/0
+schedule clear cutscene:opening/7/1
+schedule clear cutscene:opening/7/2
+schedule clear cutscene:opening/7/3
+schedule clear cutscene:opening/7/4
+schedule clear cutscene:opening/7/5
+schedule clear cutscene:opening/7/6
+schedule clear cutscene:opening/7/7
+schedule clear cutscene:opening/7/8
+schedule clear cutscene:opening/7/9
+schedule clear cutscene:opening/7/10
+schedule clear cutscene:opening/7/11
+schedule clear cutscene:opening/7/12
+schedule clear cutscene:opening/8/use
+
 schedule clear cutscene:opening/end/use
 schedule clear cutscene:opening/6/2
 schedule clear cutscene:opening/1/0_1
 
 function story:chapter_1/mq/stop
+function music:cutscene/opening/reset
+
+gamerule minecraft:locator_bar true
+gamerule spawner_blocks_work true
 
 schedule clear cutscene:opening/main
 
@@ -111,3 +145,16 @@ item replace entity @a armor.head with air
 
 
 tag @a remove cutscene.opening
+tag @a remove sys.hide_world_area.name
+
+execute \
+    if score #cutscene global.main matches 1.. \
+    if score #send_command_feedback main.gamerule matches 0 run \
+gamerule send_command_feedback false
+
+execute \
+    if score #cutscene global.main matches 1.. \
+    if score #send_command_feedback main.gamerule matches 1 run \
+gamerule send_command_feedback true
+
+scoreboard players reset #cutscene global.main

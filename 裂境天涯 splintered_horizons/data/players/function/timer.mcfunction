@@ -18,6 +18,7 @@ scoreboard players remove @a[scores={player.actionbar.zipline_platform=1..}] pla
 scoreboard players remove @a[scores={player.actionbar.zipline_platform.useing=1..}] player.actionbar.zipline_platform.useing 1
 scoreboard players remove @a[scores={player.actionbar.otherworld_portal.1=1..}] player.actionbar.otherworld_portal.1 1
 scoreboard players remove @a[scores={player.actionbar.otherworld_portal.2=1..}] player.actionbar.otherworld_portal.2 1
+scoreboard players remove @a[scores={player.actionbar.segrina.1=1..}] player.actionbar.segrina.1 1
 scoreboard players remove @a[scores={player.actionbar.tree_of_world_memory.1=1..}] player.actionbar.tree_of_world_memory.1 1
 scoreboard players remove @a[scores={player.actionbar.tree_of_world_memory.2=1..}] player.actionbar.tree_of_world_memory.2 1
 scoreboard players remove @a[scores={player.actionbar.sys.forging_table.failure=1..}] player.actionbar.sys.forging_table.failure 1

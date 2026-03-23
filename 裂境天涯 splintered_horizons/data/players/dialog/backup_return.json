@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "translate": "dialog.main.quick_actions.backup.return",
+    "fallback": "Data Backup Return"
+  },
+  "inputs": [
+    {
+      "type": "minecraft:number_range",
+      "key": "id",
+      "label": {
+        "translate": "dialog.main.quick_actions.backup.return.id",
+        "color": "yellow",
+        "bold": false,
+        "italic": false
+      },
+      "start": 1,
+      "end": 5,
+      "step": 1,
+      "initial": 1
+    }
+  ],
+  "can_close_with_escape": true,
+  "pause": false,
+  "after_action": "close",
+  "actions": [
+    {
+      "label": {
+        "translate": "dialog.main.quick_actions.backup.return.trigger",
+        "fallback": "Return!",
+        "color": "white",
+        "bold": false,
+        "italic": false
+      },
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "/trigger player.setting.backup.return.id set $(id)"
+      }
+    }
+  ]
+}

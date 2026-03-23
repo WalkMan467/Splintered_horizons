@@ -1,6 +1,7 @@
 {
   "values": [
     "#weapons:true_dmg",
+    "#monsters:true_dmg",
     "#minecraft:dot"
   ]
 }

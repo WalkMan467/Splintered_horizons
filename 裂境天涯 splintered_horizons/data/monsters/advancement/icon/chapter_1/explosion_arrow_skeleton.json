@@ -1,0 +1,94 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:player_head",
+      "components": {
+        "minecraft:profile": {
+          "name": "textures",
+          "properties": [
+            {
+              "name": "textures",
+              "value": "ewogICJ0aW1lc3RhbXAiIDogMTczMTkyNTIxMDQxNiwKICAicHJvZmlsZUlkIiA6ICJmMjc0YzRkNjI1MDQ0ZTQxOGVmYmYwNmM3NWIyMDIxMyIsCiAgInByb2ZpbGVOYW1lIiA6ICJIeXBpZ3NlbCIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9iYmQ1ZjRiNjFkYmYyYTIxNzMzNjA1YmNiMDI4MTdjODU3NmU0YTMxOTU3NmJmM2VlMTk2ZDc3ODcyZmI0MTAxIgogICAgfQogIH0KfQ=="
+            }
+          ]
+        }
+      },
+      "count": 1
+    },
+    "title": {
+      "translate": "monster.explosion_arrow_skeleton",
+      "italic": false
+    },
+    "description": [
+      {
+        "translate": "monster.explosion_arrow_skeleton.1",
+        "color": "white",
+        "italic": false
+      },
+      "\n\n",
+      {
+        "translate": "monster.explosion_arrow_skeleton.2",
+        "color": "white",
+        "italic": false
+      },
+      "\n",
+      {
+        "translate": "monster.explosion_arrow_skeleton.3",
+        "color": "white",
+        "italic": false
+      },
+      "\n",
+      {
+        "translate": "monster.explosion_arrow_skeleton.4",
+        "color": "white",
+        "italic": false
+      },
+      "\n\n",
+      {
+        "translate": "difficulty.nightmare",
+        "color": "#c700bd",
+        "italic": false,
+        "bold": true
+      },
+      "\n",
+      {
+        "translate": "monster.explosion_arrow_skeleton.5",
+        "color": "#9900ff",
+        "italic": false,
+        "bold": false
+      }
+    ],
+    "background": "minecraft:gui/advancements/backgrounds/sculk",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "monsters:icon/chapter_1/icon",
+  "criteria": {
+    "attack": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "nbt": "{Tags:[\"monster.explosion_arrow_skeleton\"]}"
+          }
+        }
+      }
+    },
+    "hurt": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": {
+          "nbt": "{Tags:[\"monster.explosion_arrow_skeleton\"]}"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "attack",
+      "hurt"
+    ]
+  ]
+}

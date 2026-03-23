@@ -26,12 +26,14 @@ scoreboard players reset ffff8285-0000-0c33-0000-5a5c0162349d monster.segrina.sk
 scoreboard players reset ffff8285-0000-0c33-0000-5a5c0162349d monster.segrina.skill.4.casting
 
 bossbar remove minecraft:monsters.segrina
+bossbar remove monster.segrina.skill.1.casting
 
 scoreboard players set #boss_area.chapter_2.segrina global.main 0
 
 kill 01dc4318-ed62-7e6b-0003-873f004ff9e9
 kill 0023442d-ed62-7e6b-0003-873f004ff9e9
 
+kill @e[sort=arbitrary,distance=..120,limit=20,tag=monster.segrina.1.ball,type=item]
 
 execute \
     positioned 762 107 642 \

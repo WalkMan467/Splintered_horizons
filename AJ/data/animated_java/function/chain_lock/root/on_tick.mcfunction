@@ -2,4 +2,4 @@
 execute unless entity @s[tag=aj.chain_lock.root] run return 0
 execute if entity @s[tag=aj.chain_lock.animation.lock.playing] run function animated_java:chain_lock/animations/lock/zzz/on_tick
 execute if entity @s[tag=aj.chain_lock.animation.unlock.playing] run function animated_java:chain_lock/animations/unlock/zzz/on_tick
-execute at @s on passengers run rotate @s ~ ~
+execute on passengers run rotate @s ~ ~

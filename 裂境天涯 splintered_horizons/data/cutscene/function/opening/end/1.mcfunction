@@ -1,30 +1,33 @@
 tag @a remove cutscene.opening.end
-
-execute \
-    store result score #send_command_feedback main.gamerule run \
-gamerule send_command_feedback
+tag @a remove sys.hide_world_area.name
 
 scoreboard players set #game.start global.main 1
 advancement grant @a only players:new_player
 
-gamerule send_command_feedback false
 gamemode adventure @a
 
 function cutscene:opening/remove_camera/1
+
+execute \
+    positioned 1026 136 -130 \
+    as @e[sort=arbitrary,distance=..3,tag=aj.stellar_animation.root,type=item_display] run \
+function animated_java:stellar_animation/remove/this
+
+execute \
+    positioned 1028 136 -129 \
+    as @e[sort=arbitrary,distance=..3,tag=aj.sophia.root,type=item_display] run \
+function animated_java:sophia/remove/this
+
+
+execute \
+    positioned 1027 136 -129 \
+    as @e[sort=arbitrary,distance=..3,tag=aj.isokla.root,type=item_display] run \
+function animated_java:isokla/remove/this
 
 
 execute \
     in minecraft:overworld run \
 function cutscene:opening/remove_forceload
-
-execute \
-    if score #send_command_feedback main.gamerule matches 0 run \
-gamerule send_command_feedback false
-
-execute \
-    if score #send_command_feedback main.gamerule matches 1 run \
-gamerule send_command_feedback true
-
 
 execute \
     as @a run \
@@ -43,3 +46,18 @@ execute \
 attribute @s waypoint_transmit_range modifier remove cutscene.1
 
 stopsound @a voice minecraft:voice.in_world_area
+
+gamerule minecraft:locator_bar true
+gamerule spawner_blocks_work true
+
+execute \
+    if score #cutscene global.main matches 1.. \
+    if score #send_command_feedback main.gamerule matches 0 run \
+gamerule send_command_feedback false
+
+execute \
+    if score #cutscene global.main matches 1.. \
+    if score #send_command_feedback main.gamerule matches 1 run \
+gamerule send_command_feedback true
+
+scoreboard players reset #cutscene global.main

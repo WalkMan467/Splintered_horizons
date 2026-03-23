@@ -9,6 +9,7 @@
     # Main 
     execute \
     if score #weapons:monument/area_2 global.main matches 1.. \
+    unless entity @s[tag=sys.hide_world_area.name] \
     if biome ~ ~ ~ #world_area:chapter_3 run \
 advancement grant @s only music:chapter_3/icon
     execute \
@@ -20,6 +21,7 @@ function world_area:chapter_3/death_area
     
     execute \
     if entity @s[gamemode=!spectator] \
+    unless entity @s[tag=sys.hide_world_area.name] \
     if biome ~ ~ ~ world_area:chapter_3/finalitys_embrace_rift run \
 advancement grant @s only world_area:chapter_3/finalitys_embrace_rift/in
     execute \
@@ -30,6 +32,7 @@ advancement grant @s only world_area:chapter_3/finalitys_embrace_rift/out
     
     execute \
     if entity @s[gamemode=!spectator] \
+    unless entity @s[tag=sys.hide_world_area.name] \
     if biome ~ ~ ~ world_area:chapter_3/realm_of_finality run \
 advancement grant @s only world_area:chapter_3/realm_of_finality/in
     execute \

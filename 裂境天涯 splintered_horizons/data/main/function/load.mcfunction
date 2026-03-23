@@ -29,6 +29,7 @@ function weapons:type/drop/hook/aim_assist/fx
 function players:replace/block/main
 function players:replace/torch/main
 function players:replace/food/main
+schedule function players:setting/backup/run 300s
 
 # Monster load
 function monsters:load

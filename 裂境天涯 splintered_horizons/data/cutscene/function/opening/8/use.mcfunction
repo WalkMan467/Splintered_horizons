@@ -1,0 +1,1 @@
+schedule function cutscene:opening/8/0 1t

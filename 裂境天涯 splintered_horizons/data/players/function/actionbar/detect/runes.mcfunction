@@ -35,6 +35,11 @@ execute \
 return 0
 
 execute \
+    if score @s player.actionbar.segrina.1 matches 1.. run \
+return 0
+
+
+execute \
     if score @s player.actionbar.zipline_platform matches 1.. run \
 return 0
 

@@ -7,18 +7,18 @@ stopsound @a voice event.raid.horn
 
 schedule function cutscene:opening/0/title/main 3t
 
+
 execute \
     in minecraft:overworld run \
 tp @a 9999 95 10070
 
-execute \
-    in minecraft:overworld run \
-summon area_effect_cloud 9999 95 10070 {Rotation:[180.0f,0.0f],custom_particle:{type:"block",block_state:"minecraft:air"},UUID:[I;211,4,1,1],Radius:0f,Duration:800,Tags:["cutscene.opening.0.title"]}
+schedule function cutscene:opening/force_execution/summon/0/title 1t
 
 title @a actionbar ""
 
 scoreboard objectives setdisplay sidebar
 
+gamerule minecraft:locator_bar false
 
 execute \
     as @a at @s run \

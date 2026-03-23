@@ -127,6 +127,15 @@ scoreboard objectives add monster.segrina.skill.2.casting dummy "[怪物] 西格
 scoreboard objectives add monster.segrina.skill.3.casting dummy "[怪物] 西格瑞納 技能3 施法中"
 scoreboard objectives add monster.segrina.skill.4.casting dummy "[怪物] 西格瑞納 技能4 施法中"
 
+scoreboard objectives add monster.segrina.skill.1.ball dummy "[怪物] 西格瑞納 技能1 已吸收球數量"
+scoreboard objectives add monster.segrina.skill.1.ball.light dummy "[怪物] 西格瑞納 技能1 光球數量"
+scoreboard objectives add monster.segrina.skill.1.ball.dark dummy "[怪物] 西格瑞納 技能1 暗球數量"
+
+scoreboard objectives add monster.segrina.skill.1.dmg dummy "[怪物] 西格瑞納 技能1 蓄力"
+
+scoreboard objectives add monster.segrina.skill.1.ball.atk dummy "[怪物] 西格瑞納 技能1 光球攻擊力"
+scoreboard objectives add monster.segrina.skill.1.ball.dmg_taken dummy "[怪物] 西格瑞納 技能1 暗球減傷"
+
 scoreboard objectives add monster.segrina.skill.3.timer dummy "[怪物] 西格瑞納 技能3 計時器"
 scoreboard objectives add monster.segrina.skill.4.effect dummy "[怪物] 西格瑞納 技能4 負面狀態"
 scoreboard objectives add monster.segrina.skill.4.invincible dummy "[怪物] 西格瑞納 技能4 無敵"

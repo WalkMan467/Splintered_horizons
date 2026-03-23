@@ -1,17 +1,9 @@
 time set midnight
 weather clear
 
-scoreboard players set #cutscene global.main 1
-
-
 execute \
     in minecraft:overworld run \
 forceload add 42 11 42 11
-
-
-execute \
-    as @a run \
-function item:type/tp_book/rc/cancel
 
 function animated_java:aska/remove/all
 function animated_java:oceanid/remove/all
@@ -30,7 +22,6 @@ schedule clear cutscene:opening/0/0
 schedule clear cutscene:opening/0/1
 schedule clear cutscene:opening/0/use
 schedule clear cutscene:opening/1/use
-schedule clear cutscene:opening/1/guide
 schedule clear cutscene:opening/1/0
 schedule clear cutscene:opening/1/1
 schedule clear cutscene:opening/1/2
@@ -40,7 +31,6 @@ schedule clear cutscene:opening/3/0
 schedule clear cutscene:opening/4/0
 schedule clear cutscene:opening/5/0
 schedule clear cutscene:opening/6/0
-schedule clear cutscene:opening/7/0
 schedule clear cutscene:opening/end/use
 schedule clear cutscene:opening/2/use
 schedule clear cutscene:opening/3/use
@@ -49,6 +39,8 @@ schedule clear cutscene:opening/5/use
 schedule clear cutscene:opening/6/use
 schedule clear cutscene:opening/7/use
 schedule clear cutscene:opening/end/use
+
+gamerule minecraft:locator_bar false
 
 schedule clear cutscene:opening/main
 

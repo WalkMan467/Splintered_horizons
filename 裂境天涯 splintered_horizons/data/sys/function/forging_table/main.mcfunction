@@ -60,6 +60,51 @@ function sys:forging_table/crafting/general/weapon_energy_infusion
 
 # ===================================
 
+# wooden axe
+
+execute \
+    positioned 770 148 979 \
+    as @n[distance=..1.5,predicate=sys:forging_table/crafting/axe/general/wooden_axe,type=item] run \
+function sys:forging_table/crafting/general/weapon_energy_infusion
+
+# stone axe
+
+execute \
+    positioned 770 148 979 \
+    as @n[distance=..1.5,predicate=sys:forging_table/crafting/axe/general/stone_axe,type=item] run \
+function sys:forging_table/crafting/general/weapon_energy_infusion
+
+# iron axe
+
+execute \
+    positioned 770 148 979 \
+    as @n[distance=..1.5,predicate=sys:forging_table/crafting/axe/general/iron_axe,type=item] run \
+function sys:forging_table/crafting/axe/guide
+
+# golden axe
+
+execute \
+    positioned 770 148 979 \
+    as @n[distance=..1.5,predicate=sys:forging_table/crafting/axe/general/golden_axe,type=item] run \
+function sys:forging_table/crafting/general/weapon_energy_infusion
+
+# diamond axe
+
+execute \
+    positioned 770 148 979 \
+    as @n[distance=..1.5,predicate=sys:forging_table/crafting/axe/general/diamond_axe,type=item] run \
+function sys:forging_table/crafting/general/weapon_energy_infusion
+
+# netherite axe
+
+execute \
+    positioned 770 148 979 \
+    as @n[distance=..1.5,predicate=sys:forging_table/crafting/axe/general/netherite_axe,type=item] run \
+function sys:forging_table/crafting/general/weapon_energy_infusion
+
+
+# ===================================
+
 # Leather Helmet
 
 execute \

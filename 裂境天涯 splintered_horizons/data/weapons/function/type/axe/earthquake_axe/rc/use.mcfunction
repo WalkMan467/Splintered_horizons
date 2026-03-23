@@ -9,7 +9,7 @@ execute \
 return 0
 
 execute \
-    if score @s player.click.interval matches 0.. run \
+    if score @s player.click.interval matches 1.. run \
 return 0
 
 scoreboard players operation @s player.finality_tunder.temp = @s player.finality_tunder

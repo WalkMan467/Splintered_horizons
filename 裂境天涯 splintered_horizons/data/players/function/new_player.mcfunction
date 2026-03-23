@@ -81,6 +81,10 @@ execute \
 tp @s 38 64 11 180 0
 
 scoreboard players add @s player.death_count 0
+scoreboard players enable @s player.setting.backup.trigger
+scoreboard players set @s player.setting.backup.trigger 0
+scoreboard players set @s player.setting.backup 1
+scoreboard players display numberformat @s player.setting.backup fixed {"translate":"dialog.main.enabled","fallback":"Enabled","color":"dark_green","bold":true}
 
 
 function players:id/detect

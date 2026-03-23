@@ -20,23 +20,53 @@
   "effects": {
     "minecraft:post_attack": [
       {
+        "requirements": {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:damage_source_properties",
+            "predicate": {
+              "tags": [
+                {
+                  "id": "minecraft:true_dmg",
+                  "expected": true
+                }
+              ]
+            }
+          }
+        },
         "effect": {
           "type": "minecraft:run_function",
           "function": "armors:type/resilient/use"
         },
-        "enchanted": "victim",
+        "enchanted": "attacker",
         "affected": "victim"
       }
     ],
     "minecraft:damage_protection": [
       {
-        "requirements": {
-          "condition": "minecraft:entity_scores",
-          "entity": "this",
-          "scores": {
-            "armor.resilient.hit": 1
+        "requirements": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "armor.resilient.hit": 1
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:damage_source_properties",
+              "predicate": {
+                "tags": [
+                  {
+                    "id": "minecraft:true_dmg",
+                    "expected": true
+                  }
+                ]
+              }
+            }
           }
-        },
+        ],
         "effect": {
           "type": "minecraft:add",
           "value": {
@@ -47,13 +77,26 @@
         }
       },
       {
-        "requirements": {
-          "condition": "minecraft:entity_scores",
-          "entity": "this",
-          "scores": {
-            "armor.resilient.hit": 2
+        "requirements": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "armor.resilient.hit": 2
+            }
+          },
+          {
+            "condition": "minecraft:damage_source_properties",
+            "predicate": {
+              "tags": [
+                {
+                  "id": "minecraft:true_dmg",
+                  "expected": false
+                }
+              ]
+            }
           }
-        },
+        ],
         "effect": {
           "type": "minecraft:add",
           "value": {
@@ -64,13 +107,26 @@
         }
       },
       {
-        "requirements": {
-          "condition": "minecraft:entity_scores",
-          "entity": "this",
-          "scores": {
-            "armor.resilient.hit": 3
+        "requirements": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "armor.resilient.hit": 3
+            }
+          },
+          {
+            "condition": "minecraft:damage_source_properties",
+            "predicate": {
+              "tags": [
+                {
+                  "id": "minecraft:true_dmg",
+                  "expected": false
+                }
+              ]
+            }
           }
-        },
+        ],
         "effect": {
           "type": "minecraft:add",
           "value": {
@@ -81,13 +137,26 @@
         }
       },
       {
-        "requirements": {
-          "condition": "minecraft:entity_scores",
-          "entity": "this",
-          "scores": {
-            "armor.resilient.hit": 4
+        "requirements": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "armor.resilient.hit": 4
+            }
+          },
+          {
+            "condition": "minecraft:damage_source_properties",
+            "predicate": {
+              "tags": [
+                {
+                  "id": "minecraft:true_dmg",
+                  "expected": false
+                }
+              ]
+            }
           }
-        },
+        ],
         "effect": {
           "type": "minecraft:add",
           "value": {
@@ -98,13 +167,26 @@
         }
       },
       {
-        "requirements": {
-          "condition": "minecraft:entity_scores",
-          "entity": "this",
-          "scores": {
-            "armor.resilient.hit": 5
+        "requirements": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "armor.resilient.hit": 5
+            }
+          },
+          {
+            "condition": "minecraft:damage_source_properties",
+            "predicate": {
+              "tags": [
+                {
+                  "id": "minecraft:true_dmg",
+                  "expected": false
+                }
+              ]
+            }
           }
-        },
+        ],
         "effect": {
           "type": "minecraft:add",
           "value": {

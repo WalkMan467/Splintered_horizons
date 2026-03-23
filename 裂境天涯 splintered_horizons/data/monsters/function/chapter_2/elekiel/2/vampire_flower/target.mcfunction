@@ -10,8 +10,6 @@ execute \
 tag @s remove temp
 
 tag @a remove temp
-tag Steve add temp
-
 
 execute \
     as @r[tag=temp] run \

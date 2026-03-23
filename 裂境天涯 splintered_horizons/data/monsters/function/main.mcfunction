@@ -5,6 +5,10 @@ execute \
     unless score #difficulty global.main matches 1.. run \
 return 0
 
+execute \
+    as @s[type=area_effect_cloud] at @s run \
+function monsters:chapter_2/blackhole_creeper/main
+
 function monsters:chapter_2/soul_tree_remnant/main
 function monsters:chapter_2/forest_messenger/main
 function monsters:chapter_2/forest_messenger/cocoon/main

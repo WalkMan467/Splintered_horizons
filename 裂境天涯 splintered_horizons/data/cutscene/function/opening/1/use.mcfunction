@@ -2,6 +2,8 @@ forceload remove 10180 10100
 forceload remove 9999 10070
 
 schedule function cutscene:opening/main 1t
+schedule function cutscene:opening/force_execution/remove/0/0 1t
+schedule function cutscene:opening/force_execution/remove/0/0_1 1t
 
 execute \
     as @a at @s run \

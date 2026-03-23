@@ -21,12 +21,12 @@ playsound minecraft:entity.firework_rocket.twinkle_far voice @a 1101 206 148 5 1
 setblock 1101 206 148 chest[facing=south]
 setblock 1101 207 148 light[level=15]
 
-loot replace block 1101 206 148 container.13 loot weapons:get/axe/earthquake_axe
-item replace block 1101 206 148 container.3 with red_stained_glass_pane
-item replace block 1101 206 148 container.4 with red_stained_glass_pane
-item replace block 1101 206 148 container.5 with red_stained_glass_pane
-item replace block 1101 206 148 container.12 with red_stained_glass_pane
-item replace block 1101 206 148 container.14 with red_stained_glass_pane
-item replace block 1101 206 148 container.21 with red_stained_glass_pane
-item replace block 1101 206 148 container.22 with red_stained_glass_pane
-item replace block 1101 206 148 container.23 with red_stained_glass_pane
+loot replace block 1101 206 148 container.13 loot item:get/recipe/earthquake_axe
+item replace block 1101 206 148 container.3 with item:get/material/finality_ingot
+item replace block 1101 206 148 container.4 with item:get/material/finality_ingot
+item replace block 1101 206 148 container.5 with item:get/material/finality_ingot
+item replace block 1101 206 148 container.12 with item:get/material/finality_ingot
+item replace block 1101 206 148 container.14 with item:get/material/finality_ingot
+item replace block 1101 206 148 container.21 with item:get/material/finality_ingot
+item replace block 1101 206 148 container.22 with item:get/material/finality_ingot
+item replace block 1101 206 148 container.23 with item:get/material/finality_ingot
