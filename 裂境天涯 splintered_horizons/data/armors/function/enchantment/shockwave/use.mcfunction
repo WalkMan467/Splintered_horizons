@@ -52,7 +52,7 @@ summon minecraft:item_display ~ ~ ~ \
 tag @s add armor.shockwave.user
 
 execute \
-    as @n[sort=arbitrary,tag=armor.shockwave.display,tag=summon,type=item_display] at @s run \
+    as @n[distance=..1,sort=arbitrary,tag=armor.shockwave.display,tag=summon,type=item_display] at @s run \
 function armors:enchantment/shockwave/setup
 
 tag @s remove armor.shockwave.user
@@ -62,6 +62,11 @@ scoreboard players set @s armor.enchantment.shockwave.timer 5
 playsound minecraft:entity.generic.explode voice @a ~ ~1 ~ 1 1.875
 particle minecraft:sonic_boom ~ ~1 ~ 0 0 0 0 1 force @a
 
+execute \
+    as @e[sort=arbitrary,distance=..4,tag=!sys.dummy_mob.interface,type=!#minecraft:dummy_mob] run \
+function sys:dummy_mob/interface
 
-effect give @e[sort=arbitrary,distance=..4,type=!#minecraft:dummy_mob,type=!player] slowness 5 1 false
+effect give @e[sort=arbitrary,distance=..4,tag=!sys.dummy_mob.interface,type=!#minecraft:dummy_mob] slowness 5 1 false
 effect give @s speed 1 0 false
+
+tag @e[sort=arbitrary,distance=..4,tag=sys.dummy_mob.interface,type=!#minecraft:dummy_mob] remove sys.dummy_mob.interface

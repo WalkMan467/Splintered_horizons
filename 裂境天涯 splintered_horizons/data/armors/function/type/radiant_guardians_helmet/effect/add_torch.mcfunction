@@ -18,7 +18,6 @@ execute \
     unless predicate armors:type/radiant_guardians_helmet/effect/light_detect run \
 return 0
 
-
 execute \
     store result score #have.torch? global.main run \
 clear @s #torchs 0

@@ -47,6 +47,7 @@ scoreboard objectives add armor.black_hole.boots.aj.id dummy "黑洞之靴 AJ �
 
 scoreboard objectives add armor.windriders_legplates.leggings.effect dummy "馭風戰騎腿鎧 技能觸發"
 scoreboard objectives add armor.windriders_legplates.leggings.damage_delay dummy "馭風戰騎腿鎧 傷害間隔"
+scoreboard objectives add armor.windriders_legplates.leggings.effect_delay dummy "馭風戰騎腿鎧 效果間隔"
 
 
 scoreboard objectives add armor.chestplate.effect.actived dummy "鎧甲類技能啟動中"

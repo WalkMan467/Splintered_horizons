@@ -28,11 +28,16 @@ playsound minecraft:block.end_portal_frame.fill voice @a ~ ~1 ~ 1 0.5
 playsound minecraft:entity.ender_eye.death voice @a ~ ~1 ~ 1 0.75
 particle minecraft:end_rod ~ ~1 ~ 0 0 0 0.5 40 normal @a
 
+execute \
+    as @e[sort=arbitrary,distance=..4,tag=!sys.dummy_mob.interface,type=!#minecraft:dummy_mob,type=!player] run \
+function sys:dummy_mob/interface
 
 execute \
-    as @e[distance=..4,type=!#minecraft:dummy_mob,type=!player] at @s run \
+    as @e[distance=..4,tag=!sys.dummy_mob.interface,type=!#minecraft:dummy_mob,type=!player] at @s run \
 function cse:sys/status_effects/use {type:"add_multiplied_base", attribute:"movement_speed",duration:100,base:-0.08,value:-0.08,max:0.4, id:"radiant_guardians_helmet"}
 
 function armors:type/radiant_guardians_helmet/add_torch
+
+tag @e[distance=..4,tag=sys.dummy_mob.interface,type=!#minecraft:dummy_mob,type=!player] remove sys.dummy_mob.interface
 
 scoreboard players set @s armor.helmet.effect.actived 2

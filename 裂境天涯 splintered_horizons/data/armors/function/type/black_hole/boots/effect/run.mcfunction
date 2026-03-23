@@ -10,6 +10,7 @@
 
 tp @s ^ ^ ^0.25
 
+function sys:dummy_mob/interface
 
 execute \
     if score @s armor.black_hole.boots.damage_delay matches 0 run \
@@ -21,4 +22,6 @@ execute \
 scoreboard players set @s armor.black_hole.boots.damage_delay 3
 
 
-effect give @s weakness 1 255 false
+effect give @s[tag=!sys.dummy_mob.interface,type=!#minecraft:dummy_mob] weakness 1 255 false
+
+tag @s remove sys.dummy_mob.interface

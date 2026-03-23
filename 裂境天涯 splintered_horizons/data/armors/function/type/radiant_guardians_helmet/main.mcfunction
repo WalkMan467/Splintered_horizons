@@ -19,6 +19,6 @@ execute \
 function armors:type/radiant_guardians_helmet/effect/add_torch
 
 execute \
-    as @n[tag=armors.radiant_guardians_helmet.torch,type=item] at @s \
+    as @n[distance=0..,tag=armors.radiant_guardians_helmet.torch,type=item] at @s \
     unless block ~ ~-1 ~ #penetrate run \
 function armors:type/radiant_guardians_helmet/guide

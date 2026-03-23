@@ -1,14 +1,12 @@
 # ===================================================
-# Finality Chestplate Main Function
+# Paladins Helmet Main Function
 
-    ## Guide [ function armors:type/paladins_helmet/effect/timer ] >>> Effect Timer
-    ## Guide [ function armors:type/paladins_helmet/use ] >>> Finality Chestplate Armor Use
-    ## Guide [ function armors:type/paladins_helmet/effect/guide ] >>> Effect Guide
-    ## Guide [ function armors:type/paladins_helmet/effect/reset ] >>> Effect Clear
-
+    ## Guide [ function armors:type/paladins_helmet/effect/timer ] >>> Timer
+    ## Guide [ function armors:type/paladins_helmet/use ] >>> Detect Sneak ;Call Function
+    ## Guide [ function armors:type/paladins_helmet/effect/guide ] >>> Timer Guide
+    ## Guide [ function armors:type/paladins_helmet/effect/reset ] >>> Reset
 # ===================================================
-# Atk dmg Buff Timer
-
+# This Function: effect/timer
 
 execute \
     if score @s armor.paladins_helmet.effect.timer matches 1.. run \

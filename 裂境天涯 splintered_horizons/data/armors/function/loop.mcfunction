@@ -18,6 +18,7 @@ execute \
 function armors:type/black_hole/boots/effect/use
 
 function armors:enchantment/shockwave/main
+
 execute \
     if items entity @s armor.feet *[custom_data~{black_hole:1b} | custom_data={black_hole:1}] run \
 advancement grant @s only armors:type/black_hole/boots/eqipment
@@ -48,7 +49,7 @@ function armors:type/radiant_guardians_helmet/main
 
 function armors:type/tai_chis_shadow/main
 function armors:type/black_hole/animation/boots/main
-function armors:type/symbiotic_blood_oath/effect/main
+function armors:type/symbiotic_blood_oath/passive/main
 
 # ===================================================
 

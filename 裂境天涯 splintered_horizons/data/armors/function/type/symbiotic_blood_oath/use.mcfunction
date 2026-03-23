@@ -1,16 +1,14 @@
 # ===================================================
-# Radiant Guardians Helmet Main Function
+# Symbiotic Blood Oath Main Function
 
-    ## Guide [ function armors:type/symbiotic_blood_oath/use ] >>> Detect use
-    ## Guide [ function armors:type/symbiotic_blood_oath/eqipment ] >>> Eqipment
-    ## Guide [ function armors:type/symbiotic_blood_oath/take_off ] >>> Take Off
-    ## Guide [ function armors:type/symbiotic_blood_oath/add_torch ] >>> Add Torch
-    ## Guide [ function armors:type/symbiotic_blood_oath/guide ] >>> Function Guide
-    ## Guide [ function armors:type/symbiotic_blood_oath/main ] >>> Main Function
-    ## Guide [ function armors:type/symbiotic_blood_oath/effect/add_torch ] >>> Passive Auto Place Torch
-
+    ## Guide [ function armors:type/symbiotic_blood_oath/use ] >>> Detect crouching trigger function
+    ## Guide [ function armors:type/symbiotic_blood_oath/multiple_players/true ] >>> Multiple players around are performing this
+    ## Guide [ function armors:type/symbiotic_blood_oath/multiple_players/false ] >>> There were no other players around executing this program
+    ## Guide [ function armors:type/symbiotic_blood_oath/range ] >>> Range Fx (Self)
+    ## Guide [ function armors:type/symbiotic_blood_oath/passive/use ] >>> Passive Skills Use
+    ## Guide [ function armors:type/symbiotic_blood_oath/passive/main ] >>> Passive Skills Loop
 # ===================================================
-# Detect Sneak ; Play Animation Function
+# Detect Sneak ; Call Function
 
 scoreboard players operation @s armor.animation_skills.chestplate.cd = @s armor.symbiotic_blood_oath.cd
 scoreboard players set @s armor.animation_skills.return 1
@@ -26,7 +24,7 @@ playsound minecraft:entity.zombie.converted_to_drowned voice @a ~ ~1 ~ 1 0.875
 scoreboard players reset #armor.symbiotic_blood_oath.fx particle
 
 execute rotated ~ 0 run \
-function armors:type/symbiotic_blood_oath/fx
+function armors:type/symbiotic_blood_oath/range
 
 tag @s add armor.symbiotic_blood_oath.user
 
