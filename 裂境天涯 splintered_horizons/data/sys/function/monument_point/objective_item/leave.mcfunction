@@ -1,0 +1,1 @@
+tag @s remove weapon.lost.return

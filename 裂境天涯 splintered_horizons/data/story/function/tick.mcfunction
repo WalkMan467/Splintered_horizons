@@ -16,6 +16,8 @@ function story:chapter_2/ml/3/main
 function story:chapter_2/ml/5/main
 function story:chapter_2/ml/6/main
 function story:chapter_2/ml/7/main
+function story:chapter_2/ml/8/main
+function story:chapter_2/ml/9/main
 
 function story:other/chapter_2/1/main
 
@@ -97,6 +99,25 @@ advancement grant @a only story:icon/story/chapter_1/sq/1/2
 execute \
     unless score #story:icon/story/chapter_1/sq/1/2 global.main matches 1.. run \
 advancement revoke @a only story:icon/story/chapter_1/sq/1/2
+
+execute \
+    if score #story:icon/story/chapter_1/sq/2/title global.main matches 1.. run \
+advancement grant @a only story:icon/story/chapter_1/sq/2/title
+
+
+execute \
+    unless score #story:icon/story/chapter_1/sq/2/title global.main matches 1.. run \
+advancement revoke @a only story:icon/story/chapter_1/sq/2/title
+
+
+execute \
+    if score #story:icon/story/chapter_1/sq/2/1 global.main matches 1.. run \
+advancement grant @a only story:icon/story/chapter_1/sq/2/1
+
+
+execute \
+    unless score #story:icon/story/chapter_1/sq/2/1 global.main matches 1.. run \
+advancement revoke @a only story:icon/story/chapter_1/sq/2/1
 
 
 execute \

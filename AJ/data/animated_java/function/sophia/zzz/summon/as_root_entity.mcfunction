@@ -8,9 +8,12 @@ execute if score #success aj.i matches 0 run return fail
 function animated_java:sophia/set_default_pose
 execute if data storage animated_java:temp args.animation run function animated_java:sophia/zzz/summon/animation_arg/process with storage animated_java:temp args
 execute if score #success aj.i matches 0 run return fail
+execute on passengers if entity @s[tag=aj.global.data] run function animated_java:sophia/on_tick/transform_floating_entities
 execute on passengers run rotate @s ~ ~
 data modify entity @s teleport_duration set value 5
 execute on passengers run data modify entity @s teleport_duration set value 5
+execute on passengers if entity @s[tag=aj.sophia.node.item_display1] run function animated_java:sophia/zzz/summon/node_on_summon_item_display1
 execute at @s run function animated_java:sophia/zzz/summon/rig_on_summon
 tag @s remove aj.new
 execute on passengers run tag @s remove aj.new
+execute on passengers unless entity @s[tag=aj.global.data] run ride @s dismount

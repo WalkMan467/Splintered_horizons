@@ -13,8 +13,9 @@
     execute \
         positioned -2 65 22 \
         as @n[tag=aj.sophia.root,limit=1,distance=..10,type=item_display] at @s \
-        facing entity @p[distance=..10] eyes run \
-    rotate @s ~ 0
+        facing entity @p[distance=..10] eyes \
+        rotated ~ 0 run \
+    function animated_java:sophia/move
 
     # If true;
     execute \

@@ -10,10 +10,12 @@
 
     # Rotate to Player
     execute \
-    positioned 903 112 482 \
+        positioned 903 112 482 \
+        if entity @p[distance=..16,predicate=players:detect/movement] \
         as @n[sort=arbitrary,distance=..1,tag=aj.selena.root,type=item_display] at @s \
-        facing entity @p[distance=..16] eyes run \
-    rotate @s ~ 0
+        facing entity @p[distance=..16] eyes \
+        rotated ~ 0 run \
+    function animated_java:selena/move
 
     # If true;
     execute \

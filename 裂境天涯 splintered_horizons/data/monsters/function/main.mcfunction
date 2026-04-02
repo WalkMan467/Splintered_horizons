@@ -34,21 +34,21 @@ function monsters:chapter_3/finality_creeper/main
 execute \
     as @s[tag=monster,tag=!hide_skill_tip] \
     if score @s monster.skill.cast.cd matches 30 \
-    unless score @s monster.skill.freeze matches 0.. run \
+    unless score @s sys.skills_freeze matches 0.. run \
 function monsters:unlease_skill_tip
 
 # Monster skill cooldown
 
 execute \
     unless entity @s[tag=freeze] \
-    unless score @s monster.skill.freeze matches 0.. \
+    unless score @s sys.skills_freeze matches 0.. \
     if score @s monster.skill.cast.cd matches 0.. run \
 scoreboard players remove @s monster.skill.cast.cd 1
 
 # Monster Freeze
 
 execute \
-    as @s[scores={monster.skill.freeze=0..}] at @s run \
+    if score @s sys.skills_freeze matches 0.. at @s run \
 function monsters:generic/freeze/main
 
 # Monster skill is being cast

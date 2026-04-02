@@ -1,10 +1,10 @@
 
 execute \
-    if score @s monster.skill.freeze matches 0.. run \
+    if score @s sys.skills_freeze matches 0.. run \
 function monsters:chapter_3/bloody_blade_spider/cast/end
 
 execute \
-    if score @s monster.skill.freeze matches 0.. run \
+    if score @s sys.skills_freeze matches 0.. run \
 return 0
 
 playsound minecraft:item.mace.smash_ground voice @a ~ ~1 ~ 1 1.5

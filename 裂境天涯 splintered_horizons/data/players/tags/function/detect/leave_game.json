@@ -6,6 +6,6 @@
       "monsters:bossfight/chapter_2/elekiel/player_death",
       "monsters:bossfight/chapter_2/elekiel_phase_2/player_death",
       "monsters:chapter_2/segrina/4/8",
-      "weapons:type/sword/aquilumera/return/leave"
+      "sys:monument_point/objective_item/leave"
     ]
   }

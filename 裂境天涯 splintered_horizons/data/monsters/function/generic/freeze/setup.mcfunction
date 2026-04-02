@@ -6,4 +6,4 @@ ride @n[tag=monster.marker,tag=summon,type=marker] mount @n[distance=..1,tag=tem
 tag @n[tag=monster.marker,tag=summon,type=marker] remove summon
 
 ride @s mount @n[distance=..1,tag=temp]
-scoreboard players operation @s monster.skill.freeze.id = #global monster.skill.freeze.id
+scoreboard players operation @s sys.skills_freeze.id = #global sys.skills_freeze.id

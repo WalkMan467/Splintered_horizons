@@ -5,5 +5,5 @@ function cutscene:opening/guide
 
 
 execute \
-    if score .opening cutscene.story matches 0..4000 run \
+    if score .opening cutscene.story matches 0..4450 run \
 schedule function cutscene:opening/main 1t

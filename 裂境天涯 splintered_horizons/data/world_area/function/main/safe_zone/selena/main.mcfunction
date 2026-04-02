@@ -1,13 +1,21 @@
 ## ---開頭--- ##
 
     execute \
-    as @n[tag=aj.selena.root,limit=1,tag=world_area.main.safe_zone.selena] at @s \
-    if entity @p[distance=..8] facing entity @p[distance=..8] eyes run \
-rotate @s ~ 0
+    positioned 766 146 966 \
+    as @n[tag=aj.selena.root,limit=1,tag=world_area.main.safe_zone.selena,distance=..1,type=item_display] at @s \
+    if entity @p[sort=arbitrary,distance=..8] \
+    if entity @p[distance=..8,predicate=players:detect/movement] \
+    facing entity @p[distance=..8] eyes \
+    rotated ~ 0 run \
+    function animated_java:selena/move
+
+
     execute \
-    as @n[tag=aj.selena.root,limit=1,tag=world_area.main.safe_zone.selena] at @s \
-    unless entity @p[distance=..8] run \
-rotate @s 135 0
+    positioned 766 146 966 \
+    as @n[distance=..1,tag=aj.selena.root,limit=1,tag=world_area.main.safe_zone.selena,type=item_display] at @s \
+    unless entity @p[sort=arbitrary,distance=..8] \
+    rotated 135 0 run \
+    function animated_java:selena/move
 
     # Detect
     execute \

@@ -5,52 +5,52 @@ data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.data_data set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.amysis.node.hair1] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.item_display_hair1 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.hair1 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.amysis.node.hair4] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.item_display_hair4 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.hair4 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.amysis.node.hair2] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.item_display_hair2 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.hair2 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.amysis.node.hair3] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.item_display_hair3 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.hair3 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.amysis.node.layer] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_layer set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.layer set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.amysis.node.head] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_head set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.head set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.amysis.node.6] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_6 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.6 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.amysis.node.12] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_12 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.12 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.amysis.node.10] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_10 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.10 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.amysis.node.9] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_9 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.9 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.amysis.node.2] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_2 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.2 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.amysis.node.1] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_1 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.1 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.amysis.node.item_display] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.item_display_item_display set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.item_display set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.amysis.node.4] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_4 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.4 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.amysis.node.3] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_3 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.3 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.amysis.node.8] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_8 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.8 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.amysis.node.7] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_7 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.7 set from storage animated_java:gu out

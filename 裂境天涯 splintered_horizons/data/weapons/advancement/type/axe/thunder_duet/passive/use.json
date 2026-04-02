@@ -1,0 +1,26 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+          "slots": {
+            "weapon.mainhand": {
+              "predicates": {
+                "minecraft:custom_data": {
+                  "weapon": "thunder_duet"
+                }
+              }
+            }
+          }
+        },
+        "entity": {
+          "nbt": "{Tags:[\"weapon.thunder_duet.target\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "weapons:type/axe/thunder_duet/passive/use"
+  }
+}

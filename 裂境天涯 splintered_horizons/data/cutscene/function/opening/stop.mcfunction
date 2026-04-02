@@ -103,8 +103,21 @@ schedule clear cutscene:opening/7/10
 schedule clear cutscene:opening/7/11
 schedule clear cutscene:opening/7/12
 schedule clear cutscene:opening/8/use
+schedule clear cutscene:opening/8/0
+schedule clear cutscene:opening/8/1
+schedule clear cutscene:opening/8/2
+schedule clear cutscene:opening/9/use
+schedule clear cutscene:opening/9/0
+schedule clear cutscene:opening/9/1
+schedule clear cutscene:opening/9/2
+schedule clear cutscene:opening/9/3
+schedule clear cutscene:opening/10/use
+schedule clear cutscene:opening/10/0
+schedule clear cutscene:opening/10/1
 
 schedule clear cutscene:opening/end/use
+schedule clear cutscene:opening/end/0
+schedule clear cutscene:opening/end/1
 schedule clear cutscene:opening/6/2
 schedule clear cutscene:opening/1/0_1
 

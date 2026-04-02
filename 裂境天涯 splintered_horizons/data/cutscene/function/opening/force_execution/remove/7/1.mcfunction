@@ -19,6 +19,7 @@ schedule function cutscene:opening/force_execution/remove/7/1 1t
 scoreboard players reset #cutscene.opening.force_execution.7.1 global.main
 
 forceload remove 718 731
+forceload remove 670 762 849 519
 
 tellraw @a[tag=sys.debug.log] \
     [ \

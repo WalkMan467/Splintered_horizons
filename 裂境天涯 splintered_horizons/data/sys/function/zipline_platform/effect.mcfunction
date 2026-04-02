@@ -5,7 +5,7 @@
 # effect
 summon marker ~ ~ ~ {Tags:["sys.zipline_platform.point","summon"]}
 
-scoreboard players set @n[distance=0..,tag=sys.zipline_platform.point,tag=summon,type=marker] duration 25
+scoreboard players set @n[distance=0..,tag=sys.zipline_platform.point,tag=summon,type=marker] duration 125
 
 scoreboard players operation @n[tag=summon,distance=0..,type=marker] sys.zipline_platform.id = @s sys.zipline_platform.id
 tag @n[tag=summon,limit=1,distance=0..,type=marker] remove summon

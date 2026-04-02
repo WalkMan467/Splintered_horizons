@@ -1,5 +1,7 @@
 bossbar remove monster.segrina.skill.1.casting
 
+function particle:space_rupture/use
+
 execute \
     as @a at @s run \
 function monsters:chapter_2/segrina/1/8

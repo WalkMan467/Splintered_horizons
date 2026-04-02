@@ -13,6 +13,25 @@
           "type": "white_ash"
         },
         "probability": 0.05
+      },
+      {
+        "particle": {
+          "type": "minecraft:sculk_charge_pop"
+        },
+        "probability": 0.01
+      },
+      {
+        "particle": {
+          "type": "minecraft:shriek",
+          "delay": 0
+        },
+        "probability": 0.0001
+      },
+      {
+        "particle": {
+          "type": "minecraft:sonic_boom"
+        },
+        "probability": 0.0001
       }
     ]
   },

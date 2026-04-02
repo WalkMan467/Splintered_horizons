@@ -2,3 +2,4 @@ scoreboard players set skill.1 monster.segrina.cd 800
 scoreboard players reset @s monster.segrina.skill.1.casting
 
 tag @s remove chapter_2.segrina.1
+tag @s remove chapter_2.segrina.4

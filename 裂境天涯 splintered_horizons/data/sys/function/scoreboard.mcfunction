@@ -3,6 +3,7 @@
 # 每個在 sys 資料夾中的 introduction .mcfunction 檔案必須要有 function 指令引用在這裡
 function sys:dummy_mob/introduction
 function sys:fall_immunity/introduction
+function sys:skills_freeze/introduction
 
 # =============================================================================
 

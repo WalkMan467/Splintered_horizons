@@ -52,6 +52,18 @@
         "type": "minecraft:show_dialog",
         "dialog": "players:backup_return"
       }
+    },
+    {
+      "label": {
+        "translate": "dialog.main.quick_actions.objective_items.recover",
+        "fallback": "Recover Lost Objective Items",
+        "color": "white"
+      },
+      "width": 180,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "players:recover_lost_objective_items"
+      }
     }
   ]
 }

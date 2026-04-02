@@ -26,6 +26,7 @@ kill @e[distance=0..,tag=sys.monument_point.sword]
 xp set @a 0 levels
 xp set @a 0 points
 
+# 已獲得魔劍
 scoreboard players set #monument.area_1 global.main 0
 scoreboard players set #monument.area_2 global.main 0
 scoreboard players set #monument.area_3 global.main 0
@@ -34,6 +35,16 @@ scoreboard players set #monument.area_5 global.main 0
 scoreboard players set #monument.area_6 global.main 0
 scoreboard players set #monument.area_7 global.main 0
 scoreboard players set #monument.area_8 global.main 0
+
+# 已歸還到始源神殿魔劍
+scoreboard players set #objective_item.1 global.main 0
+scoreboard players set #objective_item.2 global.main 0
+scoreboard players set #objective_item.3 global.main 0
+scoreboard players set #objective_item.4 global.main 0
+scoreboard players set #objective_item.5 global.main 0
+scoreboard players set #objective_item.6 global.main 0
+scoreboard players set #objective_item.7 global.main 0
+scoreboard players set #objective_item.8 global.main 0
 
 scoreboard players set #in_safe_zone.ml global.main 0
 
@@ -79,6 +90,11 @@ scoreboard players set #story:icon/story/chapter_1/mq/scebe_1 global.main 0
 scoreboard players set #story:icon/story/chapter_1/mq/scebe_2 global.main 0
 scoreboard players set #story:icon/story/chapter_1/mq/scebe_3 global.main 0
 scoreboard players set story.chapter_1.sq.1 story.chapter_1 0
+scoreboard players set #story:icon/story/chapter_1/sq/1/1 global.main 0
+scoreboard players set #story:icon/story/chapter_1/sq/1/2 global.main 0
+scoreboard players set #story:icon/story/chapter_1/sq/1/title global.main 0
+scoreboard players set #story:icon/story/chapter_1/sq/2/1 global.main 0
+scoreboard players set #story:icon/story/chapter_1/sq/2/title global.main 0
 
 scoreboard players set #story:icon/story/chapter_2/mq/title global.main 0
 scoreboard players set #story:icon/story/chapter_2/mq/scebe_1 global.main 0
@@ -103,5 +119,7 @@ scoreboard players set #story global.main 1
 advancement revoke @a only weapons:monument/area_1
 advancement revoke @a only weapons:monument/area_2
 advancement revoke @s only item:type/tp_book/reset
+
+function sys:monument_point/remove
 
 reload

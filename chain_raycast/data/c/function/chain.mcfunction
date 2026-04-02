@@ -5,7 +5,7 @@ execute \
 return 0
 
 tag @s add hit
-scoreboard players set .itt raycast 60
+scoreboard players set .itt raycast 120
 
 execute \
     on vehicle run \
@@ -22,4 +22,4 @@ tag @s remove vehicle
 
 
 # chain the chain
-execute if score .count raycast matches ..15 if entity @e[tag=origin,tag=sys.zipline_platform.as,distance=..30,type=armor_stand] run function c:hit
+execute if score .count raycast matches ..30 if entity @e[tag=origin,tag=sys.zipline_platform.as,distance=..60,type=armor_stand] run function c:hit

@@ -2,3 +2,4 @@
 tag @s remove aj.oceanid.animation.idle.playing
 tag @s remove aj.oceanid.animation.2.playing
 tag @s remove aj.oceanid.animation.1.playing
+tag @s remove aj.oceanid.animation.death.playing

@@ -1,10 +1,10 @@
 
 execute \
-    if score @s monster.skill.freeze matches 0.. run \
+    if score @s sys.skills_freeze matches 0.. run \
 function monsters:chapter_3/sunfire_emissary/cast/end
 
 execute \
-    if score @s monster.skill.freeze matches 0.. run \
+    if score @s sys.skills_freeze matches 0.. run \
 return 0
 
 

@@ -14,3 +14,4 @@ execute on passengers run data modify entity @s teleport_duration set value 5
 execute at @s run function animated_java:selena/zzz/summon/rig_on_summon
 tag @s remove aj.new
 execute on passengers run tag @s remove aj.new
+execute on passengers unless entity @s[tag=aj.global.data] run ride @s dismount

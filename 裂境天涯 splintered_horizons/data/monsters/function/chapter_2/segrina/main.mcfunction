@@ -43,6 +43,14 @@ execute \
 tp @s ^ ^ ^1
 
 execute \
+    as @e[distance=0..,sort=arbitrary,tag=monster.segrina.skill.4.monster,type=skeleton] at @s \
+    positioned 725 107 605 \
+    unless entity @s[dx=73,dy=26,dz=73] at @s \
+    facing 762 107 642 run \
+tp @s ^ ^ ^1
+
+
+execute \
     positioned 725 107 605 \
     unless entity @p[sort=arbitrary,dx=73,dy=26,dz=73,tag=!chapter_2.segrina.lose] run \
 function monsters:chapter_2/segrina/void

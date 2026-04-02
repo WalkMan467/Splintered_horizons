@@ -43,12 +43,6 @@ advancement grant @s only world_area:other/hasanor/in
     unless biome ~ ~ ~ world_area:other/hasanor run \
 advancement grant @s only world_area:other/hasanor/out
 
-    # Mini Game
-    execute \
-    unless entity @s[tag=sys.hide_world_area.name] \
-    if entity @s[gamemode=!spectator]
-    if biome ~ ~ ~ world_area:other/mini_game run \
-advancement grant @s only world_area:other/mini_game/in
     execute \
     unless biome ~ ~ ~ world_area:other/mini_game run \
 advancement grant @s only world_area:other/mini_game/out

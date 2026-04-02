@@ -4,3 +4,4 @@ tag @s remove aj.sophia.animation.idle2.playing
 tag @s remove aj.sophia.animation.sit_down.playing
 tag @s remove aj.sophia.animation.walk.playing
 tag @s remove aj.sophia.animation.chat1.playing
+tag @s remove aj.sophia.animation.cutscene_opening_death.playing

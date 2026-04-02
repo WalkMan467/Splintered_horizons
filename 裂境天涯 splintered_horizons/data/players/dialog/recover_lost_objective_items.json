@@ -1,0 +1,46 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "translate": "dialog.main.quick_actions.objective_items.recover",
+    "fallback": "Recover Lost Objective Items"
+  },
+  "inputs": [],
+  "can_close_with_escape": true,
+  "pause": false,
+  "after_action": "none",
+  "actions": [
+    {
+      "label": {
+        "translate": "weapon.monument.aquilumera",
+        "color": "dark_aqua"
+      },
+      "width": 200,
+      "action": {
+        "type": "run_command",
+        "command": "trigger player.setting.recover_lost_objective_items.return set 1"
+      }
+    },
+    {
+      "label": {
+        "translate": "weapon.monument.silvaverdis",
+        "color": "green"
+      },
+      "width": 200,
+      "action": {
+        "type": "run_command",
+        "command": "trigger player.setting.recover_lost_objective_items.return set 2"
+      }
+    },
+    {
+      "label": {
+        "translate": "weapon.monument.pyrosolis",
+        "color": "red"
+      },
+      "width": 200,
+      "action": {
+        "type": "run_command",
+        "command": "trigger player.setting.recover_lost_objective_items.return set 3"
+      }
+    }
+  ]
+}

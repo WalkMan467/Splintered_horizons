@@ -8,6 +8,7 @@
     "#weapons:type/scythe/flame_of_finality/attack",
     "#monsters:chapter_2/elekiel_phase_2/1/all",
     "#monsters:chapter_2/segrina/all",
+    "weapons:type/axe/thunder_duet/damage",
     "weapons:type/sword/kill_sword",
     "weapons:type/sword/grip_of_withering",
     "weapons:type/drop/broken_glass/dmg",

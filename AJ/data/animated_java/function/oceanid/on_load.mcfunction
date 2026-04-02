@@ -3,3 +3,4 @@ data modify storage animated_java:oceanid rig_hash set value '153c4df8145567b9f4
 scoreboard objectives add aj.idle.frame dummy
 scoreboard objectives add aj.2.frame dummy
 scoreboard objectives add aj.1.frame dummy
+scoreboard objectives add aj.death.frame dummy

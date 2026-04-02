@@ -16,6 +16,16 @@ execute \
     as @e[sort=arbitrary,tag=twilight_wind.wind,limit=30,distance=0..,type=item_display] at @s run \
 function weapons:type/sword/twilight_wind/wind/main
 
+# thunder duet
+
+execute \
+    as @e[sort=arbitrary,distance=0..,tag=weapon.thunder_duet.tunder,type=item_display] at @s run \
+function weapons:type/axe/thunder_duet/main
+
+execute \
+    as @a at @s run \
+function weapons:type/axe/thunder_duet/player_main
+
 # nightfall
 
 execute \

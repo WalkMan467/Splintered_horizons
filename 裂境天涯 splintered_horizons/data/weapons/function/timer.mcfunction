@@ -16,6 +16,8 @@ scoreboard players remove @a[scores={weapon.flame_of_abyss.effect.cd=1..}] weapo
 scoreboard players remove @a[scores={weapon.otherworld_star.timer=0..}] weapon.otherworld_star.timer 1
 scoreboard players remove @a[scores={weapon.otherworld_star.cd=1..}] weapon.otherworld_star.cd 1
 scoreboard players remove @a[scores={weapon.sagittarius.cd=1..}] weapon.sagittarius.cd 1
+scoreboard players remove @a[scores={weapon.thunder_duet.cd=1..}] weapon.thunder_duet.cd 1
+scoreboard players remove @a[scores={weapon.thunder_duet.passive.cd=1..}] weapon.thunder_duet.passive.cd 1
 scoreboard players remove @a[scores={weapon.enchantment.bleeding_hit.cd=1..}] weapon.enchantment.bleeding_hit.cd 1
 
 # # 風力劍

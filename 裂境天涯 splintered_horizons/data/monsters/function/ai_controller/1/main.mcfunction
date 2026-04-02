@@ -1,5 +1,5 @@
 execute \
-    if score @s monster.skill.freeze matches 1.. run \
+    if score @s sys.skills_freeze matches 1.. run \
 return run function monsters:ai_controller/cast/end
 
 scoreboard players add @s monster.skill.ai_controller.casting 1

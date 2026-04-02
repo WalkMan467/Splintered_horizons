@@ -7,7 +7,7 @@ return 0
 scoreboard players set @s player.click.interval 20
 
 scoreboard players set @s weapon.echo_rhythm.cd 60
-
+scoreboard players set @s weapon.effect.chaotic_thunder 200
 
 execute \
     unless score @s weapon.effect.shadow matches 1.. run \

@@ -19,6 +19,9 @@ execute \
     if score @s player.otherworld_key.count matches 0 run \
 function world_area:other/otherworld_portal/2/lock/false
 
+execute \
+    unless score #story.chapter_1.sq.2.enabled global.main matches -1 run \
+function world_area:other/otherworld_portal/2/lock/false
 
 execute \
     on target \
@@ -28,6 +31,26 @@ scoreboard players set @s player.actionbar.otherworld_portal.2 40
 execute \
     on target \
     if score @s player.otherworld_key.count matches 0 run \
+scoreboard players set #temp player.actionbar.otherworld_portal.2 1
+
+execute \
+    on target \
+    unless score #story.chapter_1.sq.2.enabled global.main matches -1 run \
+scoreboard players set #temp player.actionbar.otherworld_portal.2 2
+
+execute \
+    on target \
+    unless score #story.chapter_1.sq.2.enabled global.main matches -1 run \
+scoreboard players set @s player.actionbar.otherworld_portal.2 40
+
+execute \
+    on target \
+    if score @s player.otherworld_key.count matches 0 run \
+return 0
+
+
+execute \
+    unless score #story.chapter_1.sq.2.enabled global.main matches -1 run \
 return 0
 
 scoreboard players set #world_area.other.otherworld_portal.2.lock global.main 0

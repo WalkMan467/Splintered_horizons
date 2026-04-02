@@ -15,7 +15,13 @@ execute \
     as @e[distance=..8,type=!player,type=!#minecraft:dummy_mob] run \
 damage @s 8 magic
 
-scoreboard players set @e[distance=..6,sort=arbitrary,type=!#minecraft:dummy_mob,type=!player] monster.skill.freeze 100
+execute \
+    as @e[distance=..6,sort=arbitrary,type=!#minecraft:dummy_mob,type=!player] run \
+function sys:dummy_mob/interface
+
+scoreboard players set @e[distance=..6,sort=arbitrary,tag=!sys.dummy_mob.interface,type=!#minecraft:dummy_mob,type=!player] sys.skills_freeze 100
+
+tag @e[distance=..6,sort=arbitrary,tag=sys.dummy_mob.interface,type=!#minecraft:dummy_mob,type=!player] remove sys.dummy_mob.interface
 
 function particle:sagittarius_wave/use
 

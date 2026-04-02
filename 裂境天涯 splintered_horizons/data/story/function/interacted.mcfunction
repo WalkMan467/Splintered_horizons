@@ -83,6 +83,18 @@
         if score story.chapter_2.ml.7 story.chapter_2 matches 1..18 run \
     function story:chapter_2/ml/7/1
 
+    execute \
+        as 4ab7f628-ad6e-49eb-90c4-22f6285ed3ba at @s \
+        if data entity @s interaction.timestamp \
+        if score story.chapter_2.ml.8 story.chapter_2 matches 1..18 run \
+    function story:chapter_2/ml/8/1
+
+    execute \
+        as b4cc1055-f505-4721-aaf7-1b2d953e57dd at @s \
+        if data entity @s interaction.timestamp \
+        if score story.chapter_2.ml.9 story.chapter_2 matches 1..28 run \
+    function story:chapter_2/ml/9/1
+
 # Chapter 3
 
     # Main Quests
@@ -90,7 +102,7 @@
     execute \
         as 0007d070-0000-c819-0000-c94100050e3b at @s \
         if data entity @s interaction.timestamp \
-        if score story.other.chapter_2.1 story.other matches 1..18 run \
+        if score story.other.chapter_2.1 story.other matches 1..5 run \
     function story:other/chapter_2/1/1
 
 # Safe Area

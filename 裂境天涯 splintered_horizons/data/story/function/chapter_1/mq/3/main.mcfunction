@@ -8,9 +8,11 @@
 
     execute \
         positioned 287 182 -187 \
+        if entity @p[distance=..10,predicate=players:detect/movement] \
         as @n[tag=aj.sophia.root,limit=1,distance=..10,type=item_display] at @s \
-        facing entity @p[distance=..6] eyes run \
-    rotate @s ~ 0
+        facing entity @p[distance=..6] eyes \
+        rotated ~ 0 run \
+    function animated_java:sophia/move
 
     # If true;
     execute \

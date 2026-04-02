@@ -1,5 +1,5 @@
-tp @n[type=item,predicate=sys:monument_point/objective_item/2] @p
-data modify entity @n[type=item,predicate=sys:monument_point/objective_item/2] PickupDelay set value 0
+tp @n[predicate=sys:monument_point/objective_item/2,distance=0..,type=item] @p
+data modify entity @n[predicate=sys:monument_point/objective_item/2,distance=0..,type=item] PickupDelay set value 0
 
 summon minecraft:item_display ~ ~ ~ {UUID:[I; 3212,3,1,1],Tags:["sys.monument_point.sword","sys.monument_point.rotate","sys.monument_point.main","sys.monument_point.grass"],brightness: {block: 15, sky: 15}, interpolation_duration: 1, item: {components: {"minecraft:item_model": "minecraft:sword/silvaverdis/0"}, count: 1, id: "minecraft:iron_sword"}, teleport_duration: 1, transformation: {left_rotation: [0.0f, 1.0f, 0.0f, 0.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [2.0f, 2.0000005f, 2.0000002f], translation: [0.075f, 0.625f, 1.4901154E-7f]}}
 
@@ -14,3 +14,5 @@ particle sonic_boom ~ ~ ~ 0 0 0 1 1 normal @a
 title @a title {"translate":"tips.area_2.title","color": "green"}
 title @a subtitle {"translate":"tips.area_2.subtitle","color": "green"}
 title @a times 20 60 20
+
+scoreboard players set #objective_item.2 global.main 1

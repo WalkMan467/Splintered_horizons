@@ -1,5 +1,6 @@
 {
   "values": [
-    "#weapons:type/axe/earthquake_axe"
+    "#weapons:type/axe/earthquake_axe",
+    "weapons:type/axe/thunder_duet/damage"
   ]
 }

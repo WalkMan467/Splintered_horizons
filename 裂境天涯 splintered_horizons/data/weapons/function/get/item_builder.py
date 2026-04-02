@@ -1,84 +1,79 @@
 def build_item_struct():
     return {
-        "name": ['✮天地乖離開闢之星✮', "#ff0000", '劍 / 管理員武器'],
+        "name": ['雷霆二重奏', "#ffee00", '劍 / 史詩'],
         "story": {
-            'info': ['單純輔助殺怪弄的管理員武器'],
+            'info': [''],
             'color': 'blue'
         },
         "item_data": {
             'real_item': 'iron_sword',
-            'id': 'kill_sword',
-            'item_model': '"sword/enuma_elish/1"',
-            
-            'custom_data': 'type:"sword",rarity:"mythic",weapon:"kill_sword"',
-            
+            'id': 'thunder_duet',
+            'item_model': '"axe/thunder_duet/1"',
+            'custom_data': 'type:"axe",rarity:"epic",weapon:"thunder_duet"',
             'rc': True,
             'lc': False,
-
             'max_damage': 0,
             'max_stack_size': 1,
             'other': [
                 'enchantment_glint_override=false',
-                'tooltip_style="mythic"',
-                'kinetic_weapon={delay_ticks:5,contact_cooldown_ticks:10000,forward_movement:0.0,damage_multiplier:0.0,knockback_conditions:{max_duration_ticks:10000},damage_conditions:{max_duration_ticks:10000}}',
-                'piercing_weapon={deals_knockback:false,dismounts:false,sound:"item.spear.attack",hit_sound:"item.spear.hit"}',
-                'swing_animation={duration:20,type:"stab"}'
+                'tooltip_style="epic"',
             ]
         },
+
         "skill": {
             "is_skill": True,
-            "cd": 0,
-            "name": ["遠程清除", "#7a0000", "#ff0000"],
+            "cd": 15,
+            "name": ["閃電鏈", "#ffa600", "#ffee00"],
             "info": [
+                "命中怪物時重置【雷霆之怒】CD",
+
                 {
-                    "text": "釋放 [%s] 投射射線偵測擊殺所有準心的怪物",
+                    "text": "當你使用 %s 時:",
                     "with": [
-                        {"keybind":"key.use","underlined":true,"color":"dark_green"}
+                        {"keybind": "key.use", "underlined": True, "color": "dark_green"}
                     ]
-                }
+                },
+
+                "立即釋放 3 道閃電對前方敵人造成 250% 傷害",
+                "並選中一名怪物附加【閃電標記】",
+                "命中怪物時重置【雷霆之怒】CD"
             ]
         },
+
         "passive_skills": {
-            'is_passive_skills': False,
-            'cd': 0,
-            'name': ['紅炎之舞', '#A70000', '#7A0000'],
+            'is_passive_skills': True,
+            'cd': 5,
+            'name': ['雷霆之怒', '#ffa600', '#ffee00'],
             'info': [
-                "普通攻擊分為 4 段特殊攻擊：",
+                "當你攻擊命中擁有【雷霆標記】敵人時:",
+                "使怪物定格 1 秒",
+                "並使怪物位置 3 格範圍內的其他怪物彈開一段距離造成 75% 攻擊力傷害",
+                "讓自身跳至空中，期間落下如果命中【雷霆標記】的怪物時",
+                "對 6 格範圍內敵人造成 350% 攻擊力傷害並消除【雷霆標記】",
+                {
+                    "text": "以及使自身獲得【%s】符文 (00:05)",
+                    "with": [
+                        {"translate":"weapon.effect.shadow","underlined":True,"color":"#470041"}
+                    ]
+                },
                 "",
-                "第一段：向左揮砍對前方 3 格內怪物造成 100% 基礎傷害",
-                "第二段：向右揮砍對前方 3 格內怪物造成 100% 基礎傷害",
-                "第三段：在前方 3 格遠的位置召喚【火紅蓮】",
-                "並且對 1.5 格範圍內怪物造成 150% 基礎傷害",
-                "第四段：引爆【火紅蓮】並且對 1.5 格範圍內怪物造成 150% 基礎傷害，",
-                "並且給予你一個終焉閃電"
-                ]
+                {
+                    "text": "當你擁有【%s】符文時:",
+                    "with": [
+                        {"translate":"weapon.effect.chaotic_thunder","underlined":True,"color":"#ff0077"}
+                    ]
+                },
+                "使落下命中 6 格範圍內敵人防禦力減少 20% (00:05)",
+                "並重置【閃電鏈】CD"
+            ]
         },
+
         "ultimate": {
             'is_ultimate': False,
             'cd': 20,
             'name': ['八重黑火', '#ff0000', '#7a0000'],
-            'info': [
-                '當你按下【右鍵】時：',
-                '消耗一顆終焉之眼',
-                '對前方 7 格長範圍內怪物造成 150% 傷害',
-                '如果你擁有終焉閃電：',
-                '則消耗一個終焉閃電，並向前發射 1 發黑火彈，對怪物造成 150% 基礎傷害',
-                ]
+            'info': []
         },
-        "attributes": [
-            {
-                'attribute': 'attack_damage',
-                'id': 'base_attack_damage',
-                'value': 9999999,
-                'slot': 'mainhand',
-                'operation': 'add_multiplied_total'
-            },
-            {
-                'attribute': 'attack_speed',
-                'id': "base_attack_speed",
-                'value': 9999999,
-                'slot': 'mainhand',
-                'operation': 'add_multiplied_total'
-            }
-        ]
+
+        "attributes": []
     }

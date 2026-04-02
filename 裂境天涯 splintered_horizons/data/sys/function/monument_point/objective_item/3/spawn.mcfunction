@@ -15,3 +15,5 @@ particle sonic_boom ~ ~ ~ 0 0 0 1 1 normal @a
 title @a title {"translate":"tips.area_3.title","color": "dark_red"}
 title @a subtitle {"translate":"tips.area_3.subtitle","color": "dark_red"}
 title @a times 20 60 20
+
+scoreboard players set #objective_item.3 global.main 1

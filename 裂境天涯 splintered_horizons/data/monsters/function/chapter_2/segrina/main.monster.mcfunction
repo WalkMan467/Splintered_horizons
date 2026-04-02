@@ -20,5 +20,11 @@ execute \
 rotate @s ~ 0
 ride @n[distance=0..,tag=aj.segrina.root,type=item_display] mount ffff8285-0000-0c33-0000-5a5c0162349d
 
+execute \
+    positioned 725 107 605 \
+    unless entity @s[dx=73,dy=26,dz=73] at @s \
+    facing 762 107 642 run \
+tp @s ^ ^ ^1
+
 
 scoreboard players set @a[distance=..60] player.disable.tp_book 10

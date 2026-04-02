@@ -16,4 +16,5 @@ execute \
 spectate @n[type=item_display,tag=aj.oceanid.camera,limit=1]
 
 
+forceload add 670 762 849 519
 schedule function cutscene:opening/7/use 5s

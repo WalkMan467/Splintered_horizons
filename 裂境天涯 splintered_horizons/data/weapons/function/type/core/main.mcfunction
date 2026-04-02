@@ -1,10 +1,8 @@
 function weapons:type/core/main_guide
 
-function weapons:type/sword/aquilumera/detect
-
 execute \
     as @a at @s run \
-function weapons:type/sword/aquilumera/return/tips
+function sys:monument_point/objective_item/1/return/tips
 
 execute \
     as @a \

@@ -22,6 +22,7 @@ scoreboard players set #cutscene.opening.force_execution.7.0 global.main 0
 schedule function cutscene:opening/force_execution/remove/0/title 1t
 schedule function cutscene:opening/force_execution/remove/0/0 1t
 schedule function cutscene:opening/force_execution/remove/0/0_1 1t
+schedule function cutscene:opening/force_execution/remove/5/0 1t
 schedule function cutscene:opening/force_execution/remove/7/0 1t
 schedule function cutscene:opening/force_execution/remove/7/1 1t
 schedule function cutscene:opening/force_execution/remove/7/3 1t
@@ -29,3 +30,5 @@ schedule function cutscene:opening/force_execution/remove/7/5 1t
 schedule function cutscene:opening/force_execution/remove/8/0 1t
 schedule function cutscene:opening/force_execution/remove/8/1 1t
 schedule function cutscene:opening/force_execution/remove/9/0 1t
+schedule function cutscene:opening/force_execution/remove/10/0 1t
+schedule function cutscene:opening/force_execution/remove/10/1 1t

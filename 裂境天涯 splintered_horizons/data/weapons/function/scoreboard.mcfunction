@@ -33,6 +33,19 @@ scoreboard players add @a weapon.grip_of_withering.cd 0
 
 #===================================================================
 
+#雷霆二重奏
+
+scoreboard objectives add weapon.thunder_duet.cd dummy "雷霆二重奏 CD"
+scoreboard objectives add weapon.thunder_duet.passive.cd dummy "雷霆二重奏 被動 CD"
+
+scoreboard objectives add weapon.thunder_duet.target.delay dummy "雷霆二重奏 標記延遲"
+scoreboard objectives add weapon.thunder_duet.id dummy "雷霆二重奏 ID"
+
+scoreboard players add @a weapon.thunder_duet.cd 0
+scoreboard players add @a weapon.thunder_duet.passive.cd 0
+
+#===================================================================
+
 #異界晨星
 
 scoreboard objectives add weapon.otherworld_star.cd dummy "異界晨星 CD"

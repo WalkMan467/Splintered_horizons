@@ -5,4 +5,4 @@ execute if entity @s[tag=aj.sophia.animation.idle2.playing] run function animate
 execute if entity @s[tag=aj.sophia.animation.sit_down.playing] run function animated_java:sophia/animations/sit_down/zzz/on_tick
 execute if entity @s[tag=aj.sophia.animation.walk.playing] run function animated_java:sophia/animations/walk/zzz/on_tick
 execute if entity @s[tag=aj.sophia.animation.chat1.playing] run function animated_java:sophia/animations/chat1/zzz/on_tick
-execute on passengers run rotate @s ~ ~
+execute if entity @s[tag=aj.sophia.animation.cutscene_opening_death.playing] run function animated_java:sophia/animations/cutscene_opening_death/zzz/on_tick

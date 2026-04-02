@@ -1,0 +1,1 @@
+tag @a remove sys.hide_world_area.name

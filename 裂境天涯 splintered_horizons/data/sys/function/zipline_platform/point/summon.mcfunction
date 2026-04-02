@@ -4,7 +4,7 @@ summon item_display ~ ~1 ~ {Tags:["sys.zipline_platform.point_player","user.vehi
 
 scoreboard players operation @n[tag=summon,distance=0..,type=item_display] sys.zipline_platform.id = @s sys.zipline_platform.id
 
-scoreboard players set @n[tag=summon,distance=0..,type=item_display] duration 20
+scoreboard players set @n[tag=summon,distance=0..,type=item_display] duration 100
 
 rotate @n[tag=summon,distance=0..,type=item_display] ~ ~
 ride @s mount @n[tag=summon,distance=0..,type=item_display]

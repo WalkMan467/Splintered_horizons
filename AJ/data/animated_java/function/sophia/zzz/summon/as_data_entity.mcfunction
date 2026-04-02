@@ -3,306 +3,319 @@ data modify entity @s data.uuids append from storage animated_java:gu out
 function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.data_data set from storage animated_java:gu out
+summon minecraft:item_display ^0 ^0 ^0 {Tags:["aj.global.camera","aj.global.entity","aj.global.node","aj.global.node.camera1","aj.global.root.child","aj.global.root.child.camera","aj.new","aj.sophia.camera","aj.sophia.camera.camera1","aj.sophia.entity","aj.sophia.node","aj.sophia.node.camera1"], teleport_duration: 2}
+execute as @n[ type=minecraft:item_display, tag=aj.sophia.camera.camera1, tag=aj.new, distance=..8 ] run function animated_java:sophia/zzz/summon/as_data_entity/as_camera/camera1
+data modify entity @s data.uuids append from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.camera1 set from storage animated_java:gu out
+data modify entity @s data.cameras.camera1.uuid set from storage animated_java:gu out
+summon minecraft:item_display ^0 ^0 ^0 {Tags:["aj.global.camera","aj.global.entity","aj.global.node","aj.global.node.camera3","aj.global.root.child","aj.global.root.child.camera","aj.new","aj.sophia.camera","aj.sophia.camera.camera3","aj.sophia.entity","aj.sophia.node","aj.sophia.node.camera3"], teleport_duration: 2}
+execute as @n[ type=minecraft:item_display, tag=aj.sophia.camera.camera3, tag=aj.new, distance=..5 ] run function animated_java:sophia/zzz/summon/as_data_entity/as_camera/camera3
+data modify entity @s data.uuids append from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.camera3 set from storage animated_java:gu out
+data modify entity @s data.cameras.camera3.uuid set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide16] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide16 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide16 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide13] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide13 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide13 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide14] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide14 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide14 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide8] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide8 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide8 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide9] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide9 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide9 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide10] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide10 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide10 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide18] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide18 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide18 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide21] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide21 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide21 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide22] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide22 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide22 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide23] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide23 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide23 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide24] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide24 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide24 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide25] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide25 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide25 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide26] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide26 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide26 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide27] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide27 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide27 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide28] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide28 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide28 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide29] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide29 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide29 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide30] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide30 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide30 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide46] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide46 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide46 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide94] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide94 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide94 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide15] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide15 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide15 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide19] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide19 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide19 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide43] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide43 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide43 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide44] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide44 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide44 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide45] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide45 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide45 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide47] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide47 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide47 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide48] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide48 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide48 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide42] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide42 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide42 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide41] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide41 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide41 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide40] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide40 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide40 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide91] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide91 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide91 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide61] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide61 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide61 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide90] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide90 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide90 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide92] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide92 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide92 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide93] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide93 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide93 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide56] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide56 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide56 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide57] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide57 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide57 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide58] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide58 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide58 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide59] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide59 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide59 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide17] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide17 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide17 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide89] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide89 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide89 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide11] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide11 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide11 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide60] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide60 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide60 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide12] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide12 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide12 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide124] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide124 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide124 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide5] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide5 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide5 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide7] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide7 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide7 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide6] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide6 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide6 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide31] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide31 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide31 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide32] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide32 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide32 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide4] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide4 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide4 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide33] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide33 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide33 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide3] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide3 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide3 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide116] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide116 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide116 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide2] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide2 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide2 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide117] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide117 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide117 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide118] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide118 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide118 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide49] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide49 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide49 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide50] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide50 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide50 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide39] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide39 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide39 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide51] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide51 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide51 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide52] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide52 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide52 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide38] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide38 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide38 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide34] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide34 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide34 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide37] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide37 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide37 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide95] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide95 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide95 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide36] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide36 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide36 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide35] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide35 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide35 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide53] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide53 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide53 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide54] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide54 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide54 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide55] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide55 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide55 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide119] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide119 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide119 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide20] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide20 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide20 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide96] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide96 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide96 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.guide97] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_guide97 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.guide97 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.layer] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_layer set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.layer set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.l_1] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_l_1 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.l_1 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.eye_l] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_eye_l set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.eye_l set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.r_1] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_r_1 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.r_1 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.eye_r] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_eye_r set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.eye_r set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.eyes_up] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_eyes_up set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.eyes_up set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.bone] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_bone set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.bone set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.l] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_l set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.l set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.r] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_r set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.r set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.eyes_down] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_eyes_down set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.eyes_down set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.up] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_up set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.up set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.down] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_down set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.down set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.mowse] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_mowse set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.mowse set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.mouse_r] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_mouse_r set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.mouse_r set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.mouse_l] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_mouse_l set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.mouse_l set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.head] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_head set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.head set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.6] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_6 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.6 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.12] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_12 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.12 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.10] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_10 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.10 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.9] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_9 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.9 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.item_display] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.item_display_item_display set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.item_display set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.2] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_2 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.2 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.1] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_1 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.1 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.4] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_4 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.4 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.3] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_3 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.3 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.8] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_8 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.8 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.sophia.node.7] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_7 set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.7 set from storage animated_java:gu out
+execute on vehicle on passengers if entity @s[tag=aj.sophia.node.item_display1] run function animated_java:global/gu/get_entity_uuid_string
+data modify entity @s data.uuids append from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.item_display1 set from storage animated_java:gu out

@@ -2,7 +2,7 @@ execute \
     if entity @s[tag=sys.zipline_platform.remove] run \
 return 0
 
-scoreboard players set .itt raycast 30
+scoreboard players set .itt raycast 60
 scoreboard players set .count raycast 0
 tag @s add origin
 

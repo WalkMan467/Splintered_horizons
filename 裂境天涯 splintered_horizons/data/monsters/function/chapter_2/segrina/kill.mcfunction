@@ -18,6 +18,10 @@ execute \
     as @s[tag=aj.segrina.root,type=item_display] run \
 function animated_java:segrina/remove/this
 
+execute \
+    as @a run \
+attribute @s minecraft:max_health base reset
+
 tag ffff8285-0000-0c33-0000-5a5c0162349d add death
 
 scoreboard players reset ffff8285-0000-0c33-0000-5a5c0162349d monster.segrina.skill.1.casting
@@ -49,6 +53,11 @@ scoreboard players reset @s monster.segrina.skill.4.invincible
 execute \
     as @a run \
 function monsters:chapter_2/segrina/4/7
+
+execute \
+    positioned 725 107 605 \
+    as @a[sort=arbitrary,dx=73,dy=26,dz=73,tag=!chapter_2.segrina.lose] at @s run \
+function monsters:chapter_2/segrina/4/5
 
 
 execute \

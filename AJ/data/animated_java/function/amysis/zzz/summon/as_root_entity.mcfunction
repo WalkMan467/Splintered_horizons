@@ -15,3 +15,4 @@ execute on passengers if entity @s[tag=aj.amysis.node.item_display] run function
 execute at @s run function animated_java:amysis/zzz/summon/rig_on_summon
 tag @s remove aj.new
 execute on passengers run tag @s remove aj.new
+execute on passengers unless entity @s[tag=aj.global.data] run ride @s dismount

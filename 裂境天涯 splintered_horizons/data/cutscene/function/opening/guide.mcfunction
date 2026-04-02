@@ -1,5 +1,5 @@
 execute \
-    if score .opening cutscene.story matches ..3980 run \
+    if score .opening cutscene.story matches ..4450 run \
 gamemode spectator @s[gamemode=!spectator]
 
 execute \
@@ -83,5 +83,22 @@ execute \
 spectate e417358e-1d37-439a-b927-f3b6b04fa873
 
 execute \
-    if score .opening cutscene.story matches 3845..4005 run \
+    if score .opening cutscene.story matches 3845..4170 run \
 spectate @n[sort=arbitrary,distance=0..,tag=aj.aska.camera.camera,type=item_display]
+
+execute \
+    if score .opening cutscene.story matches 4170..4278 run \
+spectate @n[distance=0..,sort=arbitrary,tag=aj.sophia.camera.camera1,type=item_display]
+
+
+execute \
+    if score .opening cutscene.story matches 4278..4330 run \
+spectate @n[distance=0..,sort=arbitrary,tag=aj.sophia.camera.camera3,type=item_display]
+
+execute \
+    if score .opening cutscene.story matches 4330..4380 run \
+spectate @n[distance=0..,sort=arbitrary,tag=aj.sophia.camera.camera1,type=item_display]
+
+execute \
+    if score .opening cutscene.story matches 4380..4450 run \
+spectate 8b61e851-f0af-4fc7-b218-74f1a426cf25

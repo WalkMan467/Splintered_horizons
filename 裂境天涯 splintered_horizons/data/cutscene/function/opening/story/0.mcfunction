@@ -197,11 +197,11 @@ item modify entity @a armor.head [{function:"minecraft:set_item",item:"minecraft
 # score +1
 
 execute \
-    if score .opening cutscene.story matches 0..4000 run \
+    if score .opening cutscene.story matches 0..4450 run \
 scoreboard players add .opening cutscene.story 1
 
 # loop
 
 execute \
-    if score .opening cutscene.story matches 0..4000 run \
+    if score .opening cutscene.story matches 0..4450 run \
 schedule function cutscene:opening/story/0 1t

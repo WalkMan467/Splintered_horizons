@@ -130,9 +130,13 @@ scoreboard objectives add player.setting.backup dummy "[玩家] 資料備份"
 scoreboard objectives add player.setting.backup.trigger trigger "[玩家] 資料備份 trigger"
 scoreboard objectives add player.setting.backup.id dummy "[玩家] 資料備份 ID"
 scoreboard objectives add player.setting.backup.return.id trigger "[玩家] 還原備份 ID"
+scoreboard objectives add player.setting.recover_lost_objective_items.return trigger "[玩家] 還原遺失的目標物品 trigger"
 
 scoreboard players add @a player.setting.backup.return.id 0
 scoreboard players enable @a player.setting.backup.return.id
+
+scoreboard players add @a player.setting.recover_lost_objective_items.return 0
+scoreboard players enable @a player.setting.recover_lost_objective_items.return
 
 scoreboard players enable @a player.setting.backup.trigger
 

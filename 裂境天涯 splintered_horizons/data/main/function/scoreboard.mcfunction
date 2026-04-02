@@ -35,6 +35,39 @@ scoreboard players enable @a main.trigger
 scoreboard players set @a main.trigger 0
 
 team add team.player "[隊伍] 玩家"
+team add glow.aqua
+team add glow.dark_aqua
+team add glow.black
+team add glow.blue
+team add glow.dark_blue
+team add glow.dark_gray
+team add glow.dark_green
+team add glow.dark_purple
+team add glow.dark_red
+team add glow.gold
+team add glow.gray
+team add glow.green
+team add glow.light_purple
+team add glow.red
+team add glow.white
+team add glow.yellow
+
+team modify glow.aqua color aqua
+team modify glow.dark_aqua color dark_aqua
+team modify glow.black color black
+team modify glow.blue color blue
+team modify glow.dark_blue color dark_blue
+team modify glow.dark_gray color dark_gray
+team modify glow.dark_green color dark_green
+team modify glow.dark_purple color dark_purple
+team modify glow.dark_red color dark_red
+team modify glow.gold color gold
+team modify glow.gray color gray
+team modify glow.green color green
+team modify glow.light_purple color light_purple
+team modify glow.red color red
+team modify glow.white color white
+team modify glow.yellow color yellow
 
 team modify team.player friendlyFire false
 
