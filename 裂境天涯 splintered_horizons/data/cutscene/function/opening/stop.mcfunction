@@ -66,6 +66,26 @@ scoreboard players set cutscene.opening.title cutscene.opening.title.timer 0
 
 kill 000000d3-0000-0004-0000-000100000001
 
+execute \
+    as @a run \
+attribute @s minecraft:movement_speed modifier remove minecraft:cutscene.1
+
+execute \
+    as @a run \
+attribute @s minecraft:entity_interaction_range modifier remove minecraft:cutscene.1
+
+execute \
+    as @a run \
+attribute @s minecraft:block_interaction_range modifier remove minecraft:cutscene.1
+
+execute \
+    as @a run \
+attribute @s minecraft:attack_damage modifier remove minecraft:cutscene.1
+
+execute \
+    as @a run \
+attribute @s minecraft:jump_strength modifier remove minecraft:cutscene.1
+
 schedule clear cutscene:opening/use
 schedule clear cutscene:opening/0/title/main
 schedule clear cutscene:opening/0/0
@@ -111,6 +131,7 @@ schedule clear cutscene:opening/9/0
 schedule clear cutscene:opening/9/1
 schedule clear cutscene:opening/9/2
 schedule clear cutscene:opening/9/3
+schedule clear cutscene:opening/9/4
 schedule clear cutscene:opening/10/use
 schedule clear cutscene:opening/10/0
 schedule clear cutscene:opening/10/1

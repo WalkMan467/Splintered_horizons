@@ -34,8 +34,8 @@ function animated_java:isokla/remove/this
 
 execute \
     positioned 757 144 946 \
-    as @n[sort=arbitrary,distance=..10,tag=aj.elina.root,type=item_display] run \
-function animated_java:elina/remove/this
+    as @n[sort=arbitrary,distance=..10,tag=aj.irina.root,type=item_display] run \
+function animated_java:irina/remove/this
 
 function story:chapter_2/stop
 

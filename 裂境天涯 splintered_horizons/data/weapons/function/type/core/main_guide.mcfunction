@@ -18,8 +18,6 @@ function weapons:type/sword/twilight_wind/wind/main
 
 # thunder duet
 
-execute \
-    as @e[sort=arbitrary,distance=0..,tag=weapon.thunder_duet.tunder,type=item_display] at @s run \
 function weapons:type/axe/thunder_duet/main
 
 execute \

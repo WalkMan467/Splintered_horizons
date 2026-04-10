@@ -103,4 +103,3 @@ $data merge entity $(7) {transformation: [-1.0445f,-0.1045f,-0.2166f,-0.0907f,0.
 $data merge entity $(item_display1) {transformation: [-1.0816f,0.1223f,0.123f,-0.2566f,0.136f,1.0801f,0.1223f,3.7294f,-0.1077f,0.136f,-1.0816f,0.3191f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 data modify entity @s data merge value {"cameras":{"camera1":{"px":0.05855161807580123,"py":2.465898862973762,"pz":4.197102798833818,"ry":180.23556535698674,"rx":-8.175226390966834},"camera3":{"px":2.2223167044595615,"py":2.999925763956376,"pz":0.9917193067703296,"ry":113.43100265766807,"rx":5.814993414112798}},"locators":{}}
 function animated_java:sophia/root/on_tick/transform_floating_entities
-execute on vehicle unless entity @s[tag=aj.transforms_only] at @s run function animated_java:sophia/animations/cutscene_opening_death/zzz/frames/150_root_function

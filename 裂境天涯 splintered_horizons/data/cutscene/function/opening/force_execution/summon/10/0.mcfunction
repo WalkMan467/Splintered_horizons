@@ -9,6 +9,10 @@ execute \
 function animated_java:sophia/summon {args: {animation: 'cutscene_opening_death', start_animation: true}}
 
 execute \
+    positioned 1076 121 -171 rotated 0 0 run \
+function animated_java:fsc_fx/summon {args: {animation: 'run', start_animation: true}}
+
+execute \
     unless loaded 1076 0 -171 run \
     return run \
 schedule function cutscene:opening/force_execution/summon/10/0 1t

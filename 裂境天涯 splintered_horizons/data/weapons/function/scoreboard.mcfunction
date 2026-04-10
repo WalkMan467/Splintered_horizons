@@ -37,6 +37,9 @@ scoreboard players add @a weapon.grip_of_withering.cd 0
 
 scoreboard objectives add weapon.thunder_duet.cd dummy "雷霆二重奏 CD"
 scoreboard objectives add weapon.thunder_duet.passive.cd dummy "雷霆二重奏 被動 CD"
+scoreboard objectives add weapon.thunder_duet.passive.state dummy "雷霆二重奏 被動 狀態"
+scoreboard objectives add weapon.thunder_duet.passive.timer dummy "雷霆二重奏 被動 觸發計時器"
+scoreboard objectives add weapon.thunder_duet.target.marker dummy "雷霆二重奏 閃電標記持續時間"
 
 scoreboard objectives add weapon.thunder_duet.target.delay dummy "雷霆二重奏 標記延遲"
 scoreboard objectives add weapon.thunder_duet.id dummy "雷霆二重奏 ID"

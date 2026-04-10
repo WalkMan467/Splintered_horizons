@@ -13,9 +13,6 @@
               }
             }
           }
-        },
-        "entity": {
-          "nbt": "{Tags:[\"weapon.thunder_duet.target\"]}"
         }
       }
     }

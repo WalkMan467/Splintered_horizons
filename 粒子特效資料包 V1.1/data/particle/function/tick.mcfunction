@@ -7,6 +7,12 @@ function particle:ruins_of_the_finality_rupture/main
 # 音波場域
 function particle:sound_wave/main
 
+# 雷霆二重奏
+function particle:thunder_duet_wave/main
+
+# 雷霆二重奏
+function particle:fsc/main
+
 # 水墨展開
 function particle:ink_painting_expansion/main
 

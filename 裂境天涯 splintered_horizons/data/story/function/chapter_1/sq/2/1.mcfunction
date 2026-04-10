@@ -339,7 +339,7 @@ scoreboard players set #story:icon/proper_noun/great_old_ones global.main 1
 execute \
     positioned 158 91 -429 \
     if score story.chapter_1.sq.2 story.chapter_1 matches 27 run \
-function story:chapter_1/sq/2/reset
+function story:chapter_1/sq/2/shop_unlock
 
 data remove entity @s interaction
 

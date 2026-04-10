@@ -1,0 +1,48 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:disc_fragment_5",
+      "components": {
+        "minecraft:enchantments": {
+          "minecraft:mending": 1
+        },
+        "minecraft:item_model": "minecraft:other/world_memory_fragments_no_frame"
+      },
+      "count": 1
+    },
+    "title": {
+      "translate": "story.chapter_1.sq.2.2.icon"
+    },
+    "description": [
+      {
+        "translate": "story.chapter_1.sq.2.2.icon.disc.1",
+        "color": "blue"
+      },
+      "\n",
+      {
+        "translate": "story.chapter_1.sq.2.2.icon.disc.2",
+        "color": "blue"
+      },
+      "\n",
+      {
+        "translate": "story.chapter_1.sq.2.2.icon.disc.3",
+        "color": "blue"
+      }
+    ],
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "story:icon/story/chapter_1/sq/2/1",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "requirement"
+    ]
+  ]
+}

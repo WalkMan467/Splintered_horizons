@@ -1,11 +1,12 @@
-execute \
-    if entity @s[tag=weapon.lost.return] run \
-return 0
 
 execute \
     as @n[distance=0..,sort=arbitrary,predicate=sys:monument_point/objective_item/1,type=item] run \
     return run \
 function sys:monument_point/objective_item/glowing
+
+execute \
+    if entity @s[tag=weapon.lost.return] run \
+return 0
 
 execute \
     store result score #weapon.aquilumera.count global.main run \

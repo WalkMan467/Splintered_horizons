@@ -119,6 +119,14 @@ execute \
     unless score #story:icon/story/chapter_1/sq/2/1 global.main matches 1.. run \
 advancement revoke @a only story:icon/story/chapter_1/sq/2/1
 
+execute \
+    if score #story:icon/story/chapter_1/sq/2/2 global.main matches 1.. run \
+advancement grant @a only story:icon/story/chapter_1/sq/2/2
+
+
+execute \
+    unless score #story:icon/story/chapter_1/sq/2/2 global.main matches 1.. run \
+advancement revoke @a only story:icon/story/chapter_1/sq/2/2
 
 execute \
     if score #story:icon/character/sophia/story_1 global.main matches 1.. run \
@@ -229,6 +237,14 @@ execute \
     unless score #story:icon/story/chapter_1 global.main matches 1.. run \
 advancement revoke @a only story:icon/story/chapter_1
 
+execute \
+    if score #story:icon/story/chapter_2 global.main matches 1.. run \
+advancement grant @a only story:icon/story/chapter_2
+
+
+execute \
+    unless score #story:icon/story/chapter_2 global.main matches 1.. run \
+advancement revoke @a only story:icon/story/chapter_2
 
 execute \
     if score #story:icon/story/chapter_1/mq/title global.main matches 1.. run \

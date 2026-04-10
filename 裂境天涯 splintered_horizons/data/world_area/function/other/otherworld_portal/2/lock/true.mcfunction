@@ -87,3 +87,4 @@ particle minecraft:flash{color:[1.000,1.000,1.000,1.00]} 161.00 92.50 -426.50 0 
 particle minecraft:sonic_boom 161.00 92.50 -426.50 0 0 0 0 1 normal @a
 
 scoreboard players set #world_area.other.otherworld_portal.2_temp global.main 0
+scoreboard players set #story:icon/story/chapter_1/sq/2/2 global.main 1

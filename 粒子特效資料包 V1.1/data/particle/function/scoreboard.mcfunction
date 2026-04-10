@@ -46,6 +46,14 @@ scoreboard objectives add particle.sound_wave dummy
 scoreboard players set 2 particle.sound_wave 2
 scoreboard players set 4 particle.sound_wave 4
 
+scoreboard objectives add particle.sound_wave dummy
+scoreboard players set 2 particle.sound_wave 2
+scoreboard players set 4 particle.sound_wave 4
+
+scoreboard objectives add particle.fsc dummy
+scoreboard players set 2 particle.fsc 2
+scoreboard players set 4 particle.fsc 4
+
 scoreboard objectives add particle.zeuss_lightning_wave dummy
 scoreboard players set 2 particle.zeuss_lightning_wave 2
 scoreboard players set 4 particle.zeuss_lightning_wave 4

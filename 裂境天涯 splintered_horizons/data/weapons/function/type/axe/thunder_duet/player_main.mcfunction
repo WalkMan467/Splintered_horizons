@@ -1,6 +1,5 @@
 execute \
     if score @s weapon.thunder_duet.target.delay matches ..0 run \
-    return run \
 function weapons:type/axe/thunder_duet/rc/selected
 
 execute \

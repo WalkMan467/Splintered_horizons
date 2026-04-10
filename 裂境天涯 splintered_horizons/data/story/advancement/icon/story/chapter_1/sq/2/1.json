@@ -1,12 +1,17 @@
 {
   "display": {
     "icon": {
-      "id": "minecraft:disc_fragment_5",
+      "id": "minecraft:player_head",
       "components": {
-        "minecraft:enchantments": {
-          "minecraft:mending": 1
-        },
-        "minecraft:item_model": "minecraft:other/world_memory_fragments_no_frame"
+        "minecraft:profile": {
+          "name": "textures",
+          "properties": [
+            {
+              "name": "textures",
+              "value": "ewogICJ0aW1lc3RhbXAiIDogMTc3MjI3MTY4MTEzMywKICAicHJvZmlsZUlkIiA6ICIyYThjZTE5ZWY3Mjg0NTBjYjY2YmEyNzNhNzVmNjI1MSIsCiAgInByb2ZpbGVOYW1lIiA6ICJYRDROVDNfNjY2IiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2UwMTE3MzM3MDkxMjg5MmY0Y2U5ZTQ0NzU2NjFmYWExYjdjYjk3OTEwZjJiYjI1YjFmZmU3YWExMGJkODU3MGYiCiAgICB9CiAgfQp9"
+            }
+          ]
+        }
       },
       "count": 1
     },
@@ -24,7 +29,7 @@
         "color": "blue"
       }
     ],
-    "frame": "challenge",
+    "frame": "goal",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": true

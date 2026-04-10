@@ -107,12 +107,12 @@
 
 # Safe Area
 
-    # Elina 1
+    # irina 1
 
     execute \
         as 00000002-0000-0016-0000-003300000016 at @s \
         if data entity @s interaction.timestamp \
-        if score story.safe_area.elina.1 story.safe_area matches 1..14 run \
+        if score story.safe_area.irina.1 story.safe_area matches 1..14 run \
     function story:safe_area/1
 
     # Selena 1

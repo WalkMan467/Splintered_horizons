@@ -1,0 +1,1 @@
+title @a actionbar {"translate":"cutscene.opening.title.12"}

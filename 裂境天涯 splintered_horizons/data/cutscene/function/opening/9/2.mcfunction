@@ -22,3 +22,4 @@ execute \
 function animated_java:aska/summon {args: {animation: 'death', start_animation: true}}
 
 schedule function cutscene:opening/9/3 16s
+schedule function cutscene:opening/9/4 3s
