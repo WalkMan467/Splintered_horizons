@@ -87,11 +87,19 @@ execute \
 spectate @n[sort=arbitrary,distance=0..,tag=aj.aska.camera.camera,type=item_display]
 
 execute \
-    if score .opening cutscene.story matches 3910..4230 run \
+    if score .opening cutscene.story matches 3910..3970 run \
 spectate ecad9f35-97af-445d-b5b5-994d25510122
 
 execute \
-    if score .opening cutscene.story matches 4230..4278 run \
+    if score .opening cutscene.story matches 3970..4030 run \
+spectate c8338abd-faa8-427b-807e-1bbbfac9a67e
+
+execute \
+    if score .opening cutscene.story matches 4030..4140 run \
+spectate 99024724-ce00-452f-9a3b-c5762fd7f03a
+
+execute \
+    if score .opening cutscene.story matches 4140..4278 run \
 spectate @n[distance=0..,sort=arbitrary,tag=aj.sophia.camera.camera1,type=item_display]
 
 

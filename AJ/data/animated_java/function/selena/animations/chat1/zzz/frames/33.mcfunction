@@ -8,8 +8,8 @@ $data merge entity $(r_1) {transformation: [-0.9f,0f,0f,0.0969f,0f,0.8994f,0.033
 $data merge entity $(eye_r) {transformation: [-1f,0f,0f,0.125f,0f,0.9993f,0.037f,1.6347f,0f,0.037f,-0.9993f,0.2797f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(eyes_down) {transformation: [-1f,0f,0f,0f,0f,0.9993f,0.037f,1.5593f,0f,0.037f,-0.9993f,0.0346f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(eyes_up) {transformation: [-0.76f,0f,0f,0f,0f,2.0886f,0.0374f,1.6874f,0f,0.0773f,-1.0093f,0.0391f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
-$data merge entity $(l) {transformation: [-1f,0f,0f,-0.125f,0f,0.9993f,0.037f,1.6982f,0f,0.037f,-0.9993f,0.2962f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
-$data merge entity $(r) {transformation: [-1f,0f,0f,0.125f,0f,0.9993f,0.037f,1.6982f,0f,0.037f,-0.9993f,0.2962f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+$data merge entity $(l) {transformation: [-1f,0f,0f,-0.125f,0f,0.7495f,0.037f,1.6441f,0f,0.0277f,-0.9993f,0.2942f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+$data merge entity $(r) {transformation: [-1f,0f,0f,0.125f,0f,0.7495f,0.037f,1.6441f,0f,0.0277f,-0.9993f,0.2942f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(up) {transformation: [-1f,0f,0f,0f,0f,1.2814f,0.037f,1.4752f,0f,0.0474f,-0.9993f,0.0316f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(down) {transformation: [-1f,0f,0f,0f,0f,1.6988f,0.037f,1.5484f,0f,0.0629f,-0.9993f,0.0343f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(mowse) {transformation: [-1f,0f,0f,0f,0f,0.9993f,0.037f,1.5156f,0f,0.037f,-0.9993f,0.033f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}

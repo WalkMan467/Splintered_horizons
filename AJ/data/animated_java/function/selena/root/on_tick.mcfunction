@@ -2,3 +2,4 @@
 execute unless entity @s[tag=aj.selena.root] run return 0
 execute if entity @s[tag=aj.selena.animation.idle.playing] run function animated_java:selena/animations/idle/zzz/on_tick
 execute if entity @s[tag=aj.selena.animation.chat1.playing] run function animated_java:selena/animations/chat1/zzz/on_tick
+execute if entity @s[tag=aj.selena.animation.death.playing] run function animated_java:selena/animations/death/zzz/on_tick

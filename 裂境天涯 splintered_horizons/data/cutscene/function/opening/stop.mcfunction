@@ -132,6 +132,10 @@ schedule clear cutscene:opening/9/1
 schedule clear cutscene:opening/9/2
 schedule clear cutscene:opening/9/3
 schedule clear cutscene:opening/9/4
+schedule clear cutscene:opening/9/5
+schedule clear cutscene:opening/9/6
+schedule clear cutscene:opening/9/7
+schedule clear cutscene:opening/9/8
 schedule clear cutscene:opening/10/use
 schedule clear cutscene:opening/10/0
 schedule clear cutscene:opening/10/1

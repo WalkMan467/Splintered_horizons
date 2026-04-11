@@ -18,9 +18,9 @@
 #     rotated ~ 0 run \
 # function particle:fsc/energy_convergence/fx_2
 
-scoreboard players set @s particle.technological_force_field.line.color 1
+# scoreboard players set @s particle.technological_force_field.line.color 1
 
-function particle:technological_force_field/use
+# function particle:technological_force_field/use
 
 execute \
     if score @s duration matches ..80 \

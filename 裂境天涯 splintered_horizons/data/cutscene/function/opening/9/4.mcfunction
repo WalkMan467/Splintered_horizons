@@ -7,3 +7,5 @@ tp @a 803 71 1590 26.5 0
 
 schedule function cutscene:opening/force_execution/summon/9/4 1t
 schedule function cutscene:opening/force_execution/remove/9/4 3s
+
+schedule function cutscene:opening/9/5 3s
