@@ -7,3 +7,7 @@ return 0
 
 tag @s add chapter_2.elekiel_phase_2.lose
 gamemode spectator @a[tag=chapter_2.elekiel_phase_2.lose]
+
+execute \
+    as @a at @s run \
+function monsters:chapter_2/segrina/4/8

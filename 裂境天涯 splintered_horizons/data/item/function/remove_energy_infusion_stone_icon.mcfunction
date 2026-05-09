@@ -6,3 +6,4 @@ advancement grant @s only weapons:icon/icon
 
         advancement revoke @s only item:energy_infusion_stone/icon/weapon/bleeding_hit
         advancement revoke @s only item:energy_infusion_stone/icon/weapon/unable_crit
+        advancement revoke @s only item:energy_infusion_stone/icon/weapon/phantom_fangs

@@ -9,6 +9,8 @@ advancement grant @s only armors:icon/icon
             advancement revoke @s only armors:icon/leggings/windriders_legplates
 
         advancement grant @s only armors:icon/chapter_2
+    
+            advancement revoke @s only armors:icon/chestplate/wtsf
         
         advancement grant @s only armors:icon/other
         

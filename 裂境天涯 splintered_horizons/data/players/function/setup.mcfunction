@@ -10,9 +10,9 @@ clear @s
 team join team.player @a
 
 scoreboard players set @s player.spawnpoint.dimension 3
-scoreboard players set @s player.spawnpoint.pos.x 72
-scoreboard players set @s player.spawnpoint.pos.y 61
-scoreboard players set @s player.spawnpoint.pos.z -4
+scoreboard players set @s player.spawnpoint.pos.x 7200
+scoreboard players set @s player.spawnpoint.pos.y 6100
+scoreboard players set @s player.spawnpoint.pos.z -400
 
 function music:remove_bgn_icon
 function weapons:remove_weapons_icon

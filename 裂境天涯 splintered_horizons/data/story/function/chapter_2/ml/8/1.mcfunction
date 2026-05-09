@@ -21,7 +21,7 @@ execute \
 tellraw @a[distance=..16] \
     [ \
         {"translate": "story.characters.selena",color:"white","bold":true}, \
-        {"player":{"properties":[{"name":"textures","value":"ewogICJ0aW1lc3RhbXAiIDogMTc2ODM5NzkyNTg0OSwKICAicHJvZmlsZUlkIiA6ICJiYzRlZGZiNWYzNmM0OGE3YWM5ZjFhMzlkYzIzZjRmOCIsCiAgInByb2ZpbGVOYW1lIiA6ICI4YWNhNjgwYjIyNDYxMzQwIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2EzMWJjMDMwOGZiNTE0N2ViMGUyNDI3NjY2OTQ1YWI4MDlhYmY2YzE1ZDQ4OTgzOTE3ZDJkMTY5ODVhOTRlMyIKICAgIH0KICB9Cn0="}]},"bold":false}, \
+        {"atlas":"minecraft:items","sprite":"item/character/seronis","bold":false,shadow_color:0,"color":"white"}, \
         {"text":" : ","color":"white","bold": false}, \
         {"translate": "story.chapter_2.ml.8.1","fallback": "這裡就是伊萊克爾的所在地了","bold": false} \
     ]
@@ -33,7 +33,7 @@ execute \
 tellraw @a[distance=..16] \
     [ \
         {"translate": "story.characters.selena",color:"white","bold":true}, \
-        {"player":{"properties":[{"name":"textures","value":"ewogICJ0aW1lc3RhbXAiIDogMTc2ODM5NzkyNTg0OSwKICAicHJvZmlsZUlkIiA6ICJiYzRlZGZiNWYzNmM0OGE3YWM5ZjFhMzlkYzIzZjRmOCIsCiAgInByb2ZpbGVOYW1lIiA6ICI4YWNhNjgwYjIyNDYxMzQwIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2EzMWJjMDMwOGZiNTE0N2ViMGUyNDI3NjY2OTQ1YWI4MDlhYmY2YzE1ZDQ4OTgzOTE3ZDJkMTY5ODVhOTRlMyIKICAgIH0KICB9Cn0="}]},"bold":false}, \
+        {"atlas":"minecraft:items","sprite":"item/character/seronis","bold":false,shadow_color:0,"color":"white"}, \
         {"text":" : ","color":"white","bold": false}, \
         {"translate": "story.chapter_2.ml.8.2","fallback": "四周瀰漫著時間與黑洞元素","bold": false} \
     ]
@@ -45,7 +45,7 @@ execute \
 tellraw @a[distance=..16] \
     [ \
         {"translate": "story.characters.selena",color:"white","bold":true}, \
-        {"player":{"properties":[{"name":"textures","value":"ewogICJ0aW1lc3RhbXAiIDogMTc2ODM5NzkyNTg0OSwKICAicHJvZmlsZUlkIiA6ICJiYzRlZGZiNWYzNmM0OGE3YWM5ZjFhMzlkYzIzZjRmOCIsCiAgInByb2ZpbGVOYW1lIiA6ICI4YWNhNjgwYjIyNDYxMzQwIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2EzMWJjMDMwOGZiNTE0N2ViMGUyNDI3NjY2OTQ1YWI4MDlhYmY2YzE1ZDQ4OTgzOTE3ZDJkMTY5ODVhOTRlMyIKICAgIH0KICB9Cn0="}]},"bold":false}, \
+        {"atlas":"minecraft:items","sprite":"item/character/seronis","bold":false,shadow_color:0,"color":"white"}, \
         {"text":" : ","color":"white","bold": false}, \
         {"translate": "story.chapter_2.ml.8.3","fallback": "與這片大地聯繫我能感受到前方的怪物似乎變強了很多","bold": false} \
     ]
@@ -57,7 +57,7 @@ execute \
 tellraw @a[distance=..16] \
     [ \
         {"translate": "story.characters.selena",color:"white","bold":true}, \
-        {"player":{"properties":[{"name":"textures","value":"ewogICJ0aW1lc3RhbXAiIDogMTc2ODM5NzkyNTg0OSwKICAicHJvZmlsZUlkIiA6ICJiYzRlZGZiNWYzNmM0OGE3YWM5ZjFhMzlkYzIzZjRmOCIsCiAgInByb2ZpbGVOYW1lIiA6ICI4YWNhNjgwYjIyNDYxMzQwIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2EzMWJjMDMwOGZiNTE0N2ViMGUyNDI3NjY2OTQ1YWI4MDlhYmY2YzE1ZDQ4OTgzOTE3ZDJkMTY5ODVhOTRlMyIKICAgIH0KICB9Cn0="}]},"bold":false}, \
+        {"atlas":"minecraft:items","sprite":"item/character/seronis","bold":false,shadow_color:0,"color":"white"}, \
         {"text":" : ","color":"white","bold": false}, \
         {"translate": "story.chapter_2.ml.8.4","fallback": "如果準備好了我們就往前走吧","bold": false} \
     ]

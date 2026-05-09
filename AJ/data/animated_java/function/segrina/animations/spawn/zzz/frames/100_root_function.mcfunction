@@ -4,3 +4,4 @@ attribute ffff8285-0000-0c33-0000-5a5c0162349d minecraft:movement_speed modifier
 attribute ffff8285-0000-0c33-0000-5a5c0162349d minecraft:jump_strength modifier remove spawn
 attribute ffff8285-0000-0c33-0000-5a5c0162349d minecraft:attack_damage modifier remove spawn
 data modify entity ffff8285-0000-0c33-0000-5a5c0162349d NoAI set value 0b
+scoreboard players set #disable monster.segrina.state 0

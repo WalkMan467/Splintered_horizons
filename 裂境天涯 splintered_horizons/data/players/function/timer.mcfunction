@@ -7,6 +7,7 @@ scoreboard players remove @a[scores={player.animation.lock=1..}] player.animatio
 scoreboard players remove @a[scores={player.disable.elytra_switch=1..}] player.disable.elytra_switch 1
 scoreboard players remove @a[scores={player.hurt_time=1..}] player.hurt_time 1
 scoreboard players remove @a[scores={player.actionbar.weapon.nightfall=1..}] player.actionbar.weapon.nightfall 1
+scoreboard players remove @a[scores={player.actionbar.armor.wtsf=1..}] player.actionbar.armor.wtsf 1
 scoreboard players remove @a[scores={player.actionbar.weapon.earthquake_axe=1..}] player.actionbar.weapon.earthquake_axe 1
 scoreboard players remove @a[scores={player.actionbar.eye_of_finality=1..}] player.actionbar.eye_of_finality 1
 scoreboard players remove @a[scores={player.actionbar.disabled_bed=1..}] player.actionbar.disabled_bed 1
@@ -22,12 +23,16 @@ scoreboard players remove @a[scores={player.actionbar.segrina.1=1..}] player.act
 scoreboard players remove @a[scores={player.actionbar.tree_of_world_memory.1=1..}] player.actionbar.tree_of_world_memory.1 1
 scoreboard players remove @a[scores={player.actionbar.tree_of_world_memory.2=1..}] player.actionbar.tree_of_world_memory.2 1
 scoreboard players remove @a[scores={player.actionbar.sys.forging_table.failure=1..}] player.actionbar.sys.forging_table.failure 1
+scoreboard players remove @a[scores={player.actionbar.apostle_of_eternity.lock=1..}] player.actionbar.apostle_of_eternity.lock 1
+scoreboard players remove @a[scores={player.actionbar.apostle_of_eternity.lock.1=1..}] player.actionbar.apostle_of_eternity.lock.1 1
+
 scoreboard players remove @a[scores={player.shift.skill.disable=1..}] player.shift.skill.disable 1
 scoreboard players remove @a[scores={player.gamemode.change.display_delay=1..}] player.gamemode.change.display_delay 1
 scoreboard players remove @a[scores={screen_filters.glitch_effect.noise=1..}] screen_filters.glitch_effect.noise 1
 scoreboard players remove @a[scores={player.ultimate=1..}] player.ultimate 1
 scoreboard players remove @a[scores={monster.elekiel_phase_2.skill.4.portal.tp.cd=1..}] monster.elekiel_phase_2.skill.4.portal.tp.cd 1
 scoreboard players remove @a[scores={player.disable.tp_book=1..}] player.disable.tp_book 1
+scoreboard players remove @a[scores={player.rc.skill.disable=1..}] player.rc.skill.disable 1
 
 
 execute \

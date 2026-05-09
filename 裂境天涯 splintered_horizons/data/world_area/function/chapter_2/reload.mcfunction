@@ -1,3 +1,8 @@
+execute \
+    positioned 725 107 605 \
+    if entity @s[dx=73,dy=26,dz=73] at @s run \
+function world_area:chapter_2/segrine_bossfight/in
+
 advancement revoke @a only world_area:chapter_2/land_of_finality/in
 advancement revoke @a only world_area:chapter_2/forest_of_souls/in
 advancement revoke @a only world_area:chapter_2/forgotten_sakura_city/in

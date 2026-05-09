@@ -1,4 +1,4 @@
-title @a[sort=arbitrary,distance=..60] title {"translate":"monster.segrina.skill.2","fallback": "技能2【連結詛咒】"}
+title @a[sort=arbitrary,distance=..60] title {"translate":"monsters.segrina.2","fallback": "技能2【連結詛咒】"}
 title @a[sort=arbitrary,distance=..60] times 20 20 20
 
 execute \
@@ -35,3 +35,8 @@ title @p[sort=arbitrary,distance=0..,tag=monster.segrina.skill.2.raycast.player]
 title @p[sort=arbitrary,distance=0..,tag=!monster.segrina.skill.2.raycast.player] subtitle ""
 
 tag @a[sort=arbitrary,distance=0..] remove monster.segrina.2.target
+
+execute \
+    positioned 725 107 605 \
+    as @a[sort=arbitrary,dx=73,dy=26,dz=73] at @s run \
+function monsters:chapter_2/segrina/2/death_tips

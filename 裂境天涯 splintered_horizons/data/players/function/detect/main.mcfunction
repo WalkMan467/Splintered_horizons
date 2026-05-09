@@ -15,6 +15,9 @@ execute \
     unless predicate players:detect/air run \
 function players:detect/ground
 
+execute \
+    if score @s player.detect.jump matches 1.. run \
+function players:detect/jump
 # Gain Rune Detection
 
 execute \

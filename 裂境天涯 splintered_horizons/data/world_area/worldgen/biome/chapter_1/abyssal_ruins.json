@@ -1,6 +1,6 @@
 {
   "attributes": {
-    "minecraft:visual/star_brightness": 1,
+    "minecraft:visual/star_brightness": 0.5,
     "minecraft:visual/sky_light_factor": 0,
     "minecraft:visual/sun_angle": 180,
     "minecraft:visual/moon_angle": 180,
@@ -12,8 +12,11 @@
         "probability": 0.05
       }
     ],
-    "minecraft:visual/sky_color": "#000000",
-    "minecraft:visual/sky_light_color": 0
+    "minecraft:visual/sky_color": "#181a21",
+    "minecraft:visual/sky_light_color": "#1f232d",
+    "minecraft:visual/fog_start_distance": 256,
+    "minecraft:visual/fog_end_distance": 512,
+    "minecraft:visual/fog_color": "#181a21"
   },
   "temperature": 0.8,
   "downfall": 0,

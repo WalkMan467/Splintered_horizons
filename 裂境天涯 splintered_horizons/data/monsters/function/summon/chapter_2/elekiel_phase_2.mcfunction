@@ -15,7 +15,6 @@ execute \
     if score #boss_area.chapter_2.elekiel_phase_2 global.main matches 1.. run \
 return 0
 
-
 execute \
     if score #boss_area.chapter_2.elekiel global.main matches 1.. run \
 function monsters:bossfight/chapter_2/act/failure
@@ -34,6 +33,7 @@ bossbar add monsters.elekiel_phase_2 [{"translate":"monsters.elekiel","fallback"
 bossbar set minecraft:monsters.elekiel_phase_2 color red
 bossbar set minecraft:monsters.elekiel_phase_2 style notched_10
 
+advancement grant @a only music:chapter_2/bossfight/3/play
 
 execute \
     positioned -916 60 2750 run \
@@ -60,15 +60,23 @@ execute \
     as @n[type=item_display,distance=..1,tag=aj.boss_1.root] run \
 function animated_java:boss_1/remove/this
 
-summon skeleton -916 60 2750 {UUID:[I;256,128,128,5],DeathLootTable:"-",PersistenceRequired:1b,Tags:["freeze.immunity","elekiel","monster","monsters.elekiel_phase_2"],Passengers:[{id:"minecraft:marker",Tags:["monster.marker"],data:{Death:"chapter_2/elekiel_phase_2"}}],CustomName:{"bold":false,"color":"gold","fallback":"「空之支配者」伊萊克爾","italic":false,"translate":"monsters.elekiel"},equipment:{feet:{id:"minecraft:air",count:1},legs:{id:"minecraft:leather_leggings",count:1,components:{"minecraft:tooltip_display":{hidden_components:["trim"]},"minecraft:equippable":{slot:"legs",asset_id:"air"}}},chest:{id:"minecraft:leather_chestplate",count:1,components:{"minecraft:tooltip_display":{hidden_components:["trim"]},enchantments:{"armors:creeper_explosion_immunity":1},enchantment_glint_override:false,"minecraft:equippable":{slot:"chest",asset_id:"air"}}},head:{id:"minecraft:stone_button",count:1,components:{"minecraft:item_model":"air","minecraft:equippable":{slot:"head",asset_id:"air"}}},mainhand:{id:"minecraft:wooden_axe",count:1,components:{"minecraft:attribute_modifiers":[{id:"attack_damage",type:"attack_damage",amount:0.0,operation:"add_multiplied_base",slot:"mainhand"}],"minecraft:item_model":"air"}},offhand:{id:"minecraft:air",count:1}},drop_chances:{feet:0.000,legs:0.000,chest:0.000,head:0.000,mainhand:0.000,offhand:0.000},active_effects:[{id:"minecraft:invisibility",amplifier:255,duration:-1,show_particles:0b,show_icon:0b,ambient:0b}],attributes:[{id:"minecraft:armor",base:8},{id:"minecraft:armor_toughness",base:3},{id:"minecraft:attack_damage",base:0},{id:"minecraft:follow_range",base:1024},{id:"minecraft:max_health",base:500},{id:"minecraft:movement_speed",base:0.27},{id:"minecraft:safe_fall_distance",base:1024},{id:"minecraft:scale",base:1}]}
+summon skeleton -916 60 2750 {UUID:[I;256,128,128,5],DeathLootTable:"-",PersistenceRequired:1b,Tags:["freeze.immunity","sys.no_knockback","elekiel","monster","monsters.elekiel_phase_2"],Passengers:[{id:"minecraft:marker",Tags:["monster.marker"],data:{Death:"chapter_2/elekiel_phase_2"}}],CustomName:{"bold":false,"color":"gold","fallback":"「空之支配者」伊萊克爾","italic":false,"translate":"monsters.elekiel"},equipment:{feet:{id:"minecraft:air",count:1},legs:{id:"minecraft:leather_leggings",count:1,components:{"minecraft:tooltip_display":{hidden_components:["trim"]},"minecraft:equippable":{slot:"legs",asset_id:"air"}}},chest:{id:"minecraft:leather_chestplate",count:1,components:{"minecraft:tooltip_display":{hidden_components:["trim"]},enchantments:{"armors:creeper_explosion_immunity":1},enchantment_glint_override:false,"minecraft:equippable":{slot:"chest",asset_id:"air"}}},head:{id:"minecraft:stone_button",count:1,components:{"minecraft:item_model":"air","minecraft:equippable":{slot:"head",asset_id:"air"}}},mainhand:{id:"minecraft:wooden_axe",count:1,components:{"minecraft:attribute_modifiers":[{id:"attack_damage",type:"attack_damage",amount:0.0,operation:"add_multiplied_base",slot:"mainhand"}],"minecraft:item_model":"air"}},offhand:{id:"minecraft:air",count:1}},drop_chances:{feet:0.000,legs:0.000,chest:0.000,head:0.000,mainhand:0.000,offhand:0.000},active_effects:[{id:"minecraft:invisibility",amplifier:255,duration:-1,show_particles:0b,show_icon:0b,ambient:0b}],attributes:[{id:"minecraft:armor",base:8},{id:"minecraft:armor_toughness",base:3},{id:"minecraft:attack_damage",base:0},{id:"minecraft:follow_range",base:1024},{id:"minecraft:max_health",base:500},{id:"minecraft:movement_speed",base:0.2},{id:"minecraft:safe_fall_distance",base:1024},{id:"minecraft:scale",base:1}]}
 
 function animated_java:boss_1/summon {args: {animation: 'idle', start_animation: true}}
+
+execute \
+    as @n[distance=..1,sort=arbitrary,tag=aj.boss_1.root,type=item_display] \
+    on passengers run \
+data modify entity @s teleport_duration set value 5
+
 ride @n[tag=aj.boss_1.root,type=item_display] mount 00000100-0000-0080-0000-008000000005
 
 effect give 00000100-0000-0080-0000-008000000005 instant_damage 1 27 true
 
 gamemode adventure @a[tag=chapter_2.elekiel_phase_2.lose]
 tag @a remove chapter_2.elekiel_phase_2.lose
+tag @a remove monster.elekiel_phase_2.2.cage.imprison.last_tick
+tag @a remove monster.elekiel_phase_2.4.portal.target
 
 scoreboard players set skill.1 monster.elekiel_phase_2.cd 100
 scoreboard players set skill.2 monster.elekiel_phase_2.cd 300

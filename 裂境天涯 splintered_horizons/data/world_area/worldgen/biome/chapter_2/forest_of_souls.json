@@ -14,7 +14,9 @@
         },
         "probability": 0.05
       }
-    ]
+    ],
+    "minecraft:visual/fog_start_distance": 48,
+    "minecraft:visual/fog_end_distance": 128
   },
   "temperature": -0.3,
   "downfall": 0,

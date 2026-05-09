@@ -1,9 +1,7 @@
 {
   "attributes": {
-    "minecraft:visual/sky_color": 6109542,
-    "minecraft:visual/fog_color": 8400022,
-    "minecraft:visual/water_fog_color": 8400022,
-    "minecraft:visual/star_brightness": 1,
+    "minecraft:visual/sky_color": "#181a21",
+    "minecraft:visual/star_brightness": 0.5,
     "minecraft:visual/sky_light_factor": 0,
     "minecraft:visual/sun_angle": 180,
     "minecraft:visual/moon_angle": 180,
@@ -21,16 +19,18 @@
         },
         "probability": 0.01
       }
-    ]
+    ],
+    "minecraft:visual/fog_color": "#181a21",
+    "minecraft:visual/sky_light_color": "#1f232d",
+    "minecraft:visual/fog_start_distance": 64,
+    "minecraft:visual/fog_end_distance": 128
   },
   "temperature": -0.3,
   "downfall": 0,
   "has_precipitation": true,
   "creature_spawn_probability": 0,
   "effects": {
-    "water_color": 6109542,
-    "grass_color": 8400022,
-    "foliage_color": 8400022
+    "water_color": "#3f76e4"
   },
   "spawners": {},
   "spawn_costs": {},

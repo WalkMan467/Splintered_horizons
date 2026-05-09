@@ -3,7 +3,7 @@ scoreboard players add @s player.ultimate 0
 execute \
     unless function weapons:type/scythe/flame_of_finality/rc/detect run \
 return run \
-function weapons:ultimate_use_failed
+function weapons:rc/failure/ultimate_use_failed
 
 execute \
     unless score @s player.finality_tunder matches 1.. \

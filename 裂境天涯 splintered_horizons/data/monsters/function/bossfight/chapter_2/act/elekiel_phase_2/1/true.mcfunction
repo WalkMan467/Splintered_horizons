@@ -20,3 +20,5 @@ summon interaction -916 60 2750 \
     }
 
 setblock -916 60 2750 light[level=15] replace
+
+advancement grant @a[distance=..60] only players:tips/bossfight

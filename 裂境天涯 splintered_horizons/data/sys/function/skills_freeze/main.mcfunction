@@ -9,6 +9,7 @@ particle minecraft:snowflake ~ ~1 ~ 0.5 1 0.5 0 2 normal @a
 attribute @s attack_damage modifier add sys.skills_freeze -1 add_multiplied_total
 attribute @s attack_speed modifier add sys.skills_freeze -1 add_multiplied_total
 effect give @s mining_fatigue 1 255 true
+tag @s add sys.skills_freeze
 
 tag @s add sys.skills_freeze.user
 

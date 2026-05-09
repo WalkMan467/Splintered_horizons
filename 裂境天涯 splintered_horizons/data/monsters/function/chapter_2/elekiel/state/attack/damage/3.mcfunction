@@ -4,9 +4,8 @@ tag @a[gamemode=spectator] remove temp
 tag @a[gamemode=creative] remove temp
 tag @a[tag=chapter_2.elekiel.lose] remove temp
 
-
 execute \
     as @a[tag=temp] run \
-damage @s 8 mob_attack by @n[distance=0..,sort=arbitrary,tag=elekiel,type=skeleton]
+damage @s 12 mob_attack by @n[sort=arbitrary,distance=..6,tag=elekiel,type=skeleton]
 
 tag @a remove temp

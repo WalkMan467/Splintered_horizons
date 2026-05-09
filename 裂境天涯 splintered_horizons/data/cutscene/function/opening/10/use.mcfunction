@@ -1,4 +1,5 @@
-tp @a 1071.23 113.26 -163.79 -135 -5
+tp @a 10040 150 9434 90 0
+
 tag @a add sys.hide_world_area.name
 
 title @a title {"text":"\uE000",color:"black","font":"minecraft:screen"}

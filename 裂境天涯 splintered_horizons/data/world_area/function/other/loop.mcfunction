@@ -13,58 +13,63 @@ function world_area:other/otherworld_portal/4/main
 
 #==================================================
 
+    tag @a add temp
+    tag @a[gamemode=spectator,tag=!animation] remove temp
+    tag @a[tag=sys.hide_world_area.name] remove temp
+
     # Entering the hidden area
 
     execute \
-    unless entity @s[tag=sys.hide_world_area.name] \
-    if entity @s[gamemode=!spectator] \
-    if biome ~ ~ ~ #world_area:hidden_area run \
-advancement grant @s only music:other/icon
+        if entity @s[tag=temp] \
+        if biome ~ ~ ~ #world_area:hidden_area run \
+    advancement grant @s only music:other/icon
 
     # The Forgooten Lost City
 
     execute \
-    unless entity @s[tag=sys.hide_world_area.name] \
-    if entity @s[gamemode=!spectator] \
-    if biome ~ ~ ~ world_area:other/the_forgooten_lost_city run \
-advancement grant @s only world_area:other/the_forgotten_lost_city/in
+        if entity @s[tag=temp] \
+        if biome ~ ~ ~ world_area:other/the_forgooten_lost_city run \
+    advancement grant @s only world_area:other/the_forgotten_lost_city/in
+
     execute \
-    unless biome ~ ~ ~ world_area:other/the_forgooten_lost_city run \
-advancement grant @s only world_area:other/the_forgotten_lost_city/out
+        unless biome ~ ~ ~ world_area:other/the_forgooten_lost_city run \
+    advancement grant @s only world_area:other/the_forgotten_lost_city/out
 
     # Nightfall Citadel: Hasanor
 
     execute \
-    unless entity @s[tag=sys.hide_world_area.name] \
-    if entity @s[gamemode=!spectator] \
-    if biome ~ ~ ~ world_area:other/hasanor run \
-advancement grant @s only world_area:other/hasanor/in
-    execute \
-    unless biome ~ ~ ~ world_area:other/hasanor run \
-advancement grant @s only world_area:other/hasanor/out
+        if entity @s[tag=temp] \
+        if biome ~ ~ ~ world_area:other/hasanor run \
+    advancement grant @s only world_area:other/hasanor/in
 
     execute \
-    unless biome ~ ~ ~ world_area:other/mini_game run \
-advancement grant @s only world_area:other/mini_game/out
+        unless biome ~ ~ ~ world_area:other/hasanor run \
+    advancement grant @s only world_area:other/hasanor/out
+
+    execute \
+        unless biome ~ ~ ~ world_area:other/mini_game run \
+    advancement grant @s only world_area:other/mini_game/out
 
     # Abyss Forest
 
     execute \
-    unless entity @s[tag=sys.hide_world_area.name] \
-    if entity @s[gamemode=!spectator] \
-    if biome ~ ~ ~ world_area:other/abyss_forest run \
-advancement grant @s only world_area:other/abyss_forest/in
+        if entity @s[tag=temp] \
+        if biome ~ ~ ~ world_area:other/abyss_forest run \
+    advancement grant @s only world_area:other/abyss_forest/in
+
     execute \
-    unless biome ~ ~ ~ world_area:other/abyss_forest run \
-advancement grant @s only world_area:other/abyss_forest/out
+        unless biome ~ ~ ~ world_area:other/abyss_forest run \
+    advancement grant @s only world_area:other/abyss_forest/out
 
     # Land of the Trials
 
     execute \
-    unless entity @s[tag=sys.hide_world_area.name] \
-    if entity @s[gamemode=!spectator] \
-    if biome ~ ~ ~ world_area:other/land_of_the_trials run \
-advancement grant @s only world_area:other/land_of_the_trials/in
+        if entity @s[tag=temp] \
+        if biome ~ ~ ~ world_area:other/land_of_the_trials run \
+    advancement grant @s only world_area:other/land_of_the_trials/in
+
     execute \
-    unless biome ~ ~ ~ world_area:other/land_of_the_trials run \
-advancement grant @s only world_area:other/land_of_the_trials/out
+        unless biome ~ ~ ~ world_area:other/land_of_the_trials run \
+    advancement grant @s only world_area:other/land_of_the_trials/out
+
+    tag @a remove temp

@@ -13,8 +13,7 @@ function monsters:chapter_2/elekiel_phase_2/1/mysterray/2
 
 execute \
     if score @s mob.duration matches 3.. \
-    on passengers \
-    if entity @s[type=slime] at @s run \
+    as 4264969e-e78f-4254-b860-559e7e4c2665 at @s run \
 function monsters:chapter_2/elekiel_phase_2/1/mysterray/slime/main
 
 # fx
@@ -124,11 +123,68 @@ particle minecraft:falling_dust{block_state:"gold_block"} ~ ~-0.5 ~ 0.3 0.1 0.3 
 particle minecraft:falling_dust{block_state:"black_concrete"} ~ ~-0.5 ~ 0.3 0.1 0.3 0 1 force
 
 
+# 死亡提示
+
+execute \
+    if score @s mob.duration matches 320 \
+    positioned -916 60 2750 \
+    as @a[distance=..60,gamemode=spectator,tag=animation] \
+    unless score @s player.health matches ..9 run \
+function monsters:chapter_2/elekiel_phase_2/1/death_tips
+
+execute \
+    if score @s mob.duration matches 320 \
+    positioned -916 60 2750 run \
+tag @a[distance=..60] add forced_interrupt_animation
+
+execute \
+    if score @s mob.duration matches 320 \
+    positioned -916 60 2750 \
+    as @a[distance=..60] at @s run \
+function players:stop_animation
+
+execute \
+    if score @s mob.duration matches 320 \
+    positioned -916 60 2750 \
+    as @a[distance=..60] at @s run \
+function monsters:chapter_2/elekiel_phase_2/4/portal/crack/tp/remove
+
 execute \
     if score @s mob.duration matches 320 \
     positioned -916 60 2750 \
     as @a[distance=..60] run \
-damage @s 8 monsters:chapter_2/elekiel_phase_2/1/mysterray/dmg
+function monsters:chapter_2/elekiel_phase_2/1/death_tips
+
+execute \
+    if score @s mob.duration matches 320 \
+    positioned -916 60 2750 run \
+tag @a[distance=..60] add temp
+
+execute \
+    if score @s mob.duration matches 320 \
+    positioned -916 60 2750 run \
+tag @a[distance=..60,tag=chapter_2.elekiel_phase_2.lose] remove temp
+
+execute \
+    if score @s mob.duration matches 320 \
+    positioned -916 60 2750 run \
+tag @a[distance=..60,gamemode=creative] remove temp
+
+execute \
+    if score @s mob.duration matches 320 \
+    positioned -916 60 2750 run \
+tag @a[distance=..60,gamemode=spectator,tag=!animation] remove temp
+
+execute \
+    if score @s mob.duration matches 320 \
+    positioned -916 60 2750 \
+    as @a[distance=..60,tag=temp] run \
+damage @s 8 monsters:chapter_2/elekiel_phase_2/1/mysterray/dmg by 00000100-0000-0080-0000-008000000005
+
+execute \
+    if score @s mob.duration matches 320 \
+    positioned -916 60 2750 run \
+tag @a[distance=..60] remove temp
 
 execute \
     if score @s mob.duration matches 320 run \

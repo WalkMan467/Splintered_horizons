@@ -1,10 +1,21 @@
-particle flash{color:[1.000,1.000,1.000,1.00]} ~ ~1 ~ 0 0 0 0 1 force @a
-tp @s 912 75 3018
+schedule function monsters:chapter_2/elekiel/1/terrain/unlock 1t
 
-function animated_java:boss_1/animations/idle/tween \
-    { \
-        to_frame:8, \
-        duration:10 \
-    }
+# Timer = 15s
+scoreboard players set $timer monster.elekiel.1.terrain 15
+bossbar add monster.elekiel.2.1.timer {"translate":"monster.elekiel.2.1.timer","fallback": "時空崩塌倒計時"}
+bossbar set monster.elekiel.2.1.timer color red
+bossbar set monster.elekiel.2.1.timer max 15
 
-particle flash{color:[1.000,1.000,1.000,1.00]} 912 75 3018 0 0 0 0 1 force @a
+execute \
+    store result bossbar monster.elekiel.2.1.timer value run \
+scoreboard players get $timer monster.elekiel.1.terrain
+
+execute \
+    positioned 912 58 2018 run \
+bossbar set monster.elekiel.2.1.timer players @a[sort=arbitrary,distance=..30]
+
+scoreboard players set #repeat global.main 4
+
+function monsters:chapter_2/elekiel/1/3
+
+schedule function monsters:chapter_2/elekiel/1/timer/use 1s

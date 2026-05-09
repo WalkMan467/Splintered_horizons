@@ -17,6 +17,9 @@ scoreboard players set story.chapter_1.mq.2 story.chapter_1 1
 #\
 }
 
+setblock 1 64 -109 air replace
+setblock 1 65 -109 air replace
+
 kill 00000016-0000-0139-0000-00370000000b
 kill @e[tag=story.chapter_1.mq.2]
 

@@ -29,6 +29,6 @@ scoreboard players add @p[distance=..1] monster.segrina.skill.1.ball.dmg_taken 2
 
 scoreboard players set @p[distance=..1] player.actionbar.segrina.1 20
 
-effect give @p[distance=..1] speed 2 1 true
+effect give @p[distance=..1] speed 5 1 true
 
 kill @s

@@ -47,5 +47,49 @@ execute \
     if score @s player.detect.click_event.trigger matches 10 run \
 function sys:walkman467/select_lang
 
+execute \
+    if score @s player.detect.click_event.trigger matches 11 run \
+function monsters:summon/chapter_2/segrina
+
+execute \
+    if score @s player.detect.click_event.trigger matches 12 run \
+function monsters:bossfight/chapter_2/act/elekiel_phase_2/back
+
+execute \
+    if score @s player.detect.click_event.trigger matches 13 run \
+tp @s 1136 154 1844 37.87 0
+
+execute \
+    if score @s player.detect.click_event.trigger matches 14 run \
+function monsters:summon/chapter_2/elekiel_phase_2
+
+execute \
+    if score @s player.detect.click_event.trigger matches 15 run \
+function monsters:bossfight/chapter_2/act/elekiel_phase_2/skill_introduction
+
+execute \
+    if score @s player.detect.click_event.trigger matches 16 run \
+function monsters:bossfight/chapter_2/act/segrina/back
+
+execute \
+    if score @s player.detect.click_event.trigger matches 17 run \
+function monsters:summon/chapter_2/segrina
+
+execute \
+    if score @s player.detect.click_event.trigger matches 18 run \
+function monsters:bossfight/chapter_2/act/segrina/skill_introduction
+
+execute \
+    if score @s player.detect.click_event.trigger matches 19 run \
+function monsters:summon/chapter_2/elekiel
+
+execute \
+    if score @s player.detect.click_event.trigger matches 20 run \
+function monsters:bossfight/chapter_2/act/elekiel/skill_introduction
+
+execute \
+    if score @s player.detect.click_event.trigger matches 21 run \
+function monsters:bossfight/chapter_2/act/elekiel/back
+
 scoreboard players set @s player.detect.click_event.trigger 0
 scoreboard players enable @s player.detect.click_event.trigger

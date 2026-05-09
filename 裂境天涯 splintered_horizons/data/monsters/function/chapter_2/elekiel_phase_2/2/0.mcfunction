@@ -1,3 +1,7 @@
+execute \
+    positioned -916 60 2750 run \
+function monsters:chapter_2/elekiel_phase_2/2/1
+
 tag @a add temp
 tag @a[tag=!animation,gamemode=spectator] remove temp
 

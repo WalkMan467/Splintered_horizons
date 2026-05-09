@@ -1,1 +1,1 @@
-summon marker 810 201 163 {Tags:["portal"],data:{Transmit:[284,182,-193],Transmit_facing:[-90,0]}}
+summon marker ~ ~ ~ {Tags:["portal"],data:{Transmit:[912,60,1999],Transmit_facing:[0,0]}}

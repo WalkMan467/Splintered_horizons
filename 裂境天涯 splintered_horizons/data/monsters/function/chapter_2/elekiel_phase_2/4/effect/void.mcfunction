@@ -17,4 +17,4 @@ attribute @s jump_strength modifier add monster.elekiel_phase_2.skill.4.effect.v
 attribute @s block_interaction_range modifier add monster.elekiel_phase_2.skill.4.effect.void -1024 add_value
 attribute @s entity_interaction_range modifier add monster.elekiel_phase_2.skill.4.effect.void -1024 add_value
 
-scoreboard players set @s sys.dummy_mob 1
+scoreboard players set @s sys.dummy_mob 100

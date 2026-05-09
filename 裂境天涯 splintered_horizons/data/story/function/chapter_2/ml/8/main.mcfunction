@@ -6,14 +6,14 @@
     execute \
     positioned 668 73 1620 \
     store result score #story.chapter_2.ml.8 global.main \
-    if entity @a[distance=..16,gamemode=!spectator]
+    if entity @a[distance=..14,gamemode=!spectator]
 
     # Rotate to Player
     execute \
         positioned 668 73 1620 \
-        if entity @p[distance=..16,predicate=players:detect/movement] \
+        if entity @p[distance=..14,predicate=players:detect/movement] \
         as @n[sort=arbitrary,distance=..1,tag=aj.selena.root,type=item_display] at @s \
-        facing entity @p[distance=..16] eyes \
+        facing entity @p[distance=..14] eyes \
         rotated ~ 0 run \
     function animated_java:selena/move
 

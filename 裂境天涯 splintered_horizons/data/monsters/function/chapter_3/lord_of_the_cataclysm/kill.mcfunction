@@ -20,6 +20,7 @@ playsound minecraft:entity.firework_rocket.twinkle_far voice @a 1101 206 148 5 1
 
 setblock 1101 206 148 chest[facing=south]
 setblock 1101 207 148 light[level=15]
+effect clear @a[distance=..60] night_vision
 
 loot replace block 1101 206 148 container.13 loot item:get/recipe/earthquake_axe
 item replace block 1101 206 148 container.3 with item:get/material/finality_ingot

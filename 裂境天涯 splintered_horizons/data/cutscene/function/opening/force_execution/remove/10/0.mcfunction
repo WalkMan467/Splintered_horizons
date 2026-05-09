@@ -5,22 +5,22 @@ return 0
 forceload add 1076 -171
 
 execute \
-    positioned 1076 121 -171 \
+    positioned 10040 150 9434 \
     as @e[sort=arbitrary,tag=aj.sophia.root,distance=..1,type=item_display] run \
 function animated_java:sophia/remove/this
 
 execute \
-    positioned 1076 121 -171 \
+    positioned 10040 150 9434 \
     as @e[sort=arbitrary,tag=aj.fsc_fx.root,distance=..1,type=item_display] run \
 function animated_java:fsc_fx/remove/this
 
 execute \
-    unless loaded 1076 0 -171 run \
+    unless loaded 10040 0 9434 run \
     return run \
 schedule function cutscene:opening/force_execution/remove/10/0 1t
 
 execute \
-    positioned 1076 121 -171 \
+    positioned 10040 150 9434 \
     if entity @n[sort=arbitrary,tag=aj.sophia.root,distance=..1,type=item_display] run \
     return run \
 schedule function cutscene:opening/force_execution/remove/10/0 1t

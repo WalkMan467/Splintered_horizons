@@ -1,3 +1,7 @@
+execute \
+    positioned -916 60 2750 run \
+function monsters:chapter_2/elekiel_phase_2/4/8
+
 scoreboard players set #monster.elekiel_phase_2.skill.4.portal.actived global.main 0
 
 function monsters:chapter_2/elekiel_phase_2/4/target/use

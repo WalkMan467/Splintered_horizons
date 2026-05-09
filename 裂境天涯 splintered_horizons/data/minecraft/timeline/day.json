@@ -1,0 +1,148 @@
+{
+  "period_ticks": 24000,
+  "tracks": {
+    "minecraft:gameplay/creaking_active": {
+      "keyframes": [
+        {
+          "ticks": 12600,
+          "value": false
+        },
+        {
+          "ticks": 23401,
+          "value": false
+        }
+      ],
+      "modifier": "or"
+    },
+    "minecraft:gameplay/eyeblossom_open": {
+      "keyframes": [
+        {
+          "ticks": 12600,
+          "value": true
+        },
+        {
+          "ticks": 23401,
+          "value": false
+        }
+      ]
+    },
+    "minecraft:gameplay/monsters_burn": {
+      "keyframes": [
+        {
+          "ticks": 12542,
+          "value": false
+        },
+        {
+          "ticks": 23460,
+          "value": false
+        }
+      ],
+      "modifier": "or"
+    },
+    "minecraft:gameplay/sky_light_level": {
+      "keyframes": [
+        {
+          "ticks": 133,
+          "value": 0
+        },
+        {
+          "ticks": 11867,
+          "value": 0
+        },
+        {
+          "ticks": 13670,
+          "value": 0
+        },
+        {
+          "ticks": 22330,
+          "value": 0
+        }
+      ],
+      "modifier": "multiply"
+    },
+    "minecraft:visual/cloud_color": {
+      "keyframes": [
+        {
+          "ticks": 133,
+          "value": -1
+        },
+        {
+          "ticks": 11867,
+          "value": -1
+        },
+        {
+          "ticks": 13670,
+          "value": -15132378
+        },
+        {
+          "ticks": 22330,
+          "value": -15132378
+        }
+      ],
+      "modifier": "multiply"
+    },
+    "minecraft:visual/sky_color": {
+      "keyframes": [
+        {
+          "ticks": 133,
+          "value": "#1f232d"
+        },
+        {
+          "ticks": 11867,
+          "value": "#1f232d"
+        },
+        {
+          "ticks": 13670,
+          "value": "#1f232d"
+        },
+        {
+          "ticks": 22330,
+          "value": "#1f232d"
+        }
+      ],
+      "modifier": "multiply"
+    },
+    "minecraft:visual/sky_light_color": {
+      "keyframes": [
+        {
+          "ticks": 730,
+          "value": "#1f232d"
+        },
+        {
+          "ticks": 11270,
+          "value": "#1f232d"
+        },
+        {
+          "ticks": 13140,
+          "value": "#1f232d"
+        },
+        {
+          "ticks": 22860,
+          "value": "#1f232d"
+        }
+      ],
+      "modifier": "multiply"
+    },
+    "minecraft:visual/sky_light_factor": {
+      "keyframes": [
+        {
+          "ticks": 730,
+          "value": 0.24
+        },
+        {
+          "ticks": 11270,
+          "value": 0.24
+        },
+        {
+          "ticks": 13140,
+          "value": 0.24
+        },
+        {
+          "ticks": 22860,
+          "value": 0.24
+        }
+      ],
+      "modifier": "multiply"
+    }
+  }
+}

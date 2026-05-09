@@ -30,7 +30,7 @@
         "translate": "weapon.enchantment.bleeding_hit.3",
         "with": [
           {
-            "translate": "player.effect.bleeding",
+            "translate": "cse.status_effects.bleeding",
             "color": "dark_red",
             "bold": true,
             "italic": false,

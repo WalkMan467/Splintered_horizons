@@ -1,8 +1,63 @@
-tellraw @s ["",{translate:"monsters.tips.skill_introduction",color:"white"},{text:"\n"},{text:"\n"},{translate:"monsters.elekiel.1",bold:true,color:"dark_aqua"},{text:"\n"},{translate:"monsters.elekiel.1.1",color:"gray"},{text:"\n"},{translate:"monsters.elekiel.1.2",color:"gray"},{text:"\n"},{translate:"monsters.elekiel.1.3",color:"gray"},{text:"\n"},{translate:"monsters.elekiel.1.4",color:"gray"},{text:"\n"},{text:"\n"},{translate:"monsters.elekiel.2",bold:true,color:"dark_aqua",hover_event:{action:"show_text",value:[{translate:"monsters.tips.dangerous_skill",color:"gold"},{text:"\n"},{text:"\n"},{translate:"monsters.elekiel.2.2",color:"gold"},{text:"\n"},{translate:"monsters.tips.health",bold:true,color:"gray"},{text:": ",bold:true,color:"gray"},{text:"30.0",color:"dark_green"},{text:"\n"},{translate:"monsters.tips.armor",bold:true,color:"gray"},{text:": ",bold:true,color:"gray"},{text:"5.0",color:"gold"}]}},{translate:"⚠",color:"gold",hover_event:{action:"show_text",value:[{translate:"monsters.tips.dangerous_skill",color:"gold"},{text:"\n"},{text:"\n"},{translate:"monsters.elekiel.2.2",color:"gold"},{text:"\n"},{translate:"monsters.tips.health",bold:true,color:"gray"},{text:": ",bold:true,color:"gray"},{text:"30.0",color:"dark_green"},{text:"\n"},{translate:"monsters.tips.armor",bold:true,color:"gray"},{text:": ",bold:true,color:"gray"},{text:"5.0",color:"gold"}]}},{text:"\n"},{translate:"monsters.elekiel.2.1",color:"gray"},{translate:"monsters.elekiel.2.2",color:"gold",hover_event:{action:"show_text",value:[{translate:"monsters.tips.dangerous_skill",color:"gold"},{text:"\n"},{text:"\n"},{translate:"monsters.elekiel.2.2",color:"gold"},{text:"\n"},{translate:"monsters.tips.health",bold:true,color:"gray"},{text:": ",bold:true,color:"gray"},{text:"30.0",color:"dark_green"},{text:"\n"},{translate:"monsters.tips.armor",bold:true,color:"gray"},{text:": ",bold:true,color:"gray"},{text:"5.0",color:"gold"}]}},{translate:"⚠",color:"gold",hover_event:{action:"show_text",value:[{translate:"monsters.tips.dangerous_skill",color:"gold"},{text:"\n"},{text:"\n"},{translate:"monsters.elekiel.2.2",color:"gold"},{text:"\n"},{translate:"monsters.tips.health",bold:true,color:"gray"},{text:": ",bold:true,color:"gray"},{text:"30.0",color:"dark_green"},{text:"\n"},{translate:"monsters.tips.armor",bold:true,color:"gray"},{text:": ",bold:true,color:"gray"},{text:"5.0",color:"gold"}]}},{translate:"monsters.elekiel.2.3",color:"gray"},{text:"\n"},{translate:"monsters.elekiel.2.4",color:"gray"},{text:"\n"},{translate:"monsters.elekiel.2.5",color:"gray"},{text:"\n"},{translate:"monsters.elekiel.2.6",color:"gray"},{text:"\n"},{translate:"monsters.elekiel.2.7",color:"gray"},{text:"\n"},{translate:"monsters.elekiel.2.8",color:"gray"},{text:"\n"},{text:"\n"},{translate:"monsters.elekiel.3",bold:true,color:"dark_aqua",hover_event:{action:"show_text",value:[{translate:"monsters.tips.fatal_skill",color:"dark_red"}]}},{translate:"☠",color:"dark_red",hover_event:{action:"show_text",value:[{translate:"monsters.tips.fatal_skill",color:"dark_red"}]}},{text:"\n"},{translate:"monsters.elekiel.3.1",color:"gray"},{text:"\n"},{translate:"monsters.elekiel.3.2",color:"gray"},{text:"\n"},{translate:"monsters.elekiel.3.3",color:"gray"},{text:"\n"},{text:"\n"},{text:"--------------------------------------",color:"white"}]
+tellraw @s "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
 
-tellraw @s [{"font":"minecraft:default","text":"☞ ","color":"dark_gray"},{"translate": "monsters.bossfight.back","fallback": "【返回】","color":"dark_green","click_event":{"action":"run_command",command:"/function monsters:bossfight/chapter_2/act/elekiel/back"}}]
-tellraw @s [{"font":"minecraft:default","text":"☞ ","color":"dark_gray"},{"translate": "monsters.bossfight.tp","fallback": "【傳送回入口】","color":"dark_green","click_event":{"action":"run_command",command:"/tp @s 1109 82 373"}}]
-tellraw @s [{"font":"minecraft:default","text":"☞ ","color":"dark_gray"},{"translate": "monsters.bossfight.start","fallback": "【點擊即可開始戰鬥！】","color":"dark_green","click_event":{"action":"run_command",command:"/function monsters:summon/chapter_2/elekiel"}}]
+tellraw @s [{"translate":"monsters.tips.skill_introduction","color":"white"}]
+tellraw @s ""
+
+
+execute \
+    if score #bossfight.elekiel.1 global.main matches 1.. run \
+tellraw @s ["",{translate:"monsters.elekiel.1",bold:true,color:"dark_aqua",hover_event:{action:"show_text",value:[{translate:"monsters.tips.fatal_skill",color:"dark_red"}]}},{text:" ☠",color:"dark_red",hover_event:{action:"show_text",value:[{translate:"monsters.tips.fatal_skill",color:"dark_red"}]}}]
+
+execute \
+    if score #bossfight.elekiel.1 global.main matches 1.. run \
+tellraw @s ""
+
+execute \
+    if score #bossfight.elekiel.1 global.main matches 1.. run \
+tellraw @s ["",{translate:"monsters.elekiel.1.1","underlined":false,color:"white","bold":false},{text:"\n"},{translate:"monsters.elekiel.1.2",color:"white","bold":false,"with":[{"translate":"monsters.elekiel.1.3","color": "gold","bold": true,"underlined": true}]},{text:"\n"},{translate:"monsters.elekiel.1.4",color:"white","bold":false,"with":[{"translate":"monsters.elekiel.1.5","color": "gold","bold": true,"underlined": true}]},{text:"\n"},{translate:"monsters.elekiel.1.6",color:"white","bold":false,"with":[{"translate":"monsters.elekiel.1.5","color": "gold","bold": true,"underlined": true}]},{translate:"monsters.elekiel.1.7",color:"white","bold":false,"with":[{"translate":"monsters.elekiel.1.8","color": "gold","bold": true,"underlined": true}]},{translate:"monsters.elekiel.1.9",color:"white","bold":false,"with":[{"translate":"monsters.elekiel.1.10","color": "gold","bold": true,"underlined": true}]}]
+
+execute \
+    if score #bossfight.elekiel.1 global.main matches 1.. run \
+tellraw @s ""
+
+execute \
+    if score #bossfight.elekiel.2 global.main matches 1.. run \
+tellraw @s ["",{translate:"monsters.elekiel.2",bold:true,color:"dark_aqua",hover_event:{action:"show_text",value:[{translate:"monsters.tips.dangerous_skill",color:"gold"}]}},{text:" ⚠",color:"gold",hover_event:{action:"show_text",value:[{translate:"monsters.tips.dangerous_skill",color:"gold"}]}}]
+
+execute \
+    if score #bossfight.elekiel.2 global.main matches 1.. run \
+tellraw @s ""
+
+execute \
+    if score #bossfight.elekiel.2 global.main matches 1.. run \
+tellraw @s ["",{translate:"monsters.elekiel.2.1","underlined":false,color:"white","bold":false,"with":[{"translate":"monsters.elekiel.2.2","color": "gold","bold": true,"underlined": true}]},{text:"\n"},{translate:"monsters.elekiel.2.3",color:"white","bold":false},{text:"\n"},{translate:"monsters.elekiel.2.4",color:"white","bold":false,"with":[{"translate":"monsters.elekiel.2.5","color": "gold","bold": true,"underlined": true}]},{text:"\n"},{translate:"monsters.elekiel.2.6",color:"dark_red","bold":true,"underlined":true},{text:"\n"},{translate:"monsters.elekiel.2.7",color:"white","bold":false,"with":[{"translate":"effect.minecraft.hunger","color": "dark_red","bold": true,"underlined": true}]},{text:"\n"},{translate:"monsters.elekiel.2.8",color:"white","bold":false,"with":[{"translate":"monsters.elekiel.2.9","color": "gold","bold": true,"underlined": true}]},{text:"\n"},{text:"\n"},{translate:"monsters.elekiel.2.10",color:"white","bold":false},{text:"\n"},{translate:"monsters.elekiel.2.11",color:"white","bold":false,"with":[{"translate":"monsters.elekiel.2.12","color": "gold","bold": true,"underlined": true}]},{translate:"monsters.elekiel.2.13",color:"white","bold":false,"with":[{"translate":"effect.minecraft.absorption","color": "green","bold": true,"underlined": true}]},{translate:"monsters.elekiel.2.14",color:"white","bold":false,"with":[{"translate":"effect.minecraft.saturation","color": "green","bold": true,"underlined": true}]}]
+
+execute \
+    if score #bossfight.elekiel.2 global.main matches 1.. run \
+tellraw @s ""
+
+execute \
+    if score #bossfight.elekiel.3 global.main matches 1.. run \
+tellraw @s ["",{translate:"monsters.elekiel.3",bold:true,color:"dark_aqua",hover_event:{action:"show_text",value:[{translate:"monsters.tips.fatal_skill",color:"dark_red"}]}},{text:" ☠",color:"dark_red",hover_event:{action:"show_text",value:[{translate:"monsters.tips.fatal_skill",color:"dark_red"}]}}]
+
+execute \
+    if score #bossfight.elekiel.3 global.main matches 1.. run \
+tellraw @s ""
+
+execute \
+    if score #bossfight.elekiel.3 global.main matches 1.. run \
+tellraw @s ["",{translate:"monsters.elekiel.3.1",color:"gold","bold":true,"underlined":true},{text:"\n"},{translate:"monsters.elekiel.3.2",color:"white","underlined":false,"bold":false,"with":[{"translate":"monsters.elekiel.3.3","color": "dark_red","bold": true,"underlined": true}]},{text:"\n"},{translate:"monsters.elekiel.3.4",color:"white","bold":false,"with":[{"keybind":"key.use","color": "dark_green","bold": true,"underlined": true}]},{translate:"monsters.elekiel.3.5",color:"white","bold":false,"with":[{"translate":"monsters.elekiel.3.6","color": "green","bold": true,"underlined": true}]},{text:"\n"},{translate:"monsters.elekiel.3.7",color:"white","bold":false,"with":[{"translate":"monsters.elekiel.3.8","color": "gold","bold": true,"underlined": true}]}]
+
+execute \
+    if score #bossfight.elekiel.3 global.main matches 1.. run \
+tellraw @s ""
+
+tellraw @s "--------------------------------------"
+tellraw @s ""
+
+tellraw @s [{"font":"minecraft:default","text":"☞ ","color":"dark_gray"},{"translate": "monsters.bossfight.back","fallback": "【返回】","color":"dark_green","click_event":{"action":"run_command",command:"/trigger player.detect.click_event.trigger set 21"}}]
+tellraw @s [{"font":"minecraft:default","text":"☞ ","color":"dark_gray"},{"translate": "monsters.bossfight.tp","fallback": "【傳送回入口】","color":"dark_green","click_event":{"action":"run_command",command:"/trigger player.detect.click_event.trigger set 13"}}]
+tellraw @s [{"font":"minecraft:default","text":"☞ ","color":"dark_gray"},{"translate": "monsters.bossfight.start","fallback": "【點擊即可開始戰鬥！】","color":"dark_green","click_event":{"action":"run_command",command:"/trigger player.detect.click_event.trigger set 19"}}]
 
 # Don't Delete!
 

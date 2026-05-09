@@ -15,6 +15,9 @@ function main:map_lobby/reset
 
 function sys:forging_table/crafting/recipe/lock
 function sys:monster_wave/reset
+function monsters:chapter_2/elekiel_phase_2/reset_skill_tips
+function monsters:chapter_2/elekiel/reset_skill_tips
+function monsters:chapter_2/segrina/reset_skill_tips
 
 clear @s
 gamemode survival @a

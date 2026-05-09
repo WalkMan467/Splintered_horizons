@@ -47,4 +47,17 @@ execute \
     as @a at @s run \
 function monsters:chapter_2/elekiel_phase_2/player/main
 
+execute \
+    positioned -916 60 2750 \
+    as @a[distance=..60] at @s run \
+advancement grant @s only music:chapter_2/bossfight/3/play
+
+execute \
+    positioned -916 60 2750 \
+    as @a[distance=60..] at @s run \
+advancement grant @s only music:chapter_2/bossfight/3/reset
+
+
+execute \
+    if entity 00000100-0000-0080-0000-008000000005 run \
 schedule function monsters:chapter_2/elekiel_phase_2/main 1t

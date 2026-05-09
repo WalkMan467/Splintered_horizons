@@ -1,5 +1,6 @@
 tp @e[tag=monsters.lord_of_the_cataclysm,type=zombie] ~ -255 ~
 kill @e[tag=monsters.lord_of_the_cataclysm,type=zombie]
+effect clear @a[distance=..60] night_vision
 
 bossbar remove minecraft:monsters.lord_of_the_cataclysm
 

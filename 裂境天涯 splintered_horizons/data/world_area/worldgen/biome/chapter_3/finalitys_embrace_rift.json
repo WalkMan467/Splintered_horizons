@@ -15,7 +15,11 @@
     "minecraft:visual/sky_light_color": {
       "modifier": "multiply",
       "argument": 15400960
-    }
+    },
+    "minecraft:visual/fog_color": "#520000",
+    "minecraft:visual/fog_start_distance": 80,
+    "minecraft:visual/fog_end_distance": 160,
+    "minecraft:visual/sky_color": "#520000"
   },
   "temperature": -0.3,
   "downfall": 0,

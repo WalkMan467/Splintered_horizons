@@ -72,15 +72,22 @@ scoreboard objectives add monster.emissary_of_the_temporal_rift.key.timer dummy 
 
 # ===============================================================================
 
-# 「空之支配者」伊萊克爾
+# 「永劫」的使徒
 
-scoreboard objectives add monster.elekiel.1.rdm_monsters dummy "[怪物] 伊萊克爾 隨機怪物ID"
+scoreboard objectives add monster.apostle_of_eternity.lock.timer dummy "[怪物] 「永劫」的使徒 時空鎖 計時器"
+scoreboard objectives add monster.apostle_of_eternity.lock.click dummy "[怪物] 「永劫」的使徒 時空鎖 交互次數"
+
+# ===============================================================================
+
+# 「永劫」的支配者: 伊萊克爾
+
+scoreboard objectives add monster.elekiel.1.terrain dummy "[怪物] 伊萊克爾 地形狀態"
 scoreboard objectives add monster.elekiel.2.timer dummy "[怪物] 伊萊克爾 拘魂之花 倒計時"
 scoreboard objectives add monster.elekiel.2.player_timer dummy "[怪物] 伊萊克爾 拘魂之花 玩家倒計時"
 scoreboard objectives add monster.elekiel.3.player_pos.save.timer dummy "[怪物] 伊萊克爾 玩家位置儲存 計時器"
 scoreboard objectives add monster.elekiel.3.timer dummy "[怪物] 伊萊克爾 末世之鐘 計時器"
 scoreboard objectives add monster.elekiel.3.state dummy "[怪物] 伊萊克爾 狀態ID"
-scoreboard objectives add monster.elekiel.3.atk.delay dummy "[怪物] 伊萊克爾 狀態ID"
+scoreboard objectives add monster.elekiel.3.atk.delay dummy "[怪物] 伊萊克爾 攻擊延遲"
 
 scoreboard objectives add monster.elekiel.skill.cd dummy "[怪物] 伊萊克爾 技能 CD"
 scoreboard objectives add monster.elekiel.skill.casting dummy "[怪物] 伊萊克爾 技能 釋放中"
@@ -89,7 +96,7 @@ scoreboard objectives add monster.elekiel.player_die deathCount "[怪物] 伊萊
 
 # ===============================================================================
 
-# 「空之支配者」伊萊克爾 二階段
+# 「永劫」的支配者: 伊萊克爾 二階段
 
 scoreboard objectives add monster.elekiel_phase_2.cd dummy "[怪物] 伊萊克爾二階段 CD"
 
@@ -116,26 +123,30 @@ scoreboard players set #20 mob.main 20
 
 # ===============================================================================
 
-# 「守魂使徒」西格瑞納
+# 永劫輪迴的墮落者「阿斯尼亞」
 
-scoreboard objectives add monster.segrina.cd dummy "[怪物] 西格瑞納 CD"
+scoreboard objectives add monster.segrina.cd dummy "[怪物] 阿斯尼亞 CD"
 
-scoreboard objectives add monster.segrina.skill.1.casting dummy "[怪物] 西格瑞納 技能1 施法中"
-scoreboard objectives add monster.segrina.skill.2.casting dummy "[怪物] 西格瑞納 技能2 施法中"
-scoreboard objectives add monster.segrina.skill.3.casting dummy "[怪物] 西格瑞納 技能3 施法中"
-scoreboard objectives add monster.segrina.skill.4.casting dummy "[怪物] 西格瑞納 技能4 施法中"
+scoreboard objectives add monster.segrina.skill.1.casting dummy "[怪物] 阿斯尼亞 技能1 施法中"
+scoreboard objectives add monster.segrina.skill.2.casting dummy "[怪物] 阿斯尼亞 技能2 施法中"
+scoreboard objectives add monster.segrina.skill.3.casting dummy "[怪物] 阿斯尼亞 技能3 施法中"
+scoreboard objectives add monster.segrina.skill.4.casting dummy "[怪物] 阿斯尼亞 技能4 施法中"
 
-scoreboard objectives add monster.segrina.skill.1.ball dummy "[怪物] 西格瑞納 技能1 已吸收球數量"
-scoreboard objectives add monster.segrina.skill.1.ball.light dummy "[怪物] 西格瑞納 技能1 光球數量"
-scoreboard objectives add monster.segrina.skill.1.ball.dark dummy "[怪物] 西格瑞納 技能1 暗球數量"
+scoreboard objectives add monster.segrina.skill.1.ball dummy "[怪物] 阿斯尼亞 技能1 已吸收球數量"
+scoreboard objectives add monster.segrina.skill.1.ball.light dummy "[怪物] 阿斯尼亞 技能1 光球數量"
+scoreboard objectives add monster.segrina.skill.1.ball.dark dummy "[怪物] 阿斯尼亞 技能1 暗球數量"
 
-scoreboard objectives add monster.segrina.skill.1.dmg dummy "[怪物] 西格瑞納 技能1 蓄力"
+scoreboard objectives add monster.segrina.skill.1.dmg dummy "[怪物] 阿斯尼亞 技能1 蓄力"
 
-scoreboard objectives add monster.segrina.skill.1.ball.atk dummy "[怪物] 西格瑞納 技能1 光球攻擊力"
-scoreboard objectives add monster.segrina.skill.1.ball.dmg_taken dummy "[怪物] 西格瑞納 技能1 暗球減傷"
+scoreboard objectives add monster.segrina.skill.1.ball.atk dummy "[怪物] 阿斯尼亞 技能1 光球攻擊力"
+scoreboard objectives add monster.segrina.skill.1.ball.dmg_taken dummy "[怪物] 阿斯尼亞 技能1 暗球減傷"
 
-scoreboard objectives add monster.segrina.skill.3.timer dummy "[怪物] 西格瑞納 技能3 計時器"
-scoreboard objectives add monster.segrina.skill.4.effect dummy "[怪物] 西格瑞納 技能4 負面狀態"
-scoreboard objectives add monster.segrina.skill.4.invincible dummy "[怪物] 西格瑞納 技能4 無敵"
+scoreboard objectives add monster.segrina.skill.3.timer dummy "[怪物] 阿斯尼亞 技能3 計時器"
+scoreboard objectives add monster.segrina.skill.4.effect dummy "[怪物] 阿斯尼亞 技能4 負面狀態"
+scoreboard objectives add monster.segrina.skill.4.invincible dummy "[怪物] 阿斯尼亞 技能4 無敵"
+scoreboard objectives add monster.segrina.skill.4.invincible.display.id dummy "[怪物] 阿斯尼亞 技能4 Display ID"
+
+scoreboard objectives add monster.segrina.state dummy "[怪物] 阿斯尼亞 狀態ID"
+scoreboard objectives add monster.segrina.atk.delay dummy "[怪物] 阿斯尼亞 攻擊延遲"
 
 # ===============================================================================

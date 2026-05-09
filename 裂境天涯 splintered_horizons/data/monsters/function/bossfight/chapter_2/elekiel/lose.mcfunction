@@ -1,4 +1,4 @@
-scoreboard players set #boss_area.chapter_2.elekiel global.main 0
+scoreboard players set #bossfight global.main 0
 
 schedule clear monsters:bossfight/chapter_2/elekiel/loop
 
@@ -10,18 +10,13 @@ stopsound @a record minecraft:bgm.tunetank_meridian
 
 function monsters:chapter_2/elekiel/void
 
+attribute @s safe_fall_distance modifier remove monsters.elekiel.1.kill
+
+tag @s remove monster.elekiel.1.kill
+tag @s remove monster.elekiel.1.skip
 
 execute \
     as @a run \
 function music:chapter_2/bossfight/2/reset
 
-tp @a 1109 82 373
-
 forceload add 912 2018 912 2018
-
-
-execute \
-    as @a run \
-function players:reset_state
-
-scoreboard players set #bossfight.chapter_2.act.setup global.main 1

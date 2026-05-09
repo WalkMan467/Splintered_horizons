@@ -1,6 +1,10 @@
 advancement revoke @s only music:chapter_2/bossfight/3/reset
 
 execute \
+    if score @s music.chapter2.bossfight.3 matches 1.. run \
+return 0
+
+execute \
     if entity @s[tag=campfire] run \
 return 0
 

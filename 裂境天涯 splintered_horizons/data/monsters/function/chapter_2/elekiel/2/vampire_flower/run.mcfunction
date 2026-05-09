@@ -15,4 +15,4 @@ return 0
 
 effect give @s hunger 5 5 true
 
-attribute @s max_health modifier add monsters.elekiel.2.vampire_flower.health -0.99 add_multiplied_base
+attribute @s max_health modifier add monsters.elekiel.2.vampire_flower.health -0.99 add_multiplied_total

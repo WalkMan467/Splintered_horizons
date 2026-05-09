@@ -17,7 +17,6 @@ title @a title ""
 title @a times 20 20 20
 title @a actionbar ""
 
-
 schedule clear cutscene:opening/0/0
 schedule clear cutscene:opening/0/1
 schedule clear cutscene:opening/0/use
@@ -43,6 +42,7 @@ schedule clear cutscene:opening/end/use
 gamerule minecraft:locator_bar false
 
 schedule clear cutscene:opening/main
+tag @a add cutscene.player_leave.detect
 
 
 execute \

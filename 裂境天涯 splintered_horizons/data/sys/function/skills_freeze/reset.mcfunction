@@ -16,3 +16,4 @@ scoreboard players reset @s sys.skills_freeze.id
 attribute @s attack_damage modifier remove sys.skills_freeze
 attribute @s attack_speed modifier remove sys.skills_freeze
 effect clear @s mining_fatigue
+tag @s remove sys.skills_freeze

@@ -2,7 +2,7 @@ scoreboard players add @s weapon.aquilumera.cd 0
 
 execute \
     unless score @s weapon.aquilumera.cd matches ..0 run \
-function weapons:skill_use_failed with entity @s SelectedItem.components."minecraft:custom_data"
+function weapons:rc/failure/skill_use_failed with entity @s SelectedItem.components."minecraft:custom_data"
 
 execute \
     unless score @s weapon.aquilumera.cd matches ..0 run \

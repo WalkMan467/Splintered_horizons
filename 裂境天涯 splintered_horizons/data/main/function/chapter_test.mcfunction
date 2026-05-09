@@ -7,6 +7,9 @@ execute \
 return 0
 
 gamemode survival @s
+function monsters:chapter_2/elekiel_phase_2/reset_skill_tips
+function monsters:chapter_2/elekiel/reset_skill_tips
+function monsters:chapter_2/segrina/reset_skill_tips
 
 # Chapter 2
 
@@ -16,6 +19,7 @@ tp @s 757 142 912 0 0
 
 scoreboard players reset WalkMan467 player.death_count
 scoreboard players add @a player.death_count 0
+scoreboard players set #sys.shooting_contest.sagittarius global.main 1
 
 scoreboard players set @s player.spawnpoint.dimension 0
 scoreboard players set @s player.spawnpoint.pos.x 757

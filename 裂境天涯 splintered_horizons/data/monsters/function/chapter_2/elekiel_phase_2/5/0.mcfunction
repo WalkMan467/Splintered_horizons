@@ -1,3 +1,7 @@
+execute \
+    positioned -916 60 2750 run \
+function monsters:chapter_2/elekiel_phase_2/5/8
+
 tag @a remove monster.elekiel_phase_2.5.target
 
 tag @a[sort=arbitrary,distance=..60] add monster.elekiel_phase_2.5.target
@@ -9,3 +13,8 @@ execute \
 function monsters:chapter_2/elekiel_phase_2/5/1
 
 tag @a remove monster.elekiel_phase_2.5.target
+
+execute \
+    positioned -916 60 2750 \
+    as @a[sort=arbitrary,distance=..120] at @s run \
+function monsters:chapter_2/elekiel_phase_2/5/death_tips

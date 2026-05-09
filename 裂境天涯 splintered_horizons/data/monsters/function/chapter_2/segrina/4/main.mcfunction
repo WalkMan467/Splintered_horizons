@@ -18,5 +18,9 @@ execute \
 function monsters:chapter_2/segrina/4/7
 
 execute \
+    if score @s monster.segrina.skill.4.casting matches 1..300 run \
+function monsters:chapter_2/segrina/4/9
+
+execute \
     if score @s monster.segrina.skill.4.casting matches 300.. run \
 function monsters:chapter_2/segrina/4/end

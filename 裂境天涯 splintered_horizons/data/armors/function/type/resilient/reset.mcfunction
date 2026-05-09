@@ -11,5 +11,8 @@
 
 scoreboard players reset @s armor.resilient.hit
 scoreboard players reset @s armor.resilient.cd
+scoreboard players reset @s armor.resilient.effect.timer
 
 playsound minecraft:entity.breeze.charge voice @a ~ ~1 ~ 1 0.75
+
+attribute @s armor modifier remove armor.resilient

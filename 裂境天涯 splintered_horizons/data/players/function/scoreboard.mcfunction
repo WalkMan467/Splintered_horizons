@@ -28,6 +28,7 @@ scoreboard objectives add player.actionbar.weapon.nightfall dummy "[玩家] acti
 scoreboard objectives add player.actionbar.weapon.spider dummy "[玩家] actionbar 狀態機 蜘蛛技能顯示"
 scoreboard objectives add player.actionbar.weapon.earthquake_axe dummy "[玩家] actionbar 狀態機 地震之斧"
 scoreboard objectives add player.actionbar.weapon.earthquake_axe dummy "[玩家] actionbar 狀態機 地震之斧"
+scoreboard objectives add player.actionbar.armor.wtsf dummy "[玩家] actionbar 狀態機 時間停刻之時"
 
 scoreboard objectives add player.actionbar.segrina.1 dummy "[玩家] actionbar 狀態機 西格瑞納 技能 1 吸收提示"
 
@@ -49,6 +50,12 @@ scoreboard objectives add player.actionbar.sys.forging_table.failure dummy "[玩
 scoreboard objectives add player.actionbar.sys.forging_table.failure.id dummy "[玩家] actionbar 狀態機 失敗提示 ID"
 
 scoreboard objectives add player.actionbar.eye_of_finality dummy "[玩家] actionbar 狀態機 終焉之眼"
+
+scoreboard objectives add player.actionbar.apostle_of_eternity.lock dummy "[玩家] actionbar 狀態機 「永劫」使徒 時空鎖"
+scoreboard objectives add player.actionbar.apostle_of_eternity.lock.1 dummy "[玩家] actionbar 狀態機 「永劫」使徒 時空鎖"
+
+scoreboard players add @a player.actionbar.apostle_of_eternity.lock 0
+scoreboard players add @a player.actionbar.apostle_of_eternity.lock.1 0
 
 scoreboard players add @a player.actionbar.eye_of_finality 0
 
@@ -101,6 +108,7 @@ scoreboard players add @a player.join_game.detect.delay 0
 scoreboard objectives add player.disable.elytra_switch dummy "[玩家] 禁用滑翔翼切換"
 scoreboard objectives add player.disable.movement dummy "[玩家] 禁用移動"
 scoreboard objectives add player.shift.skill.disable dummy "[玩家] 禁用 Shift 主動技偵測"
+scoreboard objectives add player.rc.skill.disable dummy "[玩家] 禁用 rc 主動技偵測"
 scoreboard objectives add player.disable.tp_book dummy "[玩家] 禁用 傳送書"
 
 scoreboard players add @a player.disable.tp_book 0
@@ -118,6 +126,7 @@ scoreboard objectives add player.detect.sneak.delay dummy "[玩家] 潛行偵測
 scoreboard objectives add player.detect.is_bossfight dummy "[玩家] 是否處於BOSS戰"
 scoreboard objectives add player.detect.broken_spawner minecraft.mined:minecraft.spawner "[玩家] 破壞生怪磚"
 scoreboard objectives add player.detect.hurt dummy "[玩家] 偵測受傷"
+scoreboard objectives add player.detect.jump minecraft.custom:minecraft.jump "[玩家] 偵測空格 (僅偵測點按)"
 
 # ==================================================================================================
 # 玩家設定

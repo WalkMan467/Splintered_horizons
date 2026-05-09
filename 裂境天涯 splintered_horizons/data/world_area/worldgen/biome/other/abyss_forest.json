@@ -1,12 +1,14 @@
 {
   "attributes": {
-    "minecraft:visual/sky_color": 9276813,
+    "minecraft:visual/sky_color": 0,
     "minecraft:visual/star_brightness": 1,
     "minecraft:visual/sky_light_factor": 0,
     "minecraft:visual/sun_angle": 180,
     "minecraft:visual/moon_angle": 180,
-    "minecraft:visual/fog_color": 4212557,
-    "minecraft:visual/water_fog_color": 4212557,
+    "minecraft:visual/fog_color": 0,
+    "minecraft:visual/water_fog_color": 0,
+    "minecraft:visual/fog_start_distance": 0,
+    "minecraft:visual/fog_end_distance": 5,
     "minecraft:visual/ambient_particles": [
       {
         "particle": {

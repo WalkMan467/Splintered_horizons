@@ -18,6 +18,7 @@
     "weapons:type/sword/morning_light",
     "armors:type/symbiotic_blood_oath/damage",
     "armors:type/black_hole/damage",
-    "monsters:chapter_2/emissary_of_the_temporal_rift/key/dmg"
+    "monsters:chapter_2/emissary_of_the_temporal_rift/key/dmg",
+    "monsters:chapter_1/explosion_arrow_skeleton/damage"
   ]
 }

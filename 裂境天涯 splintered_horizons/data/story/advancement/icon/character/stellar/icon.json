@@ -4,13 +4,8 @@
       "id": "minecraft:player_head",
       "components": {
         "minecraft:profile": {
-          "name": "textures",
-          "properties": [
-            {
-              "name": "textures",
-              "value": "ewogICJ0aW1lc3RhbXAiIDogMTcxNjcwMDczNzg4NSwKICAicHJvZmlsZUlkIiA6ICI3ZjU2ZjY1MDI2NjY0ZmM1OWFjNWYyYjVjMTNlZGY3NyIsCiAgInByb2ZpbGVOYW1lIiA6ICJNYXhBbnRvbnkiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmQ3ODVmZmM5MDdiN2ViZWY4NTljOTljNzA4MzU4M2RhNmE1MmU4YmMzMmQxMDIwNjE1MGRlOTkyOTM1ODU5NCIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9CiAgfQp9"
-            }
-          ]
+          "texture": "entity/player/slim/stellar",
+          "model": "slim"
         }
       },
       "count": 1

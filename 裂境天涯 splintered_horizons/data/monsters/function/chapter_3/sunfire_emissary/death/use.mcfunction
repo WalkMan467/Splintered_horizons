@@ -1,4 +1,4 @@
-summon area_effect_cloud ~ ~ ~ {Tags:["monsters.sunfire_emissary.fx.main"],custom_particle:{type:"block",block_state:"air"},Radius:0,Duration:41}
+summon area_effect_cloud ~ ~ ~ {Tags:["monsters.sunfire_emissary.fx.main"],custom_particle:{type:"block",block_state:"air"},Radius:0,Duration:42}
 summon area_effect_cloud ~ ~1.5 ~ {Tags:["monsters.sunfire_emissary.fx_2.main","summon"],custom_particle:{type:"block",block_state:"air"},Radius:0,Duration:1}
 
 

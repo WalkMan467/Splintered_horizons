@@ -5,20 +5,20 @@ return 0
 forceload add 1076 -171
 
 execute \
-    positioned 1076 121 -171 rotated 30 0 run \
+    positioned 10040 150 9434 rotated -90 0 run \
 function animated_java:sophia/summon {args: {animation: 'cutscene_opening_death', start_animation: true}}
 
 execute \
-    positioned 1076 121 -171 rotated 0 0 run \
+    positioned 10040 150 9434 rotated 0 0 run \
 function animated_java:fsc_fx/summon {args: {animation: 'run', start_animation: true}}
 
 execute \
-    unless loaded 1076 0 -171 run \
+    unless loaded 10040 0 9434 run \
     return run \
 schedule function cutscene:opening/force_execution/summon/10/0 1t
 
 execute \
-    positioned 1076 121 -171 \
+    positioned 10040 150 9434 \
     unless entity @n[sort=arbitrary,distance=..1,tag=aj.sophia.root,type=item_display] run \
     return run \
 schedule function cutscene:opening/force_execution/summon/10/0 1t

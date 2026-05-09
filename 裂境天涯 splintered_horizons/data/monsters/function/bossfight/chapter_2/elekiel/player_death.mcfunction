@@ -12,6 +12,10 @@ execute \
 attribute @s max_health modifier remove monsters.elekiel.2.vampire_flower.health
 tag @s remove monsters.elekiel.2.vampire_flower.target
 
+attribute @s safe_fall_distance modifier remove monsters.elekiel.1.kill
+
+tag @s remove monster.elekiel.1.kill
+tag @s remove monster.elekiel.1.skip
 
 execute \
     unless score #boss_area.chapter_2.elekiel global.main matches 1.. run \

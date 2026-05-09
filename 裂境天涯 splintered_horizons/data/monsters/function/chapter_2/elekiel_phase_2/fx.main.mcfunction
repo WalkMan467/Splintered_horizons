@@ -23,7 +23,7 @@ execute \
 function monsters:chapter_2/elekiel_phase_2/1/error_dust/main
 
 execute \
-    as @e[sort=arbitrary,tag=monster.elekiel_phase_2.1.mysterray,distance=0..,type=item_display] at @s run \
+    as 5e8e0189-c4a3-46a8-9505-0975eb46a5b4 at @s run \
 function monsters:chapter_2/elekiel_phase_2/1/mysterray/main
 
 execute \

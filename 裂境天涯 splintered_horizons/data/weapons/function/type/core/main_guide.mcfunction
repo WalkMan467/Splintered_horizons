@@ -24,6 +24,9 @@ execute \
     as @a at @s run \
 function weapons:type/axe/thunder_duet/player_main
 
+# illusory claw
+execute as @e[distance=0..,tag=ench.illusory_claw,type=!#dummy_mob] at @s run function weapons:enchantment/illusory_claw/main
+
 # nightfall
 
 execute \

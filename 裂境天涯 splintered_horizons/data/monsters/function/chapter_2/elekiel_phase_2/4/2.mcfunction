@@ -11,5 +11,11 @@ execute \
 function monsters:chapter_2/elekiel_phase_2/4/portal/crack/use
 
 execute \
+    positioned -916 60 2750 \
+    as @a[sort=arbitrary,distance=..120] at @s run \
+function monsters:chapter_2/elekiel_phase_2/4/death_tips
+
+
+execute \
     as @p[tag=monster.elekiel_phase_2.4.portal.target] at @s run \
 function monsters:chapter_2/elekiel_phase_2/4/effect/true

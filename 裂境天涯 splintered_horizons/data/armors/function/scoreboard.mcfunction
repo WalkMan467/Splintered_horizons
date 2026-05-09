@@ -23,6 +23,7 @@ scoreboard objectives add armor.symbiotic_blood_oath.cd dummy "共生血誓 CD"
 scoreboard objectives add armor.symbiotic_blood_oath.player.health dummy "共生血誓 玩家血量"
 scoreboard objectives add armor.radiant_guardians_helmet.effect.cd dummy "耀光守護頭盔被動 CD"
 scoreboard objectives add armor.resilient.hit dummy "堅韌受擊次數"
+scoreboard objectives add armor.resilient.effect.timer dummy "堅韌技能 受擊重置倒計時"
 scoreboard objectives add armor.resilient.cd dummy "堅韌技能 CD"
 scoreboard objectives add armor.enchantment.shockwave.id dummy "震波附魔 ID"
 scoreboard objectives add armor.enchantment.shockwave.timer dummy "震波附魔 計時器"
@@ -37,6 +38,8 @@ scoreboard objectives add armor.animation_skills.return dummy "鞋子 特殊動�
 scoreboard objectives add armor.paladins_helmet.effect.timer dummy "聖騎士頭盔 盔甲值提升計時器"
 
 scoreboard objectives add armor.finality_chestplate.effect.timer dummy "終焉之鎧 攻擊力提升計時器"
+
+scoreboard objectives add armor.wtsf.charge dummy "時間停刻之時 充能"
 
 scoreboard objectives add armor.random_teleport.raycast dummy "隨機傳送 Raycast"
 scoreboard objectives add armor.random_teleport.raycast.id dummy "隨機傳送 Raycast ID"

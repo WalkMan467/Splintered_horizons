@@ -2,7 +2,7 @@
 function monsters:chapter_2/elekiel_phase_2/cast/cast
 
 execute \
-    unless predicate monsters:chapter_2/elekiel/positian_fixed run \
+    if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{location:{position:{y:{max:59}}}}} run \
 tp @s ~ 60 ~
 
 # Bossbar
@@ -19,15 +19,6 @@ bossbar set minecraft:monsters.elekiel_phase_2 players @a[distance=..60]
 
 scoreboard players set @a[distance=..60] player.disable.tp_book 10
 
-
-execute \
-    as @a[distance=..60] at @s run \
-advancement grant @s only music:chapter_2/bossfight/3/play
-
-execute \
-    as @a[distance=60..] at @s run \
-advancement grant @s only music:chapter_2/bossfight/3/reset
-
 scoreboard players set @a[distance=..60] player.disable.elytra_switch 10
 
 
@@ -37,9 +28,5 @@ execute \
     as 00000100-0000-0080-0000-008000000005 run \
 rotate @s ~ 0
 ride @n[distance=0..,tag=aj.boss_1.root,type=item_display] mount 00000100-0000-0080-0000-008000000005
-
-execute \
-    as 00000100-0000-0080-0000-008000000005 at @s run \
-tp @s ~ 60 ~
 
 function monsters:chapter_2/elekiel/state/main

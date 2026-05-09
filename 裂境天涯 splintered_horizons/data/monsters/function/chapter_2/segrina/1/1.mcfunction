@@ -50,3 +50,8 @@ function monsters:chapter_2/segrina/1/2
 function monsters:chapter_2/segrina/1/2
 function monsters:chapter_2/segrina/1/2
 function monsters:chapter_2/segrina/1/2
+
+execute \
+    positioned 725 107 605 \
+    as @a[sort=arbitrary,dx=73,dy=26,dz=73] at @s run \
+function monsters:chapter_2/segrina/1/death_tips

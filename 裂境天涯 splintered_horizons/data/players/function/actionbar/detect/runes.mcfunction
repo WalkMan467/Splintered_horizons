@@ -19,6 +19,10 @@ execute \
 return 0
 
 execute \
+    if score @s player.actionbar.armor.wtsf matches 1.. run \
+return 0
+
+execute \
     if score @s player.actionbar.weapon.earthquake_axe matches 1.. run \
 return 0
 
@@ -65,6 +69,14 @@ return 0
 
 execute \
     if score @s player.actionbar.disabled_anvil matches 1.. run \
+return 0
+
+execute \
+    if score @s player.actionbar.apostle_of_eternity.lock matches 1.. run \
+return 0
+
+execute \
+    if score @s player.actionbar.apostle_of_eternity.lock.1 matches 1.. run \
 return 0
 
 return 1

@@ -1,0 +1,53 @@
+{
+  "description": {
+    "text": ""
+  },
+  "supported_items": "air",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 5,
+    "per_level_above_first": 5
+  },
+  "max_cost": {
+    "base": 50,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 5,
+  "slots": [
+    "any"
+  ],
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "requirements": [
+          {
+            "condition": "minecraft:random_chance",
+            "chance": 0.25
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "#nightmare"
+              },
+              "score": "main.difficulty",
+              "scale": 1
+            },
+            "range": {
+              "min": 1
+            }
+          }
+        ],
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "monsters:chapter_3/sunfire_emissary/death/explosion/weapon"
+        },
+        "enchanted": "attacker",
+        "affected": "victim"
+      }
+    ]
+  }
+}

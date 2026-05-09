@@ -1,4 +1,6 @@
-
+execute \
+    if entity @s[tag=player.death,type=player] run \
+return 0
 
 execute \
     unless score @s sys.dmg_show.hpmax matches -2147483648..2147483647 run \

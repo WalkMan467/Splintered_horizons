@@ -1,0 +1,76 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:apple",
+      "components": {
+        "minecraft:item_model": "status_effects/bleeding"
+      },
+      "count": 1
+    },
+    "title": {
+      "translate": "cse.status_effects.bleeding",
+      "bold": true,
+      "italic": false,
+      "underlined": true
+    },
+    "description": [
+      {
+        "translate": "cse.status_effects.bleeding.1",
+        "with": [
+          {
+            "translate": "cse.status_effects.bleeding",
+            "fallback": "Bleeding",
+            "color": "dark_red",
+            "bold": true,
+            "italic": false,
+            "underlined": true
+          }
+        ],
+        "color": "blue",
+        "bold": false,
+        "italic": false
+      },
+      "\n",
+      {
+        "translate": "cse.status_effects.bleeding.2",
+        "color": "blue",
+        "bold": false,
+        "italic": false
+      },
+      "\n",
+      {
+        "translate": "cse.status_effects.bleeding.3",
+        "color": "blue",
+        "bold": false,
+        "italic": false
+      },
+      "\n",
+      {
+        "translate": "cse.status_effects.bleeding.4",
+        "color": "blue",
+        "bold": false,
+        "italic": false
+      },
+      "\n",
+      {
+        "translate": "cse.status_effects.bleeding.5",
+        "color": "blue",
+        "bold": false,
+        "italic": false
+      }
+    ],
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "players:icon/status_effects/icon",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "players:tips/bleeding"
+  }
+}

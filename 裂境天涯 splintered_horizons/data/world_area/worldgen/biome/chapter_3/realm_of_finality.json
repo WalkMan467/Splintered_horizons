@@ -18,7 +18,12 @@
     "minecraft:visual/sky_light_factor": 0,
     "minecraft:visual/sun_angle": 180,
     "minecraft:visual/moon_angle": 180,
-    "minecraft:visual/sky_light_color": 11272192
+    "minecraft:visual/sky_light_color": "#1f232d",
+    "minecraft:gameplay/water_evaporates": true,
+    "minecraft:visual/fog_color": "#520000",
+    "minecraft:visual/fog_start_distance": 64,
+    "minecraft:visual/fog_end_distance": 180,
+    "minecraft:visual/sky_color": "#0b0c0f"
   },
   "temperature": -0.3,
   "downfall": 0,

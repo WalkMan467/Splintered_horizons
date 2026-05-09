@@ -8,4 +8,8 @@ stopsound @s voice minecraft:voice.in_world_area
 
 team join team.player @a
 
+execute \
+    if entity @s[tag=player.death] run \
+schedule function sys:respawnpoint/tp/main 1t
+
 function music:reset

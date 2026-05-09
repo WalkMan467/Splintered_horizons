@@ -3,7 +3,7 @@ scoreboard players add @s player.ultimate 0
 execute \
     if score @s player.ultimate matches 1.. \
     unless score @s player.click.interval matches 1.. run \
-function weapons:ultimate_use_failed
+function weapons:rc/failure/ultimate_use_failed
 
 execute \
     if score @s player.ultimate matches 1.. run \

@@ -16,3 +16,8 @@ function monsters:chapter_2/elekiel_phase_2/2/mysterray/use
 playsound minecraft:block.beacon.power_select master @a ~ ~ ~ 1 2
 playsound minecraft:block.chain.break master @a ~ ~ ~ 0.75 0
 playsound minecraft:block.grindstone.use master @a ~ ~ ~ 0.5 1.5
+
+execute \
+    positioned -916 60 2750 \
+    as @a[sort=arbitrary,distance=..120] at @s run \
+function monsters:chapter_2/elekiel_phase_2/2/death_tips

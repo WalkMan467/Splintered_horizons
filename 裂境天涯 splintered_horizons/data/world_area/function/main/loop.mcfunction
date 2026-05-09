@@ -4,16 +4,19 @@
         if entity @s[tag=cutscene.opening.end] run \
     return 0
 
+    tag @a add temp
+    tag @a[gamemode=spectator,tag=!animation] remove temp
+    tag @a[tag=sys.hide_world_area.name] remove temp
+
     # Campfire
     execute \
-        if entity @s[gamemode=!spectator] \
-        unless entity @s[tag=sys.hide_world_area.name] \
+        if entity @s[tag=temp] \
         if entity @n[tag=sys.campfire,limit=1,distance=..6,type=minecraft:interaction] \
         unless entity @n[distance=..12,type=!#minecraft:dummy_mob,type=!minecraft:player,tag=!sys.campfire] run \
     advancement grant @s only world_area:main/campfire/in
 
     execute \
-        if entity @s[gamemode=!spectator] \
+        if entity @s[tag=temp] \
         if entity @n[tag=sys.campfire,limit=1,distance=..6,type=minecraft:interaction] \
         if entity @n[distance=..12,type=!#minecraft:dummy_mob,type=!minecraft:player,tag=!sys.campfire] run \
     advancement grant @s only world_area:main/campfire/out
@@ -27,8 +30,7 @@
 
     # Safe Zone Music
     execute \
-        unless entity @s[tag=sys.hide_world_area.name] \
-        if entity @s[gamemode=!spectator] \
+        if entity @s[tag=temp] \
         if biome ~ ~ ~ #world_area:safe_area run \
     advancement grant @s only world_area:main/safe_zone/music/in
 
@@ -38,7 +40,7 @@
 
     # Safe Zone
     execute \
-        unless entity @s[tag=sys.hide_world_area.name] \
+        if entity @s[tag=temp] \
         if biome ~ ~ ~ world_area:main/safe_zone run \
     advancement grant @s only world_area:main/safe_zone/in
 
@@ -48,18 +50,21 @@
 
     # Resource Warehouse
     execute \
-        unless entity @s[tag=sys.hide_world_area.name] \
+        if entity @s[tag=temp] \
         if biome ~ ~ ~ world_area:main/resource_warehouse run \
     advancement grant @s only world_area:main/resource_warehouse/in
+
     execute \
         unless biome ~ ~ ~ world_area:main/resource_warehouse run \
     advancement grant @s only world_area:main/resource_warehouse/out
 
     # Adventure / Survival mode area detection (including campfires)
+
     execute \
         if entity @s[gamemode=survival] \
         if function world_area:main/mode_change/main run \
     function world_area:main/mode_change/adventure
+
     execute \
         if entity @s[gamemode=adventure] \
         unless function world_area:main/mode_change/main run \
@@ -67,7 +72,7 @@
 
     # Border Wall
     execute \
-        unless entity @s[tag=sys.hide_world_area.name] \
+        if entity @s[tag=temp,gamemode=!creative] \
         if biome ~ ~ ~ world_area:main/boundary \
         if predicate players:detect/not_creative_spectator \
         if entity @s[tag=!player.death] run \
@@ -75,9 +80,8 @@
 
     # Death Zone
     execute \
-        unless entity @s[tag=sys.hide_world_area.name] \
+        if entity @s[tag=temp,gamemode=!creative] \
         if biome ~ ~ ~ world_area:main/death_area \
-        if predicate players:detect/not_creative_spectator \
         if entity @s[tag=!player.death] run \
     kill @s
 
@@ -102,6 +106,8 @@
     execute \
         if entity @s[tag=!campfire] run \
     function world_area:other/loop
+
+    tag @s remove temp
 
 #==================================================
 

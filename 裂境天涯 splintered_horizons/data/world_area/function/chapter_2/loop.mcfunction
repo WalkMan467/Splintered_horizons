@@ -4,128 +4,147 @@
 
 #==================================================
 
+    tag @a add temp
+    tag @a[gamemode=spectator,tag=!animation] remove temp
+    tag @a[tag=sys.hide_world_area.name] remove temp
+
 # Chapter 2
 
     # Main 
     execute \
-    if entity @s[gamemode=!spectator] \
-    unless entity @s[tag=sys.hide_world_area.name] \
-    if biome ~ ~ ~ #world_area:chapter_2 run \
-advancement grant @s only music:chapter_2/icon
+        if entity @s[tag=temp] \
+        if biome ~ ~ ~ #world_area:chapter_2 run \
+    advancement grant @s only music:chapter_2/icon
 
 
     # Land of Finality
     
     execute \
-    if entity @s[gamemode=!spectator] \
-    unless entity @s[tag=sys.hide_world_area.name] \
-    if biome ~ ~ ~ world_area:chapter_2/land_of_finality run \
-advancement grant @s only world_area:chapter_2/land_of_finality/in
+        if entity @s[tag=temp] \
+        if biome ~ ~ ~ world_area:chapter_2/land_of_finality run \
+    advancement grant @s only world_area:chapter_2/land_of_finality/in
+
     execute \
-    unless biome ~ ~ ~ world_area:chapter_2/land_of_finality run \
-advancement grant @s only world_area:chapter_2/land_of_finality/out
+        unless biome ~ ~ ~ world_area:chapter_2/land_of_finality run \
+    advancement grant @s only world_area:chapter_2/land_of_finality/out
 
     # Forest of Souls
     
     execute \
-    if entity @s[gamemode=!spectator] \
-    unless entity @s[tag=sys.hide_world_area.name] \
-    if biome ~ ~ ~ world_area:chapter_2/forest_of_souls run \
-advancement grant @s only world_area:chapter_2/forest_of_souls/in
+        if entity @s[tag=temp,tag=!world_area.segrine_bossfight] \
+        if biome ~ ~ ~ world_area:chapter_2/forest_of_souls run \
+    advancement grant @s only world_area:chapter_2/forest_of_souls/in
+
     execute \
-    unless biome ~ ~ ~ world_area:chapter_2/forest_of_souls run \
-advancement grant @s only world_area:chapter_2/forest_of_souls/out
+        if entity @s[tag=!world_area.segrine_bossfight] \
+        unless biome ~ ~ ~ world_area:chapter_2/forest_of_souls run \
+    advancement grant @s only world_area:chapter_2/forest_of_souls/out
 
     # Forgotten Sakura City
     
     execute \
-    if entity @s[gamemode=!spectator] \
-    unless entity @s[tag=sys.hide_world_area.name] \
-    if biome ~ ~ ~ world_area:chapter_2/forgotten_sakura_city run \
-advancement grant @s only world_area:chapter_2/forgotten_sakura_city/in
+        if entity @s[tag=temp] \
+        if biome ~ ~ ~ world_area:chapter_2/forgotten_sakura_city run \
+    advancement grant @s only world_area:chapter_2/forgotten_sakura_city/in
+
     execute \
-    unless biome ~ ~ ~ world_area:chapter_2/forgotten_sakura_city run \
-advancement grant @s only world_area:chapter_2/forgotten_sakura_city/out
+        unless biome ~ ~ ~ world_area:chapter_2/forgotten_sakura_city run \
+    advancement grant @s only world_area:chapter_2/forgotten_sakura_city/out
 
     # Deep Crimson Abyss
     
     execute \
-    if entity @s[gamemode=!spectator] \
-    unless entity @s[tag=sys.hide_world_area.name] \
-    if biome ~ ~ ~ world_area:chapter_2/deep_crimson_abyss run \
-advancement grant @s only world_area:chapter_2/deep_crimson_abyss/in
+        if entity @s[tag=temp] \
+        if biome ~ ~ ~ world_area:chapter_2/deep_crimson_abyss run \
+    advancement grant @s only world_area:chapter_2/deep_crimson_abyss/in
+
     execute \
-    unless biome ~ ~ ~ world_area:chapter_2/deep_crimson_abyss run \
-advancement grant @s only world_area:chapter_2/deep_crimson_abyss/out
+        unless biome ~ ~ ~ world_area:chapter_2/deep_crimson_abyss run \
+    advancement grant @s only world_area:chapter_2/deep_crimson_abyss/out
 
     # Magical Land
     
     execute \
-    if entity @s[gamemode=!spectator] \
-    unless entity @s[tag=sys.hide_world_area.name] \
-    if biome ~ ~ ~ world_area:chapter_2/magical_land run \
-advancement grant @s only world_area:chapter_2/magical_land/in
+        if entity @s[tag=temp] \
+        if biome ~ ~ ~ world_area:chapter_2/magical_land run \
+    advancement grant @s only world_area:chapter_2/magical_land/in
+
     execute \
-    unless biome ~ ~ ~ world_area:chapter_2/magical_land run \
-advancement grant @s only world_area:chapter_2/magical_land/out
+        unless biome ~ ~ ~ world_area:chapter_2/magical_land run \
+    advancement grant @s only world_area:chapter_2/magical_land/out
 
     # Magical Land
     
     execute \
-    if entity @s[gamemode=!spectator] \
-    unless entity @s[tag=sys.hide_world_area.name] \
-    if biome ~ ~ ~ world_area:chapter_2/garden_of_time_space_rifts run \
-advancement grant @s only world_area:chapter_2/garden_of_time_space_rifts/in
+        if entity @s[tag=temp] \
+        if biome ~ ~ ~ world_area:chapter_2/garden_of_time_space_rifts run \
+    advancement grant @s only world_area:chapter_2/garden_of_time_space_rifts/in
+
     execute \
-    unless biome ~ ~ ~ world_area:chapter_2/garden_of_time_space_rifts run \
-advancement grant @s only world_area:chapter_2/garden_of_time_space_rifts/out
+        unless biome ~ ~ ~ world_area:chapter_2/garden_of_time_space_rifts run \
+    advancement grant @s only world_area:chapter_2/garden_of_time_space_rifts/out
 
     # Temple of Light
     
     execute \
-    if entity @s[gamemode=!spectator] \
-    unless entity @s[tag=sys.hide_world_area.name] \
-    if biome ~ ~ ~ world_area:chapter_2/temple_of_light run \
-advancement grant @s only world_area:chapter_2/temple_of_light/in
+        if entity @s[tag=temp] \
+        if biome ~ ~ ~ world_area:chapter_2/temple_of_light run \
+    advancement grant @s only world_area:chapter_2/temple_of_light/in
+
     execute \
-    unless biome ~ ~ ~ world_area:chapter_2/temple_of_light run \
-advancement grant @s only world_area:chapter_2/temple_of_light/out
+        unless biome ~ ~ ~ world_area:chapter_2/temple_of_light run \
+    advancement grant @s only world_area:chapter_2/temple_of_light/out
 
     # Elekiel Bossfight
     
     execute \
-    if entity @s[gamemode=!spectator] \
-    if biome ~ ~ ~ world_area:chapter_2/bossfight/normal run \
-advancement grant @s only world_area:chapter_2/temple_of_light/bossfight/in
+        if entity @s[tag=temp] \
+        if biome ~ ~ ~ world_area:chapter_2/bossfight/normal run \
+    advancement grant @s only world_area:chapter_2/temple_of_light/bossfight/in
     execute \
-    unless biome ~ ~ ~ world_area:chapter_2/bossfight/normal run \
-advancement grant @s only world_area:chapter_2/temple_of_light/bossfight/out
+        unless biome ~ ~ ~ world_area:chapter_2/bossfight/normal run \
+    advancement grant @s only world_area:chapter_2/temple_of_light/bossfight/out
+
+    # Segrine Bossfight
+    
+    execute \
+        positioned 725 107 605 \
+        if entity @s[dx=73,dy=26,dz=73,tag=temp,tag=!world_area.segrine_bossfight] at @s run \
+    advancement grant @s only world_area:chapter_2/segrine_bossfight/in
+
+    execute \
+        positioned 725 107 605 \
+        unless entity @s[dx=73,dy=26,dz=73,tag=temp] at @s run \
+    advancement grant @s only world_area:chapter_2/segrine_bossfight/out
 
     # Elekiel Phase 2 Bossfight
     
     execute \
-    if entity @s[gamemode=!spectator] \
-    if biome ~ ~ ~ world_area:chapter_2/bossfight/elekiel_phase_2/bossfight_area run \
-advancement grant @s only world_area:chapter_2/temple_of_light/bossfight/elekiel_phase_2/bossfight_area/in
+        if entity @s[tag=temp] \
+        if biome ~ ~ ~ world_area:chapter_2/bossfight/elekiel_phase_2/bossfight_area run \
+    advancement grant @s only world_area:chapter_2/temple_of_light/bossfight/elekiel_phase_2/bossfight_area/in
+
     execute \
-    unless biome ~ ~ ~ world_area:chapter_2/bossfight/elekiel_phase_2/bossfight_area run \
-advancement grant @s only world_area:chapter_2/temple_of_light/bossfight/elekiel_phase_2/bossfight_area/out
+        unless biome ~ ~ ~ world_area:chapter_2/bossfight/elekiel_phase_2/bossfight_area run \
+    advancement grant @s only world_area:chapter_2/temple_of_light/bossfight/elekiel_phase_2/bossfight_area/out
 
     # Temple of Light
     
     execute \
-    if entity @s[gamemode=!spectator] \
-    unless entity @s[tag=sys.hide_world_area.name] \
-    if biome ~ ~ ~ #world_area:chapter_2_end run \
-advancement grant @s only world_area:chapter_2/main/in
+        if entity @s[tag=temp] \
+        if biome ~ ~ ~ #world_area:chapter_2_end run \
+    advancement grant @s only world_area:chapter_2/main/in
+
     execute \
-    unless biome ~ ~ ~ #world_area:chapter_2_end run \
-advancement grant @s only world_area:chapter_2/main/out
+        unless biome ~ ~ ~ #world_area:chapter_2_end run \
+    advancement grant @s only world_area:chapter_2/main/out
 
 
     # BOSS battle entrance detection
     
     execute \
-    positioned 1116 81 368 \
-    as @a[distance=..1.5] run \
-function world_area:chapter_2/temple_of_light/bossfight/tp
+        positioned 1116 81 368 \
+        as @a[distance=..1.5] run \
+    function world_area:chapter_2/temple_of_light/bossfight/tp
+
+    tag @a remove temp

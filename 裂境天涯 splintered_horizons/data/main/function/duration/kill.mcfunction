@@ -12,7 +12,8 @@ function monsters:chapter_2/forest_messenger/cocoon/remove
 
 execute \
     on vehicle run \
-tp @s ~ -255 ~
+function main:duration/kill_2
+
 
 execute \
     on vehicle run \

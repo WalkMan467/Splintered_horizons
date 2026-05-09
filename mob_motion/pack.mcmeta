@@ -1,0 +1,10 @@
+{
+  "pack": {
+    "description": "生物附加速度專用的函式庫 by WalkMan467",
+    "min_format": [
+      94,
+      1
+    ],
+    "max_format": 94
+  }
+}

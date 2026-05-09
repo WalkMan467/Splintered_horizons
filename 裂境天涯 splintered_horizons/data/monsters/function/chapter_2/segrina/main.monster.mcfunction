@@ -28,3 +28,5 @@ tp @s ^ ^ ^1
 
 
 scoreboard players set @a[distance=..60] player.disable.tp_book 10
+
+function monsters:chapter_2/segrina/state/main

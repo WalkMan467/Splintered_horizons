@@ -6,4 +6,8 @@ execute \
     as @p[sort=arbitrary,tag=weapon.thunder_duet.user,tag=atker] run \
 function dmg_formula:weapons/type/sword/echo_rhythm/calculate
 
-tp @s ^ ^ ^-1
+execute \
+    rotated ~ 0 \
+    if block ^ ^ ^-1 #penetrate \
+    if block ^ ^1 ^-1 #penetrate run \
+tp @s[tag=!sys.dummy_mob.interface,tag=!sys.dummy_mob,tag=!sys.no_knockback] ^ ^ ^-1

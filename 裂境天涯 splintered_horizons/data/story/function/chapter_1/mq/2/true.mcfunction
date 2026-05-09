@@ -19,10 +19,11 @@ scoreboard players set story.chapter_1.mq.2 story.chapter_1 1
 
 weather rain
 
-kill @e[tag=story.chapter_1.mq.2]
+setblock 1 64 -109 light[level=10] replace
+setblock 1 65 -109 light[level=10] replace
 
 execute \
-    as @n[tag=aj.sophia.root,limit=1,distance=..3] run \
+    as @n[tag=aj.sophia.root,limit=1,distance=..3,type=item_display] run \
 function animated_java:sophia/remove/this
 
 

@@ -59,4 +59,6 @@ execute \
     if score #difficulty global.main matches 0 run \
 function monsters:chapter_2/segrina/void
 
+execute \
+    if entity ffff8285-0000-0c33-0000-5a5c0162349d run \
 schedule function monsters:chapter_2/segrina/main 1t

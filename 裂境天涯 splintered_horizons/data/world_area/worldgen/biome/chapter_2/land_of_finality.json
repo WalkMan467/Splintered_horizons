@@ -1,7 +1,7 @@
 {
   "attributes": {
-    "minecraft:visual/sky_color": 10497839,
-    "minecraft:visual/fog_color": 4331544,
+    "minecraft:visual/sky_color": "#0b0c0f",
+    "minecraft:visual/fog_color": "#520000",
     "minecraft:visual/water_fog_color": 5373952,
     "minecraft:visual/sky_light_factor": 0,
     "minecraft:visual/sun_angle": 180,
@@ -14,7 +14,10 @@
         "probability": 0.05
       }
     ],
-    "minecraft:visual/star_brightness": 1
+    "minecraft:visual/star_brightness": 1,
+    "minecraft:visual/fog_start_distance": 64,
+    "minecraft:visual/fog_end_distance": 128,
+    "minecraft:visual/sky_light_color": "#1f232d"
   },
   "temperature": -0.3,
   "downfall": 0,

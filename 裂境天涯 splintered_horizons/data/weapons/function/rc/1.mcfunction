@@ -6,6 +6,10 @@ execute \
     if score @s player.click.interval matches 1.. run \
 return 0
 
+execute \
+    if score @s player.rc.skill.disable matches 1.. run \
+    return run \
+function weapons:rc/failure/disabled
 
 execute \
     if items entity @s weapon.mainhand *[minecraft:custom_data~{rc:1b} | minecraft:custom_data~{rc:1}] \

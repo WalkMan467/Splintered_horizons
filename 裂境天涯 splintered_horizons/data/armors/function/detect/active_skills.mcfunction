@@ -15,7 +15,8 @@ return 0
 
 execute \
     if score @s player.shift.skill.disable matches 1.. run \
-return 0
+    return run \
+function weapons:rc/failure/disabled
 
 
 execute \

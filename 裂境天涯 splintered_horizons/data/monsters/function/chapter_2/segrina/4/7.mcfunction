@@ -29,3 +29,14 @@ clear @s leather_chestplate[custom_data~{invincible:true}]
 execute \
     unless score @s monster.segrina.skill.4.invincible matches 1.. run \
 scoreboard players reset @s monster.segrina.skill.4.invincible
+
+execute \
+    as @a \
+    if score @s monster.segrina.skill.4.invincible matches 1.. \
+    store result storage monster.segrina.skill.4.invincible temp.id int 1 run \
+scoreboard players get @s monster.segrina.skill.4.invincible.display.id
+
+execute \
+    as @a \
+    if score @s monster.segrina.skill.4.invincible matches 1.. run \
+function monsters:chapter_2/segrina/4/bossbar/update with storage monster.segrina.skill.4.invincible temp

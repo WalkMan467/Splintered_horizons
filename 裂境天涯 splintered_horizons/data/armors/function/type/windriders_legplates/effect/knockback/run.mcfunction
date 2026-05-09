@@ -17,8 +17,10 @@
 function sys:dummy_mob/interface
 
 execute \
-    if block ^ ^ ^-0.5 #penetrate run \
-tp @s[tag=!sys.dummy_mob.interface] ^ ^ ^-0.5
+    rotated ~ 0 \
+    if block ^ ^ ^-0.5 #penetrate \
+    if block ^ ^1 ^-0.5 #penetrate run \
+tp @s[tag=!sys.dummy_mob.interface,tag=!sys.dummy_mob,tag=!sys.no_knockback] ^ ^ ^-0.5
 
 execute \
     unless score @s armor.windriders_legplates.leggings.damage_delay matches 1.. run \

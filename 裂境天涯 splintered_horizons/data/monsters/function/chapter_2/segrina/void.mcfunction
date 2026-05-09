@@ -6,15 +6,23 @@ scoreboard players reset skill.3 monster.segrina.cd
 scoreboard players reset skill.4 monster.segrina.cd
 
 scoreboard players reset @s monster.segrina.skill.4.effect
+scoreboard players set #bossfight global.main 0
+
 
 tag @a remove monster.segrina.skill.2.raycast.player
 tag @a[sort=arbitrary,distance=..60] remove monster.segrina.skill.3.temp
 tag @a[sort=arbitrary,distance=..60] remove monster.segrina.skill.3.player
 
 execute \
+    as @a at @s run \
+function monsters:chapter_2/segrina/4/8
+
+execute \
     on passengers \
     as @s[tag=aj.segrina.root,type=item_display] run \
 function animated_java:segrina/remove/this
+
+function monsters:bossfight/chapter_2/act/segrina/1/false
 
 execute \
     as @a run \
@@ -27,6 +35,8 @@ bossbar remove minecraft:monsters.segrina
 bossbar remove monster.segrina.skill.1.casting
 
 scoreboard players set #boss_area.chapter_2.segrina global.main 0
+
+schedule clear monsters:chapter_2/segrina/main
 
 kill 01dc4318-ed62-7e6b-0003-873f004ff9e9
 kill 0023442d-ed62-7e6b-0003-873f004ff9e9
@@ -52,6 +62,8 @@ execute \
     positioned 725 107 605 \
     as @a[sort=arbitrary,dx=73,dy=26,dz=73,tag=!chapter_2.segrina.lose] at @s run \
 function monsters:chapter_2/segrina/4/5
+
+tag @a remove monster.segrina.skill.4
 
 execute \
     as @a[distance=..60] at @s run \

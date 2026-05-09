@@ -20,3 +20,5 @@ summon interaction 912 60 2018 \
     }
 
 setblock 912 60 2018 light[level=15] replace
+
+advancement grant @a[distance=..30] only players:tips/bossfight

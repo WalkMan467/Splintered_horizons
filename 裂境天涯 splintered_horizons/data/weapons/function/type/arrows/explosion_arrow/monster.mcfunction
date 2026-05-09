@@ -9,10 +9,6 @@ function weapons:type/arrows/explosion_arrow/range
 execute \
     unless score #nightmare main.difficulty matches 1.. \
     as @a[distance=..3.6] run \
-damage @s 8 player_explosion
-
-execute \
-    if score #nightmare main.difficulty matches 1.. run \
-summon creeper ~ ~1 ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,DeathLootTable:"-",PersistenceRequired:1b,NoAI:1b,Fuse:1,ignited:1b,CustomName:{"bold":true,"color":"dark_red","fallback":"深淵射手","italic":false,"translate":"monster.explosion_arrow_skeleton"},attributes:[{id:"minecraft:scale",base:0.0}]}
+damage @s 8 monsters:chapter_1/explosion_arrow_skeleton/damage
 
 advancement revoke @a only weapons:arrows/enemy/explosion_arrow

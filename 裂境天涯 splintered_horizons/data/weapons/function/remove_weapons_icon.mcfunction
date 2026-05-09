@@ -12,6 +12,7 @@ advancement grant @s only weapons:icon/icon
 
             advancement revoke @s only weapons:icon/sword/nightfall
             advancement revoke @s only weapons:icon/sword/silvaverdis
+            advancement revoke @s only weapons:icon/axe/thunder_duet
 
         advancement grant @s only weapons:icon/chapter_3
 

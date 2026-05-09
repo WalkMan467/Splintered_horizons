@@ -18,3 +18,8 @@ execute \
 function monsters:chapter_2/elekiel/3/save_pos
 
 scoreboard players set global monster.elekiel.3.timer 15
+
+execute \
+    positioned 912 55 2018 \
+    as @a[sort=arbitrary,distance=..60] at @s run \
+function monsters:chapter_2/elekiel/3/death_tips

@@ -1,6 +1,6 @@
 bossbar set minecraft:monsters.lord_of_the_cataclysm players @a[distance=..20]
 
-effect give @a[distance=..20] night_vision 1 255 true
+effect give @a[distance=..20] night_vision 15 255 true
 
 
 execute \

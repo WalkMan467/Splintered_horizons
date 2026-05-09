@@ -10,9 +10,9 @@ scoreboard players set @s player.no_cd 0
 scoreboard players set #story global.main 0
 
 scoreboard players set @s player.spawnpoint.dimension 0
-scoreboard players set @s player.spawnpoint.pos.x 38
-scoreboard players set @s player.spawnpoint.pos.y 64
-scoreboard players set @s player.spawnpoint.pos.z 11
+scoreboard players set @s player.spawnpoint.pos.x 3800
+scoreboard players set @s player.spawnpoint.pos.y 6400
+scoreboard players set @s player.spawnpoint.pos.z 1100
 
 
 execute \
@@ -31,7 +31,7 @@ advancement grant @s only weapons:monument/icon
 advancement grant @s only weapons:icon/other
 advancement grant @s only story:icon/story/chapter_1
 
-scoreboard players set @s player.death_count 0
+scoreboard players set @a player.death_count 0
 scoreboard players set #bossfight.chapter_2.act.setup global.main 1
 
 function music:remove_bgn_icon
@@ -43,7 +43,5 @@ function monsters:remove_monsters_icon
 
 
 team join team.player @s
-
-advancement grant @s only world_area:main/environment_particles/true
 
 advancement revoke @s only story:icon/story/chapter_1/mq/scebe_1

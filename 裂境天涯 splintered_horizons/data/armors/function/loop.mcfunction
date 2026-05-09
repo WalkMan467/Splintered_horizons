@@ -45,6 +45,14 @@ execute \
     unless items entity @s armor.legs *[custom_data~{windriders:1b} | custom_data={windriders:1}] run \
 advancement grant @s only armors:type/windriders_legplates/take_off
 
+execute \
+    if items entity @s armor.chest *[custom_data~{id:"wtsf"}] run \
+advancement grant @s only armors:type/wtsf/eqipment
+
+execute \
+    unless items entity @s armor.chest *[custom_data~{id:"wtsf"}] run \
+advancement grant @s only armors:type/wtsf/take_off
+
 function armors:type/radiant_guardians_helmet/main
 
 function armors:type/tai_chis_shadow/main

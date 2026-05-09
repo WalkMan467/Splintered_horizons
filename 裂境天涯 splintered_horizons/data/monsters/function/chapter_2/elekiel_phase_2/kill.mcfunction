@@ -23,6 +23,10 @@ execute \
     as @a run \
 attribute @s attack_damage modifier remove monster.elekiel_phase_2.effect
 
+execute \
+    positioned -916 60 2750 \
+    as @a[distance=60..] at @s run \
+advancement grant @s only music:chapter_2/bossfight/3/reset
 
 execute \
     as @p \
@@ -98,10 +102,9 @@ scoreboard players reset $monster.chapter_2.elekiel.1 monster.elekiel.skill.cd
 scoreboard players reset $monster.chapter_2.elekiel.2 monster.elekiel.skill.cd
 scoreboard players reset $monster.chapter_2.elekiel.3 monster.elekiel.skill.cd
 
-
 execute \
     positioned -916 60 2750 run \
-kill @e[type=experience_orb,distance=..60]
+kill @e[distance=..60,type=experience_orb]
 
 execute \
     positioned -916 60 2750 run \

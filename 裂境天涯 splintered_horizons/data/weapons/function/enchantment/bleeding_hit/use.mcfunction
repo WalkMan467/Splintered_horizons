@@ -31,4 +31,4 @@ execute \
     unless entity @s[type=player] run \
 tag @s remove user.enemy
 
-advancement grant @s[type=player] only players:tips/bleeding
+advancement grant @s[type=player] only players:icon/status_effects/bleeding

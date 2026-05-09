@@ -3,7 +3,7 @@ scoreboard players add @s weapon.grip_of_withering.cd 0
 execute \
     unless score @s weapon.grip_of_withering.cd matches ..0 \
     unless score @s player.click.interval matches 1.. run \
-function weapons:skill_use_failed with entity @s SelectedItem.components."minecraft:custom_data"
+function weapons:rc/failure/skill_use_failed with entity @s SelectedItem.components."minecraft:custom_data"
 
 execute \
     if score @s weapon.grip_of_withering.cd matches 1.. run \

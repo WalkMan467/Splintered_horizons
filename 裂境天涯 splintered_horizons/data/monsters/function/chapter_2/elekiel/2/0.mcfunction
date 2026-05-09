@@ -11,3 +11,8 @@ tp @s ~ 60 ~
 execute \
     as @e[distance=0..,tag=monsters.elekiel.2.vampire_flower.point,type=area_effect_cloud] at @s run \
 function monsters:chapter_2/elekiel/2/1
+
+execute \
+    positioned 912 55 2018 \
+    as @a[sort=arbitrary,distance=..60] at @s run \
+function monsters:chapter_2/elekiel/2/death_tips

@@ -15,6 +15,7 @@
     "minecraft:falling_anvil",
     "minecraft:falling_block",
     "minecraft:fly_into_wall",
-    "minecraft:lightning_bolt"
+    "minecraft:lightning_bolt",
+    "weapons:enchantment/illusory_claw"
   ]
 }

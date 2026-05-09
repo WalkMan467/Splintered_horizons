@@ -7,6 +7,8 @@
     "minecraft:visual/sky_light_factor": 0,
     "minecraft:visual/sun_angle": 180,
     "minecraft:visual/moon_angle": 180,
+    "minecraft:visual/fog_start_distance": 48,
+    "minecraft:visual/fog_end_distance": 90,
     "minecraft:visual/ambient_particles": [
       {
         "particle": {

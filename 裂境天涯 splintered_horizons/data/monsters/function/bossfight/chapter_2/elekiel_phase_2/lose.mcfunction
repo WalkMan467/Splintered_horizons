@@ -18,4 +18,9 @@ execute \
     as @a run \
 function players:reset_state
 
+execute \
+    as @a at @s run \
+function monsters:chapter_2/segrina/4/8
+
+
 scoreboard players set #boss_area.chapter_2.elekiel_phase_2 global.main 0
