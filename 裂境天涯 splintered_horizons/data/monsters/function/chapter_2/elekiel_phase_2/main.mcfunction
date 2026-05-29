@@ -3,42 +3,42 @@
 # Skill 1
 
 execute \
-    as 00000100-0000-0080-0000-008000000005 at @s \
+    as @n[sort=arbitrary,distance=0..,tag=monsters.elekiel_phase_2,type=skeleton] at @s \
     if entity @s[tag=chapter_2.elekiel_phase_2.1] run \
 function monsters:chapter_2/elekiel_phase_2/1/main
 
 # Skill 2
 
 execute \
-    as 00000100-0000-0080-0000-008000000005 at @s \
+    as @n[sort=arbitrary,distance=0..,tag=monsters.elekiel_phase_2,type=skeleton] at @s \
     if entity @s[tag=chapter_2.elekiel_phase_2.2] run \
 function monsters:chapter_2/elekiel_phase_2/2/main
 
 # Skill 3
 
 execute \
-    as 00000100-0000-0080-0000-008000000005 at @s \
+    as @n[sort=arbitrary,distance=0..,tag=monsters.elekiel_phase_2,type=skeleton] at @s \
     if entity @s[tag=chapter_2.elekiel_phase_2.3] run \
 function monsters:chapter_2/elekiel_phase_2/3/main
 
 # Skill 4
 
 execute \
-    as 00000100-0000-0080-0000-008000000005 at @s \
+    as @n[sort=arbitrary,distance=0..,tag=monsters.elekiel_phase_2,type=skeleton] at @s \
     if entity @s[tag=chapter_2.elekiel_phase_2.4] run \
 function monsters:chapter_2/elekiel_phase_2/4/main
 
 # Skill 4
 
 execute \
-    as 00000100-0000-0080-0000-008000000005 at @s \
+    as @n[sort=arbitrary,distance=0..,tag=monsters.elekiel_phase_2,type=skeleton] at @s \
     if entity @s[tag=chapter_2.elekiel_phase_2.5] run \
 function monsters:chapter_2/elekiel_phase_2/5/main
 
 # Monster Self
 
 execute \
-    as 00000100-0000-0080-0000-008000000005 at @s run \
+    as @n[sort=arbitrary,distance=0..,tag=monsters.elekiel_phase_2,type=skeleton] at @s run \
 function monsters:chapter_2/elekiel_phase_2/main.monster
 
 # Players
@@ -59,5 +59,5 @@ advancement grant @s only music:chapter_2/bossfight/3/reset
 
 
 execute \
-    if entity 00000100-0000-0080-0000-008000000005 run \
+    if entity @n[sort=arbitrary,distance=0..,tag=monsters.elekiel_phase_2,type=skeleton] run \
 schedule function monsters:chapter_2/elekiel_phase_2/main 1t

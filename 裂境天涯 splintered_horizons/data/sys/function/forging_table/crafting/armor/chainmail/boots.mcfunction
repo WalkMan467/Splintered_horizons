@@ -1,0 +1,1 @@
+function sys:forging_table/crafting/general/armor_energy_infusion

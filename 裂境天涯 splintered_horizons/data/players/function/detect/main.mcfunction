@@ -4,6 +4,14 @@ execute \
     if score @s player.detect.drop matches 1.. run \
 function players:detect/drop
 
+execute \
+    unless predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{location:{position:{y:{min:-127}}}}} run \
+function players:detect/in_void
+
+execute \
+    if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{location:{position:{y:{min:-127}}}}} run \
+function players:detect/out_void
+
 # Detection in the air / on land
 
 execute \

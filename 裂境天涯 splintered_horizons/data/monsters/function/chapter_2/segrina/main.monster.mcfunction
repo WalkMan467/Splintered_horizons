@@ -16,9 +16,9 @@ bossbar set minecraft:monsters.segrina players @a[distance=..60]
 execute \
     on passengers at @s \
     if entity @s[type=item_display,tag=aj.segrina.root] rotated \
-    as ffff8285-0000-0c33-0000-5a5c0162349d run \
+    as @n[sort=arbitrary,distance=0..,tag=monsters.segrina,type=zombie] run \
 rotate @s ~ 0
-ride @n[distance=0..,tag=aj.segrina.root,type=item_display] mount ffff8285-0000-0c33-0000-5a5c0162349d
+ride @n[distance=0..,tag=aj.segrina.root,type=item_display] mount @n[sort=arbitrary,distance=0..,tag=monsters.segrina,type=zombie]
 
 execute \
     positioned 725 107 605 \

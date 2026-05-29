@@ -29,9 +29,13 @@ summon mannequin ~ ~ ~ \
                 "italic":false,\
                 "text":"WalkMan467" \
             }, \
-        profile:"WalkMan467" \
+        profile: \
+            { \
+                texture: \
+                "entity/player/wide/walkman467", \
+                model:"wide" \
+            } \
     }
-
 
 execute \
     positioned 765 146 995 \

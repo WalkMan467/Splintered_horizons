@@ -67,7 +67,7 @@ execute \
 scoreboard players get global monster.elekiel.3.timer
 
 execute \
-    if score global monster.elekiel.3.timer matches 0.. at 00000100-0000-0080-0000-008000000001 run \
+    if score global monster.elekiel.3.timer matches 0.. at @n[sort=arbitrary,distance=0..,tag=monsters.elekiel,type=skeleton] run \
 bossbar set chapter_2.elekiel.3 players @a[distance=..60]
 
 

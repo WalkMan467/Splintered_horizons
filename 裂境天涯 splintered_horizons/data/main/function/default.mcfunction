@@ -29,6 +29,8 @@ kill @e[distance=0..,tag=sys.monument_point.sword]
 xp set @a 0 levels
 xp set @a 0 points
 
+scoreboard players reset WalkMan467 player.death_count
+
 # 已獲得魔劍
 scoreboard players set #monument.area_1 global.main 0
 scoreboard players set #monument.area_2 global.main 0
@@ -52,9 +54,6 @@ scoreboard players set #objective_item.8 global.main 0
 scoreboard players set #in_safe_zone.ml global.main 0
 
 scoreboard players set #cutscene global.main 0
-
-scoreboard players reset WalkMan467 player.death_count
-scoreboard players add @a player.death_count 0
 
 function world_area:other/otherworld_portal/all_lock
 

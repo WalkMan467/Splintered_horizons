@@ -4,7 +4,7 @@
   "predicate": {
     "slots": {
       "container.0": {
-        "count": 8,
+        "count": 10,
         "predicates": {
           "minecraft:custom_data": {
             "id": "finality_ingot"

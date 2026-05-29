@@ -1,0 +1,162 @@
+[
+  {
+    "function": "minecraft:set_item",
+    "item": "minecraft:bundle"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_model": "chestplate/tai_chis_shadow",
+      "minecraft:item_name": [
+        {
+          "translate": "armor.tai_chis_shadow_chestplate",
+          "color": "#969696",
+          "italic": false,
+          "bold": true
+        }
+      ],
+      "minecraft:lore": [
+        [
+          {
+            "translate": "armor.tai_chis_shadow_chestplate.type",
+            "italic": false,
+            "color": "dark_gray"
+          }
+        ],
+        {
+          "text": ""
+        },
+        [
+          {
+            "translate": "armor.tai_chis_shadow_chestplate.story.1",
+            "italic": false,
+            "color": "blue"
+          }
+        ],
+        [
+          {
+            "translate": "armor.tai_chis_shadow_chestplate.story.2",
+            "italic": false,
+            "color": "blue"
+          }
+        ],
+        {
+          "text": ""
+        },
+        [
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "armor.tai_chis_shadow_chestplate.skill",
+            "color": "dark_aqua",
+            "bold": true
+          },
+          {
+            "text": "  "
+          }
+        ],
+        [
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "armor.tai_chis_shadow_chestplate.skill.1",
+            "color": "#00ccff"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "armor.tai_chis_shadow_chestplate.skill.2",
+            "color": "#00ccff"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "armor.tai_chis_shadow_chestplate.skill.3",
+            "color": "#00ccff"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "armor.tai_chis_shadow_chestplate.skill.4",
+            "color": "#00ccff"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "armor.tai_chis_shadow_chestplate.skill.5",
+            "color": "#00ccff"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "armor.tai_chis_shadow_chestplate.skill.6",
+            "color": "#00ccff"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "armor.tai_chis_shadow_chestplate.skill.7",
+            "color": "#00ccff"
+          }
+        ]
+      ],
+      "minecraft:attribute_modifiers": [
+        {
+          "id": "chest.1",
+          "type": "armor",
+          "amount": 4.5,
+          "operation": "add_value",
+          "slot": "chest"
+        }
+      ],
+      "minecraft:max_stack_size": 1,
+      "minecraft:unbreakable": {},
+      "minecraft:custom_data": {
+        "tai_chis_shadow": true,
+        "type": "armor",
+        "rarity": "epic",
+        "id": "tai_chis_shadow"
+      },
+      "minecraft:tooltip_style": "epic",
+      "minecraft:tooltip_display": {
+        "hidden_components": [
+          "dyed_color"
+        ]
+      },
+      "minecraft:dyed_color": 6710886,
+      "minecraft:equippable": {
+        "slot": "chest",
+        "equip_sound": "entity.illusioner.mirror_move",
+        "asset_id": "tai_chis_shadow"
+      }
+    }
+  }
+]

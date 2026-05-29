@@ -6,6 +6,7 @@ scoreboard players reset skill.3 monster.elekiel_phase_2.cd
 scoreboard players reset skill.4 monster.elekiel_phase_2.cd
 scoreboard players reset skill.5 monster.elekiel_phase_2.cd
 
+scoreboard players set #bossfight global.main 0
 
 execute \
     on passengers \

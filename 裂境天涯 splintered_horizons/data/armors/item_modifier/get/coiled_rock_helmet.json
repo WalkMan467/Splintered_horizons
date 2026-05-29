@@ -1,0 +1,155 @@
+[
+  {
+    "function": "minecraft:set_item",
+    "item": "minecraft:bundle"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_name": [
+        {
+          "translate": "armor.coiled_rock_helmet",
+          "color": "#b37400",
+          "bold": true
+        }
+      ],
+      "minecraft:lore": [
+        [
+          {
+            "translate": "armor.coiled_rock_helmet.type",
+            "color": "dark_gray",
+            "italic": false
+          }
+        ],
+        {
+          "text": ""
+        },
+        [
+          {
+            "translate": "armor.coiled_rock_helmet.story.1",
+            "color": "blue",
+            "italic": false
+          }
+        ],
+        [
+          {
+            "translate": "armor.coiled_rock_helmet.story.2",
+            "color": "blue",
+            "italic": false
+          }
+        ],
+        [
+          {
+            "translate": "armor.coiled_rock_helmet.story.3",
+            "color": "blue",
+            "italic": false
+          }
+        ],
+        {
+          "text": ""
+        },
+        [
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "armor.coiled_rock_helmet.skill",
+            "color": "#ffa600",
+            "bold": true
+          },
+          {
+            "text": "  "
+          },
+          {
+            "translate": "armor.skill_cd",
+            "color": "#6E6E6E"
+          },
+          {
+            "text": "25s"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "armor.coiled_rock_helmet.skill.1",
+            "color": "#b37400",
+            "italic": false,
+            "with": [
+              {
+                "keybind": "key.sneak",
+                "underlined": true,
+                "color": "dark_green"
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "armor.coiled_rock_helmet.skill.2",
+            "color": "#b37400",
+            "italic": false,
+            "with": [
+              {
+                "translate": "attribute.name.armor",
+                "underlined": true,
+                "color": "#999999"
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "armor.coiled_rock_helmet.skill.3",
+            "color": "#b37400",
+            "italic": false,
+            "with": [
+              {
+                "translate": "attribute.name.armor_toughness",
+                "underlined": true,
+                "color": "#4B4B4B"
+              }
+            ]
+          }
+        ],
+        {
+          "text": ""
+        }
+      ],
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "armor",
+          "id": "base_armor",
+          "amount": 2,
+          "operation": "add_value",
+          "slot": "head"
+        }
+      ],
+      "minecraft:item_model": "head/coiled_rock_helmet/1",
+      "minecraft:custom_data": {
+        "type": "armor",
+        "rarity": "epic",
+        "active_skills": true,
+        "id": "coiled_rock_helmet"
+      },
+      "minecraft:enchantment_glint_override": false,
+      "minecraft:tooltip_style": "epic",
+      "minecraft:equippable": {
+        "slot": "head",
+        "equip_sound": "item.armor.equip_copper",
+        "asset_id": "copper"
+      }
+    }
+  }
+]

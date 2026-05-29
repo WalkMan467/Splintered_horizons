@@ -18,7 +18,6 @@ execute \
 tp @s 757 142 912 0 0
 
 scoreboard players reset WalkMan467 player.death_count
-scoreboard players add @a player.death_count 0
 scoreboard players set #sys.shooting_contest.sagittarius global.main 1
 
 scoreboard players set @s player.spawnpoint.dimension 0

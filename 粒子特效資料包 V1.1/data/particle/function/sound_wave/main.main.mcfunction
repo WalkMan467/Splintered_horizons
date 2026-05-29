@@ -1,3 +1,5 @@
+# ground ash
+
 scoreboard players add @s particle.sound_wave 1
 
 # rotated

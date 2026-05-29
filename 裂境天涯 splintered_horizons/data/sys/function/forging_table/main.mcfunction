@@ -133,6 +133,34 @@ execute \
     as @n[distance=..1.5,predicate=sys:forging_table/crafting/armor/general/leather/boots,type=item] run \
 function sys:forging_table/crafting/armor/leather/boots
 
+# Chainmail Helmet
+
+execute \
+    positioned 770 148 979 \
+    as @n[distance=..1.5,predicate=sys:forging_table/crafting/armor/general/chainmail/helmet,type=item] run \
+function sys:forging_table/crafting/armor/chainmail/helmet
+
+# Chainmail Chestplate
+
+execute \
+    positioned 770 148 979 \
+    as @n[distance=..1.5,predicate=sys:forging_table/crafting/armor/general/chainmail/chestplate,type=item] run \
+function sys:forging_table/crafting/armor/chainmail/chestplate
+
+# Chainmail Leggings
+
+execute \
+    positioned 770 148 979 \
+    as @n[distance=..1.5,predicate=sys:forging_table/crafting/armor/general/chainmail/leggings,type=item] run \
+function sys:forging_table/crafting/armor/chainmail/leggings
+
+# Chainmail Boots
+
+execute \
+    positioned 770 148 979 \
+    as @n[distance=..1.5,predicate=sys:forging_table/crafting/armor/general/chainmail/boots,type=item] run \
+function sys:forging_table/crafting/armor/chainmail/boots
+
 # Copper Helmet
 
 execute \

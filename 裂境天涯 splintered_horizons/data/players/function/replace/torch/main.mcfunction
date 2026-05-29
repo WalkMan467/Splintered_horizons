@@ -6,4 +6,5 @@ execute \
 function players:replace/torch/guide
 
 tag @a remove player.replace.torch
+
 schedule function players:replace/torch/main 1t

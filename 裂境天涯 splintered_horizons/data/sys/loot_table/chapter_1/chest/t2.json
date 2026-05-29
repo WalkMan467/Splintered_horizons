@@ -1,0 +1,285 @@
+{
+  "pools": [
+    {
+      "rolls": 2,
+      "entries": [
+        {
+          "type": "minecraft:group",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:cooked_chicken",
+              "weight": 50,
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 1,
+                    "max": 2
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:cooked_rabbit",
+              "weight": 30,
+              "conditions": [],
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 1,
+                    "max": 3
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stick",
+          "weight": 40,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 4
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:torch",
+          "weight": 40,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 0,
+                "max": 4
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:group",
+          "children": [
+            {
+              "type": "minecraft:loot_table",
+              "value": "item:get/material/dust_of_the_wind",
+              "weight": 80,
+              "conditions": [],
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 1,
+                    "max": 2
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:loot_table",
+              "value": "item:get/material/rockbound_crystal",
+              "weight": 60,
+              "conditions": [],
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 1,
+                    "max": 2
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:loot_table",
+              "value": "item:get/material/phase_crystal",
+              "weight": 60,
+              "conditions": [],
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 1,
+                    "max": 2
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:group",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:stone_sword",
+              "functions": [
+                {
+                  "function": "minecraft:enchant_with_levels",
+                  "levels": {
+                    "type": "minecraft:score",
+                    "target": {
+                      "type": "minecraft:fixed",
+                      "name": "#rdm_enchantment"
+                    },
+                    "score": "global.main",
+                    "scale": 1
+                  },
+                  "options": "#minecraft:non_treasure"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:stone_axe",
+              "functions": [
+                {
+                  "function": "minecraft:enchant_with_levels",
+                  "levels": {
+                    "type": "minecraft:score",
+                    "target": {
+                      "type": "minecraft:fixed",
+                      "name": "#rdm_enchantment"
+                    },
+                    "score": "global.main",
+                    "scale": 1
+                  },
+                  "options": "#minecraft:non_treasure"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:stone_pickaxe",
+              "conditions": [],
+              "functions": [
+                {
+                  "function": "minecraft:enchant_with_levels",
+                  "levels": {
+                    "type": "minecraft:score",
+                    "target": {
+                      "type": "minecraft:fixed",
+                      "name": "#rdm_enchantment"
+                    },
+                    "score": "global.main",
+                    "scale": 1
+                  },
+                  "options": "#minecraft:non_treasure"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:group",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:leather_helmet",
+              "functions": [
+                {
+                  "function": "minecraft:enchant_with_levels",
+                  "levels": {
+                    "type": "minecraft:score",
+                    "target": {
+                      "type": "minecraft:fixed",
+                      "name": "#rdm_enchantment"
+                    },
+                    "score": "global.main",
+                    "scale": 1.25
+                  },
+                  "options": "#minecraft:non_treasure"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:leather_chestplate",
+              "functions": [
+                {
+                  "function": "minecraft:enchant_with_levels",
+                  "levels": {
+                    "type": "minecraft:score",
+                    "target": {
+                      "type": "minecraft:fixed",
+                      "name": "#rdm_enchantment"
+                    },
+                    "score": "global.main",
+                    "scale": 1.25
+                  },
+                  "options": "#minecraft:non_treasure"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:leather_boots",
+              "functions": [
+                {
+                  "function": "minecraft:enchant_with_levels",
+                  "levels": {
+                    "type": "minecraft:score",
+                    "target": {
+                      "type": "minecraft:fixed",
+                      "name": "#rdm_enchantment"
+                    },
+                    "score": "global.main",
+                    "scale": 1.25
+                  },
+                  "options": "#minecraft:non_treasure"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:leather_leggings",
+              "functions": [
+                {
+                  "function": "minecraft:enchant_with_levels",
+                  "levels": {
+                    "type": "minecraft:score",
+                    "target": {
+                      "type": "minecraft:fixed",
+                      "name": "#rdm_enchantment"
+                    },
+                    "score": "global.main",
+                    "scale": 1.25
+                  },
+                  "options": "#minecraft:non_treasure"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

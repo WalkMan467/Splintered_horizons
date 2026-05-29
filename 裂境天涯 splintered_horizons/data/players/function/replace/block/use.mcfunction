@@ -1,3 +1,4 @@
+advancement revoke @s only players:replace/block
 
 execute \
     unless items entity @s weapon.mainhand * run \

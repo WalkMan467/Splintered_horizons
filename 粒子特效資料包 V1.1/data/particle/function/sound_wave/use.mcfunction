@@ -25,4 +25,12 @@ particle minecraft:enchanted_hit ~ ~1 ~ 0 0 0 2 90 normal @a[scores={main.light_
 particle minecraft:electric_spark ~ ~1 ~ 0 0 0 10 10 normal @a
 particle minecraft:electric_spark ~ ~1 ~ 0 0 0 10 90 normal @a[scores={main.light_sensitivity=0}] 
 
+summon marker ~ ~ ~ {Tags:["fx.sound_wave.main","fx.sound_wave","summon"]}
+
+execute \
+    as @n[sort=arbitrary,distance=..1,tag=summon,tag=fx.sound_wave.main,type=marker] at @s \
+    rotated ~ 0 run \
 function particle:sound_wave/ground_ash/summon
+
+# 音波場域
+schedule function particle:sound_wave/main 1t

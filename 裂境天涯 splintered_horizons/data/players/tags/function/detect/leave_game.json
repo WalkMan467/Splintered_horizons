@@ -5,8 +5,8 @@
       "cutscene:opening/player_leave",
       "cutscene:safe_area/player_leave",
       "monsters:bossfight/chapter_2/elekiel/player_death",
-      "monsters:bossfight/chapter_2/elekiel_phase_2/player_death",
-      "monsters:chapter_2/segrina/4/8",
+      "bossfight:chapter_2/elekiel_phase_2/player_death",
+      "bossfight:chapter_2/segrina/player_death",
       "sys:monument_point/objective_item/leave"
     ]
   }

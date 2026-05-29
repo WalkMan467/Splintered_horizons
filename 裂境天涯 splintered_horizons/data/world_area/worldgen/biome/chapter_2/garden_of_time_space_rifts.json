@@ -12,9 +12,9 @@
     "minecraft:visual/fog_start_distance": 64,
     "minecraft:visual/fog_end_distance": 128
   },
-  "temperature": 0.8,
+  "temperature": -0.3,
   "downfall": 0,
-  "has_precipitation": false,
+  "has_precipitation": true,
   "effects": {
     "water_color": 16774912,
     "grass_color": 16774912,

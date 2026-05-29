@@ -126,7 +126,7 @@
         "finality": true,
         "rc": true,
         "type": "axe",
-        "rarity": "mythic",
+        "rarity": "legendary",
         "weapon": "earthquake_axe",
         "forging_table": true
       },
@@ -135,7 +135,7 @@
         "animation": "none",
         "has_consume_particles": false
       },
-      "minecraft:tooltip_style": "mythic",
+      "minecraft:tooltip_style": "legendary",
       "minecraft:enchantment_glint_override": false
     }
   },

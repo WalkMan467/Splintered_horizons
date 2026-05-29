@@ -89,6 +89,12 @@
         if score story.chapter_2.ml.9 story.chapter_2 matches 1..28 run \
     function story:chapter_2/ml/9/1
 
+    execute \
+        as 129d8265-191e-3dd8-e6e1-9f01f1d78c14 at @s \
+        if data entity @s interaction.timestamp \
+        if score story.chapter_2.ml.10 story.chapter_2 matches 1..10 run \
+    function story:chapter_2/ml/10/1
+
 # Chapter 3
 
     # Main Quests

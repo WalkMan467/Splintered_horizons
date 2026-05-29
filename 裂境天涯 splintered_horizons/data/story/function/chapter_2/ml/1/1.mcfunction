@@ -44,7 +44,7 @@ tellraw @a[distance=..16] [{"translate": "story.characters.sophia",color:"white"
 execute \
     positioned 807 201 149 \
     if score story.chapter_2.ml.1 story.chapter_2 matches 5 run \
-tellraw @a[distance=..16] [{"translate": "story.characters.sophia",color:"white","bold":true},{"atlas":"minecraft:items","sprite":"item/character/sophia","bold":false,shadow_color:0,"color":"white"},{"text":" : ","color":"white","bold": false},{"translate": "story.chapter_2.ml.1.6","fallback": "[蘇菲亞] 我想與你一同欣賞，一個沒有深淵的新世界","bold": false}]
+tellraw @a[distance=..16] [{"translate": "story.characters.sophia",color:"white","bold":true},{"atlas":"minecraft:items","sprite":"item/character/sophia","bold":false,shadow_color:0,"color":"white"},{"text":" : ","color":"white","bold": false},{"translate": "story.chapter_2.ml.1.6","fallback": "[蘇菲亞] 我想與你一同欣賞，一個沒有深淵的新世界","bold": false,"with":[{"bold":true,"color":"dark_purple","hover_event":{"action":"show_text","value":[{"translate":"story.icon.proper_noun","fallback":"[專有名詞]:","color":"white"},"\n",{"translate": "proper_noun.desc.2","fallback":"詳情請按","color":"white","bold":false,"italic":false},{"keybind": "key.advancements","color": "dark_green"},{"translate": "proper_noun.desc.3","fallback":"尋找對應內容","color":"white","bold":false,"italic":false}]},"italic":false,"translate":"story.icon.proper_noun.abyss","underlined":true,"fallback": "深淵"}]}]
 
 execute \
     positioned 807 201 149 \

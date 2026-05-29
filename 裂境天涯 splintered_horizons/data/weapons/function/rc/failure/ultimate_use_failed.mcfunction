@@ -15,5 +15,3 @@ title @s times 0 20 20
 playsound minecraft:block.respawn_anchor.deplete voice @s ~ ~1 ~ 3 2
 
 scoreboard players set @s player.click.interval 20
-
-function weapons:rc/failure/ultimate_use_failed

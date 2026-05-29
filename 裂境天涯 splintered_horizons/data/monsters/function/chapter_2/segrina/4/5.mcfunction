@@ -1,17 +1,24 @@
-attribute @s max_health modifier remove monster.segrina.skill.4.1
-attribute @s max_health modifier remove monster.segrina.skill.4.2
-attribute @s max_health modifier remove monster.segrina.skill.4.3
-attribute @s max_health modifier remove monster.segrina.skill.4.4
-attribute @s max_health base reset
+# 清除無敵狀態
+
+execute \
+    unless score @s monster.segrina.skill.4.invincible matches 0.. run \
+return 0
+
+effect clear @s glowing
 
 scoreboard players reset @s monster.segrina.skill.4.invincible
 
+# 移除無敵
 execute \
-    positioned 725 107 605 run \
-tp @e[sort=arbitrary,dx=73,dy=26,dz=73,tag=soul_tree_remnant,type=skeleton] ~ -255 ~
+    if items entity @s armor.chest *[!custom_data~{invincible:true}] run \
+item modify entity @s armor.chest [{function:"minecraft:set_enchantments",enchantments:{"monsters:chapter_2/segrina/4/damage_immunity":0,binding_curse:0},add:0b}]
 
 execute \
-    positioned 725 107 605 run \
-kill @e[sort=arbitrary,dx=73,dy=26,dz=73,tag=soul_tree_remnant,type=skeleton]
+    if items entity @s armor.chest *[custom_data~{invincible:true}] run \
+clear @s leather_chestplate[custom_data~{invincible:true}]
 
-scoreboard players reset @s monster.segrina.skill.4.effect
+execute \
+    store result storage monster.segrina.skill.4.invincible temp.id int 1 run \
+scoreboard players get @s monster.segrina.skill.4.invincible.display.id
+
+function monsters:chapter_2/segrina/4/bossbar/remove with storage monster.segrina.skill.4.invincible temp

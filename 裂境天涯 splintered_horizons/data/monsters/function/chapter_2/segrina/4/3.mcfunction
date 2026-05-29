@@ -1,3 +1,5 @@
+# 擊殺特殊怪物
+
 advancement revoke @s only monsters:chapter_2/segrina/4/kill
 
 execute \
@@ -14,17 +16,6 @@ effect give @s glowing 5 255 true
 attribute @s max_health base reset
 
 execute \
-    unless score @s monster.segrina.skill.4.invincible.display.id matches -1073741823..1073741823 \
-    store result score @s monster.segrina.skill.4.invincible.display.id run \
-random value -1073741823..1073741823
-
-execute \
-    store result storage monster.segrina.skill.4.invincible temp.id int 1 run \
-scoreboard players get @s monster.segrina.skill.4.invincible.display.id
-
-function monsters:chapter_2/segrina/4/bossbar/summon with storage monster.segrina.skill.4.invincible temp
-
-execute \
     if score @s monster.segrina.skill.4.effect matches 4 run \
 attribute @s max_health modifier remove monster.segrina.skill.4.4
 
@@ -39,3 +30,5 @@ attribute @s max_health modifier remove monster.segrina.skill.4.2
 execute \
     if score @s monster.segrina.skill.4.effect matches 1 run \
 attribute @s max_health modifier remove monster.segrina.skill.4.1
+
+function monsters:chapter_2/segrina/4/4

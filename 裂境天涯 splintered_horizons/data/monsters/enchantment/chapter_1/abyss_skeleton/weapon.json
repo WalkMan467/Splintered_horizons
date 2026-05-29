@@ -26,18 +26,54 @@
             "type": "minecraft:score",
             "target": {
               "type": "minecraft:fixed",
-              "name": "#nightmare"
+              "name": "#difficulty"
             },
-            "score": "main.difficulty",
+            "score": "global.main",
             "scale": 1
           },
-          "range": {
-            "min": 1
-          }
+          "range": 1
         },
         "effect": {
           "type": "minecraft:add",
-          "value": 2.5
+          "value": 4
+        }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:value_check",
+          "value": {
+            "type": "minecraft:score",
+            "target": {
+              "type": "minecraft:fixed",
+              "name": "#difficulty"
+            },
+            "score": "global.main",
+            "scale": 1
+          },
+          "range": 2
+        },
+        "effect": {
+          "type": "minecraft:add",
+          "value": 2
+        }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:value_check",
+          "value": {
+            "type": "minecraft:score",
+            "target": {
+              "type": "minecraft:fixed",
+              "name": "#difficulty"
+            },
+            "score": "global.main",
+            "scale": 1
+          },
+          "range": 3
+        },
+        "effect": {
+          "type": "minecraft:add",
+          "value": 1
         }
       }
     ]

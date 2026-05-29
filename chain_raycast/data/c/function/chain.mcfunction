@@ -1,5 +1,3 @@
-#say chain
-
 execute \
     if entity @s[tag=sys.zipline_platform.remove] run \
 return 0

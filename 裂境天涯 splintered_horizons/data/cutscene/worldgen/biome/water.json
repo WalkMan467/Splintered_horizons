@@ -1,0 +1,36 @@
+{
+  "attributes": {
+    "minecraft:visual/sky_color": 3431796,
+    "minecraft:visual/star_brightness": 0.5,
+    "minecraft:visual/sky_light_factor": 1,
+    "minecraft:visual/sun_angle": 180,
+    "minecraft:visual/moon_angle": 180,
+    "minecraft:visual/ambient_particles": [
+      {
+        "particle": {
+          "type": "minecraft:dolphin"
+        },
+        "probability": 0.1
+      }
+    ],
+    "minecraft:visual/fog_color": 799552,
+    "minecraft:visual/sky_light_color": 4889,
+    "minecraft:visual/fog_start_distance": 90,
+    "minecraft:visual/fog_end_distance": 128
+  },
+  "temperature": 0.8,
+  "downfall": 0,
+  "has_precipitation": true,
+  "creature_spawn_probability": 0,
+  "effects": {
+    "water_color": 799552,
+    "grass_color": 372130,
+    "foliage_color": 2663664,
+    "dry_foliage_color": 799552,
+    "grass_color_modifier": "dark_forest"
+  },
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": "minecraft:canyon",
+  "features": []
+}

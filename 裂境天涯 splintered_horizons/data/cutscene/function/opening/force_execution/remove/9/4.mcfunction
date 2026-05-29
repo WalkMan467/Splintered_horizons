@@ -7,12 +7,12 @@ forceload add 803 1590
 kill ecad9f35-97af-445d-b5b5-994d25510122
 
 execute \
-    positioned 802 71 1592 \
+    positioned 937 118 1560 \
     as @e[sort=arbitrary,tag=aj.selena.root,distance=..1,type=item_display] run \
 function animated_java:selena/remove/this
 
 execute \
-    unless loaded 802 71 1592 run \
+    unless loaded 937 118 1560 run \
     return run \
 schedule function cutscene:opening/force_execution/remove/9/4 1t
 

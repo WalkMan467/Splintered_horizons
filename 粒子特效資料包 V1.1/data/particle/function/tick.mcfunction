@@ -4,9 +4,6 @@ function particle:space_rupture/main
 # 終焉之墟
 function particle:ruins_of_the_finality_rupture/main
 
-# 音波場域
-function particle:sound_wave/main
-
 # 雷霆二重奏
 function particle:thunder_duet_wave/main
 

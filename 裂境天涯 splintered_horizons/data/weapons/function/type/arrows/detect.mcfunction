@@ -1,4 +1,3 @@
-
 execute \
     on attacker \
     unless entity @s[type=player] run \

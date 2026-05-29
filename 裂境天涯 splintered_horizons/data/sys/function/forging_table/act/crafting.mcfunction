@@ -72,6 +72,12 @@ tellraw @s [{"translate":"armor.armor_of_the_coiled_rock","color":"#b37400","ita
 tellraw @s [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"translate":"item.rockbound_crystal","color":"#b19000","italic":false,"font": "minecraft:default"},{"text": "*3","font": "minecraft:default"}]
 tellraw @s [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"translate":"item.minecraft.leather_chestplate","color":"white","italic":false,"font": "minecraft:default"},{"text": "*1","font": "minecraft:default"}]
 
+tellraw @s [{"text":"\n"}]
+
+tellraw @s [{"translate":"armor.coiled_rock_helmet","color":"#b37400","italic":false,"bold":true}]
+tellraw @s [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"translate":"item.rockbound_crystal","color":"#b19000","italic":false,"font": "minecraft:default"},{"text": "*5","font": "minecraft:default"}]
+tellraw @s [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"translate":"item.minecraft.leather_helmet","color":"white","italic":false,"font": "minecraft:default"},{"text": "*1","font": "minecraft:default"}]
+
 execute \
     if score #sys.forging_table.windriders_legplates sys.forging_table.recipes matches 1.. run \
 tellraw @s [{"text":"\n"}]
@@ -105,6 +111,22 @@ execute \
 tellraw @a [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"translate":"item.minecraft.leather_boots","color":"white","italic":false,"font": "minecraft:default"},{"text": "*1","font": "minecraft:default"}]
 
 execute \
+    if score #sys.forging_table.tai_chis_shadow sys.forging_table.recipes matches 1.. run \
+tellraw @s [{"text":"\n"}]
+
+execute \
+    if score #sys.forging_table.tai_chis_shadow sys.forging_table.recipes matches 1.. run \
+tellraw @a [{"translate":"armor.tai_chis_shadow_chestplate","color":"#969696","italic":false,"bold":true}]
+
+execute \
+    if score #sys.forging_table.tai_chis_shadow sys.forging_table.recipes matches 1.. run \
+tellraw @a [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"translate":"item.phase_crystal","color":"#E100FF","italic":false,"font": "minecraft:default"},{"text": "*5","font": "minecraft:default"}]
+
+execute \
+    if score #sys.forging_table.tai_chis_shadow sys.forging_table.recipes matches 1.. run \
+tellraw @a [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"translate":"item.minecraft.chainmail_chestplate","color":"white","italic":false,"font": "minecraft:default"},{"text": "*1","font": "minecraft:default"}]
+
+execute \
     if score #sys.forging_table.swift_boots sys.forging_table.recipes matches 1.. run \
 tellraw @s [{"text":"\n"}]
 
@@ -114,10 +136,26 @@ tellraw @a [{"translate":"weapon.earthquake_axe","color":"#7a0000","italic":fals
 
 execute \
     if score #sys.forging_table.earthquake_axe sys.forging_table.recipes matches 1.. run \
-tellraw @a [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"translate":"item.finality_ingot","color":"dark_red","italic":false,"font": "minecraft:default"},{"text": "*8","font": "minecraft:default"}]
+tellraw @a [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"translate":"item.finality_ingot","color":"dark_red","italic":false,"font": "minecraft:default"},{"text": "*10","font": "minecraft:default"}]
 
 execute \
     if score #sys.forging_table.earthquake_axe sys.forging_table.recipes matches 1.. run \
 tellraw @a [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"translate":"item.minecraft.iron_axe","color":"white","italic":false,"font": "minecraft:default"},{"text": "*1","font": "minecraft:default"}]
+
+execute \
+    if score #sys.forging_table.blackhole_boots sys.forging_table.recipes matches 1.. run \
+tellraw @s [{"text":"\n"}]
+
+execute \
+    if score #sys.forging_table.blackhole_boots sys.forging_table.recipes matches 1.. run \
+tellraw @a [{"translate":"armor.black_hole_boots","color":"dark_purple","italic":false,"bold":true}]
+
+execute \
+    if score #sys.forging_table.blackhole_boots sys.forging_table.recipes matches 1.. run \
+tellraw @a [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"translate":"item.phase_crystal","color":"#E100FF","italic":false,"font": "minecraft:default"},{"text": "*10","font": "minecraft:default"}]
+
+execute \
+    if score #sys.forging_table.blackhole_boots sys.forging_table.recipes matches 1.. run \
+tellraw @a [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"translate":"item.minecraft.iron_boots","color":"white","italic":false,"font": "minecraft:default"},{"text": "*1","font": "minecraft:default"}]
 
 data remove entity @s interaction

@@ -22,10 +22,10 @@ scoreboard players set @a[distance=..60] player.disable.tp_book 10
 execute \
     on passengers at @s \
     if entity @s[type=item_display,tag=aj.boss_1.root,tag=!rotate] rotated \
-    as 00000100-0000-0080-0000-008000000001 run \
+    as @n[sort=arbitrary,distance=0..,tag=monsters.elekiel,type=skeleton] run \
 rotate @s ~ 0
 
-ride @n[distance=0..,tag=aj.boss_1.root,type=item_display] mount 00000100-0000-0080-0000-008000000001
+ride @n[distance=0..,tag=aj.boss_1.root,type=item_display] mount @n[sort=arbitrary,distance=0..,tag=monsters.elekiel,type=skeleton]
 
 execute \
     if entity @s[tag=rotate] \

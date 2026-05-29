@@ -1,0 +1,1 @@
+scoreboard players reset @s player.damp_fx.timer

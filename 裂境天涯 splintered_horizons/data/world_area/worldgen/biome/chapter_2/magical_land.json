@@ -20,7 +20,7 @@
   },
   "temperature": -0.3,
   "downfall": 0,
-  "has_precipitation": false,
+  "has_precipitation": true,
   "creature_spawn_probability": 0,
   "effects": {
     "water_color": 12222443,

@@ -5,5 +5,9 @@ function players:setting/campfire_darkness/1
 function players:setting/backup/0
 function players:setting/backup/1
 function players:setting/backup/return/trigger
+function players:setting/smooth_walking/0
+function players:setting/smooth_walking/1
+function players:setting/waterfall_effect/0
+function players:setting/waterfall_effect/1
 
 function players:setting/recover_lost_objective_items/trigger

@@ -1,0 +1,60 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:chainmail_helmet",
+      "components": {
+        "minecraft:custom_model_data": {
+          "floats": [
+            0
+          ],
+          "strings": []
+        },
+        "minecraft:item_model": "head/coiled_rock_helmet/1"
+      },
+      "count": 1
+    },
+    "title": {
+      "translate": "armor.coiled_rock_helmet"
+    },
+    "description": [
+      {
+        "translate": "armor.coiled_rock_helmet.story.1",
+        "color": "blue",
+        "bold": false,
+        "italic": false
+      },
+      {
+        "translate": "armor.coiled_rock_helmet.story.2",
+        "color": "blue",
+        "bold": false,
+        "italic": false
+      },
+      {
+        "translate": "armor.coiled_rock_helmet.story.3",
+        "color": "blue",
+        "bold": false,
+        "italic": false
+      }
+    ],
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "armors:icon/new_world/chapter_1",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "predicates": {
+              "minecraft:custom_data": {
+                "id": "coiled_rock_helmet"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

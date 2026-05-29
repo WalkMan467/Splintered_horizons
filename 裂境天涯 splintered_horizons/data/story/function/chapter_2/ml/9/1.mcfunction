@@ -2,7 +2,7 @@
 
 
 execute \
-    positioned 802 71 1592 \
+    positioned 937 118 1560 \
     if score story.chapter_2.ml.9 story.chapter_2 matches 1 \
     unless score #story:icon/story/chapter_2/mq/scebe_4 global.main matches 1 \
     as @n[sort=arbitrary,distance=..1,tag=aj.isokla.root,type=item_display] \
@@ -16,7 +16,7 @@ scoreboard players set #story:icon/story/chapter_2/mq/scebe_4 global.main 1
 
 
 execute \
-    positioned 802 71 1592 \
+    positioned 937 118 1560 \
     if score story.chapter_2.ml.9 story.chapter_2 matches 1 run \
 tellraw @a[distance=..16] \
     [ \
@@ -28,7 +28,7 @@ tellraw @a[distance=..16] \
 
 
 execute \
-    positioned 802 71 1592 \
+    positioned 937 118 1560 \
     if score story.chapter_2.ml.9 story.chapter_2 matches 2 run \
 tellraw @a[distance=..16] \
     [ \
@@ -40,7 +40,7 @@ tellraw @a[distance=..16] \
 
 
 execute \
-    positioned 802 71 1592 \
+    positioned 937 118 1560 \
     if score story.chapter_2.ml.9 story.chapter_2 matches 3 run \
 tellraw @a[distance=..16] \
     [ \
@@ -52,7 +52,7 @@ tellraw @a[distance=..16] \
 
 
 execute \
-    positioned 802 71 1592 \
+    positioned 937 118 1560 \
     if score story.chapter_2.ml.9 story.chapter_2 matches 4 run \
 tellraw @a[distance=..16] \
     [ \
@@ -64,7 +64,7 @@ tellraw @a[distance=..16] \
 
 
 execute \
-    positioned 802 71 1592 \
+    positioned 937 118 1560 \
     if score story.chapter_2.ml.9 story.chapter_2 matches 5 run \
 tellraw @a[distance=..16] \
     [ \
@@ -75,7 +75,7 @@ tellraw @a[distance=..16] \
     ]
 
 execute \
-    positioned 802 71 1592 \
+    positioned 937 118 1560 \
     if score story.chapter_2.ml.9 story.chapter_2 matches 6 run \
 tellraw @a[distance=..16] \
     [ \
@@ -86,7 +86,7 @@ tellraw @a[distance=..16] \
     ]
 
 execute \
-    positioned 802 71 1592 \
+    positioned 937 118 1560 \
     if score story.chapter_2.ml.9 story.chapter_2 matches 7 run \
 tellraw @a[distance=..16] \
     [ \
@@ -97,7 +97,7 @@ tellraw @a[distance=..16] \
     ]
 
 execute \
-    positioned 802 71 1592 \
+    positioned 937 118 1560 \
     if score story.chapter_2.ml.9 story.chapter_2 matches 8 run \
 tellraw @a[distance=..16] \
     [ \
@@ -108,7 +108,7 @@ tellraw @a[distance=..16] \
     ]
 
 execute \
-    positioned 802 71 1592 \
+    positioned 937 118 1560 \
     if score story.chapter_2.ml.9 story.chapter_2 matches 9 run \
 tellraw @a[distance=..16] \
     [ \
@@ -119,7 +119,7 @@ tellraw @a[distance=..16] \
     ]
 
 execute \
-    positioned 802 71 1592 \
+    positioned 937 118 1560 \
     if score story.chapter_2.ml.9 story.chapter_2 matches 10 run \
 tellraw @a[distance=..16] \
     [ \
@@ -130,7 +130,7 @@ tellraw @a[distance=..16] \
     ]
 
 execute \
-    positioned 802 71 1592 \
+    positioned 937 118 1560 \
     if score story.chapter_2.ml.9 story.chapter_2 matches 11 run \
 tellraw @a[distance=..16] \
     [ \
@@ -141,7 +141,7 @@ tellraw @a[distance=..16] \
     ]
 
 execute \
-    positioned 802 71 1592 \
+    positioned 937 118 1560 \
     if score story.chapter_2.ml.9 story.chapter_2 matches 12 run \
 tellraw @a[distance=..16] \
     [ \
@@ -152,7 +152,7 @@ tellraw @a[distance=..16] \
     ]
 
 execute \
-    positioned 802 71 1592 \
+    positioned 937 118 1560 \
     if score story.chapter_2.ml.9 story.chapter_2 matches 13 run \
 tellraw @a[distance=..16] \
     [ \
@@ -163,7 +163,7 @@ tellraw @a[distance=..16] \
     ]
 
 execute \
-    positioned 802 71 1592 \
+    positioned 937 118 1560 \
     if score story.chapter_2.ml.9 story.chapter_2 matches 14 run \
 tellraw @a[distance=..16] \
     [ \
@@ -174,7 +174,7 @@ tellraw @a[distance=..16] \
     ]
 
 execute \
-    positioned 802 71 1592 \
+    positioned 937 118 1560 \
     if score story.chapter_2.ml.9 story.chapter_2 matches 15 run \
 tellraw @a[distance=..16] \
     [ \
@@ -185,7 +185,7 @@ tellraw @a[distance=..16] \
     ]
 
 execute \
-    positioned 802 71 1592 \
+    positioned 937 118 1560 \
     if score story.chapter_2.ml.9 story.chapter_2 matches 16 run \
 tellraw @a[distance=..16] \
     [ \
@@ -196,7 +196,7 @@ tellraw @a[distance=..16] \
     ]
 
 execute \
-    positioned 802 71 1592 \
+    positioned 937 118 1560 \
     if score story.chapter_2.ml.9 story.chapter_2 matches 17 run \
 tellraw @a[distance=..16] \
     [ \
@@ -207,7 +207,7 @@ tellraw @a[distance=..16] \
     ]
 
 execute \
-    positioned 802 71 1592 \
+    positioned 937 118 1560 \
     if score story.chapter_2.ml.9 story.chapter_2 matches 18 run \
 tellraw @a[distance=..16] \
     [ \
@@ -218,7 +218,7 @@ tellraw @a[distance=..16] \
     ]
 
 execute \
-    positioned 802 71 1592 \
+    positioned 937 118 1560 \
     if score story.chapter_2.ml.9 story.chapter_2 matches 19 run \
 tellraw @a[distance=..16] \
     [ \
@@ -229,7 +229,7 @@ tellraw @a[distance=..16] \
     ]
 
 execute \
-    positioned 802 71 1592 \
+    positioned 937 118 1560 \
     if score story.chapter_2.ml.9 story.chapter_2 matches 20 run \
 tellraw @a[distance=..16] \
     [ \
@@ -240,7 +240,7 @@ tellraw @a[distance=..16] \
     ]
 
 execute \
-    positioned 802 71 1592 \
+    positioned 937 118 1560 \
     if score story.chapter_2.ml.9 story.chapter_2 matches 21 run \
 tellraw @a[distance=..16] \
     [ \
@@ -251,7 +251,7 @@ tellraw @a[distance=..16] \
     ]
 
 execute \
-    positioned 802 71 1592 \
+    positioned 937 118 1560 \
     if score story.chapter_2.ml.9 story.chapter_2 matches 22 run \
 tellraw @a[distance=..16] \
     [ \
@@ -262,7 +262,7 @@ tellraw @a[distance=..16] \
     ]
 
 execute \
-    positioned 802 71 1592 \
+    positioned 937 118 1560 \
     if score story.chapter_2.ml.9 story.chapter_2 matches 23 run \
 tellraw @a[distance=..16] \
     [ \
@@ -273,7 +273,7 @@ tellraw @a[distance=..16] \
     ]
 
 execute \
-    positioned 802 71 1592 \
+    positioned 937 118 1560 \
     if score story.chapter_2.ml.9 story.chapter_2 matches 24 run \
 tellraw @a[distance=..16] \
     [ \
@@ -284,7 +284,7 @@ tellraw @a[distance=..16] \
     ]
 
 execute \
-    positioned 802 71 1592 \
+    positioned 937 118 1560 \
     if score story.chapter_2.ml.9 story.chapter_2 matches 25 run \
 tellraw @a[distance=..16] \
     [ \
@@ -295,7 +295,7 @@ tellraw @a[distance=..16] \
     ]
 
 execute \
-    positioned 802 71 1592 \
+    positioned 937 118 1560 \
     if score story.chapter_2.ml.9 story.chapter_2 matches 26 run \
 tellraw @a[distance=..16] \
     [ \
@@ -306,7 +306,7 @@ tellraw @a[distance=..16] \
     ]
 
 execute \
-    positioned 802 71 1592 \
+    positioned 937 118 1560 \
     if score story.chapter_2.ml.9 story.chapter_2 matches 27 run \
 tellraw @a[distance=..16] \
     [ \
@@ -317,7 +317,7 @@ tellraw @a[distance=..16] \
     ]
 
 execute \
-    positioned 802 71 1592 \
+    positioned 937 118 1560 \
     if score story.chapter_2.ml.9 story.chapter_2 matches 27 run \
 tellraw @a[distance=..16] \
     [\

@@ -14,10 +14,28 @@ execute \
 return 0
 
 execute \
+    if items entity @s armor.head *[custom_data~{active_skills:1b}] \
     if score @s player.shift.skill.disable matches 1.. run \
     return run \
 function weapons:rc/failure/disabled
 
+execute \
+    if items entity @s armor.chest *[custom_data~{active_skills:1b}] \
+    if score @s player.shift.skill.disable matches 1.. run \
+    return run \
+function weapons:rc/failure/disabled
+
+execute \
+    if items entity @s armor.legs *[custom_data~{active_skills:1b}] \
+    if score @s player.shift.skill.disable matches 1.. run \
+    return run \
+function weapons:rc/failure/disabled
+
+execute \
+    if items entity @s armor.feet *[custom_data~{active_skills:1b}] \
+    if score @s player.shift.skill.disable matches 1.. run \
+    return run \
+function weapons:rc/failure/disabled
 
 execute \
     if items entity @s armor.head *[custom_data~{active_skills:1b,animation:1b}] \

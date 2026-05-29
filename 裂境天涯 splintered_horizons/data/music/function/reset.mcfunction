@@ -56,7 +56,7 @@ execute \
     if entity @n[distance=..20,type=zombie,tag=monsters.lord_of_the_cataclysm] run \
 scoreboard players set @s music.chapter3.lord_of_the_cataclysm 1
 
-execute at 00000100-0000-0080-0000-008000000005 \
+execute at @n[sort=arbitrary,distance=0..,tag=monsters.elekiel_phase_2,type=skeleton] \
     if entity @s[distance=..60] run \
 scoreboard players set @s music.chapter2.bossfight.3 1
 
@@ -109,6 +109,6 @@ execute \
     unless entity @n[distance=..20,type=zombie,tag=monsters.lord_of_the_cataclysm] run \
 scoreboard players set @s music.chapter3.lord_of_the_cataclysm 0
 
-execute at 00000100-0000-0080-0000-008000000005 \
+execute at @n[sort=arbitrary,distance=0..,tag=monsters.elekiel_phase_2,type=skeleton] \
     unless entity @s[distance=..60] run \
 scoreboard players set @s music.chapter2.bossfight.3 0

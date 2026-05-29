@@ -95,6 +95,8 @@ scoreboard objectives add player.join_game.detect.delay dummy "[玩家] 進入�
 scoreboard objectives add player.tombstone_sys.id dummy "[玩家] 墓碑系統ID"
 scoreboard objectives add player.tombstone_sys.safe_fall_distance dummy "[玩家] 墓碑系統 安全墜落距離偵測"
 scoreboard objectives add player.death.delay dummy
+scoreboard objectives add player.damp_fx.timer dummy
+
 scoreboard players add @a player.no_cd 0
 scoreboard players add @a player.animation.lock 0
 scoreboard players add @a player.click.interval 0
@@ -134,6 +136,16 @@ scoreboard objectives add player.setting.reduce_particles dummy "[玩家] 減少
 scoreboard objectives add player.setting.reduce_particles.trigger trigger "[玩家] 減少粒子 trigger"
 
 scoreboard players enable @a player.setting.reduce_particles.trigger
+
+scoreboard objectives add player.setting.smooth_walking dummy "[玩家] 平滑移動"
+scoreboard objectives add player.setting.smooth_walking.trigger trigger "[玩家] 平滑移動 trigger"
+
+scoreboard players enable @a player.setting.smooth_walking.trigger
+
+scoreboard objectives add player.setting.waterfall_effect dummy "[玩家] 瀑布效應"
+scoreboard objectives add player.setting.waterfall_effect.trigger trigger "[玩家] 瀑布效應 trigger"
+
+scoreboard players enable @a player.setting.waterfall_effect.trigger
 
 scoreboard objectives add player.setting.backup dummy "[玩家] 資料備份"
 scoreboard objectives add player.setting.backup.trigger trigger "[玩家] 資料備份 trigger"

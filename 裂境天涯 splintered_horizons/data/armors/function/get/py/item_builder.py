@@ -1,15 +1,15 @@
 def build_item_struct():
     return {
-        "name": ['時間停刻之時', "#ffee00", '護甲 / 史詩'],
+        "name": ['盤岩頭盔', "#b37400", '頭盔 / 史詩'],
         "story": {
-            'info': ['來至賽琳娜舊世界的裝備','「若時間能如冰般夠停刻於此」','「我希望能夠珍惜此刻」'],
+            'info': ['來自異世界的魔法頭盔','由盤岩凝聚而成','可以在危急時刻承受一定傷害'],
             'color': 'blue'
         },
         "item_data": {
             'real_item': 'bundle',
-            'id': 'wtsf',
-            'item_model': '"chestplate/wtsf"',
-            'custom_data': 'type:"chestplate",rarity:"epic",id:"wtsf"',
+            'id': 'coiled_rock_helmet',
+            'item_model': '"head/coiled_rock_helmet/1"',
+            'custom_data': 'type:"armor",rarity:"epic",active_skills:1b,id:"coiled_rock_helmet"',
             'rc': False,
             'lc': False,
             'max_damage': 0,
@@ -17,32 +17,38 @@ def build_item_struct():
             'other': [
                 'enchantment_glint_override=false',
                 'tooltip_style="epic"',
-                'equippable={slot:"chest",equip_sound:"item.armor.equip_gold",asset_id:"gold"}'
+                'equippable={slot:"head",equip_sound:"item.armor.equip_copper",asset_id:"copper"}'
             ]
         },
 
         "skill": {
-            "is_skill": False,
-            "cd": 15,
-            "name": ["閃電鏈", "#ffa600", "#ffee00"],
+            "is_skill": True,
+            "cd": 25,
+            "name": ["硬化", "#ffa600", "#b37400"],
             "info": [
-                "命中怪物時重置【雷霆之怒】CD",
-
                 {
                     "text": "當你使用 %s 時:",
                     "with": [
-                        {"keybind": "key.use", "underlined": True, "color": "dark_green"}
+                        {"keybind": "key.sneak", "underlined": True, "color": "dark_green"}
                     ]
                 },
-
-                "立即釋放 3 道閃電對前方敵人造成 250% 傷害",
-                "並選中一名怪物附加【閃電標記】",
-                "命中怪物時重置【雷霆之怒】CD"
+                {
+                    "text": "立即獲得 3 點 %s (00:05)",
+                    "with": [
+                        {"translate": "attribute.name.armor", "underlined": True, "color": "#999999"}
+                    ]
+                },
+                {
+                    "text": "以及 5 點 %s (00:05)",
+                    "with": [
+                        {"translate": "attribute.name.armor_toughness", "underlined": True, "color": "#4B4B4B"}
+                    ]
+                }
             ]
         },
 
         "passive_skills": {
-            'is_passive_skills': True,
+            'is_passive_skills': False,
             'cd': 10,
             'name': ['停刻', '#ffa600', '#ffee00'],
             'info': [
@@ -71,8 +77,8 @@ def build_item_struct():
             {
                 'attribute': 'armor',
                 'id': 'base_armor',
-                'value': 5,
-                'slot': 'chest',
+                'value': 2,
+                'slot': 'head',
                 'operation': 'add_value'
             }
         ]

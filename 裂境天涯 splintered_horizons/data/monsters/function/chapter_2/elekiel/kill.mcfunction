@@ -22,8 +22,8 @@ scoreboard players reset #temp.2 global.main
 
 stopsound @a record minecraft:bgm.tunetank_meridian
 
-tp 00000100-0000-0080-0000-008000000001 ~ -255 ~
-kill 00000100-0000-0080-0000-008000000001
+tp @n[sort=arbitrary,distance=0..,tag=monsters.elekiel,type=skeleton] ~ -255 ~
+kill @n[sort=arbitrary,distance=0..,tag=monsters.elekiel,type=skeleton]
 kill 000000fb-0000-0228-0000-000100000018
 
 execute \
@@ -62,7 +62,6 @@ kill @e[distance=..60,type=experience_orb]
 
 schedule clear monsters:chapter_2/elekiel/main
 
-
 schedule clear monsters:bossfight/chapter_2/elekiel/loop
 
 stopsound @a record minecraft:bgm.tunetank_meridian
@@ -72,5 +71,3 @@ execute \
 function music:chapter_2/bossfight/2/reset
 
 tp @a -916 60 2761 180 0
-
-schedule function world_area:chapter_2/temple_of_light/bossfight/bossfight_area/main 1t

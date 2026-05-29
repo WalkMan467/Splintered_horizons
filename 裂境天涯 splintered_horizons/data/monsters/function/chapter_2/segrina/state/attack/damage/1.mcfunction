@@ -7,6 +7,6 @@ tag @a[tag=chapter_2.segrina.lose] remove temp
 
 execute \
     as @a[tag=temp] run \
-damage @s 7 monsters:chapter_2/segrina/attack/1 by @n[sort=arbitrary,distance=..3.5,tag=segrina,type=zombie]
+damage @s 4 monsters:chapter_2/segrina/attack/1
 
 tag @a remove temp

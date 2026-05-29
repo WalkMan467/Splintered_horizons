@@ -1,0 +1,83 @@
+{
+  "criteria": {
+    "copper_torch": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:block_state_property",
+            "block": "minecraft:copper_torch"
+          }
+        ]
+      }
+    },
+    "copper_wall_torch": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:block_state_property",
+            "block": "minecraft:copper_wall_torch"
+          }
+        ]
+      }
+    },
+    "soul_torch": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:block_state_property",
+            "block": "minecraft:soul_torch"
+          }
+        ]
+      }
+    },
+    "soul_wall_torch": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:block_state_property",
+            "block": "minecraft:soul_wall_torch"
+          }
+        ]
+      }
+    },
+    "torch": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:block_state_property",
+            "block": "minecraft:torch"
+          }
+        ]
+      }
+    },
+    "wall_torch": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:block_state_property",
+            "block": "minecraft:wall_torch"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "copper_torch",
+      "copper_wall_torch",
+      "soul_torch",
+      "soul_wall_torch",
+      "torch",
+      "wall_torch"
+    ]
+  ],
+  "rewards": {
+    "function": "players:replace/torch/use"
+  }
+}

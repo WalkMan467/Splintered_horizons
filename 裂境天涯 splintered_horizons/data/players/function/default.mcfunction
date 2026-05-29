@@ -31,7 +31,6 @@ advancement grant @s only weapons:monument/icon
 advancement grant @s only weapons:icon/other
 advancement grant @s only story:icon/story/chapter_1
 
-scoreboard players set @a player.death_count 0
 scoreboard players set #bossfight.chapter_2.act.setup global.main 1
 
 function music:remove_bgn_icon

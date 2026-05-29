@@ -44,4 +44,4 @@ tag @a remove monster.elekiel.1.skip
 tag @a remove monster.elekiel.1.kill
 
 
-data modify entity 00000100-0000-0080-0000-008000000001 NoAI set value 0b
+data modify entity @n[sort=arbitrary,distance=0..,tag=monsters.elekiel,type=skeleton] NoAI set value 0b

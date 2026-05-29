@@ -1,0 +1,79 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:music_disc_11",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": [
+                  {
+                    "translate": "item.dust_of_the_wind",
+                    "color": "#2ab172",
+                    "italic": false,
+                    "bold": true
+                  }
+                ],
+                "minecraft:lore": [
+                  [
+                    {
+                      "translate": "item.dust_of_the_wind.type",
+                      "italic": false,
+                      "color": "dark_gray"
+                    }
+                  ],
+                  {
+                    "text": ""
+                  },
+                  [
+                    {
+                      "translate": "item.dust_of_the_wind.story.1",
+                      "italic": false,
+                      "color": "blue"
+                    }
+                  ],
+                  [
+                    {
+                      "translate": "item.dust_of_the_wind.story.2",
+                      "italic": false,
+                      "color": "blue"
+                    }
+                  ]
+                ],
+                "minecraft:attribute_modifiers": [
+                  {
+                    "id": "base_attack_damage",
+                    "type": "attack_damage",
+                    "amount": 0,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  }
+                ],
+                "minecraft:max_stack_size": 64,
+                "minecraft:unbreakable": {},
+                "minecraft:item_model": "material/dust_of_the_wind",
+                "minecraft:custom_data": {
+                  "rc": false,
+                  "type": "item",
+                  "id": "dust_of_the_wind"
+                },
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "attribute_modifiers",
+                    "unbreakable",
+                    "jukebox_playable"
+                  ]
+                },
+                "minecraft:tooltip_style": "rare"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

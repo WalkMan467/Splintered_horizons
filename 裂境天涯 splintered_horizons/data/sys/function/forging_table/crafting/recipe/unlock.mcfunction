@@ -4,3 +4,5 @@ scoreboard players set #sys.forging_table.rock_crushing_greatsword sys.forging_t
 scoreboard players set #sys.forging_table.windriders_legplates sys.forging_table.recipes 1
 scoreboard players set #sys.forging_table.swift_boots sys.forging_table.recipes 1
 scoreboard players set #sys.forging_table.earthquake_axe sys.forging_table.recipes 1
+scoreboard players set #sys.forging_table.blackhole_boots sys.forging_table.recipes 1
+scoreboard players set #sys.forging_table.tai_chis_shadow sys.forging_table.recipes 1

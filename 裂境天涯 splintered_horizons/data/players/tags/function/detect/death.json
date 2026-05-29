@@ -1,8 +1,11 @@
 {
     "values": [
+      "players:in_void/out",
+      "players:setting/waterfall_effect/reset",
       "sys:skills_freeze/reset",
-      "monsters:bossfight/chapter_2/elekiel/player_death",
-      "monsters:bossfight/chapter_2/elekiel_phase_2/player_death",
+      "bossfight:chapter_2/segrina/player_death",
+      "bossfight:chapter_2/elekiel/player_death",
+      "bossfight:chapter_2/elekiel_phase_2/player_death",
       "monsters:chapter_2/elekiel_phase_2/4/portal/crack/tp/remove",
       "players:stop_animation",
       "monsters:chapter_2/apostle_of_eternity/lock/broken",

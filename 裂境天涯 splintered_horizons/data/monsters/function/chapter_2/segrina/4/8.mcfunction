@@ -1,17 +1,15 @@
-execute \
-    unless score @s monster.segrina.skill.4.invincible matches 1.. run \
-return 0
+# 清除鎖 1 血
+attribute @s max_health modifier remove monster.segrina.skill.4.1
+attribute @s max_health modifier remove monster.segrina.skill.4.2
+attribute @s max_health modifier remove monster.segrina.skill.4.3
+attribute @s max_health modifier remove monster.segrina.skill.4.4
+attribute @s max_health base reset
 
-scoreboard players reset @s monster.segrina.skill.4.invincible
-execute \
-    as @a run \
-function monsters:chapter_2/segrina/4/7
+scoreboard players reset @s monster.segrina.skill.4.effect
 
-execute \
-    as @a \
-    store result storage monster.segrina.skill.4.invincible temp.id int 1 run \
-scoreboard players get @s monster.segrina.skill.4.invincible.display.id
+effect give @s[tag=monster.segrina.skill.4.hp_lock] instant_health 1 27 true
 
-execute \
-    as @a run \
-function monsters:chapter_2/segrina/4/bossbar/remove with storage monster.segrina.skill.4.invincible temp
+tag @s remove monster.segrina.skill.4.hp_lock
+
+# 清除無敵狀態
+function monsters:chapter_2/segrina/4/5

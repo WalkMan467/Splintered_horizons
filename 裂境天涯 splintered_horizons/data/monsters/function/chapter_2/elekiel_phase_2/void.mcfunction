@@ -1,5 +1,5 @@
-tp 00000100-0000-0080-0000-008000000005 ~ -255 ~
-kill 00000100-0000-0080-0000-008000000005
+tp @n[sort=arbitrary,distance=0..,tag=monsters.elekiel_phase_2,type=skeleton] ~ -64 ~
+kill @n[sort=arbitrary,distance=0..,tag=monsters.elekiel_phase_2,type=skeleton]
 
 stopsound @a record minecraft:bgm.tunetank_meridian
 
@@ -9,6 +9,7 @@ scoreboard players reset skill.3 monster.elekiel_phase_2.cd
 scoreboard players reset skill.4 monster.elekiel_phase_2.cd
 scoreboard players reset skill.5 monster.elekiel_phase_2.cd
 
+scoreboard players set #bossfight global.main 0
 
 execute \
     on passengers \

@@ -22,11 +22,8 @@ scoreboard players reset #temp.2 global.main
 
 stopsound @a record minecraft:bgm.tunetank_meridian
 
-advancement revoke @a only monsters:chapter_2/elekiel/1/battlefield/fire
-advancement grant @a only monsters:chapter_2/elekiel/1/battlefield/normal
-
-tp 00000100-0000-0080-0000-008000000001 ~ -255 ~
-kill 00000100-0000-0080-0000-008000000001
+tp @n[sort=arbitrary,distance=0..,tag=monsters.elekiel,type=skeleton] ~ -255 ~
+kill @n[sort=arbitrary,distance=0..,tag=monsters.elekiel,type=skeleton]
 kill 000000fb-0000-0228-0000-000100000018
 
 execute \
@@ -35,6 +32,7 @@ execute \
 function sys:add_death_point
 
 scoreboard players set @a monster.elekiel.player_die 0
+scoreboard players set #bossfight global.main 0
 
 bossbar remove chapter_2.elekiel.2
 bossbar remove chapter_2.elekiel.3
@@ -52,11 +50,22 @@ tag @a remove monsters.elekiel.2.vampire_flower.target
 execute \
     as @a run \
 attribute @s safe_fall_distance modifier remove monsters.elekiel.1.kill
+
 tag @a remove monster.elekiel.1.kill
 tag @a remove monster.elekiel.1.skip
+tag @a remove monster.elekiel_phase_2.2.cage.imprison.last_tick
+tag @a remove monster.elekiel_phase_2.4.portal.target
 
 execute \
     positioned 912 60 2018 run \
 kill @e[distance=..60,type=experience_orb]
 
 schedule clear monsters:chapter_2/elekiel/main
+
+schedule clear monsters:bossfight/chapter_2/elekiel/loop
+
+stopsound @a record minecraft:bgm.tunetank_meridian
+
+execute \
+    as @a run \
+function music:chapter_2/bossfight/2/reset

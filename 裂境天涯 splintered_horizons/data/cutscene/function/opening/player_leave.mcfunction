@@ -10,6 +10,4 @@ return 0
 gamemode adventure @s[gamemode=spectator]
 tag @s remove cutscene.player_leave.detect
 
-say ok
-
 advancement grant @s only players:new_player

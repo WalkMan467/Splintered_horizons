@@ -1,0 +1,41 @@
+{
+  "attributes": {
+    "minecraft:visual/ambient_particles": [
+      {
+        "particle": {
+          "type": "minecraft:lava"
+        },
+        "probability": 0.0005
+      },
+      {
+        "particle": {
+          "type": "minecraft:white_ash"
+        },
+        "probability": 0.05
+      }
+    ],
+    "minecraft:visual/star_brightness": 0.5,
+    "minecraft:visual/sky_light_factor": 1,
+    "minecraft:visual/sun_angle": 180,
+    "minecraft:visual/moon_angle": 180,
+    "minecraft:visual/sky_light_color": "#ffffff",
+    "minecraft:gameplay/water_evaporates": true,
+    "minecraft:visual/fog_color": "#520000",
+    "minecraft:visual/fog_start_distance": 128,
+    "minecraft:visual/fog_end_distance": 256,
+    "minecraft:visual/sky_color": "#0b0c0f"
+  },
+  "temperature": -0.3,
+  "downfall": 0,
+  "has_precipitation": true,
+  "creature_spawn_probability": 0,
+  "effects": {
+    "water_color": 11468800,
+    "grass_color": 11468800,
+    "foliage_color": 11468800
+  },
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": "minecraft:canyon",
+  "features": []
+}

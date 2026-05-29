@@ -19,6 +19,9 @@ execute \
     if score @s armor.radiant_guardians_helmet.cd matches 1.. run \
 return 0
 
+execute \
+    unless items entity @s armor.head *[minecraft:custom_data~{id:"radiant_guardians_helmet"}] run \
+return 0
 
 execute \
     unless score @s weapon.effect.resplendence matches 1.. run \

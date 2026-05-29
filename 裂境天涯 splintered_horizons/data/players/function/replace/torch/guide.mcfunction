@@ -22,8 +22,6 @@ execute \
     if score #player.replace.torch.temp global.main matches 1 run \
 return 0
 
-
-
 execute \
     if items entity @s container.2 #torchs run \
 item replace entity @s weapon.mainhand from entity @s container.2

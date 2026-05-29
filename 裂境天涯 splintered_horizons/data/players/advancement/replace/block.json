@@ -1,0 +1,649 @@
+{
+  "criteria": {
+    "block": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:crafting_table"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:copper_torch"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:copper_wall_torch"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:soul_torch"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:soul_wall_torch"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:torch"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:wall_torch"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:anvil"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:chipped_anvil"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:damaged_anvil"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:lantern"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:soul_lantern"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:copper_lantern"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:exposed_copper_lantern"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:oxidized_copper_lantern"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:waxed_copper_lantern"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:waxed_exposed_copper_lantern"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:waxed_oxidized_copper_lantern"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:waxed_weathered_copper_lantern"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:weathered_copper_lantern"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:end_rod"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:iron_chain"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:copper_chain"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:exposed_copper_chain"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:oxidized_copper_chain"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:waxed_copper_chain"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:waxed_exposed_copper_chain"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:waxed_weathered_copper_chain"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:weathered_copper_chain"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:campfire"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:soul_campfire"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:stonecutter"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:cartography_table"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:fletching_table"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:smithing_table"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:grindstone"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:loom"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:furnace"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:smoker"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:blast_furnace"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:composter"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:comparator"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:enchanting_table"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:brewing_stand"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:cauldron"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:lava_cauldron"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:water_cauldron"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:bell"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:ladder"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:scaffolding"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:lightning_rod"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:exposed_lightning_rod"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:oxidized_lightning_rod"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:waxed_exposed_lightning_rod"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:waxed_lightning_rod"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:waxed_oxidized_lightning_rod"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:waxed_weathered_lightning_rod"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:weathered_lightning_rod"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:flower_pot"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:decorated_pot"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:chest"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:copper_chest"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:ender_chest"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:exposed_copper_chest"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:oxidized_copper_chest"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:trapped_chest"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:waxed_copper_chest"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:waxed_exposed_copper_chest"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:waxed_oxidized_copper_chest"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:waxed_weathered_copper_chest"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:weathered_copper_chest"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:lectern"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:shulker_box"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:black_shulker_box"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:blue_shulker_box"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:brown_shulker_box"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:cyan_shulker_box"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:gray_shulker_box"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:green_shulker_box"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:light_blue_shulker_box"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:light_gray_shulker_box"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:lime_shulker_box"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:magenta_shulker_box"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:orange_shulker_box"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:pink_shulker_box"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:purple_shulker_box"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:red_shulker_box"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:white_shulker_box"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:yellow_shulker_box"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:respawn_anchor"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "block"
+    ]
+  ],
+  "rewards": {
+    "function": "players:replace/block/use"
+  }
+}

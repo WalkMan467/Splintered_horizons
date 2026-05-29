@@ -1,6 +1,7 @@
 function players:elytra_switch/main
 function players:detect/main
 function players:auto_crafting/main
+function players:setting/waterfall_effect/main
 
 tag @s remove player.tombstone_sys.disabled
 
@@ -17,18 +18,26 @@ function players:give_item
 # Smooth walking of blocks
 
 execute \
+    unless score @s player.setting.smooth_walking matches 1.. run \
+attribute @s step_height base reset
+
+execute \
+    if score @s player.setting.smooth_walking matches 1.. \
     unless predicate players:detect/input/sneak run \
 attribute @s step_height base set 1
 
 execute \
+    if score @s player.setting.smooth_walking matches 1.. \
     unless block ~ ~-1 ~ scaffolding run \
 attribute @s step_height base set 1
 
 execute \
+    if score @s player.setting.smooth_walking matches 1.. \
     if predicate players:detect/input/sneak run \
 attribute @s step_height base reset
 
 execute \
+    if score @s player.setting.smooth_walking matches 1.. \
     if block ~ ~-1 ~ scaffolding run \
 attribute @s step_height base reset
 

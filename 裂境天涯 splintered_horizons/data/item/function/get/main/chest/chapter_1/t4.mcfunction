@@ -1,0 +1,2 @@
+# 第一章 T4 寶箱
+give @s chest[container_loot={loot_table:"sys:chapter_1/chest/t4"},item_name=[{"bold":true,"color":"white","italic":false,"text":"["},{"bold":true,"color":"yellow","italic":false,"translate":"monument.icon.chapter_1"},{"bold":true,"color":"white","italic":false,"text":"] "},{"bold":false,"color":"green","italic":false,"text":"T4 "},{"bold":false,"color":"green","italic":false,"translate":"block.minecraft.chest"}]] 1

@@ -1,5 +1,6 @@
 {
     "values": [
-      "armors:type/radiant_guardians_helmet/use"
+      "armors:type/radiant_guardians_helmet/use",
+      "armors:type/coiled_rock_helmet/use"
     ]
   }

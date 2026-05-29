@@ -5,7 +5,7 @@
 
 execute \
     unless score @s player.gamemode.change.display_delay matches 1.. run \
-tellraw @s[gamemode=!adventure,gamemode=!spectator,gamemode=!creative] [{"translate": "commands.gamemode.success.self","with": [{"translate":"gameMode.adventure","color": "gold","bold":true}]}]
+tellraw @s[gamemode=!adventure,gamemode=!spectator,gamemode=!creative,tag=!players.mode_change.survival] [{"translate": "commands.gamemode.success.self","with": [{"translate":"gameMode.adventure","color": "gold","bold":true}]}]
 
-gamemode adventure @s[gamemode=!adventure,gamemode=!spectator,gamemode=!creative]
+gamemode adventure @s[gamemode=!adventure,gamemode=!spectator,gamemode=!creative,tag=!players.mode_change.survival]
 scoreboard players set @s player.gamemode.change.display_delay 40

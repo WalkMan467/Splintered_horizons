@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "requirments": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "players:in_void/out"
+  }
+}

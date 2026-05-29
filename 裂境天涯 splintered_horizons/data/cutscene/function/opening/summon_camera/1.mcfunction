@@ -6,5 +6,3 @@ execute \
     unless function cutscene:opening/summon_camera/summon_detect run \
     return run \
 schedule function cutscene:opening/summon_camera/1 1t
-
-# say summon done

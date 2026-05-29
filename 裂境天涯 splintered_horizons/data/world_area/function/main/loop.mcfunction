@@ -61,14 +61,22 @@
     # Adventure / Survival mode area detection (including campfires)
 
     execute \
-        if entity @s[gamemode=survival] \
+        if entity @s[gamemode=survival,tag=!players.mode_change.survival] \
         if function world_area:main/mode_change/main run \
     function world_area:main/mode_change/adventure
 
     execute \
-        if entity @s[gamemode=adventure] \
+        if entity @s[gamemode=adventure,tag=!players.mode_change.adventure] \
         unless function world_area:main/mode_change/main run \
     function world_area:main/mode_change/survival
+
+    execute \
+        if entity @s[tag=players.mode_change.survival,gamemode=adventure] run \
+    function world_area:main/mode_change/forced_tag/adventure
+
+    execute \
+        if entity @s[tag=players.mode_change.adventure,gamemode=survival] run \
+    function world_area:main/mode_change/forced_tag/survival
 
     # Border Wall
     execute \

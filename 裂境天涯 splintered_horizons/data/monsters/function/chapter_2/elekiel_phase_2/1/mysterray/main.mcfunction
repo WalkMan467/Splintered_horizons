@@ -179,7 +179,7 @@ execute \
     if score @s mob.duration matches 320 \
     positioned -916 60 2750 \
     as @a[distance=..60,tag=temp] run \
-damage @s 8 monsters:chapter_2/elekiel_phase_2/1/mysterray/dmg by 00000100-0000-0080-0000-008000000005
+damage @s 8 monsters:chapter_2/elekiel_phase_2/1/mysterray/dmg by @n[sort=arbitrary,distance=0..,tag=monsters.elekiel_phase_2,type=skeleton]
 
 execute \
     if score @s mob.duration matches 320 \

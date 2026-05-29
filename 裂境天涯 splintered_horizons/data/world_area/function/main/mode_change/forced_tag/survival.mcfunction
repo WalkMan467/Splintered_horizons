@@ -1,0 +1,11 @@
+## Redirected to [ function world_area:main/loop ] (冒險 / 生存模式區域偵測) (冒險模式區域二級鎖)
+
+    # 提示文字跟切換模式
+
+
+execute \
+    unless score @s player.gamemode.change.display_delay matches 1.. run \
+tellraw @s [{"translate": "commands.gamemode.success.self","with": [{"translate":"gameMode.adventure","color": "gold","bold":true}]}]
+
+gamemode adventure @s
+scoreboard players set @s player.gamemode.change.display_delay 40

@@ -17,7 +17,8 @@ particle dust{color:[1.000,0.000,0.000],scale:0.5} ~ ~ ~ 0 0 0 0 0 force @a
 
 # 擊中敵人
 
-execute if entity @n[sort=arbitrary,distance=..1.05,tag=monsters.segrina,type=zombie] run return run \
+execute if entity @n[sort=arbitrary,distance=..1.05,tag=monsters.segrina,type=zombie] run \
+    return run \
 function monsters:chapter_2/segrina/2/raycast/final
 
 # 迴圈
@@ -25,6 +26,7 @@ function monsters:chapter_2/segrina/2/raycast/final
 execute \
     if score #monster.segrina.skill.2.raycast monster.segrina.skill.2.casting matches ..49 \
     positioned ^ ^ ^0.25 run \
+    return run \
 function monsters:chapter_2/segrina/2/raycast/detect
 
 execute \

@@ -33,6 +33,28 @@
     },
     {
       "label": {
+        "translate": "dialog.main.quick_actions.smooth_walking",
+        "fallback": "Smooth Walking",
+        "color": "white"
+      },
+      "action": {
+        "type": "run_command",
+        "command": "trigger player.setting.smooth_walking.trigger"
+      }
+    },
+    {
+      "label": {
+        "translate": "dialog.main.quick_actions.waterfall_effect",
+        "fallback": "Waterfall Effect",
+        "color": "white"
+      },
+      "action": {
+        "type": "run_command",
+        "command": "trigger player.setting.waterfall_effect.trigger"
+      }
+    },
+    {
+      "label": {
         "translate": "dialog.main.quick_actions.backup",
         "fallback": "Data Backup",
         "color": "white"

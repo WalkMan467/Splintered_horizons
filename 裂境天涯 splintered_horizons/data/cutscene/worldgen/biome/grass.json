@@ -1,0 +1,39 @@
+{
+  "attributes": {
+    "minecraft:visual/sky_color": 7004824,
+    "minecraft:visual/star_brightness": 0.5,
+    "minecraft:visual/sky_light_factor": 1,
+    "minecraft:visual/sun_angle": 180,
+    "minecraft:visual/moon_angle": 180,
+    "minecraft:visual/ambient_particles": [
+      {
+        "particle": {
+          "type": "minecraft:tinted_leaves",
+          "color": 802837
+        },
+        "probability": 0.001
+      },
+      {
+        "particle": {
+          "type": "minecraft:firefly"
+        },
+        "probability": 0.01
+      }
+    ],
+    "minecraft:visual/fog_color": 7124873,
+    "minecraft:visual/sky_light_color": 4889,
+    "minecraft:visual/fog_start_distance": 90,
+    "minecraft:visual/fog_end_distance": 128
+  },
+  "temperature": 0.8,
+  "downfall": 0,
+  "has_precipitation": true,
+  "creature_spawn_probability": 0,
+  "effects": {
+    "water_color": 802837
+  },
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": "minecraft:canyon",
+  "features": []
+}

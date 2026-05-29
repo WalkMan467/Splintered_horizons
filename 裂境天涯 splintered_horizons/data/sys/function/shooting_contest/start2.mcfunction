@@ -9,6 +9,8 @@ scoreboard players set sys.shooting_contest.timer global.main 64
 scoreboard players set #sys.shooting_contest.score global.main 0
 schedule function sys:shooting_contest/countdown/3 1s
 
+stopsound @a voice minecraft:voice.mini_game
+
 # particle
 
 execute \

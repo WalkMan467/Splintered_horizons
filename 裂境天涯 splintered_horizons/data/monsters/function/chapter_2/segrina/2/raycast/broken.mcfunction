@@ -1,6 +1,6 @@
 
 execute \
-    as ffff8285-0000-0c33-0000-5a5c0162349d \
+    as @n[sort=arbitrary,distance=0..,tag=monsters.segrina,type=zombie] \
     if entity @s[tag=death] run \
 return run function monsters:chapter_2/segrina/2/raycast/cancel
 
