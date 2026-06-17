@@ -8,7 +8,7 @@ forceload add 803 1590
 
 execute \
     in minecraft:overworld \
-    positioned 937 118 1560 \
+    positioned 802 71 1592 \
     rotated 206.50 0.00 run \
 function animated_java:selena/summon {args: {animation: 'chat1', start_animation: true}}
 
@@ -23,7 +23,7 @@ execute \
 schedule function cutscene:opening/force_execution/summon/9/4 1t
 
 execute \
-    positioned 937 118 1560 \
+    positioned 802 71 1592 \
     unless entity @n[sort=arbitrary,distance=..1,tag=aj.selena.root,type=item_display] run \
     return run \
 schedule function cutscene:opening/force_execution/summon/9/4 1t

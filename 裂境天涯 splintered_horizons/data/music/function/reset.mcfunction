@@ -13,6 +13,10 @@ execute \
 scoreboard players set @s music.chapter1.broken_city 1
 
 execute \
+    if biome ~ ~ ~ #world_area:prologue run \
+scoreboard players set @s music.cutscene.opening.1 1
+
+execute \
     if biome ~ ~ ~ world_area:chapter_1/abyssal_ruins run \
 scoreboard players set @s music.chapter1.abyssal_ruins 1
 
@@ -64,6 +68,10 @@ scoreboard players set @s music.chapter2.bossfight.3 1
 execute \
     unless biome ~ ~ ~ world_area:chapter_2/land_of_finality run \
 scoreboard players set @s music.chapter2.land_of_finality 0
+
+execute \
+    unless biome ~ ~ ~ #world_area:prologue run \
+scoreboard players set @s music.cutscene.opening.1 0
 
 execute \
     unless biome ~ ~ ~ world_area:chapter_1/abyssal_ruins run \

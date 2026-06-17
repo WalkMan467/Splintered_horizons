@@ -7,7 +7,7 @@
     "#weapons:type/sword/otherworld_star",
     "#weapons:type/scythe/flame_of_finality/attack",
     "#monsters:chapter_2/elekiel_phase_2/1/all",
-    "#monsters:chapter_2/segrina/all",
+    "#bossfight:chapter_2/segrina/skills/all",
     "weapons:type/axe/thunder_duet/damage",
     "weapons:type/sword/kill_sword",
     "weapons:type/sword/grip_of_withering",
@@ -19,6 +19,7 @@
     "armors:type/symbiotic_blood_oath/damage",
     "armors:type/black_hole/damage",
     "monsters:chapter_2/emissary_of_the_temporal_rift/key/dmg",
-    "monsters:chapter_1/explosion_arrow_skeleton/damage"
+    "monsters:chapter_1/explosion_arrow_skeleton/damage",
+    "bossfight:chapter_2/segrina/skills/1/damage"
   ]
 }

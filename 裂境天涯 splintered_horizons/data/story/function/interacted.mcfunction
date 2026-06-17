@@ -1,5 +1,53 @@
 # General Interaction Feedback
 
+# Opening
+
+    # 1
+
+    execute \
+        as 0a9c3558-d906-415b-8345-8352bf7ce93c at @s \
+        if data entity @s interaction.timestamp \
+        if score story.opening.1 story.chapter_1 matches 1..12 run \
+    function story:opening/1/1
+
+    # 2
+
+    execute \
+        as 91eefa12-8ab0-434d-afb8-569f21a20c4c at @s \
+        if data entity @s interaction.timestamp \
+        if score story.opening.2 story.chapter_1 matches 1..7 run \
+    function story:opening/2/1
+
+    # 3
+
+    execute \
+        as 74d8b464-9467-4d70-b164-d21e23242a04 at @s \
+        if data entity @s interaction.timestamp \
+        if score story.opening.3 story.chapter_1 matches 1..13 run \
+    function story:opening/3/1
+
+    # 5
+
+    execute \
+        as 955fb949-151d-48af-8ecf-e50c4b6a49f8 at @s \
+        if data entity @s interaction.timestamp \
+        if score story.opening.5 story.chapter_1 matches 1..9 run \
+    function story:opening/5/1
+
+    # 6
+
+    execute \
+        as cdded6a9-9832-41bb-9ed9-c3efcdca5e00 at @s \
+        if data entity @s interaction.timestamp run \
+    function story:opening/6/run
+
+    # 7
+
+    execute \
+        as 4a38d84b-fffb-4be9-b828-fe41c7c7750b at @s \
+        if data entity @s interaction.timestamp run \
+    function story:opening/7/run
+
 # Chapter 1
 
     # Main Quests

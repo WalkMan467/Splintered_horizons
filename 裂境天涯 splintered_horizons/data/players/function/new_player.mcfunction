@@ -34,19 +34,6 @@ attribute @s waypoint_transmit_range base set 0
 scoreboard players add @s story.click_event.trigger 0
 scoreboard players enable @s story.click_event.trigger
 
-function #main:scoreboard
-function music:remove_bgn_icon
-function weapons:remove_weapons_icon
-function armors:remove_armors_icon
-function monsters:remove_monsters_icon
-function story:remove_story_icon
-function item:remove_energy_infusion_stone_icon
-function story:remove_proper_noun_icon
-function players:adv/remove_adv
-function item:type/tp_book/reset
-function players:setting/defaule_setup
-function players:tips/g
-
 xp set @s 0 levels
 xp set @s 0 points
 

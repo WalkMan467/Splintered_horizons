@@ -10,8 +10,10 @@ advancement revoke @s only music:main/icon
     advancement revoke @s only music:main/safe_zone/icon
         advancement revoke @s only music:main/safe_zone/title
         
-    advancement revoke @s only music:main/tree_of_world_memory/icon
-        advancement revoke @s only music:main/tree_of_world_memory/title
+advancement revoke @s only music:cutscene/opening/icon
+
+        advancement revoke @s only music:cutscene/opening/1/icon
+            advancement revoke @s only music:cutscene/opening/1/title
 
 advancement revoke @s only music:chapter_1/icon
 

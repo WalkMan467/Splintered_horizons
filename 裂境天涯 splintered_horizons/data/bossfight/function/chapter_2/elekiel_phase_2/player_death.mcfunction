@@ -10,4 +10,8 @@ gamemode spectator @a[tag=chapter_2.elekiel_phase_2.lose]
 
 execute \
     as @a at @s run \
-function monsters:chapter_2/segrina/4/8
+function bossfight:chapter_2/segrina/skills/4/8
+
+execute \
+    as @a at @s run \
+function bossfight:chapter_2/segrina/skills/4/9

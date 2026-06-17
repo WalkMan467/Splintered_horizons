@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "requirements": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "nbt": "{Tags:[\"monster.segrina.skill.4.monster\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "bossfight:chapter_2/segrina/skills/4/3"
+  }
+}

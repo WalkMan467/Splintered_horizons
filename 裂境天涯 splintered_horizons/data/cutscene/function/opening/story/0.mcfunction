@@ -6,7 +6,6 @@ execute \
     if score .opening cutscene.story matches 120..240 run \
 title @a actionbar [{"translate":"cutscene.opening.story.1"}]
 
-
 execute \
     if score .opening cutscene.story matches 220 run \
 title @a times 20 20 20

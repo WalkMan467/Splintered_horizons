@@ -67,10 +67,6 @@ function armors:type/black_hole/boots/effect/main
 
 function weapons:type/core/player
 
-# Join the Game
-
-function players:detect/leave_game
-
 # Mnument
 
 function weapons:monument/synchronize_data
@@ -90,3 +86,7 @@ function trap:main
 
 # Area
 function world_area:main/loop
+
+# Join the Game
+
+function players:detect/leave_game

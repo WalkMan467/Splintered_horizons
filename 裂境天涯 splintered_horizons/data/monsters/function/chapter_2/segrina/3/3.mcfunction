@@ -1,1 +1,0 @@
-function monsters:chapter_2/segrina/3/range/rotate

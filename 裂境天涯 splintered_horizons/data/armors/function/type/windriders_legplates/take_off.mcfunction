@@ -1,19 +1,14 @@
-# ===================================================
-# Windriders Legplates Main Function
-    ## Guide [ function armors:type/windriders_legplates/take_off ] >>> Take Off
-    ## Guide [ function armors:type/windriders_legplates/use ] >>> Killing an entity triggers Function
-    ## Guide [ function armors:type/windriders_legplates/range ] >>> Range Fx (Self)
-    ## Guide [ function armors:type/windriders_legplates/eqipment ] >>> Eqipment
-    ## Guide [ function armors:type/windriders_legplates/effect/use ] >>> Summon [Gale Slash] Point
-    ## Guide [ function armors:type/windriders_legplates/effect/run ] >>> [Gale Slash] Run Function
-    ## Guide [ function armors:type/windriders_legplates/effect/range ] >>> Range Fx (Target)
-    ## Guide [ function armors:type/windriders_legplates/effect/knockback/run ] >>> [Gale Slash] Knockback Tp
-    ## Guide [ function armors:type/windriders_legplates/effect/knockback/main ] >>> [Gale Slash] Knockback Loop Function
-    ## Guide [ function armors:type/windriders_legplates/effect/detect ] >>> Attacker and Target Detect
-    ## Guide [ function armors:type/windriders_legplates/effect/damage ] >>> [Gale Slash] Dot Dmg
-# ===================================================
-# Advancement Detect ;Run Function
-
-tag @s remove armors.windriders_legplates.effect
-
+# ===================================================
+# take_off
+
+    ## Guide [ function armors:type/windriders_legplates/take_off ] >>> take_off
+    ## Guide [ function armors:type/windriders_legplates/use ] >>> use
+    ## Guide [ function armors:type/windriders_legplates/range ] >>> range
+
+# ===================================================
+
+# Advancement Detect ;Run Function
+
+tag @s remove armors.windriders_legplates.effect
+
 advancement revoke @s only armors:type/windriders_legplates/eqipment

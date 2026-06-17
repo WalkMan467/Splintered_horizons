@@ -1,3 +1,7 @@
+function players:stop_animation
+advancement grant @s only players:elytra_switch/false
+scoreboard players set @s player.disable.elytra_switch 40
+
 time set midnight
 weather clear
 

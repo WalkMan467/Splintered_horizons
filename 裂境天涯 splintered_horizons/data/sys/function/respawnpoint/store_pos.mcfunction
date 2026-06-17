@@ -22,3 +22,7 @@ scoreboard players set @s player.spawnpoint.dimension 1
 execute \
     if dimension minecraft:the_end run \
 scoreboard players set @s player.spawnpoint.dimension 2
+
+execute \
+    if dimension world_area:main/game_lobby run \
+scoreboard players set @s player.spawnpoint.dimension 3

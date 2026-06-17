@@ -147,7 +147,7 @@ schedule clear cutscene:opening/6/2
 schedule clear cutscene:opening/1/0_1
 
 function story:chapter_1/mq/stop
-function music:cutscene/opening/reset
+function music:cutscene/opening/2/reset
 
 gamerule minecraft:locator_bar true
 gamerule spawner_blocks_work true

@@ -136,7 +136,12 @@ title @a times 20 20 20
 
 execute \
     if score #main.gamestart.title global.main matches 260 run \
-function cutscene:opening/0/title/use
+scoreboard players set #game.start.state global.main 1
+
+execute \
+    if score #main.gamestart.title global.main matches 260 \
+    as @a at @s run \
+function story:opening/start
 
 execute \
     if score #main.gamestart.title global.main matches 260 run \

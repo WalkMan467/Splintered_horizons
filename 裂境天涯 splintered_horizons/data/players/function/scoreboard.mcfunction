@@ -57,6 +57,12 @@ scoreboard objectives add player.actionbar.apostle_of_eternity.lock.1 dummy "[�
 scoreboard players add @a player.actionbar.apostle_of_eternity.lock 0
 scoreboard players add @a player.actionbar.apostle_of_eternity.lock.1 0
 
+scoreboard objectives add player.actionbar.beginner_tutorial.failure dummy "[玩家] actionbar 狀態機 新手教學獲取物品失敗提示"
+scoreboard objectives add player.actionbar.npc_interaction.tips dummy "[玩家] actionbar 狀態機 NPC 互動提示"
+
+scoreboard players add @a player.actionbar.beginner_tutorial.failure 0
+scoreboard players add @a player.actionbar.npc_interaction.tips 0
+
 scoreboard players add @a player.actionbar.eye_of_finality 0
 
 scoreboard players add @a player.actionbar.weapon.nightfall 0

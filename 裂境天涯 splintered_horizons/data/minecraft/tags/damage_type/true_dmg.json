@@ -2,6 +2,7 @@
   "values": [
     "#weapons:true_dmg",
     "#monsters:true_dmg",
-    "#minecraft:dot"
+    "#minecraft:dot",
+    "bossfight:chapter_2/segrina/skills/1/damage"
   ]
 }

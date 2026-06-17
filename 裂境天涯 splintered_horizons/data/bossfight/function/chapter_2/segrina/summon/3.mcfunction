@@ -47,19 +47,42 @@ bossbar add monsters.segrina [{"translate":"monsters.segrina","fallback": "æ°¸åŠ
 bossbar set minecraft:monsters.segrina color red
 bossbar set minecraft:monsters.segrina style notched_10
 
+scoreboard players set #skill.4.enabled bossfight.segrina.main 1
+
 gamemode adventure @a[tag=chapter_2.segrina.lose]
 
 tag @a remove monster.segrina.skill.4
 
-scoreboard players set skill.1 monster.segrina.cd 100
-scoreboard players set skill.2 monster.segrina.cd 400
-scoreboard players set skill.3 monster.segrina.cd 340
-scoreboard players set skill.4 monster.segrina.cd 640
+scoreboard players set skill.1 monster.segrina.cd 300
+scoreboard players set skill.2 monster.segrina.cd 800
+scoreboard players set skill.3 monster.segrina.cd 1300
 scoreboard players reset @s monster.segrina.skill.4.invincible
+
+scoreboard players reset #bossfight.segrina.skills.3 monster.segrina.cd
 
 execute \
     as @a run \
-function monsters:chapter_2/segrina/4/7
+attribute @s minecraft:max_health modifier remove bossfight.segrina.skills.3.1
+
+execute \
+    as @a run \
+attribute @s minecraft:max_health modifier remove bossfight.segrina.skills.3.2
+
+execute \
+    as @a run \
+attribute @s minecraft:max_health modifier remove bossfight.segrina.skills.3.3
+
+execute \
+    as @a run \
+function bossfight:chapter_2/segrina/skills/4/7
+
+execute \
+    as @a at @s run \
+function bossfight:chapter_2/segrina/skills/4/8
+
+execute \
+    as @a at @s run \
+function bossfight:chapter_2/segrina/skills/4/9
 
 scoreboard players set #bossfight global.main 1
 scoreboard players set #boss_area.chapter_2.segrina global.main 1
@@ -67,5 +90,5 @@ scoreboard players set #boss_area.chapter_2.segrina global.main 1
 execute as @e[sort=arbitrary,distance=0..60,tag=monster.segrina.skill.4.monster,type=zombie] at @s run tp @s ~ -255 ~
 kill @e[sort=arbitrary,distance=0..60,tag=monster.segrina.skill.4.monster,type=zombie]
 
-schedule function monsters:chapter_2/segrina/main 1t
+schedule function bossfight:chapter_2/segrina/skills/main 1t
 schedule function bossfight:chapter_2/segrina/loop 1t

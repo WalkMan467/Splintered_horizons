@@ -1,3 +1,10 @@
+function story:opening/1/main
+function story:opening/2/main
+function story:opening/3/main
+function story:opening/5/main
+function story:opening/6/main
+function story:opening/7/main
+
 function story:chapter_1/mq/1/main
 function story:chapter_1/mq/2/main
 function story:chapter_1/mq/3/main
@@ -19,6 +26,11 @@ function story:chapter_2/ml/9/main
 function story:chapter_2/ml/10/main
 
 function story:other/chapter_2/1/main
+
+execute \
+    in world_area:main/game_lobby \
+    positioned 1575 61 169 run \
+advancement grant @p[sort=arbitrary,distance=..40] only story:opening/4/tips
 
 execute \
     if score #story:icon/proper_noun/eye_of_finality global.main matches 1.. run \

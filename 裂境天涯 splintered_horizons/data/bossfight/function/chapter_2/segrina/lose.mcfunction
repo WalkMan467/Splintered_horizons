@@ -6,7 +6,7 @@ gamemode adventure @a[gamemode=!creative]
 
 stopsound @a record minecraft:bgm.tunetank_meridian
 
-function monsters:chapter_2/segrina/void
+function bossfight:chapter_2/segrina/skills/void
 
 execute \
     as @a run \

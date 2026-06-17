@@ -7,6 +7,10 @@ gamerule send_command_feedback false
 
 datapack disable "file/spawner_tweaker-LATEST-1.21.11"
 
+scoreboard players set #game.start global.main 0
+scoreboard players set #game.start.state global.main 0
+scoreboard players set #main.map_lobby.act global.main 1
+
 setworldspawn 9999 131 10071
 
 function players:setup
@@ -17,7 +21,7 @@ function sys:forging_table/crafting/recipe/lock
 function sys:monster_wave/reset
 function monsters:chapter_2/elekiel_phase_2/reset_skill_tips
 function monsters:chapter_2/elekiel/reset_skill_tips
-function monsters:chapter_2/segrina/reset_skill_tips
+function bossfight:chapter_2/segrina/skills/reset_skill_tips
 
 clear @s
 gamemode survival @a
@@ -25,6 +29,8 @@ time set midnight
 weather clear
 difficulty hard
 kill @e[distance=0..,tag=sys.monument_point.sword]
+
+scoreboard players reset #story.opening.1.glow global.main
 
 xp set @a 0 levels
 xp set @a 0 points
@@ -56,9 +62,6 @@ scoreboard players set #in_safe_zone.ml global.main 0
 scoreboard players set #cutscene global.main 0
 
 function world_area:other/otherworld_portal/all_lock
-
-scoreboard players set #game.start global.main 0
-scoreboard players set #main.map_lobby.act global.main 1
 
 advancement revoke @a only players:new_player
 

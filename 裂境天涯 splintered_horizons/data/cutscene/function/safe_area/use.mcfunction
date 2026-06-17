@@ -1,3 +1,6 @@
+function players:stop_animation
+advancement grant @s only players:elytra_switch/false
+
 tp @a 758 143 935
 
 scoreboard players set #cutscene global.main 1

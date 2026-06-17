@@ -1,0 +1,7 @@
+# Interaction = 803d1701-55ca-4f13-a4c4-aa8612363d37
+# Text Display = 7cd0a204-9673-4c53-928c-7ebecf4552d9
+# Item Display = 83c8d484-6009-43f4-959b-3a1c87501e63
+
+execute \
+    in world_area:main/game_lobby run \
+summon interaction 1574 61 312 {UUID:[I;-2143480063,1439321875,-1530615162,305544503],Tags:["world_area.main.dream.weapon_drop.1.act"],Passengers:[{id:text_display,UUID:[I;2094047748,-1770828717,-1836286274,-817540391],alignment: "center", background: 0, billboard: "vertical", brightness: {block: 15, sky: 15}, default_background: 0b, line_width: 200, see_through: 0b, shadow: 0b, text: {"text":"","font":"minecraft:icon"}, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [2.5f, 2.5f, 2.5f], translation: [-0.1f, 0.15f, 0.1f]}},{id:"item_display",brightness: {block: 15, sky: 15},UUID:[I;-2083990396,1611219956,-1784989156,-2024792477],billboard:"vertical",transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 1.0f], translation: [-0.1f, 0.65f, 0.0f]}, item: {components: {"minecraft:item_model": "minecraft:sword/morning_light/0"}, count: 1, id: "minecraft:iron_sword"}}]}

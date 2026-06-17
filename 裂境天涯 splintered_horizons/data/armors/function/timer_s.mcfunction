@@ -1,48 +1,47 @@
-# ===================================================
-# Armors Main Function
-
-    ## Guide [ function armors:type/timer_s ] >>> Armors 1s Timer
-    ## Guide [ function armors:loop ] >>> Armors Main Loop
-    ## Guide [ function armors:reload_rpg_armor_effect ] >>> Reload Armor Effect And Detect
-    ## Guide [ function armors:type/scoreboard ] >>> Armors Scoreboard
-    ## Guide [ function armors:type/timer_t ] >>> Armors 1t Timer
-
-# ===================================================
-
-scoreboard players remove @a[scores={armor.black_hole.boots.cd=1..}] armor.black_hole.boots.cd 1
-scoreboard players remove @a[scores={armor.paladins_helmet.cd=1..}] armor.paladins_helmet.cd 1
-scoreboard players remove @a[scores={armor.armor_of_the_coiled_rock.cd=1..}] armor.armor_of_the_coiled_rock.cd 1
-scoreboard players remove @a[scores={armor.coiled_rock_helmet.cd=1..}] armor.coiled_rock_helmet.cd 1
-scoreboard players remove @a[scores={armor.finality_chestplate.cd=1..}] armor.finality_chestplate.cd 1
-scoreboard players remove @a[scores={armor.windriders_legplates.cd=1..}] armor.windriders_legplates.cd 1
-scoreboard players remove @a[scores={armor.radiant_guardians_helmet.cd=1..}] armor.radiant_guardians_helmet.cd 1
-scoreboard players remove @a[scores={armor.symbiotic_blood_oath.cd=1..}] armor.symbiotic_blood_oath.cd 1
-
-
-execute \
-    as @a at @s run \
-function armors:type/finality_chestplate/effect/timer
-
-execute \
-    as @a at @s run \
-function armors:type/paladins_helmet/effect/timer
-
-tellraw @a[scores={armor.black_hole.boots.cd=1}] [{"text":"[","color":"green","bold":true},{"translate":"armor.black_hole_boots","color":"dark_green","bold":true},{"text":"] ","color":"green","bold":true},{"translate":"weapon.cd_completed","color":"green","bold":true}]
-
-execute \
-    as @a[scores={armor.black_hole.boots.cd=1}] at @s run \
-playsound minecraft:entity.player.levelup voice @s ~ ~1 ~ 1 1.5
-
-tellraw @a[scores={armor.armor_of_the_coiled_rock.cd=1}] [{"text":"[","color":"green","bold":true},{"translate":"armor.armor_of_the_coiled_rock","color":"dark_green","bold":true},{"text":"] ","color":"green","bold":true},{"translate":"weapon.cd_completed","color":"green","bold":true}]
-
-execute \
-    as @a[scores={armor.armor_of_the_coiled_rock.cd=1}] at @s run \
-playsound minecraft:entity.player.levelup voice @s ~ ~1 ~ 1 1.5
-
-tellraw @a[scores={armor.finality_chestplate.cd=1}] [{"text":"[","color":"green","bold":true},{"translate":"armor.finality_chestplate","color":"dark_green","bold":true},{"text":"] ","color":"green","bold":true},{"translate":"weapon.cd_completed","color":"green","bold":true}]
-
-execute \
-    as @a[scores={armor.finality_chestplate.cd=1}] at @s run \
-playsound minecraft:entity.player.levelup voice @s ~ ~1 ~ 1 1.5
-
+# ===================================================
+# timer_s
+
+    ## Guide [ function armors:timer_s ] >>> timer_s
+    ## Guide [ function armors:loop ] >>> armors:loop
+    ## Guide [ function armors:reload_rpg_armor_effect ] >>> armors:reload rpg armor effect
+    ## Guide [ function main:load ] >>> main:load
+
+# ===================================================
+
+scoreboard players remove @a[scores={armor.black_hole.boots.cd=1..}] armor.black_hole.boots.cd 1
+scoreboard players remove @a[scores={armor.paladins_helmet.cd=1..}] armor.paladins_helmet.cd 1
+scoreboard players remove @a[scores={armor.armor_of_the_coiled_rock.cd=1..}] armor.armor_of_the_coiled_rock.cd 1
+scoreboard players remove @a[scores={armor.coiled_rock_helmet.cd=1..}] armor.coiled_rock_helmet.cd 1
+scoreboard players remove @a[scores={armor.finality_chestplate.cd=1..}] armor.finality_chestplate.cd 1
+scoreboard players remove @a[scores={armor.windriders_legplates.cd=1..}] armor.windriders_legplates.cd 1
+scoreboard players remove @a[scores={armor.radiant_guardians_helmet.cd=1..}] armor.radiant_guardians_helmet.cd 1
+scoreboard players remove @a[scores={armor.symbiotic_blood_oath.cd=1..}] armor.symbiotic_blood_oath.cd 1
+
+
+execute \
+    as @a at @s run \
+function armors:type/finality_chestplate/effect/timer
+
+execute \
+    as @a at @s run \
+function armors:type/paladins_helmet/effect/timer
+
+tellraw @a[scores={armor.black_hole.boots.cd=1}] [{"text":"[","color":"green","bold":true},{"translate":"armor.black_hole_boots","color":"dark_green","bold":true},{"text":"] ","color":"green","bold":true},{"translate":"weapon.cd_completed","color":"green","bold":true}]
+
+execute \
+    as @a[scores={armor.black_hole.boots.cd=1}] at @s run \
+playsound minecraft:entity.player.levelup voice @s ~ ~1 ~ 1 1.5
+
+tellraw @a[scores={armor.armor_of_the_coiled_rock.cd=1}] [{"text":"[","color":"green","bold":true},{"translate":"armor.armor_of_the_coiled_rock","color":"dark_green","bold":true},{"text":"] ","color":"green","bold":true},{"translate":"weapon.cd_completed","color":"green","bold":true}]
+
+execute \
+    as @a[scores={armor.armor_of_the_coiled_rock.cd=1}] at @s run \
+playsound minecraft:entity.player.levelup voice @s ~ ~1 ~ 1 1.5
+
+tellraw @a[scores={armor.finality_chestplate.cd=1}] [{"text":"[","color":"green","bold":true},{"translate":"armor.finality_chestplate","color":"dark_green","bold":true},{"text":"] ","color":"green","bold":true},{"translate":"weapon.cd_completed","color":"green","bold":true}]
+
+execute \
+    as @a[scores={armor.finality_chestplate.cd=1}] at @s run \
+playsound minecraft:entity.player.levelup voice @s ~ ~1 ~ 1 1.5
+
 schedule function armors:timer_s 1s

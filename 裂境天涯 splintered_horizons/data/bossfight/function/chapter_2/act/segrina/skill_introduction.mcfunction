@@ -37,7 +37,7 @@ tellraw @s ""
 
 execute \
     if score #bossfight.segrina.3 global.main matches 1.. run \
-tellraw @s ["",{translate:"monsters.segrina.3",bold:true,color:"dark_aqua",hover_event:{action:"show_text",value:[{translate:"monsters.tips.dangerous_skill",color:"gold"}]}},{text:" ⚠",color:"gold",hover_event:{action:"show_text",value:[{translate:"monsters.tips.dangerous_skill",color:"gold"}]}}]
+tellraw @s ["",{translate:"monsters.segrina.3",bold:true,color:"dark_aqua",hover_event:{action:"show_text",value:[{translate:"monsters.tips.fatal_skill",color:"dark_red"}]}},{text:" ☠",color:"dark_red",hover_event:{action:"show_text",value:[{translate:"monsters.tips.fatal_skill",color:"dark_red"}]}}]
 
 execute \
     if score #bossfight.segrina.3 global.main matches 1.. run \
@@ -45,7 +45,7 @@ tellraw @s ""
 
 execute \
     if score #bossfight.segrina.3 global.main matches 1.. run \
-tellraw @s ["",{translate:"monsters.segrina.3.1","underlined":false,color:"white","bold":false},{text:"\n"},{translate:"monsters.segrina.3.2",color:"white","bold":false},{text:"\n"},{translate:"monsters.segrina.3.3",color:"white","bold":false},{text:"\n"},{translate:"monsters.segrina.3.4",color:"white","bold":false},{text:"\n"},{translate:"monsters.segrina.3.5",color:"white","bold":false,"with":[{"translate":"monsters.segrina.3.6","color":"gold","bold":true,"underlined":true}]},{text:"\n"},{translate:"monsters.segrina.3.7",color:"white","bold":false}]
+tellraw @s ["",{translate:"monsters.segrina.3.1","underlined":false,color:"white","bold":false},{text:"\n"},{translate:"monsters.segrina.3.2",color:"white","underlined":false,"bold":false},{text:"\n"},{translate:"monsters.segrina.3.3",color:"white","underlined":false,"bold":false,with:[{translate:"monsters.segrina.3.4",color:"dark_green","bold":false,"underlined":true}]},{text:"\n"},{translate:"monsters.segrina.3.5",color:"white","underlined":false,"bold":false,with:[{translate:"monsters.segrina.3.6",color:"red","bold":false,"underlined":true}]},{text:"\n"},{translate:"monsters.segrina.3.7",color:"white","bold":false,"underlined":false,with:[{translate:"monsters.segrina.3.8",color:"red","bold":false,"underlined":true}]},{text:"\n"},{translate:"monsters.segrina.3.9","underlined":false,color:"white","bold":false,with:[{translate:"monsters.segrina.3.10",color:"dark_red","bold":false,"underlined":true}]}]
 
 execute \
     if score #bossfight.segrina.3 global.main matches 1.. run \

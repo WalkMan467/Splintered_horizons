@@ -1,0 +1,66 @@
+{
+  "description": "",
+  "supported_items": "minecraft:air",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "any"
+  ],
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "requirements": {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "attacker",
+                "predicate": {
+                  "slots": {
+                    "weapon.mainhand": {
+                      "predicates": {
+                        "minecraft:custom_data": {
+                          "weapon": "morning_light"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_scores",
+                "entity": "attacker",
+                "scores": {
+                  "weapon.effect.resplendence": {
+                    "min": 1
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "effect": {
+          "type": "minecraft:apply_mob_effect",
+          "to_apply": "minecraft:instant_damage",
+          "min_duration": 1,
+          "max_duration": 1,
+          "min_amplifier": 27,
+          "max_amplifier": 27
+        },
+        "enchanted": "victim",
+        "affected": "victim"
+      }
+    ]
+  }
+}

@@ -1,4 +1,5 @@
 title @s times 0 20 40
+title @s subtitle ""
 title @s title {"text":"\uE000","font":"minecraft:screen"}
 
 

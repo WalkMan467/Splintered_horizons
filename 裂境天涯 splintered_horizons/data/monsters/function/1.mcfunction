@@ -1,0 +1,1 @@
+item modify entity @s weapon.mainhand [{function:"minecraft:set_enchantments",enchantments:{"monsters:beginner_tutorial/bypass_dmg":1}},{function:"minecraft:set_components",components:{"minecraft:enchantment_glint_override":0b,"minecraft:unbreakable":{}}}]

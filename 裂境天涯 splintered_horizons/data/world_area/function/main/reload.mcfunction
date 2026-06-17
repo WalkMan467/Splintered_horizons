@@ -10,3 +10,4 @@ function world_area:chapter_1/reload
 function world_area:chapter_2/reload
 function world_area:chapter_3/reload
 function world_area:other/reload
+advancement revoke @a only world_area:main/dream/in

@@ -15,4 +15,5 @@ scoreboard objectives add music.chapter2.temple_of_light dummy "[音樂]: 光明
 scoreboard objectives add music.chapter3.realm_of_finality dummy "[音樂]: 終焉之境BGM"
 scoreboard objectives add music.chapter3.finalitys_embrace_rift dummy "[音樂]: 終焉裂隙之谷BGM"
 scoreboard objectives add music.chapter3.lord_of_the_cataclysm dummy "[音樂]: 災厄領主BGM"
-scoreboard objectives add music.cutscene.opening dummy "[音樂]: 開場過場動畫BGM"
+scoreboard objectives add music.cutscene.opening.1 dummy "[音樂]: 開場過場動畫BGM 1"
+scoreboard objectives add music.cutscene.opening.2 dummy "[音樂]: 開場過場動畫BGM 2"

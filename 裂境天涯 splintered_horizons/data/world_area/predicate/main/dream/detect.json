@@ -1,0 +1,13 @@
+{
+  "condition": "minecraft:location_check",
+  "predicate": {
+    "block": {
+      "blocks": [
+        "minecraft:cobbled_deepslate",
+        "minecraft:cobbled_deepslate_slab",
+        "minecraft:cobbled_deepslate_stairs",
+        "minecraft:barrier"
+      ]
+    }
+  }
+}

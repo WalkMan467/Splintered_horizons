@@ -10,7 +10,7 @@ advancement grant @s only players:elytra_switch/false
 
 clear @s *[custom_data~{type:"item",item:"coin_s"}]
 tag @s add forced_interrupt_animation
-function #players:detect/death
+function players:detect/group/death
 
 particle minecraft:end_rod ~ ~0.5 ~ 0 0 0 0.5 20 normal @a
 playsound minecraft:entity.wither.spawn voice @a ~ ~1 ~ 0.5 2

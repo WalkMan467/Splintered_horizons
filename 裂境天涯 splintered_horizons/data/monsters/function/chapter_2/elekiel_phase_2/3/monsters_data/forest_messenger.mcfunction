@@ -5,7 +5,7 @@ execute \
     store result score @s monster.skill.cast.cd run \
 random value 60..160
 
-summon marker ~ ~ ~ {Tags:["monster.marker","main.duration.timer","summon"],data:{Death:"chapter_2/elekiel_phase_2/3/monsters_data",aj_kill:{name:""}}}
+summon marker ~ ~ ~ {Tags:["monster.marker","main.duration.timer","summon"],data:{Death:"monsters:chapter_2/elekiel_phase_2/3/monsters_data",aj_kill:{name:""}}}
 
 ride @n[tag=main.duration.timer,distance=..5,tag=summon,type=marker] mount @s[tag=monsters.spawn]
 

@@ -78,6 +78,18 @@
         if entity @s[tag=players.mode_change.adventure,gamemode=survival] run \
     function world_area:main/mode_change/forced_tag/survival
 
+    execute \
+        if biome ~ ~ ~ #world_area:prologue run \
+    advancement grant @s only world_area:main/dream/in
+
+    execute \
+        unless biome ~ ~ ~ #world_area:prologue run \
+    advancement grant @s only world_area:main/dream/out
+
+    execute \
+        as @s[tag=world_area.main.dream] at @s run \
+    function world_area:main/dream/main
+
     # Border Wall
     execute \
         if entity @s[tag=temp,gamemode=!creative] \

@@ -9,7 +9,7 @@
     "#monsters:chapter_2/elekiel/1/all",
     "#monsters:chapter_2/elekiel_phase_2/1/all",
     "#monsters:chapter_2/elekiel_phase_2/2/all",
-    "#monsters:chapter_2/segrina/all",
+    "#bossfight:chapter_2/segrina/skills/all",
     "weapons:type/scythe/ruins_of_the_finality/damage",
     "weapons:type/sword/grip_of_withering",
     "weapons:type/sword/aquilumera",
@@ -21,6 +21,7 @@
     "armors:type/windriders_legplates/damage",
     "armors:type/symbiotic_blood_oath/damage",
     "armors:type/black_hole/damage",
-    "monsters:chapter_2/emissary_of_the_temporal_rift/key/dmg"
+    "monsters:chapter_2/emissary_of_the_temporal_rift/key/dmg",
+    "bossfight:chapter_2/segrina/skills/1/damage"
   ]
 }

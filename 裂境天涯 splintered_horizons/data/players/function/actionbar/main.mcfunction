@@ -31,6 +31,18 @@ function players:actionbar/tp_book_failure
 
 execute \
     as @s[gamemode=!spectator] \
+    if score @s player.actionbar.beginner_tutorial.failure matches 1.. run \
+    return run \
+function players:actionbar/beginner_tutorial_failure
+
+execute \
+    as @s[gamemode=!spectator] \
+    if score @s player.actionbar.npc_interaction.tips matches 1.. run \
+    return run \
+function players:actionbar/npc_interaction
+
+execute \
+    as @s[gamemode=!spectator] \
     if score @s player.actionbar.segrina.1 matches 1.. run \
     return run \
 function players:actionbar/segrina/1

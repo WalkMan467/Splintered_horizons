@@ -1,1 +1,0 @@
-function music:cutscene/opening/1 with storage music cutscene.opening

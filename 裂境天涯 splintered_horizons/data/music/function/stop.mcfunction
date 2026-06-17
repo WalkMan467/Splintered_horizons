@@ -11,5 +11,6 @@ function music:chapter_3/realm_of_finality/reset
 function music:main/safe_zone/reset
 function music:main/tree_of_world_memory/reset
 function music:main/campfire/reset
+function music:cutscene/opening/1/reset
 function music:other/hasanor/reset
 function music:other/the_forgooten_lost_city/reset

@@ -1,6 +1,8 @@
 # 碰到邊界牆 ;回朔玩家位置
 
-effect give @s slow_falling 1 255 true
+scoreboard players set @s sys.fall_immunity 20
+
+function players:stop_animation
 function music:stop
 tag @s remove player.death
 function sys:respawnpoint/tp/store

@@ -11,6 +11,14 @@ execute \
 return 0
 
 execute \
+    if score @s player.actionbar.beginner_tutorial.failure matches 1.. run \
+return 0
+
+execute \
+    if score @s player.actionbar.npc_interaction.tips matches 1.. run \
+return 0
+
+execute \
     if score @s player.actionbar.weapon.nightfall matches 1.. run \
 return 0
 

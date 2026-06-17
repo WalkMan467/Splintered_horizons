@@ -1,0 +1,1 @@
+scoreboard objectives add bossfight.segrina.main dummy
