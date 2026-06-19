@@ -5,7 +5,7 @@ execute \
     positioned 161.0 91 -427 rotated -90 0 \
     in minecraft:overworld \
     as @e[tag=aj.portal.root,distance=..3,type=item_display] run \
-function animated_java:portal/remove/this
+function aj:portal/remove/this
 
 kill 00000015-0000-0002-0000-000200000001
 kill 00000015-0000-0002-0000-000200000002

@@ -12,7 +12,7 @@ function animated_java:sophia/remove/this
 execute \
     positioned 10040 150 9434 \
     as @e[sort=arbitrary,tag=aj.fsc_fx.root,distance=..1,type=item_display] run \
-function animated_java:fsc_fx/remove/this
+function aj:fsc_fx/remove/this
 
 execute \
     unless loaded 10040 0 9434 run \

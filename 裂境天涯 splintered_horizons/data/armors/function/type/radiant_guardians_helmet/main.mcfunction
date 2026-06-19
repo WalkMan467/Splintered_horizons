@@ -1,22 +1,37 @@
-# ===================================================
-# main
-
-    ## Guide [ function armors:type/radiant_guardians_helmet/main ] >>> main
-    ## Guide [ function armors:type/radiant_guardians_helmet/use ] >>> use
-    ## Guide [ function armors:type/radiant_guardians_helmet/eqipment ] >>> eqipment
-    ## Guide [ function armors:loop ] >>> armors:loop
-
-# ===================================================
-
-# Main Function
-
-
-execute \
-    if score @s armor.radiant_guardians_helmet.effect.cd matches 0 \
-    if items entity @s armor.head *[custom_data~{radiant:1b}] run \
-function armors:type/radiant_guardians_helmet/effect/add_torch
-
-execute \
-    as @n[distance=0..,tag=armors.radiant_guardians_helmet.torch,type=item] at @s \
-    unless block ~ ~-1 ~ #penetrate run \
+# ===================================================
+
+# main
+
+
+
+    ## Guide [ function armors:type/radiant_guardians_helmet/main ] >>> main
+
+    ## Guide [ function armors:type/radiant_guardians_helmet/use ] >>> use
+
+    ## Guide [ function armors:type/radiant_guardians_helmet/eqipment ] >>> eqipment
+
+    ## Guide [ function armors:loop ] >>> armors:loop
+
+
+
+# ===================================================
+
+
+
+# Main Function
+
+
+
+
+
+execute \
+    if score @s armor.radiant_guardians_helmet.effect.cd matches 0 \
+    if items entity @s armor.head *[custom_data~{radiant:1b}] run \
+function armors:type/radiant_guardians_helmet/effect/add_torch
+
+
+
+execute \
+    as @n[distance=0..,tag=armors.radiant_guardians_helmet.torch,type=item] at @s \
+    unless block ~ ~-1 ~ #penetrate run \
 function armors:type/radiant_guardians_helmet/guide

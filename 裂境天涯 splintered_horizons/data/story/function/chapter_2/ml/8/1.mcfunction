@@ -92,12 +92,12 @@ return 0
 
 execute \
     as @n[distance=..1,tag=aj.selena.root,type=item_display] at @s run \
-function animated_java:selena/animations/chat1/stop
+function aj:selena/animations/chat1/stop
 
 
 execute \
     as @n[distance=..1,tag=aj.selena.root,type=item_display] at @s run \
-function animated_java:selena/animations/chat1/tween {to_frame: 5, duration: 5}
+function aj:selena/animations/chat1/tween {to_frame: 5, duration: 5}
 
 
 scoreboard players add story.chapter_2.ml.8 story.chapter_2 1

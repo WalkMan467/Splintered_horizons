@@ -1,25 +1,43 @@
-# ===================================================
-# nightfall
-
-    ## Guide [ function players:actionbar/nightfall ] >>> nightfall
-    ## Guide [ function players:actionbar/main ] >>> players:actionbar main
-
-# ===================================================
-
-# Display Actionbar
-execute \
-    if entity @s[tag=!animation,gamemode=spectator] run \
-return 0
-
-execute \
-    if entity @s[gamemode=!creative,gamemode=!spectator,gamemode=!survival,gamemode=!adventure] run \
-return 0
-
-execute \
-    unless score @s weapon.nightfall.charge matches 1.. run \
-title @s actionbar [{"text": "⚡  □ □ □ □ □ ⚡","color": "white"}]
-title @s[scores={weapon.nightfall.charge=1}] actionbar [{"text": "⚡  ■ □ □ □ □ ⚡","color": "aqua"}]
-title @s[scores={weapon.nightfall.charge=2}] actionbar [{"text": "⚡  ■ ■ □ □ □ ⚡","color": "dark_aqua"}]
-title @s[scores={weapon.nightfall.charge=3}] actionbar [{"text": "⚡  ■ ■ ■ □ □ ⚡","color": "yellow"}]
-title @s[scores={weapon.nightfall.charge=4}] actionbar [{"text": "⚡  ■ ■ ■ ■ □ ⚡","color": "gold"}]
+# ===================================================
+
+# nightfall
+
+
+
+    ## Guide [ function players:actionbar/nightfall ] >>> nightfall
+
+    ## Guide [ function players:actionbar/main ] >>> players:actionbar main
+
+
+
+# ===================================================
+
+
+
+# Display Actionbar
+
+execute \
+    if entity @s[tag=!animation,gamemode=spectator] run \
+return 0
+
+
+
+execute \
+    if entity @s[gamemode=!creative,gamemode=!spectator,gamemode=!survival,gamemode=!adventure] run \
+return 0
+
+
+
+execute \
+    unless score @s weapon.nightfall.charge matches 1.. run \
+title @s actionbar [{"text": "⚡  □ □ □ □ □ ⚡","color": "white"}]
+
+title @s[scores={weapon.nightfall.charge=1}] actionbar [{"text": "⚡  ■ □ □ □ □ ⚡","color": "aqua"}]
+
+title @s[scores={weapon.nightfall.charge=2}] actionbar [{"text": "⚡  ■ ■ □ □ □ ⚡","color": "dark_aqua"}]
+
+title @s[scores={weapon.nightfall.charge=3}] actionbar [{"text": "⚡  ■ ■ ■ □ □ ⚡","color": "yellow"}]
+
+title @s[scores={weapon.nightfall.charge=4}] actionbar [{"text": "⚡  ■ ■ ■ ■ □ ⚡","color": "gold"}]
+
 title @s[scores={weapon.nightfall.charge=5}] actionbar [{"text": "⚡  ■ ■ ■ ■ ■ ⚡","color": "dark_red"}]

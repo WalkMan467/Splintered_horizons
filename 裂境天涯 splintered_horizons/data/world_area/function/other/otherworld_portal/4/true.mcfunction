@@ -23,12 +23,12 @@ execute \
     positioned 949.50 88.00 494.00 rotated -90 0 \
     in minecraft:overworld \
     as @e[tag=aj.portal.root,distance=..3] run \
-function animated_java:portal/remove/this
+function aj:portal/remove/this
 
 
 execute \
     positioned 949.50 88.00 494.00 rotated -90 0 \
     in minecraft:overworld run \
-function animated_java:portal/summon {args: {animation: 'spawn', start_animation: true}}
+function aj:portal/summon {args: {animation: 'spawn', start_animation: true}}
 
 scoreboard players set #world_area.other.otherworld_portal.4 world_area.other.otherworld_portal.delay 0

@@ -19,7 +19,7 @@ function animated_java:isokla/summon {args: {animation: 'cutscene_chapter_2_1_sa
 
 execute \
     positioned 757 144 946 facing 758.5 145.25 944.5 rotated ~ 0 run \
-function animated_java:irina/summon {args: {animation: 'idle', start_animation: true}}
+function aj:irina/summon {args: {animation: 'idle', start_animation: true}}
 
 
 scoreboard players set @n[tag=main.duration.timer,tag=summon,type=marker] duration 260

@@ -6,4 +6,4 @@ kill fffe1e47-0000-c819-0000-c94100050e3b
 execute \
     positioned 903 112 482 \
     as @n[tag=aj.selena.root,limit=1,distance=0..1,type=item_display] run \
-function animated_java:selena/remove/this
+function aj:selena/remove/this

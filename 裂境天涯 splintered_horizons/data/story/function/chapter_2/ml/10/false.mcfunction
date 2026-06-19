@@ -6,4 +6,4 @@ kill 129d8265-191e-3dd8-e6e1-9f01f1d78c14
 execute \
     positioned 1131 154 1841 \
     as @n[tag=aj.selena.root,limit=1,distance=0..1,type=item_display] run \
-function animated_java:selena/remove/this
+function aj:selena/remove/this

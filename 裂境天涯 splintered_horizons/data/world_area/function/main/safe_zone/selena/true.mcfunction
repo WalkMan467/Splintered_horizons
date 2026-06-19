@@ -4,12 +4,12 @@ kill 00000002-0000-0016-0000-003300000037
 
 execute \
     as @n[tag=aj.selena.root,limit=1,distance=..3] run \
-function animated_java:selena/remove/this
+function aj:selena/remove/this
 
 
 execute \
     positioned 766 146 966 rotated 135 0 run \
-function animated_java:selena/summon {args: {animation: 'idle', start_animation: true}}
+function aj:selena/summon {args: {animation: 'idle', start_animation: true}}
 
 
 execute \

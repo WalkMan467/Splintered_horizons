@@ -5,7 +5,7 @@ execute \
     positioned 430.00 93.00 -146.50 rotated -90 0 \
     in minecraft:the_end \
     as @e[tag=aj.portal.root,distance=..3] run \
-function animated_java:portal/remove/this
+function aj:portal/remove/this
 
 kill 00000015-0000-0002-0000-002c00000008
 kill 00000015-0000-0002-0000-002b00000007

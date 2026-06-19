@@ -10,7 +10,7 @@ execute \
     in minecraft:overworld \
     positioned 802 71 1592 \
     rotated 206.50 0.00 run \
-function animated_java:selena/summon {args: {animation: 'chat1', start_animation: true}}
+function aj:selena/summon {args: {animation: 'chat1', start_animation: true}}
 
 execute \
     in minecraft:overworld \

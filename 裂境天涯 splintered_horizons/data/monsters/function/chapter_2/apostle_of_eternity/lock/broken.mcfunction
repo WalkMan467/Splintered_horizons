@@ -9,7 +9,7 @@ tag @s remove monster.apostle_of_eternity.lock
 
 execute \
     as @n[sort=arbitrary,distance=..1.5,tag=aj.chain_lock.root,type=item_display] at @s run \
-function animated_java:chain_lock/animations/unlock/play
+function aj:chain_lock/animations/unlock/play
 
 attribute @s minecraft:jump_strength modifier remove monster.apostle_of_eternity.lock
 attribute @s minecraft:movement_speed modifier remove monster.apostle_of_eternity.lock

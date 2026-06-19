@@ -4,15 +4,13 @@ kill 00000002-0000-0016-0000-003300000016
 
 execute \
     as @n[distance=0..,tag=aj.irina.root,type=item_display] run \
-function animated_java:irina/remove/this
+function aj:irina/remove/this
 
 function story:story_trigger_reset
 
-
 execute \
     positioned 741 145 968 rotated 45 0 run \
-function animated_java:irina/summon {args: {animation: 'idle', start_animation: true}}
-
+function aj:irina/summon {args: {animation: 'idle', start_animation: true}}
 
 execute \
     positioned 741 145 968 run \

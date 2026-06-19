@@ -4,11 +4,11 @@ scoreboard players set story.chapter_2.ml.7 story.chapter_2 1
 execute \
     positioned 903 112 482 \
     as @n[sort=arbitrary,distance=..1,tag=aj.selena.root,type=item_display] run \
-function animated_java:selena/remove/this
+function aj:selena/remove/this
 
 execute \
     positioned 903 112 482 rotated -45 0 run \
-function animated_java:selena/summon \
+function aj:selena/summon \
     { \
         args:\
         { \

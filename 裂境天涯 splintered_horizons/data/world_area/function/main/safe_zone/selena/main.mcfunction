@@ -7,7 +7,7 @@
     if entity @p[distance=..8,predicate=players:detect/movement] \
     facing entity @p[distance=..8] eyes \
     rotated ~ 0 run \
-    function animated_java:selena/move
+    function aj:selena/move
 
 
     execute \
@@ -15,7 +15,7 @@
     as @n[distance=..1,tag=aj.selena.root,limit=1,tag=world_area.main.safe_zone.selena,type=item_display] at @s \
     unless entity @p[sort=arbitrary,distance=..8] \
     rotated 135 0 run \
-    function animated_java:selena/move
+    function aj:selena/move
 
     # Detect
     execute \

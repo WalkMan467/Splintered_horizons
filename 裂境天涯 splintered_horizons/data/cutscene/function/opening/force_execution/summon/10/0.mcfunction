@@ -10,7 +10,7 @@ function animated_java:sophia/summon {args: {animation: 'cutscene_opening_death'
 
 execute \
     positioned 10040 150 9434 rotated 0 0 run \
-function animated_java:fsc_fx/summon {args: {animation: 'run', start_animation: true}}
+function aj:fsc_fx/summon {args: {animation: 'run', start_animation: true}}
 
 execute \
     unless loaded 10040 0 9434 run \

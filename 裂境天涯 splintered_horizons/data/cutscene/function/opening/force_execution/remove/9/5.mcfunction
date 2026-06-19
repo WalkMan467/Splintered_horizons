@@ -9,7 +9,7 @@ kill c8338abd-faa8-427b-807e-1bbbfac9a67e
 execute \
     positioned 651 40 188 \
     as @e[sort=arbitrary,tag=aj.selena.root,distance=..1,type=item_display] run \
-function animated_java:selena/remove/this
+function aj:selena/remove/this
 
 execute \
     unless loaded 651 40 188 run \

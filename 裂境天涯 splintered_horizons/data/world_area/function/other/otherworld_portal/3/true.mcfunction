@@ -5,13 +5,13 @@ execute \
     positioned 430.00 93.00 -146.50 rotated -180 0 \
     in minecraft:the_end \
     as @e[tag=aj.portal.root,distance=..3] run \
-function animated_java:portal/remove/this
+function aj:portal/remove/this
 
 
 execute \
     positioned 430.00 93.00 -146.50 rotated -180 0 \
     in minecraft:the_end run \
-function animated_java:portal/summon {args: {animation: 'spawn', start_animation: true}}
+function aj:portal/summon {args: {animation: 'spawn', start_animation: true}}
 
 
 execute \

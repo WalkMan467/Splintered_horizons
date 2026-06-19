@@ -2,7 +2,7 @@ scoreboard players set @s monster.apostle_of_eternity.lock.click 0
 
 execute \
     rotated ~ 0 run \
-function animated_java:chain_lock/summon {args:{animation: 'lock', start_animation: true}}
+function aj:chain_lock/summon {args:{animation: 'lock', start_animation: true}}
 
 attribute @s minecraft:jump_strength modifier add monster.apostle_of_eternity.lock -0.999 add_multiplied_total
 attribute @s minecraft:movement_speed modifier add monster.apostle_of_eternity.lock -1 add_multiplied_total

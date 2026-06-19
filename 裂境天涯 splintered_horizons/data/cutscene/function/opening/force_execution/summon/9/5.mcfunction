@@ -10,7 +10,7 @@ execute \
     in minecraft:overworld \
     positioned 651 40 188 \
     rotated 0 -25.00 run \
-function animated_java:selena/summon {args: {animation: 'death', start_animation: true}}
+function aj:selena/summon {args: {animation: 'death', start_animation: true}}
 
 execute \
     in minecraft:overworld \

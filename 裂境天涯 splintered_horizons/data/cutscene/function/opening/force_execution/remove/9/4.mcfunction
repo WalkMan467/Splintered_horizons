@@ -9,7 +9,7 @@ kill ecad9f35-97af-445d-b5b5-994d25510122
 execute \
     positioned 802 71 1592 \
     as @e[sort=arbitrary,tag=aj.selena.root,distance=..1,type=item_display] run \
-function animated_java:selena/remove/this
+function aj:selena/remove/this
 
 execute \
     unless loaded 802 71 1592 run \
