@@ -100,6 +100,10 @@ $data merge entity $(4) {transformation: [-0.8976f,-0.2895f,-0.2968f,0.3663f,-0.
 $data merge entity $(3) {transformation: [-0.8985f,0.0283f,-0.4136f,0.3751f,-0.1317f,0.9304f,0.3392f,1.3094f,0.3934f,0.3637f,-0.8319f,-0.1207f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(8) {transformation: [-0.992f,0.0382f,-0.1123f,-0.1048f,0.0409f,0.9988f,-0.0248f,0.3808f,0.1113f,-0.0295f,-0.9924f,0.1034f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(7) {transformation: [-0.9914f,-0.0013f,-0.1235f,-0.1054f,0.0404f,0.9404f,-0.3376f,0.7018f,0.1167f,-0.34f,-0.9321f,-0.0139f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
-$data merge entity $(item_display1) {transformation: [0.0008f,0f,0f,-0.25f,0f,-0.0008f,0f,3.6396f,0f,0f,0.0008f,0.3125f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
-data modify entity @s data merge value {"cameras":{"camera1":{"px":-0.001366924214769114,"py":1.257315927873779,"pz":1.9285311795642375,"ry":180,"rx":7.016704149024699e-15},"camera3":{"px":1.8119097833597675,"py":2.3914788409969896,"pz":1.3738695332742725,"ry":130.31442106674268,"rx":-19.16411426161627}},"locators":{}}
+$data merge entity $(item_display1) {transformation: [0.0008f,0f,0f,-0.5f,0f,-0.0008f,0f,3.6396f,0f,0f,0.0008f,0.3125f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+data modify storage animated_java:temp entry.data merge value {"cameras":{"camera1":{"px":-0.001366924214769114,"py":1.257315927873779,"pz":1.9285311795642375,"ry":180,"rx":7.016704149024699e-15},"camera3":{"px":1.8119097833597675,"py":2.3914788409969896,"pz":1.3738695332742725,"ry":130.31442106674268,"rx":-19.16411426161627}}}
+# Data Manager: Prepare for Read / Write
+execute store result storage animated_java:temp args.id int 1 run scoreboard players get @s aj.id
+# Data Manager: Write
+function animated_java:global/data_manager/write with storage animated_java:temp args
 function animated_java:sophia/root/on_tick/transform_floating_entities

@@ -100,7 +100,11 @@ $data merge entity $(4) {transformation: [-0.8913f,-0.2749f,-0.3677f,0.3979f,-0.
 $data merge entity $(3) {transformation: [-0.8922f,-0.0343f,-0.4578f,0.3871f,-0.1428f,0.9842f,0.1978f,2.9969f,0.4372f,0.2401f,-0.8705f,-0.1587f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(8) {transformation: [-1.0049f,0.0136f,-0.1294f,-0.0499f,0.0023f,1.0104f,0.087f,2.0916f,0.1301f,0.0853f,-1.0014f,0.1763f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(7) {transformation: [-0.9869f,-0.0998f,-0.2067f,-0.085f,0.0081f,0.8971f,-0.473f,2.356f,0.2294f,-0.4626f,-0.872f,0.0155f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
-$data merge entity $(item_display1) {transformation: [-0.2184f,-0.0831f,-0.0889f,-0.2511f,-0.0535f,0.2296f,-0.0831f,3.6321f,0.1093f,-0.0535f,-0.2184f,0.3136f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
-data modify entity @s data merge value {"cameras":{"camera1":{"px":0.0511970027680615,"py":2.9875000000000003,"pz":2.9332407282861337,"ry":180,"rx":7.016709298534876e-15},"camera3":{"px":1.8179319030781405,"py":2.8394197691615224,"pz":1.4578202696330582,"ry":131.97116788821063,"rx":0.7569915356700916}},"locators":{}}
+$data merge entity $(item_display1) {transformation: [-0.2184f,-0.0831f,0.0889f,-0.4989f,-0.0535f,0.2296f,0.0831f,3.6321f,-0.1093f,0.0535f,-0.2184f,0.3136f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+data modify storage animated_java:temp entry.data merge value {"cameras":{"camera1":{"px":0.0511970027680615,"py":2.9875000000000003,"pz":2.9332407282861337,"ry":180,"rx":7.016709298534876e-15},"camera3":{"px":1.8179319030781405,"py":2.8394197691615224,"pz":1.4578202696330582,"ry":131.97116788821063,"rx":0.7569915356700916}}}
+# Data Manager: Prepare for Read / Write
+execute store result storage animated_java:temp args.id int 1 run scoreboard players get @s aj.id
+# Data Manager: Write
+function animated_java:global/data_manager/write with storage animated_java:temp args
 function animated_java:sophia/root/on_tick/transform_floating_entities
-execute on vehicle unless entity @s[tag=aj.transforms_only] at @s run function animated_java:sophia/animations/cutscene_opening_death/zzz/frames/95_root_function
+execute unless entity @s[tag=aj.transforms_only] at @s run function animated_java:sophia/animations/cutscene_opening_death/zzz/frames/95_root_function

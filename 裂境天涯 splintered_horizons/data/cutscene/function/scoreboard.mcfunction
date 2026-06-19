@@ -1,5 +1,12 @@
 scoreboard objectives add cutscene.story dummy
 scoreboard objectives add cutscene.aj.animation.change dummy
 scoreboard objectives add cutscene.aj.animation.state dummy
+scoreboard objectives add cutscene.camera.angle.x dummy
 scoreboard objectives add cutscene.camera.angle.y dummy
 scoreboard objectives add cutscene.opening.title.timer dummy
+scoreboard objectives add cutscene.camera.timer dummy
+scoreboard objectives add cutscene.camera.snake.speed dummy
+scoreboard objectives add cutscene.camera.snake.amplitude dummy
+scoreboard objectives add cutscene.camera.sine.degree dummy
+scoreboard objectives add cutscene.camera.sine.offset dummy
+scoreboard objectives add cutscene.camera.sine.final dummy

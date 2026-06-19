@@ -100,6 +100,10 @@ $data merge entity $(4) {transformation: [-0.8974f,-0.2906f,-0.2965f,0.3653f,-0.
 $data merge entity $(3) {transformation: [-0.8983f,0.0305f,-0.414f,0.3748f,-0.1314f,0.929f,0.343f,1.3102f,0.394f,0.367f,-0.8302f,-0.1203f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(8) {transformation: [-0.992f,0.0384f,-0.112f,-0.1055f,0.0412f,0.9987f,-0.0262f,0.3812f,0.1109f,-0.031f,-0.9924f,0.1023f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(7) {transformation: [-0.9915f,-0.0001f,-0.1221f,-0.1057f,0.0409f,0.941f,-0.3358f,0.7029f,0.115f,-0.3383f,-0.9329f,-0.0143f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
-$data merge entity $(item_display1) {transformation: [0.0005f,0f,0f,-0.25f,0f,-0.0005f,0f,3.6359f,0f,0f,0.0005f,0.3125f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
-data modify entity @s data merge value {"cameras":{"camera1":{"px":0.013564830477026439,"py":1.2242637114951165,"pz":1.916168294515402,"ry":180,"rx":7.016316746895154e-15},"camera3":{"px":1.813322010945768,"py":2.387869608291419,"pz":1.3753302342122646,"ry":130.30620809717095,"rx":-19.32440001565966}},"locators":{}}
+$data merge entity $(item_display1) {transformation: [0.0005f,0f,0f,-0.5f,0f,-0.0005f,0f,3.6359f,0f,0f,0.0005f,0.3125f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+data modify storage animated_java:temp entry.data merge value {"cameras":{"camera1":{"px":0.013564830477026439,"py":1.2242637114951165,"pz":1.916168294515402,"ry":180,"rx":7.016316746895154e-15},"camera3":{"px":1.813322010945768,"py":2.387869608291419,"pz":1.3753302342122646,"ry":130.30620809717095,"rx":-19.32440001565966}}}
+# Data Manager: Prepare for Read / Write
+execute store result storage animated_java:temp args.id int 1 run scoreboard players get @s aj.id
+# Data Manager: Write
+function animated_java:global/data_manager/write with storage animated_java:temp args
 function animated_java:sophia/root/on_tick/transform_floating_entities

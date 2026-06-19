@@ -3,3 +3,4 @@ scoreboard players set @s aj.spawn.frame 0
 tag @s add aj.transforms_only
 execute at @s run function animated_java:segrina/animations/spawn/zzz/zzz/set_frame {frame: 0}
 tag @s remove aj.transforms_only
+tag @s remove animated_java.segrina.animation.spawn.playing

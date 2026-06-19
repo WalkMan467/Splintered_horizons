@@ -100,6 +100,10 @@ $data merge entity $(4) {transformation: [-0.9371f,-0.2888f,-0.386f,0.4183f,-0.1
 $data merge entity $(3) {transformation: [-0.9381f,-0.0362f,-0.4808f,0.407f,-0.1501f,1.0345f,0.2079f,3.0288f,0.4591f,0.2524f,-0.9152f,-0.1602f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(8) {transformation: [-1.0563f,0.0143f,-0.1355f,-0.0531f,0.0024f,1.0621f,0.0914f,2.0518f,0.1363f,0.0896f,-1.0526f,0.1906f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(7) {transformation: [-1.0375f,-0.1047f,-0.2168f,-0.0899f,0.0085f,0.9429f,-0.4972f,2.3297f,0.2407f,-0.4863f,-0.9167f,0.0216f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
-$data merge entity $(item_display1) {transformation: [-1.095f,0.1272f,0.128f,-0.2556f,0.1418f,1.0933f,0.1272f,3.7099f,-0.1116f,0.1418f,-1.095f,0.3181f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
-data modify entity @s data merge value {"cameras":{"camera1":{"px":0.05849048490687286,"py":2.9336804473396505,"pz":3.398522212094021,"ry":180.3905692861773,"rx":-3.678619218636378},"camera3":{"px":2.001635733753346,"py":3.0295134670931865,"pz":1.2897192359086513,"ry":123.50056653165697,"rx":8.26982018140901}},"locators":{}}
+$data merge entity $(item_display1) {transformation: [-1.095f,0.1272f,-0.128f,-0.4944f,0.1418f,1.0933f,-0.1272f,3.7099f,0.1116f,-0.1418f,-1.095f,0.3181f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+data modify storage animated_java:temp entry.data merge value {"cameras":{"camera1":{"px":0.05849048490687286,"py":2.9336804473396505,"pz":3.398522212094021,"ry":180.3905692861773,"rx":-3.678619218636378},"camera3":{"px":2.001635733753346,"py":3.0295134670931865,"pz":1.2897192359086513,"ry":123.50056653165697,"rx":8.26982018140901}}}
+# Data Manager: Prepare for Read / Write
+execute store result storage animated_java:temp args.id int 1 run scoreboard players get @s aj.id
+# Data Manager: Write
+function animated_java:global/data_manager/write with storage animated_java:temp args
 function animated_java:sophia/root/on_tick/transform_floating_entities

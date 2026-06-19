@@ -100,6 +100,10 @@ $data merge entity $(4) {transformation: [-0.9179f,-0.2837f,-0.3802f,0.4098f,-0.
 $data merge entity $(3) {transformation: [-0.9188f,-0.035f,-0.473f,0.3989f,-0.1471f,1.0142f,0.2038f,2.9889f,0.4518f,0.2475f,-0.8963f,-0.1603f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(8) {transformation: [-1.0354f,0.0142f,-0.1348f,-0.0512f,0.0024f,1.0412f,0.0896f,2.0401f,0.1356f,0.0879f,-1.0317f,0.185f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(7) {transformation: [-1.0167f,-0.1036f,-0.2143f,-0.0876f,0.0083f,0.9244f,-0.4874f,2.3125f,0.2379f,-0.4765f,-0.8983f,0.0194f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
-$data merge entity $(item_display1) {transformation: [-1.0817f,-0.0021f,-0.0021f,-0.2538f,-0.0021f,1.0817f,-0.0021f,3.6761f,0.0021f,-0.0021f,-1.0817f,0.3163f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
-data modify entity @s data merge value {"cameras":{"camera1":{"px":0.05114100845866003,"py":3.4646444605753417,"pz":2.4977680339699915,"ry":180.472524882878,"rx":1.5187171317922539},"camera3":{"px":1.7469095234747385,"py":2.973946425849718,"pz":1.3908766448204033,"ry":131.01858787520428,"rx":6.5561969381850735}},"locators":{}}
+$data merge entity $(item_display1) {transformation: [-1.0817f,-0.0021f,0.0021f,-0.4962f,-0.0021f,1.0817f,0.0021f,3.6761f,-0.0021f,0.0021f,-1.0817f,0.3163f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+data modify storage animated_java:temp entry.data merge value {"cameras":{"camera1":{"px":0.05114100845866003,"py":3.4646444605753417,"pz":2.4977680339699915,"ry":180.472524882878,"rx":1.5187171317922539},"camera3":{"px":1.7469095234747385,"py":2.973946425849718,"pz":1.3908766448204033,"ry":131.01858787520428,"rx":6.5561969381850735}}}
+# Data Manager: Prepare for Read / Write
+execute store result storage animated_java:temp args.id int 1 run scoreboard players get @s aj.id
+# Data Manager: Write
+function animated_java:global/data_manager/write with storage animated_java:temp args
 function animated_java:sophia/root/on_tick/transform_floating_entities

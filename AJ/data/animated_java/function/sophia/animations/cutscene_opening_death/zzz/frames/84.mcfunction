@@ -100,6 +100,10 @@ $data merge entity $(4) {transformation: [-0.884f,-0.2716f,-0.3618f,0.3944f,-0.1
 $data merge entity $(3) {transformation: [-0.8849f,-0.0346f,-0.4511f,0.3835f,-0.1414f,0.9748f,0.1959f,2.9923f,0.4306f,0.2377f,-0.8634f,-0.1573f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(8) {transformation: [-0.9957f,0.0132f,-0.1254f,-0.0505f,0.0023f,1.0008f,0.0862f,2.1009f,0.1262f,0.0845f,-0.9922f,0.1728f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(7) {transformation: [-0.9782f,-0.0976f,-0.2023f,-0.0848f,0.008f,0.8885f,-0.4685f,2.3627f,0.2246f,-0.4584f,-0.8642f,0.0135f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
-$data merge entity $(item_display1) {transformation: [-0.0414f,-0.0142f,-0.015f,-0.2502f,-0.0096f,0.043f,-0.0142f,3.6247f,0.0183f,-0.0096f,-0.0414f,0.3127f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
-data modify entity @s data merge value {"cameras":{"camera1":{"px":-0.03620292653293444,"py":3.48828125,"pz":2.87109375,"ry":180,"rx":6.673530494720997e-15},"camera3":{"px":1.814488935526237,"py":2.763812680993751,"pz":1.4107669054514063,"ry":131.91917635063595,"rx":-2.5714046418511294}},"locators":{}}
+$data merge entity $(item_display1) {transformation: [-0.0414f,-0.0142f,0.015f,-0.4998f,-0.0096f,0.043f,0.0142f,3.6247f,-0.0183f,0.0096f,-0.0414f,0.3127f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+data modify storage animated_java:temp entry.data merge value {"cameras":{"camera1":{"px":-0.03620292653293444,"py":3.48828125,"pz":2.87109375,"ry":180,"rx":6.673530494720997e-15},"camera3":{"px":1.814488935526237,"py":2.763812680993751,"pz":1.4107669054514063,"ry":131.91917635063595,"rx":-2.5714046418511294}}}
+# Data Manager: Prepare for Read / Write
+execute store result storage animated_java:temp args.id int 1 run scoreboard players get @s aj.id
+# Data Manager: Write
+function animated_java:global/data_manager/write with storage animated_java:temp args
 function animated_java:sophia/root/on_tick/transform_floating_entities

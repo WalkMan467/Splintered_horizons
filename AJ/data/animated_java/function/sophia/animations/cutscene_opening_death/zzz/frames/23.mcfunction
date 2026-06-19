@@ -100,6 +100,10 @@ $data merge entity $(4) {transformation: [-0.8972f,-0.2915f,-0.2962f,0.3644f,-0.
 $data merge entity $(3) {transformation: [-0.8981f,0.0325f,-0.4143f,0.3746f,-0.1311f,0.9277f,0.3464f,1.3109f,0.3946f,0.3701f,-0.8286f,-0.12f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(8) {transformation: [-0.992f,0.0386f,-0.1117f,-0.1062f,0.0416f,0.9987f,-0.0276f,0.3816f,0.1105f,-0.0324f,-0.9924f,0.1013f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(7) {transformation: [-0.9917f,0.001f,-0.1208f,-0.1059f,0.0413f,0.9415f,-0.3341f,0.704f,0.1135f,-0.3367f,-0.9337f,-0.0146f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
-$data merge entity $(item_display1) {transformation: [0.0003f,0f,0f,-0.25f,0f,-0.0003f,0f,3.6326f,0f,0f,0.0003f,0.3125f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
-data modify entity @s data merge value {"cameras":{"camera1":{"px":0.012817252342875826,"py":1.1931741359879788,"pz":1.90459992486852,"ry":180,"rx":7.016675793023882e-15},"camera3":{"px":1.813105127935108,"py":2.3844139821244856,"pz":1.376126596793553,"ry":130.2997251025207,"rx":-19.477627004691353}},"locators":{}}
+$data merge entity $(item_display1) {transformation: [0.0003f,0f,0f,-0.5f,0f,-0.0003f,0f,3.6326f,0f,0f,0.0003f,0.3125f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+data modify storage animated_java:temp entry.data merge value {"cameras":{"camera1":{"px":0.012817252342875826,"py":1.1931741359879788,"pz":1.90459992486852,"ry":180,"rx":7.016675793023882e-15},"camera3":{"px":1.813105127935108,"py":2.3844139821244856,"pz":1.376126596793553,"ry":130.2997251025207,"rx":-19.477627004691353}}}
+# Data Manager: Prepare for Read / Write
+execute store result storage animated_java:temp args.id int 1 run scoreboard players get @s aj.id
+# Data Manager: Write
+function animated_java:global/data_manager/write with storage animated_java:temp args
 function animated_java:sophia/root/on_tick/transform_floating_entities

@@ -100,6 +100,10 @@ $data merge entity $(4) {transformation: [-0.9267f,-0.2862f,-0.3832f,0.4137f,-0.
 $data merge entity $(3) {transformation: [-0.9276f,-0.0355f,-0.4769f,0.4026f,-0.1485f,1.0237f,0.2057f,3.0086f,0.4555f,0.2498f,-0.905f,-0.1604f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(8) {transformation: [-1.0451f,0.0142f,-0.1355f,-0.052f,0.0024f,1.051f,0.0905f,2.0464f,0.1363f,0.0887f,-1.0414f,0.1876f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(7) {transformation: [-1.0264f,-0.1043f,-0.2157f,-0.0887f,0.0084f,0.9331f,-0.492f,2.3214f,0.2395f,-0.481f,-0.9068f,0.0204f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
-$data merge entity $(item_display1) {transformation: [-1.0817f,0.1443f,0.1456f,-0.2546f,0.1634f,1.0792f,0.1443f,3.6918f,-0.1238f,0.1634f,-1.0817f,0.3171f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
-data modify entity @s data merge value {"cameras":{"camera1":{"px":0.056874999999999655,"py":3.251875,"pz":2.8525,"ry":180.49542801885642,"rx":-0.5631616049203215},"camera3":{"px":1.8526742256054085,"py":3,"pz":1.2667468245269458,"ry":130.29120226470002,"rx":7.606583758100016}},"locators":{}}
+$data merge entity $(item_display1) {transformation: [-1.0817f,0.1443f,-0.1456f,-0.4954f,0.1634f,1.0792f,-0.1443f,3.6918f,0.1238f,-0.1634f,-1.0817f,0.3171f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+data modify storage animated_java:temp entry.data merge value {"cameras":{"camera1":{"px":0.056874999999999655,"py":3.251875,"pz":2.8525,"ry":180.49542801885642,"rx":-0.5631616049203215},"camera3":{"px":1.8526742256054085,"py":3,"pz":1.2667468245269458,"ry":130.29120226470002,"rx":7.606583758100016}}}
+# Data Manager: Prepare for Read / Write
+execute store result storage animated_java:temp args.id int 1 run scoreboard players get @s aj.id
+# Data Manager: Write
+function animated_java:global/data_manager/write with storage animated_java:temp args
 function animated_java:sophia/root/on_tick/transform_floating_entities

@@ -100,6 +100,10 @@ $data merge entity $(4) {transformation: [-0.9222f,-0.2814f,-0.3725f,0.411f,-0.1
 $data merge entity $(3) {transformation: [-0.9231f,-0.0372f,-0.4654f,0.3994f,-0.1472f,1.0146f,0.2039f,2.9671f,0.444f,0.2473f,-0.9008f,-0.1568f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(8) {transformation: [-1.0369f,0.0134f,-0.1258f,-0.0542f,0.0024f,1.0417f,0.0897f,2.0086f,0.1266f,0.088f,-1.0333f,0.1841f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(7) {transformation: [-1.0192f,-0.0994f,-0.2065f,-0.0892f,0.0084f,0.9248f,-0.4876f,2.2812f,0.2291f,-0.4776f,-0.9005f,0.0182f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
-$data merge entity $(item_display1) {transformation: [0f,0f,0f,-0.2582f,0f,0f,0f,3.7783f,0f,0f,0f,0.3207f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
-data modify entity @s data merge value {"cameras":{"camera1":{"px":0.05305259612349304,"py":0.8081882050807581,"pz":6.9880060254037835,"ry":179.97353987688533,"rx":-23.98911762767839}},"locators":{}}
+$data merge entity $(item_display1) {transformation: [0f,0f,0f,-0.4918f,0f,0f,0f,3.7783f,0f,0f,0f,0.3207f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+data modify storage animated_java:temp entry.data merge value {"cameras":{"camera1":{"px":0.05305259612349304,"py":0.8081882050807581,"pz":6.9880060254037835,"ry":179.97353987688533,"rx":-23.98911762767839}}}
+# Data Manager: Prepare for Read / Write
+execute store result storage animated_java:temp args.id int 1 run scoreboard players get @s aj.id
+# Data Manager: Write
+function animated_java:global/data_manager/write with storage animated_java:temp args
 function animated_java:sophia/root/on_tick/transform_floating_entities

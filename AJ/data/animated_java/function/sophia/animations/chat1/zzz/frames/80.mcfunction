@@ -78,4 +78,4 @@ $data merge entity $(9) {transformation: [-1f,0f,0f,0f,0f,0.9848f,0.1736f,1.5156
 $data merge entity $(item_display) {transformation: [-0.1588f,-0.0501f,-0.9739f,-0.3768f,-0.8552f,-0.4711f,0.163f,0.9952f,-0.4726f,0.8682f,0.0323f,0.3086f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(2) {transformation: [0.9739f,0.1539f,0.0637f,-0.3719f,-0.163f,0.9579f,0.1888f,1.104f,-0.0323f,-0.196f,0.9689f,-0.0915f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(1) {transformation: [0.9749f,0.1664f,-0.0073f,-0.3148f,-0.1632f,0.948f,-0.2337f,1.4284f,-0.0323f,0.2318f,0.961f,-0.0058f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
-execute on vehicle unless entity @s[tag=aj.transforms_only] at @s run function animated_java:sophia/animations/chat1/zzz/frames/80_root_function
+execute unless entity @s[tag=aj.transforms_only] at @s run function animated_java:sophia/animations/chat1/zzz/frames/80_root_function

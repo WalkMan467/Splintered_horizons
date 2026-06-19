@@ -100,6 +100,10 @@ $data merge entity $(4) {transformation: [-0.8992f,-0.282f,-0.2989f,0.3731f,-0.1
 $data merge entity $(3) {transformation: [-0.9001f,0.012f,-0.4107f,0.3769f,-0.1339f,0.94f,0.3111f,1.3209f,0.389f,0.339f,-0.8442f,-0.1231f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(8) {transformation: [-0.9918f,0.0366f,-0.1147f,-0.0996f,0.0382f,0.9991f,-0.0144f,0.3948f,0.1141f,-0.0191f,-0.9923f,0.1109f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(7) {transformation: [-0.99f,-0.0102f,-0.1334f,-0.1035f,0.0372f,0.9358f,-0.3503f,0.7104f,0.1285f,-0.3522f,-0.9261f,-0.0111f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
-$data merge entity $(item_display1) {transformation: [0.0034f,-0.0002f,-0.0002f,-0.25f,-0.0002f,-0.0034f,-0.0002f,3.6667f,0.0001f,-0.0002f,0.0034f,0.3125f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
-data modify entity @s data merge value {"cameras":{"camera1":{"px":-0.009105525927073053,"py":1.466825,"pz":2.0175,"ry":180,"rx":7.0145266649908924e-15},"camera3":{"px":1.8081162901414487,"py":2.416184934532655,"pz":1.381418679428314,"ry":130.39697832748132,"rx":-18.062732985404246}},"locators":{}}
+$data merge entity $(item_display1) {transformation: [0.0034f,-0.0002f,0.0002f,-0.5f,-0.0002f,-0.0034f,0.0002f,3.6667f,-0.0001f,0.0002f,0.0034f,0.3125f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+data modify storage animated_java:temp entry.data merge value {"cameras":{"camera1":{"px":-0.009105525927073053,"py":1.466825,"pz":2.0175,"ry":180,"rx":7.0145266649908924e-15},"camera3":{"px":1.8081162901414487,"py":2.416184934532655,"pz":1.381418679428314,"ry":130.39697832748132,"rx":-18.062732985404246}}}
+# Data Manager: Prepare for Read / Write
+execute store result storage animated_java:temp args.id int 1 run scoreboard players get @s aj.id
+# Data Manager: Write
+function animated_java:global/data_manager/write with storage animated_java:temp args
 function animated_java:sophia/root/on_tick/transform_floating_entities

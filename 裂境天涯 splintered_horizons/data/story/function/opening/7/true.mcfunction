@@ -10,5 +10,4 @@ execute \
 summon interaction ~ ~ ~ {width:4,height:6,Tags:["story.opening.7.act"],UUID:[I;1245239371,-308247,-1205273023,-943229685]}
 
 # FX & SFX
-particle minecraft:sonic_boom 16683.00 60.00 238.90 0 0 0 1 1 force @a
 playsound minecraft:item.trident.return voice @a 16683.00 60.00 238.90 1 1.5

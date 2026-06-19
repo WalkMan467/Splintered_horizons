@@ -100,6 +100,10 @@ $data merge entity $(4) {transformation: [-0.8905f,-0.2746f,-0.3671f,0.3975f,-0.
 $data merge entity $(3) {transformation: [-0.8914f,-0.0343f,-0.4571f,0.3867f,-0.1426f,0.9831f,0.1976f,2.9987f,0.4366f,0.2399f,-0.8697f,-0.1586f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(8) {transformation: [-1.0039f,0.0136f,-0.129f,-0.0499f,0.0023f,1.0094f,0.0869f,2.0949f,0.1298f,0.0852f,-1.0004f,0.1759f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(7) {transformation: [-0.986f,-0.0996f,-0.2063f,-0.085f,0.0081f,0.8961f,-0.4725f,2.359f,0.229f,-0.4621f,-0.8711f,0.0154f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
-$data merge entity $(item_display1) {transformation: [-0.5851f,-0.1528f,-0.1579f,-0.251f,-0.1142f,0.5952f,-0.1528f,3.631f,0.1878f,-0.1142f,-0.5851f,0.3135f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
-data modify entity @s data merge value {"cameras":{"camera1":{"px":0.6874999999999997,"py":2.125,"pz":2.8125,"ry":180,"rx":7.016709298534878e-15},"camera3":{"px":1.7722991460657804,"py":2.832825479157141,"pz":1.333452001207487,"ry":131.9759154727644,"rx":0.46774138792288766}},"locators":{}}
+$data merge entity $(item_display1) {transformation: [-0.5851f,-0.1528f,0.1579f,-0.499f,-0.1142f,0.5952f,0.1528f,3.631f,-0.1878f,0.1142f,-0.5851f,0.3135f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+data modify storage animated_java:temp entry.data merge value {"cameras":{"camera1":{"px":0.6874999999999997,"py":2.125,"pz":2.8125,"ry":180,"rx":7.016709298534878e-15},"camera3":{"px":1.7722991460657804,"py":2.832825479157141,"pz":1.333452001207487,"ry":131.9759154727644,"rx":0.46774138792288766}}}
+# Data Manager: Prepare for Read / Write
+execute store result storage animated_java:temp args.id int 1 run scoreboard players get @s aj.id
+# Data Manager: Write
+function animated_java:global/data_manager/write with storage animated_java:temp args
 function animated_java:sophia/root/on_tick/transform_floating_entities

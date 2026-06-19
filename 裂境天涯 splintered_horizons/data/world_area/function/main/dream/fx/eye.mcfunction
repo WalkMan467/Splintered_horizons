@@ -14,12 +14,12 @@ summon minecraft:item_display ~ ~ ~ {Tags:["summon","world_area.main.dream.fx.ey
 kill 9d704fe9-3125-4b35-a19a-9d2737f2deab
 
 execute \
-    as @e[sort=arbitrary,distance=..5,tag=summon,tag=world_area.main.dream.fx.eye,type=item_display] \
+    as @e[sort=arbitrary,distance=..30,tag=summon,tag=world_area.main.dream.fx.eye,type=item_display] \
     store result score @s duration run \
 random value 5..15
 
 execute \
-    as @n[sort=arbitrary,distance=..5,tag=summon,tag=world_area.main.dream.fx.eye,type=item_display] at @s run \
+    as @n[sort=arbitrary,distance=..30,tag=summon,tag=world_area.main.dream.fx.eye,type=item_display] at @s run \
 tp @s ~ ~0.25 ~
 
-tag @e[sort=arbitrary,distance=..5,tag=summon,tag=world_area.main.dream.fx.eye,type=item_display] remove summon
+tag @e[sort=arbitrary,distance=..30,tag=summon,tag=world_area.main.dream.fx.eye,type=item_display] remove summon

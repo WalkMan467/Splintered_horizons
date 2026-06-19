@@ -15,12 +15,16 @@ $data merge entity $(6) {transformation: [-0.9012f,-0.1248f,-0.415f,0.2358f,-0.1
 $data merge entity $(12) {transformation: [-0.9012f,-0.3403f,-0.2684f,0.1082f,-0.1829f,0.8601f,-0.4762f,0.7267f,0.3929f,-0.3801f,-0.8374f,0.0745f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(10) {transformation: [-0.919f,-0.0925f,-0.3834f,-0.0245f,-0.0533f,0.9923f,-0.1115f,1.0291f,0.3907f,-0.082f,-0.9168f,0.1075f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(9) {transformation: [-0.919f,0.1116f,-0.3782f,0.0173f,-0.0533f,0.9151f,0.3996f,1.3722f,0.3907f,0.3874f,-0.835f,0.2528f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
-$data merge entity $(item_display) {transformation: [-0.4769f,0.4971f,-0.2771f,-0.5401f,-0.294f,0.0944f,0.6753f,1.043f,0.4873f,0.5434f,0.1362f,0.7674f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+$data merge entity $(item_display) {transformation: [-0.5122f,0.4607f,-0.2771f,-0.5401f,-0.3001f,0.0725f,0.6753f,1.043f,0.446f,0.5778f,0.1362f,0.7674f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(2) {transformation: [0.3695f,0.6598f,0.639f,-0.5748f,-0.9003f,0.3964f,0.1113f,1.1073f,-0.1816f,-0.6226f,0.748f,0.378f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(1) {transformation: [0.3695f,0.8909f,0.2234f,-0.2672f,-0.9003f,0.3989f,-0.1018f,1.2438f,-0.1816f,-0.1652f,0.9591f,0.3272f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(4) {transformation: [-0.7901f,0.3439f,0.5075f,0.5173f,-0.6096f,-0.3533f,-0.7096f,1.0683f,-0.0647f,-0.87f,0.4888f,0.2388f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(3) {transformation: [-0.8111f,-0.5514f,0.1951f,0.3106f,-0.5189f,0.5245f,-0.6751f,1.265f,0.2699f,-0.6488f,-0.7115f,-0.0045f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(8) {transformation: [-0.9475f,0.2821f,-0.1508f,-0.1332f,0.134f,0.7782f,0.6136f,0.3945f,0.2905f,0.5612f,-0.7751f,0.2627f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(7) {transformation: [-0.9475f,0.1192f,-0.2969f,-0.108f,0.134f,0.9905f,-0.0301f,0.7028f,0.2905f,-0.0683f,-0.9544f,0.2026f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
-data modify entity @s data merge value {"cameras":{"camera1":{"px":0.02749999999999974,"py":1.46625,"pz":2.136875,"ry":181.29999999999998,"rx":0}},"locators":{}}
+data modify storage animated_java:temp entry.data merge value {"cameras":{"camera1":{"px":0.02749999999999974,"py":1.46625,"pz":2.136875,"ry":181.29999999999998,"rx":0}}}
+# Data Manager: Prepare for Read / Write
+execute store result storage animated_java:temp args.id int 1 run scoreboard players get @s aj.id
+# Data Manager: Write
+function animated_java:global/data_manager/write with storage animated_java:temp args
 function animated_java:oceanid/root/on_tick/transform_floating_entities

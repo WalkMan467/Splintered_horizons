@@ -1,3 +1,15 @@
+execute \
+    if entity @s[gamemode=creative] run \
+return 0
+
+execute \
+    if entity @s[tag=animation] run \
+return 0
+
+execute \
+    if entity @s[gamemode=!spectator] run \
+return 0
+
 title @a title ""
 
 title @a subtitle ""

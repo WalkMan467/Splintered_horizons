@@ -15,7 +15,7 @@ $data merge entity $(6) {transformation: [-0.8858f,-0.1748f,-0.4299f,0.2502f,-0.
 $data merge entity $(12) {transformation: [-0.8858f,-0.3786f,-0.2684f,0.1082f,-0.2197f,0.8515f,-0.4762f,0.7267f,0.4088f,-0.3629f,-0.8374f,0.0745f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(10) {transformation: [-0.919f,-0.0925f,-0.3834f,-0.0306f,-0.0533f,0.9923f,-0.1115f,1.0358f,0.3907f,-0.082f,-0.9168f,0.0942f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(9) {transformation: [-0.919f,0.1278f,-0.3731f,0.0173f,-0.0533f,0.8971f,0.4385f,1.3722f,0.3907f,0.4229f,-0.8176f,0.2528f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
-$data merge entity $(item_display) {transformation: [-0.4098f,0.5537f,-0.2771f,-0.5055f,-0.2796f,0.131f,0.6753f,1.0548f,0.5524f,0.477f,0.1362f,0.7795f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+$data merge entity $(item_display) {transformation: [-0.4912f,0.4829f,-0.2771f,-0.5055f,-0.2966f,0.0857f,0.6753f,1.0548f,0.4712f,0.5575f,0.1362f,0.7795f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(2) {transformation: [0.3695f,0.6026f,0.6932f,-0.5715f,-0.9003f,0.3854f,0.1449f,1.1058f,-0.1816f,-0.6845f,0.6918f,0.3922f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(1) {transformation: [0.3695f,0.8805f,0.2615f,-0.2672f,-0.9003f,0.4029f,-0.0846f,1.2438f,-0.1816f,-0.2062f,0.9511f,0.3272f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(4) {transformation: [-0.7986f,0.3419f,0.4954f,0.5203f,-0.598f,-0.3577f,-0.7172f,1.0577f,-0.0681f,-0.869f,0.4901f,0.2271f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}

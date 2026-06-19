@@ -15,7 +15,8 @@
     in world_area:main/game_lobby \
     positioned 16683.00 60.00 236.50 \
         if score #story.opening.7 global.main matches 1 \
-    if score #story.opening.7_temp global.main matches 0 run \
+    if score #story.opening.7_temp global.main matches 0 \
+    unless score #cutscene.world_tree global.main matches 1.. run \
     function story:opening/7/true
 
     # Else;

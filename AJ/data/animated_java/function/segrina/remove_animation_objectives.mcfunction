@@ -3,4 +3,4 @@ scoreboard objectives remove aj.spawn.frame
 scoreboard objectives remove aj.attack_1.frame
 scoreboard objectives remove aj.attack_2.frame
 scoreboard objectives remove aj.idle.frame
-tellraw @a [{color:'gray',text:'\n '},{color:'#00aced',text:'ᴀɴɪᴍᴀᴛᴇᴅ ᴊᴀᴠᴀ'},{color:'dark_gray',italic:true,text:'\n (animated_java:segrina)'},'\n → ',{color:'green',text:'Successfully uninstalled '},{color:'yellow',text:'segrina'},{color:'green',text:'!'},{color:'gray',italic:true,text:'\n If you have exported multiple times, you may have to remove objectives from previous exports manually, as Animated Java only knows about the objectives from the most recent export.'},'\n']
+tellraw @a [[{color:gray,text:'\n '},{color:'#00aced',text:'ᴀɴɪᴍᴀᴛᴇᴅ ᴊᴀᴠᴀ'},{color:dark_gray,italic:true,text:'\n (animated_java:segrina)'},'\n → '],[{text:'Successfully uninstalled ',color:green},{text:'animated_java:segrina',color:yellow},{text:'!'},{text:'\n If you have exported multiple times, you may have to remove objectives from previous exports manually, as Animated Java only knows about the objectives from the most recent export.',color:gray,italic:true}],'\n']

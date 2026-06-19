@@ -1,4 +1,5 @@
 scoreboard objectives add duration dummy
+scoreboard objectives add main.entity.id dummy "實體 ID"
 
 scoreboard objectives add hotbar dummy
 scoreboard objectives add hotbar_temp dummy
@@ -33,6 +34,8 @@ scoreboard players set @a main.tombstone_sys 0
 
 scoreboard players enable @a main.trigger
 scoreboard players set @a main.trigger 0
+
+scoreboard players add #index main.entity.id 0
 
 team add team.player "[隊伍] 玩家"
 team add glow.aqua

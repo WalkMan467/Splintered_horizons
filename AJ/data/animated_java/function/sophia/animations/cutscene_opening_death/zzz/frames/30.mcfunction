@@ -100,6 +100,10 @@ $data merge entity $(4) {transformation: [-0.8989f,-0.2834f,-0.2985f,0.3719f,-0.
 $data merge entity $(3) {transformation: [-0.8998f,0.015f,-0.4113f,0.3766f,-0.1335f,0.9383f,0.3163f,1.3155f,0.3898f,0.3437f,-0.842f,-0.1227f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(8) {transformation: [-0.9918f,0.0369f,-0.1142f,-0.1006f,0.0387f,0.999f,-0.0163f,0.3889f,0.1136f,-0.021f,-0.9923f,0.1096f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(7) {transformation: [-0.9903f,-0.0086f,-0.1316f,-0.1039f,0.0378f,0.9367f,-0.348f,0.7055f,0.1263f,-0.3499f,-0.9272f,-0.0116f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
-$data merge entity $(item_display1) {transformation: [0.0029f,-0.0001f,-0.0001f,-0.25f,-0.0001f,-0.0029f,-0.0001f,3.6617f,0.0001f,-0.0001f,0.0029f,0.3125f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
-data modify entity @s data merge value {"cameras":{"camera1":{"px":0.00791815364387655,"py":1.4301277235161534,"pz":2.001080015026296,"ry":180,"rx":7.016682662680573e-15},"camera3":{"px":1.8126220517070566,"py":2.411719702598689,"pz":1.3769448889904996,"ry":130.37952875230678,"rx":-18.262161541761703}},"locators":{}}
+$data merge entity $(item_display1) {transformation: [0.0029f,-0.0001f,0.0001f,-0.5f,-0.0001f,-0.0029f,0.0001f,3.6617f,-0.0001f,0.0001f,0.0029f,0.3125f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+data modify storage animated_java:temp entry.data merge value {"cameras":{"camera1":{"px":0.00791815364387655,"py":1.4301277235161534,"pz":2.001080015026296,"ry":180,"rx":7.016682662680573e-15},"camera3":{"px":1.8126220517070566,"py":2.411719702598689,"pz":1.3769448889904996,"ry":130.37952875230678,"rx":-18.262161541761703}}}
+# Data Manager: Prepare for Read / Write
+execute store result storage animated_java:temp args.id int 1 run scoreboard players get @s aj.id
+# Data Manager: Write
+function animated_java:global/data_manager/write with storage animated_java:temp args
 function animated_java:sophia/root/on_tick/transform_floating_entities
