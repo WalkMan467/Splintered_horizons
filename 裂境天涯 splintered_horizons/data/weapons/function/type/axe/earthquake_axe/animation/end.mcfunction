@@ -7,5 +7,5 @@ tag @p[tag=temp] add weapon.earthquake_axe.end
 tag @p[tag=temp] remove weapon.earthquake_axe.finality_tunder
 title @p[tag=temp] actionbar ""
 
-function animated_java:stellar_animation/animations/pause_all
-function animated_java:stellar_animation/animations/earthquake_axe/play
+function aj:stellar/animations/pause_all
+function aj:stellar/animations/earthquake_axe/play

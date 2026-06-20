@@ -5,6 +5,6 @@ kill @e[tag=story.chapter_2.ml.3]
 
 execute \
     as @n[tag=aj.sophia.root,limit=1] run \
-function animated_java:sophia/remove/this
+function aj:sophia/remove/this
 
 scoreboard players set story.chapter_2.ml.3 story.chapter_2 1

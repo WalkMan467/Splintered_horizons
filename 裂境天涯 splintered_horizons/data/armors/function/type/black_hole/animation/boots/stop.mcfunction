@@ -39,14 +39,14 @@ tag @s add armor.black_hole.animation.stop.user
 
 
 execute \
-    as @e[tag=aj.stellar_animation.root,tag=aj.stellar_animation.animation.boots_of_the_black_hole.playing,tag=!delete,distance=..10,limit=1,type=item_display] \
+    as @e[tag=aj.stellar.root,tag=aj.stellar.animation.boots_of_the_black_hole.playing,tag=!delete,distance=..10,limit=1,type=item_display] \
     if score @p[tag=armor.black_hole.animation.stop.user] player.id = @s armor.black_hole.boots.aj.id run \
 tag @s add delete
 
 
 
 execute \
-    as @e[tag=aj.stellar_animation.camera,tag=aj.stellar_animation.camera.camera3,tag=!delete,distance=..10,limit=1,type=item_display] \
+    as @e[tag=aj.stellar.camera,tag=aj.stellar.camera.camera3,tag=!delete,distance=..10,limit=1,type=item_display] \
     if score @p[tag=armor.black_hole.animation.stop.user] player.id = @s armor.black_hole.boots.aj.id run \
 tag @s add delete
 
@@ -70,10 +70,10 @@ function armors:type/black_hole/animation/boots/reset
 
 
 execute \
-    as @n[distance=..10,tag=aj.stellar_animation.root,tag=aj.stellar_animation.animation.boots_of_the_black_hole.playing,tag=delete,type=item_display] at @s run \
-function animated_java:stellar_animation/remove/this
+    as @n[distance=..10,tag=aj.stellar.root,tag=aj.stellar.animation.boots_of_the_black_hole.playing,tag=delete,type=item_display] at @s run \
+function aj:stellar/remove/this
 
-kill @n[tag=aj.stellar_animation.camera,tag=aj.stellar_animation.camera.camera3,tag=delete,distance=..10,type=item_display]
+kill @n[tag=aj.stellar.camera,tag=aj.stellar.camera.camera3,tag=delete,distance=..10,type=item_display]
 
 kill @n[tag=armor.black_hole.effect,tag=delete,distance=..10,type=area_effect_cloud]
 

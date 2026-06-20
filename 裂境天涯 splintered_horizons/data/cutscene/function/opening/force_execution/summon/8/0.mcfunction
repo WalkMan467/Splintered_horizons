@@ -7,7 +7,7 @@ forceload add 9820 10137
 execute \
     in minecraft:overworld \
     positioned 9820 81 10137 rotated -90 0 run \
-function animated_java:oceanid/summon {args: {animation: '2', start_animation: true}}
+function aj:oceanid/summon {args: {animation: '2', start_animation: true}}
 
 execute \
     unless loaded 9820 0 10137 run \

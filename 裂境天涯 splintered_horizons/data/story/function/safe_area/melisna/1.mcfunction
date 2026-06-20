@@ -75,7 +75,7 @@ execute \
     positioned 773 146 989 \
     if score story.safe_area.melisna.1 story.safe_area matches 14 \
     as @n[tag=aj.isokla.root,type=item_display,distance=..1] run \
-function animated_java:isokla/remove/this
+function aj:isokla/remove/this
 
 execute \
     positioned 774 146 987 \
@@ -118,7 +118,7 @@ execute \
     positioned 774.00 146.00 989.00 rotated 100 0 \
     if score story.safe_area.melisna.1 story.safe_area matches 20 \
     unless entity @n[tag=aj.isokla.root,type=item_display,distance=..1] run \
-function animated_java:isokla/summon {args: {animation: 'idle', start_animation: true}}
+function aj:isokla/summon {args: {animation: 'idle', start_animation: true}}
 
 execute \
     positioned 774.00 146.00 989.00 \

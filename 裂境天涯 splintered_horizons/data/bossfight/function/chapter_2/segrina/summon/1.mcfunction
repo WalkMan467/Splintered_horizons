@@ -36,6 +36,6 @@ function bossfight:chapter_2/act/segrina/1/false
 execute \
     positioned -916 61 2750 \
     as @n[type=item_display,distance=..1,tag=aj.segrina.root] run \
-function animated_java:segrina/remove/this
+function aj:segrina/remove/this
 
 schedule function bossfight:chapter_2/segrina/summon/2 1t

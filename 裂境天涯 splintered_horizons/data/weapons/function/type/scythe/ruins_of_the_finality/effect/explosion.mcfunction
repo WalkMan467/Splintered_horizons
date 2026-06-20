@@ -4,7 +4,7 @@ title @s subtitle [{"translate":"weapon.ruins_of_the_finality.tips.1","color":"g
 
 particle minecraft:flame ~ ~1 ~ 0 0 0 1 80 normal @a
 
-function animated_java:ruins_of_the_finality_skill/summon {args: {animation: 'skills_2', start_animation: true}}
+function aj:ruins_of_the_finality_skill/summon {args: {animation: 'skills_2', start_animation: true}}
 
 
 execute \

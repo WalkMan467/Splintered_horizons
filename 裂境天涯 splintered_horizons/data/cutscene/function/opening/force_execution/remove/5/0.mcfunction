@@ -10,7 +10,7 @@ kill 0004e721-0004-e663-0000-198fffff5b77
 execute \
     positioned 9872 104 10351 \
     as @e[sort=arbitrary,tag=aj.aska.root,distance=..1,type=item_display] run \
-function animated_java:aska/remove/this
+function aj:aska/remove/this
 
 execute \
     unless loaded 9872 0 10351 run \

@@ -27,3 +27,5 @@ $data merge entity $(3) { transformation: [-1f,0f,0f,0.375f,0f,1f,0f,1.5156f,0f,
 $data merge entity $(8) { transformation: [-1f,0f,0f,-0.1312f,0f,1f,0f,0.3906f,0f,0f,-1f,-0.125f,0f,0f,0f,1f], start_interpolation: 0 }
 $data merge entity $(7) { transformation: [-1f,0f,0f,-0.1312f,0f,1f,0f,0.7656f,0f,0f,-1f,-0.125f,0f,0f,0f,1f], start_interpolation: 0 }
 $data merge entity $(glass) { transformation: [-1f,0f,0f,0f,0f,1f,0f,0f,0f,0f,-1f,0f,0f,0f,0f,1f], start_interpolation: 0 }
+$data merge entity $(blackhole) { transformation: [-1f,0f,0f,0f,0f,1f,0f,0f,0f,0f,-1f,0f,0f,0f,0f,1f], start_interpolation: 0 }
+$data merge entity $(item_display) { transformation: [0f,2f,0f,0f,2f,0f,0f,0f,0f,0f,-2f,0f,0f,0f,0f,1f], start_interpolation: 0 }

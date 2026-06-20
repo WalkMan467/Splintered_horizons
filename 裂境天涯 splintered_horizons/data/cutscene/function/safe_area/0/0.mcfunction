@@ -9,23 +9,23 @@ forceload add 762 931 758 935
 execute \
     positioned 757 143 934 \
     as @n[type=item_display,distance=..10,tag=aj.sophia.root] run \
-function animated_java:sophia/remove/this
+function aj:sophia/remove/this
 
 
 execute \
     positioned 759 143 934 \
-    as @n[type=item_display,distance=..10,tag=aj.stellar_animation.root] run \
-function animated_java:stellar_animation/remove/this
+    as @n[type=item_display,distance=..10,tag=aj.stellar.root] run \
+function aj:stellar/remove/this
 
 
 execute rotated 0.0 0.0 \
     positioned 757.75 143 934 run \
-function animated_java:sophia/summon {args: {animation: 'walk', start_animation: true}}
+function aj:sophia/summon {args: {animation: 'walk', start_animation: true}}
 
 
 execute rotated 0.0 0.0 \
     positioned 759.0 143 933.5 run \
-function animated_java:stellar_animation/summon {args: {animation: 'walk', start_animation: true}}
+function aj:stellar/summon {args: {animation: 'walk', start_animation: true}}
 
 
 execute \
@@ -36,7 +36,7 @@ tag @s add cutscene.safe_area.0.sophia
 
 execute \
     positioned 758 143 934 \
-    as @n[type=item_display,distance=..10,tag=aj.stellar_animation.root] run \
+    as @n[type=item_display,distance=..10,tag=aj.stellar.root] run \
 tag @s add cutscene.safe_area.0.stellar
 
 scoreboard players set @n[type=item_display,tag=cutscene.safe_area.0.sophia] cutscene.aj.animation.change 100

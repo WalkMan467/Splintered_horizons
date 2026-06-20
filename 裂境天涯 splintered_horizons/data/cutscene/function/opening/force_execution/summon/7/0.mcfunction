@@ -11,19 +11,19 @@ execute \
     in minecraft:overworld \
     positioned 1026 136 -130 \
     rotated -152.5 0 run \
-function animated_java:stellar_animation/summon {args: {animation: 'idle', start_animation: true}}
+function aj:stellar/summon {args: {animation: 'idle', start_animation: true}}
 
 execute \
     in minecraft:overworld \
     positioned 1028 136 -129 \
     rotated -152.5 0 run \
-function animated_java:sophia/summon {args: {animation: 'idle', start_animation: true}}
+function aj:sophia/summon {args: {animation: 'idle', start_animation: true}}
 
 execute \
     in minecraft:overworld \
     positioned 1027.25 136 -128.5 \
     rotated -152.5 0 run \
-function animated_java:isokla/summon {args: {animation: 'idle', start_animation: true}}
+function aj:isokla/summon {args: {animation: 'idle', start_animation: true}}
 
 # 89e87545-f962-49b3-a510-a7da8d3f226d
 execute \

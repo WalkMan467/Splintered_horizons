@@ -17,7 +17,7 @@ execute \
     in world_area:main/game_lobby \
     positioned 16683.0 60.0 233.0 \
     rotated 0 0 run \
-function animated_java:stellar/summon {args:{animation: 'cutscene_world_tree_0', start_animation: true}}
+function aj:stellar/summon {args:{animation: 'cutscene_world_tree_0', start_animation: true}}
 
 execute \
     in world_area:main/game_lobby \
@@ -34,7 +34,7 @@ schedule function cutscene:world_tree/force_execution/summon/0/0 1t
 execute \
     in world_area:main/game_lobby \
     positioned 16683.0 60.0 233.0 \
-    unless entity @n[sort=arbitrary,distance=..0.1,tag=animated_java.stellar.root,type=item_display] at @s run \
+    unless entity @n[sort=arbitrary,distance=..0.1,tag=aj.stellar.root,type=item_display] at @s run \
     return run \
 schedule function cutscene:world_tree/force_execution/summon/0/0 1t
 

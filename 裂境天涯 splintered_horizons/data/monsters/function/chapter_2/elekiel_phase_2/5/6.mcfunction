@@ -27,7 +27,7 @@ execute \
     as @n[sort=arbitrary,distance=0..60,tag=monster.elekiel_phase_2.skill.5.tp,tag=monster.elekiel_phase_2.5.act,type=interaction] \
     on passengers \
     if entity @s[tag=aj.player_projection.root] run \
-function animated_java:player_projection/remove/this
+function aj:player_projection/remove/this
 
 
 tag @p[sort=arbitrary,distance=0..60,tag=monster.elekiel_phase_2.skill.5.player] add monster.elekiel_phase_2.skill.5.temp

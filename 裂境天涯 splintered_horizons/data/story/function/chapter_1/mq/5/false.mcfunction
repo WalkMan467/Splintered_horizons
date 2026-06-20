@@ -9,4 +9,4 @@ kill ffffa1bb-0000-1074-ffff-5b6d00007d70
 execute \
     positioned 18 29.75 -429.0 \
     as @n[sort=arbitrary,tag=aj.sophia.root,distance=..1,type=item_display] run \
-function animated_java:sophia/remove/this
+function aj:sophia/remove/this

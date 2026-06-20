@@ -10,4 +10,4 @@ scoreboard players set story.opening.5 story.chapter_1 1
 execute \
     positioned 1577 60 130 \
     as @n[sort=arbitrary,distance=..3,tag=aj.sophia.root,type=item_display] at @s run \
-function animated_java:sophia/remove/this
+function aj:sophia/remove/this

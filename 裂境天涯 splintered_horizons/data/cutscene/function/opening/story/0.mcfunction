@@ -1,6 +1,11 @@
-# The entire storyline is executed through the scoreboard story(dummy) combined with the schedule command
+# ===================================================
+# Opening story progression
 
-# ========================================= #
+    ## Guide [ function cutscene:opening/story/0 ] >>> Opening story progression
+
+# ===================================================
+
+# The entire storyline is executed through the scoreboard story(dummy) combined with the schedule command
 
 execute \
     if score .opening cutscene.story matches 120..240 run \
@@ -143,11 +148,16 @@ function cutscene:opening/6/1
 execute \
     if score .opening cutscene.story matches 2659 \
     as @n[tag=aj.aska.root,distance=0..,type=item_display] run \
-function animated_java:aska/animations/death/play
+function aj:aska/animations/pause_all
+
+execute \
+    if score .opening cutscene.story matches 2659 \
+    as @n[tag=aj.aska.root,distance=0..,type=item_display] run \
+function aj:aska/animations/death/play
 
 execute \
     if score .opening cutscene.story matches 2780 run \
-item modify entity @a armor.head [{function:"minecraft:set_item",item:"minecraft:leather_helmet"},{function:"minecraft:set_components",components:{"minecraft:tooltip_display":{hide_tooltip:1},"minecraft:item_name":{bold:true,color:"yellow",italic:false,text:"Camera"},"minecraft:item_model":"camera","minecraft:equippable":{slot:"head",equip_sound:"event.raid.horn",asset_id:"minecraft:air",camera_overlay:"minecraft:screen/fade_out"},"minecraft:enchantments":{binding_curse:1},"minecraft:enchantment_glint_override":false}}]
+item modify entity @a armor.head [{function:"minecraft:set_item",item:"minecraft:leather_helmet"},{function:"minecraft:set_components",components:{"minecraft:tooltip_display":{hide_tooltip:1b},"minecraft:item_name":{bold:true,color:"yellow",italic:false,text:"Camera"},"minecraft:item_model":"camera","minecraft:equippable":{slot:"head",equip_sound:"event.raid.horn",asset_id:"minecraft:air",camera_overlay:"minecraft:screen/fade_out"},"minecraft:enchantments":{binding_curse:1},"minecraft:enchantment_glint_override":false}}]
 
 execute \
     if score .opening cutscene.story matches 2780 run \
@@ -167,11 +177,11 @@ title @a times 0 130 0
 
 execute \
     if score .opening cutscene.story matches 2910 run \
-item modify entity @a armor.head [{function:"minecraft:set_item",item:"minecraft:leather_helmet"},{function:"minecraft:set_components",components:{"minecraft:tooltip_display":{hide_tooltip:1},"minecraft:item_name":{bold:true,color:"yellow",italic:false,text:"Camera"},"minecraft:item_model":"camera","minecraft:equippable":{slot:"head",equip_sound:"event.raid.horn",asset_id:"minecraft:air",camera_overlay:"minecraft:screen/cutscene"},"minecraft:enchantments":{binding_curse:1},"minecraft:enchantment_glint_override":false}}]
+item modify entity @a armor.head [{function:"minecraft:set_item",item:"minecraft:leather_helmet"},{function:"minecraft:set_components",components:{"minecraft:tooltip_display":{hide_tooltip:1b},"minecraft:item_name":{bold:true,color:"yellow",italic:false,text:"Camera"},"minecraft:item_model":"camera","minecraft:equippable":{slot:"head",equip_sound:"event.raid.horn",asset_id:"minecraft:air",camera_overlay:"minecraft:screen/cutscene"},"minecraft:enchantments":{binding_curse:1},"minecraft:enchantment_glint_override":false}}]
 
 execute \
     if score .opening cutscene.story matches 3020 run \
-item modify entity @a armor.head [{function:"minecraft:set_item",item:"minecraft:leather_helmet"},{function:"minecraft:set_components",components:{"minecraft:tooltip_display":{hide_tooltip:1},"minecraft:item_name":{bold:true,color:"yellow",italic:false,text:"Camera"},"minecraft:item_model":"camera","minecraft:equippable":{slot:"head",equip_sound:"event.raid.horn",asset_id:"minecraft:air",camera_overlay:"minecraft:screen/fade_out"},"minecraft:enchantments":{binding_curse:1},"minecraft:enchantment_glint_override":false}}]
+item modify entity @a armor.head [{function:"minecraft:set_item",item:"minecraft:leather_helmet"},{function:"minecraft:set_components",components:{"minecraft:tooltip_display":{hide_tooltip:1b},"minecraft:item_name":{bold:true,color:"yellow",italic:false,text:"Camera"},"minecraft:item_model":"camera","minecraft:equippable":{slot:"head",equip_sound:"event.raid.horn",asset_id:"minecraft:air",camera_overlay:"minecraft:screen/fade_out"},"minecraft:enchantments":{binding_curse:1},"minecraft:enchantment_glint_override":false}}]
 
 execute \
     if score .opening cutscene.story matches 3020 run \
@@ -191,7 +201,7 @@ title @a times 0 130 0
 
 execute \
     if score .opening cutscene.story matches 3150 run \
-item modify entity @a armor.head [{function:"minecraft:set_item",item:"minecraft:leather_helmet"},{function:"minecraft:set_components",components:{"minecraft:tooltip_display":{hide_tooltip:1},"minecraft:item_name":{bold:true,color:"yellow",italic:false,text:"Camera"},"minecraft:item_model":"camera","minecraft:equippable":{slot:"head",equip_sound:"event.raid.horn",asset_id:"minecraft:air",camera_overlay:"minecraft:screen/cutscene"},"minecraft:enchantments":{binding_curse:1},"minecraft:enchantment_glint_override":false}}]
+item modify entity @a armor.head [{function:"minecraft:set_item",item:"minecraft:leather_helmet"},{function:"minecraft:set_components",components:{"minecraft:tooltip_display":{hide_tooltip:1b},"minecraft:item_name":{bold:true,color:"yellow",italic:false,text:"Camera"},"minecraft:item_model":"camera","minecraft:equippable":{slot:"head",equip_sound:"event.raid.horn",asset_id:"minecraft:air",camera_overlay:"minecraft:screen/cutscene"},"minecraft:enchantments":{binding_curse:1},"minecraft:enchantment_glint_override":false}}]
 
 # score +1
 

@@ -13,7 +13,7 @@ execute \
     on passengers \
     if score #rdm global.main matches 1 \
     if entity @s[tag=aj.boss_1.root,type=item_display] run \
-function animated_java:boss_1/animations/attack_1/tween \
+function aj:boss_1/animations/attack_1/tween \
     { \
         to_frame:8, \
         duration:10 \
@@ -23,7 +23,7 @@ execute \
     on passengers \
     if score #rdm global.main matches 2 \
     if entity @s[tag=aj.boss_1.root,type=item_display] run \
-function animated_java:boss_1/animations/attack_2/tween \
+function aj:boss_1/animations/attack_2/tween \
     { \
         to_frame:8, \
         duration:10 \
@@ -33,7 +33,7 @@ execute \
     on passengers \
     if score #rdm global.main matches 3 \
     if entity @s[tag=aj.boss_1.root,type=item_display] run \
-function animated_java:boss_1/animations/heavy_attack_1/tween \
+function aj:boss_1/animations/heavy_attack_1/tween \
     { \
         to_frame:8, \
         duration:10 \

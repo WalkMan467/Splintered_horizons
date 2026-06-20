@@ -4,12 +4,12 @@ kill @e[tag=story.chapter_1.opening.4]
 
 execute \
     as @n[tag=aj.sophia.root,limit=1] run \
-function animated_java:sophia/remove/this
+function aj:sophia/remove/this
 
 
 execute \
     positioned -2 65 22 rotated 90 0 run \
-function animated_java:sophia/summon \
+function aj:sophia/summon \
 { \
     args: \
     { \

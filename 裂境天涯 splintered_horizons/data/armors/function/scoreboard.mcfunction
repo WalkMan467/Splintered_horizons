@@ -1,74 +1,147 @@
-# ===================================================
-# scoreboard
-
-    ## Guide [ function armors:scoreboard ] >>> scoreboard
-    ## Guide [ function armors:loop ] >>> armors:loop
-    ## Guide [ function armors:reload_rpg_armor_effect ] >>> armors:reload rpg armor effect
-
-# ===================================================
-
-scoreboard objectives add armor.tai_chis_shadow.effect dummy "調和之影 效果層數"
-scoreboard objectives add armor.tai_chis_shadow.restore_mana dummy "調和之影 恢復魔力"
-scoreboard objectives add armor.tai_chis_shadow.restore_mana_magnification dummy "調和之影 恢復魔力倍率"
-scoreboard objectives add armor.black_hole.boots.cd dummy "黑洞之靴 CD"
-scoreboard objectives add armor.paladins_helmet.cd dummy "聖騎士頭盔 CD"
-scoreboard objectives add armor.black_hole.boots.active dummy "黑洞之靴 啟動狀態"
-scoreboard objectives add armor.armor_of_the_coiled_rock.cd dummy "盤岩之鎧 CD"
-scoreboard objectives add armor.coiled_rock_helmet.cd dummy "盤岩頭盔 CD"
-scoreboard objectives add armor.finality_chestplate.cd dummy "終焉之鎧 CD"
-scoreboard objectives add armor.windriders_legplates.cd dummy "馭風戰騎腿鎧 CD"
-scoreboard objectives add armor.radiant_guardians_helmet.cd dummy "耀光守護頭盔 CD"
-scoreboard objectives add armor.symbiotic_blood_oath.cd dummy "共生血誓 CD"
-scoreboard objectives add armor.symbiotic_blood_oath.player.health dummy "共生血誓 玩家血量"
-scoreboard objectives add armor.radiant_guardians_helmet.effect.cd dummy "耀光守護頭盔被動 CD"
-scoreboard objectives add armor.resilient.hit dummy "堅韌受擊次數"
-scoreboard objectives add armor.resilient.effect.timer dummy "堅韌技能 受擊重置倒計時"
-scoreboard objectives add armor.resilient.cd dummy "堅韌技能 CD"
-scoreboard objectives add armor.enchantment.shockwave.id dummy "震波附魔 ID"
-scoreboard objectives add armor.enchantment.shockwave.timer dummy "震波附魔 計時器"
-
-scoreboard objectives add armor.animation_skills.helmet.cd dummy "頭盔 特殊動畫技能 CD"
-scoreboard objectives add armor.animation_skills.chestplate.cd dummy "盔甲 特殊動畫技能 CD"
-scoreboard objectives add armor.animation_skills.legs.cd dummy "護腿 特殊動畫技能 CD"
-scoreboard objectives add armor.animation_skills.feet.cd dummy "鞋子 特殊動畫技能 CD"
-
-scoreboard objectives add armor.animation_skills.return dummy "鞋子 特殊動畫技能 Return 回傳結果"
-
-scoreboard objectives add armor.paladins_helmet.effect.timer dummy "聖騎士頭盔 盔甲值提升計時器"
-
-scoreboard objectives add armor.finality_chestplate.effect.timer dummy "終焉之鎧 攻擊力提升計時器"
-
-scoreboard objectives add armor.wtsf.charge dummy "時間停刻之時 充能"
-
-scoreboard objectives add armor.random_teleport.raycast dummy "隨機傳送 Raycast"
-scoreboard objectives add armor.random_teleport.raycast.id dummy "隨機傳送 Raycast ID"
-
-scoreboard objectives add armor.black_hole.boots.effect dummy "黑洞之靴 技能觸發"
-scoreboard objectives add armor.black_hole.boots.damage_delay dummy "黑洞之靴 傷害間隔"
-scoreboard objectives add armor.black_hole.boots.aj.id dummy "黑洞之靴 AJ 模型 ID"
-
-scoreboard objectives add armor.windriders_legplates.leggings.effect dummy "馭風戰騎腿鎧 技能觸發"
-scoreboard objectives add armor.windriders_legplates.leggings.damage_delay dummy "馭風戰騎腿鎧 傷害間隔"
-scoreboard objectives add armor.windriders_legplates.leggings.effect_delay dummy "馭風戰騎腿鎧 效果間隔"
-
-
-scoreboard objectives add armor.chestplate.effect.actived dummy "鎧甲類技能啟動中"
-scoreboard objectives add armor.leggings.effect.actived dummy "護腿類技能啟動中"
-scoreboard objectives add armor.helmet.effect.actived dummy "頭盔類技能啟動中"
-scoreboard objectives add armor.boots.effect.actived dummy "靴子類技能啟動中"
-
-scoreboard players add @a armor.tai_chis_shadow.restore_mana 0
-scoreboard players add @a armor.tai_chis_shadow.restore_mana_magnification 0
-scoreboard players add @a armor.tai_chis_shadow.effect 0
-scoreboard players add @a armor.black_hole.boots.cd 0
-scoreboard players add @a armor.black_hole.boots.active 0
-scoreboard players add @a armor.windriders_legplates.leggings.effect 0
-scoreboard players add @a armor.windriders_legplates.leggings.damage_delay 0
-
-scoreboard players add @a armor.helmet.effect.actived 0
-scoreboard players add @a armor.chestplate.effect.actived 0
-scoreboard players add @a armor.leggings.effect.actived 0
-scoreboard players add @a armor.boots.effect.actived 0
-scoreboard players add @a armor.armor_of_the_coiled_rock.cd 0
-scoreboard players add @a armor.finality_chestplate.cd 0
+# ===================================================
+
+# scoreboard
+
+
+
+    ## Guide [ function armors:scoreboard ] >>> scoreboard
+
+    ## Guide [ function armors:loop ] >>> armors:loop
+
+    ## Guide [ function armors:reload_rpg_armor_effect ] >>> armors:reload rpg armor effect
+
+
+
+# ===================================================
+
+
+
+scoreboard objectives add armor.tai_chis_shadow.effect dummy "調和之影 效果層數"
+
+scoreboard objectives add armor.tai_chis_shadow.restore_mana dummy "調和之影 恢復魔力"
+
+scoreboard objectives add armor.tai_chis_shadow.restore_mana_magnification dummy "調和之影 恢復魔力倍率"
+
+scoreboard objectives add armor.black_hole.boots.cd dummy "黑洞之靴 CD"
+
+scoreboard objectives add armor.paladins_helmet.cd dummy "聖騎士頭盔 CD"
+
+scoreboard objectives add armor.black_hole.boots.active dummy "黑洞之靴 啟動狀態"
+
+scoreboard objectives add armor.armor_of_the_coiled_rock.cd dummy "盤岩之鎧 CD"
+
+scoreboard objectives add armor.coiled_rock_helmet.cd dummy "盤岩頭盔 CD"
+
+scoreboard objectives add armor.finality_chestplate.cd dummy "終焉之鎧 CD"
+
+scoreboard objectives add armor.windriders_legplates.cd dummy "馭風戰騎腿鎧 CD"
+
+scoreboard objectives add armor.radiant_guardians_helmet.cd dummy "耀光守護頭盔 CD"
+
+scoreboard objectives add armor.symbiotic_blood_oath.cd dummy "共生血誓 CD"
+
+scoreboard objectives add armor.symbiotic_blood_oath.player.health dummy "共生血誓 玩家血量"
+
+scoreboard objectives add armor.radiant_guardians_helmet.effect.cd dummy "耀光守護頭盔被動 CD"
+
+scoreboard objectives add armor.resilient.hit dummy "堅韌受擊次數"
+
+scoreboard objectives add armor.resilient.effect.timer dummy "堅韌技能 受擊重置倒計時"
+
+scoreboard objectives add armor.resilient.cd dummy "堅韌技能 CD"
+
+scoreboard objectives add armor.enchantment.shockwave.id dummy "震波附魔 ID"
+
+scoreboard objectives add armor.enchantment.shockwave.timer dummy "震波附魔 計時器"
+
+
+
+scoreboard objectives add armor.animation_skills.helmet.cd dummy "頭盔 特殊動畫技能 CD"
+
+scoreboard objectives add armor.animation_skills.chestplate.cd dummy "盔甲 特殊動畫技能 CD"
+
+scoreboard objectives add armor.animation_skills.legs.cd dummy "護腿 特殊動畫技能 CD"
+
+scoreboard objectives add armor.animation_skills.feet.cd dummy "鞋子 特殊動畫技能 CD"
+
+
+
+scoreboard objectives add armor.animation_skills.return dummy "鞋子 特殊動畫技能 Return 回傳結果"
+
+
+
+scoreboard objectives add armor.paladins_helmet.effect.timer dummy "聖騎士頭盔 盔甲值提升計時器"
+
+
+
+scoreboard objectives add armor.finality_chestplate.effect.timer dummy "終焉之鎧 攻擊力提升計時器"
+
+
+
+scoreboard objectives add armor.wtsf.charge dummy "時間停刻之時 充能"
+
+
+
+scoreboard objectives add armor.random_teleport.raycast dummy "隨機傳送 Raycast"
+
+scoreboard objectives add armor.random_teleport.raycast.id dummy "隨機傳送 Raycast ID"
+
+
+
+scoreboard objectives add armor.black_hole.boots.effect dummy "黑洞之靴 技能觸發"
+
+scoreboard objectives add armor.black_hole.boots.damage_delay dummy "黑洞之靴 傷害間隔"
+
+scoreboard objectives add armor.black_hole.boots.aj.id dummy "黑洞之靴 AJ 模型 ID"
+
+
+
+scoreboard objectives add armor.windriders_legplates.leggings.effect dummy "馭風戰騎腿鎧 技能觸發"
+
+scoreboard objectives add armor.windriders_legplates.leggings.damage_delay dummy "馭風戰騎腿鎧 傷害間隔"
+
+scoreboard objectives add armor.windriders_legplates.leggings.effect_delay dummy "馭風戰騎腿鎧 效果間隔"
+
+
+
+
+
+scoreboard objectives add armor.chestplate.effect.actived dummy "鎧甲類技能啟動中"
+
+scoreboard objectives add armor.leggings.effect.actived dummy "護腿類技能啟動中"
+
+scoreboard objectives add armor.helmet.effect.actived dummy "頭盔類技能啟動中"
+
+scoreboard objectives add armor.boots.effect.actived dummy "靴子類技能啟動中"
+
+
+
+scoreboard players add @a armor.tai_chis_shadow.restore_mana 0
+
+scoreboard players add @a armor.tai_chis_shadow.restore_mana_magnification 0
+
+scoreboard players add @a armor.tai_chis_shadow.effect 0
+
+scoreboard players add @a armor.black_hole.boots.cd 0
+
+scoreboard players add @a armor.black_hole.boots.active 0
+
+scoreboard players add @a armor.windriders_legplates.leggings.effect 0
+
+scoreboard players add @a armor.windriders_legplates.leggings.damage_delay 0
+
+
+
+scoreboard players add @a armor.helmet.effect.actived 0
+
+scoreboard players add @a armor.chestplate.effect.actived 0
+
+scoreboard players add @a armor.leggings.effect.actived 0
+
+scoreboard players add @a armor.boots.effect.actived 0
+
+scoreboard players add @a armor.armor_of_the_coiled_rock.cd 0
+
+scoreboard players add @a armor.finality_chestplate.cd 0
+
 scoreboard players add @a armor.finality_chestplate.effect.timer 0

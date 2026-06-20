@@ -1,4 +1,4 @@
-function animated_java:segrina/remove/all
+function aj:segrina/remove/all
 
 stopsound @a record minecraft:bgm.tunetank_meridian
 

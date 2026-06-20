@@ -32,10 +32,6 @@ scoreboard players operation @s armor.tai_chis_shadow.restore_mana *= @s armor.t
 
 
 
-scoreboard players operation @s player.mana += @s armor.tai_chis_shadow.restore_mana
-
-
-
 scoreboard players remove @s[scores={armor.tai_chis_shadow.effect=1..}] armor.tai_chis_shadow.effect 1
 
 

@@ -24,13 +24,13 @@ setblock 1 65 -109 light[level=10] replace
 
 execute \
     as @n[tag=aj.sophia.root,limit=1,distance=..3,type=item_display] run \
-function animated_java:sophia/remove/this
+function aj:sophia/remove/this
 
 
 execute \
     positioned 1 64 -109 \
     rotated 90 0 run \
-function animated_java:sophia/summon \
+function aj:sophia/summon \
     { \
         args: \
         { \

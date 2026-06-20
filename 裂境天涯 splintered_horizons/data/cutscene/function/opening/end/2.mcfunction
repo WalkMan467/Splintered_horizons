@@ -13,19 +13,19 @@ function cutscene:opening/remove_camera/1
 
 execute \
     positioned 1026 136 -130 \
-    as @e[sort=arbitrary,distance=..3,tag=aj.stellar_animation.root,type=item_display] run \
-function animated_java:stellar_animation/remove/this
+    as @e[sort=arbitrary,distance=..3,tag=aj.stellar.root,type=item_display] run \
+function aj:stellar/remove/this
 
 execute \
     positioned 1028 136 -129 \
     as @e[sort=arbitrary,distance=..3,tag=aj.sophia.root,type=item_display] run \
-function animated_java:sophia/remove/this
+function aj:sophia/remove/this
 
 
 execute \
     positioned 1027 136 -129 \
     as @e[sort=arbitrary,distance=..3,tag=aj.isokla.root,type=item_display] run \
-function animated_java:isokla/remove/this
+function aj:isokla/remove/this
 
 
 execute \

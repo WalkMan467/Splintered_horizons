@@ -9,7 +9,7 @@ summon mannequin ~ ~ ~ {Team:"NocollisionRule",immovable:true,hide_description:f
 
 execute \
     positioned 774.00 150.00 989.00 rotated 100 0 run \
-function animated_java:isokla/summon {args: {animation: 'idle', start_animation: true}}
+function aj:isokla/summon {args: {animation: 'idle', start_animation: true}}
 
 
 execute \

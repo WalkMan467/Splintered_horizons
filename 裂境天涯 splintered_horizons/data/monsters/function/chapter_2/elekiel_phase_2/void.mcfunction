@@ -14,7 +14,7 @@ scoreboard players set #bossfight global.main 0
 execute \
     on passengers \
     as @s[tag=aj.boss_1.root,type=item_display] run \
-function animated_java:boss_1/remove/this
+function aj:boss_1/remove/this
 
 advancement grant @a only music:chapter_2/bossfight/3/reset
 

@@ -22,14 +22,14 @@ scoreboard players set @s[gamemode=spectator] main.gamemode 3
 scoreboard players set @s[gamemode=survival] main.gamemode 4
 
 # Animation
-function animated_java:stellar_animation/summon {args: {animation: 'ruins_of_the_finality_2', start_animation: true}}
+function aj:stellar/summon {args: {animation: 'ruins_of_the_finality_2', start_animation: true}}
 
 # Set GameMode
 gamemode spectator @s
 
 execute \
     unless score @s main.3d_dizziness matches 1.. run \
-spectate @n[tag=aj.stellar_animation.camera]
+spectate @n[tag=aj.stellar.camera]
 
 execute \
     if score @s main.3d_dizziness matches 1.. run \

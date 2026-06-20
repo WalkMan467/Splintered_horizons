@@ -1,7 +1,7 @@
 execute \
     positioned 10055 123 10310 \
     as @n[sort=arbitrary,tag=aj.amysis.root,distance=..3,type=item_display] run \
-function animated_java:amysis/remove/this
+function aj:amysis/remove/this
 
 
 execute \

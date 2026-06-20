@@ -12,13 +12,13 @@ function animated_java:global/data_manager/read with storage animated_java:temp 
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.root_uuid set from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.blueprint_id set value "aj:stellar"
-data modify storage animated_java:temp entry.data.rig_hash set value "dce7c559aecec3f47933149e023822ef7af5b6388e8172fc0acda309e5199708"
+data modify storage animated_java:temp entry.data.rig_hash set value "ffb052b715d37b7279e608887b304f0538a9a8fa8b3ab848386a3d284f1f58c5"
 tp @s ~ ~ ~ ~ ~
-summon minecraft:item_display ^0 ^0 ^0 {Tags:["","aj.global.camera","aj.global.entity","aj.global.node","aj.global.node.camera","aj.global.root.child","aj.global.root.child.camera","aj.new","aj.stellar.camera","aj.stellar.camera.camera","aj.stellar.entity","aj.stellar.node","aj.stellar.node.camera"], teleport_duration: 2}
-execute as @n[ type=minecraft:item_display, tag=aj.stellar.camera.camera, tag=aj.new, distance=..3 ] run function aj:stellar/zzz/summon/as_camera/camera
+summon minecraft:item_display ^0 ^0 ^0 {Tags:["","aj.global.camera","aj.global.entity","aj.global.node","aj.global.node.camera1","aj.global.root.child","aj.global.root.child.camera","aj.new","aj.stellar.camera","aj.stellar.camera.camera1","aj.stellar.entity","aj.stellar.node","aj.stellar.node.camera1"], teleport_duration: 2}
+execute as @n[ type=minecraft:item_display, tag=aj.stellar.camera.camera1, tag=aj.new, distance=..4 ] run function aj:stellar/zzz/summon/as_camera/camera1
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
-data modify storage animated_java:temp entry.data.uuids_by_name.camera set from storage animated_java:gu out
-data modify storage animated_java:temp entry.data.cameras.camera.uuid set from storage animated_java:gu out
+data modify storage animated_java:temp entry.data.uuids_by_name.camera1 set from storage animated_java:gu out
+data modify storage animated_java:temp entry.data.cameras.camera1.uuid set from storage animated_java:gu out
 summon minecraft:item_display ^0 ^0 ^0 {Tags:["","aj.global.camera","aj.global.entity","aj.global.node","aj.global.node.camera3","aj.global.root.child","aj.global.root.child.camera","aj.new","aj.stellar.camera","aj.stellar.camera.camera3","aj.stellar.entity","aj.stellar.node","aj.stellar.node.camera3"], teleport_duration: 2}
 execute as @n[ type=minecraft:item_display, tag=aj.stellar.camera.camera3, tag=aj.new, distance=..5 ] run function aj:stellar/zzz/summon/as_camera/camera3
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
@@ -108,6 +108,12 @@ data modify storage animated_java:temp entry.data.uuids_by_name.7 set from stora
 execute on passengers if entity @s[tag=aj.stellar.node.glass] run function aj:stellar/zzz/summon/as_node/glass
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.uuids_by_name.glass set from storage animated_java:gu out
+execute on passengers if entity @s[tag=aj.stellar.node.blackhole] run function aj:stellar/zzz/summon/as_node/blackhole
+data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
+data modify storage animated_java:temp entry.data.uuids_by_name.blackhole set from storage animated_java:gu out
+execute on passengers if entity @s[tag=aj.stellar.node.item_display] run function aj:stellar/zzz/summon/as_node/item_display
+data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
+data modify storage animated_java:temp entry.data.uuids_by_name.item_display set from storage animated_java:gu out
 function aj:stellar/zzz/set_default_pose
 # Data Manager: Write
 function animated_java:global/data_manager/write with storage animated_java:temp args
@@ -120,6 +126,8 @@ execute on passengers run rotate @s ~ ~
 data modify entity @s teleport_duration set value 1
 execute on passengers run data modify entity @s teleport_duration set value 1
 execute on passengers if entity @s[tag=aj.stellar.node.glass] run function aj:stellar/zzz/summon/on_summon/item_display_glass
+execute on passengers if entity @s[tag=aj.stellar.node.blackhole] run function aj:stellar/zzz/summon/on_summon/item_display_blackhole
+execute on passengers if entity @s[tag=aj.stellar.node.item_display] run function aj:stellar/zzz/summon/on_summon/item_display_item_display
 execute at @s run function aj:stellar/zzz/summon/on_summon/rig
 tag @s remove aj.new
 execute on passengers run tag @s remove aj.new

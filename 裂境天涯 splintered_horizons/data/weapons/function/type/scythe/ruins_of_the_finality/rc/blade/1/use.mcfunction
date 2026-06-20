@@ -9,7 +9,7 @@ title @s times 0 0 10
 
 
 execute rotated ~180 0 run \
-function animated_java:ruins_of_the_finality_skill/summon {args: {animation: 'skills_3', start_animation: true}}
+function aj:ruins_of_the_finality_skill/summon {args: {animation: 'skills_3', start_animation: true}}
 
 function aj:chain_lock/summon {args: {animation: 'unlock', start_animation: true}}
 

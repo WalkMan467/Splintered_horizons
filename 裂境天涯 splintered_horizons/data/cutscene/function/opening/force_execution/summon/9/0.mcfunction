@@ -13,11 +13,11 @@ summon minecraft:block_display 9999 95 10069 {start_interpolation:1,interpolatio
 
 execute \
     positioned 9999 93 10065 rotated 180 0 run \
-function animated_java:aska/summon {args: {animation: 'idle', start_animation: true}}
+function aj:aska/summon {args: {animation: 'idle', start_animation: true}}
 
 execute \
     positioned 9999 95 10060 rotated 0 0 run \
-function animated_java:kyle/summon {args: {animation: 'idle', start_animation: true}}
+function aj:kyle/summon {args: {animation: 'idle', start_animation: true}}
 
 execute \
     unless loaded 9999 0 10065 run \

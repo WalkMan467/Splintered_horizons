@@ -1,6 +1,6 @@
 execute \
     positioned 9820 81 10137 run \
-function animated_java:oceanid/remove/this
+function aj:oceanid/remove/this
 
 tp @a 10042 129 10310
 

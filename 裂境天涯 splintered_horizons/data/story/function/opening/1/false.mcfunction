@@ -7,4 +7,4 @@ kill 0a9c3558-d906-415b-8345-8352bf7ce93c
 
 execute \
     as @n[tag=aj.sophia.root,limit=1,distance=..10,type=item_display] run \
-function animated_java:sophia/remove/this
+function aj:sophia/remove/this

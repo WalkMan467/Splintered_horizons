@@ -9,6 +9,6 @@ scoreboard players set story.chapter_2.ml story.chapter_2 1
 
 execute \
     as @n[tag=aj.sophia.root,limit=1] run \
-function animated_java:sophia/remove/this
+function aj:sophia/remove/this
 
 scoreboard players set story.chapter_2.ml.1 story.chapter_2 1

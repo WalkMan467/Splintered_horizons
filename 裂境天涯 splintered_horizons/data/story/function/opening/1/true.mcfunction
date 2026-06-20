@@ -8,14 +8,14 @@ setblock 1574 60 329 light[level=10] replace
 execute \
     in world_area:main/game_lobby \
     as @n[tag=aj.sophia.root,limit=1,distance=..3,type=item_display] run \
-function animated_java:sophia/remove/this
+function aj:sophia/remove/this
 
 
 execute \
     in world_area:main/game_lobby \
     positioned 1574 60 329 \
     rotated -10 0 run \
-function animated_java:sophia/summon \
+function aj:sophia/summon \
     { \
         args: \
         { \

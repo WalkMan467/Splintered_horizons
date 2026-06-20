@@ -3,8 +3,8 @@
 execute store result storage animated_java:temp args.id int 1 run scoreboard players get @s aj.id
 # Data Manager: Read
 function animated_java:global/data_manager/read with storage animated_java:temp args
-function animated_java:global/remove/entity_stack_by_uuid with storage animated_java:temp entry.data.cameras.camera
+function animated_java:global/remove/entity_stack_by_uuid with storage animated_java:temp entry.data.cameras.camera1
 function animated_java:global/remove/entity_stack_by_uuid with storage animated_java:temp entry.data.cameras.camera3
-execute unless data storage animated_java:temp {entry:{data:{rig_hash: 'dce7c559aecec3f47933149e023822ef7af5b6388e8172fc0acda309e5199708'}}} run function animated_java:global/remove/outdated_rig
+execute unless data storage animated_java:temp {entry:{data:{rig_hash: 'ffb052b715d37b7279e608887b304f0538a9a8fa8b3ab848386a3d284f1f58c5'}}} run function animated_java:global/remove/outdated_rig
 function aj:stellar/remove/this/zzz/0 with storage animated_java:temp entry.data.uuids_by_name
 function animated_java:global/remove/entity_stack

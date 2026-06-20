@@ -8,4 +8,4 @@ kill 91eefa12-8ab0-434d-afb8-569f21a20c4c
 
 execute \
     as @n[tag=aj.sophia.root,limit=1,distance=..10,type=item_display] run \
-function animated_java:sophia/remove/this
+function aj:sophia/remove/this

@@ -4,13 +4,13 @@ scoreboard players set story.chapter_1.mq.5 story.chapter_1 1
 execute \
     positioned 18 29.75 -429.0 \
     as @n[sort=arbitrary,tag=aj.sophia.root,distance=..1,type=item_display] run \
-function animated_java:sophia/remove/this
+function aj:sophia/remove/this
 
 
 
 execute \
     positioned 18 29.75 -429.0 rotated 0 0 run \
-function animated_java:sophia/summon \
+function aj:sophia/summon \
     { \
         args:\
         { \

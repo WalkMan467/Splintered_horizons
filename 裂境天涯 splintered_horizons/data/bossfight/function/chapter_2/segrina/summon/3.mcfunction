@@ -30,7 +30,7 @@ kill @e[sort=arbitrary,distance=0..,tag=monster.segrina.skill.4.monster,type=ske
 execute \
     rotated ~ 0 \
     positioned 762 107 642 run \
-function animated_java:segrina/summon {args:{animation: 'spawn',start_animation: true}}
+function aj:segrina/summon {args:{animation: 'spawn',start_animation: true}}
 
 execute \
     positioned 762 107 642 run \
@@ -57,6 +57,11 @@ scoreboard players set skill.1 monster.segrina.cd 300
 scoreboard players set skill.2 monster.segrina.cd 800
 scoreboard players set skill.3 monster.segrina.cd 1300
 scoreboard players reset @s monster.segrina.skill.4.invincible
+
+scoreboard players set @a player.spawnpoint.dimension 0
+scoreboard players set @a player.spawnpoint.pos.x 76200
+scoreboard players set @a player.spawnpoint.pos.y 10700
+scoreboard players set @a player.spawnpoint.pos.z 64900
 
 scoreboard players reset #bossfight.segrina.skills.3 monster.segrina.cd
 

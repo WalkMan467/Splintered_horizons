@@ -15,22 +15,22 @@ forceload remove 762 931 758 935
 execute \
     positioned 758 143 935 \
     as @n[sort=arbitrary,distance=..10,tag=aj.sophia.root,type=item_display] run \
-function animated_java:sophia/remove/this
+function aj:sophia/remove/this
 
 execute \
     positioned 758 143 935 \
-    as @n[sort=arbitrary,distance=..10,tag=aj.stellar_animation.root,type=item_display] run \
-function animated_java:stellar_animation/remove/this
+    as @n[sort=arbitrary,distance=..10,tag=aj.stellar.root,type=item_display] run \
+function aj:stellar/remove/this
 
 execute \
     positioned 758 143 935 \
-    as @e[sort=arbitrary,distance=..10,tag=aj.stellar_animation.entity,type=item_display] run \
+    as @e[sort=arbitrary,distance=..10,tag=aj.stellar.entity,type=item_display] run \
 kill @s
 
 execute \
     positioned 759 144 946 \
     as @n[sort=arbitrary,distance=..10,tag=aj.isokla.root,type=item_display] run \
-function animated_java:isokla/remove/this
+function aj:isokla/remove/this
 
 execute \
     positioned 757 144 946 \

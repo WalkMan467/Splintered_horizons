@@ -21,12 +21,12 @@ spectate 880ac6a7-143c-4e06-a68d-7eefae1c37a9
 execute \
     if score #cutscene.world_tree global.main matches 2 run \
     return run \
-spectate @n[sort=arbitrary,distance=..10,tag=animated_java.stellar.camera.camera,type=item_display]
+spectate @n[sort=arbitrary,distance=..10,tag=aj.stellar.camera.camera,type=item_display]
 
 execute \
     if score #cutscene.world_tree global.main matches 3 run \
     return run \
-spectate @n[sort=arbitrary,distance=..10,tag=animated_java.stellar.camera.camera3,type=item_display]
+spectate @n[sort=arbitrary,distance=..10,tag=aj.stellar.camera.camera3,type=item_display]
 
 execute \
     if score #cutscene.world_tree global.main matches 4 run \
@@ -36,14 +36,14 @@ spectate a98a99c1-535d-4b22-972a-4a4c27543d17
 execute \
     if score #cutscene.world_tree global.main matches 5 run \
     return run \
-spectate @n[sort=arbitrary,distance=..10,tag=animated_java.stellar.camera.camera3,type=item_display]
+spectate @n[sort=arbitrary,distance=..10,tag=aj.stellar.camera.camera3,type=item_display]
 
 execute \
     if score #cutscene.world_tree global.main matches 6 run \
     return run \
-spectate @n[sort=arbitrary,distance=..10,tag=animated_java.stellar.camera.camera,type=item_display]
+spectate @n[sort=arbitrary,distance=..10,tag=aj.stellar.camera.camera,type=item_display]
 
 execute \
     if score #cutscene.world_tree global.main matches 7 run \
     return run \
-spectate @n[sort=arbitrary,distance=..10,tag=animated_java.stellar.camera.camera3,type=item_display]
+spectate @n[sort=arbitrary,distance=..10,tag=aj.stellar.camera.camera3,type=item_display]

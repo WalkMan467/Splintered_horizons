@@ -8,12 +8,12 @@ execute \
 tp @s ^ ^ ^0.8
 
 execute at @s \
-    unless block ~ ~ ~ air run \
+    unless block ~ ~ ~ #penetrate run \
 tp @s ~ ~0.5 ~
 
-execute at @s \
-    if block ~ ~-0.5 ~ air run \
-tp @s ~ ~-0.5 ~
+# execute at @s \
+#     if block ~ ~-0.5 ~ #penetrate run \
+# tp @s ~ ~-0.5 ~
 
 # text
 

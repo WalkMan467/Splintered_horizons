@@ -11,7 +11,7 @@ kill f4bf3316-e54c-455d-8ca7-8025a7df5ade
 execute \
     positioned 0 64 -58 \
     as @e[sort=arbitrary,tag=aj.oceanid.root,distance=..1,type=item_display] run \
-function animated_java:oceanid/remove/this
+function aj:oceanid/remove/this
 
 execute \
     unless loaded 0 0 -58 run \

@@ -9,9 +9,9 @@ execute \
     in minecraft:overworld run \
 forceload add 42 11 42 11
 
-function animated_java:aska/remove/all
-function animated_java:oceanid/remove/all
-function animated_java:kyle/remove/all
+function aj:aska/remove/all
+function aj:oceanid/remove/all
+function aj:kyle/remove/all
 
 weather clear
 

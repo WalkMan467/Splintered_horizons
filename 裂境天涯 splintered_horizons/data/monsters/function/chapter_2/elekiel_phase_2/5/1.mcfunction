@@ -1,7 +1,7 @@
 execute \
     rotated as @s \
     rotated ~ 0 run \
-function animated_java:player_projection/summon {args:{}}
+function aj:player_projection/summon {args:{}}
 
 playsound minecraft:block.amethyst_cluster.break voice @a ~ ~1 ~ 1 0.75
 

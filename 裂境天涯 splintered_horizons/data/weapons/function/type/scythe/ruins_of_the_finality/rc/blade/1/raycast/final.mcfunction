@@ -9,7 +9,7 @@ execute \
 function weapons:type/scythe/ruins_of_the_finality/rc/blade/1/use
 
 function aj:chain_lock/summon {args: {animation: 'unlock', start_animation: true}}
-function animated_java:ruins_of_the_finality_skill/summon {args: {animation: 'skills_2', start_animation: true}}
+function aj:ruins_of_the_finality_skill/summon {args: {animation: 'skills_2', start_animation: true}}
 
 tag @e[distance=..3,type=!#minecraft:dummy_mob,type=!player] add dmger
 tag @p[tag=weapon.ruins_of_the_finality.blade.1.user] add atker

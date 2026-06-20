@@ -7,7 +7,7 @@ forceload add 1076 -171
 execute \
     positioned 10040 150 9434 \
     as @e[sort=arbitrary,tag=aj.sophia.root,distance=..1,type=item_display] run \
-function animated_java:sophia/remove/this
+function aj:sophia/remove/this
 
 execute \
     positioned 10040 150 9434 \

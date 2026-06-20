@@ -47,13 +47,12 @@ scoreboard players operation @s player.animation.lock = @s weapon.earthquake_axe
 scoreboard players add #index weapon.earthquake_axe.user.id 1
 scoreboard players operation @s[type=player] weapon.earthquake_axe.user.id = #index weapon.earthquake_axe.user.id
 
-function animated_java:stellar_animation/summon {args: {animation: 'earthquake_axe', start_animation: true}}
-
+function aj:stellar/summon {args: {animation: 'earthquake_axe', start_animation: true}}
 
 execute \
-    as @n[tag=!aj.setup,tag=aj.stellar_animation.camera.camera3,distance=..10,type=item_display] run \
+    as @n[tag=!aj.setup,tag=aj.stellar.camera.camera1,distance=..10,type=item_display] run \
 function weapons:type/axe/earthquake_axe/animation/camera/setup
 
 execute \
-    as @n[tag=!aj.setup,tag=aj.stellar_animation.root,tag=aj.stellar_animation.animation.earthquake_axe.playing,distance=..10,type=item_display] run \
+    as @n[tag=!aj.setup,tag=aj.stellar.root,tag=aj.stellar.animation.earthquake_axe.playing,distance=..10,type=item_display] run \
 function weapons:type/axe/earthquake_axe/animation/camera/setup

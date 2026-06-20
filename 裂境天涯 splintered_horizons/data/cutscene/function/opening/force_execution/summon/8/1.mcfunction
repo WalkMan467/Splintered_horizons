@@ -8,7 +8,7 @@ forceload add 0 -58
 execute \
     in minecraft:overworld \
     positioned 0 64 -58 rotated -90 0 run \
-function animated_java:oceanid/summon {args: {animation: 'death', start_animation: true}}
+function aj:oceanid/summon {args: {animation: 'death', start_animation: true}}
 
 
 # f4bf3316-e54c-455d-8ca7-8025a7df5ade

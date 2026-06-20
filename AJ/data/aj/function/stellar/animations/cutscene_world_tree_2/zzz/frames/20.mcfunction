@@ -26,7 +26,7 @@ $data merge entity $(4) {transformation: [-0.8077f,0.3338f,0.2476f,0.3927f,-0.27
 $data merge entity $(3) {transformation: [-0.9033f,0.046f,0.4023f,0.4035f,-0.3384f,0.4678f,-0.8061f,1.1685f,-0.2212f,-0.8819f,-0.4081f,-0.067f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(8) {transformation: [-0.9215f,0.3549f,0.1531f,-0.2739f,0.0587f,0.5201f,-0.851f,0.7537f,-0.3813f,-0.7767f,-0.5007f,0.4213f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(7) {transformation: [-0.9215f,0.3839f,-0.0449f,-0.1617f,0.0587f,0.0249f,-0.997f,0.7486f,-0.3813f,-0.923f,-0.0452f,0.1496f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
-data modify storage animated_java:temp entry.data merge value {"cameras":{"camera":{"px":-0.9792361111111113,"py":1.375,"pz":0.564699074074074,"ry":248.64481481481482,"rx":5.00000000000002}}}
+data modify storage animated_java:temp entry.data merge value {"cameras":{"camera1":{"px":-0.9792361111111113,"py":1.375,"pz":0.564699074074074,"ry":248.64481481481482,"rx":5.00000000000002}}}
 # Data Manager: Prepare for Read / Write
 execute store result storage animated_java:temp args.id int 1 run scoreboard players get @s aj.id
 # Data Manager: Write

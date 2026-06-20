@@ -16,6 +16,6 @@ tp @s ~-5 ~5 ~ ~ ~
 execute \
     in minecraft:overworld \
     positioned 10055 123 10310 rotated 90 0 run \
-function animated_java:amysis/summon {args: {animation: 'cutscene_opening_1', start_animation: true}}
+function aj:amysis/summon {args: {animation: 'cutscene_opening_1', start_animation: true}}
 
 schedule function cutscene:opening/1/3 2s

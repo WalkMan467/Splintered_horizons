@@ -57,7 +57,7 @@ tag @s add temp
 
 execute \
     as @a[tag=!temp] \
-    if score @s weapon.earthquake_axe.user.id = @n[distance=..10,limit=1,sort=arbitrary,tag=temp,tag=aj.stellar_animation.root,type=item_display] weapon.earthquake_axe.user.id run \
+    if score @s weapon.earthquake_axe.user.id = @n[distance=..10,limit=1,sort=arbitrary,tag=temp,tag=aj.stellar.root,type=item_display] weapon.earthquake_axe.user.id run \
 tag @s add temp
 
 

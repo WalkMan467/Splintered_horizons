@@ -10,4 +10,4 @@ scoreboard players set story.chapter_1.mq.1 story.chapter_1 1
 
 execute \
     as @n[limit=1,tag=aj.sophia.root,type=item_display] run \
-function animated_java:sophia/remove/this
+function aj:sophia/remove/this

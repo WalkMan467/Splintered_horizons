@@ -21,7 +21,7 @@ execute \
     as @a[distance=..60] at @s run \
 playsound minecraft:entity.wither.spawn voice @s ~ ~1 ~ 1 1
 
-function animated_java:boss_1/summon {args: {animation: 'idle', start_animation: true}}
+function aj:boss_1/summon {args: {animation: 'idle', start_animation: true}}
 
 execute \
     as @n[distance=..1,sort=arbitrary,tag=aj.boss_1.root,type=item_display] \
@@ -43,6 +43,12 @@ scoreboard players set skill.4 monster.elekiel_phase_2.cd 740
 scoreboard players set skill.5 monster.elekiel_phase_2.cd 700
 scoreboard players set @s player.detect.is_bossfight 1
 scoreboard players set #boss_area.chapter_2.elekiel_phase_2 global.main 1
+
+scoreboard players set @a player.spawnpoint.dimension 0
+scoreboard players set @a player.spawnpoint.pos.x 91200
+scoreboard players set @a player.spawnpoint.pos.y 6000
+scoreboard players set @a player.spawnpoint.pos.z 200000
+
 
 schedule function bossfight:chapter_2/elekiel_phase_2/loop 1t
 schedule function monsters:chapter_2/elekiel_phase_2/main 1t

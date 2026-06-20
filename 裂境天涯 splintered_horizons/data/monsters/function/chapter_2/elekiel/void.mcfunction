@@ -1,6 +1,6 @@
 # Executing commands too far from the player
 
-function animated_java:boss_1/remove/all
+function aj:boss_1/remove/all
 
 bossbar remove minecraft:monsters.elekiel
 

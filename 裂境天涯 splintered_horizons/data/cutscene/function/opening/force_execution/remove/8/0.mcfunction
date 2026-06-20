@@ -7,7 +7,7 @@ forceload add 9820 10137
 execute \
     positioned 9820 81 10137 \
     as @e[sort=arbitrary,tag=aj.oceanid.root,distance=..1,type=item_display] run \
-function animated_java:oceanid/remove/this
+function aj:oceanid/remove/this
 
 execute \
     unless loaded 9820 0 10137 run \

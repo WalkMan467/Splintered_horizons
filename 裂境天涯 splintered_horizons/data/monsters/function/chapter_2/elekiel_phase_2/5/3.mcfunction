@@ -13,6 +13,6 @@ return 0
 execute \
     on passengers \
     if entity @s[tag=aj.player_projection.root,type=item_display] at @s run \
-function animated_java:player_projection/remove/this
+function aj:player_projection/remove/this
 
 kill @s[tag=monster.elekiel_phase_2.5.act,type=interaction]

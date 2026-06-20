@@ -9,12 +9,12 @@ tp @s ~ ~ ~-0.5
 execute \
     positioned 758 143 935 \
     as @n[type=item_display,distance=..10,tag=aj.sophia.root] run \
-function animated_java:sophia/remove/this
+function aj:sophia/remove/this
 
 
 execute \
     positioned 759 144 946 facing 758.5 145.25 944.5 rotated ~ 0 run \
-function animated_java:isokla/summon {args: {animation: 'cutscene_chapter_2_1_safe_area_1', start_animation: true}}
+function aj:isokla/summon {args: {animation: 'cutscene_chapter_2_1_safe_area_1', start_animation: true}}
 
 
 execute \

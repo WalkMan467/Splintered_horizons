@@ -1,5 +1,5 @@
 summon zombie ~ ~ ~ {DeathLootTable:"",Tags:["test"],Passengers:[{data:{aj_kill:{name:"sophia"}},id:"minecraft:marker",Tags:["main.duration.timer","summon"]}]}
-# function animated_java:sophia/summon {args:{}}
+# function aj:sophia/summon {args:{}}
 
 # ride @n[type=item_display,tag=aj.sophia.root] mount @n[tag=test,type=zombie]
 

@@ -7,4 +7,4 @@ execute \
     positioned 381 80 -183 \
     in minecraft:the_end \
     as @n[tag=aj.isokla.root,limit=1,distance=0..,type=item_display] run \
-function animated_java:isokla/remove/this
+function aj:isokla/remove/this

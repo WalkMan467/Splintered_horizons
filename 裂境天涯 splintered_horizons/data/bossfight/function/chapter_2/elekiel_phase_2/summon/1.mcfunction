@@ -30,6 +30,6 @@ function bossfight:chapter_2/act/elekiel_phase_2/1/false
 execute \
     positioned -916 61 2750 \
     as @n[type=item_display,distance=..1,tag=aj.boss_1.root] run \
-function animated_java:boss_1/remove/this
+function aj:boss_1/remove/this
 
 schedule function bossfight:chapter_2/elekiel_phase_2/summon/2 1t

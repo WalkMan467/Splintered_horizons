@@ -19,43 +19,43 @@ attribute @s waypoint_transmit_range modifier remove cutscene.1
 execute \
     positioned 10055 123 10310 \
     as @n[tag=aj.amysis.root,type=item_display,distance=..3] run \
-function animated_java:amysis/remove/this
+function aj:amysis/remove/this
 
 execute \
     positioned 9998 93 10065 \
     as @n[distance=..3,type=item_display,tag=aj.aska.root] run \
-function animated_java:aska/remove/this
+function aj:aska/remove/this
 
 execute \
     positioned 10000 93 10065 \
     as @n[distance=..3,type=item_display,tag=aj.oceanid.root] run \
-function animated_java:oceanid/remove/this
+function aj:oceanid/remove/this
 
 execute \
     positioned 9999 95 10060 \
     as @n[distance=..3,type=item_display,tag=aj.kyle.root] run \
-function animated_java:kyle/remove/this
+function aj:kyle/remove/this
 
 execute \
     positioned 9998 93 10066 \
     as @n[distance=..3,type=item_display,tag=aj.kyle.root] run \
-function animated_java:kyle/remove/this
+function aj:kyle/remove/this
 
 execute \
     positioned 1026 136 -130 \
-    as @e[sort=arbitrary,distance=..3,tag=aj.stellar_animation.root,type=item_display] run \
-function animated_java:stellar_animation/remove/this
+    as @e[sort=arbitrary,distance=..3,tag=aj.stellar.root,type=item_display] run \
+function aj:stellar/remove/this
 
 execute \
     positioned 1028 136 -129 \
     as @e[sort=arbitrary,distance=..3,tag=aj.sophia.root,type=item_display] run \
-function animated_java:sophia/remove/this
+function aj:sophia/remove/this
 
 
 execute \
     positioned 1027 136 -129 \
     as @e[sort=arbitrary,distance=..3,tag=aj.isokla.root,type=item_display] run \
-function animated_java:isokla/remove/this
+function aj:isokla/remove/this
 
 
 weather clear
@@ -160,7 +160,7 @@ scoreboard players set .opening cutscene.story -1
 execute \
     positioned 9998 93 10070 \
     as @e[type=item_display,tag=aj.boss_1.root] at @s run \
-function animated_java:boss_1/remove/this
+function aj:boss_1/remove/this
 
 stopsound @a record
 

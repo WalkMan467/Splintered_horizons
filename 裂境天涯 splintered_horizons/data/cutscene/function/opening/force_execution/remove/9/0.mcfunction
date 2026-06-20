@@ -9,12 +9,12 @@ forceload add 9999 10069
 execute \
     positioned 9999 93 10065 \
     as @e[sort=arbitrary,tag=aj.aska.root,distance=..1,type=item_display] run \
-function animated_java:aska/remove/this
+function aj:aska/remove/this
 
 execute \
     positioned 9999 95 10060 \
     as @e[sort=arbitrary,tag=aj.kyle.root,distance=..1,type=item_display] run \
-function animated_java:kyle/remove/this
+function aj:kyle/remove/this
 
 kill e417358e-1d37-439a-b927-f3b6b04fa873
 

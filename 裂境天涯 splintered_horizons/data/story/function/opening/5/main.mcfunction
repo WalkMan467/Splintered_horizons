@@ -16,7 +16,7 @@
         as @n[tag=aj.sophia.root,limit=1,distance=..10,type=item_display] at @s \
         facing entity @p[distance=..16] eyes \
         rotated ~ 0 run \
-    function animated_java:sophia/move
+    function aj:sophia/move
 
     execute \
         in world_area:main/game_lobby \

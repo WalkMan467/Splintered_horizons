@@ -5,4 +5,7 @@ scoreboard objectives remove aj.walk.frame
 scoreboard objectives remove aj.cutscene_world_tree_0.frame
 scoreboard objectives remove aj.cutscene_world_tree_1.frame
 scoreboard objectives remove aj.cutscene_world_tree_2.frame
+scoreboard objectives remove aj.earthquake_axe.frame
+scoreboard objectives remove aj.boots_of_the_black_hole.frame
+scoreboard objectives remove aj.earthquake_axe2.frame
 tellraw @a [[{color:gray,text:'\n '},{color:'#00aced',text:'ᴀɴɪᴍᴀᴛᴇᴅ ᴊᴀᴠᴀ'},{color:dark_gray,italic:true,text:'\n (aj:stellar)'},'\n → '],[{text:'Successfully uninstalled ',color:green},{text:'aj:stellar',color:yellow},{text:'!'},{text:'\n If you have exported multiple times, you may have to remove objectives from previous exports manually, as Animated Java only knows about the objectives from the most recent export.',color:gray,italic:true}],'\n']

@@ -72,24 +72,29 @@ scoreboard players set @s[gamemode=spectator] main.gamemode 3
 
 scoreboard players set @s[gamemode=survival] main.gamemode 4
 
+summon area_effect_cloud ~ ~ ~ {custom_particle:{type:"block",block_state:"minecraft:air"},Radius:0f,Duration:36,Tags:["armor.black_hole.rotate.temp"]}
+
+execute \
+    rotated ~ 0 run \
+function aj:stellar/summon {args: {animation: 'boots_of_the_black_hole', start_animation: true}}
+
+execute \
+    unless score @n[type=area_effect_cloud,tag=!delete,tag=armor.black_hole.rotate.temp,distance=..10] armor.black_hole.boots.aj.id matches -2147483648..2147483647 run \
+scoreboard players operation @n[type=area_effect_cloud,tag=!delete,tag=armor.black_hole.rotate.temp,distance=..10] armor.black_hole.boots.aj.id = @s player.id
 
 
-function animated_java:stellar_animation/summon {args: {animation: 'boots_of_the_black_hole', start_animation: true}}
+execute \
+    unless score @n[type=item_display,tag=!delete,tag=aj.stellar.root,tag=aj.stellar.animation.boots_of_the_black_hole.playing,distance=..10] armor.black_hole.boots.aj.id matches -2147483648..2147483647 run \
+scoreboard players operation @n[type=item_display,tag=aj.global.root,tag=aj.stellar.animation.boots_of_the_black_hole.playing,distance=..10] armor.black_hole.boots.aj.id = @s player.id
 
 
 
 execute \
-    unless score @n[type=item_display,tag=!delete,tag=aj.stellar_animation.root,tag=aj.stellar_animation.animation.boots_of_the_black_hole.playing,distance=..10] armor.black_hole.boots.aj.id matches -2147483648..2147483647 run \
-scoreboard players operation @n[type=item_display,tag=aj.global.root,tag=aj.stellar_animation.animation.boots_of_the_black_hole.playing,distance=..10] armor.black_hole.boots.aj.id = @s player.id
-
-
-
-execute \
-    unless score @n[type=item_display,tag=!delete,tag=aj.stellar_animation.camera,tag=aj.stellar_animation.camera.camera3,distance=..10] armor.black_hole.boots.aj.id matches -2147483648..2147483647 run \
-scoreboard players operation @n[type=item_display,tag=aj.global.camera,tag=aj.stellar_animation.camera.camera3,distance=..10] armor.black_hole.boots.aj.id = @s player.id
+    unless score @n[type=item_display,tag=!delete,tag=aj.stellar.camera,tag=aj.stellar.camera.camera3,distance=..10] armor.black_hole.boots.aj.id matches -2147483648..2147483647 run \
+scoreboard players operation @n[type=item_display,tag=aj.global.camera,tag=aj.stellar.camera.camera3,distance=..10] armor.black_hole.boots.aj.id = @s player.id
 
 
 
 gamemode spectator @s
 
-spectate @n[tag=aj.stellar_animation.camera,type=item_display]
+spectate @n[tag=aj.stellar.camera,type=item_display]

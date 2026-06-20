@@ -8,7 +8,7 @@ forceload add 9872 10346
 execute \
     in minecraft:overworld \
     positioned 9872 104 10351 rotated 0 0 run \
-function animated_java:aska/summon {args: {animation: 'idle', start_animation: true}}
+function aj:aska/summon {args: {animation: 'idle', start_animation: true}}
 
 # 0004e721-0004-e663-0000-198fffff5b77
 execute \

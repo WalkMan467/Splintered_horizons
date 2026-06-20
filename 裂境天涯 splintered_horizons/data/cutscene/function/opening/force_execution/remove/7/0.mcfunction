@@ -9,18 +9,18 @@ forceload add 1026 -130
 
 execute \
     positioned 1026 136 -130 \
-    as @e[sort=arbitrary,tag=aj.stellar_animation.root,distance=..1,type=item_display] run \
-function animated_java:stellar_animation/remove/this
+    as @e[sort=arbitrary,tag=aj.stellar.root,distance=..1,type=item_display] run \
+function aj:stellar/remove/this
 
 execute \
     positioned 1028 136 -129 \
     as @e[sort=arbitrary,tag=aj.sophia.root,distance=..1,type=item_display] run \
-function animated_java:sophia/remove/this
+function aj:sophia/remove/this
 
 execute \
     positioned 1027.25 136 -128.5 \
     as @e[sort=arbitrary,tag=aj.isokla.root,distance=..1,type=item_display] run \
-function animated_java:isokla/remove/this
+function aj:isokla/remove/this
 
 kill 89e87545-f962-49b3-a510-a7da8d3f226d
 

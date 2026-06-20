@@ -1,6 +1,6 @@
 function cutscene:opening/remove_camera/1
 
-function animated_java:oceanid/remove/all
+function aj:oceanid/remove/all
 kill @e[distance=0..,tag=aj.oceanid.camera,type=item_display]
 
 execute \

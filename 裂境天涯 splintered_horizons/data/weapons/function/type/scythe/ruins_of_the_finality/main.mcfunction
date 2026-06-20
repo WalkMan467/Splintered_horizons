@@ -11,7 +11,7 @@ execute \
     if predicate players:detect/input/jump \
     unless score @s weapon.ruins_of_the_finality.effect.count matches 1.. \
     unless score @s weapon.ruins_of_the_finality.effect.count.delay matches 1.. \
-    as @n[tag=aj.stellar_animation.root] at @s run \
+    as @n[tag=aj.stellar.root] at @s run \
 function weapons:type/scythe/ruins_of_the_finality/effect/end
 
 
@@ -24,8 +24,8 @@ function weapons:type/scythe/ruins_of_the_finality/rc/animation/1/use
 
 execute \
     as @a[tag=weapon.ruins_of_the_finality.screen] at @s \
-    if score @n weapon.ruins_of_the_finality.id = @n[tag=aj.stellar_animation.camera_2] weapon.ruins_of_the_finality.id run \
-spectate @n[tag=aj.stellar_animation.camera_2]
+    if score @n weapon.ruins_of_the_finality.id = @n[tag=aj.stellar.camera_2] weapon.ruins_of_the_finality.id run \
+spectate @n[tag=aj.stellar.camera_2]
 
 execute \
     as @a \

@@ -27,4 +27,12 @@ $data merge entity $(3) {transformation: [-0.4731f,0.3058f,0.8157f,0.4028f,-0.77
 $data merge entity $(8) {transformation: [-0.8712f,0.4359f,0.2233f,-0.2641f,0.0649f,0.5548f,-0.8283f,0.7553f,-0.4847f,-0.7085f,-0.5121f,0.4044f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(7) {transformation: [-0.8712f,0.4891f,-0.0245f,-0.1208f,0.0649f,0.0663f,-0.9947f,0.7623f,-0.4847f,-0.8696f,-0.0893f,0.1478f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(glass) {transformation: [-0.692f,-1.3292f,0.0436f,-0.3125f,-1.3152f,0.6943f,0.1304f,1.25f,-0.2036f,0.0329f,-0.9905f,0.6875f,0f,0f,0f,1f],start_interpolation: -1,interpolation_duration: 0}
+$data merge entity $(blackhole) {transformation: [0f,0f,0f,0f,0f,0f,0f,0f,0f,0f,0f,0f,0f,0f,0f,1f],start_interpolation: -1,interpolation_duration: 0}
+$data merge entity $(item_display) {transformation: [0f,0f,0f,0f,0f,0f,0f,0f,0f,0f,0f,0f,0f,0f,0f,1f],start_interpolation: -1,interpolation_duration: 0}
+data modify storage animated_java:temp entry.data merge value {"locators":{"locator_guide":{"px":0,"py":0,"pz":0,"ry":0,"rx":0}}}
+# Data Manager: Prepare for Read / Write
+execute store result storage animated_java:temp args.id int 1 run scoreboard players get @s aj.id
+# Data Manager: Write
+function animated_java:global/data_manager/write with storage animated_java:temp args
+function aj:stellar/root/on_tick/transform_floating_entities
 execute unless entity @s[tag=aj.transforms_only] at @s run function aj:stellar/animations/cutscene_world_tree_2/zzz/frames/80_root_function

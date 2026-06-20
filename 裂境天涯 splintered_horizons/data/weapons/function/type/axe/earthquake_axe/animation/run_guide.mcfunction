@@ -7,5 +7,5 @@ scoreboard players set @p[tag=temp] player.actionbar.weapon.earthquake_axe 0
 
 title @p[tag=temp] actionbar ""
 
-function animated_java:stellar_animation/animations/pause_all
-function animated_java:stellar_animation/animations/earthquake_axe2/play
+function aj:stellar/animations/pause_all
+function aj:stellar/animations/earthquake_axe2/play

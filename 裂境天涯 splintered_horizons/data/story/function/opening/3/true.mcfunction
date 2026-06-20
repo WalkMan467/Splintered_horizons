@@ -5,11 +5,11 @@ scoreboard players set story.opening.3 story.chapter_1 1
 execute \
     positioned 1574.85 59.75 286 \
     as @n[sort=arbitrary,distance=..3,tag=aj.sophia.root,type=item_display] at @s run \
-function animated_java:sophia/remove/this
+function aj:sophia/remove/this
 
 execute \
     positioned 1574.85 59.75 286 rotated -90 0 run \
-function animated_java:sophia/summon \
+function aj:sophia/summon \
     { \
         args:\
         { \

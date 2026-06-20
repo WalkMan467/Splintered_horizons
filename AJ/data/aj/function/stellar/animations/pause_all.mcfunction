@@ -5,3 +5,6 @@ tag @s remove aj.stellar.animation.walk.playing
 tag @s remove aj.stellar.animation.cutscene_world_tree_0.playing
 tag @s remove aj.stellar.animation.cutscene_world_tree_1.playing
 tag @s remove aj.stellar.animation.cutscene_world_tree_2.playing
+tag @s remove aj.stellar.animation.earthquake_axe.playing
+tag @s remove aj.stellar.animation.boots_of_the_black_hole.playing
+tag @s remove aj.stellar.animation.earthquake_axe2.playing

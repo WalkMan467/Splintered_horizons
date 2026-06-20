@@ -4,13 +4,13 @@ scoreboard players set story.other.chapter_2.1 story.other 1
 
 execute \
     as @n[tag=aj.isokla.root,limit=1] run \
-function animated_java:isokla/remove/this
+function aj:isokla/remove/this
 
 
 
 execute \
     positioned 381 80 -183 rotated -45 0 run \
-function animated_java:isokla/summon \
+function aj:isokla/summon \
     { \
         args:\
         { \

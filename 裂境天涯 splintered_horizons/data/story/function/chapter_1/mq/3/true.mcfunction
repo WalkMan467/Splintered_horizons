@@ -6,13 +6,13 @@ kill @e[tag=story.chapter_1.opening.3]
 
 execute \
     as @n[tag=aj.sophia.root,limit=1] run \
-function animated_java:sophia/remove/this
+function aj:sophia/remove/this
 
 
 execute \
     positioned 287 182 -187 \
     rotated 90 0 run \
-function animated_java:sophia/summon {args: {animation: 'idle', start_animation: true}}
+function aj:sophia/summon {args: {animation: 'idle', start_animation: true}}
 
 
 execute \

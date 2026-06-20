@@ -4,13 +4,13 @@ kill @e[tag=story.chapter_2.ml.3]
 
 execute \
     as @n[tag=aj.sophia.root,limit=1,type=item_display] run \
-function animated_java:sophia/remove/this
+function aj:sophia/remove/this
 
 
 
 execute \
     positioned 867 148 949 rotated 45 0 run \
-function animated_java:sophia/summon {args: {animation: 'idle', start_animation: true}}
+function aj:sophia/summon {args: {animation: 'idle', start_animation: true}}
 
 execute \
     positioned 867 148 949 \

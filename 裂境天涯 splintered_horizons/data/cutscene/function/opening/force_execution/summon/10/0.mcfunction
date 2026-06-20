@@ -6,7 +6,7 @@ forceload add 1076 -171
 
 execute \
     positioned 10040 150 9434 rotated -90 0 run \
-function animated_java:sophia/summon {args: {animation: 'cutscene_opening_death', start_animation: true}}
+function aj:sophia/summon {args: {animation: 'cutscene_opening_death', start_animation: true}}
 
 execute \
     positioned 10040 150 9434 rotated 0 0 run \
