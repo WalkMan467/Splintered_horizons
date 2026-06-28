@@ -1,6 +1,9 @@
 # 時空破碎
 function particle:space_rupture/main
 
+# 時空破碎 2
+function particle:time_space_wave/main
+
 # 終焉之墟
 function particle:ruins_of_the_finality_rupture/main
 

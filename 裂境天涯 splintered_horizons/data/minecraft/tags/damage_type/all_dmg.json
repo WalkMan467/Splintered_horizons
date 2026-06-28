@@ -23,6 +23,7 @@
     "#minecraft:bypass_resistance",
     "#minecraft:bypasses_armor",
     "#minecraft:bypasses_cooldown",
+    "#cse:status_effects/apply/all",
     "minecraft:indirect_magic",
     "minecraft:mob_attack",
     "armors:type/black_hole/damage",

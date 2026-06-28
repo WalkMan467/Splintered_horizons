@@ -4,13 +4,8 @@
       "id": "minecraft:player_head",
       "components": {
         "minecraft:profile": {
-          "name": "textures",
-          "properties": [
-            {
-              "name": "textures",
-              "value": "eyJ0aW1lc3RhbXAiOjE1NzcwNTMzMjk5NzUsInByb2ZpbGVJZCI6ImQzMDQwY2FhNmNiMTRkNzZhNzI4NmNkMWJlYmQxZWE5IiwicHJvZmlsZU5hbWUiOiJQdXJpayIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjg0MDMyMjVhZWIwMTE5MTNkZDg2Y2I4NDdkZGUyZWEzNGY0OWJhZGE5MWQxODVmYzk0NDc1YzM5ZDk1MjZmMiJ9fX0="
-            }
-          ]
+          "texture": "entity/player/wide/void_shadow",
+          "model": "wide"
         }
       },
       "count": 1

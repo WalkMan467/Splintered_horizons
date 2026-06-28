@@ -26,8 +26,8 @@ function monsters:chapter_2/elekiel_phase_2/5/7
 execute \
     as @n[sort=arbitrary,distance=0..60,tag=monster.elekiel_phase_2.skill.5.tp,tag=monster.elekiel_phase_2.5.act,type=interaction] \
     on passengers \
-    if entity @s[tag=aj.player_projection.root] run \
-function aj:player_projection/remove/this
+    if entity @s[tag=aj.memory_afterimage.root] run \
+function aj:memory_afterimage/remove/this
 
 
 tag @p[sort=arbitrary,distance=0..60,tag=monster.elekiel_phase_2.skill.5.player] add monster.elekiel_phase_2.skill.5.temp

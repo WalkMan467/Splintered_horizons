@@ -44,9 +44,9 @@ execute \
     on target run \
 tellraw @s [{"font":"minecraft:default","text":"☞ ","color":"dark_gray"},{"translate": "monsters.bossfight.skill_introduction","fallback": "【查看技能介紹】","color":"dark_green","click_event":{action:"run_command",command:"/trigger player.detect.click_event.trigger set 15"}}]
 
-execute \
-    on target run \
-tellraw @s [{"font":"minecraft:default","text":"☞ ","color":"dark_gray"},{"translate": "monsters.bossfight.tp","fallback": "【傳送回入口】","color":"dark_green","click_event":{action:"run_command",command:"/trigger player.detect.click_event.trigger set 13"}}]
+# execute \
+#     on target run \
+# tellraw @s [{"font":"minecraft:default","text":"☞ ","color":"dark_gray"},{"translate": "monsters.bossfight.tp","fallback": "【傳送回入口】","color":"dark_green","click_event":{action:"run_command",command:"/trigger player.detect.click_event.trigger set 13"}}]
 
 execute \
     on target run \

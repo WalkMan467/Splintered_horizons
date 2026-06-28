@@ -1,4 +1,4 @@
-scoreboard players set skill.4 monster.segrina.cd 940
+scoreboard players reset skill.4 monster.segrina.cd
 scoreboard players reset @s monster.segrina.skill.4.casting
 
 tag @s remove chapter_2.segrina.4
@@ -22,3 +22,7 @@ tp @e[sort=arbitrary,dx=73,dy=26,dz=73,tag=soul_tree_remnant,type=skeleton] ~ -2
 execute \
     positioned 725 107 605 run \
 kill @e[sort=arbitrary,dx=73,dy=26,dz=73,tag=soul_tree_remnant,type=skeleton]
+
+scoreboard players set skill.1 monster.segrina.cd 300
+scoreboard players set skill.2 monster.segrina.cd 800
+scoreboard players set skill.3 monster.segrina.cd 1300

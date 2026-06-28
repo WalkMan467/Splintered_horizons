@@ -9,6 +9,48 @@ execute \
     as @n[tag=!sys.forging_table.item,distance=..1.5,type=item] run \
 function sys:forging_table/tp
 
+# Wooden Spear
+
+execute \
+    positioned 770 148 979 \
+    as @n[distance=..1.5,predicate=sys:forging_table/crafting/spear/general/wooden_spear,type=item] run \
+function sys:forging_table/crafting/general/weapon_energy_infusion
+
+# Stone Spear
+
+execute \
+    positioned 770 148 979 \
+    as @n[distance=..1.5,predicate=sys:forging_table/crafting/spear/general/stone_spear,type=item] run \
+function sys:forging_table/crafting/general/weapon_energy_infusion
+
+# Iron Spear
+
+execute \
+    positioned 770 148 979 \
+    as @n[distance=..1.5,predicate=sys:forging_table/crafting/spear/general/iron_spear,type=item] run \
+function sys:forging_table/crafting/general/weapon_energy_infusion
+
+# Golden Spear
+
+execute \
+    positioned 770 148 979 \
+    as @n[distance=..1.5,predicate=sys:forging_table/crafting/spear/general/golden_spear,type=item] run \
+function sys:forging_table/crafting/general/weapon_energy_infusion
+
+# Diamond Spear
+
+execute \
+    positioned 770 148 979 \
+    as @n[distance=..1.5,predicate=sys:forging_table/crafting/spear/general/diamond_spear,type=item] run \
+function sys:forging_table/crafting/general/weapon_energy_infusion
+
+# Netherite Spear
+
+execute \
+    positioned 770 148 979 \
+    as @n[distance=..1.5,predicate=sys:forging_table/crafting/spear/general/netherite_spear,type=item] run \
+function sys:forging_table/crafting/general/weapon_energy_infusion
+
 # Wooden Sword
 
 execute \

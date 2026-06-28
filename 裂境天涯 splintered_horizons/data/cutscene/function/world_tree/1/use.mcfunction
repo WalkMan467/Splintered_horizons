@@ -14,7 +14,7 @@ kill 5e872217-eb7b-4a9f-92f4-db13079f9daa
 
 execute \
     as @a[sort=arbitrary,gamemode=spectator] at @s run \
-spectate @n[sort=arbitrary,distance=..10,tag=aj.stellar.camera.camera,type=item_display]
+spectate @n[sort=arbitrary,distance=..10,tag=aj.stellar.camera.camera1,type=item_display]
 
 schedule function cutscene:world_tree/1/0 1s
 schedule function cutscene:world_tree/force_execution/remove/0/0 2.5s

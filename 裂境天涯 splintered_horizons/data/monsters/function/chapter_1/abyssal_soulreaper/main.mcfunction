@@ -7,5 +7,5 @@ function monsters:chapter_1/abyssal_soulreaper/1/main
 # Monster Self
 
 execute \
-    as @s[tag=monsters.abyssal_soulreaper,type=zombie] run \
+    as @s[tag=monster.abyssal_soulreaper,type=zombie] run \
 function monsters:chapter_1/abyssal_soulreaper/main.monster

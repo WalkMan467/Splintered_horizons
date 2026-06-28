@@ -4,13 +4,8 @@
       "id": "minecraft:player_head",
       "components": {
         "minecraft:profile": {
-          "name": "textures",
-          "properties": [
-            {
-              "name": "textures",
-              "value": "ewogICJ0aW1lc3RhbXAiIDogMTcxMTQ1Mjk0NjgzMywKICAicHJvZmlsZUlkIiA6ICJiZWNlZGU1YmRkODY0YTkwOTc3MTRmODk0ZWUxNmE3MCIsCiAgInByb2ZpbGVOYW1lIiA6ICJTYW1hQ29tcG9zZXIiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWQ0NzM5YjAyZTkzODIwNTI0ZmY0YzNjNGY1ZGQ2NDA3ODg5NDE0ZjRiYWE3NmFiNjFkZWQ5OTM0MzAxMzU0IgogICAgfQogIH0KfQ=="
-            }
-          ]
+          "texture": "entity/player/wide/abyss_swordsman",
+          "model": "wide"
         }
       },
       "count": 1

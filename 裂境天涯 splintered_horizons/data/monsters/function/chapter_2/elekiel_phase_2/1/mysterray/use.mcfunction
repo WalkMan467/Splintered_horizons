@@ -17,6 +17,12 @@ playsound minecraft:entity.firework_rocket.blast_far master @a ~ ~ ~ 0.5 0
 playsound minecraft:entity.warden.death master @a ~ ~ ~ 0.5 1
 playsound minecraft:entity.illusioner.prepare_mirror master @a ~ ~ ~ 0.25 1
 
+execute \
+    positioned ~ ~-1.5 ~ run \
+function particle:time_space_wave/use
+
+scoreboard players reset #monster.elekiel_phase_2.1.ticking monster.elekiel_phase_2.cd
+
 particle instant_effect{color:16383232,power:1.5} ~ ~ ~ 0 0 0 0.0001 30 force
 function monsters:chapter_2/elekiel_phase_2/1/error_dust/use
 function monsters:chapter_2/elekiel_phase_2/1/error_dust/use

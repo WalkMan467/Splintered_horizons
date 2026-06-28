@@ -4,13 +4,8 @@
       "id": "minecraft:player_head",
       "components": {
         "minecraft:profile": {
-          "name": "textures",
-          "properties": [
-            {
-              "name": "textures",
-              "value": "ewogICJ0aW1lc3RhbXAiIDogMTcyNjEzNjcwOTQ1OSwKICAicHJvZmlsZUlkIiA6ICIxODA1Y2E2MmM0ZDI0M2NiOWQxYmY4YmM5N2E1YjgyNCIsCiAgInByb2ZpbGVOYW1lIiA6ICJSdWxsZWQiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzJlZTE5OWUzMTIzZTM2ODEwNWZlNzUzZTIzNTljMTgyMDk5YTM5ZjA5ZGQxMzY2ZDExODY1MTljMzBmM2Y5YiIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9CiAgfQp9"
-            }
-          ]
+          "texture": "entity/player/wide/abyss_berserker",
+          "model": "wide"
         }
       },
       "count": 1
@@ -72,6 +67,15 @@
       "\n",
       {
         "translate": "monster.abyss_berserker.8",
+        "with": [
+          {
+            "translate": "effect.minecraft.poison",
+            "color": "dark_green",
+            "bold": true,
+            "italic": false,
+            "underlined": true
+          }
+        ],
         "color": "#9900ff",
         "italic": false,
         "bold": false

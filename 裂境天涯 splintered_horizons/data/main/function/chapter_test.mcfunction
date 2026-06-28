@@ -17,6 +17,8 @@ execute \
     in minecraft:overworld run \
 tp @s 757 142 912 0 0
 
+datapack disable "file/spawner_tweaker-LATEST-1.21.11"
+
 scoreboard players reset WalkMan467 player.death_count
 scoreboard players set #sys.shooting_contest.sagittarius global.main 1
 scoreboard players set #game.start.state global.main 0

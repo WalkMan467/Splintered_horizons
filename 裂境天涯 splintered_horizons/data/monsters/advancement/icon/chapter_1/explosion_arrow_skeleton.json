@@ -4,13 +4,8 @@
       "id": "minecraft:player_head",
       "components": {
         "minecraft:profile": {
-          "name": "textures",
-          "properties": [
-            {
-              "name": "textures",
-              "value": "ewogICJ0aW1lc3RhbXAiIDogMTczMTkyNTIxMDQxNiwKICAicHJvZmlsZUlkIiA6ICJmMjc0YzRkNjI1MDQ0ZTQxOGVmYmYwNmM3NWIyMDIxMyIsCiAgInByb2ZpbGVOYW1lIiA6ICJIeXBpZ3NlbCIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9iYmQ1ZjRiNjFkYmYyYTIxNzMzNjA1YmNiMDI4MTdjODU3NmU0YTMxOTU3NmJmM2VlMTk2ZDc3ODcyZmI0MTAxIgogICAgfQogIH0KfQ=="
-            }
-          ]
+          "texture": "entity/player/wide/explosion_arrow_skeleton",
+          "model": "wide"
         }
       },
       "count": 1
@@ -34,6 +29,15 @@
       "\n",
       {
         "translate": "monster.explosion_arrow_skeleton.3",
+        "with": [
+          {
+            "translate": "effect.minecraft.glowing",
+            "color": "white",
+            "bold": true,
+            "italic": false,
+            "underlined": true
+          }
+        ],
         "color": "white",
         "italic": false
       },
@@ -42,20 +46,6 @@
         "translate": "monster.explosion_arrow_skeleton.4",
         "color": "white",
         "italic": false
-      },
-      "\n\n",
-      {
-        "translate": "difficulty.nightmare",
-        "color": "#c700bd",
-        "italic": false,
-        "bold": true
-      },
-      "\n",
-      {
-        "translate": "monster.explosion_arrow_skeleton.5",
-        "color": "#9900ff",
-        "italic": false,
-        "bold": false
       }
     ],
     "background": "minecraft:gui/advancements/backgrounds/sculk",

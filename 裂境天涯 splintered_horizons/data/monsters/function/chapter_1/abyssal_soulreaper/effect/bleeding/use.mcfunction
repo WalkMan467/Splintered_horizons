@@ -7,7 +7,7 @@ execute \
     if entity @s[gamemode=!survival,gamemode=!adventure] run \
 return 0
 
-damage @s 6 mob_attack by @n[type=zombie,tag=monsters.abyssal_soulreaper]
+damage @s 6 mob_attack by @n[type=zombie,tag=monster.abyssal_soulreaper]
 
 title @s title ""
 title @s subtitle [{"text":"[","color": "dark_red"},{"translate":"cse.status_effects.bleeding","color": "dark_red"},{"text":"]","color": "dark_red"}]

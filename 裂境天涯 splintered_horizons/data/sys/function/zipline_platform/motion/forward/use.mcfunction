@@ -2,7 +2,6 @@ execute \
     if items entity @s weapon.mainhand * run \
 item modify entity @s weapon.mainhand {function:"minecraft:set_enchantments",enchantments:{"sys:zipline_platform/forward_motion":1}}
 
-
 execute \
     if items entity @s weapon.mainhand * run \
 return 0

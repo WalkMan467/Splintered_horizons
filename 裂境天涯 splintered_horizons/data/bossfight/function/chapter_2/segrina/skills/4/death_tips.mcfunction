@@ -6,7 +6,7 @@ tellraw @s ["",{translate:"monsters.segrina.4",bold:true,color:"dark_aqua",hover
 tellraw @s ""
 tellraw @s ["",{translate:"monsters.segrina.4.1","underlined":false,color:"white","bold":false,"with":[{"translate":"monsters.segrina.4.2","color":"gold","bold":true,"underlined":true}]},{text:"\n"},{translate:"monsters.segrina.4.3",color:"white","bold":false,"with":[{"translate":"monsters.segrina.4.4","color":"gold","bold":true,"underlined":true}]},{text:"\n"},{translate:"monsters.segrina.4.5",color:"white","bold":false,"with":[{"translate":"monsters.segrina.4.4","color":"gold","bold":true,"underlined":true}]}]
 tellraw @s ""
-
+tellraw @s ["",{"translate":"monsters.segrina.4.6",color:"white","with":[{"translate":"monsters.segrina.4.4","color":"gold","bold":true,"underlined":true}]}]
 tellraw @s ""
 
 tellraw @s [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"font":"minecraft:default","text":"[","color":"white","bold":true},{"font":"minecraft:default","text":"📢","color":"blue","bold":false},{"font":"minecraft:default","text":"]","color":"white","bold":true},{"text":" ","font":"minecraft:default"},{"font":"minecraft:default","text":"\n"},{"font":"minecraft:default","text":"☞ ","color":"dark_gray"},{"translate": "tips.bossfight.5","fallback":"技能文本已更新！","color":"dark_green","bold":true,"underlined":false,"font":"minecraft:default"}]

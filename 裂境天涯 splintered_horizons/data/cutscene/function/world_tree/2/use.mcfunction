@@ -9,7 +9,7 @@ scoreboard players set #cutscene.world_tree global.main 6
 
 execute \
     as @a[sort=arbitrary,gamemode=spectator] at @s run \
-spectate @n[sort=arbitrary,distance=..10,tag=aj.stellar.camera.camera,type=item_display]
+spectate @n[sort=arbitrary,distance=..10,tag=aj.stellar.camera.camera1,type=item_display]
 
 schedule function cutscene:world_tree/2/0 1t
 schedule function cutscene:world_tree/2/1 8s

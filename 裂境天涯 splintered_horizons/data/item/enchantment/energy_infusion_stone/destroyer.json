@@ -26,18 +26,18 @@
         "id": "weapon.energy_infusion_stone",
         "amount": {
           "type": "minecraft:linear",
-          "base": 0.25,
-          "per_level_above_first": 0.25
+          "base": 0.15,
+          "per_level_above_first": 0.15
         },
-        "operation": "add_value"
+        "operation": "add_multiplied_base"
       },
       {
         "attribute": "minecraft:attack_speed",
         "id": "weapon.energy_infusion_stone",
         "amount": {
           "type": "minecraft:linear",
-          "base": -0.2,
-          "per_level_above_first": -0.2
+          "base": -0.15,
+          "per_level_above_first": -0.15
         },
         "operation": "add_value"
       }

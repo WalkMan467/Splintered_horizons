@@ -46,6 +46,8 @@ scoreboard objectives add particle.sound_wave dummy
 scoreboard players set 2 particle.sound_wave 2
 scoreboard players set 4 particle.sound_wave 4
 
+scoreboard objectives add particle.time_space_wave dummy
+
 scoreboard objectives add particle.sound_wave dummy
 scoreboard players set 2 particle.sound_wave 2
 scoreboard players set 4 particle.sound_wave 4

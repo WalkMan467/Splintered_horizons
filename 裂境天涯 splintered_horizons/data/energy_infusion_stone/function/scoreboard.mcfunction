@@ -1,0 +1,1 @@
+scoreboard objectives add energy_infusion_stone.cavalryman.charged dummy "[注能之石] 騎兵動能值"

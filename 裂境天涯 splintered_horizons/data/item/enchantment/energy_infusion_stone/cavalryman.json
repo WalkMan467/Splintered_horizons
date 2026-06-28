@@ -22,22 +22,12 @@
   "effects": {
     "minecraft:attributes": [
       {
-        "attribute": "minecraft:armor",
-        "id": "minecraft:weapon.energy_infusion_stone",
-        "amount": {
-          "type": "minecraft:linear",
-          "base": -1,
-          "per_level_above_first": -1
-        },
-        "operation": "add_value"
-      },
-      {
         "attribute": "minecraft:movement_speed",
         "id": "weapon.energy_infusion_stone",
         "amount": {
           "type": "minecraft:linear",
-          "base": 0.1,
-          "per_level_above_first": 0.1
+          "base": 0.25,
+          "per_level_above_first": 0.25
         },
         "operation": "add_multiplied_base"
       },
@@ -46,10 +36,20 @@
         "id": "weapon.energy_infusion_stone",
         "amount": {
           "type": "minecraft:linear",
-          "base": 0.1,
-          "per_level_above_first": 0.1
+          "base": 0.25,
+          "per_level_above_first": 0.25
         },
         "operation": "add_multiplied_base"
+      },
+      {
+        "attribute": "minecraft:attack_damage",
+        "id": "weapon.energy_infusion_stone",
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 0.25,
+          "per_level_above_first": 0.25
+        },
+        "operation": "add_value"
       }
     ]
   }

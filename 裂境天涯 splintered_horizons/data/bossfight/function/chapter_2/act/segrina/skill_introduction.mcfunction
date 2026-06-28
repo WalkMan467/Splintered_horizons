@@ -61,7 +61,7 @@ tellraw @s ""
 
 execute \
     if score #bossfight.segrina.4 global.main matches 1.. run \
-tellraw @s ["",{translate:"monsters.segrina.4.1","underlined":false,color:"white","bold":false,"with":[{"translate":"monsters.segrina.4.2","color":"gold","bold":true,"underlined":true}]},{text:"\n"},{translate:"monsters.segrina.4.3",color:"white","bold":false,"with":[{"translate":"monsters.segrina.4.4","color":"gold","bold":true,"underlined":true}]},{text:"\n"},{translate:"monsters.segrina.4.5",color:"white","bold":false,"with":[{"translate":"monsters.segrina.4.4","color":"gold","bold":true,"underlined":true}]}]
+tellraw @s ["",{translate:"monsters.segrina.4.1","underlined":false,color:"white","bold":false,"with":[{"translate":"monsters.segrina.4.2","color":"gold","bold":true,"underlined":true}]},{text:"\n"},{translate:"monsters.segrina.4.3",color:"white","bold":false,"with":[{"translate":"monsters.segrina.4.4","color":"gold","bold":true,"underlined":true}]},{text:"\n"},{translate:"monsters.segrina.4.5",color:"white","bold":false,"with":[{"translate":"monsters.segrina.4.4","color":"gold","bold":true,"underlined":true}]},{text:"\n"},{"translate":"monsters.segrina.4.6",color:"white","with":[{"translate":"monsters.segrina.4.4","color":"gold","bold":true,"underlined":true}]}]
 
 execute \
     if score #bossfight.segrina.4 global.main matches 1.. run \

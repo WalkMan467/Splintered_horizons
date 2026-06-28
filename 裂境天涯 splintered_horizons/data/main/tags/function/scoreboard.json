@@ -14,6 +14,7 @@
       "dmg_formula:scoreboard",
       "world_area:scoreboard",
       "trap:scoreboard",
-      "sys:hp_display/scoreobard"
+      "sys:hp_display/scoreobard",
+      "energy_infusion_stone:scoreboard"
     ]
   }

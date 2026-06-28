@@ -9,13 +9,13 @@ playsound minecraft:block.note_block.basedrum voice @a ~ ~1 ~ 1 1
 playsound minecraft:entity.player.attack.sweep voice @a ~ ~1 ~ 1 0.75
 
 # 斧頭物品展示
-summon minecraft:item_display ~ ~1 ~ {Tags:["monsters.abyssal_soulreaper.1.display","summon"],brightness: {block: 15, sky: 15}, interpolation_duration: 1, item: {components: {"minecraft:item_model": "minecraft:halberd/iron_halberd/1"}, count: 1, id: "minecraft:iron_sword"}, teleport_duration: 1, transformation: {left_rotation: [-0.65328145f, -0.2705981f, -0.2705981f, 0.65328145f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [5.0000024f, 5.0000014f, 0.9999995f], translation: [0.0f, -1.0f, -2.5f]}}
+summon minecraft:item_display ~ ~1 ~ {Tags:["monster.abyssal_soulreaper.1.display","summon"],brightness: {block: 15, sky: 15}, interpolation_duration: 1, item: {components: {"minecraft:item_model": "minecraft:halberd/iron_halberd/1"}, count: 1, id: "minecraft:iron_sword"}, teleport_duration: 1, transformation: {left_rotation: [-0.65328145f, -0.2705981f, -0.2705981f, 0.65328145f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [5.0000024f, 5.0000014f, 0.9999995f], translation: [0.0f, -1.0f, -2.5f]}}
 
-ride @n[sort=arbitrary,distance=..1.5,tag=monsters.abyssal_soulreaper.1.display,tag=summon,type=item_display] mount @s
+ride @n[sort=arbitrary,distance=..1.5,tag=monster.abyssal_soulreaper.1.display,tag=summon,type=item_display] mount @s
 
 execute \
     on passengers \
-    as @s[tag=monsters.abyssal_soulreaper.1.display,tag=summon,type=item_display] run \
+    as @s[tag=monster.abyssal_soulreaper.1.display,tag=summon,type=item_display] run \
 function monsters:chapter_1/abyssal_soulreaper/1/4
 
 # 掛流血效果

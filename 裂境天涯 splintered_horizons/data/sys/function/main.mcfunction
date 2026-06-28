@@ -14,3 +14,8 @@ execute \
     as @a at @s \
     as @e[sort=arbitrary,distance=..60,type=!#minecraft:dummy_mob] at @s run \
 function sys:skills_freeze/timer
+
+# 訓練人偶鎖位置
+execute \
+    in minecraft:overworld run \
+tp 0004e6cf-0000-7e39-0000-091c0000a8df 774.50 148.00 996.50 0.00 0.00

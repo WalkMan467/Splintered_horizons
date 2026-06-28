@@ -23,6 +23,9 @@ execute \
     unless predicate players:detect/air run \
 function players:detect/ground
 
+# Sprint
+function players:detect/is_sprint
+
 execute \
     if score @s player.detect.jump matches 1.. run \
 function players:detect/jump

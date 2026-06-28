@@ -23,6 +23,8 @@ function monsters:chapter_2/elekiel_phase_2/reset_skill_tips
 function monsters:chapter_2/elekiel/reset_skill_tips
 function bossfight:chapter_2/segrina/skills/reset_skill_tips
 
+datapack disable "file/spawner_tweaker-LATEST-1.21.11"
+
 clear @s
 gamemode survival @a
 time set midnight

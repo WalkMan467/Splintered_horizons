@@ -1,30 +1,30 @@
 def build_item_struct():
     return {
-        "name": ['盤岩頭盔', "#b37400", '頭盔 / 史詩'],
+        "name": ['共生血誓', "dark_red", '胸甲 / 神話'],
         "story": {
-            'info': ['來自異世界的魔法頭盔','由盤岩凝聚而成','可以在危急時刻承受一定傷害'],
+            'info': ['來自緋紅之爪伊索克拉的舊世界','昔日的光輝已被黑暗所壟罩','被緋紅之力的渾沌之血侵蝕著這套騎士的鎧甲','述說著曾經人們與深淵的慘烈戰鬥'],
             'color': 'blue'
         },
         "item_data": {
             'real_item': 'bundle',
-            'id': 'coiled_rock_helmet',
-            'item_model': '"head/coiled_rock_helmet/1"',
-            'custom_data': 'type:"armor",rarity:"epic",active_skills:1b,id:"coiled_rock_helmet"',
+            'id': 'symbiotic_blood_oath',
+            'item_model': '"chestplate/symbiotic_blood_oath/0"',
+            'custom_data': 'type:"armor",rarity:"mythic",active_skills:1b,id:"symbiotic_blood_oath"',
             'rc': False,
             'lc': False,
             'max_damage': 0,
             'max_stack_size': 1,
             'other': [
                 'enchantment_glint_override=false',
-                'tooltip_style="epic"',
-                'equippable={slot:"head",equip_sound:"item.armor.equip_copper",asset_id:"copper"}'
+                'tooltip_style="mythic"',
+                'equippable={slot:"chest",equip_sound:"minecraft:block.anvil.use",asset_id:"symbiotic_blood_oath"}'
             ]
         },
 
         "skill": {
             "is_skill": True,
             "cd": 25,
-            "name": ["硬化", "#ffa600", "#b37400"],
+            "name": ["共生契約", "dark_red", "#ffffff"],
             "info": [
                 {
                     "text": "當你使用 %s 時:",
@@ -32,35 +32,32 @@ def build_item_struct():
                         {"keybind": "key.sneak", "underlined": True, "color": "dark_green"}
                     ]
                 },
+            "如果 6 格範圍內附近有玩家：",
+            "扣除自己 25% 血量",
+            "使 6 格範圍內玩家(不包括自身) 恢復 8 點血量",
+            "如果沒有玩家：",
                 {
-                    "text": "立即獲得 3 點 %s (00:05)",
-                    "with": [
-                        {"translate": "attribute.name.armor", "underlined": True, "color": "#999999"}
-                    ]
-                },
-                {
-                    "text": "以及 5 點 %s (00:05)",
-                    "with": [
-                        {"translate": "attribute.name.armor_toughness", "underlined": True, "color": "#4B4B4B"}
+                    "text": "則使周圍 6 格範圍內怪物持續獲得 %s (00:05)",
+                    "with": 
+                    [
+                        {"translate":"cse.status_effects.bleeding","underlined":True,"color":"dark_red"}
                     ]
                 }
             ]
         },
 
         "passive_skills": {
-            'is_passive_skills': False,
+            'is_passive_skills': True,
             'cd': 10,
-            'name': ['停刻', '#ffa600', '#ffee00'],
+            'name': ['血之祝福', '#ff0000', "#ffffff"],
             'info': [
-                "攻擊敵人時：",
-                "使自身獲得 1 點充能",
-                "",
-                "當你獲得 5 次充能時：",
-                "下次攻擊敵人時使自身 6 格範圍內怪物獲得凍結 1.5 秒",
+                "當你受傷時",
                 {
-                    "text": "並使你獲得【%s】符文 (00:05)",
-                    "with": [
-                        {"translate":"weapon.effect.starry_sky_frost","underlined":True,"color":"#5de7ff"}
+                    "text": "有 %1$s 機率使你獲得 %2$s IV (00:01)",
+                    "with": 
+                    [
+                        {"text":"50%"},
+                        {"translate":"effect.minecraft.regeneration","underlined":True,"color":"dark_green"}
                     ]
                 }
             ]

@@ -135,6 +135,7 @@ scoreboard objectives add player.detect.is_bossfight dummy "[玩家] 是否處�
 scoreboard objectives add player.detect.broken_spawner minecraft.mined:minecraft.spawner "[玩家] 破壞生怪磚"
 scoreboard objectives add player.detect.hurt dummy "[玩家] 偵測受傷"
 scoreboard objectives add player.detect.jump minecraft.custom:minecraft.jump "[玩家] 偵測空格 (僅偵測點按)"
+scoreboard objectives add player.detect.sprint minecraft.custom:sprint_one_cm "[玩家] 偵測跑步"
 
 # ==================================================================================================
 # 玩家設定

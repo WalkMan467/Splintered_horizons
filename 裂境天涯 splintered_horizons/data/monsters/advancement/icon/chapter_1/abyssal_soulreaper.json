@@ -1,0 +1,108 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:player_head",
+      "components": {
+        "minecraft:profile": {
+          "texture": "entity/player/wide/abyssal_soulreaper",
+          "model": "wide"
+        }
+      },
+      "count": 1
+    },
+    "title": {
+      "translate": "monsters.abyssal_soulreaper",
+      "italic": false
+    },
+    "description": [
+      {
+        "translate": "monsters.abyssal_soulreaper.1",
+        "color": "white",
+        "italic": false
+      },
+      "\n",
+      {
+        "translate": "monsters.abyssal_soulreaper.2",
+        "color": "white",
+        "italic": false
+      },
+      "\n",
+      {
+        "translate": "monsters.abyssal_soulreaper.3",
+        "with": [
+          {
+            "translate": "cse.status_effects.bleeding",
+            "color": "dark_red",
+            "bold": true,
+            "italic": false,
+            "underlined": true
+          }
+        ],
+        "color": "white",
+        "italic": false
+      },
+      "\n\n",
+      {
+        "translate": "difficulty.nightmare",
+        "color": "#c700bd",
+        "italic": false,
+        "bold": true
+      },
+      "\n",
+      {
+        "translate": "monsters.abyssal_soulreaper.4",
+        "color": "#9900ff",
+        "italic": false,
+        "bold": false
+      },
+      "\n",
+      {
+        "translate": "monsters.abyssal_soulreaper.5",
+        "with": [
+          {
+            "translate": "effect.minecraft.poison",
+            "color": "dark_green",
+            "bold": true,
+            "italic": false,
+            "underlined": true
+          }
+        ],
+        "color": "#9900ff",
+        "italic": false,
+        "bold": false
+      }
+    ],
+    "background": "minecraft:gui/advancements/backgrounds/sculk",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "monsters:icon/chapter_1/icon",
+  "criteria": {
+    "attack": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "nbt": "{Tags:[\"monster.abyssal_soulreaper\"]}"
+          }
+        }
+      }
+    },
+    "hurt": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": {
+          "nbt": "{Tags:[\"monster.abyssal_soulreaper\"]}"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "attack",
+      "hurt"
+    ]
+  ]
+}
