@@ -92,9 +92,9 @@
               "minecraft:custom_data": {
                 "id": "weapon_energy_infusion"
               },
-              "minecraft:stored_enchantments": [
+              "minecraft:enchantments": [
                 {
-                  "enchantments": "item:energy_infusion_stone/destroyer",
+                  "enchantments": "energy_infusion_stone:skills/weapon/destroyer",
                   "levels": {
                     "min": 1
                   }

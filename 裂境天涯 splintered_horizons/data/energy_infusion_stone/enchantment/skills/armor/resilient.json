@@ -1,0 +1,76 @@
+{
+  "description": {
+    "translate": "item.energy_infusion_stone.resilient",
+    "fallback": "Resilient",
+    "color": "dark_red"
+  },
+  "supported_items": "minecraft:air",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 10,
+    "per_level_above_first": 15
+  },
+  "max_cost": {
+    "base": 25,
+    "per_level_above_first": 15
+  },
+  "anvil_cost": 1,
+  "slots": [
+    "armor"
+  ],
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "requirements": {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:damage_source_properties",
+            "predicate": {
+              "tags": [
+                {
+                  "id": "minecraft:is_freezing",
+                  "expected": true
+                },
+                {
+                  "id": "minecraft:bypasses_enchantments",
+                  "expected": true
+                },
+                {
+                  "id": "minecraft:is_fire",
+                  "expected": true
+                },
+                {
+                  "id": "minecraft:is_lightning",
+                  "expected": true
+                },
+                {
+                  "id": "minecraft:true_dmg",
+                  "expected": true
+                },
+                {
+                  "id": "minecraft:is_fall",
+                  "expected": true
+                }
+              ]
+            }
+          }
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "armors:type/resilient/use"
+        },
+        "enchanted": "victim",
+        "affected": "victim"
+      }
+    ],
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "armors:type/resilient/main"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "description": {
+    "translate": "item.energy_infusion_stone.phantom_fangs",
+    "fallback": "Phantom Fangs",
+    "color": "dark_purple"
+  },
+  "supported_items": "air",
+  "weight": 1,
+  "max_level": 3,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "enchanted": "attacker",
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "energy_infusion_stone:skills/weapon/phantom_fangs/use"
+        },
+        "requirements": {
+          "condition": "minecraft:random_chance",
+          "chance": {
+            "type": "minecraft:enchantment_level",
+            "amount": 0.2
+          }
+        }
+      }
+    ]
+  }
+}

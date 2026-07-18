@@ -24,6 +24,7 @@ advancement grant @s only armors:icon/icon
             advancement revoke @s only armors:icon/helmet/coiled_rock_helmet
             advancement revoke @s only armors:icon/chestplate/finality_chestplate
             advancement revoke @s only armors:icon/boots/black_hole
+            advancement revoke @s only armors:icon/helmet/paladins_helmet
 
         advancement grant @s only armors:icon/new_world/chapter_2
 

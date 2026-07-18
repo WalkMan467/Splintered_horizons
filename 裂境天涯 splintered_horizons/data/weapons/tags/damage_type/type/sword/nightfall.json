@@ -1,6 +1,7 @@
 {
   "values": [
     "weapons:type/sword/nightfall",
+    "weapons:type/sword/nightfall_attack",
     "weapons:type/sword/nightfall_switch_dmg",
     "weapons:type/sword/nightfall_passive_dmg"
   ]

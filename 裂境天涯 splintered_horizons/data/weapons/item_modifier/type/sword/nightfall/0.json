@@ -43,7 +43,9 @@
         "type": "sword",
         "rarity": "epic",
         "weapon": "nightfall"
-      }
+      },
+      "damage_type": "weapons:type/sword/nightfall_attack",
+      "minimum_attack_charge": 0.5
     }
   }
 ]

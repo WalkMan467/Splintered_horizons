@@ -3,6 +3,8 @@ summon area_effect_cloud ~ ~3 ~ {Tags:["weapon.miniature_sun.main.fx","summon"],
 
 function weapons:type/drop/miniature_sun/rc/effect/fx_2/guide
 
+particle flash{color:[0.800,0.000,1.000,1.00]} ~ ~2.5 ~ 0 0 0 1 0 normal @a
+
 playsound minecraft:block.fire.ambient voice @a ~ ~1 ~ 1 0.5
 playsound minecraft:block.fire.ambient voice @a ~ ~1 ~ 1 0.5
 playsound minecraft:block.fire.extinguish voice @a ~ ~1 ~ 0.5 0.5

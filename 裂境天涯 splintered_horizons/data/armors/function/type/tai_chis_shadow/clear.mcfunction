@@ -15,32 +15,21 @@
 # ===================================================
 
 
-
 advancement revoke @s only armors:type/tai_chis_shadow/clear
-
-
-
-
 
 execute \
     unless score @s armor.tai_chis_shadow.effect matches 1.. run \
 return 0
 
-scoreboard players set @s armor.tai_chis_shadow.restore_mana 2
-
-scoreboard players operation @s armor.tai_chis_shadow.restore_mana *= @s armor.tai_chis_shadow.restore_mana_magnification
-
-
+execute \
+    if score @s weapon.rock_crushing_greatsword.hold_down matches 1.. run \
+return 0
 
 scoreboard players remove @s[scores={armor.tai_chis_shadow.effect=1..}] armor.tai_chis_shadow.effect 1
-
-
 
 title @s title {"text":"\uE003","font":"minecraft:screen"}
 
 title @s times 0 10 10
-
-
 
 title @s[scores={armor.tai_chis_shadow.effect=0}] subtitle [{"text":""},{"text":"☯☯☯","color":"#212121"}]
 

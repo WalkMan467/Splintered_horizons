@@ -1,0 +1,22 @@
+{
+  "values": [
+    "weapons:type/sword/nightfall_attack",
+    "weapons:type/sword/morning_light_attack",
+    "weapons:type/sword/rock_crushing_greatsword_attack",
+    "weapons:type/sword/twilight_wind_attack",
+    "weapons:type/sword/wind_sword_attack",
+    "weapons:type/sword/aquilumera_attack",
+    "weapons:type/sword/grip_of_withering_attack",
+    "weapons:type/sword/echo_rhythm_attack",
+    "weapons:type/sword/ink_paint_longquan_sword",
+    "weapons:type/sword/kill_sword_attack",
+    "weapons:type/sword/otherworld_star_attack",
+    "weapons:type/sword/spider_attack",
+    "weapons:type/sword/twilight_wind_attack",
+    "weapons:type/axe/earthquake_axe/earthquake_axe_attack",
+    "weapons:type/axe/thunder_duet/thunder_duet_attack",
+    "weapons:type/scythe/morphing_beast/axe_attack",
+    "weapons:type/scythe/morphing_beast/scythe_attack",
+    "weapons:type/scythe/morphing_beast/sword_attack"
+  ]
+}

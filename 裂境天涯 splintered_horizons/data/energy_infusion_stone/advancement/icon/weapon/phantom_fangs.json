@@ -10,18 +10,40 @@
       "count": 1
     },
     "title": {
-      "translate": "weapon.enchantment.phantom_fangs"
+      "translate": "item.energy_infusion_stone.phantom_fangs",
+      "color": "dark_purple"
     },
     "description": [
       {
-        "translate": "weapon.enchantment.phantom_fangs.1",
+        "translate": "item.energy_infusion_stone.phantom_fangs.passive_skills",
+        "color": "#F94FFF",
+        "bold": true,
+        "italic": false
+      },
+      "\n",
+      {
+        "translate": "item.energy_infusion_stone.phantom_fangs.passive_skills.1",
         "color": "blue",
         "bold": false,
         "italic": false
       },
       "\n",
       {
-        "translate": "weapon.enchantment.phantom_fangs.2",
+        "translate": "item.energy_infusion_stone.phantom_fangs.passive_skills.2",
+        "color": "blue",
+        "bold": false,
+        "italic": false
+      },
+      "\n",
+      {
+        "translate": "item.energy_infusion_stone.phantom_fangs.passive_skills.3",
+        "color": "blue",
+        "bold": false,
+        "italic": false
+      },
+      "\n",
+      {
+        "translate": "item.energy_infusion_stone.phantom_fangs.passive_skills.4",
         "color": "blue",
         "bold": false,
         "italic": false
@@ -44,7 +66,7 @@
               },
               "minecraft:enchantments": [
                 {
-                  "enchantments": "item:energy_infusion_stone/phantom_fangs",
+                  "enchantments": "energy_infusion_stone:skills/weapon/phantom_fangs",
                   "levels": {
                     "min": 1
                   }

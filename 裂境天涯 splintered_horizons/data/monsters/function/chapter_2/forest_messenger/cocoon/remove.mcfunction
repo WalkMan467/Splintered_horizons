@@ -6,11 +6,11 @@ scoreboard players operation #detect monster.forest_messenger.cocoon.id = @s[tag
 
 
 execute \
-    as @e[type=block_display,tag=monster.forest_messenger.cocoon] \
+    as @e[tag=monster.forest_messenger.cocoon,distance=0..,type=block_display] \
     if score @s monster.forest_messenger.cocoon.id = #detect monster.forest_messenger.cocoon.id run \
 tag @s add monster.forest_messenger.cocoon.remove
 
 
 execute \
-    as @e[type=block_display,tag=monster.forest_messenger.cocoon,tag=monster.forest_messenger.cocoon.remove] at @s run \
+    as @e[tag=monster.forest_messenger.cocoon,tag=monster.forest_messenger.cocoon.remove,distance=0..,type=block_display] at @s run \
 function monsters:chapter_2/forest_messenger/cocoon/remove_guide

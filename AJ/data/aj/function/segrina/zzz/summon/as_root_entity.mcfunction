@@ -12,7 +12,7 @@ function animated_java:global/data_manager/read with storage animated_java:temp 
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.root_uuid set from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.blueprint_id set value "aj:segrina"
-data modify storage animated_java:temp entry.data.rig_hash set value "239e5d3adcdad5359f1c88900e88375788c9de8955865a87764beb723c123856"
+data modify storage animated_java:temp entry.data.rig_hash set value "a5f2d390d21ead48140496afffc4685c35afb4a6916c6fbe0d7674b373992b48"
 tp @s ~ ~ ~ ~ ~
 execute on passengers if entity @s[tag=aj.segrina.node.guide13] run function aj:segrina/zzz/summon/as_node/guide13
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
@@ -266,6 +266,9 @@ data modify storage animated_java:temp entry.data.uuids_by_name.7 set from stora
 execute on passengers if entity @s[tag=aj.segrina.node.ring] run function aj:segrina/zzz/summon/as_node/ring
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.uuids_by_name.ring set from storage animated_java:gu out
+execute on passengers if entity @s[tag=aj.segrina.node.shadow] run function aj:segrina/zzz/summon/as_node/shadow
+data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
+data modify storage animated_java:temp entry.data.uuids_by_name.shadow set from storage animated_java:gu out
 function aj:segrina/zzz/set_default_pose
 # Data Manager: Write
 function animated_java:global/data_manager/write with storage animated_java:temp args

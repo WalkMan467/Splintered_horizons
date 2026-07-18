@@ -1,0 +1,1 @@
+scoreboard players operation @s energy_infusion_stone.executioner.user.id = @n[sort=arbitrary,distance=..60,tag=energy_infusion_stone.executioner.temp,type=!#minecraft:dummy_mob] energy_infusion_stone.executioner.target.id

@@ -4,7 +4,7 @@ tellraw @s [{"font":"minecraft:default","translate":"tips.sys.forging_table.craf
 tellraw @s [{"text":"\n"}]
 tellraw @s [{"translate":"weapon.wind_sword","color":"dark_aqua","italic":false,"bold":true}]
 tellraw @s [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"translate":"item.dust_of_the_wind","color":"dark_green","italic":false,"font": "minecraft:default"},{"text": "*3","font": "minecraft:default"}]
-tellraw @s [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"translate":"item.minecraft.stone_sword","color":"white","italic":false,"font": "minecraft:default"},{"text": "*1","font": "minecraft:default"}]
+tellraw @s [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"translate":"item.minecraft.stone_sword","color":"white","italic":false,"font": "minecraft:default"},{"text": "*1","font": "minecraft:default"},{"text":" ","font":"minecraft:default"},{"text":"(","color":"gray","font":"minecraft:default"},{"translate": "tips.sys.forging_table.crafting.or","color":"gray","font":"minecraft:default"},{"text":" ","font":"minecraft:default"},{"translate":"item.minecraft.copper_sword","color":"gray","italic":false,"font": "minecraft:default"},{"text": "*1","font": "minecraft:default", "color":"gray"},{"text": ")","color":"gray","font":"minecraft:default"}]
 
 
 execute \
@@ -22,7 +22,7 @@ tellraw @s [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"translate":
 
 execute \
     if score #sys.forging_table.nightfall sys.forging_table.recipes matches 1.. run \
-tellraw @s [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"translate":"item.minecraft.stone_sword","color":"white","italic":false,"font": "minecraft:default"},{"text": "*1","font": "minecraft:default"}]
+tellraw @s [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"translate":"item.minecraft.stone_sword","color":"white","italic":false,"font": "minecraft:default"},{"text": "*1","font": "minecraft:default"},{"text":" ","font":"minecraft:default"},{"text":"(","color":"gray","font":"minecraft:default"},{"translate": "tips.sys.forging_table.crafting.or","color":"gray","font":"minecraft:default"},{"text":" ","font":"minecraft:default"},{"translate":"item.minecraft.copper_sword","color":"gray","italic":false,"font": "minecraft:default"},{"text": "*1","font": "minecraft:default", "color":"gray"},{"text": ")","color":"gray","font":"minecraft:default"}]
 
 
 execute \
@@ -40,7 +40,7 @@ tellraw @s [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"translate":
 
 execute \
     if score #sys.forging_table.twilight_wind sys.forging_table.recipes matches 1.. run \
-tellraw @s [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"translate":"item.minecraft.stone_sword","color":"white","italic":false,"font": "minecraft:default"},{"text": "*1","font": "minecraft:default"}]
+tellraw @s [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"translate":"item.minecraft.stone_sword","color":"white","italic":false,"font": "minecraft:default"},{"text": "*1","font": "minecraft:default"},{"text":" ","font":"minecraft:default"},{"text":"(","color":"gray","font":"minecraft:default"},{"translate": "tips.sys.forging_table.crafting.or","color":"gray","font":"minecraft:default"},{"text":" ","font":"minecraft:default"},{"translate":"item.minecraft.copper_sword","color":"gray","italic":false,"font": "minecraft:default"},{"text": "*1","font": "minecraft:default", "color":"gray"},{"text": ")","color":"gray","font":"minecraft:default"}]
 
 tellraw @s [{"text":"\n"}]
 
@@ -64,7 +64,7 @@ tellraw @a [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"translate":
 
 execute \
     if score #sys.forging_table.rock_crushing_greatsword sys.forging_table.recipes matches 1.. run \
-tellraw @a [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"translate":"item.minecraft.stone_sword","color":"white","italic":false,"font": "minecraft:default"},{"text": "*1","font": "minecraft:default"}]
+tellraw @a [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"translate":"item.minecraft.stone_sword","color":"white","italic":false,"font": "minecraft:default"},{"text": "*1","font": "minecraft:default"},{"text":" ","font":"minecraft:default"},{"text":"(","color":"gray","font":"minecraft:default"},{"translate": "tips.sys.forging_table.crafting.or","color":"gray","font":"minecraft:default"},{"text":" ","font":"minecraft:default"},{"translate":"item.minecraft.copper_sword","color":"gray","italic":false,"font": "minecraft:default"},{"text": "*1","font": "minecraft:default", "color":"gray"},{"text": ")","color":"gray","font":"minecraft:default"}]
 
 tellraw @s [{"text":"\n"}]
 

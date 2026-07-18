@@ -35,7 +35,7 @@ tellraw @a[distance=..16] \
         {"translate": "story.characters.selena",color:"white","bold":true}, \
         {"atlas":"minecraft:items","sprite":"item/character/seronis","bold":false,shadow_color:0,"color":"white"}, \
         {"text":" : ","color":"white","bold": false}, \
-        {"translate": "story.chapter_2.ml.7.2","fallback": "我在附近調用了「記憶之冰」的力量復現周遭的環境","bold": false} \
+        {"translate": "story.chapter_2.ml.7.2","fallback": "我在附近調用了「記憶之冰」的力量復現周遭的環境","bold": false,"with":[{"bold":true,"color":"#5de7ff","hover_event":{"action":"show_text","value":[{"translate":"story.icon.proper_noun","fallback":"[專有名詞]:","color":"white"},"\n",{"translate": "proper_noun.desc.2","fallback":"詳情請按","color":"white","bold":false,"italic":false},{"keybind": "key.advancements","color": "dark_green"},{"translate": "proper_noun.desc.3","fallback":"尋找對應內容","color":"white","bold":false,"italic":false}]},"italic":false,"translate":"story.icon.proper_noun.starry_sky_frost","underlined":true,"fallback": "記憶之冰"}]} \
     ]
 
 

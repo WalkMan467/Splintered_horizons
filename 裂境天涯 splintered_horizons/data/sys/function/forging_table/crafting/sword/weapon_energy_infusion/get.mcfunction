@@ -1,9 +1,3 @@
-execute \
-    if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{slots:{"container.*":{items:"minecraft:enchanted_book"}}}} run \
-data modify storage quick_enchantment:temp enchantments set from entity @s Item.components."minecraft:stored_enchantments"
-
-execute \
-    unless predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{slots:{"container.*":{items:"minecraft:enchanted_book"}}}} run \
 data modify storage quick_enchantment:temp enchantments set from entity @s Item.components."minecraft:enchantments"
 
     # An advanced method is employed here, utilizing the Item_modifier command combined with Macro to dynamically modify JSON data, ensuring precise attachment of item to other item.

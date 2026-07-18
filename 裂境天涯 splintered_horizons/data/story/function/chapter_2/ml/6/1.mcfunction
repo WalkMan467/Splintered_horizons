@@ -23,7 +23,7 @@ tellraw @a[distance=..16] \
         {"text": "？？？",color:"white","bold":true},\
         {"atlas":"minecraft:items","sprite":"item/character/seronis","bold":false,shadow_color:0,"color":"white"}, \
         {"text":" : ","color":"white","bold": false}, \
-        {"translate": "story.chapter_2.ml.6.1","fallback": "你好，來自其他舊世界的二位，我叫賽琳娜","bold": false} \
+        {"translate": "story.chapter_2.ml.6.1","fallback": "你好，來自其他舊世界的二位，我叫賽琳娜","bold": false,"with":[{"bold":true,"color":"yellow","hover_event":{"action":"show_text","value":[{"translate":"story.icon.proper_noun","fallback":"[專有名詞]:","color":"white"},"\n",{"translate": "proper_noun.desc.2","fallback":"詳情請按","color":"white","bold":false,"italic":false},{"keybind": "key.advancements","color": "dark_green"},{"translate": "proper_noun.desc.3","fallback":"尋找對應內容","color":"white","bold":false,"italic":false}]},"italic":false,"translate":"proper_nouns.icon.old_story","underlined":true,"fallback": "舊世界"},{"bold":true,"underlined":true,"color":"aqua","translate":"story.characters.selena","fallback":"賽琳娜"}]} \
     ]
 
 
@@ -47,7 +47,7 @@ tellraw @a[distance=..16] \
         {"translate": "story.characters.selena",color:"white","bold":true}, \
         {"atlas":"minecraft:items","sprite":"item/character/seronis","bold":false,shadow_color:0,"color":"white"}, \
         {"text":" : ","color":"white","bold": false}, \
-        {"translate": "story.chapter_2.ml.6.3","fallback": "我們每個人都有著來自不同舊世界力量","bold": false} \
+        {"translate": "story.chapter_2.ml.6.3","fallback": "我們每個人都有著來自不同舊世界力量","bold": false,"with":[{"bold":true,"color":"yellow","hover_event":{"action":"show_text","value":[{"translate":"story.icon.proper_noun","fallback":"[專有名詞]:","color":"white"},"\n",{"translate": "proper_noun.desc.2","fallback":"詳情請按","color":"white","bold":false,"italic":false},{"keybind": "key.advancements","color": "dark_green"},{"translate": "proper_noun.desc.3","fallback":"尋找對應內容","color":"white","bold":false,"italic":false}]},"italic":false,"translate":"proper_nouns.icon.old_story","underlined":true,"fallback": "舊世界"}]} \
     ]
 
 
@@ -59,7 +59,7 @@ tellraw @a[distance=..16] \
         {"translate": "story.characters.selena",color:"white","bold":true}, \
         {"atlas":"minecraft:items","sprite":"item/character/seronis","bold":false,shadow_color:0,"color":"white"}, \
         {"text":" : ","color":"white","bold": false}, \
-        {"translate": "story.chapter_2.ml.6.4","fallback": "作為「記憶之冰」符文使者，我擁有讀取世界記憶的能力","bold": false} \
+        {"translate": "story.chapter_2.ml.6.4","fallback": "作為「記憶之冰」符文使者，我擁有讀取世界記憶的能力","bold": false, "with":[{"bold":true,"color":"#5de7ff","hover_event":{"action":"show_text","value":[{"translate":"story.icon.proper_noun","fallback":"[專有名詞]:","color":"white"},"\n",{"translate": "proper_noun.desc.2","fallback":"詳情請按","color":"white","bold":false,"italic":false},{"keybind": "key.advancements","color": "dark_green"},{"translate": "proper_noun.desc.3","fallback":"尋找對應內容","color":"white","bold":false,"italic":false}]},"italic":false,"translate":"story.icon.proper_noun.starry_sky_frost","underlined":true,"fallback": "記憶之冰"}]} \
     ]
 
 
@@ -83,7 +83,7 @@ tellraw @a[distance=..16] \
         {"translate": "story.characters.selena",color:"white","bold":true}, \
         {"atlas":"minecraft:items","sprite":"item/character/seronis","bold":false,shadow_color:0,"color":"white"}, \
         {"text":" : ","color":"white","bold": false}, \
-        {"translate": "story.chapter_2.ml.6.6","fallback": "很高興能夠與你們一同討伐 空之支配者 - 伊萊克爾","bold": false} \
+        {"translate": "story.chapter_2.ml.6.6","fallback": "很高興能夠與你們一同討伐 「永劫」支配者: 伊萊克爾","bold": false, "with":[{"bold":true,"color":"#fbff00","hover_event":{"action":"show_text","value":[{"translate":"story.icon.proper_noun","fallback":"[專有名詞]:","color":"white"},"\n",{"translate": "proper_noun.desc.2","fallback":"詳情請按","color":"white","bold":false,"italic":false},{"keybind": "key.advancements","color": "dark_green"},{"translate": "proper_noun.desc.3","fallback":"尋找對應內容","color":"white","bold":false,"italic":false}]},"italic":false,"translate":"monsters.elekiel","underlined":true,"fallback": "「永劫」支配者: 伊萊克爾"}]} \
     ]
 
 
@@ -119,7 +119,7 @@ tellraw @a[distance=..16] \
         {"translate": "story.characters.stellar",color:"white","bold":true},\
         {"atlas":"minecraft:items","sprite":"item/character/stellar","bold":false,shadow_color:0,"color":"white"},\
         {"text":" : ","color":"white","bold": false}, \
-        {"translate": "story.chapter_2.ml.6.9","fallback": "與叫賽羅尼斯的時空觀測者似乎也提到過一些他的信息","bold": false} \
+        {"translate": "story.chapter_2.ml.6.9","fallback": "與叫賽羅尼斯的時空觀測者似乎也提到過一些他的信息","bold": false,"with":[{"bold":true,"underlined":true,"color":"#674cff","translate":"character.seronis","fallback":"賽羅尼斯"}]} \
     ]
 
 
@@ -131,7 +131,7 @@ tellraw @a[distance=..16] \
         {"translate": "story.characters.selena",color:"white","bold":true}, \
         {"atlas":"minecraft:items","sprite":"item/character/seronis","bold":false,shadow_color:0,"color":"white"}, \
         {"text":" : ","color":"white","bold": false}, \
-        {"translate": "story.chapter_2.ml.6.10","fallback": "原來是他，那是我與他在舊世界共同的敵人","bold": false} \
+        {"translate": "story.chapter_2.ml.6.10","fallback": "原來是他，那是我與他在舊世界共同的敵人","bold": false,"with":[{"bold":true,"color":"yellow","hover_event":{"action":"show_text","value":[{"translate":"story.icon.proper_noun","fallback":"[專有名詞]:","color":"white"},"\n",{"translate": "proper_noun.desc.2","fallback":"詳情請按","color":"white","bold":false,"italic":false},{"keybind": "key.advancements","color": "dark_green"},{"translate": "proper_noun.desc.3","fallback":"尋找對應內容","color":"white","bold":false,"italic":false}]},"italic":false,"translate":"proper_nouns.icon.old_story","underlined":true,"fallback": "舊世界"}]} \
     ]
 
 
@@ -167,7 +167,7 @@ tellraw @a[distance=..16] \
         {"translate": "story.characters.selena",color:"white","bold":true}, \
         {"atlas":"minecraft:items","sprite":"item/character/seronis","bold":false,shadow_color:0,"color":"white"}, \
         {"text":" : ","color":"white","bold": false}, \
-        {"translate": "story.chapter_2.ml.6.13","fallback": "在我的舊世界裡，我是一名偵探","bold": false} \
+        {"translate": "story.chapter_2.ml.6.13","fallback": "在我的舊世界裡，我是一名偵探","bold": false,"with":[{"bold":true,"color":"yellow","hover_event":{"action":"show_text","value":[{"translate":"story.icon.proper_noun","fallback":"[專有名詞]:","color":"white"},"\n",{"translate": "proper_noun.desc.2","fallback":"詳情請按","color":"white","bold":false,"italic":false},{"keybind": "key.advancements","color": "dark_green"},{"translate": "proper_noun.desc.3","fallback":"尋找對應內容","color":"white","bold":false,"italic":false}]},"italic":false,"translate":"proper_nouns.icon.old_story","underlined":true,"fallback": "舊世界"}]} \
     ]
 
 
@@ -237,7 +237,7 @@ tellraw @a[distance=..16] \
         {"translate": "story.characters.selena",color:"white","bold":true}, \
         {"atlas":"minecraft:items","sprite":"item/character/seronis","bold":false,shadow_color:0,"color":"white"}, \
         {"text":" : ","color":"white","bold": false}, \
-        {"translate": "story.chapter_2.ml.6.19","fallback": "但進入沒多久就被一股力量拉回現實並且獲得了名為 星空之霜 的力量","bold": false} \
+        {"translate": "story.chapter_2.ml.6.19","fallback": "但進入沒多久就被一股力量拉回現實並且獲得了名為 記憶之冰 的力量","bold": false, "with":[{"bold":true,"color":"#5de7ff","hover_event":{"action":"show_text","value":[{"translate":"story.icon.proper_noun","fallback":"[專有名詞]:","color":"white"},"\n",{"translate": "proper_noun.desc.2","fallback":"詳情請按","color":"white","bold":false,"italic":false},{"keybind": "key.advancements","color": "dark_green"},{"translate": "proper_noun.desc.3","fallback":"尋找對應內容","color":"white","bold":false,"italic":false}]},"italic":false,"translate":"story.icon.proper_noun.starry_sky_frost","underlined":true,"fallback": "記憶之冰"}]} \
     ]
 
 execute \
@@ -325,7 +325,7 @@ tellraw @a[distance=..16] \
         {"translate": "story.characters.selena",color:"white","bold":true}, \
         {"atlas":"minecraft:items","sprite":"item/character/seronis","bold":false,shadow_color:0,"color":"white"}, \
         {"text":" : ","color":"white","bold": false}, \
-        {"translate": "story.chapter_2.ml.6.27","fallback": "在世界記憶之樹附近發現了名為 賽羅尼斯 的時空觀測者","bold": false} \
+        {"translate": "story.chapter_2.ml.6.27","fallback": "在世界記憶之樹附近發現了名為 賽羅尼斯 的時空觀測者","bold": false,"with":[{"bold":true,"underlined":true,"color":"#674cff","translate":"character.seronis","fallback":"賽羅尼斯"}]} \
     ]
 
 execute \
@@ -336,7 +336,7 @@ tellraw @a[distance=..16] \
         {"translate": "story.characters.selena",color:"white","bold":true}, \
         {"atlas":"minecraft:items","sprite":"item/character/seronis","bold":false,shadow_color:0,"color":"white"}, \
         {"text":" : ","color":"white","bold": false}, \
-        {"translate": "story.chapter_2.ml.6.28","fallback": "賽羅尼斯 作為時空觀測者並不想這個世界就此毀滅","bold": false} \
+        {"translate": "story.chapter_2.ml.6.28","fallback": "賽羅尼斯 作為時空觀測者並不想這個世界就此毀滅","bold": false,"with":[{"bold":true,"underlined":true,"color":"#674cff","translate":"character.seronis","fallback":"賽羅尼斯"}]} \
     ]
 
 execute \
@@ -380,7 +380,7 @@ tellraw @a[distance=..16] \
         {"translate": "story.characters.selena",color:"white","bold":true}, \
         {"atlas":"minecraft:items","sprite":"item/character/seronis","bold":false,shadow_color:0,"color":"white"}, \
         {"text":" : ","color":"white","bold": false}, \
-        {"translate": "story.chapter_2.ml.6.32","fallback": "但無非是徒勞，世界走向毀滅的源頭是因為世界出現了「空之支配者」伊萊克爾","bold": false} \
+        {"translate": "story.chapter_2.ml.6.32","fallback": "但無非是徒勞，世界走向毀滅的源頭是因為世界出現了「永劫」支配者: 伊萊克爾","bold": false, "with":[{"bold":true,"color":"#fbff00","hover_event":{"action":"show_text","value":[{"translate":"story.icon.proper_noun","fallback":"[專有名詞]:","color":"white"},"\n",{"translate": "proper_noun.desc.2","fallback":"詳情請按","color":"white","bold":false,"italic":false},{"keybind": "key.advancements","color": "dark_green"},{"translate": "proper_noun.desc.3","fallback":"尋找對應內容","color":"white","bold":false,"italic":false}]},"italic":false,"translate":"monsters.elekiel","underlined":true,"fallback": "「永劫」支配者: 伊萊克爾"}]} \
     ]
 
 execute \
@@ -391,7 +391,7 @@ tellraw @a[distance=..16] \
         {"translate": "story.characters.selena",color:"white","bold":true}, \
         {"atlas":"minecraft:items","sprite":"item/character/seronis","bold":false,shadow_color:0,"color":"white"}, \
         {"text":" : ","color":"white","bold": false}, \
-        {"translate": "story.chapter_2.ml.6.33","fallback": "起初 賽羅尼斯 可以調用世界記憶之樹力量去使怪物消失，但漸漸地免疫回朔的引響","bold": false} \
+        {"translate": "story.chapter_2.ml.6.33","fallback": "起初 賽羅尼斯 可以調用世界記憶之樹力量去使怪物消失，但漸漸地免疫回朔的引響","bold": false,"with":[{"bold":true,"underlined":true,"color":"#674cff","translate":"character.seronis","fallback":"賽羅尼斯"}]} \
     ]
 
 execute \
@@ -402,7 +402,7 @@ tellraw @a[distance=..16] \
         {"translate": "story.characters.selena",color:"white","bold":true}, \
         {"atlas":"minecraft:items","sprite":"item/character/seronis","bold":false,shadow_color:0,"color":"white"}, \
         {"text":" : ","color":"white","bold": false}, \
-        {"translate": "story.chapter_2.ml.6.34","fallback": "且 伊萊克爾 發現了這裡，試圖透過摧毀回朔記憶片段來毀滅世界從而征服世界","bold": false} \
+        {"translate": "story.chapter_2.ml.6.34","fallback": "且 伊萊克爾 發現了這裡，試圖透過摧毀回朔記憶片段來毀滅世界從而征服世界","bold": false, "with":[{"bold":true,"color":"#fbff00","hover_event":{"action":"show_text","value":[{"translate":"story.icon.proper_noun","fallback":"[專有名詞]:","color":"white"},"\n",{"translate": "proper_noun.desc.2","fallback":"詳情請按","color":"white","bold":false,"italic":false},{"keybind": "key.advancements","color": "dark_green"},{"translate": "proper_noun.desc.3","fallback":"尋找對應內容","color":"white","bold":false,"italic":false}]},"italic":false,"translate":"character.elekiel","underlined":true,"fallback": "伊萊克爾"}]} \
     ]
 
 execute \
@@ -413,7 +413,7 @@ tellraw @a[distance=..16] \
         {"translate": "story.characters.selena",color:"white","bold":true}, \
         {"atlas":"minecraft:items","sprite":"item/character/seronis","bold":false,shadow_color:0,"color":"white"}, \
         {"text":" : ","color":"white","bold": false}, \
-        {"translate": "story.chapter_2.ml.6.35","fallback": "在經歷多次世界回朔與 伊萊克爾 的交戰","bold": false} \
+        {"translate": "story.chapter_2.ml.6.35","fallback": "在經歷多次世界回朔與 伊萊克爾 的交戰","bold": false, "with":[{"bold":true,"color":"#fbff00","hover_event":{"action":"show_text","value":[{"translate":"story.icon.proper_noun","fallback":"[專有名詞]:","color":"white"},"\n",{"translate": "proper_noun.desc.2","fallback":"詳情請按","color":"white","bold":false,"italic":false},{"keybind": "key.advancements","color": "dark_green"},{"translate": "proper_noun.desc.3","fallback":"尋找對應內容","color":"white","bold":false,"italic":false}]},"italic":false,"translate":"character.elekiel","underlined":true,"fallback": "伊萊克爾"}]} \
     ]
 
 execute \
@@ -424,7 +424,7 @@ tellraw @a[distance=..16] \
         {"translate": "story.characters.selena",color:"white","bold":true}, \
         {"atlas":"minecraft:items","sprite":"item/character/seronis","bold":false,shadow_color:0,"color":"white"}, \
         {"text":" : ","color":"white","bold": false}, \
-        {"translate": "story.chapter_2.ml.6.36","fallback": "伊萊克爾取得了勝利，同時也重傷了 賽羅尼斯","bold": false} \
+        {"translate": "story.chapter_2.ml.6.36","fallback": "伊萊克爾取得了勝利，同時也重傷了 賽羅尼斯","bold": false,"with":[{"bold":true,"color":"#fbff00","hover_event":{"action":"show_text","value":[{"translate":"story.icon.proper_noun","fallback":"[專有名詞]:","color":"white"},"\n",{"translate": "proper_noun.desc.2","fallback":"詳情請按","color":"white","bold":false,"italic":false},{"keybind": "key.advancements","color": "dark_green"},{"translate": "proper_noun.desc.3","fallback":"尋找對應內容","color":"white","bold":false,"italic":false}]},"italic":false,"translate":"character.elekiel","underlined":true,"fallback": "伊萊克爾"},{"bold":true,"underlined":true,"color":"#674cff","translate":"character.seronis","fallback":"賽羅尼斯"}]} \
     ]
 
 execute \
@@ -435,7 +435,7 @@ tellraw @a[distance=..16] \
         {"translate": "story.characters.selena",color:"white","bold":true}, \
         {"atlas":"minecraft:items","sprite":"item/character/seronis","bold":false,shadow_color:0,"color":"white"}, \
         {"text":" : ","color":"white","bold": false}, \
-        {"translate": "story.chapter_2.ml.6.37","fallback": "伊萊克爾從被世界記憶組成的牢籠破殼而出","bold": false} \
+        {"translate": "story.chapter_2.ml.6.37","fallback": "伊萊克爾從被世界記憶組成的牢籠破殼而出","bold": false, "with":[{"bold":true,"color":"#fbff00","hover_event":{"action":"show_text","value":[{"translate":"story.icon.proper_noun","fallback":"[專有名詞]:","color":"white"},"\n",{"translate": "proper_noun.desc.2","fallback":"詳情請按","color":"white","bold":false,"italic":false},{"keybind": "key.advancements","color": "dark_green"},{"translate": "proper_noun.desc.3","fallback":"尋找對應內容","color":"white","bold":false,"italic":false}]},"italic":false,"translate":"character.elekiel","underlined":true,"fallback": "伊萊克爾"}]} \
     ]
 
 execute \
@@ -446,7 +446,7 @@ tellraw @a[distance=..16] \
         {"translate": "story.characters.selena",color:"white","bold":true}, \
         {"atlas":"minecraft:items","sprite":"item/character/seronis","bold":false,shadow_color:0,"color":"white"}, \
         {"text":" : ","color":"white","bold": false}, \
-        {"translate": "story.chapter_2.ml.6.38","fallback": "與其餘的 舊日支配者 成為了新世界的統治者","bold": false} \
+        {"translate": "story.chapter_2.ml.6.38","fallback": "與其餘的 舊日支配者 成為了新世界的統治者","bold": false, "with":[{"bold":true,"color":"dark_red","hover_event":{"action":"show_text","value":[{"translate":"story.icon.proper_noun","fallback":"[專有名詞]:","color":"white"},"\n",{"translate": "proper_noun.desc.2","fallback":"詳情請按","color":"white","bold":false,"italic":false},{"keybind": "key.advancements","color": "dark_green"},{"translate": "proper_noun.desc.3","fallback":"尋找對應內容","color":"white","bold":false,"italic":false}]},"italic":false,"translate":"story.icon.proper_noun.great_old_ones","underlined":true,"fallback": "舊日支配者"}]} \
     ]
 
 execute \
@@ -501,7 +501,7 @@ tellraw @a[distance=..16] \
         {"translate": "story.characters.selena",color:"white","bold":true}, \
         {"atlas":"minecraft:items","sprite":"item/character/seronis","bold":false,shadow_color:0,"color":"white"}, \
         {"text":" : ","color":"white","bold": false}, \
-        {"translate": "story.chapter_2.ml.6.43","fallback": "記憶之冰雖然與世界記憶之樹有著部分聯繫","bold": false} \
+        {"translate": "story.chapter_2.ml.6.43","fallback": "記憶之冰雖然與世界記憶之樹有著部分聯繫","bold": false ,"with":[{"bold":true,"color":"#5de7ff","hover_event":{"action":"show_text","value":[{"translate":"story.icon.proper_noun","fallback":"[專有名詞]:","color":"white"},"\n",{"translate": "proper_noun.desc.2","fallback":"詳情請按","color":"white","bold":false,"italic":false},{"keybind": "key.advancements","color": "dark_green"},{"translate": "proper_noun.desc.3","fallback":"尋找對應內容","color":"white","bold":false,"italic":false}]},"italic":false,"translate":"story.icon.proper_noun.starry_sky_frost","underlined":true,"fallback": "記憶之冰"}]} \
     ]
 
 execute \
@@ -602,6 +602,10 @@ tellraw @a[distance=..16] \
         {"text":"\n"} \
     ]
 
+execute \
+    positioned 926 167 909 \
+    if score story.chapter_2.ml.6 story.chapter_2 matches 51 run \
+function story:chapter_2/ml/6/selena_stories/true
 
 execute \
     if score story.chapter_2.ml.6 story.chapter_2 matches 51 run \

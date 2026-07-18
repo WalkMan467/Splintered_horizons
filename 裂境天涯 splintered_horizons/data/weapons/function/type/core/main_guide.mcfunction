@@ -6,6 +6,19 @@ execute \
     as @e[sort=arbitrary,tag=wind_sword.wind,limit=20,distance=0..,type=item_display] at @s run \
 function weapons:type/sword/wind_sword/wind/main
 
+# heavenly guiding arrow
+execute \
+    as @e[distance=..60,sort=arbitrary,tag=weapon.heavenly_guiding_bow.arrow,type=#arrows] at @s run \
+function weapons:type/arrows/heavenly_guiding_arrow/main
+
+execute \
+    as @e[distance=..60,sort=arbitrary,tag=weapon.heavenly_guiding_bow.arrow.magic_circle,type=item_display] at @s run \
+function weapons:type/arrows/heavenly_guiding_arrow/magic_circle/main
+
+execute \
+    as @e[sort=arbitrary,distance=..60,tag=weapon.heavenly_guiding_arrow.holy_fire.point,type=marker] at @s run \
+function weapons:type/arrows/heavenly_guiding_arrow/magic_circle/holy_fire/main
+
 execute \
     as @e[sort=arbitrary,tag=weapon.otherworld_star.fallstar.display,limit=10,distance=0..,type=block_display] at @s run \
 function weapons:type/sword/otherworld_star/fallstar/main
@@ -20,12 +33,12 @@ function weapons:type/sword/twilight_wind/wind/main
 
 function weapons:type/axe/thunder_duet/main
 
-execute \
-    as @a at @s run \
 function weapons:type/axe/thunder_duet/player_main
 
 # illusory claw
-execute as @e[distance=0..,tag=ench.illusory_claw,type=!#dummy_mob] at @s run function weapons:enchantment/illusory_claw/main
+execute \
+    as @e[distance=0..,tag=ench.phantom_fangs,type=!#dummy_mob] at @s run \
+function energy_infusion_stone:skills/weapon/phantom_fangs/main
 
 # nightfall
 
@@ -42,13 +55,13 @@ function weapons:type/arrows/ground_detect/run with entity @s item.components."m
 # grip of withering
 
 execute \
-    as @a run \
+    as @a at @s run \
 function weapons:type/sword/grip_of_withering/main
 
 # Throwable Item
 
 execute \
-    as @a run \
+    as @a at @s run \
 function weapons:type/drop/miniature_sun/rc/main
 
 execute \

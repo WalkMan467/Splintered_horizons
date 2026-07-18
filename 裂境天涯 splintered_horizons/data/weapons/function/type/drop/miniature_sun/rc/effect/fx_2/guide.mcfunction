@@ -1,3 +1,4 @@
+# warn-off-file target-selector-no-dimension
 
 execute \
     as @e[tag=weapon.miniature_sun.main.fx,type=area_effect_cloud] at @s rotated 0 -90 run \

@@ -1,26 +1,15 @@
 {
   "values": [
     "#minecraft:dot",
-    "#weapons:type/sword/nightfall",
-    "#weapons:type/sword/otherworld_star",
-    "#weapons:type/scythe/flame_of_finality/attack",
-    "#weapons:type/axe/earthquake_axe",
-    "#weapons:type/sword/echo_rhythm",
+    "#weapons:no_knockback",
     "#monsters:chapter_2/elekiel/1/all",
     "#monsters:chapter_2/elekiel_phase_2/1/all",
     "#monsters:chapter_2/elekiel_phase_2/2/all",
     "#bossfight:chapter_2/segrina/skills/all",
-    "weapons:type/scythe/ruins_of_the_finality/damage",
-    "weapons:type/sword/grip_of_withering",
-    "weapons:type/sword/aquilumera",
-    "weapons:type/sword/twilight_wind",
-    "weapons:type/sword/wind_sword",
-    "weapons:type/sword/spider",
-    "weapons:type/sword/morning_light",
-    "weapons:type/sword/kill_sword",
     "armors:type/windriders_legplates/damage",
     "armors:type/symbiotic_blood_oath/damage",
     "armors:type/black_hole/damage",
+    "weapons:type/bow/heavenly_guiding_bow/damage",
     "monsters:chapter_2/emissary_of_the_temporal_rift/key/dmg",
     "bossfight:chapter_2/segrina/skills/1/damage"
   ]

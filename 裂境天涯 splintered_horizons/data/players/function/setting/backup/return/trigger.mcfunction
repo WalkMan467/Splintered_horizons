@@ -3,6 +3,11 @@ execute \
 return 0
 
 execute \
+    if score @s player.setting.backup.trigger.disabled matches 1.. run \
+    return run \
+function players:setting/backup/return/failure
+
+execute \
     if score @s player.setting.backup.return.id matches 1 run \
 function players:inventory/return {bag:"backup/1"}
 

@@ -1,28 +1,29 @@
 def build_item_struct():
     return {
-        "name": ['共生血誓', "dark_red", '胸甲 / 神話'],
+        "name": ['聖騎士的頭盔', "gold", '頭盔 / 稀有'],
         "story": {
-            'info': ['來自緋紅之爪伊索克拉的舊世界','昔日的光輝已被黑暗所壟罩','被緋紅之力的渾沌之血侵蝕著這套騎士的鎧甲','述說著曾經人們與深淵的慘烈戰鬥'],
+            'info': ['來自 星 的舊世界','昔日的 12 聖騎之一','「白月」聖騎的遺物','與阿斯卡等聖騎一同守護著世界'],
             'color': 'blue'
         },
         "item_data": {
             'real_item': 'bundle',
-            'id': 'symbiotic_blood_oath',
-            'item_model': '"chestplate/symbiotic_blood_oath/0"',
-            'custom_data': 'type:"armor",rarity:"mythic",active_skills:1b,id:"symbiotic_blood_oath"',
+            'id': 'paladins_helmet',
+            'item_model': '"head/paladins_helmet/1"',
+            'custom_data': 'type:"armor",rarity:"rare",active_skills:0b,id:"paladins_helmet"',
             'rc': False,
             'lc': False,
             'max_damage': 0,
             'max_stack_size': 1,
             'other': [
                 'enchantment_glint_override=false',
-                'tooltip_style="mythic"',
-                'equippable={slot:"chest",equip_sound:"minecraft:block.anvil.use",asset_id:"symbiotic_blood_oath"}'
+                'tooltip_style="rare"',
+                'equippable={slot:"head",equip_sound:"minecraft:item.armor.equip_netherite",asset_id:"gold"}',
+                'enchantments={"armors:paladins_helmet":1}'
             ]
         },
 
         "skill": {
-            "is_skill": True,
+            "is_skill": False,
             "cd": 25,
             "name": ["共生契約", "dark_red", "#ffffff"],
             "info": [
@@ -48,16 +49,15 @@ def build_item_struct():
 
         "passive_skills": {
             'is_passive_skills': True,
-            'cd': 10,
-            'name': ['血之祝福', '#ff0000', "#ffffff"],
+            'cd': 3,
+            'name': ['聖騎守護', '#ff0000', "#ffffff"],
             'info': [
-                "當你受傷時",
+                "當你受到近戰傷害時:",
                 {
-                    "text": "有 %1$s 機率使你獲得 %2$s IV (00:01)",
+                    "text": "使你獲得 %2$s II (00:01)",
                     "with": 
                     [
-                        {"text":"50%"},
-                        {"translate":"effect.minecraft.regeneration","underlined":True,"color":"dark_green"}
+                        {"translate":"effect.minecraft.resistance","underlined":True,"color":"#777777"}
                     ]
                 }
             ]

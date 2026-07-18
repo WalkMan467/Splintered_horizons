@@ -6,6 +6,7 @@
     "#weapons:type/sword/echo_rhythm",
     "#weapons:type/sword/otherworld_star",
     "#weapons:type/scythe/flame_of_finality/attack",
+    "#weapons:all_attack",
     "#monsters:chapter_2/elekiel_phase_2/1/all",
     "#bossfight:chapter_2/segrina/skills/all",
     "weapons:type/axe/thunder_duet/damage",
@@ -16,10 +17,13 @@
     "weapons:type/sword/aquilumera",
     "weapons:type/sword/spider",
     "weapons:type/sword/morning_light",
+    "weapons:type/bow/heavenly_guiding_bow/damage",
+    "arrow",
     "armors:type/symbiotic_blood_oath/damage",
     "armors:type/black_hole/damage",
     "monsters:chapter_2/emissary_of_the_temporal_rift/key/dmg",
     "monsters:chapter_1/explosion_arrow_skeleton/damage",
-    "bossfight:chapter_2/segrina/skills/1/damage"
+    "bossfight:chapter_2/segrina/skills/1/damage",
+    "cse:status_effects/apply/entropy_erosion/dot"
   ]
 }

@@ -1,12 +1,11 @@
-give @s enchanted_book[item_name=[{"translate": "item.energy_infusion_stone.destroyer", "color": "#ff4a03", "bold": true}],lore=[[{"translate": "item.energy_infusion_stone.destroyer.type", "color": "dark_gray", "italic": false}], {"text": ""}, [{"translate": "item.energy_infusion_stone.generic.story.1", "color": "blue", "italic": false}], [{"translate": "item.energy_infusion_stone.generic.story.2", "color": "blue", "italic": false}], [{"translate": "item.energy_infusion_stone.generic.story.3", "color": "blue", "italic": false}], [{"translate": "item.energy_infusion_stone.generic.story.4", "color": "blue", "italic": false}], {"text": ""}, [{"text": "", "italic": false}, {"translate": "item.energy_infusion_stone.generic.attributes", "color": "#ffffff", "bold": true}, {"text": "  "}], [{"text": "", "italic": false}, {"translate": "item.energy_infusion_stone.destroyer.attributes.1", "color": "#ffffff", "italic": false, "with": [{"translate": "attribute.name.attack_damage", "underlined": False, "bold": False, "color": "green"}, {"text": "+25%", "underlined": False, "bold": False, "color": "green"}, {"translate": "item.energy_infusion_stone.generic.attributes.level", "underlined": False, "bold": False, "color": "green"}]}], [{"text": "", "italic": false}, {"translate": "item.energy_infusion_stone.destroyer.attributes.2", "color": "#ffffff", "italic": false, "with": [{"translate": "attribute.name.attack_speed", "underlined": False, "bold": False, "color": "red"}, {"text": "-0.15", "underlined": False, "bold": False, "color": "red"}, {"translate": "item.energy_infusion_stone.generic.attributes.level", "underlined": False, "bold": False, "color": "red"}]}], {"text": ""}],item_model="material/energy_infusion_stone/weapon/rare",stored_enchantments={"energy_infusion_stone:skills/weapon/destroyer":1},enchantment_glint_override=false,custom_data={type:"item",rarity:"rare",id:"weapon_energy_infusion"},tooltip_style="rare",tooltip_display={hidden_components:["stored_enchantments"]},max_stack_size=64] 64
+give @s music_disc_11[item_name=[{"translate": "item.energy_infusion_stone.generic", "color": "#ff4a03", "bold": true}],lore=[[{"translate": "item.energy_infusion_stone.destroyer.type", "color": "dark_gray", "italic": false}], {"text": ""}, [{"translate": "item.energy_infusion_stone.generic.story.1", "color": "blue", "italic": false}], [{"translate": "item.energy_infusion_stone.generic.story.2", "color": "blue", "italic": false}], [{"translate": "item.energy_infusion_stone.generic.story.3", "color": "blue", "italic": false}], [{"translate": "item.energy_infusion_stone.generic.story.4", "color": "blue", "italic": false}], {"text": ""}],item_model="material/energy_infusion_stone/weapon/rare",enchantments={"energy_infusion_stone:skills/weapon/destroyer":1},enchantment_glint_override=false,custom_data={type:"item",rarity:"rare",id:"weapon_energy_infusion"},tooltip_style="rare",tooltip_display={hidden_components:["unbreakable","jukebox_playable"]},max_stack_size=64] 64
+give @s music_disc_11[item_name=[{"translate": "item.energy_infusion_stone.generic", "color": "#ff4a03", "bold": true}],lore=[[{"translate": "item.energy_infusion_stone.destroyer.type", "color": "dark_gray", "italic": false}], {"text": ""}, [{"translate": "item.energy_infusion_stone.generic.story.1", "color": "blue", "italic": false}], [{"translate": "item.energy_infusion_stone.generic.story.2", "color": "blue", "italic": false}], [{"translate": "item.energy_infusion_stone.generic.story.3", "color": "blue", "italic": false}], [{"translate": "item.energy_infusion_stone.generic.story.4", "color": "blue", "italic": false}], {"text": ""}],item_model="material/energy_infusion_stone/weapon/rare",enchantments={"energy_infusion_stone:skills/weapon/destroyer":2},enchantment_glint_override=false,custom_data={type:"item",rarity:"rare",id:"weapon_energy_infusion"},tooltip_style="rare",tooltip_display={hidden_components:["unbreakable","jukebox_playable"]},max_stack_size=64] 64
+give @s music_disc_11[item_name=[{"translate": "item.energy_infusion_stone.generic", "color": "#ff4a03", "bold": true}],lore=[[{"translate": "item.energy_infusion_stone.destroyer.type", "color": "dark_gray", "italic": false}], {"text": ""}, [{"translate": "item.energy_infusion_stone.generic.story.1", "color": "blue", "italic": false}], [{"translate": "item.energy_infusion_stone.generic.story.2", "color": "blue", "italic": false}], [{"translate": "item.energy_infusion_stone.generic.story.3", "color": "blue", "italic": false}], [{"translate": "item.energy_infusion_stone.generic.story.4", "color": "blue", "italic": false}], {"text": ""}],item_model="material/energy_infusion_stone/weapon/rare",enchantments={"energy_infusion_stone:skills/weapon/destroyer":3},enchantment_glint_override=false,custom_data={type:"item",rarity:"rare",id:"weapon_energy_infusion"},tooltip_style="rare",tooltip_display={hidden_components:["unbreakable","jukebox_playable"]},max_stack_size=64] 64
 
 # ==============================
 # Translate Keys
 # ==============================
-# "item.energy_infusion_stone.destroyer" : "武器注能: 破壞者",
 # "item.energy_infusion_stone.destroyer.type" : "注能之石 / 稀有",
-# "item.energy_infusion_stone.destroyer.attributes.1" : "%1$s %2$s (%3$s %2$s)",
-# "item.energy_infusion_stone.destroyer.attributes.2" : "%1$s %2$s (%3$s %2$s)",
 
 # ==============================
 # item_builder.py Backup
@@ -19,15 +18,15 @@ give @s enchanted_book[item_name=[{"translate": "item.energy_infusion_stone.dest
 #             'color': 'blue'
 #         },
 #         "item_data": {
-#             'real_item': 'enchanted_book',
+#             'real_item': 'music_disc_11',
 #             'id': 'energy_infusion_stone.destroyer',
 #             'item_model': '"material/energy_infusion_stone/weapon/rare"',
 #             'custom_data': 'type:"item",rarity:"rare",id:"weapon_energy_infusion"',
-#             'stored_enchantments': ['energy_infusion_stone:skills/weapon/destroyer:1'],
+#             'enchantments': ['energy_infusion_stone:skills/weapon/destroyer:1'],
 #             'max_stack_size': 64,
 #             'other': [
 #                 'tooltip_style="rare"',
-#                 'tooltip_display={hidden_components:["stored_enchantments"]}'
+#                 'tooltip_display={hidden_components:["unbreakable","jukebox_playable"]}'
 #             ]
 #         },
 #         "skill": {
@@ -61,7 +60,7 @@ give @s enchanted_book[item_name=[{"translate": "item.energy_infusion_stone.dest
 #             ]
 #         },
 #         "attributes": {
-#             'is_attributes': True,  # 新增 attributes 標記
+#             'is_attributes': False,  # 新增 attributes 標記
 #             'name': ['屬性', '#ffffff', '#ffffff'],
 #             'info': [
 #                 {

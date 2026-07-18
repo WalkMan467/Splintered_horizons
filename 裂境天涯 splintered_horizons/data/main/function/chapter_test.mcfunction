@@ -10,6 +10,7 @@ gamemode survival @s
 function monsters:chapter_2/elekiel_phase_2/reset_skill_tips
 function monsters:chapter_2/elekiel/reset_skill_tips
 function bossfight:chapter_2/segrina/skills/reset_skill_tips
+function energy_infusion_stone:remove_energy_infusion_stone_icon
 
 # Chapter 2
 
@@ -19,14 +20,18 @@ tp @s 757 142 912 0 0
 
 datapack disable "file/spawner_tweaker-LATEST-1.21.11"
 
+scoreboard players set #weapons:monument/area_1 global.main 1
+scoreboard players set #weapons:monument/area_2 global.main 0
+
+
 scoreboard players reset WalkMan467 player.death_count
 scoreboard players set #sys.shooting_contest.sagittarius global.main 1
 scoreboard players set #game.start.state global.main 0
 
 scoreboard players set @s player.spawnpoint.dimension 0
-scoreboard players set @s player.spawnpoint.pos.x 757
-scoreboard players set @s player.spawnpoint.pos.y 142
-scoreboard players set @s player.spawnpoint.pos.z 912
+scoreboard players set @s player.spawnpoint.pos.x 75700
+scoreboard players set @s player.spawnpoint.pos.y 14200
+scoreboard players set @s player.spawnpoint.pos.z 91200
 
 scoreboard players set #monument.area_1 global.main 1
 scoreboard players set #weapons:monument/area_1 global.main 1
@@ -63,9 +68,6 @@ advancement revoke @s only music:main/icon
 
     advancement revoke @s only music:main/safe_zone/icon
         advancement revoke @s only music:main/safe_zone/title
-        
-    advancement revoke @s only music:main/tree_of_world_memory/icon
-        advancement revoke @s only music:main/tree_of_world_memory/title
 
 advancement grant @s only music:chapter_1/icon
 
@@ -122,11 +124,13 @@ function armors:get/windriders_legplates
 give @s crafting_table
 item replace entity @s weapon.offhand with torch 20
 
-
+# Chapter 3
 execute \
     if score #chapter_test global.main matches ..2 run \
 return 0
 
+scoreboard players set #weapons:monument/area_1 global.main 1
+scoreboard players set #weapons:monument/area_2 global.main 0
 
 execute \
     in minecraft:overworld run \
@@ -135,9 +139,9 @@ tp @s 788 109 183 135 0
 scoreboard players set #story:icon/proper_noun/abyss/2 global.main 1
 
 scoreboard players set @s player.spawnpoint.dimension 0
-scoreboard players set @s player.spawnpoint.pos.x 788
-scoreboard players set @s player.spawnpoint.pos.y 109
-scoreboard players set @s player.spawnpoint.pos.z 183
+scoreboard players set @s player.spawnpoint.pos.x 78800
+scoreboard players set @s player.spawnpoint.pos.y 10900
+scoreboard players set @s player.spawnpoint.pos.z 18300
 
 advancement revoke @s only music:chapter_3/icon
 

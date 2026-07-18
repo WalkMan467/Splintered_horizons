@@ -62,7 +62,7 @@ tellraw @s ""
 
 execute \
     if score #bossfight.elekiel_phase_2.5 global.main matches 1.. run \
-tellraw @s ["",{translate:"monsters.elekiel_phase_2.5.1","underlined":false,"color":"white","bold":false},{text:"\n"},{translate:"monsters.elekiel_phase_2.5.2","color":"white","bold":false,"with":[{"keybind":"key.attack","color":"dark_green","bold":true,"underlined":true}]},{text:"\n"},{translate:"monsters.elekiel_phase_2.5.3","color":"white","bold":false,"with":[{"translate":"monsters.elekiel_phase_2.5.4","color":"gold","bold":true,"underlined":true}]},{text:"\n"},{translate:"monsters.elekiel_phase_2.5.5","color":"white","bold":false}]
+tellraw @s ["",{translate:"monsters.elekiel_phase_2.5.1","underlined":false,"color":"white","bold":false},{text:"\n"},{translate:"monsters.elekiel_phase_2.5.2","color":"white","bold":false,"with":[{"keybind":"key.attack","color":"dark_green","bold":true,"underlined":true}]},{text:"\n"},{translate:"monsters.elekiel_phase_2.5.3","color":"white","bold":false,"with":[{"translate":"monsters.elekiel_phase_2.5.4","color":"gold","bold":true,"underlined":true}]},{text:"\n"},{translate:"monsters.elekiel_phase_2.5.5","color":"white","bold":false},{text:"\n"},{translate:"monsters.elekiel_phase_2.5.6","color":"light_purple","bold":false,"underlined":true}]
 
 execute \
     if score #bossfight.elekiel_phase_2.5 global.main matches 1.. run \

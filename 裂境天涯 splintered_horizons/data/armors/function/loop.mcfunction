@@ -33,9 +33,6 @@
 # ===================================================
 
 
-
-
-
 execute \
     if score @s armor.helmet.effect.actived matches 1.. run \
 function #armors:helmet

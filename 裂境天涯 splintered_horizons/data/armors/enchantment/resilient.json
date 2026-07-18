@@ -1,6 +1,6 @@
 {
   "description": {
-    "translate": "armor.enchantment.resilient",
+    "translate": "item.energy_infusion_stone.resilient",
     "fallback": "Resilient"
   },
   "supported_items": "minecraft:air",

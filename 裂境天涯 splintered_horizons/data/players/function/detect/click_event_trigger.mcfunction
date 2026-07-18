@@ -49,15 +49,15 @@ function sys:walkman467/select_lang
 
 execute \
     if score @s player.detect.click_event.trigger matches 11 run \
-function monsters:summon/chapter_2/segrina
+schedule function bossfight:chapter_2/segrina/summon/1 1t
 
 execute \
     if score @s player.detect.click_event.trigger matches 12 run \
-function bossfight:chapter_2/act/elekiel_phase_2/back
+function bossfight:chapter_2/act/elekiel_phase_2/back/trigger
 
 execute \
     if score @s player.detect.click_event.trigger matches 13 run \
-tp @s 1136 154 1844 37.87 0
+function bossfight:chapter_2/act/elekiel_phase_2/leave_bossfight/trigger
 
 execute \
     if score @s player.detect.click_event.trigger matches 14 run \
@@ -90,6 +90,18 @@ function bossfight:chapter_2/act/elekiel/skill_introduction
 execute \
     if score @s player.detect.click_event.trigger matches 21 run \
 function bossfight:chapter_2/act/elekiel/back
+
+execute \
+    if score @s player.detect.click_event.trigger matches 22 run \
+function players:setting/reset_default_setup/confirm
+
+execute \
+    if score @s player.detect.click_event.trigger matches 23 run \
+function players:setting/reset_default_setup/cancel
+
+execute \
+    if score @s player.detect.click_event.trigger matches 24 run \
+function story:safe_area/selena/trigger/1/run
 
 scoreboard players set @s player.detect.click_event.trigger 0
 scoreboard players enable @s player.detect.click_event.trigger

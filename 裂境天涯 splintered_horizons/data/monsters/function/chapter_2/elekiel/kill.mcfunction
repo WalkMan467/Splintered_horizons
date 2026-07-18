@@ -70,4 +70,20 @@ execute \
     as @a run \
 function music:chapter_2/bossfight/2/reset
 
-tp @a -916 60 2761 180 0
+execute \
+    positioned 912 60 2018 run \
+scoreboard players set @a[distance=..120] player.spawnpoint.dimension 0
+
+execute \
+    positioned 912 60 2018 run \
+scoreboard players set @a[distance=..120] player.spawnpoint.pos.x -91600
+
+execute \
+    positioned 912 60 2018 run \
+scoreboard players set @a[distance=..120] player.spawnpoint.pos.y 6000
+
+execute \
+    positioned 912 60 2018 run \
+scoreboard players set @a[distance=..120] player.spawnpoint.pos.z 275400
+
+tp @a -916 60 2754 180 0

@@ -215,9 +215,13 @@ def generate_give_command(item):
         merged_other.append(enchant_line)
 
     # ===== give =====
+    item_name_json = json.dumps([
+        {"translate": f"weapon.{item_data['id']}", "color": name[1], "bold": True}
+    ], ensure_ascii=False)
+
     cmd = (
         f'give @s {item_data["real_item"]}['
-        f'item_name={json.dumps([{"translate": f"weapon.{item_data["id"]}", "color": name[1], "bold": True}], ensure_ascii=False)},'
+        f'item_name={item_name_json},'
         f'lore={lore_json}'
         f'{attr_string},'
         f'max_stack_size={max_stack}'

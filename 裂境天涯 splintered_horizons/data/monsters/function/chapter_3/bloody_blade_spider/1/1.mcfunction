@@ -1,21 +1,9 @@
-
 execute \
-    on passengers run \
-tag @s[type=player] add temp
+    unless score @s monster.bloody_blade_spider.dot.delay matches 10.. run \
+    return run \
+scoreboard players add @s monster.bloody_blade_spider.dot.delay 1
 
+damage @s 1 monsters:chapter_3/bloody_blade_spider/dot by @n[sort=arbitrary,distance=..2,tag=monsters.bloody_blade_spider,type=spider]
 
-execute \
-    unless entity @p[tag=temp,distance=..1.5] run \
-function monsters:chapter_3/bloody_blade_spider/cast/end
-damage @p[tag=temp,distance=..3] 2 monsters:chapter_3/bloody_blade_spider/dot by @s
-
-
-execute \
-    on passengers run \
-scoreboard players set @s player.animation.lock 10
-
-
-
-execute \
-    on passengers run \
-tag @s[type=player] remove temp
+scoreboard players reset @s monster.bloody_blade_spider.dot.delay
+scoreboard players set @s player.animation.lock 20

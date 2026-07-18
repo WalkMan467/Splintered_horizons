@@ -1,18 +1,18 @@
 # @s = Players
 
-# Ethereal Shatterstorm Compound Bow
-
-execute \
-    if entity @s[tag=ethereal_shatterstorm_compound_bow.user] run \
-function weapons:type/bow/ethereal_shatterstorm_compound_bow/rc/main
-
 # sagittarius
 
 execute \
     if entity @s[tag=sagittarius.user] run \
 function weapons:type/bow/sagittarius/rc/main
 
-# sagittarius
+# heavenly_guiding_bow
+
+execute \
+    if entity @s[tag=heavenly_guiding_bow.user] run \
+function weapons:type/bow/heavenly_guiding_bow/rc/main
+
+# flame_of_finality
 
 function weapons:type/scythe/flame_of_finality/lc/main
 

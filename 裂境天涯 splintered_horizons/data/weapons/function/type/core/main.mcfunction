@@ -1,3 +1,5 @@
+execute \
+    as @a at @s run \
 function weapons:type/core/main_guide
 
 execute \

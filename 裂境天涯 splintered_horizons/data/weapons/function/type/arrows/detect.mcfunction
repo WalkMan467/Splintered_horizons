@@ -5,6 +5,11 @@ return 0
 
 execute \
     on attacker \
+    if entity @s[advancements={weapons:arrows/heavenly_guiding_arrow=true}] run \
+function weapons:type/arrows/heavenly_guiding_arrow/use
+
+execute \
+    on attacker \
     if entity @s[advancements={weapons:arrows/sagittarius_arrow=true}] run \
 function weapons:type/arrows/sagittarius_arrow/use
 

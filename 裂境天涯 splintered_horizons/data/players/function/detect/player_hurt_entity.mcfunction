@@ -1,4 +1,4 @@
-advancement revoke @s only players:detect/player_hurt_entity
+advancement revoke @s only sys:attack_speed/on_hurt
 
 function armors:type/windriders_legplates/effect/use
 function armors:type/wtsf/charge

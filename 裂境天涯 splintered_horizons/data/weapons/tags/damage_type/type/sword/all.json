@@ -10,6 +10,14 @@
     "weapons:type/sword/spider",
     "weapons:type/sword/twilight_wind",
     "weapons:type/sword/wind_sword",
+    "weapons:type/sword/kill_sword",
+    "weapons:type/scythe/ruins_of_the_finality/damage",
+    "weapons:type/sword/grip_of_withering",
+    "weapons:type/sword/aquilumera",
+    "weapons:type/sword/twilight_wind",
+    "weapons:type/sword/wind_sword",
+    "weapons:type/sword/spider",
+    "weapons:type/sword/morning_light",
     "weapons:type/sword/kill_sword"
   ]
 }

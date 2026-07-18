@@ -1,0 +1,69 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:iron_chestplate",
+      "components": {
+        "minecraft:custom_model_data": {
+          "floats": [
+            0
+          ],
+          "strings": []
+        },
+        "minecraft:item_model": "head/paladins_helmet/1"
+      },
+      "count": 1
+    },
+    "title": {
+      "translate": "armor.paladins_helmet"
+    },
+    "description": [
+      {
+        "translate": "armor.paladins_helmet.story.1",
+        "color": "blue",
+        "bold": false,
+        "italic": false
+      },
+      "\n",
+      {
+        "translate": "armor.paladins_helmet.story.2",
+        "color": "blue",
+        "bold": false,
+        "italic": false
+      },
+      "\n",
+      {
+        "translate": "armor.paladins_helmet.story.3",
+        "color": "blue",
+        "bold": false,
+        "italic": false
+      },
+      "\n",
+      {
+        "translate": "armor.paladins_helmet.story.4",
+        "color": "blue",
+        "bold": false,
+        "italic": false
+      }
+    ],
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "armors:icon/chapter_1",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "predicates": {
+              "minecraft:custom_data": {
+                "id": "paladins_helmet"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

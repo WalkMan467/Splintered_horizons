@@ -48,7 +48,7 @@ tellraw @a[distance=..16] \
         {"translate": "story.characters.seronis",color:"white","bold":true}, \
         {"atlas":"minecraft:items","sprite":"item/character/seronis","bold":false,shadow_color:0,"color":"white"}, \
         {"text":" : ","color":"white","bold": false}, \
-        {"translate": "story.chapter_1.sq.2.3","fallback": "我的名字是賽羅尼斯，我是來至舊世界的時空觀測者","bold": false,"with":[{"bold":true,"color":"yellow","hover_event":{"action":"show_text","value":[{"translate":"story.icon.proper_noun","fallback":"[專有名詞]:","color":"white"},"\n",{"translate": "proper_noun.desc.2","fallback":"詳情請按","color":"white","bold":false,"italic":false},{"keybind": "key.advancements","color": "dark_green"},{"translate": "proper_noun.desc.3","fallback":"尋找對應內容","color":"white","bold":false,"italic":false}]},"italic":false,"translate":"proper_nouns.icon.old_story","underlined":true,"fallback": "舊世界"}]} \
+        {"translate": "story.chapter_1.sq.2.3","fallback": "我的名字是賽羅尼斯，我是來至舊世界的時空觀測者","bold": false,"with":[{"bold":true,"underlined":true,"color":"#674cff","translate":"character.seronis","fallback":"賽羅尼斯"},{"bold":true,"color":"yellow","hover_event":{"action":"show_text","value":[{"translate":"story.icon.proper_noun","fallback":"[專有名詞]:","color":"white"},"\n",{"translate": "proper_noun.desc.2","fallback":"詳情請按","color":"white","bold":false,"italic":false},{"keybind": "key.advancements","color": "dark_green"},{"translate": "proper_noun.desc.3","fallback":"尋找對應內容","color":"white","bold":false,"italic":false}]},"italic":false,"translate":"proper_nouns.icon.old_story","underlined":true,"fallback": "舊世界"}]} \
     ]
 
 
@@ -60,7 +60,7 @@ tellraw @a[distance=..16] \
         {"translate": "story.characters.seronis",color:"white","bold":true}, \
         {"atlas":"minecraft:items","sprite":"item/character/seronis","bold":false,shadow_color:0,"color":"white"}, \
         {"text":" : ","color":"white","bold": false}, \
-        {"translate": "story.chapter_1.sq.2.4","fallback": "只是因為來至「永劫」的支配者 伊萊克爾","bold": false} \
+        {"translate": "story.chapter_1.sq.2.4","fallback": "只是因為來至「永劫」的支配者 伊萊克爾","bold": false, "with":[{"bold":true,"color":"#fbff00","hover_event":{"action":"show_text","value":[{"translate":"story.icon.proper_noun","fallback":"[專有名詞]:","color":"white"},"\n",{"translate": "proper_noun.desc.2","fallback":"詳情請按","color":"white","bold":false,"italic":false},{"keybind": "key.advancements","color": "dark_green"},{"translate": "proper_noun.desc.3","fallback":"尋找對應內容","color":"white","bold":false,"italic":false}]},"italic":false,"translate":"monsters.elekiel","underlined":true,"fallback": "「永劫」支配者: 伊萊克爾"}]} \
     ]
 
 
@@ -83,7 +83,7 @@ tellraw @a[distance=..16] \
         {"translate": "story.characters.sophia",color:"white","bold":true},\
         {"atlas":"minecraft:items","sprite":"item/character/sophia","bold":false,shadow_color:0,"color":"white"},\
         {"text":" : ","color":"white","bold": false}, \
-        {"translate": "story.chapter_1.sq.2.6","fallback": "等等，你說「永劫」的支配者？","bold": false} \
+        {"translate": "story.chapter_1.sq.2.6","fallback": "等等，你說「永劫」的支配者？","bold": false, "with":[{"bold":true,"color":"#fbff00","hover_event":{"action":"show_text","value":[{"translate":"story.icon.proper_noun","fallback":"[專有名詞]:","color":"white"},"\n",{"translate": "proper_noun.desc.2","fallback":"詳情請按","color":"white","bold":false,"italic":false},{"keybind": "key.advancements","color": "dark_green"},{"translate": "proper_noun.desc.3","fallback":"尋找對應內容","color":"white","bold":false,"italic":false}]},"italic":false,"translate":"monsters.elekiel","underlined":true,"fallback": "「永劫」支配者: 伊萊克爾"}]} \
     ]
 
 execute \
@@ -171,7 +171,7 @@ tellraw @a[distance=..16] \
         {"translate": "story.characters.seronis",color:"white","bold":true}, \
         {"atlas":"minecraft:items","sprite":"item/character/seronis","bold":false,shadow_color:0,"color":"white"}, \
         {"text":" : ","color":"white","bold": false}, \
-        {"translate": "story.chapter_1.sq.2.14","fallback": "自從深淵將舊世界給毀滅之後","bold": false,"with":[{"bold":true,"color":"yellow","hover_event":{"action":"show_text","value":[{"translate":"story.icon.proper_noun","fallback":"[專有名詞]:","color":"white"},"\n",{"translate": "proper_noun.desc.2","fallback":"詳情請按","color":"white","bold":false,"italic":false},{"keybind": "key.advancements","color": "dark_green"},{"translate": "proper_noun.desc.3","fallback":"尋找對應內容","color":"white","bold":false,"italic":false}]},"italic":false,"translate":"proper_nouns.icon.old_story","underlined":true,"fallback": "舊世界"}]} \
+        {"translate": "story.chapter_1.sq.2.14","fallback": "自從深淵將舊世界給毀滅之後","bold": false,"with":[{"bold":true,"color":"dark_purple","hover_event":{"action":"show_text","value":[{"translate":"story.icon.proper_noun","fallback":"[專有名詞]:","color":"white"},"\n",{"translate": "proper_noun.desc.2","fallback":"詳情請按","color":"white","bold":false,"italic":false},{"keybind": "key.advancements","color": "dark_green"},{"translate": "proper_noun.desc.3","fallback":"尋找對應內容","color":"white","bold":false,"italic":false}]},"italic":false,"translate":"story.icon.proper_noun.abyss","underlined":true,"fallback": "深淵"},{"bold":true,"color":"yellow","hover_event":{"action":"show_text","value":[{"translate":"story.icon.proper_noun","fallback":"[專有名詞]:","color":"white"},"\n",{"translate": "proper_noun.desc.2","fallback":"詳情請按","color":"white","bold":false,"italic":false},{"keybind": "key.advancements","color": "dark_green"},{"translate": "proper_noun.desc.3","fallback":"尋找對應內容","color":"white","bold":false,"italic":false}]},"italic":false,"translate":"proper_nouns.icon.old_story","underlined":true,"fallback": "舊世界"}]} \
     ]
 
 execute \
@@ -226,7 +226,7 @@ tellraw @a[distance=..16] \
         {"translate": "story.characters.seronis",color:"white","bold":true}, \
         {"atlas":"minecraft:items","sprite":"item/character/seronis","bold":false,shadow_color:0,"color":"white"}, \
         {"text":" : ","color":"white","bold": false}, \
-        {"translate": "story.chapter_1.sq.2.19","fallback": "還有許多來至舊世界的深淵怪物","bold": false,"with":[{"bold":true,"color":"yellow","hover_event":{"action":"show_text","value":[{"translate":"story.icon.proper_noun","fallback":"[專有名詞]:","color":"white"},"\n",{"translate": "proper_noun.desc.2","fallback":"詳情請按","color":"white","bold":false,"italic":false},{"keybind": "key.advancements","color": "dark_green"},{"translate": "proper_noun.desc.3","fallback":"尋找對應內容","color":"white","bold":false,"italic":false}]},"italic":false,"translate":"proper_nouns.icon.old_story","underlined":true,"fallback": "舊世界"}]} \
+        {"translate": "story.chapter_1.sq.2.19","fallback": "還有許多來至舊世界的深淵怪物","bold": false,"with":[{"bold":true,"color":"yellow","hover_event":{"action":"show_text","value":[{"translate":"story.icon.proper_noun","fallback":"[專有名詞]:","color":"white"},"\n",{"translate": "proper_noun.desc.2","fallback":"詳情請按","color":"white","bold":false,"italic":false},{"keybind": "key.advancements","color": "dark_green"},{"translate": "proper_noun.desc.3","fallback":"尋找對應內容","color":"white","bold":false,"italic":false}]},"italic":false,"translate":"proper_nouns.icon.old_story","underlined":true,"fallback": "舊世界"},{"bold":true,"color":"dark_purple","hover_event":{"action":"show_text","value":[{"translate":"story.icon.proper_noun","fallback":"[專有名詞]:","color":"white"},"\n",{"translate": "proper_noun.desc.2","fallback":"詳情請按","color":"white","bold":false,"italic":false},{"keybind": "key.advancements","color": "dark_green"},{"translate": "proper_noun.desc.3","fallback":"尋找對應內容","color":"white","bold":false,"italic":false}]},"italic":false,"translate":"story.icon.proper_noun.abyss","underlined":true,"fallback": "深淵"}]} \
     ]
 
 execute \
@@ -248,7 +248,7 @@ tellraw @a[distance=..16] \
         {"translate": "story.characters.seronis",color:"white","bold":true}, \
         {"atlas":"minecraft:items","sprite":"item/character/seronis","bold":false,shadow_color:0,"color":"white"}, \
         {"text":" : ","color":"white","bold": false}, \
-        {"translate": "story.chapter_1.sq.2.21","fallback": "如果你能給我 9 個不穩定水晶","bold": false,"with":[{"bold":true,"underlined":true,"color":"dark_purple","translate":"item.unstable_crystal","fallback": "不穩定水晶"}]} \
+        {"translate": "story.chapter_1.sq.2.21","fallback": "如果你能給我 9 個世界記憶碎片","bold": false,"with":[{"bold":true,"underlined":true,"color":"dark_purple","translate":"item.unstable_crystal","fallback": "世界記憶碎片"}]} \
     ]
 
 execute \

@@ -8,9 +8,13 @@ function sys:skills_freeze/introduction
 # =============================================================================
 
 scoreboard objectives add sys.campfire.the_last_campfire.point dummy
+scoreboard objectives add sys.campfire.tips dummy
+scoreboard objectives add sys.campfire.tips.temp dummy
+
 scoreboard objectives add sys.forging_table.recipes dummy
 scoreboard objectives add sys.mini_game.hit_the_bullseye.bullseye.id dummy
 scoreboard objectives add sys.mini_game.hit_the_bullseye.main.id dummy
+scoreboard objectives add sys.attack_speed dummy
 
 scoreboard objectives add sys.mini_game.hit_the_bullseye.reward.id dummy
 scoreboard objectives add sys.mini_game.hit_the_bullseye.reset.id dummy

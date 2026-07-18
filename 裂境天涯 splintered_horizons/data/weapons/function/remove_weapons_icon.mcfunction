@@ -7,6 +7,7 @@ advancement grant @s only weapons:icon/icon
             advancement revoke @s only weapons:icon/sword/grip_of_withering
             advancement revoke @s only weapons:icon/sword/wind_sword
             advancement revoke @s only weapons:icon/sword/aquilumera
+            advancement revoke @s only weapons:icon/sword/morning_light
 
         advancement grant @s only weapons:icon/chapter_2
 
@@ -24,8 +25,6 @@ advancement grant @s only weapons:icon/icon
     advancement grant @s only weapons:icon/new_story
 
         advancement grant @s only weapons:icon/new_world/chapter_1
-
-            advancement revoke @s only weapons:icon/sword/morning_light
 
         advancement grant @s only weapons:icon/new_world/chapter_2
 

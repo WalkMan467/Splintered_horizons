@@ -1,11 +1,13 @@
 {
   "values": [
-    "item:energy_infusion_stone/berserker",
-    "item:energy_infusion_stone/destroyer",
-    "item:energy_infusion_stone/guardian",
-    "item:energy_infusion_stone/cavalryman",
-    "item:energy_infusion_stone/executioner",
-    "item:energy_infusion_stone/defender",
-    "item:energy_infusion_stone/crimson_walker"
+    "energy_infusion_stone:skills/weapon/berserker",
+    "energy_infusion_stone:skills/weapon/destroyer",
+    "energy_infusion_stone:skills/weapon/cavalryman",
+    "energy_infusion_stone:skills/armor/resilient",
+    "energy_infusion_stone:skills/weapon/executioner",
+    "energy_infusion_stone:skills/weapon/phantom_fangs",
+    "energy_infusion_stone:skills/armor/guardian",
+    "energy_infusion_stone:skills/armor/defender",
+    "energy_infusion_stone:skills/weapon/crimson_walker"
   ]
 }

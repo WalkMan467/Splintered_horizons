@@ -1,79 +1,94 @@
 def build_item_struct():
     return {
-        "name": ['雷霆二重奏', "#ffee00", '劍 / 史詩'],
+        "name": ['天導神弓', "#ffdf88", '弓 / 史詩'],
         "story": {
-            'info': [''],
+            'info': ['來至 星 的舊世界','昔日的 12 聖騎之一','「耀光」聖騎的武器','在最終之戰後殞落','如今飄落至昔日的光之聖殿下','或許是相信著你能夠拯救世界'],
             'color': 'blue'
         },
         "item_data": {
-            'real_item': 'iron_sword',
-            'id': 'thunder_duet',
-            'item_model': '"axe/thunder_duet/1"',
-            'custom_data': 'type:"axe",rarity:"epic",weapon:"thunder_duet"',
-            'rc': True,
+            'real_item': 'bow',
+            'id': 'heavenly_guiding_bow',
+            'item_model': '"bow/heavenly_guiding_bow/1"',
+            'custom_data': 'type:"bow",rarity:"epic",weapon:"heavenly_guiding_bow",forging_table:1b',
+            'rc': False,
             'lc': False,
-            'max_damage': 0,
+            'max_damage': 150,
             'max_stack_size': 1,
             'other': [
+                'minimum_attack_charge=0.5',
+                'minecraft:enchantments={"weapons:type/bow/heavenly_guiding_bow/use":1,"minecraft:unbreaking":1}',
                 'enchantment_glint_override=false',
-                'tooltip_style="epic"',
+                'tooltip_style="epic"'
             ]
         },
 
         "skill": {
             "is_skill": True,
-            "cd": 15,
-            "name": ["閃電鏈", "#ffa600", "#ffee00"],
+            "cd": 10,
+            "name": ["天國制導", "#ffdf88", "#9c9c9c"],
             "info": [
-                "命中怪物時重置【雷霆之怒】CD",
+                "發射出的箭矢會鎖定離這一發距離最近的怪物",
 
                 {
-                    "text": "當你使用 %s 時:",
+                    "text": "當你擁有【%1$s】符文時：",
                     "with": [
-                        {"keybind": "key.use", "underlined": True, "color": "dark_green"}
+                        {"translate": "weapon.effect.holy_fire", "underlined": True, "color": "#e6e6e6"}
                     ]
                 },
-
-                "立即釋放 3 道閃電對前方敵人造成 250% 傷害",
-                "並選中一名怪物附加【閃電標記】",
-                "命中怪物時重置【雷霆之怒】CD"
+                "召喚出來的箭矢將從 1 發改為連續發射 3 發",
+                {
+                    "text": "並且命中怪物時給予你【%1$s】符文 (00:05)",
+                    "with": [
+                        {"translate":"weapon.effect.resplendence","underlined":True,"color":"gold"}
+                    ]
+                }
             ]
         },
 
         "passive_skills": {
-            'is_passive_skills': True,
-            'cd': 5,
-            'name': ['雷霆之怒', '#ffa600', '#ffee00'],
+            'is_passive_skills': False,
+            'cd': 13,
+            'name': ['風速斬', 'dark_aqua', '#23768f'],
             'info': [
-                "當你攻擊命中擁有【雷霆標記】敵人時:",
-                "使怪物定格 1 秒",
-                "並使怪物位置 3 格範圍內的其他怪物彈開一段距離造成 75% 攻擊力傷害",
-                "讓自身跳至空中，期間落下如果命中【雷霆標記】的怪物時",
-                "對 6 格範圍內敵人造成 350% 攻擊力傷害並消除【雷霆標記】",
+                "連續施放2個風速劍氣，",
                 {
-                    "text": "以及使自身獲得【%s】符文 (00:05)",
+                    "text": "對路徑上的敵人造成 150% 攻擊傷害，",
                     "with": [
-                        {"translate":"weapon.effect.shadow","underlined":True,"color":"#470041"}
+                        {"keybind": "key.use", "underlined": True, "color": "dark_green"}
                     ]
                 },
-                "",
+                "並且使他們起飛。",
+                "當你使用此武器技能時",
                 {
-                    "text": "當你擁有【%s】符文時:",
+                    "text": "你將獲得 [%s] 持續 5 秒。",
                     "with": [
-                        {"translate":"weapon.effect.chaotic_thunder","underlined":True,"color":"#ff0077"}
+                        {"translate":"weapon.effect.resplendence","underlined":True,"color":"gold"}
                     ]
                 },
-                "使落下命中 6 格範圍內敵人防禦力減少 20% (00:05)",
-                "並重置【閃電鏈】CD"
+                "可以讓特定武器 CD 減少或者更為強大"
             ]
         },
 
         "ultimate": {
             'is_ultimate': False,
             'cd': 20,
-            'name': ['八重黑火', '#ff0000', '#7a0000'],
-            'info': []
+            'name': ['2', '#ff0000', '#7a0000'],
+            'info': ['']
         },
-
-        "attributes": []
+        "attributes": [
+            {
+                'attribute': 'attack_damage',
+                'id': 'base_attack_damage',
+                'value': 4,
+                'slot': 'mainhand',
+                'operation': 'add_value'
+            },
+            {
+                'attribute': 'attack_speed',
+                'id': "base_attack_speed",
+                'value': -2.4,
+                'slot': 'mainhand',
+                'operation': 'add_value'
+            }
+        ]
     }

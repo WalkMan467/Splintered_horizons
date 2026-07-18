@@ -28,7 +28,7 @@ execute \
     on passengers run \
 data modify entity @s teleport_duration set value 5
 
-ride @n[tag=aj.boss_1.root,type=item_display] mount @n[sort=arbitrary,distance=0..,tag=monsters.elekiel_phase_2,type=skeleton]
+ride @n[distance=0..,tag=aj.boss_1.root,type=item_display] mount @n[sort=arbitrary,distance=0..,tag=monsters.elekiel_phase_2,type=skeleton]
 
 effect give @n[sort=arbitrary,distance=0..,tag=monsters.elekiel_phase_2,type=skeleton] instant_damage 1 27 true
 
@@ -38,16 +38,28 @@ tag @a remove monster.elekiel_phase_2.2.cage.imprison.last_tick
 tag @a remove monster.elekiel_phase_2.4.portal.target
 
 scoreboard players set skill.1 monster.elekiel_phase_2.cd 100
-scoreboard players set skill.2 monster.elekiel_phase_2.cd 300
-scoreboard players set skill.4 monster.elekiel_phase_2.cd 740
-scoreboard players set skill.5 monster.elekiel_phase_2.cd 700
+scoreboard players set skill.2 monster.elekiel_phase_2.cd 400
+scoreboard players set skill.4 monster.elekiel_phase_2.cd 640
+scoreboard players set skill.5 monster.elekiel_phase_2.cd 40
+
 scoreboard players set @s player.detect.is_bossfight 1
 scoreboard players set #boss_area.chapter_2.elekiel_phase_2 global.main 1
 
-scoreboard players set @a player.spawnpoint.dimension 0
-scoreboard players set @a player.spawnpoint.pos.x 91200
-scoreboard players set @a player.spawnpoint.pos.y 6000
-scoreboard players set @a player.spawnpoint.pos.z 200000
+execute \
+    positioned -916 60 2750 run \
+scoreboard players set @a[distance=..120] player.spawnpoint.dimension 0
+
+execute \
+    positioned -916 60 2750 run \
+scoreboard players set @a[distance=..120] player.spawnpoint.pos.x -91600
+
+execute \
+    positioned -916 60 2750 run \
+scoreboard players set @a[distance=..120] player.spawnpoint.pos.y 6000
+
+execute \
+    positioned -916 60 2750 run \
+scoreboard players set @a[distance=..120] player.spawnpoint.pos.z 275400
 
 
 schedule function bossfight:chapter_2/elekiel_phase_2/loop 1t

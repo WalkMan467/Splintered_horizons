@@ -1,7 +1,13 @@
 function sys:dummy_mob/interface
 
+
 execute \
     if entity @s[tag=sys.dummy_mob.interface] run \
+    return run \
+function sys:skills_freeze/reset
+
+execute \
+    if entity @s[tag=freeze.immunity] run \
     return run \
 function sys:skills_freeze/reset
 

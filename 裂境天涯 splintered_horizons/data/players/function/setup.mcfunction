@@ -25,6 +25,15 @@ execute \
     if score #game.start.state global.main matches 0 run \
 scoreboard players set @s player.spawnpoint.pos.z -400
 
+execute \
+    if score #game.start.state global.main matches 0 run \
+scoreboard players set @s player.setting.backup 0
+
+execute \
+    if score #game.start.state global.main matches 0 run \
+scoreboard players set @s player.setting.backup.trigger.disabled 1
+
+
 function music:remove_bgn_icon
 function weapons:remove_weapons_icon
 function armors:remove_armors_icon
@@ -33,9 +42,9 @@ function story:remove_proper_noun_icon
 function players:adv/remove_adv
 function #main:scoreboard
 function monsters:remove_monsters_icon
-function item:remove_energy_infusion_stone_icon
+function energy_infusion_stone:remove_energy_infusion_stone_icon
 function item:type/tp_book/reset
-function players:setting/defaule_setup
+function players:setting/reset_default_setup/default_setup
 function players:tips/g
 
 execute \
@@ -117,3 +126,9 @@ tp @a 9999 95 10070
 execute \
     unless score #cutscene global.main matches 1.. run \
 item replace entity @a armor.head with air
+
+scoreboard players enable @s player.setting.backup.trigger
+scoreboard players set @s player.setting.backup.trigger 0
+scoreboard players add @s player.setting.backup.trigger.disabled 0
+scoreboard players set @s player.setting.backup 1
+scoreboard players display numberformat @s player.setting.backup fixed {"translate":"dialog.main.enabled","fallback":"Enabled","color":"dark_green","bold":true}

@@ -98,10 +98,14 @@ scoreboard players set #monster.bossfight.chapter_2.elekiel_phase_2.act.enable g
 scoreboard players reset $monster.chapter_2.elekiel.1 monster.elekiel.skill.casting
 scoreboard players reset $monster.chapter_2.elekiel.2 monster.elekiel.skill.casting
 scoreboard players reset $monster.chapter_2.elekiel.3 monster.elekiel.skill.casting
+scoreboard players reset $monster.chapter_2.elekiel.4 monster.elekiel.skill.casting
+scoreboard players reset $monster.chapter_2.elekiel.5 monster.elekiel.skill.casting
 
 scoreboard players reset $monster.chapter_2.elekiel.1 monster.elekiel.skill.cd
 scoreboard players reset $monster.chapter_2.elekiel.2 monster.elekiel.skill.cd
 scoreboard players reset $monster.chapter_2.elekiel.3 monster.elekiel.skill.cd
+scoreboard players reset $monster.chapter_2.elekiel.4 monster.elekiel.skill.cd
+scoreboard players reset $monster.chapter_2.elekiel.5 monster.elekiel.skill.cd
 
 execute \
     positioned -916 60 2750 run \

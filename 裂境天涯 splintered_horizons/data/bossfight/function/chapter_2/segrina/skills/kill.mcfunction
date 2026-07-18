@@ -77,3 +77,16 @@ execute \
 kill @s
 
 tag @a remove monster.segrina.bossfight.interface
+
+execute \
+    positioned 725 107 605 \
+    as @a[dx=73,dy=26,dz=73] at @s run \
+playsound minecraft:ui.toast.challenge_complete voice @s ~ ~1 ~ 1 1
+
+execute \
+    positioned 725 107 605 run \
+tellraw @a[dx=73,dy=26,dz=73] {"translate":"bossfight.win.1","fallback":"恭喜完成 BOSS 戰","color":"gold"}
+
+execute \
+    positioned 725 107 605 run \
+tellraw @a[dx=73,dy=26,dz=73] {"translate":"bossfight.win.2","fallback":"目前尚未製作完成掉落的武器與劇情，所以暫時這樣","color":"gold"}

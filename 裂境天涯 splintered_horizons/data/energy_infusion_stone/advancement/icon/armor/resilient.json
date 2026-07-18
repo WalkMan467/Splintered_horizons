@@ -10,22 +10,29 @@
       "count": 1
     },
     "title": {
-      "translate": "armor.enchantment.resilient",
+      "translate": "item.energy_infusion_stone.resilient",
       "color": "dark_red"
     },
     "description": [
       {
-        "translate": "armor.enchantment.resilient.1",
+        "translate": "item.energy_infusion_stone.resilient.passive_skills",
+        "color": "dark_red",
+        "bold": true,
+        "italic": false
+      },
+      "\n",
+      {
+        "translate": "item.energy_infusion_stone.resilient.passive_skills.1",
         "color": "blue",
         "bold": false,
         "italic": false
       },
       "\n",
       {
-        "translate": "armor.enchantment.resilient.2",
+        "translate": "item.energy_infusion_stone.resilient.passive_skills.2",
         "with": [
           {
-            "translate": "armor.enchantment.resilient.7",
+            "translate": "item.energy_infusion_stone.resilient.passive_skills.7",
             "color": "#b37400",
             "bold": true,
             "italic": false,
@@ -38,10 +45,10 @@
       },
       "\n",
       {
-        "translate": "armor.enchantment.resilient.3",
+        "translate": "item.energy_infusion_stone.resilient.passive_skills.3",
         "with": [
           {
-            "translate": "armor.enchantment.resilient.7",
+            "translate": "item.energy_infusion_stone.resilient.passive_skills.7",
             "color": "#b37400",
             "bold": true,
             "italic": false,
@@ -61,10 +68,10 @@
       },
       "\n\n",
       {
-        "translate": "armor.enchantment.resilient.4",
+        "translate": "item.energy_infusion_stone.resilient.passive_skills.4",
         "with": [
           {
-            "translate": "armor.enchantment.resilient.7",
+            "translate": "item.energy_infusion_stone.resilient.passive_skills.7",
             "color": "#b37400",
             "bold": true,
             "italic": false,
@@ -77,10 +84,10 @@
       },
       "\n",
       {
-        "translate": "armor.enchantment.resilient.5",
+        "translate": "item.energy_infusion_stone.resilient.passive_skills.5",
         "with": [
           {
-            "translate": "armor.enchantment.resilient.7",
+            "translate": "item.energy_infusion_stone.resilient.passive_skills.7",
             "color": "#b37400",
             "bold": true,
             "italic": false,
@@ -93,10 +100,10 @@
       },
       "\n",
       {
-        "translate": "armor.enchantment.resilient.6",
+        "translate": "item.energy_infusion_stone.resilient.passive_skills.6",
         "with": [
           {
-            "translate": "armor.enchantment.resilient.7",
+            "translate": "item.energy_infusion_stone.resilient.passive_skills.7",
             "color": "#b37400",
             "bold": true,
             "italic": false,

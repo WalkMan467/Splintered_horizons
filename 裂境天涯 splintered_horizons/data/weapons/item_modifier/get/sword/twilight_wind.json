@@ -1,9 +1,5 @@
 [
   {
-    "function": "minecraft:set_item",
-    "item": "minecraft:stone_sword"
-  },
-  {
     "function": "minecraft:set_components",
     "components": {
       "minecraft:item_name": [
@@ -69,14 +65,12 @@
         {
           "id": "base_attack_speed",
           "type": "attack_speed",
-          "amount": -2.4,
+          "amount": -2.2,
           "operation": "add_value",
           "slot": "mainhand"
         }
       ],
       "minecraft:max_stack_size": 1,
-      "minecraft:max_damage": 300,
-      "minecraft:damage": 0,
       "minecraft:item_model": "sword/wind_sword/2",
       "minecraft:custom_data": {
         "rc": false,
@@ -86,7 +80,9 @@
         "forging_table": true
       },
       "minecraft:tooltip_style": "epic",
-      "minecraft:enchantment_glint_override": false
+      "minecraft:enchantment_glint_override": false,
+      "damage_type": "weapons:type/sword/twilight_wind_attack",
+      "minimum_attack_charge": 0.5
     }
   },
   {

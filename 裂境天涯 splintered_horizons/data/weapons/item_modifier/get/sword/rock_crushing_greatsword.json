@@ -1,9 +1,5 @@
 [
   {
-    "function": "minecraft:set_item",
-    "item": "minecraft:stone_sword"
-  },
-  {
     "function": "minecraft:set_components",
     "components": {
       "minecraft:item_name": [
@@ -126,8 +122,6 @@
         }
       ],
       "minecraft:max_stack_size": 1,
-      "minecraft:max_damage": 300,
-      "minecraft:damage": 0,
       "minecraft:item_model": "minecraft:sword/giant_blade/1",
       "minecraft:custom_data": {
         "rc": true,
@@ -142,7 +136,9 @@
         "has_consume_particles": false
       },
       "minecraft:tooltip_style": "epic",
-      "minecraft:enchantment_glint_override": false
+      "minecraft:enchantment_glint_override": false,
+      "damage_type": "weapons:type/sword/rock_crushing_greatsword_attack",
+      "minimum_attack_charge": 0.5
     }
   },
   {

@@ -14,6 +14,7 @@
 		"aj:segrina/on_load",
 		"aj:selena/on_load",
 		"aj:sophia/on_load",
+		"aj:stellar/on_load",
 		"animated_java:amysis/on_load",
 		"animated_java:fsc_fx/on_load",
 		"animated_java:player_projection/on_load",

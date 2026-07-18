@@ -13,6 +13,10 @@ execute \
     on target at @s run \
 tellraw @s {"translate":"sys.campfire.spawnpoint","color":"dark_green"}
 
+execute \
+    positioned ~ ~1.5 ~ run \
+kill @n[sort=arbitrary,distance=..1,tag=sys.campfire.text,type=text_display]
+
 playsound minecraft:entity.experience_orb.pickup voice @a ~ ~1 ~ 1 0.5
 playsound minecraft:entity.illusioner.cast_spell voice @a ~ ~1 ~ 1 1
 

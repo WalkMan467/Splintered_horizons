@@ -44,6 +44,17 @@
     },
     {
       "label": {
+        "translate": "dialog.main.quick_actions.auto_refill_items",
+        "fallback": "Auto Refill Items",
+        "color": "white"
+      },
+      "action": {
+        "type": "run_command",
+        "command": "trigger player.setting.auto_refill_items.trigger"
+      }
+    },
+    {
+      "label": {
         "translate": "dialog.main.quick_actions.waterfall_effect",
         "fallback": "Waterfall Effect",
         "color": "white"
@@ -51,6 +62,17 @@
       "action": {
         "type": "run_command",
         "command": "trigger player.setting.waterfall_effect.trigger"
+      }
+    },
+    {
+      "label": {
+        "translate": "dialog.main.quick_actions.reset_default_setup",
+        "fallback": "Reset Default Setup",
+        "color": "yellow"
+      },
+      "action": {
+        "type": "run_command",
+        "command": "trigger player.setting.reset_default_setup.trigger"
       }
     },
     {

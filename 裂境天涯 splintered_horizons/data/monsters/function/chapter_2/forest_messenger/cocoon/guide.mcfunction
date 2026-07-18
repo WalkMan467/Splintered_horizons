@@ -4,8 +4,11 @@ tag @s add mid
 
 # Cocoon special effects
 
+# Cocoon special effects
+
 execute \
-    as @e[type=block_display,tag=monster.forest_messenger.cocoon] at @s run \
+    as @e[distance=..60,tag=monster.forest_messenger.cocoon,type=block_display] \
+    if score @s monster.forest_messenger.cocoon.id = #detect monster.forest_messenger.cocoon.id at @s run \
 function monsters:chapter_2/forest_messenger/cocoon/fx
 
 # Capture and categorize by Tag
@@ -13,35 +16,37 @@ scoreboard players operation #detect monster.forest_messenger.cocoon.id = @s mon
 
 
 execute \
-    as @e[type=block_display,tag=monster.forest_messenger.cocoon] \
+    as @e[distance=..60,tag=monster.forest_messenger.cocoon,type=block_display] \
     if score @s monster.forest_messenger.cocoon.id = #detect monster.forest_messenger.cocoon.id run \
 tag @s add monster.forest_messenger.cocoon.tp
 
 execute \
-    as @e[scores={monster.forest_messenger.user=1..},limit=1,tag=!monster.forest_messenger.cocoon.user_temp,type=!player] \
-    if score @s monster.forest_messenger.cocoon.id = @e[type=item_display,tag=monster.forest_messenger.cocoon.main,tag=mid,limit=1] monster.forest_messenger.cocoon.id run \
+    as @n[distance=..60,scores={monster.forest_messenger.user=1..},sort=arbitrary,tag=!monster.forest_messenger.cocoon.user_temp,type=!player] \
+    if score @s monster.forest_messenger.cocoon.id = @n[sort=arbitrary,distance=..60,tag=monster.forest_messenger.cocoon.main,tag=mid,type=item_display] monster.forest_messenger.cocoon.id run \
 tag @s add monster.forest_messenger.cocoon.user_temp
 
 
 execute \
-    as @e[type=block_display,tag=monster.forest_messenger.cocoon] \
-    if score @s monster.forest_messenger.cocoon.id = @e[tag=monster.forest_messenger.cocoon.user_temp,limit=1,tag=monster.forest_messenger.1.actived] monster.forest_messenger.cocoon.id at @s run \
+    as @e[distance=..60,tag=monster.forest_messenger.cocoon,type=block_display] \
+    if score @s monster.forest_messenger.cocoon.id = @n[distance=..60,tag=monster.forest_messenger.cocoon.user_temp,sort=arbitrary,tag=monster.forest_messenger.1.actived,type=!player] monster.forest_messenger.cocoon.id at @s run \
 function monsters:chapter_2/forest_messenger/cocoon/tp/raycast/use
 
 
 # Cocoon location positioning
 
-execute at @s \
-    as @e[type=block_display,tag=monster.forest_messenger.cocoon.tp,tag=monster.forest_messenger.cocoon,limit=1] \
-    positioned ^ ^ ^8 facing entity @e[type=item_display,tag=mid,limit=1] eyes run \
+execute \
+    at @s \
+    as @n[distance=..60,sort=arbitrary,tag=monster.forest_messenger.cocoon.tp,tag=monster.forest_messenger.cocoon,type=block_display] \
+    positioned ^ ^ ^8 facing entity @n[distance=..60,tag=mid,type=item_display] eyes run \
 tp @s ~ ~ ~ ~ ~
 
 # Cocoon center position TP to user
 
-execute at @n[scores={monster.forest_messenger.user=1..},type=!player] \
+execute \
+    at @n[distance=..60,scores={monster.forest_messenger.user=1..},type=!player] \
     positioned ~ ~1 ~ run \
 tp @s ~ ~ ~
 
-tag @e[tag=monster.forest_messenger.cocoon.user_temp] remove monster.forest_messenger.cocoon.user_temp
-tag @e[tag=monster.forest_messenger.cocoon.tp,type=block_display] remove monster.forest_messenger.cocoon.tp
+tag @e[distance=..60,tag=monster.forest_messenger.cocoon.user_temp,type=!player] remove monster.forest_messenger.cocoon.user_temp
+tag @e[distance=..60,tag=monster.forest_messenger.cocoon.tp,type=block_display] remove monster.forest_messenger.cocoon.tp
 tag @s[tag=mid] remove mid

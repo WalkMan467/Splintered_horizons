@@ -46,6 +46,12 @@ scoreboard objectives add monster.sun_of_the_abyssal_eclipse.1.sunfire_actived.s
 
 # ===============================================================================
 
+# 烈陽使者
+
+scoreboard objectives add monster.bloody_blade_spider.dot.delay dummy "血滴子蜘蛛 Dot 間隔"
+
+# ===============================================================================
+
 
 scoreboard objectives add monster.effect.finality dummy "[怪物] 終焉轉化"
 

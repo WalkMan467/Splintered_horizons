@@ -1,16 +1,7 @@
-execute \
-    positioned -916 60 2750 run \
-function monsters:chapter_2/elekiel_phase_2/1/1
-
-# 00000227-0000-0141-0000-08a300000209
-
-summon area_effect_cloud -916 60 2750 {custom_particle:{type:"block",block_state:"minecraft:air"},UUID:[I;551,321,2211,521],Radius:0f,Duration:1}
-
-spreadplayers -916 2750 2 10 under 60 false 00000227-0000-0141-0000-08a300000209
-
+title @a[sort=arbitrary,distance=..60] title {"translate":"monsters.elekiel_phase_2.1","fallback": "技能1【失序時空】"}
+title @a[sort=arbitrary,distance=..60] times 20 20 20
+title @a[sort=arbitrary,distance=..60] subtitle ""
 
 execute \
-    as 00000227-0000-0141-0000-08a300000209 at @s \
-    positioned ~ ~1.5 ~ rotated ~ 0 run \
-function monsters:chapter_2/elekiel_phase_2/1/mysterray/use
-kill 00000227-0000-0141-0000-08a300000209
+    as @a[sort=arbitrary,distance=..60] at @s run \
+playsound minecraft:block.respawn_anchor.deplete voice @s ~ ~1 ~ 1 1

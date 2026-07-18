@@ -52,7 +52,7 @@
     "announce_to_chat": false,
     "hidden": true
   },
-  "parent": "weapons:icon/new_world/chapter_1",
+  "parent": "weapons:icon/chapter_1",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:inventory_changed",

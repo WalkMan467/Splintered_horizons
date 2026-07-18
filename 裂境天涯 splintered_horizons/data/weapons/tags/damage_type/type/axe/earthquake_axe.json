@@ -1,6 +1,7 @@
 {
   "values": [
     "weapons:type/axe/earthquake_axe/damage_effect",
-    "weapons:type/axe/earthquake_axe/damage"
+    "weapons:type/axe/earthquake_axe/damage",
+    "weapons:type/axe/earthquake_axe/earthquake_axe_attack"
   ]
 }

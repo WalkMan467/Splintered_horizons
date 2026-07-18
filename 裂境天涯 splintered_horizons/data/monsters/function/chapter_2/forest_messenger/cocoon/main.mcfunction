@@ -1,6 +1,11 @@
-scoreboard players remove @s[type=!player,scores={monster.forest_messenger.user=1..}] monster.forest_messenger.user 1
+execute \
+    as @a at @s run \
+scoreboard players remove @e[distance=..60,type=!player,scores={monster.forest_messenger.user=1..}] monster.forest_messenger.user 1
 
 
 execute \
-    as @s[type=item_display,tag=monster.forest_messenger.cocoon.main] at @s run \
+    as @a at @s \
+    as @e[distance=..60,tag=monster.forest_messenger.cocoon.main,type=item_display] at @s run \
 function monsters:chapter_2/forest_messenger/cocoon/guide
+
+schedule function monsters:chapter_2/forest_messenger/cocoon/main 1t

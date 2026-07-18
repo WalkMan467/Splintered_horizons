@@ -11,7 +11,6 @@ function monsters:chapter_2/blackhole_creeper/main
 
 function monsters:chapter_2/soul_tree_remnant/main
 function monsters:chapter_2/forest_messenger/main
-function monsters:chapter_2/forest_messenger/cocoon/main
 function monsters:chapter_2/apostle_of_eternity/main
 function monsters:chapter_1/abyssal_black_knight/main
 function monsters:chapter_1/abyssal_soulreaper/main

@@ -12,7 +12,7 @@ function animated_java:global/data_manager/read with storage animated_java:temp 
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.root_uuid set from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.blueprint_id set value "aj:boss_1"
-data modify storage animated_java:temp entry.data.rig_hash set value "05e82837b1606581700aabed8af16be175ded72bf7e78260c5ff686cc7b4a60b"
+data modify storage animated_java:temp entry.data.rig_hash set value "8ebc602b4df2facd26bf9c35ef11095d3f284859541732d38f6e73fd70e73c70"
 tp @s ~ ~ ~ ~ ~
 execute on passengers if entity @s[tag=aj.boss_1.node.head] run function aj:boss_1/zzz/summon/as_node/head
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
@@ -248,6 +248,9 @@ data modify storage animated_java:temp entry.data.uuids_by_name.guide97 set from
 execute on passengers if entity @s[tag=aj.boss_1.node.blade] run function aj:boss_1/zzz/summon/as_node/blade
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.uuids_by_name.blade set from storage animated_java:gu out
+execute on passengers if entity @s[tag=aj.boss_1.node.shadow] run function aj:boss_1/zzz/summon/as_node/shadow
+data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
+data modify storage animated_java:temp entry.data.uuids_by_name.shadow set from storage animated_java:gu out
 function aj:boss_1/zzz/set_default_pose
 # Data Manager: Write
 function animated_java:global/data_manager/write with storage animated_java:temp args

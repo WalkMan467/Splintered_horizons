@@ -1,0 +1,13 @@
+{
+  "pools": [
+    {
+      "rolls": 20,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "item:get/coin"
+        }
+      ]
+    }
+  ]
+}

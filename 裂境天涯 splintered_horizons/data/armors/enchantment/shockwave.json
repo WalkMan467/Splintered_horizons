@@ -9,7 +9,7 @@
       {
         "effect": {
           "type": "minecraft:run_function",
-          "function": "armors:enchantment/shockwave/use"
+          "function": "energy_infusion_stone:skills/armor/defender/shockwave/use"
         },
         "enchanted": "victim",
         "affected": "victim"
@@ -19,7 +19,7 @@
       {
         "effect": {
           "type": "minecraft:run_function",
-          "function": "armors:enchantment/shockwave/main"
+          "function": "energy_infusion_stone:skills/armor/defender/shockwave/main"
         }
       }
     ]

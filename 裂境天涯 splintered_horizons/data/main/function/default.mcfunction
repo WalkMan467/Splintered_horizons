@@ -63,6 +63,15 @@ scoreboard players set #in_safe_zone.ml global.main 0
 
 scoreboard players set #cutscene global.main 0
 
+scoreboard players set #weapons:monument/area_1 global.main 0
+scoreboard players set #weapons:monument/area_2 global.main 0
+scoreboard players set #weapons:monument/area_3 global.main 0
+scoreboard players set #weapons:monument/area_4 global.main 0
+scoreboard players set #weapons:monument/area_5 global.main 0
+scoreboard players set #weapons:monument/area_6 global.main 0
+scoreboard players set #weapons:monument/area_7 global.main 0
+scoreboard players set #weapons:monument/area_8 global.main 0
+
 function world_area:other/otherworld_portal/all_lock
 
 advancement revoke @a only players:new_player

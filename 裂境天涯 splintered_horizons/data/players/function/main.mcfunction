@@ -2,14 +2,13 @@ function players:elytra_switch/main
 function players:detect/main
 function players:auto_crafting/main
 function players:setting/waterfall_effect/main
+function players:void_protection/main
 
 tag @s remove player.tombstone_sys.disabled
-
 
 execute \
     as @e[tag=system.campfire,distance=0..,type=interaction] run \
 function players:update
-
 
 execute \
     if score @s player.give.item.delay matches 1 run \

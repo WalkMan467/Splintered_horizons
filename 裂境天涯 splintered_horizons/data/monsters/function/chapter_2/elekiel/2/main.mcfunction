@@ -1,3 +1,4 @@
+scoreboard players reset @n[sort=arbitrary,distance=..60,tag=monsters.elekiel.2.vampire_flower.hit_box,type=slime] sys.dummy_mob
 
 execute \
     if score $monster.chapter_2.elekiel.2 monster.elekiel.skill.casting matches 1 run \

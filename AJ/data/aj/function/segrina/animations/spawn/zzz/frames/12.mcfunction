@@ -83,3 +83,4 @@ $data merge entity $(3) {transformation: [-1.357f,-0.4664f,-0.4341f,0.4843f,-0.4
 $data merge entity $(8) {transformation: [-1.5133f,-0.0423f,-0.0076f,-0.2099f,-0.0307f,1.151f,-0.3456f,-1.5435f,0.0197f,-0.4319f,-1.4359f,-0.0764f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(7) {transformation: [-1.5133f,-0.0316f,0.0291f,-0.2176f,-0.0307f,0.4212f,-1.1255f,-1.4681f,0.0197f,-1.4046f,-0.5248f,-0.4796f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(ring) {transformation: [-1.5785f,0f,0f,-0.0474f,0f,1.2532f,0f,-0.4204f,0f,0f,-1.5625f,-0.9687f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+$data merge entity $(shadow) {transformation: [-1.5f,0f,0f,0f,0f,1.5f,0f,-1.975f,0f,0f,-1.5f,-0.125f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}

@@ -77,3 +77,4 @@ $data merge entity $(guide34) { transformation: [0.9478f,0.2586f,-0.1866f,0.2906
 $data merge entity $(guide20) { transformation: [-0.0078f,-0.0112f,0.9999f,0.2281f,-0.1106f,-0.9938f,-0.012f,-1.5469f,0.9938f,-0.1107f,0.0065f,-0.3219f,0f,0f,0f,1f], start_interpolation: 0 }
 $data merge entity $(guide97) { transformation: [-0.0078f,0.0112f,-0.9999f,-0.2281f,0.1106f,-0.9938f,-0.012f,-1.5469f,-0.9938f,-0.1107f,0.0065f,-0.3219f,0f,0f,0f,1f], start_interpolation: 0 }
 $data merge entity $(blade) { transformation: [-1f,0f,0f,-0.375f,0f,1f,0f,-1.3437f,0f,0f,-1f,0f,0f,0f,0f,1f], start_interpolation: 0 }
+$data merge entity $(shadow) { transformation: [-1f,0f,0f,0f,0f,1f,0f,-2.5f,0f,0f,-1f,0f,0f,0f,0f,1f], start_interpolation: 0 }

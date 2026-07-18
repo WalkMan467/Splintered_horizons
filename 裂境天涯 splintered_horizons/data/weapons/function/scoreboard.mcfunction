@@ -113,6 +113,21 @@ scoreboard players add @s weapon.sagittarius.cd 0
 scoreboard players add @s weapon.sagittarius.charged.sfx 0
 
 #===================================================================
+#天導神弓
+
+scoreboard objectives add weapon.heavenly_guiding_bow.hold_down dummy "天導神弓 長按"
+scoreboard objectives add weapon.heavenly_guiding_bow.use dummy "天導神弓 使用"
+scoreboard objectives add weapon.heavenly_guiding_bow.cd dummy "天導神弓 CD"
+
+scoreboard objectives add weapon.heavenly_guiding_bow.arrow.time dummy "天導神弓 箭矢持續時間 CD"
+scoreboard objectives add weapon.heavenly_guiding_bow.arrow.id dummy "天導神弓 箭矢 ID"
+scoreboard objectives add weapon.heavenly_guiding_bow.arrow.count dummy "天導神弓 箭矢 連射次數"
+
+scoreboard players add @s weapon.heavenly_guiding_bow.hold_down 0
+scoreboard players add @s weapon.heavenly_guiding_bow.use 0
+scoreboard players add @s weapon.heavenly_guiding_bow.cd 0
+
+#===================================================================
 
 #蜘蛛
 
@@ -262,7 +277,7 @@ scoreboard players add @a weapon.effect.starry_sky_frost 0
 # 注能附魔
 
 scoreboard objectives add weapon.enchantment.bleeding_hit.cd dummy "流血打擊 cd"
-scoreboard objectives add weapon.enchantment.illusory_claw dummy "幻影爪"
+scoreboard objectives add weapon.enchantment.phantom_fangs dummy "幻影爪"
 
 scoreboard players add @a weapon.enchantment.bleeding_hit.cd 0
 

@@ -1,5 +1,6 @@
 execute \
     rotated as @s \
+    positioned ~ ~ ~ \
     rotated ~ 0 run \
 function aj:memory_afterimage/summon {args: {animation: 'idle', start_animation: true}}
 

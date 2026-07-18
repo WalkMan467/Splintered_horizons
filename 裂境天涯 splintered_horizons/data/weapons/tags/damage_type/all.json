@@ -4,6 +4,9 @@
     "#weapons:type/drop/all",
     "#weapons:type/axe/all",
     "#weapons:type/scythe/all",
-    "#weapons:enchantment/all"
+    "#weapons:enchantment/all",
+    "#weapons:type/scythe/morphing_beast/all",
+    "#weapons:all_attack",
+    "weapons:type/bow/heavenly_guiding_bow/damage"
   ]
 }

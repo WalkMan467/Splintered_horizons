@@ -34,6 +34,10 @@ attribute @s waypoint_transmit_range base set 0
 scoreboard players add @s story.click_event.trigger 0
 scoreboard players enable @s story.click_event.trigger
 
+scoreboard players set @s player.setting.backup 1
+scoreboard players set @s player.setting.backup.trigger.disabled 0
+
+
 xp set @s 0 levels
 xp set @s 0 points
 
@@ -71,6 +75,7 @@ tp @s 38 64 11 180 0
 scoreboard players set @s player.death_count 0
 scoreboard players enable @s player.setting.backup.trigger
 scoreboard players set @s player.setting.backup.trigger 0
+scoreboard players add @s player.setting.backup.trigger.disabled 0
 scoreboard players set @s player.setting.backup 1
 scoreboard players display numberformat @s player.setting.backup fixed {"translate":"dialog.main.enabled","fallback":"Enabled","color":"dark_green","bold":true}
 

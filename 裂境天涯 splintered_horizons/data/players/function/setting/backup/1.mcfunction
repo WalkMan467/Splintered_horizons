@@ -3,10 +3,16 @@ execute \
 return 0
 
 execute \
+    if score @s player.setting.backup.trigger.disabled matches 1.. run \
+    return run \
+function players:setting/backup/return/failure
+
+execute \
     if score @s player.setting.backup matches 1.. run \
 return 0
 
 scoreboard players enable @s player.setting.backup.trigger
+scoreboard players add @s player.setting.backup.trigger.disabled 0
 scoreboard players set @s player.setting.backup.trigger 0
 scoreboard players set @s player.setting.backup 1
 scoreboard players display numberformat @s player.setting.backup fixed {"translate":"dialog.main.enabled","fallback":"Enabled","color":"dark_green","bold":true}

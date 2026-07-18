@@ -1,0 +1,13 @@
+{
+  "values": [
+    "weapons:type/sword/wind_sword",
+    "#weapons:type/sword/nightfall",
+    "#weapons:type/sword/otherworld_star",
+    "#weapons:type/scythe/flame_of_finality/attack",
+    "#weapons:type/axe/earthquake_axe",
+    "weapons:type/sword/echo_rhythm",
+    "weapons:type/sword/echo_rhythm_stronger",
+    "weapons:type/sword/echo_rhythm_ultimate",
+    "weapons:type/bow/heavenly_guiding_bow/damage"
+  ]
+}

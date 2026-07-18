@@ -15,13 +15,13 @@ item replace entity @s weapon.offhand with firework_rocket[tooltip_display={hide
 execute \
     unless entity @s[tag=player.death] \
     unless score @s player.disable.elytra_switch matches 1.. \
-    if score @s player.detect.air matches 40.. \
+    if score @s player.detect.air matches 20.. \
     if function players:elytra_switch/area_detect \
     unless predicate players:elytra_switch/disable run \
 advancement grant @s only players:elytra_switch/true
 
 execute \
-    unless score @s player.detect.air matches 40.. run \
+    unless score @s player.detect.air matches 20.. run \
 advancement grant @s only players:elytra_switch/false
 
 execute \

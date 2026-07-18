@@ -186,9 +186,15 @@ execute \
     positioned -916 60 2750 run \
 tag @a[distance=..60] remove temp
 
+# 1464acbf-ed62-4f8a-224a-db95da236678
 execute \
     if score @s mob.duration matches 320 run \
-function particle:space_rupture/use
+summon area_effect_cloud ~ ~ ~ {UUID:[I;342142143,-312324214,575331221,-635214216],Duration:2,custom_particle:{type:"block",block_state:"air"},Radius:0}
+
+execute \
+    if score @s mob.duration matches 320 \
+    as 1464acbf-ed62-4f8a-224a-db95da236678 at @s run \
+function particle:time_space_wave/use
 
 
 execute \

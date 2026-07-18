@@ -19,7 +19,7 @@ execute \
     as @e[distance=..6,sort=arbitrary,type=!#minecraft:dummy_mob,type=!player] run \
 function sys:dummy_mob/interface
 
-scoreboard players set @e[distance=..6,sort=arbitrary,tag=!sys.dummy_mob.interface,type=!#minecraft:dummy_mob,type=!player] sys.skills_freeze 100
+scoreboard players set @e[distance=..6,sort=arbitrary,tag=!sys.dummy_mob.interface,tag=!freeze.immunity,type=!#minecraft:dummy_mob,type=!player] sys.skills_freeze 100
 
 tag @e[distance=..6,sort=arbitrary,tag=sys.dummy_mob.interface,type=!#minecraft:dummy_mob,type=!player] remove sys.dummy_mob.interface
 

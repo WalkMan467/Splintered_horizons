@@ -31,6 +31,9 @@ function players:replace/torch/main
 function players:replace/food/main
 schedule function players:setting/backup/run 300s
 
+# Rollback
+function players:void_protection/rollback/update
+
 # Monster load
 function monsters:load
 

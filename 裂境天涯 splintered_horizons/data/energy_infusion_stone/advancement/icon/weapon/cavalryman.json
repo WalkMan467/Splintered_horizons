@@ -100,100 +100,6 @@
         "color": "blue",
         "bold": false,
         "italic": false
-      },
-      "\n\n",
-      {
-        "translate": "item.energy_infusion_stone.generic.attributes",
-        "color": "white",
-        "bold": true,
-        "italic": false
-      },
-      "\n",
-      {
-        "translate": "item.energy_infusion_stone.cavalryman.attributes.1",
-        "with": [
-          {
-            "translate": "attribute.name.movement_speed",
-            "color": "green",
-            "bold": false,
-            "italic": false,
-            "underlined": false
-          },
-          {
-            "text": "+25%", 
-            "color": "green",
-            "bold": false,
-            "italic": false,
-            "underlined": false
-          },
-          {
-            "translate": "item.energy_infusion_stone.generic.attributes.level",
-            "underlined": false,
-            "bold":false,
-            "color": "green"
-          }
-        ],
-        "color": "green",
-        "bold": false,
-        "italic": false
-      },
-      "\n",
-      {
-        "translate": "item.energy_infusion_stone.cavalryman.attributes.2",
-        "with": [
-          {
-            "translate": "attribute.name.sneaking_speed",
-            "color": "green",
-            "bold": false,
-            "italic": false,
-            "underlined": false
-          },
-          {
-            "text": "+25%", 
-            "color": "green",
-            "bold": false,
-            "italic": false,
-            "underlined": false
-          },
-          {
-            "translate": "item.energy_infusion_stone.generic.attributes.level",
-            "underlined": false,
-            "bold":false,
-            "color": "green"
-          }
-        ],
-        "color": "green",
-        "bold": false,
-        "italic": false
-      },
-      "\n",
-      {
-        "translate": "item.energy_infusion_stone.cavalryman.attributes.3",
-        "with": [
-          {
-            "translate": "attribute.name.attack_damage",
-            "color": "green",
-            "bold": false,
-            "italic": false,
-            "underlined": false
-          },
-          {
-            "text": "+0.25", 
-            "color": "green",
-            "bold": false,
-            "italic": false,
-            "underlined": false
-          },
-          {
-            "translate": "item.energy_infusion_stone.generic.attributes.level",
-            "underlined": false,
-            "bold":false,
-            "color": "green"
-          }
-        ],
-        "color": "green",
-        "bold": false,
-        "italic": false
       }
     ],
     "show_toast": true,
@@ -211,7 +117,7 @@
               "minecraft:custom_data": {
                 "id": "weapon_energy_infusion"
               },
-              "minecraft:stored_enchantments": [
+              "minecraft:enchantments": [
                 {
                   "enchantments": "energy_infusion_stone:skills/weapon/cavalryman",
                   "levels": {

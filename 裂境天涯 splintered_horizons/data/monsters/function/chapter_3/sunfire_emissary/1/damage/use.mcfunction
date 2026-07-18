@@ -2,7 +2,7 @@
 execute \
     as @a[distance=..3] \
     unless score @s sys.dummy_mob matches 1.. run \
-damage @s 7 mob_attack by @n[distance=..6,type=husk,tag=monsters.sunfire_emissary]
+damage @s 7 mob_attack by @n[distance=..6,tag=monsters.sunfire_emissary,type=husk]
 
 execute \
     as @a[distance=..3] \

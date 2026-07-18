@@ -63,14 +63,14 @@ function sys:forging_table/crafting/general/weapon_energy_infusion
 execute \
     positioned 770 148 979 \
     as @n[distance=..1.5,predicate=sys:forging_table/crafting/sword/general/stone_sword,type=item] run \
-function sys:forging_table/crafting/sword/guide
+function sys:forging_table/crafting/sword/stone
 
 # Copper Sword
 
 execute \
     positioned 770 148 979 \
     as @n[distance=..1.5,predicate=sys:forging_table/crafting/sword/general/copper_sword,type=item] run \
-function sys:forging_table/crafting/general/weapon_energy_infusion
+function sys:forging_table/crafting/sword/copper
 
 # Iron Sword
 

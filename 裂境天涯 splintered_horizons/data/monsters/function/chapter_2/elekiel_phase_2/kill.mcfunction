@@ -47,6 +47,8 @@ execute \
     on passengers run \
 function monsters:chapter_2/elekiel_phase_2/fx.void
 
+function monsters:chapter_2/elekiel_phase_2/5/end
+
 execute \
     as @a at @s run \
 function monsters:chapter_2/elekiel_phase_2/4/portal/crack/tp/remove

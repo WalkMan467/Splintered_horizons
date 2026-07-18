@@ -12,7 +12,8 @@ rotate @s ~ 0
 execute \
     as @a[distance=..5] \
     positioned ~-2 ~ ~-2 \
-    if entity @s[dx=3,dy=1,dz=3] run \
+    if entity @s[dx=3,dy=1,dz=3] \
+    unless score @s player.animation.lock matches 1.. run \
 advancement grant @s only monsters:chapter_2/elekiel_phase_2/2/in
 
 execute \

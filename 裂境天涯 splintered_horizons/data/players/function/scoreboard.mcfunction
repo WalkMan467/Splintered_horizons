@@ -1,3 +1,6 @@
+# 虛空保護
+function players:void_protection/introduction
+
 # 常用
 scoreboard objectives add player.id dummy "[玩家] ID"
 scoreboard objectives add player.hide dummy "[玩家] 隱藏"
@@ -154,8 +157,21 @@ scoreboard objectives add player.setting.waterfall_effect.trigger trigger "[玩�
 
 scoreboard players enable @a player.setting.waterfall_effect.trigger
 
+scoreboard objectives add player.setting.auto_refill_items dummy "[玩家] 自動補充物品"
+scoreboard objectives add player.setting.auto_refill_items.trigger trigger "[玩家] 自動補充物品 trigger"
+
+scoreboard players enable @a player.setting.auto_refill_items.trigger
+
+scoreboard objectives add player.setting.reset_default_setup.trigger trigger "[玩家] 重置默認 trigger"
+
+scoreboard players enable @a player.setting.reset_default_setup.trigger
+
 scoreboard objectives add player.setting.backup dummy "[玩家] 資料備份"
 scoreboard objectives add player.setting.backup.trigger trigger "[玩家] 資料備份 trigger"
+scoreboard objectives add player.setting.backup.trigger.disabled dummy "[玩家] 資料備份 禁用"
+
+scoreboard players add @a player.setting.backup.trigger.disabled 0
+
 scoreboard objectives add player.setting.backup.id dummy "[玩家] 資料備份 ID"
 scoreboard objectives add player.setting.backup.return.id trigger "[玩家] 還原備份 ID"
 scoreboard objectives add player.setting.recover_lost_objective_items.return trigger "[玩家] 還原遺失的目標物品 trigger"

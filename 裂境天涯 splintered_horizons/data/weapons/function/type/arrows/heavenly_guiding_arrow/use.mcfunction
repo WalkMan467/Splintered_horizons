@@ -1,0 +1,1 @@
+advancement revoke @a only weapons:arrows/sagittarius_arrow

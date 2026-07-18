@@ -4,6 +4,14 @@ execute \
     if score @s monster.skill.cast.cd matches ..0 run \
 function monsters:chapter_3/bloody_blade_spider/cast/cast
 
+execute \
+    on passengers \
+    if entity @s[type=player] run \
+function monsters:chapter_3/bloody_blade_spider/1/1
+
+execute \
+    as @a[tag=monsters.bloody_blade_spider.passengers] at @s run \
+function monsters:chapter_3/bloody_blade_spider/passengers_guide
 
 execute \
     on passengers at @s \
