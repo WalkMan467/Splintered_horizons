@@ -12,7 +12,7 @@ function animated_java:global/data_manager/read with storage animated_java:temp 
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.root_uuid set from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.blueprint_id set value "aj:boss_1"
-data modify storage animated_java:temp entry.data.rig_hash set value "8ebc602b4df2facd26bf9c35ef11095d3f284859541732d38f6e73fd70e73c70"
+data modify storage animated_java:temp entry.data.rig_hash set value "836c89a30fadc8f61bea09c3cc87f1d14d85e72d9d7746647290f5ffab7e88af"
 tp @s ~ ~ ~ ~ ~
 execute on passengers if entity @s[tag=aj.boss_1.node.head] run function aj:boss_1/zzz/summon/as_node/head
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
@@ -92,6 +92,57 @@ data modify storage animated_java:temp entry.data.uuids_by_name.8 set from stora
 execute on passengers if entity @s[tag=aj.boss_1.node.7] run function aj:boss_1/zzz/summon/as_node/7
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.uuids_by_name.7 set from storage animated_java:gu out
+execute on passengers if entity @s[tag=aj.boss_1.node.item_display1] run function aj:boss_1/zzz/summon/as_node/item_display1
+data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
+data modify storage animated_java:temp entry.data.uuids_by_name.item_display1 set from storage animated_java:gu out
+execute on passengers if entity @s[tag=aj.boss_1.node.item_display4] run function aj:boss_1/zzz/summon/as_node/item_display4
+data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
+data modify storage animated_java:temp entry.data.uuids_by_name.item_display4 set from storage animated_java:gu out
+execute on passengers if entity @s[tag=aj.boss_1.node.item_display5] run function aj:boss_1/zzz/summon/as_node/item_display5
+data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
+data modify storage animated_java:temp entry.data.uuids_by_name.item_display5 set from storage animated_java:gu out
+execute on passengers if entity @s[tag=aj.boss_1.node.item_display6] run function aj:boss_1/zzz/summon/as_node/item_display6
+data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
+data modify storage animated_java:temp entry.data.uuids_by_name.item_display6 set from storage animated_java:gu out
+execute on passengers if entity @s[tag=aj.boss_1.node.item_display7] run function aj:boss_1/zzz/summon/as_node/item_display7
+data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
+data modify storage animated_java:temp entry.data.uuids_by_name.item_display7 set from storage animated_java:gu out
+execute on passengers if entity @s[tag=aj.boss_1.node.item_display8] run function aj:boss_1/zzz/summon/as_node/item_display8
+data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
+data modify storage animated_java:temp entry.data.uuids_by_name.item_display8 set from storage animated_java:gu out
+execute on passengers if entity @s[tag=aj.boss_1.node.item_display2] run function aj:boss_1/zzz/summon/as_node/item_display2
+data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
+data modify storage animated_java:temp entry.data.uuids_by_name.item_display2 set from storage animated_java:gu out
+execute on passengers if entity @s[tag=aj.boss_1.node.item_display3] run function aj:boss_1/zzz/summon/as_node/item_display3
+data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
+data modify storage animated_java:temp entry.data.uuids_by_name.item_display3 set from storage animated_java:gu out
+execute on passengers if entity @s[tag=aj.boss_1.node.item_display9] run function aj:boss_1/zzz/summon/as_node/item_display9
+data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
+data modify storage animated_java:temp entry.data.uuids_by_name.item_display9 set from storage animated_java:gu out
+execute on passengers if entity @s[tag=aj.boss_1.node.item_display10] run function aj:boss_1/zzz/summon/as_node/item_display10
+data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
+data modify storage animated_java:temp entry.data.uuids_by_name.item_display10 set from storage animated_java:gu out
+execute on passengers if entity @s[tag=aj.boss_1.node.item_display11] run function aj:boss_1/zzz/summon/as_node/item_display11
+data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
+data modify storage animated_java:temp entry.data.uuids_by_name.item_display11 set from storage animated_java:gu out
+execute on passengers if entity @s[tag=aj.boss_1.node.item_display12] run function aj:boss_1/zzz/summon/as_node/item_display12
+data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
+data modify storage animated_java:temp entry.data.uuids_by_name.item_display12 set from storage animated_java:gu out
+execute on passengers if entity @s[tag=aj.boss_1.node.item_display13] run function aj:boss_1/zzz/summon/as_node/item_display13
+data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
+data modify storage animated_java:temp entry.data.uuids_by_name.item_display13 set from storage animated_java:gu out
+execute on passengers if entity @s[tag=aj.boss_1.node.item_display14] run function aj:boss_1/zzz/summon/as_node/item_display14
+data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
+data modify storage animated_java:temp entry.data.uuids_by_name.item_display14 set from storage animated_java:gu out
+execute on passengers if entity @s[tag=aj.boss_1.node.item_display15] run function aj:boss_1/zzz/summon/as_node/item_display15
+data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
+data modify storage animated_java:temp entry.data.uuids_by_name.item_display15 set from storage animated_java:gu out
+execute on passengers if entity @s[tag=aj.boss_1.node.item_display16] run function aj:boss_1/zzz/summon/as_node/item_display16
+data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
+data modify storage animated_java:temp entry.data.uuids_by_name.item_display16 set from storage animated_java:gu out
+execute on passengers if entity @s[tag=aj.boss_1.node.ring] run function aj:boss_1/zzz/summon/as_node/ring
+data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
+data modify storage animated_java:temp entry.data.uuids_by_name.ring set from storage animated_java:gu out
 execute on passengers if entity @s[tag=aj.boss_1.node.guide13] run function aj:boss_1/zzz/summon/as_node/guide13
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.uuids_by_name.guide13 set from storage animated_java:gu out
@@ -261,6 +312,22 @@ execute if score #success aj.i matches 0 run return fail
 execute on passengers run rotate @s ~ ~
 data modify entity @s teleport_duration set value 1
 execute on passengers run data modify entity @s teleport_duration set value 1
+execute on passengers if entity @s[tag=aj.boss_1.node.item_display1] run function aj:boss_1/zzz/summon/on_summon/item_display_item_display1
+execute on passengers if entity @s[tag=aj.boss_1.node.item_display4] run function aj:boss_1/zzz/summon/on_summon/item_display_item_display4
+execute on passengers if entity @s[tag=aj.boss_1.node.item_display5] run function aj:boss_1/zzz/summon/on_summon/item_display_item_display5
+execute on passengers if entity @s[tag=aj.boss_1.node.item_display6] run function aj:boss_1/zzz/summon/on_summon/item_display_item_display6
+execute on passengers if entity @s[tag=aj.boss_1.node.item_display7] run function aj:boss_1/zzz/summon/on_summon/item_display_item_display7
+execute on passengers if entity @s[tag=aj.boss_1.node.item_display8] run function aj:boss_1/zzz/summon/on_summon/item_display_item_display8
+execute on passengers if entity @s[tag=aj.boss_1.node.item_display2] run function aj:boss_1/zzz/summon/on_summon/item_display_item_display2
+execute on passengers if entity @s[tag=aj.boss_1.node.item_display3] run function aj:boss_1/zzz/summon/on_summon/item_display_item_display3
+execute on passengers if entity @s[tag=aj.boss_1.node.item_display9] run function aj:boss_1/zzz/summon/on_summon/item_display_item_display9
+execute on passengers if entity @s[tag=aj.boss_1.node.item_display10] run function aj:boss_1/zzz/summon/on_summon/item_display_item_display10
+execute on passengers if entity @s[tag=aj.boss_1.node.item_display11] run function aj:boss_1/zzz/summon/on_summon/item_display_item_display11
+execute on passengers if entity @s[tag=aj.boss_1.node.item_display12] run function aj:boss_1/zzz/summon/on_summon/item_display_item_display12
+execute on passengers if entity @s[tag=aj.boss_1.node.item_display13] run function aj:boss_1/zzz/summon/on_summon/item_display_item_display13
+execute on passengers if entity @s[tag=aj.boss_1.node.item_display14] run function aj:boss_1/zzz/summon/on_summon/item_display_item_display14
+execute on passengers if entity @s[tag=aj.boss_1.node.item_display15] run function aj:boss_1/zzz/summon/on_summon/item_display_item_display15
+execute on passengers if entity @s[tag=aj.boss_1.node.item_display16] run function aj:boss_1/zzz/summon/on_summon/item_display_item_display16
 execute at @s run function aj:boss_1/zzz/summon/on_summon/rig
 tag @s remove aj.new
 execute on passengers run tag @s remove aj.new

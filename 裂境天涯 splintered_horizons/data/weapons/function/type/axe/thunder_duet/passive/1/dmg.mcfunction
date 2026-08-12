@@ -1,6 +1,6 @@
 tag @s add dmger
 tag @p[sort=arbitrary,tag=weapon.thunder_duet.user,tag=!atker] add atker
-scoreboard players set @p[sort=arbitrary,tag=weapon.thunder_duet.user,tag=atker] atk 75
+scoreboard players set @p[sort=arbitrary,tag=weapon.thunder_duet.user,tag=atker] dmg_formula.atk_percentage 75
 
 execute \
     as @p[sort=arbitrary,tag=weapon.thunder_duet.user,tag=atker] run \

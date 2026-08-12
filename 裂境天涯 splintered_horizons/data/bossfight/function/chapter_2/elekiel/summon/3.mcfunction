@@ -7,12 +7,12 @@ bossbar set minecraft:monsters.elekiel style notched_10
 
 # Loop Enable
 schedule function bossfight:chapter_2/elekiel/loop 1t
-schedule function monsters:chapter_2/elekiel/1/terrain/detect 1t
-schedule function monsters:chapter_2/elekiel/main 1t
+schedule function bossfight:chapter_2/elekiel/skills/1/terrain/detect 1t
+schedule function bossfight:chapter_2/elekiel/skills/main 1t
 
 # Reset Function
-function monsters:chapter_2/elekiel/1/timer/reset
-schedule function monsters:chapter_2/elekiel/1/terrain/lock 1t
+function bossfight:chapter_2/elekiel/skills/1/timer/reset
+schedule function bossfight:chapter_2/elekiel/skills/1/terrain/lock 1t
 
 execute \
     in minecraft:overworld \
@@ -26,6 +26,8 @@ tellraw @a[sort=arbitrary,distance=..30] "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n
 function aj:boss_1/summon {args: {animation: 'idle', start_animation: true}}
 
 ride @n[tag=aj.boss_1.root,distance=..1,sort=arbitrary,type=item_display] mount @n[sort=arbitrary,distance=0..,tag=monsters.elekiel,type=skeleton]
+
+scoreboard players set @s bossfight.attack_module.cd 80
 
 scoreboard players reset #repeat global.main
 scoreboard players reset $timer monster.elekiel.1.terrain

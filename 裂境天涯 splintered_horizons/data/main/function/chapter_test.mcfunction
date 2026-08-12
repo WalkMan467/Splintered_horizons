@@ -7,8 +7,8 @@ execute \
 return 0
 
 gamemode survival @s
-function monsters:chapter_2/elekiel_phase_2/reset_skill_tips
-function monsters:chapter_2/elekiel/reset_skill_tips
+function bossfight:chapter_2/elekiel_phase_2/skills/reset_skill_tips
+function bossfight:chapter_2/elekiel/skills/reset_skill_tips
 function bossfight:chapter_2/segrina/skills/reset_skill_tips
 function energy_infusion_stone:remove_energy_infusion_stone_icon
 

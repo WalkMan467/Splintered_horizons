@@ -10,7 +10,7 @@ execute \
     if score @s player.id = #this player.id run \
 tag @s add atker
 
-scoreboard players set @p[sort=arbitrary,distance=..10,tag=atker] atk 150
+scoreboard players set @p[sort=arbitrary,distance=..10,tag=atker] dmg_formula.atk_percentage 150
 
 execute \
     as @p[sort=arbitrary,distance=..10,tag=atker] run \

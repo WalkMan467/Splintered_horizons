@@ -1,3 +1,7 @@
+# Attachable Components
+
+function sys:attachable_component/group/guide
+
 bossbar set minecraft:monsters.lord_of_the_cataclysm players @a[distance=..20]
 
 effect give @a[distance=..20] night_vision 15 255 true

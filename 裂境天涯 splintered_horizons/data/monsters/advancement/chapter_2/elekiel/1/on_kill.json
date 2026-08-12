@@ -15,6 +15,6 @@
       ]
     ],
     "rewards": {
-      "function": "monsters:chapter_2/elekiel/1/on_kill"
+      "function": "bossfight:chapter_2/elekiel/skills/1/on_kill"
     }
   }

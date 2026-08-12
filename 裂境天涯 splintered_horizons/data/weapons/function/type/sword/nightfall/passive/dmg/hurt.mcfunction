@@ -9,7 +9,7 @@ execute \
     if entity @n[sort=arbitrary,tag=dmger,type=!#minecraft:dummy_mob,type=!player,distance=2..4.5] run \
 effect give @s instant_health 1 0 true
 
-scoreboard players set @s atk 250
+scoreboard players set @s dmg_formula.atk_percentage 250
 function dmg_formula:weapons/type/sword/nightfall/passive/calculate
 
 # particle

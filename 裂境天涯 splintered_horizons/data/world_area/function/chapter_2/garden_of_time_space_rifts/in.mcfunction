@@ -1,3 +1,14 @@
+advancement grant @s only music:chapter_2/garden_of_time_space_rifts/icon
+advancement revoke @s only world_area:chapter_2/garden_of_time_space_rifts/out
+
+execute \
+    if entity @s[tag=sys.exclude_display_world_area_title] run \
+return 0
+
+execute \
+    if score @s sys.exclude_display_world_area_title matches 0.. run \
+return 0
+
 title @s title ["",{"text":":♋⏱:","color":"yellow"},{"translate":"world_area.icon.chapter_2.garden_of_time_space_rifts","underlined":true,"color":"yellow"},{"text":":⏱♋:","color":"yellow"}]
 title @s subtitle [{"text":""},{"text":"《","bold":true,"color":"gold"},{"translate":"monument.icon.chapter_2","bold":true,"color":"gold"},{"text":"》","bold":true,"color":"gold"}]
 title @s times 20 20 10
@@ -12,8 +23,3 @@ playsound minecraft:block.beacon.deactivate voice @s ~ ~1 ~ 1 0.75
 playsound minecraft:block.bell.resonate voice @s ~ ~1 ~ 1 0.5
 
 scoreboard players set #rdm_enchantment global.main 20
-
-advancement grant @s only music:chapter_2/garden_of_time_space_rifts/icon
-
-
-advancement revoke @s only world_area:chapter_2/garden_of_time_space_rifts/out

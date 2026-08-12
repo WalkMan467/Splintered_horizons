@@ -5,7 +5,7 @@ scoreboard players remove @s weapon.spider_passive_dot 1
 # dmg
 scoreboard players operation @a atk = .weapon.spider_passive_dot atk
 
-scoreboard players set @p[tag=atker] atk 75
+scoreboard players set @p[tag=atker] dmg_formula.atk_percentage 75
 
 execute \
     as @a[tag=weapon.spider.dot.player] run \

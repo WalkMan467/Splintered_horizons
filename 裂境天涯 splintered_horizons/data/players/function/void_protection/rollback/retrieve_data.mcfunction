@@ -26,13 +26,13 @@
 # Position = @s Rollback Point
 
 execute \
-    store result storage player:void_protection.rollback x float 0.01 run \
+    store result storage player.data void_protection.rollback.x float 0.01 run \
 scoreboard players get @s player.void_protection.x
 
 execute \
-    store result storage player:void_protection.rollback y float 0.01 run \
+    store result storage player.data void_protection.rollback.y float 0.01 run \
 scoreboard players get @s player.void_protection.y
 
 execute \
-    store result storage player:void_protection.rollback z float 0.01 run \
+    store result storage player.data void_protection.rollback.z float 0.01 run \
 scoreboard players get @s player.void_protection.z

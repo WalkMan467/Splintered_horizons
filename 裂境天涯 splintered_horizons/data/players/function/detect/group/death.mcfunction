@@ -26,7 +26,7 @@ function bossfight:chapter_2/elekiel/player_death
 
 function bossfight:chapter_2/elekiel_phase_2/player_death
 
-function monsters:chapter_2/elekiel_phase_2/4/portal/crack/tp/remove
+function bossfight:chapter_2/elekiel_phase_2/skills/4/portal/crack/tp/remove
 
 function players:stop_animation
 

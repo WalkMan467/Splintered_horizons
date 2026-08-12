@@ -13,6 +13,9 @@ scoreboard players set $z player_motion.api.launch 0
 
 function player_motion:api/launch_xyz
 
+tag @s add sys.fall_immunity
+scoreboard players set @s player.disable.elytra_switch 40
+
 tag @s add weapon.thunder_duet.user
 
 execute \

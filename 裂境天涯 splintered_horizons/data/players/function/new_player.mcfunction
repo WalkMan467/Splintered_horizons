@@ -8,6 +8,7 @@ scoreboard players set @s player.give.item.delay 10
 
 advancement revoke @s only players:icon/status_effects/bleeding
 advancement revoke @s only players:icon/status_effects/entropy_erosion
+advancement revoke @s only players:icon/status_effects/soul_restraint
 advancement revoke @s only players:tips/mending
 advancement revoke @s only players:tips/bossfight
 advancement grant @s only music:icon

@@ -235,6 +235,8 @@ scoreboard objectives add weapon.aquilumera_passive dummy "水鏡之光被動"
 scoreboard objectives add weapon.aquilumera.state dummy "水鏡之光狀態"
 scoreboard objectives add weapon.aquilumera.cd dummy "水鏡之光 CD"
 scoreboard objectives add weapon.aquilumera.count dummy "水鏡之光 數量"
+scoreboard objectives add weapon.aquilumera.switch.water.fx.rdm_pos.raycast.id dummy "水鏡之光 水型態特效 Raycast ID"
+scoreboard objectives add weapon.aquilumera.switch.water.fx.rdm_pos.raycast dummy "水鏡之光 水型態特效 Raycast"
 
 scoreboard players add @a weapon.aquilumera_passive 0
 scoreboard players add @a weapon.aquilumera.state 0

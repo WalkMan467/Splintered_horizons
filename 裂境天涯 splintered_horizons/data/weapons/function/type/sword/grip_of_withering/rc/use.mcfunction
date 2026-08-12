@@ -13,7 +13,7 @@ tag @e[distance=..6,type=!#minecraft:dummy_mob,type=!player] add dmger
 effect give @e[distance=..6,tag=dmger,type=!#minecraft:dummy_mob,type=!player] wither 8 1 false
 
 tag @s[tag=!atker] add atker
-scoreboard players set @s[tag=atker] atk 150
+scoreboard players set @s[tag=atker] dmg_formula.atk_percentage 150
 function dmg_formula:weapons/type/sword/grip_of_withering/calculate
 
 scoreboard players set @s weapon.grip_of_withering.cd 240

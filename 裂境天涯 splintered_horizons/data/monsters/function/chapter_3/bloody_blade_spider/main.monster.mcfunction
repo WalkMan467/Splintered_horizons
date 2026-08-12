@@ -1,3 +1,7 @@
+# Attachable Components
+
+function sys:attachable_component/group/guide
+
 # Cast
 
 execute \

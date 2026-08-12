@@ -3,7 +3,7 @@ summon area_effect_cloud ~ ~1.5 ~ {Tags:["monsters.sunfire_emissary.fx_2.main","
 
 
 execute \
-    as @e[tag=monsters.sunfire_emissary.fx_2.main,type=area_effect_cloud,tag=summon] at @s rotated 0 -90 run \
+    as @e[distance=..3,tag=monsters.sunfire_emissary.fx_2.main,tag=summon,type=area_effect_cloud] at @s rotated 0 -90 run \
 function monsters:chapter_3/sunfire_emissary/death/fx_2/use
 
 schedule function monsters:chapter_3/sunfire_emissary/death/fx/main 1t

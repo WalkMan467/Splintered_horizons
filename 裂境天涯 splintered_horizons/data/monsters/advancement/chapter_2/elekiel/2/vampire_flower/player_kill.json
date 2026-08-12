@@ -15,6 +15,6 @@
       ]
     ],
     "rewards": {
-      "function": "monsters:chapter_2/elekiel/2/vampire_flower/player_kill"
+      "function": "bossfight:chapter_2/elekiel/skills/2/vampire_flower/player_kill"
     }
   }

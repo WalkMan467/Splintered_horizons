@@ -31,7 +31,7 @@ tag @s[tag=!atker] add atker
 
 execute \
     on attacker run \
-scoreboard players set @s[tag=atker] atk 250
+scoreboard players set @s[tag=atker] dmg_formula.atk_percentage 250
 
 
 execute \

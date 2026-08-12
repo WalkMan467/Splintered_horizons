@@ -7,8 +7,8 @@
     "minecraft:visual/moon_angle": 180,
     "minecraft:visual/fog_color": 0,
     "minecraft:visual/water_fog_color": 0,
-    "minecraft:visual/fog_start_distance": 0,
-    "minecraft:visual/fog_end_distance": 5,
+    "minecraft:visual/fog_start_distance": 1,
+    "minecraft:visual/fog_end_distance": 30,
     "minecraft:visual/ambient_particles": [
       {
         "particle": {

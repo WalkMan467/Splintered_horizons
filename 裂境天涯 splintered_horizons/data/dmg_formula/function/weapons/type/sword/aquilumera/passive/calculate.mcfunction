@@ -1,0 +1,23 @@
+# 執行者 : 玩家
+# tag
+tag @s add atker
+
+# calculate
+
+execute \
+    store result score #temp atk run \
+attribute @s minecraft:attack_damage get
+scoreboard players operation @s dmg_formula.atk_percentage *= #temp atk
+
+# \
+    store & atk
+
+execute \
+    store result storage temp values float 0.01 run \
+scoreboard players get @s dmg_formula.atk_percentage
+function dmg_formula:weapons/type/sword/aquilumera/passive/damage with storage temp
+
+# reset
+tag @s remove atker
+tag @e[distance=0..,type=!#dummy_mob,tag=dmger] remove dmger
+scoreboard players reset @s dmg_formula.atk_percentage

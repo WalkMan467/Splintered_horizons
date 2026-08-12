@@ -1,13 +1,9 @@
 {
 	"pack": {
-		"pack_format": 71,
 		"description": "",
+		"pack_format": 94,
 		"min_format": 94,
-		"max_format": 94,
-		"supported_formats": {
-			"min_inclusive": 71,
-			"max_inclusive": 79
-		}
+		"max_format": 94
 	},
 	"overlays": {
 		"entries": [

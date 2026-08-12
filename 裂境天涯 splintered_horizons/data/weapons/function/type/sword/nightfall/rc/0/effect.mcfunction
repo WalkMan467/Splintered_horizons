@@ -27,7 +27,7 @@ tag @e[type=!player,type=!#minecraft:dummy_mob,distance=..1] add dmger
 
 execute \
     on attacker run \
-scoreboard players operation @s atk = #temp player.max_health
+scoreboard players operation @s dmg_formula.atk_percentage = #temp player.max_health
 
 execute \
     on attacker run \

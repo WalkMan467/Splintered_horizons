@@ -12,3 +12,7 @@ execute \
 function weapons:type/axe/thunder_duet/passive/2/dmg
 
 scoreboard players set @s weapon.thunder_duet.cd 100
+
+execute \
+    if score @s weapon.effect.chaotic_thunder matches 1.. run \
+scoreboard players set @s weapon.thunder_duet.cd 0

@@ -1,0 +1,117 @@
+stopsound @a record minecraft:bgm.tunetank_meridian
+
+scoreboard players reset skill.1 monster.elekiel_phase_2.cd
+scoreboard players reset skill.2 monster.elekiel_phase_2.cd
+scoreboard players reset skill.3 monster.elekiel_phase_2.cd
+scoreboard players reset skill.4 monster.elekiel_phase_2.cd
+scoreboard players reset skill.5 monster.elekiel_phase_2.cd
+
+scoreboard players set #bossfight global.main 0
+
+execute \
+    on passengers \
+    as @s[tag=aj.boss_1.root,type=item_display] run \
+function aj:boss_1/remove/this
+
+advancement grant @a only music:chapter_2/bossfight/3/reset
+
+bossbar remove minecraft:monsters.elekiel_phase_2
+
+schedule clear bossfight:chapter_2/elekiel_phase_2/skills/main
+
+
+execute \
+    as @a run \
+attribute @s attack_damage modifier remove monster.elekiel_phase_2.effect
+
+execute \
+    positioned -916 60 2750 \
+    as @a[distance=60..] at @s run \
+advancement grant @s only music:chapter_2/bossfight/3/reset
+
+execute \
+    as @p \
+    unless score #weapons:monument/area_2 global.main matches 1.. run \
+function weapons:get/monument/area_2
+
+function bossfight:chapter_2/elekiel_phase_2/skills/5/4
+
+
+execute \
+    as @e[tag=monster.elekiel_phase_2.3,tag=monster.forest_messenger,type=skeleton] at @s run \
+function monsters:chapter_2/forest_messenger/cocoon/remove
+
+execute \
+    positioned -916 60 2750 \
+    as @e[sort=arbitrary,distance=..60,tag=monster.elekiel_phase_2.1.mysterray,type=item_display] at @s \
+    on passengers run \
+function bossfight:chapter_2/elekiel_phase_2/skills/fx.void
+
+function bossfight:chapter_2/elekiel_phase_2/skills/5/end
+
+execute \
+    as @a at @s run \
+function bossfight:chapter_2/elekiel_phase_2/skills/4/portal/crack/tp/remove
+
+
+execute \
+    as @e[tag=mob.elekiel.display,type=!player] \
+    on passengers run \
+kill @s
+
+execute \
+    as @e[tag=mob.elekiel.display,type=!player] \
+    on passengers \
+    on passengers run \
+kill @s
+
+kill @e[tag=mob.elekiel.display,type=!player]
+
+execute \
+    as @e[type=!#minecraft:dummy_mob,tag=monster.elekiel_phase_2.3,type=!player] \
+    on passengers run \
+kill @s
+kill @e[tag=monster.elekiel_phase_2.3,type=!#minecraft:dummy_mob,type=!player]
+kill @n[sort=arbitrary,tag=monster.elekiel_phase_2.4.effect.target.player_leave.detect,type=marker]
+
+effect clear @a[scores={monster.elekiel_phase_2.skill.4.effect.void=0..}] glowing
+
+
+execute \
+    as @a[tag=monster.elekiel_phase_2.4.effect.target] at @s run \
+function bossfight:chapter_2/elekiel_phase_2/skills/4/effect/false
+
+tag @a remove monster.elekiel_phase_2.effect
+tag @a remove monster.elekiel_phase_2.4.effect.target
+tag @a remove monster.elekiel_phase_2.skill.2.target
+tag @a remove chapter_2.elekiel_phase_2.4
+tag @a remove monster.elekiel_phase_2.4.death_timer
+
+bossbar remove chapter_2.elekiel_phase_2.4
+scoreboard players reset #chapter_2.elekiel_phase_2.4 monster.elekiel_phase_2.skill.2.casting
+
+scoreboard players reset @a sys.dummy_mob
+scoreboard players reset @a monster.elekiel_phase_2.skill.4.effect.void
+scoreboard players reset #monster.elekiel_phase_2.skill.4.portal.actived global.main
+scoreboard players set @s player.detect.is_bossfight 0
+scoreboard players set #boss_area.chapter_2.elekiel_phase_2 global.main 0
+scoreboard players set #monster.bossfight.chapter_2.elekiel_phase_2.act.enable global.main 1
+
+scoreboard players reset $monster.chapter_2.elekiel.1 monster.elekiel.skill.casting
+scoreboard players reset $monster.chapter_2.elekiel.2 monster.elekiel.skill.casting
+scoreboard players reset $monster.chapter_2.elekiel.3 monster.elekiel.skill.casting
+
+scoreboard players reset $monster.chapter_2.elekiel.1 monster.elekiel.skill.cd
+scoreboard players reset $monster.chapter_2.elekiel.2 monster.elekiel.skill.cd
+scoreboard players reset $monster.chapter_2.elekiel.3 monster.elekiel.skill.cd
+
+execute \
+    positioned -916 60 2750 run \
+kill @e[distance=..60,type=experience_orb]
+
+execute \
+    positioned -916 60 2750 run \
+tp @a[distance=..60] 1109 82 373
+
+advancement revoke @a only bossfight:chapter_2/elekiel_phase_2/skills/2/in
+advancement revoke @a only bossfight:chapter_2/elekiel_phase_2/skills/2/out

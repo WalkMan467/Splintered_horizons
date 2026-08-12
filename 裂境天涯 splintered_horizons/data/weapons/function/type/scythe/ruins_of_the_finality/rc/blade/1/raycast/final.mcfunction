@@ -13,7 +13,7 @@ function aj:ruins_of_the_finality_skill/summon {args: {animation: 'skills_2', st
 
 tag @e[distance=..3,type=!#minecraft:dummy_mob,type=!player] add dmger
 tag @p[tag=weapon.ruins_of_the_finality.blade.1.user] add atker
-scoreboard players set @p[tag=atker,tag=weapon.ruins_of_the_finality.blade.1.user] atk 150
+scoreboard players set @p[tag=atker,tag=weapon.ruins_of_the_finality.blade.1.user] dmg_formula.atk_percentage 150
 
 execute \
     as @p[tag=weapon.ruins_of_the_finality.blade.1.user] run \

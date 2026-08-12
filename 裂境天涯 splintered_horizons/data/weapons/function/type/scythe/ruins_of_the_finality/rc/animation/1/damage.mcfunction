@@ -1,6 +1,6 @@
 tag @e[type=!#minecraft:dummy_mob,type=!player,distance=..8] add dmger
 tag @p[tag=!atker] add atker
-scoreboard players set @p[tag=atker] atk 250
+scoreboard players set @p[tag=atker] dmg_formula.atk_percentage 250
 
 execute \
     as @p[tag=atker] run \

@@ -1,8 +1,8 @@
 {
   "values": [
     "#minecraft:dot",
-    "#monsters:chapter_2/elekiel/all",
-    "#monsters:chapter_2/elekiel_phase_2/all",
+    "#bossfight:chapter_2/elekiel/skills/all",
+    "#bossfight:chapter_2/elekiel_phase_2/skills/all",
     "armors:type/black_hole/damage",
     "armors:type/windriders_legplates/damage",
     "#weapons:true_dmg",

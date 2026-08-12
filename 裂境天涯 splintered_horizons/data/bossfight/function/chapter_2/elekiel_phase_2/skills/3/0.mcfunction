@@ -1,0 +1,15 @@
+summon area_effect_cloud ~ ~ ~ {Tags:["monster.elekiel_phase_2.3.summon_point"],custom_particle:{type:"block",block_state:"minecraft:air"},Radius:0f,Duration:1}
+summon area_effect_cloud ~ ~ ~ {Tags:["monster.elekiel_phase_2.3.summon_point"],custom_particle:{type:"block",block_state:"minecraft:air"},Radius:0f,Duration:1}
+summon area_effect_cloud ~ ~ ~ {Tags:["monster.elekiel_phase_2.3.summon_point"],custom_particle:{type:"block",block_state:"minecraft:air"},Radius:0f,Duration:1}
+
+spreadplayers -916 2750 2 10 under 60 false @e[distance=..60,limit=5,sort=nearest,type=area_effect_cloud,tag=monster.elekiel_phase_2.3.summon_point]
+
+
+execute \
+    as @e[distance=..60,limit=5,sort=nearest,tag=monster.elekiel_phase_2.3.summon_point,type=area_effect_cloud] at @s run \
+function bossfight:chapter_2/elekiel_phase_2/skills/3/1
+
+execute \
+    positioned -916 60 2750 \
+    as @a[sort=arbitrary,distance=..120] at @s run \
+function bossfight:chapter_2/elekiel_phase_2/skills/3/death_tips

@@ -4,4 +4,5 @@ execute if entity @s[tag=aj.boss_1.animation.attack_1.playing] run function aj:b
 execute if entity @s[tag=aj.boss_1.animation.attack_2.playing] run function aj:boss_1/animations/attack_2/zzz/on_tick
 execute if entity @s[tag=aj.boss_1.animation.idle.playing] run function aj:boss_1/animations/idle/zzz/on_tick
 execute if entity @s[tag=aj.boss_1.animation.walk.playing] run function aj:boss_1/animations/walk/zzz/on_tick
+execute if entity @s[tag=aj.boss_1.animation.attack_3.playing] run function aj:boss_1/animations/attack_3/zzz/on_tick
 execute on passengers run rotate @s ~ ~

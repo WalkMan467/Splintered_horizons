@@ -1,6 +1,6 @@
 {
     "values": [
       "players:elytra_switch/reset",
-      "monsters:chapter_2/elekiel_phase_2/4/effect/disable_inventory/reset"
+      "bossfight:chapter_2/elekiel_phase_2/skills/4/effect/disable_inventory/reset"
     ]
   }

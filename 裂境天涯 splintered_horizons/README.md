@@ -26,5 +26,5 @@
 > 類型：scoreboard、tag \
 > 可指定對象：Player
 > 
-> 延伸功能：`sys.hide_world_area.skip_detect` \
-> `sys.hide_world_area.skip_detect`： Tag 標籤，不會觸發進入區域的進度偵測
+> 延伸功能：`sys.exclude_display_world_area_title` \
+> `sys.exclude_display_world_area_title`： Tag 標籤，不會觸發進入區域的進度偵測

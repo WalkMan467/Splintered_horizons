@@ -4,6 +4,8 @@
 function sys:dummy_mob/introduction
 function sys:fall_immunity/introduction
 function sys:skills_freeze/introduction
+function sys:exclude_display_world_area_title/introduction
+function sys:attachable_component/silence/introduction
 
 # =============================================================================
 

@@ -1,7 +1,9 @@
 {
   "values": [
-    "#monsters:chapter_2/elekiel/all",
-    "#monsters:chapter_2/elekiel_phase_2/all",
+    "#bossfight:chapter_2/elekiel/skills/all",
+    "#monsters:chapter_2/soul_sharpshooter/all",
+    "#bossfight:chapter_2/elekiel_phase_2/skills/all",
+    "#bossfight:chapter_2/elekiel_phase_2/attack_module/all",
     "#bossfight:chapter_2/segrina/skills/all",
     "monsters:chapter_2/blackhole_creeper/damage"
   ]

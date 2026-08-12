@@ -1,6 +1,7 @@
 function sys:shooting_contest/main
 function sys:walkman467/main
 function sys:item_frame/main
+function sys:jump_platform/main
 
 execute \
     as @a at @s run \

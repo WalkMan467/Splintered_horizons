@@ -4,6 +4,7 @@ execute \
     as @e[distance=..30,limit=10,sort=arbitrary,type=silverfish] at @s run \
 function spawner:main
 
+function bossfight:chapter_2/elekiel_phase_2/attack_module/state/attack3/particle/main
 
 execute \
     as @n[sort=arbitrary,distance=..20,tag=sys.detect.player_death.point,type=marker] at @s \

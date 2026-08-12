@@ -7,17 +7,17 @@ tag @s add atker
 execute \
     store result score #temp atk run \
 attribute @s minecraft:attack_damage get
-scoreboard players operation @s atk *= #temp atk
+scoreboard players operation @s dmg_formula.atk_percentage *= #temp atk
 
 # \
     store & atk
 
 execute \
     store result storage temp values float 0.01 run \
-scoreboard players get @s atk
+scoreboard players get @s dmg_formula.atk_percentage
 function dmg_formula:weapons/type/sword/echo_rhythm/stronger/damage with storage temp
 
 # reset
 tag @s remove atker
 tag @e[distance=0..,type=!#dummy_mob,tag=dmger] remove dmger
-scoreboard players reset @s atk
+scoreboard players reset @s dmg_formula.atk_percentage

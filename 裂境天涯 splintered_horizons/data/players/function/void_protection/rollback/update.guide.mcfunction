@@ -26,6 +26,9 @@
 # Using player data is expensive,
 # so a marker with a unique UUID is used to track the player's position instead
 
+execute \
+    unless predicate {condition:"entity_properties",entity:"this",predicate:{flags:{is_on_ground:true}}} run \
+return 0
 
 # 0360377c-2395-4b58-b2fa-7c227e25b516
 summon marker ~ ~ ~ {UUID:[I;56637308,596986712,-1292207070,2116400406]}

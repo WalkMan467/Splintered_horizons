@@ -9,7 +9,8 @@ scoreboard players set sys.walkman467 story.chapter_2 1
 
 
 execute \
-    positioned 765 146 995 rotated 135 0 run \
+    positioned 757 36 1062 \
+    rotated 180 0 run \
 summon mannequin ~ ~ ~ \
     {\
         Silent:1b,\
@@ -38,12 +39,12 @@ summon mannequin ~ ~ ~ \
     }
 
 execute \
-    positioned 765 146 995 \
+    positioned 757 36 1062 \
     unless score #sys.walkman467.glowing global.main matches 1 \
 as @n[sort=arbitrary,distance=..1,tag=sys.walkman467,type=mannequin] run \
 data modify entity @s Glowing set value 1b
 
-summon interaction 765 146 995 \
+summon interaction 757 36 1062 \
     { \
         height:2, \
         UUID:[I; 5215, 531512, 5312, 251412] \

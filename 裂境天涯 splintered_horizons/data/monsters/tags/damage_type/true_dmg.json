@@ -1,7 +1,7 @@
 {
   "values": [
-    "#monsters:chapter_2/elekiel/all",
-    "#monsters:chapter_2/elekiel_phase_2/all",
+    "#bossfight:chapter_2/elekiel/skills/all",
+    "#bossfight:chapter_2/elekiel_phase_2/skills/all",
     "#bossfight:chapter_2/segrina/skills/1/all",
     "#bossfight:chapter_2/segrina/skills/3/all"
   ]
