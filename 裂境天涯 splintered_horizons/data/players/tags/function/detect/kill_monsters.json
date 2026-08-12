@@ -1,5 +1,8 @@
 {
-    "values": [
-      "a:test"
-    ]
-  }
+  "values": [
+    {
+      "id": "a:test",
+      "required": false
+    }
+  ]
+}

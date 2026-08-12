@@ -42,7 +42,7 @@
               "predicate": {
                 "tags": [
                   {
-                    "id": "players:void_dmg",
+                    "id": "#players:void_dmg",
                     "expected": true
                   }
                 ]

@@ -1,5 +1,8 @@
 {
-    "values": [
-      "minecraft:test"
-    ]
-  }
+  "values": [
+    {
+      "id": "minecraft:test",
+      "required": false
+    }
+  ]
+}

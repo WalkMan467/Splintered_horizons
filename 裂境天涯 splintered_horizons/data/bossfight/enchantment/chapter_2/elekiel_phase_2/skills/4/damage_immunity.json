@@ -11,7 +11,7 @@
           "predicate": {
             "tags": [
               {
-                "id": "minecraft:all_dmg",
+                "id": "#minecraft:all_dmg",
                 "expected": true
               }
             ]

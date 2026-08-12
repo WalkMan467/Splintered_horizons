@@ -1,5 +1,8 @@
 {
-    "values": [
-      "armors:test"
-    ]
-  }
+  "values": [
+    {
+      "id": "armors:test",
+      "required": false
+    }
+  ]
+}
