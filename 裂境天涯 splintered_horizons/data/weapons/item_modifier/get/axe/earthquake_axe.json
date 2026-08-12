@@ -1,10 +1,10 @@
 [
   {
-    "function": "minecraft:set_item",
+    "type": "minecraft:set_item",
     "item": "minecraft:iron_sword"
   },
   {
-    "function": "minecraft:set_components",
+    "type": "minecraft:set_components",
     "components": {
       "minecraft:item_name": [
         {
@@ -16,88 +16,203 @@
       ],
       "minecraft:lore": [
         [
-          { "translate": "weapon.earthquake_axe.type", "italic": false, "color": "dark_gray" }
+          {
+            "translate": "weapon.earthquake_axe.type",
+            "italic": false,
+            "color": "dark_gray"
+          }
         ],
-        { "text": "" },
+        {
+          "text": ""
+        },
         [
-          { "translate": "weapon.earthquake_axe.story.1", "italic": false, "color": "blue" }
-        ],
-        [
-          { "translate": "weapon.earthquake_axe.story.2", "italic": false, "color": "blue" }
-        ],
-        { "text": "" },
-        [
-          { "text": "", "italic": false },
-          { "translate": "weapon.earthquake_axe.passive_skills", "color": "#cfcfcf", "bold": true },
-          { "text": "  " },
-          { "translate": "weapon.skill_cd", "color": "#6E6E6E" },
-          { "text": "4s" }
-        ],
-        [
-          { "text": "", "italic": false },
-          { "translate": "weapon.earthquake_axe.passive_skills.1", "color": "#727272" }
+          {
+            "translate": "weapon.earthquake_axe.story.1",
+            "italic": false,
+            "color": "blue"
+          }
         ],
         [
-          { "text": "", "italic": false },
-          { "translate": "weapon.earthquake_axe.passive_skills.2", "color": "#727272" }
+          {
+            "translate": "weapon.earthquake_axe.story.2",
+            "italic": false,
+            "color": "blue"
+          }
+        ],
+        {
+          "text": ""
+        },
+        [
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "weapon.earthquake_axe.passive_skills",
+            "color": "#cfcfcf",
+            "bold": true
+          },
+          {
+            "text": "  "
+          },
+          {
+            "translate": "weapon.skill_cd",
+            "color": "#6E6E6E"
+          },
+          {
+            "text": "4s"
+          }
         ],
         [
-          { "text": "", "italic": false },
-          { "translate": "weapon.earthquake_axe.passive_skills.3", "color": "#727272" }
-        ],
-        { "text": "" },
-        [
-          { "text": "", "italic": false },
-          { "text": "", "font": "minecraft:icon" },
-          { "translate": "weapon.earthquake_axe.ultimate", "color": "#7a0000", "bold": true },
-          { "text": "", "font": "minecraft:icon" },
-          { "text": "  " },
-          { "translate": "weapon.skill_cd", "color": "#6E6E6E" },
-          { "text": "25s" }
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "weapon.earthquake_axe.passive_skills.1",
+            "color": "#727272"
+          }
         ],
         [
-          { "text": "", "italic": false },
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "weapon.earthquake_axe.passive_skills.2",
+            "color": "#727272"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "weapon.earthquake_axe.passive_skills.3",
+            "color": "#727272"
+          }
+        ],
+        {
+          "text": ""
+        },
+        [
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "text": "",
+            "font": "minecraft:icon"
+          },
+          {
+            "translate": "weapon.earthquake_axe.ultimate",
+            "color": "#7a0000",
+            "bold": true
+          },
+          {
+            "text": "",
+            "font": "minecraft:icon"
+          },
+          {
+            "text": "  "
+          },
+          {
+            "translate": "weapon.skill_cd",
+            "color": "#6E6E6E"
+          },
+          {
+            "text": "25s"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "italic": false
+          },
           {
             "translate": "weapon.earthquake_axe.ultimate.1",
             "color": "#ff3a3a",
             "with": [
-              { "keybind": "key.use", "underlined": true, "color": "dark_green" }
+              {
+                "keybind": "key.use",
+                "underlined": true,
+                "color": "dark_green"
+              }
             ]
           }
         ],
         [
-          { "text": "", "italic": false },
-          { "translate": "weapon.earthquake_axe.ultimate.2", "color": "#ff3a3a" }
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "weapon.earthquake_axe.ultimate.2",
+            "color": "#ff3a3a"
+          }
         ],
         [
-          { "text": "", "italic": false },
-          { "translate": "weapon.earthquake_axe.ultimate.3", "color": "#ff3a3a" }
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "weapon.earthquake_axe.ultimate.3",
+            "color": "#ff3a3a"
+          }
         ],
         [
-          { "text": "", "italic": false },
+          {
+            "text": "",
+            "italic": false
+          },
           {
             "translate": "weapon.earthquake_axe.ultimate.4",
             "color": "#ff3a3a",
             "with": [
-              { "keybind": "key.jump", "underlined": true, "color": "dark_green" }
+              {
+                "keybind": "key.jump",
+                "underlined": true,
+                "color": "dark_green"
+              }
             ]
           }
         ],
         [
-          { "text": "", "italic": false },
-          { "translate": "weapon.earthquake_axe.ultimate.5", "color": "#ff3a3a" }
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "weapon.earthquake_axe.ultimate.5",
+            "color": "#ff3a3a"
+          }
         ],
         [
-          { "text": "", "italic": false },
-          { "translate": "weapon.earthquake_axe.ultimate.6", "color": "#ff3a3a" }
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "weapon.earthquake_axe.ultimate.6",
+            "color": "#ff3a3a"
+          }
         ],
         [
-          { "text": "", "italic": false },
+          {
+            "text": "",
+            "italic": false
+          },
           {
             "translate": "weapon.earthquake_axe.ultimate.7",
             "color": "#ff3a3a",
             "with": [
-              { "keybind": "key.sneak", "underlined": true, "color": "dark_green" }
+              {
+                "keybind": "key.sneak",
+                "underlined": true,
+                "color": "dark_green"
+              }
             ]
           }
         ]
@@ -140,7 +255,7 @@
     }
   },
   {
-    "function": "minecraft:set_enchantments",
+    "type": "minecraft:set_enchantments",
     "add": false,
     "enchantments": {
       "weapons:type/axe/earthquake_axe/use": 1

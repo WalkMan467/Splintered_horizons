@@ -1,6 +1,6 @@
 [
   {
-    "function": "minecraft:set_components",
+    "type": "minecraft:set_components",
     "components": {
       "minecraft:tooltip_display": {
         "hidden_components": [
@@ -11,7 +11,7 @@
     }
   },
   {
-    "function": "minecraft:set_lore",
+    "type": "minecraft:set_lore",
     "entity": "this",
     "lore": [
       [
@@ -30,7 +30,7 @@
     "mode": "insert"
   },
   {
-    "function": "minecraft:set_custom_data",
+    "type": "minecraft:set_custom_data",
     "tag": {
       "can_place_on": true
     }

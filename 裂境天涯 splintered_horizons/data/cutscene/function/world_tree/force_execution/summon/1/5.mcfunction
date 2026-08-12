@@ -10,7 +10,7 @@ forceload add ~ ~
 # a98a99c1-535d-4b22-972a-4a4c27543d17
 execute \
     in world_area:main/game_lobby run \
-summon minecraft:block_display 16684 31 270 {UUID:[I;-1450534463,1398623010,-1758836148,659832087],Rotation:[0.0f,0.0f],teleport_duration:1,block_state: {Name: "minecraft:air"}, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 1.0f], translation: [-0.5f, -0.5f, -0.5f]}}
+summon minecraft:block_display 16684 31 270 {UUID:[I;-1450534463,1398623010,-1758836148,659832087],Rotation:[0.0f,0.0f],teleport_duration:1,block_state: {id: "minecraft:air"}, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 1.0f], translation: [-0.5f, -0.5f, -0.5f]}}
 
 execute \
     in world_area:main/game_lobby \

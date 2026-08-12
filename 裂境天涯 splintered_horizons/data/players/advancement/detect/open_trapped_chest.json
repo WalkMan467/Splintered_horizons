@@ -3,12 +3,10 @@
     "requirements": {
       "trigger": "minecraft:any_block_use",
       "conditions": {
-        "location": [
-          {
-            "condition": "minecraft:block_state_property",
-            "block": "minecraft:trapped_chest"
-          }
-        ]
+        "location": {
+          "type": "minecraft:match_block",
+          "blocks": "minecraft:trapped_chest"
+        }
       }
     }
   },

@@ -11,7 +11,7 @@ forceload add ~ ~
 # Math Marker = 5e872217-eb7b-4a9f-92f4-db13079f9daa
 execute \
     in world_area:main/game_lobby run \
-summon minecraft:block_display 16684.0 61.5 235.0 {Passengers:[{id:"marker",UUID:[I;1585914391,-344241505,-1829446893,127901098]}],UUID:[I;-2012559705,339496454,-1500676369,-1373882455],Rotation:[160.0f,0.0f],Tags:["cutscene.world_tree.0"],teleport_duration:5,block_state: {Name: "minecraft:air"}, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 1.0f], translation: [-0.5f, -0.5f, -0.5f]}}
+summon minecraft:block_display 16684.0 61.5 235.0 {Passengers:[{id:"marker",UUID:[I;1585914391,-344241505,-1829446893,127901098]}],UUID:[I;-2012559705,339496454,-1500676369,-1373882455],Rotation:[160.0f,0.0f],Tags:["cutscene.world_tree.0"],teleport_duration:5,block_state: {id: "minecraft:air"}, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 1.0f], translation: [-0.5f, -0.5f, -0.5f]}}
 
 execute \
     in world_area:main/game_lobby \

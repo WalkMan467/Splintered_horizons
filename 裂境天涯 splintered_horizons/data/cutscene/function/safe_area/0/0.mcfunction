@@ -45,7 +45,7 @@ scoreboard players set @n[type=item_display,tag=cutscene.safe_area.0.sophia] cut
 scoreboard players set @n[type=item_display,tag=cutscene.safe_area.0.stellar] cutscene.aj.animation.change 140
 scoreboard players set @n[type=item_display,tag=cutscene.safe_area.0.stellar] cutscene.aj.animation.state 1
 
-summon minecraft:block_display 759.75 144.00 934.5 {start_interpolation:1,teleport_duration:59,UUID:[I; 121, 12 ,21 ,21],Passengers:[{data:{aj_kill:{name:""}},id:"minecraft:marker",Tags:["main.duration.timer","summon"]}],Rotation:[25.0f,25.0f],Tags:["cutscene.safe_area.0"],block_state: {Name: "minecraft:air"}, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 1.0f], translation: [-0.5f, -0.5f, -0.5f]}}
+summon minecraft:block_display 759.75 144.00 934.5 {start_interpolation:1,teleport_duration:59,UUID:[I; 121, 12 ,21 ,21],Passengers:[{data:{aj_kill:{name:""}},id:"minecraft:marker",Tags:["main.duration.timer","summon"]}],Rotation:[25.0f,25.0f],Tags:["cutscene.safe_area.0"],block_state: {id: "minecraft:air"}, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 1.0f], translation: [-0.5f, -0.5f, -0.5f]}}
 
 scoreboard players set @n[tag=main.duration.timer,tag=summon,type=marker] duration 100
 tag @n[tag=main.duration.timer,tag=summon,type=marker] remove summon

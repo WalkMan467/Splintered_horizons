@@ -1,6 +1,6 @@
 [
   {
-    "function": "minecraft:set_components",
+    "type": "minecraft:set_components",
     "components": {
       "minecraft:can_break": [
         {
@@ -34,7 +34,7 @@
     }
   },
   {
-    "function": "minecraft:set_lore",
+    "type": "minecraft:set_lore",
     "entity": "this",
     "lore": [
       [
@@ -71,7 +71,7 @@
     "offset": 2
   },
   {
-    "function": "minecraft:set_custom_data",
+    "type": "minecraft:set_custom_data",
     "tag": {
       "can_break": true
     }

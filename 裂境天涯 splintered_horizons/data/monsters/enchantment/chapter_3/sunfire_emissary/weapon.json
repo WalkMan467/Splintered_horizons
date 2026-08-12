@@ -20,27 +20,30 @@
   "effects": {
     "minecraft:post_attack": [
       {
-        "requirements": [
-          {
-            "condition": "minecraft:random_chance",
-            "chance": 0.25
-          },
-          {
-            "condition": "minecraft:value_check",
-            "value": {
-              "type": "minecraft:score",
-              "target": {
-                "type": "minecraft:fixed",
-                "name": "#nightmare"
-              },
-              "score": "main.difficulty",
-              "scale": 1
+        "requirements": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:random_chance",
+              "chance": 0.25
             },
-            "range": {
-              "min": 1
+            {
+              "type": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#nightmare"
+                },
+                "score": "main.difficulty",
+                "scale": 1
+              },
+              "range": {
+                "min": 1
+              }
             }
-          }
-        ],
+          ]
+        },
         "effect": {
           "type": "minecraft:run_function",
           "function": "monsters:chapter_3/sunfire_emissary/death/explosion/weapon"

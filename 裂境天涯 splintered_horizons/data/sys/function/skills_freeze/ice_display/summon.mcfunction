@@ -1,4 +1,4 @@
-summon minecraft:block_display ~ ~ ~ {Tags:["sys.skills_freeze.display","summon"],block_state: {Name: "minecraft:ice"}, brightness: {block: 10, sky: 0}, interpolation_duration: 1, teleport_duration: 1, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 2.0f, 1.0f], translation: [-0.5f, 0.0f, -0.5f]}}
+summon minecraft:block_display ~ ~ ~ {Tags:["sys.skills_freeze.display","summon"],block_state: {id: "minecraft:ice"}, brightness: {block: 10, sky: 0}, interpolation_duration: 1, teleport_duration: 1, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 2.0f, 1.0f], translation: [-0.5f, 0.0f, -0.5f]}}
 
 playsound minecraft:voice.broken voice @a ~ ~1 ~ 1 1
 playsound minecraft:block.glass.break voice @a ~ ~1 ~ 1 0.75

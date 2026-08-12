@@ -3,21 +3,19 @@
     "double_sword_fire": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "equipment": {
-                "mainhand": {
-                  "predicates": {
-                    "minecraft:custom_data": "{weapon:\"spider\"}"
-                  }
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "equipment": {
+              "mainhand": {
+                "predicates": {
+                  "minecraft:custom_data": "{weapon:\"spider\"}"
                 }
               }
             }
           }
-        ]
+        }
       }
     }
   },

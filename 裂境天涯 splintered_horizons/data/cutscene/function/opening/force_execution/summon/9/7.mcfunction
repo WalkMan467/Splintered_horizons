@@ -9,7 +9,7 @@ forceload add 51 -438
 execute \
     in minecraft:overworld \
     rotated 180 60 run \
-summon minecraft:block_display 51 43 -438 {start_interpolation:1,interpolation_duration:59,teleport_duration:59,UUID:[I;-1727903964,-838843089,-1707358858,802680890],Rotation:[180.0f,60.0f],Tags:["cutscene.opening.9.7"],block_state: {Name: "minecraft:air"}, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 1.0f], translation: [-0.5f, -0.5f, -0.5f]}}
+summon minecraft:block_display 51 43 -438 {start_interpolation:1,interpolation_duration:59,teleport_duration:59,UUID:[I;-1727903964,-838843089,-1707358858,802680890],Rotation:[180.0f,60.0f],Tags:["cutscene.opening.9.7"],block_state: {id: "minecraft:air"}, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 1.0f], translation: [-0.5f, -0.5f, -0.5f]}}
 
 execute \
     unless loaded 51 43 -438 run \

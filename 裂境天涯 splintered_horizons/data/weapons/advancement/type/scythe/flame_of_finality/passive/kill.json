@@ -4,10 +4,14 @@
       "trigger": "minecraft:player_killed_entity",
       "conditions": {
         "player": {
-          "slots": {
-            "weapon.mainhand": {
-              "predicates": {
-                "minecraft:custom_data": "{weapon:\"flame_of_finality\"}"
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "weapon.mainhand": {
+                "predicates": {
+                  "minecraft:custom_data": "{weapon:\"flame_of_finality\"}"
+                }
               }
             }
           }

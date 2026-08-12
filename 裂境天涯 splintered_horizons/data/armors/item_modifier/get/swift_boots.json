@@ -1,10 +1,10 @@
 [
   {
-    "function": "minecraft:set_item",
+    "type": "minecraft:set_item",
     "item": "minecraft:bundle"
   },
   {
-    "function": "minecraft:set_components",
+    "type": "minecraft:set_components",
     "components": {
       "minecraft:item_model": "equipment/swift_boots",
       "minecraft:item_name": [
@@ -17,40 +17,86 @@
       ],
       "minecraft:lore": [
         [
-          { "translate": "armor.swift_boots.type", "italic": false, "color": "dark_gray" }
+          {
+            "translate": "armor.swift_boots.type",
+            "italic": false,
+            "color": "dark_gray"
+          }
         ],
-        { "text": "" },
+        {
+          "text": ""
+        },
         [
-          { "translate": "armor.swift_boots.story.1", "italic": false, "color": "blue" }
-        ],
-        [
-          { "translate": "armor.swift_boots.story.2", "italic": false, "color": "blue" }
-        ],
-        [
-          { "translate": "armor.swift_boots.story.3", "italic": false, "color": "blue" }
-        ],
-        [
-          { "translate": "armor.swift_boots.story.4", "italic": false, "color": "blue" }
-        ],
-        { "text": "" },
-        [
-          { "text": "", "italic": false },
-          { "translate": "armor.swift_boots.skill", "color": "#6af7fc", "bold": true },
-          { "text": "  " }
+          {
+            "translate": "armor.swift_boots.story.1",
+            "italic": false,
+            "color": "blue"
+          }
         ],
         [
-          { "text": "", "italic": false },
+          {
+            "translate": "armor.swift_boots.story.2",
+            "italic": false,
+            "color": "blue"
+          }
+        ],
+        [
+          {
+            "translate": "armor.swift_boots.story.3",
+            "italic": false,
+            "color": "blue"
+          }
+        ],
+        [
+          {
+            "translate": "armor.swift_boots.story.4",
+            "italic": false,
+            "color": "blue"
+          }
+        ],
+        {
+          "text": ""
+        },
+        [
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "armor.swift_boots.skill",
+            "color": "#6af7fc",
+            "bold": true
+          },
+          {
+            "text": "  "
+          }
+        ],
+        [
+          {
+            "text": "",
+            "italic": false
+          },
           {
             "translate": "armor.swift_boots.skill.1",
             "color": "#6a8cfc",
             "with": [
-              { "translate": "armor.type.chestplate", "underlined": true, "color": "dark_green" }
+              {
+                "translate": "armor.type.chestplate",
+                "underlined": true,
+                "color": "dark_green"
+              }
             ]
           }
         ],
         [
-          { "text": "", "italic": false },
-          { "translate": "armor.swift_boots.skill.2", "color": "#6a8cfc" }
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "armor.swift_boots.skill.2",
+            "color": "#6a8cfc"
+          }
         ]
       ],
       "minecraft:attribute_modifiers": [

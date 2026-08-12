@@ -1,6 +1,6 @@
 [
   {
-    "function": "minecraft:set_custom_model_data",
+    "type": "minecraft:set_custom_model_data",
     "floats": {
       "values": [
         2
@@ -9,7 +9,7 @@
     }
   },
   {
-    "function": "minecraft:set_attributes",
+    "type": "minecraft:set_attributes",
     "modifiers": [
       {
         "attribute": "minecraft:attack_damage",
@@ -28,7 +28,7 @@
     ]
   },
   {
-    "function": "minecraft:set_components",
+    "type": "minecraft:set_components",
     "components": {
       "minecraft:item_model": "minecraft:netherite_axe",
       "minimum_attack_charge": 0.5,

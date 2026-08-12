@@ -15,7 +15,7 @@ function aj:selena/summon {args: {animation: 'chat1', start_animation: true}}
 execute \
     in minecraft:overworld \
     rotated 26.5 0 run \
-summon minecraft:block_display 803 72.5 1590 {start_interpolation:1,interpolation_duration:1,teleport_duration:1,UUID:[I;-324165835,-1750121379,-1246389939,626065698],Rotation:[26.5f,0.0f],Tags:["cutscene.opening.9.4"],block_state: {Name: "minecraft:air"}, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 1.0f], translation: [-0.5f, -0.5f, -0.5f]}}
+summon minecraft:block_display 803 72.5 1590 {start_interpolation:1,interpolation_duration:1,teleport_duration:1,UUID:[I;-324165835,-1750121379,-1246389939,626065698],Rotation:[26.5f,0.0f],Tags:["cutscene.opening.9.4"],block_state: {id: "minecraft:air"}, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 1.0f], translation: [-0.5f, -0.5f, -0.5f]}}
 
 execute \
     unless loaded 803 0 1590 run \

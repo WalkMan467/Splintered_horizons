@@ -4,7 +4,11 @@
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
         "entity": {
-          "nbt": "{Tags:[\"monster.target_dummy\"]}"
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "nbt": "{Tags:[\"monster.target_dummy\"]}"
+          }
         }
       }
     }

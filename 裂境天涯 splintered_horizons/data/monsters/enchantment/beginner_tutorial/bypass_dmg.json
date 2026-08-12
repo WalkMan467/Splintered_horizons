@@ -19,12 +19,12 @@
     "minecraft:post_attack": [
       {
         "requirements": {
-          "condition": "minecraft:inverted",
+          "type": "minecraft:inverted",
           "term": {
-            "condition": "minecraft:all_of",
+            "type": "minecraft:all_of",
             "terms": [
               {
-                "condition": "minecraft:entity_properties",
+                "type": "minecraft:entity_properties",
                 "entity": "attacker",
                 "predicate": {
                   "slots": {
@@ -39,7 +39,7 @@
                 }
               },
               {
-                "condition": "minecraft:entity_scores",
+                "type": "minecraft:entity_scores",
                 "entity": "attacker",
                 "scores": {
                   "weapon.effect.resplendence": {

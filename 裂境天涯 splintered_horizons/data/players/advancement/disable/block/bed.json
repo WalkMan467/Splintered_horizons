@@ -3,177 +3,145 @@
     "1": {
       "trigger": "minecraft:any_block_use",
       "conditions": {
-        "location": [
-          {
-            "condition": "minecraft:block_state_property",
-            "block": "minecraft:red_bed"
-          }
-        ]
+        "location": {
+          "type": "minecraft:match_block",
+          "blocks": "minecraft:red_bed"
+        }
       }
     },
     "2": {
       "trigger": "minecraft:any_block_use",
       "conditions": {
-        "location": [
-          {
-            "condition": "minecraft:block_state_property",
-            "block": "minecraft:white_bed"
-          }
-        ]
+        "location": {
+          "type": "minecraft:match_block",
+          "blocks": "minecraft:white_bed"
+        }
       }
     },
     "3": {
       "trigger": "minecraft:any_block_use",
       "conditions": {
-        "location": [
-          {
-            "condition": "minecraft:block_state_property",
-            "block": "minecraft:yellow_bed"
-          }
-        ]
+        "location": {
+          "type": "minecraft:match_block",
+          "blocks": "minecraft:yellow_bed"
+        }
       }
     },
     "4": {
       "trigger": "minecraft:any_block_use",
       "conditions": {
-        "location": [
-          {
-            "condition": "minecraft:block_state_property",
-            "block": "minecraft:purple_bed"
-          }
-        ]
+        "location": {
+          "type": "minecraft:match_block",
+          "blocks": "minecraft:purple_bed"
+        }
       }
     },
     "5": {
       "trigger": "minecraft:any_block_use",
       "conditions": {
-        "location": [
-          {
-            "condition": "minecraft:block_state_property",
-            "block": "minecraft:pink_bed"
-          }
-        ]
+        "location": {
+          "type": "minecraft:match_block",
+          "blocks": "minecraft:pink_bed"
+        }
       }
     },
     "6": {
       "trigger": "minecraft:any_block_use",
       "conditions": {
-        "location": [
-          {
-            "condition": "minecraft:block_state_property",
-            "block": "minecraft:orange_bed"
-          }
-        ]
+        "location": {
+          "type": "minecraft:match_block",
+          "blocks": "minecraft:orange_bed"
+        }
       }
     },
     "7": {
       "trigger": "minecraft:any_block_use",
       "conditions": {
-        "location": [
-          {
-            "condition": "minecraft:block_state_property",
-            "block": "minecraft:magenta_bed"
-          }
-        ]
+        "location": {
+          "type": "minecraft:match_block",
+          "blocks": "minecraft:magenta_bed"
+        }
       }
     },
     "8": {
       "trigger": "minecraft:any_block_use",
       "conditions": {
-        "location": [
-          {
-            "condition": "minecraft:block_state_property",
-            "block": "minecraft:lime_bed"
-          }
-        ]
+        "location": {
+          "type": "minecraft:match_block",
+          "blocks": "minecraft:lime_bed"
+        }
       }
     },
     "9": {
       "trigger": "minecraft:any_block_use",
       "conditions": {
-        "location": [
-          {
-            "condition": "minecraft:block_state_property",
-            "block": "minecraft:light_gray_bed"
-          }
-        ]
+        "location": {
+          "type": "minecraft:match_block",
+          "blocks": "minecraft:light_gray_bed"
+        }
       }
     },
     "10": {
       "trigger": "minecraft:any_block_use",
       "conditions": {
-        "location": [
-          {
-            "condition": "minecraft:block_state_property",
-            "block": "minecraft:light_blue_bed"
-          }
-        ]
+        "location": {
+          "type": "minecraft:match_block",
+          "blocks": "minecraft:light_blue_bed"
+        }
       }
     },
     "11": {
       "trigger": "minecraft:any_block_use",
       "conditions": {
-        "location": [
-          {
-            "condition": "minecraft:block_state_property",
-            "block": "minecraft:green_bed"
-          }
-        ]
+        "location": {
+          "type": "minecraft:match_block",
+          "blocks": "minecraft:green_bed"
+        }
       }
     },
     "12": {
       "trigger": "minecraft:any_block_use",
       "conditions": {
-        "location": [
-          {
-            "condition": "minecraft:block_state_property",
-            "block": "minecraft:gray_bed"
-          }
-        ]
+        "location": {
+          "type": "minecraft:match_block",
+          "blocks": "minecraft:gray_bed"
+        }
       }
     },
     "13": {
       "trigger": "minecraft:any_block_use",
       "conditions": {
-        "location": [
-          {
-            "condition": "minecraft:block_state_property",
-            "block": "minecraft:cyan_bed"
-          }
-        ]
+        "location": {
+          "type": "minecraft:match_block",
+          "blocks": "minecraft:cyan_bed"
+        }
       }
     },
     "14": {
       "trigger": "minecraft:any_block_use",
       "conditions": {
-        "location": [
-          {
-            "condition": "minecraft:block_state_property",
-            "block": "minecraft:brown_bed"
-          }
-        ]
+        "location": {
+          "type": "minecraft:match_block",
+          "blocks": "minecraft:brown_bed"
+        }
       }
     },
     "15": {
       "trigger": "minecraft:any_block_use",
       "conditions": {
-        "location": [
-          {
-            "condition": "minecraft:block_state_property",
-            "block": "minecraft:blue_bed"
-          }
-        ]
+        "location": {
+          "type": "minecraft:match_block",
+          "blocks": "minecraft:blue_bed"
+        }
       }
     },
     "16": {
       "trigger": "minecraft:any_block_use",
       "conditions": {
-        "location": [
-          {
-            "condition": "minecraft:block_state_property",
-            "block": "minecraft:black_bed"
-          }
-        ]
+        "location": {
+          "type": "minecraft:match_block",
+          "blocks": "minecraft:black_bed"
+        }
       }
     }
   },

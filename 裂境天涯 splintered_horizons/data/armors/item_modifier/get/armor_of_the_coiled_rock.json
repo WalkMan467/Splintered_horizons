@@ -1,10 +1,10 @@
 [
   {
-    "function": "minecraft:set_item",
+    "type": "minecraft:set_item",
     "item": "minecraft:bundle"
   },
   {
-    "function": "minecraft:set_components",
+    "type": "minecraft:set_components",
     "components": {
       "minecraft:item_model": "chestplate/armor_of_the_coiled_rock",
       "minecraft:item_name": [
@@ -17,34 +17,79 @@
       ],
       "minecraft:lore": [
         [
-          { "translate": "armor.armor_of_the_coiled_rock.type", "italic": false, "color": "dark_gray" }
+          {
+            "translate": "armor.armor_of_the_coiled_rock.type",
+            "italic": false,
+            "color": "dark_gray"
+          }
         ],
-        { "text": "" },
+        {
+          "text": ""
+        },
         [
-          { "translate": "armor.armor_of_the_coiled_rock.story.1", "italic": false, "color": "blue" }
-        ],
-        [
-          { "translate": "armor.armor_of_the_coiled_rock.story.2", "italic": false, "color": "blue" }
-        ],
-        [
-          { "translate": "armor.armor_of_the_coiled_rock.story.3", "italic": false, "color": "blue" }
-        ],
-        [
-          { "translate": "armor.armor_of_the_coiled_rock.story.4", "italic": false, "color": "blue" }
-        ],
-        { "text": "" },
-        [
-          { "text": "", "italic": false },
-          { "translate": "armor.armor_of_the_coiled_rock.skill", "color": "gold", "bold": true },
-          { "text": "  " }
+          {
+            "translate": "armor.armor_of_the_coiled_rock.story.1",
+            "italic": false,
+            "color": "blue"
+          }
         ],
         [
-          { "text": "", "italic": false },
-          { "translate": "armor.armor_of_the_coiled_rock.skill.1", "color": "#b37400" }
+          {
+            "translate": "armor.armor_of_the_coiled_rock.story.2",
+            "italic": false,
+            "color": "blue"
+          }
         ],
         [
-          { "text": "", "italic": false },
-          { "translate": "armor.armor_of_the_coiled_rock.skill.2", "color": "#b37400" }
+          {
+            "translate": "armor.armor_of_the_coiled_rock.story.3",
+            "italic": false,
+            "color": "blue"
+          }
+        ],
+        [
+          {
+            "translate": "armor.armor_of_the_coiled_rock.story.4",
+            "italic": false,
+            "color": "blue"
+          }
+        ],
+        {
+          "text": ""
+        },
+        [
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "armor.armor_of_the_coiled_rock.skill",
+            "color": "gold",
+            "bold": true
+          },
+          {
+            "text": "  "
+          }
+        ],
+        [
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "armor.armor_of_the_coiled_rock.skill.1",
+            "color": "#b37400"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "armor.armor_of_the_coiled_rock.skill.2",
+            "color": "#b37400"
+          }
         ]
       ],
       "minecraft:attribute_modifiers": [

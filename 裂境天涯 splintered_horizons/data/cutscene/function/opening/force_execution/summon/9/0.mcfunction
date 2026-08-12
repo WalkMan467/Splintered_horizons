@@ -9,7 +9,7 @@ forceload add 9999 10069
 # e417358e-1d37-439a-b927-f3b6b04fa873
 execute \
     in minecraft:overworld run \
-summon minecraft:block_display 9999 95 10069 {start_interpolation:1,interpolation_duration:59,teleport_duration:59,UUID:[I;-468241010, 490161050,-1188564042,-1336956813],Rotation:[180.0f,12.0f],Tags:["cutscene.opening.8.1"],block_state: {Name: "minecraft:air"}, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 1.0f], translation: [-0.5f, -0.5f, -0.5f]}}
+summon minecraft:block_display 9999 95 10069 {start_interpolation:1,interpolation_duration:59,teleport_duration:59,UUID:[I;-468241010, 490161050,-1188564042,-1336956813],Rotation:[180.0f,12.0f],Tags:["cutscene.opening.8.1"],block_state: {id: "minecraft:air"}, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 1.0f], translation: [-0.5f, -0.5f, -0.5f]}}
 
 execute \
     positioned 9999 93 10065 rotated 180 0 run \

@@ -21,7 +21,7 @@
     "minecraft:damage": [
       {
         "requirements": {
-          "condition": "minecraft:value_check",
+          "type": "minecraft:value_check",
           "value": {
             "type": "minecraft:score",
             "target": {
@@ -40,7 +40,7 @@
       },
       {
         "requirements": {
-          "condition": "minecraft:value_check",
+          "type": "minecraft:value_check",
           "value": {
             "type": "minecraft:score",
             "target": {
@@ -59,7 +59,7 @@
       },
       {
         "requirements": {
-          "condition": "minecraft:value_check",
+          "type": "minecraft:value_check",
           "value": {
             "type": "minecraft:score",
             "target": {

@@ -1,6 +1,6 @@
 [
   {
-    "function": "minecraft:set_attributes",
+    "type": "minecraft:set_attributes",
     "modifiers": [
       {
         "attribute": "minecraft:attack_damage",
@@ -19,17 +19,16 @@
     ]
   },
   {
-    "function": "minecraft:set_custom_model_data",
+    "type": "minecraft:set_custom_model_data",
     "floats": {
       "values": [
         1
       ],
       "mode": "replace_all"
-    },
-    "conditions": []
+    }
   },
   {
-    "function": "minecraft:set_enchantments",
+    "type": "minecraft:set_enchantments",
     "enchantments": {
       "weapons:type/sword/grip_of_withering/use": 1
     }

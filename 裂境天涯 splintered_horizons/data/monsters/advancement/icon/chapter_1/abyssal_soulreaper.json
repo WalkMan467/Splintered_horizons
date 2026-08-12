@@ -94,7 +94,11 @@
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
         "entity": {
-          "nbt": "{Tags:[\"monster.abyssal_soulreaper\"]}"
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "nbt": "{Tags:[\"monster.abyssal_soulreaper\"]}"
+          }
         }
       }
     }

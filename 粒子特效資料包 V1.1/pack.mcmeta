@@ -2,9 +2,9 @@
   "pack": {
     "description": "",
     "min_format": [
-      94,
-      1
+      115,
+      0
     ],
-    "max_format": 94
+    "max_format": 115
   }
 }

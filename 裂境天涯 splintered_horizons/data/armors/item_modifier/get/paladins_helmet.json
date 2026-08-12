@@ -1,10 +1,10 @@
 [
   {
-    "function": "minecraft:set_item",
+    "type": "minecraft:set_item",
     "item": "minecraft:bundle"
   },
   {
-    "function": "minecraft:set_components",
+    "type": "minecraft:set_components",
     "components": {
       "minecraft:item_name": [
         {
@@ -16,39 +16,86 @@
       ],
       "minecraft:lore": [
         [
-          { "translate": "armor.paladins_helmet.type", "italic": false, "color": "dark_gray" }
+          {
+            "translate": "armor.paladins_helmet.type",
+            "italic": false,
+            "color": "dark_gray"
+          }
         ],
-        { "text": "" },
+        {
+          "text": ""
+        },
         [
-          { "translate": "armor.paladins_helmet.story.1", "italic": false, "color": "blue" }
-        ],
-        [
-          { "translate": "armor.paladins_helmet.story.2", "italic": false, "color": "blue" }
-        ],
-        [
-          { "translate": "armor.paladins_helmet.story.3", "italic": false, "color": "blue" }
-        ],
-        { "text": "" },
-        [
-          { "text": "", "italic": false },
-          { "translate": "armor.paladins_helmet.passive_skills", "color": "#ffe600", "bold": true },
-          { "text": "  " },
-          { "translate": "armor.skill_cd", "color": "#6E6E6E" },
-          { "text": "25s" }
+          {
+            "translate": "armor.paladins_helmet.story.1",
+            "italic": false,
+            "color": "blue"
+          }
         ],
         [
-          { "text": "", "italic": false },
+          {
+            "translate": "armor.paladins_helmet.story.2",
+            "italic": false,
+            "color": "blue"
+          }
+        ],
+        [
+          {
+            "translate": "armor.paladins_helmet.story.3",
+            "italic": false,
+            "color": "blue"
+          }
+        ],
+        {
+          "text": ""
+        },
+        [
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "armor.paladins_helmet.passive_skills",
+            "color": "#ffe600",
+            "bold": true
+          },
+          {
+            "text": "  "
+          },
+          {
+            "translate": "armor.skill_cd",
+            "color": "#6E6E6E"
+          },
+          {
+            "text": "25s"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "italic": false
+          },
           {
             "translate": "armor.paladins_helmet.passive_skills.1",
             "color": "#fff280",
             "with": [
-              { "translate": "armor.type.chestplate", "underlined": true, "color": "dark_green" }
+              {
+                "translate": "armor.type.chestplate",
+                "underlined": true,
+                "color": "dark_green"
+              }
             ]
           }
         ],
         [
-          { "text": "", "italic": false },
-          { "translate": "armor.paladins_helmet.passive_skills.2", "color": "#fff280" }
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "armor.paladins_helmet.passive_skills.2",
+            "color": "#fff280"
+          }
         ]
       ],
       "minecraft:attribute_modifiers": [

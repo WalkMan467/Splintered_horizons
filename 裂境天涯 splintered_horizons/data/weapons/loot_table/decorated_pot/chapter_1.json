@@ -15,10 +15,11 @@
               "value": "weapons:get/drop/broken_glass",
               "weight": 35,
               "quality": 10,
-              "functions": [
+              "modifier": [
                 {
-                  "function": "minecraft:set_count",
+                  "type": "minecraft:set_count",
                   "count": {
+                    "type": "minecraft:uniform",
                     "min": 3,
                     "max": 5
                   }
@@ -30,10 +31,11 @@
               "name": "minecraft:arrow",
               "weight": 20,
               "quality": 10,
-              "functions": [
+              "modifier": [
                 {
-                  "function": "minecraft:set_count",
+                  "type": "minecraft:set_count",
                   "count": {
+                    "type": "minecraft:uniform",
                     "min": 1,
                     "max": 3
                   }
@@ -45,10 +47,11 @@
               "value": "weapons:get/arrow/explosion_arrow",
               "weight": 20,
               "quality": 10,
-              "functions": [
+              "modifier": [
                 {
-                  "function": "minecraft:set_count",
+                  "type": "minecraft:set_count",
                   "count": {
+                    "type": "minecraft:uniform",
                     "min": 1,
                     "max": 2
                   }

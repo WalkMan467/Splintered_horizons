@@ -24,4 +24,4 @@ playsound minecraft:entity.skeleton.hurt voice @a ~ ~1 ~ 1 1
 execute \
     if entity @s[tag=monster.target_dummy] \
     if score @s sys.dmg_show.hpmax matches 0.. run \
-particle block{block_state:{Name:"minecraft:hay_block",Properties:{axis:"y"}}} ~ ~1.25 ~ 0.5 0.5 0.5 0 20 force @a
+particle block{block_state:{id:"minecraft:hay_block",properties:{axis:"y"}}} ~ ~1.25 ~ 0.5 0.5 0.5 0 20 force @a

@@ -31,7 +31,7 @@
     "minecraft:damage_protection": [
       {
         "requirements": {
-          "condition": "minecraft:entity_scores",
+          "type": "minecraft:entity_scores",
           "entity": "this",
           "scores": {
             "monster.abyss_berserker.passive.hit": 1
@@ -48,7 +48,7 @@
       },
       {
         "requirements": {
-          "condition": "minecraft:entity_scores",
+          "type": "minecraft:entity_scores",
           "entity": "this",
           "scores": {
             "monster.abyss_berserker.passive.hit": 2
@@ -65,7 +65,7 @@
       },
       {
         "requirements": {
-          "condition": "minecraft:entity_scores",
+          "type": "minecraft:entity_scores",
           "entity": "this",
           "scores": {
             "monster.abyss_berserker.passive.hit": 3
@@ -82,7 +82,7 @@
       },
       {
         "requirements": {
-          "condition": "minecraft:entity_scores",
+          "type": "minecraft:entity_scores",
           "entity": "this",
           "scores": {
             "monster.abyss_berserker.passive.hit": 4
@@ -99,7 +99,7 @@
       },
       {
         "requirements": {
-          "condition": "minecraft:entity_scores",
+          "type": "minecraft:entity_scores",
           "entity": "this",
           "scores": {
             "monster.abyss_berserker.passive.hit": 5
