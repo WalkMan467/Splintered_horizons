@@ -7,8 +7,10 @@ summon spider ~ ~ ~ {PersistenceRequired:1b,Health:30f,Tags:["monsters.spawn","m
 
 
 execute \
-    store result score @n[tag=monsters.spawn,type=spider] monster.skill.cast.cd run \
+    store result score @n[tag=monsters.spawn,type=spider] monster.skill.cast.at run \
 random value 60..100
+scoreboard players operation @n[tag=monsters.spawn,type=spider] monster.skill.cast.at += #now global.time
+scoreboard players reset @n[tag=monsters.spawn,type=spider] monster.skill.cast.tip
 
 playsound minecraft:entity.phantom.bite voice @a ~ ~1 ~ 1 0.5
 playsound minecraft:entity.creaking.spawn voice @a ~ ~1 ~ 1 0.75

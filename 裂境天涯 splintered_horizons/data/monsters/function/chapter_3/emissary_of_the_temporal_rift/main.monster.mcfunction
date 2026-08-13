@@ -5,5 +5,5 @@ function sys:attachable_component/group/guide
 # Cast
 
 execute \
-    if score @s monster.skill.cast.cd matches ..0 run \
+    if score @s monster.skill.cast.at <= #now global.time run \
 function monsters:chapter_3/emissary_of_the_temporal_rift/cast/cast

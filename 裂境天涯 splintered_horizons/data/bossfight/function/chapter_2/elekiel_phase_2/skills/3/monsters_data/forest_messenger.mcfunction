@@ -2,8 +2,10 @@ data merge entity @s {DeathLootTable:"",CanPickUpLoot:0b,Health:12f,Tags:["monst
 
 
 execute \
-    store result score @s monster.skill.cast.cd run \
+    store result score @s monster.skill.cast.at run \
 random value 60..160
+scoreboard players operation @s monster.skill.cast.at += #now global.time
+scoreboard players reset @s monster.skill.cast.tip
 
 summon marker ~ ~ ~ {Tags:["monster.marker","main.duration.timer","summon"],data:{Death:"bossfight:chapter_2/elekiel_phase_2/skills/3/monsters_data",aj_kill:{name:""}}}
 

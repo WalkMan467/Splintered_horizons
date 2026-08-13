@@ -11,8 +11,10 @@ tag @a remove monsters.elekiel.2.vampire_flower.target
 
 
 execute \
-    store result score @s monster.skill.cast.cd run \
+    store result score @s monster.skill.cast.at run \
 random value 150..250
+scoreboard players operation @s monster.skill.cast.at += #now global.time
+scoreboard players reset @s monster.skill.cast.tip
 
 execute \
     store result score @s monster.skill.rdm.skill run \

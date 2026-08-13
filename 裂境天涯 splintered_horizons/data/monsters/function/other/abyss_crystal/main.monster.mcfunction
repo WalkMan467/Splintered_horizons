@@ -1,7 +1,7 @@
 # Cast
 
 execute \
-    if score @s monster.skill.cast.cd matches ..0 run \
+    if score @s monster.skill.cast.at <= #now global.time run \
 function monsters:other/abyss_crystal/cast/cast
 
 

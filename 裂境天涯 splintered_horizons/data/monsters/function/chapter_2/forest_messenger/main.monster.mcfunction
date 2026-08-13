@@ -5,7 +5,7 @@ function sys:attachable_component/group/guide
 # Cast
 
 execute \
-    if score @s monster.skill.cast.cd matches ..0 run \
+    if score @s monster.skill.cast.at <= #now global.time run \
 function monsters:chapter_2/forest_messenger/cast/cast
 
 
