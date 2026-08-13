@@ -49,7 +49,11 @@
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
         "entity": {
-          "nbt": "{Tags:[\"monster.abyss_swordsman\"]}"
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "nbt": "{Tags:[\"monster.abyss_swordsman\"]}"
+          }
         }
       }
     }

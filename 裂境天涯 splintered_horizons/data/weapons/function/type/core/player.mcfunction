@@ -50,12 +50,12 @@ function weapons:type/sword/nightfall/passive/dmg/main
 execute \
     as @s[tag=water_sword.w_user] at @s \
     if score @s weapon.aquilumera_passive matches 0.. run \
-function weapons:type/sword/aquilumera/passive/water
+function weapons:type/sword/aquilumera/switch/water/dmg
 
 execute \
     as @s[tag=water_sword.l_user] at @s \
     if score @s weapon.aquilumera_passive matches 0.. run \
-function weapons:type/sword/aquilumera/passive/light
+function weapons:type/sword/aquilumera/switch/light/dmg
 
 execute \
     unless score @s weapon.aquilumera_passive matches 1.. run \

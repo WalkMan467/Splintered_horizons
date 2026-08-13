@@ -1,45 +1,45 @@
 {
-    "anvil_cost": 4,
-    "description": {
-      "translate": "weapon.enchantment.ruins_of_the_finality",
-      "with": [],
-      "fallback": {
-        "text": "ruins_of_the_finality"
-      }
-    },
-    "effects": {
-      "minecraft:post_attack": [
-        {
-          "requirements": {
-            "condition": "minecraft:entity_scores",
-            "entity": "attacker",
-            "scores": {
-              "player.mana": {
-                "min": 20
-              }
+  "anvil_cost": 4,
+  "description": {
+    "translate": "weapon.enchantment.ruins_of_the_finality",
+    "with": [],
+    "fallback": {
+      "text": "ruins_of_the_finality"
+    }
+  },
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "requirements": {
+          "type": "minecraft:entity_scores",
+          "entity": "attacker",
+          "scores": {
+            "player.mana": {
+              "min": 20
             }
-          },
-          "effect": {
-            "type": "minecraft:run_function",
-            "function": "weapons:type/scythe/ruins_of_the_finality/use"
-          },
-          "enchanted": "attacker",
-          "affected": "victim"
-        }
-      ]
-    },
-    "max_cost": {
-      "base": 50,
-      "per_level_above_first": 0
-    },
-    "max_level": 1,
-    "min_cost": {
-      "base": 20,
-      "per_level_above_first": 0
-    },
-    "slots": [
-      "mainhand"
-    ],
-    "supported_items": "air",
-    "weight": 2
-  }
+          }
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "weapons:type/scythe/ruins_of_the_finality/use"
+        },
+        "enchanted": "attacker",
+        "affected": "victim"
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 50,
+    "per_level_above_first": 0
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 20,
+    "per_level_above_first": 0
+  },
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "air",
+  "weight": 2
+}

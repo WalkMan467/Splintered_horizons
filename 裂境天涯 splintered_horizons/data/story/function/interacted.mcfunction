@@ -143,15 +143,20 @@
         if score story.chapter_2.ml.10 story.chapter_2 matches 1..10 run \
     function story:chapter_2/ml/10/1
 
-# Chapter 3
-
-    # Main Quests
+    # Side Quests
 
     execute \
         as 0007d070-0000-c819-0000-c94100050e3b at @s \
         if data entity @s interaction.timestamp \
         if score story.other.chapter_2.1 story.other matches 1..18 run \
     function story:other/chapter_2/1/1
+
+    execute \
+        as e6d6939f-0285-ab92-ff76-228cf00fef02 at @s \
+        if data entity @s interaction.timestamp \
+        if score story.other.chapter_2.2 story.other matches 1..13 run \
+    function story:other/chapter_2/2/1
+
 
 # Safe Area
 

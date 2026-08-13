@@ -1,6 +1,7 @@
 {
   "values": [
     "#minecraft:bypasses_armor",
+    "monsters:chapter_2/soul_sharpshooter/ghost/dmg",
     "minecraft:cactus",
     "minecraft:campfire",
     "minecraft:dry_out",

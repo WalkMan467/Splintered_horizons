@@ -49,11 +49,11 @@ data merge entity @s {transformation:{left_rotation:[0.2700224f,-0.42945236f,-0.
 
 execute \
     if score @s particle.otherworld_star matches 5 run \
-data modify entity @s block_state.Name set value "minecraft:cyan_stained_glass"
+data modify entity @s block_state.id set value "minecraft:cyan_stained_glass"
 
 execute \
     if score @s particle.otherworld_star matches 10 run \
-data modify entity @s block_state.Name set value "minecraft:light_blue_stained_glass"
+data modify entity @s block_state.id set value "minecraft:light_blue_stained_glass"
 
 # particle
 

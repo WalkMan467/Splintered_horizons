@@ -58,7 +58,6 @@ function main:duration/detect
 
 # Player Guide
 
-
 execute \
     as @a at @s run \
 function main:guide/player

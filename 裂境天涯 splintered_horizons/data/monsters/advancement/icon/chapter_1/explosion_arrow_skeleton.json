@@ -70,7 +70,11 @@
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
         "entity": {
-          "nbt": "{Tags:[\"monster.explosion_arrow_skeleton\"]}"
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "nbt": "{Tags:[\"monster.explosion_arrow_skeleton\"]}"
+          }
         }
       }
     }

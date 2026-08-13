@@ -1,0 +1,33 @@
+
+execute \
+    unless entity @s[tag=monster.elekiel_phase_2.4.effect.player] run \
+return 0
+
+tag @s add forced_interrupt_animation
+
+function players:stop_animation
+
+function bossfight:chapter_2/elekiel_phase_2/skills/4/effect/disable_inventory/false
+
+tag @s remove monster.elekiel_phase_2.4.effect.player
+
+effect clear @s invisibility
+effect clear @s glowing
+effect clear @s fire_resistance
+effect clear @s resistance
+effect clear @s darkness
+
+item modify entity @s armor.chest {type:"minecraft:set_enchantments",enchantments:{"bossfight:chapter_2/elekiel_phase_2/skills/4/damage_immunity":0,"minecraft:binding_curse":0}}
+
+scoreboard players reset @s monster.elekiel_phase_2.skill.4.effect.void
+
+attribute @s attack_damage modifier remove monster.elekiel_phase_2.skill.4.effect.void
+attribute @s attack_knockback modifier remove monster.elekiel_phase_2.skill.4.effect.void
+attribute @s knockback_resistance modifier remove monster.elekiel_phase_2.skill.4.effect.void
+attribute @s safe_fall_distance modifier remove monster.elekiel_phase_2.skill.4.effect.void
+attribute @s movement_speed modifier remove monster.elekiel_phase_2.skill.4.effect.void
+attribute @s jump_strength modifier remove monster.elekiel_phase_2.skill.4.effect.void
+attribute @s block_interaction_range modifier remove monster.elekiel_phase_2.skill.4.effect.void
+attribute @s entity_interaction_range modifier remove monster.elekiel_phase_2.skill.4.effect.void
+
+scoreboard players reset @s sys.dummy_mob

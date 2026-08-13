@@ -27,7 +27,7 @@ tag @s add atker
 
 execute \
     on attacker run \
-scoreboard players set @s[tag=atker] atk 150
+scoreboard players set @s[tag=atker] dmg_formula.atk_percentage 150
 
 scoreboard players reset #weapon.earthquake_axe.fx particle
 function weapons:type/axe/earthquake_axe/effect/fx

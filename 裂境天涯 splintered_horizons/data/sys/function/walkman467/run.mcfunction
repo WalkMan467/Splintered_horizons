@@ -9,7 +9,7 @@ playsound minecraft:item.hoe.till voice @s ~ ~1 ~ 1 1
 
 
 execute \
-    positioned 765 146 995 \
+    positioned 757 36 1062 \
     unless score #sys.walkman467.glowing global.main matches 1 \
 as @n[sort=arbitrary,distance=..1,tag=sys.walkman467,type=mannequin] run \
 data modify entity @s Glowing set value 0b

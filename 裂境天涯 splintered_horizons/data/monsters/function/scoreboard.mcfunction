@@ -1,12 +1,8 @@
-
 scoreboard objectives add monster.skill.cast.cd dummy "怪物技能目前冷卻"
 scoreboard objectives add monster.skill.casting dummy "怪物技能Cast中"
 scoreboard objectives add monster.skill.rdm.skill dummy "隨機放技能"
 scoreboard objectives add monster.skill.silence dummy "怪物技能沉默"
 scoreboard objectives add monster.abyss_explode.timer dummy "夢魘模式深淵怪物爆炸"
-scoreboard objectives add monster.skill.ai_controller.cd dummy "怪物 AI 控制器 CD"
-scoreboard objectives add monster.skill.ai_controller.casting dummy "怪物 AI 控制器 Cast"
-scoreboard objectives add monster.skill.ai_controller.end dummy "怪物 AI 控制器 End"
 
 scoreboard objectives add global.monsters.health dummy
 scoreboard objectives add particle dummy
@@ -85,6 +81,11 @@ scoreboard objectives add monster.apostle_of_eternity.lock.click dummy "[怪物]
 
 # ===============================================================================
 
+# 魂之神射手
+
+scoreboard objectives add monster.soul_sharpshooter.timer dummy "[怪物] 魂之神射手 計時器"
+
+# ===============================================================================
 # 「永劫」的支配者: 伊萊克爾
 
 scoreboard objectives add monster.elekiel.1.terrain dummy "[怪物] 伊萊克爾 地形狀態"

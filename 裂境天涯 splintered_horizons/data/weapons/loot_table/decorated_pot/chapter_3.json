@@ -15,10 +15,11 @@
               "value": "weapons:get/drop/broken_glass",
               "weight": 35,
               "quality": 10,
-              "functions": [
+              "modifier": [
                 {
-                  "function": "minecraft:set_count",
+                  "type": "minecraft:set_count",
                   "count": {
+                    "type": "minecraft:uniform",
                     "min": 3,
                     "max": 5
                   }
@@ -33,10 +34,11 @@
                   "value": "weapons:get/arrow/explosion_arrow",
                   "weight": 20,
                   "quality": 10,
-                  "functions": [
+                  "modifier": [
                     {
-                      "function": "minecraft:set_count",
+                      "type": "minecraft:set_count",
                       "count": {
+                        "type": "minecraft:uniform",
                         "min": 1,
                         "max": 2
                       }
@@ -48,10 +50,11 @@
                   "value": "weapons:get/arrow/starry_sky_frost_arrow",
                   "weight": 20,
                   "quality": 10,
-                  "functions": [
+                  "modifier": [
                     {
-                      "function": "minecraft:set_count",
+                      "type": "minecraft:set_count",
                       "count": {
+                        "type": "minecraft:uniform",
                         "min": 1,
                         "max": 2
                       }
@@ -63,10 +66,11 @@
                   "value": "weapons:get/arrow/shadow_arrow",
                   "weight": 20,
                   "quality": 10,
-                  "functions": [
+                  "modifier": [
                     {
-                      "function": "minecraft:set_count",
+                      "type": "minecraft:set_count",
                       "count": {
+                        "type": "minecraft:uniform",
                         "min": 1,
                         "max": 2
                       }
@@ -78,10 +82,11 @@
                   "value": "weapons:get/arrow/resplendence_arrow",
                   "weight": 20,
                   "quality": 10,
-                  "functions": [
+                  "modifier": [
                     {
-                      "function": "minecraft:set_count",
+                      "type": "minecraft:set_count",
                       "count": {
+                        "type": "minecraft:uniform",
                         "min": 1,
                         "max": 2
                       }
@@ -93,10 +98,11 @@
                   "value": "weapons:get/arrow/holy_fire_arrow",
                   "weight": 20,
                   "quality": 10,
-                  "functions": [
+                  "modifier": [
                     {
-                      "function": "minecraft:set_count",
+                      "type": "minecraft:set_count",
                       "count": {
+                        "type": "minecraft:uniform",
                         "min": 1,
                         "max": 2
                       }
@@ -108,10 +114,11 @@
                   "value": "weapons:get/arrow/crimson_claw_arrow",
                   "weight": 20,
                   "quality": 10,
-                  "functions": [
+                  "modifier": [
                     {
-                      "function": "minecraft:set_count",
+                      "type": "minecraft:set_count",
                       "count": {
+                        "type": "minecraft:uniform",
                         "min": 1,
                         "max": 2
                       }
@@ -123,28 +130,29 @@
                   "value": "weapons:get/arrow/chaotic_thunder_arrow",
                   "weight": 20,
                   "quality": 10,
-                  "functions": [
+                  "modifier": [
                     {
-                      "function": "minecraft:set_count",
+                      "type": "minecraft:set_count",
                       "count": {
+                        "type": "minecraft:uniform",
                         "min": 1,
                         "max": 2
                       }
                     }
                   ]
                 }
-              ],
-              "conditions": []
+              ]
             },
             {
               "type": "minecraft:loot_table",
               "value": "weapons:get/drop/zeuss_lightning",
               "weight": 25,
               "quality": 25,
-              "functions": [
+              "modifier": [
                 {
-                  "function": "minecraft:set_count",
+                  "type": "minecraft:set_count",
                   "count": {
+                    "type": "minecraft:uniform",
                     "min": 1,
                     "max": 2
                   }
@@ -156,9 +164,9 @@
               "value": "weapons:get/drop/hook",
               "weight": 20,
               "quality": 10,
-              "functions": [
+              "modifier": [
                 {
-                  "function": "minecraft:set_count",
+                  "type": "minecraft:set_count",
                   "count": 1
                 }
               ]
@@ -168,10 +176,11 @@
               "name": "minecraft:arrow",
               "weight": 20,
               "quality": 10,
-              "functions": [
+              "modifier": [
                 {
-                  "function": "minecraft:set_count",
+                  "type": "minecraft:set_count",
                   "count": {
+                    "type": "minecraft:uniform",
                     "min": 1,
                     "max": 3
                   }

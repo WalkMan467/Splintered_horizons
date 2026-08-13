@@ -1,9 +1,9 @@
-item modify entity @a[tag=sys.zipline_platform.motion] weapon.mainhand {function:"minecraft:set_enchantments",enchantments:{"sys:zipline_platform/forward_motion":0}}
-item modify entity @a[tag=sys.zipline_platform.motion] weapon.offhand {function:"minecraft:set_enchantments",enchantments:{"sys:zipline_platform/forward_motion":0}}
-item modify entity @a[tag=sys.zipline_platform.motion] armor.head {function:"minecraft:set_enchantments",enchantments:{"sys:zipline_platform/forward_motion":0}}
-item modify entity @a[tag=sys.zipline_platform.motion] armor.chest {function:"minecraft:set_enchantments",enchantments:{"sys:zipline_platform/forward_motion":0}}
-item modify entity @a[tag=sys.zipline_platform.motion] armor.legs {function:"minecraft:set_enchantments",enchantments:{"sys:zipline_platform/forward_motion":0}}
-item modify entity @a[tag=sys.zipline_platform.motion] armor.feet {function:"minecraft:set_enchantments",enchantments:{"sys:zipline_platform/forward_motion":0}}
+item modify entity @a[tag=sys.zipline_platform.motion] weapon.mainhand {type:"minecraft:set_enchantments",enchantments:{"sys:zipline_platform/forward_motion":0}}
+item modify entity @a[tag=sys.zipline_platform.motion] weapon.offhand {type:"minecraft:set_enchantments",enchantments:{"sys:zipline_platform/forward_motion":0}}
+item modify entity @a[tag=sys.zipline_platform.motion] armor.head {type:"minecraft:set_enchantments",enchantments:{"sys:zipline_platform/forward_motion":0}}
+item modify entity @a[tag=sys.zipline_platform.motion] armor.chest {type:"minecraft:set_enchantments",enchantments:{"sys:zipline_platform/forward_motion":0}}
+item modify entity @a[tag=sys.zipline_platform.motion] armor.legs {type:"minecraft:set_enchantments",enchantments:{"sys:zipline_platform/forward_motion":0}}
+item modify entity @a[tag=sys.zipline_platform.motion] armor.feet {type:"minecraft:set_enchantments",enchantments:{"sys:zipline_platform/forward_motion":0}}
 
 
 execute \

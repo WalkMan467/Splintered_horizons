@@ -5,11 +5,11 @@ execute \
 function players:detect/drop
 
 execute \
-    unless predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{location:{position:{y:{min:-127}}}}} run \
+    unless predicate {type:"minecraft:entity_properties",entity:"this",predicate:{location:{position:{y:{min:-127}}}}} run \
 function players:detect/in_void
 
 execute \
-    if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{location:{position:{y:{min:-127}}}}} run \
+    if predicate {type:"minecraft:entity_properties",entity:"this",predicate:{location:{position:{y:{min:-127}}}}} run \
 function players:detect/out_void
 
 # Detection in the air / on land

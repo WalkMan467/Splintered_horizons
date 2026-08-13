@@ -32,7 +32,7 @@ tag @s[tag=!atker] add atker
 
 execute \
     as @s[scores={weapon.spider_passive=10}] run \
-scoreboard players operation @s atk = .spider_passive atk
+scoreboard players operation @s dmg_formula.atk_percentage = .spider_passive atk
 
 
 execute \

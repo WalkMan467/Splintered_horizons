@@ -10,8 +10,8 @@ summon minecraft:block_display ~ ~0.5 ~ \
         Glowing: 1b, \
         block_state: \
             {\
-            Name: "minecraft:target", \
-            Properties: \
+            id: "minecraft:target", \
+            properties: \
                 { \
                     power: "0" \
                 } \

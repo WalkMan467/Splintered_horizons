@@ -1,4 +1,13 @@
 advancement revoke @s only world_area:chapter_3/realm_of_finality/out
+function music:chapter_3/realm_of_finality/start
+
+execute \
+    if entity @s[tag=sys.exclude_display_world_area_title] run \
+return 0
+
+execute \
+    if score @s sys.exclude_display_world_area_title matches 0.. run \
+return 0
 
 title @s title ["",{"text":"","font":"minecraft:icon","color":"red",shadow_color:0},{"translate":"world_area.icon.chapter_3.realm_of_finality","underlined":true,"color":"dark_red"},{"text":"","font":"minecraft:icon","color":"red",shadow_color:0}]
 title @s subtitle [{"text":""},{"text":"《","bold":true,"color":"gold"},{"translate":"monument.icon.chapter_3","bold":true,"color":"gold"},{"text":"》","bold":true,"color":"gold"}]
@@ -11,5 +20,3 @@ scoreboard players set #rdm_enchantment global.main 20
 
 playsound minecraft:event.mob_effect.raid_omen voice @s ~ ~1 ~ 1 0.75
 playsound minecraft:event.mob_effect.trial_omen voice @s ~ ~1 ~ 1 0.75
-
-function music:chapter_3/realm_of_finality/start

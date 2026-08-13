@@ -13,10 +13,10 @@ function bossfight:chapter_2/segrina/skills/3/1
 
 # 靈魂球
     # 497f51a2-b350-4725-b5a4-4fa6c2054469
-    summon minecraft:block_display ~ 122 ~5 {UUID:[I;1233080738,-1286584539,-1247522906,-1039842199],Tags:["bossfight.segrina.skills.3.soul"],block_state: {Name: "minecraft:air"}, interpolation_duration: 1, teleport_duration: 1, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 1.0f], translation: [-0.5f, -0.5f, -0.5f]}}
+    summon minecraft:block_display ~ 122 ~5 {UUID:[I;1233080738,-1286584539,-1247522906,-1039842199],Tags:["bossfight.segrina.skills.3.soul"],block_state: {id: "minecraft:air"}, interpolation_duration: 1, teleport_duration: 1, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 1.0f], translation: [-0.5f, -0.5f, -0.5f]}}
 
     # f300026e-2054-4a7d-9b02-af5eb0ec3645
-    summon minecraft:block_display ~5 122 ~-5 {UUID:[I;-218103186,542395005,-1694322850,-1326696891],Tags:["bossfight.segrina.skills.3.soul"],block_state: {Name: "minecraft:air"}, interpolation_duration: 1, teleport_duration: 1, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 1.0f], translation: [-0.5f, -0.5f, -0.5f]}}
+    summon minecraft:block_display ~5 122 ~-5 {UUID:[I;-218103186,542395005,-1694322850,-1326696891],Tags:["bossfight.segrina.skills.3.soul"],block_state: {id: "minecraft:air"}, interpolation_duration: 1, teleport_duration: 1, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 1.0f], translation: [-0.5f, -0.5f, -0.5f]}}
 
     # b51d6e68-3019-4d9f-8ecd-23cb66db09ae
-    summon minecraft:block_display ~-5 122 ~-5 {UUID:[I;-1256362392,806964639,-1899158581,1725630894],Tags:["bossfight.segrina.skills.3.soul"],block_state: {Name: "minecraft:air"}, interpolation_duration: 1, teleport_duration: 1, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 1.0f], translation: [-0.5f, -0.5f, -0.5f]}}
+    summon minecraft:block_display ~-5 122 ~-5 {UUID:[I;-1256362392,806964639,-1899158581,1725630894],Tags:["bossfight.segrina.skills.3.soul"],block_state: {id: "minecraft:air"}, interpolation_duration: 1, teleport_duration: 1, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 1.0f], translation: [-0.5f, -0.5f, -0.5f]}}

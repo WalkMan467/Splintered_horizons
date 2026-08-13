@@ -103,7 +103,7 @@
         if entity @s[tag=temp,gamemode=!creative] \
         if biome ~ ~ ~ world_area:main/death_area \
         if entity @s[tag=!player.death] run \
-    kill @s
+    advancement grant @s only players:void_protection/in_void
 
 # Guide
 

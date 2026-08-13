@@ -36,7 +36,7 @@ execute \
     if score #rdm global.main matches 8 run \
 rotate @s ~-35 ~-90
 
-data merge entity @s {teleport_duration: 1,start_interpolation:1,block_state: {Name: "minecraft:glowstone"}, brightness: {block: 15, sky: 15},Glowing:1b, glow_color_override: 7534335, transformation: {scale: [1.0f, 1.0f, 1.0f], translation: [-0.5f, -0.5f, -0.5f]}}
+data merge entity @s {teleport_duration: 1,start_interpolation:1,block_state: {id: "minecraft:glowstone"}, brightness: {block: 15, sky: 15},Glowing:1b, glow_color_override: 7534335, transformation: {scale: [1.0f, 1.0f, 1.0f], translation: [-0.5f, -0.5f, -0.5f]}}
 
 tag @s add weapon.otherworld_star.fallstar.display
 

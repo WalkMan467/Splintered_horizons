@@ -15,7 +15,7 @@ function aj:oceanid/summon {args: {animation: 'death', start_animation: true}}
 execute \
     in minecraft:overworld \
     rotated -90 0 run \
-summon minecraft:block_display -3 66 -58 {start_interpolation:1,interpolation_duration:59,teleport_duration:59,UUID:[I;-188796138,-447986339,-1935179739,-1478534434],Rotation:[-90.0f,25.0f],Tags:["cutscene.opening.8.1"],block_state: {Name: "minecraft:air"}, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 1.0f], translation: [-0.5f, -0.5f, -0.5f]}}
+summon minecraft:block_display -3 66 -58 {start_interpolation:1,interpolation_duration:59,teleport_duration:59,UUID:[I;-188796138,-447986339,-1935179739,-1478534434],Rotation:[-90.0f,25.0f],Tags:["cutscene.opening.8.1"],block_state: {id: "minecraft:air"}, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 1.0f], translation: [-0.5f, -0.5f, -0.5f]}}
 
 execute \
     unless loaded -3 0 -58 run \

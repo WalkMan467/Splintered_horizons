@@ -1,9 +1,12 @@
 {
-    "criteria": {
-      "requirements": {
-        "trigger": "minecraft:entity_hurt_player",
-        "conditions": {
-          "player": {
+  "criteria": {
+    "requirements": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
             "slots": {
               "armor.chest": {
                 "predicates": {
@@ -16,13 +19,14 @@
           }
         }
       }
-    },
-    "requirements": [
-      [
-        "requirements"
-      ]
-    ],
-    "rewards": {
-      "function": "armors:type/tai_chis_shadow/clear"
     }
+  },
+  "requirements": [
+    [
+      "requirements"
+    ]
+  ],
+  "rewards": {
+    "function": "armors:type/tai_chis_shadow/clear"
   }
+}

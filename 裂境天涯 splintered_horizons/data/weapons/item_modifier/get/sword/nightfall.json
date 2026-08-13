@@ -1,6 +1,6 @@
 [
   {
-    "function": "minecraft:set_components",
+    "type": "minecraft:set_components",
     "components": {
       "minecraft:item_name": [
         {
@@ -12,102 +12,221 @@
       ],
       "minecraft:lore": [
         [
-          { "translate": "weapon.nightfall.type", "italic": false, "color": "dark_gray" }
+          {
+            "translate": "weapon.nightfall.type",
+            "italic": false,
+            "color": "dark_gray"
+          }
         ],
-        { "text": "" },
+        {
+          "text": ""
+        },
         [
-          { "translate": "weapon.nightfall.story.1", "italic": false, "color": "blue" }
-        ],
-        [
-          { "translate": "weapon.nightfall.story.2", "italic": false, "color": "blue" }
-        ],
-        [
-          { "translate": "weapon.nightfall.story.3", "italic": false, "color": "blue" }
-        ],
-        [
-          { "translate": "weapon.nightfall.story.4", "italic": false, "color": "blue" }
-        ],
-        { "text": "" },
-        [
-          { "text": "", "italic": false },
-          { "translate": "weapon.nightfall.skill", "color": "dark_red", "bold": true },
-          { "text": "  " },
-          { "translate": "weapon.skill_cd", "color": "#6E6E6E" },
-          { "text": "5s" }
+          {
+            "translate": "weapon.nightfall.story.1",
+            "italic": false,
+            "color": "blue"
+          }
         ],
         [
-          { "text": "", "italic": false },
+          {
+            "translate": "weapon.nightfall.story.2",
+            "italic": false,
+            "color": "blue"
+          }
+        ],
+        [
+          {
+            "translate": "weapon.nightfall.story.3",
+            "italic": false,
+            "color": "blue"
+          }
+        ],
+        [
+          {
+            "translate": "weapon.nightfall.story.4",
+            "italic": false,
+            "color": "blue"
+          }
+        ],
+        {
+          "text": ""
+        },
+        [
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "weapon.nightfall.skill",
+            "color": "dark_red",
+            "bold": true
+          },
+          {
+            "text": "  "
+          },
+          {
+            "translate": "weapon.skill_cd",
+            "color": "#6E6E6E"
+          },
+          {
+            "text": "5s"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "italic": false
+          },
           {
             "translate": "weapon.nightfall.skill.1",
             "color": "red",
             "with": [
-              { "keybind": "key.use", "underlined": true, "color": "dark_green" }
+              {
+                "keybind": "key.use",
+                "underlined": true,
+                "color": "dark_green"
+              }
             ]
           }
         ],
         [
-          { "text": "", "italic": false },
+          {
+            "text": "",
+            "italic": false
+          },
           {
             "translate": "weapon.nightfall.skill.2",
             "color": "red",
             "with": [
-              { "translate": "weapon.effect.shadow", "underlined": true, "color": "#470041" }
+              {
+                "translate": "weapon.effect.shadow",
+                "underlined": true,
+                "color": "#470041"
+              }
             ]
           }
         ],
         [
-          { "text": "", "italic": false },
+          {
+            "text": "",
+            "italic": false
+          },
           {
             "translate": "weapon.nightfall.skill.3",
             "color": "red",
             "with": [
-              { "translate": "weapon.effect.crimson_claw", "underlined": true, "color": "dark_red" }
+              {
+                "translate": "weapon.effect.crimson_claw",
+                "underlined": true,
+                "color": "dark_red"
+              }
             ]
           }
         ],
-        { "text": "" },
+        {
+          "text": ""
+        },
         [
-          { "text": "", "italic": false },
-          { "translate": "weapon.nightfall.passive_skills", "color": "dark_red", "bold": true },
-          { "text": "  " }
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "weapon.nightfall.passive_skills",
+            "color": "dark_red",
+            "bold": true
+          },
+          {
+            "text": "  "
+          }
         ],
         [
-          { "text": "", "italic": false },
-          { "translate": "weapon.nightfall.passive_skills.1", "color": "red" }
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "weapon.nightfall.passive_skills.1",
+            "color": "red"
+          }
         ],
         [
-          { "text": "", "italic": false },
-          { "translate": "weapon.nightfall.passive_skills.2", "color": "red" }
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "weapon.nightfall.passive_skills.2",
+            "color": "red"
+          }
         ],
         [
-          { "text": "", "italic": false },
-          { "translate": "weapon.nightfall.passive_skills.3", "color": "red" }
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "weapon.nightfall.passive_skills.3",
+            "color": "red"
+          }
         ],
         [
-          { "text": "", "italic": false },
+          {
+            "text": "",
+            "italic": false
+          },
           {
             "translate": "weapon.nightfall.passive_skills.4",
             "color": "red",
             "with": [
-              { "translate": "weapon.effect.shadow", "underlined": true, "color": "#470041" }
+              {
+                "translate": "weapon.effect.shadow",
+                "underlined": true,
+                "color": "#470041"
+              }
             ]
           }
         ],
         [
-          { "text": "", "italic": false },
-          { "translate": "weapon.nightfall.passive_skills.5", "color": "red" }
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "weapon.nightfall.passive_skills.5",
+            "color": "red"
+          }
         ],
         [
-          { "text": "", "italic": false },
-          { "translate": "weapon.nightfall.passive_skills.6", "color": "red" }
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "weapon.nightfall.passive_skills.6",
+            "color": "red"
+          }
         ],
         [
-          { "text": "", "italic": false },
-          { "translate": "weapon.nightfall.passive_skills.7", "color": "red" }
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "weapon.nightfall.passive_skills.7",
+            "color": "red"
+          }
         ],
         [
-          { "text": "", "italic": false },
-          { "translate": "weapon.nightfall.passive_skills.8", "color": "red" }
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "weapon.nightfall.passive_skills.8",
+            "color": "red"
+          }
         ]
       ],
       "minecraft:attribute_modifiers": [
@@ -148,7 +267,7 @@
     }
   },
   {
-    "function": "minecraft:set_enchantments",
+    "type": "minecraft:set_enchantments",
     "add": false,
     "enchantments": {
       "weapons:type/sword/nightfall/0": 1

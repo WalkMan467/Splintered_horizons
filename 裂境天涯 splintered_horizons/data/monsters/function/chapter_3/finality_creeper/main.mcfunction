@@ -1,7 +1,16 @@
+# Attachable Components
+
+function sys:attachable_component/group/guide
+
 
 execute \
     unless entity @s[type=area_effect_cloud,nbt={potion_contents:{custom_effects:[{id:"minecraft:unluck",amplifier:1b,duration:-1}]}}] run \
 return 0
+
+execute \
+    if score @s sys.silence matches 1.. run \
+return 0
+
 
 particle dust_color_transition{from_color:[0.000,0.000,0.000],scale:2,to_color:[1.000,0.000,0.000]} ~ ~1 ~ 2 2 2 1 300 force @a
 particle minecraft:squid_ink ~ ~1 ~ 0 0 0 0.25 200 normal

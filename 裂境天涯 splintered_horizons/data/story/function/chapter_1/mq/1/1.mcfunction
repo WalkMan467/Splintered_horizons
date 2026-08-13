@@ -126,7 +126,7 @@ tellraw @a[distance=..16] \
         {"atlas":"minecraft:items","sprite":"item/character/stellar","bold":false,shadow_color:0,"color":"white"},\
         {"text":" : ","color":"white","bold": false},\
         {"translate": "story.chapter_1.mq.1.9","fallback": "謝謝妳救了我，我叫","bold": false},\
-        {translate:"character.stellar",bold:true,color:"dark_green",hover_event:{action:"show_text",value:[{translate:"story.icon.character.stellar",color:"gray"},{text:"\n"},{translate:"story.icon.character.stellar.desc.1",color:"gray"},{text:"\n"},{text:"\n"},{translate:"proper_noun.desc.2",color:"white"},{keybind:"key.advancements",bold:true,color:"dark_green"},{translate:"proper_noun.desc.3",color:"white"}]}}\
+        {translate:"character.stellar",bold:true,color:"dark_green",hover_event:{action:"show_text",value:[{translate:"story.icon.character.stellar",color:"gray"},{text:"\n"},{translate:"story.icon.character.stellar.desc.1",color:"gray"},{text:"\n"},{text:"\n"},{translate:"proper_noun.desc.2",color:"white"},{keybind:"key.advancements",bold:true,color:"dark_green"},{translate:"proper_noun.desc.3",color:"white"}]}} \
     ]
 
 

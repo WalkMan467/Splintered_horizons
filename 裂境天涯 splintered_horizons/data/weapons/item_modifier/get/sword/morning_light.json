@@ -1,6 +1,6 @@
 [
   {
-    "function": "minecraft:set_components",
+    "type": "minecraft:set_components",
     "components": {
       "minecraft:item_name": [
         {
@@ -253,7 +253,7 @@
     }
   },
   {
-    "function": "minecraft:set_enchantments",
+    "type": "minecraft:set_enchantments",
     "add": true,
     "enchantments": {
       "weapons:type/sword/morning_light/use": 1,

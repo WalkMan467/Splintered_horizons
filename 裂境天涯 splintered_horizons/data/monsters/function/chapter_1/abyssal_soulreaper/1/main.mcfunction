@@ -1,11 +1,14 @@
 
 execute \
     if score @s sys.skills_freeze matches 0.. run \
+    return run \
 function monsters:chapter_1/abyssal_soulreaper/cast/end
 
 execute \
-    if score @s sys.skills_freeze matches 0.. run \
-return 0
+    if score @s monster.skill.casting matches 1.. \
+    if score @s sys.silence matches 1.. run \
+    return run \
+function monsters:chapter_1/abyssal_soulreaper/cast/end
 
 
 execute \

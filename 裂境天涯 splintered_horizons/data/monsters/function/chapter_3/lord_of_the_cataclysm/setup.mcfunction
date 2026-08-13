@@ -8,7 +8,7 @@ ride @n[type=marker,tag=monster.marker,distance=..1] mount @s
 tag @s add monsters.lord_of_the_cataclysm
 tag @s add monster
 tag @s add freeze.immunity
-
+tag @s add sys.silence.immunity
 
 execute \
     store result score @s monster.skill.rdm.skill run \

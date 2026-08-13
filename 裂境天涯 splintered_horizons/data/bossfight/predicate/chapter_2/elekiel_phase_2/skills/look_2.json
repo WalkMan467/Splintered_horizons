@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:inverted",
+  "term": {
+    "type": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "minecraft:type_specific/player": {
+        "looking_at": {
+          "nbt": "{Tags:[\"monster.elekiel_phase_2.effect\"]}"
+        }
+      }
+    }
+  }
+}

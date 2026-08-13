@@ -1,6 +1,6 @@
 [
   {
-    "function": "minecraft:set_components",
+    "type": "minecraft:set_components",
     "components": {
       "minecraft:item_name": [
         {
@@ -12,97 +12,237 @@
       ],
       "minecraft:lore": [
         [
-          { "translate": "weapon.rock_crushing_greatsword.type", "italic": false, "color": "dark_gray" }
+          {
+            "translate": "weapon.rock_crushing_greatsword.type",
+            "italic": false,
+            "color": "dark_gray"
+          }
         ],
-        { "text": "" },
+        {
+          "text": ""
+        },
         [
-          { "translate": "weapon.rock_crushing_greatsword.story.1", "italic": false, "color": "blue" }
-        ],
-        [
-          { "translate": "weapon.rock_crushing_greatsword.story.2", "italic": false, "color": "blue" }
-        ],
-        { "text": "" },
-        [
-          { "text": "", "italic": false },
-          { "translate": "weapon.rock_crushing_greatsword.skill", "color": "#b19000", "bold": true }
-        ],
-        [
-          { "text": "", "italic": false },
-          { "translate": "weapon.rock_crushing_greatsword.skill.1", "color": "#d1bd65" }
+          {
+            "translate": "weapon.rock_crushing_greatsword.story.1",
+            "italic": false,
+            "color": "blue"
+          }
         ],
         [
-          { "text": "", "italic": false },
-          { "translate": "weapon.rock_crushing_greatsword.skill.2", "color": "#d1bd65" }
+          {
+            "translate": "weapon.rock_crushing_greatsword.story.2",
+            "italic": false,
+            "color": "blue"
+          }
+        ],
+        {
+          "text": ""
+        },
+        [
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "weapon.rock_crushing_greatsword.skill",
+            "color": "#b19000",
+            "bold": true
+          }
         ],
         [
-          { "text": "", "italic": false },
-          { "translate": "weapon.rock_crushing_greatsword.skill.3", "color": "#d1bd65" }
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "weapon.rock_crushing_greatsword.skill.1",
+            "color": "#d1bd65"
+          }
         ],
         [
-          { "text": "", "italic": false },
-          { "translate": "weapon.rock_crushing_greatsword.skill.4", "color": "#d1bd65", "with": [
-              { "keybind": "key.use", "underlined": true, "color": "dark_green" }
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "weapon.rock_crushing_greatsword.skill.2",
+            "color": "#d1bd65"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "weapon.rock_crushing_greatsword.skill.3",
+            "color": "#d1bd65"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "weapon.rock_crushing_greatsword.skill.4",
+            "color": "#d1bd65",
+            "with": [
+              {
+                "keybind": "key.use",
+                "underlined": true,
+                "color": "dark_green"
+              }
             ]
           }
         ],
         [
-          { "text": "", "italic": false },
-          { "translate": "weapon.rock_crushing_greatsword.skill.5", "color": "#d1bd65" }
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "weapon.rock_crushing_greatsword.skill.5",
+            "color": "#d1bd65"
+          }
         ],
         [
-          { "text": "", "italic": false },
-          { "translate": "weapon.rock_crushing_greatsword.skill.6", "color": "#d1bd65" }
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "weapon.rock_crushing_greatsword.skill.6",
+            "color": "#d1bd65"
+          }
         ],
         [
-          { "text": "", "italic": false },
-          { "translate": "weapon.rock_crushing_greatsword.skill.7", "color": "#d1bd65", "with": [
-              { "translate": "weapon.effect.holy_fire", "underlined": true, "color": "#e6e6e6" }
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "weapon.rock_crushing_greatsword.skill.7",
+            "color": "#d1bd65",
+            "with": [
+              {
+                "translate": "weapon.effect.holy_fire",
+                "underlined": true,
+                "color": "#e6e6e6"
+              }
             ]
           }
         ],
         [
-          { "text": "", "italic": false },
-          { "translate": "weapon.rock_crushing_greatsword.skill.8", "color": "#d1bd65" }
-        ],
-        [
-          { "text": "", "italic": false },
-          { "translate": "weapon.rock_crushing_greatsword.skill.9", "color": "#d1bd65" }
-        ],
-        [
-          { "text": "", "italic": false },
-          { "translate": "weapon.rock_crushing_greatsword.skill.10", "color": "#d1bd65", "with": [
-              { "translate": "weapon.effect.holy_fire", "underlined": true, "color": "#e6e6e6" }
-            ]
-          }
-        ],
-        { "text": "" },
-        [
-          { "text": "", "italic": false },
-          { "translate": "weapon.rock_crushing_greatsword.passive_skills", "color": "#cfcfcf", "bold": true },
-          { "text": "  " }
-        ],
-        [
-          { "text": "", "italic": false },
-          { "translate": "weapon.rock_crushing_greatsword.passive_skills.1", "color": "#727272" }
-        ],
-        [
-          { "text": "", "italic": false },
-          { "translate": "weapon.rock_crushing_greatsword.passive_skills.2", "color": "#727272" }
-        ],
-        [
-          { "text": "", "italic": false },
-          { "translate": "weapon.rock_crushing_greatsword.passive_skills.3", "color": "#727272" }
-        ],
-        [
-          { "text": "", "italic": false },
-          { "translate": "weapon.rock_crushing_greatsword.passive_skills.4", "color": "#727272", "with": [
-              { "translate": "weapon.effect.holy_fire", "underlined": true, "color": "#e6e6e6" }
-            ]
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "weapon.rock_crushing_greatsword.skill.8",
+            "color": "#d1bd65"
           }
         ],
         [
-          { "text": "", "italic": false },
-          { "translate": "weapon.rock_crushing_greatsword.passive_skills.5", "color": "#727272" }
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "weapon.rock_crushing_greatsword.skill.9",
+            "color": "#d1bd65"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "weapon.rock_crushing_greatsword.skill.10",
+            "color": "#d1bd65",
+            "with": [
+              {
+                "translate": "weapon.effect.holy_fire",
+                "underlined": true,
+                "color": "#e6e6e6"
+              }
+            ]
+          }
+        ],
+        {
+          "text": ""
+        },
+        [
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "weapon.rock_crushing_greatsword.passive_skills",
+            "color": "#cfcfcf",
+            "bold": true
+          },
+          {
+            "text": "  "
+          }
+        ],
+        [
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "weapon.rock_crushing_greatsword.passive_skills.1",
+            "color": "#727272"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "weapon.rock_crushing_greatsword.passive_skills.2",
+            "color": "#727272"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "weapon.rock_crushing_greatsword.passive_skills.3",
+            "color": "#727272"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "weapon.rock_crushing_greatsword.passive_skills.4",
+            "color": "#727272",
+            "with": [
+              {
+                "translate": "weapon.effect.holy_fire",
+                "underlined": true,
+                "color": "#e6e6e6"
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "weapon.rock_crushing_greatsword.passive_skills.5",
+            "color": "#727272"
+          }
         ]
       ],
       "minecraft:attribute_modifiers": [
@@ -142,7 +282,7 @@
     }
   },
   {
-    "function": "minecraft:set_enchantments",
+    "type": "minecraft:set_enchantments",
     "add": false,
     "enchantments": {
       "weapons:type/sword/rock_crushing_greatsword/defense": 1

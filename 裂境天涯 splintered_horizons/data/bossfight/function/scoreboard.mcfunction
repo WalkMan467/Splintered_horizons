@@ -1,1 +1,10 @@
 scoreboard objectives add bossfight.segrina.main dummy
+scoreboard objectives add bossfight.attack_module.cd dummy "[BOSS] 攻擊模組 CD 冷卻"
+scoreboard objectives add bossfight.attack_module.cast dummy "[BOSS] 攻擊模組施法"
+scoreboard objectives add bossfight.attack_module.timeline dummy "[BOSS] 攻擊模組施法中"
+scoreboard objectives add bossfight.attack_module.time dummy "[BOSS] 攻擊模組 閃避次數"
+scoreboard objectives add bossfight.attack_module.state dummy "[BOSS] 攻擊模組 狀態"
+scoreboard objectives add bossfight.attack_module.direction dummy "[BOSS] 攻擊模組 閃避方向"
+scoreboard objectives add bossfight.attack_module.direction.last_time dummy "[BOSS] 攻擊模組 上次閃避方向"
+scoreboard objectives add bossfight.attack_module.combo.timeline dummy "[BOSS] 攻擊模組 組合技時間線"
+scoreboard objectives add bossfight.attack_module.combo.state dummy "[BOSS] 攻擊模組 組合技狀態"

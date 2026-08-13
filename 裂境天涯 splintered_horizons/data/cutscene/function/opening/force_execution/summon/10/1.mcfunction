@@ -8,7 +8,7 @@ forceload add 10032 9436
 # 8b61e851-f0af-4fc7-b218-74f1a426cf25
 execute \
     in minecraft:overworld run \
-summon minecraft:block_display 10032 -51 9436 {UUID:[I;-1956517807, -256946233, -1307020047, -1540960475],Rotation:[0.0f,0.0f],block_state: {Name: "minecraft:air"}}
+summon minecraft:block_display 10032 -51 9436 {UUID:[I;-1956517807, -256946233, -1307020047, -1540960475],Rotation:[0.0f,0.0f],block_state: {id: "minecraft:air"}}
 
 fill 10047 -59 9443 10019 -39 9443 end_gateway{Age:201}
 

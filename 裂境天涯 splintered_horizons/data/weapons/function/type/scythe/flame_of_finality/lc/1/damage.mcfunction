@@ -1,6 +1,6 @@
 tag @s add dmger
 tag @p[sort=arbitrary,tag=!atker,tag=weapon.flame_of_finality.user] add atker
-scoreboard players set @p[sort=arbitrary,tag=atker,tag=weapon.flame_of_finality.user] atk 150
+scoreboard players set @p[sort=arbitrary,tag=atker,tag=weapon.flame_of_finality.user] dmg_formula.atk_percentage 150
 
 execute \
     as @p[sort=arbitrary,tag=atker,tag=weapon.flame_of_finality.user] run \

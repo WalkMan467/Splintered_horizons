@@ -11,11 +11,11 @@ effect give @s glowing 30 255 true
 # 附加無敵
 execute \
     if items entity @s armor.chest * run \
-item modify entity @s armor.chest [{function:"minecraft:set_enchantments",enchantments:{"bossfight:chapter_2/segrina/skills/4/damage_immunity":1,binding_curse:1},add:0b}]
+item modify entity @s armor.chest [{type:"minecraft:set_enchantments",enchantments:{"bossfight:chapter_2/segrina/skills/4/damage_immunity":1,binding_curse:1},add:0b}]
 
 execute \
     unless items entity @s armor.chest * run \
-loot replace entity @s armor.chest loot {pools:[{rolls:1,entries:[{type:"minecraft:item",name:"minecraft:leather_chestplate",functions:[{function:"minecraft:set_custom_data",tag:{invincible:true}},{function:"minecraft:set_components",components:{"minecraft:enchantment_glint_override":false,"minecraft:equippable":{slot:"chest",asset_id:"air"}}},{function:"minecraft:set_enchantments",enchantments:{"bossfight:chapter_2/segrina/skills/4/damage_immunity":1,"minecraft:binding_curse":1},add:false}]}]}]}
+loot replace entity @s armor.chest loot {pools:[{rolls:1,entries:[{type:"minecraft:item",name:"minecraft:leather_chestplate",modifier:[{type:"minecraft:set_custom_data",tag:{invincible:true}},{type:"minecraft:set_components",components:{"minecraft:enchantment_glint_override":false,"minecraft:equippable":{slot:"chest",asset_id:"air"}}},{type:"minecraft:set_enchantments",enchantments:{"bossfight:chapter_2/segrina/skills/4/damage_immunity":1,"minecraft:binding_curse":1},add:false}]}]}]}
 
 execute \
     unless score @s monster.segrina.skill.4.invincible.display.id matches -1073741823..1073741823 \

@@ -7,7 +7,7 @@ summon block_display ~ ~ ~ \
             ], \
         block_state: \
             { \
-                Name:"air" \
+                id:"air" \
             }, \
         start_interpolation:1, \
         interpolation_duration:1,\

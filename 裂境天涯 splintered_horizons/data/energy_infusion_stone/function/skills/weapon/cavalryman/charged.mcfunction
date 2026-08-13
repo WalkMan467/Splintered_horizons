@@ -6,7 +6,7 @@ scoreboard players reset @s energy_infusion_stone.cavalryman.charged
 
 execute \
     if score @s player.detect.sprint matches 1.. \
-    if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{slots:{weapon.mainhand:{items:"#minecraft:enchantable/weapon",predicates:{"minecraft:enchantments":[{enchantments:"energy_infusion_stone:skills/weapon/cavalryman",levels:{min:1}}]}}}}} run \
+    if predicate {type:"minecraft:entity_properties",entity:"this",predicate:{slots:{weapon.mainhand:{items:"#minecraft:enchantable/weapon",predicates:{"minecraft:enchantments":[{enchantments:"energy_infusion_stone:skills/weapon/cavalryman",levels:{min:1}}]}}}}} run \
 scoreboard players add @s energy_infusion_stone.cavalryman.charged 1
 
 

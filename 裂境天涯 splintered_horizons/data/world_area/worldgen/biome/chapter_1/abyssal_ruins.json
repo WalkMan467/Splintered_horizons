@@ -16,19 +16,21 @@
     "minecraft:visual/sky_light_color": "#1f232d",
     "minecraft:visual/fog_start_distance": 256,
     "minecraft:visual/fog_end_distance": 512,
-    "minecraft:visual/fog_color": "#181a21"
+    "minecraft:visual/fog_color": "#181a21",
+    "minecraft:gameplay/natural_mob_spawns": {
+      "spawn_costs": {},
+      "spawns_by_category": {}
+    },
+    "minecraft:gameplay/creature_world_gen_spawn_probability": 0
   },
   "temperature": 0.8,
   "downfall": 0,
   "has_precipitation": true,
-  "creature_spawn_probability": 0,
   "effects": {
     "water_color": 9276813,
     "grass_color": 4212557,
     "foliage_color": 17342
   },
-  "spawners": {},
-  "spawn_costs": {},
   "carvers": "minecraft:canyon",
   "features": []
 }

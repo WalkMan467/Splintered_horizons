@@ -1,10 +1,10 @@
 [
   {
-    "function": "minecraft:set_item",
+    "type": "minecraft:set_item",
     "item": "minecraft:bundle"
   },
   {
-    "function": "minecraft:set_components",
+    "type": "minecraft:set_components",
     "components": {
       "minecraft:item_name": [
         {
@@ -16,35 +16,82 @@
       ],
       "minecraft:lore": [
         [
-          { "translate": "armor.black_hole_boots.type", "italic": false, "color": "dark_gray" }
+          {
+            "translate": "armor.black_hole_boots.type",
+            "italic": false,
+            "color": "dark_gray"
+          }
         ],
-        { "text": "" },
+        {
+          "text": ""
+        },
         [
-          { "translate": "armor.black_hole_boots.story.1", "italic": false, "color": "blue" }
-        ],
-        [
-          { "translate": "armor.black_hole_boots.story.2", "italic": false, "color": "blue" }
-        ],
-        [
-          { "translate": "armor.black_hole_boots.story.3", "italic": false, "color": "blue" }
-        ],
-        [
-          { "translate": "armor.black_hole_boots.story.4", "italic": false, "color": "blue" }
-        ],
-        { "text": "" },
-        [
-          { "text": "", "italic": false },
-          { "translate": "armor.black_hole_boots.skill", "color": "dark_aqua", "bold": true },
-          { "text": "  " },
-          { "translate": "armor.skill_cd", "color": "#6E6E6E" },
-          { "text": "30s" }
+          {
+            "translate": "armor.black_hole_boots.story.1",
+            "italic": false,
+            "color": "blue"
+          }
         ],
         [
-          { "text": "", "italic": false },
-          { "translate": "armor.black_hole_boots.skill.1", "color": "#00ccff" }
+          {
+            "translate": "armor.black_hole_boots.story.2",
+            "italic": false,
+            "color": "blue"
+          }
         ],
         [
-          { "text": "", "italic": false },
+          {
+            "translate": "armor.black_hole_boots.story.3",
+            "italic": false,
+            "color": "blue"
+          }
+        ],
+        [
+          {
+            "translate": "armor.black_hole_boots.story.4",
+            "italic": false,
+            "color": "blue"
+          }
+        ],
+        {
+          "text": ""
+        },
+        [
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "armor.black_hole_boots.skill",
+            "color": "dark_aqua",
+            "bold": true
+          },
+          {
+            "text": "  "
+          },
+          {
+            "translate": "armor.skill_cd",
+            "color": "#6E6E6E"
+          },
+          {
+            "text": "30s"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "armor.black_hole_boots.skill.1",
+            "color": "#00ccff"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "italic": false
+          },
           {
             "translate": "armor.black_hole_boots.skill.2",
             "color": "#00ccff",
@@ -58,8 +105,14 @@
           }
         ],
         [
-          { "text": "", "italic": false },
-          { "translate": "armor.black_hole_boots.skill.3", "color": "#00ccff" }
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "armor.black_hole_boots.skill.3",
+            "color": "#00ccff"
+          }
         ]
       ],
       "minecraft:attribute_modifiers": [

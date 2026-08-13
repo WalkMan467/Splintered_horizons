@@ -1,7 +1,7 @@
 tag @e[type=!player,type=!#dummy_mob,distance=..4] add dmger
 tag @p add temp
 tag @p[tag=temp] add atker
-scoreboard players set @p[tag=atker,tag=temp] atk 150
+scoreboard players set @p[tag=atker,tag=temp] dmg_formula.atk_percentage 150
 
 execute \
     as @p[tag=temp] run \

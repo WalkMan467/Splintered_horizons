@@ -21,6 +21,11 @@ scoreboard players set #bossfight global.main 1
 # 移除 BOSS 戰互動實體 / Remove bossfight interaction
 function bossfight:chapter_2/act/elekiel_phase_2/1/false
 
+execute \
+    positioned -916 59 2750 run \
+tellraw @a[distance=..120] "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+
+
 setblock -916 60 2750 air
 setblock -916 61 2750 air
 

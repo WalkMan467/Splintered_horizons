@@ -1,0 +1,3 @@
+tellraw @s [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"font":"minecraft:default","text":"[","color":"white","bold":true},{"font":"minecraft:default","text":"📢","color":"blue","bold":false},{"font":"minecraft:default","text":"]","color":"white","bold":true},{"text":" ","font":"minecraft:default"},{"font":"minecraft:default","text":"\n"},{"font":"minecraft:default","text":"☞ ","color":"dark_gray"},{"font":"minecraft:default","translate":"cse.status_effects.soul_restraint.1","color":"white","underlined": false,"bold": false,"fallback":"你的可移動範圍將會被限制在圓圈內","color":"white"}]
+
+playsound minecraft:entity.player.levelup voice @s ~ ~1 ~ 1 0.5

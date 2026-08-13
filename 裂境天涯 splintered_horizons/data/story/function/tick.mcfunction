@@ -26,6 +26,7 @@ function story:chapter_2/ml/9/main
 function story:chapter_2/ml/10/main
 
 function story:other/chapter_2/1/main
+function story:other/chapter_2/2/main
 
 execute \
     in world_area:main/game_lobby \

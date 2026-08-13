@@ -26,6 +26,6 @@ scoreboard players set @s weapon.effect.chaotic_thunder 100
 
 tag @e[type=!player,type=!#dummy_mob,distance=..4] add dmger
 tag @s[tag=!atker] add atker
-scoreboard players set @s[tag=atker] atk 200
+scoreboard players set @s[tag=atker] dmg_formula.atk_percentage 200
 
 function dmg_formula:weapons/type/sword/spider/calculate

@@ -53,9 +53,12 @@ schedule function sys:monument_point/main 1t
 schedule function sys:forging_table/main 1t
 schedule function sys:mini_game/hit_the_bullseye/main 1t
 schedule function sys:monster_wave/main/loop 1t
-schedule function monsters:chapter_2/elekiel_phase_2/fx.main 1t
+schedule function bossfight:chapter_2/elekiel_phase_2/skills/fx.main 1t
 schedule function sys:fall_immunity/main 1t
 schedule function sys:skills_freeze/ice_display/death/schedule 1t
+schedule function sys:exclude_display_world_area_title/main 1t
+
+schedule function bossfight:chapter_2/elekiel_phase_2/attack_module/main 1t
 
 # Hotbar Switching
 schedule function hotbar_sound:guide 2t

@@ -7,9 +7,9 @@
           "type": "minecraft:item",
           "name": "minecraft:poisonous_potato",
           "weight": 9999,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "minecraft:equippable": {
                   "slot": "chest",

@@ -14,7 +14,7 @@ execute \
     in world_area:main/game_lobby \
     positioned 1575 77.5 8 \
     rotated 0 0 run \
-summon minecraft:block_display ~ ~ ~ {UUID:[I;1350293035,-1501150196,-1579885692,-1667788797],block_state: {Name: "minecraft:horn_coral", Properties: {waterlogged: "false"}}, brightness: {block: 15, sky: 15}, interpolation_duration: 1, teleport_duration: 1, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 1.0f], translation: [-0.5f, -0.5f, -0.5f]}}
+summon minecraft:block_display ~ ~ ~ {UUID:[I;1350293035,-1501150196,-1579885692,-1667788797],block_state: {id: "minecraft:horn_coral", properties: {waterlogged: "false"}}, brightness: {block: 15, sky: 15}, interpolation_duration: 1, teleport_duration: 1, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 1.0f], translation: [-0.5f, -0.5f, -0.5f]}}
 
 
 # FX & SFX

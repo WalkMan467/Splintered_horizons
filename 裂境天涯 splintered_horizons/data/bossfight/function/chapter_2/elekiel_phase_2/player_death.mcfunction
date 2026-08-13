@@ -1,5 +1,5 @@
-function monsters:chapter_2/elekiel_phase_2/4/effect/false
-function monsters:chapter_2/elekiel_phase_2/4/portal/crack/tp/remove
+function bossfight:chapter_2/elekiel_phase_2/skills/4/effect/false
+function bossfight:chapter_2/elekiel_phase_2/skills/4/portal/crack/tp/remove
 
 execute \
     unless score #bossfight global.main matches 1.. run \

@@ -2,6 +2,7 @@
   "type": "minecraft:smithing_trim",
   "addition": "#minecraft:trimmable_armor",
   "base": "#minecraft:trim_materials",
+  "pattern": "minecraft:abyss_1_trim",
   "template": [
     "minecraft:sculk_vein"
   ]

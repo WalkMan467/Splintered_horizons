@@ -1,19 +1,18 @@
 {
-    "condition": "minecraft:entity_properties",
-    "entity": "this",
-    "predicate": {
-      "type_specific": {
-        "type": "minecraft:player",
-        "stats": [
-          {
-            "type": "minecraft:dropped",
-            "stat": "minecraft:music_disc_5",
-            "value": {
-              "min": 1,
-              "max": 99
-            }
+  "type": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "minecraft:type_specific/player": {
+      "stats": [
+        {
+          "type": "minecraft:dropped",
+          "stat": "minecraft:music_disc_5",
+          "value": {
+            "min": 1,
+            "max": 99
           }
-        ]
-      }
+        }
+      ]
     }
   }
+}

@@ -10,29 +10,32 @@
           "type": "minecraft:add",
           "value": 15
         },
-        "requirements": [
-          {
-            "condition": "minecraft:damage_source_properties",
-            "predicate": {
-              "tags": [
-                {
-                  "expected": false,
-                  "id": "minecraft:bypasses_invulnerability"
+        "requirements": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:damage_source_properties",
+              "predicate": {
+                "tags": [
+                  {
+                    "expected": false,
+                    "id": "#minecraft:bypasses_invulnerability"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "weapon.rock_crushing_greatsword.hold_down": {
+                  "min": 9,
+                  "max": 14
                 }
-              ]
-            }
-          },
-          {
-            "condition": "minecraft:entity_scores",
-            "entity": "this",
-            "scores": {
-              "weapon.rock_crushing_greatsword.hold_down": {
-                "min": 9,
-                "max": 14
               }
             }
-          }
-        ]
+          ]
+        }
       }
     ],
     "minecraft:post_attack": [

@@ -7,7 +7,7 @@
     "minecraft:post_attack": [
       {
         "requirements": {
-          "condition": "minecraft:entity_scores",
+          "type": "minecraft:entity_scores",
           "entity": "attacker",
           "scores": {
             "weapon.wind_sword.cd": 0

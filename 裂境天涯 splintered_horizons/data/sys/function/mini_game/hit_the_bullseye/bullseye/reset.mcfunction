@@ -3,7 +3,7 @@ execute \
     if entity @s[type=player] run \
 return 0
 
-data modify entity @s block_state set value {Name: "minecraft:target"}
+data modify entity @s block_state set value {id: "minecraft:target"}
 data modify entity @s Glowing set value 1b
 
 tag @s add sys.mini_game.hit_the_bullseye.bullseye.actived

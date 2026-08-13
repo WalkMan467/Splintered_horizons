@@ -1,7 +1,12 @@
+
 function monsters:chapter_1/abyssal_black_knight/cast/end
 
 execute \
     if score @s sys.skills_freeze matches 0.. run \
+return 0
+
+execute \
+    if score @s sys.silence matches 1.. run \
 return 0
 
 scoreboard players reset #monster.abyssal_black_knight.fx particle

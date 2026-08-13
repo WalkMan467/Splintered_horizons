@@ -4,11 +4,15 @@
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
         "player": {
-          "slots": {
-            "weapon.mainhand": {
-              "predicates": {
-                "minecraft:custom_data": {
-                  "weapon": "aquilumera"
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "weapon.mainhand": {
+                "predicates": {
+                  "minecraft:custom_data": {
+                    "weapon": "aquilumera"
+                  }
                 }
               }
             }

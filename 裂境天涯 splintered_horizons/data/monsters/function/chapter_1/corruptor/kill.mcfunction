@@ -1,3 +1,8 @@
+execute \
+    if score @s sys.silence matches 1.. run \
+    return run \
+function monsters:chapter_1/abyssal_soulreaper/cast/end
+
 particle minecraft:totem_of_undying ~ ~1 ~ 0 0 0 0.5 40 normal @a
 playsound minecraft:entity.glow_squid.squirt voice @a ~ ~1 ~ 0.5 1
 

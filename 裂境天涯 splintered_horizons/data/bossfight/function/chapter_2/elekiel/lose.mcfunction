@@ -6,7 +6,7 @@ gamemode adventure @a
 
 stopsound @a record minecraft:bgm.tunetank_meridian
 
-function monsters:chapter_2/elekiel/void
+function bossfight:chapter_2/elekiel/void
 
 attribute @s safe_fall_distance modifier remove monsters.elekiel.1.kill
 

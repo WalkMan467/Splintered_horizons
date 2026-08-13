@@ -30,6 +30,8 @@ data modify entity @s teleport_duration set value 5
 
 ride @n[distance=0..,tag=aj.boss_1.root,type=item_display] mount @n[sort=arbitrary,distance=0..,tag=monsters.elekiel_phase_2,type=skeleton]
 
+scoreboard players set @n[sort=arbitrary,distance=0..,tag=monsters.elekiel_phase_2,type=skeleton] bossfight.attack_module.cd 80
+
 effect give @n[sort=arbitrary,distance=0..,tag=monsters.elekiel_phase_2,type=skeleton] instant_damage 1 27 true
 
 gamemode adventure @a[tag=chapter_2.elekiel_phase_2.lose]
@@ -63,4 +65,4 @@ scoreboard players set @a[distance=..120] player.spawnpoint.pos.z 275400
 
 
 schedule function bossfight:chapter_2/elekiel_phase_2/loop 1t
-schedule function monsters:chapter_2/elekiel_phase_2/main 1t
+schedule function bossfight:chapter_2/elekiel_phase_2/skills/main 1t

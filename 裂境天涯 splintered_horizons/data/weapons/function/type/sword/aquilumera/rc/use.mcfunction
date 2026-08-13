@@ -9,7 +9,8 @@ execute \
 return 0
 
 scoreboard players set @s player.click.interval 20
-
+scoreboard players set @s weapon.aquilumera_passive 10
+scoreboard players set @s weapon.aquilumera.cd 500
 
 execute \
     if items entity @s weapon.mainhand *[minecraft:custom_data~{wl_light:1b}] run \
@@ -22,27 +23,9 @@ scoreboard players set @s weapon.aquilumera.state 2
 
 execute \
     if score @s weapon.aquilumera.state matches 1 run \
-function weapons:type/sword/aquilumera/switch_water
-
-execute \
-    if score @s weapon.aquilumera.state matches 1 run \
-item modify entity @s weapon.mainhand weapons:type/sword/aquilumera/water
+function weapons:type/sword/aquilumera/switch/water/use
 
 
 execute \
     if score @s weapon.aquilumera.state matches 2 run \
-function weapons:type/sword/aquilumera/switch_light
-
-execute \
-    if score @s weapon.aquilumera.state matches 2 run \
-item modify entity @s weapon.mainhand weapons:type/sword/aquilumera/light
-
-# player
-
-execute \
-    unless score @s weapon.effect.resplendence matches 1.. run \
-scoreboard players set @s weapon.aquilumera.cd 500
-
-execute \
-    if score @s weapon.effect.resplendence matches 1.. run \
-scoreboard players set @s weapon.aquilumera.cd 300
+function weapons:type/sword/aquilumera/switch/light/use

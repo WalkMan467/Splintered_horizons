@@ -1,6 +1,7 @@
 {
   "values": [
     "#minecraft:dot",
+    "weapons:type/sword/aquilumera_passive",
     "weapons:type/sword/echo_rhythm_stronger",
     "weapons:type/sword/echo_rhythm_ultimate",
     "#weapons:type/sword/nightfall",

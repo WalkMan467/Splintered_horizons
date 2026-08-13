@@ -5,13 +5,13 @@
         "damage": {
           "type": {
             "direct_entity": {
-              "type": "#minecraft:arrows",
+              "minecraft:entity_type": "#minecraft:arrows",
               "nbt": "{item:{components:{\"minecraft:custom_data\":{id:\"heavenly_guiding_arrow\"}}}}"
             },
             "tags": [
               {
                 "expected": true,
-                "id": "minecraft:is_projectile"
+                "id": "#minecraft:is_projectile"
               }
             ]
           }

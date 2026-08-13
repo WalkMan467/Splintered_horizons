@@ -15,7 +15,7 @@ function aj:selena/summon {args: {animation: 'death', start_animation: true}}
 execute \
     in minecraft:overworld \
     rotated 180 60 run \
-summon minecraft:block_display 651 43 188 {start_interpolation:1,interpolation_duration:59,teleport_duration:59,UUID:[I;-936146243,-89636229,-2139219013,-87447938],Rotation:[180.0f,60.0f],Tags:["cutscene.opening.9.5"],block_state: {Name: "minecraft:air"}, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 1.0f], translation: [-0.5f, -0.5f, -0.5f]}}
+summon minecraft:block_display 651 43 188 {start_interpolation:1,interpolation_duration:59,teleport_duration:59,UUID:[I;-936146243,-89636229,-2139219013,-87447938],Rotation:[180.0f,60.0f],Tags:["cutscene.opening.9.5"],block_state: {id: "minecraft:air"}, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 1.0f], translation: [-0.5f, -0.5f, -0.5f]}}
 
 execute \
     unless loaded 651 43 188 run \

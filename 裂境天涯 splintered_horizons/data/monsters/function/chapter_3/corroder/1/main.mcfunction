@@ -1,4 +1,8 @@
-
+execute \
+    if score @s monster.skill.casting matches 1.. \
+    if score @s sys.silence matches 1.. run \
+    return run \
+function monsters:chapter_3/corroder/1/end
 
 execute \
     if score @s monster.skill.casting matches 1 run \

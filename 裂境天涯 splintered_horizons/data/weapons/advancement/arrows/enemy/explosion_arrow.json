@@ -5,7 +5,7 @@
         "damage": {
           "type": {
             "direct_entity": {
-              "type": "#minecraft:arrows",
+              "minecraft:entity_type": "#minecraft:arrows",
               "predicates": {
                 "minecraft:custom_data": {
                   "id": "explosion_arrow"
@@ -15,7 +15,7 @@
             "tags": [
               {
                 "expected": true,
-                "id": "minecraft:is_projectile"
+                "id": "#minecraft:is_projectile"
               }
             ]
           }

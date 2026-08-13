@@ -14,7 +14,7 @@ return 0
 tag @s add ground
 
 rotate @s ~ 0
-data merge entity @s {Glowing:0b, teleport_duration: 5,interpolation_duration:3,block_state: {Name: "minecraft:glowstone"}, brightness: {block: 15, sky: 15},glow_color_override: 7534335, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [5.0f, 0.01f, 5.0f], translation: [-2.5f, 0.0f, -2.5f]}}
+data merge entity @s {Glowing:0b, teleport_duration: 5,interpolation_duration:3,block_state: {id: "minecraft:glowstone"}, brightness: {block: 15, sky: 15},glow_color_override: 7534335, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [5.0f, 0.01f, 5.0f], translation: [-2.5f, 0.0f, -2.5f]}}
 
 particle minecraft:scrape ~ ~1 ~ 0 0 0 15 100
 playsound minecraft:entity.generic.explode voice @a ~ ~1 ~ 1 0.5

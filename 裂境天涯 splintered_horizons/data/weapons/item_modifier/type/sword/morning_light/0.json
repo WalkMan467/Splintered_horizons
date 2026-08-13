@@ -1,6 +1,6 @@
 [
   {
-    "function": "minecraft:set_custom_model_data",
+    "type": "minecraft:set_custom_model_data",
     "flags": {
       "values": [
         false
@@ -9,7 +9,7 @@
     }
   },
   {
-    "function": "minecraft:set_components",
+    "type": "minecraft:set_components",
     "components": {
       "minecraft:attribute_modifiers": [
         {
@@ -31,8 +31,7 @@
     }
   },
   {
-    "function": "minecraft:set_item",
-    "item": "minecraft:stone_sword",
-    "conditions": []
+    "type": "minecraft:set_item",
+    "item": "minecraft:stone_sword"
   }
 ]

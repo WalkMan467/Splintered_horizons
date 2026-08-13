@@ -1,4 +1,4 @@
-data merge entity @s {block_state: {Name: "minecraft:frosted_ice", Properties: {age: "0"}}, brightness: {block: 5, sky: 5}, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.9999998f, 1.0f], translation: [-0.5f, -2.0f, -0.5f]}}
+data merge entity @s {block_state: {id: "minecraft:frosted_ice", properties: {age: "0"}}, brightness: {block: 5, sky: 5}, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.9999998f, 1.0f], translation: [-0.5f, -2.0f, -0.5f]}}
 tag @s add monster.freeze.display
 
 summon marker ~ ~ ~ {Tags:["monster.marker","summon"],data:{Death:"monsters:freeze"}}

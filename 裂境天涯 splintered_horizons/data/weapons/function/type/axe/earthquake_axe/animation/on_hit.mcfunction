@@ -66,9 +66,9 @@ tag @e[type=!player,type=!#dummy_mob,distance=..8] add dmger
 tag @p[tag=!atker,tag=temp,distance=..8] add atker
 
 scoreboard players set #weapon.earthquake_axe.atk atk 50
-scoreboard players set @p[tag=atker,tag=temp,distance=..8] atk 150
+scoreboard players set @p[tag=atker,tag=temp,distance=..8] dmg_formula.atk_percentage 150
 scoreboard players operation #weapon.earthquake_axe.atk atk *= @s weapon.earthquake_axe.hit.sfx
-scoreboard players operation @p[tag=atker,tag=temp,distance=..8] atk += #weapon.earthquake_axe.atk atk
+scoreboard players operation @p[tag=atker,tag=temp,distance=..8] dmg_formula.atk_percentage += #weapon.earthquake_axe.atk atk
 scoreboard players reset #weapon.earthquake_axe.atk atk
 
 

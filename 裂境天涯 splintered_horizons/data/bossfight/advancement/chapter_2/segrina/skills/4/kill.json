@@ -4,7 +4,11 @@
       "trigger": "minecraft:player_killed_entity",
       "conditions": {
         "entity": {
-          "nbt": "{Tags:[\"monster.segrina.skill.4.monster\"]}"
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "nbt": "{Tags:[\"monster.segrina.skill.4.monster\"]}"
+          }
         }
       }
     }

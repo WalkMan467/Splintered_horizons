@@ -1,18 +1,21 @@
 {
   "pack": {
     "description": "",
-    "pack_format": 94,
     "min_format": [
-      94,
-      1
+      116,
+      0
     ],
-    "max_format": 94
+    "max_format": 116
   },
   "filter": {
     "block": [
       {
         "namespace": "minecraft",
         "path": "advancement/"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "recipe/anvil\\.json"
       }
     ]
   }

@@ -23,33 +23,33 @@
     "minecraft:post_attack": [
       {
         "requirements": {
-          "condition": "minecraft:inverted",
+          "type": "minecraft:inverted",
           "term": {
-            "condition": "minecraft:damage_source_properties",
+            "type": "minecraft:damage_source_properties",
             "predicate": {
               "tags": [
                 {
-                  "id": "minecraft:is_freezing",
+                  "id": "#minecraft:is_freezing",
                   "expected": true
                 },
                 {
-                  "id": "minecraft:bypasses_enchantments",
+                  "id": "#minecraft:bypasses_enchantments",
                   "expected": true
                 },
                 {
-                  "id": "minecraft:is_fire",
+                  "id": "#minecraft:is_fire",
                   "expected": true
                 },
                 {
-                  "id": "minecraft:is_lightning",
+                  "id": "#minecraft:is_lightning",
                   "expected": true
                 },
                 {
-                  "id": "minecraft:true_dmg",
+                  "id": "#minecraft:true_dmg",
                   "expected": true
                 },
                 {
-                  "id": "minecraft:is_fall",
+                  "id": "#minecraft:is_fall",
                   "expected": true
                 }
               ]

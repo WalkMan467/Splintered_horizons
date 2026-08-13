@@ -1,11 +1,10 @@
 {
-  "condition": "minecraft:inverted",
+  "type": "minecraft:inverted",
   "term": {
-    "condition": "minecraft:entity_properties",
+    "type": "minecraft:entity_properties",
     "entity": "this",
     "predicate": {
-      "type_specific": {
-        "type": "minecraft:player",
+      "minecraft:type_specific/player": {
         "gamemode": [
           "creative",
           "spectator"

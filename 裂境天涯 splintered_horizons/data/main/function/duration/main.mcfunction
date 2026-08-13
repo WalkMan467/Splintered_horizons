@@ -1,6 +1,7 @@
 
 
 execute \
+    on passengers \
     as @s[type=marker,tag=main.duration.timer] at @s \
     if score @s duration matches ..-1 run \
 function main:duration/kill

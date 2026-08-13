@@ -43,19 +43,19 @@ clear @s *[custom_data~{void_immunity:true}]
 execute \
     if items entity @s armor.head * run \
     return run \
-item modify entity @s armor.head {function:"minecraft:set_enchantments",enchantments:{"players:void_protection/void_immunity":0},add:false}
+item modify entity @s armor.head {type:"minecraft:set_enchantments",enchantments:{"players:void_protection/void_immunity":0},add:false}
 
 execute \
     if items entity @s armor.chest * run \
     return run \
-item modify entity @s armor.chest {function:"minecraft:set_enchantments",enchantments:{"players:void_protection/void_immunity":0},add:false}
+item modify entity @s armor.chest {type:"minecraft:set_enchantments",enchantments:{"players:void_protection/void_immunity":0},add:false}
 
 execute \
     if items entity @s armor.legs * run \
     return run \
-item modify entity @s armor.legs {function:"minecraft:set_enchantments",enchantments:{"players:void_protection/void_immunity":0},add:false}
+item modify entity @s armor.legs {type:"minecraft:set_enchantments",enchantments:{"players:void_protection/void_immunity":0},add:false}
 
 execute \
     if items entity @s armor.feet * run \
     return run \
-item modify entity @s armor.feet {function:"minecraft:set_enchantments",enchantments:{"players:void_protection/void_immunity":0},add:false}
+item modify entity @s armor.feet {type:"minecraft:set_enchantments",enchantments:{"players:void_protection/void_immunity":0},add:false}

@@ -5,7 +5,7 @@ bossbar remove chapter_2.elekiel.2
 
 execute \
     if entity @s[tag=monsters.elekiel.2.vampire_flower.target] run \
-advancement revoke @s only monsters:chapter_2/elekiel/2/vampire_flower/player_kill
+advancement revoke @s only bossfight:chapter_2/elekiel/skills/2/vampire_flower/player_kill
 
 execute \
     if entity @s[tag=monsters.elekiel.2.vampire_flower.target] run \

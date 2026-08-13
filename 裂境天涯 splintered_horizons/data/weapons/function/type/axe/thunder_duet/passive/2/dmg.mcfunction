@@ -1,5 +1,5 @@
 tag @e[type=!player,type=!#dummy_mob,distance=..6] add dmger
-scoreboard players set @p[sort=arbitrary,tag=atker] atk 350
+scoreboard players set @p[sort=arbitrary,tag=atker] dmg_formula.atk_percentage 350
 
 execute \
     as @p[sort=arbitrary,tag=atker] run \

@@ -1,5 +1,5 @@
 # Apply enchantments to the main hand item
-$item modify entity @s container.0 {function:"minecraft:set_enchantments",enchantments:$(enchantments),add:1b}
+$item modify entity @s container.0 {type:"minecraft:set_enchantments",enchantments:$(enchantments),add:1b}
 
 #　Particle & Playsound
 playsound minecraft:block.grindstone.use voice @a ~ ~1 ~ 1 1
