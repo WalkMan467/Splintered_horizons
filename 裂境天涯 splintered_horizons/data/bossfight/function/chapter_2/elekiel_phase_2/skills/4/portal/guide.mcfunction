@@ -3,7 +3,7 @@ execute \
     as 000001ff-0000-00d3-0000-020000000029 at @s \
     if predicate \
     {\
-        condition:"minecraft:entity_properties",\
+        type:"minecraft:entity_properties",\
         entity:"this",\
         predicate:\
         {\

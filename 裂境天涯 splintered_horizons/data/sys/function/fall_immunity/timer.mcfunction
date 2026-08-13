@@ -4,7 +4,7 @@ function sys:fall_immunity/height_calculation
 
 execute \
     if entity @s[tag=sys.fall_immunity] \
-    unless predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{flags:{is_on_ground:1b}}} run \
+    unless predicate {type:"minecraft:entity_properties",entity:"this",predicate:{flags:{is_on_ground:1b}}} run \
 attribute @s safe_fall_distance modifier add sys.fall_immunity 1024 add_value
 
 execute \

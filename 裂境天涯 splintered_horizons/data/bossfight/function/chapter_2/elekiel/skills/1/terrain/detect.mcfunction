@@ -3,14 +3,14 @@ schedule function bossfight:chapter_2/elekiel/skills/1/terrain/detect 1t
 execute \
     positioned 912 58 2018 \
     as @a[sort=arbitrary,distance=..30] at @s \
-    if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{location:{position:{y:50}},flags:{is_on_ground:1b}}} \
+    if predicate {type:"minecraft:entity_properties",entity:"this",predicate:{location:{position:{y:50}},flags:{is_on_ground:1b}}} \
     if block ~ ~-1 ~ black_concrete run \
 tag @s add temp
 
 execute \
     positioned 912 58 2018 \
     as @e[sort=arbitrary,distance=..30,limit=5,tag=monster.elekiel.1.mob,type=skeleton] at @s \
-    if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{location:{position:{y:50}},flags:{is_on_ground:1b}}} \
+    if predicate {type:"minecraft:entity_properties",entity:"this",predicate:{location:{position:{y:50}},flags:{is_on_ground:1b}}} \
     if block ~ ~-1 ~ black_concrete run \
 tag @s add temp
 

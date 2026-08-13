@@ -2,7 +2,7 @@ scoreboard players set #monster.elekiel_phase_2.skill.4.portal.actived global.ma
 
 execute \
     if items entity @p[sort=arbitrary,tag=monster.elekiel_phase_2.4.target] armor.chest * run \
-item modify entity @p[sort=arbitrary,tag=monster.elekiel_phase_2.4.target] armor.chest [{function:"minecraft:set_enchantments",enchantments:{"bossfight:chapter_2/elekiel_phase_2/skills/4/damage_immunity":1,"minecraft:binding_curse":1}}]
+item modify entity @p[sort=arbitrary,tag=monster.elekiel_phase_2.4.target] armor.chest [{type:"minecraft:set_enchantments",enchantments:{"bossfight:chapter_2/elekiel_phase_2/skills/4/damage_immunity":1,"minecraft:binding_curse":1}}]
 
 execute \
     unless items entity @p[sort=arbitrary,tag=monster.elekiel_phase_2.4.target] armor.chest * run \

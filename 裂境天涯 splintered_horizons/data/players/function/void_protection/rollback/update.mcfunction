@@ -27,7 +27,7 @@
 
 execute \
     as @a at @s \
-    if predicate {condition:"entity_properties",entity:"this",predicate:{flags:{is_on_ground:true}}} run \
+    if predicate {type:"entity_properties",entity:"this",predicate:{flags:{is_on_ground:true}}} run \
 function players:void_protection/rollback/update.guide
 
 schedule function players:void_protection/rollback/update 5s

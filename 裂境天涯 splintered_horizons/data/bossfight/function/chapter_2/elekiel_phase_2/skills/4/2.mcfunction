@@ -1,6 +1,6 @@
 execute \
     if items entity @p[tag=monster.elekiel_phase_2.4.portal.target] armor.chest *[!minecraft:custom_data~{damage_immunity:1b}] run \
-item modify entity @p[tag=monster.elekiel_phase_2.4.portal.target] armor.chest [{function:"minecraft:set_enchantments",enchantments:{"bossfight:chapter_2/elekiel_phase_2/skills/4/damage_immunity":0,"minecraft:binding_curse":0}}]
+item modify entity @p[tag=monster.elekiel_phase_2.4.portal.target] armor.chest [{type:"minecraft:set_enchantments",enchantments:{"bossfight:chapter_2/elekiel_phase_2/skills/4/damage_immunity":0,"minecraft:binding_curse":0}}]
 
 execute \
     if items entity @p[tag=monster.elekiel_phase_2.4.portal.target] armor.chest *[minecraft:custom_data~{damage_immunity:1b}] run \

@@ -27,7 +27,7 @@
 
 # Enter the Void
 execute \
-    if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{location:{position:{y:{max:-127}}}}} run \
+    if predicate {type:"minecraft:entity_properties",entity:"this",predicate:{location:{position:{y:{max:-127}}}}} run \
     return run \
 advancement grant @s only players:void_protection/in_void
 

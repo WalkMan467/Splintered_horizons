@@ -1,9 +1,9 @@
 execute \
-    if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{movement:{fall_distance:{min:4}}}} run \
+    if predicate {type:"minecraft:entity_properties",entity:"this",predicate:{movement:{fall_distance:{min:4}}}} run \
 tag @s add sys.fall_immunity.actived
 
 
 execute \
     if entity @s[tag=sys.fall_immunity.actived] \
-    if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{flags:{is_on_ground:1b}}} run \
+    if predicate {type:"minecraft:entity_properties",entity:"this",predicate:{flags:{is_on_ground:1b}}} run \
 function sys:fall_immunity/reset

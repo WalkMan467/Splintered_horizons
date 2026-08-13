@@ -1,9 +1,9 @@
-item modify entity @e[tag=weapon.flame_of_finality.rc.atk.1.motion,limit=20,type=!#minecraft:dummy_mob,distance=0..] weapon.mainhand {function:"minecraft:set_enchantments",enchantments:{"weapons:type/scythe/flame_of_finality/rc/attack/1/motion":0}}
-item modify entity @e[tag=weapon.flame_of_finality.rc.atk.1.motion,limit=20,type=!#minecraft:dummy_mob,distance=0..] weapon.offhand {function:"minecraft:set_enchantments",enchantments:{"weapons:type/scythe/flame_of_finality/rc/attack/1/motion":0}}
-item modify entity @e[tag=weapon.flame_of_finality.rc.atk.1.motion,limit=20,type=!#minecraft:dummy_mob,distance=0..] armor.head {function:"minecraft:set_enchantments",enchantments:{"weapons:type/scythe/flame_of_finality/rc/attack/1/motion":0}}
-item modify entity @e[tag=weapon.flame_of_finality.rc.atk.1.motion,limit=20,type=!#minecraft:dummy_mob,distance=0..] armor.chest {function:"minecraft:set_enchantments",enchantments:{"weapons:type/scythe/flame_of_finality/rc/attack/1/motion":0}}
-item modify entity @e[tag=weapon.flame_of_finality.rc.atk.1.motion,limit=20,type=!#minecraft:dummy_mob,distance=0..] armor.legs {function:"minecraft:set_enchantments",enchantments:{"weapons:type/scythe/flame_of_finality/rc/attack/1/motion":0}}
-item modify entity @e[tag=weapon.flame_of_finality.rc.atk.1.motion,limit=20,type=!#minecraft:dummy_mob,distance=0..] armor.feet {function:"minecraft:set_enchantments",enchantments:{"weapons:type/scythe/flame_of_finality/rc/attack/1/motion":0}}
+item modify entity @e[tag=weapon.flame_of_finality.rc.atk.1.motion,limit=20,type=!#minecraft:dummy_mob,distance=0..] weapon.mainhand {type:"minecraft:set_enchantments",enchantments:{"weapons:type/scythe/flame_of_finality/rc/attack/1/motion":0}}
+item modify entity @e[tag=weapon.flame_of_finality.rc.atk.1.motion,limit=20,type=!#minecraft:dummy_mob,distance=0..] weapon.offhand {type:"minecraft:set_enchantments",enchantments:{"weapons:type/scythe/flame_of_finality/rc/attack/1/motion":0}}
+item modify entity @e[tag=weapon.flame_of_finality.rc.atk.1.motion,limit=20,type=!#minecraft:dummy_mob,distance=0..] armor.head {type:"minecraft:set_enchantments",enchantments:{"weapons:type/scythe/flame_of_finality/rc/attack/1/motion":0}}
+item modify entity @e[tag=weapon.flame_of_finality.rc.atk.1.motion,limit=20,type=!#minecraft:dummy_mob,distance=0..] armor.chest {type:"minecraft:set_enchantments",enchantments:{"weapons:type/scythe/flame_of_finality/rc/attack/1/motion":0}}
+item modify entity @e[tag=weapon.flame_of_finality.rc.atk.1.motion,limit=20,type=!#minecraft:dummy_mob,distance=0..] armor.legs {type:"minecraft:set_enchantments",enchantments:{"weapons:type/scythe/flame_of_finality/rc/attack/1/motion":0}}
+item modify entity @e[tag=weapon.flame_of_finality.rc.atk.1.motion,limit=20,type=!#minecraft:dummy_mob,distance=0..] armor.feet {type:"minecraft:set_enchantments",enchantments:{"weapons:type/scythe/flame_of_finality/rc/attack/1/motion":0}}
 
 
 execute \

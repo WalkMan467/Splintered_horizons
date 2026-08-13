@@ -11,7 +11,7 @@ scoreboard players reset @s monster.segrina.skill.4.invincible
 # 移除無敵
 execute \
     if items entity @s armor.chest *[!custom_data~{invincible:true}] run \
-item modify entity @s armor.chest [{function:"minecraft:set_enchantments",enchantments:{"bossfight:chapter_2/segrina/skills/4/damage_immunity":0,binding_curse:0},add:0b}]
+item modify entity @s armor.chest [{type:"minecraft:set_enchantments",enchantments:{"bossfight:chapter_2/segrina/skills/4/damage_immunity":0,binding_curse:0},add:0b}]
 
 execute \
     if items entity @s armor.chest *[custom_data~{invincible:true}] run \

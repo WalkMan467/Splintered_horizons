@@ -2,9 +2,9 @@
   "pack": {
     "description": "生物附加速度專用的函式庫 by WalkMan467",
     "min_format": [
-      115,
+      116,
       0
     ],
-    "max_format": 115
+    "max_format": 116
   }
 }

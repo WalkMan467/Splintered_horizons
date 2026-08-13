@@ -5,7 +5,7 @@ function players:setting/waterfall_effect/reset
 
 
 execute \
-    if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{flags:{is_in_water:1b}}} run \
+    if predicate {type:"minecraft:entity_properties",entity:"this",predicate:{flags:{is_in_water:1b}}} run \
 return 0
 
 scoreboard players remove @s player.damp_fx.timer 1

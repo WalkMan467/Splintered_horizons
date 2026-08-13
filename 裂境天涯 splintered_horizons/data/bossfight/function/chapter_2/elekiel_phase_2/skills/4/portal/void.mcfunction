@@ -3,13 +3,13 @@
 tag @s add particle.portal.void
 
 execute \
-    if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{passenger:{}}} \
+    if predicate {type:"minecraft:entity_properties",entity:"this",predicate:{passenger:{}}} \
     on passengers \
     unless entity @s[tag=particle.portal.void] run \
 function bossfight:chapter_2/elekiel_phase_2/skills/4/portal/void
 
 execute \
-    if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{vehicle:{}}} \
+    if predicate {type:"minecraft:entity_properties",entity:"this",predicate:{vehicle:{}}} \
     on vehicle \
     unless entity @s[tag=particle.portal.void] run \
 function bossfight:chapter_2/elekiel_phase_2/skills/4/portal/void

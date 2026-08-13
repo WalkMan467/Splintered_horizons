@@ -2,7 +2,7 @@
 function bossfight:chapter_2/elekiel_phase_2/skills/cast/cast
 
 execute \
-    if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{location:{position:{y:{max:59}}}}} run \
+    if predicate {type:"minecraft:entity_properties",entity:"this",predicate:{location:{position:{y:{max:59}}}}} run \
 tp @s ~ 60 ~
 
 # Bossbar

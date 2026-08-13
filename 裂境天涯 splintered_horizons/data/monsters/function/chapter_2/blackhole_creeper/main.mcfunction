@@ -3,7 +3,7 @@
 function sys:attachable_component/group/guide
 
 execute \
-    unless predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{nbt:"{potion_contents:{custom_effects:[{id:\"minecraft:unluck\",amplifier:2b}]}}"}} run \
+    unless predicate {type:"minecraft:entity_properties",entity:"this",predicate:{nbt:"{potion_contents:{custom_effects:[{id:\"minecraft:unluck\",amplifier:2b}]}}"}} run \
 return 0
 
 execute \

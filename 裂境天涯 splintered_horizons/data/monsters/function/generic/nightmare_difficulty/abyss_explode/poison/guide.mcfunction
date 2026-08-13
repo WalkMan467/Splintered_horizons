@@ -2,7 +2,7 @@ particle dust_color_transition{from_color:[0.000,0.020,0.012],to_color:[0.000,0.
 particle block{block_state:"minecraft:sculk"} ~ ~ ~ 0 0 0 0 1 force @a
 
 execute \
-    if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{flags:{is_on_ground:1b}}} run \
+    if predicate {type:"minecraft:entity_properties",entity:"this",predicate:{flags:{is_on_ground:1b}}} run \
 function monsters:generic/nightmare_difficulty/abyss_explode/poison/end
 
 execute \

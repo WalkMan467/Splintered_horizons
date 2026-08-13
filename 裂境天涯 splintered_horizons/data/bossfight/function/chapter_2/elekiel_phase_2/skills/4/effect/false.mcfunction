@@ -17,7 +17,7 @@ effect clear @s fire_resistance
 effect clear @s resistance
 effect clear @s darkness
 
-item modify entity @s armor.chest {function:"minecraft:set_enchantments",enchantments:{"bossfight:chapter_2/elekiel_phase_2/skills/4/damage_immunity":0,"minecraft:binding_curse":0}}
+item modify entity @s armor.chest {type:"minecraft:set_enchantments",enchantments:{"bossfight:chapter_2/elekiel_phase_2/skills/4/damage_immunity":0,"minecraft:binding_curse":0}}
 
 scoreboard players reset @s monster.elekiel_phase_2.skill.4.effect.void
 

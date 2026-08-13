@@ -11,7 +11,7 @@ execute \
     if biome ~ ~ ~ world_area:chapter_3/finalitys_embrace_rift_trap \
     positioned 1101 206 148 \
     as @a[distance=..20] \
-    if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{location:{can_see_sky:0b}}} at @s run \
+    if predicate {type:"minecraft:entity_properties",entity:"this",predicate:{location:{can_see_sky:0b}}} at @s run \
 function trap:chapter_3/chest/1/true
 
 
