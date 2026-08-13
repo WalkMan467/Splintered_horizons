@@ -4,6 +4,7 @@ data merge entity @s {DeathLootTable:"",CanPickUpLoot:0b,Health:12f,Tags:["monst
 execute \
     store result score @s monster.skill.cast.at run \
 random value 60..160
+scoreboard players operation @s monster.skill.cast.dur = @s monster.skill.cast.at
 scoreboard players operation @s monster.skill.cast.at += #now global.time
 scoreboard players reset @s monster.skill.cast.tip
 

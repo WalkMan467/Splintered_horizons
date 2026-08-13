@@ -9,6 +9,7 @@ summon skeleton ~ ~ ~ {CanPickUpLoot:0b,Health:12f,Tags:["monster","monster.fore
 execute \
     store result score @n[tag=monsters.spawn,type=skeleton,tag=monster.forest_messenger] monster.skill.cast.at run \
 random value 60..160
+scoreboard players operation @n[tag=monsters.spawn,type=skeleton,tag=monster.forest_messenger] monster.skill.cast.dur = @n[tag=monsters.spawn,type=skeleton,tag=monster.forest_messenger] monster.skill.cast.at
 scoreboard players operation @n[tag=monsters.spawn,type=skeleton,tag=monster.forest_messenger] monster.skill.cast.at += #now global.time
 scoreboard players reset @n[tag=monsters.spawn,type=skeleton,tag=monster.forest_messenger] monster.skill.cast.tip
 

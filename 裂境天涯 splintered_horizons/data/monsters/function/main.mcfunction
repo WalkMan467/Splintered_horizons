@@ -35,8 +35,8 @@ function monsters:chapter_3/finality_creeper/main
 
 # 剩餘冷卻，給預告與 debug 用（絕對時間制看不到倒數，需要時現算）
 
-scoreboard players operation @s monster.skill.cast.left = @s monster.skill.cast.at
-scoreboard players operation @s monster.skill.cast.left -= #now global.time
+scoreboard players operation @s monster.skill.cast.cd = @s monster.skill.cast.at
+scoreboard players operation @s monster.skill.cast.cd -= #now global.time
 
 # Monster is about to cast a spell (1s warning)
 # 用 1..30 而非剛好等於 30：怪可能被節流跳過某些 tick，剛好踩在 30 的那一刻不保證看得到。
@@ -45,12 +45,12 @@ scoreboard players operation @s monster.skill.cast.left -= #now global.time
 execute \
     as @s[tag=monster,tag=!hide_skill_tip] \
     unless score @s monster.skill.cast.tip matches 1 \
-    if score @s monster.skill.cast.left matches 1..30 \
+    if score @s monster.skill.cast.cd matches 1..30 \
     unless score @s sys.skills_freeze matches 0.. run \
 function monsters:unlease_skill_tip/use
 
 execute \
-    if score @s monster.skill.cast.left matches ..30 run \
+    if score @s monster.skill.cast.cd matches ..30 run \
 scoreboard players set @s monster.skill.cast.tip 1
 
 # Monster skill cooldown

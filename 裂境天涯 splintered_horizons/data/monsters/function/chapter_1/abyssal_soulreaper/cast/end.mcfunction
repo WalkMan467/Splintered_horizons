@@ -19,5 +19,6 @@ attribute @s minecraft:safe_fall_distance modifier remove monster.abyssal_soulre
 execute \
     store result score @s monster.skill.cast.at run \
 random value 60..120
+scoreboard players operation @s monster.skill.cast.dur = @s monster.skill.cast.at
 scoreboard players operation @s monster.skill.cast.at += #now global.time
 scoreboard players reset @s monster.skill.cast.tip
