@@ -1,3 +1,15 @@
+# ===================================================
+# 右鍵 失敗 skill use failed / right click failure skill use failed
+
+    ## Guide [ function weapons:rc/failure/skill_use_failed ] >>> 右鍵 失敗 skill use failed / right click failure skill use failed
+    ## Guide [ function weapons:type/axe/thunder_duet/rc/use ] >>> 斧 雷霆二重奏 右鍵 觸發 / axe thunder duet right click activate
+    ## Guide [ function weapons:type/scythe/flame_of_abyss/rc/use ] >>> 鐮 深淵雙重火 右鍵 觸發 / scythe flame of abyss right click activate
+    ## Guide [ function weapons:type/scythe/morphing_beast/rc/use ] >>> 鐮 變形異獸 右鍵 觸發 / scythe morphing beast right click activate
+    ## Guide [ function weapons:type/sword/aquilumera/rc/use ] >>> 水之魔劍 水鏡之光 右鍵 觸發 / sword aquilumera right click activate
+    ## Guide [ function weapons:type/sword/grip_of_withering/rc/use ] >>> 劍 凋零之握 右鍵 觸發 / sword grip of withering right click activate
+
+# ===================================================
+
 # 一般主動技專用顯示冷卻時間
 
 scoreboard players set %2 weapon.cd.math 2

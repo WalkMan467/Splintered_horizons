@@ -1,3 +1,13 @@
+# ===================================================
+# 鐮 終焉之墟 右鍵 觸發 / scythe ruins of the finality right click activate
+
+    ## Guide [ function weapons:type/scythe/ruins_of_the_finality/rc/use ] >>> 鐮 終焉之墟 右鍵 觸發 / scythe ruins of the finality right click activate
+    ## Guide [ function weapons:rc/failure/ultimate_use_failed ] >>> 右鍵 失敗 ultimate use failed / right click failure ultimate use failed
+    ## Guide [ function weapons:type/scythe/ruins_of_the_finality/rc/blade/1/use ] >>> 鐮 終焉之墟 右鍵 blade 階段 1 觸發 / scythe ruins of the finality right click blade step 1 activate
+    ## Guide [ function weapons:type/scythe/ruins_of_the_finality/rc/animation/2/use ] >>> 鐮 終焉之墟 右鍵 動畫 階段 2 觸發 / scythe ruins of the finality right click animation step 2 activate
+
+# ===================================================
+
 scoreboard players add @s player.ultimate 0
 
 execute \

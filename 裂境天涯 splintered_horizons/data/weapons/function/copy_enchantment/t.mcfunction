@@ -1,3 +1,12 @@
+# ===================================================
+# 複製附魔 t / copy enchantment t
+
+    ## Guide [ function weapons:copy_enchantment/t ] >>> 複製附魔 t / copy enchantment t
+    ## Guide [ function weapons:copy_enchantment/weapon ] >>> 複製附魔 武器 / copy enchantment weapon
+    ## Guide [ function weapons:copy_enchantment/armor ] >>> 複製附魔 盔甲 / copy enchantment armor
+
+# ===================================================
+
 
 execute \
     if items entity @s weapon.mainhand *[item_model="material/energy_infusion_stone/weapon/base" | item_model="material/energy_infusion_stone/weapon/rare" | item_model="material/energy_infusion_stone/weapon/epic" | item_model="material/energy_infusion_stone/weapon/mythic" | item_model="material/energy_infusion_stone/weapon/legendary"] run \

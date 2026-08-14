@@ -1,3 +1,11 @@
+# ===================================================
+# 紀念碑 synchronize data / monument synchronize data
+
+    ## Guide [ function weapons:monument/synchronize_data ] >>> 紀念碑 synchronize data / monument synchronize data
+    ## Guide [ function main:guide/player ] >>> 分派 玩家 / dispatch player
+
+# ===================================================
+
 
 execute \
     if score #weapons:monument/area_1 global.main matches 1.. run \

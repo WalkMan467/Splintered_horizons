@@ -1,3 +1,10 @@
+# ===================================================
+# get arrow 記憶之冰 符文箭矢 / get starry sky frost arrow
+
+    ## Guide [ function weapons:get/arrow/starry_sky_frost_arrow ] >>> get arrow 記憶之冰 符文箭矢 / get starry sky frost arrow
+
+# ===================================================
+
 give @s arrow[item_name=[{"text":"\uE009","font":"minecraft:icon","color":"white"},{"translate":"weapon.starry_sky_frost_arrow","color":"#5de7ff","font":"minecraft:default","italic":false,"bold":true},{"text":"\uE009","font":"minecraft:icon","color":"white"}],lore=[[{"translate":"weapon.starry_sky_frost_arrow.type","italic":false,"color":"dark_gray"}],{"text":""},[{"translate":"weapon.starry_sky_frost_arrow.story.1","italic":false,"color":"blue"}],[{"translate":"weapon.starry_sky_frost_arrow.story.2","italic":false,"color":"blue"}],{"text":""},[{"text":"","italic":false},{"translate":"weapon.starry_sky_frost_arrow.skill","color":"#5de7ff","bold":true},{"text":"  "}],[{"text":"","italic":false},{"translate":"weapon.starry_sky_frost_arrow.skill.1","color":"#277cb4"}],[{"text":"","italic":false},{"translate":"weapon.starry_sky_frost_arrow.skill.2","color":"#277cb4"}]],attribute_modifiers=[{id:"base_attack_speed",type:"attack_speed",amount:0,operation:"add_value",slot:"mainhand"}],item_model="arrow/starry_sky_frost_arrow",custom_data={type:"arrow",rarity:"epic",id:"starry_sky_frost_arrow",ground_detect:1b},tooltip_display={hidden_components:["enchantments","attribute_modifiers","unbreakable"]},tooltip_style="epic"] 64
 
 # "weapon.starry_sky_frost_arrow" : "星空之霜 - 符文箭矢"

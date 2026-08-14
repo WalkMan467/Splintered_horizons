@@ -1,3 +1,14 @@
+# ===================================================
+# 地震之斧 動畫 重置 / earthquake axe animation reset
+
+    ## Guide [ function weapons:type/axe/earthquake_axe/animation/reset ] >>> 地震之斧 動畫 重置 / earthquake axe animation reset
+    ## Guide [ function players:hide/false ] >>> hide 不成立 / hide false branch
+    ## Guide [ function players:detect/sneak ] >>> 偵測 sneak / detect sneak
+    ## Guide [ function weapons:type/axe/earthquake_axe/animation/main ] >>> 地震之斧 動畫 主迴圈 / earthquake axe animation loop
+    ## Guide [ function weapons:type/axe/earthquake_axe/animation/stop ] >>> 地震之斧 動畫 停止 / earthquake axe animation stop
+
+# ===================================================
+
 function players:hide/false
 
 scoreboard players reset @s weapon.earthquake_axe.animation

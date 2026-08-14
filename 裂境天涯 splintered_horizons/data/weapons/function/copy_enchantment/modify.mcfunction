@@ -1,3 +1,11 @@
+# ===================================================
+# 複製附魔 修改 / copy enchantment modify
+
+    ## Guide [ function weapons:copy_enchantment/modify ] >>> 複製附魔 修改 / copy enchantment modify
+    ## Guide [ function weapons:copy_enchantment/use ] >>> 複製附魔 觸發 / copy enchantment activate
+
+# ===================================================
+
 # Apply enchantments to the main hand item
 $item modify entity @s weapon.mainhand {type:"minecraft:set_enchantments",enchantments:$(enchantments),add:0b}
 

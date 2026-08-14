@@ -1,3 +1,12 @@
+# ===================================================
+# 斧 雷霆二重奏 右鍵 觸發 / axe thunder duet right click activate
+
+    ## Guide [ function weapons:type/axe/thunder_duet/rc/use ] >>> 斧 雷霆二重奏 右鍵 觸發 / axe thunder duet right click activate
+    ## Guide [ function weapons:rc/failure/skill_use_failed ] >>> 右鍵 失敗 skill use failed / right click failure skill use failed
+    ## Guide [ function weapons:type/axe/thunder_duet/rc/setup ] >>> 斧 雷霆二重奏 右鍵 初始化 / axe thunder duet right click setup
+
+# ===================================================
+
 scoreboard players add @s weapon.thunder_duet.cd 0
 
 execute \

@@ -1,3 +1,11 @@
+# ===================================================
+# 地震之斧 動畫 on hit / earthquake axe animation on hit
+
+    ## Guide [ function weapons:type/axe/earthquake_axe/animation/on_hit ] >>> 地震之斧 動畫 on hit / earthquake axe animation on hit
+    ## Guide [ function dmg_formula:weapons/type/axe/earthquake_axe/calculate ] >>> weapons 地震之斧 計算 / weapons earthquake axe calculate
+
+# ===================================================
+
 function particle:zeuss_lightning_wave/use
 particle dust_pillar{block_state:"minecraft:cobbled_deepslate"} ~ ~1 ~ 0.5 0.5 0.5 0 200 normal
 

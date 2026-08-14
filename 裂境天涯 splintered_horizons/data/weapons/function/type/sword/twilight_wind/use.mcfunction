@@ -1,3 +1,10 @@
+# ===================================================
+# 劍 暮光之風 觸發 / sword twilight wind activate
+
+    ## Guide [ function weapons:type/sword/twilight_wind/use ] >>> 劍 暮光之風 觸發 / sword twilight wind activate
+
+# ===================================================
+
 
 # player
 tag @s add twilight_wind.user

@@ -1,3 +1,11 @@
+# ===================================================
+# 投擲 宙斯閃電 lightning 召喚 / thrown zeuss lightning lightning summon
+
+    ## Guide [ function weapons:type/drop/zeuss_lightning/lightning/summon ] >>> 投擲 宙斯閃電 lightning 召喚 / thrown zeuss lightning lightning summon
+    ## Guide [ function weapons:type/drop/zeuss_lightning/rc/run ] >>> 投擲 宙斯閃電 右鍵 執行 / thrown zeuss lightning right click run
+
+# ===================================================
+
 scoreboard players set @s player.click.interval 5
 clear @s *[custom_data~{type:"drop",weapon:"zeuss_lightning"}] 1
 

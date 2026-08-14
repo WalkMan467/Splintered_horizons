@@ -1,3 +1,12 @@
+# ===================================================
+# 劍 回音律動 觸發 / sword echo rhythm activate
+
+    ## Guide [ function weapons:type/sword/echo_rhythm/use ] >>> 劍 回音律動 觸發 / sword echo rhythm activate
+    ## Guide [ function weapons:type/sword/echo_rhythm/damage/normal ] >>> 劍 回音律動 傷害 normal / sword echo rhythm damage normal
+    ## Guide [ function weapons:type/sword/echo_rhythm/damage/stronger ] >>> 劍 回音律動 傷害 stronger / sword echo rhythm damage stronger
+
+# ===================================================
+
 scoreboard players add @s weapon.echo_rhythm.cd 0
 
 execute \

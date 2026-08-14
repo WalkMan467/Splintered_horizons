@@ -1,3 +1,11 @@
+# ===================================================
+# 神聖之火 符文箭矢 範圍 / holy fire arrow range
+
+    ## Guide [ function weapons:type/arrows/holy_fire_arrow/range ] >>> 神聖之火 符文箭矢 範圍 / holy fire arrow range
+    ## Guide [ function weapons:type/arrows/holy_fire_arrow/use ] >>> 神聖之火 符文箭矢 觸發 / holy fire arrow activate
+
+# ===================================================
+
 scoreboard players add #weapon.holy_fire_arrow.range global.main 3
 
 particle dust_color_transition{from_color:[1.0,1.000,1.0],scale:1,to_color:[0.5,0.5,0.5]} ^ ^ ^4 0 0 0 1 0 force

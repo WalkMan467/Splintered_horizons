@@ -1,3 +1,12 @@
+# ===================================================
+# 弓 射手座 右鍵 charged / bow sagittarius right click charged
+
+    ## Guide [ function weapons:type/bow/sagittarius/rc/charged ] >>> 弓 射手座 右鍵 charged / bow sagittarius right click charged
+    ## Guide [ function weapons:type/bow/sagittarius/rc/sfx ] >>> 弓 射手座 右鍵 sfx / bow sagittarius right click sfx
+    ## Guide [ function weapons:type/bow/sagittarius/rc/use ] >>> 弓 射手座 右鍵 觸發 / bow sagittarius right click activate
+
+# ===================================================
+
 scoreboard players add @s weapon.sagittarius.charged.sfx 1
 
 particle dust_color_transition{from_color:[0.000,1.000,0.867],to_color:[0.749,1.000,0.969],scale:1} ~ ~1 ~ 0.5 0.5 0.5 1 2 normal @a

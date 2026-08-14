@@ -1,3 +1,12 @@
+# ===================================================
+# get 紀念碑 area 2 / get monument area 2
+
+    ## Guide [ function weapons:get/monument/area_2 ] >>> get 紀念碑 area 2 / get monument area 2
+    ## Guide [ function bossfight:chapter_2/elekiel_phase_2/skills/kill ] >>> chapter 2 elekiel phase 2 skills 擊殺 / chapter 2 elekiel phase 2 skills on kill
+    ## Guide [ function players:setting/recover_lost_objective_items/objective_items/silvaverdis ] >>> setting recover lost objective items objective items 草之魔劍 翠綠茵草 / setting recover lost objective items objective items silvaverdis
+
+# ===================================================
+
 give @s stone_sword[item_name=[{"translate":"weapon.silvaverdis","color":"#00dd00","italic":false,"bold":true}],lore=[[{"translate":"weapon.silvaverdis.type","italic":false,"color":"dark_gray"}],{"text":""},[{"translate":"weapon.silvaverdis.story.1","italic":false,"color":"blue"}],[{"translate":"weapon.silvaverdis.story.2","italic":false,"color":"blue"}]],attribute_modifiers=[{id:"base_attack_damage",type:"attack_damage",amount:6,operation:"add_value",slot:"mainhand"},{id:"base_attack_speed",type:"attack_speed",amount:-2.3,operation:"add_value",slot:"mainhand"}],max_stack_size=1,unbreakable={},item_model="sword/silvaverdis/1",custom_data={rc:1b,type:"sword",rarity:"monument",weapon:"silvaverdis",monument:2,kept_item:true}]
 
 # "weapon.silvaverdis" : "翠綠茵草"

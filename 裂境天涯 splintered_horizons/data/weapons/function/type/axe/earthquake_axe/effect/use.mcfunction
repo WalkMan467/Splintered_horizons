@@ -1,3 +1,12 @@
+# ===================================================
+# 地震之斧 效果 觸發 / earthquake axe effect activate
+
+    ## Guide [ function weapons:type/axe/earthquake_axe/effect/use ] >>> 地震之斧 效果 觸發 / earthquake axe effect activate
+    ## Guide [ function weapons:type/axe/earthquake_axe/effect/fx ] >>> 地震之斧 效果 特效 / earthquake axe effect visuals
+    ## Guide [ function dmg_formula:weapons/type/axe/earthquake_axe/passive/calculate ] >>> weapons 地震之斧 被動 計算 / weapons earthquake axe passive calculate
+
+# ===================================================
+
 
 execute \
     on attacker run \

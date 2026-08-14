@@ -1,3 +1,10 @@
+# ===================================================
+# 紀念碑 area 3 / monument area 3
+
+    ## Guide [ function weapons:monument/area_3 ] >>> 紀念碑 area 3 / monument area 3
+
+# ===================================================
+
 
 execute \
     if score #weapons:monument/area_3 global.main matches 1 run \

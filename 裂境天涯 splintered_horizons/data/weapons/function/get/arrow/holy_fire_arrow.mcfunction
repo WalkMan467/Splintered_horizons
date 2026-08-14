@@ -1,3 +1,10 @@
+# ===================================================
+# get arrow 神聖之火 符文箭矢 / get holy fire arrow
+
+    ## Guide [ function weapons:get/arrow/holy_fire_arrow ] >>> get arrow 神聖之火 符文箭矢 / get holy fire arrow
+
+# ===================================================
+
 give @s arrow[item_name=[{"text":"\uE008","font":"minecraft:icon","color":"white"},{"translate":"weapon.holy_fire_arrow","color":"#e6e6e6","font":"minecraft:default","italic":false,"bold":true},{"text":"\uE008","font":"minecraft:icon","color":"white"}],lore=[[{"translate":"weapon.holy_fire_arrow.type","italic":false,"color":"dark_gray"}],{"text":""},[{"translate":"weapon.holy_fire_arrow.story.1","italic":false,"color":"blue"}],[{"translate":"weapon.holy_fire_arrow.story.2","italic":false,"color":"blue"}],{"text":""},[{"text":"","italic":false},{"translate":"weapon.holy_fire_arrow.skill","color":"#e6e6e6","bold":true},{"text":"  "}],[{"text":"","italic":false},{"translate":"weapon.holy_fire_arrow.skill.1","color":"#aaaaaa"}],[{"text":"","italic":false},{"translate":"weapon.holy_fire_arrow.skill.2","color":"#aaaaaa"}]],attribute_modifiers=[{id:"base_attack_speed",type:"attack_speed",amount:0,operation:"add_value",slot:"mainhand"}],item_model="arrow/holy_fire_arrow",custom_data={type:"arrow",rarity:"epic",id:"holy_fire_arrow",ground_detect:1b},tooltip_display={hidden_components:["enchantments","attribute_modifiers","unbreakable"]},tooltip_style="epic"] 64
 
 # "weapon.holy_fire_arrow" : "神聖之火 - 符文箭矢"

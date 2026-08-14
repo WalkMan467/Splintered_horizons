@@ -1,3 +1,13 @@
+# ===================================================
+# 射手座箭矢 觸發 / sagittarius arrow activate
+
+    ## Guide [ function weapons:type/arrows/sagittarius_arrow/use ] >>> 射手座箭矢 觸發 / sagittarius arrow activate
+    ## Guide [ function weapons:type/arrows/sagittarius_arrow/range ] >>> 射手座箭矢 範圍 / sagittarius arrow range
+    ## Guide [ function sys:dummy_mob/interface ] >>> dummy mob interface / dummy mob interface
+    ## Guide [ function weapons:type/arrows/detect ] >>> 箭矢 偵測 / arrow detect
+
+# ===================================================
+
 advancement revoke @a only weapons:arrows/sagittarius_arrow
 
 scoreboard players reset #weapon.sagittarius_arrow.range global.main

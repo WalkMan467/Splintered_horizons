@@ -1,3 +1,12 @@
+# ===================================================
+# 風力劍 主迴圈 / wind sword loop
+
+    ## Guide [ function weapons:type/sword/wind_sword/main ] >>> 風力劍 主迴圈 / wind sword loop
+    ## Guide [ function weapons:type/sword/wind_sword/wind/summon ] >>> 風力劍 wind 召喚 / wind sword wind summon
+    ## Guide [ function weapons:type/core/player ] >>> 核心 玩家 / core player
+
+# ===================================================
+
 scoreboard players add @s weapon.wind_sword.timer 1
 
 

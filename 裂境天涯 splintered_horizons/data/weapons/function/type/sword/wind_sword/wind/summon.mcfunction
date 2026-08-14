@@ -1,3 +1,11 @@
+# ===================================================
+# 風力劍 wind 召喚 / wind sword wind summon
+
+    ## Guide [ function weapons:type/sword/wind_sword/wind/summon ] >>> 風力劍 wind 召喚 / wind sword wind summon
+    ## Guide [ function weapons:type/sword/wind_sword/main ] >>> 風力劍 主迴圈 / wind sword loop
+
+# ===================================================
+
 
 # wind
 

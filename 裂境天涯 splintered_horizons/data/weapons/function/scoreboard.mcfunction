@@ -1,3 +1,12 @@
+# ===================================================
+# 計分板初始化 / scoreboard init
+
+    ## Guide [ function weapons:scoreboard ] >>> 計分板初始化 / scoreboard init
+    ## Guide [ function main:load ] >>> load / load
+    ## Guide [ function players:setup ] >>> 初始化 / setup
+
+# ===================================================
+
 # 其他
 
 scoreboard objectives add weapon.cd.math dummy "CD 冷卻換算"

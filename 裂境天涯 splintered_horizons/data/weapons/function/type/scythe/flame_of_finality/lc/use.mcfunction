@@ -1,3 +1,14 @@
+# ===================================================
+# 鐮 終焉雙重火 左鍵 觸發 / scythe flame of finality left click activate
+
+    ## Guide [ function weapons:type/scythe/flame_of_finality/lc/use ] >>> 鐮 終焉雙重火 左鍵 觸發 / scythe flame of finality left click activate
+    ## Guide [ function weapons:type/scythe/flame_of_finality/lc/1/use ] >>> 鐮 終焉雙重火 左鍵 階段 1 觸發 / scythe flame of finality left click step 1 activate
+    ## Guide [ function weapons:type/scythe/flame_of_finality/lc/2/use ] >>> 鐮 終焉雙重火 左鍵 階段 2 觸發 / scythe flame of finality left click step 2 activate
+    ## Guide [ function weapons:type/scythe/flame_of_finality/lc/3/use ] >>> 鐮 終焉雙重火 左鍵 階段 3 觸發 / scythe flame of finality left click step 3 activate
+    ## Guide [ function weapons:type/scythe/flame_of_finality/lc/4/use ] >>> 鐮 終焉雙重火 左鍵 階段 4 觸發 / scythe flame of finality left click step 4 activate
+
+# ===================================================
+
 execute if score @s player.click.interval matches 1.. run return 0
 
 scoreboard players add @s weapon.flame_of_finality.attack 1

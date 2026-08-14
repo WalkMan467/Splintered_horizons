@@ -1,3 +1,13 @@
+# ===================================================
+# 水之魔劍 水鏡之光 右鍵 觸發 / sword aquilumera right click activate
+
+    ## Guide [ function weapons:type/sword/aquilumera/rc/use ] >>> 水之魔劍 水鏡之光 右鍵 觸發 / sword aquilumera right click activate
+    ## Guide [ function weapons:rc/failure/skill_use_failed ] >>> 右鍵 失敗 skill use failed / right click failure skill use failed
+    ## Guide [ function weapons:type/sword/aquilumera/switch/water/use ] >>> 水之魔劍 水鏡之光 切換 water 觸發 / sword aquilumera switch water activate
+    ## Guide [ function weapons:type/sword/aquilumera/switch/light/use ] >>> 水之魔劍 水鏡之光 切換 light 觸發 / sword aquilumera switch light activate
+
+# ===================================================
+
 scoreboard players add @s weapon.aquilumera.cd 0
 
 execute \

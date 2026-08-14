@@ -1,3 +1,13 @@
+# ===================================================
+# 劍 夜幕 右鍵 觸發 / sword nightfall right click activate
+
+    ## Guide [ function weapons:type/sword/nightfall/rc/use ] >>> 劍 夜幕 右鍵 觸發 / sword nightfall right click activate
+    ## Guide [ function weapons:rc/failure/skill_use_failed ] >>> 右鍵 失敗 skill use failed / right click failure skill use failed
+    ## Guide [ function weapons:type/sword/nightfall/rc/state/1 ] >>> 劍 夜幕 右鍵 狀態 階段 1 / sword nightfall right click state step 1
+    ## Guide [ function weapons:type/sword/nightfall/rc/state/0 ] >>> 劍 夜幕 右鍵 狀態 階段 0 / sword nightfall right click state step 0
+
+# ===================================================
+
 scoreboard players add @s weapon.nightfall.state 0
 scoreboard players add @s weapon.nightfall.cd 0
 

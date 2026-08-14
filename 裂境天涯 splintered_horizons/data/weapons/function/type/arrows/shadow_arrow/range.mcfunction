@@ -1,3 +1,11 @@
+# ===================================================
+# 至深之暗 符文箭矢 範圍 / shadow arrow range
+
+    ## Guide [ function weapons:type/arrows/shadow_arrow/range ] >>> 至深之暗 符文箭矢 範圍 / shadow arrow range
+    ## Guide [ function weapons:type/arrows/shadow_arrow/use ] >>> 至深之暗 符文箭矢 觸發 / shadow arrow activate
+
+# ===================================================
+
 scoreboard players add #weapon.shadow_arrow.range global.main 3
 
 particle dust_color_transition{from_color:[0.239,0.000,0.420],scale:1,to_color:[0.012,0.000,0.098]} ^ ^ ^4 0 0 0 1 0 force

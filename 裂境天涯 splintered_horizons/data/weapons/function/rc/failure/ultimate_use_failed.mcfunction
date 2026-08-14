@@ -1,3 +1,14 @@
+# ===================================================
+# 右鍵 失敗 ultimate use failed / right click failure ultimate use failed
+
+    ## Guide [ function weapons:rc/failure/ultimate_use_failed ] >>> 右鍵 失敗 ultimate use failed / right click failure ultimate use failed
+    ## Guide [ function weapons:type/axe/earthquake_axe/rc/use ] >>> 地震之斧 右鍵 觸發 / earthquake axe right click activate
+    ## Guide [ function weapons:type/scythe/flame_of_finality/rc/use ] >>> 鐮 終焉雙重火 右鍵 觸發 / scythe flame of finality right click activate
+    ## Guide [ function weapons:type/scythe/ruins_of_the_finality/rc/use ] >>> 鐮 終焉之墟 右鍵 觸發 / scythe ruins of the finality right click activate
+    ## Guide [ function weapons:type/sword/echo_rhythm/rc/use ] >>> 劍 回音律動 右鍵 觸發 / sword echo rhythm right click activate
+
+# ===================================================
+
 # 終焉技專用顯示冷卻時間
 
 scoreboard players set %2 weapon.ultimate.cd.math 2

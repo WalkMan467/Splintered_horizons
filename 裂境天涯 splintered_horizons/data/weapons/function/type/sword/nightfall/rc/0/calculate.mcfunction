@@ -1,3 +1,12 @@
+# ===================================================
+# 劍 夜幕 右鍵 階段 0 計算 / sword nightfall right click step 0 calculate
+
+    ## Guide [ function weapons:type/sword/nightfall/rc/0/calculate ] >>> 劍 夜幕 右鍵 階段 0 計算 / sword nightfall right click step 0 calculate
+    ## Guide [ function weapons:type/scythe/morphing_beast/rc/0/effect ] >>> 鐮 變形異獸 右鍵 階段 0 效果 / scythe morphing beast right click step 0 effect
+    ## Guide [ function weapons:type/sword/nightfall/rc/0/effect ] >>> 劍 夜幕 右鍵 階段 0 效果 / sword nightfall right click step 0 effect
+
+# ===================================================
+
 scoreboard players operation #health player.max_health = @s player.health
 scoreboard players operation #temp player.max_health = @s player.max_health
 

@@ -1,3 +1,10 @@
+# ===================================================
+# 碎岩大劍 右鍵 防禦 default fx / sword rock crushing greatsword right click defense default fx
+
+    ## Guide [ function weapons:type/sword/rock_crushing_greatsword/rc/defense/default_fx ] >>> 碎岩大劍 右鍵 防禦 default fx / sword rock crushing greatsword right click defense default fx
+
+# ===================================================
+
 advancement revoke @s only weapons:type/sword/rock_crushing_greatsword/defense
 
 

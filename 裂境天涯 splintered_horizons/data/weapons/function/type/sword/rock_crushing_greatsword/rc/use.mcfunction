@@ -1,3 +1,10 @@
+# ===================================================
+# 碎岩大劍 右鍵 觸發 / sword rock crushing greatsword right click activate
+
+    ## Guide [ function weapons:type/sword/rock_crushing_greatsword/rc/use ] >>> 碎岩大劍 右鍵 觸發 / sword rock crushing greatsword right click activate
+
+# ===================================================
+
 
 execute \
     if score @s player.click.interval matches 1.. run \

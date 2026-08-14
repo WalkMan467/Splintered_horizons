@@ -1,3 +1,11 @@
+# ===================================================
+# get 紀念碑 area 3 / get monument area 3
+
+    ## Guide [ function weapons:get/monument/area_3 ] >>> get 紀念碑 area 3 / get monument area 3
+    ## Guide [ function players:setting/recover_lost_objective_items/objective_items/pyrosolis ] >>> setting recover lost objective items objective items 火之魔劍 地獄之火 / setting recover lost objective items objective items pyrosolis
+
+# ===================================================
+
 give @s iron_sword[item_name=[{"translate":"weapon.pyrosolis","color":"#7a0000","italic":false,"bold":true}],lore=[[{"translate":"weapon.pyrosolis.type","italic":false,"color":"dark_gray"}],{"text":""},[{"translate":"weapon.pyrosolis.story.1","italic":false,"color":"blue"}],[{"translate":"weapon.pyrosolis.story.2","italic":false,"color":"blue"}]],attribute_modifiers=[{id:"base_attack_damage",type:"attack_damage",amount:5.0,operation:"add_value",slot:"mainhand"},{id:"base_attack_speed",type:"attack_speed",amount:-2.4,operation:"add_value",slot:"mainhand"}],max_stack_size=1,max_damage=300,damage=0,item_model="minecraft:sword/infernal_blaze/1",custom_data={rc:1b,type:"sword",rarity:"monument",weapon:"pyrosolis",monument:3,kept_item:true},consumable={consume_seconds:10000,animation:"none",has_consume_particles:false},minecraft:enchantments={"minecraft:mending":1},tooltip_style="mythic",enchantment_glint_override=false]
 
 # "weapon.pyrosolis" : "地獄之火"

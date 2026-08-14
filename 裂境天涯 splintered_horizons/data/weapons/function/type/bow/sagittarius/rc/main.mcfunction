@@ -1,3 +1,12 @@
+# ===================================================
+# 弓 射手座 右鍵 主迴圈 / bow sagittarius right click loop
+
+    ## Guide [ function weapons:type/bow/sagittarius/rc/main ] >>> 弓 射手座 右鍵 主迴圈 / bow sagittarius right click loop
+    ## Guide [ function weapons:type/bow/sagittarius/rc/run ] >>> 弓 射手座 右鍵 執行 / bow sagittarius right click run
+    ## Guide [ function weapons:type/core/player ] >>> 核心 玩家 / core player
+
+# ===================================================
+
 
 execute \
     if score @s weapon.sagittarius.use matches 1.. run \

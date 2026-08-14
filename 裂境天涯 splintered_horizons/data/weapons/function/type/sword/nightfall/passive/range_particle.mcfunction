@@ -1,3 +1,11 @@
+# ===================================================
+# 劍 夜幕 被動 range particle / sword nightfall passive range particle
+
+    ## Guide [ function weapons:type/sword/nightfall/passive/range_particle ] >>> 劍 夜幕 被動 range particle / sword nightfall passive range particle
+    ## Guide [ function weapons:type/sword/nightfall/passive/dmg/main ] >>> 劍 夜幕 被動 傷害 主迴圈 / sword nightfall passive damage loop
+
+# ===================================================
+
 
 scoreboard players add #temp global.main 3
 

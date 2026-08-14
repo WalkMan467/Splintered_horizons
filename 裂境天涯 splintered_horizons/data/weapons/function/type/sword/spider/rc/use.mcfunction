@@ -1,3 +1,12 @@
+# ===================================================
+# 劍 蜘蛛 右鍵 觸發 / sword spider right click activate
+
+    ## Guide [ function weapons:type/sword/spider/rc/use ] >>> 劍 蜘蛛 右鍵 觸發 / sword spider right click activate
+    ## Guide [ function weapons:rc/failure/skill_use_failed ] >>> 右鍵 失敗 skill use failed / right click failure skill use failed
+    ## Guide [ function dmg_formula:weapons/type/sword/spider/calculate ] >>> weapons 劍 蜘蛛 計算 / weapons sword spider calculate
+
+# ===================================================
+
 scoreboard players add @s weapon.spider.cd 0
 
 

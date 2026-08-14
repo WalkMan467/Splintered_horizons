@@ -1,3 +1,10 @@
+# ===================================================
+# get 劍 暮光之風 / get sword twilight wind
+
+    ## Guide [ function weapons:get/sword/twilight_wind ] >>> get 劍 暮光之風 / get sword twilight wind
+
+# ===================================================
+
 give @s stone_sword[item_name=[{"translate":"weapon.twilight_wind","color":"dark_aqua","italic":false,"bold":true}],lore=[[{"translate":"weapon.twilight_wind.type","italic":false,"color":"dark_gray"}],{"text":""},[{"translate":"weapon.twilight_wind.story.1","italic":false,"color":"blue"}],[{"translate":"weapon.twilight_wind.story.2","italic":false,"color":"blue"}],{"text":""},[{"text":"","italic":false},{"translate":"weapon.twilight_wind.skill","color":"#a6ff00","bold":true},{"text":"  "},{"translate":"weapon.skill_cd","color":"#6E6E6E"},{"text":"5s"}],[{"text":"","italic":false},{"translate":"weapon.twilight_wind.skill.1","color":"#00ffaa"}],[{"text":"","italic":false},{"translate":"weapon.twilight_wind.skill.2","color":"#00ffaa"}],[{"text":"","italic":false},{"translate":"weapon.twilight_wind.skill.3","color":"#00ffaa"}],[{"text":"","italic":false},{"translate":"weapon.twilight_wind.skill.4","color":"#00ffaa"}],[{"text":"","italic":false},{"translate":"weapon.twilight_wind.skill.5","color":"#00ffaa"}],[{"text":"","italic":false},{"translate":"weapon.twilight_wind.skill.6","color":"#00ffaa"}]],attribute_modifiers=[{id:"base_attack_damage",type:"attack_damage",amount:3,operation:"add_value",slot:"mainhand"},{id:"base_attack_speed",type:"attack_speed",amount:-2.2,operation:"add_value",slot:"mainhand"}],max_stack_size=1,max_damage=150,damage=0,item_model="sword/wind_sword/2",custom_data={rc:0b, type:"sword",rarity:"epic",weapon:"twilight_wind"},minecraft:enchantments={"weapons:type/sword/twilight_wind/use":1,"minecraft:unbreaking":1},enchantment_glint_override=false,tooltip_style="epic",damage_type="weapons:type/sword/twilight_wind_attack", minimum_attack_charge=0.5]
 
 # "weapon.twilight_wind" : "࿓ 暮光之風 ࿓"

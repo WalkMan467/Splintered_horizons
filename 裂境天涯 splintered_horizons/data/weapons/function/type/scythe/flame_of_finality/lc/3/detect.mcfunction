@@ -1,3 +1,12 @@
+# ===================================================
+# 鐮 終焉雙重火 左鍵 階段 3 偵測 / scythe flame of finality left click step 3 detect
+
+    ## Guide [ function weapons:type/scythe/flame_of_finality/lc/3/detect ] >>> 鐮 終焉雙重火 左鍵 階段 3 偵測 / scythe flame of finality left click step 3 detect
+    ## Guide [ function weapons:type/scythe/flame_of_finality/lc/3/final ] >>> 鐮 終焉雙重火 左鍵 階段 3 final / scythe flame of finality left click step 3 final
+    ## Guide [ function weapons:type/scythe/flame_of_finality/lc/3/use ] >>> 鐮 終焉雙重火 左鍵 階段 3 觸發 / scythe flame of finality left click step 3 activate
+
+# ===================================================
+
 scoreboard players remove #weapon.flame_of_finality.raycast main.raycast 1
 
 # particle flame ~ ~ ~ 0.25 0.25 0.25 0 3 force @a

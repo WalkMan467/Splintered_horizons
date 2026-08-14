@@ -1,3 +1,11 @@
+# ===================================================
+# 投擲 微型太陽 右鍵 效果 特效 範圍 / thrown miniature sun right click effect visuals range
+
+    ## Guide [ function weapons:type/drop/miniature_sun/rc/effect/fx/range ] >>> 投擲 微型太陽 右鍵 效果 特效 範圍 / thrown miniature sun right click effect visuals range
+    ## Guide [ function weapons:type/drop/miniature_sun/rc/effect/fx/entity ] >>> 投擲 微型太陽 右鍵 效果 特效 entity / thrown miniature sun right click effect visuals entity
+
+# ===================================================
+
 scoreboard players add @s particle 3
 
 execute \

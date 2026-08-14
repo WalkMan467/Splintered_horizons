@@ -1,3 +1,15 @@
+# ===================================================
+# 鐮 終焉雙重火 右鍵 觸發 / scythe flame of finality right click activate
+
+    ## Guide [ function weapons:type/scythe/flame_of_finality/rc/use ] >>> 鐮 終焉雙重火 右鍵 觸發 / scythe flame of finality right click activate
+    ## Guide [ function weapons:type/scythe/flame_of_finality/rc/detect ] >>> 鐮 終焉雙重火 右鍵 偵測 / scythe flame of finality right click detect
+    ## Guide [ function weapons:rc/failure/ultimate_use_failed ] >>> 右鍵 失敗 ultimate use failed / right click failure ultimate use failed
+    ## Guide [ function weapons:type/scythe/flame_of_finality/rc/attack/1/use ] >>> 鐮 終焉雙重火 右鍵 攻擊 階段 1 觸發 / scythe flame of finality right click attack step 1 activate
+    ## Guide [ function weapons:type/scythe/flame_of_finality/rc/attack/2 ] >>> 鐮 終焉雙重火 右鍵 攻擊 階段 2 / scythe flame of finality right click attack step 2
+    ## Guide [ function weapons:type/scythe/flame_of_finality/rc/attack/3 ] >>> 鐮 終焉雙重火 右鍵 攻擊 階段 3 / scythe flame of finality right click attack step 3
+
+# ===================================================
+
 scoreboard players add @s player.ultimate 0
 
 execute \

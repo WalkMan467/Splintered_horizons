@@ -1,3 +1,12 @@
+# ===================================================
+# 碎岩大劍 右鍵 效果 觸發 / sword rock crushing greatsword right click effect activate
+
+    ## Guide [ function weapons:type/sword/rock_crushing_greatsword/rc/effect/use ] >>> 碎岩大劍 右鍵 效果 觸發 / sword rock crushing greatsword right click effect activate
+    ## Guide [ function dmg_formula:weapons/type/sword/rock_crushing_greatsword/calculate ] >>> weapons 碎岩大劍 計算 / weapons sword rock crushing greatsword calculate
+    ## Guide [ function weapons:type/sword/rock_crushing_greatsword/rc/effect/fx ] >>> 碎岩大劍 右鍵 效果 特效 / sword rock crushing greatsword right click effect visuals
+
+# ===================================================
+
 
 execute \
     on attacker \

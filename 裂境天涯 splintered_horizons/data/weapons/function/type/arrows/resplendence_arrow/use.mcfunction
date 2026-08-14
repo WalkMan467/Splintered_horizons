@@ -1,3 +1,12 @@
+# ===================================================
+# 輝煌之光 符文箭矢 觸發 / resplendence arrow activate
+
+    ## Guide [ function weapons:type/arrows/resplendence_arrow/use ] >>> 輝煌之光 符文箭矢 觸發 / resplendence arrow activate
+    ## Guide [ function weapons:type/arrows/resplendence_arrow/range ] >>> 輝煌之光 符文箭矢 範圍 / resplendence arrow range
+    ## Guide [ function weapons:type/arrows/detect ] >>> 箭矢 偵測 / arrow detect
+
+# ===================================================
+
 scoreboard players reset #weapon.resplendence_arrow.range global.main
 function weapons:type/arrows/resplendence_arrow/range
 

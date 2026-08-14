@@ -1,3 +1,10 @@
+# ===================================================
+# 鐮 變形異獸 偵測 / scythe morphing beast detect
+
+    ## Guide [ function weapons:type/scythe/morphing_beast/detect ] >>> 鐮 變形異獸 偵測 / scythe morphing beast detect
+
+# ===================================================
+
 scoreboard players add @s weapon.morphing_beast.state 0
 
 

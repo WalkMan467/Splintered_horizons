@@ -1,3 +1,12 @@
+# ===================================================
+# 劍 夜幕 被動 傷害 受擊 / sword nightfall passive damage on hurt
+
+    ## Guide [ function weapons:type/sword/nightfall/passive/dmg/hurt ] >>> 劍 夜幕 被動 傷害 受擊 / sword nightfall passive damage on hurt
+    ## Guide [ function dmg_formula:weapons/type/sword/nightfall/passive/calculate ] >>> weapons 劍 夜幕 被動 計算 / weapons sword nightfall passive calculate
+    ## Guide [ function weapons:type/sword/nightfall/passive/dmg/2 ] >>> 劍 夜幕 被動 傷害 階段 2 / sword nightfall passive damage step 2
+
+# ===================================================
+
 
 # entity
 

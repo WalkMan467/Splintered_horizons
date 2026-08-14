@@ -1,3 +1,12 @@
+# ===================================================
+# 給予 / 移除 武器圖標 / grant / revoke weapon icon
+
+    ## Guide [ function weapons:remove_weapons_icon ] >>> 給予 / 移除 武器圖標 / grant / revoke weapon icon
+    ## Guide [ function players:default ] >>> default / default
+    ## Guide [ function players:setup ] >>> 初始化 / setup
+
+# ===================================================
+
 advancement grant @s only weapons:icon/icon
 
     advancement grant @s only weapons:icon/old_story

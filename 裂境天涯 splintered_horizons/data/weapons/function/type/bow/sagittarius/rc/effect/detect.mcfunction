@@ -1,3 +1,12 @@
+# ===================================================
+# 弓 射手座 右鍵 效果 偵測 / bow sagittarius right click effect detect
+
+    ## Guide [ function weapons:type/bow/sagittarius/rc/effect/detect ] >>> 弓 射手座 右鍵 效果 偵測 / bow sagittarius right click effect detect
+    ## Guide [ function weapons:type/bow/sagittarius/rc/effect/data ] >>> 弓 射手座 右鍵 效果 資料 / bow sagittarius right click effect data
+    ## Guide [ function weapons:type/bow/sagittarius/rc/run ] >>> 弓 射手座 右鍵 執行 / bow sagittarius right click run
+
+# ===================================================
+
 execute \
     on origin \
     unless items entity @s weapon.mainhand *[custom_data~{weapon:"sagittarius"}] run \

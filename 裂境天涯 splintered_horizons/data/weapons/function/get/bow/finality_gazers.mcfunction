@@ -1,3 +1,10 @@
+# ===================================================
+# get 弓 終焉凝視者 / get bow finality gazers
+
+    ## Guide [ function weapons:get/bow/finality_gazers ] >>> get 弓 終焉凝視者 / get bow finality gazers
+
+# ===================================================
+
 give @s bow[item_name=[{"translate": "weapon.finality_gazers", "color": "#CE0000", "bold": true}],lore=[[{"translate": "weapon.finality_gazers.type", "color": "dark_gray", "italic": false}], {"text": ""}, [{"translate": "weapon.finality_gazers.story.1", "color": "blue", "italic": false}], [{"translate": "weapon.finality_gazers.story.2", "color": "blue", "italic": false}], [{"translate": "weapon.finality_gazers.story.3", "color": "blue", "italic": false}]],attribute_modifiers=[{type:"attack_damage",id:"base_attack_damage",amount:3,operation:"add_value",slot:"mainhand"},{type:"attack_speed",id:"base_attack_speed",amount:-2.4,operation:"add_value",slot:"mainhand"}],max_stack_size=1,max_damage=200,damage=0,item_model="minecraft:bow/sagittarius/1",custom_data={type:"sword",rarity:"rare",weapon:"finality_gazers",forging_table:1b},enchantment_glint_override=false,tooltip_style="mythic"]
 
 # ==============================

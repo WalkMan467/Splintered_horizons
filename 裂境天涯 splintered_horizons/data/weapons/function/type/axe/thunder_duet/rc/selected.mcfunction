@@ -1,3 +1,13 @@
+# ===================================================
+# 斧 雷霆二重奏 右鍵 selected / axe thunder duet right click selected
+
+    ## Guide [ function weapons:type/axe/thunder_duet/rc/selected ] >>> 斧 雷霆二重奏 右鍵 selected / axe thunder duet right click selected
+    ## Guide [ function weapons:type/axe/thunder_duet/rc/damage ] >>> 斧 雷霆二重奏 右鍵 傷害 / axe thunder duet right click damage
+    ## Guide [ function weapons:type/axe/thunder_duet/rc/target ] >>> 斧 雷霆二重奏 右鍵 target / axe thunder duet right click target
+    ## Guide [ function weapons:type/axe/thunder_duet/player_main ] >>> 斧 雷霆二重奏 player main / axe thunder duet player main
+
+# ===================================================
+
 scoreboard players reset @s weapon.thunder_duet.target.delay
 
 tag @s add temp

@@ -1,3 +1,12 @@
+# ===================================================
+# 劍 夜幕 被動 觸發 / sword nightfall passive activate
+
+    ## Guide [ function weapons:type/sword/nightfall/passive/use ] >>> 劍 夜幕 被動 觸發 / sword nightfall passive activate
+    ## Guide [ function weapons:type/sword/nightfall/passive/title ] >>> 劍 夜幕 被動 title / sword nightfall passive title
+    ## Guide [ function weapons:type/sword/nightfall/passive/dmg/1 ] >>> 劍 夜幕 被動 傷害 階段 1 / sword nightfall passive damage step 1
+
+# ===================================================
+
 # charge
 
 execute \

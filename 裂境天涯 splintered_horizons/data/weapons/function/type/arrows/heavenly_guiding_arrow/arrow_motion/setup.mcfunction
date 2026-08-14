@@ -1,3 +1,12 @@
+# ===================================================
+# 天導神弓箭矢 arrow motion 初始化 / heavenly guiding arrow arrow motion setup
+
+    ## Guide [ function weapons:type/arrows/heavenly_guiding_arrow/arrow_motion/setup ] >>> 天導神弓箭矢 arrow motion 初始化 / heavenly guiding arrow arrow motion setup
+    ## Guide [ function weapons:type/arrows/heavenly_guiding_arrow/arrow_motion/1 ] >>> 天導神弓箭矢 arrow motion 階段 1 / heavenly guiding arrow arrow motion step 1
+    ## Guide [ function weapons:type/arrows/heavenly_guiding_arrow/arrow_motion/data ] >>> 天導神弓箭矢 arrow motion 資料 / heavenly guiding arrow arrow motion data
+
+# ===================================================
+
 tag @s add weapon.heavenly_guiding_bow.arrow.2
 tag @s remove weapon.heavenly_guiding_bow.arrow
 

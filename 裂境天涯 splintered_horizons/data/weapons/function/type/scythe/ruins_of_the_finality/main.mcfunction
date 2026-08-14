@@ -1,3 +1,13 @@
+# ===================================================
+# 鐮 終焉之墟 主迴圈 / scythe ruins of the finality loop
+
+    ## Guide [ function weapons:type/scythe/ruins_of_the_finality/main ] >>> 鐮 終焉之墟 主迴圈 / scythe ruins of the finality loop
+    ## Guide [ function weapons:type/scythe/ruins_of_the_finality/effect/run ] >>> 鐮 終焉之墟 效果 執行 / scythe ruins of the finality effect run
+    ## Guide [ function weapons:type/scythe/ruins_of_the_finality/effect/end ] >>> 鐮 終焉之墟 效果 結束 / scythe ruins of the finality effect finish
+    ## Guide [ function weapons:type/scythe/ruins_of_the_finality/rc/animation/1/use ] >>> 鐮 終焉之墟 右鍵 動畫 階段 1 觸發 / scythe ruins of the finality right click animation step 1 activate
+
+# ===================================================
+
 
 execute \
     as @p[tag=!weapon.ruins_of_the_finality.input.disable,tag=weapon.ruins_of_the_finality.screen] \

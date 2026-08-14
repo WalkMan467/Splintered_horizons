@@ -1,3 +1,12 @@
+# ===================================================
+# 渾沌之雷 符文箭矢 觸發 / chaotic thunder arrow activate
+
+    ## Guide [ function weapons:type/arrows/chaotic_thunder_arrow/use ] >>> 渾沌之雷 符文箭矢 觸發 / chaotic thunder arrow activate
+    ## Guide [ function weapons:type/arrows/chaotic_thunder_arrow/range ] >>> 渾沌之雷 符文箭矢 範圍 / chaotic thunder arrow range
+    ## Guide [ function weapons:type/arrows/detect ] >>> 箭矢 偵測 / arrow detect
+
+# ===================================================
+
 scoreboard players reset #weapon.chaotic_thunder_arrow.range global.main
 function weapons:type/arrows/chaotic_thunder_arrow/range
 

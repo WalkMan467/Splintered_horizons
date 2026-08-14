@@ -1,3 +1,11 @@
+# ===================================================
+# 赤血詛咒箭矢 分派 / bleeding arrow dispatch
+
+    ## Guide [ function weapons:type/arrows/bleeding_arrow/guide ] >>> 赤血詛咒箭矢 分派 / bleeding arrow dispatch
+    ## Guide [ function weapons:type/arrows/bleeding_arrow/use ] >>> 赤血詛咒箭矢 觸發 / bleeding arrow activate
+
+# ===================================================
+
 function cse:status_effects/apply/bleeding/use {duration:80, tick_rate:40, dot:20, max:100}
 
 particle minecraft:raid_omen ~ ~1 ~ 0.5 0.5 0.5 1 20 normal @a

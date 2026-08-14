@@ -1,3 +1,12 @@
+# ===================================================
+# 劍 回音律動 右鍵 觸發 / sword echo rhythm right click activate
+
+    ## Guide [ function weapons:type/sword/echo_rhythm/rc/use ] >>> 劍 回音律動 右鍵 觸發 / sword echo rhythm right click activate
+    ## Guide [ function weapons:rc/failure/ultimate_use_failed ] >>> 右鍵 失敗 ultimate use failed / right click failure ultimate use failed
+    ## Guide [ function weapons:type/sword/echo_rhythm/damage/ultimate ] >>> 劍 回音律動 傷害 ultimate / sword echo rhythm damage ultimate
+
+# ===================================================
+
 scoreboard players add @s player.ultimate 0
 
 execute \

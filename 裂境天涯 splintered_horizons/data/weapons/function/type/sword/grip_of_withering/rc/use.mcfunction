@@ -1,3 +1,13 @@
+# ===================================================
+# 劍 凋零之握 右鍵 觸發 / sword grip of withering right click activate
+
+    ## Guide [ function weapons:type/sword/grip_of_withering/rc/use ] >>> 劍 凋零之握 右鍵 觸發 / sword grip of withering right click activate
+    ## Guide [ function weapons:rc/failure/skill_use_failed ] >>> 右鍵 失敗 skill use failed / right click failure skill use failed
+    ## Guide [ function dmg_formula:weapons/type/sword/grip_of_withering/calculate ] >>> weapons 劍 凋零之握 計算 / weapons sword grip of withering calculate
+    ## Guide [ function weapons:type/sword/grip_of_withering/rc/fx ] >>> 劍 凋零之握 右鍵 特效 / sword grip of withering right click visuals
+
+# ===================================================
+
 scoreboard players add @s weapon.grip_of_withering.cd 0
 
 execute \

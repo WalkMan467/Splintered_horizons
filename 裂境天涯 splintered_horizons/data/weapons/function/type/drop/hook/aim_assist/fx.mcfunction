@@ -1,3 +1,11 @@
+# ===================================================
+# 投擲 鉤爪 瞄準輔助 特效 / thrown hook aim assist visuals
+
+    ## Guide [ function weapons:type/drop/hook/aim_assist/fx ] >>> 投擲 鉤爪 瞄準輔助 特效 / thrown hook aim assist visuals
+    ## Guide [ function main:load ] >>> load / load
+
+# ===================================================
+
 
 execute at @e[type=#dummy_mob,tag=weapon.hook.target] run \
 particle dust_color_transition{from_color:[1.000,0.000,0.000],scale:1,to_color:[1.000,0.369,0.000]} ~ ~0.5 ~ 0.5 0.5 0.5 1 5 force @a[tag=weapon.hook.player]

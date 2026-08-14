@@ -1,3 +1,10 @@
+# ===================================================
+# get arrow 渾沌之雷 符文箭矢 / get chaotic thunder arrow
+
+    ## Guide [ function weapons:get/arrow/chaotic_thunder_arrow ] >>> get arrow 渾沌之雷 符文箭矢 / get chaotic thunder arrow
+
+# ===================================================
+
 give @s arrow[item_name=[{"text":"\uE006","font":"minecraft:icon","color":"white"},{"translate":"weapon.chaotic_thunder_arrow","color":"#fc007e","font":"minecraft:default","italic":false,"bold":true},{"text":"\uE006","font":"minecraft:icon","color":"white"}],lore=[[{"translate":"weapon.chaotic_thunder_arrow.type","italic":false,"color":"dark_gray"}],{"text":""},[{"translate":"weapon.chaotic_thunder_arrow.story.1","italic":false,"color":"blue"}],[{"translate":"weapon.chaotic_thunder_arrow.story.2","italic":false,"color":"blue"}],{"text":""},[{"text":"","italic":false},{"translate":"weapon.chaotic_thunder_arrow.skill","color":"#fc007e","bold":true},{"text":"  "}],[{"text":"","italic":false},{"translate":"weapon.chaotic_thunder_arrow.skill.1","color":"#ff0015"}],[{"text":"","italic":false},{"translate":"weapon.chaotic_thunder_arrow.skill.2","color":"#ff0015"}]],attribute_modifiers=[{id:"base_attack_speed",type:"attack_speed",amount:0,operation:"add_value",slot:"mainhand"}],item_model="arrow/chaotic_thunder_arrow",custom_data={type:"arrow",rarity:"epic",id:"chaotic_thunder_arrow",ground_detect:1b},tooltip_display={hidden_components:["enchantments","attribute_modifiers","unbreakable"]},tooltip_style="epic"] 64
 
 # "weapon.chaotic_thunder_arrow" : "渾沌之雷 - 符文箭矢"

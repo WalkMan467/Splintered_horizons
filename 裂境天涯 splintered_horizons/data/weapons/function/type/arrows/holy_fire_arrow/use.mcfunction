@@ -1,3 +1,12 @@
+# ===================================================
+# 神聖之火 符文箭矢 觸發 / holy fire arrow activate
+
+    ## Guide [ function weapons:type/arrows/holy_fire_arrow/use ] >>> 神聖之火 符文箭矢 觸發 / holy fire arrow activate
+    ## Guide [ function weapons:type/arrows/holy_fire_arrow/range ] >>> 神聖之火 符文箭矢 範圍 / holy fire arrow range
+    ## Guide [ function weapons:type/arrows/detect ] >>> 箭矢 偵測 / arrow detect
+
+# ===================================================
+
 scoreboard players reset #weapon.holy_fire_arrow.range global.main
 function weapons:type/arrows/holy_fire_arrow/range
 

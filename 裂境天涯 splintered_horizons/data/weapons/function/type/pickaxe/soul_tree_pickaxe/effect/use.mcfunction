@@ -1,3 +1,10 @@
+# ===================================================
+# 魂樹鎬 效果 觸發 / soul tree pickaxe effect activate
+
+    ## Guide [ function weapons:type/pickaxe/soul_tree_pickaxe/effect/use ] >>> 魂樹鎬 效果 觸發 / soul tree pickaxe effect activate
+
+# ===================================================
+
 effect give @s minecraft:absorption 10 0 true
 effect give @s minecraft:instant_health 1 0
 

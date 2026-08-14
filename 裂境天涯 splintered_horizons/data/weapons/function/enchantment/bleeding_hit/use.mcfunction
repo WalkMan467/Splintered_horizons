@@ -1,3 +1,11 @@
+# ===================================================
+# 附魔 流血命中 觸發 / enchantment bleeding hit activate
+
+    ## Guide [ function weapons:enchantment/bleeding_hit/use ] >>> 附魔 流血命中 觸發 / enchantment bleeding hit activate
+    ## Guide [ function weapons:enchantment/bleeding_hit/run ] >>> 附魔 流血命中 執行 / enchantment bleeding hit run
+
+# ===================================================
+
 execute \
     on attacker \
     if entity @s[type=player] run \

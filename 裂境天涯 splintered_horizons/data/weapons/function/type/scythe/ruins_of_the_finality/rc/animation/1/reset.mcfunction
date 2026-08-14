@@ -1,3 +1,10 @@
+# ===================================================
+# 鐮 終焉之墟 右鍵 動畫 階段 1 重置 / scythe ruins of the finality right click animation step 1 reset
+
+    ## Guide [ function weapons:type/scythe/ruins_of_the_finality/rc/animation/1/reset ] >>> 鐮 終焉之墟 右鍵 動畫 階段 1 重置 / scythe ruins of the finality right click animation step 1 reset
+
+# ===================================================
+
 # Reset the animation
 kill @e[type=creeper,tag=aj.stellar.camera_2]
 

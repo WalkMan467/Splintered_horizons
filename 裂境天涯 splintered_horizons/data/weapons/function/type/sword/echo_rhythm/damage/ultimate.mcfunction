@@ -1,3 +1,12 @@
+# ===================================================
+# 劍 回音律動 傷害 ultimate / sword echo rhythm damage ultimate
+
+    ## Guide [ function weapons:type/sword/echo_rhythm/damage/ultimate ] >>> 劍 回音律動 傷害 ultimate / sword echo rhythm damage ultimate
+    ## Guide [ function dmg_formula:weapons/type/sword/echo_rhythm/ultimate/calculate ] >>> weapons 劍 回音律動 ultimate 計算 / weapons sword echo rhythm ultimate calculate
+    ## Guide [ function weapons:type/sword/echo_rhythm/rc/use ] >>> 劍 回音律動 右鍵 觸發 / sword echo rhythm right click activate
+
+# ===================================================
+
 
 execute \
     as @e[type=!player,type=!#dummy_mob,distance=..8] \

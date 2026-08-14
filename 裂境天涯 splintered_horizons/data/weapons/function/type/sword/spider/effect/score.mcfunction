@@ -1,3 +1,13 @@
+# ===================================================
+# 劍 蜘蛛 效果 score / sword spider effect score
+
+    ## Guide [ function weapons:type/sword/spider/effect/score ] >>> 劍 蜘蛛 效果 score / sword spider effect score
+    ## Guide [ function weapons:type/sword/spider/effect/screen_fx ] >>> 劍 蜘蛛 效果 screen fx / sword spider effect screen fx
+    ## Guide [ function weapons:type/sword/spider/effect/atk ] >>> 劍 蜘蛛 效果 atk / sword spider effect atk
+    ## Guide [ function dmg_formula:weapons/type/sword/spider/dot/calculate ] >>> weapons 劍 蜘蛛 dot 計算 / weapons sword spider dot calculate
+
+# ===================================================
+
 
 scoreboard players add @s[scores={weapon.spider_passive=..10}] weapon.spider_passive 1
 scoreboard players set @s player.actionbar.weapon.spider 10

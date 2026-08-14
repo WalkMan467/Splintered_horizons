@@ -1,3 +1,10 @@
+# ===================================================
+# 鐮 終焉雙重火 被動 擊殺 / scythe flame of finality passive on kill
+
+    ## Guide [ function weapons:type/scythe/flame_of_finality/passive/kill ] >>> 鐮 終焉雙重火 被動 擊殺 / scythe flame of finality passive on kill
+
+# ===================================================
+
 advancement revoke @s only weapons:type/scythe/flame_of_finality/passive/kill
 
 execute \

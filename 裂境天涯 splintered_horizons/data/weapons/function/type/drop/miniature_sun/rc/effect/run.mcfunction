@@ -1,3 +1,12 @@
+# ===================================================
+# 投擲 微型太陽 右鍵 效果 執行 / thrown miniature sun right click effect run
+
+    ## Guide [ function weapons:type/drop/miniature_sun/rc/effect/run ] >>> 投擲 微型太陽 右鍵 效果 執行 / thrown miniature sun right click effect run
+    ## Guide [ function weapons:type/drop/miniature_sun/rc/effect/fx_2/guide ] >>> 投擲 微型太陽 右鍵 效果 fx 2 分派 / thrown miniature sun right click effect fx 2 dispatch
+    ## Guide [ function weapons:type/drop/miniature_sun/rc/main ] >>> 投擲 微型太陽 右鍵 主迴圈 / thrown miniature sun right click loop
+
+# ===================================================
+
 summon area_effect_cloud ~ ~0.5 ~ {Tags:["weapon.miniature_sun.main","summon"],custom_particle:{type:"block",block_state:"air"},Radius:0,Duration:100}
 summon area_effect_cloud ~ ~3 ~ {Tags:["weapon.miniature_sun.main.fx","summon"],custom_particle:{type:"block",block_state:"air"},Radius:0,Duration:100}
 

@@ -1,3 +1,10 @@
+# ===================================================
+# get 終焉鎬 / get finality pickaxe
+
+    ## Guide [ function weapons:get/pickaxe/finality_pickaxe ] >>> get 終焉鎬 / get finality pickaxe
+
+# ===================================================
+
 give @s iron_pickaxe[item_name=[{"translate":"weapon.finality_pickaxe","color":"#e00000","italic":false,"bold":true}],lore=[[{"translate":"weapon.finality_pickaxe.type","italic":false,"color":"dark_gray"}],{"text":""},[{"translate":"weapon.finality_pickaxe.story.1","italic":false,"color":"blue"}],[{"translate":"weapon.finality_pickaxe.story.2","italic":false,"color":"blue"}],{"text":""},[{"text":"","italic":false},{"translate":"weapon.finality_pickaxe.passive_skills","color":"#7a0000","bold":true},{"text":"  "}],[{"text":"","italic":false},{"translate":"weapon.finality_pickaxe.passive_skills.1","color":"#ff0000"}],[{"text":"","italic":false},{"translate":"weapon.finality_pickaxe.passive_skills.2","color":"#ff0000"}]],attribute_modifiers=[{id:"base_attack_damage",type:"attack_damage",amount:3.0,operation:"add_value",slot:"mainhand"},{id:"base_attack_speed",type:"attack_speed",amount:-2.8,operation:"add_value",slot:"mainhand"}],max_stack_size=1,unbreakable={},item_model="pickaxe/finality_pickaxe/1",custom_data={type:"pickaxe",rarity:"mythic",weapon:"finality_pickaxe",forging_table:1b},tooltip_style="mythic"]
 
 # "weapon.finality_pickaxe" : "終焉鎬"

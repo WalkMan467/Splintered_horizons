@@ -1,3 +1,10 @@
+# ===================================================
+# get arrow 至深之暗 符文箭矢 / get shadow arrow
+
+    ## Guide [ function weapons:get/arrow/shadow_arrow ] >>> get arrow 至深之暗 符文箭矢 / get shadow arrow
+
+# ===================================================
+
 give @s arrow[item_name=[{"text":"\uE005","font":"minecraft:icon","color":"white"},{"translate":"weapon.shadow_arrow","color":"#9e0096","italic":false,"bold":true,"font":"minecraft:default"},{"text":"\uE005","font":"minecraft:icon","color":"white"}],lore=[[{"translate":"weapon.shadow_arrow.type","italic":false,"color":"dark_gray"}],{"text":""},[{"translate":"weapon.shadow_arrow.story.1","italic":false,"color":"blue"}],[{"translate":"weapon.shadow_arrow.story.2","italic":false,"color":"blue"}],{"text":""},[{"text":"","italic":false},{"translate":"weapon.shadow_arrow.skill","color":"#9e0096","bold":true},{"text":"  "}],[{"text":"","italic":false},{"translate":"weapon.shadow_arrow.skill.1","color":"#8900fa"}],[{"text":"","italic":false},{"translate":"weapon.shadow_arrow.skill.2","color":"#8900fa"}]],attribute_modifiers=[{id:"base_attack_speed",type:"attack_speed",amount:0,operation:"add_value",slot:"mainhand"}],item_model="arrow/shadow_arrow",custom_data={type:"arrow",rarity:"epic",id:"shadow_arrow",ground_detect:1b},tooltip_display={hidden_components:["enchantments","attribute_modifiers","unbreakable"]},tooltip_style="epic"] 64
 
 # "weapon.shadow_arrow" : "至深之暗 - 符文箭矢"

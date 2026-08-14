@@ -1,3 +1,15 @@
+# ===================================================
+# 核心 玩家 / core player
+
+    ## Guide [ function weapons:type/core/player ] >>> 核心 玩家 / core player
+    ## Guide [ function weapons:type/bow/sagittarius/rc/main ] >>> 弓 射手座 右鍵 主迴圈 / bow sagittarius right click loop
+    ## Guide [ function weapons:type/bow/heavenly_guiding_bow/rc/main ] >>> 天導神弓 右鍵 主迴圈 / heavenly guiding bow right click loop
+    ## Guide [ function weapons:type/scythe/flame_of_finality/lc/main ] >>> 鐮 終焉雙重火 左鍵 主迴圈 / scythe flame of finality left click loop
+    ## Guide [ function weapons:type/sword/rock_crushing_greatsword/rc/main ] >>> 碎岩大劍 右鍵 主迴圈 / sword rock crushing greatsword right click loop
+    ## Guide [ function weapons:type/drop/zeuss_lightning/rc/main ] >>> 投擲 宙斯閃電 右鍵 主迴圈 / thrown zeuss lightning right click loop
+
+# ===================================================
+
 # @s = Players
 
 # sagittarius

@@ -1,3 +1,11 @@
+# ===================================================
+# 輝煌之光 符文箭矢 範圍 / resplendence arrow range
+
+    ## Guide [ function weapons:type/arrows/resplendence_arrow/range ] >>> 輝煌之光 符文箭矢 範圍 / resplendence arrow range
+    ## Guide [ function weapons:type/arrows/resplendence_arrow/use ] >>> 輝煌之光 符文箭矢 觸發 / resplendence arrow activate
+
+# ===================================================
+
 scoreboard players add #weapon.resplendence_arrow.range global.main 3
 
 particle dust_color_transition{from_color:[0.969,1.000,0.071],scale:1,to_color:[1.000,0.576,0.020]} ^ ^ ^4 0 0 0 1 0 force

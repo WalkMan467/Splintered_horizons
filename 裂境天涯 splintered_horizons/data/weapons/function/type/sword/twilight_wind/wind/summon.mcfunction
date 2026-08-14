@@ -1,3 +1,11 @@
+# ===================================================
+# 劍 暮光之風 wind 召喚 / sword twilight wind wind summon
+
+    ## Guide [ function weapons:type/sword/twilight_wind/wind/summon ] >>> 劍 暮光之風 wind 召喚 / sword twilight wind wind summon
+    ## Guide [ function weapons:type/sword/twilight_wind/main ] >>> 劍 暮光之風 主迴圈 / sword twilight wind loop
+
+# ===================================================
+
 
 # wind
 

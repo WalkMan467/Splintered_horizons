@@ -1,3 +1,11 @@
+# ===================================================
+# 劍 夜幕 被動 title / sword nightfall passive title
+
+    ## Guide [ function weapons:type/sword/nightfall/passive/title ] >>> 劍 夜幕 被動 title / sword nightfall passive title
+    ## Guide [ function weapons:type/sword/nightfall/passive/use ] >>> 劍 夜幕 被動 觸發 / sword nightfall passive activate
+
+# ===================================================
+
 
 execute \
     unless score @s weapon.nightfall.charge matches 5 run \

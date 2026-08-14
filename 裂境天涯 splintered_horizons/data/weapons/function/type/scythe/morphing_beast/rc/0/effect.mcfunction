@@ -1,3 +1,12 @@
+# ===================================================
+# 鐮 變形異獸 右鍵 階段 0 效果 / scythe morphing beast right click step 0 effect
+
+    ## Guide [ function weapons:type/scythe/morphing_beast/rc/0/effect ] >>> 鐮 變形異獸 右鍵 階段 0 效果 / scythe morphing beast right click step 0 effect
+    ## Guide [ function weapons:type/sword/nightfall/rc/0/calculate ] >>> 劍 夜幕 右鍵 階段 0 計算 / sword nightfall right click step 0 calculate
+    ## Guide [ function dmg_formula:weapons/type/sword/nightfall/calculate ] >>> weapons 劍 夜幕 計算 / weapons sword nightfall calculate
+
+# ===================================================
+
 
 execute \
     on attacker \

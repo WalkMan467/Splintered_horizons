@@ -1,3 +1,12 @@
+# ===================================================
+# 鐮 終焉雙重火 左鍵 階段 3 觸發 / scythe flame of finality left click step 3 activate
+
+    ## Guide [ function weapons:type/scythe/flame_of_finality/lc/3/use ] >>> 鐮 終焉雙重火 左鍵 階段 3 觸發 / scythe flame of finality left click step 3 activate
+    ## Guide [ function weapons:type/scythe/flame_of_finality/lc/3/detect ] >>> 鐮 終焉雙重火 左鍵 階段 3 偵測 / scythe flame of finality left click step 3 detect
+    ## Guide [ function weapons:type/scythe/flame_of_finality/lc/use ] >>> 鐮 終焉雙重火 左鍵 觸發 / scythe flame of finality left click activate
+
+# ===================================================
+
 scoreboard players set @s player.click.interval 8
 scoreboard players set @s weapon.flame_of_finality.attack.timer 15
 

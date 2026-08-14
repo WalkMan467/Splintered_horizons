@@ -1,3 +1,12 @@
+# ===================================================
+# 投擲 微型太陽 右鍵 位移 觸發 / thrown miniature sun right click motion activate
+
+    ## Guide [ function weapons:type/drop/miniature_sun/rc/motion/use ] >>> 投擲 微型太陽 右鍵 位移 觸發 / thrown miniature sun right click motion activate
+    ## Guide [ function weapons:type/drop/miniature_sun/rc/motion/data ] >>> 投擲 微型太陽 右鍵 位移 資料 / thrown miniature sun right click motion data
+    ## Guide [ function weapons:type/drop/miniature_sun/rc/use ] >>> 投擲 微型太陽 右鍵 觸發 / thrown miniature sun right click activate
+
+# ===================================================
+
 function weapons:type/drop/miniature_sun/rc/motion/data
 
 execute \

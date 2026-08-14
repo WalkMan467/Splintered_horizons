@@ -1,3 +1,13 @@
+# ===================================================
+# 地震之斧 動畫 執行 / earthquake axe animation run
+
+    ## Guide [ function weapons:type/axe/earthquake_axe/animation/run ] >>> 地震之斧 動畫 執行 / earthquake axe animation run
+    ## Guide [ function weapons:type/axe/earthquake_axe/animation/run_guide ] >>> 地震之斧 動畫 run guide / earthquake axe animation run guide
+    ## Guide [ function weapons:type/axe/earthquake_axe/animation/end ] >>> 地震之斧 動畫 結束 / earthquake axe animation finish
+    ## Guide [ function weapons:type/axe/earthquake_axe/animation/main ] >>> 地震之斧 動畫 主迴圈 / earthquake axe animation loop
+
+# ===================================================
+
 playsound minecraft:entity.warden.sonic_charge voice @a ~ ~1 ~ 1 1.65
 
 tag @s add temp

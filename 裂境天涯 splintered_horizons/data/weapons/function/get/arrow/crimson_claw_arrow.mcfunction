@@ -1,3 +1,10 @@
+# ===================================================
+# get arrow 緋紅之爪 符文箭矢 / get crimson claw arrow
+
+    ## Guide [ function weapons:get/arrow/crimson_claw_arrow ] >>> get arrow 緋紅之爪 符文箭矢 / get crimson claw arrow
+
+# ===================================================
+
 give @s arrow[item_name=[{"text":"\uE007","font":"minecraft:icon","color":"white"},{"translate":"weapon.crimson_claw_arrow","font":"minecraft:default","color":"#e00000","italic":false,"bold":true},{"text":"\uE007","font":"minecraft:icon","color":"white"}],lore=[[{"translate":"weapon.crimson_claw_arrow.type","italic":false,"color":"dark_gray"}],{"text":""},[{"translate":"weapon.crimson_claw_arrow.story.1","italic":false,"color":"blue"}],[{"translate":"weapon.crimson_claw_arrow.story.2","italic":false,"color":"blue"}],{"text":""},[{"text":"","italic":false},{"translate":"weapon.crimson_claw_arrow.skill","color":"#e00000","bold":true},{"text":"  "}],[{"text":"","italic":false},{"translate":"weapon.crimson_claw_arrow.skill.1","color":"#8a0000"}],[{"text":"","italic":false},{"translate":"weapon.crimson_claw_arrow.skill.2","color":"#8a0000"}]],attribute_modifiers=[{id:"base_attack_speed",type:"attack_speed",amount:0,operation:"add_value",slot:"mainhand"}],item_model="arrow/crimson_claw_arrow",custom_data={type:"arrow",rarity:"epic",id:"crimson_claw_arrow",ground_detect:1b},tooltip_display={hidden_components:["enchantments","attribute_modifiers","unbreakable"]},tooltip_style="epic"] 64
 
 # "weapon.crimson_claw_arrow" : "緋紅之爪 - 符文箭矢"

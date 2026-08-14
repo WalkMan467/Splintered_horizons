@@ -1,3 +1,11 @@
+# ===================================================
+# 斧 雷霆二重奏 右鍵 target / axe thunder duet right click target
+
+    ## Guide [ function weapons:type/axe/thunder_duet/rc/target ] >>> 斧 雷霆二重奏 右鍵 target / axe thunder duet right click target
+    ## Guide [ function weapons:type/axe/thunder_duet/rc/selected ] >>> 斧 雷霆二重奏 右鍵 selected / axe thunder duet right click selected
+
+# ===================================================
+
 effect give @s glowing 2 1 true
 scoreboard players set @s weapon.thunder_duet.target.marker 40
 

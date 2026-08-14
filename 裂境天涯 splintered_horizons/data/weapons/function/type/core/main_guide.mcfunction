@@ -1,3 +1,15 @@
+# ===================================================
+# 核心 main guide / core main guide
+
+    ## Guide [ function weapons:type/core/main_guide ] >>> 核心 main guide / core main guide
+    ## Guide [ function weapons:type/sword/wind_sword/wind/main ] >>> 風力劍 wind 主迴圈 / wind sword wind loop
+    ## Guide [ function weapons:type/arrows/heavenly_guiding_arrow/main ] >>> 天導神弓箭矢 主迴圈 / heavenly guiding arrow loop
+    ## Guide [ function weapons:type/arrows/heavenly_guiding_arrow/magic_circle/main ] >>> 天導神弓箭矢 magic circle 主迴圈 / heavenly guiding arrow magic circle loop
+    ## Guide [ function weapons:type/arrows/heavenly_guiding_arrow/magic_circle/holy_fire/main ] >>> 天導神弓箭矢 magic circle holy fire 主迴圈 / heavenly guiding arrow magic circle holy fire loop
+    ## Guide [ function weapons:type/sword/otherworld_star/fallstar/main ] >>> 劍 異界晨星 fallstar 主迴圈 / sword otherworld star fallstar loop
+
+# ===================================================
+
 # Guide / 導向
 
 # wind sword

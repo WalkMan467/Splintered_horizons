@@ -1,3 +1,10 @@
+# ===================================================
+# get arrow 輝煌之光 符文箭矢 / get resplendence arrow
+
+    ## Guide [ function weapons:get/arrow/resplendence_arrow ] >>> get arrow 輝煌之光 符文箭矢 / get resplendence arrow
+
+# ===================================================
+
 give @s arrow[item_name=[{"text":"\uE004","font":"minecraft:icon","color":"white"},{"translate":"weapon.resplendence_arrow","font":"minecraft:default","color":"#fceb00","italic":false,"bold":true},{"text":"\uE004","font":"minecraft:icon","color":"white"}],lore=[[{"translate":"weapon.resplendence_arrow.type","italic":false,"color":"dark_gray"}],{"text":""},[{"translate":"weapon.resplendence_arrow.story.1","italic":false,"color":"blue"}],[{"translate":"weapon.resplendence_arrow.story.2","italic":false,"color":"blue"}],{"text":""},[{"text":"","italic":false},{"translate":"weapon.resplendence_arrow.skill","color":"#fceb00","bold":true},{"text":"  "}],[{"text":"","italic":false},{"translate":"weapon.resplendence_arrow.skill.1","color":"#fff89a"}],[{"text":"","italic":false},{"translate":"weapon.resplendence_arrow.skill.2","color":"#fff89a"}]],attribute_modifiers=[{id:"base_attack_speed",type:"attack_speed",amount:0,operation:"add_value",slot:"mainhand"}],item_model="arrow/resplendence_arrow",custom_data={type:"arrow",rarity:"epic",id:"resplendence_arrow",ground_detect:1b},tooltip_display={hidden_components:["enchantments","attribute_modifiers","unbreakable"]},tooltip_style="epic"] 64
 
 # "weapon.resplendence_arrow" : "輝煌之光 - 符文箭矢"

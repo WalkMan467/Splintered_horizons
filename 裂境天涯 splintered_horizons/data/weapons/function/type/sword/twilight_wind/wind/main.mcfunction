@@ -1,3 +1,13 @@
+# ===================================================
+# 劍 暮光之風 wind 主迴圈 / sword twilight wind wind loop
+
+    ## Guide [ function weapons:type/sword/twilight_wind/wind/main ] >>> 劍 暮光之風 wind 主迴圈 / sword twilight wind wind loop
+    ## Guide [ function weapons:type/sword/twilight_wind/wind/damage ] >>> 劍 暮光之風 wind 傷害 / sword twilight wind wind damage
+    ## Guide [ function weapons:type/sword/twilight_wind/wind/clear ] >>> 劍 暮光之風 wind 清除 / sword twilight wind wind clear
+    ## Guide [ function weapons:type/core/main_guide ] >>> 核心 main guide / core main guide
+
+# ===================================================
+
 
 # effect
     # speed

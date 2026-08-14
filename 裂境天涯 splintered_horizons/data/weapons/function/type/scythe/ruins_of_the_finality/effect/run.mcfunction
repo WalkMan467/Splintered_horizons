@@ -1,3 +1,12 @@
+# ===================================================
+# 鐮 終焉之墟 效果 執行 / scythe ruins of the finality effect run
+
+    ## Guide [ function weapons:type/scythe/ruins_of_the_finality/effect/run ] >>> 鐮 終焉之墟 效果 執行 / scythe ruins of the finality effect run
+    ## Guide [ function weapons:type/scythe/ruins_of_the_finality/effect/explosion ] >>> 鐮 終焉之墟 效果 explosion / scythe ruins of the finality effect explosion
+    ## Guide [ function weapons:type/scythe/ruins_of_the_finality/main ] >>> 鐮 終焉之墟 主迴圈 / scythe ruins of the finality loop
+
+# ===================================================
+
 scoreboard players set @a weapon.ruins_of_the_finality.effect.count.delay 5
 
 scoreboard players remove @s[scores={weapon.ruins_of_the_finality.effect.count=1..}] weapon.ruins_of_the_finality.effect.count 1

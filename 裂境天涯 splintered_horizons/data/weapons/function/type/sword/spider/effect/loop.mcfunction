@@ -1,3 +1,11 @@
+# ===================================================
+# 劍 蜘蛛 效果 迴圈 / sword spider effect loop
+
+    ## Guide [ function weapons:type/sword/spider/effect/loop ] >>> 劍 蜘蛛 效果 迴圈 / sword spider effect loop
+    ## Guide [ function weapons:type/sword/spider/effect/loop2 ] >>> 劍 蜘蛛 效果 loop2 / sword spider effect loop2
+
+# ===================================================
+
 
 # dmg
 tag @e[type=!player,type=!#minecraft:dummy_mob,scores={weapon.spider_passive_dot=1..},tag=weapon.spider.dot] add dmger
