@@ -1,3 +1,4 @@
+scoreboard objectives add player.uniform dummy "身上制服"
 scoreboard objectives add duration dummy
 scoreboard objectives add main.entity.id dummy "實體 ID"
 

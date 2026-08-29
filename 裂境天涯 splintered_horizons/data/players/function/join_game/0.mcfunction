@@ -14,3 +14,7 @@ execute \
 schedule function sys:respawnpoint/tp/main 1t
 
 function music:reset
+
+# 崩潰/斷線時可能停在制服狀態，重算一次把真背包還回去
+tag @s add player.uniform.force
+function players:uniform/refresh
