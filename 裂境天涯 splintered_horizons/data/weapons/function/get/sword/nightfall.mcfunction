@@ -12,7 +12,7 @@ give @s stone_sword[item_name=[{"translate":"weapon.nightfall","color":"#b30000"
 # "weapon.nightfall.story.1" : "誕生於森林月光之下的武器，"
 # "weapon.nightfall.story.2" : "守護著森林的夜晚，"
 # "weapon.nightfall.story.3" : "因為力量來原本是深淵，"
-# "weapon.nightfall.story.4" : "在最終決戰之後力量徹底的進化。"
+# "weapon.nightfall.story.4" : "在最終決戰之後力量徹底的進化 "
 # "weapon.nightfall.skill" : "[赤月之力]"
 # "weapon.nightfall.skill.1" : "使用 [%s] 切換 半月 / 血月 狀態"
 # "weapon.nightfall.skill.2" : "每次切換型態時，"
@@ -28,7 +28,7 @@ give @s stone_sword[item_name=[{"translate":"weapon.nightfall","color":"#b30000"
 # "weapon.nightfall.passive_skills.8" : "但是有 25% 機率 消耗 4 點血量與額外造成 250 攻擊力真實傷害"
 
 #name = ['夜幕', '#b30000', '劍']
-#story = {'info': ['誕生於森林月光之下的武器，', '守護著森林的夜晚，', '因為力量來原本是深淵，', '在最終決戰之後力量徹底的進化。'], 'color': 'blue'}
+#story = {'info': ['誕生於森林月光之下的武器，', '守護著森林的夜晚，', '因為力量來原本是深淵，', '在最終決戰之後力量徹底的進化 '], 'color': 'blue'}
 #item_data = {'real_item': 'stone_sword', 'id': 'nightfall', 'item_model': '"sword/nightfall/1"', 'custom_data': 'state:0b,rc:1b,type:"sword",rarity:"epic",weapon:"nightfall",forging_table:1b', 'max_damage': 150, 'max_stack_size': 1, 'rc': True, 'lc': False, 'other': ['minecraft:enchantments={"minecraft:unbreaking":1,"weapons:type/sword/nightfall/0":1}', 'enchantment_glint_override=false', 'tooltip_style="epic"','damage_type="weapons:type/sword/nightfall_attack"','minimum_attack_charge=0.5']}
 #skill = {'is_skill': True, 'cd': 5, 'name': ['赤月之力', 'dark_red', 'red'], 'info': ['使用 [%s] 切換 半月 / 血月 狀態', '每次切換型態時，', '立即對 4 格範圍內敵人造成 5 次 150% 攻擊力的一般傷害'], 'real_item': 'stone_sword', 'id': 'nightfall', 'item_model': '"sword/nightfall/1"', 'custom_data': 'type:"sword",rarity:"epic",weapon:"nightfall"', 'max_damage': -1, 'rc': True}
 #passive_skills = {'is_passive_skills': True, 'cd': 0, 'name': ['煉獄之斬', 'dark_red', 'red'], 'info': ['攻擊怪物獲得 1 層【血月恩賜】', '累積 8 層自身 加速I (00:02)', '並對 1.5 ~ 4 格內敵人 造成 250% 基礎傷害', '與給予自身 【至深之暗】符文 (00:10)', '當武器處於血月狀態時自身血量越低造成傷害越高', '但是有 25% 機率 恢復 4 點血量與額外造成 250 攻擊力真實傷害', '當武器處於半月狀態下血量越高傷害越高', '但是有 25% 機率 消耗 4 點血量與額外造成 250 攻擊力真實傷害']}

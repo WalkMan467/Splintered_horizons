@@ -9,7 +9,7 @@ execute \
     store result score @n[tag=monsters.spawn,type=skeleton,tag=monster.explosion_arrow_skeleton] monster.skill.cast.at run \
 random value 60..100
 scoreboard players operation @n[tag=monsters.spawn,type=skeleton,tag=monster.explosion_arrow_skeleton] monster.skill.cast.dur = @n[tag=monsters.spawn,type=skeleton,tag=monster.explosion_arrow_skeleton] monster.skill.cast.at
-scoreboard players operation @n[tag=monsters.spawn,type=skeleton,tag=monster.explosion_arrow_skeleton] monster.skill.cast.at += #now global.time
+scoreboard players operation @n[tag=monsters.spawn,type=skeleton,tag=monster.explosion_arrow_skeleton] monster.skill.cast.at += #gametime global.main
 scoreboard players reset @n[tag=monsters.spawn,type=skeleton,tag=monster.explosion_arrow_skeleton] monster.skill.cast.tip
 
 tag @e[tag=monsters.spawn] remove monsters.spawn

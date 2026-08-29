@@ -47,5 +47,5 @@ function monsters:chapter_3/lord_of_the_cataclysm/3/main
 # Cast
 
 execute \
-    if score @s monster.skill.cast.at <= #now global.time run \
+    if score @s monster.skill.cast.at <= #gametime global.main run \
 function monsters:chapter_3/lord_of_the_cataclysm/cast/cast

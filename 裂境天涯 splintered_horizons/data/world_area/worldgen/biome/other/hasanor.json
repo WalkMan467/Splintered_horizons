@@ -1,14 +1,14 @@
 {
   "attributes": {
-    "minecraft:visual/sky_color": 2752560,
-    "minecraft:visual/fog_color": 2752560,
+    "minecraft:visual/sky_color": "#520000",
+    "minecraft:visual/fog_color": "#520000",
     "minecraft:visual/star_brightness": 1,
     "minecraft:visual/sky_light_factor": 0,
     "minecraft:visual/sun_angle": 180,
     "minecraft:visual/moon_angle": 180,
-    "minecraft:visual/water_fog_color": 2752560,
-    "minecraft:visual/fog_start_distance": 32,
-    "minecraft:visual/fog_end_distance": 90,
+    "minecraft:visual/water_fog_color": "#520000",
+    "minecraft:visual/fog_start_distance": 64,
+    "minecraft:visual/fog_end_distance": 128,
     "minecraft:visual/ambient_particles": [
       {
         "particle": {
@@ -46,9 +46,9 @@
   "downfall": 0,
   "has_precipitation": true,
   "effects": {
-    "water_color": 7405696,
-    "grass_color": 17342,
-    "foliage_color": 17342
+    "water_color": "#520000",
+    "grass_color": "#520000",
+    "foliage_color": "#ff0000"
   },
   "carvers": "minecraft:canyon",
   "features": []

@@ -13,13 +13,13 @@ give @s stone_sword[item_name=[{"translate": "weapon.wind_sword", "color": "dark
 # ==============================
 # "weapon.wind_sword" : "࿓ 風力劍 ࿓",
 # "weapon.wind_sword.type" : "劍 / 稀有",
-# "weapon.wind_sword.story.1" : "受到風之祝福的劍，擁有操控風的力量。",
+# "weapon.wind_sword.story.1" : "受到風之祝福的劍，擁有操控風的力量 ",
 # "weapon.wind_sword.passive_skills" : "[風速斬]",
 # "weapon.wind_sword.passive_skills.1" : "連續施放2個風速劍氣，",
 # "weapon.wind_sword.passive_skills.2" : "對路徑上的敵人造成 150% 攻擊傷害，",
-# "weapon.wind_sword.passive_skills.3" : "並且使他們起飛。",
+# "weapon.wind_sword.passive_skills.3" : "並且使他們起飛 ",
 # "weapon.wind_sword.passive_skills.4" : "當你使用此武器技能時",
-# "weapon.wind_sword.passive_skills.5" : "你將獲得 [%s] 持續 5 秒。",
+# "weapon.wind_sword.passive_skills.5" : "你將獲得 [%s] 持續 5 秒 ",
 # "weapon.wind_sword.passive_skills.6" : "可以讓特定武器 CD 減少或者更為強大",
 
 # ==============================
@@ -29,7 +29,7 @@ give @s stone_sword[item_name=[{"translate": "weapon.wind_sword", "color": "dark
 #     return {
 #         "name": ['࿓ 風力劍 ࿓', "dark_aqua", '劍 / 稀有'],
 #         "story": {
-#             'info': ['受到風之祝福的劍，擁有操控風的力量。'],
+#             'info': ['受到風之祝福的劍，擁有操控風的力量 '],
 #             'color': 'blue'
 #         },
 #         "item_data": {
@@ -61,10 +61,10 @@ give @s stone_sword[item_name=[{"translate": "weapon.wind_sword", "color": "dark
 #                         {"keybind": "key.use", "underlined": True, "color": "dark_green"}
 #                     ]
 #                 },
-#                 "並且使他們起飛。",
+#                 "並且使他們起飛 ",
 #                 "當你使用此武器技能時",
 #                 {
-#                     "text": "你將獲得 [%s] 持續 5 秒。",
+#                     "text": "你將獲得 [%s] 持續 5 秒 ",
 #                     "with": [
 #                         {"translate":"weapon.effect.resplendence","underlined":True,"color":"gold"}
 #                     ]
@@ -85,10 +85,10 @@ give @s stone_sword[item_name=[{"translate": "weapon.wind_sword", "color": "dark
 #                         {"keybind": "key.use", "underlined": True, "color": "dark_green"}
 #                     ]
 #                 },
-#                 "並且使他們起飛。",
+#                 "並且使他們起飛 ",
 #                 "當你使用此武器技能時",
 #                 {
-#                     "text": "你將獲得 [%s] 持續 5 秒。",
+#                     "text": "你將獲得 [%s] 持續 5 秒 ",
 #                     "with": [
 #                         {"translate":"weapon.effect.resplendence","underlined":True,"color":"gold"}
 #                     ]

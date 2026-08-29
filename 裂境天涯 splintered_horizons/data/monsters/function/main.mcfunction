@@ -30,17 +30,17 @@ function monsters:chapter_3/finality_creeper/main
 
 ## ----- Monster Skill sys ----- ##
 # 技能冷卻改為絕對截止時間制：monster.skill.cast.at 存的是「可以放技能的那一 tick」，
-# 檢查時只跟 #now 比大小。比大小是冪等的，所以怪被 guide 的 limit 節流而漏跑幾 tick
-# 完全不影響 —— 玩家回來時 #now 早就超過 at，技能就是就緒狀態。
+# 檢查時只跟 #now 比大小 比大小是冪等的，所以怪被 guide 的 limit 節流而漏跑幾 tick
+# 完全不影響 —— 玩家回來時 #now 早就超過 at，技能就是就緒狀態 
 
 # 剩餘冷卻，給預告與 debug 用（絕對時間制看不到倒數，需要時現算）
 
 scoreboard players operation @s monster.skill.cast.cd = @s monster.skill.cast.at
-scoreboard players operation @s monster.skill.cast.cd -= #now global.time
+scoreboard players operation @s monster.skill.cast.cd -= #gametime global.main
 
 # Monster is about to cast a spell (1s warning)
-# 用 1..30 而非剛好等於 30：怪可能被節流跳過某些 tick，剛好踩在 30 的那一刻不保證看得到。
-# tip 旗標確保每輪冷卻只預告一次，設定新冷卻時會一併 reset。
+# 用 1..30 而非剛好等於 30：怪可能被節流跳過某些 tick，剛好踩在 30 的那一刻不保證看得到 
+# tip 旗標確保每輪冷卻只預告一次，設定新冷卻時會一併 reset 
 
 execute \
     as @s[tag=monster,tag=!hide_skill_tip] \
@@ -54,7 +54,7 @@ execute \
 scoreboard players set @s monster.skill.cast.tip 1
 
 # Monster skill cooldown
-# 不再遞減。凍結／沉默時改成把截止時間一起往後推，效果等同暫停倒數。
+# 不再遞減 凍結／沉默時改成把截止時間一起往後推，效果等同暫停倒數 
 
 scoreboard players set @s monster.skill.paused 1
 

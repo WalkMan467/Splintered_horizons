@@ -257,6 +257,13 @@ scoreboard objectives add weapon.echo_rhythm.cd dummy "回聲律動 CD"
 
 scoreboard players add @a weapon.echo_rhythm.cd 0
 #===================================================================
+# 地獄之火
+
+scoreboard objectives add weapon.pyrosolis.cd dummy "地獄之火 CD"
+
+scoreboard players add @a weapon.pyrosolis.cd 0
+#===================================================================
+
 # 變形異獸
 
 scoreboard objectives add weapon.morphing_beast.state dummy "變形異獸狀態"

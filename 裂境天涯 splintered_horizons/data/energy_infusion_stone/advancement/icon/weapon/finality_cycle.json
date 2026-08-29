@@ -1,0 +1,68 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:enchanted_book",
+      "components": {
+        "minecraft:enchantments": {
+          "minecraft:mending": 1
+        }
+      },
+      "count": 1
+    },
+    "title": {
+      "translate": "item.energy_infusion_stone.finality_cycle",
+      "color": "dark_red"
+    },
+    "description": [
+      {
+        "translate": "item.energy_infusion_stone.finality_cycle.passive_skills",
+        "color": "#8F0000",
+        "bold": true,
+        "italic": false
+      },
+      "\n",
+      {
+        "translate": "item.energy_infusion_stone.finality_cycle.passive_skills.1",
+        "color": "#ff4b4b",
+        "bold": false,
+        "italic": false
+      },
+      "\n",
+      {
+        "translate": "item.energy_infusion_stone.finality_cycle.passive_skills.2",
+        "color": "#ff4b4b",
+        "bold": false,
+        "italic": false,
+        "with": [{"translate": "%","underlined": false,"italic": false,"color": "#ff4b4b","bold": false},{"translate": "tips.eye_of_finality","underlined": true,"italic": false,"color": "dark_red","bold": false}]
+      }
+    ],
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "energy_infusion_stone:icon/weapon/icon",
+  "criteria": {
+    "requirement": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "predicates": {
+              "minecraft:custom_data": {
+                "id": "weapon_energy_infusion"
+              },
+              "minecraft:enchantments": [
+                {
+                  "enchantments": "energy_infusion_stone:skills/weapon/finality_cycle",
+                  "levels": {
+                    "min": 1
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

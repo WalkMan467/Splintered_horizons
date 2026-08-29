@@ -10,9 +10,21 @@
 # ===================================================
 
 # 終焉技專用顯示冷卻時間
+# 終焉之眼（player.ultimate）同樣改成絕對時間制：分數存的是「可以再放的那一 tick」
 
 scoreboard players set %2 weapon.ultimate.cd.math 2
+
 scoreboard players operation %temp weapon.ultimate.cd.math = @s player.ultimate
+scoreboard players operation %temp weapon.ultimate.cd.math -= #gametime global.main
+
+# 轉好了就不要顯示負數（整除是向下取整，負數會被除成更負的值）
+execute \
+    if score %temp weapon.ultimate.cd.math matches ..0 run \
+scoreboard players set %temp weapon.ultimate.cd.math 0
+
+# 先 +1 再整除 2 等於對 0.1 秒無條件進位
+# 直接截斷的話剩 1 tick 會顯示成 0.0s，但技能其實還沒好
+scoreboard players add %temp weapon.ultimate.cd.math 1
 
 execute \
     store result storage temp ultimate.cd float 0.1 run \

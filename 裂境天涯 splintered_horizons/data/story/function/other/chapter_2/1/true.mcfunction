@@ -35,3 +35,11 @@ summon interaction 381 80 -183 \
         height:2, \
         UUID:[I; 512112, 51225, 51521, 331323] \
     }
+
+execute \
+        in minecraft:the_end run \
+setblock 381 80 -183 light[level=15]
+
+execute \
+        in minecraft:the_end run \
+setblock 381 81 -183 light[level=15]

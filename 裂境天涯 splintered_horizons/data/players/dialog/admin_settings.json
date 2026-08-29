@@ -1,0 +1,74 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "translate": "dialog.main.quick_actions.admin_settings",
+    "fallback": "Admin Settings",
+    "color": "yellow"
+  },
+  "inputs": [],
+  "can_close_with_escape": true,
+  "pause": false,
+  "after_action": "none",
+  "actions": [
+    {
+      "label": [
+        {
+          "text": "👁 ",
+          "color": "#0b51f4"
+        },
+        {
+          "translate": "dialog.main.quick_actions.night_vision",
+          "fallback": "Night Vision",
+          "color": "#0b51f4"
+        },
+        {
+          "text": " 👁",
+          "color": "#0b51f4"
+        }
+      ],
+      "width": 180,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger player.setting.night_vision.trigger"
+      }
+    },
+    {
+      "label": [
+        {
+          "translate": "dialog.main.enabled",
+          "fallback": "Enabled ",
+          "color": "yellow"
+        },
+        {
+          "translate": "dialog.main.quick_actions.gameplay_test",
+          "fallback": "Gameplay Test",
+          "color": "yellow"
+        }
+      ],
+      "width": 180,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger player.detect.click_event.trigger set 26"
+      }
+    },
+    {
+      "label": [
+        {
+          "translate": "dialog.main.disabled",
+          "fallback": "Disabled ",
+          "color": "yellow"
+        },
+        {
+          "translate": "dialog.main.quick_actions.gameplay_test",
+          "fallback": "Gameplay Test",
+          "color": "yellow"
+        }
+      ],
+      "width": 180,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger player.detect.click_event.trigger set 25"
+      }
+    }
+  ]
+}

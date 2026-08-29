@@ -31,19 +31,19 @@ return 0
 execute \
     if score #weapon.kill_sword.raycast main.raycast matches 2.. \
     positioned ^ ^ ^0.5 \
-    if block ~ ~ ~ #air run \
+    if block ~ ~ ~ #penetrate run \
 function weapons:type/sword/kill_sword/rc/raycast/detect
 
 execute \
     if score #weapon.kill_sword.raycast main.raycast matches 2.. \
     positioned ^ ^ ^0.5 \
-    unless block ~ ~ ~ #air run \
+    unless block ~ ~ ~ #penetrate run \
 function weapons:type/sword/kill_sword/rc/raycast/final
 
 execute \
     if score #weapon.kill_sword.raycast main.raycast matches 2.. \
     positioned ^ ^ ^0.5 \
-    unless block ~ ~ ~ #air run \
+    unless block ~ ~ ~ #penetrate run \
 return 0
 
 # 到達最大距離

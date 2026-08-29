@@ -9,11 +9,11 @@ execute \
     store result score @s monster.skill.cast.at run \
 random value 60..160
 scoreboard players operation @s monster.skill.cast.dur = @s monster.skill.cast.at
-scoreboard players operation @s monster.skill.cast.at += #now global.time
+scoreboard players operation @s monster.skill.cast.at += #gametime global.main
 scoreboard players reset @s monster.skill.cast.tip
 
 # Cast
 
 execute \
-    if score @s monster.skill.cast.at <= #now global.time run \
+    if score @s monster.skill.cast.at <= #gametime global.main run \
 function monsters:chapter_3/corroder/cast/cast

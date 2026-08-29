@@ -17,7 +17,7 @@ give @s stone_sword[item_name=[{"translate": "weapon.morning_light", "color": "#
 # "weapon.morning_light.story.2" : "在世界被深淵壟罩之後",
 # "weapon.morning_light.story.3" : "依舊還保留了殘餘聖光的能量，",
 # "weapon.morning_light.story.4" : "即使黑暗時代降臨",
-# "weapon.morning_light.story.5" : "依舊無時無刻抵抗著深淵力量。",
+# "weapon.morning_light.story.5" : "依舊無時無刻抵抗著深淵力量 ",
 # "weapon.morning_light.skill" : "[黃昏之殤]",
 # "weapon.morning_light.skill.1" : "攻擊命中時:",
 # "weapon.morning_light.skill.2" : "在空中召喚【光之聖劍】落下",
@@ -37,7 +37,7 @@ give @s stone_sword[item_name=[{"translate": "weapon.morning_light", "color": "#
 #     return {
 #         "name": ['晨曦之光', "#ffd000", '劍 / 史詩'],
 #         "story": {
-#             'info': ['一把由聖光作為材料鍛造出來的劍，','在世界被深淵壟罩之後','依舊還保留了殘餘聖光的能量，','即使黑暗時代降臨','依舊無時無刻抵抗著深淵力量。'],
+#             'info': ['一把由聖光作為材料鍛造出來的劍，','在世界被深淵壟罩之後','依舊還保留了殘餘聖光的能量，','即使黑暗時代降臨','依舊無時無刻抵抗著深淵力量 '],
 #             'color': 'blue'
 #         },
 #         "item_data": {

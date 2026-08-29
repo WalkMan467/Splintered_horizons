@@ -1,5 +1,10 @@
 ## ---異界傳送門--- ##
 
+    # _temp 是 true/false 的狀態旗標，分數不存在時 `matches 0` 不會成立，
+    # 而它又只在 true/false 裡才會被寫入，沒先建出來就永遠觸發不了
+
+    scoreboard players add #world_area.other.otherworld_portal.4_temp global.main 0
+
     execute \
     positioned \
     as 00000015-0000-0002-0000-000200000033 \

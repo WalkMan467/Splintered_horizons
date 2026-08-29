@@ -8,19 +8,27 @@
 
 # ===================================================
 
-scoreboard players add @s weapon.aquilumera.cd 0
+execute \
+    if score @s player.click.interval matches 1.. run \
+    return run \
+return 0
 
 execute \
-    unless score @s weapon.aquilumera.cd matches ..0 run \
+    unless score @s weapon.aquilumera.cd matches -2147483648..2147483647 run \
+    return run \
+function weapons:rc/cd {id:"weapon.aquilumera.cd", cd:500}
+
+execute \
+    unless score #gametime global.main >= @s weapon.aquilumera.cd run \
+    return run \
 function weapons:rc/failure/skill_use_failed with entity @s SelectedItem.components."minecraft:custom_data"
 
-execute \
-    unless score @s weapon.aquilumera.cd matches ..0 run \
-return 0
+# Reset CD
+
+function weapons:rc/cd {id:"weapon.aquilumera.cd", cd:500}
 
 scoreboard players set @s player.click.interval 20
 scoreboard players set @s weapon.aquilumera_passive 10
-scoreboard players set @s weapon.aquilumera.cd 500
 
 execute \
     if items entity @s weapon.mainhand *[minecraft:custom_data~{wl_light:1b}] run \

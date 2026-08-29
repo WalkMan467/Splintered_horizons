@@ -24,4 +24,13 @@ execute \
 damage @s 8 magic
 scoreboard players set @a[distance=..4] weapon.effect.starry_sky_frost 100
 
+execute \
+    on owner run \
+say ok
+
+execute \
+    on origin \
+    if entity @s[type=player] run \
+scoreboard players set @s weapon.effect.starry_sky_frost 100
+
 advancement revoke @a only weapons:arrows/starry_sky_frost_arrow

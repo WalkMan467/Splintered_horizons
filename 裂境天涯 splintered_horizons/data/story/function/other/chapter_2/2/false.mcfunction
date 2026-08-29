@@ -8,3 +8,11 @@ execute \
     in minecraft:the_end \
     as @n[tag=aj.isokla.root,limit=1,distance=0..,type=item_display] run \
 function aj:isokla/remove/this
+
+execute \
+        in minecraft:the_end run \
+setblock 360 100 -274 air
+
+execute \
+        in minecraft:the_end run \
+setblock 360 101 -274 air

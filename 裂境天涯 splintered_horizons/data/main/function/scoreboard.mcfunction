@@ -55,7 +55,9 @@ team add glow.light_purple
 team add glow.red
 team add glow.white
 team add glow.yellow
+team add NoCollisionRule NoCollisionRule
 
+team modify NoCollisionRule collisionRule never
 team modify glow.aqua color aqua
 team modify glow.dark_aqua color dark_aqua
 team modify glow.black color black

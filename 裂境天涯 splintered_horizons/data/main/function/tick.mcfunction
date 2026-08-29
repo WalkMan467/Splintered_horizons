@@ -1,10 +1,8 @@
 ## ----- 全域時間基準 ----- ##
-# 絕對時間制 timer 的比較基準。必須是整個 tick 的第一件事，而且每 tick 只更新一次。
-# gametime 是世界年齡，只增不減，/time set 不會影響它。
+# 絕對時間制 timer 的比較基準 必須是整個 tick 的第一件事，而且每 tick 只更新一次 
+# gametime 是世界年齡，只增不減，/time set 不會影響它 
 
-execute \
-    store result score #now global.time run \
-time query gametime
+function main:gametime
 
 
 execute \

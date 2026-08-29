@@ -86,10 +86,10 @@ give @s bow[item_name=[{"translate": "weapon.heavenly_guiding_bow", "color": "#f
 #                         {"keybind": "key.use", "underlined": True, "color": "dark_green"}
 #                     ]
 #                 },
-#                 "並且使他們起飛。",
+#                 "並且使他們起飛 ",
 #                 "當你使用此武器技能時",
 #                 {
-#                     "text": "你將獲得 [%s] 持續 5 秒。",
+#                     "text": "你將獲得 [%s] 持續 5 秒 ",
 #                     "with": [
 #                         {"translate":"weapon.effect.resplendence","underlined":True,"color":"gold"}
 #                     ]

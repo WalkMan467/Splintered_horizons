@@ -10,7 +10,7 @@
 # wind
 
 execute anchored eyes run \
-summon item_display ^ ^ ^ {Tags:[twilight_wind.wind,summon],item:{id:"minecraft:air",count:1,components:{"minecraft:custom_model_data":24}},item_display:"head",teleport_duration:1}
+summon item_display ^ ^ ^ {Tags:[twilight_wind.wind,summon],item:{id:"minecraft:barrier",count:1,components:{"minecraft:custom_model_data":24}},item_display:"head",teleport_duration:1}
 data modify entity @n[tag=summon,limit=1] Rotation set from entity @s Rotation
 
 

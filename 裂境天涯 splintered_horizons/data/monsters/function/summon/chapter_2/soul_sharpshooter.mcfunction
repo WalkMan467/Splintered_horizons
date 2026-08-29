@@ -10,7 +10,7 @@ execute \
     store result score @n[tag=summon,distance=..1,sort=arbitrary,type=stray] monster.skill.cast.at run \
 random value 60..100
 scoreboard players operation @n[tag=summon,distance=..1,sort=arbitrary,type=stray] monster.skill.cast.dur = @n[tag=summon,distance=..1,sort=arbitrary,type=stray] monster.skill.cast.at
-scoreboard players operation @n[tag=summon,distance=..1,sort=arbitrary,type=stray] monster.skill.cast.at += #now global.time
+scoreboard players operation @n[tag=summon,distance=..1,sort=arbitrary,type=stray] monster.skill.cast.at += #gametime global.main
 scoreboard players reset @n[tag=summon,distance=..1,sort=arbitrary,type=stray] monster.skill.cast.tip
 
 scoreboard players set @n[tag=summon,distance=..1,sort=arbitrary,type=stray] monster.skill.rdm.skill 1

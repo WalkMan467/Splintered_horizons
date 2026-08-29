@@ -44,6 +44,17 @@
     },
     {
       "label": {
+        "translate": "dialog.main.quick_actions.bloom",
+        "fallback": "Bloom",
+        "color": "white"
+      },
+      "action": {
+        "type": "run_command",
+        "command": "trigger player.setting.bloom.trigger"
+      }
+    },
+    {
+      "label": {
         "translate": "dialog.main.quick_actions.auto_refill_items",
         "fallback": "Auto Refill Items",
         "color": "white"

@@ -103,5 +103,13 @@ execute \
     if score @s player.detect.click_event.trigger matches 24 run \
 function story:safe_area/selena/trigger/1/run
 
+execute \
+    if score @s player.detect.click_event.trigger matches 25 run \
+function players:setting/gameplay_test/0
+
+execute \
+    if score @s player.detect.click_event.trigger matches 26 run \
+function players:setting/gameplay_test/1
+
 scoreboard players set @s player.detect.click_event.trigger 0
 scoreboard players enable @s player.detect.click_event.trigger

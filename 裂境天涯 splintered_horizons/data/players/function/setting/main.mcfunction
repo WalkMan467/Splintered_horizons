@@ -8,6 +8,10 @@ function players:setting/backup/1
 function players:setting/backup/return/trigger
 function players:setting/smooth_walking/0
 function players:setting/smooth_walking/1
+function players:setting/night_vision/0
+function players:setting/night_vision/1
+function players:setting/bloom/0
+function players:setting/bloom/1
 function players:setting/auto_refill_items/0
 function players:setting/auto_refill_items/1
 function players:setting/waterfall_effect/0

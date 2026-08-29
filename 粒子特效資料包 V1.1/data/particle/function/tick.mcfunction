@@ -1,3 +1,6 @@
+# 粒子特效全局時間
+function particle:gametime
+
 # 時空破碎
 
 execute \

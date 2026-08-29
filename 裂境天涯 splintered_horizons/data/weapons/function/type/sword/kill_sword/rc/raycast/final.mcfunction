@@ -7,6 +7,7 @@
 # ===================================================
 
 data modify entity @s DeathLootTable set value ""
+kill @e[distance=..3,type=experience_orb]
 damage @s 9999999 weapons:type/sword/kill_sword by @p
 
 particle block{block_state:"minecraft:redstone_block"} ~ ~1 ~ 1 1 1 1 40 normal
