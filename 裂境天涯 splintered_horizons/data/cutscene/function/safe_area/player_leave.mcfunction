@@ -8,5 +8,6 @@ execute \
 return 0
 
 gamemode adventure @s[gamemode=spectator]
-function players:inventory/return {bag:"cutscene/safe_area"}
+# 先把狀態清掉，refresh 才會重算成「該回便服」
 tag @s remove cutscene.player_leave.detect
+function players:uniform/refresh

@@ -13,6 +13,8 @@
 # 終焉之眼（player.ultimate）同樣改成絕對時間制：分數存的是「可以再放的那一 tick」
 
 scoreboard players set %2 weapon.ultimate.cd.math 2
+scoreboard players set %10 weapon.ultimate.cd.math 10
+
 
 scoreboard players operation %temp weapon.ultimate.cd.math = @s player.ultimate
 scoreboard players operation %temp weapon.ultimate.cd.math -= #gametime global.main
@@ -26,13 +28,18 @@ scoreboard players set %temp weapon.ultimate.cd.math 0
 # 直接截斷的話剩 1 tick 會顯示成 0.0s，但技能其實還沒好
 scoreboard players add %temp weapon.ultimate.cd.math 1
 
-execute \
-    store result storage temp ultimate.cd float 0.1 run \
+# 注：nbt 文字元件渲染字串標籤時會連 SNBT 的引號一起印出來，
+#     所以改用 score 元件：整數位、"."、小數位三段拼。
 scoreboard players operation %temp weapon.ultimate.cd.math /= %2 weapon.ultimate.cd.math
-data modify storage temp ultimate.cd set string storage temp ultimate.cd 0 -1
+
+scoreboard players operation %sec weapon.ultimate.cd.math = %temp weapon.ultimate.cd.math
+scoreboard players operation %sec weapon.ultimate.cd.math /= %10 weapon.ultimate.cd.math
+
+scoreboard players operation %dec weapon.ultimate.cd.math = %temp weapon.ultimate.cd.math
+scoreboard players operation %dec weapon.ultimate.cd.math %= %10 weapon.ultimate.cd.math
 
 title @s title ""
-title @s subtitle [{"translate": "weapon.cd","color": "green"},{"text":"\uE000\uE010","font":"space"},{"color": "gold","nbt":"ultimate.cd","storage":"temp"},{"text":"s","color":"gold"}]
+title @s subtitle [{"translate": "weapon.cd","color": "green"},{"text":"\uE000\uE010","font":"space"},{score:{name:"%sec",objective:"weapon.ultimate.cd.math"},"color":"gold"},{"text":".","color":"gold"},{score:{name:"%dec",objective:"weapon.ultimate.cd.math"},"color":"gold"},{"text":"s","color":"gold"}]
 title @s times 0 20 20
 
 playsound minecraft:block.respawn_anchor.deplete voice @s ~ ~1 ~ 3 2

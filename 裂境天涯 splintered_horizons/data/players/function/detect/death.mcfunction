@@ -8,6 +8,10 @@ scoreboard players add @s player.death_count 0
 scoreboard players reset @s player.detect.air
 advancement grant @s only players:elytra_switch/false
 
+# 身上的東西死掉時就沒了，但邏輯狀態沒變 —— 強制重套一次制服 / 取回真背包
+tag @s add player.uniform.force
+function players:uniform/refresh
+
 clear @s *[custom_data~{type:"item",item:"coin_s"}]
 tag @s add forced_interrupt_animation
 function players:detect/group/death

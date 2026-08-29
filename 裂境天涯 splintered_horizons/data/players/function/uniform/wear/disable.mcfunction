@@ -1,0 +1,18 @@
+# 執行者 : 玩家
+# 禁用背包制服 (elekiel phase 2 技能 4)。內容固定、可重複生成，不需要被存進任何 bag。
+# 由 players:uniform/refresh 呼叫；技能中途重發也直接叫這支。
+# (原本內嵌在 disable_inventory/true 與 reset，兩份合而為一)
+
+# 游標上的東西 clear 掃不到，要另外處理
+execute     if items entity @s player.cursor *[custom_data~{disable_inventory:1b}] run item replace entity @s player.cursor with air
+
+clear @s
+
+give @s iron_sword[tooltip_display={hide_tooltip:true},item_model="disable_icon",item_name="",max_stack_size=1,attribute_modifiers=[{id:"base_attack_damage",type:"attack_damage",amount:0.0,operation:"add_multiplied_base",slot:"mainhand"},{id:"base_attack_speed",type:"attack_speed",amount:0.0,operation:"add_multiplied_base",slot:"mainhand"}],unbreakable={},custom_data={disable_inventory:1b,no_switch_sfx:1b}] 36
+item replace entity @s armor.head with iron_sword[equippable={slot:"head",asset_id:"air"},item_model="disable_icon",tooltip_display={hide_tooltip:true},enchantment_glint_override=false,enchantments={"binding_curse":1,"bossfight:chapter_2/elekiel_phase_2/skills/4/damage_immunity":1},attribute_modifiers=[{id:"base_attack_damage",type:"attack_damage",amount:0.0,operation:"add_multiplied_base",slot:"head"},{id:"base_attack_speed",type:"attack_speed",amount:0.0,operation:"add_multiplied_base",slot:"head"}],unbreakable={},custom_data={disable_inventory:1b,no_switch_sfx:1b}] 1
+item replace entity @s armor.chest with iron_sword[equippable={slot:"chest",asset_id:"air"},item_model="disable_icon",tooltip_display={hide_tooltip:true},enchantment_glint_override=false,enchantments={"binding_curse":1,"bossfight:chapter_2/elekiel_phase_2/skills/4/damage_immunity":1},attribute_modifiers=[{id:"base_attack_damage",type:"attack_damage",amount:0.0,operation:"add_multiplied_base",slot:"chest"},{id:"base_attack_speed",type:"attack_speed",amount:0.0,operation:"add_multiplied_base",slot:"chest"}],unbreakable={},custom_data={disable_inventory:1b,no_switch_sfx:1b}] 1
+item replace entity @s armor.legs with iron_sword[equippable={slot:"legs",asset_id:"air"},item_model="disable_icon",tooltip_display={hide_tooltip:true},enchantment_glint_override=false,enchantments={"binding_curse":1,"bossfight:chapter_2/elekiel_phase_2/skills/4/damage_immunity":1},attribute_modifiers=[{id:"base_attack_damage",type:"attack_damage",amount:0.0,operation:"add_multiplied_base",slot:"legs"},{id:"base_attack_speed",type:"attack_speed",amount:0.0,operation:"add_multiplied_base",slot:"legs"}],unbreakable={},custom_data={disable_inventory:1b,no_switch_sfx:1b}] 1
+item replace entity @s armor.feet with iron_sword[equippable={slot:"feet",asset_id:"air"},item_model="disable_icon",tooltip_display={hide_tooltip:true},enchantment_glint_override=false,enchantments={"binding_curse":1,"bossfight:chapter_2/elekiel_phase_2/skills/4/damage_immunity":1},attribute_modifiers=[{id:"base_attack_damage",type:"attack_damage",amount:0.0,operation:"add_multiplied_base",slot:"feet"},{id:"base_attack_speed",type:"attack_speed",amount:0.0,operation:"add_multiplied_base",slot:"feet"}],unbreakable={},custom_data={disable_inventory:1b,no_switch_sfx:1b}] 1
+item replace entity @s weapon.offhand with iron_sword[item_model="disable_icon",tooltip_display={hide_tooltip:true},enchantment_glint_override=false,attribute_modifiers=[{id:"base_attack_damage",type:"attack_damage",amount:0.0,operation:"add_multiplied_base",slot:"offhand"},{id:"base_attack_speed",type:"attack_speed",amount:0.0,operation:"add_multiplied_base",slot:"offhand"}],unbreakable={},custom_data={disable_inventory:1b,no_switch_sfx:1b}] 1
+
+kill @e[sort=arbitrary,predicate=bossfight:chapter_2/elekiel_phase_2/skills/disable_inventory/item,type=item]

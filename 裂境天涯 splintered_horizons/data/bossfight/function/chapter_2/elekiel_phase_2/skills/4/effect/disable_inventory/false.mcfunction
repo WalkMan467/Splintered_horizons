@@ -14,8 +14,8 @@ item replace entity @s armor.chest with air
 item replace entity @s armor.legs with air
 item replace entity @s armor.feet with air
 
-function players:inventory/return {bag:"overworld"}
+# 先把狀態清掉，refresh 才會重算成「該回便服」
+tag @s remove monster.elekiel_phase_2.void.target
+function players:uniform/refresh
 
 kill @e[sort=arbitrary,predicate=bossfight:chapter_2/elekiel_phase_2/skills/disable_inventory/item,type=item]
-
-tag @s remove monster.elekiel_phase_2.void.target
