@@ -5,7 +5,7 @@ return 0
 
 tag @s remove player.elytra_switch
 
-function players:inventory/return {bag:"overworld"}
+function players:uniform/refresh
 
 scoreboard players set @s player.animation.lock 0
 

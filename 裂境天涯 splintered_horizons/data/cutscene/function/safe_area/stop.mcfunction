@@ -39,10 +39,12 @@ function aj:irina/remove/this
 
 function story:chapter_2/stop
 
-execute \
-    as @a[tag=cutscene.player_leave.detect] at @s run \
-function players:inventory/return {bag:"cutscene/safe_area"}
+# 先把狀態清掉，refresh 才會重算成「該回便服」
 tag @a remove cutscene.player_leave.detect
+
+execute \
+    as @a at @s run \
+function players:uniform/refresh
 
 schedule clear cutscene:safe_area/main
 schedule clear cutscene:safe_area/1/0
