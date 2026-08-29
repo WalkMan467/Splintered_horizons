@@ -9,38 +9,44 @@
 # ===================================================
 
 scoreboard players add @s weapon.nightfall.state 0
-scoreboard players add @s weapon.nightfall.cd 0
 
 execute \
-    unless score @s weapon.nightfall.cd matches ..0 \
-    unless score @s player.click.interval matches 1.. run \
+    if score @s player.click.interval matches 1.. run \
+    return run \
+return 0
+
+execute \
+    unless score @s weapon.nightfall.cd matches -2147483648..2147483647 run \
+    return run \
+function weapons:rc/cd {id:"weapon.nightfall.cd", cd:100}
+
+execute \
+    unless score #gametime global.main >= @s weapon.nightfall.cd run \
+    return run \
 function weapons:rc/failure/skill_use_failed with entity @s SelectedItem.components."minecraft:custom_data"
 
-execute \
-    unless score @s weapon.nightfall.cd matches ..0 run \
-return 0
+# 重置 CD / Reset CD
+
+function weapons:rc/cd {id:"weapon.nightfall.cd", cd:100}
 
 scoreboard players set @s player.click.interval 20
 
 scoreboard players set @s weapon.effect.shadow 100
 
+# 緋紅之爪彈射傷害 / Crimson Claw Dmg
 
 execute \
-    if score @s weapon.nightfall.state matches 0 \
-    if score @s weapon.nightfall.cd matches 0 run \
+    if score @s weapon.effect.crimson_claw matches 1.. run \
+function weapons:type/sword/nightfall/rc/switch_dmg/use
+
+# 型態切換 / State Switch
+
+execute \
+    if score @s weapon.nightfall.state matches 0 run \
+    return run \
 function weapons:type/sword/nightfall/rc/state/1
 
 execute \
-    if score @s weapon.nightfall.state matches 1 \
-    if score @s weapon.nightfall.cd matches 0 run \
+    if score @s weapon.nightfall.state matches 1 run \
+    return run \
 function weapons:type/sword/nightfall/rc/state/0
-
-# 緋紅之爪彈射傷害
-
-
-execute \
-    unless score @s weapon.effect.crimson_claw matches 1.. run \
-return 0
-
-tag @s add nightfall.user
-scoreboard players set @s weapon.nightfall.effect.switch_dmg_count 5

@@ -83,4 +83,4 @@ tag @s[tag=water_sword.l_user] remove water_sword.l_user
 execute \
     as @s[tag=nightfall.user] at @s \
     if score @s weapon.nightfall.effect.switch_dmg_count matches 0.. run \
-function weapons:type/sword/nightfall/rc/switch_dmg
+function weapons:type/sword/nightfall/rc/switch_dmg/calculate

@@ -1,7 +1,7 @@
 # ===================================================
 # 劍 夜幕 右鍵 switch dmg / sword nightfall right click switch dmg
 
-    ## Guide [ function weapons:type/sword/nightfall/rc/switch_dmg ] >>> 劍 夜幕 右鍵 switch dmg / sword nightfall right click switch dmg
+    ## Guide [ function weapons:type/sword/nightfall/rc/switch_dmg/calculate ] >>> 劍 夜幕 右鍵 switch dmg / sword nightfall right click switch dmg
     ## Guide [ function dmg_formula:weapons/type/sword/nightfall/switch/calculate ] >>> weapons 劍 夜幕 切換 計算 / weapons sword nightfall switch calculate
     ## Guide [ function weapons:type/core/player ] >>> 核心 玩家 / core player
 
