@@ -1,3 +1,12 @@
+# ===================================================
+# 召喚 災厄之主 / summon lord of the cataclysm
+
+    ## Guide [ function monsters:summon/chapter_3/lord_of_the_cataclysm ] >>> 召喚 災厄之主 / summon lord of the cataclysm
+    ## Guide [ function trap:chapter_3/chest/1/true ] >>> true
+    ## Guide [ function monsters:chapter_3/lord_of_the_cataclysm/main ] >>> main
+    ## Guide [ function monsters:chapter_3/lord_of_the_cataclysm/setup ] >>> setup
+
+# ===================================================
 
 execute \
     unless score #difficulty global.main matches 1.. run \

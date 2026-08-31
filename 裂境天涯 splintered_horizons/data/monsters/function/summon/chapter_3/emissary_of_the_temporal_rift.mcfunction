@@ -1,3 +1,12 @@
+# ===================================================
+# 召喚 時空裂痕的使者 / summon emissary of the temporal rift
+
+    ## Guide [ function monsters:summon/chapter_3/emissary_of_the_temporal_rift ] >>> 召喚 時空裂痕的使者 / summon emissary of the temporal rift
+    ## Guide [ function spawner:type/chapter_3/emissary_of_the_temporal_rift/sunmmon ] >>> sunmmon
+    ## Guide [ function sys:monster_wave/chapter_3/1/summon/rdm ] >>> rdm
+    ## Guide [ function monsters:chapter_3/emissary_of_the_temporal_rift/setup ] >>> setup
+
+# ===================================================
 
 execute \
     unless score #difficulty global.main matches 1.. run \

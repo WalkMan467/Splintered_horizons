@@ -1,3 +1,27 @@
+# ===================================================
+# 怪物 主程式 / monsters main
+
+    ## Guide [ function monsters:main ] >>> 怪物 主程式 / monsters main
+    ## Guide [ function monsters:guide ] >>> 怪物 排程入口 / monsters dispatch entry
+    ## Guide [ function monsters:chapter_1/abyssal_black_knight/main ] >>> 深淵黑騎 主程式 / abyssal black knight main
+    ## Guide [ function monsters:chapter_1/abyssal_soulreaper/main ] >>> 深淵斷魂者 主程式 / abyssal soulreaper main
+    ## Guide [ function monsters:chapter_1/explosion_arrow_skeleton/main ] >>> 深淵射手 主程式 / explosion arrow skeleton main
+    ## Guide [ function monsters:chapter_2/apostle_of_eternity/main ] >>> main
+    ## Guide [ function monsters:chapter_2/blackhole_creeper/main ] >>> main
+    ## Guide [ function monsters:chapter_2/forest_messenger/main ] >>> main
+    ## Guide [ function monsters:chapter_2/soul_sharpshooter/main ] >>> main
+    ## Guide [ function monsters:chapter_3/bloody_blade_spider/main ] >>> main
+    ## Guide [ function monsters:chapter_3/corroder/main ] >>> main
+    ## Guide [ function monsters:chapter_3/emissary_of_the_temporal_rift/main ] >>> main
+    ## Guide [ function monsters:chapter_3/finality_creeper/main ] >>> main
+    ## Guide [ function monsters:chapter_3/sunfire_emissary/main ] >>> main
+    ## Guide [ function monsters:generic/freeze/main ] >>> 凍結 主程式 / freeze main
+    ## Guide [ function monsters:other/abyss_crystal/main ] >>> main
+    ## Guide [ function monsters:other/sun_of_the_abyssal_eclipse/main ] >>> main
+    ## Guide [ function monsters:unlease_skill_tip/use ] >>> 技能預告 分派 / skill tip dispatch
+
+# ===================================================
+
 ## ----- Monster Main Program ----- ##
 
 

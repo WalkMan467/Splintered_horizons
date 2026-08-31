@@ -1,3 +1,11 @@
+# ===================================================
+# 深淵射手 施法 結束並重設冷卻 / explosion arrow skeleton cast end
+
+    ## Guide [ function monsters:chapter_1/explosion_arrow_skeleton/cast/end ] >>> 深淵射手 施法 結束並重設冷卻 / explosion arrow skeleton cast end
+    ## Guide [ function monsters:chapter_1/explosion_arrow_skeleton/1/1 ] >>> 深淵射手 技能1 收回爆裂箭 / explosion arrow skeleton skill 1 unload arrow
+    ## Guide [ function monsters:chapter_1/explosion_arrow_skeleton/1/main ] >>> 深淵射手 技能1 分鏡 / explosion arrow skeleton skill 1 timeline
+
+# ===================================================
 
 ## ----- Reset ----- ##
 scoreboard players reset @s monster.skill.casting

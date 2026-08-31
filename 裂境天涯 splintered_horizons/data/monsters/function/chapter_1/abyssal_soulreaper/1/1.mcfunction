@@ -1,3 +1,14 @@
+# ===================================================
+# 深淵斷魂者 技能1 揮斬 / abyssal soulreaper skill 1 swing
+
+    ## Guide [ function monsters:chapter_1/abyssal_soulreaper/1/1 ] >>> 深淵斷魂者 技能1 揮斬 / abyssal soulreaper skill 1 swing
+    ## Guide [ function monsters:chapter_1/abyssal_soulreaper/1/main ] >>> 深淵斷魂者 技能1 分鏡 / abyssal soulreaper skill 1 timeline
+    ## Guide [ function monsters:chapter_1/abyssal_soulreaper/1/4 ] >>> 深淵斷魂者 技能1 斧頭展示設定 / abyssal soulreaper skill 1 axe display setup
+    ## Guide [ function monsters:chapter_1/abyssal_soulreaper/1/fx ] >>> 深淵斷魂者 技能1 環狀特效 / abyssal soulreaper skill 1 ring fx
+    ## Guide [ function monsters:chapter_1/abyssal_soulreaper/effect/bleeding/use ] >>> 深淵斷魂者 流血 施加 / abyssal soulreaper bleeding apply
+
+# ===================================================
+
 # 特效
 execute \
     rotated ~ 0 run \

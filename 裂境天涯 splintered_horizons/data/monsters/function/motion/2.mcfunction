@@ -1,3 +1,11 @@
+# ===================================================
+# 施加位移 階段 2 / motion step 2
+
+    ## Guide [ function monsters:motion/2 ] >>> 施加位移 階段 2 / motion step 2
+    ## Guide [ function monsters:motion/1 ] >>> 施加位移 階段 1 / motion step 1
+
+# ===================================================
+
 execute if entity @s[type=player] run \
 return 0
 

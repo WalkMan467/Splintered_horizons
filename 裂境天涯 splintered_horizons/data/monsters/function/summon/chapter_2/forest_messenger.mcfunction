@@ -1,3 +1,10 @@
+# ===================================================
+# 召喚 森林信使 / summon forest messenger
+
+    ## Guide [ function monsters:summon/chapter_2/forest_messenger ] >>> 召喚 森林信使 / summon forest messenger
+    ## Guide [ function spawner:type/chapter_2/forest_messenger/sunmmon ] >>> sunmmon
+
+# ===================================================
 
 execute \
     unless score #difficulty global.main matches 1.. run \

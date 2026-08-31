@@ -1,3 +1,10 @@
+# ===================================================
+# 召喚 血滴子蜘蛛 / summon bloody blade spider
+
+    ## Guide [ function monsters:summon/chapter_3/bloody_blade_spider ] >>> 召喚 血滴子蜘蛛 / summon bloody blade spider
+    ## Guide [ function sys:monster_wave/chapter_3/1/summon/rdm ] >>> rdm
+
+# ===================================================
 
 execute \
     unless score #difficulty global.main matches 1.. run \

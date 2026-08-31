@@ -1,3 +1,10 @@
+# ===================================================
+# 召喚 深淵斷魂者 / summon abyssal soulreaper
+
+    ## Guide [ function monsters:summon/chapter_1/abyssal_soulreaper ] >>> 召喚 深淵斷魂者 / summon abyssal soulreaper
+    ## Guide [ function spawner:type/chapter_1/abyssal_soulreaper/sunmmon ] >>> sunmmon
+
+# ===================================================
 
 execute \
     unless score #difficulty global.main matches 1.. run \

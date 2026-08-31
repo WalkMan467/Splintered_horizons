@@ -1,3 +1,10 @@
+# ===================================================
+# 召喚 魂之神射手 / summon soul sharpshooter
+
+    ## Guide [ function monsters:summon/chapter_2/soul_sharpshooter ] >>> 召喚 魂之神射手 / summon soul sharpshooter
+    ## Guide [ function spawner:type/chapter_2/soul_sharpshooter/sunmmon ] >>> sunmmon
+
+# ===================================================
 
 execute \
     unless score #difficulty global.main matches 1.. run \

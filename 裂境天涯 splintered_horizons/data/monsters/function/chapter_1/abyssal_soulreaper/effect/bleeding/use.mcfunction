@@ -1,3 +1,10 @@
+# ===================================================
+# 深淵斷魂者 流血 施加 / abyssal soulreaper bleeding apply
+
+    ## Guide [ function monsters:chapter_1/abyssal_soulreaper/effect/bleeding/use ] >>> 深淵斷魂者 流血 施加 / abyssal soulreaper bleeding apply
+    ## Guide [ function monsters:chapter_1/abyssal_soulreaper/1/1 ] >>> 深淵斷魂者 技能1 揮斬 / abyssal soulreaper skill 1 swing
+
+# ===================================================
 
 execute \
     if score @s sys.dummy_mob matches 1.. run \

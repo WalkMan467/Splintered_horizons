@@ -1,10 +1,12 @@
+# ===================================================
+# 凍結 孤兒冰塊 判定 / freeze orphan detect
+
+    ## Guide [ function monsters:generic/freeze/orphan/detect ] >>> 凍結 孤兒冰塊 判定 / freeze orphan detect
+    ## Guide [ function monsters:generic/freeze/orphan/dimension ] >>> 凍結 孤兒冰塊 單維度處理 / freeze orphan dimension
+
+# ===================================================
+
 # 執行者 : 凍結冰塊展示實體
-
-    ## Guide [ function monsters:generic/freeze/orphan/detect ] >>> detect
-
-    ## Guide [ function monsters:generic/freeze/orphan/dimension ] >>> dimension
-
-    ## Guide [ function monsters:generic/freeze/end ] >>> end
 
 
 # 這層冰是乘客，所以載具還在、而且還掛著 freeze 標籤，就是正常的

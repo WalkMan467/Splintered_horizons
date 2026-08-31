@@ -1,3 +1,12 @@
+# ===================================================
+# 死亡偵測 擊殺處理 / death detect kill monster
+
+    ## Guide [ function monsters:detect_kill/kill_monster ] >>> 死亡偵測 擊殺處理 / death detect kill monster
+    ## Guide [ function monsters:detect_kill/loop ] >>> 死亡偵測 迴圈 / death detect loop
+    ## Guide [ function monsters:detect_kill/marker ] >>> 死亡偵測 Marker / death detect marker
+
+# ===================================================
+
 # If the death detection Marker contains the boss name in its data, it means resetting the basic settings of that BOSS after the BOSS is killed by the player
 
     # Use macros to avoid exhaustive enumeration issues

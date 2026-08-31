@@ -1,3 +1,10 @@
+# ===================================================
+# 召喚 深淵黑騎 / summon abyssal black knight
+
+    ## Guide [ function monsters:summon/chapter_1/abyssal_black_knight ] >>> 召喚 深淵黑騎 / summon abyssal black knight
+    ## Guide [ function spawner:type/chapter_1/abyssal_black_knight/sunmmon ] >>> sunmmon
+
+# ===================================================
 
 execute \
     unless score #difficulty global.main matches 1.. run \

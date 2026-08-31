@@ -1,3 +1,13 @@
+# ===================================================
+# 夢魘 深淵爆炸 爆點 計時 / abyss explode point timer
+
+    ## Guide [ function monsters:generic/nightmare_difficulty/abyss_explode/point/guide ] >>> 夢魘 深淵爆炸 爆點 計時 / abyss explode point timer
+    ## Guide [ function monsters:generic/nightmare_difficulty/abyss_explode/main ] >>> 夢魘 深淵爆炸 排程 / nightmare abyss explode scheduler
+    ## Guide [ function monsters:generic/nightmare_difficulty/abyss_explode/point/0 ] >>> 夢魘 深淵爆炸 爆點 引爆 / abyss explode point detonate
+    ## Guide [ function monsters:generic/nightmare_difficulty/abyss_explode/poison/fx ] >>> 夢魘 深淵爆炸 毒液 特效環 / abyss explode poison ring fx
+
+# ===================================================
+
 scoreboard players add @s monster.abyss_explode.timer 1
 
 execute \
@@ -24,4 +34,3 @@ execute \
 function monsters:generic/nightmare_difficulty/abyss_explode/poison/fx
 
 kill @s
-
