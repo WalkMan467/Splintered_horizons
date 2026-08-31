@@ -27,6 +27,11 @@ function weapons:type/arrows/sagittarius_arrow/use
 
 execute \
     on attacker \
+    if entity @s[advancements={weapons:arrows/sunfire_of_entropy_erosion_arrow=true}] run \
+function weapons:type/arrows/sunfire_of_entropy_erosion_arrow/use
+
+execute \
+    on attacker \
     if entity @s[advancements={weapons:arrows/bleeding_arrow=true}] run \
 function weapons:type/arrows/bleeding_arrow/use
 

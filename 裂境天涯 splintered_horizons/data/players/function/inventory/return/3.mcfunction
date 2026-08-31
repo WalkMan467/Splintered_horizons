@@ -1,24 +1,6 @@
 # Items
-#
-# This used to stage the inventory through a shulker box at ~ 319 ~, then pull
-# slots 0-26 out of it in bulk and handle 27-35 one at a time through a display
-# entity. That worked only in the overworld: this pack raises it to height 400,
-# so y=319 is in bounds there, but the end and the nether are both 0..255, so
-# the setblock failed outright. Everything downstream then did nothing while
-# return.mcfunction had already run `clear @s` -- the player's inventory was
-# emptied and never refilled. The end is where most of this map takes place.
-#
-# So every slot now goes through the display entity, which lives at the player
-# and has no height requirement at all. It also stops the restore from
-# destroying whatever block happened to sit at y=319 above the player.
-#
-# The kill before the summon is deliberate: the display uses a fixed UUID, so a
-# leftover from a run that died partway would make the summon fail and break
-# every later restore. Killing a UUID that does not exist just fails quietly.
-kill 3289cf06-aa12-44c8-ac9e-27b495fe58c0
+setblock ~ 319 ~ shulker_box
 summon item_display ~ ~ ~ {UUID:[I;847892230,-1441643320,-1398921292,-1778493248]}
-
-# Inventory, hotbar included: container.0-8 is the hotbar, 9-35 the rest.
 
 execute \
     store success score #has_item hp_display run \
@@ -308,8 +290,6 @@ execute \
     if score #has_item hp_display matches 1 run \
 item replace entity @s container.35 from entity 3289cf06-aa12-44c8-ac9e-27b495fe58c0 contents
 
-
-# Equipment
 
 execute \
     store success score #has_item hp_display run \

@@ -33,7 +33,6 @@ scoreboard players remove @a[scores={weapon.twilight_wind.cd=1..}] weapon.twilig
 scoreboard players remove @a[scores={weapon.grip_of_withering.cd=1..}] weapon.grip_of_withering.cd 1
 
 scoreboard players remove @a[scores={weapon.ruins_of_the_finality.cd=1..}] weapon.ruins_of_the_finality.cd 1
-scoreboard players remove @a[scores={weapon.echo_rhythm.cd=1..}] weapon.echo_rhythm.cd 1
 scoreboard players remove @a[scores={weapon.morphing_beast.cd=1..}] weapon.morphing_beast.cd 1
 scoreboard players remove @a[scores={weapon.spider.cd=1..}] weapon.spider.cd 1
 scoreboard players remove @a[scores={weapon.morning_light.cd=1..}] weapon.morning_light.cd 1

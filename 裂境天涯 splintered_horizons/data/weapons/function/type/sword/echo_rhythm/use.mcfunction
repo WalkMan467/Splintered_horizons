@@ -7,15 +7,19 @@
 
 # ===================================================
 
-scoreboard players add @s weapon.echo_rhythm.cd 0
+execute \
+    unless score @s weapon.echo_rhythm.cd matches -2147483648..2147483647 run \
+    return run \
+function weapons:rc/cd {id:"weapon.echo_rhythm.cd", cd:60}
 
 execute \
-    if score @s weapon.echo_rhythm.cd matches 1.. run \
-return 0
+    unless score #gametime global.main >= @s weapon.echo_rhythm.cd run \
+    return 0
 
-scoreboard players set @s player.click.interval 20
+# 重置 CD / Reset CD
 
-scoreboard players set @s weapon.echo_rhythm.cd 60
+function weapons:rc/cd {id:"weapon.echo_rhythm.cd", cd:60}
+
 scoreboard players set @s weapon.effect.chaotic_thunder 200
 
 execute \

@@ -31,7 +31,6 @@ scoreboard players remove @a[scores={player.actionbar.apostle_of_eternity.lock.1
 scoreboard players remove @a[scores={player.shift.skill.disable=1..}] player.shift.skill.disable 1
 scoreboard players remove @a[scores={player.gamemode.change.display_delay=1..}] player.gamemode.change.display_delay 1
 scoreboard players remove @a[scores={screen_filters.glitch_effect.noise=1..}] screen_filters.glitch_effect.noise 1
-scoreboard players remove @a[scores={player.ultimate=1..}] player.ultimate 1
 scoreboard players remove @a[scores={monster.elekiel_phase_2.skill.4.portal.tp.cd=1..}] monster.elekiel_phase_2.skill.4.portal.tp.cd 1
 scoreboard players remove @a[scores={player.disable.tp_book=1..}] player.disable.tp_book 1
 scoreboard players remove @a[scores={player.rc.skill.disable=1..}] player.rc.skill.disable 1

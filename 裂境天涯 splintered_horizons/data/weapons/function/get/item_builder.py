@@ -1,29 +1,27 @@
 def build_item_struct():
     return {
-        "name": ['☀火之魔劍 - 地獄之火', "#7a0000", '劍 / 紀念碑物品'],
+        "name": ['熵蝕之火箭矢', "#ff3c00", '箭矢 / 傳說'],
         "story": {
-            'info': ['來至 星 的舊世界','始源 6 魔劍之一','火之執政官 萊尼維爾 的武器','掌控火元素之力','同時也是地圖的目標物品'],
+            'info': ['古老的混沌之火壟罩了太陽','他們說這叫日蝕','但直到大陸上的火焰漸漸燃燒它們能燃燒的一切時','真正的日蝕，其實是一股名叫「熵」與「深淵」結合而成的','其力量來自於伊索克拉與梅倫絲娜的舊世界'],
             'color': 'blue'
         },
         "item_data": {
-            'real_item': 'iron_sword',
-            'id': 'pyrosolis',
-            'item_model': '"minecraft:sword/infernal_blaze/1"',
-            'custom_data': 'type:"sword",rarity:"monument",weapon:"pyrosolis",monument:2',
-            'rc': True,
+            'real_item': 'arrow',
+            'id': 'sunfire_of_entropy_erosion_arrow',
+            'item_model': '"arrow/sunfire_of_entropy_erosion_arrow"',
+            'custom_data': 'type:"arrow",rarity:"legendary",id:"sunfire_of_entropy_erosion_arrow"',
+            'rc': False,
             'lc': False,
             'max_damage': -1,
             'max_stack_size': 1,
             'other': [
-                'enchantment_glint_override=false',
-                'minimum_attack_charge=0.5',
-                'custom_model_data={flags:[1b]}',
-                'tooltip_style="light_of_water_mirror"'
+                'tooltip_display={hidden_components:["unbreakable","attribute_modifiers"]}',
+                'tooltip_style="legendary"'
             ]
         },
 
         "skill": {
-            "is_skill": True,
+            "is_skill": False,
             "cd": 10,
             "name": ["雙生之火", "#ff0000", "#ff5100"],
             "info": [
@@ -57,24 +55,13 @@ def build_item_struct():
         "passive_skills": {
             'is_passive_skills': True,
             'cd': 0,
-            'name': ['天火之罰', "#b61500", "#ffee00"],
+            'name': ['熵蝕灼燒', "#ff0000", "#ff5100"],
             'info': [
+                '當你攻擊命中時:',
                 {
-                    "text": "存在期間每造成 30 點傷害給予自身 1 層【%1$s】(上限 10 層)",
+                    "text": "附加 %1$s (0:05)",
                     "with": [
-                        {"translate": "weapon.pyrosolis.passive.apocalypse", "underlined": True, "color": "dark_red"}
-                    ]
-                },
-                {
-                    "text": "消失時立即對 6 格範圍內怪物造成 250% 基礎傷害與附加【%1$s】(00:05)",
-                    "with": [
-                        {"translate": "cse.status_effects.entropy_erosion", "underlined": True, "color": "gold"}
-                    ]
-                },
-                {
-                    "text": "以及將魔劍轉換型態為【%1$s】型態",
-                    "with": [
-                        {"translate": "weapon.pyrosolis.state.active", "underlined": True, "color": "dark_red"}
+                        {"translate":"cse.status_effects.entropy_erosion","underlined":True,"color":"#ff5100"}
                     ]
                 }
             ]
