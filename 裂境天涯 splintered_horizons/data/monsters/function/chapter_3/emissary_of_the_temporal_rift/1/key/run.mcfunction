@@ -1,3 +1,12 @@
+# ===================================================
+# 時空之鑰 爆發傷害 / temporal key burst
+
+    ## Guide [ function monsters:chapter_3/emissary_of_the_temporal_rift/1/key/run ] >>> 時空之鑰 爆發傷害 / temporal key burst
+    ## Guide [ function monsters:chapter_3/emissary_of_the_temporal_rift/1/key/guide ] >>> 時空之鑰 追蹤與引爆時序 / temporal key track and timeline
+    ## Guide [ function monsters:chapter_3/emissary_of_the_temporal_rift/1/key/fx ] >>> 時空之鑰 環狀特效 / temporal key ring fx
+
+# ===================================================
+
 particle gust_emitter_large ~ ~ ~ 0 0 0 0 1 force @a
 playsound minecraft:entity.generic.explode voice @a ~ ~ ~ 1 1
 

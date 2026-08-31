@@ -1,3 +1,12 @@
+# ===================================================
+# 時空鎖 逐 tick 倒數 / time lock tick
+
+    ## Guide [ function monsters:chapter_2/apostle_of_eternity/lock/main ] >>> 時空鎖 逐 tick 倒數 / time lock tick
+    ## Guide [ function monsters:load ] >>> 怪物 載入 / monsters load
+    ## Guide [ function monsters:chapter_2/apostle_of_eternity/lock/broken ] >>> 時空鎖 解除 / time lock release
+
+# ===================================================
+
 schedule function monsters:chapter_2/apostle_of_eternity/lock/main 1t
 
 execute \

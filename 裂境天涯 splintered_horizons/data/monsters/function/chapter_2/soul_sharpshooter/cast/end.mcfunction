@@ -1,3 +1,11 @@
+# ===================================================
+# 魂之神射手 施法 結束並重設冷卻 / soul sharpshooter cast end
+
+    ## Guide [ function monsters:chapter_2/soul_sharpshooter/cast/end ] >>> 魂之神射手 施法 結束並重設冷卻 / soul sharpshooter cast end
+    ## Guide [ function monsters:chapter_2/soul_sharpshooter/1/main ] >>> 魂之神射手 技能1 浮空 / soul sharpshooter skill 1 levitate
+    ## Guide [ function monsters:chapter_2/soul_sharpshooter/2/main ] >>> 魂之神射手 技能2 分鏡 / soul sharpshooter skill 2 timeline
+
+# ===================================================
 
 ## ----- Reset ----- ##
 scoreboard players reset @s monster.skill.casting

@@ -1,3 +1,10 @@
+# ===================================================
+# 烈陽使者 施法 結束並重設冷卻 / sunfire emissary cast end
+
+    ## Guide [ function monsters:chapter_3/sunfire_emissary/cast/end ] >>> 烈陽使者 施法 結束並重設冷卻 / sunfire emissary cast end
+    ## Guide [ function monsters:chapter_3/sunfire_emissary/1/main ] >>> 烈陽使者 技能1 分鏡 / sunfire emissary skill 1 timeline
+
+# ===================================================
 
 ## ----- Reset ----- ##
 scoreboard players reset @s monster.skill.casting

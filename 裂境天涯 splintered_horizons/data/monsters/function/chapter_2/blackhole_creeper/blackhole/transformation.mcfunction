@@ -1,3 +1,12 @@
+# ===================================================
+# 黑洞 展開變形 / blackhole expand transform
+
+    ## Guide [ function monsters:chapter_2/blackhole_creeper/blackhole/transformation ] >>> 黑洞 展開變形 / blackhole expand transform
+    ## Guide [ function monsters:chapter_2/blackhole_creeper/blackhole/guide ] >>> 黑洞 展開排程 / blackhole expand scheduler
+    ## Guide [ function monsters:chapter_2/blackhole_creeper/blackhole/range ] >>> 黑洞 範圍特效 / blackhole range fx
+
+# ===================================================
+
 data merge entity @s {start_interpolation: 1,interpolation_duration:5,teleport_duration:1, transformation: {left_rotation: [0.09280694f, 0.01593403f, 0.101034634f, 0.99041665f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [3.0000012f, 3.000003f, 3.0000057f], translation: [0.0f, 0.0f, 0.0f]}}
 
 scoreboard players set @s duration 25

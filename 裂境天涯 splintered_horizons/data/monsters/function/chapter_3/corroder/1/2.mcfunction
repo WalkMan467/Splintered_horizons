@@ -1,3 +1,10 @@
+# ===================================================
+# 腐蝕者 技能1 直線傷害 / corroder skill 1 line damage
+
+    ## Guide [ function monsters:chapter_3/corroder/1/2 ] >>> 腐蝕者 技能1 直線傷害 / corroder skill 1 line damage
+    ## Guide [ function monsters:chapter_3/corroder/1/main ] >>> 腐蝕者 技能1 分鏡 / corroder skill 1 timeline
+
+# ===================================================
 
 # effect
 

@@ -1,3 +1,11 @@
+# ===================================================
+# 追魂體 環狀特效 / ghost key ring fx
+
+    ## Guide [ function monsters:chapter_2/soul_sharpshooter/2/key/fx ] >>> 追魂體 環狀特效 / ghost key ring fx
+    ## Guide [ function monsters:chapter_2/soul_sharpshooter/2/key/run ] >>> 追魂體 爆發傷害 / ghost key burst
+
+# ===================================================
+
 scoreboard players add #monster.emissary_of_the_temporal_rift.key.fx particle 3
 
 particle dust_color_transition{from_color: [0.0f, 0.75f, 0.75f], scale: 1.5f, to_color: [0.0f, 0.75f, 1.0f]} ^ ^ ^4 0 0 0 0 0 force @a

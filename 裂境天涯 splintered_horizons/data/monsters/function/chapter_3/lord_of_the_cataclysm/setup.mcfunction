@@ -1,3 +1,12 @@
+# ===================================================
+# 災厄之主 生成後設定 / lord of the cataclysm setup
+
+    ## Guide [ function monsters:chapter_3/lord_of_the_cataclysm/setup ] >>> 災厄之主 生成後設定 / lord of the cataclysm setup
+    ## Guide [ function monsters:summon/chapter_3/lord_of_the_cataclysm ] >>> 召喚 災厄之主 / summon lord of the cataclysm
+    ## Guide [ function monsters:vehicle_remove ] >>> 移除載具 / vehicle remove
+
+# ===================================================
+
 function monsters:vehicle_remove
 
 data merge entity @s {PersistenceRequired:1b,Health:200f,IsBaby:0b,CanBreakDoors:0b,CustomName:{"color":"dark_red","fallback":"Lord of the Cataclysm","translate":"monsters.lord_of_the_cataclysm"},equipment:{feet:{id:"minecraft:copper_boots",count:1,components:{"minecraft:trim":{material:"minecraft:resin",pattern:"minecraft:tide"},"minecraft:attribute_modifiers":[{id:"armor",type:"armor",amount:0.0,operation:"add_multiplied_base",slot:"feet"}]}},legs:{id:"minecraft:copper_leggings",count:1,components:{"minecraft:attribute_modifiers":[{id:"armor",type:"armor",amount:0.0,operation:"add_multiplied_base",slot:"legs"}],"minecraft:trim":{material:"minecraft:resin",pattern:"minecraft:tide"}}},chest:{id:"minecraft:diamond_chestplate",count:1,components:{"minecraft:attribute_modifiers":[{id:"armor",type:"armor",amount:0.0,operation:"add_multiplied_base",slot:"chest"}],"minecraft:trim":{material:"minecraft:resin",pattern:"minecraft:tide"},"minecraft:equippable":{slot:"chest",asset_id:"armor_of_the_coiled_rock"}}},head:{id:"minecraft:copper_helmet",count:1,components:{"minecraft:trim":{material:"minecraft:resin",pattern:"minecraft:tide"},"minecraft:attribute_modifiers":[{id:"armor",type:"armor",amount:0.0,operation:"add_multiplied_base",slot:"hand"}]}},mainhand:{id:"minecraft:copper_axe",count:1,components:{"minecraft:attribute_modifiers":[{id:"attack_damage",type:"attack_damage",amount:0.0,operation:"add_multiplied_base",slot:"mainhand"}]}},offhand:{id:"minecraft:barrier",count:1}},drop_chances:{feet:0.000,legs:0.000,chest:0.000,head:0.000,mainhand:0.000,offhand:0.000},attributes:[{id:"minecraft:armor",base:5},{id:"minecraft:max_health",base:200},{id:"minecraft:scale",base:1.25}]}

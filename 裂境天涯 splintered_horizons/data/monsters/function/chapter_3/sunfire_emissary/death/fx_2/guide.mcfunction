@@ -1,3 +1,10 @@
+# ===================================================
+# 烈陽使者 自爆 球狀特效 遞迴 / sunfire emissary sphere fx recurse
+
+    ## Guide [ function monsters:chapter_3/sunfire_emissary/death/fx_2/guide ] >>> 烈陽使者 自爆 球狀特效 遞迴 / sunfire emissary sphere fx recurse
+    ## Guide [ function monsters:chapter_3/sunfire_emissary/death/fx_2/use ] >>> 烈陽使者 自爆 球狀特效 入口 / sunfire emissary sphere fx entry
+
+# ===================================================
 
 execute \
     positioned ^ ^ ^1.25 run \

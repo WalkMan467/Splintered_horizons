@@ -1,3 +1,13 @@
+# ===================================================
+# 血滴子蜘蛛 技能1 落地擒抱 / bloody blade spider skill 1 grab
+
+    ## Guide [ function monsters:chapter_3/bloody_blade_spider/1/0 ] >>> 血滴子蜘蛛 技能1 落地擒抱 / bloody blade spider skill 1 grab
+    ## Guide [ function monsters:chapter_3/bloody_blade_spider/1/main ] >>> 血滴子蜘蛛 技能1 分鏡 / bloody blade spider skill 1 timeline
+    ## Guide [ function monsters:chapter_3/bloody_blade_spider/1/fx ] >>> 血滴子蜘蛛 技能1 環狀特效 / bloody blade spider skill 1 ring fx
+    ## Guide [ function monsters:chapter_3/bloody_blade_spider/cast/end ] >>> 血滴子蜘蛛 施法 結束並重設冷卻 / bloody blade spider cast end
+    ## Guide [ function monsters:chapter_3/bloody_blade_spider/effect/bleeding/use ] >>> 血滴子蜘蛛 流血 施加並騎乘 / bloody blade spider bleeding apply
+
+# ===================================================
 
 execute \
     if score @s sys.skills_freeze matches 0.. run \

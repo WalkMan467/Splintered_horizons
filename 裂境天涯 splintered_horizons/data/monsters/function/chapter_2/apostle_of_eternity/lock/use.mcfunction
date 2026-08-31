@@ -1,3 +1,12 @@
+# ===================================================
+# 時空鎖 施加 / time lock apply
+
+    ## Guide [ function monsters:chapter_2/apostle_of_eternity/lock/use ] >>> 時空鎖 施加 / time lock apply
+    ## Guide [ function monsters:chapter_2/apostle_of_eternity/1/0 ] >>> 「永劫」的使徒 技能1 上鎖判定 / apostle of eternity skill 1 lock targets
+    ## Guide [ function players:stop_animation ] >>> stop animation
+
+# ===================================================
+
 scoreboard players set @s monster.apostle_of_eternity.lock.click 0
 
 execute \

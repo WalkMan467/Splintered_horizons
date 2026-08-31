@@ -6,7 +6,7 @@
     ## Guide [ function monsters:chapter_1/abyssal_black_knight/kill ] >>> 深淵黑騎 死亡處理 / abyssal black knight on kill
     ## Guide [ function monsters:chapter_1/abyssal_soulreaper/kill ] >>> 深淵斷魂者 死亡處理 / abyssal soulreaper on kill
     ## Guide [ function monsters:chapter_1/corruptor/kill ] >>> 腐化者 死亡 凋零雲 / corruptor on kill wither cloud
-    ## Guide [ function monsters:chapter_2/apostle_of_eternity/kill ] >>> kill
+    ## Guide [ function monsters:chapter_2/apostle_of_eternity/kill ] >>> 「永劫」的使徒 死亡處理 / apostle of eternity on kill
 
 # ===================================================
 

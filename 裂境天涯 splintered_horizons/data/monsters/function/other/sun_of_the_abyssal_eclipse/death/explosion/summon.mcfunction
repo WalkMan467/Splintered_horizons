@@ -1,3 +1,11 @@
+# ===================================================
+# 暗蝕的烈陽 自爆 生成燃燒態本體 / sun of the abyssal eclipse spawn burning form
+
+    ## Guide [ function monsters:other/sun_of_the_abyssal_eclipse/death/explosion/summon ] >>> 暗蝕的烈陽 自爆 生成燃燒態本體 / sun of the abyssal eclipse spawn burning form
+    ## Guide [ function monsters:other/sun_of_the_abyssal_eclipse/death/explosion/use ] >>> 暗蝕的烈陽 自爆 引爆 / sun of the abyssal eclipse detonate
+    ## Guide [ function monsters:other/sun_of_the_abyssal_eclipse/setup ] >>> 暗蝕的烈陽 生成後設定 / sun of the abyssal eclipse setup
+
+# ===================================================
 
 execute \
     unless score #difficulty global.main matches 1.. run \

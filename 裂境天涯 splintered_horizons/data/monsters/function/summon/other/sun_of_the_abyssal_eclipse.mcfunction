@@ -3,7 +3,7 @@
 
     ## Guide [ function monsters:summon/other/sun_of_the_abyssal_eclipse ] >>> 召喚 暗蝕的烈陽 / summon sun of the abyssal eclipse
     ## Guide [ function spawner:type/other/sun_of_the_abyssal_eclipse/sunmmon ] >>> sunmmon
-    ## Guide [ function monsters:other/sun_of_the_abyssal_eclipse/setup ] >>> setup
+    ## Guide [ function monsters:other/sun_of_the_abyssal_eclipse/setup ] >>> 暗蝕的烈陽 生成後設定 / sun of the abyssal eclipse setup
 
 # ===================================================
 

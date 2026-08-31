@@ -1,3 +1,11 @@
+# ===================================================
+# 血滴子蜘蛛 技能1 環狀特效 / bloody blade spider skill 1 ring fx
+
+    ## Guide [ function monsters:chapter_3/bloody_blade_spider/1/fx ] >>> 血滴子蜘蛛 技能1 環狀特效 / bloody blade spider skill 1 ring fx
+    ## Guide [ function monsters:chapter_3/bloody_blade_spider/1/0 ] >>> 血滴子蜘蛛 技能1 落地擒抱 / bloody blade spider skill 1 grab
+
+# ===================================================
+
 scoreboard players add @s particle 3
 
 execute \

@@ -1,3 +1,13 @@
+# ===================================================
+# 烈陽使者 生成後設定 / sunfire emissary setup
+
+    ## Guide [ function monsters:chapter_3/sunfire_emissary/setup ] >>> 烈陽使者 生成後設定 / sunfire emissary setup
+    ## Guide [ function monsters:chapter_3/sunfire_emissary/death/explosion/run ] >>> 烈陽使者 自爆 生成燃燒態本體 / sunfire emissary spawn burning form
+    ## Guide [ function monsters:summon/chapter_3/sunfire_emissary ] >>> 召喚 烈陽使者 / summon sunfire emissary
+    ## Guide [ function monsters:vehicle_remove ] >>> 移除載具 / vehicle remove
+
+# ===================================================
+
 function monsters:vehicle_remove
 
 

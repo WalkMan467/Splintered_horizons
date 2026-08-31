@@ -4,7 +4,7 @@
     ## Guide [ function monsters:summon/chapter_3/emissary_of_the_temporal_rift ] >>> 召喚 時空裂痕的使者 / summon emissary of the temporal rift
     ## Guide [ function spawner:type/chapter_3/emissary_of_the_temporal_rift/sunmmon ] >>> sunmmon
     ## Guide [ function sys:monster_wave/chapter_3/1/summon/rdm ] >>> rdm
-    ## Guide [ function monsters:chapter_3/emissary_of_the_temporal_rift/setup ] >>> setup
+    ## Guide [ function monsters:chapter_3/emissary_of_the_temporal_rift/setup ] >>> 時空裂痕的使者 生成後設定 / emissary of the temporal rift setup
 
 # ===================================================
 

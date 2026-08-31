@@ -1,3 +1,10 @@
+# ===================================================
+# 災厄之主 死亡 開啟寶箱 / lord of the cataclysm on kill
+
+    ## Guide [ function monsters:chapter_3/lord_of_the_cataclysm/kill ] >>> 災厄之主 死亡 開啟寶箱 / lord of the cataclysm on kill
+
+# ===================================================
+
 bossbar remove minecraft:monsters.lord_of_the_cataclysm
 
 schedule clear monsters:chapter_3/lord_of_the_cataclysm/main

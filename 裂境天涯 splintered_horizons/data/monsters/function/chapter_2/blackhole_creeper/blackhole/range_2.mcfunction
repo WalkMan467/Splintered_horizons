@@ -1,3 +1,10 @@
+# ===================================================
+# 黑洞 傷害範圍特效 / blackhole damage range fx
+
+    ## Guide [ function monsters:chapter_2/blackhole_creeper/blackhole/range_2 ] >>> 黑洞 傷害範圍特效 / blackhole damage range fx
+    ## Guide [ function monsters:chapter_2/blackhole_creeper/blackhole/guide_2 ] >>> 黑洞 傷害判定 / blackhole damage tick
+
+# ===================================================
 
 scoreboard players add @s particle 3
 

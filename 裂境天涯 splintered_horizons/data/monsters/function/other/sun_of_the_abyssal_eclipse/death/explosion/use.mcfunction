@@ -1,3 +1,13 @@
+# ===================================================
+# 暗蝕的烈陽 自爆 引爆 / sun of the abyssal eclipse detonate
+
+    ## Guide [ function monsters:other/sun_of_the_abyssal_eclipse/death/explosion/use ] >>> 暗蝕的烈陽 自爆 引爆 / sun of the abyssal eclipse detonate
+    ## Guide [ function monsters:other/sun_of_the_abyssal_eclipse/death/fx/use ] >>> 暗蝕的烈陽 自爆 蓄力計時 / sun of the abyssal eclipse detonation timer
+    ## Guide [ function monsters:other/sun_of_the_abyssal_eclipse/death/explosion/summon ] >>> 暗蝕的烈陽 自爆 生成燃燒態本體 / sun of the abyssal eclipse spawn burning form
+    ## Guide [ function players:effect/ignite/use ] >>> use
+
+# ===================================================
+
 kill @s[tag=monsters.sun_of_the_abyssal_eclipse.fx.main,type=area_effect_cloud]
 
 particle explosion_emitter ~ ~1 ~ 0 0 0 0 1 force @a

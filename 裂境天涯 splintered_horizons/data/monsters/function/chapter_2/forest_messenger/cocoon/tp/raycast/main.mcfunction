@@ -1,3 +1,12 @@
+# ===================================================
+# 繭 傳送 射線 環繞掃描 / cocoon teleport raycast sweep
+
+    ## Guide [ function monsters:chapter_2/forest_messenger/cocoon/tp/raycast/main ] >>> 繭 傳送 射線 環繞掃描 / cocoon teleport raycast sweep
+    ## Guide [ function monsters:chapter_2/forest_messenger/cocoon/tp/raycast/use ] >>> 繭 傳送 射線 入口 / cocoon teleport raycast entry
+    ## Guide [ function monsters:chapter_2/forest_messenger/cocoon/tp/raycast/start ] >>> 繭 傳送 射線 起點 / cocoon teleport raycast start
+
+# ===================================================
+
 scoreboard players add #temp monster.forest_messenger.cocoon.tp.raycast 3
 
 function monsters:chapter_2/forest_messenger/cocoon/tp/raycast/start

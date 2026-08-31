@@ -1,3 +1,10 @@
+# ===================================================
+# 時空裂痕的使者 死亡 清除時空之鑰 / emissary of the temporal rift on kill
+
+    ## Guide [ function monsters:chapter_3/emissary_of_the_temporal_rift/kill ] >>> 時空裂痕的使者 死亡 清除時空之鑰 / emissary of the temporal rift on kill
+
+# ===================================================
+
 summon area_effect_cloud ~ ~ ~ {custom_particle:{type:"block",block_state:"minecraft:air"},Duration:1,Tags:["chapter_3.emissary_of_the_temporal_rift.key.kill","summon"]}
 scoreboard players operation @n[sort=arbitrary,distance=0..,tag=summon,tag=chapter_3.emissary_of_the_temporal_rift.key.kill,type=area_effect_cloud] monster.emissary_of_the_temporal_rift.id = @s monster.emissary_of_the_temporal_rift.id
 tag @n[sort=arbitrary,distance=0..,tag=summon,tag=chapter_3.emissary_of_the_temporal_rift.key.kill,type=area_effect_cloud] remove summon

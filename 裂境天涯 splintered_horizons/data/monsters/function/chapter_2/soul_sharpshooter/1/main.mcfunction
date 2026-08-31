@@ -1,3 +1,12 @@
+# ===================================================
+# 魂之神射手 技能1 浮空 / soul sharpshooter skill 1 levitate
+
+    ## Guide [ function monsters:chapter_2/soul_sharpshooter/1/main ] >>> 魂之神射手 技能1 浮空 / soul sharpshooter skill 1 levitate
+    ## Guide [ function monsters:chapter_2/soul_sharpshooter/main ] >>> 魂之神射手 主程式 / soul sharpshooter main
+    ## Guide [ function monsters:chapter_2/soul_sharpshooter/cast/end ] >>> 魂之神射手 施法 結束並重設冷卻 / soul sharpshooter cast end
+
+# ===================================================
+
 execute \
     if score @s monster.skill.casting matches 1.. \
     if score @s monster.skill.silence matches 1.. run \

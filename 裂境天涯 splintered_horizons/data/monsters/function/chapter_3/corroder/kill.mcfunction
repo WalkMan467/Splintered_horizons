@@ -1,3 +1,10 @@
+# ===================================================
+# 腐蝕者 死亡 爆裂特效 / corroder on kill
+
+    ## Guide [ function monsters:chapter_3/corroder/kill ] >>> 腐蝕者 死亡 爆裂特效 / corroder on kill
+
+# ===================================================
+
 particle dust_color_transition{from_color:[0.000,0.000,0.000],scale:2,to_color:[1.000,0.000,0.000]} ~ ~1 ~ 2 2 2 1 300 force @a
 particle minecraft:explosion_emitter ~ ~1 ~ 0 0 0 0 1 force @a
 particle minecraft:squid_ink ~ ~1 ~ 0 0 0 0.25 200 normal

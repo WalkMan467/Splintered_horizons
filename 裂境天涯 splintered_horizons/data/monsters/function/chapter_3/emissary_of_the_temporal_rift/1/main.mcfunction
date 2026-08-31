@@ -1,3 +1,12 @@
+# ===================================================
+# 時空裂痕的使者 技能1 分鏡 / emissary of the temporal rift skill 1 timeline
+
+    ## Guide [ function monsters:chapter_3/emissary_of_the_temporal_rift/1/main ] >>> 時空裂痕的使者 技能1 分鏡 / emissary of the temporal rift skill 1 timeline
+    ## Guide [ function monsters:chapter_3/emissary_of_the_temporal_rift/main ] >>> 時空裂痕的使者 主程式 / emissary of the temporal rift main
+    ## Guide [ function monsters:chapter_3/emissary_of_the_temporal_rift/1/0 ] >>> 時空裂痕的使者 技能1 生成時空之鑰 / emissary of the temporal rift skill 1 spawn key
+    ## Guide [ function monsters:chapter_3/emissary_of_the_temporal_rift/cast/end ] >>> 時空裂痕的使者 施法 結束並重設冷卻 / emissary of the temporal rift cast end
+
+# ===================================================
 
 execute \
     if score @s monster.skill.casting matches 1.. \

@@ -1,3 +1,13 @@
+# ===================================================
+# 「永劫」的使徒 技能1 上鎖判定 / apostle of eternity skill 1 lock targets
+
+    ## Guide [ function monsters:chapter_2/apostle_of_eternity/1/0 ] >>> 「永劫」的使徒 技能1 上鎖判定 / apostle of eternity skill 1 lock targets
+    ## Guide [ function monsters:chapter_2/apostle_of_eternity/1/main ] >>> 「永劫」的使徒 技能1 分鏡 / apostle of eternity skill 1 timeline
+    ## Guide [ function monsters:chapter_2/apostle_of_eternity/1/fx_range ] >>> 「永劫」的使徒 技能1 範圍特效 / apostle of eternity skill 1 range fx
+    ## Guide [ function monsters:chapter_2/apostle_of_eternity/lock/use ] >>> 時空鎖 施加 / time lock apply
+
+# ===================================================
+
 function monsters:chapter_2/apostle_of_eternity/1/fx_range
 
 playsound minecraft:entity.illusioner.mirror_move voice @a ~ ~1 ~ 1 0.75
