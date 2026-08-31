@@ -1,3 +1,11 @@
+# ===================================================
+# 深淵射手 技能1 換上爆裂箭 / explosion arrow skeleton skill 1 load arrow
+
+    ## Guide [ function monsters:chapter_1/explosion_arrow_skeleton/1/0 ] >>> 深淵射手 技能1 換上爆裂箭 / explosion arrow skeleton skill 1 load arrow
+    ## Guide [ function monsters:chapter_1/explosion_arrow_skeleton/1/main ] >>> 深淵射手 技能1 分鏡 / explosion arrow skeleton skill 1 timeline
+
+# ===================================================
+
 item replace entity @s weapon.offhand with arrow[custom_data={id:"explosion_arrow",ground_detect:1b,rarity:"rare"},custom_model_data={strings:["explosion_arrow"]}]
 
 data modify entity @s Glowing set value 1b

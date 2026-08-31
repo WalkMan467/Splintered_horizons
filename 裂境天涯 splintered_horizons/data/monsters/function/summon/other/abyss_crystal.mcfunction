@@ -1,3 +1,10 @@
+# ===================================================
+# 召喚 深淵水晶 / summon abyss crystal
+
+    ## Guide [ function monsters:summon/other/abyss_crystal ] >>> 召喚 深淵水晶 / summon abyss crystal
+    ## Guide [ function spawner:type/other/abyss_crystal/sunmmon ] >>> sunmmon
+
+# ===================================================
 
 execute \
     unless score #difficulty global.main matches 1.. run \

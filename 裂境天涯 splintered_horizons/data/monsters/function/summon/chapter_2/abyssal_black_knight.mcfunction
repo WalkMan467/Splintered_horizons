@@ -1,3 +1,9 @@
+# ===================================================
+# 召喚 深淵黑騎 第二章 / summon abyssal black knight chapter 2
+
+    ## Guide [ function monsters:summon/chapter_2/abyssal_black_knight ] >>> 召喚 深淵黑騎 第二章 / summon abyssal black knight chapter 2
+
+# ===================================================
 
 execute \
     unless score #difficulty global.main matches 1.. run \

@@ -1,3 +1,9 @@
+# ===================================================
+# 召喚 「永劫」的使徒 / summon apostle of eternity
+
+    ## Guide [ function monsters:summon/chapter_2/apostle_of_eternity ] >>> 召喚 「永劫」的使徒 / summon apostle of eternity
+
+# ===================================================
 
 execute \
     unless score #difficulty global.main matches 1.. run \

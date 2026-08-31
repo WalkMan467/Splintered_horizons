@@ -1,3 +1,11 @@
+# ===================================================
+# 召喚 暗蝕的烈陽 / summon sun of the abyssal eclipse
+
+    ## Guide [ function monsters:summon/other/sun_of_the_abyssal_eclipse ] >>> 召喚 暗蝕的烈陽 / summon sun of the abyssal eclipse
+    ## Guide [ function spawner:type/other/sun_of_the_abyssal_eclipse/sunmmon ] >>> sunmmon
+    ## Guide [ function monsters:other/sun_of_the_abyssal_eclipse/setup ] >>> setup
+
+# ===================================================
 
 execute \
     unless score #difficulty global.main matches 1.. run \

@@ -1,3 +1,12 @@
+# ===================================================
+# 深淵狂暴者 被動 受擊判定 / abyss berserker passive on hit
+
+    ## Guide [ function monsters:chapter_1/abyss_berserker/passive/use ] >>> 深淵狂暴者 被動 受擊判定 / abyss berserker passive on hit
+    ## Guide [ function monsters:chapter_1/abyss_berserker/passive/add ] >>> 深淵狂暴者 被動 累加層數 / abyss berserker passive stack up
+    ## Guide [ function monsters:chapter_1/abyss_berserker/passive/broken ] >>> 深淵狂暴者 被動 破防 / abyss berserker passive broken
+
+# ===================================================
+
 #\
 {
 

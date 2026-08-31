@@ -1,3 +1,10 @@
+# ===================================================
+# 召喚 黑洞苦力怕 / summon blackhole creeper
+
+    ## Guide [ function monsters:summon/chapter_2/blackhole_creeper ] >>> 召喚 黑洞苦力怕 / summon blackhole creeper
+
+# ===================================================
+
 execute \
     unless score #difficulty global.main matches 1.. run \
 return 0

@@ -1,3 +1,12 @@
+# ===================================================
+# 凍結 開始 / freeze start
+
+    ## Guide [ function monsters:generic/freeze/start ] >>> 凍結 開始 / freeze start
+    ## Guide [ function monsters:generic/freeze/main ] >>> 凍結 主程式 / freeze main
+    ## Guide [ function monsters:generic/freeze/setup ] >>> 凍結 冰塊建立 / freeze ice setup
+
+# ===================================================
+
 playsound minecraft:block.amethyst_block.break voice @a ~ ~1 ~ 1 0.75
 playsound minecraft:block.amethyst_block.break voice @a ~ ~1 ~ 1 0.75
 playsound minecraft:block.amethyst_block.break voice @a ~ ~1 ~ 1 0.75

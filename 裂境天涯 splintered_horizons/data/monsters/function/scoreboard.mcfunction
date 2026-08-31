@@ -1,3 +1,10 @@
+# ===================================================
+# 怪物 記分板 / monsters scoreboard
+
+    ## Guide [ function monsters:scoreboard ] >>> 怪物 記分板 / monsters scoreboard
+
+# ===================================================
+
 # .at 後綴 = 絕對截止時間，只能跟 #gametime global.main 比大小，不可以 remove 1
 scoreboard objectives add monster.skill.cast.at dummy "怪物技能冷卻截止時間"
 scoreboard objectives add monster.skill.cast.cd dummy "怪物技能剩餘冷卻"

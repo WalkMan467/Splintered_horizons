@@ -1,17 +1,11 @@
 # ===================================================
+# 凍結 孤兒冰塊 逐維度掃描 / freeze orphan scan
 
-# orphan scan
-
-
-    ## Guide [ function monsters:generic/freeze/orphan/scan ] >>> orphan scan
-
-    ## Guide [ function monsters:generic/freeze/orphan/dimension ] >>> dimension
-
-    ## Guide [ function monsters:generic/freeze/end ] >>> end
-
+    ## Guide [ function monsters:generic/freeze/orphan/scan ] >>> 凍結 孤兒冰塊 逐維度掃描 / freeze orphan scan
+    ## Guide [ function sys:attachable_component/skills_freeze/ice_display/death/schedule ] >>> schedule
+    ## Guide [ function monsters:generic/freeze/orphan/dimension ] >>> 凍結 孤兒冰塊 單維度處理 / freeze orphan dimension
 
 # ===================================================
-
 
 # 這層冰是騎在怪身上的，怪正常死掉時 detect_kill 會 on passengers 一起清掉，
 # 但怪被瞬間移除（苦力怕自爆、kill 指令）時乘客只會被踢下來，冰就留在原地

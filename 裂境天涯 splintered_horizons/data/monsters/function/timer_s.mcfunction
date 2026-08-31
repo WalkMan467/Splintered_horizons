@@ -1,3 +1,14 @@
+# ===================================================
+# 怪物 每秒計時器 / monsters timer 1s
+
+    ## Guide [ function monsters:timer_s ] >>> 怪物 每秒計時器 / monsters timer 1s
+    ## Guide [ function main:load ] >>> load
+    ## Guide [ function bossfight:chapter_2/elekiel/skills/2/vampire_flower/text ] >>> text
+    ## Guide [ function bossfight:chapter_2/elekiel/skills/3/clock ] >>> clock
+    ## Guide [ function bossfight:chapter_2/elekiel/skills/3/save_pos ] >>> save pos
+
+# ===================================================
+
 # Finality Conversion
 
 scoreboard players remove @e[type=!player,type=!#minecraft:dummy_mob,scores={monster.effect.finality=0..}] monster.effect.finality 1

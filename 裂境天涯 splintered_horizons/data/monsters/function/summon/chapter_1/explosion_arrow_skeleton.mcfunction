@@ -1,3 +1,10 @@
+# ===================================================
+# 召喚 深淵射手 / summon explosion arrow skeleton
+
+    ## Guide [ function monsters:summon/chapter_1/explosion_arrow_skeleton ] >>> 召喚 深淵射手 / summon explosion arrow skeleton
+    ## Guide [ function spawner:type/chapter_1/explosion_arrow_skeleton/sunmmon ] >>> sunmmon
+
+# ===================================================
 
 execute \
     unless score #difficulty global.main matches 1.. run \

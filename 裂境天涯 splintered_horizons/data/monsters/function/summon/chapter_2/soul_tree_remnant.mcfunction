@@ -1,3 +1,12 @@
+# ===================================================
+# 召喚 靈魂樹殘像 / summon soul tree remnant
+
+    ## Guide [ function monsters:summon/chapter_2/soul_tree_remnant ] >>> 召喚 靈魂樹殘像 / summon soul tree remnant
+    ## Guide [ function bossfight:chapter_2/segrina/skills/4/1 ] >>> 1
+    ## Guide [ function spawner:type/chapter_2/soul_tree_remnant/sunmmon ] >>> sunmmon
+    ## Guide [ function sys:monster_wave/chapter_3/1/summon/rdm ] >>> rdm
+
+# ===================================================
 
 execute \
     unless score #difficulty global.main matches 1.. run \
