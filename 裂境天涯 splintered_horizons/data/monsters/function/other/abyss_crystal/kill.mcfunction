@@ -1,3 +1,9 @@
+# ===================================================
+# 深淵水晶 死亡 清除展示體 / abyss crystal on kill
+
+    ## Guide [ function monsters:other/abyss_crystal/kill ] >>> 深淵水晶 死亡 清除展示體 / abyss crystal on kill
+
+# ===================================================
 
 execute \
     on passengers \

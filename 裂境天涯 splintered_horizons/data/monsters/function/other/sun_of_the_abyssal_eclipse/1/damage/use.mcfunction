@@ -1,3 +1,12 @@
+# ===================================================
+# 暗蝕的烈陽 技能1 落點傷害 / sun of the abyssal eclipse skill 1 impact damage
+
+    ## Guide [ function monsters:other/sun_of_the_abyssal_eclipse/1/damage/use ] >>> 暗蝕的烈陽 技能1 落點傷害 / sun of the abyssal eclipse skill 1 impact damage
+    ## Guide [ function monsters:other/sun_of_the_abyssal_eclipse/1/main ] >>> 暗蝕的烈陽 技能1 分鏡 / sun of the abyssal eclipse skill 1 timeline
+    ## Guide [ function monsters:other/sun_of_the_abyssal_eclipse/1/damage/fx ] >>> 暗蝕的烈陽 技能1 落點特效 / sun of the abyssal eclipse skill 1 impact fx
+    ## Guide [ function monsters:other/sun_of_the_abyssal_eclipse/1/fire/use ] >>> 暗蝕的烈陽 技能1 點燃玩家 / sun of the abyssal eclipse skill 1 ignite
+
+# ===================================================
 
 execute \
     as @a[distance=..3] run \

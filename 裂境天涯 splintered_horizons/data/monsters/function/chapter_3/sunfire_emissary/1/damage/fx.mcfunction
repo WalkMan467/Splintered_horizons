@@ -1,3 +1,11 @@
+# ===================================================
+# 烈陽使者 技能1 落點特效 / sunfire emissary skill 1 impact fx
+
+    ## Guide [ function monsters:chapter_3/sunfire_emissary/1/damage/fx ] >>> 烈陽使者 技能1 落點特效 / sunfire emissary skill 1 impact fx
+    ## Guide [ function monsters:chapter_3/sunfire_emissary/1/damage/use ] >>> 烈陽使者 技能1 落點傷害 / sunfire emissary skill 1 impact damage
+
+# ===================================================
+
 scoreboard players add #monster.sunfire_emissary.1.damage.fx particle 10
 
 particle trial_spawner_detection ^ ^ ^3 0.1 0 0.1 0 1 normal @a

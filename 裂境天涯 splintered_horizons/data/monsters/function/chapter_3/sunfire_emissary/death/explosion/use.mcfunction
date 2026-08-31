@@ -1,3 +1,12 @@
+# ===================================================
+# 烈陽使者 自爆 引爆 / sunfire emissary detonate
+
+    ## Guide [ function monsters:chapter_3/sunfire_emissary/death/explosion/use ] >>> 烈陽使者 自爆 引爆 / sunfire emissary detonate
+    ## Guide [ function monsters:chapter_3/sunfire_emissary/death/fx/use ] >>> 烈陽使者 自爆 蓄力計時 / sunfire emissary detonation timer
+    ## Guide [ function monsters:chapter_3/sunfire_emissary/death/explosion/run ] >>> 烈陽使者 自爆 生成燃燒態本體 / sunfire emissary spawn burning form
+
+# ===================================================
+
 particle explosion_emitter ~ ~1 ~ 0 0 0 0 1 force @a
 playsound minecraft:entity.generic.explode voice @a ~ ~1 ~ 1 0.5
 playsound minecraft:block.fire.extinguish voice @a ~ ~1 ~ 1 0.5

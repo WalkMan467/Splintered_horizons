@@ -1,3 +1,11 @@
+# ===================================================
+# 繭 傳送 射線 逐格前進 / cocoon teleport raycast step
+
+    ## Guide [ function monsters:chapter_2/forest_messenger/cocoon/tp/raycast/detect ] >>> 繭 傳送 射線 逐格前進 / cocoon teleport raycast step
+    ## Guide [ function monsters:chapter_2/forest_messenger/cocoon/tp/raycast/start ] >>> 繭 傳送 射線 起點 / cocoon teleport raycast start
+    ## Guide [ function monsters:chapter_2/forest_messenger/cocoon/tp/raycast/true ] >>> 繭 傳送 射線 命中落點 / cocoon teleport raycast hit
+
+# ===================================================
 
 execute \
     if block ~ ~ ~ #penetrate run \

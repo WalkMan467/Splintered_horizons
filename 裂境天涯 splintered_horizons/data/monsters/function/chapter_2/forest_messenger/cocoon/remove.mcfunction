@@ -1,3 +1,15 @@
+# ===================================================
+# 繭 移除 入口 / cocoon remove entry
+
+    ## Guide [ function monsters:chapter_2/forest_messenger/cocoon/remove ] >>> 繭 移除 入口 / cocoon remove entry
+    ## Guide [ function bossfight:chapter_2/elekiel_phase_2/skills/kill ] >>> kill
+    ## Guide [ function bossfight:chapter_2/elekiel_phase_2/skills/void ] >>> void
+    ## Guide [ function main:duration/kill ] >>> kill
+    ## Guide [ function monsters:chapter_2/forest_messenger/cast/end ] >>> 森林信使 施法 結束並重設冷卻 / forest messenger cast end
+    ## Guide [ function monsters:chapter_2/forest_messenger/cocoon/remove_guide ] >>> 繭 移除 遞迴清乘客 / cocoon remove passengers
+
+# ===================================================
+
 function monsters:chapter_2/forest_messenger/cast/end
 effect clear @s glowing
 item replace entity @s weapon.offhand with air

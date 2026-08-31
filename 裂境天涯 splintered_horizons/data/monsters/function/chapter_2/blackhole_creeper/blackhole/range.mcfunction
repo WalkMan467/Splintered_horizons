@@ -1,3 +1,10 @@
+# ===================================================
+# 黑洞 範圍特效 / blackhole range fx
+
+    ## Guide [ function monsters:chapter_2/blackhole_creeper/blackhole/range ] >>> 黑洞 範圍特效 / blackhole range fx
+    ## Guide [ function monsters:chapter_2/blackhole_creeper/blackhole/transformation ] >>> 黑洞 展開變形 / blackhole expand transform
+
+# ===================================================
 
 scoreboard players add @s particle 3
 

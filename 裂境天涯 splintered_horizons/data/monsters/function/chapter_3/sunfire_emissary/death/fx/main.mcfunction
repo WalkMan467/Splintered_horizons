@@ -1,3 +1,12 @@
+# ===================================================
+# 烈陽使者 自爆 蓄力排程 / sunfire emissary detonation scheduler
+
+    ## Guide [ function monsters:chapter_3/sunfire_emissary/death/fx/main ] >>> 烈陽使者 自爆 蓄力排程 / sunfire emissary detonation scheduler
+    ## Guide [ function monsters:chapter_3/sunfire_emissary/death/use ] >>> 烈陽使者 自爆 入口 / sunfire emissary detonation entry
+    ## Guide [ function monsters:chapter_3/sunfire_emissary/death/fx/use ] >>> 烈陽使者 自爆 蓄力計時 / sunfire emissary detonation timer
+
+# ===================================================
+
 # Fx
 
 execute \

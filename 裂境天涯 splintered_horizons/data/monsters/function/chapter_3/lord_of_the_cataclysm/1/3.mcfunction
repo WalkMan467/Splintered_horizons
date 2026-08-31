@@ -1,3 +1,13 @@
+# ===================================================
+# 災厄之主 技能1 龍捲風追擊 / lord of the cataclysm skill 1 tornado chase
+
+    ## Guide [ function monsters:chapter_3/lord_of_the_cataclysm/1/3 ] >>> 災厄之主 技能1 龍捲風追擊 / lord of the cataclysm skill 1 tornado chase
+    ## Guide [ function monsters:chapter_3/lord_of_the_cataclysm/main ] >>> 災厄之主 排程 / lord of the cataclysm scheduler
+    ## Guide [ function monsters:chapter_3/lord_of_the_cataclysm/1/3b ] >>> 災厄之主 技能1 龍捲風特效 / lord of the cataclysm skill 1 tornado fx
+    ## Guide [ function monsters:chapter_3/lord_of_the_cataclysm/1/3c ] >>> 災厄之主 技能1 龍捲風捲起玩家 / lord of the cataclysm skill 1 tornado lift
+
+# ===================================================
+
 # 執行者 : typhoon
 
 # speed

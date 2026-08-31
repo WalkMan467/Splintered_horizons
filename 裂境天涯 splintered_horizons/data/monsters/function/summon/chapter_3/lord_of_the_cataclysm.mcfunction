@@ -3,8 +3,8 @@
 
     ## Guide [ function monsters:summon/chapter_3/lord_of_the_cataclysm ] >>> 召喚 災厄之主 / summon lord of the cataclysm
     ## Guide [ function trap:chapter_3/chest/1/true ] >>> true
-    ## Guide [ function monsters:chapter_3/lord_of_the_cataclysm/main ] >>> main
-    ## Guide [ function monsters:chapter_3/lord_of_the_cataclysm/setup ] >>> setup
+    ## Guide [ function monsters:chapter_3/lord_of_the_cataclysm/main ] >>> 災厄之主 排程 / lord of the cataclysm scheduler
+    ## Guide [ function monsters:chapter_3/lord_of_the_cataclysm/setup ] >>> 災厄之主 生成後設定 / lord of the cataclysm setup
 
 # ===================================================
 

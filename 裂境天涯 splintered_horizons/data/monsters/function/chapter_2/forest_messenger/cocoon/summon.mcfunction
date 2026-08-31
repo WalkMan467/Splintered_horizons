@@ -1,3 +1,10 @@
+# ===================================================
+# 繭 生成 / cocoon summon
+
+    ## Guide [ function monsters:chapter_2/forest_messenger/cocoon/summon ] >>> 繭 生成 / cocoon summon
+    ## Guide [ function monsters:chapter_2/forest_messenger/1/0 ] >>> 森林信使 技能1 生成繭 / forest messenger skill 1 spawn cocoon
+
+# ===================================================
 
 execute \
     if entity @s[type=player] run \

@@ -1,3 +1,10 @@
+# ===================================================
+# 森林信使 切換近戰武器 / forest messenger switch to melee
+
+    ## Guide [ function monsters:chapter_2/forest_messenger/melee/use ] >>> 森林信使 切換近戰武器 / forest messenger switch to melee
+    ## Guide [ function monsters:chapter_2/forest_messenger/main.monster ] >>> 森林信使 本體 冷卻與武器切換 / forest messenger self tick
+
+# ===================================================
 
 execute \
     if entity @s[tag=monster.forest_afterimage.melee] run \

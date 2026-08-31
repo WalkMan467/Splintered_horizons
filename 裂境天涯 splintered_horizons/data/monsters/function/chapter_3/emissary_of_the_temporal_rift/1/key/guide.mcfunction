@@ -1,3 +1,13 @@
+# ===================================================
+# 時空之鑰 追蹤與引爆時序 / temporal key track and timeline
+
+    ## Guide [ function monsters:chapter_3/emissary_of_the_temporal_rift/1/key/guide ] >>> 時空之鑰 追蹤與引爆時序 / temporal key track and timeline
+    ## Guide [ function monsters:chapter_3/emissary_of_the_temporal_rift/1/key/main ] >>> 時空之鑰 排程 / temporal key scheduler
+    ## Guide [ function monsters:chapter_3/emissary_of_the_temporal_rift/1/key/run ] >>> 時空之鑰 爆發傷害 / temporal key burst
+    ## Guide [ function monsters:chapter_3/emissary_of_the_temporal_rift/1/key/tips ] >>> 時空之鑰 引爆預告 / temporal key warning
+
+# ===================================================
+
 scoreboard players remove @s monster.emissary_of_the_temporal_rift.key.timer 1
 
 rotate @s ~ 0

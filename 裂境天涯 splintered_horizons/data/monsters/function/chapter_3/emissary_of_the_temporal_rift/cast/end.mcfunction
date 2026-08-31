@@ -1,3 +1,10 @@
+# ===================================================
+# 時空裂痕的使者 施法 結束並重設冷卻 / emissary of the temporal rift cast end
+
+    ## Guide [ function monsters:chapter_3/emissary_of_the_temporal_rift/cast/end ] >>> 時空裂痕的使者 施法 結束並重設冷卻 / emissary of the temporal rift cast end
+    ## Guide [ function monsters:chapter_3/emissary_of_the_temporal_rift/1/main ] >>> 時空裂痕的使者 技能1 分鏡 / emissary of the temporal rift skill 1 timeline
+
+# ===================================================
 
 ## ----- Reset ----- ##
 scoreboard players reset @s monster.skill.casting

@@ -1,3 +1,13 @@
+# ===================================================
+# 時空鎖 解除 / time lock release
+
+    ## Guide [ function monsters:chapter_2/apostle_of_eternity/lock/broken ] >>> 時空鎖 解除 / time lock release
+    ## Guide [ function monsters:chapter_2/apostle_of_eternity/lock/click ] >>> 時空鎖 掙脫點擊 / time lock struggle click
+    ## Guide [ function monsters:chapter_2/apostle_of_eternity/lock/main ] >>> 時空鎖 逐 tick 倒數 / time lock tick
+    ## Guide [ function players:detect/group/death ] >>> death
+
+# ===================================================
+
 execute \
     unless entity @s[tag=monster.apostle_of_eternity.lock] run \
 return 0

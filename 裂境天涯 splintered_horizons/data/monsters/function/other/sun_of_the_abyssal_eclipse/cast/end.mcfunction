@@ -1,3 +1,10 @@
+# ===================================================
+# 暗蝕的烈陽 施法 結束並重設冷卻 / sun of the abyssal eclipse cast end
+
+    ## Guide [ function monsters:other/sun_of_the_abyssal_eclipse/cast/end ] >>> 暗蝕的烈陽 施法 結束並重設冷卻 / sun of the abyssal eclipse cast end
+    ## Guide [ function monsters:other/sun_of_the_abyssal_eclipse/1/main ] >>> 暗蝕的烈陽 技能1 分鏡 / sun of the abyssal eclipse skill 1 timeline
+
+# ===================================================
 
 ## ----- Reset ----- ##
 scoreboard players reset @s monster.skill.casting

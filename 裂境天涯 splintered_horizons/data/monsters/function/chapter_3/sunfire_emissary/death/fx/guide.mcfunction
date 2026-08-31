@@ -1,3 +1,11 @@
+# ===================================================
+# 烈陽使者 自爆 蓄力特效 / sunfire emissary detonation charge fx
+
+    ## Guide [ function monsters:chapter_3/sunfire_emissary/death/fx/guide ] >>> 烈陽使者 自爆 蓄力特效 / sunfire emissary detonation charge fx
+    ## Guide [ function monsters:chapter_3/sunfire_emissary/death/fx/use ] >>> 烈陽使者 自爆 蓄力計時 / sunfire emissary detonation timer
+
+# ===================================================
+
 scoreboard players add @s monster.sunfire_emissary.death.fx 1
 
 execute \

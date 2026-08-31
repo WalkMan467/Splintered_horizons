@@ -6,18 +6,18 @@
     ## Guide [ function monsters:chapter_1/abyssal_black_knight/main ] >>> 深淵黑騎 主程式 / abyssal black knight main
     ## Guide [ function monsters:chapter_1/abyssal_soulreaper/main ] >>> 深淵斷魂者 主程式 / abyssal soulreaper main
     ## Guide [ function monsters:chapter_1/explosion_arrow_skeleton/main ] >>> 深淵射手 主程式 / explosion arrow skeleton main
-    ## Guide [ function monsters:chapter_2/apostle_of_eternity/main ] >>> main
-    ## Guide [ function monsters:chapter_2/blackhole_creeper/main ] >>> main
-    ## Guide [ function monsters:chapter_2/forest_messenger/main ] >>> main
-    ## Guide [ function monsters:chapter_2/soul_sharpshooter/main ] >>> main
-    ## Guide [ function monsters:chapter_3/bloody_blade_spider/main ] >>> main
-    ## Guide [ function monsters:chapter_3/corroder/main ] >>> main
-    ## Guide [ function monsters:chapter_3/emissary_of_the_temporal_rift/main ] >>> main
-    ## Guide [ function monsters:chapter_3/finality_creeper/main ] >>> main
-    ## Guide [ function monsters:chapter_3/sunfire_emissary/main ] >>> main
+    ## Guide [ function monsters:chapter_2/apostle_of_eternity/main ] >>> 「永劫」的使徒 主程式 / apostle of eternity main
+    ## Guide [ function monsters:chapter_2/blackhole_creeper/main ] >>> 黑洞苦力怕 主程式 / blackhole creeper main
+    ## Guide [ function monsters:chapter_2/forest_messenger/main ] >>> 森林信使 主程式 / forest messenger main
+    ## Guide [ function monsters:chapter_2/soul_sharpshooter/main ] >>> 魂之神射手 主程式 / soul sharpshooter main
+    ## Guide [ function monsters:chapter_3/bloody_blade_spider/main ] >>> 血滴子蜘蛛 主程式 / bloody blade spider main
+    ## Guide [ function monsters:chapter_3/corroder/main ] >>> 腐蝕者 主程式 / corroder main
+    ## Guide [ function monsters:chapter_3/emissary_of_the_temporal_rift/main ] >>> 時空裂痕的使者 主程式 / emissary of the temporal rift main
+    ## Guide [ function monsters:chapter_3/finality_creeper/main ] >>> 終焉苦力怕 自爆 / finality creeper detonate
+    ## Guide [ function monsters:chapter_3/sunfire_emissary/main ] >>> 烈陽使者 主程式 / sunfire emissary main
     ## Guide [ function monsters:generic/freeze/main ] >>> 凍結 主程式 / freeze main
-    ## Guide [ function monsters:other/abyss_crystal/main ] >>> main
-    ## Guide [ function monsters:other/sun_of_the_abyssal_eclipse/main ] >>> main
+    ## Guide [ function monsters:other/abyss_crystal/main ] >>> 深淵水晶 主程式 / abyss crystal main
+    ## Guide [ function monsters:other/sun_of_the_abyssal_eclipse/main ] >>> 暗蝕的烈陽 主程式 / sun of the abyssal eclipse main
     ## Guide [ function monsters:unlease_skill_tip/use ] >>> 技能預告 分派 / skill tip dispatch
 
 # ===================================================

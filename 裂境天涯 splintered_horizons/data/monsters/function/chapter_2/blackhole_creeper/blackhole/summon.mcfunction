@@ -1,3 +1,13 @@
+# ===================================================
+# 黑洞 生成 / blackhole summon
+
+    ## Guide [ function monsters:chapter_2/blackhole_creeper/blackhole/summon ] >>> 黑洞 生成 / blackhole summon
+    ## Guide [ function monsters:chapter_2/blackhole_creeper/main ] >>> 黑洞苦力怕 主程式 / blackhole creeper main
+    ## Guide [ function monsters:chapter_2/blackhole_creeper/blackhole/guide ] >>> 黑洞 展開排程 / blackhole expand scheduler
+    ## Guide [ function monsters:chapter_2/blackhole_creeper/blackhole/main_2 ] >>> 黑洞 傷害排程 / blackhole damage scheduler
+
+# ===================================================
+
 summon area_effect_cloud ~ ~ ~ {custom_particle:{type:"block",block_state:"minecraft:air"},Radius:0f,Duration:20,Tags:["monster.blackhole_creeper.blackhole","monster.blackhole_creeper.blackhole.point"]}
 
 summon minecraft:item_display ~ ~0.5 ~ {Tags:["monster.blackhole_creeper.blackhole","monster.blackhole_creeper.blackhole.display","summon"],start_interpolation: 2,interpolation_duration:5,teleport_duration:1, billboard: "center", brightness: {block: 15, sky: 15}, interpolation_duration: 1, item: {components: {"minecraft:item_model": "minecraft:fx/blackhole/core"}, count: 1, id: "minecraft:ender_eye"}, teleport_duration: 1, transformation: {left_rotation: [0.09280694f, 0.01593403f, 0.101034634f, 0.99041665f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [0.0f, 0.0f, 0.0f], translation: [0.0f, 0.0f, 0.0f]}}

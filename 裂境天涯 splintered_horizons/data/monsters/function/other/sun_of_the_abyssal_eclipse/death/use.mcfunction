@@ -1,3 +1,12 @@
+# ===================================================
+# 暗蝕的烈陽 自爆 入口 / sun of the abyssal eclipse detonation entry
+
+    ## Guide [ function monsters:other/sun_of_the_abyssal_eclipse/death/use ] >>> 暗蝕的烈陽 自爆 入口 / sun of the abyssal eclipse detonation entry
+    ## Guide [ function monsters:other/sun_of_the_abyssal_eclipse/kill ] >>> 暗蝕的烈陽 死亡 觸發自爆 / sun of the abyssal eclipse on kill
+    ## Guide [ function monsters:other/sun_of_the_abyssal_eclipse/death/fx_2/use ] >>> 暗蝕的烈陽 自爆 球狀特效 入口 / sun of the abyssal eclipse sphere fx entry
+
+# ===================================================
+
 summon area_effect_cloud ~ ~ ~ {Tags:["monsters.sun_of_the_abyssal_eclipse.fx.main"],custom_particle:{type:"block",block_state:"air"},Radius:0,Duration:41}
 summon area_effect_cloud ~ ~1.5 ~ {Tags:["monsters.sun_of_the_abyssal_eclipse.fx_2.main","summon"],custom_particle:{type:"block",block_state:"air"},Radius:0,Duration:1}
 

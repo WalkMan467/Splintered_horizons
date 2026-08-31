@@ -1,3 +1,10 @@
+# ===================================================
+# 暗蝕的烈陽 自爆 球狀特效 遞迴 / sun of the abyssal eclipse sphere fx recurse
+
+    ## Guide [ function monsters:other/sun_of_the_abyssal_eclipse/death/fx_2/guide ] >>> 暗蝕的烈陽 自爆 球狀特效 遞迴 / sun of the abyssal eclipse sphere fx recurse
+    ## Guide [ function monsters:other/sun_of_the_abyssal_eclipse/death/fx_2/use ] >>> 暗蝕的烈陽 自爆 球狀特效 入口 / sun of the abyssal eclipse sphere fx entry
+
+# ===================================================
 
 execute \
     positioned ^ ^ ^1.25 run \

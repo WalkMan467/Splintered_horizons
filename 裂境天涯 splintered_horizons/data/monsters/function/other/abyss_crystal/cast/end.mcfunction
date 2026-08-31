@@ -1,3 +1,10 @@
+# ===================================================
+# 深淵水晶 施法 結束並重設冷卻 / abyss crystal cast end
+
+    ## Guide [ function monsters:other/abyss_crystal/cast/end ] >>> 深淵水晶 施法 結束並重設冷卻 / abyss crystal cast end
+    ## Guide [ function monsters:other/abyss_crystal/1/main ] >>> 深淵水晶 技能1 致盲爆發 / abyss crystal skill 1 blind burst
+
+# ===================================================
 
 ## ----- Reset ----- ##
 scoreboard players reset @s monster.skill.casting

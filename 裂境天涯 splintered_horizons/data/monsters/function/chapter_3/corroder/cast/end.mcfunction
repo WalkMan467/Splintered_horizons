@@ -1,3 +1,10 @@
+# ===================================================
+# 腐蝕者 施法 結束並重設冷卻 / corroder cast end
+
+    ## Guide [ function monsters:chapter_3/corroder/cast/end ] >>> 腐蝕者 施法 結束並重設冷卻 / corroder cast end
+    ## Guide [ function monsters:chapter_3/corroder/1/end ] >>> 腐蝕者 技能1 收尾 / corroder skill 1 finish
+
+# ===================================================
 
 ## ----- Reset ----- ##
 scoreboard players reset @s monster.skill.casting

@@ -1,3 +1,13 @@
+# ===================================================
+# 繭 旋轉與判定 / cocoon rotate and check
+
+    ## Guide [ function monsters:chapter_2/forest_messenger/cocoon/guide ] >>> 繭 旋轉與判定 / cocoon rotate and check
+    ## Guide [ function monsters:chapter_2/forest_messenger/cocoon/main ] >>> 繭 排程 / cocoon scheduler
+    ## Guide [ function monsters:chapter_2/forest_messenger/cocoon/fx ] >>> 繭 特效 / cocoon fx
+    ## Guide [ function monsters:chapter_2/forest_messenger/cocoon/tp/raycast/use ] >>> 繭 傳送 射線 入口 / cocoon teleport raycast entry
+
+# ===================================================
+
 # Center point rotation of the cocoon + special effects
 tp @s ~ ~ ~ ~5 0
 tag @s add mid

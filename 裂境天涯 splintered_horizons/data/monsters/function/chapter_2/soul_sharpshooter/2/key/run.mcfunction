@@ -1,3 +1,11 @@
+# ===================================================
+# 追魂體 爆發傷害 / ghost key burst
+
+    ## Guide [ function monsters:chapter_2/soul_sharpshooter/2/key/run ] >>> 追魂體 爆發傷害 / ghost key burst
+    ## Guide [ function monsters:chapter_2/soul_sharpshooter/2/key/fx ] >>> 追魂體 環狀特效 / ghost key ring fx
+
+# ===================================================
+
 particle gust_emitter_large ~ ~ ~ 0 0 0 0 1 force @a
 playsound minecraft:entity.generic.explode voice @a ~ ~ ~ 1 1
 

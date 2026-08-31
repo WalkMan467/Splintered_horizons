@@ -1,3 +1,13 @@
+# ===================================================
+# 烈陽使者 自爆 蓄力計時 / sunfire emissary detonation timer
+
+    ## Guide [ function monsters:chapter_3/sunfire_emissary/death/fx/use ] >>> 烈陽使者 自爆 蓄力計時 / sunfire emissary detonation timer
+    ## Guide [ function monsters:chapter_3/sunfire_emissary/death/fx/main ] >>> 烈陽使者 自爆 蓄力排程 / sunfire emissary detonation scheduler
+    ## Guide [ function monsters:chapter_3/sunfire_emissary/death/explosion/use ] >>> 烈陽使者 自爆 引爆 / sunfire emissary detonate
+    ## Guide [ function monsters:chapter_3/sunfire_emissary/death/fx/guide ] >>> 烈陽使者 自爆 蓄力特效 / sunfire emissary detonation charge fx
+
+# ===================================================
+
 scoreboard players reset @s monster.sunfire_emissary.death.fx
 function monsters:chapter_3/sunfire_emissary/death/fx/guide
 

@@ -1,3 +1,11 @@
+# ===================================================
+# 繭 傳送 擁有者回血 / cocoon teleport owner heal
+
+    ## Guide [ function monsters:chapter_2/forest_messenger/cocoon/tp/owner ] >>> 繭 傳送 擁有者回血 / cocoon teleport owner heal
+    ## Guide [ function monsters:chapter_2/forest_messenger/cocoon/tp/use ] >>> 繭 傳送 執行 / cocoon teleport execute
+
+# ===================================================
+
 tag @s remove monster.forest_messenger.1.actived
 
 effect give @s[type=#minecraft:undead] instant_damage 1 3 true

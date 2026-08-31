@@ -1,3 +1,11 @@
+# ===================================================
+# 暗蝕的烈陽 自爆 蓄力特效 / sun of the abyssal eclipse detonation charge fx
+
+    ## Guide [ function monsters:other/sun_of_the_abyssal_eclipse/death/fx/main ] >>> 暗蝕的烈陽 自爆 蓄力特效 / sun of the abyssal eclipse detonation charge fx
+    ## Guide [ function monsters:other/sun_of_the_abyssal_eclipse/death/fx/use ] >>> 暗蝕的烈陽 自爆 蓄力計時 / sun of the abyssal eclipse detonation timer
+
+# ===================================================
+
 scoreboard players add @s monster.sun_of_the_abyssal_eclipse.death.fx 1
 
 execute \

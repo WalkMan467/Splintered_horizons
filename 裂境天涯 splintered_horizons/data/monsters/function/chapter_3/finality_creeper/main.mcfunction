@@ -1,3 +1,12 @@
+# ===================================================
+# 終焉苦力怕 自爆 / finality creeper detonate
+
+    ## Guide [ function monsters:chapter_3/finality_creeper/main ] >>> 終焉苦力怕 自爆 / finality creeper detonate
+    ## Guide [ function monsters:main ] >>> 怪物 主程式 / monsters main
+    ## Guide [ function sys:attachable_component/group/guide ] >>> guide
+
+# ===================================================
+
 # Attachable Components
 
 function sys:attachable_component/group/guide

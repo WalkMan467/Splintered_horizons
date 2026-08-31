@@ -1,3 +1,11 @@
+# ===================================================
+# 時空裂痕的使者 技能1 時空之鑰設定 / emissary of the temporal rift skill 1 key setup
+
+    ## Guide [ function monsters:chapter_3/emissary_of_the_temporal_rift/1/1 ] >>> 時空裂痕的使者 技能1 時空之鑰設定 / emissary of the temporal rift skill 1 key setup
+    ## Guide [ function monsters:chapter_3/emissary_of_the_temporal_rift/1/0 ] >>> 時空裂痕的使者 技能1 生成時空之鑰 / emissary of the temporal rift skill 1 spawn key
+
+# ===================================================
+
 data merge entity @s {Glowing:1b,billboard: "vertical", brightness: {block: 15, sky: 15}, item: {count: 1, id: "minecraft:ominous_trial_key"}, teleport_duration:1, interpolation_duration:5, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 1.0f], translation: [0.0f, 3.0f, 0.0f]}}
 
 tag @s add chapter_3.emissary_of_the_temporal_rift.key

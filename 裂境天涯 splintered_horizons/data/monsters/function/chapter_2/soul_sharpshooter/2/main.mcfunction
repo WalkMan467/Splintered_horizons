@@ -1,3 +1,14 @@
+# ===================================================
+# 魂之神射手 技能2 分鏡 / soul sharpshooter skill 2 timeline
+
+    ## Guide [ function monsters:chapter_2/soul_sharpshooter/2/main ] >>> 魂之神射手 技能2 分鏡 / soul sharpshooter skill 2 timeline
+    ## Guide [ function monsters:chapter_2/soul_sharpshooter/main ] >>> 魂之神射手 主程式 / soul sharpshooter main
+    ## Guide [ function monsters:chapter_2/soul_sharpshooter/2/0 ] >>> 魂之神射手 技能2 生成追魂體 / soul sharpshooter skill 2 spawn ghost
+    ## Guide [ function monsters:chapter_2/soul_sharpshooter/2/key/remove/1 ] >>> 追魂體 移除 特效 / ghost key remove fx
+    ## Guide [ function monsters:chapter_2/soul_sharpshooter/cast/end ] >>> 魂之神射手 施法 結束並重設冷卻 / soul sharpshooter cast end
+
+# ===================================================
+
 execute \
     if score @s monster.skill.casting matches 1.. \
     if score @s monster.skill.silence matches 1.. run \

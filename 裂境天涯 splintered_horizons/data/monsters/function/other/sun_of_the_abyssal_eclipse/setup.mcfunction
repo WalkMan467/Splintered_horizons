@@ -1,3 +1,11 @@
+# ===================================================
+# 暗蝕的烈陽 生成後設定 / sun of the abyssal eclipse setup
+
+    ## Guide [ function monsters:other/sun_of_the_abyssal_eclipse/setup ] >>> 暗蝕的烈陽 生成後設定 / sun of the abyssal eclipse setup
+    ## Guide [ function monsters:other/sun_of_the_abyssal_eclipse/death/explosion/summon ] >>> 暗蝕的烈陽 自爆 生成燃燒態本體 / sun of the abyssal eclipse spawn burning form
+    ## Guide [ function monsters:summon/other/sun_of_the_abyssal_eclipse ] >>> 召喚 暗蝕的烈陽 / summon sun of the abyssal eclipse
+
+# ===================================================
 
 execute \
     on passengers \

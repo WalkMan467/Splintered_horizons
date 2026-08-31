@@ -1,3 +1,13 @@
+# ===================================================
+# 追魂體 追蹤與判定 / ghost key track and check
+
+    ## Guide [ function monsters:chapter_2/soul_sharpshooter/2/key/guide ] >>> 追魂體 追蹤與判定 / ghost key track and check
+    ## Guide [ function monsters:chapter_2/soul_sharpshooter/2/key/main ] >>> 追魂體 排程 / ghost key scheduler
+    ## Guide [ function monsters:chapter_2/soul_sharpshooter/2/key/on_hit_player ] >>> 追魂體 命中玩家 / ghost key hit player
+    ## Guide [ function monsters:chapter_2/soul_sharpshooter/2/key/remove/1 ] >>> 追魂體 移除 特效 / ghost key remove fx
+
+# ===================================================
+
 scoreboard players add @s monster.soul_sharpshooter.timer 1
 
 rotate @s ~ 0

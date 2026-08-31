@@ -1,3 +1,11 @@
+# ===================================================
+# 災厄之主 技能1 隨機方位生成龍捲風 / lord of the cataclysm skill 1 spawn tornado
+
+    ## Guide [ function monsters:chapter_3/lord_of_the_cataclysm/1/1 ] >>> 災厄之主 技能1 隨機方位生成龍捲風 / lord of the cataclysm skill 1 spawn tornado
+    ## Guide [ function monsters:chapter_3/lord_of_the_cataclysm/1/main ] >>> 災厄之主 技能1 分鏡 / lord of the cataclysm skill 1 timeline
+    ## Guide [ function monsters:chapter_3/lord_of_the_cataclysm/1/1b ] >>> 災厄之主 技能1 龍捲風初始化 / lord of the cataclysm skill 1 tornado init
+
+# ===================================================
 
 execute \
     store result score @s monster.lord_of_the_cataclysm.1.rdm run \

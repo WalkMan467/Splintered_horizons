@@ -1,3 +1,13 @@
+# ===================================================
+# 深淵水晶 技能1 致盲爆發 / abyss crystal skill 1 blind burst
+
+    ## Guide [ function monsters:other/abyss_crystal/1/main ] >>> 深淵水晶 技能1 致盲爆發 / abyss crystal skill 1 blind burst
+    ## Guide [ function monsters:other/abyss_crystal/main ] >>> 深淵水晶 主程式 / abyss crystal main
+    ## Guide [ function monsters:other/abyss_crystal/1/fx ] >>> 深淵水晶 技能1 環狀特效 / abyss crystal skill 1 ring fx
+    ## Guide [ function monsters:other/abyss_crystal/cast/end ] >>> 深淵水晶 施法 結束並重設冷卻 / abyss crystal cast end
+
+# ===================================================
+
 effect give @a[distance=..7,gamemode=!creative,gamemode=!spectator] blindness 5 0 false
 
 title @a[distance=..7,gamemode=!creative,gamemode=!spectator] title {"text":"\uE000","font":"minecraft:screen"}
