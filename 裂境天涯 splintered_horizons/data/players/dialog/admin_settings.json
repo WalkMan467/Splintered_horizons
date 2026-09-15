@@ -35,6 +35,28 @@
     {
       "label": [
         {
+          "text": "📦 ",
+          "color": "#c0862c"
+        },
+        {
+          "translate": "dialog.main.quick_actions.keep_container_items",
+          "fallback": "Keep Container Items",
+          "color": "#c0862c"
+        },
+        {
+          "text": " 📦",
+          "color": "#c0862c"
+        }
+      ],
+      "width": 180,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger player.setting.keep_container_items.trigger"
+      }
+    },
+    {
+      "label": [
+        {
           "translate": "dialog.main.enabled",
           "fallback": "Enabled ",
           "color": "yellow"
@@ -43,7 +65,8 @@
           "translate": "dialog.main.quick_actions.gameplay_test",
           "fallback": "Gameplay Test",
           "color": "yellow"
-        }
+        },
+        " "
       ],
       "width": 180,
       "action": {
@@ -62,12 +85,26 @@
           "translate": "dialog.main.quick_actions.gameplay_test",
           "fallback": "Gameplay Test",
           "color": "yellow"
-        }
+        },
+        " "
       ],
       "width": 180,
       "action": {
         "type": "minecraft:run_command",
         "command": "trigger player.detect.click_event.trigger set 25"
+      }
+    },
+    {
+      "label": [
+        {
+          "translate": "dialog.main.quick_actions.teleport_to_safe_area",
+          "fallback": "Teleport to Safe Area"
+        }
+      ],
+      "width": 180,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger player.detect.click_event.trigger set 27"
       }
     }
   ]

@@ -7,7 +7,7 @@
 
 # ===================================================
 
-give @s iron_sword[item_name=[{"translate": "weapon.aquilumera", "color": "#0066ff", "bold": true}],lore=[[{"translate": "weapon.aquilumera.type", "color": "dark_gray", "italic": false}], {"text": ""}, [{"translate": "weapon.aquilumera.story.1", "color": "blue", "italic": false}], [{"translate": "weapon.aquilumera.story.2", "color": "blue", "italic": false}], [{"translate": "weapon.aquilumera.story.3", "color": "blue", "italic": false}], [{"translate": "weapon.aquilumera.story.4", "color": "blue", "italic": false}], [{"translate": "weapon.aquilumera.story.5", "color": "blue", "italic": false}], [{"translate": "weapon.aquilumera.story.6", "color": "blue", "italic": false}], [{"translate": "weapon.aquilumera.story.7", "color": "blue", "italic": false}], [{"translate": "weapon.aquilumera.story.8", "color": "blue", "italic": false}], [{"translate": "weapon.aquilumera.story.9", "color": "blue", "italic": false}], [{"translate": "weapon.aquilumera.story.10", "color": "blue", "italic": false}], {"text": ""}, [{"text": "", "italic": false}, {"translate": "weapon.aquilumera.skill", "color": "#0066ff", "bold": true}, {"text": "  "}, {"translate": "weapon.skill_cd", "color": "#6E6E6E"}, {"text": "10s"}], [{"text": "", "italic": false}, {"translate": "weapon.aquilumera.skill.1", "color": "#ffffff", "italic": false}], [{"text": "", "italic": false}, {"translate": "weapon.aquilumera.skill.2", "color": "#ffffff", "italic": false, "with": [{"translate": "weapon.effect.resplendence", "underlined": True, "color": "gold"}]}], [{"text": "", "italic": false}, {"translate": "weapon.aquilumera.skill.3", "color": "#ffffff", "italic": false}], [{"text": "", "italic": false}, {"translate": "weapon.aquilumera.skill.4", "color": "#ffffff", "italic": false}], [{"text": "", "italic": false}, {"translate": "weapon.aquilumera.skill.5", "color": "#ffffff", "italic": false}], [{"text": "", "italic": false}, {"translate": "weapon.aquilumera.skill.6", "color": "#ffffff", "italic": false}], [{"text": "", "italic": false}, {"translate": "weapon.aquilumera.skill.7", "color": "#ffffff", "italic": false}], {"text": ""}, [{"text": "", "italic": false}, {"translate": "weapon.aquilumera.passive_skills", "color": "#0066ff", "bold": true}, {"text": "  "}, {"translate": "weapon.skill_cd", "color": "#6E6E6E"}, {"text": "13s"}], [{"text": "", "italic": false}, {"translate": "weapon.aquilumera.passive_skills.1", "color": "#ffffff", "italic": false, "with": [{"translate": "weapon.effect.starry_sky_frost", "underlined": True, "color": "#5de7ff"}]}], [{"text": "", "italic": false}, {"translate": "weapon.aquilumera.passive_skills.2", "color": "#ffffff", "italic": false}], {"text": ""}],attribute_modifiers=[{type:"attack_damage",id:"base_attack_damage",amount:4,operation:"add_value",slot:"mainhand"},{type:"attack_speed",id:"base_attack_speed",amount:-2.4,operation:"add_value",slot:"mainhand"}],max_stack_size=1,unbreakable={},item_model="sword/light_of_water_mirror/0",custom_data={rc:1b,type:"sword",rarity:"monument",weapon:"aquilumera",monument:1,wl_light:0b,wl_water:1b,kept_item:true},consumable={consume_seconds:10000,animation:"none",has_consume_particles:false},enchantments={"weapons:type/sword/aquilumera/passive/use":1},enchantment_glint_override=false,damage_type="weapons:type/sword/aquilumera_attack",minimum_attack_charge=0.5,custom_model_data={flags:[1b]},tooltip_style="light_of_water_mirror"]
+give @s iron_sword[item_name=[{"translate": "weapon.aquilumera", "color": "#0066ff", "bold": true}],lore=[[{"translate":"weapon.aquilumera.type","color":"dark_gray","italic":false}],{"text":""},[{"translate":"weapon.aquilumera.story.1","color":"blue","italic":false}],[{"translate":"weapon.aquilumera.story.2","color":"blue","italic":false}],[{"translate":"weapon.aquilumera.story.3","color":"blue","italic":false}],[{"translate":"weapon.aquilumera.story.4","color":"blue","italic":false}],[{"translate":"weapon.aquilumera.story.5","color":"blue","italic":false}],[{"translate":"weapon.aquilumera.story.6","color":"blue","italic":false}],[{"translate":"weapon.aquilumera.story.7","color":"blue","italic":false}],[{"translate":"weapon.aquilumera.story.8","color":"blue","italic":false}],[{"translate":"weapon.aquilumera.story.9","color":"blue","italic":false}],[{"translate":"weapon.aquilumera.story.10","color":"blue","italic":false}],{"text":""},[{"text":"","italic":false},{"translate":"weapon.aquilumera.skill","color":"#0066ff","bold":true},{"text":"  "},{"translate":"weapon.skill_cd","color":"#6E6E6E"},{"text":"25s"}],[{"text":"","italic":false},{"translate":"weapon.aquilumera.skill.1","color":"#ffffff","italic":false,"with":[{"keybind":"key.use","underlined":true,"color":"dark_green"}]}],[{"text":"","italic":false},{"translate":"weapon.aquilumera.skill.2","color":"#ffffff","italic":false,"with":[{"translate":"weapon.effect.starry_sky_frost","underlined":true,"color":"#5de7ff"}]}],[{"text":"","italic":false},{"translate":"weapon.aquilumera.skill.3","color":"#ffffff","italic":false}],[{"text":"","italic":false},{"translate":"weapon.aquilumera.skill.4","color":"#ffffff","italic":false,"with":[{"translate":"weapon.effect.reflection","underlined":true,"color":"#8fd3ff"}]}],[{"text":"","italic":false},{"translate":"weapon.aquilumera.skill.5","color":"#ffffff","italic":false}],[{"text":"","italic":false},{"translate":"weapon.aquilumera.skill.6","color":"#ffffff","italic":false,"with":[{"translate":"weapon.effect.reflection","underlined":true,"color":"#8fd3ff"}]}],[{"text":"","italic":false},{"translate":"weapon.aquilumera.skill.7","color":"#ffffff","italic":false,"with":[{"translate":"weapon.effect.resplendence","underlined":true,"color":"gold"}]}],[{"text":"","italic":false},{"translate":"weapon.aquilumera.skill.8","color":"#ffffff","italic":false}],{"text":""},[{"text":"","italic":false},{"translate":"weapon.aquilumera.passive_skills","color":"#0066ff","bold":true},{"text":"  "}],[{"text":"","italic":false},{"translate":"weapon.aquilumera.passive_skills.1","color":"#ffffff","italic":false}],[{"text":"","italic":false},{"translate":"weapon.aquilumera.passive_skills.2","color":"#ffffff","italic":false,"with":[{"translate":"weapon.effect.reflection","underlined":true,"color":"#8fd3ff"}]}],[{"text":"","italic":false},{"translate":"weapon.aquilumera.passive_skills.3","color":"#ffffff","italic":false}],[{"text":"","italic":false},{"translate":"weapon.aquilumera.passive_skills.4","color":"#ffffff","italic":false}],[{"text":"","italic":false},{"translate":"weapon.aquilumera.passive_skills.5","color":"#ffffff","italic":false}],[{"text":"","italic":false},{"translate":"weapon.aquilumera.passive_skills.6","color":"#ffffff","italic":false}],[{"text":"","italic":false},{"translate":"weapon.aquilumera.passive_skills.7","color":"#ffffff","italic":false}],{"text":""}],attribute_modifiers=[{type:"attack_damage",id:"base_attack_damage",amount:4,operation:"add_value",slot:"mainhand"},{type:"attack_speed",id:"base_attack_speed",amount:-2.4,operation:"add_value",slot:"mainhand"}],max_stack_size=1,unbreakable={},item_model="sword/light_of_water_mirror/0",custom_data={rc:1b,type:"sword",rarity:"monument",weapon:"aquilumera",monument:1,wl_light:0b,wl_water:1b,kept_item:true},consumable={consume_seconds:10000,animation:"none",has_consume_particles:false},enchantments={"weapons:type/sword/aquilumera/passive/use":1},enchantment_glint_override=false,damage_type="weapons:type/sword/aquilumera_attack",minimum_attack_charge=0.5,custom_model_data={flags:[1b]},tooltip_style="light_of_water_mirror"]
 
 # ==============================
 # Translate Keys
@@ -24,17 +24,24 @@ give @s iron_sword[item_name=[{"translate": "weapon.aquilumera", "color": "#0066
 # "weapon.aquilumera.story.8" : "眾神隨之殞落",
 # "weapon.aquilumera.story.9" : "或許你的到來能改變曾經的命運",
 # "weapon.aquilumera.story.10" : "另它發揮以往更大的力量",
-# "weapon.aquilumera.skill" : "[水光切換]",
-# "weapon.aquilumera.skill.1" : "對 8 格範圍內隨機敵人造成 10 次 150% 基礎傷害",
-# "weapon.aquilumera.skill.2" : "並使你獲得【%1$s】符文 (00:05)",
-# "weapon.aquilumera.skill.3" : "接下來 10 秒內，攻擊有 25% 機率獲得 1 層能量",
-# "weapon.aquilumera.skill.4" : "3 層時根據型態觸發以下技能:水型態：觸發重力之雨造成 250% 基礎傷害",
-# "weapon.aquilumera.skill.5" : "並使敵人 重力 +200% 與 防禦力 -25% (00:05)",
-# "weapon.aquilumera.skill.6" : "光型態：觸發晨光輝陣造成 250% 基礎傷害",
-# "weapon.aquilumera.skill.7" : "並使敵人 眩暈 (00:01)",
-# "weapon.aquilumera.passive_skills" : "[水光之痕]",
-# "weapon.aquilumera.passive_skills.1" : "當你擁有【%1$s】符文時：",
-# "weapon.aquilumera.passive_skills.2" : "使你普通攻擊額外造成 50% 真實傷害",
+# "weapon.aquilumera.skill" : "【晨光輝陣】",
+# "weapon.aquilumera.skill.1" : "使用【%1$s】立即切換 水 ⇄ 光 型態",
+# "weapon.aquilumera.skill.2" : "並給予你【%1$s】符文 (00:05)",
+# "weapon.aquilumera.skill.3" : "與重複 10 次對隨機敵人造成 150% 基礎傷害",
+# "weapon.aquilumera.skill.4" : "與附加 1 層【%1$s】(00:15)",
+# "weapon.aquilumera.skill.5" : "當敵人被擊殺時：",
+# "weapon.aquilumera.skill.6" : "立即將【%1$s】轉至 5 格範圍內隨機敵人",
+# "weapon.aquilumera.skill.7" : "當你擁有【%1$s】符文時：",
+# "weapon.aquilumera.skill.8" : "武器 CD 改至 15s",
+# "weapon.aquilumera.passive_skills" : "【水光裂隙】",
+# "weapon.aquilumera.passive_skills.1" : "當你以任何武器近戰命中怪物時：",
+# "weapon.aquilumera.passive_skills.2" : "如果怪物身上有【%1$s】將移除 1 層倒影",
+# "weapon.aquilumera.passive_skills.3" : "並根據倒影的型態決定效果",
+# "weapon.aquilumera.passive_skills.4" : "光型態：",
+# "weapon.aquilumera.passive_skills.5" : "攻擊速度 +5% (00:05)，最多疊加至 +25%",
+# "weapon.aquilumera.passive_skills.6" : "水型態：",
+# "weapon.aquilumera.passive_skills.7" : "手持武器冷卻減少 2 秒",
+# "weapon.effect.reflection" : "倒影",
 
 # ==============================
 # item_builder.py Backup
@@ -67,37 +74,62 @@ give @s iron_sword[item_name=[{"translate": "weapon.aquilumera", "color": "#0066
 # 
 #         "skill": {
 #             "is_skill": True,
-#             "cd": 10,
-#             "name": ["水光切換", "#0066ff", "#ffffff"],
+#             "cd": 25,
+#             "name": ["晨光輝陣", "#0066ff", "#ffffff"],
 #             "info": [
-#                 "對 8 格範圍內隨機敵人造成 10 次 150% 基礎傷害",
 #                 {
-#                     "text": "並使你獲得【%1$s】符文 (00:05)",
+#                     "text": "使用【%1$s】立即切換 水 ⇄ 光 型態",
+#                     "with": [
+#                         {"keybind": "key.use", "underlined": True, "color": "dark_green"}
+#                     ],
+#                 },
+#                 {
+#                     "text": "並給予你【%1$s】符文 (00:05)",
+#                     "with": [
+#                         {"translate": "weapon.effect.starry_sky_frost", "underlined": True, "color": "#5de7ff"}
+#                     ],
+#                 },
+#                 "與重複 10 次對隨機敵人造成 150% 基礎傷害",
+#                 {
+#                     "text": "與附加 1 層【%1$s】(00:15)",
+#                     "with": [
+#                         {"translate": "weapon.effect.reflection", "underlined": True, "color": "#8fd3ff"}
+#                     ],
+#                 },
+#                 "當敵人被擊殺時：",
+#                 {
+#                     "text": "立即將【%1$s】轉至 5 格範圍內隨機敵人",
+#                     "with": [
+#                         {"translate": "weapon.effect.reflection", "underlined": True, "color": "#8fd3ff"}
+#                     ],
+#                 },
+#                 {
+#                     "text": "當你擁有【%1$s】符文時：",
 #                     "with": [
 #                         {"translate": "weapon.effect.resplendence", "underlined": True, "color": "gold"}
 #                     ],
 #                 },
-#                 "接下來 10 秒內，攻擊有 25% 機率獲得 1 層能量",
-#                 "3 層時根據型態觸發以下技能:"
-#                 "水型態：觸發重力之雨造成 250% 基礎傷害",
-#                 "並使敵人 重力 +200% 與 防禦力 -25% (00:05)",
-#                 "光型態：觸發晨光輝陣造成 250% 基礎傷害",
-#                 "並使敵人 眩暈 (00:01)"
+#                 "武器 CD 改至 15s"
 #             ]
 #         },
 # 
 #         "passive_skills": {
 #             'is_passive_skills': True,
-#             'cd': 13,
-#             'name': ['水光之痕', '#0066ff', '#ffffff'],
+#             'cd': 0,
+#             'name': ['水光裂隙', '#0066ff', '#ffffff'],
 #             'info': [
+#                 "當你以任何武器近戰命中怪物時：",
 #                 {
-#                     "text": "當你擁有【%1$s】符文時：",
+#                     "text": "如果怪物身上有【%1$s】將移除 1 層倒影",
 #                     "with": [
-#                         {"translate": "weapon.effect.starry_sky_frost", "underlined": True, "color": "#5de7ff"}
+#                         {"translate": "weapon.effect.reflection", "underlined": True, "color": "#8fd3ff"}
 #                     ]
 #                 },
-#                 "使你普通攻擊額外造成 50% 真實傷害",
+#                 "並根據倒影的型態決定效果",
+#                 "光型態：",
+#                 "攻擊速度 +5% (00:05)，最多疊加至 +25%",
+#                 "水型態：",
+#                 "手持武器冷卻減少 2 秒",
 #             ]
 #         },
 # 

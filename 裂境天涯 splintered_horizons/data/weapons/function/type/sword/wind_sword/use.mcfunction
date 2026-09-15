@@ -5,11 +5,21 @@
 
 # ===================================================
 
+execute \
+    unless score @s weapon.wind_sword.cd matches -2147483648..2147483647 run \
+    return run \
+function weapons:rc/cd {id:"weapon.wind_sword.cd", cd:260}
+
+execute \
+    unless score #gametime global.main >= @s weapon.wind_sword.cd run \
+    return 0
+
 
 # player
 tag @s add wind_sword.user
 
-scoreboard players set @s weapon.wind_sword.cd 260
+# 重置 CD / Reset CD
+function weapons:rc/cd {id:"weapon.wind_sword.cd", cd:260}
 scoreboard players set @s weapon.wind_sword.timer 0
 
 # particle

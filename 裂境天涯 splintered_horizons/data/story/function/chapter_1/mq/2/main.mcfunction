@@ -1,5 +1,7 @@
 ## ---Main Line 2--- ##
 
+    scoreboard players add #story.chapter_1.mq.2_temp global.main 0
+
     # Detect
     execute \
         positioned 1 64 -109 \

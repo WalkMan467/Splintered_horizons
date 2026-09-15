@@ -81,6 +81,8 @@ kill @n[tag=armor.black_hole.effect,tag=delete,distance=..10,type=area_effect_cl
 
 
 
+# 絕對時間制：設成 0 等同「早就轉好了」，語意跟原本的歸零一致
+
 execute \
     unless entity @s[tag=forced_interrupt_animation] run \
 scoreboard players set @s armor.black_hole.boots.cd 0

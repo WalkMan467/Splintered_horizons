@@ -9,7 +9,7 @@
 
 # dmg
 tag @e[type=!#dummy_mob,distance=..4,limit=1,sort=random,type=!player] add dmger
-scoreboard players set @s dmg_formula.atk_percentage 100
+scoreboard players set @s dmg_formula.atk_percentage 150
 function dmg_formula:weapons/type/sword/nightfall/switch/calculate
 
 # particle

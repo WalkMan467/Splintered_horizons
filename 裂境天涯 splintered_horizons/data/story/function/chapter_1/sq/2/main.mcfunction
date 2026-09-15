@@ -9,17 +9,14 @@
         store result score #story.chapter_1.sq.2 global.main \
     if entity @a[distance=..16,gamemode=!spectator]
 
+    # Rotate to Player
     execute \
         positioned 158 91 -429 \
-        as 0004c3a7-ffff-827d-0031-079d00005a5b at @s \
-        facing entity @p[distance=..8] feet run \
-    rotate @s ~ ~
-
-        execute \
-        positioned 158 91 -429 \
-        as 0004c3a7-ffff-827d-0031-079d00005a5b at @s \
-        unless entity @p[sort=arbitrary,distance=..8] run \
-    rotate @s 180 0
+        if entity @p[distance=..16,predicate=players:detect/movement] \
+        as @n[sort=arbitrary,distance=..1,tag=aj.selena.root,type=item_display] at @s \
+        facing entity @p[distance=..16] eyes \
+        rotated ~ 0 run \
+    function aj:selena/move
 
     # If true;
     execute \

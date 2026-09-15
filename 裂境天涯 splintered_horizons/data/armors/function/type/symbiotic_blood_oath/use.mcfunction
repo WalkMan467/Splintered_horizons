@@ -22,19 +22,28 @@
 
 
 
+# 動畫計時器仍然是倒數制，所以要把絕對時間換算回剩餘 tick
 scoreboard players operation @s armor.animation_skills.chestplate.cd = @s armor.symbiotic_blood_oath.cd
+scoreboard players operation @s armor.animation_skills.chestplate.cd -= #gametime global.main
 
 scoreboard players set @s armor.animation_skills.return 1
 
 
 
+# 第一次使用先建立 CD 分數 / Initialize the cd score on first use
 execute \
-    if score @s armor.symbiotic_blood_oath.cd matches 1.. run \
+    unless score @s armor.symbiotic_blood_oath.cd matches -2147483648..2147483647 run \
+    return run \
+function armors:cd {id:"armor.symbiotic_blood_oath.cd", cd:30}
+
+# CD 還沒到 / Still on cooldown
+execute \
+    unless score #gametime global.main >= @s armor.symbiotic_blood_oath.cd run \
 return 0
 
 
 
-scoreboard players set @s armor.symbiotic_blood_oath.cd 30
+function armors:cd {id:"armor.symbiotic_blood_oath.cd", cd:30}
 
 
 

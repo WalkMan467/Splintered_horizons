@@ -7,17 +7,26 @@
 
 # ===================================================
 
-scoreboard players add @s weapon.spider.cd 0
-
-
-execute \
-    unless score @s weapon.spider.cd matches ..0 \
-    unless score @s player.click.interval matches 1.. run \
-function weapons:rc/failure/skill_use_failed with entity @s SelectedItem.components."minecraft:custom_data"
+# 連點保護 / Click interval
 
 execute \
-    unless score @s weapon.spider.cd matches ..0 run \
+    if score @s player.click.interval matches 1.. run \
+    return run \
 return 0
+
+# 第一次使用先建立 CD 分數 / Initialize the cd score on first use
+
+execute \
+    unless score @s weapon.spider.cd matches -2147483648..2147483647 run \
+    return run \
+function weapons:rc/cd {id:"weapon.spider.cd", cd:400}
+
+# CD 還沒到 / Still on cooldown
+
+execute \
+    unless score #gametime global.main >= @s weapon.spider.cd run \
+    return run \
+function weapons:rc/failure/skill_use_failed with entity @s SelectedItem.components."minecraft:custom_data"
 
 scoreboard players set @s player.click.interval 20
 
@@ -30,7 +39,7 @@ playsound minecraft:entity.generic.explode voice @s ~ ~1 ~ 0.5 1
 playsound minecraft:entity.player.attack.sweep voice @s ~ ~1 ~ 1 0.75
 playsound minecraft:voice.ruins_of_the_end_hurt voice @s ~ ~1 ~ 0.5 1.5
 
-scoreboard players set @s weapon.spider.cd 400
+function weapons:rc/cd {id:"weapon.spider.cd", cd:400}
 scoreboard players set @s weapon.effect.chaotic_thunder 100
 
 tag @e[type=!player,type=!#dummy_mob,distance=..4] add dmger

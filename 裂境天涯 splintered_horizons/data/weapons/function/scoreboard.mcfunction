@@ -115,6 +115,13 @@ scoreboard objectives add weapon.sagittarius.hold_down dummy "射手座 長按"
 scoreboard objectives add weapon.sagittarius.use dummy "射手座 使用"
 scoreboard objectives add weapon.sagittarius.cd dummy "射手座 CD"
 scoreboard objectives add weapon.sagittarius.charged.sfx dummy "射手座 蓄力完成音效"
+scoreboard objectives add weapon.the_endwatcher.hold_down dummy "終焉凝視者 長按"
+scoreboard objectives add weapon.the_endwatcher.use dummy "終焉凝視者 使用"
+scoreboard objectives add weapon.the_endwatcher.stage dummy "終焉凝視者 蓄力階段"
+scoreboard objectives add weapon.the_endwatcher.resonance dummy "終焉凝視者 共鳴值"
+scoreboard objectives add weapon.the_endwatcher.stored dummy "終焉凝視者 累積傷害"
+scoreboard objectives add weapon.the_endwatcher.awaken dummy "終焉凝視者 開眼剩餘次數"
+scoreboard objectives add weapon.the_endwatcher.pending dummy "終焉凝視者 等待標記箭矢"
 
 scoreboard players add @s weapon.sagittarius.hold_down 0
 scoreboard players add @s weapon.sagittarius.use 0
@@ -232,10 +239,13 @@ scoreboard objectives add weapon.nightfall.cd dummy "夜幕 CD"
 scoreboard objectives add weapon.nightfall.charge dummy "夜幕充能"
 scoreboard objectives add weapon.nightfall.charge_timer dummy "夜幕充能特效"
 scoreboard objectives add weapon.nightfall.effect.switch_dmg_count dummy "夜幕切換傷害次數"
+scoreboard objectives add weapon.nightfall.lunar_eclipse dummy "夜幕 月蝕層數"
+scoreboard objectives add weapon.nightfall.blood_moon dummy "夜幕 血月剩餘時間"
 
 scoreboard players add @a weapon.nightfall.state 0
 scoreboard players add @a weapon.nightfall.cd 0
 scoreboard players add @a weapon.nightfall.effect.switch_dmg_count 0
+scoreboard players add @a weapon.nightfall.blood_moon 0
 
 #===================================================================
 # 水鏡之光
@@ -246,6 +256,10 @@ scoreboard objectives add weapon.aquilumera.cd dummy "水鏡之光 CD"
 scoreboard objectives add weapon.aquilumera.count dummy "水鏡之光 數量"
 scoreboard objectives add weapon.aquilumera.switch.water.fx.rdm_pos.raycast.id dummy "水鏡之光 水型態特效 Raycast ID"
 scoreboard objectives add weapon.aquilumera.switch.water.fx.rdm_pos.raycast dummy "水鏡之光 水型態特效 Raycast"
+scoreboard objectives add weapon.aquilumera.reflection dummy "水鏡之光 倒影層數"
+scoreboard objectives add weapon.aquilumera.reflection.expire dummy "水鏡之光 倒影到期時間"
+scoreboard objectives add weapon.aquilumera.reflection.form dummy "水鏡之光 倒影型態"
+scoreboard objectives add weapon.aquilumera.reflection.hit dummy "水鏡之光 倒影本 tick 已處理"
 
 scoreboard players add @a weapon.aquilumera_passive 0
 scoreboard players add @a weapon.aquilumera.state 0
@@ -298,5 +312,6 @@ scoreboard objectives add weapon.enchantment.bleeding_hit.cd dummy "流血打擊
 scoreboard objectives add weapon.enchantment.phantom_fangs dummy "幻影爪"
 
 scoreboard players add @a weapon.enchantment.bleeding_hit.cd 0
+
 
 #===================================================================

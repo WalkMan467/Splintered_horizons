@@ -21,7 +21,7 @@
       {
         "attribute": "minecraft:attack_speed",
         "id": "minecraft:base_attack_speed",
-        "amount": -2.5,
+        "amount": -2.4,
         "operation": "add_value",
         "slot": "mainhand"
       }
@@ -42,7 +42,8 @@
         "rc": true,
         "type": "sword",
         "rarity": "epic",
-        "weapon": "nightfall"
+        "weapon": "nightfall",
+        "forging_table": true
       },
       "damage_type": "weapons:type/sword/nightfall_attack",
       "minimum_attack_charge": 0.5

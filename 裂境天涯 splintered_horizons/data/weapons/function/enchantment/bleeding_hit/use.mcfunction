@@ -11,10 +11,12 @@ execute \
     if entity @s[type=player] run \
 tag @s add user.player
 
+# 第一次使用先建立 CD 分數 / Initialize the cd score on first use
 execute \
     on attacker \
-    if entity @s[type=player] run \
-scoreboard players add @s weapon.enchantment.bleeding_hit.cd 0
+    if entity @s[type=player] \
+    unless score @s weapon.enchantment.bleeding_hit.cd matches -2147483648..2147483647 run \
+function weapons:rc/cd {id:"weapon.enchantment.bleeding_hit.cd", cd:200}
 
 execute \
     on attacker \
@@ -22,7 +24,7 @@ execute \
 tag @s add user.enemy
 
 execute \
-    if score @p[tag=user.player] weapon.enchantment.bleeding_hit.cd matches ..1 run \
+    if score #gametime global.main >= @p[tag=user.player] weapon.enchantment.bleeding_hit.cd run \
 function weapons:enchantment/bleeding_hit/run
 
 execute \

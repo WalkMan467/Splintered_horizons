@@ -9,7 +9,7 @@
 
 
 execute \
-    as @n[type=!player,type=!#minecraft:dummy_mob,tag=!cse.status.effect.entropy_erosion] at @s run \
+    as @n[type=!player,type=!#minecraft:dummy_mob] at @s run \
 function weapons:type/arrows/sunfire_of_entropy_erosion_arrow/guide
 
 advancement revoke @a only weapons:arrows/sunfire_of_entropy_erosion_arrow

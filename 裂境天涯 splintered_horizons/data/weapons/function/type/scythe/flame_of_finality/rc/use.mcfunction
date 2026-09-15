@@ -10,7 +10,10 @@
 
 # ===================================================
 
-scoreboard players add @s player.ultimate 0
+# 沒有值的玩家當作「現在就緒」
+execute \
+    unless score @s player.ultimate matches -2147483648..2147483647 run \
+scoreboard players operation @s player.ultimate = #gametime global.main
 
 execute \
     unless function weapons:type/scythe/flame_of_finality/rc/detect run \
@@ -19,8 +22,8 @@ function weapons:rc/failure/ultimate_use_failed
 
 execute \
     unless score @s player.finality_tunder matches 1.. \
-    unless score @s player.ultimate matches 1.. run \
-scoreboard players set @s player.ultimate 500
+    if score #gametime global.main >= @s player.ultimate run \
+function weapons:rc/cd {id:"player.ultimate", cd:500}
 
 execute \
     if score @s player.finality_tunder matches 1.. run \

@@ -7,22 +7,32 @@
 
 # ===================================================
 
-scoreboard players add @s weapon.thunder_duet.cd 0
+# 連點保護 / Click interval
 
 execute \
-    unless score @s weapon.thunder_duet.cd matches ..0 \
-    unless score @s player.click.interval matches 1.. run \
-function weapons:rc/failure/skill_use_failed with entity @s SelectedItem.components."minecraft:custom_data"
-
-execute \
-    unless score @s weapon.thunder_duet.cd matches ..0 run \
+    if score @s player.click.interval matches 1.. run \
+    return run \
 return 0
+
+# 第一次使用先建立 CD 分數 / Initialize the cd score on first use
+
+execute \
+    unless score @s weapon.thunder_duet.cd matches -2147483648..2147483647 run \
+    return run \
+function weapons:rc/cd {id:"weapon.thunder_duet.cd", cd:300}
+
+# CD 還沒到 / Still on cooldown
+
+execute \
+    unless score #gametime global.main >= @s weapon.thunder_duet.cd run \
+    return run \
+function weapons:rc/failure/skill_use_failed with entity @s SelectedItem.components."minecraft:custom_data"
 
 scoreboard players reset @s weapon.thunder_duet.passive.state
 scoreboard players set @s player.click.interval 20
 scoreboard players add #index weapon.thunder_duet.id 1
 scoreboard players operation @s weapon.thunder_duet.id = #index weapon.thunder_duet.id
-scoreboard players set @s weapon.thunder_duet.cd 300
+function weapons:rc/cd {id:"weapon.thunder_duet.cd", cd:300}
 
 execute \
     rotated ~ 0 run \

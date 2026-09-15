@@ -3,18 +3,7 @@
   "description": {
     "translate": "weapon.enchantment.aquilumera"
   },
-  "effects": {
-    "minecraft:post_attack": [
-      {
-        "effect": {
-          "type": "minecraft:run_function",
-          "function": "weapons:type/sword/aquilumera/passive/dmg"
-        },
-        "enchanted": "attacker",
-        "affected": "victim"
-      }
-    ]
-  },
+  "effects": {},
   "max_cost": {
     "base": 50,
     "per_level_above_first": 0

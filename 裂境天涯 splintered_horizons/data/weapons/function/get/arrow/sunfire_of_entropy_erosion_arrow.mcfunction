@@ -1,4 +1,4 @@
-give @s arrow[item_name=[{"translate": "weapon.sunfire_of_entropy_erosion_arrow", "color": "#ff3c00", "bold": true}],lore=[[{"translate": "weapon.sunfire_of_entropy_erosion_arrow.type", "color": "dark_gray", "italic": false}], {"text": ""}, [{"translate": "weapon.sunfire_of_entropy_erosion_arrow.story.1", "color": "blue", "italic": false}], [{"translate": "weapon.sunfire_of_entropy_erosion_arrow.story.2", "color": "blue", "italic": false}], [{"translate": "weapon.sunfire_of_entropy_erosion_arrow.story.3", "color": "blue", "italic": false}], [{"translate": "weapon.sunfire_of_entropy_erosion_arrow.story.4", "color": "blue", "italic": false}], [{"translate": "weapon.sunfire_of_entropy_erosion_arrow.story.5", "color": "blue", "italic": false}], {"text": ""}, [{"text": "", "italic": false}, {"translate": "weapon.sunfire_of_entropy_erosion_arrow.passive_skills", "color": "#ff0000", "bold": true}, {"text": "  "}], [{"text": "", "italic": false}, {"translate": "weapon.sunfire_of_entropy_erosion_arrow.passive_skills.1", "color": "#ff5100", "italic": false}], [{"text": "", "italic": false}, {"translate": "weapon.sunfire_of_entropy_erosion_arrow.passive_skills.2", "color": "#ff5100", "italic": false, "with": [{"translate": "cse.status_effects.entropy_erosion", "underlined": True, "color": "#ff5100"}]}], {"text": ""}],attribute_modifiers=[{type:"attack_damage",id:"base_attack_damage",amount:4,operation:"add_value",slot:"mainhand"},{type:"attack_speed",id:"base_attack_speed",amount:-2.4,operation:"add_value",slot:"mainhand"}],max_stack_size=1,unbreakable={},item_model="arrow/sunfire_of_entropy_erosion_arrow",custom_data={type:"arrow",rarity:"legendary",id:"sunfire_of_entropy_erosion_arrow"},tooltip_display={hidden_components:["unbreakable","attribute_modifiers"]},tooltip_style="legendary"]
+give @s arrow[item_name=[{"translate": "weapon.sunfire_of_entropy_erosion_arrow", "color": "#ff3c00", "bold": true}],lore=[[{"translate": "weapon.sunfire_of_entropy_erosion_arrow.type", "color": "dark_gray", "italic": false}], {"text": ""}, [{"translate": "weapon.sunfire_of_entropy_erosion_arrow.story.1", "color": "blue", "italic": false}], [{"translate": "weapon.sunfire_of_entropy_erosion_arrow.story.2", "color": "blue", "italic": false}], [{"translate": "weapon.sunfire_of_entropy_erosion_arrow.story.3", "color": "blue", "italic": false}], [{"translate": "weapon.sunfire_of_entropy_erosion_arrow.story.4", "color": "blue", "italic": false}], [{"translate": "weapon.sunfire_of_entropy_erosion_arrow.story.5", "color": "blue", "italic": false}], {"text": ""}, [{"text": "", "italic": false}, {"translate": "weapon.sunfire_of_entropy_erosion_arrow.passive_skills", "color": "#ff0000", "bold": true}, {"text": "  "}], [{"text": "", "italic": false}, {"translate": "weapon.sunfire_of_entropy_erosion_arrow.passive_skills.1", "color": "#ff5100", "italic": false}], [{"text": "", "italic": false}, {"translate": "weapon.sunfire_of_entropy_erosion_arrow.passive_skills.2", "color": "#ff5100", "italic": false, "with": [{"translate": "cse.status_effects.entropy_erosion", "underlined": True, "color": "#ff5100"}]}], [{"text": "", "italic": false}, {"translate": "weapon.sunfire_of_entropy_erosion_arrow.passive_skills.3", "color": "#ff5100", "italic": false}], {"text": ""}],attribute_modifiers=[{type:"attack_damage",id:"base_attack_damage",amount:4,operation:"add_value",slot:"mainhand"},{type:"attack_speed",id:"base_attack_speed",amount:-2.4,operation:"add_value",slot:"mainhand"}],max_stack_size=64,unbreakable={},item_model="arrow/sunfire_of_entropy_erosion_arrow",custom_data={type:"arrow",rarity:"legendary",id:"sunfire_of_entropy_erosion_arrow"},tooltip_display={hidden_components:["unbreakable","attribute_modifiers"]},tooltip_style="legendary"] 64
 
 # ==============================
 # Translate Keys
@@ -13,6 +13,7 @@ give @s arrow[item_name=[{"translate": "weapon.sunfire_of_entropy_erosion_arrow"
 # "weapon.sunfire_of_entropy_erosion_arrow.passive_skills" : "[熵蝕灼燒]",
 # "weapon.sunfire_of_entropy_erosion_arrow.passive_skills.1" : "當你攻擊命中時:",
 # "weapon.sunfire_of_entropy_erosion_arrow.passive_skills.2" : "附加 %1$s (0:05)",
+# "weapon.sunfire_of_entropy_erosion_arrow.passive_skills.3" : "並且造成取至弓的 250% 基礎傷害",
 
 # ==============================
 # item_builder.py Backup
@@ -32,7 +33,7 @@ give @s arrow[item_name=[{"translate": "weapon.sunfire_of_entropy_erosion_arrow"
 #             'rc': False,
 #             'lc': False,
 #             'max_damage': -1,
-#             'max_stack_size': 1,
+#             'max_stack_size': 64,
 #             'other': [
 #                 'tooltip_display={hidden_components:["unbreakable","attribute_modifiers"]}',
 #                 'tooltip_style="legendary"'
@@ -82,7 +83,8 @@ give @s arrow[item_name=[{"translate": "weapon.sunfire_of_entropy_erosion_arrow"
 #                     "with": [
 #                         {"translate":"cse.status_effects.entropy_erosion","underlined":True,"color":"#ff5100"}
 #                     ]
-#                 }
+#                 },
+#                 '並且造成取至弓的 250% 基礎傷害',
 #             ]
 #         },
 # 

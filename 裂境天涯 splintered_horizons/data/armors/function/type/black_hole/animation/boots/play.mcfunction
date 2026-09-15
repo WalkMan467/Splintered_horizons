@@ -24,7 +24,7 @@ tag @s add animation
 
 
 
-scoreboard players set @s armor.black_hole.boots.cd 30
+function armors:cd {id:"armor.black_hole.boots.cd", cd:30}
 
 
 

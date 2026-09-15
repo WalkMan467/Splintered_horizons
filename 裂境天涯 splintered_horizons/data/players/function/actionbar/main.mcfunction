@@ -1,5 +1,10 @@
 
 execute \
+    if score @s player.actionbar.weapon.the_endwatcher matches 1.. run \
+    return run \
+function players:actionbar/the_endwatcher
+
+execute \
     as @s[gamemode=!creative] \
     if function players:actionbar/detect/runes run \
     return run \

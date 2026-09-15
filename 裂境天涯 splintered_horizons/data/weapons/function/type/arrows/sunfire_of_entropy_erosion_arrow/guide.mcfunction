@@ -15,3 +15,17 @@ particle minecraft:trial_spawner_detection ~ ~0.5 ~ 0.25 0.25 0.25 0 20 normal @
 playsound minecraft:entity.zombie.infect voice @a ~ ~1 ~ 1 0.75
 playsound minecraft:block.trial_spawner.eject_item voice @a ~ ~1 ~ 1 1
 playsound minecraft:entity.zombie_villager.cure voice @a ~ ~1 ~ 0.5 1
+
+tag @s add dmger
+
+execute \
+    on attacker run \
+tag @s add atker
+
+execute \
+    on attacker run \
+scoreboard players set @s dmg_formula.atk_percentage 250
+
+execute \
+    on attacker run \
+function dmg_formula:weapons/type/arrow/sunfire_of_entropy_erosion_arrow/calculate

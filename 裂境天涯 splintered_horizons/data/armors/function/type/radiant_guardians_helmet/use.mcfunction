@@ -20,14 +20,23 @@
 
 
 
+# 動畫計時器仍然是倒數制，所以要把絕對時間換算回剩餘 tick
 scoreboard players operation @s armor.animation_skills.helmet.cd = @s armor.radiant_guardians_helmet.cd
+scoreboard players operation @s armor.animation_skills.helmet.cd -= #gametime global.main
 
 scoreboard players set @s armor.animation_skills.return 1
 
 
 
+# 第一次使用先建立 CD 分數 / Initialize the cd score on first use
 execute \
-    if score @s armor.radiant_guardians_helmet.cd matches 1.. run \
+    unless score @s armor.radiant_guardians_helmet.cd matches -2147483648..2147483647 run \
+    return run \
+function armors:cd {id:"armor.radiant_guardians_helmet.cd", cd:10}
+
+# CD 還沒到 / Still on cooldown
+execute \
+    unless score #gametime global.main >= @s armor.radiant_guardians_helmet.cd run \
 return 0
 
 
@@ -40,7 +49,7 @@ return 0
 
 execute \
     unless score @s weapon.effect.resplendence matches 1.. run \
-scoreboard players set @s armor.radiant_guardians_helmet.cd 10
+function armors:cd {id:"armor.radiant_guardians_helmet.cd", cd:10}
 
 
 

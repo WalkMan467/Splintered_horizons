@@ -22,8 +22,15 @@ return 0
 
 
 
+# 第一次使用先建立 CD 分數 / Initialize the cd score on first use
 execute \
-    if score @s armor.windriders_legplates.cd matches 1.. run \
+    unless score @s armor.windriders_legplates.cd matches -2147483648..2147483647 run \
+    return run \
+function armors:cd {id:"armor.windriders_legplates.cd", cd:1}
+
+# CD 還沒到 / Still on cooldown
+execute \
+    unless score #gametime global.main >= @s armor.windriders_legplates.cd run \
 return 0
 
 
@@ -40,7 +47,7 @@ return 0
 
 
 
-scoreboard players set @s armor.windriders_legplates.cd 1
+function armors:cd {id:"armor.windriders_legplates.cd", cd:1}
 
 
 

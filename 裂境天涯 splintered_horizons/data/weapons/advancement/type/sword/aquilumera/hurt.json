@@ -1,27 +1,63 @@
 {
   "criteria": {
-    "requirement": {
+    "weapon_attack": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
-        "player": {
-          "type": "minecraft:entity_properties",
-          "entity": "this",
-          "predicate": {
-            "slots": {
-              "weapon.mainhand": {
-                "predicates": {
-                  "minecraft:custom_data": {
-                    "weapon": "aquilumera"
-                  }
-                }
+        "damage": {
+          "type": {
+            "tags": [
+              {
+                "id": "#weapons:all_attack",
+                "expected": true
               }
+            ],
+            "is_direct": true
+          }
+        },
+        "entity": {
+          "type": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "weapon.aquilumera.reflection": {
+              "min": 1
+            }
+          }
+        }
+      }
+    },
+    "vanilla_attack": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "type": {
+            "tags": [
+              {
+                "id": "#minecraft:is_player_attack",
+                "expected": true
+              }
+            ],
+            "is_direct": true
+          }
+        },
+        "entity": {
+          "type": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "weapon.aquilumera.reflection": {
+              "min": 1
             }
           }
         }
       }
     }
   },
+  "requirements": [
+    [
+      "weapon_attack",
+      "vanilla_attack"
+    ]
+  ],
   "rewards": {
-    "function": "weapons:type/sword/aquilumera/passive/reset_passive_hurt_adv"
+    "function": "weapons:type/sword/aquilumera/passive/hit"
   }
 }

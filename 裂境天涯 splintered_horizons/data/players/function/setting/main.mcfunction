@@ -14,6 +14,8 @@ function players:setting/bloom/0
 function players:setting/bloom/1
 function players:setting/auto_refill_items/0
 function players:setting/auto_refill_items/1
+function players:setting/keep_container_items/0
+function players:setting/keep_container_items/1
 function players:setting/waterfall_effect/0
 function players:setting/waterfall_effect/1
 

@@ -1,7 +1,7 @@
 # ===================================================
 # 深淵骷髏 死亡 給予急迫 / abyss skeleton death haste
 
-    ## Guide [ function monsters:chapter_1/abyss_skeleton/death ] >>> 深淵骷髏 死亡 給予急迫 / abyss skeleton death haste
+    ## Guide [ function monsters:chapter_1/abyss_skeleton/death ] >>> 深淵骷髏 死亡 給予挖掘加速 / abyss skeleton death haste
 
 # ===================================================
 

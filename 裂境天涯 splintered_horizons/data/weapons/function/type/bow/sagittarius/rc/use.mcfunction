@@ -8,10 +8,15 @@
 
 # ===================================================
 
-scoreboard players add @s weapon.sagittarius.cd 0
-
+# 第一次使用先建立 CD 分數 / Initialize the cd score on first use
 execute \
-    if score @s weapon.sagittarius.cd matches 1.. run \
+    unless score @s weapon.sagittarius.cd matches -2147483648..2147483647 run \
+    return run \
+function weapons:rc/cd {id:"weapon.sagittarius.cd", cd:200}
+
+# CD 還沒到 / Still on cooldown
+execute \
+    unless score #gametime global.main >= @s weapon.sagittarius.cd run \
 return 0
 
 

@@ -21,4 +21,7 @@ execute \
 function particle:create/radial_exoansion/summon with storage particle data.create[0]
 
 # 音波場域
+
+scoreboard players set #particle.radial_exoansion.loop particle.global.main 1
+
 schedule function particle:create/radial_exoansion/main 1t

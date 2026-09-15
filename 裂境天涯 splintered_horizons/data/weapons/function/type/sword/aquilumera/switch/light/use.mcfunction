@@ -9,8 +9,6 @@
 # aquilumera light switch
 item modify entity @s weapon.mainhand weapons:type/sword/aquilumera/light
 
-effect give @s speed 1 2 true
-
 # particle
 title @s times 10 5 10
 title @s title {"text":"\uE007","font": "screen"}

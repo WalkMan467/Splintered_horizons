@@ -5,11 +5,20 @@
 
 # ===================================================
 
+execute \
+    unless score @s weapon.twilight_wind.cd matches -2147483648..2147483647 run \
+    return run \
+function weapons:rc/cd {id:"weapon.twilight_wind.cd", cd:260}
+
+execute \
+    unless score #gametime global.main >= @s weapon.twilight_wind.cd run \
+    return 0
+
 
 # player
 tag @s add twilight_wind.user
 
-scoreboard players set @s weapon.twilight_wind.cd 100
+function weapons:rc/cd {id:"weapon.twilight_wind.cd", cd:100}
 scoreboard players set @s weapon.twilight_wind.timer 0
 
 tellraw @s [{"translate":"weapon.twilight_wind.skill","color":"dark_green","bold":true}," ",{"translate":"weapon.skill_activation","color":"green","bold":true}]

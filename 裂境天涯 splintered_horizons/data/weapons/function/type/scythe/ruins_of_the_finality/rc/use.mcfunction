@@ -8,15 +8,15 @@
 
 # ===================================================
 
-scoreboard players add @s player.ultimate 0
+execute \
+    unless score @s player.ultimate matches -2147483648..2147483647 run \
+    return run \
+function weapons:rc/cd {id:"player.ultimate", cd:3}
 
 execute \
-    unless score @s player.ultimate matches ..0 run \
+    unless score #gametime global.main >= @s player.ultimate run \
+    return run \
 function weapons:rc/failure/ultimate_use_failed
-
-execute \
-    unless score @s player.ultimate matches ..0 run \
-return 0
 
 scoreboard players set @s player.click.interval 20
 
@@ -39,7 +39,11 @@ return 0
 
 tellraw @s [{"translate":"weapon.ruins_of_the_finality.skill","color":"dark_green","bold":true}," ",{"translate":"weapon.skill_activation","color":"green","bold":true}]
 
-scoreboard players set @s[scores={player.ultimate=..0}] player.ultimate 3
+# 重置 CD / Reset CD
+# 走到這裡代表 CD 已經轉好（不然上面就 return 了），
+# 所以不需要再判斷一次。
+
+function weapons:rc/cd {id:"player.ultimate", cd:3}
 
 
 execute \

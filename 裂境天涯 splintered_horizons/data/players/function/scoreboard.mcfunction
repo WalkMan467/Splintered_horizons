@@ -30,7 +30,9 @@ scoreboard players add @a player.finality_tunder 0
 scoreboard objectives add player.actionbar.weapon.nightfall dummy "[玩家] actionbar 狀態機 夜幕技能顯示"
 scoreboard objectives add player.actionbar.weapon.spider dummy "[玩家] actionbar 狀態機 蜘蛛技能顯示"
 scoreboard objectives add player.actionbar.weapon.earthquake_axe dummy "[玩家] actionbar 狀態機 地震之斧"
+scoreboard objectives add player.actionbar.weapon.the_endwatcher dummy "[玩家] actionbar 狀態機 終焉凝視者 共鳴值"
 scoreboard objectives add player.actionbar.weapon.earthquake_axe dummy "[玩家] actionbar 狀態機 地震之斧"
+scoreboard objectives add player.actionbar.weapon.the_endwatcher dummy "[玩家] actionbar 狀態機 終焉凝視者 共鳴值"
 scoreboard objectives add player.actionbar.armor.wtsf dummy "[玩家] actionbar 狀態機 時間停刻之時"
 
 scoreboard objectives add player.actionbar.segrina.1 dummy "[玩家] actionbar 狀態機 西格瑞納 技能 1 吸收提示"
@@ -198,3 +200,22 @@ scoreboard objectives add player.setting.campfire_darkness dummy "[玩家] 營�
 scoreboard objectives add player.setting.campfire_darkness.trigger trigger "[玩家] 營火黑暗效果 trigger"
 
 scoreboard players enable @a player.setting.campfire_darkness.trigger
+
+scoreboard objectives add player.setting.keep_container_items dummy "[玩家] 容器不掉落內容物"
+scoreboard objectives add player.setting.keep_container_items.trigger trigger "[玩家] 容器不掉落內容物 trigger"
+
+scoreboard players enable @a player.setting.keep_container_items.trigger
+
+# 原生挖掘統計：玩家打掉該方塊當下就會 +1，不需要任何掃描
+scoreboard objectives add sys.mined.chest minecraft.mined:minecraft.chest "[系統] 挖掘 箱子"
+scoreboard objectives add sys.mined.trapped_chest minecraft.mined:minecraft.trapped_chest "[系統] 挖掘 陷阱箱"
+scoreboard objectives add sys.mined.barrel minecraft.mined:minecraft.barrel "[系統] 挖掘 木桶"
+scoreboard objectives add sys.mined.hopper minecraft.mined:minecraft.hopper "[系統] 挖掘 漏斗"
+scoreboard objectives add sys.mined.dropper minecraft.mined:minecraft.dropper "[系統] 挖掘 投擲器"
+scoreboard objectives add sys.mined.dispenser minecraft.mined:minecraft.dispenser "[系統] 挖掘 發射器"
+scoreboard objectives add sys.mined.furnace minecraft.mined:minecraft.furnace "[系統] 挖掘 熔爐"
+scoreboard objectives add sys.mined.blast_furnace minecraft.mined:minecraft.blast_furnace "[系統] 挖掘 高爐"
+scoreboard objectives add sys.mined.smoker minecraft.mined:minecraft.smoker "[系統] 挖掘 煙燻爐"
+scoreboard objectives add sys.mined.brewing_stand minecraft.mined:minecraft.brewing_stand "[系統] 挖掘 釀造台"
+scoreboard objectives add sys.mined.crafter minecraft.mined:minecraft.crafter "[系統] 挖掘 合成器"
+scoreboard objectives add sys.mined.chiseled_bookshelf minecraft.mined:minecraft.chiseled_bookshelf "[系統] 挖掘 雕紋書櫃"

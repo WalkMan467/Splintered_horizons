@@ -28,6 +28,8 @@ scoreboard objectives add sys.monster_wave.remaining_monster dummy
 scoreboard objectives add sys.monster_wave.wave dummy
 scoreboard objectives add sys.monster_wave.rdm dummy
 scoreboard objectives add sys.zipline_platform.id dummy "滑索台 ID"
+scoreboard objectives add sys.zipline_platform.pick dummy "滑索台選擇編號"
+scoreboard objectives add sys.zipline_platform.link dummy "滑索台連線暫存"
 
 scoreboard objectives add sys.dmg_show.main dummy
 scoreboard objectives add sys.dmg_show.life dummy

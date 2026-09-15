@@ -29,6 +29,12 @@ scoreboard players set %math dmg_formula.atk_percentage 100
 
 
 
+# 攻擊力暫存 (calculate 內部用 #temp 存玩家當下攻擊力，不對外顯示)
+
+scoreboard objectives add atk dummy "攻擊力暫存"
+
+
+
 scoreboard players set $introduction.1 dmg_formula.atk_percentage 2147483647
 
 scoreboard players set $introduction.2 dmg_formula.atk_percentage 2147483646

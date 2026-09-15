@@ -32,7 +32,6 @@ tellraw @a[distance=..16] \
         {"translate": "story.chapter_1.mq.2.1","fallback": "[蘇菲亞] 下雨了...雨滴有如淡淡的哀傷緩緩落下...","bold": false} \
     ]
 
-
 execute \
     positioned 1 64 -109 \
     if score story.chapter_1.mq.2 story.chapter_1 matches 2 run \

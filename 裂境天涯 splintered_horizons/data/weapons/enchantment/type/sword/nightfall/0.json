@@ -20,13 +20,9 @@
   "effects": {
     "minecraft:post_attack": [
       {
-        "requirements": {
-          "type": "minecraft:random_chance",
-          "chance": 0.5
-        },
         "effect": {
           "type": "minecraft:run_function",
-          "function": "weapons:type/sword/nightfall/rc/1/effect"
+          "function": "weapons:type/sword/nightfall/passive/lunar_eclipse/hit"
         },
         "enchanted": "attacker",
         "affected": "victim"

@@ -38,7 +38,7 @@ function particle:sagittarius_wave/use
 execute \
     on origin \
     if entity @s[type=player] run \
-scoreboard players set @s weapon.sagittarius.cd 200
+function weapons:rc/cd {id:"weapon.sagittarius.cd", cd:200}
 
 execute \
     on origin \

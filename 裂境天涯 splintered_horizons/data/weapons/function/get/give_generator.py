@@ -243,7 +243,8 @@ def generate_give_command(item):
     for o in merged_other:
         cmd += f',{o}'
 
-    cmd += ']'
+    # 給的數量跟 max_stack_size 一致 —— 不補的話 /give 只會給 1 個
+    cmd += f'] {max_stack}'
 
     # ===== translate =====
     lang_block = "\n\n# ==============================\n"

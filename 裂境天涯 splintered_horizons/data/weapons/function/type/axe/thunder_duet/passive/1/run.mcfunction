@@ -11,7 +11,7 @@ execute \
     if score @s weapon.thunder_duet.passive.timer matches 1.. run \
 return 0
 
-scoreboard players set @s weapon.thunder_duet.passive.cd 100
+function weapons:rc/cd {id:"weapon.thunder_duet.passive.cd", cd:100}
 scoreboard players set @s weapon.effect.shadow 100
 scoreboard players set @s weapon.thunder_duet.passive.timer 5
 scoreboard players set @s weapon.thunder_duet.passive.state 2

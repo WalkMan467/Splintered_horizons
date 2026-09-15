@@ -14,14 +14,14 @@
       {
         "attribute": "minecraft:attack_damage",
         "id": "minecraft:base_attack_damage",
-        "amount": 2,
+        "amount": 4,
         "operation": "add_value",
         "slot": "mainhand"
       },
       {
         "attribute": "minecraft:attack_speed",
         "id": "minecraft:base_attack_speed",
-        "amount": -2.5,
+        "amount": -2.4,
         "operation": "add_value",
         "slot": "mainhand"
       }
@@ -42,7 +42,8 @@
         "rc": true,
         "type": "sword",
         "rarity": "epic",
-        "weapon": "nightfall"
+        "weapon": "nightfall",
+        "forging_table": true
       }
     }
   }

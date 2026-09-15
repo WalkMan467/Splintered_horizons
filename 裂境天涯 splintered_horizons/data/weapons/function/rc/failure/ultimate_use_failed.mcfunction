@@ -15,8 +15,8 @@
 scoreboard players set %2 weapon.ultimate.cd.math 2
 scoreboard players set %10 weapon.ultimate.cd.math 10
 
-
 scoreboard players operation %temp weapon.ultimate.cd.math = @s player.ultimate
+
 scoreboard players operation %temp weapon.ultimate.cd.math -= #gametime global.main
 
 # 轉好了就不要顯示負數（整除是向下取整，負數會被除成更負的值）

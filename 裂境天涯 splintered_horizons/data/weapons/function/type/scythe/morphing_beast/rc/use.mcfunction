@@ -10,18 +10,22 @@
 # ===================================================
 
 scoreboard players add @s weapon.morphing_beast.state 0
-scoreboard players add @s weapon.morphing_beast.cd 0
 
 execute \
-    unless score @s weapon.morphing_beast.cd matches ..0 \
-    unless score @s player.click.interval matches 1.. run \
-function weapons:rc/failure/skill_use_failed with entity @s SelectedItem.components."minecraft:custom_data"
-
-execute \
-    unless score @s weapon.morphing_beast.cd matches ..0 run \
+    if score @s player.click.interval matches 1.. run \
+    return run \
 return 0
 
-tellraw @s [{"translate":"weapon.morphing_beast.skill","color":"dark_green","bold":true}," ",{"translate":"weapon.skill_activation","color":"green","bold":true}]
+execute \
+    unless score @s weapon.morphing_beast.cd matches -2147483648..2147483647 run \
+    return run \
+function weapons:rc/cd {id:"weapon.morphing_beast.cd", cd:100}
+
+execute \
+    unless score #gametime global.main >= @s weapon.morphing_beast.cd run \
+    return run \
+function weapons:rc/failure/skill_use_failed with entity @s SelectedItem.components."minecraft:custom_data"
+
 
 scoreboard players set @s player.click.interval 20
 
@@ -33,15 +37,19 @@ playsound minecraft:block.respawn_anchor.set_spawn voice @s ~ ~1 ~ 1 1
 
 execute \
     if score @s weapon.morphing_beast.state matches 0 \
-    if score @s weapon.morphing_beast.cd matches 0 run \
+    if score #gametime global.main >= @s weapon.morphing_beast.cd run \
 function weapons:type/scythe/morphing_beast/rc/state/0
 
 execute \
     if score @s weapon.morphing_beast.state matches 1 \
-    if score @s weapon.morphing_beast.cd matches 0 run \
+    if score #gametime global.main >= @s weapon.morphing_beast.cd run \
 function weapons:type/scythe/morphing_beast/rc/state/1
 
 execute \
     if score @s weapon.morphing_beast.state matches 2 \
-    if score @s weapon.morphing_beast.cd matches 0 run \
+    if score #gametime global.main >= @s weapon.morphing_beast.cd run \
 function weapons:type/scythe/morphing_beast/rc/state/2
+
+# 重置 CD / Reset CD
+
+function weapons:rc/cd {id:"weapon.morphing_beast.cd", cd:100}

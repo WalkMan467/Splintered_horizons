@@ -114,6 +114,43 @@
           },
           {
             "translate": "weapon.nightfall.skill.3",
+            "color": "red"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "weapon.nightfall.skill.4",
+            "color": "red"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "weapon.nightfall.skill.5",
+            "color": "red",
+            "with": [
+              {
+                "translate": "weapon.effect.lunar_eclipse",
+                "underlined": true,
+                "color": "#7B1FA2"
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "weapon.nightfall.skill.6",
             "color": "red",
             "with": [
               {
@@ -122,6 +159,26 @@
                 "color": "dark_red"
               }
             ]
+          }
+        ],
+        [
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "weapon.nightfall.skill.7",
+            "color": "red"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "weapon.nightfall.skill.8",
+            "color": "red"
           }
         ],
         {
@@ -148,7 +205,14 @@
           },
           {
             "translate": "weapon.nightfall.passive_skills.1",
-            "color": "red"
+            "color": "red",
+            "with": [
+              {
+                "translate": "weapon.effect.lunar_eclipse",
+                "underlined": true,
+                "color": "#7B1FA2"
+              }
+            ]
           }
         ],
         [
@@ -178,12 +242,22 @@
           },
           {
             "translate": "weapon.nightfall.passive_skills.4",
+            "color": "red"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "italic": false
+          },
+          {
+            "translate": "weapon.nightfall.passive_skills.5",
             "color": "red",
             "with": [
               {
-                "translate": "weapon.effect.shadow",
+                "translate": "weapon.effect.lunar_eclipse",
                 "underlined": true,
-                "color": "#470041"
+                "color": "#7B1FA2"
               }
             ]
           }
@@ -194,18 +268,15 @@
             "italic": false
           },
           {
-            "translate": "weapon.nightfall.passive_skills.5",
-            "color": "red"
-          }
-        ],
-        [
-          {
-            "text": "",
-            "italic": false
-          },
-          {
             "translate": "weapon.nightfall.passive_skills.6",
-            "color": "red"
+            "color": "red",
+            "with": [
+              {
+                "translate": "weapon.effect.crimson_claw",
+                "underlined": true,
+                "color": "dark_red"
+              }
+            ]
           }
         ],
         [
@@ -215,16 +286,6 @@
           },
           {
             "translate": "weapon.nightfall.passive_skills.7",
-            "color": "red"
-          }
-        ],
-        [
-          {
-            "text": "",
-            "italic": false
-          },
-          {
-            "translate": "weapon.nightfall.passive_skills.8",
             "color": "red"
           }
         ]
@@ -240,7 +301,7 @@
         {
           "id": "base_attack_speed",
           "type": "attack_speed",
-          "amount": -2,
+          "amount": -2.4,
           "operation": "add_value",
           "slot": "mainhand"
         }

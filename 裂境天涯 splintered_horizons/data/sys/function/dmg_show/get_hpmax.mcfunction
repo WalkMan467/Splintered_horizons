@@ -4,7 +4,10 @@ execute \
     store result score #hp sys.dmg_show.main run \
 data get entity @s Health 1000
 
+scoreboard players set #hp2 sys.dmg_show.main 0
+
 execute \
+    if predicate sys:dmg_show/has_absorption \
     store result score #hp2 sys.dmg_show.main run \
 data get entity @s AbsorptionAmount 1000
 

@@ -2,6 +2,7 @@
   "values": [
     "#minecraft:dot",
     "#weapons:type/sword/nightfall",
+    "#weapons:type/arrow/all",
     "#weapons:type/axe/earthquake_axe",
     "#weapons:type/sword/echo_rhythm",
     "#weapons:type/sword/otherworld_star",
@@ -27,6 +28,8 @@
     "monsters:chapter_2/emissary_of_the_temporal_rift/key/dmg",
     "monsters:chapter_1/explosion_arrow_skeleton/damage",
     "bossfight:chapter_2/segrina/skills/1/damage",
-    "cse:status_effects/apply/entropy_erosion/dot"
+    "cse:status_effects/apply/entropy_erosion/dot",
+    "weapons:type/sword/nightfall_lunar_eclipse",
+    "weapons:type/bow/the_endwatcher/awaken"
   ]
 }

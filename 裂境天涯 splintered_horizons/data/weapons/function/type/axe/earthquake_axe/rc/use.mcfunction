@@ -9,15 +9,15 @@
 
 # ===================================================
 
-scoreboard players add @s player.ultimate 0
+execute \
+    unless score @s player.ultimate matches -2147483648..2147483647 run \
+    return run \
+function weapons:rc/cd {id:"player.ultimate", cd:500}
 
 execute \
-    unless score @s player.ultimate matches ..0 run \
+    unless score #gametime global.main >= @s player.ultimate run \
+    return run \
 function weapons:rc/failure/ultimate_use_failed
-
-execute \
-    unless score @s player.ultimate matches ..0 run \
-return 0
 
 execute \
     if score @s player.click.interval matches 1.. run \
@@ -39,7 +39,9 @@ function players:hide/true {duration:60}
 tag @s add weapon.earthquake_axe.user
 tag @s add animation
 
-scoreboard players set @s player.ultimate 500
+# 重置 CD / Reset CD
+
+function weapons:rc/cd {id:"player.ultimate", cd:500}
 
 
 execute \

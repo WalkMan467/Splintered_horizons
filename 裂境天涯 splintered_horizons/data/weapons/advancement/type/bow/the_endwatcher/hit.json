@@ -1,0 +1,31 @@
+{
+  "criteria": {
+    "shot_arrow": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "minecraft:entity_type": "#minecraft:arrows",
+              "nbt": "{Tags:[\"weapon.the_endwatcher.arrow\"]}"
+            },
+            "tags": [
+              {
+                "id": "#minecraft:is_projectile",
+                "expected": true
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "shot_arrow"
+    ]
+  ],
+  "rewards": {
+    "function": "weapons:type/bow/the_endwatcher/arrow/hit"
+  }
+}

@@ -8,3 +8,8 @@ kill 0004c3a7-ffff-827d-0031-079d00005a5b
 kill 0004e729-0000-1087-0000-084b00089f81
 
 scoreboard players set story.chapter_1.sq.2 story.chapter_1 1
+
+execute \
+    positioned 158 91 -429 \
+    as @n[sort=arbitrary,distance=..1,tag=aj.selena.root,type=item_display] run \
+function aj:selena/remove/this

@@ -10,17 +10,32 @@
 
 execute \
     on attacker \
-    if score @s weapon.morning_light.cd matches 1.. run \
-return 0
+    unless score @s weapon.morning_light.cd matches -2147483648..2147483647 run \
+    return run \
+function weapons:rc/cd {id:"weapon.morning_light.cd", cd:100}
 
-particle dust_color_transition{from_color:[1.000,0.800,0.000],scale:1,to_color:[1.000,0.729,0.459]} ~ ~0.5 ~ 1.5 0 1.5 1 60 normal @a
+execute \
+    on attacker \
+    unless score #gametime global.main >= @s weapon.morning_light.cd run \
+    return 0
 
+# 重置 CD / Reset CD
 
 execute \
     on attacker \
     unless score @s weapon.effect.resplendence matches 1.. run \
-scoreboard players set @s weapon.morning_light.cd 100
-tag @e[type=!player,type=!#dummy_mob,distance=..3] add dmger
+function weapons:rc/cd {id:"weapon.morning_light.cd", cd:100}
+
+# 如果有輝煌之光符文 ;重置 CD / If you have the「Brilliant Light」rune ;Reset CD
+
+execute \
+    on attacker \
+    if score @s weapon.effect.resplendence matches 1.. run \
+function weapons:rc/cd {id:"weapon.morning_light.cd", cd:10}
+
+particle dust_color_transition{from_color:[1.000,0.800,0.000],scale:1,to_color:[1.000,0.729,0.459]} ~ ~0.5 ~ 1.5 0 1.5 1 60 normal @a
+
+
 
 execute \
     as @e[type=!player,type=!#dummy_mob,distance=..3] \
@@ -29,6 +44,7 @@ function cse:sys/status_effects/use {type:"add_multiplied_base", attribute:"armo
 
 function weapons:type/sword/morning_light/effect/fx/use
 
+tag @e[type=!player,type=!#dummy_mob,distance=..3] add dmger
 
 execute \
     on attacker run \
@@ -42,7 +58,6 @@ execute \
     on attacker \
     as @s[type=player] run \
 function dmg_formula:weapons/type/sword/morning_light/calculate
-
 
 execute \
     on attacker run \

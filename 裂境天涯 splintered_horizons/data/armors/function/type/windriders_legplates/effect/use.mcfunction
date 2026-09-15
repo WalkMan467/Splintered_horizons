@@ -22,8 +22,9 @@ return 0
 
 
 
+# CD 還沒到 / Still on cooldown
 execute \
-    if score @s armor.windriders_legplates.cd matches 1.. run \
+    unless score #gametime global.main >= @s armor.windriders_legplates.cd run \
 return 0
 
 

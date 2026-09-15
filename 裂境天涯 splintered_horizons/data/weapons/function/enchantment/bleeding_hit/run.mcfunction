@@ -14,4 +14,6 @@ playsound minecraft:entity.zombie_villager.cure voice @a ~ ~1 ~ 0.5 2
 
 function cse:status_effects/apply/bleeding/use {duration:100, tick_rate:40, dot:20, max:100}
 
-scoreboard players set @p[tag=user.player] weapon.enchantment.bleeding_hit.cd 200
+execute \
+    as @p[tag=user.player] run \
+function weapons:rc/cd {id:"weapon.enchantment.bleeding_hit.cd", cd:200}

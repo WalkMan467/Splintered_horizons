@@ -6,7 +6,7 @@
           "type": {
             "direct_entity": {
               "minecraft:entity_type": "#minecraft:arrows",
-              "nbt": "{item:{components:{\"minecraft:custom_data\":{id:\"heavenly_guiding_arrow\"}}}}"
+              "nbt": "{item:{components:{\"minecraft:custom_data\":{heavenly_guiding:1b}}}}"
             },
             "tags": [
               {

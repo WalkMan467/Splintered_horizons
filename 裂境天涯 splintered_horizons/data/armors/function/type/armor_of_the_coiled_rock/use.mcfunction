@@ -7,8 +7,15 @@
 # ===================================================
 # Detect get runics ; Execute the Function
 
+# 第一次使用先建立 CD 分數 / Initialize the cd score on first use
 execute \
-    if score @s armor.armor_of_the_coiled_rock.cd matches 1.. run \
+    unless score @s armor.armor_of_the_coiled_rock.cd matches -2147483648..2147483647 run \
+    return run \
+function armors:cd {id:"armor.armor_of_the_coiled_rock.cd", cd:20}
+
+# CD 還沒到 / Still on cooldown
+execute \
+    unless score #gametime global.main >= @s armor.armor_of_the_coiled_rock.cd run \
 return 0
 
 execute \
@@ -23,4 +30,4 @@ playsound minecraft:block.anvil.land voice @s ~ ~1 ~ 1 1.05
 playsound minecraft:entity.illusioner.cast_spell voice @s ~ ~1 ~ 1 1.25
 
 scoreboard players set @s armor.chestplate.effect.actived 2
-scoreboard players set @s armor.armor_of_the_coiled_rock.cd 20
+function armors:cd {id:"armor.armor_of_the_coiled_rock.cd", cd:20}

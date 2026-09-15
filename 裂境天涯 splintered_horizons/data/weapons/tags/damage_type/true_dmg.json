@@ -6,6 +6,7 @@
     "weapons:type/sword/echo_rhythm_ultimate",
     "#weapons:type/sword/nightfall",
     "weapons:type/sword/kill_sword",
-    "weapons:enchantment/phantom_fangs"
+    "weapons:enchantment/phantom_fangs",
+    "weapons:type/arrow/soul_restraint_arrow/dmg"
   ]
 }

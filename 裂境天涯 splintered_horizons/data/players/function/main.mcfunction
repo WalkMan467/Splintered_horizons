@@ -52,9 +52,21 @@ execute \
 attribute @s water_movement_efficiency base reset
 
 
-scoreboard players set @s[scores={player.ultimate=2..,player.no_cd=1..}] player.ultimate 1
-
-
+# no_cd：直接把截止時間拉到現在，等同於馬上就緒
 execute \
-    unless score @s player.ultimate matches 0.. run \
-scoreboard players set @s player.ultimate 0
+    if score @s player.no_cd matches 1.. \
+    unless score #gametime global.main >= @s player.ultimate run \
+scoreboard players operation @s player.ultimate = #gametime global.main
+
+
+# 沒有值的玩家初始化成「現在就緒」。絕對時間制下負數沒有意義，
+# 不需要再夾成 0。
+execute \
+    unless score @s player.ultimate matches -2147483648..2147483647 run \
+scoreboard players operation @s player.ultimate = #gametime global.main
+
+
+# 容器不掉落內容物
+execute \
+    if score @s player.setting.keep_container_items matches 1.. run \
+function players:setting/keep_container_items/guide

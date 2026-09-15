@@ -1,42 +1,62 @@
 scoreboard players set #story.chapter_1.sq.2_temp global.main 1
 
 execute \
-    positioned 158 91 -429 run \
-summon mannequin ~ ~ ~ \
+    positioned 158 91 -429 \
+    as @n[sort=arbitrary,distance=..1,tag=aj.selena.root,type=item_display] run \
+function aj:selena/remove/this
+
+execute \
+    positioned 158 91 -429 \
+    rotated 150.0 0 run \
+function aj:selena/summon \
     { \
-        CustomName: \
-            [ \
-                { \
-                    "translate": "character.seronis" \
-                } \
-            ], \
-        Rotation: \
-            [ \
-                180.0f, \
-                0.0f \
-            ], \
-        Silent:1b,\
-        Invulnerable:1b,\
-        UUID:[I;312231,-32131,3213213,23131],\
-        Team:"NocollisionRule",\
-        immovable:true, \
-        hide_description:true, \
-        Tags: \
-            [ \
-                "story.chapter_1.sq.2" \
-            ], \
-        profile: \
-            { \
-                texture:"entity/player/wide/seronis" \
-            } \
+        args:\
+        { \
+            animation: 'idle', \
+            start_animation: true \
+        } \
     }
+
+
 
 execute \
     positioned 158 91 -429 \
     unless score story.chapter_1.sq.2 global.main matches 1 \
-as 0004c3a7-ffff-827d-0031-079d00005a5b \
+    as @n[sort=arbitrary,distance=..1,tag=aj.selena.root,type=item_display] \
     on passengers run \
 data modify entity @s Glowing set value 1b
+
+
+# execute \
+#     positioned 158 91 -429 run \
+# summon mannequin ~ ~ ~ \
+#     { \
+#         CustomName: \
+#             [ \
+#                 { \
+#                     "translate": "character.seronis" \
+#                 } \
+#             ], \
+#         Rotation: \
+#             [ \
+#                 180.0f, \
+#                 0.0f \
+#             ], \
+#         Silent:1b,\
+#         Invulnerable:1b,\
+#         UUID:[I;312231,-32131,3213213,23131],\
+#         Team:"NocollisionRule",\
+#         immovable:true, \
+#         hide_description:true, \
+#         Tags: \
+#             [ \
+#                 "story.chapter_1.sq.2" \
+#             ], \
+#         profile: \
+#             { \
+#                 texture:"entity/player/wide/seronis" \
+#             } \
+#     }
 
 scoreboard players set story.chapter_1.sq.2 story.chapter_1 1
 
@@ -49,13 +69,10 @@ summon interaction 158 91 -429 \
         UUID:[I; 321321, 4231, 2123, 565121] \
     }
 
-execute \
-    unless score #story.chapter_1.sq.2.enabled global.main matches -1 run \
-tp 00038799-ffff-827d-ffff-827d00003018 ~ -255 ~
-
-execute \
-    unless score #story.chapter_1.sq.2.enabled global.main matches -1 run \
-kill 00038799-ffff-827d-ffff-827d00003018
+# execute \
+#     unless score #story.chapter_1.sq.2.enabled global.main matches -1 \
+#     as @n[sort=arbitrary,distance=..1,tag=aj.selena.root,type=item_display] run \
+# function aj:selena/remove/this
 
 execute \
     if score #story.chapter_1.sq.2.enabled global.main matches -1 run \

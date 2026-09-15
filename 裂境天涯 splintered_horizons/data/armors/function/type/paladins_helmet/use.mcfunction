@@ -14,8 +14,15 @@
 
 # This Function: use
 
+# 第一次使用先建立 CD 分數 / Initialize the cd score on first use
 execute \
-    if score @s armor.paladins_helmet.cd matches 1.. run \
+    unless score @s armor.paladins_helmet.cd matches -2147483648..2147483647 run \
+    return run \
+function armors:cd {id:"armor.paladins_helmet.cd", cd:3}
+
+# CD 還沒到 / Still on cooldown
+execute \
+    unless score #gametime global.main >= @s armor.paladins_helmet.cd run \
 return 0
 
 execute \
@@ -24,4 +31,4 @@ return 0
 
 tag @s add armor.paladins_helmet.use
 
-scoreboard players set @s armor.paladins_helmet.cd 3
+function armors:cd {id:"armor.paladins_helmet.cd", cd:3}

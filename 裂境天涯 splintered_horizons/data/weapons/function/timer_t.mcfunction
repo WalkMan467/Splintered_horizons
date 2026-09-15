@@ -50,6 +50,8 @@ scoreboard players remove @a[scores={weapon.flame_of_finality.attack.timer=1..}]
 
 scoreboard players remove @a[scores={weapon.ethereal_shatterstorm_compound_bow.use=1..}] weapon.ethereal_shatterstorm_compound_bow.use 1
 scoreboard players remove @a[scores={weapon.sagittarius.use=1..}] weapon.sagittarius.use 1
+scoreboard players remove @a[scores={weapon.the_endwatcher.use=1..}] weapon.the_endwatcher.use 1
+scoreboard players remove @a[scores={weapon.the_endwatcher.pending=1..}] weapon.the_endwatcher.pending 1
 scoreboard players remove @a[scores={weapon.heavenly_guiding_bow.use=1..}] weapon.heavenly_guiding_bow.use 1
 
 

@@ -18,6 +18,16 @@ execute \
     if entity @s[tag=sagittarius.user] run \
 function weapons:type/bow/sagittarius/rc/main
 
+# the_endwatcher
+
+execute \
+    if entity @s[tag=the_endwatcher.user] run \
+function weapons:type/bow/the_endwatcher/rc/main
+
+execute \
+    if score @s weapon.the_endwatcher.pending matches 1.. at @s run \
+function weapons:type/bow/the_endwatcher/rc/mark_scan
+
 # heavenly_guiding_bow
 
 execute \
@@ -79,6 +89,12 @@ tag @s[tag=water_sword.l_user] remove water_sword.l_user
 
 
 # Nightfall
+
+# 血月型態計時 (00:05)
+
+execute \
+    if score @s weapon.nightfall.blood_moon matches 1.. run \
+function weapons:type/sword/nightfall/rc/blood_moon/timer
 
 execute \
     as @s[tag=nightfall.user] at @s \

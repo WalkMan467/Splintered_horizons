@@ -111,5 +111,9 @@ execute \
     if score @s player.detect.click_event.trigger matches 26 run \
 function players:setting/gameplay_test/1
 
+execute \
+    if score @s player.detect.click_event.trigger matches 27 run \
+function players:tp_to_safe_area/use
+
 scoreboard players set @s player.detect.click_event.trigger 0
 scoreboard players enable @s player.detect.click_event.trigger

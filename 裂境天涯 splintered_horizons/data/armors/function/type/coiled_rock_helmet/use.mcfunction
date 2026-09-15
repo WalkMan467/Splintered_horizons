@@ -20,8 +20,15 @@
 
 
 
+# 第一次使用先建立 CD 分數 / Initialize the cd score on first use
 execute \
-    if score @s armor.coiled_rock_helmet.cd matches 1.. run \
+    unless score @s armor.coiled_rock_helmet.cd matches -2147483648..2147483647 run \
+    return run \
+function armors:cd {id:"armor.coiled_rock_helmet.cd", cd:25}
+
+# CD 還沒到 / Still on cooldown
+execute \
+    unless score #gametime global.main >= @s armor.coiled_rock_helmet.cd run \
 return 0
 
 
@@ -50,4 +57,4 @@ function cse:sys/status_effects/use {attribute:"armor",duration:100,base:5,value
 
 
 
-scoreboard players set @s armor.coiled_rock_helmet.cd 25
+function armors:cd {id:"armor.coiled_rock_helmet.cd", cd:25}

@@ -4,6 +4,7 @@
       "weapons:timer_t",
       "weapons:timer",
       "armors:timer",
-      "item:timer_t"
+      "item:timer_t",
+      "weapons:type/sword/aquilumera/reflection/tick"
     ]
   }

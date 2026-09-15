@@ -9,6 +9,7 @@ scoreboard players remove @a[scores={player.hurt_time=1..}] player.hurt_time 1
 scoreboard players remove @a[scores={player.actionbar.weapon.nightfall=1..}] player.actionbar.weapon.nightfall 1
 scoreboard players remove @a[scores={player.actionbar.armor.wtsf=1..}] player.actionbar.armor.wtsf 1
 scoreboard players remove @a[scores={player.actionbar.weapon.earthquake_axe=1..}] player.actionbar.weapon.earthquake_axe 1
+scoreboard players remove @a[scores={player.actionbar.weapon.the_endwatcher=1..}] player.actionbar.weapon.the_endwatcher 1
 scoreboard players remove @a[scores={player.actionbar.eye_of_finality=1..}] player.actionbar.eye_of_finality 1
 scoreboard players remove @a[scores={player.actionbar.disabled_bed=1..}] player.actionbar.disabled_bed 1
 scoreboard players remove @a[scores={player.actionbar.disabled_anvil=1..}] player.actionbar.disabled_anvil 1

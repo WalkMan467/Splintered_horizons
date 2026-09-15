@@ -6,13 +6,6 @@
   "effects": {
     "minecraft:post_attack": [
       {
-        "requirements": {
-          "type": "minecraft:entity_scores",
-          "entity": "attacker",
-          "scores": {
-            "weapon.wind_sword.cd": 0
-          }
-        },
         "effect": {
           "type": "minecraft:run_function",
           "function": "weapons:type/sword/wind_sword/use"
