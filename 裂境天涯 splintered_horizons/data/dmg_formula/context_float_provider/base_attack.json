@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:mul",
+  "inputs": [
+    {
+      "type": "minecraft:from_int",
+      "input": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "#temp"
+        },
+        "score": "atk"
+      }
+    },
+    {
+      "type": "minecraft:from_int",
+      "input": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "#pct"
+        },
+        "score": "atk"
+      }
+    },
+    0.01
+  ]
+}

@@ -8,17 +8,7 @@ tag @s add atker
 
 # calculate
 
-execute \
-    store result score #temp atk run \
-attribute @s minecraft:attack_damage get
-scoreboard players operation @s dmg_formula.atk_percentage *= #temp atk
-
-# \
-    store & atk
-
-execute \
-    store result storage temp values float 0.01 run \
-scoreboard players get @s dmg_formula.atk_percentage
+function dmg_formula:base_attack
 function dmg_formula:weapons/type/sword/nightfall/lunar_eclipse/damage with storage temp
 
 # reset
