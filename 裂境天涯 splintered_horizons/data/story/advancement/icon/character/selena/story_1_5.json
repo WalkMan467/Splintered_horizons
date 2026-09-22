@@ -21,7 +21,6 @@
           "fallback": "且 空之支配者 - 伊萊克爾 發現了這裡，試圖透過摧毀回朔記憶片段來毀滅世界從而征服世界"
         }
       ],
-      "background": "minecraft:textures/gui/advancements/backgrounds/quartz_bricks.png",
       "show_toast": true,
       "announce_to_chat": true,
       "hidden": true

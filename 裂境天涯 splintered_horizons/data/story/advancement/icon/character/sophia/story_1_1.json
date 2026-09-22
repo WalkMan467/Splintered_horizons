@@ -24,7 +24,6 @@
           "fallback": "她承認虛無，但也反抗著虛無，她會珍惜她所看到的任何回憶，不願看到再次消失"
         }
       ],
-      "background": "minecraft:textures/gui/advancements/backgrounds/quartz_bricks.png",
       "show_toast": true,
       "announce_to_chat": true,
       "hidden": true

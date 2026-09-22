@@ -6,8 +6,7 @@
       "type": "minecraft:fixed",
       "name": "#rdm_enchantment"
     },
-    "score": "global.main",
-    "scale": 1
+    "score": "global.main"
   },
   "options": "#minecraft:in_enchanting_table"
 }

@@ -21,7 +21,6 @@
           "fallback": "賽羅尼斯 作為時空觀測者並不想這個世界就此毀滅，所以調用了世界記憶之樹的力量重複回放世界平靜之時的片段"
         }
       ],
-      "background": "minecraft:textures/gui/advancements/backgrounds/quartz_bricks.png",
       "show_toast": true,
       "announce_to_chat": true,
       "hidden": true

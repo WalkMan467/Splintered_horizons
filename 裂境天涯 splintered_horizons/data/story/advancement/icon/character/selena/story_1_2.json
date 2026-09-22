@@ -21,7 +21,6 @@
           "fallback": "且透過觸碰記憶發現從世界誕生到走向毀滅"
         }
       ],
-      "background": "minecraft:textures/gui/advancements/backgrounds/quartz_bricks.png",
       "show_toast": true,
       "announce_to_chat": true,
       "hidden": true

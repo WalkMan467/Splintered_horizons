@@ -13,8 +13,7 @@
               "levels": {
                 "type": "minecraft:score",
                 "target": "this",
-                "score": "weapon.enchant_with_levels",
-                "scale": 1
+                "score": "weapon.enchant_with_levels"
               },
               "options": "#minecraft:in_enchanting_table"
             },
@@ -40,8 +39,7 @@
               "levels": {
                 "type": "minecraft:score",
                 "target": "this",
-                "score": "weapon.enchant_with_levels",
-                "scale": 1
+                "score": "weapon.enchant_with_levels"
               },
               "options": "#minecraft:in_enchanting_table"
             },
@@ -67,8 +65,7 @@
               "levels": {
                 "type": "minecraft:score",
                 "target": "this",
-                "score": "weapon.enchant_with_levels",
-                "scale": 1
+                "score": "weapon.enchant_with_levels"
               },
               "options": "#minecraft:in_enchanting_table"
             },
@@ -94,8 +91,7 @@
               "levels": {
                 "type": "minecraft:score",
                 "target": "this",
-                "score": "weapon.enchant_with_levels",
-                "scale": 1
+                "score": "weapon.enchant_with_levels"
               },
               "options": "#minecraft:in_enchanting_table"
             },

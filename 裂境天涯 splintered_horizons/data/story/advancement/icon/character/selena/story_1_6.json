@@ -21,7 +21,6 @@
           "fallback": "伊萊克爾從被世界記憶組成的牢籠破殼而出，與其餘的 舊日支配者 成為了新世界的統治者"
         }
       ],
-      "background": "minecraft:textures/gui/advancements/backgrounds/quartz_bricks.png",
       "show_toast": true,
       "announce_to_chat": true,
       "hidden": true

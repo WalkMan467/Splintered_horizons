@@ -21,7 +21,6 @@
         "fallback": "或許是命運與機緣，一位女孩發現了你並且把你帶往安全的地方，與你相似的經歷與過往，你與她準備共同重新對抗深淵"
       }
     ],
-    "background": "minecraft:textures/gui/advancements/backgrounds/quartz_bricks.png",
     "show_toast": false,
     "announce_to_chat": false,
     "hidden": false
