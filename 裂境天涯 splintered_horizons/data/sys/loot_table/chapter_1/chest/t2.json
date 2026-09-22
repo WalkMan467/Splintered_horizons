@@ -148,8 +148,7 @@
                       "type": "minecraft:fixed",
                       "name": "#rdm_enchantment"
                     },
-                    "score": "global.main",
-                    "scale": 1
+                    "score": "global.main"
                   },
                   "options": "#minecraft:non_treasure"
                 }
@@ -167,8 +166,7 @@
                       "type": "minecraft:fixed",
                       "name": "#rdm_enchantment"
                     },
-                    "score": "global.main",
-                    "scale": 1
+                    "score": "global.main"
                   },
                   "options": "#minecraft:non_treasure"
                 }
@@ -186,8 +184,7 @@
                       "type": "minecraft:fixed",
                       "name": "#rdm_enchantment"
                     },
-                    "score": "global.main",
-                    "scale": 1
+                    "score": "global.main"
                   },
                   "options": "#minecraft:non_treasure"
                 }
@@ -210,13 +207,22 @@
                 {
                   "type": "minecraft:enchant_with_levels",
                   "levels": {
-                    "type": "minecraft:score",
-                    "target": {
-                      "type": "minecraft:fixed",
-                      "name": "#rdm_enchantment"
+                    "type": "minecraft:floor_div",
+                    "left": {
+                      "type": "minecraft:mul",
+                      "inputs": [
+                        {
+                          "type": "minecraft:score",
+                          "target": {
+                            "type": "minecraft:fixed",
+                            "name": "#rdm_enchantment"
+                          },
+                          "score": "global.main"
+                        },
+                        5
+                      ]
                     },
-                    "score": "global.main",
-                    "scale": 1.25
+                    "right": 4
                   },
                   "options": "#minecraft:non_treasure"
                 }
@@ -229,13 +235,22 @@
                 {
                   "type": "minecraft:enchant_with_levels",
                   "levels": {
-                    "type": "minecraft:score",
-                    "target": {
-                      "type": "minecraft:fixed",
-                      "name": "#rdm_enchantment"
+                    "type": "minecraft:floor_div",
+                    "left": {
+                      "type": "minecraft:mul",
+                      "inputs": [
+                        {
+                          "type": "minecraft:score",
+                          "target": {
+                            "type": "minecraft:fixed",
+                            "name": "#rdm_enchantment"
+                          },
+                          "score": "global.main"
+                        },
+                        5
+                      ]
                     },
-                    "score": "global.main",
-                    "scale": 1.25
+                    "right": 4
                   },
                   "options": "#minecraft:non_treasure"
                 }
@@ -248,13 +263,22 @@
                 {
                   "type": "minecraft:enchant_with_levels",
                   "levels": {
-                    "type": "minecraft:score",
-                    "target": {
-                      "type": "minecraft:fixed",
-                      "name": "#rdm_enchantment"
+                    "type": "minecraft:floor_div",
+                    "left": {
+                      "type": "minecraft:mul",
+                      "inputs": [
+                        {
+                          "type": "minecraft:score",
+                          "target": {
+                            "type": "minecraft:fixed",
+                            "name": "#rdm_enchantment"
+                          },
+                          "score": "global.main"
+                        },
+                        5
+                      ]
                     },
-                    "score": "global.main",
-                    "scale": 1.25
+                    "right": 4
                   },
                   "options": "#minecraft:non_treasure"
                 }
@@ -267,13 +291,22 @@
                 {
                   "type": "minecraft:enchant_with_levels",
                   "levels": {
-                    "type": "minecraft:score",
-                    "target": {
-                      "type": "minecraft:fixed",
-                      "name": "#rdm_enchantment"
+                    "type": "minecraft:floor_div",
+                    "left": {
+                      "type": "minecraft:mul",
+                      "inputs": [
+                        {
+                          "type": "minecraft:score",
+                          "target": {
+                            "type": "minecraft:fixed",
+                            "name": "#rdm_enchantment"
+                          },
+                          "score": "global.main"
+                        },
+                        5
+                      ]
                     },
-                    "score": "global.main",
-                    "scale": 1.25
+                    "right": 4
                   },
                   "options": "#minecraft:non_treasure"
                 }
