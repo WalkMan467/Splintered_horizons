@@ -12,7 +12,6 @@
       "underlined": true
     },
     "description": "",
-    "background": "minecraft:textures/gui/advancements/backgrounds/sculk.png",
     "frame": "goal",
     "show_toast": false,
     "announce_to_chat": false,

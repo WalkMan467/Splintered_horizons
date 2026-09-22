@@ -21,7 +21,6 @@
         "fallback": "在世界樹消失之際，世界樹的守護者們用世界樹的力量創造了你，托福你拯救世界的重大使命在舊世界除了強大的世界樹，還有 6 把名為「始源六魔劍」的武器"
       }
     ],
-    "background": "minecraft:textures/gui/advancements/backgrounds/quartz_bricks.png",
     "show_toast": false,
     "announce_to_chat": false,
     "hidden": false

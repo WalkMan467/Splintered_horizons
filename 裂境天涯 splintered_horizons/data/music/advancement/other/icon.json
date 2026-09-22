@@ -11,7 +11,6 @@
       "italic": false
     },
     "description": "",
-    "background": "minecraft:textures/gui/advancements/backgrounds/stone",
     "frame": "task",
     "show_toast": false,
     "announce_to_chat": false,
