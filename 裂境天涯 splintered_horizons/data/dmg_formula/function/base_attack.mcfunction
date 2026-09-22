@@ -5,6 +5,7 @@
 
 # 公式本體在 [ context_float_provider dmg_formula:base_attack ]，要調整算法改那個檔即可
 # 兩個運算元都用虛擬玩家，不需要實體或座標上下文，因此 compute 用 default 模式
+# 攻擊力以 get 100 取兩位小數（存成整數的百倍），公式端再乘 0.0001 還原
 
 # ===================================================
 
@@ -12,7 +13,7 @@
 
 execute \
     store result score #temp atk run \
-attribute @s minecraft:attack_damage get
+attribute @s minecraft:attack_damage get 100
 
 scoreboard players operation #pct atk = @s dmg_formula.atk_percentage
 
