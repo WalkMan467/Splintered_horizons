@@ -30,7 +30,7 @@
             },
             "score": "main.difficulty"
           },
-          "range": {
+          "test": {
             "min": 1
           }
         },
