@@ -1,50 +1,53 @@
-[
-  {
-    "type": "minecraft:set_custom_model_data",
-    "floats": {
-      "values": [
-        1
-      ],
-      "mode": "replace_all"
-    }
-  },
-  {
-    "type": "minecraft:set_attributes",
-    "modifiers": [
-      {
-        "attribute": "minecraft:attack_damage",
-        "id": "minecraft:base_attack_damage",
-        "amount": 4,
-        "operation": "add_value",
-        "slot": "mainhand"
-      },
-      {
-        "attribute": "minecraft:attack_speed",
-        "id": "minecraft:base_attack_speed",
-        "amount": -2.4,
-        "operation": "add_value",
-        "slot": "mainhand"
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:set_custom_model_data",
+      "floats": {
+        "values": [
+          1
+        ],
+        "mode": "replace_all"
       }
-    ]
-  },
-  {
-    "type": "minecraft:set_enchantments",
-    "enchantments": {
-      "weapons:type/sword/nightfall/1": 1,
-      "weapons:type/sword/nightfall/0": 0
-    }
-  },
-  {
-    "type": "minecraft:set_components",
-    "components": {
-      "minecraft:custom_data": {
-        "state": true,
-        "rc": true,
-        "type": "sword",
-        "rarity": "epic",
-        "weapon": "nightfall",
-        "forging_table": true
+    },
+    {
+      "type": "minecraft:set_attributes",
+      "modifiers": [
+        {
+          "attribute": "minecraft:attack_damage",
+          "id": "minecraft:base_attack_damage",
+          "amount": 4,
+          "operation": "add_value",
+          "slot": "mainhand"
+        },
+        {
+          "attribute": "minecraft:attack_speed",
+          "id": "minecraft:base_attack_speed",
+          "amount": -2.4,
+          "operation": "add_value",
+          "slot": "mainhand"
+        }
+      ]
+    },
+    {
+      "type": "minecraft:set_enchantments",
+      "enchantments": {
+        "weapons:type/sword/nightfall/1": 1,
+        "weapons:type/sword/nightfall/0": 0
+      }
+    },
+    {
+      "type": "minecraft:set_components",
+      "components": {
+        "minecraft:custom_data": {
+          "state": true,
+          "rc": true,
+          "type": "sword",
+          "rarity": "epic",
+          "weapon": "nightfall",
+          "forging_table": true
+        }
       }
     }
-  }
-]
+  ]
+}

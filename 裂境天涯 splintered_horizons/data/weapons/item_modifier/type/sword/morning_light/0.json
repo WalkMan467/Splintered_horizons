@@ -1,37 +1,40 @@
-[
-  {
-    "type": "minecraft:set_custom_model_data",
-    "flags": {
-      "values": [
-        false
-      ],
-      "mode": "replace_all"
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:set_custom_model_data",
+      "flags": {
+        "values": [
+          false
+        ],
+        "mode": "replace_all"
+      }
+    },
+    {
+      "type": "minecraft:set_components",
+      "components": {
+        "minecraft:attribute_modifiers": [
+          {
+            "type": "attack_damage",
+            "id": "base_attack_damage",
+            "amount": 4,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "attack_speed",
+            "id": "base_attack_speed",
+            "amount": -2.4,
+            "operation": "add_value",
+            "slot": "mainhand"
+          }
+        ],
+        "minecraft:item_model": "minecraft:sword/morning_light/1"
+      }
+    },
+    {
+      "type": "minecraft:set_item",
+      "item": "minecraft:stone_sword"
     }
-  },
-  {
-    "type": "minecraft:set_components",
-    "components": {
-      "minecraft:attribute_modifiers": [
-        {
-          "type": "attack_damage",
-          "id": "base_attack_damage",
-          "amount": 4,
-          "operation": "add_value",
-          "slot": "mainhand"
-        },
-        {
-          "type": "attack_speed",
-          "id": "base_attack_speed",
-          "amount": -2.4,
-          "operation": "add_value",
-          "slot": "mainhand"
-        }
-      ],
-      "minecraft:item_model": "minecraft:sword/morning_light/1"
-    }
-  },
-  {
-    "type": "minecraft:set_item",
-    "item": "minecraft:stone_sword"
-  }
-]
+  ]
+}

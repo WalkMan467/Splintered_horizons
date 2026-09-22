@@ -1,43 +1,46 @@
-[
-  {
-    "type": "minecraft:set_custom_model_data",
-    "flags": {
-      "values": [
-        true
-      ],
-      "mode": "replace_all"
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:set_custom_model_data",
+      "flags": {
+        "values": [
+          true
+        ],
+        "mode": "replace_all"
+      }
+    },
+    {
+      "type": "minecraft:set_components",
+      "components": {
+        "minecraft:attribute_modifiers": [
+          {
+            "type": "attack_damage",
+            "id": "base_attack_damage",
+            "amount": 0,
+            "operation": "add_value"
+          },
+          {
+            "type": "attack_damage",
+            "id": "base_attack_damage",
+            "amount": 4,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "safe_fall_distance",
+            "id": "weapon.morning_light",
+            "amount": 1024,
+            "operation": "add_value",
+            "slot": "mainhand"
+          }
+        ],
+        "minecraft:item_model": "minecraft:sword/morning_light/1"
+      }
+    },
+    {
+      "type": "minecraft:set_item",
+      "item": "minecraft:mace"
     }
-  },
-  {
-    "type": "minecraft:set_components",
-    "components": {
-      "minecraft:attribute_modifiers": [
-        {
-          "type": "attack_damage",
-          "id": "base_attack_damage",
-          "amount": 0,
-          "operation": "add_value"
-        },
-        {
-          "type": "attack_damage",
-          "id": "base_attack_damage",
-          "amount": 4,
-          "operation": "add_value",
-          "slot": "mainhand"
-        },
-        {
-          "type": "safe_fall_distance",
-          "id": "weapon.morning_light",
-          "amount": 1024,
-          "operation": "add_value",
-          "slot": "mainhand"
-        }
-      ],
-      "minecraft:item_model": "minecraft:sword/morning_light/1"
-    }
-  },
-  {
-    "type": "minecraft:set_item",
-    "item": "minecraft:mace"
-  }
-]
+  ]
+}

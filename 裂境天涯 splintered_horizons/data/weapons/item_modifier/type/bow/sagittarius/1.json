@@ -1,9 +1,12 @@
-[
-  {
-    "type": "minecraft:set_enchantments",
-    "add": true,
-    "enchantments": {
-      "weapons:type/bow/sagittarius/use": 1
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:set_enchantments",
+      "add": true,
+      "enchantments": {
+        "weapons:type/bow/sagittarius/use": 1
+      }
     }
-  }
-]
+  ]
+}

@@ -1,38 +1,41 @@
-[
-  {
-    "type": "minecraft:set_components",
-    "components": {
-      "minecraft:tooltip_display": {
-        "hidden_components": [
-          "minecraft:can_place_on"
-        ]
-      },
-      "minecraft:can_place_on": {}
-    }
-  },
-  {
-    "type": "minecraft:set_lore",
-    "entity": "this",
-    "lore": [
-      [
-        {
-          "translate": "item.canPlace",
-          "color": "dark_green",
-          "bold": false,
-          "italic": false
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:set_components",
+      "components": {
+        "minecraft:tooltip_display": {
+          "hidden_components": [
+            "minecraft:can_place_on"
+          ]
         },
-        {
-          "translate": "block.any_block",
-          "fallback": "Any Blocks"
-        }
-      ]
-    ],
-    "mode": "insert"
-  },
-  {
-    "type": "minecraft:set_custom_data",
-    "tag": {
-      "can_place_on": true
+        "minecraft:can_place_on": {}
+      }
+    },
+    {
+      "type": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        [
+          {
+            "translate": "item.canPlace",
+            "color": "dark_green",
+            "bold": false,
+            "italic": false
+          },
+          {
+            "translate": "block.any_block",
+            "fallback": "Any Blocks"
+          }
+        ]
+      ],
+      "mode": "insert"
+    },
+    {
+      "type": "minecraft:set_custom_data",
+      "tag": {
+        "can_place_on": true
+      }
     }
-  }
-]
+  ]
+}

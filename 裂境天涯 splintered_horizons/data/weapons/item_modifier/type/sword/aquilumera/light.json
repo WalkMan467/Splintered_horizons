@@ -1,18 +1,21 @@
-[
-  {
-    "type": "minecraft:set_custom_model_data",
-    "flags": {
-      "values": [
-        false
-      ],
-      "mode": "replace_all"
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:set_custom_model_data",
+      "flags": {
+        "values": [
+          false
+        ],
+        "mode": "replace_all"
+      }
+    },
+    {
+      "type": "minecraft:set_custom_data",
+      "tag": {
+        "wl_water": false,
+        "wl_light": true
+      }
     }
-  },
-  {
-    "type": "minecraft:set_custom_data",
-    "tag": {
-      "wl_water": false,
-      "wl_light": true
-    }
-  }
-]
+  ]
+}

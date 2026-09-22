@@ -1,9 +1,12 @@
-[
-  {
-    "type": "minecraft:set_enchantments",
-    "add": false,
-    "enchantments": {
-      "weapons:type/bow/heavenly_guiding_bow/use": 0
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:set_enchantments",
+      "add": false,
+      "enchantments": {
+        "weapons:type/bow/heavenly_guiding_bow/use": 0
+      }
     }
-  }
-]
+  ]
+}
