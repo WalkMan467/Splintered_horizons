@@ -147,6 +147,22 @@ function sys:forging_table/crafting/general/weapon_energy_infusion
 
 # ===================================
 
+# stone pickaxe
+
+execute \
+    positioned 780 -23 1138 \
+    as @n[distance=..1.5,predicate=sys:forging_table/crafting/pickaxe/general/stone_pickaxe,type=item] run \
+function sys:forging_table/crafting/pickaxe/stone
+
+# iron pickaxe
+
+execute \
+    positioned 780 -23 1138 \
+    as @n[distance=..1.5,predicate=sys:forging_table/crafting/pickaxe/general/iron_pickaxe,type=item] run \
+function sys:forging_table/crafting/pickaxe/iron
+
+# ===================================
+
 # Leather Helmet
 
 execute \

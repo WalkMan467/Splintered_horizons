@@ -158,4 +158,36 @@ execute \
     if score #sys.forging_table.blackhole_boots sys.forging_table.recipes matches 1.. run \
 tellraw @a [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"translate":"item.minecraft.iron_boots","color":"white","italic":false,"font": "minecraft:default"},{"text": "*1","font": "minecraft:default"}]
 
+execute \
+    if score #sys.forging_table.soul_tree_pickaxe sys.forging_table.recipes matches 1.. run \
+tellraw @s [{"text":"\n"}]
+
+execute \
+    if score #sys.forging_table.soul_tree_pickaxe sys.forging_table.recipes matches 1.. run \
+tellraw @s [{"translate":"weapon.soul_tree_pickaxe","color":"#b6b6b6","italic":false,"bold":true}]
+
+execute \
+    if score #sys.forging_table.soul_tree_pickaxe sys.forging_table.recipes matches 1.. run \
+tellraw @s [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"translate":"item.holy_light_iron_ingot","color":"#ffd000","italic":false,"font": "minecraft:default"},{"text": "*5","font": "minecraft:default"}]
+
+execute \
+    if score #sys.forging_table.soul_tree_pickaxe sys.forging_table.recipes matches 1.. run \
+tellraw @s [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"translate":"item.minecraft.stone_pickaxe","color":"white","italic":false,"font": "minecraft:default"},{"text": "*1","font": "minecraft:default"}]
+
+execute \
+    if score #sys.forging_table.finality_pickaxe sys.forging_table.recipes matches 1.. run \
+tellraw @s [{"text":"\n"}]
+
+execute \
+    if score #sys.forging_table.finality_pickaxe sys.forging_table.recipes matches 1.. run \
+tellraw @s [{"translate":"weapon.finality_pickaxe","color":"#e00000","italic":false,"bold":true}]
+
+execute \
+    if score #sys.forging_table.finality_pickaxe sys.forging_table.recipes matches 1.. run \
+tellraw @s [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"translate":"item.finality_ingot","color":"dark_red","italic":false,"font": "minecraft:default"},{"text": "*5","font": "minecraft:default"}]
+
+execute \
+    if score #sys.forging_table.finality_pickaxe sys.forging_table.recipes matches 1.. run \
+tellraw @s [{"font":"minecraft:space","text":"\ue003\ue002\ue000"},{"translate":"item.minecraft.iron_pickaxe","color":"white","italic":false,"font": "minecraft:default"},{"text": "*1","font": "minecraft:default"}]
+
 data remove entity @s interaction
