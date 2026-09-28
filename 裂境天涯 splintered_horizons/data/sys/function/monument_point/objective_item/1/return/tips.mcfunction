@@ -22,5 +22,5 @@ return 0
 
 execute \
     unless score #objective_item.1 global.main matches 1.. \
-    as @s[tag=!weapon.lost.return,gamemode=!creative] at @s run \
+    as @s[tag=!weapon.lost.return] at @s run \
 function sys:monument_point/objective_item/lost_tips

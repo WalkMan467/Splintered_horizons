@@ -35,28 +35,6 @@
     {
       "label": [
         {
-          "text": "📦 ",
-          "color": "#c0862c"
-        },
-        {
-          "translate": "dialog.main.quick_actions.keep_container_items",
-          "fallback": "Keep Container Items",
-          "color": "#c0862c"
-        },
-        {
-          "text": " 📦",
-          "color": "#c0862c"
-        }
-      ],
-      "width": 180,
-      "action": {
-        "type": "minecraft:run_command",
-        "command": "trigger player.setting.keep_container_items.trigger"
-      }
-    },
-    {
-      "label": [
-        {
           "translate": "dialog.main.enabled",
           "fallback": "Enabled ",
           "color": "yellow"

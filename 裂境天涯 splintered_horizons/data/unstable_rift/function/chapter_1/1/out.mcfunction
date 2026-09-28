@@ -14,5 +14,3 @@ execute \
 return 0
 
 function unstable_rift:chapter_1/1/clear
-
-say out

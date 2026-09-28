@@ -1,11 +1,10 @@
 ## ---開頭--- ##
 
 scoreboard players add #monster.bossfight.chapter_2.elekiel_phase_2_temp global.main 0
-scoreboard players add #monster.bossfight.chapter_2.elekiel_phase_2.act.enable global.main 0
 
     # Enable Check
     execute \
-        unless score #monster.bossfight.chapter_2.elekiel_phase_2.act.enable global.main matches 1.. run \
+        if score #bossfight global.main matches 1.. run \
     return 0
 
     execute \

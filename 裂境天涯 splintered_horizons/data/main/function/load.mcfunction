@@ -36,6 +36,7 @@ function players:void_protection/rollback/update
 
 # Monster load
 function monsters:load
+function bossfight:load
 
 # Weapons
 schedule function weapons:type/core/main 1t

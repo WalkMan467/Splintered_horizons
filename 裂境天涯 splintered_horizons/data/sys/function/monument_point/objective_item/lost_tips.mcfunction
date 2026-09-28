@@ -1,3 +1,8 @@
+execute \
+    unless entity @s[gamemode=survival] \
+    unless entity @s[gamemode=adventure] run \
+return 0
+
 playsound minecraft:entity.cat.death voice @s ~ ~ ~ 1 1 1
 playsound minecraft:block.note_block.pling voice @s ~ ~ ~ 1 .5 1
 playsound minecraft:block.note_block.pling voice @s ~ ~ ~ 1 .61 1

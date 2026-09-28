@@ -13,8 +13,9 @@
 
 scoreboard players set @s weapon.the_endwatcher.awaken 0
 
-title @s times 0 15 10
+title @s times 0 5 10
 title @s title ""
+# title @s title {"text":"\uE000","font":"minecraft:screen"}
 title @s subtitle ""
 
 particle dust{color:[0.200,0.000,0.000],scale:1.5} ~ ~1 ~ 0.5 0.8 0.5 0 40 normal @a

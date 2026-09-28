@@ -1,7 +1,6 @@
 ## ---開頭--- ##
 
 scoreboard players add #monster.bossfight.chapter_2.elekiel_temp global.main 0
-scoreboard players add #monster.bossfight.chapter_2.elekiel.act.enable global.main 0
 
     # Enable Check
     execute \

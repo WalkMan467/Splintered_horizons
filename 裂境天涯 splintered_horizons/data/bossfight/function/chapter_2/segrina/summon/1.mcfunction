@@ -28,7 +28,6 @@ scoreboard players set #bossfight global.main 1
 setblock -916 60 2750 air
 setblock -916 61 2750 air
 
-scoreboard players set #monster.bossfight.chapter_2.segrina.act.enable global.main 0
 
 # 移除 BOSS 戰互動實體 / Remove bossfight interaction
 function bossfight:chapter_2/act/segrina/1/false

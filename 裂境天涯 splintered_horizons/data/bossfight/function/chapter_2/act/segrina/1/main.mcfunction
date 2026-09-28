@@ -1,7 +1,6 @@
 ## ---開頭--- ##
 
 scoreboard players add #monster.bossfight.chapter_2.segrina_temp global.main 0
-scoreboard players add #monster.bossfight.chapter_2.segrina.act.enable global.main 0
 
     # Enable Check
     execute \

@@ -1,7 +1,8 @@
 scoreboard players set #monster.bossfight.chapter_2.elekiel_temp global.main 1
 
 execute \
-    as @n[tag=aj.boss_1.root,limit=1,type=item_display] run \
+    positioned 912 60 2018 \
+    as @n[sort=arbitrary,distance=..3,tag=aj.boss_1.root,type=item_display] at @s run \
 function aj:boss_1/remove/this
 
 execute \

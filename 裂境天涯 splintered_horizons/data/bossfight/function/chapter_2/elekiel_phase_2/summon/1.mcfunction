@@ -29,7 +29,6 @@ tellraw @a[distance=..120] "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n
 setblock -916 60 2750 air
 setblock -916 61 2750 air
 
-scoreboard players set #monster.bossfight.chapter_2.elekiel_phase_2.act.enable global.main 0
 function bossfight:chapter_2/act/elekiel_phase_2/1/false
 
 execute \
