@@ -1,34 +1,20 @@
-# Guide
+# ===================================================
+# 第一章的裂隙 / chapter 1 rifts
 
-    ## Redirected to [ function unstable_rift:main/loop ]
+    ## Guide [ function unstable_rift:chapter_1/loop ] >>> 第一章的裂隙 / chapter 1 rifts
+    ## Guide [ function unstable_rift:main/loop ] >>> 裂隙主迴圈 / rift main loop
+    ## Guide [ function unstable_rift:main/detect ] >>> 裂隙進出偵測 / rift enter-exit detection
+    ## Guide [ function unstable_rift:main/timer/use ] >>> 倒數計時 / countdown tick
 
-#==================================================
+# ===================================================
 
-    tag @a add temp
-    tag @a[gamemode=spectator,tag=!animation] remove temp
-    tag @a[tag=sys.hide_world_area.name] remove temp
+# 執行者 : 玩家
+#
+# 每一區都是「先跑自己的 config，再把通用邏輯叫起來」。
+# 加一區就多三行，邏輯本體不用動。
 
-# Chapter 1
+# 破碎之城 / broken city
 
-    # Broken City
-
-    # 剛被 clear 送出來的人有幾秒寬限期。
-    # 回去的點在生態域邊界內側，沒有這段就會立刻被判定成再次進入。
-
-    execute \
-        if score @s unstable_rift.chapter_1.1.cooldown matches 1.. run \
-    scoreboard players remove @s unstable_rift.chapter_1.1.cooldown 1
-
-    execute \
-        if entity @s[tag=temp] \
-        unless score @s unstable_rift.chapter_1.1.cooldown matches 1.. \
-        if biome ~ ~ ~ unstable_rift:chapter_1/1 run \
-    advancement grant @s only unstable_rift:chapter_1/1/in
-
-    execute \
-        unless biome ~ ~ ~ unstable_rift:chapter_1/1 run \
-    advancement grant @s only unstable_rift:chapter_1/1/out
-
-    tag @a remove temp
-
-    function unstable_rift:chapter_1/1/timer/use
+function unstable_rift:chapter_1/1/config
+function unstable_rift:main/detect with storage unstable_rift:main args
+function unstable_rift:main/timer/use with storage unstable_rift:main args

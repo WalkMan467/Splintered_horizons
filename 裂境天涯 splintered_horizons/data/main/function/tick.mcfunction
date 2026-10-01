@@ -63,6 +63,9 @@ function sys:main
 # Duration Detect
 function main:duration/detect
 
+# Unstable Rift
+function unstable_rift:main/tick
+
 # Player Guide
 
 execute \
