@@ -1,0 +1,190 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:arrow",
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "translate": "weapon.damage_resonance_arrow",
+                  "color": "#fbff00",
+                  "bold": true
+                },
+                "minecraft:lore": [
+                  [
+                    {
+                      "translate": "weapon.damage_resonance_arrow.type",
+                      "color": "dark_gray",
+                      "italic": false
+                    }
+                  ],
+                  {
+                    "text": ""
+                  },
+                  [
+                    {
+                      "translate": "weapon.damage_resonance_arrow.story.1",
+                      "color": "blue",
+                      "italic": false
+                    }
+                  ],
+                  [
+                    {
+                      "translate": "weapon.damage_resonance_arrow.story.2",
+                      "color": "blue",
+                      "italic": false
+                    }
+                  ],
+                  [
+                    {
+                      "translate": "weapon.damage_resonance_arrow.story.3",
+                      "color": "blue",
+                      "italic": false
+                    }
+                  ],
+                  [
+                    {
+                      "translate": "weapon.damage_resonance_arrow.story.4",
+                      "color": "blue",
+                      "italic": false
+                    }
+                  ],
+                  {
+                    "text": ""
+                  },
+                  [
+                    {
+                      "text": "",
+                      "italic": false
+                    },
+                    {
+                      "translate": "weapon.damage_resonance_arrow.skill",
+                      "color": "#fbff00",
+                      "bold": true
+                    },
+                    {
+                      "text": "  "
+                    }
+                  ],
+                  [
+                    {
+                      "text": "",
+                      "italic": false
+                    },
+                    {
+                      "translate": "weapon.damage_resonance_arrow.skill.1",
+                      "color": "#fff98a",
+                      "italic": false
+                    }
+                  ],
+                  [
+                    {
+                      "text": "",
+                      "italic": false
+                    },
+                    {
+                      "translate": "weapon.damage_resonance_arrow.skill.2",
+                      "color": "#fff98a",
+                      "italic": false
+                    }
+                  ],
+                  [
+                    {
+                      "text": "",
+                      "italic": false
+                    },
+                    {
+                      "translate": "weapon.damage_resonance_arrow.skill.3",
+                      "color": "#fff98a",
+                      "italic": false,
+                      "with": [
+                        {
+                          "translate": "weapon.effect.damage_resonance",
+                          "underlined": true,
+                          "color": "#fbff00"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "",
+                      "italic": false
+                    },
+                    {
+                      "translate": "weapon.damage_resonance_arrow.skill.4",
+                      "color": "#fff98a",
+                      "italic": false
+                    }
+                  ],
+                  [
+                    {
+                      "text": "",
+                      "italic": false
+                    },
+                    {
+                      "translate": "weapon.damage_resonance_arrow.skill.5",
+                      "color": "#fff98a",
+                      "italic": false
+                    }
+                  ],
+                  [
+                    {
+                      "text": "",
+                      "italic": false
+                    },
+                    {
+                      "translate": "weapon.damage_resonance_arrow.skill.6",
+                      "color": "#fff98a",
+                      "italic": false
+                    }
+                  ],
+                  [
+                    {
+                      "text": "",
+                      "italic": false
+                    },
+                    {
+                      "translate": "weapon.damage_resonance_arrow.skill.7",
+                      "color": "#fff98a",
+                      "italic": false
+                    }
+                  ],
+                  {
+                    "text": ""
+                  }
+                ],
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "attack_speed",
+                    "id": "base_attack_speed",
+                    "amount": 0,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  }
+                ],
+                "minecraft:max_stack_size": 64,
+                "minecraft:unbreakable": {},
+                "minecraft:item_model": "arrow/shadow_arrow",
+                "minecraft:custom_data": "{type:\"arrow\",rarity:\"epic\",id:\"damage_resonance_arrow\",ground_detect:1b}",
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "enchantments",
+                    "attribute_modifiers",
+                    "unbreakable"
+                  ]
+                },
+                "minecraft:tooltip_style": "epic"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

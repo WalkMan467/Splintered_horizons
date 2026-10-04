@@ -25,6 +25,8 @@ function story:chapter_2/ml/8/main
 function story:chapter_2/ml/9/main
 function story:chapter_2/ml/10/main
 
+function story:other/chapter_1/1/main
+
 function story:other/chapter_2/1/main
 function story:other/chapter_2/2/main
 

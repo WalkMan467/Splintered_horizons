@@ -8,9 +8,9 @@
 
 # 執行者 : 被夜幕打中的敵人
 #
-# 疊幾層由呼叫端先寫進 #count，這邊不用 macro。
-# scoreboard players operation 對沒有值的分數會先建成 0，不需要另外初始化。
-# 上限 12 層。
+# 疊幾層由呼叫端先寫進 #count，這邊不用 macro
+# scoreboard players operation 對沒有值的分數會先建成 0，不需要另外初始化
+# 上限 12 層
 
 execute \
     if entity @s[type=player] run \

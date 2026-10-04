@@ -276,6 +276,28 @@ scoreboard players add @a weapon.echo_rhythm.cd 0
 scoreboard objectives add weapon.pyrosolis.cd dummy "地獄之火 CD"
 
 scoreboard players add @a weapon.pyrosolis.cd 0
+
+scoreboard objectives add weapon.pyrosolis.state dummy "地獄之火 型態 0=常態 1=激活"
+scoreboard objectives add weapon.pyrosolis.apocalypse dummy "地獄之火 末日層數"
+scoreboard objectives add weapon.pyrosolis.summon.timer dummy "地獄之火 烈陽之影 計時"
+scoreboard objectives add weapon.pyrosolis.summon.id dummy "地獄之火 烈陽之影 配對"
+scoreboard objectives add weapon.pyrosolis.dmg.last dummy "地獄之火 上次累積輸出"
+scoreboard objectives add weapon.pyrosolis.dmg.pool dummy "地獄之火 末日進度"
+
+# 這個是統計板，存的是「傷害 x 10」，不要對它 add 0
+scoreboard objectives add weapon.pyrosolis.dmg.total minecraft.custom:minecraft.damage_dealt "地獄之火 累積輸出"
+
+scoreboard players add @a weapon.pyrosolis.state 0
+scoreboard players add @a weapon.pyrosolis.apocalypse 0
+scoreboard players add @a weapon.pyrosolis.dmg.pool 0
+
+# 常數 : 30 點傷害 = 1 層末日、層數上限 10
+scoreboard players set #per weapon.pyrosolis.dmg.pool 300
+scoreboard players set #cap weapon.pyrosolis.apocalypse 10
+
+# 重載時把在場的烈陽之影收掉，計時改成閒置值避免 main 誤判成剛歸零
+scoreboard players set @a weapon.pyrosolis.summon.timer -1
+kill @e[tag=weapon.pyrosolis.summon]
 #===================================================================
 
 # 變形異獸

@@ -9,7 +9,7 @@
 
 # 執行者 : 射箭的玩家
 #
-# 放當下累積值的 20%，放完就從累積值扣掉，所以後面幾發會越來越小。
+# 放當下累積值的 20%，放完就從累積值扣掉，所以後面幾發會越來越小
 
 title @s title {"text":"\uE004","font":"minecraft:screen"}
 title @s subtitle ""

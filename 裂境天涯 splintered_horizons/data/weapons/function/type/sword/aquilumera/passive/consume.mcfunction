@@ -11,7 +11,7 @@
 # 執行者 : 被近戰命中、身上有倒影的怪物
 #
 # 型態看的是這層倒影疊上去時記下的型態（就是頭上粒子的顏色），
-# 不是玩家手上拿什麼 : 手上不是水鏡之光時根本沒有型態可看。
+# 不是玩家手上拿什麼 : 手上不是水鏡之光時根本沒有型態可看
 
 scoreboard players operation @s weapon.aquilumera.reflection.hit = #gametime global.main
 

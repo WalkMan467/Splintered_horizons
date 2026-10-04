@@ -29,7 +29,7 @@ scoreboard players set %temp weapon.ultimate.cd.math 0
 scoreboard players add %temp weapon.ultimate.cd.math 1
 
 # 注：nbt 文字元件渲染字串標籤時會連 SNBT 的引號一起印出來，
-#     所以改用 score 元件：整數位、"."、小數位三段拼。
+#     所以改用 score 元件：整數位、"."、小數位三段拼
 scoreboard players operation %temp weapon.ultimate.cd.math /= %2 weapon.ultimate.cd.math
 
 scoreboard players operation %sec weapon.ultimate.cd.math = %temp weapon.ultimate.cd.math

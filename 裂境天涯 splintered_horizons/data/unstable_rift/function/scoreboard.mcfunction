@@ -1,11 +1,12 @@
 scoreboard objectives add unstable_rift.timer dummy
 scoreboard objectives add unstable_rift.chapter_1.1.display.id dummy
+scoreboard objectives add unstable_rift.monster.reward_points dummy
 
-# 進入裂隙前的位置。不帶區域名 —— 玩家同時只會在一個裂隙裡，
-# 所以這組是全裂隙共用的，新增區域不用再加。
+# 進入裂隙前的位置不帶區域名 —— 玩家同時只會在一個裂隙裡，
+# 所以這組是全裂隙共用的，新增區域不用再加
 #
 # x/y/z 乘 100 存整數保住小數；dim 存維度代碼，
-# 對照表在 unstable_rift:main/back/record 與 get_pos。
+# 對照表在 unstable_rift:main/back/record 與 get_pos
 scoreboard objectives add unstable_rift.player.pos.x dummy
 scoreboard objectives add unstable_rift.player.pos.y dummy
 scoreboard objectives add unstable_rift.player.pos.z dummy
@@ -22,3 +23,9 @@ scoreboard objectives add unstable_rift.chapter_1.1.cooldown dummy
 # 不能借用共用的 duration —— 那個是倒數制，main:duration/main 會把分數扣到 -1
 # 再把實體 kill 掉，而這隻的技能是等分數「加」到 80 / 100 才收尾，語意剛好相反
 scoreboard objectives add unstable_rift.stormpromax.duration dummy
+
+# 選武器的逾時倒數與目前點到的座位編號；見 unstable_rift:main/weapon_select/use
+#
+# 跟 pos / land 一樣不帶區域名 —— 玩家同時只會在一個裂隙的選武器房裡
+scoreboard objectives add unstable_rift.player.weapon_select dummy
+scoreboard objectives add unstable_rift.player.weapon_select.slot dummy

@@ -1,0 +1,81 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:enchanted_book",
+      "components": {
+        "minecraft:enchantments": {
+          "minecraft:mending": 1
+        }
+      },
+      "count": 1
+    },
+    "title": {
+      "translate": "item.energy_infusion_stone.gluttony",
+      "color": "#c47a00"
+    },
+    "description": [
+      {
+        "translate": "item.energy_infusion_stone.gluttony.passive_skills",
+        "color": "#c47a00",
+        "bold": true,
+        "italic": false
+      },
+      "\n",
+      {
+        "translate": "item.energy_infusion_stone.gluttony.passive_skills.1",
+        "color": "blue",
+        "bold": false,
+        "italic": false
+      },
+      "\n",
+      {
+        "translate": "item.energy_infusion_stone.gluttony.passive_skills.2",
+        "color": "blue",
+        "bold": false,
+        "italic": false
+      },
+      "\n",
+      {
+        "translate": "item.energy_infusion_stone.gluttony.passive_skills.3",
+        "color": "blue",
+        "bold": false,
+        "italic": false
+      },
+      "\n",
+      {
+        "translate": "item.energy_infusion_stone.gluttony.passive_skills.4",
+        "color": "blue",
+        "bold": false,
+        "italic": false
+      }
+    ],
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "energy_infusion_stone:icon/armor/icon",
+  "criteria": {
+    "requirement": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "predicates": {
+              "minecraft:custom_data": {
+                "id": "armor_energy_infusion"
+              },
+              "minecraft:enchantments": [
+                {
+                  "enchantments": "energy_infusion_stone:skills/armor/gluttony",
+                  "levels": {
+                    "min": 1
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

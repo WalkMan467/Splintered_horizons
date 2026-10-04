@@ -16,10 +16,10 @@ $tag @s remove unstable_rift.$(area)
 
 $function players:inventory/return {bag:"$(bag)"}
 
-# 還完就把袋子丟掉。
+# 還完就把袋子丟掉
 #
-# players:inventory/return 不會自己清 storage，袋子會一直留著。
-# 萬一 clear 被跑第二次（out 跟 timer/use 都會呼叫），同一份物品就會再發一次。
+# players:inventory/return 不會自己清 storage，袋子會一直留著
+# 萬一 clear 被跑第二次（out 跟 timer/use 都會呼叫），同一份物品就會再發一次
 
 $function players:inventory/remove {bag:"$(bag)"}
 
@@ -36,7 +36,7 @@ scoreboard players reset @s unstable_rift.timer
 function unstable_rift:main/back/use
 
 # 送回去的點就在生態域邊界內側，不擋一下的話 main/detect 下一 tick
-# 就會再判定一次「進入」，整個流程會卡成無限迴圈。
-# 這幾秒足夠玩家自己走出去。
+# 就會再判定一次「進入」，整個流程會卡成無限迴圈
+# 這幾秒足夠玩家自己走出去
 
 $scoreboard players set @s unstable_rift.$(area).cooldown $(grace)

@@ -8,7 +8,7 @@
 
 # 執行者 : 玩家 ; 座標 : 玩家
 #
-# 流血參數跟整包其他來源一致：2 秒一跳、基礎 2 點。
+# 流血參數跟整包其他來源一致：2 秒一跳、基礎 2 點
 
 execute \
     as @e[sort=arbitrary,distance=..4,type=!player,type=!#minecraft:dummy_mob] run \

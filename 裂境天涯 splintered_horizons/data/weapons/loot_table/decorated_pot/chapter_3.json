@@ -47,7 +47,7 @@
                 },
                 {
                   "type": "minecraft:loot_table",
-                  "value": "weapons:get/arrow/starry_sky_frost_arrow",
+                  "value": "weapons:get/arrow/damage_resonance_arrow",
                   "weight": 20,
                   "quality": 10,
                   "modifier": [
@@ -63,71 +63,7 @@
                 },
                 {
                   "type": "minecraft:loot_table",
-                  "value": "weapons:get/arrow/shadow_arrow",
-                  "weight": 20,
-                  "quality": 10,
-                  "modifier": [
-                    {
-                      "type": "minecraft:set_count",
-                      "count": {
-                        "type": "minecraft:uniform",
-                        "min": 1,
-                        "max": 2
-                      }
-                    }
-                  ]
-                },
-                {
-                  "type": "minecraft:loot_table",
-                  "value": "weapons:get/arrow/resplendence_arrow",
-                  "weight": 20,
-                  "quality": 10,
-                  "modifier": [
-                    {
-                      "type": "minecraft:set_count",
-                      "count": {
-                        "type": "minecraft:uniform",
-                        "min": 1,
-                        "max": 2
-                      }
-                    }
-                  ]
-                },
-                {
-                  "type": "minecraft:loot_table",
-                  "value": "weapons:get/arrow/holy_fire_arrow",
-                  "weight": 20,
-                  "quality": 10,
-                  "modifier": [
-                    {
-                      "type": "minecraft:set_count",
-                      "count": {
-                        "type": "minecraft:uniform",
-                        "min": 1,
-                        "max": 2
-                      }
-                    }
-                  ]
-                },
-                {
-                  "type": "minecraft:loot_table",
-                  "value": "weapons:get/arrow/crimson_claw_arrow",
-                  "weight": 20,
-                  "quality": 10,
-                  "modifier": [
-                    {
-                      "type": "minecraft:set_count",
-                      "count": {
-                        "type": "minecraft:uniform",
-                        "min": 1,
-                        "max": 2
-                      }
-                    }
-                  ]
-                },
-                {
-                  "type": "minecraft:loot_table",
-                  "value": "weapons:get/arrow/chaotic_thunder_arrow",
+                  "value": "weapons:get/arrow/sunfire_of_entropy_erosion_arrow",
                   "weight": 20,
                   "quality": 10,
                   "modifier": [

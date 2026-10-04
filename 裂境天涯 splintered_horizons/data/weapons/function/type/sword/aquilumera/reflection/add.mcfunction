@@ -9,8 +9,8 @@
 
 # 執行者 : 被技能打中的敵人
 #
-# 不設上限，每多一層就把整隻的到期時間刷新成 15 秒後。
-# 到期時間用絕對時間記，不需要每 tick 倒數。
+# 不設上限，每多一層就把整隻的到期時間刷新成 15 秒後
+# 到期時間用絕對時間記，不需要每 tick 倒數
 
 scoreboard players add @s weapon.aquilumera.reflection 1
 

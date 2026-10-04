@@ -8,8 +8,8 @@
 
 # 執行者 : 玩家（main:guide/player 以 as @a at @s 呼叫）
 
-# temp 標記這一 tick 要參與偵測的人。
-# 旁觀者排除掉，但正在看過場動畫的要留著；正在被隱藏區域名稱的人也排除。
+# temp 標記這一 tick 要參與偵測的人
+# 旁觀者排除掉，但正在看過場動畫的要留著；正在被隱藏區域名稱的人也排除
 
 tag @a add temp
 tag @a[gamemode=spectator,tag=!animation] remove temp

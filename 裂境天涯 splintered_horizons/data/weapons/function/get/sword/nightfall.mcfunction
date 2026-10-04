@@ -8,7 +8,7 @@ give @s stone_sword[item_name=[{"translate": "weapon.nightfall", "color": "#fbff
 # "weapon.nightfall.story.1" : "誕生於森林月光之下的武器，",
 # "weapon.nightfall.story.2" : "守護著森林的夜晚，",
 # "weapon.nightfall.story.3" : "因為力量原本來自深淵，",
-# "weapon.nightfall.story.4" : "在最終決戰之後力量徹底的進化。",
+# "weapon.nightfall.story.4" : "在最終決戰之後力量徹底的進化",
 # "weapon.nightfall.skill" : "[月相輪轉]",
 # "weapon.nightfall.skill.1" : "使用【%1$s】觸發技能",
 # "weapon.nightfall.skill.2" : "使你獲得【%1$s】符文 (00:05)",
@@ -38,7 +38,7 @@ give @s stone_sword[item_name=[{"translate": "weapon.nightfall", "color": "#fbff
 #                 '誕生於森林月光之下的武器，',
 #                 '守護著森林的夜晚，',
 #                 '因為力量原本來自深淵，',
-#                 '在最終決戰之後力量徹底的進化。'
+#                 '在最終決戰之後力量徹底的進化'
 #             ],
 #             'color': 'blue'
 #         },

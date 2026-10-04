@@ -1,6 +1,6 @@
 # 執行者 : 玩家
-# 飛行制服。內容固定、可重複生成，所以永遠不需要被存進任何 bag。
-# 由 players:uniform/refresh 呼叫，不要從別的地方叫。
+# 飛行制服內容固定、可重複生成，所以永遠不需要被存進任何 bag
+# 由 players:uniform/refresh 呼叫，不要從別的地方叫
 # (原本內嵌在 players:elytra_switch/true，give @p 已改為 @s)
 
 clear @s *

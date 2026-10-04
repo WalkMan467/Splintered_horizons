@@ -1,7 +1,7 @@
 # 執行者 : 玩家
 #
 # 月蝕引爆是「基礎傷害」，不是真實傷害，所以走自己的 damage type，
-# 沒有掛在 #weapons:type/sword/nightfall 底下（那個 tag 整組都被算成真實傷害）。
+# 沒有掛在 #weapons:type/sword/nightfall 底下（那個 tag 整組都被算成真實傷害）
 
 # tag
 tag @s add atker

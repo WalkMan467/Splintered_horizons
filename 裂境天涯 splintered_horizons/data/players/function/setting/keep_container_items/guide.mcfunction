@@ -1,7 +1,7 @@
 # 執行者 : 開啟這個設定的玩家
 #
-# minecraft.mined:<方塊> 是原生統計，玩家打掉該方塊的當下就會 +1，不需要掃描。
-# 偵測到之後交給 detect 去算出「被打掉的那格座標」。
+# minecraft.mined:<方塊> 是原生統計，玩家打掉該方塊的當下就會 +1，不需要掃描
+# 偵測到之後交給 detect 去算出「被打掉的那格座標」
 
 execute \
     if score @s sys.mined.chest matches 1.. run \

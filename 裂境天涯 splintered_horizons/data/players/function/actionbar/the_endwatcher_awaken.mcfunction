@@ -9,9 +9,9 @@
 # 執行者 : 玩家
 #
 # 開眼消耗的是「累積傷害」，所以這條顯示的是還剩多少累積傷害，
-# 前面那格再附上還能釋放幾次。守衛在 players:actionbar/the_endwatcher 做過了。
+# 前面那格再附上還能釋放幾次守衛在 players:actionbar/the_endwatcher 做過了
 #
-# 累積傷害存的單位是 x1000（跟 sys:dmg_show 一致），除回來才是實際傷害值。
+# 累積傷害存的單位是 x1000（跟 sys:dmg_show 一致），除回來才是實際傷害值
 
 scoreboard players set #1000 weapon.the_endwatcher.stored 1000
 

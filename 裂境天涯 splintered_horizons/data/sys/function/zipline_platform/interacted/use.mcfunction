@@ -1,8 +1,8 @@
 # 執行者 : 被右鍵的滑索台 interaction
 #
-# data remove entity @s interaction 一定要放在所有 on target 之後。
+# data remove entity @s interaction 一定要放在所有 on target 之後
 # on target 就是靠 interaction 這個 NBT 欄位反查出玩家的，先刪掉的話
-# 後面每一個 on target 都會解析不到，右鍵就完全沒反應。
+# 後面每一個 on target 都會解析不到，右鍵就完全沒反應
 
 scoreboard players operation #clicked sys.zipline_platform.link = @s sys.zipline_platform.id
 

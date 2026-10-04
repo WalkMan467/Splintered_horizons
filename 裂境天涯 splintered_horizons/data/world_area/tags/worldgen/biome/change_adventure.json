@@ -9,6 +9,7 @@
     "world_area:other/mini_game",
     "world_area:main/dream",
     "world_area:main/world_tree",
-    "world_area:chapter_3/finalitys_embrace_rift_trap"
+    "world_area:chapter_3/finalitys_embrace_rift_trap",
+    "unstable_rift:chapter_1/1/weapon_select"
   ]
 }

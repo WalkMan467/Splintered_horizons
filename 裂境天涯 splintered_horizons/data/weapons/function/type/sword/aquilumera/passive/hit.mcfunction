@@ -11,13 +11,13 @@
 #
 # 執行者 : 近戰命中「身上有倒影的怪物」的玩家（不限手上是哪把武器）
 # 由進度 weapons:type/sword/aquilumera/hurt 呼叫，傷害類型只收各武器的 *_attack 與原版普攻，
-# 技能、持續傷害、弓箭都不會進來。
+# 技能、持續傷害、弓箭都不會進來
 #
 # 進度獎勵拿不到被打的是哪一隻，所以用 HurtTime 找 :
 # 受傷當下 HurtTime 會被設成 10，下一次實體 tick 才開始往下扣，
-# 再用 on attacker 確認打它的就是自己。
+# 再用 on attacker 確認打它的就是自己
 # 橫掃一次打到好幾隻時，每一隻受傷都會各觸發一次進度，
-# 所以用 reflection.hit 記「這一 tick 已經處理過」，不會重複扣。
+# 所以用 reflection.hit 記「這一 tick 已經處理過」，不會重複扣
 
 advancement revoke @s only weapons:type/sword/aquilumera/hurt
 

@@ -76,8 +76,8 @@ kill @n[tag=aj.stellar.camera,tag=aj.stellar.camera.camera1,tag=delete,distance=
 
 
 
-# 動畫正常結束時退還 CD。舊制的 set 0 在絕對時間制下剛好也是「永遠就緒」，
-# 但語意不對，改成把截止時間拉到現在。
+# 動畫正常結束時退還 CD舊制的 set 0 在絕對時間制下剛好也是「永遠就緒」，
+# 但語意不對，改成把截止時間拉到現在
 execute \
     unless entity @s[tag=forced_interrupt_animation] run \
 scoreboard players operation @s player.ultimate = #gametime global.main

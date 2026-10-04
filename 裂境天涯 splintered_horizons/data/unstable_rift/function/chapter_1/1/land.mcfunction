@@ -11,10 +11,10 @@
 
 # 執行者 : 玩家
 #
-# 每次進來擲一次 1..8，落在對應的點。
-# 這支是區域專屬的：main/in 只負責叫它，要固定點還是隨機表由各區域自己決定。
+# 每次進來擲一次 1..8，落在對應的點
+# 這支是區域專屬的：main/in 只負責叫它，要固定點還是隨機表由各區域自己決定
 #
-# execute in 會一併換維度，tp 只給座標是不換維度的。
+# execute in 會一併換維度，tp 只給座標是不換維度的
 
 execute \
     store result score @s unstable_rift.player.land run \
@@ -60,5 +60,4 @@ execute \
     in minecraft:the_end run \
 tp @s -649 323 483
 
-# 用完就清，免得分數留著誤導除錯
 scoreboard players reset @s unstable_rift.player.land

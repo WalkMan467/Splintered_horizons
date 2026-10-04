@@ -13,7 +13,7 @@
 #
 # 寫法跟 players:void_protection/rollback/use.guide 一樣，
 # 只是多一個 in $(dim) —— positioned 只換座標不換維度，
-# 裂隙是跨維度的，少了它人會留在裂隙那個維度裡。
+# 裂隙是跨維度的，少了它人會留在裂隙那個維度裡
 
 $execute \
     in $(dim) positioned $(x) $(y) $(z) run \

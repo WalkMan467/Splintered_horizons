@@ -11,8 +11,8 @@
 #   命中怪物 -> arrows/detect 依 advancement 派送（@s = 玩家、位置 = 被害者）
 #   命中方塊 -> arrows/ground_detect/run 的 $(id) 派送（@s = 箭矢、位置 = 箭矢）
 #
-# 共鳴本體整套都在 CSE，這裡只負責附加。
-# 同一 tick 內附加的目標會被 CSE 綁成同一組。
+# 共鳴本體整套都在 CSE，這裡只負責附加
+# 同一 tick 內附加的目標會被 CSE 綁成同一組
 
 playsound minecraft:block.amethyst_block.resonate voice @a ~ ~1 ~ 1 0.75
 playsound minecraft:block.amethyst_block.chime voice @a ~ ~1 ~ 1 1.25

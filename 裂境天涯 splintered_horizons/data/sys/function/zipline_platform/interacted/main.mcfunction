@@ -1,7 +1,7 @@
 # 補上缺少的塔 id
 #
-# 鄰接表是拿 id 當鍵的，沒有 id 的塔會讓所有比對同時成立。
-# 舊版本放下去的塔就是這種狀況，所以這裡持續補號。
+# 鄰接表是拿 id 當鍵的，沒有 id 的塔會讓所有比對同時成立
+# 舊版本放下去的塔就是這種狀況，所以這裡持續補號
 execute \
     at @a \
     as @e[tag=sys.zipline_platform.act,distance=..60,type=interaction] \
@@ -36,7 +36,7 @@ scoreboard players set @s player.actionbar.zipline_platform 2
 # 待接續的玩家（上一 tick 抵達終點時按著 Ctrl）
 #
 # 隔一 tick 才發，是為了斷開 point/clear/use → interacted/player →
-# point/use → ... → point/clear/use 這條同 tick 遞迴。
+# point/use → ... → point/clear/use 這條同 tick 遞迴
 
 execute \
     as @a[tag=sys.zipline_platform.chain.pending] at @s run \

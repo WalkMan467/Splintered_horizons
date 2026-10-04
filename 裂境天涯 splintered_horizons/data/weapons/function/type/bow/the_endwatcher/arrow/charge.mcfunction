@@ -8,12 +8,12 @@
 
 # 執行者 : 被射中的敵人
 #
-# 共鳴值 +8 ~ 15%，並把這一下造成的傷害存起來。
+# 共鳴值 +8 ~ 15%，並把這一下造成的傷害存起來
 #
 # 傷害怎麼算 : sys:dmg_show 每 tick 會把實體血量記進 sys.dmg_show.hpmax，
 # 它下一 tick 才會更新，所以現在的 hpmax 還是「被射中之前」的血量，
-# 拿它減掉現在的血量就是這一下的傷害。單位跟 dmg_show 一樣是 x1000。
-# 沒有被 dmg_show 記錄過的實體算出來會是負的，那種情況就當 0，不存。
+# 拿它減掉現在的血量就是這一下的傷害單位跟 dmg_show 一樣是 x1000
+# 沒有被 dmg_show 記錄過的實體算出來會是負的，那種情況就當 0，不存
 
 execute \
     store result score #hp weapon.the_endwatcher.stored run \

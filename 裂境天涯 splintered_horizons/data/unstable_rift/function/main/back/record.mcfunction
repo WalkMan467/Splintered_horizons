@@ -14,15 +14,15 @@
 
 # 做法照 players:void_protection/rollback/update.guide 那套：
 # 讀玩家 NBT 很貴，改成在腳下召喚一個固定 UUID 的 marker，
-# 讀 marker 的 Pos 再把它殺掉。
+# 讀 marker 的 Pos 再把它殺掉
 #
-# UUID 跟虛空保護那支（0360377c-...）不同，不會互相搶。
+# UUID 跟虛空保護那支（0360377c-...）不同，不會互相搶
 
 # 7a1f3d20-9c44-4e6b-8f15-2d6e0b7c9a83
 summon marker ~ ~ ~ {UUID:[I;2048867616,-1673245077,-1894437522,192715395]}
 
-# 座標乘 100 存成整數，小數點後兩位足夠回到原地。
-# 記分板只能放整數，不乘就會掉小數、玩家會被塞進方塊裡。
+# 座標乘 100 存成整數，小數點後兩位足夠回到原地
+# 記分板只能放整數，不乘就會掉小數、玩家會被塞進方塊裡
 
 execute \
     store result score @s unstable_rift.player.pos.x run \
@@ -37,7 +37,7 @@ execute \
 data get entity 7a1f3d20-9c44-4e6b-8f15-2d6e0b7c9a83 Pos[2] 100
 
 # 維度也要記 —— positioned 只換座標不換維度，
-# 回程少了它人會留在裂隙那個維度裡。
+# 回程少了它人會留在裂隙那個維度裡
 
 # 0 = minecraft:overworld（預設，下面沒命中就是它）
 scoreboard players set @s unstable_rift.player.pos.dim 0

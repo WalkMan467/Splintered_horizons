@@ -7,10 +7,10 @@
 
 # ===================================================
 
-# main/loop 是 as @a at @s 跑的，每個玩家都會跑一遍。
-# BOSS 這種一 tick 只該處理一次的東西放這裡，不然多人時會跑幾遍。
+# main/loop 是 as @a at @s 跑的，每個玩家都會跑一遍
+# BOSS 這種一 tick 只該處理一次的東西放這裡，不然多人時會跑幾遍
 #
 # 由 main:tick 呼叫，排在 monsters:guide 後面 —— monsters:main 每 tick 會用
-# cast.at 重算 monster.skill.cast.cd，main.boss 要讀到的是這一 tick 的新值。
+# cast.at 重算 monster.skill.cast.cd，main.boss 要讀到的是這一 tick 的新值
 
 function unstable_rift:chapter_1/tick

@@ -9,7 +9,7 @@
 
 # 執行者 : 玩家
 #
-# 釋放 5 次之後退出開眼。剩下沒放完的累積傷害會留著，可以繼續往上疊。
+# 釋放 5 次之後退出開眼剩下沒放完的累積傷害會留著，可以繼續往上疊
 
 scoreboard players set @s weapon.the_endwatcher.awaken 0
 

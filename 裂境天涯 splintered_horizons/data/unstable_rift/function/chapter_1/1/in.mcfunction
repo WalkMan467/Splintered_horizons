@@ -6,9 +6,9 @@
     ## Guide [ function unstable_rift:main/in ] >>> 進入裂隙 / enter the rift
 
 # ===================================================
-# 由 advancement unstable_rift:chapter_1/1/in 的 rewards 觸發。
+# 由 advancement unstable_rift:chapter_1/1/in 的 rewards 觸發
 #
 # 進度的 rewards 不能帶參數，所以這層薄包裝省不掉；
-# 實際的流程全部在 tp 裡，手動下指令走的是同一條路。
+# 實際的流程全部在 tp 裡，手動下指令走的是同一條路
 
 function unstable_rift:chapter_1/1/tp

@@ -1,8 +1,8 @@
 # 執行者 : 上一 tick 抵達終點、按著 Ctrl 的玩家，執行位置在玩家身上
 #
-# 從抵達的這座塔再發一次滑索，方向照玩家當下的視線。
+# 從抵達的這座塔再發一次滑索，方向照玩家當下的視線
 # interacted/player 找不到有連線的目標時把 #hit 留在 0，這裡就補跑一次
-# 正常的脫離收尾，效果跟沒按 Ctrl 一樣。
+# 正常的脫離收尾，效果跟沒按 Ctrl 一樣
 
 tag @s remove sys.zipline_platform.chain.pending
 

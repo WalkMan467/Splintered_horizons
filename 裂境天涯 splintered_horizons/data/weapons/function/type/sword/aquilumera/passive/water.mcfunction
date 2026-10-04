@@ -10,8 +10,8 @@
 # 執行者 : 攻擊的玩家
 #
 # 減的是「現在手上那把武器」的冷卻 : 從主手物品的 custom_data 讀 weapon 名稱，
-# 對應整包統一的 weapon.<武器>.cd。
-# 手上是空的、不是武器、或那把武器沒有冷卻時，macro 那支會直接失敗，什麼都不會發生。
+# 對應整包統一的 weapon.<武器>.cd
+# 手上是空的、不是武器、或那把武器沒有冷卻時，macro 那支會直接失敗，什麼都不會發生
 
 scoreboard players set #cd_ok weapon.aquilumera.reflection.form 0
 

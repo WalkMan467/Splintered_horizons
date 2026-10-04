@@ -47,6 +47,10 @@ effect clear @s resistance
 effect clear @s fire_resistance
 effect clear @s regeneration
 
+# 原版重生會把效果清光，管理員設置裡開著的就補回來
+
+function players:setting/night_vision/restore
+
 function music:stop
 tag @s remove player.death
 function sys:respawnpoint/tp/store

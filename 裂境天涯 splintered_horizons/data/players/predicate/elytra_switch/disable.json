@@ -26,6 +26,15 @@
           "min": 1
         }
       }
+    },
+    {
+      "type": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
+        "player.setting.elytra_switch": {
+          "max": 0
+        }
+      }
     }
   ]
 }

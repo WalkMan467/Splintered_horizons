@@ -11,10 +11,10 @@
 # 終末之光
 #
 # 執行者 : 正在拉弓的玩家
-# 由 weapons:rc/1 的 using_item 進度每 tick 呼叫一次（跟射手座同一套）。
+# 由 weapons:rc/1 的 using_item 進度每 tick 呼叫一次（跟射手座同一套）
 #
-# 第一段 20t 拉滿；第二段再 10t，開眼期間再縮短 50% 變成 5t。
-# 沒有終焉閃電、也不在開眼中的話，第二段不會解鎖。
+# 第一段 20t 拉滿；第二段再 10t，開眼期間再縮短 50% 變成 5t
+# 沒有終焉閃電、也不在開眼中的話，第二段不會解鎖
 
 scoreboard players set @s weapon.the_endwatcher.use 1
 tag @s add the_endwatcher.user
@@ -46,8 +46,8 @@ execute \
     if score @s weapon.the_endwatcher.hold_down = #need weapon.the_endwatcher.hold_down run \
 function weapons:type/bow/the_endwatcher/rc/stage2
 
-# 已經在第二段的話，每 tick 把「等著標記箭矢」的旗標壓回 5。
-# 放開弓之後這個旗標還會再撐 5 tick，剛生出來的箭就是在那幾 tick 內被標到的。
+# 已經在第二段的話，每 tick 把「等著標記箭矢」的旗標壓回 5
+# 放開弓之後這個旗標還會再撐 5 tick，剛生出來的箭就是在那幾 tick 內被標到的
 
 execute \
     if score @s weapon.the_endwatcher.stage matches 2 run \

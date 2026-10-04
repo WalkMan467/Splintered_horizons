@@ -157,6 +157,11 @@
         if score story.other.chapter_2.2 story.other matches 1..13 run \
     function story:other/chapter_2/2/1
 
+    execute \
+        as 3513215b-5a44-4aac-bce6-19f02d856816 at @s \
+        if data entity @s interaction.timestamp \
+        if score story.other.chapter_1.1 story.other matches 1..15 run \
+    function story:other/chapter_1/1/1
 
 # Safe Area
 

@@ -59,8 +59,8 @@ execute \
 scoreboard players operation @s player.ultimate = #gametime global.main
 
 
-# 沒有值的玩家初始化成「現在就緒」。絕對時間制下負數沒有意義，
-# 不需要再夾成 0。
+# 沒有值的玩家初始化成「現在就緒」絕對時間制下負數沒有意義，
+# 不需要再夾成 0
 execute \
     unless score @s player.ultimate matches -2147483648..2147483647 run \
 scoreboard players operation @s player.ultimate = #gametime global.main

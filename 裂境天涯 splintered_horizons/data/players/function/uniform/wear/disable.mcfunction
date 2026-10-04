@@ -1,6 +1,6 @@
 # 執行者 : 玩家
-# 禁用背包制服 (elekiel phase 2 技能 4)。內容固定、可重複生成，不需要被存進任何 bag。
-# 由 players:uniform/refresh 呼叫；技能中途重發也直接叫這支。
+# 禁用背包制服 (elekiel phase 2 技能 4)內容固定、可重複生成，不需要被存進任何 bag
+# 由 players:uniform/refresh 呼叫；技能中途重發也直接叫這支
 # (原本內嵌在 disable_inventory/true 與 reset，兩份合而為一)
 
 # 游標上的東西 clear 掃不到，要另外處理

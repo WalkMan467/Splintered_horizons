@@ -36,8 +36,8 @@ scoreboard players set #passive energy_infusion_stone.finality_cycle.cd 100
 
 scoreboard players operation @s player.ultimate -= #passive energy_infusion_stone.finality_cycle.cd
 
-# 絕對時間制下「減 CD」就是把截止時間往前拉，-= 本身不用改。
-# 但不能拉到比現在還早，不然就變成永遠就緒且欄位離現在越來越遠。
+# 絕對時間制下「減 CD」就是把截止時間往前拉，-= 本身不用改
+# 但不能拉到比現在還早，不然就變成永遠就緒且欄位離現在越來越遠
 execute \
     if score @s player.ultimate < #gametime global.main run \
 scoreboard players operation @s player.ultimate = #gametime global.main

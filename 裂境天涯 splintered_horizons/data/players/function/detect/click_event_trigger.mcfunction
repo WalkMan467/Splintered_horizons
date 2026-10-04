@@ -115,5 +115,25 @@ execute \
     if score @s player.detect.click_event.trigger matches 27 run \
 function players:tp_to_safe_area/use
 
+execute \
+    if score @s player.detect.click_event.trigger matches 28 run \
+function players:setting/reset_player_states/trigger
+
+execute \
+    if score @s player.detect.click_event.trigger matches 29 run \
+function unstable_rift:chapter_1/1/weapon_select/confirm
+
+execute \
+    if score @s player.detect.click_event.trigger matches 30 run \
+function unstable_rift:chapter_1/1/weapon_select/guide
+
+execute \
+    if score @s player.detect.click_event.trigger matches 31 run \
+function sys:forging_table/act/crafting/page/prev
+
+execute \
+    if score @s player.detect.click_event.trigger matches 32 run \
+function sys:forging_table/act/crafting/page/next
+
 scoreboard players set @s player.detect.click_event.trigger 0
 scoreboard players enable @s player.detect.click_event.trigger

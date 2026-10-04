@@ -8,7 +8,7 @@
 
 # 執行者 : 射箭的玩家
 #
-# 共鳴值在 arrow/resonance 那邊加，這裡只負責把這一下的傷害存起來。
+# 共鳴值在 arrow/resonance 那邊加，這裡只負責把這一下的傷害存起來
 # 上限 = 攻擊力 x 50（單位 x1000，跟 sys:dmg_show 一致）
 
 scoreboard players operation @s weapon.the_endwatcher.stored += #dmg weapon.the_endwatcher.stored

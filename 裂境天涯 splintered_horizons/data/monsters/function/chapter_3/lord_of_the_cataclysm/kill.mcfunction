@@ -30,11 +30,11 @@ setblock 1101 207 148 light[level=15]
 effect clear @a[distance=..60] night_vision
 
 loot replace block 1101 206 148 container.13 loot item:get/recipe/earthquake_axe
-item replace block 1101 206 148 container.3 with item:get/material/finality_ingot
-item replace block 1101 206 148 container.4 with item:get/material/finality_ingot
-item replace block 1101 206 148 container.5 with item:get/material/finality_ingot
-item replace block 1101 206 148 container.12 with item:get/material/finality_ingot
-item replace block 1101 206 148 container.14 with item:get/material/finality_ingot
-item replace block 1101 206 148 container.21 with item:get/material/finality_ingot
-item replace block 1101 206 148 container.22 with item:get/material/finality_ingot
-item replace block 1101 206 148 container.23 with item:get/material/finality_ingot
+loot replace block 1101 206 148 container.3 loot item:get/material/finality_ingot
+loot replace block 1101 206 148 container.4 loot item:get/material/finality_ingot
+loot replace block 1101 206 148 container.5 loot item:get/material/finality_ingot
+loot replace block 1101 206 148 container.12 loot item:get/material/finality_ingot
+loot replace block 1101 206 148 container.14 loot item:get/material/finality_ingot
+loot replace block 1101 206 148 container.21 loot item:get/material/finality_ingot
+loot replace block 1101 206 148 container.22 loot item:get/material/finality_ingot
+loot replace block 1101 206 148 container.23 loot item:get/material/finality_ingot

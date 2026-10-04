@@ -2,7 +2,7 @@
 # Timer
 #
 # 舊包是在 global:tick 對所有 tag=Duration 的實體 +1，這包沒有那套，
-# 而且共用的 duration 是倒數制，借用會被提前殺掉。所以自己在這裡加。
+# 而且共用的 duration 是倒數制，借用會被提前殺掉所以自己在這裡加
 
 scoreboard players add @e[tag=stormpm.timer] unstable_rift.stormpromax.duration 1
 

@@ -16,6 +16,7 @@ scoreboard players remove @a[scores={player.actionbar.disabled_anvil=1..}] playe
 scoreboard players remove @a[scores={player.actionbar.beginner_tutorial.failure=1..}] player.actionbar.beginner_tutorial.failure 1
 scoreboard players remove @a[scores={player.actionbar.npc_interaction.tips=1..}] player.actionbar.npc_interaction.tips 1
 scoreboard players remove @a[scores={player.actionbar.weapon.spider=1..}] player.actionbar.weapon.spider 1
+scoreboard players remove @a[scores={player.actionbar.weapon.pyrosolis=1..}] player.actionbar.weapon.pyrosolis 1
 scoreboard players remove @a[scores={player.give.item.delay=1..}] player.give.item.delay 1
 scoreboard players remove @a[scores={player.detect.sneak.delay=1..}] player.detect.sneak.delay 1
 scoreboard players remove @a[scores={player.actionbar.zipline_platform=1..}] player.actionbar.zipline_platform 1

@@ -41,7 +41,7 @@ tellraw @s [{"translate":"weapon.ruins_of_the_finality.skill","color":"dark_gree
 
 # 重置 CD / Reset CD
 # 走到這裡代表 CD 已經轉好（不然上面就 return 了），
-# 所以不需要再判斷一次。
+# 所以不需要再判斷一次
 
 function weapons:rc/cd {id:"player.ultimate", cd:3}
 

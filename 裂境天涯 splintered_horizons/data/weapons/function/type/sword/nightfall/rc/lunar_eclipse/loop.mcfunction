@@ -10,8 +10,8 @@
 # 執行者 : 玩家 ; 座標 : 玩家
 #
 # 每圈只處理最近的一隻：把它換成 dmger、讀走層數、清掉層數，
-# 再拿「層數 x 150%」當作攻擊力百分比丟給傷害公式。
-# calculate 最後會把 dmger 標籤清掉，所以下一圈不會複打。
+# 再拿「層數 x 150%」當作攻擊力百分比丟給傷害公式
+# calculate 最後會把 dmger 標籤清掉，所以下一圈不會複打
 
 execute \
     unless entity @n[tag=nightfall.eclipse,distance=..4,type=!player] run \

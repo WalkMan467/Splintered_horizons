@@ -77,6 +77,17 @@
     },
     {
       "label": {
+        "translate": "dialog.main.quick_actions.elytra_switch",
+        "fallback": "Flight",
+        "color": "white"
+      },
+      "action": {
+        "type": "run_command",
+        "command": "trigger player.setting.elytra_switch.trigger"
+      }
+    },
+    {
+      "label": {
         "translate": "dialog.main.quick_actions.reset_default_setup",
         "fallback": "Reset Default Setup",
         "color": "yellow"

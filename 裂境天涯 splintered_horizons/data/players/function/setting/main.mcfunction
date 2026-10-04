@@ -18,5 +18,7 @@ function players:setting/keep_container_items/0
 function players:setting/keep_container_items/1
 function players:setting/waterfall_effect/0
 function players:setting/waterfall_effect/1
+function players:setting/elytra_switch/0
+function players:setting/elytra_switch/1
 
 function players:setting/recover_lost_objective_items/trigger

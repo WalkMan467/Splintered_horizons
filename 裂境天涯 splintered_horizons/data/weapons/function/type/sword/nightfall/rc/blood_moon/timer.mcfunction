@@ -10,9 +10,9 @@
 
 # 執行者 : 玩家
 #
-# 血月只持續 5 秒，時間到自動換回半月，收進背包一樣會換。
+# 血月只持續 5 秒，時間到自動換回半月，收進背包一樣會換
 # 拿在手上的走 rc/state/0（有 title 跟音效），
-# 不在手上的交給 scan 靜靜換掉，不然畫面會莫名其妙閃 title。
+# 不在手上的交給 scan 靜靜換掉，不然畫面會莫名其妙閃 title
 
 scoreboard players remove @s weapon.nightfall.blood_moon 1
 

@@ -4,10 +4,10 @@
 # 但掉落物一定生在原本那格的方塊範圍內：
 #   Block.popResource   -> x,z = 格心 ±0.25，y = 格心 -0.375~+0.125
 #   Containers.dropContents -> x,y,z 都落在 0.0~0.875
-# 兩者都沒有超出那一格，所以對掉落物 align xyz 就是被打掉的方塊座標。
+# 兩者都沒有超出那一格，所以對掉落物 align xyz 就是被打掉的方塊座標
 #
-# Age 0 先找，找不到再找 Age 1（函式跟實體 tick 的先後不保證）。
-# 用 positioned as 而不是 as，執行者維持是玩家。
+# Age 0 先找，找不到再找 Age 1（函式跟實體 tick 的先後不保證）
+# 用 positioned as 而不是 as，執行者維持是玩家
 
 execute \
     if entity @n[distance=..8,nbt={Age:0s},type=item] \

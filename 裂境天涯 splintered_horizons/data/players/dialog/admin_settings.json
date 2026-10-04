@@ -35,6 +35,21 @@
     {
       "label": [
         {
+          "translate": "dialog.main.player.reset_state",
+          "fallback": "Reset Player States",
+          "color": "yellow"
+        },
+        " "
+      ],
+      "width": 180,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger player.detect.click_event.trigger set 28"
+      }
+    },
+    {
+      "label": [
+        {
           "translate": "dialog.main.enabled",
           "fallback": "Enabled ",
           "color": "yellow"

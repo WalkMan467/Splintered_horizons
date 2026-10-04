@@ -38,12 +38,6 @@ advancement grant @s only weapons:icon/icon
         advancement grant @s only weapons:icon/new_world/chapter_2
 
             advancement revoke @s only weapons:icon/sword/echo_rhythm
-            advancement revoke @s only weapons:icon/arrow/resplendence_arrow
-            advancement revoke @s only weapons:icon/arrow/shadow_arrow
-            advancement revoke @s only weapons:icon/arrow/chaotic_thunder_arrow
-            advancement revoke @s only weapons:icon/arrow/crimson_claw_arrow
-            advancement revoke @s only weapons:icon/arrow/holy_fire_arrow
-            advancement revoke @s only weapons:icon/arrow/starry_sky_frost_arrow
             advancement revoke @s only weapons:icon/pickaxe/soul_tree_pickaxe
             advancement revoke @s only weapons:icon/scythe/morphing_beast
 

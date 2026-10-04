@@ -1,0 +1,159 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:arrow",
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "translate": "weapon.sunfire_of_entropy_erosion_arrow",
+                  "color": "#ff3c00",
+                  "bold": true
+                },
+                "minecraft:lore": [
+                  [
+                    {
+                      "translate": "weapon.sunfire_of_entropy_erosion_arrow.type",
+                      "color": "dark_gray",
+                      "italic": false
+                    }
+                  ],
+                  {
+                    "text": ""
+                  },
+                  [
+                    {
+                      "translate": "weapon.sunfire_of_entropy_erosion_arrow.story.1",
+                      "color": "blue",
+                      "italic": false
+                    }
+                  ],
+                  [
+                    {
+                      "translate": "weapon.sunfire_of_entropy_erosion_arrow.story.2",
+                      "color": "blue",
+                      "italic": false
+                    }
+                  ],
+                  [
+                    {
+                      "translate": "weapon.sunfire_of_entropy_erosion_arrow.story.3",
+                      "color": "blue",
+                      "italic": false
+                    }
+                  ],
+                  [
+                    {
+                      "translate": "weapon.sunfire_of_entropy_erosion_arrow.story.4",
+                      "color": "blue",
+                      "italic": false
+                    }
+                  ],
+                  [
+                    {
+                      "translate": "weapon.sunfire_of_entropy_erosion_arrow.story.5",
+                      "color": "blue",
+                      "italic": false
+                    }
+                  ],
+                  {
+                    "text": ""
+                  },
+                  [
+                    {
+                      "text": "",
+                      "italic": false
+                    },
+                    {
+                      "translate": "weapon.sunfire_of_entropy_erosion_arrow.passive_skills",
+                      "color": "#ff0000",
+                      "bold": true
+                    },
+                    {
+                      "text": "  "
+                    }
+                  ],
+                  [
+                    {
+                      "text": "",
+                      "italic": false
+                    },
+                    {
+                      "translate": "weapon.sunfire_of_entropy_erosion_arrow.passive_skills.1",
+                      "color": "#ff5100",
+                      "italic": false
+                    }
+                  ],
+                  [
+                    {
+                      "text": "",
+                      "italic": false
+                    },
+                    {
+                      "translate": "weapon.sunfire_of_entropy_erosion_arrow.passive_skills.2",
+                      "color": "#ff5100",
+                      "italic": false,
+                      "with": [
+                        {
+                          "translate": "cse.status_effects.entropy_erosion",
+                          "underlined": true,
+                          "color": "#ff5100"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "",
+                      "italic": false
+                    },
+                    {
+                      "translate": "weapon.sunfire_of_entropy_erosion_arrow.passive_skills.3",
+                      "color": "#ff5100",
+                      "italic": false
+                    }
+                  ],
+                  {
+                    "text": ""
+                  }
+                ],
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "attack_damage",
+                    "id": "base_attack_damage",
+                    "amount": 4,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "type": "attack_speed",
+                    "id": "base_attack_speed",
+                    "amount": -2.4,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  }
+                ],
+                "minecraft:max_stack_size": 64,
+                "minecraft:unbreakable": {},
+                "minecraft:item_model": "arrow/sunfire_of_entropy_erosion_arrow",
+                "minecraft:custom_data": "{type:\"arrow\",rarity:\"legendary\",id:\"sunfire_of_entropy_erosion_arrow\"}",
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "unbreakable",
+                    "attribute_modifiers"
+                  ]
+                },
+                "minecraft:tooltip_style": "legendary"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

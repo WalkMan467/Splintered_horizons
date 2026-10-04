@@ -14,5 +14,5 @@ particle minecraft:ominous_spawning ^ ^ ^1 ^ ^ ^1000000 0.0000025 0 force
 
 
 execute rotated ~3 0 \
-    if score #weapon.starry_sky_frost_arrow.range global.main matches ..360 run \
+    if score #weapon.sagittarius_arrow.range global.main matches ..360 run \
 function weapons:type/arrows/sagittarius_arrow/range

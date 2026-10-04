@@ -10,8 +10,8 @@
 # 終焉迴光
 #
 # 執行者 : 玩家
-# 消耗 1 顆終焉之眼（player.ultimate 絕對時間制，CD 50 秒），共鳴值歸零，進入開眼。
-# 累積傷害不歸零，開眼期間就是靠它一次次釋放。
+# 消耗 1 顆終焉之眼（player.ultimate 絕對時間制，CD 50 秒），共鳴值歸零，進入開眼
+# 累積傷害不歸零，開眼期間就是靠它一次次釋放
 
 function weapons:rc/cd {id:"player.ultimate", cd:1000}
 

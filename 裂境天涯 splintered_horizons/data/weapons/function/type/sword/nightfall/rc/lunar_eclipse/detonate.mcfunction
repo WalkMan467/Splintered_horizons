@@ -9,8 +9,8 @@
 
 # 執行者 : 玩家 ; 座標 : 玩家
 #
-# 先把 4 格內、身上有月蝕層數的敵人標起來，再交給 loop 一隻一隻算。
-# 因為每隻層數不同，傷害不能一次套給全部。
+# 先把 4 格內、身上有月蝕層數的敵人標起來，再交給 loop 一隻一隻算
+# 因為每隻層數不同，傷害不能一次套給全部
 
 execute \
     as @e[sort=arbitrary,distance=..4,scores={weapon.nightfall.lunar_eclipse=1..},type=!player,type=!#minecraft:dummy_mob] run \

@@ -7,6 +7,7 @@
     ## Guide [ function weapons:type/scythe/flame_of_finality/lc/main ] >>> 鐮 終焉雙重火 左鍵 主迴圈 / scythe flame of finality left click loop
     ## Guide [ function weapons:type/sword/rock_crushing_greatsword/rc/main ] >>> 碎岩大劍 右鍵 主迴圈 / sword rock crushing greatsword right click loop
     ## Guide [ function weapons:type/drop/zeuss_lightning/rc/main ] >>> 投擲 宙斯閃電 右鍵 主迴圈 / thrown zeuss lightning right click loop
+    ## Guide [ function weapons:type/sword/pyrosolis/main ] >>> 地獄之火 主迴圈 / pyrosolis loop
 
 # ===================================================
 
@@ -78,6 +79,10 @@ execute \
     as @s[tag=water_sword.l_user] at @s \
     if score @s weapon.aquilumera_passive matches 0.. run \
 function weapons:type/sword/aquilumera/switch/light/dmg
+
+# pyrosolis
+
+function weapons:type/sword/pyrosolis/main
 
 execute \
     unless score @s weapon.aquilumera_passive matches 1.. run \

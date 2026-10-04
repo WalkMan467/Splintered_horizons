@@ -1,0 +1,74 @@
+{
+  "description": {
+    "translate": "item.energy_infusion_stone.gluttony",
+    "fallback": "Gluttony",
+    "color": "#c47a00"
+  },
+  "exclusive_set": "#item:energy_infusion_stone",
+  "supported_items": "minecraft:air",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "armor"
+  ],
+  "effects": {
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "energy_infusion_stone:skills/armor/gluttony/main"
+        }
+      }
+    ],
+    "minecraft:post_attack": [
+      {
+        "requirements": {
+          "type": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "player.eis.gluttony.active": 1
+          }
+        },
+        "effect": {
+          "type": "minecraft:all_of",
+          "effects": [
+            {
+              "type": "minecraft:apply_exhaustion",
+              "amount": 20
+            },
+            {
+              "type": "minecraft:run_function",
+              "function": "energy_infusion_stone:skills/armor/gluttony/use"
+            }
+          ]
+        },
+        "enchanted": "victim",
+        "affected": "victim"
+      }
+    ],
+    "minecraft:damage_protection": [
+      {
+        "requirements": {
+          "type": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "player.eis.gluttony.active": 1
+          }
+        },
+        "effect": {
+          "type": "minecraft:add",
+          "value": 20
+        }
+      }
+    ]
+  }
+}

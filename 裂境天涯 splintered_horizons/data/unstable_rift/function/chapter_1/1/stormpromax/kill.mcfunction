@@ -10,11 +10,11 @@
 # 執行者 : 剛死掉的亞斯（由 monsters:detect_kill/run 以巨集呼叫）
 #
 # 沒有做掉落 —— 舊版的 DeathLootTable 指向 monsters:boss/ancient_lorras/stormpromax，
-# 那個 loot table 在這個資料包不存在。要加掉落就在這裡補。
+# 那個 loot table 在這個資料包不存在要加掉落就在這裡補
 
 bossbar remove minecraft:stormpromax
 
-# 召喚物收乾淨。不清的話技能 2 的海晶燈、技能 3 的高塔史萊姆會永遠留在場上。
+# 召喚物收乾淨不清的話技能 2 的海晶燈、技能 3 的高塔史萊姆會永遠留在場上
 
 execute \
     as @e[tag=stormpm.3.4,type=slime] at @s run \

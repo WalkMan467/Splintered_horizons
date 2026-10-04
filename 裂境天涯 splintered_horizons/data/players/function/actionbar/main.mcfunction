@@ -87,6 +87,12 @@ function players:actionbar/spider
 
 execute \
     as @s[gamemode=!spectator] \
+    if score @s player.actionbar.weapon.pyrosolis matches 1.. run \
+    return run \
+function players:actionbar/pyrosolis
+
+execute \
+    as @s[gamemode=!spectator] \
     if score @s player.actionbar.armor.wtsf matches 1.. run \
     return run \
 function players:actionbar/wtsf

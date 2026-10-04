@@ -14,6 +14,9 @@ scoreboard objectives add sys.campfire.tips dummy
 scoreboard objectives add sys.campfire.tips.temp dummy
 
 scoreboard objectives add sys.forging_table.recipes dummy
+scoreboard objectives add sys.forging_table.page dummy "鍛造台 配方清單 頁碼"
+scoreboard objectives add sys.forging_table.page.max dummy "鍛造台 配方清單 總頁數"
+scoreboard objectives add sys.forging_table.index dummy "鍛造台 配方清單 計數暫存"
 scoreboard objectives add sys.mini_game.hit_the_bullseye.bullseye.id dummy
 scoreboard objectives add sys.mini_game.hit_the_bullseye.main.id dummy
 scoreboard objectives add sys.attack_speed dummy

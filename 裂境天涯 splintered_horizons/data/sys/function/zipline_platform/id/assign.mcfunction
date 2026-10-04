@@ -1,11 +1,11 @@
 # 執行者 : 一座還沒有 id 的滑索台 interaction
 #
-# 鄰接表是拿 id 當鍵的，所以每座塔一定要有一個唯一的號碼。
+# 鄰接表是拿 id 當鍵的，所以每座塔一定要有一個唯一的號碼
 # 舊版本放下去的塔（或是 setup 沒跑到的）id 是未設定，那樣所有比對都會
-# 同時成立，選目標就會變成亂數。這支就是補號用的。
+# 同時成立，選目標就會變成亂數這支就是補號用的
 
-# 先讓 #index 追上場上最大的 id，避免補出來的號碼跟既有的撞號。
-# @s 自己沒有 id，if score 對未設定的分數不成立，所以不會把自己算進去。
+# 先讓 #index 追上場上最大的 id，避免補出來的號碼跟既有的撞號
+# @s 自己沒有 id，if score 對未設定的分數不成立，所以不會把自己算進去
 execute \
     as @e[tag=sys.zipline_platform.act,type=interaction] \
     if score @s sys.zipline_platform.id > #index sys.zipline_platform.id run \

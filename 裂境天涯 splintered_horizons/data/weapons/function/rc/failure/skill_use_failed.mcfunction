@@ -31,7 +31,7 @@ scoreboard players set %temp weapon.cd.math 0
 scoreboard players add %temp weapon.cd.math 1
 
 # 注：nbt 文字元件渲染字串標籤時會連 SNBT 的引號一起印出來，
-#     所以改用 score 元件：整數位、"."、小數位三段拼。
+#     所以改用 score 元件：整數位、"."、小數位三段拼
 scoreboard players operation %temp weapon.cd.math /= %2 weapon.cd.math
 
 scoreboard players operation %sec weapon.cd.math = %temp weapon.cd.math

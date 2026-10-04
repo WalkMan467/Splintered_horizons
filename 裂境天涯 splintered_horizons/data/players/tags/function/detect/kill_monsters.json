@@ -3,6 +3,7 @@
     {
       "id": "a:test",
       "required": false
-    }
+    },
+    "energy_infusion_stone:skills/armor/bloodthirsty_walker/kill"
   ]
 }

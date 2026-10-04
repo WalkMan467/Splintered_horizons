@@ -12,10 +12,10 @@
 
 # 執行者 : 玩家
 
-# 把記分板上的整數還原成小數，填進 storage 給 use.guide 的巨集用。
+# 把記分板上的整數還原成小數，填進 storage 給 use.guide 的巨集用
 #
 # 一定要用 float 不能用 int：int 會把 -18200 × 0.01 截成 -182，
-# 小數全丟，那前面乘 100 就白做了。
+# 小數全丟，那前面乘 100 就白做了
 
 execute \
     store result storage unstable_rift:main back.x float 0.01 run \
@@ -29,8 +29,8 @@ execute \
     store result storage unstable_rift:main back.z float 0.01 run \
 scoreboard players get @s unstable_rift.player.pos.z
 
-# 維度代碼換回名字。先寫預設再逐個覆蓋，這樣就算沒記到維度，
-# storage 裡也一定有 dim，巨集不會因為缺鍵整支失敗。
+# 維度代碼換回名字先寫預設再逐個覆蓋，這樣就算沒記到維度，
+# storage 裡也一定有 dim，巨集不會因為缺鍵整支失敗
 
 data modify storage unstable_rift:main back.dim set value "minecraft:overworld"
 

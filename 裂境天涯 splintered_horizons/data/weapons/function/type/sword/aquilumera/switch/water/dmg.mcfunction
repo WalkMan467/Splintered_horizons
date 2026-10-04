@@ -10,7 +10,7 @@
 
 # 執行者 : 玩家
 #
-# 150% 基礎傷害 + 1 層倒影，打 10 次。
+# 150% 基礎傷害 + 1 層倒影，打 10 次
 # dmg
 tag @e[type=!#dummy_mob,distance=..8,limit=1,sort=random,type=!player] add dmger
 

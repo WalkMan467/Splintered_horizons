@@ -10,9 +10,9 @@
 
 # 執行者 : 剛被擊殺、身上還有倒影的敵人 ; 座標 : 該敵人
 #
-# 全部層數交給 5 格內隨機一隻還活著的敵人，沿用原本剩下的時間。
-# 自己已經在播死亡動畫，DeathTime 不是 0，所以 nbt 條件會把自己排除掉。
-# 5 格內沒有別的敵人的話，倒影就跟著消失。
+# 全部層數交給 5 格內隨機一隻還活著的敵人，沿用原本剩下的時間
+# 自己已經在播死亡動畫，DeathTime 不是 0，所以 nbt 條件會把自己排除掉
+# 5 格內沒有別的敵人的話，倒影就跟著消失
 
 scoreboard players operation #stacks weapon.aquilumera.reflection = @s weapon.aquilumera.reflection
 scoreboard players operation #expire weapon.aquilumera.reflection.expire = @s weapon.aquilumera.reflection.expire

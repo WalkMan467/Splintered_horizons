@@ -29,6 +29,7 @@ scoreboard players add @a player.finality_tunder 0
 # actionbar
 scoreboard objectives add player.actionbar.weapon.nightfall dummy "[玩家] actionbar 狀態機 夜幕技能顯示"
 scoreboard objectives add player.actionbar.weapon.spider dummy "[玩家] actionbar 狀態機 蜘蛛技能顯示"
+scoreboard objectives add player.actionbar.weapon.pyrosolis dummy "[玩家] actionbar 狀態機 地獄之火 末日層數"
 scoreboard objectives add player.actionbar.weapon.earthquake_axe dummy "[玩家] actionbar 狀態機 地震之斧"
 scoreboard objectives add player.actionbar.weapon.the_endwatcher dummy "[玩家] actionbar 狀態機 終焉凝視者 共鳴值"
 scoreboard objectives add player.actionbar.weapon.earthquake_axe dummy "[玩家] actionbar 狀態機 地震之斧"
@@ -205,6 +206,16 @@ scoreboard objectives add player.setting.keep_container_items dummy "[玩家] �
 scoreboard objectives add player.setting.keep_container_items.trigger trigger "[玩家] 容器不掉落內容物 trigger"
 
 scoreboard players enable @a player.setting.keep_container_items.trigger
+
+scoreboard objectives add player.setting.elytra_switch dummy "[玩家] 飛行功能"
+scoreboard objectives add player.setting.elytra_switch.trigger trigger "[玩家] 飛行功能 trigger"
+
+scoreboard players enable @a player.setting.elytra_switch.trigger
+
+execute \
+    as @a \
+    unless score @s player.setting.elytra_switch matches -2147483648..2147483647 run \
+function players:setting/elytra_switch/default
 
 # 原生挖掘統計：玩家打掉該方塊當下就會 +1，不需要任何掃描
 scoreboard objectives add sys.mined.chest minecraft.mined:minecraft.chest "[系統] 挖掘 箱子"

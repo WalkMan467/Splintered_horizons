@@ -12,11 +12,11 @@
 
 # 執行者 : 玩家
 
-# 沒有紀錄就直接收手。
+# 沒有紀錄就直接收手
 #
 # `scoreboard players get` 讀不到分數時會失敗，但 `store result` 照樣會把 0
-# 寫進 storage，巨集就會拿到 0 0 0 把玩家丟到世界原點。
-# 用 y 當代表是因為三個一定同時被寫入。
+# 寫進 storage，巨集就會拿到 0 0 0 把玩家丟到世界原點
+# 用 y 當代表是因為三個一定同時被寫入
 
 execute \
     unless score @s unstable_rift.player.pos.y matches -2147483648..2147483647 run \

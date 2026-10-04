@@ -9,8 +9,8 @@
 
 # 執行者 : 玩家
 #
-# use 這個分數每 tick 由 rc/use 設成 1，再由 weapons:timer_t 扣回去。
-# 放開弓的那一 tick 它會是 0，這裡就知道箭射出去了。
+# use 這個分數每 tick 由 rc/use 設成 1，再由 weapons:timer_t 扣回去
+# 放開弓的那一 tick 它會是 0，這裡就知道箭射出去了
 
 execute \
     if score @s weapon.the_endwatcher.use matches 1.. run \

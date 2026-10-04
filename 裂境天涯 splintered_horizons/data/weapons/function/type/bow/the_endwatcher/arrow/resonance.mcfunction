@@ -8,7 +8,7 @@
 
 # 執行者 : 射箭的玩家
 #
-# 第二段蓄力的箭命中怪物就加共鳴值，並把進度條顯示 2 秒。
+# 第二段蓄力的箭命中怪物就加共鳴值，並把進度條顯示 2 秒
 
 execute \
     store result score #add weapon.the_endwatcher.resonance run \

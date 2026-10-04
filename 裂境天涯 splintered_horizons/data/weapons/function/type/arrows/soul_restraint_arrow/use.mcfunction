@@ -7,8 +7,8 @@
 
 # ===================================================
 #
-# 由 arrows/detect 依 advancement 派送：@s = 射箭的玩家、執行位置 = 被射中的敵人。
-# 這支箭沒有 ground_detect，射到方塊不會有任何效果。
+# 由 arrows/detect 依 advancement 派送：@s = 射箭的玩家、執行位置 = 被射中的敵人
+# 這支箭沒有 ground_detect，射到方塊不會有任何效果
 
 playsound minecraft:item.trident.thunder voice @a ~ ~1 ~ 1 1.6
 playsound minecraft:block.respawn_anchor.deplete voice @a ~ ~1 ~ 1 0.8

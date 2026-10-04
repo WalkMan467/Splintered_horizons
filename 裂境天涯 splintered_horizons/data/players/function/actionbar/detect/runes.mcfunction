@@ -43,6 +43,10 @@ execute \
 return 0
 
 execute \
+    if score @s player.actionbar.weapon.pyrosolis matches 1.. run \
+return 0
+
+execute \
     if score @s player.actionbar.otherworld_portal.1 matches 1.. run \
 return 0
 

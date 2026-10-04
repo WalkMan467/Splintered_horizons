@@ -10,8 +10,8 @@
 # 執行者 : 剛被 summon 出來的 zombie
 #
 # 舊版的血量與攻擊力是丟 #hp / #atk global.main 再走 monsters:-init/use，
-# 那支函數在這個資料包不存在，所以直接寫進 attributes。
-# 屬性 ID 全部去掉 generic. 前綴（1.21.2 之後改名），裝備從 ArmorItems 改成 equipment。
+# 那支函數在這個資料包不存在，所以直接寫進 attributes
+# 屬性 ID 全部去掉 generic. 前綴（1.21.2 之後改名），裝備從 ArmorItems 改成 equipment
 
 function monsters:vehicle_remove
 
@@ -24,8 +24,8 @@ summon marker ~ ~ ~ {Tags:["monster.marker"],data:{Death:"unstable_rift:chapter_
 ride @n[type=marker,tag=monster.marker,distance=..1] mount @s
 
 # 舊版還掛了 normal.zombie.hurt.sound / weakness.wind / weakness.fire / monster.spawn，
-# 這四個在這個資料包沒有任何地方讀，所以沒有搬過來。
-# freeze.immunity 與 sys.silence.immunity 是照現在 BOSS 的慣例加的。
+# 這四個在這個資料包沒有任何地方讀，所以沒有搬過來
+# freeze.immunity 與 sys.silence.immunity 是照現在 BOSS 的慣例加的
 
 tag @s add stormpromax
 tag @s add boss
@@ -33,11 +33,11 @@ tag @s add monster
 tag @s add freeze.immunity
 tag @s add sys.silence.immunity
 
-# 技能冷卻走這包的絕對截止時間制：cast.at 存的是「可以放技能的那一 tick」。
+# 技能冷卻走這包的絕對截止時間制：cast.at 存的是「可以放技能的那一 tick」
 #
 # 不能寫 cast.cd —— monsters:main 每 tick 會用 cast.at - #gametime 把它重算掉，
-# 那是給預告與 debug 看的衍生值。cast.dur 留著給技能預告算進度，
-# cast.tip 要 reset 才會在下一輪重新預告一次。
+# 那是給預告與 debug 看的衍生值cast.dur 留著給技能預告算進度，
+# cast.tip 要 reset 才會在下一輪重新預告一次
 
 execute \
     store result score @s monster.skill.cast.at run \
