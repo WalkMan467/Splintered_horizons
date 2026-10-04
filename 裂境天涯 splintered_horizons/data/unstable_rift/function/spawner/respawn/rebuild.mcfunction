@@ -4,6 +4,7 @@
     ## Guide [ function unstable_rift:spawner/respawn/rebuild ] >>> 裂境 生怪磚 重建 / rebuild the spawner
     ## Guide [ function unstable_rift:spawner/respawn/rebuild.guide ] >>> 裂境 生怪磚 還原方塊 / restore the spawner block
     ## Guide [ function unstable_rift:spawner/respawn/loop ] >>> 裂境 生怪磚 重建迴圈 / unstable rift spawner respawn loop
+    ## Guide [ function unstable_rift:chest/refresh ] >>> 裂境 寶箱 刷新 / refresh the rift chest
 
 # ===================================================
 
@@ -25,3 +26,12 @@ data remove storage unstable_rift:spawner rebuild
 
 tag @s remove unstable_rift.spawner.broken
 scoreboard players reset @s unstable_rift.spawner.at
+
+# 同一組的寶箱跟著一起刷新
+#
+# 這裡是以生怪磚為中心抓 8 格內的寶箱紀錄點，跟 chest/ray/hit 註冊時
+# 「8 格內有生怪磚」是同一個半徑，所以註冊得起來的寶箱一定刷得到
+
+execute \
+    as @e[tag=unstable_rift.chest.point,distance=..8,sort=arbitrary,type=marker] at @s run \
+function unstable_rift:chest/refresh

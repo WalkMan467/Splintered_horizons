@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "chest": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": {
+          "type": "minecraft:match_block",
+          "blocks": "minecraft:chest"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "chest"
+    ]
+  ],
+  "rewards": {
+    "function": "unstable_rift:chest/detect"
+  }
+}
