@@ -6,6 +6,7 @@
 
 # ===================================================
 
+<<<<<<< HEAD
 # 執行者 : 玩家（main:guide/player 以 as @a at @s 呼叫）
 
 # temp 標記這一 tick 要參與偵測的人
@@ -18,3 +19,9 @@ tag @a[tag=sys.hide_world_area.name] remove temp
 function unstable_rift:chapter_1/loop
 
 tag @a remove temp
+=======
+function unstable_rift:chapter_1/loop
+
+# 裂境專屬生怪磚（召喚 + 被破壞後重建）
+function unstable_rift:spawner/main
+>>>>>>> 9c1554433f22cbf1d19278b716610d8df61bf89d

@@ -1,5 +1,6 @@
 scoreboard objectives add unstable_rift.timer dummy
 scoreboard objectives add unstable_rift.chapter_1.1.display.id dummy
+<<<<<<< HEAD
 scoreboard objectives add unstable_rift.monster.reward_points dummy
 
 # 進入裂隙前的位置不帶區域名 —— 玩家同時只會在一個裂隙裡，
@@ -29,3 +30,9 @@ scoreboard objectives add unstable_rift.stormpromax.duration dummy
 # 跟 pos / land 一樣不帶區域名 —— 玩家同時只會在一個裂隙的選武器房裡
 scoreboard objectives add unstable_rift.player.weapon_select dummy
 scoreboard objectives add unstable_rift.player.weapon_select.slot dummy
+=======
+
+# 生怪磚重建（絕對時間制，存的是 #gametime global.main 的目標值）
+scoreboard objectives add unstable_rift.spawner.at dummy "[裂境] 生怪磚 重建時間"
+scoreboard objectives add unstable_rift.spawner.snapshot dummy "[裂境] 生怪磚 下次存檔時間"
+>>>>>>> 9c1554433f22cbf1d19278b716610d8df61bf89d
