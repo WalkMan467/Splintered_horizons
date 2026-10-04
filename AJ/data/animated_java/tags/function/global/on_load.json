@@ -1,0 +1,27 @@
+{
+	"replace": false,
+	"values": [
+		"aj:amysis/on_load",
+		"aj:aska/on_load",
+		"aj:boss_1/on_load",
+		"aj:chain_lock/on_load",
+		"aj:irina/on_load",
+		"aj:isokla/on_load",
+		"aj:kyle/on_load",
+		"aj:memory_afterimage/on_load",
+		"aj:oceanid/on_load",
+		"aj:portal/on_load",
+		"aj:segrina/on_load",
+		"aj:selena/on_load",
+		"aj:sophia/on_load",
+		"aj:stellar/on_load",
+		"animated_java:amysis/on_load",
+		"animated_java:fsc_fx/on_load",
+		"animated_java:player_projection/on_load",
+		"animated_java:ruins_of_the_end_2/on_load",
+		"animated_java:ruins_of_the_finality_skill/on_load",
+		"animated_java:screen_sneak/on_load",
+		"animated_java:stellar_animation/on_load",
+		"animated_java:yibb_tstll/on_load"
+	]
+}

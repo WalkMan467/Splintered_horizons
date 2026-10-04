@@ -1,3 +1,11 @@
+# ===================================================
+# 附魔 流血命中 執行 / enchantment bleeding hit run
+
+    ## Guide [ function weapons:enchantment/bleeding_hit/run ] >>> 附魔 流血命中 執行 / enchantment bleeding hit run
+    ## Guide [ function weapons:enchantment/bleeding_hit/use ] >>> 附魔 流血命中 觸發 / enchantment bleeding hit activate
+
+# ===================================================
+
 title @s title ""
 title @s subtitle [{"text":"[","color": "dark_red"},{"translate":"cse.status_effects.bleeding","color": "dark_red"},{"text":"]","color": "dark_red"}]
 title @s times 20 20 20

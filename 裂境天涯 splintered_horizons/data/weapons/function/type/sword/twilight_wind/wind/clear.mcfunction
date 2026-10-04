@@ -1,3 +1,11 @@
+# ===================================================
+# 劍 暮光之風 wind 清除 / sword twilight wind wind clear
+
+    ## Guide [ function weapons:type/sword/twilight_wind/wind/clear ] >>> 劍 暮光之風 wind 清除 / sword twilight wind wind clear
+    ## Guide [ function weapons:type/sword/twilight_wind/wind/main ] >>> 劍 暮光之風 wind 主迴圈 / sword twilight wind wind loop
+
+# ===================================================
+
 
 # effect
 kill @s

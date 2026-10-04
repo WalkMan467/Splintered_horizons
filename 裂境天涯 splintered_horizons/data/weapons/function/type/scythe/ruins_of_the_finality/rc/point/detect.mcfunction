@@ -1,3 +1,12 @@
+# ===================================================
+# 鐮 終焉之墟 右鍵 定位點 偵測 / scythe ruins of the finality right click point detect
+
+    ## Guide [ function weapons:type/scythe/ruins_of_the_finality/rc/point/detect ] >>> 鐮 終焉之墟 右鍵 定位點 偵測 / scythe ruins of the finality right click point detect
+    ## Guide [ function weapons:type/scythe/ruins_of_the_finality/rc/point/final ] >>> 鐮 終焉之墟 右鍵 定位點 final / scythe ruins of the finality right click point final
+    ## Guide [ function weapons:type/scythe/ruins_of_the_finality/rc/point/raycast ] >>> 鐮 終焉之墟 右鍵 定位點 射線 / scythe ruins of the finality right click point raycast
+
+# ===================================================
+
 scoreboard players remove #temp weapon.ruins_of_the_finality.effect.range 1
 
 # 擊中敵人

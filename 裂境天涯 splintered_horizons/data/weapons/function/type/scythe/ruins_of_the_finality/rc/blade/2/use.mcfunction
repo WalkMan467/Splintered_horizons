@@ -1,3 +1,11 @@
+# ===================================================
+# 鐮 終焉之墟 右鍵 blade 階段 2 觸發 / scythe ruins of the finality right click blade step 2 activate
+
+    ## Guide [ function weapons:type/scythe/ruins_of_the_finality/rc/blade/2/use ] >>> 鐮 終焉之墟 右鍵 blade 階段 2 觸發 / scythe ruins of the finality right click blade step 2 activate
+    ## Guide [ function players:hide/true ] >>> hide 成立 / hide true branch
+
+# ===================================================
+
 summon minecraft:block_display ^ ^1 ^-0.0001 {Tags:["weapon.ruins_of_the_finality.blade.2","summon"],block_state: {id: "minecraft:air"}, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 1.0f], translation: [-0.5f, -0.5f, -0.5f]}}
 rotate @n[tag=weapon.ruins_of_the_finality.blade.2,type=block_display,tag=summon] facing entity @s eyes
 rotate @n[tag=weapon.ruins_of_the_finality.blade.2,type=block_display,tag=summon] ~ 0

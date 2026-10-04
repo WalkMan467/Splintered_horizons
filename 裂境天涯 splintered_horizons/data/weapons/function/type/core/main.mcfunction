@@ -1,3 +1,13 @@
+# ===================================================
+# 核心 主迴圈 / core loop
+
+    ## Guide [ function weapons:type/core/main ] >>> 核心 主迴圈 / core loop
+    ## Guide [ function weapons:type/core/main_guide ] >>> 核心 main guide / core main guide
+    ## Guide [ function sys:monument_point/objective_item/1/return/tips ] >>> monument point objective item 階段 1 return tips / monument point objective item step 1 return tips
+    ## Guide [ function main:load ] >>> load / load
+
+# ===================================================
+
 execute \
     as @a at @s run \
 function weapons:type/core/main_guide

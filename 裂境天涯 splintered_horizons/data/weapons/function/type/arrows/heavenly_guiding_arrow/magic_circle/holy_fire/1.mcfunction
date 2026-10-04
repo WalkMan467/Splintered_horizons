@@ -1,3 +1,11 @@
+# ===================================================
+# 天導神弓箭矢 magic circle holy fire 階段 1 / heavenly guiding arrow magic circle holy fire step 1
+
+    ## Guide [ function weapons:type/arrows/heavenly_guiding_arrow/magic_circle/holy_fire/1 ] >>> 天導神弓箭矢 magic circle holy fire 階段 1 / heavenly guiding arrow magic circle holy fire step 1
+    ## Guide [ function weapons:type/arrows/heavenly_guiding_arrow/clear ] >>> 天導神弓箭矢 清除 / heavenly guiding arrow clear
+
+# ===================================================
+
 
 summon marker ~ ~ ~ {Duration:20,custom_particle:{type:"block",block_state:"minecraft:air"},Radius:0f,Tags:["weapon.heavenly_guiding_arrow.holy_fire.point","summon"]}
 

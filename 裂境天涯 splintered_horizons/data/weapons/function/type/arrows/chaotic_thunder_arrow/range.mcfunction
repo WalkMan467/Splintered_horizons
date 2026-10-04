@@ -1,3 +1,11 @@
+# ===================================================
+# 渾沌之雷 符文箭矢 範圍 / chaotic thunder arrow range
+
+    ## Guide [ function weapons:type/arrows/chaotic_thunder_arrow/range ] >>> 渾沌之雷 符文箭矢 範圍 / chaotic thunder arrow range
+    ## Guide [ function weapons:type/arrows/chaotic_thunder_arrow/use ] >>> 渾沌之雷 符文箭矢 觸發 / chaotic thunder arrow activate
+
+# ===================================================
+
 scoreboard players add #weapon.chaotic_thunder_arrow.range global.main 3
 
 particle dust_color_transition{from_color:[0.239,0.000,0.420],scale:1,to_color:[0.012,0.000,0.098]} ^ ^ ^4 0 0 0 1 0 force

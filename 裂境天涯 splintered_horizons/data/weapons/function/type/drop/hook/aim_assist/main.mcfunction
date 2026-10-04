@@ -1,3 +1,11 @@
+# ===================================================
+# 投擲 鉤爪 瞄準輔助 主迴圈 / thrown hook aim assist loop
+
+    ## Guide [ function weapons:type/drop/hook/aim_assist/main ] >>> 投擲 鉤爪 瞄準輔助 主迴圈 / thrown hook aim assist loop
+    ## Guide [ function main:load ] >>> load / load
+
+# ===================================================
+
 tag @a remove weapon.hook.aim_assist.player
 tag @a remove weapon.hook.player
 

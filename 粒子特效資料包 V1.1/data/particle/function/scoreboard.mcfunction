@@ -1,3 +1,7 @@
+scoreboard objectives add particle.global.main dummy "[粒子特效] 主要記分板"
+scoreboard objectives add particle.radial_exoansion.duration dummy "[粒子特效] 環形展開特效持續時間"
+
+scoreboard players display name .gametime particle.global.main "Global Time"
 
 scoreboard objectives add existence_time dummy "存在時間"
 scoreboard objectives add particle dummy "粒子暫存記分板"

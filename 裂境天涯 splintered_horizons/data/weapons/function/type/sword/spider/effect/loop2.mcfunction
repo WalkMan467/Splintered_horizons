@@ -1,3 +1,12 @@
+# ===================================================
+# 劍 蜘蛛 效果 loop2 / sword spider effect loop2
+
+    ## Guide [ function weapons:type/sword/spider/effect/loop2 ] >>> 劍 蜘蛛 效果 loop2 / sword spider effect loop2
+    ## Guide [ function dmg_formula:weapons/type/sword/spider/dot/calculate ] >>> weapons 劍 蜘蛛 dot 計算 / weapons sword spider dot calculate
+    ## Guide [ function weapons:type/sword/spider/effect/loop ] >>> 劍 蜘蛛 效果 迴圈 / sword spider effect loop
+
+# ===================================================
+
 
 # cd
 scoreboard players remove @s weapon.spider_passive_dot 1

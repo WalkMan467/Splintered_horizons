@@ -1,3 +1,11 @@
+# ===================================================
+# 投擲 玻璃片 右鍵 觸發 / thrown broken glass right click activate
+
+    ## Guide [ function weapons:type/drop/broken_glass/rc/use ] >>> 投擲 玻璃片 右鍵 觸發 / thrown broken glass right click activate
+    ## Guide [ function weapons:type/drop/broken_glass/loop ] >>> 投擲 玻璃片 迴圈 / thrown broken glass loop
+
+# ===================================================
+
 scoreboard players set @s player.click.interval 5
 clear @s *[custom_data~{type:"drop",weapon:"broken_glass",rc:1b}] 1
 

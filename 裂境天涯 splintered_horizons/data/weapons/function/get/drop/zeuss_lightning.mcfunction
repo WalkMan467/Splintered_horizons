@@ -1,3 +1,10 @@
+# ===================================================
+# get 投擲 宙斯閃電 / get thrown zeuss lightning
+
+    ## Guide [ function weapons:get/drop/zeuss_lightning ] >>> get 投擲 宙斯閃電 / get thrown zeuss lightning
+
+# ===================================================
+
 give @s poisonous_potato[food={nutrition:0,saturation:0,can_always_eat:true},item_name=[{"translate":"weapon.zeuss_lightning","color":"#ce0000","italic":false,"bold":true}],lore=[[{"translate":"weapon.zeuss_lightning.type","italic":false,"color":"dark_gray"}],{"text":""},[{"translate":"weapon.zeuss_lightning.story.1","italic":false,"color":"blue"}],{"text":""},[{"text":"","italic":false},{"translate":"weapon.zeuss_lightning.skill","color":"#ff0000","bold":true},{"text":"  "}],[{"text":"","italic":false},{"translate":"weapon.zeuss_lightning.skill.1","color":"#c50202",with:[{"keybind":"key.use","underlined":true,"color":"dark_green"}]}],[{"text":"","italic":false},{"translate":"weapon.zeuss_lightning.skill.2","color":"#c50202"}],[{"text":"","italic":false},{"translate":"weapon.zeuss_lightning.skill.3","color":"#c50202"}],[{"text":"","italic":false},{"translate":"weapon.zeuss_lightning.skill.4","color":"#c50202"}],[{"text":"","italic":false},{"translate":"weapon.zeuss_lightning.skill.5","color":"#c50202"}]],attribute_modifiers=[{id:"base_attack_damage",type:"attack_damage",amount:0.0,operation:"add_multiplied_base",slot:"mainhand"}],max_stack_size=64,unbreakable={},item_model="drop/zeuss_lightning/1",custom_data={rc:1b,type:"drop",rarity:"mythic",weapon:"zeuss_lightning"},consumable={consume_seconds:10000,animation:"spear",has_consume_particles:false},tooltip_display={hidden_components:["enchantments","attribute_modifiers"]},tooltip_style="mythic"] 64
 
 # "weapon.zeuss_lightning" : "宙斯閃電"

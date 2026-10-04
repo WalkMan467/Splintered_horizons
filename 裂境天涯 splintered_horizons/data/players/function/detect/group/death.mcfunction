@@ -18,7 +18,7 @@ function players:void_protection/out
 
 function players:setting/waterfall_effect/reset
 
-function sys:skills_freeze/reset
+function sys:attachable_component/skills_freeze/reset
 
 function bossfight:chapter_2/segrina/player_death
 

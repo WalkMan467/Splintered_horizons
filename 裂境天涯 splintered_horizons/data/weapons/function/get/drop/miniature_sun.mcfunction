@@ -1,3 +1,10 @@
+# ===================================================
+# get 投擲 微型太陽 / get thrown miniature sun
+
+    ## Guide [ function weapons:get/drop/miniature_sun ] >>> get 投擲 微型太陽 / get thrown miniature sun
+
+# ===================================================
+
 give @s poisonous_potato[food={nutrition:0,saturation:0,can_always_eat:true},item_name=[{"translate":"weapon.miniature_sun","color":"#b30000","italic":false,"bold":true}],lore=[[{"translate":"weapon.miniature_sun.type","italic":false,"color":"dark_gray"}],{"text":""},[{"translate":"weapon.miniature_sun.story.1","italic":false,"color":"blue"}],[{"translate":"weapon.miniature_sun.story.2","italic":false,"color":"blue"}],{"text":""},[{"text":"","italic":false},{"translate":"weapon.miniature_sun.skill","color":"dark_red","bold":true},{"text":"  "}],[{"text":"","italic":false},{"translate":"weapon.miniature_sun.skill.1","color":"red"}],[{"text":"","italic":false},{"translate":"weapon.miniature_sun.skill.2","color":"red"}],[{"text":"","italic":false},{"translate":"weapon.miniature_sun.skill.3","color":"red"}],[{"text":"","italic":false},{"translate":"weapon.miniature_sun.skill.4","color":"red"}]],attribute_modifiers=[{id:"base_attack_damage",type:"attack_damage",amount:0,operation:"add_value",slot:"mainhand"},{id:"base_attack_speed",type:"attack_speed",amount:-2.5,operation:"add_value",slot:"mainhand"}],unbreakable={},item_model="drop/miniature_sun/1",custom_data={rc:1b,type:"drop",rarity:"epic",weapon:"miniature_sun"},consumable={consume_seconds:10000,animation:"none",has_consume_particles:false},tooltip_style="rare",tooltip_display={hidden_components:["attribute_modifiers"]}] 64
 
 # "weapon.miniature_sun" : "微型太陽"

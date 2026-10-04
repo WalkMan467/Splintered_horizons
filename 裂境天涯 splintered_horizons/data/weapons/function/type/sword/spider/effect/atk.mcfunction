@@ -1,3 +1,11 @@
+# ===================================================
+# 劍 蜘蛛 效果 atk / sword spider effect atk
+
+    ## Guide [ function weapons:type/sword/spider/effect/atk ] >>> 劍 蜘蛛 效果 atk / sword spider effect atk
+    ## Guide [ function weapons:type/sword/spider/effect/score ] >>> 劍 蜘蛛 效果 score / sword spider effect score
+
+# ===================================================
+
 # Executor: Player
 tag @s add weapon.spider.dot.player
 

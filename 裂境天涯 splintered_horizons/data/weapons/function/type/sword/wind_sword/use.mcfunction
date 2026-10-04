@@ -1,3 +1,10 @@
+# ===================================================
+# 風力劍 觸發 / wind sword activate
+
+    ## Guide [ function weapons:type/sword/wind_sword/use ] >>> 風力劍 觸發 / wind sword activate
+
+# ===================================================
+
 
 # player
 tag @s add wind_sword.user

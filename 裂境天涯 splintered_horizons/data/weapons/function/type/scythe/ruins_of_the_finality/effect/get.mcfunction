@@ -1,3 +1,10 @@
+# ===================================================
+# 鐮 終焉之墟 效果 get / scythe ruins of the finality effect get
+
+    ## Guide [ function weapons:type/scythe/ruins_of_the_finality/effect/get ] >>> 鐮 終焉之墟 效果 get / scythe ruins of the finality effect get
+
+# ===================================================
+
 
 execute \
     unless score @s weapon.ruins_of_the_finality.effect.detect matches 1.. run \

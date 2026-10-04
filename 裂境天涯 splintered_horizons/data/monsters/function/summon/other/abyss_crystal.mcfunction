@@ -1,3 +1,10 @@
+# ===================================================
+# 召喚 深淵水晶 / summon abyss crystal
+
+    ## Guide [ function monsters:summon/other/abyss_crystal ] >>> 召喚 深淵水晶 / summon abyss crystal
+    ## Guide [ function spawner:type/other/abyss_crystal/sunmmon ] >>> sunmmon
+
+# ===================================================
 
 execute \
     unless score #difficulty global.main matches 1.. run \
@@ -7,8 +14,11 @@ summon zombie ~ ~ ~ {CustomName:{"bold":true,"color":"#d400ff","fallback":"深�
 
 
 execute \
-    store result score @n[tag=monsters.spawn,type=zombie] monster.skill.cast.cd run \
+    store result score @n[tag=monsters.spawn,type=zombie] monster.skill.cast.at run \
 random value 60..100
+scoreboard players operation @n[tag=monsters.spawn,type=zombie] monster.skill.cast.dur = @n[tag=monsters.spawn,type=zombie] monster.skill.cast.at
+scoreboard players operation @n[tag=monsters.spawn,type=zombie] monster.skill.cast.at += #gametime global.main
+scoreboard players reset @n[tag=monsters.spawn,type=zombie] monster.skill.cast.tip
 
 playsound minecraft:entity.phantom.bite voice @a ~ ~1 ~ 1 0.5
 playsound minecraft:entity.creaking.spawn voice @a ~ ~1 ~ 1 0.75

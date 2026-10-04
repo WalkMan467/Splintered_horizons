@@ -1,3 +1,11 @@
+# ===================================================
+# 射手座箭矢 範圍 / sagittarius arrow range
+
+    ## Guide [ function weapons:type/arrows/sagittarius_arrow/range ] >>> 射手座箭矢 範圍 / sagittarius arrow range
+    ## Guide [ function weapons:type/arrows/sagittarius_arrow/use ] >>> 射手座箭矢 觸發 / sagittarius arrow activate
+
+# ===================================================
+
 scoreboard players add #weapon.sagittarius_arrow.range global.main 3
 
 particle dust_color_transition{from_color:[1.0,1.000,1.0],scale:1,to_color:[0.5,0.5,0.5]} ^ ^ ^4 0 0 0 1 0 force

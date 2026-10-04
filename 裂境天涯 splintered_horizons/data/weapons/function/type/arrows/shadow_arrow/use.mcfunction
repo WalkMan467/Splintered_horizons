@@ -1,3 +1,12 @@
+# ===================================================
+# 至深之暗 符文箭矢 觸發 / shadow arrow activate
+
+    ## Guide [ function weapons:type/arrows/shadow_arrow/use ] >>> 至深之暗 符文箭矢 觸發 / shadow arrow activate
+    ## Guide [ function weapons:type/arrows/shadow_arrow/range ] >>> 至深之暗 符文箭矢 範圍 / shadow arrow range
+    ## Guide [ function weapons:type/arrows/detect ] >>> 箭矢 偵測 / arrow detect
+
+# ===================================================
+
 scoreboard players reset #weapon.shadow_arrow.range global.main
 function weapons:type/arrows/shadow_arrow/range
 

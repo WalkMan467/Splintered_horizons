@@ -12,3 +12,4 @@ advancement grant @s only weapons:icon/icon
         advancement revoke @s only energy_infusion_stone:icon/weapon/phantom_fangs
         advancement revoke @s only energy_infusion_stone:icon/weapon/destroyer
         advancement revoke @s only energy_infusion_stone:icon/weapon/executioner
+        advancement revoke @s only energy_infusion_stone:icon/weapon/finality_cycle

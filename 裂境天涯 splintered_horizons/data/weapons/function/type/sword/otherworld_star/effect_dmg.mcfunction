@@ -1,3 +1,12 @@
+# ===================================================
+# 劍 異界晨星 effect dmg / sword otherworld star effect dmg
+
+    ## Guide [ function weapons:type/sword/otherworld_star/effect_dmg ] >>> 劍 異界晨星 effect dmg / sword otherworld star effect dmg
+    ## Guide [ function weapons:type/sword/otherworld_star/damage ] >>> 劍 異界晨星 傷害 / sword otherworld star damage
+    ## Guide [ function weapons:type/sword/otherworld_star/fallstar/main ] >>> 劍 異界晨星 fallstar 主迴圈 / sword otherworld star fallstar loop
+
+# ===================================================
+
 
 execute \
     as @a[tag=weapon.otherworld_star.effect.user] at @s \

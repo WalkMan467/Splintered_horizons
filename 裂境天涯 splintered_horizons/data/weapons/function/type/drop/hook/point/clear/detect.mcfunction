@@ -1,3 +1,11 @@
+# ===================================================
+# 投擲 鉤爪 定位點 清除 偵測 / thrown hook point clear detect
+
+    ## Guide [ function weapons:type/drop/hook/point/clear/detect ] >>> 投擲 鉤爪 定位點 清除 偵測 / thrown hook point clear detect
+    ## Guide [ function weapons:type/drop/hook/point/tp ] >>> 投擲 鉤爪 定位點 tp / thrown hook point tp
+
+# ===================================================
+
 
 # effect
 

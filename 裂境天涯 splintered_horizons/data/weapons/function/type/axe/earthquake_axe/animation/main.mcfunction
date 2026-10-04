@@ -1,3 +1,13 @@
+# ===================================================
+# 地震之斧 動畫 主迴圈 / earthquake axe animation loop
+
+    ## Guide [ function weapons:type/axe/earthquake_axe/animation/main ] >>> 地震之斧 動畫 主迴圈 / earthquake axe animation loop
+    ## Guide [ function weapons:type/axe/earthquake_axe/animation/run ] >>> 地震之斧 動畫 執行 / earthquake axe animation run
+    ## Guide [ function weapons:type/axe/earthquake_axe/animation/reset ] >>> 地震之斧 動畫 重置 / earthquake axe animation reset
+    ## Guide [ function weapons:type/axe/earthquake_axe/rc/use ] >>> 地震之斧 右鍵 觸發 / earthquake axe right click activate
+
+# ===================================================
+
 # warn-off-file target-selector-no-dimension
 scoreboard players remove @a[scores={weapon.earthquake_axe.animation=0..}] weapon.earthquake_axe.animation 1
 

@@ -1,3 +1,9 @@
+# ===================================================
+# 召喚 緋紅矛兵 / summon crimson spearman
+
+    ## Guide [ function monsters:summon/other/crimson_spearman ] >>> 召喚 緋紅矛兵 / summon crimson spearman
+
+# ===================================================
 
 execute \
     unless score #difficulty global.main matches 1.. run \

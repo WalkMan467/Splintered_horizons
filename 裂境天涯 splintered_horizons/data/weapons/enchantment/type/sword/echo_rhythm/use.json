@@ -6,13 +6,6 @@
   "effects": {
     "minecraft:post_attack": [
       {
-        "requirements": {
-          "type": "minecraft:entity_scores",
-          "entity": "attacker",
-          "scores": {
-            "weapon.echo_rhythm.cd": 0
-          }
-        },
         "effect": {
           "type": "minecraft:run_function",
           "function": "weapons:type/sword/echo_rhythm/use"

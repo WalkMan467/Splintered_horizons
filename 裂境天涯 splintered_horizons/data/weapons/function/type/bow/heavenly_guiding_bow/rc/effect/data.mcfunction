@@ -1,3 +1,11 @@
+# ===================================================
+# 天導神弓 右鍵 效果 資料 / heavenly guiding bow right click effect data
+
+    ## Guide [ function weapons:type/bow/heavenly_guiding_bow/rc/effect/data ] >>> 天導神弓 右鍵 效果 資料 / heavenly guiding bow right click effect data
+    ## Guide [ function weapons:type/bow/heavenly_guiding_bow/rc/effect/detect ] >>> 天導神弓 右鍵 效果 偵測 / heavenly guiding bow right click effect detect
+
+# ===================================================
+
 data modify entity @s item.components."minecraft:custom_data" set value {type:"arrow",rarity:"epic",id:"heavenly_guiding_arrow",ground_detect:1b}
 
 data modify entity @s PierceLevel set value 99

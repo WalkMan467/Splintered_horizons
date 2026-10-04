@@ -6,6 +6,7 @@ scoreboard objectives add hotbar dummy
 scoreboard objectives add hotbar_temp dummy
 scoreboard objectives add drop minecraft.custom:minecraft.drop "丟物品"
 scoreboard objectives add global.main dummy
+scoreboard objectives add global.time dummy "全域時間基準"
 scoreboard objectives add main.raycast dummy "射線追蹤"
 scoreboard objectives add main.gamerule dummy
 scoreboard objectives add main.particle dummy
@@ -55,7 +56,9 @@ team add glow.light_purple
 team add glow.red
 team add glow.white
 team add glow.yellow
+team add NoCollisionRule NoCollisionRule
 
+team modify NoCollisionRule collisionRule never
 team modify glow.aqua color aqua
 team modify glow.dark_aqua color dark_aqua
 team modify glow.black color black

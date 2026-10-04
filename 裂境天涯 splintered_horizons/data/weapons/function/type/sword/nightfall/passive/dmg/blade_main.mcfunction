@@ -1,3 +1,13 @@
+# ===================================================
+# 劍 夜幕 被動 傷害 blade main / sword nightfall passive damage blade main
+
+    ## Guide [ function weapons:type/sword/nightfall/passive/dmg/blade_main ] >>> 劍 夜幕 被動 傷害 blade main / sword nightfall passive damage blade main
+    ## Guide [ function weapons:type/sword/nightfall/passive/range_particle2 ] >>> 劍 夜幕 被動 range particle2 / sword nightfall passive range particle2
+    ## Guide [ function weapons:type/sword/nightfall/passive/dmg/clear ] >>> 劍 夜幕 被動 傷害 清除 / sword nightfall passive damage clear
+    ## Guide [ function weapons:type/core/main_guide ] >>> 核心 main guide / core main guide
+
+# ===================================================
+
 # @s = marker
 
 scoreboard players add @s weapon.nightfall.charge_timer 25

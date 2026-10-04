@@ -1,3 +1,11 @@
+# ===================================================
+# 劍 夜幕 右鍵 狀態 階段 0 / sword nightfall right click state step 0
+
+    ## Guide [ function weapons:type/sword/nightfall/rc/state/0 ] >>> 劍 夜幕 右鍵 狀態 階段 0 / sword nightfall right click state step 0
+    ## Guide [ function weapons:type/sword/nightfall/rc/use ] >>> 劍 夜幕 右鍵 觸發 / sword nightfall right click activate
+
+# ===================================================
+
 item modify entity @s weapon.mainhand weapons:type/sword/nightfall/0
 
 title @s title {"text":"\uE005","font":"screen"}
@@ -16,4 +24,3 @@ playsound minecraft:block.trial_spawner.ominous_activate voice @a ~ ~1 ~ 1 1
 playsound minecraft:entity.generic.explode voice @a ~ ~1 ~ 0.5 0.5
 
 scoreboard players set @s weapon.nightfall.state 0
-scoreboard players set @s weapon.nightfall.cd 100

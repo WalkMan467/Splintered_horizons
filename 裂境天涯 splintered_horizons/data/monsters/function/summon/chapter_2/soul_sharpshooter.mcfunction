@@ -1,3 +1,10 @@
+# ===================================================
+# 召喚 魂之神射手 / summon soul sharpshooter
+
+    ## Guide [ function monsters:summon/chapter_2/soul_sharpshooter ] >>> 召喚 魂之神射手 / summon soul sharpshooter
+    ## Guide [ function spawner:type/chapter_2/soul_sharpshooter/sunmmon ] >>> sunmmon
+
+# ===================================================
 
 execute \
     unless score #difficulty global.main matches 1.. run \
@@ -7,8 +14,11 @@ summon stray ~ ~ ~ {Health:18f,Tags:["monster","monsters.soul_sharpshooter","mon
 
 
 execute \
-    store result score @n[tag=summon,distance=..1,sort=arbitrary,type=stray] monster.skill.cast.cd run \
+    store result score @n[tag=summon,distance=..1,sort=arbitrary,type=stray] monster.skill.cast.at run \
 random value 60..100
+scoreboard players operation @n[tag=summon,distance=..1,sort=arbitrary,type=stray] monster.skill.cast.dur = @n[tag=summon,distance=..1,sort=arbitrary,type=stray] monster.skill.cast.at
+scoreboard players operation @n[tag=summon,distance=..1,sort=arbitrary,type=stray] monster.skill.cast.at += #gametime global.main
+scoreboard players reset @n[tag=summon,distance=..1,sort=arbitrary,type=stray] monster.skill.cast.tip
 
 scoreboard players set @n[tag=summon,distance=..1,sort=arbitrary,type=stray] monster.skill.rdm.skill 1
 

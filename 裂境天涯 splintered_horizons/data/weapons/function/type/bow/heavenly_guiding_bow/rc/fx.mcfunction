@@ -1,3 +1,11 @@
+# ===================================================
+# 天導神弓 右鍵 特效 / heavenly guiding bow right click visuals
+
+    ## Guide [ function weapons:type/bow/heavenly_guiding_bow/rc/fx ] >>> 天導神弓 右鍵 特效 / heavenly guiding bow right click visuals
+    ## Guide [ function weapons:type/bow/heavenly_guiding_bow/rc/charging_complete ] >>> 天導神弓 右鍵 charging complete / heavenly guiding bow right click charging complete
+
+# ===================================================
+
 scoreboard players add @s particle 12
 
 execute \

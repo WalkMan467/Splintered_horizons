@@ -1,3 +1,12 @@
+# ===================================================
+# 劍 天地乖離開闢之星 右鍵 觸發 / kill sword right click activate
+
+    ## Guide [ function weapons:type/sword/kill_sword/rc/use ] >>> 劍 天地乖離開闢之星 右鍵 觸發 / kill sword right click activate
+    ## Guide [ function weapons:type/sword/kill_sword/main ] >>> 劍 天地乖離開闢之星 主迴圈 / kill sword loop
+    ## Guide [ function weapons:type/sword/kill_sword/rc/raycast/use ] >>> 劍 天地乖離開闢之星 右鍵 射線 觸發 / kill sword right click raycast activate
+
+# ===================================================
+
 schedule function weapons:type/sword/kill_sword/main 1t
 
 tag @s add weapon.kill_sword.user

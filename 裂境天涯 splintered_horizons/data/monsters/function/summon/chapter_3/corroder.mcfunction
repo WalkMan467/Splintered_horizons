@@ -1,3 +1,9 @@
+# ===================================================
+# 召喚 腐蝕者 / summon corroder
+
+    ## Guide [ function monsters:summon/chapter_3/corroder ] >>> 召喚 腐蝕者 / summon corroder
+
+# ===================================================
 
 execute \
     unless score #difficulty global.main matches 1.. run \

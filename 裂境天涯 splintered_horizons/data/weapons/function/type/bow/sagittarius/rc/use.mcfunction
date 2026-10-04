@@ -1,3 +1,13 @@
+# ===================================================
+# 弓 射手座 右鍵 觸發 / bow sagittarius right click activate
+
+    ## Guide [ function weapons:type/bow/sagittarius/rc/use ] >>> 弓 射手座 右鍵 觸發 / bow sagittarius right click activate
+    ## Guide [ function weapons:type/bow/sagittarius/rc/0 ] >>> 弓 射手座 右鍵 階段 0 / bow sagittarius right click step 0
+    ## Guide [ function weapons:type/bow/sagittarius/rc/sfx ] >>> 弓 射手座 右鍵 sfx / bow sagittarius right click sfx
+    ## Guide [ function weapons:type/bow/sagittarius/rc/charged ] >>> 弓 射手座 右鍵 charged / bow sagittarius right click charged
+
+# ===================================================
+
 scoreboard players add @s weapon.sagittarius.cd 0
 
 execute \

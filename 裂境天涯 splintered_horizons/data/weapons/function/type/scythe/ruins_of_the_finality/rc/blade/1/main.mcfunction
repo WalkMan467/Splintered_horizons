@@ -1,3 +1,11 @@
+# ===================================================
+# 鐮 終焉之墟 右鍵 blade 階段 1 主迴圈 / scythe ruins of the finality right click blade step 1 loop
+
+    ## Guide [ function weapons:type/scythe/ruins_of_the_finality/rc/blade/1/main ] >>> 鐮 終焉之墟 右鍵 blade 階段 1 主迴圈 / scythe ruins of the finality right click blade step 1 loop
+    ## Guide [ function weapons:type/scythe/ruins_of_the_finality/rc/blade/1/clear ] >>> 鐮 終焉之墟 右鍵 blade 階段 1 清除 / scythe ruins of the finality right click blade step 1 clear
+
+# ===================================================
+
 # @s = marker
 
 scoreboard players add @s weapon.ruins_of_the_finality.blade.timer 25

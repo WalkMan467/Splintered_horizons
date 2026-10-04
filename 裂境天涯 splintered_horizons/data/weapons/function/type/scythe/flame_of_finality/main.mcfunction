@@ -1,3 +1,11 @@
+# ===================================================
+# 鐮 終焉雙重火 主迴圈 / scythe flame of finality loop
+
+    ## Guide [ function weapons:type/scythe/flame_of_finality/main ] >>> 鐮 終焉雙重火 主迴圈 / scythe flame of finality loop
+    ## Guide [ function weapons:type/core/player ] >>> 核心 玩家 / core player
+
+# ===================================================
+
 execute \
     unless items entity @s weapon.mainhand *[minecraft:custom_data~{weapon:"flame_of_finality"}] run \
 return run \

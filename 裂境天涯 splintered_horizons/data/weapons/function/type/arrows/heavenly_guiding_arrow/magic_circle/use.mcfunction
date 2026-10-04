@@ -1,3 +1,12 @@
+# ===================================================
+# 天導神弓箭矢 magic circle 觸發 / heavenly guiding arrow magic circle activate
+
+    ## Guide [ function weapons:type/arrows/heavenly_guiding_arrow/magic_circle/use ] >>> 天導神弓箭矢 magic circle 觸發 / heavenly guiding arrow magic circle activate
+    ## Guide [ function weapons:type/arrows/heavenly_guiding_arrow/magic_circle/setup ] >>> 天導神弓箭矢 magic circle 初始化 / heavenly guiding arrow magic circle setup
+    ## Guide [ function weapons:type/arrows/heavenly_guiding_arrow/clear ] >>> 天導神弓箭矢 清除 / heavenly guiding arrow clear
+
+# ===================================================
+
 effect give @s slowness 1 255 true
 
 execute \

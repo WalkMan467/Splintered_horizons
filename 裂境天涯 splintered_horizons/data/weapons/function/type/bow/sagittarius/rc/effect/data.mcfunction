@@ -1,3 +1,11 @@
+# ===================================================
+# 弓 射手座 右鍵 效果 資料 / bow sagittarius right click effect data
+
+    ## Guide [ function weapons:type/bow/sagittarius/rc/effect/data ] >>> 弓 射手座 右鍵 效果 資料 / bow sagittarius right click effect data
+    ## Guide [ function weapons:type/bow/sagittarius/rc/effect/detect ] >>> 弓 射手座 右鍵 效果 偵測 / bow sagittarius right click effect detect
+
+# ===================================================
+
 data modify entity @s item.components."minecraft:custom_data" set value {type:"arrow",rarity:"epic",id:"sagittarius_arrow",ground_detect:1b}
 
 data modify entity @s Glowing set value 1b

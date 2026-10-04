@@ -1,3 +1,12 @@
+# ===================================================
+# 劍 晨曦之光 觸發 / sword morning light activate
+
+    ## Guide [ function weapons:type/sword/morning_light/use ] >>> 劍 晨曦之光 觸發 / sword morning light activate
+    ## Guide [ function weapons:type/sword/morning_light/effect/fx/use ] >>> 劍 晨曦之光 效果 特效 觸發 / sword morning light effect visuals activate
+    ## Guide [ function dmg_formula:weapons/type/sword/morning_light/calculate ] >>> weapons 劍 晨曦之光 計算 / weapons sword morning light calculate
+
+# ===================================================
+
 
 execute \
     on attacker \

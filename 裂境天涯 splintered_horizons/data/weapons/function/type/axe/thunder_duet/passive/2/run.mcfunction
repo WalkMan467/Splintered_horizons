@@ -1,3 +1,12 @@
+# ===================================================
+# 斧 雷霆二重奏 被動 階段 2 執行 / axe thunder duet passive step 2 run
+
+    ## Guide [ function weapons:type/axe/thunder_duet/passive/2/run ] >>> 斧 雷霆二重奏 被動 階段 2 執行 / axe thunder duet passive step 2 run
+    ## Guide [ function weapons:type/axe/thunder_duet/passive/2/dmg ] >>> 斧 雷霆二重奏 被動 階段 2 傷害 / axe thunder duet passive step 2 damage
+    ## Guide [ function weapons:type/axe/thunder_duet/passive/use ] >>> 斧 雷霆二重奏 被動 觸發 / axe thunder duet passive activate
+
+# ===================================================
+
 execute \
     if score @s weapon.thunder_duet.passive.timer matches 1.. run \
 return 0

@@ -1,3 +1,11 @@
+# ===================================================
+# 深淵狂暴者 被動 破防 / abyss berserker passive broken
+
+    ## Guide [ function monsters:chapter_1/abyss_berserker/passive/broken ] >>> 深淵狂暴者 被動 破防 / abyss berserker passive broken
+    ## Guide [ function monsters:chapter_1/abyss_berserker/passive/use ] >>> 深淵狂暴者 被動 受擊判定 / abyss berserker passive on hit
+
+# ===================================================
+
 scoreboard players set @s monster.abyss_berserker.passive.cd 160
 scoreboard players reset @s monster.abyss_berserker.passive.hit
 

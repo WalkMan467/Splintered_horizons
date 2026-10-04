@@ -1,3 +1,13 @@
+# ===================================================
+# 複製附魔 觸發 / copy enchantment activate
+
+    ## Guide [ function weapons:copy_enchantment/use ] >>> 複製附魔 觸發 / copy enchantment activate
+    ## Guide [ function weapons:copy_enchantment/modify ] >>> 複製附魔 修改 / copy enchantment modify
+    ## Guide [ function weapons:copy_enchantment/armor ] >>> 複製附魔 盔甲 / copy enchantment armor
+    ## Guide [ function weapons:copy_enchantment/weapon ] >>> 複製附魔 武器 / copy enchantment weapon
+
+# ===================================================
+
 
 execute \
     if items entity @s weapon.offhand *[!enchantments] run \

@@ -1,3 +1,11 @@
+# ===================================================
+# 鐮 終焉之墟 右鍵 動畫 階段 1 觸發 / scythe ruins of the finality right click animation step 1 activate
+
+    ## Guide [ function weapons:type/scythe/ruins_of_the_finality/rc/animation/1/use ] >>> 鐮 終焉之墟 右鍵 動畫 階段 1 觸發 / scythe ruins of the finality right click animation step 1 activate
+    ## Guide [ function weapons:type/scythe/ruins_of_the_finality/main ] >>> 鐮 終焉之墟 主迴圈 / scythe ruins of the finality loop
+
+# ===================================================
+
 kill @e[tag=weapon.ruins_of_the_finality.effect.chain]
 
 title @s times 0 0 20

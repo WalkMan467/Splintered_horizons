@@ -1,3 +1,12 @@
+# ===================================================
+# 凍結 主程式 / freeze main
+
+    ## Guide [ function monsters:generic/freeze/main ] >>> 凍結 主程式 / freeze main
+    ## Guide [ function monsters:main ] >>> 怪物 主程式 / monsters main
+    ## Guide [ function monsters:generic/freeze/end ] >>> 凍結 結束 / freeze end
+    ## Guide [ function monsters:generic/freeze/start ] >>> 凍結 開始 / freeze start
+
+# ===================================================
 
 execute \
     if entity @s[tag=freeze.immunity] run \

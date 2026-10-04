@@ -1,3 +1,11 @@
+# ===================================================
+# 鐮 深淵雙重火 右鍵 觸發 / scythe flame of abyss right click activate
+
+    ## Guide [ function weapons:type/scythe/flame_of_abyss/rc/use ] >>> 鐮 深淵雙重火 右鍵 觸發 / scythe flame of abyss right click activate
+    ## Guide [ function weapons:rc/failure/skill_use_failed ] >>> 右鍵 失敗 skill use failed / right click failure skill use failed
+
+# ===================================================
+
 scoreboard players add @s weapon.flame_of_abyss.cd 0
 
 execute \

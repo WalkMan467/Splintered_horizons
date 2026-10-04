@@ -1,3 +1,11 @@
+# ===================================================
+# 碎岩大劍 右鍵 apply motion / sword rock crushing greatsword right click apply motion
+
+    ## Guide [ function weapons:type/sword/rock_crushing_greatsword/rc/apply_motion ] >>> 碎岩大劍 右鍵 apply motion / sword rock crushing greatsword right click apply motion
+    ## Guide [ function weapons:type/sword/rock_crushing_greatsword/rc/defense/perface_fx ] >>> 碎岩大劍 右鍵 防禦 perface fx / sword rock crushing greatsword right click defense perface fx
+
+# ===================================================
+
 
 execute \
     if items entity @s weapon.mainhand * run \

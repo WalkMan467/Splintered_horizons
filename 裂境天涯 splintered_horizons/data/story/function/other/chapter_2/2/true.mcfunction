@@ -35,3 +35,11 @@ summon interaction 360 100 -274 \
         height:2, \
         UUID:[I; -422145121, 42314642, -9035124, -267391230] \
     }
+
+execute \
+        in minecraft:the_end run \
+setblock 360 100 -274 light[level=15]
+
+execute \
+        in minecraft:the_end run \
+setblock 360 101 -274 light[level=15]

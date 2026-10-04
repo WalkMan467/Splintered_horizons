@@ -1,3 +1,15 @@
+# ===================================================
+# 箭矢 偵測 / arrow detect
+
+    ## Guide [ function weapons:type/arrows/detect ] >>> 箭矢 偵測 / arrow detect
+    ## Guide [ function weapons:type/arrows/heavenly_guiding_arrow/use ] >>> 天導神弓箭矢 觸發 / heavenly guiding arrow activate
+    ## Guide [ function weapons:type/arrows/sagittarius_arrow/use ] >>> 射手座箭矢 觸發 / sagittarius arrow activate
+    ## Guide [ function weapons:type/arrows/bleeding_arrow/use ] >>> 赤血詛咒箭矢 觸發 / bleeding arrow activate
+    ## Guide [ function weapons:type/arrows/explosion_arrow/use ] >>> 爆炸箭矢 觸發 / explosion arrow activate
+    ## Guide [ function weapons:type/arrows/resplendence_arrow/use ] >>> 輝煌之光 符文箭矢 觸發 / resplendence arrow activate
+
+# ===================================================
+
 execute \
     on attacker \
     unless entity @s[type=player] run \
@@ -12,6 +24,11 @@ execute \
     on attacker \
     if entity @s[advancements={weapons:arrows/sagittarius_arrow=true}] run \
 function weapons:type/arrows/sagittarius_arrow/use
+
+execute \
+    on attacker \
+    if entity @s[advancements={weapons:arrows/sunfire_of_entropy_erosion_arrow=true}] run \
+function weapons:type/arrows/sunfire_of_entropy_erosion_arrow/use
 
 execute \
     on attacker \

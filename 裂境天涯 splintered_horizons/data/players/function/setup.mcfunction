@@ -132,3 +132,7 @@ scoreboard players set @s player.setting.backup.trigger 0
 scoreboard players add @s player.setting.backup.trigger.disabled 0
 scoreboard players set @s player.setting.backup 1
 scoreboard players display numberformat @s player.setting.backup fixed {"translate":"dialog.main.enabled","fallback":"Enabled","color":"dark_green","bold":true}
+
+execute \
+    unless score #world_clock.enabled global.main matches 1 run \
+function main:world_clock/init

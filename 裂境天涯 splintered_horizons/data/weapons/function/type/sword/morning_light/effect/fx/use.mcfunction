@@ -1,3 +1,11 @@
+# ===================================================
+# 劍 晨曦之光 效果 特效 觸發 / sword morning light effect visuals activate
+
+    ## Guide [ function weapons:type/sword/morning_light/effect/fx/use ] >>> 劍 晨曦之光 效果 特效 觸發 / sword morning light effect visuals activate
+    ## Guide [ function weapons:type/sword/morning_light/use ] >>> 劍 晨曦之光 觸發 / sword morning light activate
+
+# ===================================================
+
 summon minecraft:item_display ~ ~4 ~ {Glowing:1b,glow_color_override:16764416,Tags:["summon","weapon.morning_light"],start_interpolation:0,teleport_duration:2,billboard: "vertical", brightness: {block: 15, sky: 15}, item: {components: {"minecraft:item_model": "minecraft:sword/morning_light/2"}, count: 1, id: "minecraft:iron_sword"}, transformation: {left_rotation: [0.0f, 0.0f, 0.9238795f, 0.38268346f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.5f, 1.5f, 1.5f], translation: [0.0f, 0.0f, 0.0f]}}
 
 

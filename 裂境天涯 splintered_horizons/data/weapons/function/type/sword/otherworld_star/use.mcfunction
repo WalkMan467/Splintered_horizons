@@ -1,3 +1,10 @@
+# ===================================================
+# 劍 異界晨星 觸發 / sword otherworld star activate
+
+    ## Guide [ function weapons:type/sword/otherworld_star/use ] >>> 劍 異界晨星 觸發 / sword otherworld star activate
+
+# ===================================================
+
 
 execute \
     if score @s weapon.otherworld_star.timer matches 1.. run \

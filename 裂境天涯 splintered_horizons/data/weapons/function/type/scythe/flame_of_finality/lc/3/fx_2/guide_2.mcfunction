@@ -1,3 +1,11 @@
+# ===================================================
+# 鐮 終焉雙重火 左鍵 階段 3 fx 2 guide 2 / scythe flame of finality left click step 3 fx 2 guide 2
+
+    ## Guide [ function weapons:type/scythe/flame_of_finality/lc/3/fx_2/guide_2 ] >>> 鐮 終焉雙重火 左鍵 階段 3 fx 2 guide 2 / scythe flame of finality left click step 3 fx 2 guide 2
+    ## Guide [ function weapons:type/scythe/flame_of_finality/lc/3/fx_2/use ] >>> 鐮 終焉雙重火 左鍵 階段 3 fx 2 觸發 / scythe flame of finality left click step 3 fx 2 activate
+
+# ===================================================
+
 execute \
     positioned ^ ^ ^ run \
 particle flame ~ ~ ~ ^ ^ ^1000000 0.00000015 0 normal @a

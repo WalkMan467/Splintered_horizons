@@ -15,6 +15,7 @@
       "world_area:scoreboard",
       "trap:scoreboard",
       "sys:hp_display/scoreobard",
-      "energy_infusion_stone:scoreboard"
+      "energy_infusion_stone:scoreboard",
+      "unstable_rift:scoreboard"
     ]
   }

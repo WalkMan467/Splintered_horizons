@@ -1,3 +1,11 @@
+# ===================================================
+# 劍 夜幕 偵測 / sword nightfall detect
+
+    ## Guide [ function weapons:type/sword/nightfall/detect ] >>> 劍 夜幕 偵測 / sword nightfall detect
+    ## Guide [ function players:detect/inventory_changed ] >>> 偵測 inventory changed / detect inventory changed
+
+# ===================================================
+
 scoreboard players add @s weapon.nightfall.state 0
 
 

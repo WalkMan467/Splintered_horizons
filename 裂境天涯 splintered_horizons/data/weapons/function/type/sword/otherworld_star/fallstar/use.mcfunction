@@ -1,3 +1,11 @@
+# ===================================================
+# 劍 異界晨星 fallstar 觸發 / sword otherworld star fallstar activate
+
+    ## Guide [ function weapons:type/sword/otherworld_star/fallstar/use ] >>> 劍 異界晨星 fallstar 觸發 / sword otherworld star fallstar activate
+    ## Guide [ function weapons:type/sword/otherworld_star/main ] >>> 劍 異界晨星 主迴圈 / sword otherworld star loop
+
+# ===================================================
+
 
 execute \
     store result score #rdm global.main run \

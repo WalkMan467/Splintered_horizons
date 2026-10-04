@@ -1,1 +1,8 @@
+# ===================================================
+# 新手教學 無視傷害附魔 / beginner tutorial bypass damage
+
+    ## Guide [ function monsters:1 ] >>> 新手教學 無視傷害附魔 / beginner tutorial bypass damage
+
+# ===================================================
+
 item modify entity @s weapon.mainhand [{type:"minecraft:set_enchantments",enchantments:{"monsters:beginner_tutorial/bypass_dmg":1}},{type:"minecraft:set_components",components:{"minecraft:enchantment_glint_override":0b,"minecraft:unbreakable":{}}}]

@@ -1,3 +1,11 @@
+# ===================================================
+# 劍 夜幕 右鍵 狀態 階段 1 / sword nightfall right click state step 1
+
+    ## Guide [ function weapons:type/sword/nightfall/rc/state/1 ] >>> 劍 夜幕 右鍵 狀態 階段 1 / sword nightfall right click state step 1
+    ## Guide [ function weapons:type/sword/nightfall/rc/use ] >>> 劍 夜幕 右鍵 觸發 / sword nightfall right click activate
+
+# ===================================================
+
 item modify entity @s weapon.mainhand weapons:type/sword/nightfall/1
 
 title @s title {"text":"\uE005","font":"screen"}
@@ -15,4 +23,3 @@ playsound minecraft:entity.illusioner.prepare_blindness voice @a ~ ~1 ~ 1 1.5
 playsound minecraft:entity.illusioner.cast_spell voice @a ~ ~1 ~ 1 1
 
 scoreboard players set @s weapon.nightfall.state 1
-scoreboard players set @s weapon.nightfall.cd 100

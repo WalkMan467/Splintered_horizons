@@ -1,3 +1,11 @@
+# ===================================================
+# 深淵黑騎 技能1 環狀特效 / abyssal black knight skill 1 ring fx
+
+    ## Guide [ function monsters:chapter_1/abyssal_black_knight/1/fx ] >>> 深淵黑騎 技能1 環狀特效 / abyssal black knight skill 1 ring fx
+    ## Guide [ function monsters:chapter_1/abyssal_black_knight/1/main ] >>> 深淵黑騎 技能1 主體 群體加速 / abyssal black knight skill 1 body
+
+# ===================================================
+
 scoreboard players add @s particle 3
 
 execute \

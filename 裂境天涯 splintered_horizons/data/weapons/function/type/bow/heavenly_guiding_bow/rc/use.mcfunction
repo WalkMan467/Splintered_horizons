@@ -1,3 +1,12 @@
+# ===================================================
+# 天導神弓 右鍵 觸發 / heavenly guiding bow right click activate
+
+    ## Guide [ function weapons:type/bow/heavenly_guiding_bow/rc/use ] >>> 天導神弓 右鍵 觸發 / heavenly guiding bow right click activate
+    ## Guide [ function weapons:type/bow/heavenly_guiding_bow/rc/0 ] >>> 天導神弓 右鍵 階段 0 / heavenly guiding bow right click step 0
+    ## Guide [ function weapons:type/bow/heavenly_guiding_bow/rc/charging_complete ] >>> 天導神弓 右鍵 charging complete / heavenly guiding bow right click charging complete
+
+# ===================================================
+
 scoreboard players add @s weapon.heavenly_guiding_bow.cd 0
 
 execute \

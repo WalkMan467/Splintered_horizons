@@ -1,3 +1,12 @@
+# ===================================================
+# 投擲 宙斯閃電 右鍵 主迴圈 / thrown zeuss lightning right click loop
+
+    ## Guide [ function weapons:type/drop/zeuss_lightning/rc/main ] >>> 投擲 宙斯閃電 右鍵 主迴圈 / thrown zeuss lightning right click loop
+    ## Guide [ function weapons:type/drop/zeuss_lightning/rc/run ] >>> 投擲 宙斯閃電 右鍵 執行 / thrown zeuss lightning right click run
+    ## Guide [ function weapons:type/core/player ] >>> 核心 玩家 / core player
+
+# ===================================================
+
 
 execute \
     if score @s weapon.zeuss_lightning.use matches 1.. run \

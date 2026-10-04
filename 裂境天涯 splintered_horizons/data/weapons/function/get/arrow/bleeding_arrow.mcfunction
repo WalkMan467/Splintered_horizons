@@ -1,3 +1,10 @@
+# ===================================================
+# get arrow 赤血詛咒箭矢 / get bleeding arrow
+
+    ## Guide [ function weapons:get/arrow/bleeding_arrow ] >>> get arrow 赤血詛咒箭矢 / get bleeding arrow
+
+# ===================================================
+
 give @s arrow[item_name=[{"translate":"weapon.bleeding_arrow","color":"#e00000","italic":false,"bold":true}],lore=[[{"translate":"weapon.bleeding_arrow.type","italic":false,"color":"dark_gray"}],{"text":""},[{"translate":"weapon.bleeding_arrow.story.1","italic":false,"color":"blue"}],[{"translate":"weapon.bleeding_arrow.story.2","italic":false,"color":"blue"}],{"text":""},[{"text":"","italic":false},{"translate":"weapon.bleeding_arrow.passive_skills","color":"#7a0000","bold":true},{"text":"  "}],[{"text":"","italic":false},{"translate":"weapon.bleeding_arrow.passive_skills.1","color":"#e00000"}],[{"text":"","italic":false},{"translate":"weapon.bleeding_arrow.passive_skills.2","color":"#e00000"}],[{"text":"","italic":false},{"translate":"weapon.bleeding_arrow.passive_skills.3","color":"#e00000"}],[{"text":"","italic":false},{"translate":"weapon.bleeding_arrow.passive_skills.4","color":"#e00000"}],[{"text":"","italic":false},{"translate":"weapon.bleeding_arrow.passive_skills.5","color":"#e00000"}]],attribute_modifiers=[{id:"base_attack_damage",type:"attack_damage",amount:0.0,operation:"add_multiplied_base",slot:"mainhand"}],max_stack_size=64,unbreakable={},item_model="arrow/bleeding_arrow",custom_data={rc:1b,type:"arrow",rarity:"mythic",id:"bleeding_arrow"},tooltip_display={hidden_components:["unbreakable","attribute_modifiers"]},tooltip_style="mythic"] 64
 
 # "weapon.bleeding_arrow" : "赤血詛咒箭矢"

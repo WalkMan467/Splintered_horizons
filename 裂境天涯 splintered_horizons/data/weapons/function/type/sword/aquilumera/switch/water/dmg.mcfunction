@@ -1,3 +1,12 @@
+# ===================================================
+# 水之魔劍 水鏡之光 切換 water 傷害 / sword aquilumera switch water damage
+
+    ## Guide [ function weapons:type/sword/aquilumera/switch/water/dmg ] >>> 水之魔劍 水鏡之光 切換 water 傷害 / sword aquilumera switch water damage
+    ## Guide [ function dmg_formula:weapons/type/sword/aquilumera/calculate ] >>> weapons 水之魔劍 水鏡之光 計算 / weapons sword aquilumera calculate
+    ## Guide [ function weapons:type/core/player ] >>> 核心 玩家 / core player
+
+# ===================================================
+
 
 # dmg
 tag @e[type=!#dummy_mob,distance=..8,limit=1,sort=random,type=!player] add dmger

@@ -6,6 +6,8 @@ function spawner:main
 
 function bossfight:chapter_2/elekiel_phase_2/attack_module/state/attack3/particle/main
 
+function unstable_rift:main/loop
+
 execute \
     as @n[sort=arbitrary,distance=..20,tag=sys.detect.player_death.point,type=marker] at @s \
     unless block ~ ~ ~ #air run \

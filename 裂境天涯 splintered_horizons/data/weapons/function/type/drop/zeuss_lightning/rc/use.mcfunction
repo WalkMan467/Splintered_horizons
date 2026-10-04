@@ -1,3 +1,11 @@
+# ===================================================
+# 投擲 宙斯閃電 右鍵 觸發 / thrown zeuss lightning right click activate
+
+    ## Guide [ function weapons:type/drop/zeuss_lightning/rc/use ] >>> 投擲 宙斯閃電 右鍵 觸發 / thrown zeuss lightning right click activate
+    ## Guide [ function weapons:type/drop/zeuss_lightning/rc/0 ] >>> 投擲 宙斯閃電 右鍵 階段 0 / thrown zeuss lightning right click step 0
+
+# ===================================================
+
 
 execute \
     unless score @s weapon.zeuss_lightning.hold_down matches 0.. run \

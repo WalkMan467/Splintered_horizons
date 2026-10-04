@@ -1,3 +1,10 @@
+# ===================================================
+# get 魂樹鎬 / get soul tree pickaxe
+
+    ## Guide [ function weapons:get/pickaxe/soul_tree_pickaxe ] >>> get 魂樹鎬 / get soul tree pickaxe
+
+# ===================================================
+
 give @s iron_pickaxe[item_model="pickaxe/soul_tree_pickaxe/1",item_name=[{"translate":"weapon.soul_tree_pickaxe","color":"#b6b6b6","italic":false,"bold":true}],lore=[[{"translate":"weapon.soul_tree_pickaxe.type","italic":false,"color":"dark_gray"}],{"text":""},[{"translate":"weapon.soul_tree_pickaxe.story.1","italic":false,"color":"blue"}],[{"translate":"weapon.soul_tree_pickaxe.story.2","italic":false,"color":"blue"}],{"text":""},[{"text":"","italic":false},{"translate":"weapon.soul_tree_pickaxe.passive_skills","color":"#fcff62","bold":true},{"text":"  "}],[{"text":"","italic":false},{"translate":"weapon.soul_tree_pickaxe.passive_skills.1","color":"#dedf9f"}],[{"text":"","italic":false},{"translate":"weapon.soul_tree_pickaxe.passive_skills.2","color":"#dedf9f"}],[{"text":"","italic":false},{"translate":"weapon.soul_tree_pickaxe.passive_skills.3","color":"#dedf9f"}]],attribute_modifiers=[{id:"base_attack_damage",type:"attack_damage",amount:3.0,operation:"add_value",slot:"mainhand"},{id:"base_attack_speed",type:"attack_speed",amount:-2.8,operation:"add_value",slot:"mainhand"}],max_stack_size=1,max_damage=300,damage=0,custom_data={type:"pickaxe",rarity:"epic",weapon:"soul_tree_pickaxe",forging_table:1b},minecraft:enchantments={"minecraft:mending":1},enchantment_glint_override=false,tooltip_style="epic"]
 
 # "weapon.soul_tree_pickaxe" : "魂樹鎬"

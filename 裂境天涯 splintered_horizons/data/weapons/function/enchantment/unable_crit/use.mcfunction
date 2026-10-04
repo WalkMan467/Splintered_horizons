@@ -1,3 +1,10 @@
+# ===================================================
+# 附魔 禁止爆擊 觸發 / enchantment unable crit activate
+
+    ## Guide [ function weapons:enchantment/unable_crit/use ] >>> 附魔 禁止爆擊 觸發 / enchantment unable crit activate
+
+# ===================================================
+
 execute \
     if items entity @s weapon.mainhand *[minecraft:custom_data~{unable_crit:1b}] run \
 return 0

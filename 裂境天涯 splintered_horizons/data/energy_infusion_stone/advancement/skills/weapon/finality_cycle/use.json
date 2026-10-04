@@ -1,0 +1,37 @@
+{
+  "criteria": {
+    "requirements": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "weapon.mainhand": {
+                "predicates": {
+                  "minecraft:enchantments": [
+                    {
+                      "enchantments": "energy_infusion_stone:skills/weapon/finality_cycle",
+                      "levels": {
+                        "min": 1
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "requirements"
+    ]
+  ],
+  "rewards": {
+    "function": "energy_infusion_stone:skills/weapon/finality_cycle/use"
+  }
+}

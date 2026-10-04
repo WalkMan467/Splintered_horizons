@@ -1,3 +1,12 @@
+# ===================================================
+# 緋紅之爪 符文箭矢 觸發 / crimson claw arrow activate
+
+    ## Guide [ function weapons:type/arrows/crimson_claw_arrow/use ] >>> 緋紅之爪 符文箭矢 觸發 / crimson claw arrow activate
+    ## Guide [ function weapons:type/arrows/crimson_claw_arrow/range ] >>> 緋紅之爪 符文箭矢 範圍 / crimson claw arrow range
+    ## Guide [ function weapons:type/arrows/detect ] >>> 箭矢 偵測 / arrow detect
+
+# ===================================================
+
 scoreboard players reset #weapon.crimson_claw_arrow.range global.main
 function weapons:type/arrows/crimson_claw_arrow/range
 

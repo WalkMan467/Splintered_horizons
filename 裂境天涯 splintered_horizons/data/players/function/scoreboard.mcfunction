@@ -157,6 +157,16 @@ scoreboard objectives add player.setting.waterfall_effect.trigger trigger "[玩�
 
 scoreboard players enable @a player.setting.waterfall_effect.trigger
 
+scoreboard objectives add player.setting.night_vision dummy "[玩家] 夜視效果"
+scoreboard objectives add player.setting.night_vision.trigger trigger "[玩家] 夜視效果 trigger"
+
+scoreboard players enable @a player.setting.night_vision.trigger
+
+scoreboard objectives add player.setting.bloom dummy "[玩家] 光影泛光"
+scoreboard objectives add player.setting.bloom.trigger trigger "[玩家] 光影泛光 trigger"
+
+scoreboard players enable @a player.setting.bloom.trigger
+
 scoreboard objectives add player.setting.auto_refill_items dummy "[玩家] 自動補充物品"
 scoreboard objectives add player.setting.auto_refill_items.trigger trigger "[玩家] 自動補充物品 trigger"
 

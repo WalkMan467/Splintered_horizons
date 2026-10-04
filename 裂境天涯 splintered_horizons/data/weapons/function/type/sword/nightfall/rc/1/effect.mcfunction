@@ -1,3 +1,12 @@
+# ===================================================
+# 劍 夜幕 右鍵 階段 1 效果 / sword nightfall right click step 1 effect
+
+    ## Guide [ function weapons:type/sword/nightfall/rc/1/effect ] >>> 劍 夜幕 右鍵 階段 1 效果 / sword nightfall right click step 1 effect
+    ## Guide [ function weapons:type/sword/nightfall/rc/1/calculate ] >>> 劍 夜幕 右鍵 階段 1 計算 / sword nightfall right click step 1 calculate
+    ## Guide [ function dmg_formula:weapons/type/sword/nightfall/calculate ] >>> weapons 劍 夜幕 計算 / weapons sword nightfall calculate
+
+# ===================================================
+
 
 execute \
     on attacker \

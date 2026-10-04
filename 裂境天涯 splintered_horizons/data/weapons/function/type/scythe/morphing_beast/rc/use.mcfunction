@@ -1,3 +1,14 @@
+# ===================================================
+# 鐮 變形異獸 右鍵 觸發 / scythe morphing beast right click activate
+
+    ## Guide [ function weapons:type/scythe/morphing_beast/rc/use ] >>> 鐮 變形異獸 右鍵 觸發 / scythe morphing beast right click activate
+    ## Guide [ function weapons:rc/failure/skill_use_failed ] >>> 右鍵 失敗 skill use failed / right click failure skill use failed
+    ## Guide [ function weapons:type/scythe/morphing_beast/rc/state/0 ] >>> 鐮 變形異獸 右鍵 狀態 階段 0 / scythe morphing beast right click state step 0
+    ## Guide [ function weapons:type/scythe/morphing_beast/rc/state/1 ] >>> 鐮 變形異獸 右鍵 狀態 階段 1 / scythe morphing beast right click state step 1
+    ## Guide [ function weapons:type/scythe/morphing_beast/rc/state/2 ] >>> 鐮 變形異獸 右鍵 狀態 階段 2 / scythe morphing beast right click state step 2
+
+# ===================================================
+
 scoreboard players add @s weapon.morphing_beast.state 0
 scoreboard players add @s weapon.morphing_beast.cd 0
 

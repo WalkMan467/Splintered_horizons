@@ -1,3 +1,10 @@
+# ===================================================
+# 武器分派 / weapon dispatch
+
+    ## Guide [ function weapons:type ] >>> 武器分派 / weapon dispatch
+
+# ===================================================
+
 
 execute \
     on origin run \

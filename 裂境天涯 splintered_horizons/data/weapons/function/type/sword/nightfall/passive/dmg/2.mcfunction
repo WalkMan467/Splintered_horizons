@@ -1,3 +1,12 @@
+# ===================================================
+# 劍 夜幕 被動 傷害 階段 2 / sword nightfall passive damage step 2
+
+    ## Guide [ function weapons:type/sword/nightfall/passive/dmg/2 ] >>> 劍 夜幕 被動 傷害 階段 2 / sword nightfall passive damage step 2
+    ## Guide [ function weapons:type/sword/nightfall/passive/dmg/hurt ] >>> 劍 夜幕 被動 傷害 受擊 / sword nightfall passive damage on hurt
+    ## Guide [ function weapons:type/sword/nightfall/passive/dmg/main ] >>> 劍 夜幕 被動 傷害 主迴圈 / sword nightfall passive damage loop
+
+# ===================================================
+
 scoreboard players reset @s weapon.nightfall.charge_timer
 # player
 tag @s remove weapon.nightfall.charger

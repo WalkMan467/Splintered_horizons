@@ -15,3 +15,6 @@ scoreboard players display numberformat @s player.setting.waterfall_effect fixed
 
 scoreboard players display numberformat @s player.setting.auto_refill_items fixed {"translate":"dialog.main.enabled","fallback":"Enabled","color":"dark_green","bold":true}
 scoreboard players set @s player.setting.auto_refill_items 1
+
+scoreboard players display numberformat @s player.setting.bloom fixed {"translate":"dialog.main.enabled","fallback":"Enabled","color":"dark_green","bold":true}
+scoreboard players set @s player.setting.bloom 1

@@ -1,3 +1,11 @@
+# ===================================================
+# 劍 蜘蛛 效果 screen fx / sword spider effect screen fx
+
+    ## Guide [ function weapons:type/sword/spider/effect/screen_fx ] >>> 劍 蜘蛛 效果 screen fx / sword spider effect screen fx
+    ## Guide [ function weapons:type/sword/spider/effect/score ] >>> 劍 蜘蛛 效果 score / sword spider effect score
+
+# ===================================================
+
 ## Spider passive screen effect
 
 title @s title {"text":"\uE010","font":"minecraft:screen"}

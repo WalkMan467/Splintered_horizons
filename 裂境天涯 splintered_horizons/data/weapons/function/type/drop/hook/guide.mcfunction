@@ -1,3 +1,12 @@
+# ===================================================
+# 投擲 鉤爪 分派 / thrown hook dispatch
+
+    ## Guide [ function weapons:type/drop/hook/guide ] >>> 投擲 鉤爪 分派 / thrown hook dispatch
+    ## Guide [ function weapons:type/drop/hook/effect ] >>> 投擲 鉤爪 效果 / thrown hook effect
+    ## Guide [ function weapons:type/drop/hook/loop ] >>> 投擲 鉤爪 迴圈 / thrown hook loop
+
+# ===================================================
+
 
 tp @s ^ ^ ^1 ~ ~
 effect give @s slow_falling 2 255 true

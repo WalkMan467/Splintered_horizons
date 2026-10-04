@@ -1,3 +1,12 @@
+# ===================================================
+# 斧 雷霆二重奏 被動 階段 2 傷害 / axe thunder duet passive step 2 damage
+
+    ## Guide [ function weapons:type/axe/thunder_duet/passive/2/dmg ] >>> 斧 雷霆二重奏 被動 階段 2 傷害 / axe thunder duet passive step 2 damage
+    ## Guide [ function dmg_formula:weapons/type/sword/echo_rhythm/calculate ] >>> weapons 劍 回音律動 計算 / weapons sword echo rhythm calculate
+    ## Guide [ function weapons:type/axe/thunder_duet/passive/2/run ] >>> 斧 雷霆二重奏 被動 階段 2 執行 / axe thunder duet passive step 2 run
+
+# ===================================================
+
 tag @e[type=!player,type=!#dummy_mob,distance=..6] add dmger
 scoreboard players set @p[sort=arbitrary,tag=atker] dmg_formula.atk_percentage 350
 

@@ -1,3 +1,12 @@
+# ===================================================
+# 投擲 微型太陽 右鍵 位移 資料 / thrown miniature sun right click motion data
+
+    ## Guide [ function weapons:type/drop/miniature_sun/rc/motion/data ] >>> 投擲 微型太陽 右鍵 位移 資料 / thrown miniature sun right click motion data
+    ## Guide [ function players:detect/changed_dimension ] >>> 偵測 changed dimension / detect changed dimension
+    ## Guide [ function weapons:type/drop/miniature_sun/rc/motion/use ] >>> 投擲 微型太陽 右鍵 位移 觸發 / thrown miniature sun right click motion activate
+
+# ===================================================
+
 #載入區塊，確保效果雲不會消失：
 forceload add -1 -1 0 0
 

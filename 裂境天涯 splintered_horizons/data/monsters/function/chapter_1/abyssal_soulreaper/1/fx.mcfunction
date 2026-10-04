@@ -1,3 +1,12 @@
+# ===================================================
+# 深淵斷魂者 技能1 環狀特效 / abyssal soulreaper skill 1 ring fx
+
+    ## Guide [ function monsters:chapter_1/abyssal_soulreaper/1/fx ] >>> 深淵斷魂者 技能1 環狀特效 / abyssal soulreaper skill 1 ring fx
+    ## Guide [ function monsters:chapter_1/abyssal_soulreaper/1/0 ] >>> 深淵斷魂者 技能1 蓄力 / abyssal soulreaper skill 1 charge
+    ## Guide [ function monsters:chapter_1/abyssal_soulreaper/1/1 ] >>> 深淵斷魂者 技能1 揮斬 / abyssal soulreaper skill 1 swing
+
+# ===================================================
+
 scoreboard players add @s particle 3
 
 execute \

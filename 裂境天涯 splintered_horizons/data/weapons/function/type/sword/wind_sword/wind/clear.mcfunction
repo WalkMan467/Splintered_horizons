@@ -1,3 +1,11 @@
+# ===================================================
+# 風力劍 wind 清除 / wind sword wind clear
+
+    ## Guide [ function weapons:type/sword/wind_sword/wind/clear ] >>> 風力劍 wind 清除 / wind sword wind clear
+    ## Guide [ function weapons:type/sword/wind_sword/wind/main ] >>> 風力劍 wind 主迴圈 / wind sword wind loop
+
+# ===================================================
+
 
 # effect
 kill @s

@@ -1,4 +1,16 @@
-scoreboard objectives add monster.skill.cast.cd dummy "怪物技能目前冷卻"
+# ===================================================
+# 怪物 記分板 / monsters scoreboard
+
+    ## Guide [ function monsters:scoreboard ] >>> 怪物 記分板 / monsters scoreboard
+
+# ===================================================
+
+# .at 後綴 = 絕對截止時間，只能跟 #gametime global.main 比大小，不可以 remove 1
+scoreboard objectives add monster.skill.cast.at dummy "怪物技能冷卻截止時間"
+scoreboard objectives add monster.skill.cast.cd dummy "怪物技能剩餘冷卻"
+scoreboard objectives add monster.skill.cast.dur dummy "怪物技能本輪冷卻長度"
+scoreboard objectives add monster.skill.cast.tip dummy "怪物技能預告已顯示"
+scoreboard objectives add monster.skill.paused dummy "怪物技能倒數暫停中"
 scoreboard objectives add monster.skill.casting dummy "怪物技能Cast中"
 scoreboard objectives add monster.skill.rdm.skill dummy "隨機放技能"
 scoreboard objectives add monster.skill.silence dummy "怪物技能沉默"

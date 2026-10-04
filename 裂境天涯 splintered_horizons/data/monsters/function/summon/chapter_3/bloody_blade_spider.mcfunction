@@ -1,3 +1,10 @@
+# ===================================================
+# 召喚 血滴子蜘蛛 / summon bloody blade spider
+
+    ## Guide [ function monsters:summon/chapter_3/bloody_blade_spider ] >>> 召喚 血滴子蜘蛛 / summon bloody blade spider
+    ## Guide [ function sys:monster_wave/chapter_3/1/summon/rdm ] >>> rdm
+
+# ===================================================
 
 execute \
     unless score #difficulty global.main matches 1.. run \
@@ -7,8 +14,11 @@ summon spider ~ ~ ~ {PersistenceRequired:1b,Health:30f,Tags:["monsters.spawn","m
 
 
 execute \
-    store result score @n[tag=monsters.spawn,type=spider] monster.skill.cast.cd run \
+    store result score @n[tag=monsters.spawn,type=spider] monster.skill.cast.at run \
 random value 60..100
+scoreboard players operation @n[tag=monsters.spawn,type=spider] monster.skill.cast.dur = @n[tag=monsters.spawn,type=spider] monster.skill.cast.at
+scoreboard players operation @n[tag=monsters.spawn,type=spider] monster.skill.cast.at += #gametime global.main
+scoreboard players reset @n[tag=monsters.spawn,type=spider] monster.skill.cast.tip
 
 playsound minecraft:entity.phantom.bite voice @a ~ ~1 ~ 1 0.5
 playsound minecraft:entity.creaking.spawn voice @a ~ ~1 ~ 1 0.75

@@ -1,3 +1,12 @@
+# ===================================================
+# 夢魘 深淵爆炸 毒液 飛行中 / abyss explode poison in flight
+
+    ## Guide [ function monsters:generic/nightmare_difficulty/abyss_explode/poison/guide ] >>> 夢魘 深淵爆炸 毒液 飛行中 / abyss explode poison in flight
+    ## Guide [ function monsters:generic/nightmare_difficulty/abyss_explode/main ] >>> 夢魘 深淵爆炸 排程 / nightmare abyss explode scheduler
+    ## Guide [ function monsters:generic/nightmare_difficulty/abyss_explode/poison/end ] >>> 夢魘 深淵爆炸 毒液 落地 / abyss explode poison landed
+
+# ===================================================
+
 particle dust_color_transition{from_color:[0.000,0.020,0.012],to_color:[0.000,0.459,0.275],scale:1.5} ~ ~ ~ 0 0 0 0 1 force @a
 particle block{block_state:"minecraft:sculk"} ~ ~ ~ 0 0 0 0 1 force @a
 

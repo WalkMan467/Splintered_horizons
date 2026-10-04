@@ -1,3 +1,13 @@
+# ===================================================
+# 投擲 鉤爪 定位點 分派 / thrown hook point dispatch
+
+    ## Guide [ function weapons:type/drop/hook/point/guide ] >>> 投擲 鉤爪 定位點 分派 / thrown hook point dispatch
+    ## Guide [ function weapons:type/drop/hook/point/summon ] >>> 投擲 鉤爪 定位點 召喚 / thrown hook point summon
+    ## Guide [ function weapons:type/drop/hook/point/tp ] >>> 投擲 鉤爪 定位點 tp / thrown hook point tp
+    ## Guide [ function weapons:type/drop/hook/point/loop ] >>> 投擲 鉤爪 定位點 迴圈 / thrown hook point loop
+
+# ===================================================
+
 tag @s add owner
 scoreboard players operation #this weapon.hook.user.id = @s weapon.hook.user.id
 

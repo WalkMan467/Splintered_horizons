@@ -1,20 +1,14 @@
 # ===================================================
+# 地震之斧 動畫 停止 / earthquake axe animation stop
 
-# stop
-
-
-
-    ## Guide [ function weapons:type/axe/earthquake_axe/animation/stop ] >>> stop
-
-    ## Guide [ function armors:type/black_hole/animation/boots/stop ] >>> stop
-
-    ## Guide [ function armors:type/black_hole/animation/boots/play ] >>> play
-
-    ## Guide [ function players:stop_animation ] >>> players:stop animation
-
-
+    ## Guide [ function weapons:type/axe/earthquake_axe/animation/stop ] >>> 地震之斧 動畫 停止 / earthquake axe animation stop
+    ## Guide [ function armors:type/black_hole/animation/boots/stop ] >>> black hole 動畫 boots 停止 / black hole animation boots stop
+    ## Guide [ function armors:type/black_hole/animation/boots/play ] >>> black hole 動畫 boots play / black hole animation boots play
+    ## Guide [ function players:stop_animation ] >>> stop animation / stop animation
+    ## Guide [ function weapons:type/axe/earthquake_axe/animation/reset ] >>> 地震之斧 動畫 重置 / earthquake axe animation reset
 
 # ===================================================
+
 
 
 

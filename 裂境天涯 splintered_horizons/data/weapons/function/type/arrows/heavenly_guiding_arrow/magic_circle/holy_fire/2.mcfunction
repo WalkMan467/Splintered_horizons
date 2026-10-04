@@ -1,3 +1,12 @@
+# ===================================================
+# 天導神弓箭矢 magic circle holy fire 階段 2 / heavenly guiding arrow magic circle holy fire step 2
+
+    ## Guide [ function weapons:type/arrows/heavenly_guiding_arrow/magic_circle/holy_fire/2 ] >>> 天導神弓箭矢 magic circle holy fire 階段 2 / heavenly guiding arrow magic circle holy fire step 2
+    ## Guide [ function weapons:type/arrows/heavenly_guiding_arrow/magic_circle/setup ] >>> 天導神弓箭矢 magic circle 初始化 / heavenly guiding arrow magic circle setup
+    ## Guide [ function weapons:type/arrows/heavenly_guiding_arrow/magic_circle/holy_fire/shoot ] >>> 天導神弓箭矢 magic circle holy fire shoot / heavenly guiding arrow magic circle holy fire shoot
+
+# ===================================================
+
 effect give @s slowness 1 255 true
 
 execute \

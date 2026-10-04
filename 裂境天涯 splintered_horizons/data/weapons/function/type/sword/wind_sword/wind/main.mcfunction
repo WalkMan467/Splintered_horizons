@@ -1,3 +1,13 @@
+# ===================================================
+# 風力劍 wind 主迴圈 / wind sword wind loop
+
+    ## Guide [ function weapons:type/sword/wind_sword/wind/main ] >>> 風力劍 wind 主迴圈 / wind sword wind loop
+    ## Guide [ function weapons:type/sword/wind_sword/wind/damage ] >>> 風力劍 wind 傷害 / wind sword wind damage
+    ## Guide [ function weapons:type/sword/wind_sword/wind/clear ] >>> 風力劍 wind 清除 / wind sword wind clear
+    ## Guide [ function weapons:type/core/main_guide ] >>> 核心 main guide / core main guide
+
+# ===================================================
+
 
 # effect
     # speed

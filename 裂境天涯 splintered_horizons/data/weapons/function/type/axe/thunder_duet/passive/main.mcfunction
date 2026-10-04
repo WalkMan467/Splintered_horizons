@@ -1,3 +1,11 @@
+# ===================================================
+# 斧 雷霆二重奏 被動 主迴圈 / axe thunder duet passive loop
+
+    ## Guide [ function weapons:type/axe/thunder_duet/passive/main ] >>> 斧 雷霆二重奏 被動 主迴圈 / axe thunder duet passive loop
+    ## Guide [ function weapons:type/axe/thunder_duet/main ] >>> 斧 雷霆二重奏 主迴圈 / axe thunder duet loop
+
+# ===================================================
+
 execute \
     if score @s weapon.thunder_duet.target.marker matches 0.. run \
     return run \

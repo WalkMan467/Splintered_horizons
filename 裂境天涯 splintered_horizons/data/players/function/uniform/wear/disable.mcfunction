@@ -4,7 +4,9 @@
 # (原本內嵌在 disable_inventory/true 與 reset，兩份合而為一)
 
 # 游標上的東西 clear 掃不到，要另外處理
-execute     if items entity @s player.cursor *[custom_data~{disable_inventory:1b}] run item replace entity @s player.cursor with air
+execute \
+    if items entity @s player.cursor *[custom_data~{disable_inventory:1b}] run \
+item replace entity @s player.cursor with air
 
 clear @s
 

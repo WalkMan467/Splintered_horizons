@@ -1,3 +1,14 @@
+# ===================================================
+# 地震之斧 右鍵 觸發 / earthquake axe right click activate
+
+    ## Guide [ function weapons:type/axe/earthquake_axe/rc/use ] >>> 地震之斧 右鍵 觸發 / earthquake axe right click activate
+    ## Guide [ function weapons:rc/failure/ultimate_use_failed ] >>> 右鍵 失敗 ultimate use failed / right click failure ultimate use failed
+    ## Guide [ function weapons:type/axe/earthquake_axe/animation/main ] >>> 地震之斧 動畫 主迴圈 / earthquake axe animation loop
+    ## Guide [ function players:hide/true ] >>> hide 成立 / hide true branch
+    ## Guide [ function weapons:type/axe/earthquake_axe/animation/camera/setup ] >>> 地震之斧 動畫 camera 初始化 / earthquake axe animation camera setup
+
+# ===================================================
+
 scoreboard players add @s player.ultimate 0
 
 execute \

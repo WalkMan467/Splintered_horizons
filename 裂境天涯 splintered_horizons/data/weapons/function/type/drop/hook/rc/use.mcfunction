@@ -1,3 +1,11 @@
+# ===================================================
+# 投擲 鉤爪 右鍵 觸發 / thrown hook right click activate
+
+    ## Guide [ function weapons:type/drop/hook/rc/use ] >>> 投擲 鉤爪 右鍵 觸發 / thrown hook right click activate
+    ## Guide [ function weapons:type/drop/hook/loop ] >>> 投擲 鉤爪 迴圈 / thrown hook loop
+
+# ===================================================
+
 scoreboard players set @s player.click.interval 10
 
 scoreboard players set @s player.disable.elytra_switch 60

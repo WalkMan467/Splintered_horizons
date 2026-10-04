@@ -1,3 +1,11 @@
+# ===================================================
+# 水之魔劍 水鏡之光 切換 water 觸發 / sword aquilumera switch water activate
+
+    ## Guide [ function weapons:type/sword/aquilumera/switch/water/use ] >>> 水之魔劍 水鏡之光 切換 water 觸發 / sword aquilumera switch water activate
+    ## Guide [ function weapons:type/sword/aquilumera/rc/use ] >>> 水之魔劍 水鏡之光 右鍵 觸發 / sword aquilumera right click activate
+
+# ===================================================
+
 # aquilumera water switch
 item modify entity @s weapon.mainhand weapons:type/sword/aquilumera/water
 

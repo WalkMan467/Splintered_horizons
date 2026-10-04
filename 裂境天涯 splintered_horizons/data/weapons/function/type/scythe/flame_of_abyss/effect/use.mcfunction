@@ -1,3 +1,11 @@
+# ===================================================
+# 鐮 深淵雙重火 效果 觸發 / scythe flame of abyss effect activate
+
+    ## Guide [ function weapons:type/scythe/flame_of_abyss/effect/use ] >>> 鐮 深淵雙重火 效果 觸發 / scythe flame of abyss effect activate
+    ## Guide [ function weapons:type/scythe/flame_of_abyss/effect/fx ] >>> 鐮 深淵雙重火 效果 特效 / scythe flame of abyss effect visuals
+
+# ===================================================
+
 
 execute \
     on attacker run \
