@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "spawner": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": {
+          "type": "minecraft:match_block",
+          "blocks": "minecraft:spawner"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "spawner"
+    ]
+  ],
+  "rewards": {
+    "function": "unstable_rift:spawner/respawn/detect"
+  }
+}

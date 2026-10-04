@@ -2,7 +2,6 @@
 # 召喚 深淵骷髏 / summon abyss skeleton
 
     ## Guide [ function monsters:summon/chapter_1/abyss_skeleton ] >>> 召喚 深淵骷髏 / summon abyss skeleton
-    ## Guide [ function unstable_rift:spawner/type/chapter_1/abyss_skeleton/summon ] >>> 裂境 生怪磚 召喚 深淵骷髏 / unstable rift spawner summon abyss skeleton
     ## Guide [ function monsters:chapter_1/abyss_skeleton/death ] >>> 深淵骷髏 死亡 給予急迫 / abyss skeleton death haste
 
 # ===================================================

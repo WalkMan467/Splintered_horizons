@@ -5,6 +5,7 @@
     ## Guide [ function unstable_rift:spawner/place ] >>> 裂境 生怪磚 放置並註冊 / unstable rift spawner place and register
     ## Guide [ function unstable_rift:spawner/main ] >>> 裂境 生怪磚 主程式 / unstable rift spawner main
     ## Guide [ function unstable_rift:spawner/setup/use ] >>> 裂境 生怪磚 召喚處理 / unstable rift spawner summon handler
+    ## Guide [ function unstable_rift:spawner/respawn/detect ] >>> 裂境 生怪磚 手放偵測 / unstable rift spawner hand-place detection
 
 # ===================================================
 
@@ -21,9 +22,11 @@
 # 銀魚是刻意看不見的（隱身 + scale 拉到最小），所以生怪磚裡面「看起來空的」是正常的，
 # 要確認資料有沒有進去請用 data get block <x> <y> <z>
 #
-# 用手放的生怪磚不會自動註冊重建點，放完要在那一格補跑
-# function unstable_rift:spawner/respawn/register（預設 300s）
-# 想一步到位就改用 function unstable_rift:spawner/place
+# 用手放的也會自動註冊重建點：advancement unstable_rift:spawner/placed 會接住，
+# 由 unstable_rift:spawner/respawn/detect 從視線找回那一格，預設 300s
+#
+# 要指定秒數就在下面的 data 裡多塞一個 respawn:<秒>（data:{mob:"...",respawn:120}）
+# 用指令建圖就改用 function unstable_rift:spawner/place，那條不靠視線
 
 $give @s spawner[item_name={"bold":true,"color":"dark_purple","fallback":"","italic":false,"translate":"$(ItemName)"},block_entity_data={id:"mob_spawner",Delay:0s,SpawnCount:$(SpawnCount)s,SpawnRange:$(SpawnRange)s,MaxNearbyEntities:$(MaxNearbyEntities)s,RequiredPlayerRange:$(RequiredPlayerRange)s,MinSpawnDelay:$(MinSpawnDelay)s,MaxSpawnDelay:$(MaxSpawnDelay)s,SpawnData:{custom_spawn_rules:{sky_light_limit:{min_inclusive:0,max_inclusive:15},block_light_limit:{min_inclusive:0,max_inclusive:15}},entity:{id:"minecraft:silverfish",Silent:1b,Invulnerable:1b,CustomNameVisible:0b,DeathLootTable:"-",PersistenceRequired:1b,NoAI:1b,CanPickUpLoot:0b,Health:0.1f,Tags:["unstable_rift.spawner.mob"],data:{mob:"$(mob)"},active_effects:[{id:"minecraft:invisibility",amplifier:255,duration:-1,show_particles:0b,show_icon:0b,ambient:0b}],attributes:[{id:"minecraft:max_health",base:0.1},{id:"minecraft:scale",base:0.0625}]}}}] 1
 
