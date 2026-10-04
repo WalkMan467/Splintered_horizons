@@ -19,4 +19,4 @@ $setblock ~ ~ ~ minecraft:spawner{Delay:0s,SpawnCount:$(SpawnCount)s,SpawnRange:
 $function unstable_rift:spawner/respawn/register.guide {seconds:$(seconds)}
 
     # Example:
-# execute in minecraft:the_end positioned 10000 60 10000 run function unstable_rift:spawner/place {SpawnCount: 1, SpawnRange: 2, MaxNearbyEntities: 6, MinSpawnDelay: 400, MaxSpawnDelay: 800, RequiredPlayerRange: 16, mob: "chapter_1/abyss_skeleton", seconds: 300}
+# execute in minecraft:the_end positioned 10000 60 10000 run function unstable_rift:spawner/place {SpawnCount: 1, SpawnRange: 2, MaxNearbyEntities: 6, MinSpawnDelay: 400, MaxSpawnDelay: 800, RequiredPlayerRange: 16, mob: "chapter_1/abyss_swordsman", seconds: 300}

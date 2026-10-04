@@ -1,10 +1,10 @@
 # ===================================================
-# 裂境 生怪磚 召喚 深淵骷髏 / unstable rift spawner summon abyss skeleton
+# 裂境 生怪磚 召喚 深淵劍士 / unstable rift spawner summon abyss swordsman
 
-    ## Guide [ function unstable_rift:spawner/type/chapter_1/abyss_skeleton/summon ] >>> 裂境 生怪磚 召喚 深淵骷髏 / unstable rift spawner summon abyss skeleton
+    ## Guide [ function unstable_rift:spawner/type/chapter_1/abyss_swordsman/summon ] >>> 裂境 生怪磚 召喚 深淵劍士 / unstable rift spawner summon abyss swordsman
     ## Guide [ function unstable_rift:spawner/setup/guide ] >>> 裂境 生怪磚 召喚分派 / unstable rift spawner summon dispatch
     ## Guide [ function unstable_rift:chapter_1/1/config ] >>> 破碎之城 參數 / broken city config
-    ## Guide [ function unstable_rift:chapter_1/1/monsters/abyss_skeleton/summon ] >>> 破碎之城 召喚 深淵骷髏 / broken city summon abyss skeleton
+    ## Guide [ function unstable_rift:chapter_1/1/monsters/abyss_swordsman/summon ] >>> 破碎之城 召喚 深淵劍士 / broken city summon abyss swordsman
 
 # ===================================================
 
@@ -24,4 +24,4 @@
 
 function unstable_rift:chapter_1/1/config
 
-function unstable_rift:chapter_1/1/monsters/abyss_skeleton/summon
+function unstable_rift:chapter_1/1/monsters/abyss_swordsman/summon

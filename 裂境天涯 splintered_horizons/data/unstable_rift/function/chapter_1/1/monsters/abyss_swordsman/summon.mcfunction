@@ -2,4 +2,4 @@ summon skeleton ~ ~ ~ {PersistenceRequired:1b,CanPickUpLoot:0b,AbsorptionAmount:
 
 execute \
     as @n[sort=arbitrary,distance=..0.1,tag=summon,type=skeleton] at @s run \
-function unstable_rift:chapter_1/1/monsters/abyss_skeleton/setup with storage unstable_rift:main args
+function unstable_rift:chapter_1/1/monsters/abyss_swordsman/setup with storage unstable_rift:main args
