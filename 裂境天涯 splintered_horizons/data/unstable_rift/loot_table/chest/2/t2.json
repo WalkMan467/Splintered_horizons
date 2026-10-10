@@ -1,0 +1,26 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        { "type": "minecraft:item", "name": "minecraft:cooked_beef", "weight": 60, "modifier": [ { "type": "minecraft:set_count", "count": { "type": "minecraft:uniform", "min": 5, "max": 7 } } ] },
+        { "type": "minecraft:item", "name": "minecraft:golden_carrot", "weight": 40, "modifier": [ { "type": "minecraft:set_count", "count": { "type": "minecraft:uniform", "min": 3, "max": 4 } } ] }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        { "type": "minecraft:item", "name": "minecraft:arrow", "modifier": [ { "type": "minecraft:set_count", "count": { "type": "minecraft:uniform", "min": 12, "max": 16 } } ] }
+      ]
+    },
+    {
+      "rolls": 2,
+      "entries": [
+        { "type": "minecraft:loot_table", "value": "item:get/material/rockbound_crystal", "weight": 17 },
+        { "type": "minecraft:loot_table", "value": "item:get/material/dust_of_the_wind", "weight": 17 },
+        { "type": "minecraft:loot_table", "value": "item:get/material/phase_crystal", "weight": 15 },
+        { "type": "minecraft:empty", "weight": 50 }
+      ]
+    }
+  ]
+}

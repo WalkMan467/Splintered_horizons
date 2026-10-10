@@ -13,6 +13,16 @@
 
 tag @s remove unstable_rift.spawner.broken
 
+# 跟 spawner/respawn/loop 一樣的溢出補救，這邊管的是存檔節流的時間
+#
+# 存檔卡住不會讓方塊回不來（rebuild 讀的是 marker 上的 data.spawner），
+# 只會讓生怪磚被改過的參數永遠跟不上，但一樣是一條就修掉
+
+execute \
+    if score @s unstable_rift.spawner.snapshot matches 2000000000.. \
+    if score #gametime global.main matches ..2000000000 run \
+scoreboard players set @s unstable_rift.spawner.snapshot 0
+
 # 存檔節流：unstable_rift.spawner.snapshot 存的是「下一次允許存檔的時間」
 # 這樣每秒最多讀一次方塊 NBT，生怪磚被改過參數也會在 1 秒內跟上
 

@@ -1,0 +1,10 @@
+{
+  "pack": {
+    "description": "修正 Animated Java 匯出的 advancement 在 26.3 的 entity predicate 格式，排序要在 AJ 之後",
+    "min_format": [
+      121,
+      0
+    ],
+    "max_format": 121
+  }
+}

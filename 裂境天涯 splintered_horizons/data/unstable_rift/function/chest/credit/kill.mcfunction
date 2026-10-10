@@ -2,6 +2,7 @@
 # 裂境 寶箱 擊殺加分 / credit a kill to the nearest chest
 
     ## Guide [ function unstable_rift:chest/credit/kill ] >>> 裂境 寶箱 擊殺加分 / credit a kill to the nearest chest
+    ## Guide [ function unstable_rift:chest/credit/apply ] >>> 裂境 寶箱 加分與連結線 / credit the kill and draw the link
     ## Guide [ function unstable_rift:chest/open/settle ] >>> 裂境 寶箱 結算 / settle the hidden score
     ## Guide [ function monsters:detect_kill/run ] >>> 死亡偵測 執行 / death detect run
 
@@ -30,12 +31,17 @@ return 0
 
 scoreboard players operation #unstable_rift.chest.credit global.main = @s unstable_rift.monster.reward_points
 
-# 8 格內最近、而且還沒結算過的寶箱吃這筆分
+# 16 格內最近、而且還沒結算過的寶箱吃這筆分
+#
+# 半徑比「寶箱認生怪磚」的 8 格大，是刻意的：怪會追著玩家跑，
+# 死的地方常常離生怪磚與寶箱很遠，抓太緊會讓打出去的擊殺算不到分
 #
 # 排除開過的：開過就代表那一輪結算完了，再殺也不該改它的內容。
 # 這樣寫 @n 還會自動往下找還沒開的那一個
+#
+# at 擺在 as 前面：位置留在屍體那邊，chest/credit/apply 的連結線才畫得出來
 
 execute \
     at @s \
-    as @n[tag=unstable_rift.chest.point,tag=!unstable_rift.chest.opened,distance=..8,sort=nearest,type=marker] run \
-scoreboard players operation @s unstable_rift.chest.score += #unstable_rift.chest.credit global.main
+    as @n[tag=unstable_rift.chest.point,tag=!unstable_rift.chest.opened,distance=..16,sort=nearest,type=marker] run \
+function unstable_rift:chest/credit/apply

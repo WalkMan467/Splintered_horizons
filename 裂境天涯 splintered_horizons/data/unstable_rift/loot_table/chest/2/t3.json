@@ -1,0 +1,40 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        { "type": "minecraft:item", "name": "minecraft:cooked_beef", "weight": 60, "modifier": [ { "type": "minecraft:set_count", "count": { "type": "minecraft:uniform", "min": 7, "max": 9 } } ] },
+        { "type": "minecraft:item", "name": "minecraft:golden_carrot", "weight": 40, "modifier": [ { "type": "minecraft:set_count", "count": { "type": "minecraft:uniform", "min": 4, "max": 5 } } ] }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        { "type": "minecraft:item", "name": "minecraft:arrow", "modifier": [ { "type": "minecraft:set_count", "count": { "type": "minecraft:uniform", "min": 16, "max": 24 } } ] }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        { "type": "minecraft:item", "name": "minecraft:golden_apple", "modifier": [ { "type": "minecraft:set_count", "count": 1 } ] }
+      ]
+    },
+    {
+      "rolls": 3,
+      "entries": [
+        { "type": "minecraft:loot_table", "value": "item:get/material/rockbound_crystal", "weight": 23 },
+        { "type": "minecraft:loot_table", "value": "item:get/material/dust_of_the_wind", "weight": 23 },
+        { "type": "minecraft:loot_table", "value": "item:get/material/phase_crystal", "weight": 20 },
+        { "type": "minecraft:empty", "weight": 33 }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        { "type": "minecraft:loot_table", "value": "item:get/unstable_crystal", "weight": 7 },
+        { "type": "minecraft:loot_table", "value": "item:get/world_memory_fragments", "weight": 5 },
+        { "type": "minecraft:empty", "weight": 88 }
+      ]
+    }
+  ]
+}

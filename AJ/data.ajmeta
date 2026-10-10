@@ -3509,6 +3509,7 @@
 				"data/aj/function/portal/zzz/apply_default_pose_to_nodes.mcfunction",
 				"data/aj/function/portal/zzz/as_node/as_data.mcfunction",
 				"data/aj/function/portal/zzz/as_node/execute_as_uuid.mcfunction",
+				"data/aj/function/portal/zzz/outdated_rig_warning.mcfunction",
 				"data/aj/function/portal/zzz/set_default_pose.mcfunction",
 				"data/aj/function/portal/zzz/set_default_pose_to_nodes.mcfunction",
 				"data/aj/function/portal/zzz/summon/animation_arg/if_empty.mcfunction",

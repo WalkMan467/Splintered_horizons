@@ -18,46 +18,31 @@
 
 execute \
     store result score @s unstable_rift.player.land run \
-random value 1..8
+random value 1..5
 
 execute \
     if score @s unstable_rift.player.land matches 1 \
     in minecraft:the_end run \
-tp @s -623.5 329.5 306.5
+tp @s -2164 61 5857 -90 0
 
 execute \
     if score @s unstable_rift.player.land matches 2 \
     in minecraft:the_end run \
-tp @s -672 305 443
+tp @s -2047 69 5890 110 0
 
 execute \
     if score @s unstable_rift.player.land matches 3 \
     in minecraft:the_end run \
-tp @s -349 335 346
+tp @s -2049 71 5814 65 -6
 
 execute \
     if score @s unstable_rift.player.land matches 4 \
     in minecraft:the_end run \
-tp @s -327 320 412
+tp @s -2041 21 5863 135 -10
 
 execute \
     if score @s unstable_rift.player.land matches 5 \
     in minecraft:the_end run \
-tp @s -351 349 517
-
-execute \
-    if score @s unstable_rift.player.land matches 6 \
-    in minecraft:the_end run \
-tp @s -476 344 603
-
-execute \
-    if score @s unstable_rift.player.land matches 7 \
-    in minecraft:the_end run \
-tp @s -659 325 553
-
-execute \
-    if score @s unstable_rift.player.land matches 8 \
-    in minecraft:the_end run \
-tp @s -649 323 483
+tp @s -2122 103 5893 108 7
 
 scoreboard players reset @s unstable_rift.player.land

@@ -29,8 +29,8 @@ scoreboard players reset @s unstable_rift.spawner.at
 
 # 同一組的寶箱跟著一起刷新
 #
-# 這裡是以生怪磚為中心抓 8 格內的寶箱紀錄點，跟 chest/ray/hit 註冊時
-# 「8 格內有生怪磚」是同一個半徑，所以註冊得起來的寶箱一定刷得到
+# 以生怪磚為中心抓 8 格內的寶箱紀錄點，跟 chest/open/settle 結算時判定
+# 「8 格內有沒有生怪磚」是同一個半徑，所以結算得起來的寶箱一定刷得到
 
 execute \
     as @e[tag=unstable_rift.chest.point,distance=..8,sort=arbitrary,type=marker] at @s run \

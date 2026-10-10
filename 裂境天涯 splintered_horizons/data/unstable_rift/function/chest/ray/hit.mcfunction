@@ -13,16 +13,17 @@
 
 ## ----- mode 1：放置 ----- ##
 
-# 8 格內有生怪磚重建點才註冊，這就是「裂境寶箱」的判定條件
+# 單箱一律註冊，不管附近有沒有生怪磚
 #
-# 附近沒生怪磚的箱子永遠等不到刷新，註冊它沒意義。
-# 反過來說蓋在生怪磚旁邊的裝飾箱子會被收進來，
-# 不想要的話在那一格跑 unstable_rift:chest/remove
+# 「這是不是裂境寶箱」的判定搬到開箱結算那一刻去了（見 chest/open/settle），
+# 這樣放箱子跟放生怪磚的先後順序就不影響結果 —— 先擺哪個都行
+#
+# 代價是以後每放一個單箱都會多一個 marker。marker 不被 tick、也不傳給客戶端，
+# 單顆成本很低；真的不想要某個箱子被追蹤就在那一格跑 unstable_rift:chest/remove
 
 execute \
     if score #unstable_rift.chest.ray.mode global.main matches 1 \
-    align xyz positioned ~0.5 ~0.5 ~0.5 \
-    if entity @e[tag=unstable_rift.spawner.point,distance=..8,limit=1,sort=arbitrary,type=marker] run \
+    align xyz positioned ~0.5 ~0.5 ~0.5 run \
 function unstable_rift:chest/register
 
 

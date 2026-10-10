@@ -7,7 +7,7 @@
 
 # ===================================================
 
-# 沿著玩家視線每次往前 0.1 格，碰到第一顆裂境生怪磚就收工
+# 沿著玩家視線每次往前 0.05 格，碰到第一顆裂境生怪磚就收工
 #
 # SpawnData.entity.data.mob 是這套生怪磚的身分證 ——
 # 原版生怪磚沒有這條路徑，所以不會被誤抓
@@ -26,5 +26,5 @@ return 0
 
 scoreboard players remove #unstable_rift.spawner.ray global.main 1
 
-execute positioned ^ ^ ^0.1 run \
+execute positioned ^ ^ ^0.05 run \
 function unstable_rift:spawner/respawn/detect.ray

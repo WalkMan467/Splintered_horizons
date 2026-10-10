@@ -12,7 +12,7 @@ function animated_java:global/data_manager/read with storage animated_java:temp 
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.root_uuid set from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.blueprint_id set value "aj:portal"
-data modify storage animated_java:temp entry.data.rig_hash set value "2b66702ac064a49c5f25c1f6501855fe9f05054a606b8b8537919728ffb13dd0"
+data modify storage animated_java:temp entry.data.rig_hash set value "7fd66d989080bc953a78f8818af7306e6dcf3b9b8aaa75825f5828b881ee3c88"
 tp @s ~ ~ ~ ~ ~
 execute on passengers if entity @s[tag=aj.portal.node.block_display] run function aj:portal/zzz/summon/as_node/block_display
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
@@ -68,9 +68,9 @@ data modify storage animated_java:temp entry.data.uuids_by_name.item_display9 se
 execute on passengers if entity @s[tag=aj.portal.node.item_display10] run function aj:portal/zzz/summon/as_node/item_display10
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.uuids_by_name.item_display10 set from storage animated_java:gu out
-function aj:portal/zzz/set_default_pose
 # Data Manager: Write
 function animated_java:global/data_manager/write with storage animated_java:temp args
+function aj:portal/zzz/set_default_pose
 execute if data storage animated_java:temp args.variant run function aj:portal/zzz/summon/zzz/variant_arg/no_variants_warning
 execute if score #success aj.i matches 0 run return fail
 execute if data storage animated_java:temp args.animation run function aj:portal/zzz/summon/animation_arg/process with storage animated_java:temp args

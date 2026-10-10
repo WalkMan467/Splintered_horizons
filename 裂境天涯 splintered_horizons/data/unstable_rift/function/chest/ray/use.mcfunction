@@ -21,7 +21,7 @@
 # 不收的話每遞迴一次都會再加一次眼高，射線會一路往上飄
 
 
-scoreboard players set #unstable_rift.chest.ray global.main 80
+scoreboard players set #unstable_rift.chest.ray global.main 160
 
 execute \
     anchored eyes positioned ^ ^ ^ anchored feet run \
